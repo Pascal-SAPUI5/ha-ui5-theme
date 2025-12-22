@@ -187,11 +187,84 @@ export interface UI5ProgressCardConfig extends BaseCardConfig {
   state?: "None" | "Error" | "Warning" | "Success" | "Information";
 }
 
+export interface UI5ShellBarCardConfig extends BaseCardConfig {
+  type: "custom:ui5-shellbar-card";
+  primary_title?: string;
+  secondary_title?: string;
+  logo?: string;
+  show_notifications?: boolean;
+  show_profile?: boolean;
+  items?: Array<{
+    text: string;
+    icon?: string;
+    action?: ActionConfig;
+  }>;
+}
+
+export interface UI5SideNavCardConfig extends BaseCardConfig {
+  type: "custom:ui5-sidenav-card";
+  items?: Array<{
+    text: string;
+    icon?: string;
+    path?: string;
+    items?: Array<{
+      text: string;
+      path?: string;
+    }>;
+  }>;
+}
+
+export interface UI5TimelineCardConfig extends BaseCardConfig {
+  type: "custom:ui5-timeline-card";
+  items?: Array<{
+    title: string;
+    subtitle?: string;
+    timestamp?: string;
+    icon?: string;
+    entity?: string;
+  }>;
+  layout?: "Vertical" | "Horizontal";
+}
+
+export interface UI5WizardCardConfig extends BaseCardConfig {
+  type: "custom:ui5-wizard-card";
+  steps?: Array<{
+    title: string;
+    icon?: string;
+    content?: string;
+  }>;
+}
+
+export interface UI5NotificationListCardConfig extends BaseCardConfig {
+  type: "custom:ui5-notification-list-card";
+  notifications?: Array<{
+    title: string;
+    description?: string;
+    priority?: "None" | "Low" | "Medium" | "High";
+    entity?: string;
+    timestamp?: string;
+  }>;
+}
+
+export interface UI5PageCardConfig extends BaseCardConfig {
+  type: "custom:ui5-page-card";
+  header_text?: string;
+  show_footer?: boolean;
+  footer_text?: string;
+  content?: string;
+}
+
 export type UI5CardConfig =
   | UI5ButtonCardConfig
   | UI5SwitchCardConfig
   | UI5SliderCardConfig
-  | UI5ProgressCardConfig;
+  | UI5ProgressCardConfig
+  | UI5ShellBarCardConfig
+  | UI5SideNavCardConfig
+  | UI5TimelineCardConfig
+  | UI5WizardCardConfig
+  | UI5NotificationListCardConfig
+  | UI5PageCardConfig;
 
 // ==================== Card Registration ====================
 
@@ -227,5 +300,11 @@ declare global {
     "ui5-switch-card": LovelaceCard;
     "ui5-slider-card": LovelaceCard;
     "ui5-progress-card": LovelaceCard;
+    "ui5-shellbar-card": LovelaceCard;
+    "ui5-sidenav-card": LovelaceCard;
+    "ui5-timeline-card": LovelaceCard;
+    "ui5-wizard-card": LovelaceCard;
+    "ui5-notification-list-card": LovelaceCard;
+    "ui5-page-card": LovelaceCard;
   }
 }

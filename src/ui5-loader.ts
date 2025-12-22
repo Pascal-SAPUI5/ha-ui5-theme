@@ -41,6 +41,54 @@ import "@ui5/webcomponents/dist/CardHeader.js";
 import "@ui5/webcomponents/dist/Tag.js";
 import "@ui5/webcomponents/dist/MessageStrip.js";
 
+// ==================== UI5 Fiori Components ====================
+
+// ShellBar and related
+import "@ui5/webcomponents-fiori/dist/ShellBar.js";
+import "@ui5/webcomponents-fiori/dist/ShellBarItem.js";
+
+// Navigation
+import "@ui5/webcomponents-fiori/dist/SideNavigation.js";
+import "@ui5/webcomponents-fiori/dist/SideNavigationItem.js";
+import "@ui5/webcomponents-fiori/dist/SideNavigationSubItem.js";
+import "@ui5/webcomponents-fiori/dist/SideNavigationGroup.js";
+
+// Page
+import "@ui5/webcomponents-fiori/dist/Page.js";
+
+// Timeline
+import "@ui5/webcomponents-fiori/dist/Timeline.js";
+import "@ui5/webcomponents-fiori/dist/TimelineGroupItem.js";
+
+// Notifications
+import "@ui5/webcomponents-fiori/dist/NotificationList.js";
+import "@ui5/webcomponents-fiori/dist/NotificationListItem.js";
+import "@ui5/webcomponents-fiori/dist/NotificationListGroupItem.js";
+import "@ui5/webcomponents-fiori/dist/NotificationAction.js";
+
+// Wizard
+import "@ui5/webcomponents-fiori/dist/Wizard.js";
+
+// Additional Fiori Components
+import "@ui5/webcomponents-fiori/dist/BarcodeScannerDialog.js";
+import "@ui5/webcomponents-fiori/dist/DynamicSideContent.js";
+import "@ui5/webcomponents-fiori/dist/FlexibleColumnLayout.js";
+import "@ui5/webcomponents-fiori/dist/IllustratedMessage.js";
+import "@ui5/webcomponents-fiori/dist/MediaGallery.js";
+import "@ui5/webcomponents-fiori/dist/ProductSwitch.js";
+import "@ui5/webcomponents-fiori/dist/ProductSwitchItem.js";
+import "@ui5/webcomponents-fiori/dist/UploadCollection.js";
+import "@ui5/webcomponents-fiori/dist/UploadCollectionItem.js";
+import "@ui5/webcomponents-fiori/dist/UserMenu.js";
+import "@ui5/webcomponents-fiori/dist/UserMenuAccount.js";
+import "@ui5/webcomponents-fiori/dist/UserMenuItem.js";
+import "@ui5/webcomponents-fiori/dist/UserMenuItemGroup.js";
+import "@ui5/webcomponents-fiori/dist/UserSettingsDialog.js";
+import "@ui5/webcomponents-fiori/dist/ViewSettingsDialog.js";
+import "@ui5/webcomponents-fiori/dist/SortItem.js";
+import "@ui5/webcomponents-fiori/dist/FilterItem.js";
+import "@ui5/webcomponents-fiori/dist/FilterItemOption.js";
+
 // ==================== Theme Configuration ====================
 
 import { setTheme } from "@ui5/webcomponents-base/dist/config/Theme.js";

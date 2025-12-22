@@ -14,6 +14,12 @@ import "./cards/ui5-button-card";
 import "./cards/ui5-switch-card";
 import "./cards/ui5-slider-card";
 import "./cards/ui5-progress-card";
+import "./cards/ui5-shellbar-card";
+import "./cards/ui5-sidenav-card";
+import "./cards/ui5-timeline-card";
+import "./cards/ui5-wizard-card";
+import "./cards/ui5-notification-list-card";
+import "./cards/ui5-page-card";
 
 // Card registration information
 const CARD_DEFINITIONS = [
@@ -40,6 +46,43 @@ const CARD_DEFINITIONS = [
     name: "UI5 Progress Card",
     description:
       "A progress indicator card using UI5 ProgressIndicator component",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-shellbar-card",
+    name: "UI5 ShellBar Card",
+    description: "A shell bar card using UI5 ShellBar component",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-sidenav-card",
+    name: "UI5 Side Navigation Card",
+    description: "A side navigation card using UI5 SideNavigation component",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-timeline-card",
+    name: "UI5 Timeline Card",
+    description: "A timeline card using UI5 Timeline component",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-wizard-card",
+    name: "UI5 Wizard Card",
+    description: "A wizard card using UI5 Wizard component",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-notification-list-card",
+    name: "UI5 Notification List Card",
+    description:
+      "A notification list card using UI5 NotificationList component",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-page-card",
+    name: "UI5 Page Card",
+    description: "A page card using UI5 Page component",
     preview: true,
   },
 ];

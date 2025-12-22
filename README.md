@@ -32,6 +32,30 @@ A slider control card for adjusting numeric values (brightness, volume, temperat
 
 A progress indicator card for displaying percentage-based values.
 
+### UI5 ShellBar Card
+
+A shell bar card providing a navigation header with branding, notifications, and action items.
+
+### UI5 Side Navigation Card
+
+A side navigation card for creating hierarchical navigation menus with expandable groups.
+
+### UI5 Timeline Card
+
+A timeline card for displaying chronological events with icons and entity state integration.
+
+### UI5 Wizard Card
+
+A wizard card for multi-step processes and guided workflows.
+
+### UI5 Notification List Card
+
+A notification list card for displaying alerts, messages, and entity state changes.
+
+### UI5 Page Card
+
+A page card providing a structured layout with header, content area, and optional footer.
+
 ## Installation
 
 ### Prerequisites
@@ -42,7 +66,6 @@ A progress indicator card for displaying percentage-based values.
 ### HACS Installation
 
 1. **Add this repository to HACS:**
-
    - Open HACS in your Home Assistant
    - Click the three dots menu in the top right
    - Select "Custom repositories"
@@ -50,7 +73,6 @@ A progress indicator card for displaying percentage-based values.
    - Select category: "Plugin"
 
 2. **Install the plugin:**
-
    - Find "UI5 Web Components Cards" in HACS
    - Click "Install"
    - Restart Home Assistant
@@ -113,6 +135,96 @@ name: Battery Level
 max: 100
 display_value: true
 state: Success # None | Success | Warning | Error | Information
+```
+
+### UI5 ShellBar Card
+
+```yaml
+type: custom:ui5-shellbar-card
+primary_title: Home Assistant
+secondary_title: Dashboard
+show_notifications: true
+show_profile: true
+items:
+  - text: Settings
+    icon: action-settings
+    action:
+      action: navigate
+      navigation_path: /config/dashboard
+```
+
+### UI5 Side Navigation Card
+
+```yaml
+type: custom:ui5-sidenav-card
+items:
+  - text: Home
+    icon: home
+    path: /lovelace/0
+  - text: Settings
+    icon: action-settings
+    items:
+      - text: General
+        path: /config/general
+      - text: Integrations
+        path: /config/integrations
+```
+
+### UI5 Timeline Card
+
+```yaml
+type: custom:ui5-timeline-card
+layout: Vertical # Vertical | Horizontal
+items:
+  - title: System Started
+    subtitle: Home Assistant initialized
+    timestamp: 2024-01-01 12:00
+    icon: sys-enter
+  - title: Motion Detected
+    entity: binary_sensor.motion_living_room
+    subtitle: Living Room
+    icon: activate
+```
+
+### UI5 Wizard Card
+
+```yaml
+type: custom:ui5-wizard-card
+steps:
+  - title: Step 1
+    icon: hint
+    content: Welcome to the wizard
+  - title: Step 2
+    icon: activities
+    content: Configure your settings
+  - title: Step 3
+    icon: accept
+    content: Review and confirm
+```
+
+### UI5 Notification List Card
+
+```yaml
+type: custom:ui5-notification-list-card
+notifications:
+  - title: System Update
+    description: A new version is available
+    priority: High # None | Low | Medium | High
+    timestamp: 2 minutes ago
+  - title: Battery Low
+    entity: sensor.door_sensor_battery
+    description: Front door sensor battery is low
+    priority: Medium
+```
+
+### UI5 Page Card
+
+```yaml
+type: custom:ui5-page-card
+header_text: My Page
+content: This is the page content area
+show_footer: true
+footer_text: Footer text
 ```
 
 ### Template Support
@@ -200,7 +312,13 @@ npm run format
 │   │   ├── ui5-button-card.ts
 │   │   ├── ui5-switch-card.ts
 │   │   ├── ui5-slider-card.ts
-│   │   └── ui5-progress-card.ts
+│   │   ├── ui5-progress-card.ts
+│   │   ├── ui5-shellbar-card.ts
+│   │   ├── ui5-sidenav-card.ts
+│   │   ├── ui5-timeline-card.ts
+│   │   ├── ui5-wizard-card.ts
+│   │   ├── ui5-notification-list-card.ts
+│   │   └── ui5-page-card.ts
 │   └── utils/
 │       ├── action-handler.ts      # Action handling
 │       ├── template-processor.ts  # Template processing
