@@ -55,12 +55,12 @@ jobs:
 
       - name: Verify build output
         run: |
-          if [ ! -f "dist/ha-ui5-theme.js" ]; then
+          if [ ! -f "dist/ui5-webcomponents-ha.js" ]; then
             echo "Error: Build output file not found"
             exit 1
           fi
           echo "Build output size:"
-          ls -lh dist/ha-ui5-theme.js
+          ls -lh dist/ui5-webcomponents-ha.js
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4

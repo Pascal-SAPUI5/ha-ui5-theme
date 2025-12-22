@@ -42,6 +42,7 @@ A progress indicator card for displaying percentage-based values.
 ### HACS Installation
 
 1. **Add this repository to HACS:**
+
    - Open HACS in your Home Assistant
    - Click the three dots menu in the top right
    - Select "Custom repositories"
@@ -49,6 +50,7 @@ A progress indicator card for displaying percentage-based values.
    - Select category: "Plugin"
 
 2. **Install the plugin:**
+
    - Find "UI5 Web Components Cards" in HACS
    - Click "Install"
    - Restart Home Assistant
