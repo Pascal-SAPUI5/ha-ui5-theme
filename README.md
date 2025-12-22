@@ -42,7 +42,6 @@ A progress indicator card for displaying percentage-based values.
 ### HACS Installation
 
 1. **Add this repository to HACS:**
-
    - Open HACS in your Home Assistant
    - Click the three dots menu in the top right
    - Select "Custom repositories"
@@ -50,7 +49,6 @@ A progress indicator card for displaying percentage-based values.
    - Select category: "Plugin"
 
 2. **Install the plugin:**
-
    - Find "UI5 Web Components Cards" in HACS
    - Click "Install"
    - Restart Home Assistant
@@ -186,6 +184,24 @@ npm run lint:fix
 ```bash
 npm run format
 ```
+
+### Test
+
+```bash
+# Run tests once
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with UI
+npm run test:ui
+
+# Run tests with coverage
+npm run test:coverage
+```
+
+The project uses [Vitest](https://vitest.dev/) as the testing framework with `happy-dom` for DOM emulation.
 
 ## Project Structure
 
