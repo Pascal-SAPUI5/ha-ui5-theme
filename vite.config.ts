@@ -4,10 +4,10 @@ import { resolve } from "path";
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, "src/main.ts"),
-      name: "HaUi5Theme",
+      entry: resolve(__dirname, "src/index.ts"),
+      name: "UI5WebComponentsHA",
       formats: ["es"],
-      fileName: () => "ha-ui5-theme.js",
+      fileName: () => "ui5-webcomponents-ha.js",
     },
     outDir: "dist",
     emptyOutDir: true,

@@ -1,16 +1,36 @@
-# Home Assistant UI5 Theme
+# UI5 Web Components for Home Assistant
 
-A **Home Assistant HACS Frontend plugin** that integrates **SAP UI5 Web Components** into your Home Assistant installation.
+A **Home Assistant HACS Plugin** that provides **Lovelace custom cards** using **SAP UI5 Web Components**.
 
-This plugin uses UI5 Web Components (NOT classic SAPUI5/OpenUI5) and provides global theming capabilities for your Home Assistant frontend.
+This plugin uses UI5 Web Components (NOT classic SAPUI5/OpenUI5) to create beautiful, customizable dashboard cards for your Home Assistant installation.
 
 ## Features
 
-- UI5 Web Components integration
-- Global CSS variable overrides for HA theming
-- Single-file ESM bundle (no code splitting)
-- Proof-of-concept UI5 button element
-- Built with Vite and TypeScript
+- 🎴 **Custom Lovelace Cards** using UI5 Web Components
+- 🎨 **Visual Card Picker** integration
+- ⚡ **Action Support**: tap_action, hold_action, double_tap_action
+- 🔄 **Entity Binding**: automatically sync with Home Assistant entities
+- 📝 **Template Support**: use `{{ states('entity.id') }}` in card configurations
+- 🌓 **Theme-aware**: automatically adapts to Home Assistant themes
+- 📦 **Single-file ESM bundle** for easy installation
+
+## Available Cards
+
+### UI5 Button Card
+
+A customizable button card with support for icons, different designs, and entity state display.
+
+### UI5 Switch Card
+
+A toggle switch card for controlling binary entities (lights, switches, etc.).
+
+### UI5 Slider Card
+
+A slider control card for adjusting numeric values (brightness, volume, temperature, etc.).
+
+### UI5 Progress Card
+
+A progress indicator card for displaying percentage-based values.
 
 ## Installation
 
@@ -27,11 +47,11 @@ This plugin uses UI5 Web Components (NOT classic SAPUI5/OpenUI5) and provides gl
    - Click the three dots menu in the top right
    - Select "Custom repositories"
    - Add this repository URL
-   - Select category: "Frontend"
+   - Select category: "Plugin"
 
 2. **Install the plugin:**
 
-   - Find "Home Assistant UI5 Theme" in HACS
+   - Find "UI5 Web Components Cards" in HACS
    - Click "Install"
    - Restart Home Assistant
 
@@ -41,30 +61,96 @@ This plugin uses UI5 Web Components (NOT classic SAPUI5/OpenUI5) and provides gl
    ```yaml
    frontend:
      extra_module_url:
-       - /hacsfiles/ha-ui5-theme/ha-ui5-theme.js
+       - /hacsfiles/ha-ui5-theme/ui5-webcomponents-ha.js
    ```
 
 4. **Restart Home Assistant** to load the module
 
-## Verification
+## Usage
 
-After installation, you should see:
+After installation, the UI5 cards will appear in the Lovelace card picker when you add a new card to your dashboard.
 
-- A floating UI5 button in the bottom-right corner of your HA interface
-- Clicking it shows a confirmation that UI5 Web Components are active
-- Console logs in browser DevTools showing `[ha-ui5-theme]` messages
+### UI5 Button Card
 
-## Optional: Home Assistant Theme
+```yaml
+type: custom:ui5-button-card
+entity: light.living_room
+text: Toggle Light
+design: Emphasized # Default | Emphasized | Positive | Negative | Transparent
+icon: lightbulb
+tap_action:
+  action: toggle
+```
 
-You can also use the included YAML theme for additional theming capabilities:
+### UI5 Switch Card
 
-1. Copy `themes/ui5.yaml` (when available) to your HA `themes/` directory
-2. Reference it in `configuration.yaml`:
-   ```yaml
-   frontend:
-     themes: !include_dir_merge_named themes
-   ```
-3. Select "UI5" theme in your HA user profile
+```yaml
+type: custom:ui5-switch-card
+entity: switch.bedroom_fan
+text: Bedroom Fan
+tap_action:
+  action: toggle
+```
+
+### UI5 Slider Card
+
+```yaml
+type: custom:ui5-slider-card
+entity: light.kitchen
+name: Kitchen Brightness
+min: 0
+max: 100
+step: 1
+show_value: true
+```
+
+### UI5 Progress Card
+
+```yaml
+type: custom:ui5-progress-card
+entity: sensor.battery_level
+name: Battery Level
+max: 100
+display_value: true
+state: Success # None | Success | Warning | Error | Information
+```
+
+### Template Support
+
+You can use Home Assistant templates in text fields:
+
+```yaml
+type: custom:ui5-button-card
+text: "Light is {{ states('light.living_room') }}"
+```
+
+### Action Configuration
+
+All cards support tap, hold, and double-tap actions:
+
+```yaml
+type: custom:ui5-button-card
+text: Click Me
+tap_action:
+  action: more-info
+hold_action:
+  action: call-service
+  service: light.toggle
+  service_data:
+    entity_id: light.living_room
+double_tap_action:
+  action: navigate
+  navigation_path: /lovelace/0
+```
+
+Supported actions:
+
+- `toggle` - Toggle an entity
+- `more-info` - Show more info dialog
+- `call-service` - Call a Home Assistant service
+- `navigate` - Navigate to a different view
+- `url` - Open a URL
+- `none` - No action
 
 ## Development
 
@@ -80,7 +166,7 @@ npm install
 npm run build
 ```
 
-Output: `dist/ha-ui5-theme.js`
+Output: `dist/ui5-webcomponents-ha.js`
 
 ### Dev Mode
 
@@ -106,11 +192,22 @@ npm run format
 ```
 .
 ├── src/
-│   └── main.ts           # Main entry point
+│   ├── index.ts              # Main entry point
+│   ├── types.ts              # TypeScript definitions
+│   ├── ui5-loader.ts         # UI5 components loader
+│   ├── cards/
+│   │   ├── base-card.ts      # Base card class
+│   │   ├── ui5-button-card.ts
+│   │   ├── ui5-switch-card.ts
+│   │   ├── ui5-slider-card.ts
+│   │   └── ui5-progress-card.ts
+│   └── utils/
+│       ├── action-handler.ts      # Action handling
+│       ├── template-processor.ts  # Template processing
+│       └── ha-helpers.ts          # Helper functions
 ├── dist/
-│   └── ha-ui5-theme.js   # Build output (generated)
-├── themes/               # Optional HA themes (future)
-├── hacs.json             # HACS metadata
+│   └── ui5-webcomponents-ha.js   # Build output
+├── hacs.json                      # HACS metadata
 ├── package.json
 ├── tsconfig.json
 ├── vite.config.ts
@@ -124,6 +221,24 @@ npm run format
 - **UI Components:** @ui5/webcomponents, @ui5/webcomponents-fiori
 - **Output:** Single ESM file with inlined dynamic imports
 - **No SSR, no code splitting** - optimized for HA's module loading
+- **Custom Elements:** All cards are Web Components extending HTMLElement
+
+## Roadmap
+
+See [Issue #7](https://github.com/Pascal-SAPUI5/ha-ui5-theme/issues/7) for the full roadmap.
+
+### Phase 3 — Visual Editors
+
+- [ ] Card configuration editors for each card type
+- [ ] Enhanced card picker support
+
+### Phase 4 — Additional Cards
+
+- [ ] UI5 List Card
+- [ ] UI5 Table Card
+- [ ] UI5 Tabs Card
+- [ ] UI5 Dialog Card
+- [ ] Fiori components (ShellBar, SideNavigation, Timeline, etc.)
 
 ## License
 

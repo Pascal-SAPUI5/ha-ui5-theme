@@ -1,9 +1,9 @@
 {
-  "name": "ha-ui5-theme",
+  "name": "ui5-webcomponents-ha",
   "version": "0.1.0",
-  "description": "Home Assistant HACS Frontend plugin using UI5 Web Components",
+  "description": "Home Assistant Lovelace custom cards using UI5 Web Components",
   "type": "module",
-  "main": "dist/ha-ui5-theme.js",
+  "main": "dist/ui5-webcomponents-ha.js",
   "files": [
     "dist",
     "themes"
