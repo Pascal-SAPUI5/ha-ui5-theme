@@ -40,16 +40,40 @@ jobs:
             REPO: ${{ github.repository }}
             PR NUMBER: ${{ github.event.pull_request.number }}
 
-            Please review this pull request and provide feedback on:
-            - Code quality and best practices
-            - Potential bugs or issues
-            - Performance considerations
-            - Security concerns
-            - Test coverage
+            You are reviewing a Home Assistant HACS Frontend plugin using UI5 Web Components.
 
-            Use the repository's CLAUDE.md for guidance on style and conventions. Be constructive and helpful in your feedback.
+            Please review this pull request focusing on:
 
-            Use `gh pr comment` with your Bash tool to leave your review as a comment on the PR.
+            ## Code Quality
+            - TypeScript best practices and type safety
+            - UI5 Web Components usage and patterns
+            - Error handling and defensive programming
+            - Code organization and maintainability
+
+            ## Home Assistant Integration
+            - Won't break Home Assistant UI (defensive code)
+            - Proper event listener cleanup (no memory leaks)
+            - Single ESM bundle compatibility (no code splitting)
+            - CSS variable usage (avoid fragile selectors)
+
+            ## UI5 Web Components
+            - Correct component imports and usage
+            - Theme compatibility (light/dark mode)
+            - Component lifecycle management
+            - Accessibility considerations
+
+            ## Build & CI/CD
+            - Build configuration (Vite, TypeScript)
+            - CI workflow compatibility
+            - Release process alignment
+
+            ## Security & Performance
+            - No XSS, injection vulnerabilities
+            - Bundle size impact
+            - Runtime performance
+
+            Read CLAUDE.md for project-specific guidelines.
+            Use `gh pr comment` to post your review on the PR.
 
           # See https://github.com/anthropics/claude-code-action/blob/main/docs/usage.md
           # or https://code.claude.com/docs/en/cli-reference for available options

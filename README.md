@@ -133,6 +133,15 @@ MIT
 
 Contributions are welcome! Please open an issue or PR.
 
+### Claude Code GitHub Actions
+
+This repository uses Claude Code for automated PR reviews and interactive support:
+
+- **Automatic PR Reviews**: Claude reviews all pull requests automatically
+- **Interactive Help**: Tag `@claude` in issues or PR comments for assistance
+
+See [CLAUDE_CODE_SETUP.md](./CLAUDE_CODE_SETUP.md) for setup instructions.
+
 ## Support
 
 For issues, please use the GitHub issue tracker.
