@@ -1,0 +1,120 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build and Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run linter
+        run: npm run lint
+
+      - name: Run type check
+        run: npx tsc --noEmit
+
+      - name: Build project
+        run: npm run build
+
+      - name: Verify build output
+        run: |
+          if [ ! -f "dist/ha-ui5-theme.js" ]; then
+            echo "Error: Build output file not found"
+            exit 1
+          fi
+          echo "Build output created:"
+          ls -lh dist/ha-ui5-theme.js
+
+      - name: Extract version from tag
+        id: version
+        run: |
+          TAG=${GITHUB_REF#refs/tags/}
+          VERSION=${TAG#v}
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Release version: $VERSION"
+
+      - name: Generate release notes
+        id: release_notes
+        run: |
+          cat > release_notes.md << 'NOTES'
+          ## Home Assistant UI5 Theme ${{ steps.version.outputs.version }}
+
+          ### Installation
+
+          1. Download `ha-ui5-theme.js` from the assets below
+          2. Install via HACS or manually place in your Home Assistant installation
+          3. Add to your `configuration.yaml`:
+
+          ```yaml
+          frontend:
+            extra_module_url:
+              - /hacsfiles/ha-ui5-theme/ha-ui5-theme.js
+          ```
+
+          4. Restart Home Assistant
+
+          ### What's Included
+
+          - **UI5 Web Components**: 16 components + 6 icons
+          - **Global CSS theming**: Light/dark mode support
+          - **Interactive proof widget**: Draggable demo card (Ctrl+Shift+U to toggle)
+          - **Configuration system**: localStorage-based settings
+          - **Defensive implementation**: Error-resilient, won't break HA UI
+
+          ### Build Info
+
+          - **Build Size**: See artifact details below
+          - **TypeScript**: ✅ Type-checked
+          - **Linted**: ✅ ESLint passed
+          - **Tested**: ✅ Build verified
+
+          ### Documentation
+
+          See [README.md](https://github.com/${{ github.repository }}/blob/${{ steps.version.outputs.tag }}/README.md) for full documentation.
+
+          ---
+
+          **Generated with GitHub Actions** • Built from commit ${{ github.sha }}
+          NOTES
+          echo "notes_file=release_notes.md" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Release ${{ steps.version.outputs.version }}
+          body_path: release_notes.md
+          files: |
+            dist/ha-ui5-theme.js
+            hacs.json
+            README.md
+          draft: false
+          prerelease: ${{ contains(steps.version.outputs.version, '-') }}
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-build-${{ steps.version.outputs.version }}
+          path: dist/
+          retention-days: 90
