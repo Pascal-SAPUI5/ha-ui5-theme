@@ -263,6 +263,17 @@ export class UI5SliderCard extends BaseUI5Card {
     }
   }
 
+  /**
+   * Lifecycle: disconnected from DOM
+   */
+  disconnectedCallback(): void {
+    // Clean up slider event listeners
+    if (this.sliderAbortController) {
+      this.sliderAbortController.abort();
+      this.sliderAbortController = undefined;
+    }
+  }
+
   static getStubConfig() {
     return {
       type: "custom:ui5-slider-card",

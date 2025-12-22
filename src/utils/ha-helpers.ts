@@ -128,11 +128,16 @@ export function stateToNumber(
 /**
  * Calculate decimal precision from step value
  * @param step The step value (e.g., 0.1, 0.01, 1)
- * @returns Number of decimal places needed
+ * @returns Number of decimal places needed (capped at 10)
  */
 export function calculatePrecisionFromStep(step: number): number {
-  if (step <= 0 || step >= 1) return 0;
-  return Math.max(0, -Math.floor(Math.log10(step)));
+  // Handle edge cases: zero, negative, or very large steps
+  if (step <= 0) return 0; // Safe default for invalid input
+  if (step >= 1) return 0; // No decimals needed for steps >= 1
+
+  // Calculate precision and cap at reasonable maximum
+  const precision = Math.max(0, -Math.floor(Math.log10(step)));
+  return Math.min(precision, 10); // Cap at 10 decimal places
 }
 
 /**
@@ -149,7 +154,11 @@ export function formatNumber(
     locale?: string;
   },
 ): string {
-  const locale = options?.locale || navigator.language || "en-US";
+  // Defensive: check for navigator existence (e.g., SSR, tests)
+  const locale =
+    options?.locale ||
+    (typeof navigator !== "undefined" ? navigator.language : null) ||
+    "en-US";
 
   return new Intl.NumberFormat(locale, {
     minimumFractionDigits: options?.minimumFractionDigits ?? 0,

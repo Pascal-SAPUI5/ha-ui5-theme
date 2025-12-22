@@ -69,11 +69,13 @@ export class UI5ProgressCard extends BaseUI5Card {
           value,
         );
 
-        // Format max: if entity has unit, format as plain number (unit shown once in value)
-        // Otherwise use formatEntityValue for consistency
+        // Format max: When entity has a unit, display format is "value unit / max"
+        // This avoids redundancy (e.g., "22 h / 100" instead of "22 h / 100 h")
+        // The unit from the value provides sufficient context for the max value
         if (unit) {
           formattedMax = formatNumber(max, { maximumFractionDigits: 0 });
         } else {
+          // No unit: format both consistently
           formattedMax = formatEntityValue(this._hass, this.config.entity, max);
         }
       } else {
