@@ -2,6 +2,7 @@ import js from "@eslint/js";
 import tseslint from "@typescript-eslint/eslint-plugin";
 import tsparser from "@typescript-eslint/parser";
 import prettier from "eslint-config-prettier";
+import globals from "globals";
 
 export default [
   js.configs.recommended,
@@ -14,29 +15,7 @@ export default [
         sourceType: "module",
       },
       globals: {
-        // Browser globals
-        window: "readonly",
-        document: "readonly",
-        console: "readonly",
-        localStorage: "readonly",
-        CustomEvent: "readonly",
-        Event: "readonly",
-        alert: "readonly",
-        confirm: "readonly",
-        setTimeout: "readonly",
-        clearTimeout: "readonly",
-        setInterval: "readonly",
-        clearInterval: "readonly",
-        MouseEvent: "readonly",
-        KeyboardEvent: "readonly",
-        PointerEvent: "readonly",
-        HTMLElement: "readonly",
-        ShadowRoot: "readonly",
-        customElements: "readonly",
-        history: "readonly",
-        AbortController: "readonly",
-        AbortSignal: "readonly",
-        URL: "readonly",
+        ...globals.browser,
       },
     },
     plugins: {
@@ -61,11 +40,7 @@ export default [
       ecmaVersion: "latest",
       sourceType: "module",
       globals: {
-        // Node.js globals
-        __dirname: "readonly",
-        __filename: "readonly",
-        process: "readonly",
-        Buffer: "readonly",
+        ...globals.node,
       },
     },
   },

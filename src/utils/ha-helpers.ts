@@ -126,6 +126,105 @@ export function stateToNumber(
 }
 
 /**
+ * Calculate decimal precision from step value
+ * @param step The step value (e.g., 0.1, 0.01, 1)
+ * @returns Number of decimal places needed (capped at 10)
+ */
+export function calculatePrecisionFromStep(step: number): number {
+  // Handle edge cases: zero, negative, or very large steps
+  if (step <= 0) return 0; // Safe default for invalid input
+  if (step >= 1) return 0; // No decimals needed for steps >= 1
+
+  // Calculate precision and cap at reasonable maximum
+  const precision = Math.max(0, -Math.floor(Math.log10(step)));
+  return Math.min(precision, 10); // Cap at 10 decimal places
+}
+
+/**
+ * Format a number for display using locale-aware formatting
+ * @param value The number to format
+ * @param options Formatting options
+ * @returns Formatted number string
+ */
+export function formatNumber(
+  value: number,
+  options?: {
+    minimumFractionDigits?: number;
+    maximumFractionDigits?: number;
+    locale?: string;
+  },
+): string {
+  // Defensive: check for navigator existence (e.g., SSR, tests)
+  const locale =
+    options?.locale ||
+    (typeof navigator !== "undefined" ? navigator.language : null) ||
+    "en-US";
+
+  return new Intl.NumberFormat(locale, {
+    minimumFractionDigits: options?.minimumFractionDigits ?? 0,
+    maximumFractionDigits: options?.maximumFractionDigits ?? 2,
+  }).format(value);
+}
+
+/**
+ * Format entity value with unit of measurement
+ * @param hass Home Assistant instance
+ * @param entityId Entity ID
+ * @param value Value to format (optional, will use entity state if not provided)
+ * @param precision Number of decimal places (optional)
+ * @returns Formatted value with unit
+ */
+export function formatEntityValue(
+  hass: HomeAssistant,
+  entityId: string,
+  value?: number,
+  precision?: number,
+): string {
+  const entity = getEntity(hass, entityId);
+
+  if (!entity) {
+    return "unavailable";
+  }
+
+  // Handle unavailable/unknown states
+  if (entity.state === "unavailable") {
+    return "unavailable";
+  }
+  if (entity.state === "unknown") {
+    return "unknown";
+  }
+
+  // Use provided value or parse entity state
+  const numValue = value ?? parseFloat(entity.state);
+
+  if (isNaN(numValue)) {
+    return entity.state;
+  }
+
+  // Determine precision
+  let maxDecimals = precision ?? 2;
+
+  // If the entity has a specific precision in attributes, use it
+  if (entity.attributes.precision !== undefined) {
+    maxDecimals = entity.attributes.precision;
+  }
+
+  // Format the number
+  const formatted = formatNumber(numValue, {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: maxDecimals,
+  });
+
+  // Add unit if present
+  const unit = entity.attributes.unit_of_measurement;
+  if (unit) {
+    return `${formatted} ${unit}`;
+  }
+
+  return formatted;
+}
+
+/**
  * Get domain from entity ID
  */
 export function getDomain(entityId: string): string {
