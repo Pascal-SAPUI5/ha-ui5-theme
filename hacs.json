@@ -1,0 +1,7 @@
+{
+  "name": "Home Assistant UI5 Theme",
+  "content_in_root": false,
+  "filename": "ha-ui5-theme.js",
+  "render_readme": true,
+  "homeassistant": "2023.1.0"
+}
