@@ -334,6 +334,24 @@ npm run lint:fix
 npm run format
 ```
 
+### Test
+
+```bash
+# Run tests once
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with UI
+npm run test:ui
+
+# Run tests with coverage
+npm run test:coverage
+```
+
+The project uses [Vitest](https://vitest.dev/) as the testing framework with `happy-dom` for DOM emulation.
+
 ## Project Structure
 
 ```
