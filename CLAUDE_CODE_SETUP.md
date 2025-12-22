@@ -4,7 +4,7 @@ This document explains how to set up and use Claude Code GitHub Actions in this 
 
 ## Overview
 
-This repository has two Claude Code workflows:
+This repository has two Claude Code workflows: 
 
 1. **`claude-code-review.yml`** - Automatically reviews PRs when opened or synchronized
 2. **`claude.yml`** - Responds to `@claude` mentions in issues and PR comments
