@@ -23,7 +23,7 @@ pnpm-debug.log*
 # pnpm-lock.yaml
 
 # ===== Build outputs =====
-dist/
+# dist/ — Needed for HACS, do NOT ignore
 dist-ssr/
 build/
 out/
