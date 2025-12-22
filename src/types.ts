@@ -132,7 +132,12 @@ export interface FireDomEventActionConfig extends BaseActionConfig {
   action: "fire-dom-event";
 }
 
+export interface NoneActionConfig extends BaseActionConfig {
+  action: "none";
+}
+
 export type ActionConfig =
+  | NoneActionConfig
   | ToggleActionConfig
   | MoreInfoActionConfig
   | CallServiceActionConfig
