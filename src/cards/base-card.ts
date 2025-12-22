@@ -318,6 +318,8 @@ export abstract class BaseUI5Card extends HTMLElement implements LovelaceCard {
         background: var(--ha-card-background, var(--card-background-color, #fff));
         border-radius: var(--ha-card-border-radius, 12px);
         box-shadow: var(--ha-card-box-shadow, 0 2px 8px rgba(0, 0, 0, 0.1));
+        overflow: hidden;
+        min-width: 0;
       }
 
       .card-header {

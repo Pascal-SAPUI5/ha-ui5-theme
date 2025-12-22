@@ -5,7 +5,14 @@
 
 import { BaseUI5Card } from "./base-card";
 import type { UI5SliderCardConfig } from "../types";
-import { stateToNumber, clamp, debounce } from "../utils/ha-helpers";
+import {
+  stateToNumber,
+  clamp,
+  debounce,
+  formatNumber,
+  formatEntityValue,
+  getEntity,
+} from "../utils/ha-helpers";
 import "../ui5-loader";
 
 export class UI5SliderCard extends BaseUI5Card {
@@ -27,7 +34,8 @@ export class UI5SliderCard extends BaseUI5Card {
     }
 
     const entityState = this.config.entity ? this.getEntityState() : undefined;
-    const isUnavailable = entityState === "unavailable";
+    const isUnavailable =
+      entityState === "unavailable" || entityState === "unknown";
 
     // Get slider parameters
     const min = this.config.min ?? 0;
@@ -46,6 +54,30 @@ export class UI5SliderCard extends BaseUI5Card {
       value = clamp(value, min, max);
     }
 
+    // Format value for display
+    let displayValue = "";
+    if (showValue) {
+      if (isUnavailable) {
+        displayValue = entityState || "unavailable";
+      } else if (this.config.entity && this._hass) {
+        // Determine precision based on step
+        let precision = 0;
+        if (step < 1) {
+          precision = Math.max(0, -Math.floor(Math.log10(step)));
+        }
+        displayValue = formatEntityValue(
+          this._hass,
+          this.config.entity,
+          value,
+          precision,
+        );
+      } else {
+        displayValue = formatNumber(value, {
+          maximumFractionDigits: step < 1 ? 2 : 0,
+        });
+      }
+    }
+
     // Process label with templates (escaped for security)
     const label = this.processTemplateEscaped(this.config.name || "Slider");
 
@@ -57,30 +89,39 @@ export class UI5SliderCard extends BaseUI5Card {
           display: flex;
           flex-direction: column;
           gap: 12px;
+          min-width: 0;
         }
 
         .slider-header {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          gap: 8px;
+          min-width: 0;
         }
 
         .slider-label {
           font-size: 14px;
           font-weight: 500;
           color: var(--primary-text-color);
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          min-width: 0;
+          flex: 1 1 auto;
         }
 
         .slider-value {
           font-size: 14px;
           font-weight: 600;
           color: var(--primary-color);
-          min-width: 40px;
-          text-align: right;
+          white-space: nowrap;
+          flex: 0 0 auto;
         }
 
         ui5-slider {
           width: 100%;
+          min-width: 0;
         }
       </style>
 
@@ -88,7 +129,7 @@ export class UI5SliderCard extends BaseUI5Card {
         <div class="slider-container">
           <div class="slider-header">
             <div class="slider-label">${label}</div>
-            ${showValue ? `<div class="slider-value" id="value-display">${value}</div>` : ""}
+            ${showValue ? `<div class="slider-value" id="value-display">${displayValue}</div>` : ""}
           </div>
           <ui5-slider
             id="main-slider"
@@ -96,6 +137,7 @@ export class UI5SliderCard extends BaseUI5Card {
             max="${max}"
             step="${step}"
             value="${value}"
+            ${isUnavailable ? "disabled" : ""}
           ></ui5-slider>
         </div>
       </div>
@@ -107,11 +149,27 @@ export class UI5SliderCard extends BaseUI5Card {
     };
     const valueDisplay = this.shadow.getElementById("value-display");
 
-    if (slider) {
+    if (slider && !isUnavailable) {
+      // Determine precision based on step
+      let precision = 0;
+      if (step < 1) {
+        precision = Math.max(0, -Math.floor(Math.log10(step)));
+      }
+
       // Update value display on input (real-time)
       slider.addEventListener("input", () => {
-        if (valueDisplay) {
-          valueDisplay.textContent = slider.value.toString();
+        if (valueDisplay && this.config?.entity && this._hass) {
+          const currentValue = slider.value;
+          const entity = getEntity(this._hass, this.config.entity);
+          const unit = entity?.attributes.unit_of_measurement;
+
+          const formattedValue = formatNumber(currentValue, {
+            maximumFractionDigits: precision,
+          });
+
+          valueDisplay.textContent = unit
+            ? `${formattedValue} ${unit}`
+            : formattedValue;
         }
       });
 

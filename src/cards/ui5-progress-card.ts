@@ -5,7 +5,13 @@
 
 import { BaseUI5Card } from "./base-card";
 import type { UI5ProgressCardConfig } from "../types";
-import { stateToNumber, clamp } from "../utils/ha-helpers";
+import {
+  stateToNumber,
+  clamp,
+  formatNumber,
+  formatEntityValue,
+  getEntity,
+} from "../utils/ha-helpers";
 import "../ui5-loader";
 
 export class UI5ProgressCard extends BaseUI5Card {
@@ -27,7 +33,8 @@ export class UI5ProgressCard extends BaseUI5Card {
     }
 
     const entityState = this.config.entity ? this.getEntityState() : undefined;
-    const isUnavailable = entityState === "unavailable";
+    const isUnavailable =
+      entityState === "unavailable" || entityState === "unknown";
 
     // Get progress parameters
     const max = this.config.max ?? 100;
@@ -44,6 +51,31 @@ export class UI5ProgressCard extends BaseUI5Card {
     // Calculate percentage
     const percentage = Math.round((value / max) * 100);
 
+    // Format values for display
+    let formattedValue = "";
+    let formattedMax = "";
+    if (displayValue) {
+      if (isUnavailable) {
+        formattedValue = entityState || "unavailable";
+        formattedMax = "";
+      } else if (this.config.entity && this._hass) {
+        formattedValue = formatEntityValue(
+          this._hass,
+          this.config.entity,
+          value,
+        );
+        // Format max without unit (unit is already in formattedValue)
+        const entity = getEntity(this._hass, this.config.entity);
+        const hasUnit = entity?.attributes.unit_of_measurement;
+        formattedMax = hasUnit
+          ? formatNumber(max)
+          : formatEntityValue(this._hass, this.config.entity, max);
+      } else {
+        formattedValue = formatNumber(value);
+        formattedMax = formatNumber(max);
+      }
+    }
+
     // Process label with templates (escaped for security)
     const label = this.processTemplateEscaped(this.config.name || "Progress");
 
@@ -55,28 +87,39 @@ export class UI5ProgressCard extends BaseUI5Card {
           display: flex;
           flex-direction: column;
           gap: 12px;
+          min-width: 0;
         }
 
         .progress-header {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          gap: 8px;
+          min-width: 0;
         }
 
         .progress-label {
           font-size: 14px;
           font-weight: 500;
           color: var(--primary-text-color);
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          min-width: 0;
+          flex: 1 1 auto;
         }
 
         .progress-value {
           font-size: 14px;
           font-weight: 600;
           color: var(--primary-color);
+          white-space: nowrap;
+          flex: 0 0 auto;
         }
 
         ui5-progress-indicator {
           width: 100%;
+          min-width: 0;
         }
       </style>
 
@@ -85,16 +128,19 @@ export class UI5ProgressCard extends BaseUI5Card {
           <div class="progress-header">
             <div class="progress-label">${label}</div>
             ${
-              displayValue
-                ? `<div class="progress-value">${value} / ${max}</div>`
-                : ""
+              displayValue && !isUnavailable
+                ? `<div class="progress-value">${formattedValue}${formattedMax ? ` / ${formattedMax}` : ""}</div>`
+                : isUnavailable
+                  ? `<div class="progress-value">${formattedValue}</div>`
+                  : ""
             }
           </div>
           <ui5-progress-indicator
             id="main-progress"
-            value="${percentage}"
+            value="${isUnavailable ? 0 : percentage}"
             ${state !== "None" ? `value-state="${state}"` : ""}
-            ${displayValue ? `display-value="${percentage}%"` : ""}
+            ${displayValue && !isUnavailable ? `display-value="${percentage}%"` : ""}
+            ${isUnavailable ? "disabled" : ""}
           ></ui5-progress-indicator>
         </div>
       </div>
