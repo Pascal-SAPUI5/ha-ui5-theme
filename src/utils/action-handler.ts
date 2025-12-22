@@ -65,8 +65,12 @@ export async function handleAction(
         handleFireDomEventAction(node);
         break;
 
-      default:
-        console.warn(`[action-handler] Unknown action: ${config.action}`);
+      default: {
+        // Exhaustiveness check - this should never happen with proper typing
+        const _exhaustiveCheck: never = config;
+        console.warn(`[action-handler] Unknown action:`, _exhaustiveCheck);
+        break;
+      }
     }
   } catch (error) {
     console.error("[action-handler] Action failed:", error);
@@ -209,7 +213,7 @@ export function actionHandler() {
  */
 export function getDefaultActionConfig(
   actionType: "tap" | "hold" | "double_tap",
-  entityId?: string,
+  _entityId?: string,
 ): ActionConfig {
   switch (actionType) {
     case "tap":
