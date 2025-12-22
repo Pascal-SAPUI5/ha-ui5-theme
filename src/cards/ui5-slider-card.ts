@@ -12,10 +12,13 @@ import {
   formatNumber,
   formatEntityValue,
   getEntity,
+  calculatePrecisionFromStep,
 } from "../utils/ha-helpers";
 import "../ui5-loader";
 
 export class UI5SliderCard extends BaseUI5Card {
+  // AbortController for managing event listeners lifecycle
+  private sliderAbortController?: AbortController;
   setConfig(config: UI5SliderCardConfig): void {
     if (!config.type) {
       throw new Error("Card type is required");
@@ -61,10 +64,7 @@ export class UI5SliderCard extends BaseUI5Card {
         displayValue = entityState || "unavailable";
       } else if (this.config.entity && this._hass) {
         // Determine precision based on step
-        let precision = 0;
-        if (step < 1) {
-          precision = Math.max(0, -Math.floor(Math.log10(step)));
-        }
+        const precision = calculatePrecisionFromStep(step);
         displayValue = formatEntityValue(
           this._hass,
           this.config.entity,
@@ -143,35 +143,43 @@ export class UI5SliderCard extends BaseUI5Card {
       </div>
     `;
 
-    // Set up slider change handler
+    // Set up slider change handler with AbortController for cleanup
     const slider = this.shadow.getElementById("main-slider") as HTMLElement & {
       value: number;
     };
     const valueDisplay = this.shadow.getElementById("value-display");
 
     if (slider && !isUnavailable) {
-      // Determine precision based on step
-      let precision = 0;
-      if (step < 1) {
-        precision = Math.max(0, -Math.floor(Math.log10(step)));
+      // Abort previous listeners before adding new ones
+      if (this.sliderAbortController) {
+        this.sliderAbortController.abort();
       }
+      this.sliderAbortController = new AbortController();
+      const signal = this.sliderAbortController.signal;
+
+      // Determine precision based on step
+      const precision = calculatePrecisionFromStep(step);
 
       // Update value display on input (real-time)
-      slider.addEventListener("input", () => {
-        if (valueDisplay && this.config?.entity && this._hass) {
-          const currentValue = slider.value;
-          const entity = getEntity(this._hass, this.config.entity);
-          const unit = entity?.attributes.unit_of_measurement;
+      slider.addEventListener(
+        "input",
+        () => {
+          if (valueDisplay && this.config?.entity && this._hass) {
+            const currentValue = slider.value;
+            const entity = getEntity(this._hass, this.config.entity);
+            const unit = entity?.attributes.unit_of_measurement;
 
-          const formattedValue = formatNumber(currentValue, {
-            maximumFractionDigits: precision,
-          });
+            const formattedValue = formatNumber(currentValue, {
+              maximumFractionDigits: precision,
+            });
 
-          valueDisplay.textContent = unit
-            ? `${formattedValue} ${unit}`
-            : formattedValue;
-        }
-      });
+            valueDisplay.textContent = unit
+              ? `${formattedValue} ${unit}`
+              : formattedValue;
+          }
+        },
+        { signal },
+      );
 
       // Call service on change (when user releases slider)
       slider.addEventListener(
@@ -179,6 +187,7 @@ export class UI5SliderCard extends BaseUI5Card {
         debounce(() => {
           this.handleSliderChange(slider.value);
         }, 300),
+        { signal },
       );
     }
   }

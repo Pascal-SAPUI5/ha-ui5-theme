@@ -126,6 +126,16 @@ export function stateToNumber(
 }
 
 /**
+ * Calculate decimal precision from step value
+ * @param step The step value (e.g., 0.1, 0.01, 1)
+ * @returns Number of decimal places needed
+ */
+export function calculatePrecisionFromStep(step: number): number {
+  if (step <= 0 || step >= 1) return 0;
+  return Math.max(0, -Math.floor(Math.log10(step)));
+}
+
+/**
  * Format a number for display using locale-aware formatting
  * @param value The number to format
  * @param options Formatting options

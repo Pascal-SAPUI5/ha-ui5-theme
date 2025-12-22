@@ -59,17 +59,23 @@ export class UI5ProgressCard extends BaseUI5Card {
         formattedValue = entityState || "unavailable";
         formattedMax = "";
       } else if (this.config.entity && this._hass) {
+        const entity = getEntity(this._hass, this.config.entity);
+        const unit = entity?.attributes.unit_of_measurement;
+
+        // Format value with unit
         formattedValue = formatEntityValue(
           this._hass,
           this.config.entity,
           value,
         );
-        // Format max without unit (unit is already in formattedValue)
-        const entity = getEntity(this._hass, this.config.entity);
-        const hasUnit = entity?.attributes.unit_of_measurement;
-        formattedMax = hasUnit
-          ? formatNumber(max)
-          : formatEntityValue(this._hass, this.config.entity, max);
+
+        // Format max: if entity has unit, format as plain number (unit shown once in value)
+        // Otherwise use formatEntityValue for consistency
+        if (unit) {
+          formattedMax = formatNumber(max, { maximumFractionDigits: 0 });
+        } else {
+          formattedMax = formatEntityValue(this._hass, this.config.entity, max);
+        }
       } else {
         formattedValue = formatNumber(value);
         formattedMax = formatNumber(max);
