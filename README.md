@@ -22,6 +22,7 @@ This plugin uses UI5 Web Components (NOT classic SAPUI5/OpenUI5) and provides gl
 ### HACS Installation
 
 1. **Add this repository to HACS:**
+
    - Open HACS in your Home Assistant
    - Click the three dots menu in the top right
    - Select "Custom repositories"
@@ -29,6 +30,7 @@ This plugin uses UI5 Web Components (NOT classic SAPUI5/OpenUI5) and provides gl
    - Select category: "Frontend"
 
 2. **Install the plugin:**
+
    - Find "Home Assistant UI5 Theme" in HACS
    - Click "Install"
    - Restart Home Assistant

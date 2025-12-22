@@ -131,6 +131,7 @@ Then create the correct tag.
 ### Release Assets Missing
 
 The workflow expects these files to exist:
+
 - `dist/ha-ui5-theme.js` - Created by `npm run build`
 - `hacs.json` - HACS metadata file
 - `README.md` - Documentation

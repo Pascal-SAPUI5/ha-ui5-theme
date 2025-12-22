@@ -25,4 +25,4 @@ pnpm-lock.yaml
 .git/
 
 # Claude
-.claude/transcripts/
+.claude/
