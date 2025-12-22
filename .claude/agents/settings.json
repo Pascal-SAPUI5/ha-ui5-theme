@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path' | { read file_path; if [ -n \"$file_path\" ]; then if echo \"$file_path\" | grep -Eq '\\.(ts|tsx|js|jsx|mjs|cjs)$'; then npx -y eslint --fix \"$file_path\" || true; npx -y prettier -w \"$file_path\"; elif echo \"$file_path\" | grep -Eq '\\.(json|md|mdx|yaml|yml|css|scss)$'; then npx -y prettier -w \"$file_path\"; fi; fi; }"
+          }
+        ]
+      }
+    ]
+  }
+}

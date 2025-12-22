@@ -1,0 +1,56 @@
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.log
+
+.vscode/
+.idea/
+*.iml
+
+# ===== Node / Package managers =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# lockfiles (optional to ignore; keep if you want reproducible installs)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ===== Build outputs =====
+dist/
+dist-ssr/
+build/
+out/
+coverage/
+*.tsbuildinfo
+
+# ===== Vite =====
+.vite/
+
+# ===== Env / Secrets =====
+.env
+.env.*
+!.env.example
+
+# ===== Home Assistant / HACS local dev =====
+.hass/
+.storage/
+config/
+*.db
+*.db-shm
+*.db-wal
+
+# ===== Claude Code =====
+.claude/settings.local.json
+.claude/transcripts/
+agent-*.jsonl
+
+# ===== Misc =====
+*.tgz
+*.zip
