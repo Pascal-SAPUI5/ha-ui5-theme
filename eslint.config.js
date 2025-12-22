@@ -20,6 +20,7 @@ export default [
         console: "readonly",
         localStorage: "readonly",
         CustomEvent: "readonly",
+        Event: "readonly",
         alert: "readonly",
         setTimeout: "readonly",
         clearTimeout: "readonly",
