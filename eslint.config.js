@@ -34,6 +34,9 @@ export default [
         ShadowRoot: "readonly",
         customElements: "readonly",
         history: "readonly",
+        AbortController: "readonly",
+        AbortSignal: "readonly",
+        URL: "readonly",
       },
     },
     plugins: {
@@ -64,6 +67,17 @@ export default [
         process: "readonly",
         Buffer: "readonly",
       },
+    },
+  },
+  // Disable no-explicit-any for files that interface with HA (intentional any types)
+  {
+    files: [
+      "src/types.ts",
+      "src/utils/ha-helpers.ts",
+      "src/cards/base-card.ts",
+    ],
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off",
     },
   },
   prettier,

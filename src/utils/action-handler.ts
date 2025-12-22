@@ -204,7 +204,7 @@ function isUrlSafe(url: string): boolean {
     // Allow only safe protocols
     const safeProtocols = ["http:", "https:", "mailto:", "tel:"];
     return safeProtocols.includes(protocol);
-  } catch (error) {
+  } catch {
     // Invalid URL format
     console.warn(`[action-handler] Invalid URL format: ${url}`);
     return false;
