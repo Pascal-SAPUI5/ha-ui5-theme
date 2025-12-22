@@ -9,7 +9,16 @@ import { ensureFiori } from "../ui5-loader";
 
 export class UI5NotificationListCard extends BaseUI5Card {
   async connectedCallback(): void {
-    await ensureFiori();
+    try {
+      await ensureFiori();
+    } catch (error) {
+      console.error(
+        "[ui5-notification-list-card] Failed to load Fiori components:",
+        error,
+      );
+      this.renderError("Failed to load UI5 Fiori components");
+      return;
+    }
     super.connectedCallback();
   }
 
