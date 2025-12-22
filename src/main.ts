@@ -61,6 +61,7 @@ interface UI5ThemeConfig {
 declare global {
   interface Window {
     haUi5Config?: Partial<UI5ThemeConfig>;
+    haUi5ThemeCleanup?: () => void;
   }
 }
 
@@ -425,8 +426,8 @@ function mountProofElement(): void {
 
     const demoSwitch = document.createElement("ui5-switch");
     demoSwitch.setAttribute("checked", "");
-    demoSwitch.addEventListener("change", (e: any) => {
-      const checked = e.target.checked;
+    demoSwitch.addEventListener("change", (e: Event) => {
+      const checked = (e.target as HTMLElement & { checked: boolean }).checked;
       statusStrip.setAttribute("design", checked ? "Positive" : "Information");
       statusStrip.textContent = checked
         ? "UI5 Web Components loaded successfully!"
@@ -570,7 +571,7 @@ async function init(): Promise<void> {
 
 // Expose cleanup for debugging/testing
 if (typeof window !== "undefined") {
-  (window as any).haUi5ThemeCleanup = cleanup;
+  window.haUi5ThemeCleanup = cleanup;
 }
 
 // Auto-initialize when module loads
