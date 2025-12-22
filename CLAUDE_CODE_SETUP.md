@@ -62,6 +62,7 @@ When you create or update a pull request, Claude will automatically:
 3. Post a review comment on the PR
 
 **Triggered by:**
+
 - Opening a new pull request
 - Pushing new commits to a PR
 
@@ -74,21 +75,25 @@ Tag `@claude` in any issue or PR comment to get help.
 **Examples:**
 
 **In a Pull Request comment:**
+
 ```
 @claude can you explain how the proof element drag-and-drop works?
 ```
 
 **In an Issue:**
+
 ```
 @claude help me debug why the build is failing
 ```
 
 **In a PR review comment:**
+
 ```
 @claude suggest improvements for this function's error handling
 ```
 
 **Triggered by:**
+
 - Comments containing `@claude` in issues
 - Comments containing `@claude` in PR discussions
 - Comments containing `@claude` in PR reviews
@@ -100,29 +105,34 @@ Tag `@claude` in any issue or PR comment to get help.
 Claude will review PRs focusing on:
 
 ### Code Quality
+
 - TypeScript best practices and type safety
 - UI5 Web Components usage patterns
 - Error handling and defensive programming
 - Code organization and maintainability
 
 ### Home Assistant Integration
+
 - Won't break Home Assistant UI (defensive code)
 - Proper event listener cleanup (no memory leaks)
 - Single ESM bundle compatibility (no code splitting)
 - CSS variable usage (avoid fragile selectors)
 
 ### UI5 Web Components
+
 - Correct component imports and usage
 - Theme compatibility (light/dark mode)
 - Component lifecycle management
 - Accessibility considerations
 
 ### Build & CI/CD
+
 - Build configuration (Vite, TypeScript)
 - CI workflow compatibility
 - Release process alignment
 
 ### Security & Performance
+
 - No XSS, injection vulnerabilities
 - Bundle size impact
 - Runtime performance
@@ -132,12 +142,14 @@ Claude will review PRs focusing on:
 The workflows have these permissions:
 
 **`claude-code-review.yml`:**
+
 - `contents: read` - Read repository files
 - `pull-requests: read` - Read PR information
 - `issues: read` - Read issue information
 - `id-token: write` - GitHub OIDC authentication
 
 **`claude.yml`:**
+
 - `contents: read` - Read repository files
 - `pull-requests: read` - Read PR information
 - `issues: read` - Read issue information
@@ -197,6 +209,7 @@ claude_args: '--allowed-tools "Bash(gh:*),Read,Grep,Glob,Edit"'
 ### Workflow Not Running
 
 **Check:**
+
 1. Is `CLAUDE_CODE_OAUTH_TOKEN` secret set?
 2. Is the workflow file in `.github/workflows/`?
 3. Are the triggers correct (PR opened, comment created)?
@@ -215,6 +228,7 @@ Then update the secret in GitHub.
 ### Claude Not Responding
 
 **Check:**
+
 1. Did you tag `@claude` correctly?
 2. Is the secret configured?
 3. Check Actions tab for workflow runs
@@ -253,5 +267,6 @@ permissions:
 ## Support
 
 For issues with Claude Code GitHub Actions:
+
 - [Claude Code GitHub Issues](https://github.com/anthropics/claude-code/issues)
 - [Anthropic Support](https://support.anthropic.com)
