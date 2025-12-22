@@ -6,7 +6,17 @@
 import type { HomeAssistant } from "../types";
 
 /**
+ * Escape HTML special characters to prevent XSS
+ */
+export function escapeHtml(text: string): string {
+  const div = document.createElement("div");
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+/**
  * Process a template string with Home Assistant context
+ * Note: Output is NOT escaped - caller must escape when inserting into HTML
  */
 export function processTemplate(
   template: string | undefined,

@@ -174,7 +174,41 @@ function handleUrlAction(config: UrlActionConfig): void {
     return;
   }
 
-  window.open(config.url_path);
+  // Validate URL protocol for security
+  if (!isUrlSafe(config.url_path)) {
+    console.warn(
+      `[action-handler] Blocked potentially unsafe URL: ${config.url_path}`,
+    );
+    return;
+  }
+
+  // Open URL in new tab with security attributes
+  window.open(config.url_path, "_blank", "noopener,noreferrer");
+}
+
+/**
+ * Check if URL is safe to open
+ * Only allow http, https, mailto, and tel protocols
+ */
+function isUrlSafe(url: string): boolean {
+  try {
+    // Handle relative URLs (treat as safe - they're relative to current origin)
+    if (url.startsWith("/") || url.startsWith("./") || url.startsWith("../")) {
+      return true;
+    }
+
+    // Parse URL to check protocol
+    const urlObj = new URL(url, window.location.href);
+    const protocol = urlObj.protocol.toLowerCase();
+
+    // Allow only safe protocols
+    const safeProtocols = ["http:", "https:", "mailto:", "tel:"];
+    return safeProtocols.includes(protocol);
+  } catch (error) {
+    // Invalid URL format
+    console.warn(`[action-handler] Invalid URL format: ${url}`);
+    return false;
+  }
 }
 
 /**

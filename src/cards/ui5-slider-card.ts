@@ -46,8 +46,8 @@ export class UI5SliderCard extends BaseUI5Card {
       value = clamp(value, min, max);
     }
 
-    // Process label with templates
-    const label = this.processTemplate(this.config.name || "Slider");
+    // Process label with templates (escaped for security)
+    const label = this.processTemplateEscaped(this.config.name || "Slider");
 
     this.shadow.innerHTML = `
       <style>
@@ -132,6 +132,17 @@ export class UI5SliderCard extends BaseUI5Card {
     if (!this.config?.entity || !this._hass) {
       return;
     }
+
+    // Validate value against configured bounds
+    const min = this.config.min ?? 0;
+    const max = this.config.max ?? 100;
+    const step = this.config.step ?? 1;
+
+    // Clamp value to min/max
+    value = clamp(value, min, max);
+
+    // Round to nearest step
+    value = Math.round(value / step) * step;
 
     // If tap_action is configured, use it
     if (this.config.tap_action) {

@@ -28,8 +28,8 @@ export class UI5ButtonCard extends BaseUI5Card {
     const entityState = this.config.entity ? this.getEntityState() : undefined;
     const isUnavailable = entityState === "unavailable";
 
-    // Process text with templates
-    const text = this.processTemplate(
+    // Process text with templates (escaped for security)
+    const text = this.processTemplateEscaped(
       this.config.text || this.config.name || "Button",
     );
     const icon = this.config.icon;

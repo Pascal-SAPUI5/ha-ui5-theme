@@ -10,7 +10,7 @@ import type {
   LovelaceCard,
 } from "../types";
 import { handleAction } from "../utils/action-handler";
-import { processTemplate } from "../utils/template-processor";
+import { processTemplate, escapeHtml } from "../utils/template-processor";
 
 export abstract class BaseUI5Card extends HTMLElement implements LovelaceCard {
   protected _hass?: HomeAssistant;
@@ -24,6 +24,7 @@ export abstract class BaseUI5Card extends HTMLElement implements LovelaceCard {
   private clickCount = 0;
   private clickTimer?: ReturnType<typeof setTimeout>;
   private clickDelay = 250; // ms
+  private abortController?: AbortController;
 
   constructor() {
     super();
@@ -129,6 +130,14 @@ export abstract class BaseUI5Card extends HTMLElement implements LovelaceCard {
   }
 
   /**
+   * Process template string and escape HTML for safe insertion
+   */
+  protected processTemplateEscaped(template: string | undefined): string {
+    const processed = this.processTemplate(template);
+    return escapeHtml(processed);
+  }
+
+  /**
    * Get entity state
    */
   protected getEntityState(): string {
@@ -156,20 +165,38 @@ export abstract class BaseUI5Card extends HTMLElement implements LovelaceCard {
    * Set up action handlers for an element
    */
   protected setupActionHandlers(element: HTMLElement): void {
+    // Create new AbortController for this render cycle
+    // (Previous one will be aborted in disconnectedCallback or next render)
+    if (this.abortController) {
+      this.abortController.abort();
+    }
+    this.abortController = new AbortController();
+    const signal = this.abortController.signal;
+
     // Handle tap action
-    element.addEventListener("click", (e) => this.handleClick(e));
+    element.addEventListener("click", (e) => this.handleClick(e), { signal });
 
     // Handle hold action
-    element.addEventListener("pointerdown", (e) => this.handlePointerDown(e));
-    element.addEventListener("pointerup", () => this.handlePointerUp());
-    element.addEventListener("pointercancel", () => this.handlePointerUp());
+    element.addEventListener("pointerdown", (e) => this.handlePointerDown(e), {
+      signal,
+    });
+    element.addEventListener("pointerup", () => this.handlePointerUp(), {
+      signal,
+    });
+    element.addEventListener("pointercancel", () => this.handlePointerUp(), {
+      signal,
+    });
 
     // Prevent context menu on hold
-    element.addEventListener("contextmenu", (e) => {
-      if (this._config?.hold_action) {
-        e.preventDefault();
-      }
-    });
+    element.addEventListener(
+      "contextmenu",
+      (e) => {
+        if (this._config?.hold_action) {
+          e.preventDefault();
+        }
+      },
+      { signal },
+    );
   }
 
   /**
@@ -329,11 +356,18 @@ export abstract class BaseUI5Card extends HTMLElement implements LovelaceCard {
    * Lifecycle: disconnected from DOM
    */
   disconnectedCallback(): void {
+    // Clear timers
     if (this.clickTimer) {
       clearTimeout(this.clickTimer);
     }
     if (this.holdTimer) {
       clearTimeout(this.holdTimer);
+    }
+
+    // Abort all event listeners
+    if (this.abortController) {
+      this.abortController.abort();
+      this.abortController = undefined;
     }
   }
 }

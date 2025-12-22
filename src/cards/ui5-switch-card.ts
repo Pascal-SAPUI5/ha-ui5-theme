@@ -35,8 +35,8 @@ export class UI5SwitchCard extends BaseUI5Card {
       isChecked = isEntityOn(this._hass, this.config.entity);
     }
 
-    // Process text with templates
-    const text = this.processTemplate(
+    // Process text with templates (escaped for security)
+    const text = this.processTemplateEscaped(
       this.config.text || this.config.name || "Switch",
     );
 

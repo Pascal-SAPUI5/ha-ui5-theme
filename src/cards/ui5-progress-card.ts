@@ -44,8 +44,8 @@ export class UI5ProgressCard extends BaseUI5Card {
     // Calculate percentage
     const percentage = Math.round((value / max) * 100);
 
-    // Process label with templates
-    const label = this.processTemplate(this.config.name || "Progress");
+    // Process label with templates (escaped for security)
+    const label = this.processTemplateEscaped(this.config.name || "Progress");
 
     this.shadow.innerHTML = `
       <style>

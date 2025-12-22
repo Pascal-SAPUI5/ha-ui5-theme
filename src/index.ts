@@ -7,7 +7,7 @@
 
 // Import UI5 Web Components loader
 import "./ui5-loader";
-import { initUI5Theme } from "./ui5-loader";
+import { initUI5Theme, waitForUI5Ready } from "./ui5-loader";
 
 // Import all cards
 import "./cards/ui5-button-card";
@@ -70,10 +70,13 @@ function registerCards(): void {
 /**
  * Initialize the plugin
  */
-function init(): void {
+async function init(): Promise<void> {
   console.log("[ui5-cards] UI5 Web Components Cards v0.1.0 initializing...");
 
   try {
+    // Wait for UI5 Web Components to be ready
+    await waitForUI5Ready();
+
     // Initialize UI5 theme (detect dark mode)
     const isDark =
       window.matchMedia &&
