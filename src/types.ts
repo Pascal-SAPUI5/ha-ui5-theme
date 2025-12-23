@@ -436,6 +436,27 @@ export interface UI5MenuCardConfig extends BaseCardConfig {
   }>;
 }
 
+export interface UI5PromptCardConfig extends BaseCardConfig {
+  type: "custom:ui5-prompt-card";
+  placeholder?: string;
+  label?: string;
+  show_clear_icon?: boolean;
+  max_length?: number;
+  service?: string;
+  service_data?: Record<string, unknown>;
+}
+
+export interface UI5AITextareaCardConfig extends BaseCardConfig {
+  type: "custom:ui5-ai-textarea-card";
+  placeholder?: string;
+  rows?: number;
+  max_length?: number;
+  growing?: boolean;
+  growing_max_rows?: number;
+  service?: string;
+  service_data?: Record<string, unknown>;
+}
+
 export type UI5CardConfig =
   | UI5ButtonCardConfig
   | UI5SwitchCardConfig
@@ -463,7 +484,9 @@ export type UI5CardConfig =
   | UI5ToastCardConfig
   | UI5DialogCardConfig
   | UI5PopoverCardConfig
-  | UI5MenuCardConfig;
+  | UI5MenuCardConfig
+  | UI5PromptCardConfig
+  | UI5AITextareaCardConfig;
 
 // ==================== Card Registration ====================
 
@@ -522,5 +545,7 @@ declare global {
     "ui5-dialog-card": LovelaceCard;
     "ui5-popover-card": LovelaceCard;
     "ui5-menu-card": LovelaceCard;
+    "ui5-prompt-card": LovelaceCard;
+    "ui5-ai-textarea-card": LovelaceCard;
   }
 }

@@ -37,6 +37,8 @@ import "./components/Toast/Toast";
 import "./components/Dialog/Dialog";
 import "./components/Popover/Popover";
 import "./components/Menu/Menu";
+import "./components/PromptInput/PromptInput";
+import "./components/AITextarea/AITextarea";
 
 // Card registration information
 const CARD_DEFINITIONS = [
@@ -204,6 +206,18 @@ const CARD_DEFINITIONS = [
     type: "custom:ui5-menu-card",
     name: "UI5 Menu Card",
     description: "A dropdown menu for actions and options",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-prompt-card",
+    name: "UI5 Prompt Card (Experimental)",
+    description: "An AI prompt input for natural language instructions",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-ai-textarea-card",
+    name: "UI5 AI Textarea Card (Experimental)",
+    description: "An AI-powered textarea with text generation capabilities",
     preview: true,
   },
 ];

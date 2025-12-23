@@ -94,8 +94,8 @@
 
 | #   | Komponente  | Card Name              | Import Check | Card | Tests | CI  |
 | --- | ----------- | ---------------------- | ------------ | ---- | ----- | --- |
-| 21  | PromptInput | `ui5-prompt-card`      | ⬜           | ⬜   | ⬜    | ⬜  |
-| 22  | AITextarea  | `ui5-ai-textarea-card` | ⬜           | ⬜   | ⬜    | ⬜  |
+| 21  | PromptInput | `ui5-prompt-card`      | ✅           | ✅   | ✅    | ✅  |
+| 22  | AITextarea  | `ui5-ai-textarea-card` | ✅           | ✅   | ✅    | ✅  |
 
 ---
 

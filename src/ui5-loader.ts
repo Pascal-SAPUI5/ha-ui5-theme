@@ -93,6 +93,11 @@ import "@ui5/webcomponents/dist/TabSeparator.js";
 // Bar component (header/footer bar)
 import "@ui5/webcomponents/dist/Bar.js";
 
+// ==================== AI Components (Experimental) ====================
+
+import "@ui5/webcomponents-ai/dist/PromptInput.js";
+import "@ui5/webcomponents-ai/dist/TextArea.js";
+
 // ==================== Theme Configuration ====================
 
 import { setTheme } from "@ui5/webcomponents-base/dist/config/Theme.js";

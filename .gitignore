@@ -46,6 +46,21 @@ config/
 *.db-shm
 *.db-wal
 
+# Local Docker dev environment
+ha-config/.storage/
+ha-config/.cloud/
+ha-config/deps/
+ha-config/tts/
+ha-config/blueprints/
+ha-config/custom_components/
+ha-config/.HA_VERSION
+ha-config/home-assistant.log*
+ha-config/home-assistant_v2.db*
+ha-config/secrets.yaml
+# Keep templates:
+# ha-config/configuration.yaml
+# ha-config/ui-lovelace.yaml
+
 # ===== Claude Code =====
 .claude/settings.local.json
 .claude/transcripts/

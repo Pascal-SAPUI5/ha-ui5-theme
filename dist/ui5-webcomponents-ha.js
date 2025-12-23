@@ -2005,13 +2005,13 @@ var IconMode;
 const IconMode$1 = IconMode;
 const defaultThemeBase = `:root {--sapThemeMetaData-Base-baseLib:{"Path": "Base.baseLib.sap_horizon.css_variables","PathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css","Extends": ["baseTheme"],"Tags": ["Fiori_3","LightColorScheme"],"FallbackThemeId": "sap_fiori_3","Engine":{"Name": "theming-engine","Version": "15.0.8"},"Version":{"Build": "11.29.3.20250417070835","Source": "11.29.3"}};--sapBrandColor: #0070f2;--sapHighlightColor: #0064d9;--sapBaseColor: #fff;--sapShellColor: #fff;--sapBackgroundColor: #f5f6f7;--sapFontFamily: "72", "72full", Arial, Helvetica, sans-serif;--sapFontSize: .875rem;--sapTextColor: #131e29;--sapLinkColor: #0064d9;--sapCompanyLogo: none;--sapFavicon: none;--sapBackgroundImage: none;--sapBackgroundImageOpacity: 1;--sapBackgroundImageRepeat: false;--sapSelectedColor: #0064d9;--sapHoverColor: #eaecee;--sapActiveColor: #dee2e5;--sapHighlightTextColor: #fff;--sapTitleColor: #131e29;--sapNegativeColor: #aa0808;--sapCriticalColor: #e76500;--sapPositiveColor: #256f3a;--sapInformativeColor: #0070f2;--sapNeutralColor: #788fa6;--sapNegativeElementColor: #f53232;--sapCriticalElementColor: #e76500;--sapPositiveElementColor: #30914c;--sapInformativeElementColor: #0070f2;--sapNeutralElementColor: #788fa6;--sapNegativeTextColor: #aa0808;--sapCriticalTextColor: #b44f00;--sapPositiveTextColor: #256f3a;--sapInformativeTextColor: #0064d9;--sapNeutralTextColor: #131e29;--sapErrorColor: #aa0808;--sapWarningColor: #e76500;--sapSuccessColor: #256f3a;--sapInformationColor: #0070f2;--sapErrorBackground: #ffeaf4;--sapWarningBackground: #fff8d6;--sapSuccessBackground: #f5fae5;--sapInformationBackground: #e1f4ff;--sapNeutralBackground: #eff1f2;--sapErrorBorderColor: #e90b0b;--sapWarningBorderColor: #dd6100;--sapSuccessBorderColor: #30914c;--sapInformationBorderColor: #0070f2;--sapNeutralBorderColor: #788fa6;--sapElement_LineHeight: 2.75rem;--sapElement_Height: 2.25rem;--sapElement_BorderWidth: .0625rem;--sapElement_BorderCornerRadius: .75rem;--sapElement_Compact_LineHeight: 2rem;--sapElement_Compact_Height: 1.625rem;--sapElement_Condensed_LineHeight: 1.5rem;--sapElement_Condensed_Height: 1.375rem;--sapContent_LineHeight: 1.5;--sapContent_IconHeight: 1rem;--sapContent_IconColor: #131e29;--sapContent_ContrastIconColor: #fff;--sapContent_NonInteractiveIconColor: #758ca4;--sapContent_MarkerIconColor: #5d36ff;--sapContent_MarkerTextColor: #046c7a;--sapContent_MeasureIndicatorColor: #556b81;--sapContent_Selected_MeasureIndicatorColor: #0064d9;--sapContent_Placeholderloading_Background: #ccc;--sapContent_Placeholderloading_Gradient: linear-gradient(to right, #ccc 0%, #ccc 20%, #999 50%, #ccc 80%, #ccc 100%);--sapContent_ImagePlaceholderBackground: #eaecee;--sapContent_ImagePlaceholderForegroundColor: #5b738b;--sapContent_RatedColor: #d27700;--sapContent_UnratedColor: #758ca4;--sapContent_BusyColor: #0064d9;--sapContent_FocusColor: #0032a5;--sapContent_FocusStyle: solid;--sapContent_FocusWidth: .125rem;--sapContent_ContrastFocusColor: #fff;--sapContent_ShadowColor: #223548;--sapContent_ContrastShadowColor: #fff;--sapContent_Shadow0: 0 0 .125rem 0 rgba(34,53,72,.2), 0 .125rem .25rem 0 rgba(34,53,72,.2);--sapContent_Shadow1: 0 0 0 .0625rem rgba(34,53,72,.48), 0 .125rem .5rem 0 rgba(34,53,72,.3);--sapContent_Shadow2: 0 0 0 .0625rem rgba(34,53,72,.48), 0 .625rem 1.875rem 0 rgba(34,53,72,.25);--sapContent_Shadow3: 0 0 0 .0625rem rgba(34,53,72,.48), 0 1.25rem 5rem 0 rgba(34,53,72,.25);--sapContent_TextShadow: 0 0 .125rem #fff;--sapContent_ContrastTextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapContent_HeaderShadow: 0 .125rem .125rem 0 rgba(34,53,72,.05), inset 0 -.0625rem 0 0 #d9d9d9;--sapContent_Interaction_Shadow: inset 0 0 0 .0625rem rgba(85,107,129,.25);--sapContent_Selected_Shadow: inset 0 0 0 .0625rem rgba(79,160,255,.5);--sapContent_Negative_Shadow: inset 0 0 0 .0625rem rgba(255,142,196,.45);--sapContent_Critical_Shadow: inset 0 0 0 .0625rem rgba(255,213,10,.4);--sapContent_Positive_Shadow: inset 0 0 0 .0625rem rgba(48,145,76,.18);--sapContent_Informative_Shadow: inset 0 0 0 .0625rem rgba(104,174,255,.5);--sapContent_Neutral_Shadow: inset 0 0 0 .0625rem rgba(120,143,166,.3);--sapContent_SearchHighlightColor: #dafdf5;--sapContent_HelpColor: #188918;--sapContent_LabelColor: #556b82;--sapContent_MonospaceFontFamily: "72Mono", "72Monofull", lucida console, monospace;--sapContent_MonospaceBoldFontFamily: "72Mono-Bold", "72Mono-Boldfull", lucida console, monospace;--sapContent_IconFontFamily: "SAP-icons";--sapContent_DisabledTextColor: rgba(19,30,41,.6);--sapContent_DisabledOpacity: .4;--sapContent_ContrastTextThreshold: .65;--sapContent_ContrastTextColor: #fff;--sapContent_ForegroundColor: #efefef;--sapContent_ForegroundBorderColor: #758ca4;--sapContent_ForegroundTextColor: #131e29;--sapContent_BadgeBackground: #aa0808;--sapContent_BadgeTextColor: #fff;--sapContent_BadgeBorderColor: #fff;--sapContent_DragAndDropActiveColor: #0064d9;--sapContent_Selected_TextColor: #0064d9;--sapContent_Selected_Background: #fff;--sapContent_Selected_Hover_Background: #e3f0ff;--sapContent_Selected_ForegroundColor: #0064d9;--sapContent_ForcedColorAdjust: none;--sapContent_Lite_Shadow: None;--sapContent_Illustrative_Color1: #9b015d;--sapContent_Illustrative_Color2: #56bdff;--sapContent_Illustrative_Color3: #ff7f4c;--sapContent_Illustrative_Color4: #00144a;--sapContent_Illustrative_Color5: #a9b4be;--sapContent_Illustrative_Color6: #d5dadd;--sapContent_Illustrative_Color7: #dbf1ff;--sapContent_Illustrative_Color8: #fff;--sapContent_Illustrative_Color9: #0899a7;--sapContent_Illustrative_Color10: #dbf1ff;--sapContent_Illustrative_Color11: #df1278;--sapContent_Illustrative_Color12: #00a800;--sapContent_Illustrative_Color13: #0070f2;--sapContent_Illustrative_Color14: #0040b0;--sapContent_Illustrative_Color15: #c35500;--sapContent_Illustrative_Color16: #8d2a00;--sapContent_Illustrative_Color17: #046c7c;--sapContent_Illustrative_Color18: #bce5ff;--sapContent_Illustrative_Color19: #a3dbff;--sapContent_Illustrative_Color20: #89d1ff;--sapContent_Illustrative_Color21: #1b90ff;--sapContent_Illustrative_Color22: #00144a;--sapContent_Illustrative_Color23: #d20a0a;--sapContent_Illustrative_Color24: #ffb2d2;--sapContent_Illustrative_Color25: #ffeaf4;--sapContent_Illustrative_Color26: #ffdf72;--sapContent_Illustrative_Color27: #fff8d6;--sapContent_Illustrative_Color28: #a93e00;--sapContent_Illustrative_Color29: #450b00;--sapContent_Illustrative_Color30: #340800;--sapContent_Illustrative_Color31: #ffab92;--sapContent_Space_S: 1rem;--sapContent_Space_M: 2rem;--sapContent_Space_L: 2rem;--sapContent_Space_XL: 3rem;--sapContent_Space_Tiny: .5rem;--sapContent_Space_Small: 1rem;--sapContent_Space_Medium: 2rem;--sapContent_Space_Large: 3rem;--sapContent_Margin_Tiny: 0 0 1rem;--sapContent_Margin_Small: 1rem;--sapContent_Margin_Medium: 1rem 2rem;--sapContent_Margin_Large: 1rem;--sapContent_Padding_S: 0rem;--sapContent_Padding_M: 2rem;--sapContent_Padding_L: 2rem;--sapContent_Padding_XL: 3rem;--sapContent_Gap: 1rem;--sapContent_Success_HeaderShadow: 0 .125rem .125rem 0 rgba(34,53,72,.05), inset 0 -.0625rem 0 0 #30914c;--sapContent_Warning_HeaderShadow: 0 .125rem .125rem 0 rgba(34,53,72,.05), inset 0 -.0625rem 0 0 #dd6100;--sapContent_Error_HeaderShadow: 0 .125rem .125rem 0 rgba(34,53,72,.05), inset 0 -.0625rem 0 0 #e90b0b;--sapContent_Information_HeaderShadow: 0 .125rem .125rem 0 rgba(34,53,72,.05), inset 0 -.0625rem 0 0 #0070f2;--sapFontLightFamily: "72-Light", "72-Lightfull", "72", "72full", Arial, Helvetica, sans-serif;--sapFontBoldFamily: "72-Bold", "72-Boldfull", "72", "72full", Arial, Helvetica, sans-serif;--sapFontSemiboldFamily: "72-Semibold", "72-Semiboldfull", "72", "72full", Arial, Helvetica, sans-serif;--sapFontSemiboldDuplexFamily: "72-SemiboldDuplex", "72-SemiboldDuplexfull", "72", "72full", Arial, Helvetica, sans-serif;--sapFontBlackFamily: "72Black", "72Blackfull","72", "72full", Arial, Helvetica, sans-serif;--sapFontHeaderFamily: "72-Bold", "72-Boldfull", "72", "72full", Arial, Helvetica, sans-serif;--sapFontSmallSize: .75rem;--sapFontLargeSize: 1rem;--sapFontHeader1Size: 3rem;--sapFontHeader2Size: 2rem;--sapFontHeader3Size: 1.5rem;--sapFontHeader4Size: 1.25rem;--sapFontHeader5Size: 1rem;--sapFontHeader6Size: .875rem;--sapLink_TextDecoration: none;--sapLink_Hover_Color: #0064d9;--sapLink_Hover_TextDecoration: underline;--sapLink_Active_Color: #0064d9;--sapLink_Active_TextDecoration: none;--sapLink_Visited_Color: #0064d9;--sapLink_InvertedColor: #a6cfff;--sapLink_SubtleColor: #131e29;--sapShell_Background: #eff1f2;--sapShell_BackgroundImage: linear-gradient(to bottom, #eff1f2, #eff1f2);--sapShell_BackgroundImageOpacity: 1;--sapShell_BackgroundImageRepeat: false;--sapShell_BorderColor: #fff;--sapShell_TextColor: #131e29;--sapShell_InteractiveBackground: #eff1f2;--sapShell_InteractiveTextColor: #131e29;--sapShell_InteractiveBorderColor: #556b81;--sapShell_GroupTitleTextColor: #131e29;--sapShell_GroupTitleTextShadow: 0 0 .125rem #fff;--sapShell_Hover_Background: #fff;--sapShell_Active_Background: #fff;--sapShell_Active_TextColor: #0070f2;--sapShell_Selected_Background: #fff;--sapShell_Selected_TextColor: #0070f2;--sapShell_Selected_Hover_Background: #fff;--sapShell_Favicon: none;--sapShell_Navigation_Background: #fff;--sapShell_Navigation_Hover_Background: #fff;--sapShell_Navigation_SelectedColor: #0064d9;--sapShell_Navigation_Selected_TextColor: #0064d9;--sapShell_Navigation_TextColor: #131e29;--sapShell_Navigation_Active_TextColor: #0064d9;--sapShell_Navigation_Active_Background: #fff;--sapShell_Shadow: 0 .125rem .125rem 0 rgba(34,53,72,.15), inset 0 -.0625rem 0 0 rgba(34,53,72,.2);--sapShell_NegativeColor: #aa0808;--sapShell_CriticalColor: #b44f00;--sapShell_PositiveColor: #256f3a;--sapShell_InformativeColor: #0064d9;--sapShell_NeutralColor: #131e29;--sapShell_Assistant_ForegroundColor: #5d36ff;--sapShell_SubBrand_TextColor: #003e87;--sapShell_Category_1_Background: #0057d2;--sapShell_Category_1_BorderColor: #0057d2;--sapShell_Category_1_TextColor: #fff;--sapShell_Category_1_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Category_2_Background: #df1278;--sapShell_Category_2_BorderColor: #df1278;--sapShell_Category_2_TextColor: #fff;--sapShell_Category_2_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Category_3_Background: #e76500;--sapShell_Category_3_BorderColor: #e76500;--sapShell_Category_3_TextColor: #fff;--sapShell_Category_3_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Category_4_Background: #7800a4;--sapShell_Category_4_BorderColor: #7800a4;--sapShell_Category_4_TextColor: #fff;--sapShell_Category_4_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Category_5_Background: #aa2608;--sapShell_Category_5_BorderColor: #aa2608;--sapShell_Category_5_TextColor: #fff;--sapShell_Category_5_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Category_6_Background: #07838f;--sapShell_Category_6_BorderColor: #07838f;--sapShell_Category_6_TextColor: #fff;--sapShell_Category_6_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Category_7_Background: #f31ded;--sapShell_Category_7_BorderColor: #f31ded;--sapShell_Category_7_TextColor: #fff;--sapShell_Category_7_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Category_8_Background: #188918;--sapShell_Category_8_BorderColor: #188918;--sapShell_Category_8_TextColor: #fff;--sapShell_Category_8_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Category_9_Background: #002a86;--sapShell_Category_9_BorderColor: #002a86;--sapShell_Category_9_TextColor: #fff;--sapShell_Category_9_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Category_10_Background: #5b738b;--sapShell_Category_10_BorderColor: #5b738b;--sapShell_Category_10_TextColor: #fff;--sapShell_Category_10_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Category_11_Background: #d20a0a;--sapShell_Category_11_BorderColor: #d20a0a;--sapShell_Category_11_TextColor: #fff;--sapShell_Category_11_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Category_12_Background: #7858ff;--sapShell_Category_12_BorderColor: #7858ff;--sapShell_Category_12_TextColor: #fff;--sapShell_Category_12_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Category_13_Background: #a00875;--sapShell_Category_13_BorderColor: #a00875;--sapShell_Category_13_TextColor: #fff;--sapShell_Category_13_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Category_14_Background: #14565b;--sapShell_Category_14_BorderColor: #14565b;--sapShell_Category_14_TextColor: #fff;--sapShell_Category_14_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Category_15_Background: #223548;--sapShell_Category_15_BorderColor: #223548;--sapShell_Category_15_TextColor: #fff;--sapShell_Category_15_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Category_16_Background: #1e592f;--sapShell_Category_16_BorderColor: #1e592f;--sapShell_Category_16_TextColor: #fff;--sapShell_Category_16_TextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapShell_Space_S: .5rem;--sapShell_Space_M: 2rem;--sapShell_Space_L: 2rem;--sapShell_Space_XL: 3rem;--sapShell_Gap_S: .5rem;--sapShell_Gap_M: 1rem;--sapShell_Gap_L: 1rem;--sapShell_Gap_XL: 1rem;--sapShell_GroupGap_S: 2rem;--sapShell_GroupGap_M: 3rem;--sapShell_GroupGap_L: 3rem;--sapShell_GroupGap_XL: 3rem;--sapAssistant_Color1: #5d36ff;--sapAssistant_Color2: #a100c2;--sapAssistant_BackgroundGradient: linear-gradient(#5d36ff, #a100c2);--sapAssistant_Background: #5d36ff;--sapAssistant_BorderColor: #5d36ff;--sapAssistant_TextColor: #fff;--sapAssistant_Hover_Background: #2800cf;--sapAssistant_Hover_BorderColor: #2800cf;--sapAssistant_Hover_TextColor: #fff;--sapAssistant_Active_Background: #fff;--sapAssistant_Active_BorderColor: #5d36ff;--sapAssistant_Active_TextColor: #5d36ff;--sapAssistant_Question_Background: #eae5ff;--sapAssistant_Question_BorderColor: #eae5ff;--sapAssistant_Question_TextColor: #131e29;--sapAssistant_Answer_Background: #eff1f2;--sapAssistant_Answer_BorderColor: #eff1f2;--sapAssistant_Answer_TextColor: #131e29;--sapAvatar_1_Background: #fff3b8;--sapAvatar_1_BorderColor: #fff3b8;--sapAvatar_1_TextColor: #a45d00;--sapAvatar_1_Hover_Background: #fff3b8;--sapAvatar_2_Background: #ffd0e7;--sapAvatar_2_BorderColor: #ffd0e7;--sapAvatar_2_TextColor: #aa0808;--sapAvatar_2_Hover_Background: #ffd0e7;--sapAvatar_3_Background: #ffdbe7;--sapAvatar_3_BorderColor: #ffdbe7;--sapAvatar_3_TextColor: #ba066c;--sapAvatar_3_Hover_Background: #ffdbe7;--sapAvatar_4_Background: #ffdcf3;--sapAvatar_4_BorderColor: #ffdcf3;--sapAvatar_4_TextColor: #a100c2;--sapAvatar_4_Hover_Background: #ffdcf3;--sapAvatar_5_Background: #ded3ff;--sapAvatar_5_BorderColor: #ded3ff;--sapAvatar_5_TextColor: #552cff;--sapAvatar_5_Hover_Background: #ded3ff;--sapAvatar_6_Background: #d1efff;--sapAvatar_6_BorderColor: #d1efff;--sapAvatar_6_TextColor: #0057d2;--sapAvatar_6_Hover_Background: #d1efff;--sapAvatar_7_Background: #c2fcee;--sapAvatar_7_BorderColor: #c2fcee;--sapAvatar_7_TextColor: #046c7a;--sapAvatar_7_Hover_Background: #c2fcee;--sapAvatar_8_Background: #ebf5cb;--sapAvatar_8_BorderColor: #ebf5cb;--sapAvatar_8_TextColor: #256f3a;--sapAvatar_8_Hover_Background: #ebf5cb;--sapAvatar_9_Background: #ddccf0;--sapAvatar_9_BorderColor: #ddccf0;--sapAvatar_9_TextColor: #6c32a9;--sapAvatar_9_Hover_Background: #ddccf0;--sapAvatar_10_Background: #eaecee;--sapAvatar_10_BorderColor: #eaecee;--sapAvatar_10_TextColor: #556b82;--sapAvatar_10_Hover_Background: #eaecee;--sapAvatar_Lite_BorderColor: transparent;--sapAvatar_Lite_Background: transparent;--sapAvatar_Hover_BorderColor: rgba(85,107,129,.25);--sapButton_Background: #fff;--sapButton_BorderColor: #bcc3ca;--sapButton_BorderWidth: .0625rem;--sapButton_BorderCornerRadius: .5rem;--sapButton_TextColor: #0064d9;--sapButton_FontFamily: "72-SemiboldDuplex", "72-SemiboldDuplexfull", "72", "72full", Arial, Helvetica, sans-serif;--sapButton_Hover_Background: #eaecee;--sapButton_Hover_BorderColor: #bcc3ca;--sapButton_Hover_TextColor: #0064d9;--sapButton_IconColor: #0064d9;--sapButton_Active_Background: #fff;--sapButton_Active_BorderColor: #0064d9;--sapButton_Active_TextColor: #0064d9;--sapButton_Emphasized_Background: #0070f2;--sapButton_Emphasized_BorderColor: #0070f2;--sapButton_Emphasized_BorderWidth: .0625rem;--sapButton_Emphasized_TextColor: #fff;--sapButton_Emphasized_FontFamily: "72-Bold", "72-Boldfull", "72", "72full", Arial, Helvetica, sans-serif;--sapButton_Emphasized_Hover_Background: #0064d9;--sapButton_Emphasized_Hover_BorderColor: #0064d9;--sapButton_Emphasized_Hover_TextColor: #fff;--sapButton_Emphasized_Active_Background: #fff;--sapButton_Emphasized_Active_BorderColor: #0064d9;--sapButton_Emphasized_Active_TextColor: #0064d9;--sapButton_Emphasized_TextShadow: transparent;--sapButton_Emphasized_FontWeight: bold;--sapButton_Reject_Background: #ffd6e9;--sapButton_Reject_BorderColor: #ffc2de;--sapButton_Reject_TextColor: #aa0808;--sapButton_Reject_Hover_Background: #ffbddb;--sapButton_Reject_Hover_BorderColor: #ffbddb;--sapButton_Reject_Hover_TextColor: #aa0808;--sapButton_Reject_Active_Background: #fff;--sapButton_Reject_Active_BorderColor: #e90b0b;--sapButton_Reject_Active_TextColor: #aa0808;--sapButton_Reject_Selected_Background: #fff;--sapButton_Reject_Selected_BorderColor: #e90b0b;--sapButton_Reject_Selected_TextColor: #aa0808;--sapButton_Reject_Selected_Hover_Background: #ffbddb;--sapButton_Reject_Selected_Hover_BorderColor: #e90b0b;--sapButton_Accept_Background: #ebf5cb;--sapButton_Accept_BorderColor: #dbeda0;--sapButton_Accept_TextColor: #256f3a;--sapButton_Accept_Hover_Background: #e3f1b6;--sapButton_Accept_Hover_BorderColor: #e3f1b6;--sapButton_Accept_Hover_TextColor: #256f3a;--sapButton_Accept_Active_Background: #fff;--sapButton_Accept_Active_BorderColor: #30914c;--sapButton_Accept_Active_TextColor: #256f3a;--sapButton_Accept_Selected_Background: #fff;--sapButton_Accept_Selected_BorderColor: #30914c;--sapButton_Accept_Selected_TextColor: #256f3a;--sapButton_Accept_Selected_Hover_Background: #e3f1b6;--sapButton_Accept_Selected_Hover_BorderColor: #30914c;--sapButton_Lite_Background: transparent;--sapButton_Lite_BorderColor: transparent;--sapButton_Lite_TextColor: #0064d9;--sapButton_Lite_Hover_Background: #eaecee;--sapButton_Lite_Hover_BorderColor: #bcc3ca;--sapButton_Lite_Hover_TextColor: #0064d9;--sapButton_Lite_Active_Background: #fff;--sapButton_Lite_Active_BorderColor: #0064d9;--sapButton_Selected_Background: #edf6ff;--sapButton_Selected_BorderColor: #0064d9;--sapButton_Selected_TextColor: #0064d9;--sapButton_Selected_Hover_Background: #d9ecff;--sapButton_Selected_Hover_BorderColor: #0064d9;--sapButton_Attention_Background: #fff3b7;--sapButton_Attention_BorderColor: #ffeb84;--sapButton_Attention_TextColor: #b44f00;--sapButton_Attention_Hover_Background: #ffef9e;--sapButton_Attention_Hover_BorderColor: #ffef9e;--sapButton_Attention_Hover_TextColor: #b44f00;--sapButton_Attention_Active_Background: #fff;--sapButton_Attention_Active_BorderColor: #dd6100;--sapButton_Attention_Active_TextColor: #b44f00;--sapButton_Attention_Selected_Background: #fff;--sapButton_Attention_Selected_BorderColor: #dd6100;--sapButton_Attention_Selected_TextColor: #b44f00;--sapButton_Attention_Selected_Hover_Background: #ffef9e;--sapButton_Attention_Selected_Hover_BorderColor: #dd6100;--sapButton_Negative_Background: #f53232;--sapButton_Negative_BorderColor: #f53232;--sapButton_Negative_TextColor: #fff;--sapButton_Negative_Hover_Background: #e90b0b;--sapButton_Negative_Hover_BorderColor: #e90b0b;--sapButton_Negative_Hover_TextColor: #fff;--sapButton_Negative_Active_Background: #fff;--sapButton_Negative_Active_BorderColor: #f53232;--sapButton_Negative_Active_TextColor: #aa0808;--sapButton_Critical_Background: #e76500;--sapButton_Critical_BorderColor: #e76500;--sapButton_Critical_TextColor: #fff;--sapButton_Critical_Hover_Background: #dd6100;--sapButton_Critical_Hover_BorderColor: #dd6100;--sapButton_Critical_Hover_TextColor: #fff;--sapButton_Critical_Active_Background: #fff;--sapButton_Critical_Active_BorderColor: #dd6100;--sapButton_Critical_Active_TextColor: #b44f00;--sapButton_Success_Background: #30914c;--sapButton_Success_BorderColor: #30914c;--sapButton_Success_TextColor: #fff;--sapButton_Success_Hover_Background: #2c8646;--sapButton_Success_Hover_BorderColor: #2c8646;--sapButton_Success_Hover_TextColor: #fff;--sapButton_Success_Active_Background: #fff;--sapButton_Success_Active_BorderColor: #30914c;--sapButton_Success_Active_TextColor: #256f3a;--sapButton_Information_Background: #e8f3ff;--sapButton_Information_BorderColor: #b5d8ff;--sapButton_Information_TextColor: #0064d9;--sapButton_Information_Hover_Background: #d4e8ff;--sapButton_Information_Hover_BorderColor: #b5d8ff;--sapButton_Information_Hover_TextColor: #0064d9;--sapButton_Information_Active_Background: #fff;--sapButton_Information_Active_BorderColor: #0064d9;--sapButton_Information_Active_TextColor: #0064d9;--sapButton_Neutral_Background: #e8f3ff;--sapButton_Neutral_BorderColor: #b5d8ff;--sapButton_Neutral_TextColor: #0064d9;--sapButton_Neutral_Hover_Background: #d4e8ff;--sapButton_Neutral_Hover_BorderColor: #b5d8ff;--sapButton_Neutral_Hover_TextColor: #0064d9;--sapButton_Neutral_Active_Background: #fff;--sapButton_Neutral_Active_BorderColor: #0064d9;--sapButton_Neutral_Active_TextColor: #0064d9;--sapButton_Track_Background: #788fa6;--sapButton_Track_BorderColor: #788fa6;--sapButton_Track_TextColor: #fff;--sapButton_Track_Hover_Background: #637d97;--sapButton_Track_Hover_BorderColor: #637d97;--sapButton_Track_Selected_Background: #0064d9;--sapButton_Track_Selected_BorderColor: #0064d9;--sapButton_Track_Selected_TextColor: #fff;--sapButton_Track_Selected_Hover_Background: #0058c0;--sapButton_Track_Selected_Hover_BorderColor: #0058c0;--sapButton_Handle_Background: #fff;--sapButton_Handle_BorderColor: #fff;--sapButton_Handle_TextColor: #131e29;--sapButton_Handle_Hover_Background: #fff;--sapButton_Handle_Hover_BorderColor: rgba(255,255,255,.5);--sapButton_Handle_Selected_Background: #edf6ff;--sapButton_Handle_Selected_BorderColor: #edf6ff;--sapButton_Handle_Selected_TextColor: #0064d9;--sapButton_Handle_Selected_Hover_Background: #edf6ff;--sapButton_Handle_Selected_Hover_BorderColor: rgba(237,246,255,.5);--sapButton_Track_Negative_Background: #f53232;--sapButton_Track_Negative_BorderColor: #f53232;--sapButton_Track_Negative_TextColor: #fff;--sapButton_Track_Negative_Hover_Background: #e90b0b;--sapButton_Track_Negative_Hover_BorderColor: #e90b0b;--sapButton_Handle_Negative_Background: #fff;--sapButton_Handle_Negative_BorderColor: #fff;--sapButton_Handle_Negative_TextColor: #aa0808;--sapButton_Handle_Negative_Hover_Background: #fff;--sapButton_Handle_Negative_Hover_BorderColor: rgba(255,255,255,.5);--sapButton_Track_Positive_Background: #30914c;--sapButton_Track_Positive_BorderColor: #30914c;--sapButton_Track_Positive_TextColor: #fff;--sapButton_Track_Positive_Hover_Background: #2c8646;--sapButton_Track_Positive_Hover_BorderColor: #2c8646;--sapButton_Handle_Positive_Background: #fff;--sapButton_Handle_Positive_BorderColor: #fff;--sapButton_Handle_Positive_TextColor: #256f3a;--sapButton_Handle_Positive_Hover_Background: #fff;--sapButton_Handle_Positive_Hover_BorderColor: rgba(255,255,255,.5);--sapButton_TokenBackground: #fff;--sapButton_TokenBorderColor: #bcc3ca;--sapButton_TokenBorderCornerRadius: .375rem;--sapButton_Selected_TokenBorderWidth: .125rem;--sapButton_ReadOnly_TokenBackground: #fff;--sapButton_Segment_BorderCornerRadius: .5rem;--sapField_Background: #fff;--sapField_BackgroundStyle: 0 100% / 100% .0625rem no-repeat linear-gradient(0deg, #556b81, #556b81) border-box;--sapField_TextColor: #131e29;--sapField_PlaceholderTextColor: #556b82;--sapField_BorderColor: #556b81;--sapField_HelpBackground: #fff;--sapField_BorderWidth: .0625rem;--sapField_BorderStyle: none;--sapField_BorderCornerRadius: .25rem;--sapField_Shadow: inset 0 0 0 .0625rem rgba(85,107,129,.25);--sapField_Hover_Background: #fff;--sapField_Hover_BackgroundStyle: 0 100% / 100% .0625rem no-repeat linear-gradient(0deg, #0064d9, #0064d9) border-box;--sapField_Hover_BorderColor: #0064d9;--sapField_Hover_HelpBackground: #fff;--sapField_Hover_Shadow: inset 0 0 0 .0625rem rgba(79,160,255,.5);--sapField_Hover_InvalidShadow: inset 0 0 0 .0625rem rgba(255,142,196,.45);--sapField_Hover_WarningShadow: inset 0 0 0 .0625rem rgba(255,213,10,.4);--sapField_Hover_SuccessShadow: inset 0 0 0 .0625rem rgba(48,145,76,.18);--sapField_Hover_InformationShadow: inset 0 0 0 .0625rem rgba(104,174,255,.5);--sapField_Active_BorderColor: #0064d9;--sapField_Focus_Background: #fff;--sapField_Focus_BorderColor: #0032a5;--sapField_Focus_HelpBackground: #fff;--sapField_ReadOnly_Background: #eaecee;--sapField_ReadOnly_BackgroundStyle: 0 100% / .375rem .0625rem repeat-x linear-gradient(90deg, #556b81 0, #556b81 .25rem, transparent .25rem) border-box;--sapField_ReadOnly_BorderColor: #556b81;--sapField_ReadOnly_BorderStyle: none;--sapField_ReadOnly_HelpBackground: #eaecee;--sapField_RequiredColor: #ba066c;--sapField_InvalidColor: #e90b0b;--sapField_InvalidBackground: #ffeaf4;--sapField_InvalidBackgroundStyle: 0 100% / 100% .125rem no-repeat linear-gradient(0deg, #e90b0b, #e90b0b) border-box;--sapField_InvalidBorderWidth: .125rem;--sapField_InvalidBorderStyle: none;--sapField_InvalidShadow: inset 0 0 0 .0625rem rgba(255,142,196,.45);--sapField_WarningColor: #dd6100;--sapField_WarningBackground: #fff8d6;--sapField_WarningBackgroundStyle: 0 100% / 100% .125rem no-repeat linear-gradient(0deg, #dd6100, #dd6100) border-box;--sapField_WarningBorderWidth: .125rem;--sapField_WarningBorderStyle: none;--sapField_WarningShadow: inset 0 0 0 .0625rem rgba(255,213,10,.4);--sapField_SuccessColor: #30914c;--sapField_SuccessBackground: #f5fae5;--sapField_SuccessBackgroundStyle: 0 100% / 100% .0625rem no-repeat linear-gradient(0deg, #30914c, #30914c) border-box;--sapField_SuccessBorderWidth: .0625rem;--sapField_SuccessBorderStyle: none;--sapField_SuccessShadow: inset 0 0 0 .0625rem rgba(48,145,76,.18);--sapField_InformationColor: #0070f2;--sapField_InformationBackground: #e1f4ff;--sapField_InformationBackgroundStyle: 0 100% / 100% .125rem no-repeat linear-gradient(0deg, #0070f2, #0070f2) border-box;--sapField_InformationBorderWidth: .125rem;--sapField_InformationBorderStyle: none;--sapField_InformationShadow: inset 0 0 0 .0625rem rgba(104,174,255,.5);--sapField_Selector_Hover_Background: #e3f0ff;--sapField_Selector_Hover_InvalidBackground: #fff;--sapField_Selector_Hover_WarningBackground: #fff;--sapField_Selector_Hover_SuccessBackground: #fff;--sapField_Selector_Hover_InformationBackground: #fff;--sapField_Picker_BorderColor: #556b81;--sapField_Picker_BorderWidth: .0625rem;--sapField_Selector_BorderStyle: solid;--sapField_Selector_ReadOnly_BorderStyle: dashed;--sapField_Selector_InvalidBorderStyle: solid;--sapField_Selector_WarningBorderStyle: solid;--sapField_Selector_SuccessBorderStyle: solid;--sapField_Selector_InformationBorderStyle: solid;--sapGroup_TitleBorderWidth: .0625rem;--sapGroup_TitleBackground: #fff;--sapGroup_TitleBorderColor: #a8b2bd;--sapGroup_TitleTextColor: #131e29;--sapGroup_Title_FontSize: 1rem;--sapGroup_ContentBackground: #fff;--sapGroup_ContentBorderColor: #d9d9d9;--sapGroup_BorderWidth: .0625rem;--sapGroup_BorderCornerRadius: .75rem;--sapGroup_FooterBackground: transparent;--sapToolbar_Background: #fff;--sapToolbar_SeparatorColor: #d9d9d9;--sapList_HeaderBackground: #fff;--sapList_HeaderBorderColor: #a8b2bd;--sapList_HeaderTextColor: #131e29;--sapList_BorderColor: #e5e5e5;--sapList_BorderWidth: .0625rem;--sapList_TextColor: #131e29;--sapList_Active_TextColor: #131e29;--sapList_Active_Background: #dee2e5;--sapList_SelectionBackgroundColor: #ebf8ff;--sapList_SelectionBorderColor: #0064d9;--sapList_Hover_SelectionBackground: #dcf3ff;--sapList_Background: #fff;--sapList_Hover_Background: #eaecee;--sapList_AlternatingBackground: #f5f6f7;--sapList_GroupHeaderBackground: #fff;--sapList_GroupHeaderBorderColor: #a8b2bd;--sapList_GroupHeaderTextColor: #131e29;--sapList_TableGroupHeaderBackground: #eff1f2;--sapList_TableGroupHeaderBorderColor: #a8b2bd;--sapList_TableGroupHeaderTextColor: #131e29;--sapList_FooterBackground: #fff;--sapList_FooterTextColor: #131e29;--sapList_TableFooterBorder: #a8b2bd;--sapList_TableFixedBorderColor: #8c8c8c;--sapList_TableFixedColumnBorderWidth: .0625rem;--sapList_TableFixedRowBorderWidth: .125rem;--sapMessage_BorderWidth: .0625rem;--sapMessage_ErrorBorderColor: #ff8ec4;--sapMessage_WarningBorderColor: #ffe770;--sapMessage_SuccessBorderColor: #cee67e;--sapMessage_InformationBorderColor: #7bcfff;--sapMessage_Button_Hover_Background: rgba(234,236,238,.2);--sapPopover_BorderCornerRadius: .5rem;--sapProgress_Background: #d5dadd;--sapProgress_BorderColor: #d5dadd;--sapProgress_TextColor: #131e29;--sapProgress_FontSize: .875rem;--sapProgress_NegativeBackground: #ffdbec;--sapProgress_NegativeBorderColor: #ffdbec;--sapProgress_NegativeTextColor: #131e29;--sapProgress_CriticalBackground: #fff4bd;--sapProgress_CriticalBorderColor: #fff4bd;--sapProgress_CriticalTextColor: #131e29;--sapProgress_PositiveBackground: #e5f2ba;--sapProgress_PositiveBorderColor: #e5f2ba;--sapProgress_PositiveTextColor: #131e29;--sapProgress_InformationBackground: #cdedff;--sapProgress_InformationBorderColor: #cdedff;--sapProgress_InformationTextColor: #131e29;--sapProgress_Value_Background: #617b94;--sapProgress_Value_BorderColor: #617b94;--sapProgress_Value_TextColor: #788fa6;--sapProgress_Value_NegativeBackground: #f53232;--sapProgress_Value_NegativeBorderColor: #f53232;--sapProgress_Value_NegativeTextColor: #f53232;--sapProgress_Value_CriticalBackground: #e76500;--sapProgress_Value_CriticalBorderColor: #e76500;--sapProgress_Value_CriticalTextColor: #e76500;--sapProgress_Value_PositiveBackground: #30914c;--sapProgress_Value_PositiveBorderColor: #30914c;--sapProgress_Value_PositiveTextColor: #30914c;--sapProgress_Value_InformationBackground: #0070f2;--sapProgress_Value_InformationBorderColor: #0070f2;--sapProgress_Value_InformationTextColor: #0070f2;--sapScrollBar_FaceColor: #7b91a8;--sapScrollBar_TrackColor: #fff;--sapScrollBar_BorderColor: #7b91a8;--sapScrollBar_SymbolColor: #0064d9;--sapScrollBar_Dimension: .75rem;--sapScrollBar_Hover_FaceColor: #5b728b;--sapSlider_Background: #d5dadd;--sapSlider_BorderColor: #d5dadd;--sapSlider_Selected_Background: #0064d9;--sapSlider_Selected_BorderColor: #0064d9;--sapSlider_Selected_Dimension: 111px;--sapSlider_HandleBackground: #fff;--sapSlider_HandleBorderColor: #b0d5ff;--sapSlider_RangeHandleBackground: #fff;--sapSlider_Hover_HandleBackground: #d9ecff;--sapSlider_Hover_HandleBorderColor: #b0d5ff;--sapSlider_Hover_RangeHandleBackground: #d9ecff;--sapSlider_Active_HandleBackground: #fff;--sapSlider_Active_HandleBorderColor: #0064d9;--sapSlider_Active_RangeHandleBackground: transparent;--sapPageHeader_Background: #fff;--sapPageHeader_BorderColor: #d9d9d9;--sapPageHeader_TextColor: #131e29;--sapPageFooter_Background: #fff;--sapPageFooter_BorderColor: #d9d9d9;--sapPageFooter_TextColor: #131e29;--sapInfobar_Background: #c2fcee;--sapInfobar_Hover_Background: #fff;--sapInfobar_Active_Background: #fff;--sapInfobar_NonInteractive_Background: #f5f6f7;--sapInfobar_TextColor: #046c7a;--sapObjectHeader_Background: #fff;--sapObjectHeader_Hover_Background: #eaecee;--sapObjectHeader_BorderColor: #d9d9d9;--sapObjectHeader_Title_TextColor: #131e29;--sapObjectHeader_Title_FontSize: 1.5rem;--sapObjectHeader_Title_SnappedFontSize: 1.25rem;--sapObjectHeader_Title_FontFamily: "72Black", "72Blackfull","72", "72full", Arial, Helvetica, sans-serif;--sapObjectHeader_Subtitle_TextColor: #556b82;--sapBlockLayer_Background: #000;--sapBlockLayer_Opacity: .2;--sapTab_TextColor: #131e29;--sapTab_ForegroundColor: #0064d9;--sapTab_IconColor: #0064d9;--sapTab_Background: #fff;--sapTab_Selected_TextColor: #0064d9;--sapTab_Selected_IconColor: #fff;--sapTab_Selected_Background: #0064d9;--sapTab_Selected_Indicator_Dimension: .1875rem;--sapTab_Positive_TextColor: #256f3a;--sapTab_Positive_ForegroundColor: #30914c;--sapTab_Positive_IconColor: #30914c;--sapTab_Positive_Selected_TextColor: #256f3a;--sapTab_Positive_Selected_IconColor: #fff;--sapTab_Positive_Selected_Background: #30914c;--sapTab_Negative_TextColor: #aa0808;--sapTab_Negative_ForegroundColor: #f53232;--sapTab_Negative_IconColor: #f53232;--sapTab_Negative_Selected_TextColor: #aa0808;--sapTab_Negative_Selected_IconColor: #fff;--sapTab_Negative_Selected_Background: #f53232;--sapTab_Critical_TextColor: #b44f00;--sapTab_Critical_ForegroundColor: #e76500;--sapTab_Critical_IconColor: #e76500;--sapTab_Critical_Selected_TextColor: #b44f00;--sapTab_Critical_Selected_IconColor: #fff;--sapTab_Critical_Selected_Background: #e76500;--sapTab_Neutral_TextColor: #131e29;--sapTab_Neutral_ForegroundColor: #788fa6;--sapTab_Neutral_IconColor: #788fa6;--sapTab_Neutral_Selected_TextColor: #131e29;--sapTab_Neutral_Selected_IconColor: #fff;--sapTab_Neutral_Selected_Background: #788fa6;--sapTile_Background: #fff;--sapTile_Hover_Background: #eaecee;--sapTile_Active_Background: #dee2e5;--sapTile_BorderColor: transparent;--sapTile_BorderCornerRadius: 1rem;--sapTile_TitleTextColor: #131e29;--sapTile_TextColor: #556b82;--sapTile_IconColor: #556b82;--sapTile_SeparatorColor: #ccc;--sapTile_Interactive_BorderColor: #b3b3b3;--sapTile_OverlayBackground: #fff;--sapTile_OverlayForegroundColor: #131e29;--sapTile_Hover_ContentBackground: #fff;--sapTile_Active_ContentBackground: #fff;--sapAccentColor1: #d27700;--sapAccentColor2: #aa0808;--sapAccentColor3: #ba066c;--sapAccentColor4: #a100c2;--sapAccentColor5: #5d36ff;--sapAccentColor6: #0057d2;--sapAccentColor7: #046c7a;--sapAccentColor8: #256f3a;--sapAccentColor9: #6c32a9;--sapAccentColor10: #5b738b;--sapAccentBackgroundColor1: #fff3b8;--sapAccentBackgroundColor2: #ffd0e7;--sapAccentBackgroundColor3: #ffdbe7;--sapAccentBackgroundColor4: #ffdcf3;--sapAccentBackgroundColor5: #ded3ff;--sapAccentBackgroundColor6: #d1efff;--sapAccentBackgroundColor7: #c2fcee;--sapAccentBackgroundColor8: #ebf5cb;--sapAccentBackgroundColor9: #ddccf0;--sapAccentBackgroundColor10: #eaecee;--sapIndicationColor_1: #840606;--sapIndicationColor_1_Background: #840606;--sapIndicationColor_1_BorderColor: #840606;--sapIndicationColor_1_TextColor: #fff;--sapIndicationColor_1_Hover_Background: #6c0505;--sapIndicationColor_1_Active_Background: #fff;--sapIndicationColor_1_Active_BorderColor: #fb9d9d;--sapIndicationColor_1_Active_TextColor: #840606;--sapIndicationColor_1_Selected_Background: #fff;--sapIndicationColor_1_Selected_BorderColor: #fb9d9d;--sapIndicationColor_1_Selected_TextColor: #840606;--sapIndicationColor_1b: #fb9d9d;--sapIndicationColor_1b_TextColor: #830707;--sapIndicationColor_1b_Background: #fb9d9d;--sapIndicationColor_1b_BorderColor: #fb9d9d;--sapIndicationColor_1b_Hover_Background: #fa8585;--sapIndicationColor_2: #aa0808;--sapIndicationColor_2_Background: #aa0808;--sapIndicationColor_2_BorderColor: #aa0808;--sapIndicationColor_2_TextColor: #fff;--sapIndicationColor_2_Hover_Background: #920707;--sapIndicationColor_2_Active_Background: #fff;--sapIndicationColor_2_Active_BorderColor: #fcc4c4;--sapIndicationColor_2_Active_TextColor: #aa0808;--sapIndicationColor_2_Selected_Background: #fff;--sapIndicationColor_2_Selected_BorderColor: #fcc4c4;--sapIndicationColor_2_Selected_TextColor: #aa0808;--sapIndicationColor_2b: #fcc4c4;--sapIndicationColor_2b_TextColor: #a90909;--sapIndicationColor_2b_Background: #fcc4c4;--sapIndicationColor_2b_BorderColor: #fcc4c4;--sapIndicationColor_2b_Hover_Background: #fbacac;--sapIndicationColor_3: #b95100;--sapIndicationColor_3_Background: #e76500;--sapIndicationColor_3_BorderColor: #e76500;--sapIndicationColor_3_TextColor: #fff;--sapIndicationColor_3_Hover_Background: #d85e00;--sapIndicationColor_3_Active_Background: #fff;--sapIndicationColor_3_Active_BorderColor: #ffdfc3;--sapIndicationColor_3_Active_TextColor: #b95100;--sapIndicationColor_3_Selected_Background: #fff;--sapIndicationColor_3_Selected_BorderColor: #ffdfc3;--sapIndicationColor_3_Selected_TextColor: #b95100;--sapIndicationColor_3b: #ffdfc3;--sapIndicationColor_3b_TextColor: #a44d00;--sapIndicationColor_3b_Background: #ffdfc3;--sapIndicationColor_3b_BorderColor: #ffdfc3;--sapIndicationColor_3b_Hover_Background: #ffd1a9;--sapIndicationColor_4: #256f3a;--sapIndicationColor_4_Background: #256f3a;--sapIndicationColor_4_BorderColor: #256f3a;--sapIndicationColor_4_TextColor: #fff;--sapIndicationColor_4_Hover_Background: #1f5c30;--sapIndicationColor_4_Active_Background: #fff;--sapIndicationColor_4_Active_BorderColor: #bae8bc;--sapIndicationColor_4_Active_TextColor: #256f3a;--sapIndicationColor_4_Selected_Background: #fff;--sapIndicationColor_4_Selected_BorderColor: #bae8bc;--sapIndicationColor_4_Selected_TextColor: #256f3a;--sapIndicationColor_4b: #bae8bc;--sapIndicationColor_4b_TextColor: #256f28;--sapIndicationColor_4b_Background: #bae8bc;--sapIndicationColor_4b_BorderColor: #bae8bc;--sapIndicationColor_4b_Hover_Background: #a7e2a9;--sapIndicationColor_5: #0070f2;--sapIndicationColor_5_Background: #0070f2;--sapIndicationColor_5_BorderColor: #0070f2;--sapIndicationColor_5_TextColor: #fff;--sapIndicationColor_5_Hover_Background: #0064d9;--sapIndicationColor_5_Active_Background: #fff;--sapIndicationColor_5_Active_BorderColor: #d9ebff;--sapIndicationColor_5_Active_TextColor: #0070f2;--sapIndicationColor_5_Selected_Background: #fff;--sapIndicationColor_5_Selected_BorderColor: #d9ebff;--sapIndicationColor_5_Selected_TextColor: #0070f2;--sapIndicationColor_5b: #d9ebff;--sapIndicationColor_5b_TextColor: #0067d9;--sapIndicationColor_5b_Background: #d9ebff;--sapIndicationColor_5b_BorderColor: #d9ebff;--sapIndicationColor_5b_Hover_Background: #c0deff;--sapIndicationColor_6: #046c7a;--sapIndicationColor_6_Background: #046c7a;--sapIndicationColor_6_BorderColor: #046c7a;--sapIndicationColor_6_TextColor: #fff;--sapIndicationColor_6_Hover_Background: #035661;--sapIndicationColor_6_Active_Background: #fff;--sapIndicationColor_6_Active_BorderColor: #cdf5ec;--sapIndicationColor_6_Active_TextColor: #046c7a;--sapIndicationColor_6_Selected_Background: #fff;--sapIndicationColor_6_Selected_BorderColor: #cdf5ec;--sapIndicationColor_6_Selected_TextColor: #046c7a;--sapIndicationColor_6b: #cdf5ec;--sapIndicationColor_6b_TextColor: #156b58;--sapIndicationColor_6b_Background: #cdf5ec;--sapIndicationColor_6b_BorderColor: #cdf5ec;--sapIndicationColor_6b_Hover_Background: #b8f1e4;--sapIndicationColor_7: #5d36ff;--sapIndicationColor_7_Background: #5d36ff;--sapIndicationColor_7_BorderColor: #5d36ff;--sapIndicationColor_7_TextColor: #fff;--sapIndicationColor_7_Hover_Background: #481cff;--sapIndicationColor_7_Active_Background: #fff;--sapIndicationColor_7_Active_BorderColor: #e2dbff;--sapIndicationColor_7_Active_TextColor: #5d36ff;--sapIndicationColor_7_Selected_Background: #fff;--sapIndicationColor_7_Selected_BorderColor: #e2dbff;--sapIndicationColor_7_Selected_TextColor: #5d36ff;--sapIndicationColor_7b: #e2dbff;--sapIndicationColor_7b_TextColor: #5f38ff;--sapIndicationColor_7b_Background: #e2dbff;--sapIndicationColor_7b_BorderColor: #e2dbff;--sapIndicationColor_7b_Hover_Background: #cdc2ff;--sapIndicationColor_8: #a100c2;--sapIndicationColor_8_Background: #a100c2;--sapIndicationColor_8_BorderColor: #a100c2;--sapIndicationColor_8_TextColor: #fff;--sapIndicationColor_8_Hover_Background: #8c00a9;--sapIndicationColor_8_Active_Background: #fff;--sapIndicationColor_8_Active_BorderColor: #f8d6ff;--sapIndicationColor_8_Active_TextColor: #a100c2;--sapIndicationColor_8_Selected_Background: #fff;--sapIndicationColor_8_Selected_BorderColor: #f8d6ff;--sapIndicationColor_8_Selected_TextColor: #a100c2;--sapIndicationColor_8b: #f8d6ff;--sapIndicationColor_8b_TextColor: #a100c2;--sapIndicationColor_8b_Background: #f8d6ff;--sapIndicationColor_8b_BorderColor: #f8d6ff;--sapIndicationColor_8b_Hover_Background: #f4bdff;--sapIndicationColor_9: #1d2d3e;--sapIndicationColor_9_Background: #1d2d3e;--sapIndicationColor_9_BorderColor: #1d2d3e;--sapIndicationColor_9_TextColor: #fff;--sapIndicationColor_9_Hover_Background: #15202d;--sapIndicationColor_9_Active_Background: #fff;--sapIndicationColor_9_Active_BorderColor: #d9d9d9;--sapIndicationColor_9_Active_TextColor: #1d2d3e;--sapIndicationColor_9_Selected_Background: #fff;--sapIndicationColor_9_Selected_BorderColor: #d9d9d9;--sapIndicationColor_9_Selected_TextColor: #1d2d3e;--sapIndicationColor_9b: #fff;--sapIndicationColor_9b_TextColor: #2e2e2e;--sapIndicationColor_9b_Background: #fff;--sapIndicationColor_9b_BorderColor: #d9d9d9;--sapIndicationColor_9b_Hover_Background: #f2f2f2;--sapIndicationColor_10: #45484a;--sapIndicationColor_10_Background: #83888b;--sapIndicationColor_10_BorderColor: #83888b;--sapIndicationColor_10_TextColor: #fff;--sapIndicationColor_10_Hover_Background: #767b7e;--sapIndicationColor_10_Active_Background: #fff;--sapIndicationColor_10_Active_BorderColor: #eaecee;--sapIndicationColor_10_Active_TextColor: #45484a;--sapIndicationColor_10_Selected_Background: #fff;--sapIndicationColor_10_Selected_BorderColor: #eaecee;--sapIndicationColor_10_Selected_TextColor: #45484a;--sapIndicationColor_10b: #eaecee;--sapIndicationColor_10b_TextColor: #464646;--sapIndicationColor_10b_Background: #eaecee;--sapIndicationColor_10b_BorderColor: #eaecee;--sapIndicationColor_10b_Hover_Background: #dcdfe3;--sapLegend_WorkingBackground: #fff;--sapLegend_NonWorkingBackground: #ebebeb;--sapLegend_CurrentDateTime: #a100c2;--sapLegendColor1: #c35500;--sapLegendColor2: #d23a0a;--sapLegendColor3: #df1278;--sapLegendColor4: #840606;--sapLegendColor5: #cc00dc;--sapLegendColor6: #0057d2;--sapLegendColor7: #07838f;--sapLegendColor8: #188918;--sapLegendColor9: #5b738b;--sapLegendColor10: #7800a4;--sapLegendColor11: #a93e00;--sapLegendColor12: #aa2608;--sapLegendColor13: #ba066c;--sapLegendColor14: #8d2a00;--sapLegendColor15: #4e247a;--sapLegendColor16: #002a86;--sapLegendColor17: #035663;--sapLegendColor18: #1e592f;--sapLegendColor19: #1a4796;--sapLegendColor20: #470ced;--sapLegendBackgroundColor1: #ffef9f;--sapLegendBackgroundColor2: #feeae1;--sapLegendBackgroundColor3: #fbf6f8;--sapLegendBackgroundColor4: #fbebeb;--sapLegendBackgroundColor5: #ffe5fe;--sapLegendBackgroundColor6: #d1efff;--sapLegendBackgroundColor7: #c2fcee;--sapLegendBackgroundColor8: #f5fae5;--sapLegendBackgroundColor9: #f5f6f7;--sapLegendBackgroundColor10: #fff0fa;--sapLegendBackgroundColor11: #fff8d6;--sapLegendBackgroundColor12: #fff6f6;--sapLegendBackgroundColor13: #f7ebef;--sapLegendBackgroundColor14: #f1ecd5;--sapLegendBackgroundColor15: #f0e7f8;--sapLegendBackgroundColor16: #ebf8ff;--sapLegendBackgroundColor17: #dafdf5;--sapLegendBackgroundColor18: #ebf5cb;--sapLegendBackgroundColor19: #fafdff;--sapLegendBackgroundColor20: #eceeff;--sapChart_Background: #fff;--sapChart_ContrastTextShadow: 0 0 .0625rem rgba(0,0,0,.7);--sapChart_ContrastShadowColor: #fff;--sapChart_ContrastLineColor: #fff;--sapChart_LineColor_1: #e1e6eb;--sapChart_LineColor_2: #768da4;--sapChart_LineColor_3: #000001;--sapChart_Choropleth_Background: #edf0f3;--sapChart_ChoroplethRegion_Background: #758ca4;--sapChart_ChoroplethRegion_BorderColor: #edf0f3;--sapChart_Data_TextColor: #000;--sapChart_Data_ContrastTextColor: #fff;--sapChart_Data_InteractiveColor: #000001;--sapChart_Data_Active_Background: #dee2e5;--sapChart_OrderedColor_1: #168eff;--sapChart_OrderedColor_2: #c87b00;--sapChart_OrderedColor_3: #75980b;--sapChart_OrderedColor_4: #df1278;--sapChart_OrderedColor_5: #8b47d7;--sapChart_OrderedColor_6: #049f9a;--sapChart_OrderedColor_7: #0070f2;--sapChart_OrderedColor_8: #cc00dc;--sapChart_OrderedColor_9: #798c77;--sapChart_OrderedColor_10: #da6c6c;--sapChart_OrderedColor_11: #5d36ff;--sapChart_OrderedColor_12: #a68a5b;--sapChart_Bad: #f53232;--sapChart_Critical: #e26300;--sapChart_Good: #30914c;--sapChart_Neutral: #758ca4;--sapChart_Sequence_1_Plus3: #96ccff;--sapChart_Sequence_1_Plus3_TextColor: #000;--sapChart_Sequence_1_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_1_Plus2: #3b9ffe;--sapChart_Sequence_1_Plus2_TextColor: #000;--sapChart_Sequence_1_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_1_Plus1: #3fa2ff;--sapChart_Sequence_1_Plus1_TextColor: #000;--sapChart_Sequence_1_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_1: #168eff;--sapChart_Sequence_1_TextColor: #000;--sapChart_Sequence_1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_1_BorderColor: #168eff;--sapChart_Sequence_1_Minus1: #077cea;--sapChart_Sequence_1_Minus1_TextColor: #fff;--sapChart_Sequence_1_Minus1_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_1_Minus2: #077cea;--sapChart_Sequence_1_Minus2_TextColor: #fff;--sapChart_Sequence_1_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_1_Minus3: #06559e;--sapChart_Sequence_1_Minus3_TextColor: #fff;--sapChart_Sequence_1_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_1_Minus4: #054887;--sapChart_Sequence_1_Minus4_TextColor: #fff;--sapChart_Sequence_1_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_1_Minus5: #043b6e;--sapChart_Sequence_1_Minus5_TextColor: #fff;--sapChart_Sequence_1_Minus5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_2_Plus3: #efbf72;--sapChart_Sequence_2_Plus3_TextColor: #000;--sapChart_Sequence_2_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_2_Plus2: #eaaa44;--sapChart_Sequence_2_Plus2_TextColor: #000;--sapChart_Sequence_2_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_2_Plus1: #e29419;--sapChart_Sequence_2_Plus1_TextColor: #000;--sapChart_Sequence_2_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_2: #c87b00;--sapChart_Sequence_2_TextColor: #000;--sapChart_Sequence_2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_2_BorderColor: #9f6200;--sapChart_Sequence_2_Minus1: #9f6200;--sapChart_Sequence_2_Minus1_TextColor: #fff;--sapChart_Sequence_2_Minus1_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_2_Minus2: #7c4c00;--sapChart_Sequence_2_Minus2_TextColor: #fff;--sapChart_Sequence_2_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_2_Minus3: #623c00;--sapChart_Sequence_2_Minus3_TextColor: #fff;--sapChart_Sequence_2_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_2_Minus4: #623c00;--sapChart_Sequence_2_Minus4_TextColor: #fff;--sapChart_Sequence_2_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_2_Minus5: #2f1d00;--sapChart_Sequence_2_Minus5_TextColor: #fff;--sapChart_Sequence_2_Minus5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_3_Plus3: #b9d369;--sapChart_Sequence_3_Plus3_TextColor: #000;--sapChart_Sequence_3_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_3_Plus2: #a6c742;--sapChart_Sequence_3_Plus2_TextColor: #000;--sapChart_Sequence_3_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_3_Plus1: #8fad33;--sapChart_Sequence_3_Plus1_TextColor: #000;--sapChart_Sequence_3_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_3: #75980b;--sapChart_Sequence_3_TextColor: #000;--sapChart_Sequence_3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_3_BorderColor: #587208;--sapChart_Sequence_3_Minus1: #587208;--sapChart_Sequence_3_Minus1_TextColor: #fff;--sapChart_Sequence_3_Minus1_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_3_Minus2: #3e5106;--sapChart_Sequence_3_Minus2_TextColor: #fff;--sapChart_Sequence_3_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_3_Minus3: #2c3904;--sapChart_Sequence_3_Minus3_TextColor: #fff;--sapChart_Sequence_3_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_3_Minus4: #212b03;--sapChart_Sequence_3_Minus4_TextColor: #fff;--sapChart_Sequence_3_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_3_Minus5: #161c02;--sapChart_Sequence_3_Minus5_TextColor: #fff;--sapChart_Sequence_3_Minus5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_4_Plus3: #f473b3;--sapChart_Sequence_4_Plus3_TextColor: #000;--sapChart_Sequence_4_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_4_Plus2: #f14d9e;--sapChart_Sequence_4_Plus2_TextColor: #000;--sapChart_Sequence_4_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_4_Plus1: #ee278a;--sapChart_Sequence_4_Plus1_TextColor: #000;--sapChart_Sequence_4_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_4: #df1278;--sapChart_Sequence_4_TextColor: #fff;--sapChart_Sequence_4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_4_BorderColor: #df1278;--sapChart_Sequence_4_Minus1: #b90f64;--sapChart_Sequence_4_Minus1_TextColor: #fff;--sapChart_Sequence_4_Minus1_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_4_Minus2: #930c4f;--sapChart_Sequence_4_Minus2_TextColor: #fff;--sapChart_Sequence_4_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_4_Minus3: #770a40;--sapChart_Sequence_4_Minus3_TextColor: #fff;--sapChart_Sequence_4_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_4_Minus4: #51072c;--sapChart_Sequence_4_Minus4_TextColor: #fff;--sapChart_Sequence_4_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_4_Minus5: #3a051f;--sapChart_Sequence_4_Minus5_TextColor: #fff;--sapChart_Sequence_4_Minus5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_5_Plus3: #d5bcf0;--sapChart_Sequence_5_Plus3_TextColor: #000;--sapChart_Sequence_5_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_5_Plus2: #b994e0;--sapChart_Sequence_5_Plus2_TextColor: #000;--sapChart_Sequence_5_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_5_Plus1: #a679d8;--sapChart_Sequence_5_Plus1_TextColor: #000;--sapChart_Sequence_5_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_5: #8b47d7;--sapChart_Sequence_5_TextColor: #fff;--sapChart_Sequence_5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_5_BorderColor: #8b47d7;--sapChart_Sequence_5_Minus1: #7236b5;--sapChart_Sequence_5_Minus1_TextColor: #fff;--sapChart_Sequence_5_Minus1_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_5_Minus2: #5e2c96;--sapChart_Sequence_5_Minus2_TextColor: #fff;--sapChart_Sequence_5_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_5_Minus3: #522682;--sapChart_Sequence_5_Minus3_TextColor: #fff;--sapChart_Sequence_5_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_5_Minus4: #46216f;--sapChart_Sequence_5_Minus4_TextColor: #fff;--sapChart_Sequence_5_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_5_Minus5: #341358;--sapChart_Sequence_5_Minus5_TextColor: #fff;--sapChart_Sequence_5_Minus5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_6_Plus3: #64ede9;--sapChart_Sequence_6_Plus3_TextColor: #000;--sapChart_Sequence_6_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_6_Plus2: #2ee0da;--sapChart_Sequence_6_Plus2_TextColor: #000;--sapChart_Sequence_6_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_6_Plus1: #05c7c1;--sapChart_Sequence_6_Plus1_TextColor: #000;--sapChart_Sequence_6_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_6: #049f9a;--sapChart_Sequence_6_TextColor: #000;--sapChart_Sequence_6_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_6_BorderColor: #05c7c1;--sapChart_Sequence_6_Minus1: #02837f;--sapChart_Sequence_6_Minus1_TextColor: #fff;--sapChart_Sequence_6_Minus1_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_6_Minus2: #006663;--sapChart_Sequence_6_Minus2_TextColor: #fff;--sapChart_Sequence_6_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_6_Minus3: #00514f;--sapChart_Sequence_6_Minus3_TextColor: #fff;--sapChart_Sequence_6_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_6_Minus4: #003d3b;--sapChart_Sequence_6_Minus4_TextColor: #fff;--sapChart_Sequence_6_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_6_Minus5: #002322;--sapChart_Sequence_6_Minus5_TextColor: #fff;--sapChart_Sequence_6_Minus5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_7_Plus3: #68aeff;--sapChart_Sequence_7_Plus3_TextColor: #000;--sapChart_Sequence_7_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_7_Plus2: #4098ff;--sapChart_Sequence_7_Plus2_TextColor: #000;--sapChart_Sequence_7_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_7_Plus1: #1c85ff;--sapChart_Sequence_7_Plus1_TextColor: #000;--sapChart_Sequence_7_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_7: #0070f2;--sapChart_Sequence_7_TextColor: #fff;--sapChart_Sequence_7_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_7_BorderColor: #0070f2;--sapChart_Sequence_7_Minus1: #0062d3;--sapChart_Sequence_7_Minus1_TextColor: #fff;--sapChart_Sequence_7_Minus1_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_7_Minus2: #0054b5;--sapChart_Sequence_7_Minus2_TextColor: #fff;--sapChart_Sequence_7_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_7_Minus3: #00418c;--sapChart_Sequence_7_Minus3_TextColor: #fff;--sapChart_Sequence_7_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_7_Minus4: #00244f;--sapChart_Sequence_7_Minus4_TextColor: #fff;--sapChart_Sequence_7_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_7_Minus5: #001b3a;--sapChart_Sequence_7_Minus5_TextColor: #fff;--sapChart_Sequence_7_Minus5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_8_Plus3: #f462ff;--sapChart_Sequence_8_Plus3_TextColor: #000;--sapChart_Sequence_8_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_8_Plus2: #f034ff;--sapChart_Sequence_8_Plus2_TextColor: #000;--sapChart_Sequence_8_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_8_Plus1: #ed0bff;--sapChart_Sequence_8_Plus1_TextColor: #000;--sapChart_Sequence_8_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_8: #cc00dc;--sapChart_Sequence_8_TextColor: #fff;--sapChart_Sequence_8_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_8_BorderColor: #cc00dc;--sapChart_Sequence_8_Minus1: #a600b3;--sapChart_Sequence_8_Minus1_TextColor: #fff;--sapChart_Sequence_8_Minus1_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_8_Minus2: #80008a;--sapChart_Sequence_8_Minus2_TextColor: #fff;--sapChart_Sequence_8_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_8_Minus3: #6d0076;--sapChart_Sequence_8_Minus3_TextColor: #fff;--sapChart_Sequence_8_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_8_Minus4: #56005d;--sapChart_Sequence_8_Minus4_TextColor: #fff;--sapChart_Sequence_8_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_8_Minus5: #350039;--sapChart_Sequence_8_Minus5_TextColor: #fff;--sapChart_Sequence_8_Minus5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_9_Plus3: #bdc6bc;--sapChart_Sequence_9_Plus3_TextColor: #000;--sapChart_Sequence_9_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_9_Plus2: #b5bfb4;--sapChart_Sequence_9_Plus2_TextColor: #000;--sapChart_Sequence_9_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_9_Plus1: #97a695;--sapChart_Sequence_9_Plus1_TextColor: #000;--sapChart_Sequence_9_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_9: #798c77;--sapChart_Sequence_9_TextColor: #000;--sapChart_Sequence_9_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_9_BorderColor: #798c77;--sapChart_Sequence_9_Minus1: #667664;--sapChart_Sequence_9_Minus1_TextColor: #fff;--sapChart_Sequence_9_Minus1_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_9_Minus2: #536051;--sapChart_Sequence_9_Minus2_TextColor: #fff;--sapChart_Sequence_9_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_9_Minus3: #404a3f;--sapChart_Sequence_9_Minus3_TextColor: #fff;--sapChart_Sequence_9_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_9_Minus4: #2d342c;--sapChart_Sequence_9_Minus4_TextColor: #fff;--sapChart_Sequence_9_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_9_Minus5: #1e231e;--sapChart_Sequence_9_Minus5_TextColor: #fff;--sapChart_Sequence_9_Minus5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_10_Plus3: #f1c6c6;--sapChart_Sequence_10_Plus3_TextColor: #000;--sapChart_Sequence_10_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_10_Plus2: #eaadad;--sapChart_Sequence_10_Plus2_TextColor: #000;--sapChart_Sequence_10_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_10_Plus1: #e28d8d;--sapChart_Sequence_10_Plus1_TextColor: #000;--sapChart_Sequence_10_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_10: #da6c6c;--sapChart_Sequence_10_TextColor: #000;--sapChart_Sequence_10_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_10_BorderColor: #b75757;--sapChart_Sequence_10_Minus1: #b75757;--sapChart_Sequence_10_Minus1_TextColor: #000;--sapChart_Sequence_10_Minus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_10_Minus2: #9d4343;--sapChart_Sequence_10_Minus2_TextColor: #fff;--sapChart_Sequence_10_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_10_Minus3: #803737;--sapChart_Sequence_10_Minus3_TextColor: #fff;--sapChart_Sequence_10_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_10_Minus4: #672c2c;--sapChart_Sequence_10_Minus4_TextColor: #fff;--sapChart_Sequence_10_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_10_Minus5: #562424;--sapChart_Sequence_10_Minus5_TextColor: #fff;--sapChart_Sequence_10_Minus5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_11_Plus3: #c0b0ff;--sapChart_Sequence_11_Plus3_TextColor: #000;--sapChart_Sequence_11_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_11_Plus2: #9b83ff;--sapChart_Sequence_11_Plus2_TextColor: #000;--sapChart_Sequence_11_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_11_Plus1: #8669ff;--sapChart_Sequence_11_Plus1_TextColor: #000;--sapChart_Sequence_11_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_11: #5d36ff;--sapChart_Sequence_11_TextColor: #fff;--sapChart_Sequence_11_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_11_BorderColor: #5d36ff;--sapChart_Sequence_11_Minus1: #4b25e7;--sapChart_Sequence_11_Minus1_TextColor: #fff;--sapChart_Sequence_11_Minus1_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_11_Minus2: #3a17cd;--sapChart_Sequence_11_Minus2_TextColor: #fff;--sapChart_Sequence_11_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_11_Minus3: #2f13a8;--sapChart_Sequence_11_Minus3_TextColor: #fff;--sapChart_Sequence_11_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_11_Minus4: #250f83;--sapChart_Sequence_11_Minus4_TextColor: #fff;--sapChart_Sequence_11_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_11_Minus5: #2f13a8;--sapChart_Sequence_11_Minus5_TextColor: #fff;--sapChart_Sequence_11_Minus5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_12_Plus3: #e4ddcf;--sapChart_Sequence_12_Plus3_TextColor: #000;--sapChart_Sequence_12_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_12_Plus2: #dacebb;--sapChart_Sequence_12_Plus2_TextColor: #000;--sapChart_Sequence_12_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_12_Plus1: #c4b293;--sapChart_Sequence_12_Plus1_TextColor: #000;--sapChart_Sequence_12_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_12: #a68a5b;--sapChart_Sequence_12_TextColor: #000;--sapChart_Sequence_12_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_12_BorderColor: #a68a5b;--sapChart_Sequence_12_Minus1: #8c744c;--sapChart_Sequence_12_Minus1_TextColor: #fff;--sapChart_Sequence_12_Minus1_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_12_Minus2: #786441;--sapChart_Sequence_12_Minus2_TextColor: #fff;--sapChart_Sequence_12_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_12_Minus3: #5e4e33;--sapChart_Sequence_12_Minus3_TextColor: #fff;--sapChart_Sequence_12_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_12_Minus4: #433825;--sapChart_Sequence_12_Minus4_TextColor: #fff;--sapChart_Sequence_12_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_12_Minus5: #30271a;--sapChart_Sequence_12_Minus5_TextColor: #fff;--sapChart_Sequence_12_Minus5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Bad_Plus3: #fdcece;--sapChart_Sequence_Bad_Plus3_TextColor: #000;--sapChart_Sequence_Bad_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Bad_Plus2: #fa9d9d;--sapChart_Sequence_Bad_Plus2_TextColor: #000;--sapChart_Sequence_Bad_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Bad_Plus1: #f86c6c;--sapChart_Sequence_Bad_Plus1_TextColor: #000;--sapChart_Sequence_Bad_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Bad: #f53232;--sapChart_Sequence_Bad_TextColor: #000;--sapChart_Sequence_Bad_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Bad_BorderColor: #f53232;--sapChart_Sequence_Bad_Minus1: #d00a0a;--sapChart_Sequence_Bad_Minus1_TextColor: #fff;--sapChart_Sequence_Bad_Minus1_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Bad_Minus2: #a90808;--sapChart_Sequence_Bad_Minus2_TextColor: #fff;--sapChart_Sequence_Bad_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Bad_Minus3: #830606;--sapChart_Sequence_Bad_Minus3_TextColor: #fff;--sapChart_Sequence_Bad_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Bad_Minus4: #570404;--sapChart_Sequence_Bad_Minus4_TextColor: #fff;--sapChart_Sequence_Bad_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Bad_Minus5: #320000;--sapChart_Sequence_Bad_Minus5_TextColor: #fff;--sapChart_Sequence_Bad_Minus5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Critical_Plus3: #ffb881;--sapChart_Sequence_Critical_Plus3_TextColor: #000;--sapChart_Sequence_Critical_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Critical_Plus2: #ff933f;--sapChart_Sequence_Critical_Plus2_TextColor: #000;--sapChart_Sequence_Critical_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Critical_Plus1: #ff760c;--sapChart_Sequence_Critical_Plus1_TextColor: #000;--sapChart_Sequence_Critical_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Critical: #e26300;--sapChart_Sequence_Critical_TextColor: #000;--sapChart_Sequence_Critical_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Critical_BorderColor: #e26300;--sapChart_Sequence_Critical_Minus1: #c35600;--sapChart_Sequence_Critical_Minus1_TextColor: #fff;--sapChart_Sequence_Critical_Minus1_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Critical_Minus2: #aa4a00;--sapChart_Sequence_Critical_Minus2_TextColor: #fff;--sapChart_Sequence_Critical_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Critical_Minus3: #903f00;--sapChart_Sequence_Critical_Minus3_TextColor: #fff;--sapChart_Sequence_Critical_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Critical_Minus4: #6d3000;--sapChart_Sequence_Critical_Minus4_TextColor: #fff;--sapChart_Sequence_Critical_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Critical_Minus5: #492000;--sapChart_Sequence_Critical_Minus5_TextColor: #fff;--sapChart_Sequence_Critical_Minus5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Good_Plus3: #88d79f;--sapChart_Sequence_Good_Plus3_TextColor: #000;--sapChart_Sequence_Good_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Good_Plus2: #56c776;--sapChart_Sequence_Good_Plus2_TextColor: #000;--sapChart_Sequence_Good_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Good_Plus1: #3ab05c;--sapChart_Sequence_Good_Plus1_TextColor: #000;--sapChart_Sequence_Good_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Good: #30914c;--sapChart_Sequence_Good_TextColor: #000;--sapChart_Sequence_Good_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Good_BorderColor: #30914c;--sapChart_Sequence_Good_Minus1: #287a40;--sapChart_Sequence_Good_Minus1_TextColor: #fff;--sapChart_Sequence_Good_Minus1_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Good_Minus2: #226736;--sapChart_Sequence_Good_Minus2_TextColor: #fff;--sapChart_Sequence_Good_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Good_Minus3: #1c542c;--sapChart_Sequence_Good_Minus3_TextColor: #fff;--sapChart_Sequence_Good_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Good_Minus4: #13391e;--sapChart_Sequence_Good_Minus4_TextColor: #fff;--sapChart_Sequence_Good_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Good_Minus5: #0a1e10;--sapChart_Sequence_Good_Minus5_TextColor: #fff;--sapChart_Sequence_Good_Minus5_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Neutral_Plus3: #edf0f3;--sapChart_Sequence_Neutral_Plus3_TextColor: #000;--sapChart_Sequence_Neutral_Plus3_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Neutral_Plus2: #c2ccd7;--sapChart_Sequence_Neutral_Plus2_TextColor: #000;--sapChart_Sequence_Neutral_Plus2_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Neutral_Plus1: #9aabbc;--sapChart_Sequence_Neutral_Plus1_TextColor: #000;--sapChart_Sequence_Neutral_Plus1_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Neutral: #758ca4;--sapChart_Sequence_Neutral_TextColor: #000;--sapChart_Sequence_Neutral_TextShadow: 0 0 .125rem #fff;--sapChart_Sequence_Neutral_BorderColor: #758ca4;--sapChart_Sequence_Neutral_Minus1: #5b728b;--sapChart_Sequence_Neutral_Minus1_TextColor: #fff;--sapChart_Sequence_Neutral_Minus1_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Neutral_Minus2: #495e74;--sapChart_Sequence_Neutral_Minus2_TextColor: #fff;--sapChart_Sequence_Neutral_Minus2_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Neutral_Minus3: #364a5f;--sapChart_Sequence_Neutral_Minus3_TextColor: #fff;--sapChart_Sequence_Neutral_Minus3_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Neutral_Minus4: #233649;--sapChart_Sequence_Neutral_Minus4_TextColor: #fff;--sapChart_Sequence_Neutral_Minus4_TextShadow: 0 0 .125rem #223548;--sapChart_Sequence_Neutral_Minus5: #1a2633;--sapChart_Sequence_Neutral_Minus5_TextColor: #fff;--sapChart_Sequence_Neutral_Minus5_TextShadow: 0 0 .125rem #223548;--sapSapThemeId: sap_horizon;--sapBreakpoint_S_Min: 0;--sapBreakpoint_M_Min: 600px;--sapBreakpoint_L_Min: 1024px;--sapBreakpoint_XL_Min: 1440px
 }`;
-const defaultTheme$1 = `:root{--ui5-v2-17-0-avatar-hover-box-shadow-offset: 0px 0px 0px .0625rem var();--ui5-v2-17-0-avatar-initials-color: var(--sapContent_ImagePlaceholderForegroundColor);--ui5-v2-17-0-avatar-border-radius-img-deduction: .0625rem;--ui5-v2-17-0-avatar-optional-border: .0625rem solid var(--sapGroup_ContentBorderColor);--ui5-v2-17-0-avatar-placeholder: var(--sapContent_ImagePlaceholderBackground);--ui5-v2-17-0-avatar-placeholder-color: var(--ui5-v2-17-0-avatar-initials-color);--_ui5-v2-17-0_avatar_outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);--_ui5-v2-17-0_avatar_overflow_button_focus_offset: .0625rem;--ui5-v2-17-0-avatar-hover-box-shadow-offset: 0px 0px 0px .0625rem var(--sapAvatar_Hover_BorderColor);--_ui5-v2-17-0_avatar_focus_offset: .1875rem;--ui5-v2-17-0-avatar-initials-border: .0625rem solid var(--sapAvatar_1_BorderColor);--ui5-v2-17-0-avatar-border-radius: var(--sapElement_BorderCornerRadius);--_ui5-v2-17-0_avatar_fontsize_XS: 1rem;--_ui5-v2-17-0_avatar_fontsize_S: 1.125rem;--_ui5-v2-17-0_avatar_fontsize_M: 1.5rem;--_ui5-v2-17-0_avatar_fontsize_L: 2.25rem;--_ui5-v2-17-0_avatar_fontsize_XL: 3rem;--ui5-v2-17-0-avatar-accent1: var(--sapAvatar_1_Background);--ui5-v2-17-0-avatar-accent2: var(--sapAvatar_2_Background);--ui5-v2-17-0-avatar-accent3: var(--sapAvatar_3_Background);--ui5-v2-17-0-avatar-accent4: var(--sapAvatar_4_Background);--ui5-v2-17-0-avatar-accent5: var(--sapAvatar_5_Background);--ui5-v2-17-0-avatar-accent6: var(--sapAvatar_6_Background);--ui5-v2-17-0-avatar-accent7: var(--sapAvatar_7_Background);--ui5-v2-17-0-avatar-accent8: var(--sapAvatar_8_Background);--ui5-v2-17-0-avatar-accent9: var(--sapAvatar_9_Background);--ui5-v2-17-0-avatar-accent10: var(--sapAvatar_10_Background);--ui5-v2-17-0-avatar-accent1-color: var(--sapAvatar_1_TextColor);--ui5-v2-17-0-avatar-accent2-color: var(--sapAvatar_2_TextColor);--ui5-v2-17-0-avatar-accent3-color: var(--sapAvatar_3_TextColor);--ui5-v2-17-0-avatar-accent4-color: var(--sapAvatar_4_TextColor);--ui5-v2-17-0-avatar-accent5-color: var(--sapAvatar_5_TextColor);--ui5-v2-17-0-avatar-accent6-color: var(--sapAvatar_6_TextColor);--ui5-v2-17-0-avatar-accent7-color: var(--sapAvatar_7_TextColor);--ui5-v2-17-0-avatar-accent8-color: var(--sapAvatar_8_TextColor);--ui5-v2-17-0-avatar-accent9-color: var(--sapAvatar_9_TextColor);--ui5-v2-17-0-avatar-accent10-color: var(--sapAvatar_10_TextColor);--ui5-v2-17-0-avatar-accent1-border-color: var(--sapAvatar_1_BorderColor);--ui5-v2-17-0-avatar-accent2-border-color: var(--sapAvatar_2_BorderColor);--ui5-v2-17-0-avatar-accent3-border-color: var(--sapAvatar_3_BorderColor);--ui5-v2-17-0-avatar-accent4-border-color: var(--sapAvatar_4_BorderColor);--ui5-v2-17-0-avatar-accent5-border-color: var(--sapAvatar_5_BorderColor);--ui5-v2-17-0-avatar-accent6-border-color: var(--sapAvatar_6_BorderColor);--ui5-v2-17-0-avatar-accent7-border-color: var(--sapAvatar_7_BorderColor);--ui5-v2-17-0-avatar-accent8-border-color: var(--sapAvatar_8_BorderColor);--ui5-v2-17-0-avatar-accent9-border-color: var(--sapAvatar_9_BorderColor);--ui5-v2-17-0-avatar-accent10-border-color: var(--sapAvatar_10_BorderColor);--_ui5-v2-17-0_avatar_icon_XS: var(--_ui5-v2-17-0_avatar_fontsize_XS);--_ui5-v2-17-0_avatar_icon_S: var(--_ui5-v2-17-0_avatar_fontsize_S);--_ui5-v2-17-0_avatar_icon_M: var(--_ui5-v2-17-0_avatar_fontsize_M);--_ui5-v2-17-0_avatar_icon_L: var(--_ui5-v2-17-0_avatar_fontsize_L);--_ui5-v2-17-0_avatar_icon_XL: var(--_ui5-v2-17-0_avatar_fontsize_XL);--_ui5-v2-17-0_avatar_group_button_focus_border: none;--_ui5-v2-17-0_avatar_group_padding: .3rem;--_ui5-v2-17-0_avatar_group_focus_border_radius: .375rem;--_ui5-v2-17-0-tag-height: 1rem;--_ui5-v2-17-0-tag-icon-width: .75rem;--ui5-v2-17-0-tag-text-shadow: var(--sapContent_TextShadow);--ui5-v2-17-0-tag-contrast-text-shadow: var(--sapContent_ContrastTextShadow);--ui5-v2-17-0-tag-information-text-shadow: var(--ui5-v2-17-0-tag-text-shadow);--ui5-v2-17-0-tag-set2-color-scheme-1-border: var(--sapIndicationColor_1b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-1-hover-background: var(--sapIndicationColor_1b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-1-active-color: var(--sapIndicationColor_1_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-1-active-background: var(--sapIndicationColor_1_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-1-active-border: var(--sapIndicationColor_1_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-2-border: var(--sapIndicationColor_2b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-2-hover-background: var(--sapIndicationColor_2b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-2-active-color: var(--sapIndicationColor_2_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-2-active-background: var(--sapIndicationColor_2_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-2-active-border: var(--sapIndicationColor_2_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-3-border: var(--sapIndicationColor_3b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-3-hover-background: var(--sapIndicationColor_3b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-3-active-color: var(--sapIndicationColor_3_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-3-active-background: var(--sapIndicationColor_3_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-3-active-border: var(--sapIndicationColor_3_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-4-border: var(--sapIndicationColor_4b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-4-hover-background: var(--sapIndicationColor_4b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-4-active-color: var(--sapIndicationColor_4_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-4-active-background: var(--sapIndicationColor_4_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-4-active-border: var(--sapIndicationColor_4_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-5-border: var(--sapIndicationColor_5b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-5-hover-background: var(--sapIndicationColor_5b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-5-active-color: var(--sapIndicationColor_5_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-5-active-background: var(--sapIndicationColor_5_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-5-active-border: var(--sapIndicationColor_5_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-6-border: var(--sapIndicationColor_6b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-6-hover-background: var(--sapIndicationColor_6b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-6-active-color: var(--sapIndicationColor_6_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-6-active-background: var(--sapIndicationColor_6_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-6-active-border: var(--sapIndicationColor_6_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-7-border: var(--sapIndicationColor_7b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-7-hover-background: var(--sapIndicationColor_7b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-7-active-color: var(--sapIndicationColor_7_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-7-active-background: var(--sapIndicationColor_7_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-7-active-border: var(--sapIndicationColor_7_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-8-border: var(--sapIndicationColor_8b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-8-hover-background: var(--sapIndicationColor_8b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-8-active-color: var(--sapIndicationColor_8_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-8-active-background: var(--sapIndicationColor_8_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-8-active-border: var(--sapIndicationColor_8_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-9-border: var(--sapIndicationColor_9b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-9-hover-background: var(--sapIndicationColor_9b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-9-active-color: var(--sapIndicationColor_9_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-9-active-background: var(--sapIndicationColor_9_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-9-active-border: var(--sapIndicationColor_9_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-10-border: var(--sapIndicationColor_10b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-10-hover-background: var(--sapIndicationColor_10b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-10-active-color: var(--sapIndicationColor_10_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-10-active-background: var(--sapIndicationColor_10_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-10-active-border: var(--sapIndicationColor_10_Active_BorderColor);--_ui5-v2-17-0-tag-height_size_l: 1.5rem;--_ui5-v2-17-0-tag-min-width_size_l: 1.75rem;--_ui5-v2-17-0-tag-font-size_size_l: 1.25rem;--_ui5-v2-17-0-tag-icon_min_width_size_l: 1.25rem;--_ui5-v2-17-0-tag-icon_min_height_size_l:1.25rem;--_ui5-v2-17-0-tag-icon_height_size_l: 1.25rem;--_ui5-v2-17-0-tag-text_padding_size_l: .125rem .25rem;--_ui5-v2-17-0-tag-text-padding: .1875rem .25rem;--_ui5-v2-17-0-tag-padding-inline-icon-only: .313rem;--_ui5-v2-17-0-tag-text-transform: none;--_ui5-v2-17-0-tag-icon-gap: .25rem;--_ui5-v2-17-0-tag-font-weight: normal;--_ui5-v2-17-0-tag-letter-spacing: normal;--ui5-v2-17-0-tag-set2-color-scheme-1-color: var(--sapIndicationColor_1b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-1-background: var(--sapIndicationColor_1b_Background);--ui5-v2-17-0-tag-set2-color-scheme-2-color: var(--sapIndicationColor_2b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-2-background: var(--sapIndicationColor_2b_Background);--ui5-v2-17-0-tag-set2-color-scheme-3-color: var(--sapIndicationColor_3b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-3-background: var(--sapIndicationColor_3b_Background);--ui5-v2-17-0-tag-set2-color-scheme-4-color: var(--sapIndicationColor_4b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-4-background: var(--sapIndicationColor_4b_Background);--ui5-v2-17-0-tag-set2-color-scheme-5-color: var(--sapIndicationColor_5b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-5-background: var(--sapIndicationColor_5b_Background);--ui5-v2-17-0-tag-set2-color-scheme-6-color: var(--sapIndicationColor_6b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-6-background: var(--sapIndicationColor_6b_Background);--ui5-v2-17-0-tag-set2-color-scheme-7-color: var(--sapIndicationColor_7b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-7-background: var(--sapIndicationColor_7b_Background);--ui5-v2-17-0-tag-set2-color-scheme-8-color: var(--sapIndicationColor_8b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-8-background: var(--sapIndicationColor_8b_Background);--ui5-v2-17-0-tag-set2-color-scheme-9-color: var(--sapIndicationColor_9b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-9-background: var(--sapIndicationColor_9b_Background);--ui5-v2-17-0-tag-set2-color-scheme-10-color: var(--sapIndicationColor_10b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-10-background: var(--sapIndicationColor_10b_Background);--_ui5-v2-17-0_bar_base_height: 2.75rem;--_ui5-v2-17-0_bar_subheader_height: 3rem;--_ui5-v2-17-0_bar-start-container-padding-start: 1rem;--_ui5-v2-17-0_bar-mid-container-padding-start-end: .5rem;--_ui5-v2-17-0_bar-end-container-padding-end: 1rem;--_ui5-v2-17-0_bar_subheader_margin-top: -.0625rem;--_ui5-v2-17-0_breadcrumbs_margin: 0 0 .5rem 0;--_ui5-v2-17-0_busy_indicator_focus_outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);--_ui5-v2-17-0_busy_indicator_color: var(--sapContent_BusyColor);--_ui5-v2-17-0-button-badge-diameter: .75rem;--_ui5-v2-17-0-calendar-legend-root-padding: .75rem;--_ui5-v2-17-0-calendar-legend-root-width: 18.5rem;--_ui5-v2-17-0-calendar-legend-item-root-width: 7.75rem;--_ui5-v2-17-0-calendar-legend-item-root-focus-border: var(--sapContent_FocusWidth) solid var(--sapContent_FocusColor);--_ui5-v2-17-0-calendar-legend-item-box-dot-display: block;--_ui5-v2-17-0_card_box_shadow: var(--sapContent_Shadow0);--_ui5-v2-17-0_card_border-radius: var(--sapTile_BorderCornerRadius);--_ui5-v2-17-0_card_header_border_color: var(--sapTile_SeparatorColor);--_ui5-v2-17-0_card_header_focus_border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);--_ui5-v2-17-0_card_header_focus_bottom_radius: 0px;--_ui5-v2-17-0_card_header_title_font_weight: normal;--_ui5-v2-17-0_card_header_subtitle_margin_top: .25rem;--_ui5-v2-17-0_card_hover_box_shadow: var(--sapContent_Shadow2);--_ui5-v2-17-0_card_header_focus_offset: 0px;--_ui5-v2-17-0_card_header_focus_radius: var(--_ui5-v2-17-0_card_border-radius);--_ui5-v2-17-0_card_header_title_font_family: var(--sapFontHeaderFamily);--_ui5-v2-17-0_card_header_title_font_size: var(--sapFontHeader6Size);--_ui5-v2-17-0_card_header_hover_bg: var(--sapTile_Hover_Background);--_ui5-v2-17-0_card_header_active_bg: var(--sapTile_Active_Background);--_ui5-v2-17-0_card_header_border: none;--_ui5-v2-17-0_card_header_padding: 1rem 1rem .75rem 1rem;--_ui5-v2-17-0_card_border: none;--ui5-v2-17-0_carousel_background_color_solid: var(--sapGroup_ContentBackground);--ui5-v2-17-0_carousel_background_color_translucent: var(--sapBackgroundColor);--ui5-v2-17-0_carousel_button_size: 2.25rem;--ui5-v2-17-0_carousel_inactive_dot_size: .25rem;--ui5-v2-17-0_carousel_inactive_dot_margin: 0 .375rem;--ui5-v2-17-0_carousel_inactive_dot_border: 1px solid var(--sapContent_ForegroundBorderColor);--ui5-v2-17-0_carousel_inactive_dot_background: var(--sapContent_ForegroundBorderColor);--ui5-v2-17-0_carousel_active_dot_border: 1px solid var(--sapContent_Selected_ForegroundColor);--ui5-v2-17-0_carousel_active_dot_background: var(--sapContent_Selected_ForegroundColor);--ui5-v2-17-0_carousel_navigation_button_active_box_shadow: none;--_ui5-v2-17-0_checkbox_transition: unset;--_ui5-v2-17-0_checkbox_border_radius: 0;--_ui5-v2-17-0_checkbox_focus_outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);--_ui5-v2-17-0_checkbox_outer_hover_background: transparent;--_ui5-v2-17-0_checkbox_inner_width_height: 1.375rem;--_ui5-v2-17-0_checkbox_inner_disabled_border_color: var(--sapField_BorderColor);--_ui5-v2-17-0_checkbox_inner_background: var(--sapField_Background);--_ui5-v2-17-0_checkbox_wrapped_focus_padding: .5rem;--_ui5-v2-17-0_checkbox_wrapped_focus_inset_block: var(--_ui5-v2-17-0_checkbox_focus_position);--_ui5-v2-17-0_checkbox_compact_wrapper_padding: .5rem;--_ui5-v2-17-0_checkbox_compact_width_height: 2rem;--_ui5-v2-17-0_checkbox_compact_inner_size: 1rem;--_ui5-v2-17-0_checkbox_compact_focus_position: .375rem;--_ui5-v2-17-0_checkbox_label_offset: var(--_ui5-v2-17-0_checkbox_wrapper_padding);--_ui5-v2-17-0_checkbox_disabled_label_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_checkbox_default_focus_border: none;--_ui5-v2-17-0_checkbox_focus_outline_display: block;--_ui5-v2-17-0_checkbox_wrapper_padding: .6875rem;--_ui5-v2-17-0_checkbox_width_height: 2.75rem;--_ui5-v2-17-0_checkbox_label_color: var(--sapField_TextColor);--_ui5-v2-17-0_checkbox_inner_border: solid var(--sapField_BorderWidth) var(--sapField_BorderColor);--_ui5-v2-17-0_checkbox_inner_border_radius: var(--sapField_BorderCornerRadius);--_ui5-v2-17-0_checkbox_checkmark_color: var(--sapContent_Selected_ForegroundColor);--_ui5-v2-17-0_checkbox_hover_background: var(--sapContent_Selected_Hover_Background);--_ui5-v2-17-0_checkbox_inner_hover_border_color: var(--sapField_Hover_BorderColor);--_ui5-v2-17-0_checkbox_inner_hover_checked_border_color: var(--sapField_Hover_BorderColor);--_ui5-v2-17-0_checkbox_inner_selected_border_color: var(--sapField_BorderColor);--_ui5-v2-17-0_checkbox_inner_active_border_color: var(--sapField_Hover_BorderColor);--_ui5-v2-17-0_checkbox_active_background: var(--sapContent_Selected_Hover_Background);--_ui5-v2-17-0_checkbox_inner_readonly_border: var(--sapElement_BorderWidth) var(--sapField_ReadOnly_BorderColor) dashed;--_ui5-v2-17-0_checkbox_inner_error_border: var(--sapField_InvalidBorderWidth) solid var(--sapField_InvalidColor);--_ui5-v2-17-0_checkbox_inner_error_background_hover: var(--sapField_Hover_Background);--_ui5-v2-17-0_checkbox_inner_warning_border: var(--sapField_WarningBorderWidth) solid var(--sapField_WarningColor);--_ui5-v2-17-0_checkbox_inner_warning_color: var(--sapField_WarningColor);--_ui5-v2-17-0_checkbox_inner_warning_background_hover: var(--sapField_Hover_Background);--_ui5-v2-17-0_checkbox_checkmark_warning_color: var(--sapField_WarningColor);--_ui5-v2-17-0_checkbox_inner_success_border: var(--sapField_SuccessBorderWidth) solid var(--sapField_SuccessColor);--_ui5-v2-17-0_checkbox_inner_success_background_hover: var(--sapField_Hover_Background);--_ui5-v2-17-0_checkbox_inner_information_color: var(--sapField_InformationColor);--_ui5-v2-17-0_checkbox_inner_information_border: var(--sapField_InformationBorderWidth) solid var(--sapField_InformationColor);--_ui5-v2-17-0_checkbox_inner_information_background_hover: var(--sapField_Hover_Background);--_ui5-v2-17-0_checkbox_disabled_opacity: var(--sapContent_DisabledOpacity);--_ui5-v2-17-0_checkbox_focus_position: .3125rem;--_ui5-v2-17-0_checkbox_focus_border_radius: .5rem;--_ui5-v2-17-0_checkbox_right_focus_distance: .3125rem;--_ui5-v2-17-0_color-palette-item-after-focus-inset: .0625rem;--_ui5-v2-17-0_color-palette-item-outer-border-radius: .25rem;--_ui5-v2-17-0_color-palette-item-inner-border-radius: .1875rem;--_ui5-v2-17-0_color-palette-item-after-not-focus-color: .0625rem solid var(--sapGroup_ContentBackground);--_ui5-v2-17-0-color-palette-item-background-color: transparent;--_ui5-v2-17-0_color-palette-item-hover-margin: .0625rem;--_ui5-v2-17-0_color-palette-row-height: 9.5rem;--_ui5-v2-17-0_color-palette-button-height: 3rem;--_ui5-v2-17-0_color-palette-item-before-focus-color: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_color-palette-item-before-focus-inset: -.3125rem;--_ui5-v2-17-0_color-palette-item-before-focus-hover-inset: -.0625rem;--_ui5-v2-17-0_color-palette-item-after-focus-color: .0625rem solid var(--sapContent_ContrastFocusColor);--_ui5-v2-17-0_color-palette-item-after-focus-hover-inset: .0625rem;--_ui5-v2-17-0_color-palette-item-before-focus-border-radius: .4375rem;--_ui5-v2-17-0_color-palette-item-after-focus-border-radius: .3125rem;--_ui5-v2-17-0_color-palette-item-hover-outer-border-radius: .4375rem;--_ui5-v2-17-0_color-palette-item-hover-inner-border-radius: .375rem;--_ui5-v2-17-0_color-palette-item-selected-focused-border-before: -.0625rem;--_ui5-v2-17-0_color-palette-item-after-focus-not-selected-border: none;--_ui5-v2-17-0_color-palette-item-selected-focused-border: none;--_ui5-v2-17-0_color-palette-item-mobile-focus-sides-inset: -.375rem -.375rem;--_ui5-v2-17-0-color-palette-item-mobile-focus-inset: 0px;--_ui5-v2-17-0_color-palette-item-after-mobile-focus-border: none;--_ui5-v2-17-0_color_picker_slider_handle_box_shadow: inset 0 0 0 .125rem var(--sapContent_ContrastShadowColor);--_ui5-v2-17-0_color_picker_slider_handle_inner_border_color: #fff;--_ui5-v2-17-0_color_picker_circle_outer_border: .0625rem solid var(--sapContent_ContrastShadowColor);--_ui5-v2-17-0_color_picker_circle_inner_border: var(--sapField_Picker_BorderWidth) solid var(--sapField_BorderColor);--_ui5-v2-17-0_color_picker_circle_inner_circle_size: .5625rem;--_ui5-v2-17-0_color_picker_slider_handle_container_margin_top: none;--_ui5-v2-17-0_color_picker_slider_handle_border: .125rem solid var(--sapField_BorderColor);--_ui5-v2-17-0_color_picker_slider_handle_outline_hover: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_color_picker_slider_handle_outline_focus: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_color_picker_slider_handle_inline_focus: 1px solid var(--sapContent_ContrastFocusColor);--_ui5-v2-17-0-datepicker-hover-background: var(--sapField_Hover_Background);--_ui5-v2-17-0-datepicker_border_radius: .25rem;--_ui5-v2-17-0_daypicker_item_margin: 2px;--_ui5-v2-17-0_daypicker_item_border: none;--_ui5-v2-17-0_daypicker_item_selected_border_color: var(--sapList_Background);--_ui5-v2-17-0_daypicker_daynames_container_height: 2rem;--_ui5-v2-17-0_daypicker_weeknumbers_container_padding_top: 2rem;--_ui5-v2-17-0_daypicker_item_othermonth_background_color: var(--sapList_Background);--_ui5-v2-17-0_daypicker_item_othermonth_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_daypicker_item_othermonth_hover_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_daypicker_item_selected_background: transparent;--_ui5-v2-17-0_daypicker_item_selected_between_hover_background: var(--sapList_Hover_SelectionBackground);--_ui5-v2-17-0_daypicker_item_now_not_selected_inset: 0;--_ui5-v2-17-0_daypicker_item_now_border_color: var(--sapLegend_CurrentDateTime);--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_border_radios: .25rem;--_ui5-v2-17-0_daypicker_special_day_top: 2.5rem;--_ui5-v2-17-0_daypicker_special_day_before_border_color: var(--sapList_Background);--_ui5-v2-17-0_daypicker_selected_item_now_special_day_border_bottom_radius: 0;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_after_border_width: .125rem;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_dot: .375rem;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_top: 2rem;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_right: 1.4375rem;--_ui5-v2-17-0_daypicker_item_border_radius: .4375rem;--_ui5-v2-17-0_daypicker_item_selected_border: .0625rem solid var(--sapList_SelectionBorderColor);--_ui5-v2-17-0_daypicker_item_not_selected_focus_border: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_daypicker_item_selected_focus_color: var(--sapContent_FocusColor);--_ui5-v2-17-0_daypicker_item_selected_focus_width: .125rem;--_ui5-v2-17-0_daypicker_item_no_selected_inset: .375rem;--_ui5-v2-17-0_daypicker_item_now_border_focus_after: .125rem solid var(--sapList_SelectionBorderColor);--_ui5-v2-17-0_daypicker_item_now_border_radius_focus_after: .3125rem;--_ui5-v2-17-0_day_picker_item_selected_now_border_focus: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_day_picker_item_selected_now_border_radius_focus: .1875rem;--_ui5-v2-17-0_daypicker_dayname_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_daypicker_weekname_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_daypicker_item_selected_daytext_hover_background: transparent;--_ui5-v2-17-0_daypicker_item_border_radius_item: .5rem;--_ui5-v2-17-0_daypicker_item_border_radius_focus_after: .1875rem;--_ui5-v2-17-0_daypicker_item_selected_between_border: .5rem;--_ui5-v2-17-0_daypicker_item_selected_between_background: var(--sapList_SelectionBackgroundColor);--_ui5-v2-17-0_daypicker_item_selected_between_text_font: var(--sapFontFamily);--_ui5-v2-17-0_daypicker_item_selected_text_font: var(--sapFontBoldFamily);--_ui5-v2-17-0_daypicker_item_now_box_shadow: inset 0 0 0 .35rem var(--sapList_Background);--_ui5-v2-17-0_daypicker_item_selected_text_outline: .0625rem solid var(--sapSelectedColor);--_ui5-v2-17-0_daypicker_item_now_selected_outline_offset: -.25rem;--_ui5-v2-17-0_daypicker_item_now_selected_between_inset: .25rem;--_ui5-v2-17-0_daypicker_item_now_selected_between_border: .0625rem solid var(--sapContent_Selected_ForegroundColor);--_ui5-v2-17-0_daypicker_item_now_selected_between_border_radius: .1875rem;--_ui5-v2-17-0_daypicker_item_select_between_border: 1px solid var(--sapContent_Selected_ForegroundColor);--_ui5-v2-17-0_daypicker_item_weeekend_filter: brightness(105%);--_ui5-v2-17-0_daypicker_item_selected_hover: var(--sapList_Hover_Background);--_ui5-v2-17-0_daypicker_item_now_inset: .3125rem;--_ui5-v2-17-0-dp-item_withsecondtype_border: .25rem;--_ui5-v2-17-0_daypicker_item_selected__secondary_type_text_outline: .0625rem solid var(--sapSelectedColor);--_ui5-v2-17-0_daypicker_two_calendar_item_now_day_text_content: "";--_ui5-v2-17-0_daypicker_two_calendar_item_now_selected_border_width: .125rem;--_ui5-v2-17-0_daypicker_two_calendar_item_border_radius: .5rem;--_ui5-v2-17-0_daypicker_two_calendar_item_border_focus_border_radius: .375rem;--_ui5-v2-17-0_daypicker_two_calendar_item_no_selected_inset: 0;--_ui5-v2-17-0_daypicker_two_calendar_item_selected_now_border_radius_focus: .1875rem;--_ui5-v2-17-0_daypicker_two_calendar_item_no_selected_focus_inset: .1875rem;--_ui5-v2-17-0_daypicker_two_calendar_item_no_select_focus_border_radius: .3125rem;--_ui5-v2-17-0_daypicker_two_calendar_item_now_inset: .3125rem;--_ui5-v2-17-0_daypicker_two_calendar_item_now_selected_border_inset: .125rem;--_ui5-v2-17-0_daypicker_selected_item_special_day_width: calc(100% - .125rem) ;--_ui5-v2-17-0_daypicker_special_day_border_bottom_radius: .5rem;--_ui5-v2-17-0-daypicker_item_selected_now_border_radius: .5rem;--_ui5-v2-17-0_daypicker_selected_item_now_special_day_width: calc(100% - .1875rem) ;--_ui5-v2-17-0_daypicker_selected_item_now_special_day_border_bottom_radius_alternate: .5rem;--_ui5-v2-17-0_daypicker_selected_item_now_special_day_top: 2.4375rem;--_ui5-v2-17-0_daypicker_two_calendar_item_margin_bottom: 0;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_now_inset: .3125rem;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_now_border_radius: .25rem;--_ui5-v2-17-0_daypicker_item_now_focus_margin: 0;--_ui5-v2-17-0_daypicker_special_day_border_top: none;--_ui5-v2-17-0_daypicker_special_day_selected_border_radius_bottom: .25rem;--_ui5-v2-17-0_daypicker_specialday_focused_top: 2.125rem;--_ui5-v2-17-0_daypicker_specialday_focused_width: calc(100% - .75rem) ;--_ui5-v2-17-0_daypicker_specialday_focused_border_bottom: 0;--_ui5-v2-17-0_daypicker_item_now_specialday_top: 2.3125rem;--_ui5-v2-17-0_daypicker_item_now_specialday_width: calc(100% - .5rem) ;--_ui5-v2-17-0_dialog_header_state_line_height: .0625rem;--_ui5-v2-17-0_dialog_header_focus_bottom_offset: 2px;--_ui5-v2-17-0_dialog_header_focus_top_offset: 1px;--_ui5-v2-17-0_dialog_header_focus_left_offset: 1px;--_ui5-v2-17-0_dialog_header_focus_right_offset: 1px;--_ui5-v2-17-0_dialog_header_border_radius: var(--sapElement_BorderCornerRadius);--_ui5-v2-17-0_file_uploader_display_input_width: calc(100% - var(--_ui5-v2-17-0_input_icon_width));--_ui5-v2-17-0_file_uploader_tokenizer_width: calc(100% - 2 * var(--_ui5-v2-17-0_input_icon_width) - var(--_ui5-v2-17-0_input_inner_space_to_tokenizer));--_ui5-v2-17-0_table_cell_valign: center;--_ui5-v2-17-0_table_cell_min_width: 2.75rem;--_ui5-v2-17-0_table_navigated_cell_width: .25rem;--_ui5-v2-17-0_first_table_cell_horizontal_padding: 1rem;--_ui5-v2-17-0_table_cell_horizontal_padding: .5rem;--_ui5-v2-17-0_table_cell_vertical_padding: .25rem;--_ui5-v2-17-0_table_row_actions_gap: .25rem;--_ui5-v2-17-0_table_row_alternating_background: var(--sapTableRow_AlternatingBackground, var(--sapList_AlternatingBackground));--_ui5-v2-17-0_table_row_alternating_hover_background: var(--sapTableRow_AlternatingHoverBackground, var(--sapList_Hover_Background));--_ui5-v2-17-0_table_row_alternating_selection_background: var(--sapTableRow_AlternatingSelectionBackground, var(--sapList_SelectionBackgroundColor));--_ui5-v2-17-0_table_row_alternating_selection_hover_background: var(--sapTableRow_AlternatingSelectionHoverBackground, var(--sapList_Hover_SelectionBackground));--ui5-v2-17-0-form-item-layout: 4fr 8fr 0fr;--ui5-v2-17-0-form-item-label-justify: end;--ui5-v2-17-0-form-item-label-justify-span12: start;--ui5-v2-17-0-form-item-label-padding: .125rem 0;--ui5-v2-17-0-form-item-label-padding-end: .85rem;--ui5-v2-17-0-form-item-label-padding-span12: .625rem .25rem 0 .25rem;--ui5-v2-17-0-group-header-listitem-background-color: var(--sapList_GroupHeaderBackground);--ui5-v2-17-0-icon-focus-border-radius: .25rem;--_ui5-v2-17-0_input_width: 13.125rem;--_ui5-v2-17-0_input_min_width: 2.75rem;--_ui5-v2-17-0_input_height: var(--sapElement_Height);--_ui5-v2-17-0_input_margin_top_bottom: .25rem;--_ui5-v2-17-0_input_value_state_error_hover_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_input_background_color: var(--sapField_Background);--_ui5-v2-17-0_input_border_radius: var(--sapField_BorderCornerRadius);--_ui5-v2-17-0_input_placeholder_style: italic;--_ui5-v2-17-0_input_placeholder_color: var(--sapField_PlaceholderTextColor);--_ui5-v2-17-0_input_bottom_border_height: 0;--_ui5-v2-17-0_input_bottom_border_color: transparent;--_ui5-v2-17-0_input_focused_border_color: var(--sapField_Hover_BorderColor);--_ui5-v2-17-0_input_state_border_width: .125rem;--_ui5-v2-17-0_input_information_border_width: .125rem;--_ui5-v2-17-0_input_error_font_weight: normal;--_ui5-v2-17-0_input_warning_font_weight: normal;--_ui5-v2-17-0_input_focus_border_width: 1px;--_ui5-v2-17-0_input_error_warning_font_style: inherit;--_ui5-v2-17-0_input_error_warning_text_indent: 0;--_ui5-v2-17-0_input_disabled_border_color: var(--sapField_BorderColor);--_ui5-v2-17-0-input_disabled_background: var(--sapField_Background);--_ui5-v2-17-0_input_readonly_border: none;--_ui5-v2-17-0_input_readonly_border_color: var(--sapField_ReadOnly_BorderColor);--_ui5-v2-17-0_input_readonly_background: var(--sapField_ReadOnly_Background);--_ui5-v2-17-0_input_disabled_opacity: var(--sapContent_DisabledOpacity);--_ui5-v2-17-0_input_icon_min_width: 2.25rem;--_ui5-v2-17-0_input_compact_min_width: 2rem;--_ui5-v2-17-0_input_transition: none;--_ui5-v2-17-0-input-value-state-icon-display: none;--_ui5-v2-17-0_input_value_state_error_border_color: var(--sapField_InvalidColor);--_ui5-v2-17-0_input_focused_value_state_error_border_color: var(--sapField_InvalidColor);--_ui5-v2-17-0_input_value_state_warning_border_color: var(--sapField_WarningColor);--_ui5-v2-17-0_input_focused_value_state_warning_border_color: var(--sapField_WarningColor);--_ui5-v2-17-0_input_value_state_success_border_color: var(--sapField_SuccessColor);--_ui5-v2-17-0_input_focused_value_state_success_border_color: var(--sapField_SuccessColor);--_ui5-v2-17-0_input_value_state_success_border_width: 1px;--_ui5-v2-17-0_input_value_state_information_border_color: var(--sapField_InformationColor);--_ui5-v2-17-0_input_focused_value_state_information_border_color: var(--sapField_InformationColor);--ui5-v2-17-0_input_focus_pseudo_element_content: "";--_ui5-v2-17-0_input_value_state_error_warning_placeholder_font_weight: normal;--_ui5-v2-17-0-input_error_placeholder_color: var(--sapField_PlaceholderTextColor);--_ui5-v2-17-0_input_icon_width: 2.25rem;--_ui5-v2-17-0-input-icons-count: 0;--_ui5-v2-17-0_input_tokenizer_min_width: 3.25rem;--_ui5-v2-17-0-input-border: none;--_ui5-v2-17-0_input_hover_border: none;--_ui5-v2-17-0_input_focus_border_radius: .25rem;--_ui5-v2-17-0_input_readonly_focus_border_radius: .125rem;--_ui5-v2-17-0_input_error_warning_border_style: none;--_ui5-v2-17-0_input_focused_value_state_error_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_input_focused_value_state_warning_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_input_focused_value_state_success_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_input_focused_value_state_information_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_input_focused_value_state_error_focus_outline_color: var(--sapField_InvalidColor);--_ui5-v2-17-0_input_focused_value_state_warning_focus_outline_color: var(--sapField_WarningColor);--_ui5-v2-17-0_input_focused_value_state_success_focus_outline_color: var(--sapField_SuccessColor);--_ui5-v2-17-0_input_focus_offset: 0;--_ui5-v2-17-0_input_readonly_focus_offset: .125rem;--_ui5-v2-17-0_input_information_icon_padding: .625rem .625rem .5rem .625rem;--_ui5-v2-17-0_input_information_focused_icon_padding: .625rem .625rem .5625rem .625rem;--_ui5-v2-17-0_input_error_warning_icon_padding: .625rem .625rem .5rem .625rem;--_ui5-v2-17-0_input_error_warning_focused_icon_padding: .625rem .625rem .5625rem .625rem;--_ui5-v2-17-0_input_custom_icon_padding: .625rem .625rem .5625rem .625rem;--_ui5-v2-17-0_input_error_warning_custom_icon_padding: .625rem .625rem .5rem .625rem;--_ui5-v2-17-0_input_error_warning_custom_focused_icon_padding: .625rem .625rem .5625rem .625rem;--_ui5-v2-17-0_input_information_custom_icon_padding: .625rem .625rem .5rem .625rem;--_ui5-v2-17-0_input_information_custom_focused_icon_padding: .625rem .625rem .5625rem .625rem;--_ui5-v2-17-0_input_focus_outline_color: var(--sapField_Active_BorderColor);--_ui5-v2-17-0_input_icon_wrapper_height: calc(100% - 1px) ;--_ui5-v2-17-0_input_icon_wrapper_state_height: calc(100% - 2px) ;--_ui5-v2-17-0_input_icon_wrapper_success_state_height: calc(100% - var(--_ui5-v2-17-0_input_value_state_success_border_width));--_ui5-v2-17-0_input_icon_color: var(--sapField_TextColor);--_ui5-v2-17-0_input_icon_pressed_bg: var(--sapField_Hover_Background);--_ui5-v2-17-0_input_icon_padding: .625rem .625rem .5625rem .625rem;--_ui5-v2-17-0_input_icon_hover_bg: var(--sapField_Focus_Background);--_ui5-v2-17-0_input_icon_pressed_color: var(--sapButton_Active_TextColor);--_ui5-v2-17-0_input_icon_border_radius: var(--sapField_BorderCornerRadius);--_ui5-v2-17-0_input_icon_box_shadow: var(--sapField_Hover_Shadow);--_ui5-v2-17-0_input_icon_border: none;--_ui5-v2-17-0_input_error_icon_box_shadow: var(--sapContent_Negative_Shadow);--_ui5-v2-17-0_input_warning_icon_box_shadow: var(--sapContent_Critical_Shadow);--_ui5-v2-17-0_input_information_icon_box_shadow: var(--sapContent_Informative_Shadow);--_ui5-v2-17-0_input_success_icon_box_shadow: var(--sapContent_Positive_Shadow);--_ui5-v2-17-0_input_icon_error_pressed_color: var(--sapButton_Reject_Selected_TextColor);--_ui5-v2-17-0_input_icon_warning_pressed_color: var(--sapButton_Attention_Selected_TextColor);--_ui5-v2-17-0_input_icon_information_pressed_color: var(--sapButton_Selected_TextColor);--_ui5-v2-17-0_input_icon_success_pressed_color: var(--sapButton_Accept_Selected_TextColor);--_ui5-v2-17-0_link_focus_text_decoration: underline;--_ui5-v2-17-0_link_text_decoration: var(--sapLink_TextDecoration);--_ui5-v2-17-0_link_hover_text_decoration: var(--sapLink_Hover_TextDecoration);--_ui5-v2-17-0_link_focused_hover_text_decoration: none;--_ui5-v2-17-0_link_focused_hover_text_color: var(--sapContent_ContrastTextColor);--_ui5-v2-17-0_link_active_text_decoration: var(--sapLink_Active_TextDecoration);--_ui5-v2-17-0_link_outline: none;--_ui5-v2-17-0_link_focus_border-radius: .125rem;--_ui5-v2-17-0_link_focus_background_color: var(--sapContent_FocusColor);--_ui5-v2-17-0_link_focus_color: var(--sapContent_ContrastTextColor);--_ui5-v2-17-0_link_subtle_text_decoration: underline;--_ui5-v2-17-0_link_subtle_text_decoration_hover: none;--_ui5-v2-17-0_link_large_interactive_area_height: 1.5rem;--ui5-v2-17-0_list_footer_text_color: var(--sapList_FooterTextColor);--ui5-v2-17-0-listitem-background-color: var(--sapList_Background);--ui5-v2-17-0-listitem-border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);--ui5-v2-17-0-listitem-selected-border-bottom: 1px solid var(--sapList_SelectionBorderColor);--ui5-v2-17-0-listitem-focused-selected-border-bottom: 1px solid var(--sapList_SelectionBorderColor);--_ui5-v2-17-0-listitembase_disabled_opacity: .5;--_ui5-v2-17-0_product_switch_item_border: none;--_ui5-v2-17-0_menu_item_padding: 0 1rem 0 .75rem;--_ui5-v2-17-0_menu_item_submenu_icon_right: 1rem;--_ui5-v2-17-0_menu_popover_border_radius: var(--sapPopover_BorderCornerRadius);--_ui5-v2-17-0_monthpicker_item_margin: .0625rem;--_ui5-v2-17-0_monthpicker_item_border: .0625rem solid var(--sapButton_Lite_BorderColor);--_ui5-v2-17-0_monthpicker_item_hover_border: .0625rem solid var(--sapButton_Lite_Hover_BorderColor);--_ui5-v2-17-0_monthpicker_item_active_border: .0625rem solid var(--sapButton_Lite_Active_BorderColor);--_ui5-v2-17-0_monthpicker_item_selected_border: .0625rem solid var(--sapButton_Selected_BorderColor);--_ui5-v2-17-0_monthpicker_item_selected_hover_border: .0625rem solid var(--sapButton_Selected_Hover_BorderColor);--_ui5-v2-17-0_monthpicker_item_border_radius: .5rem;--_ui5-v2-17-0_message_strip_padding: .4375rem 2.5rem .4375rem 2.5rem;--_ui5-v2-17-0_message_strip_padding_block_no_icon: .4375rem .4375rem;--_ui5-v2-17-0_message_strip_padding_inline_no_icon: 1rem 2.5rem;--_ui5-v2-17-0_message_strip_border_width: var(--sapMessage_BorderWidth);--_ui5-v2-17-0_message_strip_icon_top: .4375rem;--_ui5-v2-17-0_message_strip_close_button_top: .125rem;--_ui5-v2-17-0_message_strip_close_button_color_set_1_background: var(--sapMessage_Button_Hover_Background);--_ui5-v2-17-0_message_strip_close_button_color_set_2_background: var(--sapMessage_Button_Hover_Background);--_ui5-v2-17-0_message_strip_close_button_color_set_1_color: var(--sapContent_ContrastIconColor);--_ui5-v2-17-0_message_strip_scheme_1_set_2_background: var(--sapIndicationColor_1b);--_ui5-v2-17-0_message_strip_scheme_1_set_2_border_color: var(--sapIndicationColor_1b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_2_set_2_background: var(--sapIndicationColor_2b);--_ui5-v2-17-0_message_strip_scheme_2_set_2_border_color: var(--sapIndicationColor_2b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_3_set_2_background: var(--sapIndicationColor_3b);--_ui5-v2-17-0_message_strip_scheme_3_set_2_border_color: var(--sapIndicationColor_3b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_4_set_2_background: var(--sapIndicationColor_4b);--_ui5-v2-17-0_message_strip_scheme_4_set_2_border_color: var(--sapIndicationColor_4b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_5_set_2_background: var(--sapIndicationColor_5b);--_ui5-v2-17-0_message_strip_scheme_5_set_2_border_color: var(--sapIndicationColor_5b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_6_set_2_background: var(--sapIndicationColor_6b);--_ui5-v2-17-0_message_strip_scheme_6_set_2_border_color: var(--sapIndicationColor_6b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_7_set_2_background: var(--sapIndicationColor_7b);--_ui5-v2-17-0_message_strip_scheme_7_set_2_border_color: var(--sapIndicationColor_7b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_8_set_2_background: var(--sapIndicationColor_8b);--_ui5-v2-17-0_message_strip_scheme_8_set_2_border_color: var(--sapIndicationColor_8b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_9_set_2_background: var(--sapIndicationColor_9b);--_ui5-v2-17-0_message_strip_scheme_9_set_2_border_color: var(--sapIndicationColor_9b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_10_set_2_background: var(--sapIndicationColor_10b);--_ui5-v2-17-0_message_strip_scheme_10_set_2_border_color: var(--sapIndicationColor_10b_BorderColor);--_ui5-v2-17-0_message_strip_close_button_right: .1875rem;--_ui5-v2-17-0_panel_focus_border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);--_ui5-v2-17-0_panel_header_height: 2.75rem;--_ui5-v2-17-0_panel_button_root_width: 2.75rem;--_ui5-v2-17-0_panel_button_root_height: 2.75rem;--_ui5-v2-17-0_panel_header_padding_right: .5rem;--_ui5-v2-17-0_panel_header_button_wrapper_padding: .25rem;--_ui5-v2-17-0_panel_border_radius: var(--sapGroup_BorderCornerRadius);--_ui5-v2-17-0_panel_border_bottom: none;--_ui5-v2-17-0_panel_default_header_border: .0625rem solid var(--sapGroup_TitleBorderColor);--_ui5-v2-17-0_panel_border_radius_expanded: var(--sapElement_BorderCornerRadius) var(--sapElement_BorderCornerRadius) 0 0;--_ui5-v2-17-0_panel_icon_color: var(--sapButton_Lite_TextColor);--_ui5-v2-17-0_panel_focus_offset: 0px;--_ui5-v2-17-0_panel_focus_bottom_offset: -1px;--_ui5-v2-17-0_panel_content_padding: .625rem 1rem;--_ui5-v2-17-0_panel_header_background_color: var(--sapGroup_TitleBackground);--_ui5-v2-17-0_popover_background: var(--sapGroup_ContentBackground);--_ui5-v2-17-0_popover_box_shadow: var(--sapContent_Shadow2);--_ui5-v2-17-0_popover_no_arrow_box_shadow: var(--sapContent_Shadow1);--_ui5-v2-17-0_popup_content_padding_s: 1rem;--_ui5-v2-17-0_popup_content_padding_m_l: 2rem;--_ui5-v2-17-0_popup_content_padding_xl: 3rem;--_ui5-v2-17-0_popup_header_footer_padding_s: 1rem;--_ui5-v2-17-0_popup_header_footer_padding_m_l: 2rem;--_ui5-v2-17-0_popup_header_footer_padding_xl: 3rem;--_ui5-v2-17-0_popup_viewport_margin: 10px;--_ui5-v2-17-0_popup_header_prop_header_text_alignment: flex-start;--_ui5-v2-17-0_popup_header_shadow: var(--sapContent_HeaderShadow);--_ui5-v2-17-0_popup_header_border: none;--_ui5-v2-17-0_popup_border_radius: .5rem;--_ui5-v2-17-0_popup_block_layer_background: var(--sapBlockLayer_Background);--_ui5-v2-17-0_popup_block_layer_opacity: .2;--_ui5-v2-17-0_progress_indicator_bar_border_max: none;--_ui5-v2-17-0_progress_indicator_icon_visibility: inline-block;--_ui5-v2-17-0_progress_indicator_side_points_visibility: block;--_ui5-v2-17-0_progress_indicator_padding: 1.25rem 0 .75rem 0;--_ui5-v2-17-0_progress_indicator_padding_novalue: .3125rem;--_ui5-v2-17-0_progress_indicator_padding_end: 1.25rem;--_ui5-v2-17-0_progress_indicator_host_height: unset;--_ui5-v2-17-0_progress_indicator_host_box_sizing: border-box;--_ui5-v2-17-0_progress_indicator_root_position: relative;--_ui5-v2-17-0_progress_indicator_root_border_radius: .25rem;--_ui5-v2-17-0_progress_indicator_root_height: .375rem;--_ui5-v2-17-0_progress_indicator_root_min_height: .375rem;--_ui5-v2-17-0_progress_indicator_root_overflow: visible;--_ui5-v2-17-0_progress_indicator_bar_height: .625rem;--_ui5-v2-17-0_progress_indicator_bar_border_radius: .5rem;--_ui5-v2-17-0_progress_indicator_remaining_bar_border_radius: .25rem;--_ui5-v2-17-0_progress_indicator_remaining_bar_position: absolute;--_ui5-v2-17-0_progress_indicator_remaining_bar_width: 100%;--_ui5-v2-17-0_progress_indicator_remaining_bar_overflow: visible;--_ui5-v2-17-0_progress_indicator_icon_position: absolute;--_ui5-v2-17-0_progress_indicator_icon_right_position: -1.25rem;--_ui5-v2-17-0_progress_indicator_value_margin: 0 0 .1875rem 0;--_ui5-v2-17-0_progress_indicator_value_position: absolute;--_ui5-v2-17-0_progress_indicator_value_top_position: -1.3125rem;--_ui5-v2-17-0_progress_indicator_value_left_position: 0;--_ui5-v2-17-0_progress_indicator_background_none: var(--sapProgress_Background);--_ui5-v2-17-0_progress_indicator_background_error: var(--sapProgress_NegativeBackground);--_ui5-v2-17-0_progress_indicator_background_warning: var(--sapProgress_CriticalBackground);--_ui5-v2-17-0_progress_indicator_background_success: var(--sapProgress_PositiveBackground);--_ui5-v2-17-0_progress_indicator_background_information: var(--sapProgress_InformationBackground);--_ui5-v2-17-0_progress_indicator_value_state_none: var(--sapProgress_Value_Background);--_ui5-v2-17-0_progress_indicator_value_state_error: var(--sapProgress_Value_NegativeBackground);--_ui5-v2-17-0_progress_indicator_value_state_warning: var(--sapProgress_Value_CriticalBackground);--_ui5-v2-17-0_progress_indicator_value_state_success: var(--sapProgress_Value_PositiveBackground);--_ui5-v2-17-0_progress_indicator_value_state_information: var(--sapProgress_Value_InformationBackground);--_ui5-v2-17-0_progress_indicator_value_state_error_icon_color: var(--sapProgress_Value_NegativeTextColor);--_ui5-v2-17-0_progress_indicator_value_state_warning_icon_color: var(--sapProgress_Value_CriticalTextColor);--_ui5-v2-17-0_progress_indicator_value_state_success_icon_color: var(--sapProgress_Value_PositiveTextColor);--_ui5-v2-17-0_progress_indicator_value_state_information_icon_color: var(--sapProgress_Value_InformationTextColor);--_ui5-v2-17-0_progress_indicator_border: none;--_ui5-v2-17-0_progress_indicator_border_color_error: var(--sapErrorBorderColor);--_ui5-v2-17-0_progress_indicator_border_color_warning: var(--sapWarningBorderColor);--_ui5-v2-17-0_progress_indicator_border_color_success: var(--sapSuccessBorderColor);--_ui5-v2-17-0_progress_indicator_border_color_information: var(--sapInformationBorderColor);--_ui5-v2-17-0_progress_indicator_color: var(--sapField_TextColor);--_ui5-v2-17-0_progress_indicator_bar_color: var(--sapProgress_TextColor);--_ui5-v2-17-0_progress_indicator_icon_size: var(--sapFontLargeSize);--_ui5-v2-17-0_rating_indicator_border_radius: .5rem;--_ui5-v2-17-0_rating_indicator_outline_offset: -.125rem;--_ui5-v2-17-0_rating_indicator_item_height: 1em;--_ui5-v2-17-0_rating_indicator_item_width: 1em;--_ui5-v2-17-0_rating_indicator_component_spacing: .5rem 0px;--_ui5-v2-17-0_rating_indicator_component_padding: .25rem;--_ui5-v2-17-0_rating_indicator_item_size_s: 1.375rem;--_ui5-v2-17-0_rating_indicator_item_size_l: 2rem;--_ui5-v2-17-0_rating_indicator_readonly_item_height: .75em;--_ui5-v2-17-0_rating_indicator_readonly_item_width: .75em;--_ui5-v2-17-0_rating_indicator_readonly_item_spacing: .1875rem .1875rem;--_ui5-v2-17-0_segmented_btn_background_color: var(--sapButton_Lite_Background);--_ui5-v2-17-0_segmented_btn_border_color: var(--sapButton_Lite_BorderColor);--_ui5-v2-17-0_segmented_btn_hover_box_shadow: none;--_ui5-v2-17-0_segmented_btn_item_border_left: .0625rem;--_ui5-v2-17-0_segmented_btn_item_border_right: .0625rem;--_ui5-v2-17-0_button_base_height: var(--sapElement_Height);--_ui5-v2-17-0_button_border_radius: var(--sapButton_BorderCornerRadius);--_ui5-v2-17-0_button_emphasized_focused_border_before: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_button_emphasized_focused_active_border_color: transparent;--_ui5-v2-17-0_button_focused_border: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_button_focused_border_radius: .375rem;--_ui5-v2-17-0_button_focused_inner_border_radius: .375rem;--_ui5-v2-17-0_button_base_min_width: 2.25rem;--_ui5-v2-17-0_button_base_padding: .5625rem;--_ui5-v2-17-0_button_base_icon_margin: .375rem;--_ui5-v2-17-0_button_text_shadow: none;--_ui5-v2-17-0_button_emphasized_border_width: .0625rem;--_ui5-v2-17-0_button_pressed_focused_border_color: var(--sapContent_FocusColor);--_ui5-v2-17-0_button_fontFamily: var(--sapButton_FontFamily);--_ui5-v2-17-0_button_emphasized_focused_border_color: var(--sapContent_ContrastFocusColor);--_ui5-v2-17-0_radio_button_min_width: 2.75rem;--_ui5-v2-17-0_radio_button_checked_fill: var(--sapSelectedColor);--_ui5-v2-17-0_radio_button_checked_error_fill: var(--sapField_InvalidColor);--_ui5-v2-17-0_radio_button_checked_success_fill: var(--sapField_SuccessColor);--_ui5-v2-17-0_radio_button_checked_information_fill: var(--sapField_InformationColor);--_ui5-v2-17-0_radio_button_warning_error_border_dash: 0;--_ui5-v2-17-0_radio_button_outer_ring_color: var(--sapField_BorderColor);--_ui5-v2-17-0_radio_button_outer_ring_width: var(--sapField_BorderWidth);--_ui5-v2-17-0_radio_button_outer_ring_bg: var(--sapField_Background);--_ui5-v2-17-0_radio_button_outer_ring_hover_color: var(--sapField_Hover_BorderColor);--_ui5-v2-17-0_radio_button_outer_ring_active_color: var(--sapField_Hover_BorderColor);--_ui5-v2-17-0_radio_button_outer_ring_checked_hover_color: var(--sapField_Hover_BorderColor);--_ui5-v2-17-0_radio_button_outer_ring_padding_with_label: 0 .6875rem;--_ui5-v2-17-0_radio_button_border: none;--_ui5-v2-17-0_radio_button_focus_outline: block;--_ui5-v2-17-0_radio_button_color: var(--sapField_BorderColor);--_ui5-v2-17-0_radio_button_label_offset: 1px;--_ui5-v2-17-0_radio_button_information_border_width: var(--sapField_InformationBorderWidth);--_ui5-v2-17-0_radio_button_hover_fill: var(--sapField_Selector_Hover_Background);--_ui5-v2-17-0_radio_button_hover_fill_error: var(--sapField_Selector_Hover_InvalidBackground);--_ui5-v2-17-0_radio_button_hover_fill_warning: var(--sapField_Selector_Hover_WarningBackground);--_ui5-v2-17-0_radio_button_hover_fill_success: var(--sapField_Selector_Hover_SuccessBackground);--_ui5-v2-17-0_radio_button_hover_fill_information: var(--sapField_Selector_Hover_InformationBackground);--_ui5-v2-17-0_radio_button_border_width: var(--sapContent_FocusWidth);--_ui5-v2-17-0_radio_button_border_radius: .5rem;--_ui5-v2-17-0_radio_button_label_color: var(--sapField_TextColor);--_ui5-v2-17-0_radio_button_inner_ring_radius: 27.5%;--_ui5-v2-17-0_radio_button_outer_ring_padding: 0 .6875rem;--_ui5-v2-17-0_radio_button_read_only_border_type: 4,2;--_ui5-v2-17-0_radio_button_inner_ring_color: var(--sapContent_Selected_ForegroundColor);--_ui5-v2-17-0_radio_button_checked_warning_fill: var(--sapField_WarningColor);--_ui5-v2-17-0_radio_button_read_only_inner_ring_color: var(--sapField_TextColor);--_ui5-v2-17-0_radio_button_read_only_border_width: var(--sapElement_BorderWidth);--_ui5-v2-17-0_radio_button_focus_dist: .375rem;--_ui5-v2-17-0_switch_height: 2.75rem;--_ui5-v2-17-0_switch_foucs_border_size: 1px;--_ui5-v2-17-0-switch-root-border-radius: 0;--_ui5-v2-17-0-switch-root-box-shadow: none;--_ui5-v2-17-0_switch_track_border_radius: .75rem;--_ui5-v2-17-0-switch-track-border: 1px solid;--_ui5-v2-17-0_switch_track_transition: none;--_ui5-v2-17-0_switch_handle_border_radius: 1rem;--_ui5-v2-17-0-switch-slider-texts-display: inline;--_ui5-v2-17-0_switch_width: 2.5rem;--_ui5-v2-17-0_switch_min_width: none;--_ui5-v2-17-0_switch_with_label_width: 2.875rem;--_ui5-v2-17-0_switch_focus_outline: none;--_ui5-v2-17-0_switch_root_after_outline: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_switch_root_after_boreder_radius: 1rem;--_ui5-v2-17-0_switch_root_outline_top: .5rem;--_ui5-v2-17-0_switch_root_outline_bottom: .5rem;--_ui5-v2-17-0_switch_root_outline_left: -.125rem;--_ui5-v2-17-0_switch_root_outline_right: -.125rem;--_ui5-v2-17-0_switch_disabled_opacity: var(--sapContent_DisabledOpacity);--_ui5-v2-17-0_switch_transform: translateX(100%) translateX(-1.625rem);--_ui5-v2-17-0_switch_transform_with_label: translateX(100%) translateX(-1.875rem);--_ui5-v2-17-0_switch_rtl_transform: translateX(-100%) translateX(1.625rem);--_ui5-v2-17-0_switch_rtl_transform_with_label: translateX(-100%) translateX(1.875rem);--_ui5-v2-17-0_switch_track_width: 2.5rem;--_ui5-v2-17-0_switch_track_height: 1.5rem;--_ui5-v2-17-0_switch_track_with_label_width: 2.875rem;--_ui5-v2-17-0_switch_track_with_label_height: 1.5rem;--_ui5-v2-17-0_switch_track_active_background_color: var(--sapButton_Track_Selected_Background);--_ui5-v2-17-0_switch_track_inactive_background_color: var(--sapButton_Track_Background);--_ui5-v2-17-0_switch_track_hover_active_background_color: var(--sapButton_Track_Selected_Hover_Background);--_ui5-v2-17-0_switch_track_hover_inactive_background_color: var(--sapButton_Track_Hover_Background);--_ui5-v2-17-0_switch_track_active_border_color: var(--sapButton_Track_Selected_BorderColor);--_ui5-v2-17-0_switch_track_inactive_border_color: var(--sapButton_Track_BorderColor);--_ui5-v2-17-0_switch_track_hover_active_border_color: var(--sapButton_Track_Selected_Hover_BorderColor);--_ui5-v2-17-0_switch_track_hover_inactive_border_color: var(--sapButton_Track_Hover_BorderColor);--_ui5-v2-17-0_switch_track_semantic_accept_background_color: var(--sapButton_Track_Positive_Background);--_ui5-v2-17-0_switch_track_semantic_reject_background_color: var(--sapButton_Track_Negative_Background);--_ui5-v2-17-0_switch_track_semantic_hover_accept_background_color: var(--sapButton_Track_Positive_Hover_Background);--_ui5-v2-17-0_switch_track_semantic_hover_reject_background_color: var(--sapButton_Track_Negative_Hover_Background);--_ui5-v2-17-0_switch_track_semantic_accept_border_color: var(--sapButton_Track_Positive_BorderColor);--_ui5-v2-17-0_switch_track_semantic_reject_border_color: var(--sapButton_Track_Negative_BorderColor);--_ui5-v2-17-0_switch_track_semantic_hover_accept_border_color: var(--sapButton_Track_Positive_Hover_BorderColor);--_ui5-v2-17-0_switch_track_semantic_hover_reject_border_color: var(--sapButton_Track_Negative_Hover_BorderColor);--_ui5-v2-17-0_switch_track_icon_display: inline-block;--_ui5-v2-17-0_switch_handle_width: 1.5rem;--_ui5-v2-17-0_switch_handle_height: 1.25rem;--_ui5-v2-17-0_switch_handle_with_label_width: 1.75rem;--_ui5-v2-17-0_switch_handle_with_label_height: 1.25rem;--_ui5-v2-17-0_switch_handle_border: var(--_ui5-v2-17-0_switch_handle_border_width) solid var(--sapButton_Handle_BorderColor);--_ui5-v2-17-0_switch_handle_border_width: .125rem;--_ui5-v2-17-0_switch_handle_active_background_color: var(--sapButton_Handle_Selected_Background);--_ui5-v2-17-0_switch_handle_inactive_background_color: var(--sapButton_Handle_Background);--_ui5-v2-17-0_switch_handle_hover_active_background_color: var(--sapButton_Handle_Selected_Hover_Background);--_ui5-v2-17-0_switch_handle_hover_inactive_background_color: var(--sapButton_Handle_Hover_Background);--_ui5-v2-17-0_switch_handle_active_border_color: var(--sapButton_Handle_Selected_BorderColor);--_ui5-v2-17-0_switch_handle_inactive_border_color: var(--sapButton_Handle_BorderColor);--_ui5-v2-17-0_switch_handle_hover_active_border_color: var(--sapButton_Handle_Selected_BorderColor);--_ui5-v2-17-0_switch_handle_hover_inactive_border_color: var(--sapButton_Handle_BorderColor);--_ui5-v2-17-0_switch_handle_semantic_accept_background_color: var(--sapButton_Handle_Positive_Background);--_ui5-v2-17-0_switch_handle_semantic_reject_background_color: var(--sapButton_Handle_Negative_Background);--_ui5-v2-17-0_switch_handle_semantic_hover_accept_background_color: var(--sapButton_Handle_Positive_Hover_Background);--_ui5-v2-17-0_switch_handle_semantic_hover_reject_background_color: var(--sapButton_Handle_Negative_Hover_Background);--_ui5-v2-17-0_switch_handle_semantic_accept_border_color: var(--sapButton_Handle_Positive_BorderColor);--_ui5-v2-17-0_switch_handle_semantic_reject_border_color: var(--sapButton_Handle_Negative_BorderColor);--_ui5-v2-17-0_switch_handle_semantic_hover_accept_border_color: var(--sapButton_Handle_Positive_BorderColor);--_ui5-v2-17-0_switch_handle_semantic_hover_reject_border_color: var(--sapButton_Handle_Negative_BorderColor);--_ui5-v2-17-0_switch_handle_on_hover_box_shadow: 0 0 0 .125rem var(--sapButton_Handle_Selected_Hover_BorderColor);--_ui5-v2-17-0_switch_handle_off_hover_box_shadow: 0 0 0 .125rem var(--sapButton_Handle_Hover_BorderColor);--_ui5-v2-17-0_switch_handle_semantic_on_hover_box_shadow: 0 0 0 .125rem var(--sapButton_Handle_Positive_Hover_BorderColor);--_ui5-v2-17-0_switch_handle_semantic_off_hover_box_shadow: 0 0 0 .125rem var(--sapButton_Handle_Negative_Hover_BorderColor);--_ui5-v2-17-0_switch_handle_left: .0625rem;--_ui5-v2-17-0_switch_text_font_family: var(--sapContent_IconFontFamily);--_ui5-v2-17-0_switch_text_font_size: var(--sapFontLargeSize);--_ui5-v2-17-0_switch_text_width: 1.25rem;--_ui5-v2-17-0_switch_text_with_label_font_family: "72-Condensed-Bold" , "72" , "72full" , Arial, Helvetica, sans-serif;--_ui5-v2-17-0_switch_text_with_label_font_size: var(--sapFontSmallSize);--_ui5-v2-17-0_switch_text_with_label_width: 1.75rem;--_ui5-v2-17-0_switch_text_inactive_left: .1875rem;--_ui5-v2-17-0_switch_text_inactive_left_alternate: .0625rem;--_ui5-v2-17-0_switch_text_inactive_right: auto;--_ui5-v2-17-0_switch_text_inactive_right_alternate: 0;--_ui5-v2-17-0_switch_text_active_left: .1875rem;--_ui5-v2-17-0_switch_text_active_left_alternate: .0625rem;--_ui5-v2-17-0_switch_text_active_color: var(--sapButton_Handle_Selected_TextColor);--_ui5-v2-17-0_switch_text_inactive_color: var(--sapButton_Handle_TextColor);--_ui5-v2-17-0_switch_text_semantic_accept_color: var(--sapButton_Handle_Positive_TextColor);--_ui5-v2-17-0_switch_text_semantic_reject_color: var(--sapButton_Handle_Negative_TextColor);--_ui5-v2-17-0_switch_text_overflow: hidden;--_ui5-v2-17-0_switch_text_z_index: 1;--_ui5-v2-17-0_switch_text_hidden: hidden;--_ui5-v2-17-0_switch_text_min_width: none;--_ui5-v2-17-0_switch_icon_width: 1rem;--_ui5-v2-17-0_switch_icon_height: 1rem;--_ui5-v2-17-0_select_label_color: var(--sapField_TextColor);--_ui5-v2-17-0_select_icon_width: 2.25rem;--_ui5-v2-17-0_select_hover_icon_left_border: none;--_ui5-v2-17-0_select_icon_wrapper_height: calc(100% - .0625rem) ;--_ui5-v2-17-0_select_icon_wrapper_state_height: calc(100% - .125rem) ;--_ui5-v2-17-0_split_button_host_transparent_hover_background: transparent;--_ui5-v2-17-0_split_button_transparent_disabled_background: transparent;--_ui5-v2-17-0_split_button_host_default_box_shadow: inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_BorderColor);--_ui5-v2-17-0_split_button_host_attention_box_shadow: inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_Attention_BorderColor);--_ui5-v2-17-0_split_button_host_emphasized_box_shadow: inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_Emphasized_BorderColor);--_ui5-v2-17-0_split_button_host_positive_box_shadow: inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_Accept_BorderColor);--_ui5-v2-17-0_split_button_host_negative_box_shadow: inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_Reject_BorderColor);--_ui5-v2-17-0_split_button_host_transparent_box_shadow: inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_Lite_BorderColor);--_ui5-v2-17-0_split_text_button_border_color: transparent;--_ui5-v2-17-0_split_text_button_background_color: transparent;--_ui5-v2-17-0_split_text_button_emphasized_border: var(--sapButton_BorderWidth) solid var(--sapButton_Emphasized_BorderColor);--_ui5-v2-17-0_split_text_button_emphasized_border_width: .0625rem;--_ui5-v2-17-0_split_text_button_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);--_ui5-v2-17-0_split_text_button_positive_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_Accept_BorderColor);--_ui5-v2-17-0_split_text_button_negative_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_Reject_BorderColor);--_ui5-v2-17-0_split_text_button_attention_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_Attention_BorderColor);--_ui5-v2-17-0_split_text_button_transparent_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);--_ui5-v2-17-0_split_arrow_button_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);--_ui5-v2-17-0_split_arrow_button_emphasized_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_Emphasized_BorderColor);--_ui5-v2-17-0_split_arrow_button_positive_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_Accept_BorderColor);--_ui5-v2-17-0_split_arrow_button_negative_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_Reject_BorderColor);--_ui5-v2-17-0_split_arrow_button_attention_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_Attention_BorderColor);--_ui5-v2-17-0_split_arrow_button_transparent_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);--_ui5-v2-17-0_split_button_focused_border: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_split_button_focused_border_radius: .375rem;--_ui5-v2-17-0_split_button_middle_separator_left: -.0625rem;--_ui5-v2-17-0_split_button_middle_separator_hover_display: none;--_ui5-v2-17-0_split_button_text_button_right_border_width: .0625rem;--_ui5-v2-17-0_split_button_transparent_hover_background: var(--sapButton_Lite_Hover_Background);--_ui5-v2-17-0_split_button_transparent_hover_color: var(--sapButton_TextColor);--_ui5-v2-17-0_split_button_host_transparent_hover_box_shadow: inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_BorderColor);--_ui5-v2-17-0_split_button_inner_focused_border_radius_inner: .375rem;--_ui5-v2-17-0_split_button_emphasized_separator_color: transparent;--_ui5-v2-17-0_split_button_positive_separator_color: transparent;--_ui5-v2-17-0_split_button_negative_separator_color: transparent;--_ui5-v2-17-0_split_button_attention_separator_color: transparent;--_ui5-v2-17-0_split_button_attention_separator_color_default: var(--sapButton_Attention_TextColor);--_ui5-v2-17-0_split_text_button_hover_border_right: var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);--_ui5-v2-17-0_split_text_button_positive_hover_border_right: var(--sapButton_BorderWidth) solid var(--sapButton_Accept_BorderColor);--_ui5-v2-17-0_split_text_button_negative_hover_border_right: var(--sapButton_BorderWidth) solid var(--sapButton_Reject_BorderColor);--_ui5-v2-17-0_split_text_button_attention_hover_border_right: var(--sapButton_BorderWidth) solid var(--sapButton_Attention_BorderColor);--_ui5-v2-17-0_split_text_button_transparent_hover_border_right: var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);--_ui5-v2-17-0_split_button_middle_separator_hover_display_emphasized: none;--_ui5-v2-17-0_tc_header_height: var(--_ui5-v2-17-0_tc_item_height);--_ui5-v2-17-0_tc_header_height_text_only: var(--_ui5-v2-17-0_tc_item_text_only_height);--_ui5-v2-17-0_tc_header_height_text_with_additional_text: var(--_ui5-v2-17-0_tc_item_text_only_with_additional_text_height);--_ui5-v2-17-0_tc_header_box_shadow: var(--sapContent_HeaderShadow);--_ui5-v2-17-0_tc_header_background: var(--sapObjectHeader_Background);--_ui5-v2-17-0_tc_header_background_translucent: var(--sapObjectHeader_Background);--_ui5-v2-17-0_tc_content_background: var(--sapBackgroundColor);--_ui5-v2-17-0_tc_content_background_translucent: var(--sapGroup_ContentBackground);--_ui5-v2-17-0_tc_headeritem_padding: 1rem;--_ui5-v2-17-0_tc_headerItem_additional_text_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_tc_headerItem_text_selected_color: var(--sapTab_Selected_TextColor);--_ui5-v2-17-0_tc_headerItem_text_selected_hover_color: var(--sapSelectedColor);--_ui5-v2-17-0_tc_headeritem_text_font_weight: normal;--_ui5-v2-17-0_tc_headerItem_additional_text_font_weight: normal;--_ui5-v2-17-0_tc_headerItem_neutral_border_color: var(--sapTab_Neutral_ForegroundColor);--_ui5-v2-17-0_tc_headerItem_transition: none;--_ui5-v2-17-0_tc_headerItemContent_border_radius: .125rem .125rem 0 0;--_ui5-v2-17-0_tc_headerItemContent_border_bg: transparent;--_ui5-v2-17-0_tc_headerItem_neutral_border_bg: transparent;--_ui5-v2-17-0_tc_headerItem_positive_border_bg: transparent;--_ui5-v2-17-0_tc_headerItem_negative_border_bg: transparent;--_ui5-v2-17-0_tc_headerItem_critical_border_bg: transparent;--_ui5-v2-17-0_tc_headerItemContent_border_height: 0;--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_left: 0px;--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_right: 0px;--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_top: 0px;--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_bottom: 0px;--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_left: .75rem;--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_right: .625rem;--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_top: .75rem;--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_bottom: .75rem;--_ui5-v2-17-0_tc_headerItemContent_default_focus_border: none;--_ui5-v2-17-0_tc_headerItemContent_focus_border_radius: 0;--_ui5-v2-17-0_tc_headerItemSemanticIcon_display: none;--_ui5-v2-17-0_tc_headerItemSemanticIcon_size: .75rem;--_ui5-v2-17-0_tc_mixedMode_itemText_font_family: var(--sapFontFamily);--_ui5-v2-17-0_tc_mixedMode_itemText_font_size: var(--sapFontSmallSize);--_ui5-v2-17-0_tc_mixedMode_itemText_font_weight: normal;--_ui5-v2-17-0_tc_overflowItem_positive_color: var(--sapPositiveColor);--_ui5-v2-17-0_tc_overflowItem_negative_color: var(--sapNegativeColor);--_ui5-v2-17-0_tc_overflowItem_critical_color: var(--sapCriticalColor);--_ui5-v2-17-0_tc_overflowItem_focus_offset: .125rem;--_ui5-v2-17-0_tc_overflowItem_indent: .5rem;--_ui5-v2-17-0_tc_overflowItem_extra_indent: 0rem;--_ui5-v2-17-0_tc_headerItemIcon_semantic_selected_color: var(--sapGroup_ContentBackground);--_ui5-v2-17-0_tc_header_border_bottom: .0625rem solid var(--sapObjectHeader_Background);--_ui5-v2-17-0_tc_headerItem_color: var(--sapTab_TextColor);--_ui5-v2-17-0_tc_overflowItem_default_color: var(--sapTab_TextColor);--_ui5-v2-17-0_tc_overflowItem_current_color: CurrentColor;--_ui5-v2-17-0_tc_content_border_bottom: .0625rem solid var(--sapObjectHeader_BorderColor);--_ui5-v2-17-0_tc_headerItem_expand_button_margin_inline_start: 0rem;--_ui5-v2-17-0_tc_headerItem_single_click_expand_button_margin_inline_start: .25rem;--_ui5-v2-17-0_tc_headerItem_expand_button_border_radius: .25rem;--_ui5-v2-17-0_tc_headerItem_expand_button_separator_display: inline-block;--_ui5-v2-17-0_tc_headerItem_focus_border: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_tc_headerItem_focus_border_offset: -5px;--_ui5-v2-17-0_tc_headerItemIcon_focus_border_radius: 50%;--_ui5-v2-17-0_tc_headerItem_focus_border_radius: .375rem;--_ui5-v2-17-0_tc_headerItem_text_hover_color: var(--sapTab_Selected_TextColor);--_ui5-v2-17-0_tc_headerItemIcon_border: .125rem solid var(--sapTab_ForegroundColor);--_ui5-v2-17-0_tc_mixedMode_itemText_color: var(--sapTextColor);--_ui5-v2-17-0_tc_overflow_text_color: var(--sapTextColor);--_ui5-v2-17-0_text_max_lines: initial;--_ui5-v2-17-0_textarea_state_border_width: .125rem;--_ui5-v2-17-0_textarea_information_border_width: .125rem;--_ui5-v2-17-0_textarea_placeholder_font_style: italic;--_ui5-v2-17-0_textarea_value_state_error_warning_placeholder_font_weight: normal;--_ui5-v2-17-0_textarea_error_placeholder_font_style: italic;--_ui5-v2-17-0_textarea_error_placeholder_color: var(--sapField_PlaceholderTextColor);--_ui5-v2-17-0_textarea_error_hover_background_color: var(--sapField_Hover_Background);--_ui5-v2-17-0_textarea_disabled_opacity: .4;--_ui5-v2-17-0_textarea_focus_pseudo_element_content: "";--_ui5-v2-17-0_textarea_min_height: 2.25rem;--_ui5-v2-17-0_textarea_padding_right_and_left_readonly: .5625rem;--_ui5-v2-17-0_textarea_padding_top_readonly: .4375rem;--_ui5-v2-17-0_textarea_hover_border: none;--_ui5-v2-17-0_textarea_focus_border_radius: .25rem;--_ui5-v2-17-0_textarea_error_warning_border_style: none;--_ui5-v2-17-0_textarea_line_height: 1.5;--_ui5-v2-17-0_textarea_focused_value_state_error_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_textarea_focused_value_state_warning_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_textarea_focused_value_state_success_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_textarea_focused_value_state_information_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_textarea_focused_value_state_error_focus_outline_color: var(--sapField_InvalidColor);--_ui5-v2-17-0_textarea_focused_value_state_warning_focus_outline_color: var(--sapField_WarningColor);--_ui5-v2-17-0_textarea_focused_value_state_success_focus_outline_color: var(--sapField_SuccessColor);--_ui5-v2-17-0_textarea_focus_offset: 0;--_ui5-v2-17-0_textarea_readonly_focus_offset: 1px;--_ui5-v2-17-0_textarea_focus_outline_color: var(--sapField_Active_BorderColor);--_ui5-v2-17-0_textarea_value_state_focus_offset: 1px;--_ui5-v2-17-0_textarea_wrapper_padding: .0625rem;--_ui5-v2-17-0_textarea_success_wrapper_padding: .0625rem;--_ui5-v2-17-0_textarea_warning_error_wrapper_padding: .0625rem .0625rem .125rem .0625rem;--_ui5-v2-17-0_textarea_information_wrapper_padding: .0625rem .0625rem .125rem .0625rem;--_ui5-v2-17-0_textarea_inner_width: calc(100% - (2 * var(--_ui5-v2-17-0_textarea_wrapper_padding)));--_ui5-v2-17-0_textarea_padding_bottom_readonly: .375rem;--_ui5-v2-17-0_textarea_padding_top_error_warning: .5rem;--_ui5-v2-17-0_textarea_padding_bottom_error_warning: .4375rem;--_ui5-v2-17-0_textarea_padding_top_information: .5rem;--_ui5-v2-17-0_textarea_padding_bottom_information: .4375rem;--_ui5-v2-17-0_textarea_padding_right_and_left: .625rem;--_ui5-v2-17-0_textarea_padding_right_and_left_error_warning: .625rem;--_ui5-v2-17-0_textarea_padding_right_and_left_information: .625rem;--_ui5-v2-17-0_textarea_readonly_border_style: dashed;--_ui5-v2-17-0-time_picker_border_radius: .25rem;--_ui5-v2-17-0_toast_vertical_offset: 3rem;--_ui5-v2-17-0_toast_horizontal_offset: 2rem;--_ui5-v2-17-0_toast_background: var(--sapIndicationColor_9_Background);--_ui5-v2-17-0_toast_shadow: var(--sapContent_Lite_Shadow);--_ui5-v2-17-0_toast_offset_width: -.1875rem;--_ui5-v2-17-0_toggle_button_emphasized_text_shadow: none;--_ui5-v2-17-0_yearpicker_item_margin: .0625rem;--_ui5-v2-17-0_yearpicker_item_border: .0625rem solid var(--sapButton_Lite_BorderColor);--_ui5-v2-17-0_yearpicker_item_hover_border: .0625rem solid var(--sapButton_Lite_Hover_BorderColor);--_ui5-v2-17-0_yearpicker_item_selected_border: .0625rem solid var(--sapButton_Selected_BorderColor);--_ui5-v2-17-0_yearpicker_item_selected_hover_border: .0625rem solid var(--sapButton_Selected_Hover_BorderColor);--_ui5-v2-17-0_yearpicker_item_border_radius: .5rem;--_ui5-v2-17-0_calendar_header_middle_button_width: 6.25rem;--_ui5-v2-17-0_calendar_header_middle_button_flex: 1 1 auto;--_ui5-v2-17-0_calendar_header_middle_button_focus_after_display: block;--_ui5-v2-17-0_calendar_header_middle_button_focus_after_width: calc(100% - .375rem) ;--_ui5-v2-17-0_calendar_header_middle_button_focus_after_height: calc(100% - .375rem) ;--_ui5-v2-17-0_calendar_header_middle_button_focus_after_top_offset: .125rem;--_ui5-v2-17-0_calendar_header_middle_button_focus_after_left_offset: .125rem;--_ui5-v2-17-0_calendar_header_arrow_button_border: none;--_ui5-v2-17-0_calendar_header_arrow_button_border_radius: .5rem;--_ui5-v2-17-0_calendar_header_arrow_button_box_shadow: 0 0 .125rem 0 rgb(85 107 130 / 72%);--_ui5-v2-17-0_calendar_header_middle_button_focus_border_radius: .5rem;--_ui5-v2-17-0_calendar_header_middle_button_focus_border: none;--_ui5-v2-17-0_calendar_header_middle_button_focus_after_border: none;--_ui5-v2-17-0_calendar_header_middle_button_focus_background: transparent;--_ui5-v2-17-0_calendar_header_middle_button_focus_outline: .125rem solid var(--sapSelectedColor);--_ui5-v2-17-0_calendar_header_middle_button_focus_active_outline: .0625rem solid var(--sapSelectedColor);--_ui5-v2-17-0_calendar_header_middle_button_focus_active_background: transparent;--_ui5-v2-17-0_token_background: var(--sapButton_TokenBackground);--_ui5-v2-17-0_token_readonly_background: var(--sapButton_TokenBackground);--_ui5-v2-17-0_token_readonly_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_token_right_margin: .3125rem;--_ui5-v2-17-0_token_left_padding: .3125rem;--_ui5-v2-17-0_token_focused_selected_border: 1px solid var(--sapButton_Selected_BorderColor);--_ui5-v2-17-0_token_focus_offset: -.25rem;--_ui5-v2-17-0_token_focus_outline_width: .0625rem;--_ui5-v2-17-0_token_selected_focus_outline: none;--_ui5-v2-17-0_token_focus_outline: none;--_ui5-v2-17-0_token_outline_offset: .125rem;--ui5-v2-17-0_token_focus_pseudo_element_content: "";--_ui5-v2-17-0_token_border_radius: .375rem;--_ui5-v2-17-0_token_focus_outline_border_radius: .5rem;--_ui5-v2-17-0_token_text_color: var(--sapTextColor);--_ui5-v2-17-0_token_selected_text_font_family: var(--sapFontSemiboldDuplexFamily);--_ui5-v2-17-0_token_selected_internal_border_bottom: .125rem solid var(--sapButton_Selected_BorderColor);--_ui5-v2-17-0_token_selected_internal_border_bottom_radius: .1875rem;--_ui5-v2-17-0_token_readonly_padding: .25rem .3125rem;--_ui5-v2-17-0_tokenizer_gap: .625rem .25rem;--_ui5-v2-17-0_tokenizer-popover_offset: .3125rem;--_ui5-v2-17-0_tokenizer_n_more_text_color: var(--sapLinkColor);--_ui5-v2-17-0_slider_progress_container_dot_background: var(--sapField_BorderColor);--_ui5-v2-17-0_slider_progress_border: solid .0625rem var(--sapSlider_BorderColor);--_ui5-v2-17-0_slider_padding: 1.406rem 1.0625rem;--_ui5-v2-17-0_slider_inner_height: .25rem;--_ui5-v2-17-0_slider_outer_height: 1.6875rem;--_ui5-v2-17-0_slider_progress_border_radius: .25rem;--_ui5-v2-17-0_slider_tickmark_bg: var(--sapField_BorderColor);--_ui5-v2-17-0_slider_handle_outline_offset: .075rem;--_ui5-v2-17-0_slider_progress_outline: .0625rem dotted var(--sapContent_FocusColor);--_ui5-v2-17-0_slider_progress_outline_offset: -.8125rem;--_ui5-v2-17-0_slider_disabled_opacity: .4;--_ui5-v2-17-0_slider_tooltip_border_color: var(--sapField_BorderColor);--_ui5-v2-17-0_range_slider_handle_background_focus: transparent;--_ui5-v2-17-0_slider_progress_box_sizing: border-box;--_ui5-v2-17-0_slider_active_progress_box_sizing: content-box;--_ui5-v2-17-0_range_slider_focus_outline_width: 100%;--_ui5-v2-17-0_slider_progress_outline_offset_left: 0;--_ui5-v2-17-0_range_slider_focus_outline_radius: 0;--_ui5-v2-17-0_slider_progress_container_top: 0;--_ui5-v2-17-0_slider_progress_height: 100%;--_ui5-v2-17-0_slider_active_progress_border: solid .0625rem var(--sapSlider_Selected_BorderColor);--_ui5-v2-17-0_slider_active_progress_left: 0;--_ui5-v2-17-0_slider_active_progress_top: 0;--_ui5-v2-17-0_slider_no_tickmarks_progress_container_top: var(--_ui5-v2-17-0_slider_progress_container_top);--_ui5-v2-17-0_slider_no_tickmarks_progress_height: var(--_ui5-v2-17-0_slider_progress_height);--_ui5-v2-17-0_slider_no_tickmarks_active_progress_border: var(--_ui5-v2-17-0_slider_active_progress_border);--_ui5-v2-17-0_slider_no_tickmarks_active_progress_left: var(--_ui5-v2-17-0_slider_active_progress_left);--_ui5-v2-17-0_slider_no_tickmarks_active_progress_top: var(--_ui5-v2-17-0_slider_active_progress_top);--_ui5-v2-17-0_slider_handle_focus_visibility: none;--_ui5-v2-17-0_slider_handle_icon_size: 1rem;--_ui5-v2-17-0_slider_progress_container_background: var(--sapSlider_Background);--_ui5-v2-17-0_slider_progress_container_dot_display: block;--_ui5-v2-17-0_slider_inner_min_width: 4rem;--_ui5-v2-17-0_slider_progress_background: var(--sapSlider_Selected_Background);--_ui5-v2-17-0_slider_progress_before_background: var(--sapSlider_Selected_Background);--_ui5-v2-17-0_slider_progress_after_background: var(--sapContent_MeasureIndicatorColor);--_ui5-v2-17-0_slider_handle_background: var(--sapSlider_HandleBackground);--_ui5-v2-17-0_slider_handle_icon_display: inline-block;--_ui5-v2-17-0_slider_handle_border: .0625rem solid var(--sapSlider_HandleBorderColor);--_ui5-v2-17-0_slider_handle_border_radius: .5rem;--_ui5-v2-17-0_slider_handle_height: 1.5rem;--_ui5-v2-17-0_slider_handle_width: 2rem;--_ui5-v2-17-0_slider_handle_top: -.625rem;--_ui5-v2-17-0_slider_handle_font_family: "SAP-icons";--_ui5-v2-17-0_slider_handle_hover_border: .0625rem solid var(--sapSlider_Hover_HandleBorderColor);--_ui5-v2-17-0_slider_handle_focus_border: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_slider_handle_background_focus: var(--sapSlider_Active_RangeHandleBackground);--_ui5-v2-17-0_slider_handle_outline: none;--_ui5-v2-17-0_slider_handle_hover_background: var(--sapSlider_Hover_HandleBackground);--_ui5-v2-17-0_slider_tooltip_background: var(--sapField_Focus_Background);--_ui5-v2-17-0_slider_tooltip_border: none;--_ui5-v2-17-0_slider_tooltip_border_radius: .5rem;--_ui5-v2-17-0_slider_tooltip_box_shadow: var(--sapContent_Shadow1);--_ui5-v2-17-0_range_slider_legacy_progress_focus_display: none;--_ui5-v2-17-0_range_slider_progress_focus_display: block;--_ui5-v2-17-0_slider_tickmark_in_range_bg: var(--sapSlider_Selected_BorderColor);--_ui5-v2-17-0_slider_label_fontsize: var(--sapFontSmallSize);--_ui5-v2-17-0_slider_label_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_slider_tooltip_min_width: 2rem;--_ui5-v2-17-0_slider_tooltip_padding: .25rem;--_ui5-v2-17-0_slider_tooltip_fontsize: var(--sapFontSmallSize);--_ui5-v2-17-0_slider_tooltip_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_slider_tooltip_height: 1.375rem;--_ui5-v2-17-0_slider_handle_focus_width: 1px;--_ui5-v2-17-0_slider_start_end_point_size: .5rem;--_ui5-v2-17-0_slider_start_end_point_left: -.75rem;--_ui5-v2-17-0_slider_start_end_point_top: -.125rem;--_ui5-v2-17-0_slider_handle_focused_tooltip_distance: calc(var(--_ui5-v2-17-0_slider_tooltip_bottom) - var(--_ui5-v2-17-0_slider_handle_focus_width));--_ui5-v2-17-0_slider_tooltip_border_box: border-box;--_ui5-v2-17-0_range_slider_handle_active_background: var(--sapSlider_Active_RangeHandleBackground);--_ui5-v2-17-0_range_slider_active_handle_icon_display: none;--_ui5-v2-17-0_range_slider_progress_focus_top: -15px;--_ui5-v2-17-0_range_slider_progress_focus_left: calc(-1 * (var(--_ui5-v2-17-0_slider_handle_width) / 2) - 5px);--_ui5-v2-17-0_range_slider_progress_focus_padding: 0 1rem 0 1rem;--_ui5-v2-17-0_range_slider_progress_focus_width: calc(100% + var(--_ui5-v2-17-0_slider_handle_width) + 10px);--_ui5-v2-17-0_range_slider_progress_focus_height: calc(var(--_ui5-v2-17-0_slider_handle_height) + 10px);--_ui5-v2-17-0_range_slider_root_hover_handle_icon_display: inline-block;--_ui5-v2-17-0_range_slider_root_hover_handle_bg: var(--_ui5-v2-17-0_slider_handle_hover_background);--_ui5-v2-17-0_range_slider_root_active_handle_icon_display: none;--_ui5-v2-17-0_slider_tickmark_height: .5rem;--_ui5-v2-17-0_slider_tickmark_top: -2px;--_ui5-v2-17-0_slider_handle_box_sizing: border-box;--_ui5-v2-17-0_range_slider_handle_background: var(--sapSlider_RangeHandleBackground);--_ui5-v2-17-0_slider_tooltip_bottom: 2rem;--_ui5-v2-17-0_value_state_message_border: none;--_ui5-v2-17-0_value_state_header_border: none;--_ui5-v2-17-0_input_value_state_icon_offset: .5rem;--_ui5-v2-17-0_value_state_header_box_shadow_error: inset 0 -.0625rem var(--sapField_InvalidColor);--_ui5-v2-17-0_value_state_header_box_shadow_information: inset 0 -.0625rem var(--sapField_InformationColor);--_ui5-v2-17-0_value_state_header_box_shadow_success: inset 0 -.0625rem var(--sapField_SuccessColor);--_ui5-v2-17-0_value_state_header_box_shadow_warning: inset 0 -.0625rem var(--sapField_WarningColor);--_ui5-v2-17-0_value_state_message_popover_header_min_height: 2rem;--_ui5-v2-17-0_value_state_message_popover_header_min_width: 6rem;--_ui5-v2-17-0_value_state_message_popover_header_max_width: 22rem;--_ui5-v2-17-0_value_state_message_popover_header_width: auto;--_ui5-v2-17-0_value_state_message_icon_offset_phone: 1rem;--_ui5-v2-17-0_value_state_header_border_bottom: none;--_ui5-v2-17-0_input_value_state_icon_display: inline-block;--_ui5-v2-17-0_value_state_message_padding: .5rem .5rem .5rem 1.875rem;--_ui5-v2-17-0_value_state_header_padding: .5rem .5rem .5rem 1.875rem;--_ui5-v2-17-0_value_state_message_popover_box_shadow: var(--sapContent_Shadow1);--_ui5-v2-17-0_value_state_message_icon_width: 1rem;--_ui5-v2-17-0_value_state_message_icon_height: 1rem;--_ui5-v2-17-0_value_state_header_offset: -.25rem;--_ui5-v2-17-0_value_state_message_popover_border_radius: var(--sapPopover_BorderCornerRadius);--_ui5-v2-17-0_value_state_message_padding_phone: .5rem .5rem .5rem 2.375rem;--_ui5-v2-17-0_value_state_message_line_height: 1.125rem;--_ui5-v2-17-0-toolbar-padding-left: .5rem;--_ui5-v2-17-0-toolbar-padding-right: .5rem;--_ui5-v2-17-0-toolbar-item-margin-left: 0;--_ui5-v2-17-0-toolbar-item-margin-right: .25rem;--_ui5-v2-17-0_step_input_min_width: 7.25rem;--_ui5-v2-17-0_step_input_padding: 2.5rem;--_ui5-v2-17-0_step_input_input_error_background_color: inherit;--_ui5-v2-17-0-step_input_button_state_hover_background_color: var(--sapField_Hover_Background);--_ui5-v2-17-0_step_input_border_style: none;--_ui5-v2-17-0_step_input_border_style_hover: none;--_ui5-v2-17-0_step_input_button_background_color: transparent;--_ui5-v2-17-0_step_input_input_border: none;--_ui5-v2-17-0_step_input_input_margin_top: 0;--_ui5-v2-17-0_step_input_button_display: inline-flex;--_ui5-v2-17-0_step_input_button_left: 0;--_ui5-v2-17-0_step_input_button_right: 0;--_ui5-v2-17-0_step_input_input_border_focused_after: .125rem solid #0070f2;--_ui5-v2-17-0_step_input_input_border_top_bottom_focused_after: 0;--_ui5-v2-17-0_step_input_input_border_radius_focused_after: .25rem;--_ui5-v2-17-0_step_input_input_information_border_color_focused_after: var(--sapField_InformationColor);--_ui5-v2-17-0_step_input_input_warning_border_color_focused_after: var(--sapField_WarningColor);--_ui5-v2-17-0_step_input_input_success_border_color_focused_after: var(--sapField_SuccessColor);--_ui5-v2-17-0_step_input_input_error_border_color_focused_after: var(--sapField_InvalidColor);--_ui5-v2-17-0_step_input_disabled_button_background: none;--_ui5-v2-17-0_step_input_border_color_hover: none;--_ui5-v2-17-0_step_input_border_hover: none;--_ui5-v2-17-0_input_input_background_color: transparent;--_ui5-v2-17-0_load_more_padding: 0;--_ui5-v2-17-0_load_more_border: 1px top solid transparent;--_ui5-v2-17-0_load_more_border_radius: none;--_ui5-v2-17-0_load_more_outline_width: var(--sapContent_FocusWidth);--_ui5-v2-17-0_load_more_border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);--_ui5-v2-17-0_calendar_height: 24.5rem;--_ui5-v2-17-0_calendar_width: 20rem;--_ui5-v2-17-0_calendar_left_right_padding: .5rem;--_ui5-v2-17-0_calendar_top_bottom_padding: 1rem;--_ui5-v2-17-0_calendar_header_height: 3rem;--_ui5-v2-17-0_calendar_header_arrow_button_width: 2.5rem;--_ui5-v2-17-0_calendar_header_padding: .25rem 0;--_ui5-v2-17-0_checkbox_root_side_padding: .6875rem;--_ui5-v2-17-0_checkbox_icon_size: 1rem;--_ui5-v2-17-0_checkbox_partially_icon_size: .75rem;--_ui5-v2-17-0_custom_list_item_rb_min_width: 2.75rem;--_ui5-v2-17-0_day_picker_item_width: 2.25rem;--_ui5-v2-17-0_day_picker_item_height: 2.875rem;--_ui5-v2-17-0_day_picker_empty_height: 3rem;--_ui5-v2-17-0_day_picker_item_justify_content: space-between;--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_special_day_top: 2rem;--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_special_day_right: 1.4375rem;--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_height: 1rem;--_ui5-v2-17-0_dp_two_calendar_item_text_padding_top: .4375rem;--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_secondary_text_padding_block: 0 .5rem;--_ui5-v2-17-0-calendar-legend-item-root-focus-offset: -.125rem;--_ui5-v2-17-0-calendar-legend-item-box-margin: .25rem;--_ui5-v2-17-0-calendar-legend-item-box-inner-margin: .5rem;--_ui5-v2-17-0_color_picker_slider_progress_container_height: 1.625rem;--_ui5-v2-17-0_color_picker_slider_container_margin_top: -.5rem;--_ui5-v2-17-0_color_picker_slider_handle_height: 2rem;--_ui5-v2-17-0_color_picker_slider_handle_width: 1.0625rem;--_ui5-v2-17-0_color_picker_slider_handle_after_height: 1.75rem;--_ui5-v2-17-0_color_picker_slider_handle_focus_height: 2.125rem;--_ui5-v2-17-0_color_picker_colors_wrapper_height: 2.25rem;--_ui5-v2-17-0_color_picker_sliders_height: 3rem;--_ui5-v2-17-0_color_picker_main_color_margin_bottom: 1rem;--_ui5-v2-17-0_color_picker_slider_spacing: .9375rem;--_ui5-v2-17-0_color_channel_toggle_button_width: 1.625rem;--_ui5-v2-17-0_color_channel_toggle_button_margin-top: -.75rem;--_ui5-v2-17-0_color_channel_hex_input_width: 4.8125rem;--_ui5-v2-17-0-color_channel_margin_top: .25rem;--_ui5-v2-17-0_color-palette-swatch-container-padding: .3125rem .6875rem;--_ui5-v2-17-0_datetime_picker_width: 40.0625rem;--_ui5-v2-17-0_datetime_picker_height: 25rem;--_ui5-v2-17-0_datetime_timeview_width: 17rem;--_ui5-v2-17-0_datetime_timeview_phonemode_width: 19.5rem;--_ui5-v2-17-0_datetime_timeview_phonemode_clocks_width: 24.5rem;--_ui5-v2-17-0_datetime_dateview_phonemode_margin_bottom: 0;--_ui5-v2-17-0_dialog_content_min_height: 2.75rem;--_ui5-v2-17-0_dialog_footer_height: 2.75rem;--_ui5-v2-17-0_input_inner_padding: 0 .625rem;--_ui5-v2-17-0_input_inner_padding_with_icon: 0 .25rem 0 .625rem;--_ui5-v2-17-0_input_inner_space_to_tokenizer: .125rem;--_ui5-v2-17-0_input_inner_space_to_n_more_text: .1875rem;--_ui5-v2-17-0_list_no_data_height: 3rem;--_ui5-v2-17-0_list_item_cb_margin_right: 0;--_ui5-v2-17-0_list_item_title_size: var(--sapFontLargeSize);--_ui5-v2-17-0_list_no_data_font_size: var(--sapFontLargeSize);--_ui5-v2-17-0_list_item_img_size: 3rem;--_ui5-v2-17-0_list_item_img_top_margin: .5rem;--_ui5-v2-17-0_list_item_img_bottom_margin: .5rem;--_ui5-v2-17-0_list_item_img_hn_margin: .75rem;--_ui5-v2-17-0_list_item_dropdown_base_height: 2.5rem;--_ui5-v2-17-0_list_item_base_height: var(--sapElement_LineHeight);--_ui5-v2-17-0_list_item_base_padding: 0 1rem;--_ui5-v2-17-0_list_item_icon_size: 1.125rem;--_ui5-v2-17-0_list_item_icon_padding-inline-end: .75rem;--_ui5-v2-17-0_list_item_selection_btn_margin_top: calc(-1 * var(--_ui5-v2-17-0_checkbox_wrapper_padding));--_ui5-v2-17-0_list_item_content_vertical_offset: calc((var(--_ui5-v2-17-0_list_item_base_height) - var(--_ui5-v2-17-0_list_item_title_size)) / 2);--_ui5-v2-17-0_group_header_list_item_height: 2.75rem;--_ui5-v2-17-0_month_picker_item_height: 3rem;--_ui5-v2-17-0_list_buttons_left_space: .125rem;--_ui5-v2-17-0_form_item_min_height: 2.813rem;--_ui5-v2-17-0_form_item_padding: .65rem;--_ui5-v2-17-0-form-group-heading-height: 2.75rem;--_ui5-v2-17-0_popup_default_header_height: 2.75rem;--_ui5-v2-17-0_year_picker_item_height: 3rem;--_ui5-v2-17-0_tokenizer_padding: .25rem;--_ui5-v2-17-0_token_height: 1.625rem;--_ui5-v2-17-0_token_icon_size: .75rem;--_ui5-v2-17-0_token_icon_padding: .25rem .5rem;--_ui5-v2-17-0_tl_bubble_padding: 1rem;--_ui5-v2-17-0_tl_padding: 1rem 1rem 1rem .5rem;--_ui5-v2-17-0_tl_li_margin_bottom: 1.625rem;--_ui5-v2-17-0_tc_item_text: 3rem;--_ui5-v2-17-0_tc_item_height: 4.75rem;--_ui5-v2-17-0_tc_item_text_only_height: 2.75rem;--_ui5-v2-17-0_tc_item_text_only_with_additional_text_height: 3.75rem;--_ui5-v2-17-0_tc_item_text_line_height: 1.325rem;--_ui5-v2-17-0_tc_item_icon_circle_size: 2.75rem;--_ui5-v2-17-0_tc_item_icon_size: 1.25rem;--_ui5-v2-17-0_tc_item_add_text_margin_top: .375rem;--_ui5-v2-17-0_textarea_margin: .25rem 0;--_ui5-v2-17-0_radio_button_height: 2.75rem;--_ui5-v2-17-0_radio_button_label_side_padding: .875rem;--_ui5-v2-17-0_radio_button_inner_size: 2.75rem;--_ui5-v2-17-0_radio_button_svg_size: 1.375rem;--_ui5-v2-17-0-responsive_popover_header_height: 2.75rem;--_ui5-v2-17-0-tree-indent-step: 1.5rem;--_ui5-v2-17-0-tree-toggle-box-width: 2.75rem;--_ui5-v2-17-0-tree-toggle-box-height: 2.25rem;--_ui5-v2-17-0-tree-toggle-icon-size: 1.0625rem;--_ui5-v2-17-0_timeline_tli_indicator_before_bottom: -1.5rem;--_ui5-v2-17-0_timeline_tli_indicator_before_right: -1.625rem;--_ui5-v2-17-0_timeline_tli_indicator_before_without_icon_bottom: -1.875rem;--_ui5-v2-17-0_timeline_tli_indicator_before_without_icon_right: -1.9375rem;--_ui5-v2-17-0_timeline_tli_indicator_after_top: calc(-100% - 1rem) ;--_ui5-v2-17-0_timeline_tli_indicator_after_height: calc(100% + 1rem) ;--_ui5-v2-17-0_timeline_tli_indicator_before_height: 100%;--_ui5-v2-17-0_timeline_tli_horizontal_indicator_after_width: calc(100% + .25rem) ;--_ui5-v2-17-0_timeline_tli_horizontal_indicator_after_left: 1.9375rem;--_ui5-v2-17-0_timeline_tli_horizontal_without_icon_indicator_before_width: calc(100% + .5rem) ;--_ui5-v2-17-0_timeline_tli_horizontal_indicator_before_width: calc(100% + .5rem) ;--_ui5-v2-17-0_timeline_tli_icon_horizontal_indicator_after_width: calc(100% + .25rem) ;--_ui5-v2-17-0_timeline_tli_without_icon_horizontal_indicator_before_width: calc(100% + .375rem) ;--_ui5-v2-17-0_timeline_tli_horizontal_indicator_short_after_width: 100%;--_ui5-v2-17-0-toolbar-separator-height: 2rem;--_ui5-v2-17-0-toolbar-height: 2.75rem;--_ui5-v2-17-0_toolbar_overflow_padding: .25rem .5rem;--_ui5-v2-17-0_dynamic_page_title_actions_separator_height: var(--_ui5-v2-17-0-toolbar-separator-height);--_ui5-v2-17-0-shellbar-separator-height: 2rem;--_ui5-v2-17-0_split_button_middle_separator_top: .625rem;--_ui5-v2-17-0_split_button_middle_separator_height: 1rem;--_ui5-v2-17-0-calendar-legend-item-root-focus-border-radius: .25rem;--_ui5-v2-17-0_color-palette-item-height: 1.75rem;--_ui5-v2-17-0_color-palette-item-hover-height: 2.25rem;--_ui5-v2-17-0_color-palette-item-margin: calc(((var(--_ui5-v2-17-0_color-palette-item-hover-height) - var(--_ui5-v2-17-0_color-palette-item-height)) / 2) + .0625rem);--_ui5-v2-17-0_color-palette-row-width: 12rem;--_ui5-v2-17-0_textarea_padding_top: .5rem;--_ui5-v2-17-0_textarea_padding_bottom: .4375rem;--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_padding_block: 0 .5rem;--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_padding: 0 .5rem;--_ui5-v2-17-0_daypicker_two_calendar_item_selected_focus_margin_bottom: 0;--_ui5-v2-17-0_daypicker_two_calendar_item_selected_focus_padding_right: .5rem}[data-ui5-compact-size],.ui5-content-density-compact,.sapUiSizeCompact{--_ui5-v2-17-0_checkbox_label_offset: var(--_ui5-v2-17-0_checkbox_compact_wrapper_padding);--_ui5-v2-17-0_input_min_width: 2rem;--_ui5-v2-17-0_input_icon_width: 2rem;--_ui5-v2-17-0_input_margin_top_bottom: .1875rem;--_ui5-v2-17-0_input_information_icon_padding: .3125rem .5rem .1875rem .5rem;--_ui5-v2-17-0_input_information_focused_icon_padding: .3125rem .5rem .25rem .5rem;--_ui5-v2-17-0_input_error_warning_icon_padding: .3125rem .5rem .1875rem .5rem;--_ui5-v2-17-0_input_error_warning_focused_icon_padding: .3125rem .5rem .25rem .5rem;--_ui5-v2-17-0_input_custom_icon_padding: .3125rem .5rem .25rem .5rem;--_ui5-v2-17-0_input_error_warning_custom_icon_padding: .3125rem .5rem .1875rem .5rem;--_ui5-v2-17-0_input_error_warning_custom_focused_icon_padding: .3125rem .5rem .25rem .5rem;--_ui5-v2-17-0_input_information_custom_icon_padding: .3125rem .5rem .1875rem .5rem;--_ui5-v2-17-0_input_information_custom_focused_icon_padding: .3125rem .5rem .25rem .5rem;--_ui5-v2-17-0_input_icon_padding: .3125rem .5rem .25rem .5rem;--_ui5-v2-17-0_panel_header_button_wrapper_padding: .1875rem .25rem;--_ui5-v2-17-0_rating_indicator_item_height: 1em;--_ui5-v2-17-0_rating_indicator_item_width: 1em;--_ui5-v2-17-0_rating_indicator_readonly_item_height: .75em;--_ui5-v2-17-0_rating_indicator_readonly_item_width: .75em;--_ui5-v2-17-0_rating_indicator_component_spacing: .5rem 0px;--_ui5-v2-17-0_radio_button_min_width: 2rem;--_ui5-v2-17-0_radio_button_outer_ring_padding_with_label: 0 .5rem;--_ui5-v2-17-0_radio_button_outer_ring_padding: 0 .5rem;--_ui5-v2-17-0_radio_button_focus_dist: .1875rem;--_ui5-v2-17-0_switch_height: 2rem;--_ui5-v2-17-0_switch_width: 2.75rem;--_ui5-v2-17-0_switch_min_width: none;--_ui5-v2-17-0_switch_with_label_width: 2.75rem;--_ui5-v2-17-0_switch_root_outline_top: .25rem;--_ui5-v2-17-0_switch_root_outline_bottom: .25rem;--_ui5-v2-17-0_switch_transform: translateX(100%) translateX(-1.375rem);--_ui5-v2-17-0_switch_transform_with_label: translateX(100%) translateX(-1.875rem);--_ui5-v2-17-0_switch_rtl_transform: translateX(1.375rem) translateX(-100%);--_ui5-v2-17-0_switch_rtl_transform_with_label: translateX(1.875rem) translateX(-100%);--_ui5-v2-17-0_switch_track_width: 2.75rem;--_ui5-v2-17-0_switch_track_height: 1.25rem;--_ui5-v2-17-0_switch_track_with_label_width: 2.75rem;--_ui5-v2-17-0_switch_track_with_label_height: 1.25rem;--_ui5-v2-17-0_switch_handle_width: 1.25rem;--_ui5-v2-17-0_switch_handle_height: 1rem;--_ui5-v2-17-0_switch_handle_with_label_width: 1.75rem;--_ui5-v2-17-0_switch_handle_with_label_height: 1rem;--_ui5-v2-17-0_switch_text_font_size: var(--sapFontSize);--_ui5-v2-17-0_switch_text_width: 1rem;--_ui5-v2-17-0_switch_text_active_left: .1875rem;--_ui5-v2-17-0_select_icon_width: 2rem;--_ui5-v2-17-0_textarea_padding_right_and_left_readonly: .4375rem;--_ui5-v2-17-0_textarea_padding_top_readonly: .125rem;--_ui5-v2-17-0_textarea_min_height: 1.625rem;--_ui5-v2-17-0_textarea_padding_bottom_readonly: .0625rem;--_ui5-v2-17-0_textarea_padding_top_error_warning: .1875rem;--_ui5-v2-17-0_textarea_padding_bottom_error_warning: .125rem;--_ui5-v2-17-0_textarea_padding_top_information: .1875rem;--_ui5-v2-17-0_textarea_padding_bottom_information: .125rem;--_ui5-v2-17-0_textarea_padding_right_and_left: .5rem;--_ui5-v2-17-0_textarea_padding_right_and_left_error_warning: .5rem;--_ui5-v2-17-0_textarea_padding_right_and_left_information: .5rem;--_ui5-v2-17-0_tokenizer_gap: .375em .25rem;--_ui5-v2-17-0_tokenizer-popover_offset: .1875rem;--_ui5-v2-17-0_slider_handle_icon_size: .875rem;--_ui5-v2-17-0_slider_padding: 1rem 1.0625rem;--_ui5-v2-17-0_range_slider_progress_focus_width: calc(100% + var(--_ui5-v2-17-0_slider_handle_width) + 10px);--_ui5-v2-17-0_range_slider_progress_focus_height: calc(var(--_ui5-v2-17-0_slider_handle_height) + 10px);--_ui5-v2-17-0_range_slider_progress_focus_top: -.8125rem;--_ui5-v2-17-0_slider_tooltip_bottom: 1.75rem;--_ui5-v2-17-0_slider_handle_focused_tooltip_distance: calc(var(--_ui5-v2-17-0_slider_tooltip_bottom) - var(--_ui5-v2-17-0_slider_handle_focus_width));--_ui5-v2-17-0_range_slider_progress_focus_left: calc(-1 * (var(--_ui5-v2-17-0_slider_handle_width) / 2) - 5px);--_ui5-v2-17-0_bar_base_height: 2.5rem;--_ui5-v2-17-0_bar_subheader_height: 2.25rem;--_ui5-v2-17-0_button_base_height: var(--sapElement_Compact_Height);--_ui5-v2-17-0_button_base_padding: .4375rem;--_ui5-v2-17-0_button_base_min_width: 2rem;--_ui5-v2-17-0-button-badge-diameter: .625rem;--_ui5-v2-17-0_calendar_height: 18rem;--_ui5-v2-17-0_calendar_width: 17.75rem;--_ui5-v2-17-0_calendar_left_right_padding: .25rem;--_ui5-v2-17-0_calendar_top_bottom_padding: .5rem;--_ui5-v2-17-0_calendar_header_height: 2rem;--_ui5-v2-17-0_calendar_header_arrow_button_width: 2rem;--_ui5-v2-17-0_calendar_header_padding: 0;--_ui5-v2-17-0-calendar-legend-root-padding: .5rem;--_ui5-v2-17-0-calendar-legend-root-width: 16.75rem;--_ui5-v2-17-0_checkbox_root_side_padding: var(--_ui5-v2-17-0_checkbox_wrapped_focus_padding);--_ui5-v2-17-0_checkbox_width_height: var(--_ui5-v2-17-0_checkbox_compact_width_height);--_ui5-v2-17-0_checkbox_wrapper_padding: var(--_ui5-v2-17-0_checkbox_compact_wrapper_padding);--_ui5-v2-17-0_checkbox_inner_width_height: var(--_ui5-v2-17-0_checkbox_compact_inner_size);--_ui5-v2-17-0_checkbox_icon_size: .75rem;--_ui5-v2-17-0_checkbox_partially_icon_size: .5rem;--_ui5-v2-17-0_color_picker_slider_progress_container_height: 1.125rem;--_ui5-v2-17-0_color_picker_slider_container_margin_top: -.375rem;--_ui5-v2-17-0_color_picker_slider_handle_height: 1.5rem;--_ui5-v2-17-0_color_picker_slider_handle_width: .9375rem;--_ui5-v2-17-0_color_picker_slider_handle_after_height: 1.25rem;--_ui5-v2-17-0_color_picker_slider_handle_focus_height: 1.625rem;--_ui5-v2-17-0_color_picker_colors_wrapper_height: 1.5rem;--_ui5-v2-17-0_color_picker_sliders_height: 2.25rem;--_ui5-v2-17-0_color_picker_main_color_margin_bottom: .75rem;--_ui5-v2-17-0_color_picker_slider_spacing: .8125rem;--_ui5-v2-17-0_color_channel_toggle_button_width: 1.375rem;--_ui5-v2-17-0_color_channel_toggle_button_margin-top: -.9375rem;--_ui5-v2-17-0_color_channel_hex_input_width: 4.625rem;--_ui5-v2-17-0-color_channel_margin_top: 0rem;--_ui5-v2-17-0_custom_list_item_rb_min_width: 2rem;--_ui5-v2-17-0_daypicker_weeknumbers_container_padding_top: 2rem;--_ui5-v2-17-0_day_picker_item_width: 2rem;--_ui5-v2-17-0_day_picker_item_height: 2rem;--_ui5-v2-17-0_day_picker_empty_height: 2.125rem;--_ui5-v2-17-0_day_picker_item_justify_content: flex-end;--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_height: .75rem;--_ui5-v2-17-0_dp_two_calendar_item_text_padding_top: .5rem;--_ui5-v2-17-0_daypicker_special_day_top: 1.625rem;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_top: 1.25rem;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_right: 1.25rem;--_ui5-v2-17-0_daypicker_two_calendar_item_margin_bottom: 0;--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_special_day_top: 1.125rem;--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_special_day_right: 1.125rem;--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_secondary_text_padding_block: 0 1rem;--_ui5-v2-17-0_datetime_picker_height: 20.5rem;--_ui5-v2-17-0_datetime_picker_width: 35.5rem;--_ui5-v2-17-0_datetime_timeview_width: 17rem;--_ui5-v2-17-0_datetime_timeview_phonemode_width: 18.5rem;--_ui5-v2-17-0_datetime_timeview_phonemode_clocks_width: 21.125rem;--_ui5-v2-17-0_datetime_dateview_phonemode_margin_bottom: 3.125rem;--_ui5-v2-17-0_dialog_content_min_height: 2.5rem;--_ui5-v2-17-0_dialog_footer_height: 2.5rem;--_ui5-v2-17-0_form_item_min_height: 2rem;--_ui5-v2-17-0_form_item_padding: .25rem;--_ui5-v2-17-0-form-group-heading-height: 2rem;--_ui5-v2-17-0_input_height: var(--sapElement_Compact_Height);--_ui5-v2-17-0_input_inner_padding: 0 .5rem;--_ui5-v2-17-0_input_inner_padding_with_icon: 0 .2rem 0 .5rem;--_ui5-v2-17-0_input_inner_space_to_tokenizer: .125rem;--_ui5-v2-17-0_input_inner_space_to_n_more_text: .125rem;--_ui5-v2-17-0_input_icon_min_width: var(--_ui5-v2-17-0_input_compact_min_width);--_ui5-v2-17-0_menu_item_padding: 0 .75rem 0 .5rem;--_ui5-v2-17-0_menu_item_submenu_icon_right: .75rem;--_ui5-v2-17-0_popup_default_header_height: 2.5rem;--_ui5-v2-17-0_textarea_margin: .1875rem 0;--_ui5-v2-17-0_list_no_data_height: 2rem;--_ui5-v2-17-0_list_item_cb_margin_right: .5rem;--_ui5-v2-17-0_list_item_title_size: var(--sapFontSize);--_ui5-v2-17-0_list_item_img_top_margin: .55rem;--_ui5-v2-17-0_list_no_data_font_size: var(--sapFontSize);--_ui5-v2-17-0_list_item_dropdown_base_height: 2rem;--_ui5-v2-17-0_list_item_base_height: 2rem;--_ui5-v2-17-0_list_item_base_padding: 0 1rem;--_ui5-v2-17-0_list_item_icon_size: 1rem;--_ui5-v2-17-0_list_item_selection_btn_margin_top: calc(-1 * var(--_ui5-v2-17-0_checkbox_wrapper_padding));--_ui5-v2-17-0_list_item_content_vertical_offset: calc((var(--_ui5-v2-17-0_list_item_base_height) - var(--_ui5-v2-17-0_list_item_title_size)) / 2);--_ui5-v2-17-0_list_buttons_left_space: .125rem;--_ui5-v2-17-0_month_picker_item_height: 2rem;--_ui5-v2-17-0_year_picker_item_height: 2rem;--_ui5-v2-17-0_panel_header_height: 2rem;--_ui5-v2-17-0_panel_button_root_height: 2rem;--_ui5-v2-17-0_panel_button_root_width: 2.75rem;--_ui5-v2-17-0_token_height: 1.25rem;--_ui5-v2-17-0_token_right_margin: .25rem;--_ui5-v2-17-0_token_left_padding: .25rem;--_ui5-v2-17-0_token_readonly_padding: .125rem .25rem;--_ui5-v2-17-0_token_focus_offset: -.125rem;--_ui5-v2-17-0_token_icon_size: .75rem;--_ui5-v2-17-0_token_icon_padding: .375rem .375rem;--_ui5-v2-17-0_token_outline_offset: -.125rem;--_ui5-v2-17-0_tl_bubble_padding: .5rem;--_ui5-v2-17-0_tl_padding: .5rem;--_ui5-v2-17-0_tl_li_margin_bottom: .5rem;--_ui5-v2-17-0_tc_item_text: 2rem;--_ui5-v2-17-0_tc_item_text_line_height: 1.325rem;--_ui5-v2-17-0_tc_item_add_text_margin_top: .3125rem;--_ui5-v2-17-0_tc_item_height: 4rem;--_ui5-v2-17-0_tc_header_height: var(--_ui5-v2-17-0_tc_item_height);--_ui5-v2-17-0_tc_item_icon_circle_size: 2rem;--_ui5-v2-17-0_tc_item_icon_size: 1rem;--_ui5-v2-17-0_radio_button_height: 2rem;--_ui5-v2-17-0_radio_button_label_side_padding: .5rem;--_ui5-v2-17-0_radio_button_inner_size: 2rem;--_ui5-v2-17-0_radio_button_svg_size: 1rem;--_ui5-v2-17-0-responsive_popover_header_height: 2.5rem;--_ui5-v2-17-0_slider_handle_height: 1.25rem;--_ui5-v2-17-0_slider_handle_width: 1.5rem;--_ui5-v2-17-0_slider_tooltip_padding: .25rem;--_ui5-v2-17-0_slider_progress_outline_offset: -.625rem;--_ui5-v2-17-0_slider_outer_height: 1.3125rem;--_ui5-v2-17-0_step_input_min_width: 6rem;--_ui5-v2-17-0_step_input_padding: 2rem;--_ui5-v2-17-0-tree-indent-step: .5rem;--_ui5-v2-17-0-tree-toggle-box-width: 2rem;--_ui5-v2-17-0-tree-toggle-box-height: 1.5rem;--_ui5-v2-17-0-tree-toggle-icon-size: .8125rem;--_ui5-v2-17-0_timeline_tli_indicator_before_bottom: -.75rem;--_ui5-v2-17-0_timeline_tli_indicator_before_right: -.5rem;--_ui5-v2-17-0_timeline_tli_indicator_before_without_icon_bottom: -1rem;--_ui5-v2-17-0_timeline_tli_indicator_before_without_icon_right: -.8125rem;--_ui5-v2-17-0_timeline_tli_indicator_before_height: calc(100% - 1.25rem) ;--_ui5-v2-17-0_timeline_tli_horizontal_without_icon_indicator_before_width: var(--_ui5-v2-17-0_timeline_tli_indicator_after_height);--_ui5-v2-17-0_timeline_tli_horizontal_indicator_after_width: var(--_ui5-v2-17-0_timeline_tli_indicator_after_height);--_ui5-v2-17-0_timeline_tli_horizontal_indicator_before_width: var(--_ui5-v2-17-0_timeline_tli_indicator_after_height);--_ui5-v2-17-0_timeline_tli_icon_horizontal_indicator_after_width: var(--_ui5-v2-17-0_timeline_tli_indicator_after_height);--_ui5-v2-17-0_timeline_tli_indicator_after_top: calc(-100% + .9375rem) ;--_ui5-v2-17-0_timeline_tli_indicator_after_height: calc(100% - .75rem) ;--_ui5-v2-17-0_timeline_tli_horizontal_indicator_after_left: 1.8625rem;--_ui5-v2-17-0_timeline_tli_horizontal_indicator_short_after_width: calc(100% - 1rem) ;--_ui5-v2-17-0_timeline_tli_without_icon_horizontal_indicator_before_width: calc(100% - .625rem) ;--_ui5-v2-17-0_timeline_tlgi_compact_icon_before_height: calc(100% + 1.5rem) ;--_ui5-v2-17-0_timeline_tlgi_horizontal_line_placeholder_before_width: var(--_ui5-v2-17-0_timeline_tlgi_compact_icon_before_height);--_ui5-v2-17-0_timeline_tlgi_horizontal_compact_root_margin_left: .5rem;--_ui5-v2-17-0_timeline_tlgi_compact_root_gap: .5rem;--_ui5-v2-17-0_timeline_tlgi_root_horizontal_height: 19.375rem;--_ui5-v2-17-0_vsd_header_container: 2.5rem;--_ui5-v2-17-0_vsd_sub_header_container_height: 2rem;--_ui5-v2-17-0_vsd_expand_content_height: 25.4375rem;--_ui5-v2-17-0-toolbar-separator-height: 1.5rem;--_ui5-v2-17-0-toolbar-height: 2rem;--_ui5-v2-17-0_toolbar_overflow_padding: .1875rem .375rem;--_ui5-v2-17-0_dynamic_page_title_actions_separator_height: var(--_ui5-v2-17-0-toolbar-separator-height);--_ui5-v2-17-0-shellbar-separator-height: 2rem;--_ui5-v2-17-0_textarea_padding_top: .1875rem;--_ui5-v2-17-0_textarea_padding_bottom: .125rem;--_ui5-v2-17-0_checkbox_focus_position: .125rem;--_ui5-v2-17-0_split_button_middle_separator_top: .3125rem;--_ui5-v2-17-0_split_button_middle_separator_height: 1rem;--_ui5-v2-17-0_slider_handle_top: -.5rem;--_ui5-v2-17-0_slider_tooltip_height: 1.375rem;--_ui5-v2-17-0_checkbox_wrapped_focus_inset_block: .125rem;--_ui5-v2-17-0_color-palette-item-height: 1.25rem;--_ui5-v2-17-0_color-palette-item-hover-height: 1.625rem;--_ui5-v2-17-0_color-palette-item-margin: calc(((var(--_ui5-v2-17-0_color-palette-item-hover-height) - var(--_ui5-v2-17-0_color-palette-item-height)) / 2) + .0625rem);--_ui5-v2-17-0_color-palette-row-width: 8.75rem;--_ui5-v2-17-0_color-palette-swatch-container-padding: .1875rem .5rem;--_ui5-v2-17-0_color-palette-item-hover-margin: .0625rem;--_ui5-v2-17-0_color-palette-row-height: 7.5rem;--_ui5-v2-17-0_color-palette-button-height: 2rem;--_ui5-v2-17-0_color-palette-item-before-focus-inset: -.25rem;--_ui5-v2-17-0_daypicker_selected_item_now_special_day_top: 1.5625rem;--_ui5-v2-17-0_daypicker_specialday_focused_top: 1.3125rem;--_ui5-v2-17-0_daypicker_selected_item_now_special_day_border_bottom_radius_alternate: .5rem;--_ui5-v2-17-0_daypicker_specialday_focused_border_bottom: .25rem;--_ui5-v2-17-0_daypicker_item_now_specialday_top: 1.4375rem;--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_padding_block: 0 .375rem;--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_padding: 0 .375rem;--_ui5-v2-17-0_daypicker_two_calendar_item_selected_focus_margin_bottom: -.25rem;--_ui5-v2-17-0_daypicker_two_calendar_item_selected_focus_padding_right: .4375rem}:root,:dir(ltr){--_ui5-v2-17-0_rotation_90deg: rotate(90deg);--_ui5-v2-17-0_rotation_minus_90deg: rotate(-90deg);--_ui5-v2-17-0_icon_transform_scale: none;--_ui5-v2-17-0_panel_toggle_btn_rotation: var(--_ui5-v2-17-0_rotation_90deg);--_ui5-v2-17-0_popover_upward_arrow_margin: .1875rem 0 0 .1875rem;--_ui5-v2-17-0_popover_right_arrow_margin: .1875rem 0 0 -.375rem;--_ui5-v2-17-0_popover_downward_arrow_margin: -.375rem 0 0 .125rem;--_ui5-v2-17-0_popover_left_arrow_margin: .125rem 0 0 .25rem;--_ui5-v2-17-0_dialog_resize_cursor: se-resize;--_ui5-v2-17-0_progress_indicator_bar_border_radius: .5rem 0 0 .5rem;--_ui5-v2-17-0_progress_indicator_remaining_bar_border_radius: 0 .5rem .5rem 0;--_ui5-v2-17-0_menu_submenu_margin_offset: -.25rem 0}:dir(rtl){--_ui5-v2-17-0_icon_transform_scale: scale(-1, 1);--_ui5-v2-17-0_panel_toggle_btn_rotation: var(--_ui5-v2-17-0_rotation_minus_90deg);--_ui5-v2-17-0_popover_upward_arrow_margin: .1875rem .125rem 0 0;--_ui5-v2-17-0_popover_right_arrow_margin: .1875rem .25rem 0 0;--_ui5-v2-17-0_popover_downward_arrow_margin: -.4375rem .125rem 0 0;--_ui5-v2-17-0_popover_left_arrow_margin: .1875rem -.375rem 0 0;--_ui5-v2-17-0_dialog_resize_cursor:sw-resize;--_ui5-v2-17-0_menu_submenu_margin_offset: 0 -.25rem;--_ui5-v2-17-0_segmented_btn_item_border_left: .0625rem;--_ui5-v2-17-0_segmented_btn_item_border_right: .0625rem;--_ui5-v2-17-0_progress_indicator_bar_border_radius: .5rem;--_ui5-v2-17-0_progress_indicator_remaining_bar_border_radius: .25rem}
+const defaultTheme$2 = `:root{--ui5-v2-17-0-avatar-hover-box-shadow-offset: 0px 0px 0px .0625rem var();--ui5-v2-17-0-avatar-initials-color: var(--sapContent_ImagePlaceholderForegroundColor);--ui5-v2-17-0-avatar-border-radius-img-deduction: .0625rem;--ui5-v2-17-0-avatar-optional-border: .0625rem solid var(--sapGroup_ContentBorderColor);--ui5-v2-17-0-avatar-placeholder: var(--sapContent_ImagePlaceholderBackground);--ui5-v2-17-0-avatar-placeholder-color: var(--ui5-v2-17-0-avatar-initials-color);--_ui5-v2-17-0_avatar_outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);--_ui5-v2-17-0_avatar_overflow_button_focus_offset: .0625rem;--ui5-v2-17-0-avatar-hover-box-shadow-offset: 0px 0px 0px .0625rem var(--sapAvatar_Hover_BorderColor);--_ui5-v2-17-0_avatar_focus_offset: .1875rem;--ui5-v2-17-0-avatar-initials-border: .0625rem solid var(--sapAvatar_1_BorderColor);--ui5-v2-17-0-avatar-border-radius: var(--sapElement_BorderCornerRadius);--_ui5-v2-17-0_avatar_fontsize_XS: 1rem;--_ui5-v2-17-0_avatar_fontsize_S: 1.125rem;--_ui5-v2-17-0_avatar_fontsize_M: 1.5rem;--_ui5-v2-17-0_avatar_fontsize_L: 2.25rem;--_ui5-v2-17-0_avatar_fontsize_XL: 3rem;--ui5-v2-17-0-avatar-accent1: var(--sapAvatar_1_Background);--ui5-v2-17-0-avatar-accent2: var(--sapAvatar_2_Background);--ui5-v2-17-0-avatar-accent3: var(--sapAvatar_3_Background);--ui5-v2-17-0-avatar-accent4: var(--sapAvatar_4_Background);--ui5-v2-17-0-avatar-accent5: var(--sapAvatar_5_Background);--ui5-v2-17-0-avatar-accent6: var(--sapAvatar_6_Background);--ui5-v2-17-0-avatar-accent7: var(--sapAvatar_7_Background);--ui5-v2-17-0-avatar-accent8: var(--sapAvatar_8_Background);--ui5-v2-17-0-avatar-accent9: var(--sapAvatar_9_Background);--ui5-v2-17-0-avatar-accent10: var(--sapAvatar_10_Background);--ui5-v2-17-0-avatar-accent1-color: var(--sapAvatar_1_TextColor);--ui5-v2-17-0-avatar-accent2-color: var(--sapAvatar_2_TextColor);--ui5-v2-17-0-avatar-accent3-color: var(--sapAvatar_3_TextColor);--ui5-v2-17-0-avatar-accent4-color: var(--sapAvatar_4_TextColor);--ui5-v2-17-0-avatar-accent5-color: var(--sapAvatar_5_TextColor);--ui5-v2-17-0-avatar-accent6-color: var(--sapAvatar_6_TextColor);--ui5-v2-17-0-avatar-accent7-color: var(--sapAvatar_7_TextColor);--ui5-v2-17-0-avatar-accent8-color: var(--sapAvatar_8_TextColor);--ui5-v2-17-0-avatar-accent9-color: var(--sapAvatar_9_TextColor);--ui5-v2-17-0-avatar-accent10-color: var(--sapAvatar_10_TextColor);--ui5-v2-17-0-avatar-accent1-border-color: var(--sapAvatar_1_BorderColor);--ui5-v2-17-0-avatar-accent2-border-color: var(--sapAvatar_2_BorderColor);--ui5-v2-17-0-avatar-accent3-border-color: var(--sapAvatar_3_BorderColor);--ui5-v2-17-0-avatar-accent4-border-color: var(--sapAvatar_4_BorderColor);--ui5-v2-17-0-avatar-accent5-border-color: var(--sapAvatar_5_BorderColor);--ui5-v2-17-0-avatar-accent6-border-color: var(--sapAvatar_6_BorderColor);--ui5-v2-17-0-avatar-accent7-border-color: var(--sapAvatar_7_BorderColor);--ui5-v2-17-0-avatar-accent8-border-color: var(--sapAvatar_8_BorderColor);--ui5-v2-17-0-avatar-accent9-border-color: var(--sapAvatar_9_BorderColor);--ui5-v2-17-0-avatar-accent10-border-color: var(--sapAvatar_10_BorderColor);--_ui5-v2-17-0_avatar_icon_XS: var(--_ui5-v2-17-0_avatar_fontsize_XS);--_ui5-v2-17-0_avatar_icon_S: var(--_ui5-v2-17-0_avatar_fontsize_S);--_ui5-v2-17-0_avatar_icon_M: var(--_ui5-v2-17-0_avatar_fontsize_M);--_ui5-v2-17-0_avatar_icon_L: var(--_ui5-v2-17-0_avatar_fontsize_L);--_ui5-v2-17-0_avatar_icon_XL: var(--_ui5-v2-17-0_avatar_fontsize_XL);--_ui5-v2-17-0_avatar_group_button_focus_border: none;--_ui5-v2-17-0_avatar_group_padding: .3rem;--_ui5-v2-17-0_avatar_group_focus_border_radius: .375rem;--_ui5-v2-17-0-tag-height: 1rem;--_ui5-v2-17-0-tag-icon-width: .75rem;--ui5-v2-17-0-tag-text-shadow: var(--sapContent_TextShadow);--ui5-v2-17-0-tag-contrast-text-shadow: var(--sapContent_ContrastTextShadow);--ui5-v2-17-0-tag-information-text-shadow: var(--ui5-v2-17-0-tag-text-shadow);--ui5-v2-17-0-tag-set2-color-scheme-1-border: var(--sapIndicationColor_1b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-1-hover-background: var(--sapIndicationColor_1b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-1-active-color: var(--sapIndicationColor_1_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-1-active-background: var(--sapIndicationColor_1_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-1-active-border: var(--sapIndicationColor_1_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-2-border: var(--sapIndicationColor_2b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-2-hover-background: var(--sapIndicationColor_2b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-2-active-color: var(--sapIndicationColor_2_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-2-active-background: var(--sapIndicationColor_2_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-2-active-border: var(--sapIndicationColor_2_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-3-border: var(--sapIndicationColor_3b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-3-hover-background: var(--sapIndicationColor_3b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-3-active-color: var(--sapIndicationColor_3_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-3-active-background: var(--sapIndicationColor_3_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-3-active-border: var(--sapIndicationColor_3_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-4-border: var(--sapIndicationColor_4b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-4-hover-background: var(--sapIndicationColor_4b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-4-active-color: var(--sapIndicationColor_4_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-4-active-background: var(--sapIndicationColor_4_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-4-active-border: var(--sapIndicationColor_4_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-5-border: var(--sapIndicationColor_5b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-5-hover-background: var(--sapIndicationColor_5b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-5-active-color: var(--sapIndicationColor_5_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-5-active-background: var(--sapIndicationColor_5_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-5-active-border: var(--sapIndicationColor_5_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-6-border: var(--sapIndicationColor_6b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-6-hover-background: var(--sapIndicationColor_6b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-6-active-color: var(--sapIndicationColor_6_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-6-active-background: var(--sapIndicationColor_6_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-6-active-border: var(--sapIndicationColor_6_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-7-border: var(--sapIndicationColor_7b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-7-hover-background: var(--sapIndicationColor_7b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-7-active-color: var(--sapIndicationColor_7_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-7-active-background: var(--sapIndicationColor_7_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-7-active-border: var(--sapIndicationColor_7_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-8-border: var(--sapIndicationColor_8b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-8-hover-background: var(--sapIndicationColor_8b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-8-active-color: var(--sapIndicationColor_8_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-8-active-background: var(--sapIndicationColor_8_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-8-active-border: var(--sapIndicationColor_8_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-9-border: var(--sapIndicationColor_9b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-9-hover-background: var(--sapIndicationColor_9b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-9-active-color: var(--sapIndicationColor_9_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-9-active-background: var(--sapIndicationColor_9_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-9-active-border: var(--sapIndicationColor_9_Active_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-10-border: var(--sapIndicationColor_10b_BorderColor);--ui5-v2-17-0-tag-set2-color-scheme-10-hover-background: var(--sapIndicationColor_10b_Hover_Background);--ui5-v2-17-0-tag-set2-color-scheme-10-active-color: var(--sapIndicationColor_10_Active_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-10-active-background: var(--sapIndicationColor_10_Active_Background);--ui5-v2-17-0-tag-set2-color-scheme-10-active-border: var(--sapIndicationColor_10_Active_BorderColor);--_ui5-v2-17-0-tag-height_size_l: 1.5rem;--_ui5-v2-17-0-tag-min-width_size_l: 1.75rem;--_ui5-v2-17-0-tag-font-size_size_l: 1.25rem;--_ui5-v2-17-0-tag-icon_min_width_size_l: 1.25rem;--_ui5-v2-17-0-tag-icon_min_height_size_l:1.25rem;--_ui5-v2-17-0-tag-icon_height_size_l: 1.25rem;--_ui5-v2-17-0-tag-text_padding_size_l: .125rem .25rem;--_ui5-v2-17-0-tag-text-padding: .1875rem .25rem;--_ui5-v2-17-0-tag-padding-inline-icon-only: .313rem;--_ui5-v2-17-0-tag-text-transform: none;--_ui5-v2-17-0-tag-icon-gap: .25rem;--_ui5-v2-17-0-tag-font-weight: normal;--_ui5-v2-17-0-tag-letter-spacing: normal;--ui5-v2-17-0-tag-set2-color-scheme-1-color: var(--sapIndicationColor_1b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-1-background: var(--sapIndicationColor_1b_Background);--ui5-v2-17-0-tag-set2-color-scheme-2-color: var(--sapIndicationColor_2b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-2-background: var(--sapIndicationColor_2b_Background);--ui5-v2-17-0-tag-set2-color-scheme-3-color: var(--sapIndicationColor_3b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-3-background: var(--sapIndicationColor_3b_Background);--ui5-v2-17-0-tag-set2-color-scheme-4-color: var(--sapIndicationColor_4b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-4-background: var(--sapIndicationColor_4b_Background);--ui5-v2-17-0-tag-set2-color-scheme-5-color: var(--sapIndicationColor_5b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-5-background: var(--sapIndicationColor_5b_Background);--ui5-v2-17-0-tag-set2-color-scheme-6-color: var(--sapIndicationColor_6b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-6-background: var(--sapIndicationColor_6b_Background);--ui5-v2-17-0-tag-set2-color-scheme-7-color: var(--sapIndicationColor_7b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-7-background: var(--sapIndicationColor_7b_Background);--ui5-v2-17-0-tag-set2-color-scheme-8-color: var(--sapIndicationColor_8b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-8-background: var(--sapIndicationColor_8b_Background);--ui5-v2-17-0-tag-set2-color-scheme-9-color: var(--sapIndicationColor_9b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-9-background: var(--sapIndicationColor_9b_Background);--ui5-v2-17-0-tag-set2-color-scheme-10-color: var(--sapIndicationColor_10b_TextColor);--ui5-v2-17-0-tag-set2-color-scheme-10-background: var(--sapIndicationColor_10b_Background);--_ui5-v2-17-0_bar_base_height: 2.75rem;--_ui5-v2-17-0_bar_subheader_height: 3rem;--_ui5-v2-17-0_bar-start-container-padding-start: 1rem;--_ui5-v2-17-0_bar-mid-container-padding-start-end: .5rem;--_ui5-v2-17-0_bar-end-container-padding-end: 1rem;--_ui5-v2-17-0_bar_subheader_margin-top: -.0625rem;--_ui5-v2-17-0_breadcrumbs_margin: 0 0 .5rem 0;--_ui5-v2-17-0_busy_indicator_focus_outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);--_ui5-v2-17-0_busy_indicator_color: var(--sapContent_BusyColor);--_ui5-v2-17-0-button-badge-diameter: .75rem;--_ui5-v2-17-0-calendar-legend-root-padding: .75rem;--_ui5-v2-17-0-calendar-legend-root-width: 18.5rem;--_ui5-v2-17-0-calendar-legend-item-root-width: 7.75rem;--_ui5-v2-17-0-calendar-legend-item-root-focus-border: var(--sapContent_FocusWidth) solid var(--sapContent_FocusColor);--_ui5-v2-17-0-calendar-legend-item-box-dot-display: block;--_ui5-v2-17-0_card_box_shadow: var(--sapContent_Shadow0);--_ui5-v2-17-0_card_border-radius: var(--sapTile_BorderCornerRadius);--_ui5-v2-17-0_card_header_border_color: var(--sapTile_SeparatorColor);--_ui5-v2-17-0_card_header_focus_border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);--_ui5-v2-17-0_card_header_focus_bottom_radius: 0px;--_ui5-v2-17-0_card_header_title_font_weight: normal;--_ui5-v2-17-0_card_header_subtitle_margin_top: .25rem;--_ui5-v2-17-0_card_hover_box_shadow: var(--sapContent_Shadow2);--_ui5-v2-17-0_card_header_focus_offset: 0px;--_ui5-v2-17-0_card_header_focus_radius: var(--_ui5-v2-17-0_card_border-radius);--_ui5-v2-17-0_card_header_title_font_family: var(--sapFontHeaderFamily);--_ui5-v2-17-0_card_header_title_font_size: var(--sapFontHeader6Size);--_ui5-v2-17-0_card_header_hover_bg: var(--sapTile_Hover_Background);--_ui5-v2-17-0_card_header_active_bg: var(--sapTile_Active_Background);--_ui5-v2-17-0_card_header_border: none;--_ui5-v2-17-0_card_header_padding: 1rem 1rem .75rem 1rem;--_ui5-v2-17-0_card_border: none;--ui5-v2-17-0_carousel_background_color_solid: var(--sapGroup_ContentBackground);--ui5-v2-17-0_carousel_background_color_translucent: var(--sapBackgroundColor);--ui5-v2-17-0_carousel_button_size: 2.25rem;--ui5-v2-17-0_carousel_inactive_dot_size: .25rem;--ui5-v2-17-0_carousel_inactive_dot_margin: 0 .375rem;--ui5-v2-17-0_carousel_inactive_dot_border: 1px solid var(--sapContent_ForegroundBorderColor);--ui5-v2-17-0_carousel_inactive_dot_background: var(--sapContent_ForegroundBorderColor);--ui5-v2-17-0_carousel_active_dot_border: 1px solid var(--sapContent_Selected_ForegroundColor);--ui5-v2-17-0_carousel_active_dot_background: var(--sapContent_Selected_ForegroundColor);--ui5-v2-17-0_carousel_navigation_button_active_box_shadow: none;--_ui5-v2-17-0_checkbox_transition: unset;--_ui5-v2-17-0_checkbox_border_radius: 0;--_ui5-v2-17-0_checkbox_focus_outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);--_ui5-v2-17-0_checkbox_outer_hover_background: transparent;--_ui5-v2-17-0_checkbox_inner_width_height: 1.375rem;--_ui5-v2-17-0_checkbox_inner_disabled_border_color: var(--sapField_BorderColor);--_ui5-v2-17-0_checkbox_inner_background: var(--sapField_Background);--_ui5-v2-17-0_checkbox_wrapped_focus_padding: .5rem;--_ui5-v2-17-0_checkbox_wrapped_focus_inset_block: var(--_ui5-v2-17-0_checkbox_focus_position);--_ui5-v2-17-0_checkbox_compact_wrapper_padding: .5rem;--_ui5-v2-17-0_checkbox_compact_width_height: 2rem;--_ui5-v2-17-0_checkbox_compact_inner_size: 1rem;--_ui5-v2-17-0_checkbox_compact_focus_position: .375rem;--_ui5-v2-17-0_checkbox_label_offset: var(--_ui5-v2-17-0_checkbox_wrapper_padding);--_ui5-v2-17-0_checkbox_disabled_label_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_checkbox_default_focus_border: none;--_ui5-v2-17-0_checkbox_focus_outline_display: block;--_ui5-v2-17-0_checkbox_wrapper_padding: .6875rem;--_ui5-v2-17-0_checkbox_width_height: 2.75rem;--_ui5-v2-17-0_checkbox_label_color: var(--sapField_TextColor);--_ui5-v2-17-0_checkbox_inner_border: solid var(--sapField_BorderWidth) var(--sapField_BorderColor);--_ui5-v2-17-0_checkbox_inner_border_radius: var(--sapField_BorderCornerRadius);--_ui5-v2-17-0_checkbox_checkmark_color: var(--sapContent_Selected_ForegroundColor);--_ui5-v2-17-0_checkbox_hover_background: var(--sapContent_Selected_Hover_Background);--_ui5-v2-17-0_checkbox_inner_hover_border_color: var(--sapField_Hover_BorderColor);--_ui5-v2-17-0_checkbox_inner_hover_checked_border_color: var(--sapField_Hover_BorderColor);--_ui5-v2-17-0_checkbox_inner_selected_border_color: var(--sapField_BorderColor);--_ui5-v2-17-0_checkbox_inner_active_border_color: var(--sapField_Hover_BorderColor);--_ui5-v2-17-0_checkbox_active_background: var(--sapContent_Selected_Hover_Background);--_ui5-v2-17-0_checkbox_inner_readonly_border: var(--sapElement_BorderWidth) var(--sapField_ReadOnly_BorderColor) dashed;--_ui5-v2-17-0_checkbox_inner_error_border: var(--sapField_InvalidBorderWidth) solid var(--sapField_InvalidColor);--_ui5-v2-17-0_checkbox_inner_error_background_hover: var(--sapField_Hover_Background);--_ui5-v2-17-0_checkbox_inner_warning_border: var(--sapField_WarningBorderWidth) solid var(--sapField_WarningColor);--_ui5-v2-17-0_checkbox_inner_warning_color: var(--sapField_WarningColor);--_ui5-v2-17-0_checkbox_inner_warning_background_hover: var(--sapField_Hover_Background);--_ui5-v2-17-0_checkbox_checkmark_warning_color: var(--sapField_WarningColor);--_ui5-v2-17-0_checkbox_inner_success_border: var(--sapField_SuccessBorderWidth) solid var(--sapField_SuccessColor);--_ui5-v2-17-0_checkbox_inner_success_background_hover: var(--sapField_Hover_Background);--_ui5-v2-17-0_checkbox_inner_information_color: var(--sapField_InformationColor);--_ui5-v2-17-0_checkbox_inner_information_border: var(--sapField_InformationBorderWidth) solid var(--sapField_InformationColor);--_ui5-v2-17-0_checkbox_inner_information_background_hover: var(--sapField_Hover_Background);--_ui5-v2-17-0_checkbox_disabled_opacity: var(--sapContent_DisabledOpacity);--_ui5-v2-17-0_checkbox_focus_position: .3125rem;--_ui5-v2-17-0_checkbox_focus_border_radius: .5rem;--_ui5-v2-17-0_checkbox_right_focus_distance: .3125rem;--_ui5-v2-17-0_color-palette-item-after-focus-inset: .0625rem;--_ui5-v2-17-0_color-palette-item-outer-border-radius: .25rem;--_ui5-v2-17-0_color-palette-item-inner-border-radius: .1875rem;--_ui5-v2-17-0_color-palette-item-after-not-focus-color: .0625rem solid var(--sapGroup_ContentBackground);--_ui5-v2-17-0-color-palette-item-background-color: transparent;--_ui5-v2-17-0_color-palette-item-hover-margin: .0625rem;--_ui5-v2-17-0_color-palette-row-height: 9.5rem;--_ui5-v2-17-0_color-palette-button-height: 3rem;--_ui5-v2-17-0_color-palette-item-before-focus-color: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_color-palette-item-before-focus-inset: -.3125rem;--_ui5-v2-17-0_color-palette-item-before-focus-hover-inset: -.0625rem;--_ui5-v2-17-0_color-palette-item-after-focus-color: .0625rem solid var(--sapContent_ContrastFocusColor);--_ui5-v2-17-0_color-palette-item-after-focus-hover-inset: .0625rem;--_ui5-v2-17-0_color-palette-item-before-focus-border-radius: .4375rem;--_ui5-v2-17-0_color-palette-item-after-focus-border-radius: .3125rem;--_ui5-v2-17-0_color-palette-item-hover-outer-border-radius: .4375rem;--_ui5-v2-17-0_color-palette-item-hover-inner-border-radius: .375rem;--_ui5-v2-17-0_color-palette-item-selected-focused-border-before: -.0625rem;--_ui5-v2-17-0_color-palette-item-after-focus-not-selected-border: none;--_ui5-v2-17-0_color-palette-item-selected-focused-border: none;--_ui5-v2-17-0_color-palette-item-mobile-focus-sides-inset: -.375rem -.375rem;--_ui5-v2-17-0-color-palette-item-mobile-focus-inset: 0px;--_ui5-v2-17-0_color-palette-item-after-mobile-focus-border: none;--_ui5-v2-17-0_color_picker_slider_handle_box_shadow: inset 0 0 0 .125rem var(--sapContent_ContrastShadowColor);--_ui5-v2-17-0_color_picker_slider_handle_inner_border_color: #fff;--_ui5-v2-17-0_color_picker_circle_outer_border: .0625rem solid var(--sapContent_ContrastShadowColor);--_ui5-v2-17-0_color_picker_circle_inner_border: var(--sapField_Picker_BorderWidth) solid var(--sapField_BorderColor);--_ui5-v2-17-0_color_picker_circle_inner_circle_size: .5625rem;--_ui5-v2-17-0_color_picker_slider_handle_container_margin_top: none;--_ui5-v2-17-0_color_picker_slider_handle_border: .125rem solid var(--sapField_BorderColor);--_ui5-v2-17-0_color_picker_slider_handle_outline_hover: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_color_picker_slider_handle_outline_focus: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_color_picker_slider_handle_inline_focus: 1px solid var(--sapContent_ContrastFocusColor);--_ui5-v2-17-0-datepicker-hover-background: var(--sapField_Hover_Background);--_ui5-v2-17-0-datepicker_border_radius: .25rem;--_ui5-v2-17-0_daypicker_item_margin: 2px;--_ui5-v2-17-0_daypicker_item_border: none;--_ui5-v2-17-0_daypicker_item_selected_border_color: var(--sapList_Background);--_ui5-v2-17-0_daypicker_daynames_container_height: 2rem;--_ui5-v2-17-0_daypicker_weeknumbers_container_padding_top: 2rem;--_ui5-v2-17-0_daypicker_item_othermonth_background_color: var(--sapList_Background);--_ui5-v2-17-0_daypicker_item_othermonth_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_daypicker_item_othermonth_hover_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_daypicker_item_selected_background: transparent;--_ui5-v2-17-0_daypicker_item_selected_between_hover_background: var(--sapList_Hover_SelectionBackground);--_ui5-v2-17-0_daypicker_item_now_not_selected_inset: 0;--_ui5-v2-17-0_daypicker_item_now_border_color: var(--sapLegend_CurrentDateTime);--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_border_radios: .25rem;--_ui5-v2-17-0_daypicker_special_day_top: 2.5rem;--_ui5-v2-17-0_daypicker_special_day_before_border_color: var(--sapList_Background);--_ui5-v2-17-0_daypicker_selected_item_now_special_day_border_bottom_radius: 0;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_after_border_width: .125rem;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_dot: .375rem;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_top: 2rem;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_right: 1.4375rem;--_ui5-v2-17-0_daypicker_item_border_radius: .4375rem;--_ui5-v2-17-0_daypicker_item_selected_border: .0625rem solid var(--sapList_SelectionBorderColor);--_ui5-v2-17-0_daypicker_item_not_selected_focus_border: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_daypicker_item_selected_focus_color: var(--sapContent_FocusColor);--_ui5-v2-17-0_daypicker_item_selected_focus_width: .125rem;--_ui5-v2-17-0_daypicker_item_no_selected_inset: .375rem;--_ui5-v2-17-0_daypicker_item_now_border_focus_after: .125rem solid var(--sapList_SelectionBorderColor);--_ui5-v2-17-0_daypicker_item_now_border_radius_focus_after: .3125rem;--_ui5-v2-17-0_day_picker_item_selected_now_border_focus: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_day_picker_item_selected_now_border_radius_focus: .1875rem;--_ui5-v2-17-0_daypicker_dayname_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_daypicker_weekname_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_daypicker_item_selected_daytext_hover_background: transparent;--_ui5-v2-17-0_daypicker_item_border_radius_item: .5rem;--_ui5-v2-17-0_daypicker_item_border_radius_focus_after: .1875rem;--_ui5-v2-17-0_daypicker_item_selected_between_border: .5rem;--_ui5-v2-17-0_daypicker_item_selected_between_background: var(--sapList_SelectionBackgroundColor);--_ui5-v2-17-0_daypicker_item_selected_between_text_font: var(--sapFontFamily);--_ui5-v2-17-0_daypicker_item_selected_text_font: var(--sapFontBoldFamily);--_ui5-v2-17-0_daypicker_item_now_box_shadow: inset 0 0 0 .35rem var(--sapList_Background);--_ui5-v2-17-0_daypicker_item_selected_text_outline: .0625rem solid var(--sapSelectedColor);--_ui5-v2-17-0_daypicker_item_now_selected_outline_offset: -.25rem;--_ui5-v2-17-0_daypicker_item_now_selected_between_inset: .25rem;--_ui5-v2-17-0_daypicker_item_now_selected_between_border: .0625rem solid var(--sapContent_Selected_ForegroundColor);--_ui5-v2-17-0_daypicker_item_now_selected_between_border_radius: .1875rem;--_ui5-v2-17-0_daypicker_item_select_between_border: 1px solid var(--sapContent_Selected_ForegroundColor);--_ui5-v2-17-0_daypicker_item_weeekend_filter: brightness(105%);--_ui5-v2-17-0_daypicker_item_selected_hover: var(--sapList_Hover_Background);--_ui5-v2-17-0_daypicker_item_now_inset: .3125rem;--_ui5-v2-17-0-dp-item_withsecondtype_border: .25rem;--_ui5-v2-17-0_daypicker_item_selected__secondary_type_text_outline: .0625rem solid var(--sapSelectedColor);--_ui5-v2-17-0_daypicker_two_calendar_item_now_day_text_content: "";--_ui5-v2-17-0_daypicker_two_calendar_item_now_selected_border_width: .125rem;--_ui5-v2-17-0_daypicker_two_calendar_item_border_radius: .5rem;--_ui5-v2-17-0_daypicker_two_calendar_item_border_focus_border_radius: .375rem;--_ui5-v2-17-0_daypicker_two_calendar_item_no_selected_inset: 0;--_ui5-v2-17-0_daypicker_two_calendar_item_selected_now_border_radius_focus: .1875rem;--_ui5-v2-17-0_daypicker_two_calendar_item_no_selected_focus_inset: .1875rem;--_ui5-v2-17-0_daypicker_two_calendar_item_no_select_focus_border_radius: .3125rem;--_ui5-v2-17-0_daypicker_two_calendar_item_now_inset: .3125rem;--_ui5-v2-17-0_daypicker_two_calendar_item_now_selected_border_inset: .125rem;--_ui5-v2-17-0_daypicker_selected_item_special_day_width: calc(100% - .125rem) ;--_ui5-v2-17-0_daypicker_special_day_border_bottom_radius: .5rem;--_ui5-v2-17-0-daypicker_item_selected_now_border_radius: .5rem;--_ui5-v2-17-0_daypicker_selected_item_now_special_day_width: calc(100% - .1875rem) ;--_ui5-v2-17-0_daypicker_selected_item_now_special_day_border_bottom_radius_alternate: .5rem;--_ui5-v2-17-0_daypicker_selected_item_now_special_day_top: 2.4375rem;--_ui5-v2-17-0_daypicker_two_calendar_item_margin_bottom: 0;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_now_inset: .3125rem;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_now_border_radius: .25rem;--_ui5-v2-17-0_daypicker_item_now_focus_margin: 0;--_ui5-v2-17-0_daypicker_special_day_border_top: none;--_ui5-v2-17-0_daypicker_special_day_selected_border_radius_bottom: .25rem;--_ui5-v2-17-0_daypicker_specialday_focused_top: 2.125rem;--_ui5-v2-17-0_daypicker_specialday_focused_width: calc(100% - .75rem) ;--_ui5-v2-17-0_daypicker_specialday_focused_border_bottom: 0;--_ui5-v2-17-0_daypicker_item_now_specialday_top: 2.3125rem;--_ui5-v2-17-0_daypicker_item_now_specialday_width: calc(100% - .5rem) ;--_ui5-v2-17-0_dialog_header_state_line_height: .0625rem;--_ui5-v2-17-0_dialog_header_focus_bottom_offset: 2px;--_ui5-v2-17-0_dialog_header_focus_top_offset: 1px;--_ui5-v2-17-0_dialog_header_focus_left_offset: 1px;--_ui5-v2-17-0_dialog_header_focus_right_offset: 1px;--_ui5-v2-17-0_dialog_header_border_radius: var(--sapElement_BorderCornerRadius);--_ui5-v2-17-0_file_uploader_display_input_width: calc(100% - var(--_ui5-v2-17-0_input_icon_width));--_ui5-v2-17-0_file_uploader_tokenizer_width: calc(100% - 2 * var(--_ui5-v2-17-0_input_icon_width) - var(--_ui5-v2-17-0_input_inner_space_to_tokenizer));--_ui5-v2-17-0_table_cell_valign: center;--_ui5-v2-17-0_table_cell_min_width: 2.75rem;--_ui5-v2-17-0_table_navigated_cell_width: .25rem;--_ui5-v2-17-0_first_table_cell_horizontal_padding: 1rem;--_ui5-v2-17-0_table_cell_horizontal_padding: .5rem;--_ui5-v2-17-0_table_cell_vertical_padding: .25rem;--_ui5-v2-17-0_table_row_actions_gap: .25rem;--_ui5-v2-17-0_table_row_alternating_background: var(--sapTableRow_AlternatingBackground, var(--sapList_AlternatingBackground));--_ui5-v2-17-0_table_row_alternating_hover_background: var(--sapTableRow_AlternatingHoverBackground, var(--sapList_Hover_Background));--_ui5-v2-17-0_table_row_alternating_selection_background: var(--sapTableRow_AlternatingSelectionBackground, var(--sapList_SelectionBackgroundColor));--_ui5-v2-17-0_table_row_alternating_selection_hover_background: var(--sapTableRow_AlternatingSelectionHoverBackground, var(--sapList_Hover_SelectionBackground));--ui5-v2-17-0-form-item-layout: 4fr 8fr 0fr;--ui5-v2-17-0-form-item-label-justify: end;--ui5-v2-17-0-form-item-label-justify-span12: start;--ui5-v2-17-0-form-item-label-padding: .125rem 0;--ui5-v2-17-0-form-item-label-padding-end: .85rem;--ui5-v2-17-0-form-item-label-padding-span12: .625rem .25rem 0 .25rem;--ui5-v2-17-0-group-header-listitem-background-color: var(--sapList_GroupHeaderBackground);--ui5-v2-17-0-icon-focus-border-radius: .25rem;--_ui5-v2-17-0_input_width: 13.125rem;--_ui5-v2-17-0_input_min_width: 2.75rem;--_ui5-v2-17-0_input_height: var(--sapElement_Height);--_ui5-v2-17-0_input_margin_top_bottom: .25rem;--_ui5-v2-17-0_input_value_state_error_hover_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_input_background_color: var(--sapField_Background);--_ui5-v2-17-0_input_border_radius: var(--sapField_BorderCornerRadius);--_ui5-v2-17-0_input_placeholder_style: italic;--_ui5-v2-17-0_input_placeholder_color: var(--sapField_PlaceholderTextColor);--_ui5-v2-17-0_input_bottom_border_height: 0;--_ui5-v2-17-0_input_bottom_border_color: transparent;--_ui5-v2-17-0_input_focused_border_color: var(--sapField_Hover_BorderColor);--_ui5-v2-17-0_input_state_border_width: .125rem;--_ui5-v2-17-0_input_information_border_width: .125rem;--_ui5-v2-17-0_input_error_font_weight: normal;--_ui5-v2-17-0_input_warning_font_weight: normal;--_ui5-v2-17-0_input_focus_border_width: 1px;--_ui5-v2-17-0_input_error_warning_font_style: inherit;--_ui5-v2-17-0_input_error_warning_text_indent: 0;--_ui5-v2-17-0_input_disabled_border_color: var(--sapField_BorderColor);--_ui5-v2-17-0-input_disabled_background: var(--sapField_Background);--_ui5-v2-17-0_input_readonly_border: none;--_ui5-v2-17-0_input_readonly_border_color: var(--sapField_ReadOnly_BorderColor);--_ui5-v2-17-0_input_readonly_background: var(--sapField_ReadOnly_Background);--_ui5-v2-17-0_input_disabled_opacity: var(--sapContent_DisabledOpacity);--_ui5-v2-17-0_input_icon_min_width: 2.25rem;--_ui5-v2-17-0_input_compact_min_width: 2rem;--_ui5-v2-17-0_input_transition: none;--_ui5-v2-17-0-input-value-state-icon-display: none;--_ui5-v2-17-0_input_value_state_error_border_color: var(--sapField_InvalidColor);--_ui5-v2-17-0_input_focused_value_state_error_border_color: var(--sapField_InvalidColor);--_ui5-v2-17-0_input_value_state_warning_border_color: var(--sapField_WarningColor);--_ui5-v2-17-0_input_focused_value_state_warning_border_color: var(--sapField_WarningColor);--_ui5-v2-17-0_input_value_state_success_border_color: var(--sapField_SuccessColor);--_ui5-v2-17-0_input_focused_value_state_success_border_color: var(--sapField_SuccessColor);--_ui5-v2-17-0_input_value_state_success_border_width: 1px;--_ui5-v2-17-0_input_value_state_information_border_color: var(--sapField_InformationColor);--_ui5-v2-17-0_input_focused_value_state_information_border_color: var(--sapField_InformationColor);--ui5-v2-17-0_input_focus_pseudo_element_content: "";--_ui5-v2-17-0_input_value_state_error_warning_placeholder_font_weight: normal;--_ui5-v2-17-0-input_error_placeholder_color: var(--sapField_PlaceholderTextColor);--_ui5-v2-17-0_input_icon_width: 2.25rem;--_ui5-v2-17-0-input-icons-count: 0;--_ui5-v2-17-0_input_tokenizer_min_width: 3.25rem;--_ui5-v2-17-0-input-border: none;--_ui5-v2-17-0_input_hover_border: none;--_ui5-v2-17-0_input_focus_border_radius: .25rem;--_ui5-v2-17-0_input_readonly_focus_border_radius: .125rem;--_ui5-v2-17-0_input_error_warning_border_style: none;--_ui5-v2-17-0_input_focused_value_state_error_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_input_focused_value_state_warning_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_input_focused_value_state_success_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_input_focused_value_state_information_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_input_focused_value_state_error_focus_outline_color: var(--sapField_InvalidColor);--_ui5-v2-17-0_input_focused_value_state_warning_focus_outline_color: var(--sapField_WarningColor);--_ui5-v2-17-0_input_focused_value_state_success_focus_outline_color: var(--sapField_SuccessColor);--_ui5-v2-17-0_input_focus_offset: 0;--_ui5-v2-17-0_input_readonly_focus_offset: .125rem;--_ui5-v2-17-0_input_information_icon_padding: .625rem .625rem .5rem .625rem;--_ui5-v2-17-0_input_information_focused_icon_padding: .625rem .625rem .5625rem .625rem;--_ui5-v2-17-0_input_error_warning_icon_padding: .625rem .625rem .5rem .625rem;--_ui5-v2-17-0_input_error_warning_focused_icon_padding: .625rem .625rem .5625rem .625rem;--_ui5-v2-17-0_input_custom_icon_padding: .625rem .625rem .5625rem .625rem;--_ui5-v2-17-0_input_error_warning_custom_icon_padding: .625rem .625rem .5rem .625rem;--_ui5-v2-17-0_input_error_warning_custom_focused_icon_padding: .625rem .625rem .5625rem .625rem;--_ui5-v2-17-0_input_information_custom_icon_padding: .625rem .625rem .5rem .625rem;--_ui5-v2-17-0_input_information_custom_focused_icon_padding: .625rem .625rem .5625rem .625rem;--_ui5-v2-17-0_input_focus_outline_color: var(--sapField_Active_BorderColor);--_ui5-v2-17-0_input_icon_wrapper_height: calc(100% - 1px) ;--_ui5-v2-17-0_input_icon_wrapper_state_height: calc(100% - 2px) ;--_ui5-v2-17-0_input_icon_wrapper_success_state_height: calc(100% - var(--_ui5-v2-17-0_input_value_state_success_border_width));--_ui5-v2-17-0_input_icon_color: var(--sapField_TextColor);--_ui5-v2-17-0_input_icon_pressed_bg: var(--sapField_Hover_Background);--_ui5-v2-17-0_input_icon_padding: .625rem .625rem .5625rem .625rem;--_ui5-v2-17-0_input_icon_hover_bg: var(--sapField_Focus_Background);--_ui5-v2-17-0_input_icon_pressed_color: var(--sapButton_Active_TextColor);--_ui5-v2-17-0_input_icon_border_radius: var(--sapField_BorderCornerRadius);--_ui5-v2-17-0_input_icon_box_shadow: var(--sapField_Hover_Shadow);--_ui5-v2-17-0_input_icon_border: none;--_ui5-v2-17-0_input_error_icon_box_shadow: var(--sapContent_Negative_Shadow);--_ui5-v2-17-0_input_warning_icon_box_shadow: var(--sapContent_Critical_Shadow);--_ui5-v2-17-0_input_information_icon_box_shadow: var(--sapContent_Informative_Shadow);--_ui5-v2-17-0_input_success_icon_box_shadow: var(--sapContent_Positive_Shadow);--_ui5-v2-17-0_input_icon_error_pressed_color: var(--sapButton_Reject_Selected_TextColor);--_ui5-v2-17-0_input_icon_warning_pressed_color: var(--sapButton_Attention_Selected_TextColor);--_ui5-v2-17-0_input_icon_information_pressed_color: var(--sapButton_Selected_TextColor);--_ui5-v2-17-0_input_icon_success_pressed_color: var(--sapButton_Accept_Selected_TextColor);--_ui5-v2-17-0_link_focus_text_decoration: underline;--_ui5-v2-17-0_link_text_decoration: var(--sapLink_TextDecoration);--_ui5-v2-17-0_link_hover_text_decoration: var(--sapLink_Hover_TextDecoration);--_ui5-v2-17-0_link_focused_hover_text_decoration: none;--_ui5-v2-17-0_link_focused_hover_text_color: var(--sapContent_ContrastTextColor);--_ui5-v2-17-0_link_active_text_decoration: var(--sapLink_Active_TextDecoration);--_ui5-v2-17-0_link_outline: none;--_ui5-v2-17-0_link_focus_border-radius: .125rem;--_ui5-v2-17-0_link_focus_background_color: var(--sapContent_FocusColor);--_ui5-v2-17-0_link_focus_color: var(--sapContent_ContrastTextColor);--_ui5-v2-17-0_link_subtle_text_decoration: underline;--_ui5-v2-17-0_link_subtle_text_decoration_hover: none;--_ui5-v2-17-0_link_large_interactive_area_height: 1.5rem;--ui5-v2-17-0_list_footer_text_color: var(--sapList_FooterTextColor);--ui5-v2-17-0-listitem-background-color: var(--sapList_Background);--ui5-v2-17-0-listitem-border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);--ui5-v2-17-0-listitem-selected-border-bottom: 1px solid var(--sapList_SelectionBorderColor);--ui5-v2-17-0-listitem-focused-selected-border-bottom: 1px solid var(--sapList_SelectionBorderColor);--_ui5-v2-17-0-listitembase_disabled_opacity: .5;--_ui5-v2-17-0_product_switch_item_border: none;--_ui5-v2-17-0_menu_item_padding: 0 1rem 0 .75rem;--_ui5-v2-17-0_menu_item_submenu_icon_right: 1rem;--_ui5-v2-17-0_menu_popover_border_radius: var(--sapPopover_BorderCornerRadius);--_ui5-v2-17-0_monthpicker_item_margin: .0625rem;--_ui5-v2-17-0_monthpicker_item_border: .0625rem solid var(--sapButton_Lite_BorderColor);--_ui5-v2-17-0_monthpicker_item_hover_border: .0625rem solid var(--sapButton_Lite_Hover_BorderColor);--_ui5-v2-17-0_monthpicker_item_active_border: .0625rem solid var(--sapButton_Lite_Active_BorderColor);--_ui5-v2-17-0_monthpicker_item_selected_border: .0625rem solid var(--sapButton_Selected_BorderColor);--_ui5-v2-17-0_monthpicker_item_selected_hover_border: .0625rem solid var(--sapButton_Selected_Hover_BorderColor);--_ui5-v2-17-0_monthpicker_item_border_radius: .5rem;--_ui5-v2-17-0_message_strip_padding: .4375rem 2.5rem .4375rem 2.5rem;--_ui5-v2-17-0_message_strip_padding_block_no_icon: .4375rem .4375rem;--_ui5-v2-17-0_message_strip_padding_inline_no_icon: 1rem 2.5rem;--_ui5-v2-17-0_message_strip_border_width: var(--sapMessage_BorderWidth);--_ui5-v2-17-0_message_strip_icon_top: .4375rem;--_ui5-v2-17-0_message_strip_close_button_top: .125rem;--_ui5-v2-17-0_message_strip_close_button_color_set_1_background: var(--sapMessage_Button_Hover_Background);--_ui5-v2-17-0_message_strip_close_button_color_set_2_background: var(--sapMessage_Button_Hover_Background);--_ui5-v2-17-0_message_strip_close_button_color_set_1_color: var(--sapContent_ContrastIconColor);--_ui5-v2-17-0_message_strip_scheme_1_set_2_background: var(--sapIndicationColor_1b);--_ui5-v2-17-0_message_strip_scheme_1_set_2_border_color: var(--sapIndicationColor_1b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_2_set_2_background: var(--sapIndicationColor_2b);--_ui5-v2-17-0_message_strip_scheme_2_set_2_border_color: var(--sapIndicationColor_2b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_3_set_2_background: var(--sapIndicationColor_3b);--_ui5-v2-17-0_message_strip_scheme_3_set_2_border_color: var(--sapIndicationColor_3b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_4_set_2_background: var(--sapIndicationColor_4b);--_ui5-v2-17-0_message_strip_scheme_4_set_2_border_color: var(--sapIndicationColor_4b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_5_set_2_background: var(--sapIndicationColor_5b);--_ui5-v2-17-0_message_strip_scheme_5_set_2_border_color: var(--sapIndicationColor_5b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_6_set_2_background: var(--sapIndicationColor_6b);--_ui5-v2-17-0_message_strip_scheme_6_set_2_border_color: var(--sapIndicationColor_6b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_7_set_2_background: var(--sapIndicationColor_7b);--_ui5-v2-17-0_message_strip_scheme_7_set_2_border_color: var(--sapIndicationColor_7b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_8_set_2_background: var(--sapIndicationColor_8b);--_ui5-v2-17-0_message_strip_scheme_8_set_2_border_color: var(--sapIndicationColor_8b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_9_set_2_background: var(--sapIndicationColor_9b);--_ui5-v2-17-0_message_strip_scheme_9_set_2_border_color: var(--sapIndicationColor_9b_BorderColor);--_ui5-v2-17-0_message_strip_scheme_10_set_2_background: var(--sapIndicationColor_10b);--_ui5-v2-17-0_message_strip_scheme_10_set_2_border_color: var(--sapIndicationColor_10b_BorderColor);--_ui5-v2-17-0_message_strip_close_button_right: .1875rem;--_ui5-v2-17-0_panel_focus_border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);--_ui5-v2-17-0_panel_header_height: 2.75rem;--_ui5-v2-17-0_panel_button_root_width: 2.75rem;--_ui5-v2-17-0_panel_button_root_height: 2.75rem;--_ui5-v2-17-0_panel_header_padding_right: .5rem;--_ui5-v2-17-0_panel_header_button_wrapper_padding: .25rem;--_ui5-v2-17-0_panel_border_radius: var(--sapGroup_BorderCornerRadius);--_ui5-v2-17-0_panel_border_bottom: none;--_ui5-v2-17-0_panel_default_header_border: .0625rem solid var(--sapGroup_TitleBorderColor);--_ui5-v2-17-0_panel_border_radius_expanded: var(--sapElement_BorderCornerRadius) var(--sapElement_BorderCornerRadius) 0 0;--_ui5-v2-17-0_panel_icon_color: var(--sapButton_Lite_TextColor);--_ui5-v2-17-0_panel_focus_offset: 0px;--_ui5-v2-17-0_panel_focus_bottom_offset: -1px;--_ui5-v2-17-0_panel_content_padding: .625rem 1rem;--_ui5-v2-17-0_panel_header_background_color: var(--sapGroup_TitleBackground);--_ui5-v2-17-0_popover_background: var(--sapGroup_ContentBackground);--_ui5-v2-17-0_popover_box_shadow: var(--sapContent_Shadow2);--_ui5-v2-17-0_popover_no_arrow_box_shadow: var(--sapContent_Shadow1);--_ui5-v2-17-0_popup_content_padding_s: 1rem;--_ui5-v2-17-0_popup_content_padding_m_l: 2rem;--_ui5-v2-17-0_popup_content_padding_xl: 3rem;--_ui5-v2-17-0_popup_header_footer_padding_s: 1rem;--_ui5-v2-17-0_popup_header_footer_padding_m_l: 2rem;--_ui5-v2-17-0_popup_header_footer_padding_xl: 3rem;--_ui5-v2-17-0_popup_viewport_margin: 10px;--_ui5-v2-17-0_popup_header_prop_header_text_alignment: flex-start;--_ui5-v2-17-0_popup_header_shadow: var(--sapContent_HeaderShadow);--_ui5-v2-17-0_popup_header_border: none;--_ui5-v2-17-0_popup_border_radius: .5rem;--_ui5-v2-17-0_popup_block_layer_background: var(--sapBlockLayer_Background);--_ui5-v2-17-0_popup_block_layer_opacity: .2;--_ui5-v2-17-0_progress_indicator_bar_border_max: none;--_ui5-v2-17-0_progress_indicator_icon_visibility: inline-block;--_ui5-v2-17-0_progress_indicator_side_points_visibility: block;--_ui5-v2-17-0_progress_indicator_padding: 1.25rem 0 .75rem 0;--_ui5-v2-17-0_progress_indicator_padding_novalue: .3125rem;--_ui5-v2-17-0_progress_indicator_padding_end: 1.25rem;--_ui5-v2-17-0_progress_indicator_host_height: unset;--_ui5-v2-17-0_progress_indicator_host_box_sizing: border-box;--_ui5-v2-17-0_progress_indicator_root_position: relative;--_ui5-v2-17-0_progress_indicator_root_border_radius: .25rem;--_ui5-v2-17-0_progress_indicator_root_height: .375rem;--_ui5-v2-17-0_progress_indicator_root_min_height: .375rem;--_ui5-v2-17-0_progress_indicator_root_overflow: visible;--_ui5-v2-17-0_progress_indicator_bar_height: .625rem;--_ui5-v2-17-0_progress_indicator_bar_border_radius: .5rem;--_ui5-v2-17-0_progress_indicator_remaining_bar_border_radius: .25rem;--_ui5-v2-17-0_progress_indicator_remaining_bar_position: absolute;--_ui5-v2-17-0_progress_indicator_remaining_bar_width: 100%;--_ui5-v2-17-0_progress_indicator_remaining_bar_overflow: visible;--_ui5-v2-17-0_progress_indicator_icon_position: absolute;--_ui5-v2-17-0_progress_indicator_icon_right_position: -1.25rem;--_ui5-v2-17-0_progress_indicator_value_margin: 0 0 .1875rem 0;--_ui5-v2-17-0_progress_indicator_value_position: absolute;--_ui5-v2-17-0_progress_indicator_value_top_position: -1.3125rem;--_ui5-v2-17-0_progress_indicator_value_left_position: 0;--_ui5-v2-17-0_progress_indicator_background_none: var(--sapProgress_Background);--_ui5-v2-17-0_progress_indicator_background_error: var(--sapProgress_NegativeBackground);--_ui5-v2-17-0_progress_indicator_background_warning: var(--sapProgress_CriticalBackground);--_ui5-v2-17-0_progress_indicator_background_success: var(--sapProgress_PositiveBackground);--_ui5-v2-17-0_progress_indicator_background_information: var(--sapProgress_InformationBackground);--_ui5-v2-17-0_progress_indicator_value_state_none: var(--sapProgress_Value_Background);--_ui5-v2-17-0_progress_indicator_value_state_error: var(--sapProgress_Value_NegativeBackground);--_ui5-v2-17-0_progress_indicator_value_state_warning: var(--sapProgress_Value_CriticalBackground);--_ui5-v2-17-0_progress_indicator_value_state_success: var(--sapProgress_Value_PositiveBackground);--_ui5-v2-17-0_progress_indicator_value_state_information: var(--sapProgress_Value_InformationBackground);--_ui5-v2-17-0_progress_indicator_value_state_error_icon_color: var(--sapProgress_Value_NegativeTextColor);--_ui5-v2-17-0_progress_indicator_value_state_warning_icon_color: var(--sapProgress_Value_CriticalTextColor);--_ui5-v2-17-0_progress_indicator_value_state_success_icon_color: var(--sapProgress_Value_PositiveTextColor);--_ui5-v2-17-0_progress_indicator_value_state_information_icon_color: var(--sapProgress_Value_InformationTextColor);--_ui5-v2-17-0_progress_indicator_border: none;--_ui5-v2-17-0_progress_indicator_border_color_error: var(--sapErrorBorderColor);--_ui5-v2-17-0_progress_indicator_border_color_warning: var(--sapWarningBorderColor);--_ui5-v2-17-0_progress_indicator_border_color_success: var(--sapSuccessBorderColor);--_ui5-v2-17-0_progress_indicator_border_color_information: var(--sapInformationBorderColor);--_ui5-v2-17-0_progress_indicator_color: var(--sapField_TextColor);--_ui5-v2-17-0_progress_indicator_bar_color: var(--sapProgress_TextColor);--_ui5-v2-17-0_progress_indicator_icon_size: var(--sapFontLargeSize);--_ui5-v2-17-0_rating_indicator_border_radius: .5rem;--_ui5-v2-17-0_rating_indicator_outline_offset: -.125rem;--_ui5-v2-17-0_rating_indicator_item_height: 1em;--_ui5-v2-17-0_rating_indicator_item_width: 1em;--_ui5-v2-17-0_rating_indicator_component_spacing: .5rem 0px;--_ui5-v2-17-0_rating_indicator_component_padding: .25rem;--_ui5-v2-17-0_rating_indicator_item_size_s: 1.375rem;--_ui5-v2-17-0_rating_indicator_item_size_l: 2rem;--_ui5-v2-17-0_rating_indicator_readonly_item_height: .75em;--_ui5-v2-17-0_rating_indicator_readonly_item_width: .75em;--_ui5-v2-17-0_rating_indicator_readonly_item_spacing: .1875rem .1875rem;--_ui5-v2-17-0_segmented_btn_background_color: var(--sapButton_Lite_Background);--_ui5-v2-17-0_segmented_btn_border_color: var(--sapButton_Lite_BorderColor);--_ui5-v2-17-0_segmented_btn_hover_box_shadow: none;--_ui5-v2-17-0_segmented_btn_item_border_left: .0625rem;--_ui5-v2-17-0_segmented_btn_item_border_right: .0625rem;--_ui5-v2-17-0_button_base_height: var(--sapElement_Height);--_ui5-v2-17-0_button_border_radius: var(--sapButton_BorderCornerRadius);--_ui5-v2-17-0_button_emphasized_focused_border_before: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_button_emphasized_focused_active_border_color: transparent;--_ui5-v2-17-0_button_focused_border: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_button_focused_border_radius: .375rem;--_ui5-v2-17-0_button_focused_inner_border_radius: .375rem;--_ui5-v2-17-0_button_base_min_width: 2.25rem;--_ui5-v2-17-0_button_base_padding: .5625rem;--_ui5-v2-17-0_button_base_icon_margin: .375rem;--_ui5-v2-17-0_button_text_shadow: none;--_ui5-v2-17-0_button_emphasized_border_width: .0625rem;--_ui5-v2-17-0_button_pressed_focused_border_color: var(--sapContent_FocusColor);--_ui5-v2-17-0_button_fontFamily: var(--sapButton_FontFamily);--_ui5-v2-17-0_button_emphasized_focused_border_color: var(--sapContent_ContrastFocusColor);--_ui5-v2-17-0_radio_button_min_width: 2.75rem;--_ui5-v2-17-0_radio_button_checked_fill: var(--sapSelectedColor);--_ui5-v2-17-0_radio_button_checked_error_fill: var(--sapField_InvalidColor);--_ui5-v2-17-0_radio_button_checked_success_fill: var(--sapField_SuccessColor);--_ui5-v2-17-0_radio_button_checked_information_fill: var(--sapField_InformationColor);--_ui5-v2-17-0_radio_button_warning_error_border_dash: 0;--_ui5-v2-17-0_radio_button_outer_ring_color: var(--sapField_BorderColor);--_ui5-v2-17-0_radio_button_outer_ring_width: var(--sapField_BorderWidth);--_ui5-v2-17-0_radio_button_outer_ring_bg: var(--sapField_Background);--_ui5-v2-17-0_radio_button_outer_ring_hover_color: var(--sapField_Hover_BorderColor);--_ui5-v2-17-0_radio_button_outer_ring_active_color: var(--sapField_Hover_BorderColor);--_ui5-v2-17-0_radio_button_outer_ring_checked_hover_color: var(--sapField_Hover_BorderColor);--_ui5-v2-17-0_radio_button_outer_ring_padding_with_label: 0 .6875rem;--_ui5-v2-17-0_radio_button_border: none;--_ui5-v2-17-0_radio_button_focus_outline: block;--_ui5-v2-17-0_radio_button_color: var(--sapField_BorderColor);--_ui5-v2-17-0_radio_button_label_offset: 1px;--_ui5-v2-17-0_radio_button_information_border_width: var(--sapField_InformationBorderWidth);--_ui5-v2-17-0_radio_button_hover_fill: var(--sapField_Selector_Hover_Background);--_ui5-v2-17-0_radio_button_hover_fill_error: var(--sapField_Selector_Hover_InvalidBackground);--_ui5-v2-17-0_radio_button_hover_fill_warning: var(--sapField_Selector_Hover_WarningBackground);--_ui5-v2-17-0_radio_button_hover_fill_success: var(--sapField_Selector_Hover_SuccessBackground);--_ui5-v2-17-0_radio_button_hover_fill_information: var(--sapField_Selector_Hover_InformationBackground);--_ui5-v2-17-0_radio_button_border_width: var(--sapContent_FocusWidth);--_ui5-v2-17-0_radio_button_border_radius: .5rem;--_ui5-v2-17-0_radio_button_label_color: var(--sapField_TextColor);--_ui5-v2-17-0_radio_button_inner_ring_radius: 27.5%;--_ui5-v2-17-0_radio_button_outer_ring_padding: 0 .6875rem;--_ui5-v2-17-0_radio_button_read_only_border_type: 4,2;--_ui5-v2-17-0_radio_button_inner_ring_color: var(--sapContent_Selected_ForegroundColor);--_ui5-v2-17-0_radio_button_checked_warning_fill: var(--sapField_WarningColor);--_ui5-v2-17-0_radio_button_read_only_inner_ring_color: var(--sapField_TextColor);--_ui5-v2-17-0_radio_button_read_only_border_width: var(--sapElement_BorderWidth);--_ui5-v2-17-0_radio_button_focus_dist: .375rem;--_ui5-v2-17-0_switch_height: 2.75rem;--_ui5-v2-17-0_switch_foucs_border_size: 1px;--_ui5-v2-17-0-switch-root-border-radius: 0;--_ui5-v2-17-0-switch-root-box-shadow: none;--_ui5-v2-17-0_switch_track_border_radius: .75rem;--_ui5-v2-17-0-switch-track-border: 1px solid;--_ui5-v2-17-0_switch_track_transition: none;--_ui5-v2-17-0_switch_handle_border_radius: 1rem;--_ui5-v2-17-0-switch-slider-texts-display: inline;--_ui5-v2-17-0_switch_width: 2.5rem;--_ui5-v2-17-0_switch_min_width: none;--_ui5-v2-17-0_switch_with_label_width: 2.875rem;--_ui5-v2-17-0_switch_focus_outline: none;--_ui5-v2-17-0_switch_root_after_outline: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_switch_root_after_boreder_radius: 1rem;--_ui5-v2-17-0_switch_root_outline_top: .5rem;--_ui5-v2-17-0_switch_root_outline_bottom: .5rem;--_ui5-v2-17-0_switch_root_outline_left: -.125rem;--_ui5-v2-17-0_switch_root_outline_right: -.125rem;--_ui5-v2-17-0_switch_disabled_opacity: var(--sapContent_DisabledOpacity);--_ui5-v2-17-0_switch_transform: translateX(100%) translateX(-1.625rem);--_ui5-v2-17-0_switch_transform_with_label: translateX(100%) translateX(-1.875rem);--_ui5-v2-17-0_switch_rtl_transform: translateX(-100%) translateX(1.625rem);--_ui5-v2-17-0_switch_rtl_transform_with_label: translateX(-100%) translateX(1.875rem);--_ui5-v2-17-0_switch_track_width: 2.5rem;--_ui5-v2-17-0_switch_track_height: 1.5rem;--_ui5-v2-17-0_switch_track_with_label_width: 2.875rem;--_ui5-v2-17-0_switch_track_with_label_height: 1.5rem;--_ui5-v2-17-0_switch_track_active_background_color: var(--sapButton_Track_Selected_Background);--_ui5-v2-17-0_switch_track_inactive_background_color: var(--sapButton_Track_Background);--_ui5-v2-17-0_switch_track_hover_active_background_color: var(--sapButton_Track_Selected_Hover_Background);--_ui5-v2-17-0_switch_track_hover_inactive_background_color: var(--sapButton_Track_Hover_Background);--_ui5-v2-17-0_switch_track_active_border_color: var(--sapButton_Track_Selected_BorderColor);--_ui5-v2-17-0_switch_track_inactive_border_color: var(--sapButton_Track_BorderColor);--_ui5-v2-17-0_switch_track_hover_active_border_color: var(--sapButton_Track_Selected_Hover_BorderColor);--_ui5-v2-17-0_switch_track_hover_inactive_border_color: var(--sapButton_Track_Hover_BorderColor);--_ui5-v2-17-0_switch_track_semantic_accept_background_color: var(--sapButton_Track_Positive_Background);--_ui5-v2-17-0_switch_track_semantic_reject_background_color: var(--sapButton_Track_Negative_Background);--_ui5-v2-17-0_switch_track_semantic_hover_accept_background_color: var(--sapButton_Track_Positive_Hover_Background);--_ui5-v2-17-0_switch_track_semantic_hover_reject_background_color: var(--sapButton_Track_Negative_Hover_Background);--_ui5-v2-17-0_switch_track_semantic_accept_border_color: var(--sapButton_Track_Positive_BorderColor);--_ui5-v2-17-0_switch_track_semantic_reject_border_color: var(--sapButton_Track_Negative_BorderColor);--_ui5-v2-17-0_switch_track_semantic_hover_accept_border_color: var(--sapButton_Track_Positive_Hover_BorderColor);--_ui5-v2-17-0_switch_track_semantic_hover_reject_border_color: var(--sapButton_Track_Negative_Hover_BorderColor);--_ui5-v2-17-0_switch_track_icon_display: inline-block;--_ui5-v2-17-0_switch_handle_width: 1.5rem;--_ui5-v2-17-0_switch_handle_height: 1.25rem;--_ui5-v2-17-0_switch_handle_with_label_width: 1.75rem;--_ui5-v2-17-0_switch_handle_with_label_height: 1.25rem;--_ui5-v2-17-0_switch_handle_border: var(--_ui5-v2-17-0_switch_handle_border_width) solid var(--sapButton_Handle_BorderColor);--_ui5-v2-17-0_switch_handle_border_width: .125rem;--_ui5-v2-17-0_switch_handle_active_background_color: var(--sapButton_Handle_Selected_Background);--_ui5-v2-17-0_switch_handle_inactive_background_color: var(--sapButton_Handle_Background);--_ui5-v2-17-0_switch_handle_hover_active_background_color: var(--sapButton_Handle_Selected_Hover_Background);--_ui5-v2-17-0_switch_handle_hover_inactive_background_color: var(--sapButton_Handle_Hover_Background);--_ui5-v2-17-0_switch_handle_active_border_color: var(--sapButton_Handle_Selected_BorderColor);--_ui5-v2-17-0_switch_handle_inactive_border_color: var(--sapButton_Handle_BorderColor);--_ui5-v2-17-0_switch_handle_hover_active_border_color: var(--sapButton_Handle_Selected_BorderColor);--_ui5-v2-17-0_switch_handle_hover_inactive_border_color: var(--sapButton_Handle_BorderColor);--_ui5-v2-17-0_switch_handle_semantic_accept_background_color: var(--sapButton_Handle_Positive_Background);--_ui5-v2-17-0_switch_handle_semantic_reject_background_color: var(--sapButton_Handle_Negative_Background);--_ui5-v2-17-0_switch_handle_semantic_hover_accept_background_color: var(--sapButton_Handle_Positive_Hover_Background);--_ui5-v2-17-0_switch_handle_semantic_hover_reject_background_color: var(--sapButton_Handle_Negative_Hover_Background);--_ui5-v2-17-0_switch_handle_semantic_accept_border_color: var(--sapButton_Handle_Positive_BorderColor);--_ui5-v2-17-0_switch_handle_semantic_reject_border_color: var(--sapButton_Handle_Negative_BorderColor);--_ui5-v2-17-0_switch_handle_semantic_hover_accept_border_color: var(--sapButton_Handle_Positive_BorderColor);--_ui5-v2-17-0_switch_handle_semantic_hover_reject_border_color: var(--sapButton_Handle_Negative_BorderColor);--_ui5-v2-17-0_switch_handle_on_hover_box_shadow: 0 0 0 .125rem var(--sapButton_Handle_Selected_Hover_BorderColor);--_ui5-v2-17-0_switch_handle_off_hover_box_shadow: 0 0 0 .125rem var(--sapButton_Handle_Hover_BorderColor);--_ui5-v2-17-0_switch_handle_semantic_on_hover_box_shadow: 0 0 0 .125rem var(--sapButton_Handle_Positive_Hover_BorderColor);--_ui5-v2-17-0_switch_handle_semantic_off_hover_box_shadow: 0 0 0 .125rem var(--sapButton_Handle_Negative_Hover_BorderColor);--_ui5-v2-17-0_switch_handle_left: .0625rem;--_ui5-v2-17-0_switch_text_font_family: var(--sapContent_IconFontFamily);--_ui5-v2-17-0_switch_text_font_size: var(--sapFontLargeSize);--_ui5-v2-17-0_switch_text_width: 1.25rem;--_ui5-v2-17-0_switch_text_with_label_font_family: "72-Condensed-Bold" , "72" , "72full" , Arial, Helvetica, sans-serif;--_ui5-v2-17-0_switch_text_with_label_font_size: var(--sapFontSmallSize);--_ui5-v2-17-0_switch_text_with_label_width: 1.75rem;--_ui5-v2-17-0_switch_text_inactive_left: .1875rem;--_ui5-v2-17-0_switch_text_inactive_left_alternate: .0625rem;--_ui5-v2-17-0_switch_text_inactive_right: auto;--_ui5-v2-17-0_switch_text_inactive_right_alternate: 0;--_ui5-v2-17-0_switch_text_active_left: .1875rem;--_ui5-v2-17-0_switch_text_active_left_alternate: .0625rem;--_ui5-v2-17-0_switch_text_active_color: var(--sapButton_Handle_Selected_TextColor);--_ui5-v2-17-0_switch_text_inactive_color: var(--sapButton_Handle_TextColor);--_ui5-v2-17-0_switch_text_semantic_accept_color: var(--sapButton_Handle_Positive_TextColor);--_ui5-v2-17-0_switch_text_semantic_reject_color: var(--sapButton_Handle_Negative_TextColor);--_ui5-v2-17-0_switch_text_overflow: hidden;--_ui5-v2-17-0_switch_text_z_index: 1;--_ui5-v2-17-0_switch_text_hidden: hidden;--_ui5-v2-17-0_switch_text_min_width: none;--_ui5-v2-17-0_switch_icon_width: 1rem;--_ui5-v2-17-0_switch_icon_height: 1rem;--_ui5-v2-17-0_select_label_color: var(--sapField_TextColor);--_ui5-v2-17-0_select_icon_width: 2.25rem;--_ui5-v2-17-0_select_hover_icon_left_border: none;--_ui5-v2-17-0_select_icon_wrapper_height: calc(100% - .0625rem) ;--_ui5-v2-17-0_select_icon_wrapper_state_height: calc(100% - .125rem) ;--_ui5-v2-17-0_split_button_host_transparent_hover_background: transparent;--_ui5-v2-17-0_split_button_transparent_disabled_background: transparent;--_ui5-v2-17-0_split_button_host_default_box_shadow: inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_BorderColor);--_ui5-v2-17-0_split_button_host_attention_box_shadow: inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_Attention_BorderColor);--_ui5-v2-17-0_split_button_host_emphasized_box_shadow: inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_Emphasized_BorderColor);--_ui5-v2-17-0_split_button_host_positive_box_shadow: inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_Accept_BorderColor);--_ui5-v2-17-0_split_button_host_negative_box_shadow: inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_Reject_BorderColor);--_ui5-v2-17-0_split_button_host_transparent_box_shadow: inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_Lite_BorderColor);--_ui5-v2-17-0_split_text_button_border_color: transparent;--_ui5-v2-17-0_split_text_button_background_color: transparent;--_ui5-v2-17-0_split_text_button_emphasized_border: var(--sapButton_BorderWidth) solid var(--sapButton_Emphasized_BorderColor);--_ui5-v2-17-0_split_text_button_emphasized_border_width: .0625rem;--_ui5-v2-17-0_split_text_button_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);--_ui5-v2-17-0_split_text_button_positive_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_Accept_BorderColor);--_ui5-v2-17-0_split_text_button_negative_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_Reject_BorderColor);--_ui5-v2-17-0_split_text_button_attention_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_Attention_BorderColor);--_ui5-v2-17-0_split_text_button_transparent_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);--_ui5-v2-17-0_split_arrow_button_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);--_ui5-v2-17-0_split_arrow_button_emphasized_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_Emphasized_BorderColor);--_ui5-v2-17-0_split_arrow_button_positive_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_Accept_BorderColor);--_ui5-v2-17-0_split_arrow_button_negative_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_Reject_BorderColor);--_ui5-v2-17-0_split_arrow_button_attention_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_Attention_BorderColor);--_ui5-v2-17-0_split_arrow_button_transparent_hover_border: var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);--_ui5-v2-17-0_split_button_focused_border: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_split_button_focused_border_radius: .375rem;--_ui5-v2-17-0_split_button_middle_separator_left: -.0625rem;--_ui5-v2-17-0_split_button_middle_separator_hover_display: none;--_ui5-v2-17-0_split_button_text_button_right_border_width: .0625rem;--_ui5-v2-17-0_split_button_transparent_hover_background: var(--sapButton_Lite_Hover_Background);--_ui5-v2-17-0_split_button_transparent_hover_color: var(--sapButton_TextColor);--_ui5-v2-17-0_split_button_host_transparent_hover_box_shadow: inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_BorderColor);--_ui5-v2-17-0_split_button_inner_focused_border_radius_inner: .375rem;--_ui5-v2-17-0_split_button_emphasized_separator_color: transparent;--_ui5-v2-17-0_split_button_positive_separator_color: transparent;--_ui5-v2-17-0_split_button_negative_separator_color: transparent;--_ui5-v2-17-0_split_button_attention_separator_color: transparent;--_ui5-v2-17-0_split_button_attention_separator_color_default: var(--sapButton_Attention_TextColor);--_ui5-v2-17-0_split_text_button_hover_border_right: var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);--_ui5-v2-17-0_split_text_button_positive_hover_border_right: var(--sapButton_BorderWidth) solid var(--sapButton_Accept_BorderColor);--_ui5-v2-17-0_split_text_button_negative_hover_border_right: var(--sapButton_BorderWidth) solid var(--sapButton_Reject_BorderColor);--_ui5-v2-17-0_split_text_button_attention_hover_border_right: var(--sapButton_BorderWidth) solid var(--sapButton_Attention_BorderColor);--_ui5-v2-17-0_split_text_button_transparent_hover_border_right: var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);--_ui5-v2-17-0_split_button_middle_separator_hover_display_emphasized: none;--_ui5-v2-17-0_tc_header_height: var(--_ui5-v2-17-0_tc_item_height);--_ui5-v2-17-0_tc_header_height_text_only: var(--_ui5-v2-17-0_tc_item_text_only_height);--_ui5-v2-17-0_tc_header_height_text_with_additional_text: var(--_ui5-v2-17-0_tc_item_text_only_with_additional_text_height);--_ui5-v2-17-0_tc_header_box_shadow: var(--sapContent_HeaderShadow);--_ui5-v2-17-0_tc_header_background: var(--sapObjectHeader_Background);--_ui5-v2-17-0_tc_header_background_translucent: var(--sapObjectHeader_Background);--_ui5-v2-17-0_tc_content_background: var(--sapBackgroundColor);--_ui5-v2-17-0_tc_content_background_translucent: var(--sapGroup_ContentBackground);--_ui5-v2-17-0_tc_headeritem_padding: 1rem;--_ui5-v2-17-0_tc_headerItem_additional_text_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_tc_headerItem_text_selected_color: var(--sapTab_Selected_TextColor);--_ui5-v2-17-0_tc_headerItem_text_selected_hover_color: var(--sapSelectedColor);--_ui5-v2-17-0_tc_headeritem_text_font_weight: normal;--_ui5-v2-17-0_tc_headerItem_additional_text_font_weight: normal;--_ui5-v2-17-0_tc_headerItem_neutral_border_color: var(--sapTab_Neutral_ForegroundColor);--_ui5-v2-17-0_tc_headerItem_transition: none;--_ui5-v2-17-0_tc_headerItemContent_border_radius: .125rem .125rem 0 0;--_ui5-v2-17-0_tc_headerItemContent_border_bg: transparent;--_ui5-v2-17-0_tc_headerItem_neutral_border_bg: transparent;--_ui5-v2-17-0_tc_headerItem_positive_border_bg: transparent;--_ui5-v2-17-0_tc_headerItem_negative_border_bg: transparent;--_ui5-v2-17-0_tc_headerItem_critical_border_bg: transparent;--_ui5-v2-17-0_tc_headerItemContent_border_height: 0;--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_left: 0px;--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_right: 0px;--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_top: 0px;--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_bottom: 0px;--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_left: .75rem;--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_right: .625rem;--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_top: .75rem;--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_bottom: .75rem;--_ui5-v2-17-0_tc_headerItemContent_default_focus_border: none;--_ui5-v2-17-0_tc_headerItemContent_focus_border_radius: 0;--_ui5-v2-17-0_tc_headerItemSemanticIcon_display: none;--_ui5-v2-17-0_tc_headerItemSemanticIcon_size: .75rem;--_ui5-v2-17-0_tc_mixedMode_itemText_font_family: var(--sapFontFamily);--_ui5-v2-17-0_tc_mixedMode_itemText_font_size: var(--sapFontSmallSize);--_ui5-v2-17-0_tc_mixedMode_itemText_font_weight: normal;--_ui5-v2-17-0_tc_overflowItem_positive_color: var(--sapPositiveColor);--_ui5-v2-17-0_tc_overflowItem_negative_color: var(--sapNegativeColor);--_ui5-v2-17-0_tc_overflowItem_critical_color: var(--sapCriticalColor);--_ui5-v2-17-0_tc_overflowItem_focus_offset: .125rem;--_ui5-v2-17-0_tc_overflowItem_indent: .5rem;--_ui5-v2-17-0_tc_overflowItem_extra_indent: 0rem;--_ui5-v2-17-0_tc_headerItemIcon_semantic_selected_color: var(--sapGroup_ContentBackground);--_ui5-v2-17-0_tc_header_border_bottom: .0625rem solid var(--sapObjectHeader_Background);--_ui5-v2-17-0_tc_headerItem_color: var(--sapTab_TextColor);--_ui5-v2-17-0_tc_overflowItem_default_color: var(--sapTab_TextColor);--_ui5-v2-17-0_tc_overflowItem_current_color: CurrentColor;--_ui5-v2-17-0_tc_content_border_bottom: .0625rem solid var(--sapObjectHeader_BorderColor);--_ui5-v2-17-0_tc_headerItem_expand_button_margin_inline_start: 0rem;--_ui5-v2-17-0_tc_headerItem_single_click_expand_button_margin_inline_start: .25rem;--_ui5-v2-17-0_tc_headerItem_expand_button_border_radius: .25rem;--_ui5-v2-17-0_tc_headerItem_expand_button_separator_display: inline-block;--_ui5-v2-17-0_tc_headerItem_focus_border: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_tc_headerItem_focus_border_offset: -5px;--_ui5-v2-17-0_tc_headerItemIcon_focus_border_radius: 50%;--_ui5-v2-17-0_tc_headerItem_focus_border_radius: .375rem;--_ui5-v2-17-0_tc_headerItem_text_hover_color: var(--sapTab_Selected_TextColor);--_ui5-v2-17-0_tc_headerItemIcon_border: .125rem solid var(--sapTab_ForegroundColor);--_ui5-v2-17-0_tc_mixedMode_itemText_color: var(--sapTextColor);--_ui5-v2-17-0_tc_overflow_text_color: var(--sapTextColor);--_ui5-v2-17-0_text_max_lines: initial;--_ui5-v2-17-0_textarea_state_border_width: .125rem;--_ui5-v2-17-0_textarea_information_border_width: .125rem;--_ui5-v2-17-0_textarea_placeholder_font_style: italic;--_ui5-v2-17-0_textarea_value_state_error_warning_placeholder_font_weight: normal;--_ui5-v2-17-0_textarea_error_placeholder_font_style: italic;--_ui5-v2-17-0_textarea_error_placeholder_color: var(--sapField_PlaceholderTextColor);--_ui5-v2-17-0_textarea_error_hover_background_color: var(--sapField_Hover_Background);--_ui5-v2-17-0_textarea_disabled_opacity: .4;--_ui5-v2-17-0_textarea_focus_pseudo_element_content: "";--_ui5-v2-17-0_textarea_min_height: 2.25rem;--_ui5-v2-17-0_textarea_padding_right_and_left_readonly: .5625rem;--_ui5-v2-17-0_textarea_padding_top_readonly: .4375rem;--_ui5-v2-17-0_textarea_hover_border: none;--_ui5-v2-17-0_textarea_focus_border_radius: .25rem;--_ui5-v2-17-0_textarea_error_warning_border_style: none;--_ui5-v2-17-0_textarea_line_height: 1.5;--_ui5-v2-17-0_textarea_focused_value_state_error_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_textarea_focused_value_state_warning_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_textarea_focused_value_state_success_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_textarea_focused_value_state_information_background: var(--sapField_Hover_Background);--_ui5-v2-17-0_textarea_focused_value_state_error_focus_outline_color: var(--sapField_InvalidColor);--_ui5-v2-17-0_textarea_focused_value_state_warning_focus_outline_color: var(--sapField_WarningColor);--_ui5-v2-17-0_textarea_focused_value_state_success_focus_outline_color: var(--sapField_SuccessColor);--_ui5-v2-17-0_textarea_focus_offset: 0;--_ui5-v2-17-0_textarea_readonly_focus_offset: 1px;--_ui5-v2-17-0_textarea_focus_outline_color: var(--sapField_Active_BorderColor);--_ui5-v2-17-0_textarea_value_state_focus_offset: 1px;--_ui5-v2-17-0_textarea_wrapper_padding: .0625rem;--_ui5-v2-17-0_textarea_success_wrapper_padding: .0625rem;--_ui5-v2-17-0_textarea_warning_error_wrapper_padding: .0625rem .0625rem .125rem .0625rem;--_ui5-v2-17-0_textarea_information_wrapper_padding: .0625rem .0625rem .125rem .0625rem;--_ui5-v2-17-0_textarea_inner_width: calc(100% - (2 * var(--_ui5-v2-17-0_textarea_wrapper_padding)));--_ui5-v2-17-0_textarea_padding_bottom_readonly: .375rem;--_ui5-v2-17-0_textarea_padding_top_error_warning: .5rem;--_ui5-v2-17-0_textarea_padding_bottom_error_warning: .4375rem;--_ui5-v2-17-0_textarea_padding_top_information: .5rem;--_ui5-v2-17-0_textarea_padding_bottom_information: .4375rem;--_ui5-v2-17-0_textarea_padding_right_and_left: .625rem;--_ui5-v2-17-0_textarea_padding_right_and_left_error_warning: .625rem;--_ui5-v2-17-0_textarea_padding_right_and_left_information: .625rem;--_ui5-v2-17-0_textarea_readonly_border_style: dashed;--_ui5-v2-17-0-time_picker_border_radius: .25rem;--_ui5-v2-17-0_toast_vertical_offset: 3rem;--_ui5-v2-17-0_toast_horizontal_offset: 2rem;--_ui5-v2-17-0_toast_background: var(--sapIndicationColor_9_Background);--_ui5-v2-17-0_toast_shadow: var(--sapContent_Lite_Shadow);--_ui5-v2-17-0_toast_offset_width: -.1875rem;--_ui5-v2-17-0_toggle_button_emphasized_text_shadow: none;--_ui5-v2-17-0_yearpicker_item_margin: .0625rem;--_ui5-v2-17-0_yearpicker_item_border: .0625rem solid var(--sapButton_Lite_BorderColor);--_ui5-v2-17-0_yearpicker_item_hover_border: .0625rem solid var(--sapButton_Lite_Hover_BorderColor);--_ui5-v2-17-0_yearpicker_item_selected_border: .0625rem solid var(--sapButton_Selected_BorderColor);--_ui5-v2-17-0_yearpicker_item_selected_hover_border: .0625rem solid var(--sapButton_Selected_Hover_BorderColor);--_ui5-v2-17-0_yearpicker_item_border_radius: .5rem;--_ui5-v2-17-0_calendar_header_middle_button_width: 6.25rem;--_ui5-v2-17-0_calendar_header_middle_button_flex: 1 1 auto;--_ui5-v2-17-0_calendar_header_middle_button_focus_after_display: block;--_ui5-v2-17-0_calendar_header_middle_button_focus_after_width: calc(100% - .375rem) ;--_ui5-v2-17-0_calendar_header_middle_button_focus_after_height: calc(100% - .375rem) ;--_ui5-v2-17-0_calendar_header_middle_button_focus_after_top_offset: .125rem;--_ui5-v2-17-0_calendar_header_middle_button_focus_after_left_offset: .125rem;--_ui5-v2-17-0_calendar_header_arrow_button_border: none;--_ui5-v2-17-0_calendar_header_arrow_button_border_radius: .5rem;--_ui5-v2-17-0_calendar_header_arrow_button_box_shadow: 0 0 .125rem 0 rgb(85 107 130 / 72%);--_ui5-v2-17-0_calendar_header_middle_button_focus_border_radius: .5rem;--_ui5-v2-17-0_calendar_header_middle_button_focus_border: none;--_ui5-v2-17-0_calendar_header_middle_button_focus_after_border: none;--_ui5-v2-17-0_calendar_header_middle_button_focus_background: transparent;--_ui5-v2-17-0_calendar_header_middle_button_focus_outline: .125rem solid var(--sapSelectedColor);--_ui5-v2-17-0_calendar_header_middle_button_focus_active_outline: .0625rem solid var(--sapSelectedColor);--_ui5-v2-17-0_calendar_header_middle_button_focus_active_background: transparent;--_ui5-v2-17-0_token_background: var(--sapButton_TokenBackground);--_ui5-v2-17-0_token_readonly_background: var(--sapButton_TokenBackground);--_ui5-v2-17-0_token_readonly_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_token_right_margin: .3125rem;--_ui5-v2-17-0_token_left_padding: .3125rem;--_ui5-v2-17-0_token_focused_selected_border: 1px solid var(--sapButton_Selected_BorderColor);--_ui5-v2-17-0_token_focus_offset: -.25rem;--_ui5-v2-17-0_token_focus_outline_width: .0625rem;--_ui5-v2-17-0_token_selected_focus_outline: none;--_ui5-v2-17-0_token_focus_outline: none;--_ui5-v2-17-0_token_outline_offset: .125rem;--ui5-v2-17-0_token_focus_pseudo_element_content: "";--_ui5-v2-17-0_token_border_radius: .375rem;--_ui5-v2-17-0_token_focus_outline_border_radius: .5rem;--_ui5-v2-17-0_token_text_color: var(--sapTextColor);--_ui5-v2-17-0_token_selected_text_font_family: var(--sapFontSemiboldDuplexFamily);--_ui5-v2-17-0_token_selected_internal_border_bottom: .125rem solid var(--sapButton_Selected_BorderColor);--_ui5-v2-17-0_token_selected_internal_border_bottom_radius: .1875rem;--_ui5-v2-17-0_token_readonly_padding: .25rem .3125rem;--_ui5-v2-17-0_tokenizer_gap: .625rem .25rem;--_ui5-v2-17-0_tokenizer-popover_offset: .3125rem;--_ui5-v2-17-0_tokenizer_n_more_text_color: var(--sapLinkColor);--_ui5-v2-17-0_slider_progress_container_dot_background: var(--sapField_BorderColor);--_ui5-v2-17-0_slider_progress_border: solid .0625rem var(--sapSlider_BorderColor);--_ui5-v2-17-0_slider_padding: 1.406rem 1.0625rem;--_ui5-v2-17-0_slider_inner_height: .25rem;--_ui5-v2-17-0_slider_outer_height: 1.6875rem;--_ui5-v2-17-0_slider_progress_border_radius: .25rem;--_ui5-v2-17-0_slider_tickmark_bg: var(--sapField_BorderColor);--_ui5-v2-17-0_slider_handle_outline_offset: .075rem;--_ui5-v2-17-0_slider_progress_outline: .0625rem dotted var(--sapContent_FocusColor);--_ui5-v2-17-0_slider_progress_outline_offset: -.8125rem;--_ui5-v2-17-0_slider_disabled_opacity: .4;--_ui5-v2-17-0_slider_tooltip_border_color: var(--sapField_BorderColor);--_ui5-v2-17-0_range_slider_handle_background_focus: transparent;--_ui5-v2-17-0_slider_progress_box_sizing: border-box;--_ui5-v2-17-0_slider_active_progress_box_sizing: content-box;--_ui5-v2-17-0_range_slider_focus_outline_width: 100%;--_ui5-v2-17-0_slider_progress_outline_offset_left: 0;--_ui5-v2-17-0_range_slider_focus_outline_radius: 0;--_ui5-v2-17-0_slider_progress_container_top: 0;--_ui5-v2-17-0_slider_progress_height: 100%;--_ui5-v2-17-0_slider_active_progress_border: solid .0625rem var(--sapSlider_Selected_BorderColor);--_ui5-v2-17-0_slider_active_progress_left: 0;--_ui5-v2-17-0_slider_active_progress_top: 0;--_ui5-v2-17-0_slider_no_tickmarks_progress_container_top: var(--_ui5-v2-17-0_slider_progress_container_top);--_ui5-v2-17-0_slider_no_tickmarks_progress_height: var(--_ui5-v2-17-0_slider_progress_height);--_ui5-v2-17-0_slider_no_tickmarks_active_progress_border: var(--_ui5-v2-17-0_slider_active_progress_border);--_ui5-v2-17-0_slider_no_tickmarks_active_progress_left: var(--_ui5-v2-17-0_slider_active_progress_left);--_ui5-v2-17-0_slider_no_tickmarks_active_progress_top: var(--_ui5-v2-17-0_slider_active_progress_top);--_ui5-v2-17-0_slider_handle_focus_visibility: none;--_ui5-v2-17-0_slider_handle_icon_size: 1rem;--_ui5-v2-17-0_slider_progress_container_background: var(--sapSlider_Background);--_ui5-v2-17-0_slider_progress_container_dot_display: block;--_ui5-v2-17-0_slider_inner_min_width: 4rem;--_ui5-v2-17-0_slider_progress_background: var(--sapSlider_Selected_Background);--_ui5-v2-17-0_slider_progress_before_background: var(--sapSlider_Selected_Background);--_ui5-v2-17-0_slider_progress_after_background: var(--sapContent_MeasureIndicatorColor);--_ui5-v2-17-0_slider_handle_background: var(--sapSlider_HandleBackground);--_ui5-v2-17-0_slider_handle_icon_display: inline-block;--_ui5-v2-17-0_slider_handle_border: .0625rem solid var(--sapSlider_HandleBorderColor);--_ui5-v2-17-0_slider_handle_border_radius: .5rem;--_ui5-v2-17-0_slider_handle_height: 1.5rem;--_ui5-v2-17-0_slider_handle_width: 2rem;--_ui5-v2-17-0_slider_handle_top: -.625rem;--_ui5-v2-17-0_slider_handle_font_family: "SAP-icons";--_ui5-v2-17-0_slider_handle_hover_border: .0625rem solid var(--sapSlider_Hover_HandleBorderColor);--_ui5-v2-17-0_slider_handle_focus_border: .125rem solid var(--sapContent_FocusColor);--_ui5-v2-17-0_slider_handle_background_focus: var(--sapSlider_Active_RangeHandleBackground);--_ui5-v2-17-0_slider_handle_outline: none;--_ui5-v2-17-0_slider_handle_hover_background: var(--sapSlider_Hover_HandleBackground);--_ui5-v2-17-0_slider_tooltip_background: var(--sapField_Focus_Background);--_ui5-v2-17-0_slider_tooltip_border: none;--_ui5-v2-17-0_slider_tooltip_border_radius: .5rem;--_ui5-v2-17-0_slider_tooltip_box_shadow: var(--sapContent_Shadow1);--_ui5-v2-17-0_range_slider_legacy_progress_focus_display: none;--_ui5-v2-17-0_range_slider_progress_focus_display: block;--_ui5-v2-17-0_slider_tickmark_in_range_bg: var(--sapSlider_Selected_BorderColor);--_ui5-v2-17-0_slider_label_fontsize: var(--sapFontSmallSize);--_ui5-v2-17-0_slider_label_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_slider_tooltip_min_width: 2rem;--_ui5-v2-17-0_slider_tooltip_padding: .25rem;--_ui5-v2-17-0_slider_tooltip_fontsize: var(--sapFontSmallSize);--_ui5-v2-17-0_slider_tooltip_color: var(--sapContent_LabelColor);--_ui5-v2-17-0_slider_tooltip_height: 1.375rem;--_ui5-v2-17-0_slider_handle_focus_width: 1px;--_ui5-v2-17-0_slider_start_end_point_size: .5rem;--_ui5-v2-17-0_slider_start_end_point_left: -.75rem;--_ui5-v2-17-0_slider_start_end_point_top: -.125rem;--_ui5-v2-17-0_slider_handle_focused_tooltip_distance: calc(var(--_ui5-v2-17-0_slider_tooltip_bottom) - var(--_ui5-v2-17-0_slider_handle_focus_width));--_ui5-v2-17-0_slider_tooltip_border_box: border-box;--_ui5-v2-17-0_range_slider_handle_active_background: var(--sapSlider_Active_RangeHandleBackground);--_ui5-v2-17-0_range_slider_active_handle_icon_display: none;--_ui5-v2-17-0_range_slider_progress_focus_top: -15px;--_ui5-v2-17-0_range_slider_progress_focus_left: calc(-1 * (var(--_ui5-v2-17-0_slider_handle_width) / 2) - 5px);--_ui5-v2-17-0_range_slider_progress_focus_padding: 0 1rem 0 1rem;--_ui5-v2-17-0_range_slider_progress_focus_width: calc(100% + var(--_ui5-v2-17-0_slider_handle_width) + 10px);--_ui5-v2-17-0_range_slider_progress_focus_height: calc(var(--_ui5-v2-17-0_slider_handle_height) + 10px);--_ui5-v2-17-0_range_slider_root_hover_handle_icon_display: inline-block;--_ui5-v2-17-0_range_slider_root_hover_handle_bg: var(--_ui5-v2-17-0_slider_handle_hover_background);--_ui5-v2-17-0_range_slider_root_active_handle_icon_display: none;--_ui5-v2-17-0_slider_tickmark_height: .5rem;--_ui5-v2-17-0_slider_tickmark_top: -2px;--_ui5-v2-17-0_slider_handle_box_sizing: border-box;--_ui5-v2-17-0_range_slider_handle_background: var(--sapSlider_RangeHandleBackground);--_ui5-v2-17-0_slider_tooltip_bottom: 2rem;--_ui5-v2-17-0_value_state_message_border: none;--_ui5-v2-17-0_value_state_header_border: none;--_ui5-v2-17-0_input_value_state_icon_offset: .5rem;--_ui5-v2-17-0_value_state_header_box_shadow_error: inset 0 -.0625rem var(--sapField_InvalidColor);--_ui5-v2-17-0_value_state_header_box_shadow_information: inset 0 -.0625rem var(--sapField_InformationColor);--_ui5-v2-17-0_value_state_header_box_shadow_success: inset 0 -.0625rem var(--sapField_SuccessColor);--_ui5-v2-17-0_value_state_header_box_shadow_warning: inset 0 -.0625rem var(--sapField_WarningColor);--_ui5-v2-17-0_value_state_message_popover_header_min_height: 2rem;--_ui5-v2-17-0_value_state_message_popover_header_min_width: 6rem;--_ui5-v2-17-0_value_state_message_popover_header_max_width: 22rem;--_ui5-v2-17-0_value_state_message_popover_header_width: auto;--_ui5-v2-17-0_value_state_message_icon_offset_phone: 1rem;--_ui5-v2-17-0_value_state_header_border_bottom: none;--_ui5-v2-17-0_input_value_state_icon_display: inline-block;--_ui5-v2-17-0_value_state_message_padding: .5rem .5rem .5rem 1.875rem;--_ui5-v2-17-0_value_state_header_padding: .5rem .5rem .5rem 1.875rem;--_ui5-v2-17-0_value_state_message_popover_box_shadow: var(--sapContent_Shadow1);--_ui5-v2-17-0_value_state_message_icon_width: 1rem;--_ui5-v2-17-0_value_state_message_icon_height: 1rem;--_ui5-v2-17-0_value_state_header_offset: -.25rem;--_ui5-v2-17-0_value_state_message_popover_border_radius: var(--sapPopover_BorderCornerRadius);--_ui5-v2-17-0_value_state_message_padding_phone: .5rem .5rem .5rem 2.375rem;--_ui5-v2-17-0_value_state_message_line_height: 1.125rem;--_ui5-v2-17-0-toolbar-padding-left: .5rem;--_ui5-v2-17-0-toolbar-padding-right: .5rem;--_ui5-v2-17-0-toolbar-item-margin-left: 0;--_ui5-v2-17-0-toolbar-item-margin-right: .25rem;--_ui5-v2-17-0_step_input_min_width: 7.25rem;--_ui5-v2-17-0_step_input_padding: 2.5rem;--_ui5-v2-17-0_step_input_input_error_background_color: inherit;--_ui5-v2-17-0-step_input_button_state_hover_background_color: var(--sapField_Hover_Background);--_ui5-v2-17-0_step_input_border_style: none;--_ui5-v2-17-0_step_input_border_style_hover: none;--_ui5-v2-17-0_step_input_button_background_color: transparent;--_ui5-v2-17-0_step_input_input_border: none;--_ui5-v2-17-0_step_input_input_margin_top: 0;--_ui5-v2-17-0_step_input_button_display: inline-flex;--_ui5-v2-17-0_step_input_button_left: 0;--_ui5-v2-17-0_step_input_button_right: 0;--_ui5-v2-17-0_step_input_input_border_focused_after: .125rem solid #0070f2;--_ui5-v2-17-0_step_input_input_border_top_bottom_focused_after: 0;--_ui5-v2-17-0_step_input_input_border_radius_focused_after: .25rem;--_ui5-v2-17-0_step_input_input_information_border_color_focused_after: var(--sapField_InformationColor);--_ui5-v2-17-0_step_input_input_warning_border_color_focused_after: var(--sapField_WarningColor);--_ui5-v2-17-0_step_input_input_success_border_color_focused_after: var(--sapField_SuccessColor);--_ui5-v2-17-0_step_input_input_error_border_color_focused_after: var(--sapField_InvalidColor);--_ui5-v2-17-0_step_input_disabled_button_background: none;--_ui5-v2-17-0_step_input_border_color_hover: none;--_ui5-v2-17-0_step_input_border_hover: none;--_ui5-v2-17-0_input_input_background_color: transparent;--_ui5-v2-17-0_load_more_padding: 0;--_ui5-v2-17-0_load_more_border: 1px top solid transparent;--_ui5-v2-17-0_load_more_border_radius: none;--_ui5-v2-17-0_load_more_outline_width: var(--sapContent_FocusWidth);--_ui5-v2-17-0_load_more_border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);--_ui5-v2-17-0_calendar_height: 24.5rem;--_ui5-v2-17-0_calendar_width: 20rem;--_ui5-v2-17-0_calendar_left_right_padding: .5rem;--_ui5-v2-17-0_calendar_top_bottom_padding: 1rem;--_ui5-v2-17-0_calendar_header_height: 3rem;--_ui5-v2-17-0_calendar_header_arrow_button_width: 2.5rem;--_ui5-v2-17-0_calendar_header_padding: .25rem 0;--_ui5-v2-17-0_checkbox_root_side_padding: .6875rem;--_ui5-v2-17-0_checkbox_icon_size: 1rem;--_ui5-v2-17-0_checkbox_partially_icon_size: .75rem;--_ui5-v2-17-0_custom_list_item_rb_min_width: 2.75rem;--_ui5-v2-17-0_day_picker_item_width: 2.25rem;--_ui5-v2-17-0_day_picker_item_height: 2.875rem;--_ui5-v2-17-0_day_picker_empty_height: 3rem;--_ui5-v2-17-0_day_picker_item_justify_content: space-between;--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_special_day_top: 2rem;--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_special_day_right: 1.4375rem;--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_height: 1rem;--_ui5-v2-17-0_dp_two_calendar_item_text_padding_top: .4375rem;--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_secondary_text_padding_block: 0 .5rem;--_ui5-v2-17-0-calendar-legend-item-root-focus-offset: -.125rem;--_ui5-v2-17-0-calendar-legend-item-box-margin: .25rem;--_ui5-v2-17-0-calendar-legend-item-box-inner-margin: .5rem;--_ui5-v2-17-0_color_picker_slider_progress_container_height: 1.625rem;--_ui5-v2-17-0_color_picker_slider_container_margin_top: -.5rem;--_ui5-v2-17-0_color_picker_slider_handle_height: 2rem;--_ui5-v2-17-0_color_picker_slider_handle_width: 1.0625rem;--_ui5-v2-17-0_color_picker_slider_handle_after_height: 1.75rem;--_ui5-v2-17-0_color_picker_slider_handle_focus_height: 2.125rem;--_ui5-v2-17-0_color_picker_colors_wrapper_height: 2.25rem;--_ui5-v2-17-0_color_picker_sliders_height: 3rem;--_ui5-v2-17-0_color_picker_main_color_margin_bottom: 1rem;--_ui5-v2-17-0_color_picker_slider_spacing: .9375rem;--_ui5-v2-17-0_color_channel_toggle_button_width: 1.625rem;--_ui5-v2-17-0_color_channel_toggle_button_margin-top: -.75rem;--_ui5-v2-17-0_color_channel_hex_input_width: 4.8125rem;--_ui5-v2-17-0-color_channel_margin_top: .25rem;--_ui5-v2-17-0_color-palette-swatch-container-padding: .3125rem .6875rem;--_ui5-v2-17-0_datetime_picker_width: 40.0625rem;--_ui5-v2-17-0_datetime_picker_height: 25rem;--_ui5-v2-17-0_datetime_timeview_width: 17rem;--_ui5-v2-17-0_datetime_timeview_phonemode_width: 19.5rem;--_ui5-v2-17-0_datetime_timeview_phonemode_clocks_width: 24.5rem;--_ui5-v2-17-0_datetime_dateview_phonemode_margin_bottom: 0;--_ui5-v2-17-0_dialog_content_min_height: 2.75rem;--_ui5-v2-17-0_dialog_footer_height: 2.75rem;--_ui5-v2-17-0_input_inner_padding: 0 .625rem;--_ui5-v2-17-0_input_inner_padding_with_icon: 0 .25rem 0 .625rem;--_ui5-v2-17-0_input_inner_space_to_tokenizer: .125rem;--_ui5-v2-17-0_input_inner_space_to_n_more_text: .1875rem;--_ui5-v2-17-0_list_no_data_height: 3rem;--_ui5-v2-17-0_list_item_cb_margin_right: 0;--_ui5-v2-17-0_list_item_title_size: var(--sapFontLargeSize);--_ui5-v2-17-0_list_no_data_font_size: var(--sapFontLargeSize);--_ui5-v2-17-0_list_item_img_size: 3rem;--_ui5-v2-17-0_list_item_img_top_margin: .5rem;--_ui5-v2-17-0_list_item_img_bottom_margin: .5rem;--_ui5-v2-17-0_list_item_img_hn_margin: .75rem;--_ui5-v2-17-0_list_item_dropdown_base_height: 2.5rem;--_ui5-v2-17-0_list_item_base_height: var(--sapElement_LineHeight);--_ui5-v2-17-0_list_item_base_padding: 0 1rem;--_ui5-v2-17-0_list_item_icon_size: 1.125rem;--_ui5-v2-17-0_list_item_icon_padding-inline-end: .75rem;--_ui5-v2-17-0_list_item_selection_btn_margin_top: calc(-1 * var(--_ui5-v2-17-0_checkbox_wrapper_padding));--_ui5-v2-17-0_list_item_content_vertical_offset: calc((var(--_ui5-v2-17-0_list_item_base_height) - var(--_ui5-v2-17-0_list_item_title_size)) / 2);--_ui5-v2-17-0_group_header_list_item_height: 2.75rem;--_ui5-v2-17-0_month_picker_item_height: 3rem;--_ui5-v2-17-0_list_buttons_left_space: .125rem;--_ui5-v2-17-0_form_item_min_height: 2.813rem;--_ui5-v2-17-0_form_item_padding: .65rem;--_ui5-v2-17-0-form-group-heading-height: 2.75rem;--_ui5-v2-17-0_popup_default_header_height: 2.75rem;--_ui5-v2-17-0_year_picker_item_height: 3rem;--_ui5-v2-17-0_tokenizer_padding: .25rem;--_ui5-v2-17-0_token_height: 1.625rem;--_ui5-v2-17-0_token_icon_size: .75rem;--_ui5-v2-17-0_token_icon_padding: .25rem .5rem;--_ui5-v2-17-0_tl_bubble_padding: 1rem;--_ui5-v2-17-0_tl_padding: 1rem 1rem 1rem .5rem;--_ui5-v2-17-0_tl_li_margin_bottom: 1.625rem;--_ui5-v2-17-0_tc_item_text: 3rem;--_ui5-v2-17-0_tc_item_height: 4.75rem;--_ui5-v2-17-0_tc_item_text_only_height: 2.75rem;--_ui5-v2-17-0_tc_item_text_only_with_additional_text_height: 3.75rem;--_ui5-v2-17-0_tc_item_text_line_height: 1.325rem;--_ui5-v2-17-0_tc_item_icon_circle_size: 2.75rem;--_ui5-v2-17-0_tc_item_icon_size: 1.25rem;--_ui5-v2-17-0_tc_item_add_text_margin_top: .375rem;--_ui5-v2-17-0_textarea_margin: .25rem 0;--_ui5-v2-17-0_radio_button_height: 2.75rem;--_ui5-v2-17-0_radio_button_label_side_padding: .875rem;--_ui5-v2-17-0_radio_button_inner_size: 2.75rem;--_ui5-v2-17-0_radio_button_svg_size: 1.375rem;--_ui5-v2-17-0-responsive_popover_header_height: 2.75rem;--_ui5-v2-17-0-tree-indent-step: 1.5rem;--_ui5-v2-17-0-tree-toggle-box-width: 2.75rem;--_ui5-v2-17-0-tree-toggle-box-height: 2.25rem;--_ui5-v2-17-0-tree-toggle-icon-size: 1.0625rem;--_ui5-v2-17-0_timeline_tli_indicator_before_bottom: -1.5rem;--_ui5-v2-17-0_timeline_tli_indicator_before_right: -1.625rem;--_ui5-v2-17-0_timeline_tli_indicator_before_without_icon_bottom: -1.875rem;--_ui5-v2-17-0_timeline_tli_indicator_before_without_icon_right: -1.9375rem;--_ui5-v2-17-0_timeline_tli_indicator_after_top: calc(-100% - 1rem) ;--_ui5-v2-17-0_timeline_tli_indicator_after_height: calc(100% + 1rem) ;--_ui5-v2-17-0_timeline_tli_indicator_before_height: 100%;--_ui5-v2-17-0_timeline_tli_horizontal_indicator_after_width: calc(100% + .25rem) ;--_ui5-v2-17-0_timeline_tli_horizontal_indicator_after_left: 1.9375rem;--_ui5-v2-17-0_timeline_tli_horizontal_without_icon_indicator_before_width: calc(100% + .5rem) ;--_ui5-v2-17-0_timeline_tli_horizontal_indicator_before_width: calc(100% + .5rem) ;--_ui5-v2-17-0_timeline_tli_icon_horizontal_indicator_after_width: calc(100% + .25rem) ;--_ui5-v2-17-0_timeline_tli_without_icon_horizontal_indicator_before_width: calc(100% + .375rem) ;--_ui5-v2-17-0_timeline_tli_horizontal_indicator_short_after_width: 100%;--_ui5-v2-17-0-toolbar-separator-height: 2rem;--_ui5-v2-17-0-toolbar-height: 2.75rem;--_ui5-v2-17-0_toolbar_overflow_padding: .25rem .5rem;--_ui5-v2-17-0_dynamic_page_title_actions_separator_height: var(--_ui5-v2-17-0-toolbar-separator-height);--_ui5-v2-17-0-shellbar-separator-height: 2rem;--_ui5-v2-17-0_split_button_middle_separator_top: .625rem;--_ui5-v2-17-0_split_button_middle_separator_height: 1rem;--_ui5-v2-17-0-calendar-legend-item-root-focus-border-radius: .25rem;--_ui5-v2-17-0_color-palette-item-height: 1.75rem;--_ui5-v2-17-0_color-palette-item-hover-height: 2.25rem;--_ui5-v2-17-0_color-palette-item-margin: calc(((var(--_ui5-v2-17-0_color-palette-item-hover-height) - var(--_ui5-v2-17-0_color-palette-item-height)) / 2) + .0625rem);--_ui5-v2-17-0_color-palette-row-width: 12rem;--_ui5-v2-17-0_textarea_padding_top: .5rem;--_ui5-v2-17-0_textarea_padding_bottom: .4375rem;--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_padding_block: 0 .5rem;--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_padding: 0 .5rem;--_ui5-v2-17-0_daypicker_two_calendar_item_selected_focus_margin_bottom: 0;--_ui5-v2-17-0_daypicker_two_calendar_item_selected_focus_padding_right: .5rem}[data-ui5-compact-size],.ui5-content-density-compact,.sapUiSizeCompact{--_ui5-v2-17-0_checkbox_label_offset: var(--_ui5-v2-17-0_checkbox_compact_wrapper_padding);--_ui5-v2-17-0_input_min_width: 2rem;--_ui5-v2-17-0_input_icon_width: 2rem;--_ui5-v2-17-0_input_margin_top_bottom: .1875rem;--_ui5-v2-17-0_input_information_icon_padding: .3125rem .5rem .1875rem .5rem;--_ui5-v2-17-0_input_information_focused_icon_padding: .3125rem .5rem .25rem .5rem;--_ui5-v2-17-0_input_error_warning_icon_padding: .3125rem .5rem .1875rem .5rem;--_ui5-v2-17-0_input_error_warning_focused_icon_padding: .3125rem .5rem .25rem .5rem;--_ui5-v2-17-0_input_custom_icon_padding: .3125rem .5rem .25rem .5rem;--_ui5-v2-17-0_input_error_warning_custom_icon_padding: .3125rem .5rem .1875rem .5rem;--_ui5-v2-17-0_input_error_warning_custom_focused_icon_padding: .3125rem .5rem .25rem .5rem;--_ui5-v2-17-0_input_information_custom_icon_padding: .3125rem .5rem .1875rem .5rem;--_ui5-v2-17-0_input_information_custom_focused_icon_padding: .3125rem .5rem .25rem .5rem;--_ui5-v2-17-0_input_icon_padding: .3125rem .5rem .25rem .5rem;--_ui5-v2-17-0_panel_header_button_wrapper_padding: .1875rem .25rem;--_ui5-v2-17-0_rating_indicator_item_height: 1em;--_ui5-v2-17-0_rating_indicator_item_width: 1em;--_ui5-v2-17-0_rating_indicator_readonly_item_height: .75em;--_ui5-v2-17-0_rating_indicator_readonly_item_width: .75em;--_ui5-v2-17-0_rating_indicator_component_spacing: .5rem 0px;--_ui5-v2-17-0_radio_button_min_width: 2rem;--_ui5-v2-17-0_radio_button_outer_ring_padding_with_label: 0 .5rem;--_ui5-v2-17-0_radio_button_outer_ring_padding: 0 .5rem;--_ui5-v2-17-0_radio_button_focus_dist: .1875rem;--_ui5-v2-17-0_switch_height: 2rem;--_ui5-v2-17-0_switch_width: 2.75rem;--_ui5-v2-17-0_switch_min_width: none;--_ui5-v2-17-0_switch_with_label_width: 2.75rem;--_ui5-v2-17-0_switch_root_outline_top: .25rem;--_ui5-v2-17-0_switch_root_outline_bottom: .25rem;--_ui5-v2-17-0_switch_transform: translateX(100%) translateX(-1.375rem);--_ui5-v2-17-0_switch_transform_with_label: translateX(100%) translateX(-1.875rem);--_ui5-v2-17-0_switch_rtl_transform: translateX(1.375rem) translateX(-100%);--_ui5-v2-17-0_switch_rtl_transform_with_label: translateX(1.875rem) translateX(-100%);--_ui5-v2-17-0_switch_track_width: 2.75rem;--_ui5-v2-17-0_switch_track_height: 1.25rem;--_ui5-v2-17-0_switch_track_with_label_width: 2.75rem;--_ui5-v2-17-0_switch_track_with_label_height: 1.25rem;--_ui5-v2-17-0_switch_handle_width: 1.25rem;--_ui5-v2-17-0_switch_handle_height: 1rem;--_ui5-v2-17-0_switch_handle_with_label_width: 1.75rem;--_ui5-v2-17-0_switch_handle_with_label_height: 1rem;--_ui5-v2-17-0_switch_text_font_size: var(--sapFontSize);--_ui5-v2-17-0_switch_text_width: 1rem;--_ui5-v2-17-0_switch_text_active_left: .1875rem;--_ui5-v2-17-0_select_icon_width: 2rem;--_ui5-v2-17-0_textarea_padding_right_and_left_readonly: .4375rem;--_ui5-v2-17-0_textarea_padding_top_readonly: .125rem;--_ui5-v2-17-0_textarea_min_height: 1.625rem;--_ui5-v2-17-0_textarea_padding_bottom_readonly: .0625rem;--_ui5-v2-17-0_textarea_padding_top_error_warning: .1875rem;--_ui5-v2-17-0_textarea_padding_bottom_error_warning: .125rem;--_ui5-v2-17-0_textarea_padding_top_information: .1875rem;--_ui5-v2-17-0_textarea_padding_bottom_information: .125rem;--_ui5-v2-17-0_textarea_padding_right_and_left: .5rem;--_ui5-v2-17-0_textarea_padding_right_and_left_error_warning: .5rem;--_ui5-v2-17-0_textarea_padding_right_and_left_information: .5rem;--_ui5-v2-17-0_tokenizer_gap: .375em .25rem;--_ui5-v2-17-0_tokenizer-popover_offset: .1875rem;--_ui5-v2-17-0_slider_handle_icon_size: .875rem;--_ui5-v2-17-0_slider_padding: 1rem 1.0625rem;--_ui5-v2-17-0_range_slider_progress_focus_width: calc(100% + var(--_ui5-v2-17-0_slider_handle_width) + 10px);--_ui5-v2-17-0_range_slider_progress_focus_height: calc(var(--_ui5-v2-17-0_slider_handle_height) + 10px);--_ui5-v2-17-0_range_slider_progress_focus_top: -.8125rem;--_ui5-v2-17-0_slider_tooltip_bottom: 1.75rem;--_ui5-v2-17-0_slider_handle_focused_tooltip_distance: calc(var(--_ui5-v2-17-0_slider_tooltip_bottom) - var(--_ui5-v2-17-0_slider_handle_focus_width));--_ui5-v2-17-0_range_slider_progress_focus_left: calc(-1 * (var(--_ui5-v2-17-0_slider_handle_width) / 2) - 5px);--_ui5-v2-17-0_bar_base_height: 2.5rem;--_ui5-v2-17-0_bar_subheader_height: 2.25rem;--_ui5-v2-17-0_button_base_height: var(--sapElement_Compact_Height);--_ui5-v2-17-0_button_base_padding: .4375rem;--_ui5-v2-17-0_button_base_min_width: 2rem;--_ui5-v2-17-0-button-badge-diameter: .625rem;--_ui5-v2-17-0_calendar_height: 18rem;--_ui5-v2-17-0_calendar_width: 17.75rem;--_ui5-v2-17-0_calendar_left_right_padding: .25rem;--_ui5-v2-17-0_calendar_top_bottom_padding: .5rem;--_ui5-v2-17-0_calendar_header_height: 2rem;--_ui5-v2-17-0_calendar_header_arrow_button_width: 2rem;--_ui5-v2-17-0_calendar_header_padding: 0;--_ui5-v2-17-0-calendar-legend-root-padding: .5rem;--_ui5-v2-17-0-calendar-legend-root-width: 16.75rem;--_ui5-v2-17-0_checkbox_root_side_padding: var(--_ui5-v2-17-0_checkbox_wrapped_focus_padding);--_ui5-v2-17-0_checkbox_width_height: var(--_ui5-v2-17-0_checkbox_compact_width_height);--_ui5-v2-17-0_checkbox_wrapper_padding: var(--_ui5-v2-17-0_checkbox_compact_wrapper_padding);--_ui5-v2-17-0_checkbox_inner_width_height: var(--_ui5-v2-17-0_checkbox_compact_inner_size);--_ui5-v2-17-0_checkbox_icon_size: .75rem;--_ui5-v2-17-0_checkbox_partially_icon_size: .5rem;--_ui5-v2-17-0_color_picker_slider_progress_container_height: 1.125rem;--_ui5-v2-17-0_color_picker_slider_container_margin_top: -.375rem;--_ui5-v2-17-0_color_picker_slider_handle_height: 1.5rem;--_ui5-v2-17-0_color_picker_slider_handle_width: .9375rem;--_ui5-v2-17-0_color_picker_slider_handle_after_height: 1.25rem;--_ui5-v2-17-0_color_picker_slider_handle_focus_height: 1.625rem;--_ui5-v2-17-0_color_picker_colors_wrapper_height: 1.5rem;--_ui5-v2-17-0_color_picker_sliders_height: 2.25rem;--_ui5-v2-17-0_color_picker_main_color_margin_bottom: .75rem;--_ui5-v2-17-0_color_picker_slider_spacing: .8125rem;--_ui5-v2-17-0_color_channel_toggle_button_width: 1.375rem;--_ui5-v2-17-0_color_channel_toggle_button_margin-top: -.9375rem;--_ui5-v2-17-0_color_channel_hex_input_width: 4.625rem;--_ui5-v2-17-0-color_channel_margin_top: 0rem;--_ui5-v2-17-0_custom_list_item_rb_min_width: 2rem;--_ui5-v2-17-0_daypicker_weeknumbers_container_padding_top: 2rem;--_ui5-v2-17-0_day_picker_item_width: 2rem;--_ui5-v2-17-0_day_picker_item_height: 2rem;--_ui5-v2-17-0_day_picker_empty_height: 2.125rem;--_ui5-v2-17-0_day_picker_item_justify_content: flex-end;--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_height: .75rem;--_ui5-v2-17-0_dp_two_calendar_item_text_padding_top: .5rem;--_ui5-v2-17-0_daypicker_special_day_top: 1.625rem;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_top: 1.25rem;--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_right: 1.25rem;--_ui5-v2-17-0_daypicker_two_calendar_item_margin_bottom: 0;--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_special_day_top: 1.125rem;--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_special_day_right: 1.125rem;--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_secondary_text_padding_block: 0 1rem;--_ui5-v2-17-0_datetime_picker_height: 20.5rem;--_ui5-v2-17-0_datetime_picker_width: 35.5rem;--_ui5-v2-17-0_datetime_timeview_width: 17rem;--_ui5-v2-17-0_datetime_timeview_phonemode_width: 18.5rem;--_ui5-v2-17-0_datetime_timeview_phonemode_clocks_width: 21.125rem;--_ui5-v2-17-0_datetime_dateview_phonemode_margin_bottom: 3.125rem;--_ui5-v2-17-0_dialog_content_min_height: 2.5rem;--_ui5-v2-17-0_dialog_footer_height: 2.5rem;--_ui5-v2-17-0_form_item_min_height: 2rem;--_ui5-v2-17-0_form_item_padding: .25rem;--_ui5-v2-17-0-form-group-heading-height: 2rem;--_ui5-v2-17-0_input_height: var(--sapElement_Compact_Height);--_ui5-v2-17-0_input_inner_padding: 0 .5rem;--_ui5-v2-17-0_input_inner_padding_with_icon: 0 .2rem 0 .5rem;--_ui5-v2-17-0_input_inner_space_to_tokenizer: .125rem;--_ui5-v2-17-0_input_inner_space_to_n_more_text: .125rem;--_ui5-v2-17-0_input_icon_min_width: var(--_ui5-v2-17-0_input_compact_min_width);--_ui5-v2-17-0_menu_item_padding: 0 .75rem 0 .5rem;--_ui5-v2-17-0_menu_item_submenu_icon_right: .75rem;--_ui5-v2-17-0_popup_default_header_height: 2.5rem;--_ui5-v2-17-0_textarea_margin: .1875rem 0;--_ui5-v2-17-0_list_no_data_height: 2rem;--_ui5-v2-17-0_list_item_cb_margin_right: .5rem;--_ui5-v2-17-0_list_item_title_size: var(--sapFontSize);--_ui5-v2-17-0_list_item_img_top_margin: .55rem;--_ui5-v2-17-0_list_no_data_font_size: var(--sapFontSize);--_ui5-v2-17-0_list_item_dropdown_base_height: 2rem;--_ui5-v2-17-0_list_item_base_height: 2rem;--_ui5-v2-17-0_list_item_base_padding: 0 1rem;--_ui5-v2-17-0_list_item_icon_size: 1rem;--_ui5-v2-17-0_list_item_selection_btn_margin_top: calc(-1 * var(--_ui5-v2-17-0_checkbox_wrapper_padding));--_ui5-v2-17-0_list_item_content_vertical_offset: calc((var(--_ui5-v2-17-0_list_item_base_height) - var(--_ui5-v2-17-0_list_item_title_size)) / 2);--_ui5-v2-17-0_list_buttons_left_space: .125rem;--_ui5-v2-17-0_month_picker_item_height: 2rem;--_ui5-v2-17-0_year_picker_item_height: 2rem;--_ui5-v2-17-0_panel_header_height: 2rem;--_ui5-v2-17-0_panel_button_root_height: 2rem;--_ui5-v2-17-0_panel_button_root_width: 2.75rem;--_ui5-v2-17-0_token_height: 1.25rem;--_ui5-v2-17-0_token_right_margin: .25rem;--_ui5-v2-17-0_token_left_padding: .25rem;--_ui5-v2-17-0_token_readonly_padding: .125rem .25rem;--_ui5-v2-17-0_token_focus_offset: -.125rem;--_ui5-v2-17-0_token_icon_size: .75rem;--_ui5-v2-17-0_token_icon_padding: .375rem .375rem;--_ui5-v2-17-0_token_outline_offset: -.125rem;--_ui5-v2-17-0_tl_bubble_padding: .5rem;--_ui5-v2-17-0_tl_padding: .5rem;--_ui5-v2-17-0_tl_li_margin_bottom: .5rem;--_ui5-v2-17-0_tc_item_text: 2rem;--_ui5-v2-17-0_tc_item_text_line_height: 1.325rem;--_ui5-v2-17-0_tc_item_add_text_margin_top: .3125rem;--_ui5-v2-17-0_tc_item_height: 4rem;--_ui5-v2-17-0_tc_header_height: var(--_ui5-v2-17-0_tc_item_height);--_ui5-v2-17-0_tc_item_icon_circle_size: 2rem;--_ui5-v2-17-0_tc_item_icon_size: 1rem;--_ui5-v2-17-0_radio_button_height: 2rem;--_ui5-v2-17-0_radio_button_label_side_padding: .5rem;--_ui5-v2-17-0_radio_button_inner_size: 2rem;--_ui5-v2-17-0_radio_button_svg_size: 1rem;--_ui5-v2-17-0-responsive_popover_header_height: 2.5rem;--_ui5-v2-17-0_slider_handle_height: 1.25rem;--_ui5-v2-17-0_slider_handle_width: 1.5rem;--_ui5-v2-17-0_slider_tooltip_padding: .25rem;--_ui5-v2-17-0_slider_progress_outline_offset: -.625rem;--_ui5-v2-17-0_slider_outer_height: 1.3125rem;--_ui5-v2-17-0_step_input_min_width: 6rem;--_ui5-v2-17-0_step_input_padding: 2rem;--_ui5-v2-17-0-tree-indent-step: .5rem;--_ui5-v2-17-0-tree-toggle-box-width: 2rem;--_ui5-v2-17-0-tree-toggle-box-height: 1.5rem;--_ui5-v2-17-0-tree-toggle-icon-size: .8125rem;--_ui5-v2-17-0_timeline_tli_indicator_before_bottom: -.75rem;--_ui5-v2-17-0_timeline_tli_indicator_before_right: -.5rem;--_ui5-v2-17-0_timeline_tli_indicator_before_without_icon_bottom: -1rem;--_ui5-v2-17-0_timeline_tli_indicator_before_without_icon_right: -.8125rem;--_ui5-v2-17-0_timeline_tli_indicator_before_height: calc(100% - 1.25rem) ;--_ui5-v2-17-0_timeline_tli_horizontal_without_icon_indicator_before_width: var(--_ui5-v2-17-0_timeline_tli_indicator_after_height);--_ui5-v2-17-0_timeline_tli_horizontal_indicator_after_width: var(--_ui5-v2-17-0_timeline_tli_indicator_after_height);--_ui5-v2-17-0_timeline_tli_horizontal_indicator_before_width: var(--_ui5-v2-17-0_timeline_tli_indicator_after_height);--_ui5-v2-17-0_timeline_tli_icon_horizontal_indicator_after_width: var(--_ui5-v2-17-0_timeline_tli_indicator_after_height);--_ui5-v2-17-0_timeline_tli_indicator_after_top: calc(-100% + .9375rem) ;--_ui5-v2-17-0_timeline_tli_indicator_after_height: calc(100% - .75rem) ;--_ui5-v2-17-0_timeline_tli_horizontal_indicator_after_left: 1.8625rem;--_ui5-v2-17-0_timeline_tli_horizontal_indicator_short_after_width: calc(100% - 1rem) ;--_ui5-v2-17-0_timeline_tli_without_icon_horizontal_indicator_before_width: calc(100% - .625rem) ;--_ui5-v2-17-0_timeline_tlgi_compact_icon_before_height: calc(100% + 1.5rem) ;--_ui5-v2-17-0_timeline_tlgi_horizontal_line_placeholder_before_width: var(--_ui5-v2-17-0_timeline_tlgi_compact_icon_before_height);--_ui5-v2-17-0_timeline_tlgi_horizontal_compact_root_margin_left: .5rem;--_ui5-v2-17-0_timeline_tlgi_compact_root_gap: .5rem;--_ui5-v2-17-0_timeline_tlgi_root_horizontal_height: 19.375rem;--_ui5-v2-17-0_vsd_header_container: 2.5rem;--_ui5-v2-17-0_vsd_sub_header_container_height: 2rem;--_ui5-v2-17-0_vsd_expand_content_height: 25.4375rem;--_ui5-v2-17-0-toolbar-separator-height: 1.5rem;--_ui5-v2-17-0-toolbar-height: 2rem;--_ui5-v2-17-0_toolbar_overflow_padding: .1875rem .375rem;--_ui5-v2-17-0_dynamic_page_title_actions_separator_height: var(--_ui5-v2-17-0-toolbar-separator-height);--_ui5-v2-17-0-shellbar-separator-height: 2rem;--_ui5-v2-17-0_textarea_padding_top: .1875rem;--_ui5-v2-17-0_textarea_padding_bottom: .125rem;--_ui5-v2-17-0_checkbox_focus_position: .125rem;--_ui5-v2-17-0_split_button_middle_separator_top: .3125rem;--_ui5-v2-17-0_split_button_middle_separator_height: 1rem;--_ui5-v2-17-0_slider_handle_top: -.5rem;--_ui5-v2-17-0_slider_tooltip_height: 1.375rem;--_ui5-v2-17-0_checkbox_wrapped_focus_inset_block: .125rem;--_ui5-v2-17-0_color-palette-item-height: 1.25rem;--_ui5-v2-17-0_color-palette-item-hover-height: 1.625rem;--_ui5-v2-17-0_color-palette-item-margin: calc(((var(--_ui5-v2-17-0_color-palette-item-hover-height) - var(--_ui5-v2-17-0_color-palette-item-height)) / 2) + .0625rem);--_ui5-v2-17-0_color-palette-row-width: 8.75rem;--_ui5-v2-17-0_color-palette-swatch-container-padding: .1875rem .5rem;--_ui5-v2-17-0_color-palette-item-hover-margin: .0625rem;--_ui5-v2-17-0_color-palette-row-height: 7.5rem;--_ui5-v2-17-0_color-palette-button-height: 2rem;--_ui5-v2-17-0_color-palette-item-before-focus-inset: -.25rem;--_ui5-v2-17-0_daypicker_selected_item_now_special_day_top: 1.5625rem;--_ui5-v2-17-0_daypicker_specialday_focused_top: 1.3125rem;--_ui5-v2-17-0_daypicker_selected_item_now_special_day_border_bottom_radius_alternate: .5rem;--_ui5-v2-17-0_daypicker_specialday_focused_border_bottom: .25rem;--_ui5-v2-17-0_daypicker_item_now_specialday_top: 1.4375rem;--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_padding_block: 0 .375rem;--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_padding: 0 .375rem;--_ui5-v2-17-0_daypicker_two_calendar_item_selected_focus_margin_bottom: -.25rem;--_ui5-v2-17-0_daypicker_two_calendar_item_selected_focus_padding_right: .4375rem}:root,:dir(ltr){--_ui5-v2-17-0_rotation_90deg: rotate(90deg);--_ui5-v2-17-0_rotation_minus_90deg: rotate(-90deg);--_ui5-v2-17-0_icon_transform_scale: none;--_ui5-v2-17-0_panel_toggle_btn_rotation: var(--_ui5-v2-17-0_rotation_90deg);--_ui5-v2-17-0_popover_upward_arrow_margin: .1875rem 0 0 .1875rem;--_ui5-v2-17-0_popover_right_arrow_margin: .1875rem 0 0 -.375rem;--_ui5-v2-17-0_popover_downward_arrow_margin: -.375rem 0 0 .125rem;--_ui5-v2-17-0_popover_left_arrow_margin: .125rem 0 0 .25rem;--_ui5-v2-17-0_dialog_resize_cursor: se-resize;--_ui5-v2-17-0_progress_indicator_bar_border_radius: .5rem 0 0 .5rem;--_ui5-v2-17-0_progress_indicator_remaining_bar_border_radius: 0 .5rem .5rem 0;--_ui5-v2-17-0_menu_submenu_margin_offset: -.25rem 0}:dir(rtl){--_ui5-v2-17-0_icon_transform_scale: scale(-1, 1);--_ui5-v2-17-0_panel_toggle_btn_rotation: var(--_ui5-v2-17-0_rotation_minus_90deg);--_ui5-v2-17-0_popover_upward_arrow_margin: .1875rem .125rem 0 0;--_ui5-v2-17-0_popover_right_arrow_margin: .1875rem .25rem 0 0;--_ui5-v2-17-0_popover_downward_arrow_margin: -.4375rem .125rem 0 0;--_ui5-v2-17-0_popover_left_arrow_margin: .1875rem -.375rem 0 0;--_ui5-v2-17-0_dialog_resize_cursor:sw-resize;--_ui5-v2-17-0_menu_submenu_margin_offset: 0 -.25rem;--_ui5-v2-17-0_segmented_btn_item_border_left: .0625rem;--_ui5-v2-17-0_segmented_btn_item_border_right: .0625rem;--_ui5-v2-17-0_progress_indicator_bar_border_radius: .5rem;--_ui5-v2-17-0_progress_indicator_remaining_bar_border_radius: .25rem}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const iconCss = `:host{-webkit-tap-highlight-color:rgba(0,0,0,0)}:host([hidden]){display:none}:host([invalid]){display:none}:host(:not([hidden]).ui5_hovered){opacity:.7}:host{display:inline-block;width:1rem;height:1rem;color:var(--sapContent_IconColor);fill:currentColor;outline:none}:host([design="Contrast"]){color:var(--sapContent_ContrastIconColor)}:host([design="Critical"]){color:var(--sapCriticalElementColor)}:host([design="Information"]){color:var(--sapInformativeElementColor)}:host([design="Negative"]){color:var(--sapNegativeElementColor)}:host([design="Neutral"]){color:var(--sapNeutralElementColor)}:host([design="NonInteractive"]){color:var(--sapContent_NonInteractiveIconColor)}:host([design="Positive"]){color:var(--sapPositiveElementColor)}:host([mode="Interactive"][desktop]) .ui5-icon-root:focus,:host([mode="Interactive"]) .ui5-icon-root:focus-visible{outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);border-radius:var(--ui5-v2-17-0-icon-focus-border-radius)}.ui5-icon-root{display:flex;height:100%;width:100%;outline:none;vertical-align:top}:host([mode="Interactive"]){cursor:pointer}.ui5-icon-root:not([dir=ltr])>g{transform:var(--_ui5-v2-17-0_icon_transform_scale);transform-origin:center}
 `;
-var __decorate$1w = function(decorators, target, key, desc) {
+var __decorate$1G = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -2119,34 +2119,34 @@ let Icon = class Icon2 extends b$7 {
     return this.showTooltip && this.effectiveAccessibleName;
   }
 };
-__decorate$1w([
+__decorate$1G([
   s$9()
 ], Icon.prototype, "design", void 0);
-__decorate$1w([
+__decorate$1G([
   s$9()
 ], Icon.prototype, "name", void 0);
-__decorate$1w([
+__decorate$1G([
   s$9()
 ], Icon.prototype, "accessibleName", void 0);
-__decorate$1w([
+__decorate$1G([
   s$9({ type: Boolean })
 ], Icon.prototype, "showTooltip", void 0);
-__decorate$1w([
+__decorate$1G([
   s$9()
 ], Icon.prototype, "mode", void 0);
-__decorate$1w([
+__decorate$1G([
   s$9({ type: Array })
 ], Icon.prototype, "pathData", void 0);
-__decorate$1w([
+__decorate$1G([
   s$9({ type: Object, noAttribute: true })
 ], Icon.prototype, "accData", void 0);
-__decorate$1w([
+__decorate$1G([
   s$9({ type: Boolean })
 ], Icon.prototype, "invalid", void 0);
-__decorate$1w([
+__decorate$1G([
   s$9({ noAttribute: true })
 ], Icon.prototype, "effectiveAccessibleName", void 0);
-Icon = __decorate$1w([
+Icon = __decorate$1G([
   m$8({
     tag: "ui5-icon",
     languageAware: true,
@@ -2258,6 +2258,8 @@ const TABCONTAINER_OVERFLOW_MENU_TITLE = { key: "TABCONTAINER_OVERFLOW_MENU_TITL
 const TABCONTAINER_END_OVERFLOW = { key: "TABCONTAINER_END_OVERFLOW", defaultText: "More" };
 const TABCONTAINER_POPOVER_CANCEL_BUTTON = { key: "TABCONTAINER_POPOVER_CANCEL_BUTTON", defaultText: "Cancel" };
 const TABCONTAINER_SUBTABS_DESCRIPTION = { key: "TABCONTAINER_SUBTABS_DESCRIPTION", defaultText: "Press down arrow key to open subitems menu" };
+const TEXTAREA_CHARACTERS_LEFT = { key: "TEXTAREA_CHARACTERS_LEFT", defaultText: "{0} characters remaining" };
+const TEXTAREA_CHARACTERS_EXCEEDED = { key: "TEXTAREA_CHARACTERS_EXCEEDED", defaultText: "{0} characters over limit" };
 const TIMEPICKER_HOURS_LABEL = { key: "TIMEPICKER_HOURS_LABEL", defaultText: "Hours" };
 const TIMEPICKER_MINUTES_LABEL = { key: "TIMEPICKER_MINUTES_LABEL", defaultText: "Minutes" };
 const TIMEPICKER_SECONDS_LABEL = { key: "TIMEPICKER_SECONDS_LABEL", defaultText: "Seconds" };
@@ -2313,6 +2315,8 @@ const DIALOG_HEADER_ARIA_DESCRIBEDBY_RESIZABLE = { key: "DIALOG_HEADER_ARIA_DESC
 const DIALOG_HEADER_ARIA_DESCRIBEDBY_DRAGGABLE = { key: "DIALOG_HEADER_ARIA_DESCRIBEDBY_DRAGGABLE", defaultText: "Use Arrow keys to move" };
 const DIALOG_HEADER_ARIA_DESCRIBEDBY_DRAGGABLE_RESIZABLE = { key: "DIALOG_HEADER_ARIA_DESCRIBEDBY_DRAGGABLE_RESIZABLE", defaultText: "Use Arrow keys to move, Shift+Arrow keys to resize" };
 const LABEL_COLON = { key: "LABEL_COLON", defaultText: ":" };
+const TOOLBAR_OVERFLOW_BUTTON_ARIA_LABEL = { key: "TOOLBAR_OVERFLOW_BUTTON_ARIA_LABEL", defaultText: "Additional Options" };
+const TOOLBAR_POPOVER_AVAILABLE_VALUES = { key: "TOOLBAR_POPOVER_AVAILABLE_VALUES", defaultText: "Available Values" };
 const FORM_CHECKABLE_REQUIRED = { key: "FORM_CHECKABLE_REQUIRED", defaultText: "Please tick this box if you want to proceed." };
 const FORM_SELECTABLE_REQUIRED = { key: "FORM_SELECTABLE_REQUIRED", defaultText: "Please select an item in the list." };
 const FORM_SELECTABLE_REQUIRED2 = { key: "FORM_SELECTABLE_REQUIRED2", defaultText: "Please select one of these options." };
@@ -2346,10 +2350,10 @@ function LabelTemplate() {
   return jsxs("label", { class: "ui5-label-root", onClick: this._onclick, children: [jsx("span", { class: "ui5-label-text-wrapper", children: jsx("slot", {}) }), jsx("span", { "aria-hidden": "true", class: "ui5-label-required-colon", "data-ui5-colon": this._colonSymbol })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const labelCss = `:host(:not([hidden])){display:inline-flex}:host{max-width:100%;color:var(--sapContent_LabelColor);font-family:var(--sapFontFamily);font-size:var(--sapFontSize);font-weight:400;cursor:text}.ui5-label-root{width:100%;cursor:inherit}:host{white-space:normal}:host([wrapping-type="None"]){white-space:nowrap}:host([wrapping-type="None"]) .ui5-label-root{display:inline-flex}:host([wrapping-type="None"]) .ui5-label-text-wrapper{text-overflow:ellipsis;overflow:hidden;display:inline-block;vertical-align:top;flex:0 1 auto;min-width:0}:host([show-colon]) .ui5-label-required-colon:before{content:attr(data-ui5-colon)}:host([required]) .ui5-label-required-colon:after{content:"*";color:var(--sapField_RequiredColor);font-size:var(--sapFontLargeSize);font-weight:700;position:relative;font-style:normal;vertical-align:middle;line-height:0}.ui5-label-text-wrapper{padding-inline-end:.075rem}:host([required][show-colon]) .ui5-label-required-colon:after{margin-inline-start:.125rem}:host([show-colon]) .ui5-label-required-colon{margin-inline-start:-.05rem;white-space:pre}
 `;
-var __decorate$1v = function(decorators, target, key, desc) {
+var __decorate$1F = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -2376,22 +2380,22 @@ let Label = Label_1 = class Label2 extends b$7 {
     return Label_1.i18nBundle.getText(LABEL_COLON);
   }
 };
-__decorate$1v([
+__decorate$1F([
   s$9()
 ], Label.prototype, "for", void 0);
-__decorate$1v([
+__decorate$1F([
   s$9({ type: Boolean })
 ], Label.prototype, "showColon", void 0);
-__decorate$1v([
+__decorate$1F([
   s$9({ type: Boolean })
 ], Label.prototype, "required", void 0);
-__decorate$1v([
+__decorate$1F([
   s$9()
 ], Label.prototype, "wrappingType", void 0);
-__decorate$1v([
+__decorate$1F([
   i$b("@ui5/webcomponents")
 ], Label, "i18nBundle", void 0);
-Label = Label_1 = __decorate$1v([
+Label = Label_1 = __decorate$1F([
   m$8({
     tag: "ui5-label",
     renderer: y$5,
@@ -2412,10 +2416,10 @@ function BusyIndicatorBusyText() {
   return jsx(Fragment, { children: this.text && jsx(Label$1, { id: `${this._id}-label`, class: "ui5-busy-indicator-text", children: this.text }) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const busyIndicatorCss = `:host(:not([hidden])){display:inline-block}:host([_is-busy]){color:var(--_ui5-v2-17-0_busy_indicator_color)}:host([size="S"]) .ui5-busy-indicator-root{min-width:1.625rem;min-height:.5rem}:host([size="S"][text]:not([text=""])) .ui5-busy-indicator-root{min-height:1.75rem}:host([size="S"]) .ui5-busy-indicator-circle{width:.5rem;height:.5rem}:host([size="S"]) .ui5-busy-indicator-circle:first-child,:host([size="S"]) .ui5-busy-indicator-circle:nth-child(2){margin-inline-end:.0625rem}:host(:not([size])) .ui5-busy-indicator-root,:host([size="M"]) .ui5-busy-indicator-root{min-width:3.375rem;min-height:1rem}:host([size="M"]) .ui5-busy-indicator-circle:first-child,:host([size="M"]) .ui5-busy-indicator-circle:nth-child(2){margin-inline-end:.1875rem}:host(:not([size])[text]:not([text=""])) .ui5-busy-indicator-root,:host([size="M"][text]:not([text=""])) .ui5-busy-indicator-root{min-height:2.25rem}:host(:not([size])) .ui5-busy-indicator-circle,:host([size="M"]) .ui5-busy-indicator-circle{width:1rem;height:1rem}:host([size="L"]) .ui5-busy-indicator-root{min-width:6.5rem;min-height:2rem}:host([size="L"]) .ui5-busy-indicator-circle:first-child,:host([size="L"]) .ui5-busy-indicator-circle:nth-child(2){margin-inline-end:.25rem}:host([size="L"][text]:not([text=""])) .ui5-busy-indicator-root{min-height:3.25rem}:host([size="L"]) .ui5-busy-indicator-circle{width:2rem;height:2rem}.ui5-busy-indicator-root{display:flex;justify-content:center;align-items:center;position:relative;background-color:inherit;height:inherit;border-radius:inherit}.ui5-busy-indicator-busy-area.ui5-busy-indicator-busy-area-over-content{position:absolute;inset:0;z-index:99}.ui5-busy-indicator-busy-area{display:flex;justify-content:center;align-items:center;background-color:inherit;flex-direction:column;border-radius:inherit}:host([active]) ::slotted(*){opacity:var(--sapContent_DisabledOpacity)}:host([desktop]) .ui5-busy-indicator-busy-area:focus,.ui5-busy-indicator-busy-area:focus-visible{outline:var(--_ui5-v2-17-0_busy_indicator_focus_outline);outline-offset:-2px}.ui5-busy-indicator-circles-wrapper{line-height:0}.ui5-busy-indicator-circle{display:inline-block;background-color:currentColor;border-radius:50%}.ui5-busy-indicator-circle:before{content:"";width:100%;height:100%;border-radius:100%}.circle-animation-0{animation:grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11)}.circle-animation-1{animation:grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);animation-delay:.2s}.circle-animation-2{animation:grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);animation-delay:.4s}.ui5-busy-indicator-text{width:100%;text-align:center}:host([text-placement="Top"]) .ui5-busy-indicator-text{margin-bottom:.5rem}:host(:not([text-placement])) .ui5-busy-indicator-text,:host([text-placement="Bottom"]) .ui5-busy-indicator-text{margin-top:.5rem}@keyframes grow{0%,50%,to{-webkit-transform:scale(.5);-moz-transform:scale(.5);transform:scale(.5)}25%{-webkit-transform:scale(1);-moz-transform:scale(1);transform:scale(1)}}
 `;
-var __decorate$1u = function(decorators, target, key, desc) {
+var __decorate$1E = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -2510,28 +2514,28 @@ let BusyIndicator = BusyIndicator_1 = class BusyIndicator2 extends b$7 {
     this.shadowRoot.querySelector(".ui5-busy-indicator-busy-area").focus();
   }
 };
-__decorate$1u([
+__decorate$1E([
   s$9()
 ], BusyIndicator.prototype, "text", void 0);
-__decorate$1u([
+__decorate$1E([
   s$9()
 ], BusyIndicator.prototype, "size", void 0);
-__decorate$1u([
+__decorate$1E([
   s$9({ type: Boolean })
 ], BusyIndicator.prototype, "active", void 0);
-__decorate$1u([
+__decorate$1E([
   s$9({ type: Number })
 ], BusyIndicator.prototype, "delay", void 0);
-__decorate$1u([
+__decorate$1E([
   s$9()
 ], BusyIndicator.prototype, "textPlacement", void 0);
-__decorate$1u([
+__decorate$1E([
   s$9({ type: Boolean })
 ], BusyIndicator.prototype, "_isBusy", void 0);
-__decorate$1u([
+__decorate$1E([
   i$b("@ui5/webcomponents")
 ], BusyIndicator, "i18nBundle", void 0);
-BusyIndicator = BusyIndicator_1 = __decorate$1u([
+BusyIndicator = BusyIndicator_1 = __decorate$1E([
   m$8({
     tag: "ui5-busy-indicator",
     languageAware: true,
@@ -2559,10 +2563,10 @@ function ButtonTemplate$1(injectedProps) {
   }, disabled: this.disabled, "data-sap-focus-ref": true, "aria-pressed": injectedProps == null ? void 0 : injectedProps.ariaPressed, "aria-valuemin": injectedProps == null ? void 0 : injectedProps.ariaValueMin, "aria-valuemax": injectedProps == null ? void 0 : injectedProps.ariaValueMax, "aria-valuenow": injectedProps == null ? void 0 : injectedProps.ariaValueNow, "aria-valuetext": injectedProps == null ? void 0 : injectedProps.ariaValueText, onFocusOut: this._onfocusout, onClick: this._onclick, onMouseDown: this._onmousedown, onKeyDown: this._onkeydown, onKeyUp: this._onkeyup, onTouchStart: this._ontouchstart, onTouchEnd: this._ontouchend, tabindex: this.tabIndexValue, "aria-expanded": (_d = this._computedAccessibilityAttributes) == null ? void 0 : _d.expanded, "aria-controls": (_e = this._computedAccessibilityAttributes) == null ? void 0 : _e.controls, "aria-haspopup": (_f = this._computedAccessibilityAttributes) == null ? void 0 : _f.hasPopup, "aria-label": (_g = this._computedAccessibilityAttributes) == null ? void 0 : _g.ariaLabel, "aria-keyshortcuts": (_h = this._computedAccessibilityAttributes) == null ? void 0 : _h.ariaKeyShortcuts, "aria-description": this.ariaDescriptionText, "aria-busy": this.loading ? "true" : void 0, title: this.buttonTitle, part: "button", role: this.effectiveAccRole, children: [this.icon && jsx(Icon$1, { class: "ui5-button-icon", name: this.icon, mode: "Decorative", part: "icon" }), jsx("span", { id: `${this._id}-content`, class: "ui5-button-text", children: jsx("bdi", { children: jsx("slot", {}) }) }), this.endIcon && jsx(Icon$1, { class: "ui5-button-end-icon", name: this.endIcon, mode: "Decorative", part: "endIcon" }), this.shouldRenderBadge && jsx("slot", { name: "badge" })] }), this.loading && jsx(BusyIndicator$1, { id: `${this._id}-button-busy-indicator`, class: "ui5-button-busy-indicator", size: this.iconOnly ? BusyIndicatorSize$1.S : BusyIndicatorSize$1.M, active: true, delay: this.loadingDelay, inert: this.loading })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const buttonCss = `:host{vertical-align:middle}.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block}:host{min-width:var(--_ui5-v2-17-0_button_base_min_width);height:var(--_ui5-v2-17-0_button_base_height);line-height:normal;font-family:var(--_ui5-v2-17-0_button_fontFamily);font-size:var(--sapFontSize);text-shadow:var(--_ui5-v2-17-0_button_text_shadow);border-radius:var(--_ui5-v2-17-0_button_border_radius);cursor:pointer;background-color:var(--sapButton_Background);border:var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);color:var(--sapButton_TextColor);box-sizing:border-box;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-webkit-tap-highlight-color:transparent}.ui5-button-root{min-width:inherit;cursor:inherit;height:100%;width:100%;box-sizing:border-box;display:flex;justify-content:center;align-items:center;outline:none;padding:0 var(--_ui5-v2-17-0_button_base_padding);position:relative;background:transparent;border:none;color:inherit;text-shadow:inherit;font:inherit;white-space:inherit;overflow:inherit;text-overflow:inherit;letter-spacing:inherit;word-spacing:inherit;line-height:inherit;-webkit-user-select:none;-moz-user-select:none;user-select:none}:host(:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host(:not([hidden]):not([disabled]).ui5_hovered){background:var(--sapButton_Hover_Background);border:1px solid var(--sapButton_Hover_BorderColor);color:var(--sapButton_Hover_TextColor)}.ui5-button-icon,.ui5-button-end-icon{color:inherit;flex-shrink:0}.ui5-button-end-icon{margin-inline-start:var(--_ui5-v2-17-0_button_base_icon_margin)}:host([icon-only]:not([has-end-icon])) .ui5-button-root{min-width:auto;padding:0}:host([icon-only]) .ui5-button-text{display:none}.ui5-button-text{outline:none;position:relative;white-space:inherit;overflow:inherit;text-overflow:inherit}:host([has-icon]:not(:empty)) .ui5-button-text{margin-inline-start:var(--_ui5-v2-17-0_button_base_icon_margin)}:host([has-end-icon]:not([has-icon]):empty) .ui5-button-end-icon{margin-inline-start:0}:host([disabled]){opacity:var(--sapContent_DisabledOpacity);pointer-events:unset;cursor:default}:host([has-icon]:not([icon-only]):not([has-end-icon])) .ui5-button-text{min-width:calc(var(--_ui5-v2-17-0_button_base_min_width) - var(--_ui5-v2-17-0_button_base_icon_margin) - 1rem)}:host([disabled]:active){pointer-events:none}:host([desktop]:not([loading])) .ui5-button-root:focus-within:after,:host(:not([active])) .ui5-button-root:focus-visible:after,:host([desktop][active][design="Emphasized"]) .ui5-button-root:focus-within:after,:host([active][design="Emphasized"]) .ui5-button-root:focus-visible:after,:host([desktop][active]) .ui5-button-root:focus-within:before,:host([active]) .ui5-button-root:focus-visible:before{content:"";position:absolute;box-sizing:border-box;pointer-events:none;inset:.0625rem;border:var(--_ui5-v2-17-0_button_focused_border);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}:host([desktop][active]) .ui5-button-root:focus-within:before,:host([active]) .ui5-button-root:focus-visible:before{border-color:var(--_ui5-v2-17-0_button_pressed_focused_border_color)}:host([design="Emphasized"][desktop]) .ui5-button-root:focus-within:after,:host([design="Emphasized"]) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_emphasized_focused_border_color)}:host([design="Emphasized"][desktop]) .ui5-button-root:focus-within:before,:host([design="Emphasized"]) .ui5-button-root:focus-visible:before{content:"";position:absolute;box-sizing:border-box;inset:.0625rem;border:var(--_ui5-v2-17-0_button_emphasized_focused_border_before);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}.ui5-button-root::-moz-focus-inner{border:0}bdi{display:block;white-space:inherit;overflow:inherit;text-overflow:inherit}:host([ui5-button][active]:not([disabled]):not([non-interactive])){background-image:none;background-color:var(--sapButton_Active_Background);border-color:var(--sapButton_Active_BorderColor);color:var(--sapButton_Active_TextColor)}:host([design="Positive"]){background-color:var(--sapButton_Accept_Background);border-color:var(--sapButton_Accept_BorderColor);color:var(--sapButton_Accept_TextColor)}:host([design="Positive"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Positive"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Accept_Hover_Background);border-color:var(--sapButton_Accept_Hover_BorderColor);color:var(--sapButton_Accept_Hover_TextColor)}:host([ui5-button][design="Positive"][active]:not([non-interactive])){background-color:var(--sapButton_Accept_Active_Background);border-color:var(--sapButton_Accept_Active_BorderColor);color:var(--sapButton_Accept_Active_TextColor)}:host([design="Negative"]){background-color:var(--sapButton_Reject_Background);border-color:var(--sapButton_Reject_BorderColor);color:var(--sapButton_Reject_TextColor)}:host([design="Negative"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Negative"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Reject_Hover_Background);border-color:var(--sapButton_Reject_Hover_BorderColor);color:var(--sapButton_Reject_Hover_TextColor)}:host([ui5-button][design="Negative"][active]:not([non-interactive])){background-color:var(--sapButton_Reject_Active_Background);border-color:var(--sapButton_Reject_Active_BorderColor);color:var(--sapButton_Reject_Active_TextColor)}:host([design="Attention"]){background-color:var(--sapButton_Attention_Background);border-color:var(--sapButton_Attention_BorderColor);color:var(--sapButton_Attention_TextColor)}:host([design="Attention"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Attention"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Attention_Hover_Background);border-color:var(--sapButton_Attention_Hover_BorderColor);color:var(--sapButton_Attention_Hover_TextColor)}:host([ui5-button][design="Attention"][active]:not([non-interactive])){background-color:var(--sapButton_Attention_Active_Background);border-color:var(--sapButton_Attention_Active_BorderColor);color:var(--sapButton_Attention_Active_TextColor)}:host([design="Emphasized"]){background-color:var(--sapButton_Emphasized_Background);border-color:var(--sapButton_Emphasized_BorderColor);border-width:var(--_ui5-v2-17-0_button_emphasized_border_width);color:var(--sapButton_Emphasized_TextColor);font-family:var(--sapButton_Emphasized_FontFamily)}:host([design="Emphasized"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Emphasized"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Emphasized_Hover_Background);border-color:var(--sapButton_Emphasized_Hover_BorderColor);border-width:var(--_ui5-v2-17-0_button_emphasized_border_width);color:var(--sapButton_Emphasized_Hover_TextColor)}:host([ui5-button][design="Empasized"][active]:not([non-interactive])){background-color:var(--sapButton_Emphasized_Active_Background);border-color:var(--sapButton_Emphasized_Active_BorderColor);color:var(--sapButton_Emphasized_Active_TextColor)}:host([design="Emphasized"][desktop]) .ui5-button-root:focus-within:after,:host([design="Emphasized"]) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_emphasized_focused_border_color);outline:none}:host([design="Emphasized"][desktop][active]:not([non-interactive])) .ui5-button-root:focus-within:after,:host([design="Emphasized"][active]:not([non-interactive])) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_emphasized_focused_active_border_color)}:host([design="Transparent"]){background-color:var(--sapButton_Lite_Background);color:var(--sapButton_Lite_TextColor);border-color:var(--sapButton_Lite_BorderColor)}:host([design="Transparent"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Transparent"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Lite_Hover_Background);border-color:var(--sapButton_Lite_Hover_BorderColor);color:var(--sapButton_Lite_Hover_TextColor)}:host([ui5-button][design="Transparent"][active]:not([non-interactive])){background-color:var(--sapButton_Lite_Active_Background);border-color:var(--sapButton_Lite_Active_BorderColor);color:var(--sapButton_Active_TextColor)}:host([ui5-segmented-button-item][active][desktop]) .ui5-button-root:focus-within:after,:host([ui5-segmented-button-item][active]) .ui5-button-root:focus-visible:after,:host([pressed][desktop]) .ui5-button-root:focus-within:after,:host([pressed]) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_pressed_focused_border_color);outline:none}:host([ui5-segmented-button-item][desktop]:not(:last-child)) .ui5-button-root:focus-within:after,:host([ui5-segmented-button-item]:not(:last-child)) .ui5-button-root:focus-visible:after{border-top-right-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius)}:host([ui5-segmented-button-item][desktop]:not(:first-child)) .ui5-button-root:focus-within:after,:host([ui5-segmented-button-item]:not(:first-child)) .ui5-button-root:focus-visible:after{border-top-left-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius);border-bottom-left-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius)}::slotted([slot="badge"][design="InlineText"]){pointer-events:initial;font-family:var(--sapButton_FontFamily);font-size:var(--sapFontSmallSize);padding-inline-start:.25rem;--_ui5-v2-17-0-tag-height: .625rem}::slotted([slot="badge"][design="OverlayText"]){pointer-events:initial;position:absolute;top:0;inset-inline-end:0;margin:-.5rem;z-index:1;font-family:var(--sapButton_FontFamily);font-size:var(--sapFontSmallSize);--_ui5-v2-17-0-tag-height: .625rem}::slotted([slot="badge"][design="AttentionDot"]){pointer-events:initial;content:"";position:absolute;top:0;inset-inline-end:0;margin:-.25rem;z-index:1}:host(:state(has-overlay-badge)){overflow:visible;margin-inline-end:.3125rem}:host([loading]){position:relative;pointer-events:unset}:host([loading]) .ui5-button-root{opacity:var(--sapContent_DisabledOpacity)}:host([loading][design="Emphasized"]){background-color:inherit;border:inherit}:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:inherit;border:inherit}:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover) .ui5-button-root,:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered) .ui5-button-root{background-color:var(--sapButton_Emphasized_Hover_Background)}:host([loading][design="Emphasized"]) .ui5-button-root{background-color:var(--sapButton_Emphasized_Background);border-color:var(--sapButton_Emphasized_BorderColor)}.ui5-button-busy-indicator{position:absolute;height:100%;width:100%;top:0}:host([has-end-icon]) .ui5-button-root{justify-content:flex-start}:host([icon-only]) .ui5-button-root{justify-content:center}:host([has-end-icon]) .ui5-button-end-icon{margin-left:auto}
 `;
-var __decorate$1t = function(decorators, target, key, desc) {
+var __decorate$1D = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -2837,88 +2841,88 @@ let Button = Button_1 = class Button2 extends b$7 {
     return !!this.badge.length && (!!this.badge[0].text.length || this.badge[0].design === ButtonBadgeDesign$1.AttentionDot);
   }
 };
-__decorate$1t([
+__decorate$1D([
   s$9()
 ], Button.prototype, "design", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9({ type: Boolean })
 ], Button.prototype, "disabled", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9()
 ], Button.prototype, "icon", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9()
 ], Button.prototype, "endIcon", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9({ type: Boolean })
 ], Button.prototype, "submits", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9()
 ], Button.prototype, "tooltip", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9()
 ], Button.prototype, "accessibleName", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9()
 ], Button.prototype, "accessibleNameRef", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9({ type: Object })
 ], Button.prototype, "accessibilityAttributes", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9()
 ], Button.prototype, "accessibleDescription", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9()
 ], Button.prototype, "type", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9()
 ], Button.prototype, "accessibleRole", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9({ type: Boolean })
 ], Button.prototype, "active", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9({ type: Boolean })
 ], Button.prototype, "iconOnly", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9({ type: Boolean })
 ], Button.prototype, "hasIcon", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9({ type: Boolean })
 ], Button.prototype, "hasEndIcon", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9({ type: Boolean })
 ], Button.prototype, "nonInteractive", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9({ type: Boolean })
 ], Button.prototype, "loading", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9({ type: Number })
 ], Button.prototype, "loadingDelay", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9({ noAttribute: true })
 ], Button.prototype, "buttonTitle", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9({ type: Object })
 ], Button.prototype, "_iconSettings", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9({ noAttribute: true })
 ], Button.prototype, "forcedTabIndex", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9({ type: Boolean })
 ], Button.prototype, "_isTouch", void 0);
-__decorate$1t([
+__decorate$1D([
   s$9({ type: Boolean, noAttribute: true })
 ], Button.prototype, "_cancelAction", void 0);
-__decorate$1t([
+__decorate$1D([
   d$8({ type: Node, "default": true })
 ], Button.prototype, "text", void 0);
-__decorate$1t([
+__decorate$1D([
   d$8({ type: HTMLElement, invalidateOnChildChange: true })
 ], Button.prototype, "badge", void 0);
-__decorate$1t([
+__decorate$1D([
   i$b("@ui5/webcomponents")
 ], Button, "i18nBundle", void 0);
-Button = Button_1 = __decorate$1t([
+Button = Button_1 = __decorate$1D([
   m$8({
     tag: "ui5-button",
     formAssociated: true,
@@ -2939,18 +2943,18 @@ Button = Button_1 = __decorate$1t([
 ], Button);
 Button.define();
 const Button$1 = Button;
-const name$1y = "accept";
-const pathData$1x = "M455.8 94q9 9 3 19l-222 326q-4 8-12 9t-14-5l-151-167q-5-5-4.5-11t5.5-11l25-25q12-12 23 0l96 96q5 5 13 4.5t12-8.5l175-249q4-7 11.5-8t13.5 4z";
-const ltr$1x = true;
-const collection$1x = "SAP-icons-v4";
-const packageName$1x = "@ui5/webcomponents-icons";
-y$2(name$1y, { pathData: pathData$1x, ltr: ltr$1x, collection: collection$1x, packageName: packageName$1x });
-const name$1x = "accept";
-const pathData$1w = "M187 416q-12 0-20-9L71 299q-7-7-7-17 0-11 7.5-18.5T90 256q12 0 19 9l77 87 217-247q8-9 19-9t18.5 7.5T448 122q0 10-6 16L206 407q-7 9-19 9z";
-const ltr$1w = true;
-const collection$1w = "SAP-icons-v5";
-const packageName$1w = "@ui5/webcomponents-icons";
-y$2(name$1x, { pathData: pathData$1w, ltr: ltr$1w, collection: collection$1w, packageName: packageName$1w });
+const name$1E = "accept";
+const pathData$1D = "M455.8 94q9 9 3 19l-222 326q-4 8-12 9t-14-5l-151-167q-5-5-4.5-11t5.5-11l25-25q12-12 23 0l96 96q5 5 13 4.5t12-8.5l175-249q4-7 11.5-8t13.5 4z";
+const ltr$1D = true;
+const collection$1D = "SAP-icons-v4";
+const packageName$1D = "@ui5/webcomponents-icons";
+y$2(name$1E, { pathData: pathData$1D, ltr: ltr$1D, collection: collection$1D, packageName: packageName$1D });
+const name$1D = "accept";
+const pathData$1C = "M187 416q-12 0-20-9L71 299q-7-7-7-17 0-11 7.5-18.5T90 256q12 0 19 9l77 87 217-247q8-9 19-9t18.5 7.5T448 122q0 10-6 16L206 407q-7 9-19 9z";
+const ltr$1C = true;
+const collection$1C = "SAP-icons-v5";
+const packageName$1C = "@ui5/webcomponents-icons";
+y$2(name$1D, { pathData: pathData$1C, ltr: ltr$1C, collection: collection$1C, packageName: packageName$1C });
 const checkIcon = "accept";
 const ICON_ADD = { key: "ICON_ADD", defaultText: "Add" };
 const ICON_DECLINE = { key: "ICON_DECLINE", defaultText: "Decline" };
@@ -2964,33 +2968,33 @@ const ICON_SETTINGS = { key: "ICON_SETTINGS", defaultText: "Settings" };
 const ICON_SORT_ASCENDING = { key: "ICON_SORT_ASCENDING", defaultText: "Sort Ascending" };
 const ICON_SORT_DESCENDING = { key: "ICON_SORT_DESCENDING", defaultText: "Sort Descending" };
 const ICON_SYNCHRONIZE = { key: "ICON_SYNCHRONIZE", defaultText: "Synchronize" };
-const name$1w = "decline";
-const pathData$1v = "M86 109l22-23q5-5 12-5 6 0 11 5l124 125L380 86q5-5 11-5 7 0 12 5l22 23q12 11 0 23L301 256l124 125q11 11 0 22l-22 23q-8 5-12 5-3 0-11-5L255 301 131 426q-5 5-11 5-4 0-12-5l-22-23q-11-11 0-22l124-125L86 132q-12-12 0-23z";
-const ltr$1v = false;
+const name$1C = "decline";
+const pathData$1B = "M86 109l22-23q5-5 12-5 6 0 11 5l124 125L380 86q5-5 11-5 7 0 12 5l22 23q12 11 0 23L301 256l124 125q11 11 0 22l-22 23q-8 5-12 5-3 0-11-5L255 301 131 426q-5 5-11 5-4 0-12-5l-22-23q-11-11 0-22l124-125L86 132q-12-12 0-23z";
+const ltr$1B = false;
 const accData$n = ICON_DECLINE;
-const collection$1v = "SAP-icons-v4";
-const packageName$1v = "@ui5/webcomponents-icons";
-y$2(name$1w, { pathData: pathData$1v, ltr: ltr$1v, accData: accData$n, collection: collection$1v, packageName: packageName$1v });
-const name$1v = "decline";
-const pathData$1u = "M292 256l117 116q7 7 7 18 0 12-7.5 19t-18.5 7q-10 0-18-8L256 292 140 408q-8 8-18 8-11 0-18.5-7.5T96 390q0-10 8-18l116-116-116-116q-8-8-8-18 0-11 7.5-18.5T122 96t18 7l116 117 116-117q7-7 18-7t18.5 7.5T416 122t-7 18z";
-const ltr$1u = false;
+const collection$1B = "SAP-icons-v4";
+const packageName$1B = "@ui5/webcomponents-icons";
+y$2(name$1C, { pathData: pathData$1B, ltr: ltr$1B, accData: accData$n, collection: collection$1B, packageName: packageName$1B });
+const name$1B = "decline";
+const pathData$1A = "M292 256l117 116q7 7 7 18 0 12-7.5 19t-18.5 7q-10 0-18-8L256 292 140 408q-8 8-18 8-11 0-18.5-7.5T96 390q0-10 8-18l116-116-116-116q-8-8-8-18 0-11 7.5-18.5T122 96t18 7l116 117 116-117q7-7 18-7t18.5 7.5T416 122t-7 18z";
+const ltr$1A = false;
 const accData$m = ICON_DECLINE;
-const collection$1u = "SAP-icons-v5";
-const packageName$1u = "@ui5/webcomponents-icons";
-y$2(name$1v, { pathData: pathData$1u, ltr: ltr$1u, accData: accData$m, collection: collection$1u, packageName: packageName$1u });
+const collection$1A = "SAP-icons-v5";
+const packageName$1A = "@ui5/webcomponents-icons";
+y$2(name$1B, { pathData: pathData$1A, ltr: ltr$1A, accData: accData$m, collection: collection$1A, packageName: packageName$1A });
 const iconDecline = "decline";
-const name$1u = "less";
-const pathData$1t = "M464 224q16 0 16 16v32q0 16-16 16H48q-6 0-11-4.5T32 272v-32q0-7 5-11.5t11-4.5h416z";
-const ltr$1t = false;
-const collection$1t = "SAP-icons-v4";
-const packageName$1t = "@ui5/webcomponents-icons";
-y$2(name$1u, { pathData: pathData$1t, ltr: ltr$1t, collection: collection$1t, packageName: packageName$1t });
-const name$1t = "less";
-const pathData$1s = "M454 275H58q-11 0-18.5-7T32 250t7.5-18.5T58 224h396q11 0 18.5 7.5T480 250t-7.5 18-18.5 7z";
-const ltr$1s = false;
-const collection$1s = "SAP-icons-v5";
-const packageName$1s = "@ui5/webcomponents-icons";
-y$2(name$1t, { pathData: pathData$1s, ltr: ltr$1s, collection: collection$1s, packageName: packageName$1s });
+const name$1A = "less";
+const pathData$1z = "M464 224q16 0 16 16v32q0 16-16 16H48q-6 0-11-4.5T32 272v-32q0-7 5-11.5t11-4.5h416z";
+const ltr$1z = false;
+const collection$1z = "SAP-icons-v4";
+const packageName$1z = "@ui5/webcomponents-icons";
+y$2(name$1A, { pathData: pathData$1z, ltr: ltr$1z, collection: collection$1z, packageName: packageName$1z });
+const name$1z = "less";
+const pathData$1y = "M454 275H58q-11 0-18.5-7T32 250t7.5-18.5T58 224h396q11 0 18.5 7.5T480 250t-7.5 18-18.5 7z";
+const ltr$1y = false;
+const collection$1y = "SAP-icons-v5";
+const packageName$1y = "@ui5/webcomponents-icons";
+y$2(name$1z, { pathData: pathData$1y, ltr: ltr$1y, collection: collection$1y, packageName: packageName$1y });
 var SwitchDesign;
 (function(SwitchDesign2) {
   SwitchDesign2["Textual"] = "Textual";
@@ -3009,10 +3013,10 @@ function SwitchTemplate() {
   }, role: "switch", "aria-label": this.ariaLabelText, "aria-checked": this.checked, "aria-disabled": this.effectiveAriaDisabled, "aria-required": this.required, onClick: this._onclick, onKeyUp: this._onkeyup, onKeyDown: this._onkeydown, tabindex: this.effectiveTabIndex, title: this.tooltip, children: [jsx("div", { class: "ui5-switch-inner", children: jsx("div", { class: "ui5-switch-track", part: "slider", children: jsxs("div", { class: "ui5-switch-slider", children: [this.graphical ? jsxs(Fragment, { children: [jsx("span", { class: "ui5-switch-text ui5-switch-text--on", children: jsx(Icon$1, { name: checkIcon, class: "ui5-switch-icon-on" }) }), jsx("span", { class: "ui5-switch-text ui5-switch-text--off", children: jsx(Icon$1, { name: iconDecline, class: "ui5-switch-icon-off" }) })] }) : jsx(Fragment, { children: this.hasNoLabel ? jsxs(Fragment, { children: [jsx("span", { class: "ui5-switch-text ui5-switch-text--on ui5-switch-no-label-icon", part: "text-on", children: jsx(Icon$1, { name: this.sapNextIcon, class: "ui5-switch-no-label-icon-on" }) }), jsx("span", { class: "ui5-switch-text ui5-switch-text--off ui5-switch-no-label-icon", part: "text-off", children: jsx(Icon$1, { name: this.sapNextIcon, class: "ui5-switch-no-label-icon-off" }) })] }) : jsxs(Fragment, { children: [jsx("span", { class: "ui5-switch-text ui5-switch-text--on", part: "text-on", children: this._textOn }), jsx("span", { class: "ui5-switch-text ui5-switch-text--off", part: "text-off", children: this._textOff })] }) }), jsx("span", { class: "ui5-switch-handle", part: "handle" })] }) }) }), jsx("input", { type: "checkbox", checked: this.checked, class: "ui5-switch-input", "data-sap-no-tab-ref": true })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const switchCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{-webkit-tap-highlight-color:rgba(0,0,0,0)}:host(:not([hidden])){display:inline-block}.ui5-switch-root{position:relative;display:flex;align-items:center;width:var(--_ui5-v2-17-0_switch_width);height:var(--_ui5-v2-17-0_switch_height);min-width:var(--_ui5-v2-17-0_switch_min_width);cursor:pointer;outline:none;border-radius:var(--_ui5-v2-17-0-switch-root-border-radius)}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic){width:var(--_ui5-v2-17-0_switch_with_label_width);height:var(--_ui5-v2-17-0_switch_height)}.ui5-switch-root.ui5-switch--no-label{min-width:var(--_ui5-v2-17-0_switch_width)}.ui5-switch-inner{display:flex;align-items:center;justify-content:center;height:100%;width:100%;min-width:inherit;overflow:hidden;pointer-events:none;will-change:transform}:host([checked]) .ui5-switch-inner{border-radius:6.25rem;box-shadow:var(--_ui5-v2-17-0-switch-root-box-shadow)}.ui5-switch-track{display:flex;align-items:center;height:var(--_ui5-v2-17-0_switch_track_height);width:var(--_ui5-v2-17-0_switch_track_width);border:var(--_ui5-v2-17-0-switch-track-border);border-radius:var(--_ui5-v2-17-0_switch_track_border_radius);box-sizing:border-box;transition:var(--_ui5-v2-17-0_switch_track_transition)}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-track{height:var(--_ui5-v2-17-0_switch_track_with_label_height);width:var(--_ui5-v2-17-0_switch_track_with_label_width)}.ui5-switch-slider{position:relative;height:var(--_ui5-v2-17-0_switch_height);width:100%;transition:transform .1s ease-in;transform-origin:top left}.ui5-switch-slider>*:not(.ui5-switch-handle){display:var(--_ui5-v2-17-0-switch-slider-texts-display)}.ui5-switch-handle{position:absolute;display:flex;justify-content:center;align-items:center;width:var(--_ui5-v2-17-0_switch_handle_width);height:var(--_ui5-v2-17-0_switch_handle_height);border:var(--_ui5-v2-17-0_switch_handle_border);border-radius:var(--_ui5-v2-17-0_switch_handle_border_radius);box-sizing:border-box}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-handle{height:var(--_ui5-v2-17-0_switch_handle_with_label_height);width:var(--_ui5-v2-17-0_switch_handle_with_label_width)}.ui5-switch-text{display:flex;justify-content:center;position:absolute;z-index:var(--_ui5-v2-17-0_switch_text_z_index);min-width:var(--_ui5-v2-17-0_switch_text_min_width);font-size:var(--_ui5-v2-17-0_switch_text_font_size);font-family:var(--_ui5-v2-17-0-switch-text_font_family);text-transform:uppercase;text-align:center;white-space:nowrap;user-select:none;-webkit-user-select:none}.ui5-switch-handle,.ui5-switch-text{inset-inline-start:var(--_ui5-v2-17-0_switch_handle_left);top:50%;transform:translateY(-50%)}.ui5-switch-root:focus-visible:after,.ui5-switch--desktop.ui5-switch-root:focus-within:after{content:"";position:absolute;inset-inline-start:var(--_ui5-v2-17-0_switch_root_outline_left);inset-inline-end:var(--_ui5-v2-17-0_switch_root_outline_right);top:var(--_ui5-v2-17-0_switch_root_outline_top);bottom:var(--_ui5-v2-17-0_switch_root_outline_bottom);border:var(--_ui5-v2-17-0_switch_focus_outline);border-radius:var(--_ui5-v2-17-0_switch_root_after_boreder_radius);pointer-events:none;transition:var(--_ui5-v2-17-0_switch_track_transition);outline:var(--_ui5-v2-17-0_switch_root_after_outline)}.ui5-switch-root .ui5-switch-input{position:absolute;inset-inline-start:0;width:0;height:0;margin:0;visibility:hidden;appearance:none;-webkit-appearance:none}.ui5-switch-root.ui5-switch--disabled{opacity:var(--_ui5-v2-17-0_switch_disabled_opacity);cursor:default}.ui5-switch-root.ui5-switch--checked .ui5-switch-text--off{visibility:var(--_ui5-v2-17-0_switch_text_hidden)}.ui5-switch-root:not(.ui5-switch--checked) .ui5-switch-text--on{visibility:var(--_ui5-v2-17-0_switch_text_hidden)}.ui5-switch-root.ui5-switch--checked.ui5-switch--semantic .ui5-switch-text--on,.ui5-switch-root.ui5-switch--checked.ui5-switch--desktop.ui5-switch--no-label .ui5-switch-text--on{inset-inline-start:var(--_ui5-v2-17-0_switch_text_active_left)}.ui5-switch-root:not(.ui5-switch--checked).ui5-switch--semantic .ui5-switch-text--off,.ui5-switch-root:not(.ui5-switch--checked).ui5-switch--desktop.ui5-switch--no-label .ui5-switch-text--off{inset-inline-start:var(--_ui5-v2-17-0_switch_text_inactive_left);inset-inline-end:var(--_ui5-v2-17-0_switch_text_inactive_right)}.ui5-switch-root.ui5-switch--checked .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_active_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_active_border_color)}.ui5-switch-root:not(.ui5-switch--checked) .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_inactive_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_hover_active_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_hover_active_border_color)}.ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--disabled):not(.ui5-switch--checked):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_hover_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_hover_inactive_border_color)}.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_accept_border_color)}.ui5-switch-root.ui5-switch--semantic:not(.ui5-switch--checked) .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_reject_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_hover_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_hover_accept_border_color)}.ui5-switch--desktop.ui5-switch--semantic.ui5-switch-root:not(.ui5-switch--checked):not(.ui5-switch--disabled):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_hover_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_hover_reject_border_color)}.ui5-switch-root.ui5-switch--checked .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_active_background_color);border-color:var(--_ui5-v2-17-0_switch_track_active_border_color)}.ui5-switch-root:not(.ui5-switch--checked) .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_track_inactive_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_hover_active_background_color);border-color:var(--_ui5-v2-17-0_switch_track_hover_active_border_color)}.ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--checked):not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_hover_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_track_hover_inactive_border_color)}.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_accept_border_color)}.ui5-switch-root.ui5-switch--semantic:not(.ui5-switch--checked) .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_reject_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_hover_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_hover_accept_border_color)}.ui5-switch--desktop.ui5-switch--semantic.ui5-switch-root:not(.ui5-switch--checked):not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_hover_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_hover_reject_border_color)}.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_transform_with_label)}.ui5-switch-root.ui5-switch--checked .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_transform)}.ui5-switch-text .ui5-switch-text--on .ui5-switch-no-label-icon,.ui5-switch-root.ui5-switch--semantic .ui5-switch-text,.ui5-switch-root.ui5-switch--no-label .ui5-switch-text{display:flex;justify-content:center}.ui5-switch--no-label .ui5-switch-no-label-icon-on,.ui5-switch--no-label .ui5-switch-no-label-icon-off{width:var(--_ui5-v2-17-0_switch_icon_width);height:var(--_ui5-v2-17-0_switch_icon_height);display:var(--_ui5-v2-17-0_switch_track_icon_display)}.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-on,.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-off{width:var(--_ui5-v2-17-0_switch_icon_width);height:var(--_ui5-v2-17-0_switch_icon_height)}.ui5-switch-root .ui5-switch-text{font-family:var(--_ui5-v2-17-0_switch_text_font_family);font-size:var(--_ui5-v2-17-0_switch_text_font_size);width:var(--_ui5-v2-17-0_switch_text_width)}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-text{font-family:var(--_ui5-v2-17-0_switch_text_with_label_font_family);font-size:var(--_ui5-v2-17-0_switch_text_with_label_font_size);width:var(--_ui5-v2-17-0_switch_text_with_label_width)}:host([active]) .ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--disabled) .ui5-switch-track{background:var(--_ui5-v2-17-0-switch_track-off-active-background)}:host([active]) .ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0-switch_track-on-active-background)}.ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_off_hover_box_shadow)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_on_hover_box_shadow)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_semantic_off_hover_box_shadow)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_semantic_on_hover_box_shadow)}.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-on,.ui5-switch-root.ui5-switch--semantic .ui5-switch-text--on{color:var(--_ui5-v2-17-0_switch_text_semantic_accept_color)}.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-off,.ui5-switch-root.ui5-switch--semantic .ui5-switch-text--off{color:var(--_ui5-v2-17-0_switch_text_semantic_reject_color)}.ui5-switch-root .ui5-switch-text--on{color:var(--_ui5-v2-17-0_switch_text_active_color);overflow:var(--_ui5-v2-17-0_switch_text_overflow);text-overflow:ellipsis;inset-inline-start:var(--_ui5-v2-17-0_switch_text_active_left_alternate)}.ui5-switch-root .ui5-switch-text--off{color:var(--_ui5-v2-17-0_switch_text_inactive_color);overflow:var(--_ui5-v2-17-0_switch_text_overflow);text-overflow:ellipsis;inset-inline-start:var(--_ui5-v2-17-0_switch_text_inactive_left_alternate);inset-inline-end:var(--_ui5-v2-17-0_switch_text_inactive_right_alternate)}.ui5-switch-root.ui5-switch--safari .ui5-switch-text--on.ui5-switch-no-label-icon,.ui5-switch-root.ui5-switch--safari .ui5-switch-text--off.ui5-switch-no-label-icon{inset-inline-start:.1875rem}.ui5-switch-root .ui5-switch-no-label-icon-on,.ui5-switch-root .ui5-switch-icon-on{color:var(--_ui5-v2-17-0_switch_text_active_color)}.ui5-switch-root .ui5-switch-no-label-icon-off,.ui5-switch-root .ui5-switch-icon-off{color:var(--_ui5-v2-17-0_switch_text_inactive_color)}:dir(rtl).ui5-switch-root.ui5-switch--checked:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_rtl_transform_with_label)}:dir(rtl).ui5-switch-root.ui5-switch--checked .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_rtl_transform)}
 `;
-var __decorate$1s = function(decorators, target, key, desc) {
+var __decorate$1C = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -3105,46 +3109,46 @@ let Switch = Switch_1 = class Switch2 extends b$7 {
     return [A$3(this), this.hiddenText].join(" ").trim();
   }
 };
-__decorate$1s([
+__decorate$1C([
   s$9()
 ], Switch.prototype, "design", void 0);
-__decorate$1s([
+__decorate$1C([
   s$9({ type: Boolean })
 ], Switch.prototype, "checked", void 0);
-__decorate$1s([
+__decorate$1C([
   s$9({ type: Boolean })
 ], Switch.prototype, "disabled", void 0);
-__decorate$1s([
+__decorate$1C([
   s$9()
 ], Switch.prototype, "textOn", void 0);
-__decorate$1s([
+__decorate$1C([
   s$9()
 ], Switch.prototype, "textOff", void 0);
-__decorate$1s([
+__decorate$1C([
   s$9()
 ], Switch.prototype, "accessibleName", void 0);
-__decorate$1s([
+__decorate$1C([
   s$9()
 ], Switch.prototype, "accessibleNameRef", void 0);
-__decorate$1s([
+__decorate$1C([
   s$9()
 ], Switch.prototype, "tooltip", void 0);
-__decorate$1s([
+__decorate$1C([
   s$9({ type: Boolean })
 ], Switch.prototype, "required", void 0);
-__decorate$1s([
+__decorate$1C([
   s$9()
 ], Switch.prototype, "name", void 0);
-__decorate$1s([
+__decorate$1C([
   s$9()
 ], Switch.prototype, "value", void 0);
-__decorate$1s([
+__decorate$1C([
   s$9({ type: Boolean, noAttribute: true })
 ], Switch.prototype, "_cancelAction", void 0);
-__decorate$1s([
+__decorate$1C([
   i$b("@ui5/webcomponents")
 ], Switch, "i18nBundle", void 0);
-Switch = Switch_1 = __decorate$1s([
+Switch = Switch_1 = __decorate$1C([
   m$8({
     tag: "ui5-switch",
     formAssociated: true,
@@ -3191,10 +3195,10 @@ let f$6 = class f {
   }
 };
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const sliderBaseStyles = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host([disabled]){opacity:var(--_ui5-v2-17-0_slider_disabled_opacity);cursor:default;pointer-events:none}:host{box-sizing:border-box;cursor:pointer;vertical-align:top;width:100%}:host(:not([hidden])){display:inline-block}.ui5-slider-root{box-sizing:border-box;height:3.3125rem;outline:none;padding:var(--_ui5-v2-17-0_slider_padding);touch-action:none}.ui5-slider-inner{background-repeat:no-repeat;position:relative;min-width:var(--_ui5-v2-17-0_slider_inner_min_width);height:100%}.ui5-slider-progress-container{width:100%;background:var(--_ui5-v2-17-0_slider_progress_container_background);border:var(--_ui5-v2-17-0_slider_progress_border);border-radius:var(--_ui5-v2-17-0_slider_progress_border_radius);height:var(--_ui5-v2-17-0_slider_inner_height);position:relative;box-sizing:var(--_ui5-v2-17-0_slider_progress_box_sizing);top:var(--_ui5-v2-17-0_slider_progress_container_top)}.ui5-slider-progress-container:before,.ui5-slider-progress-container:after{display:var(--_ui5-v2-17-0_slider_progress_container_dot_display);content:"";position:absolute;border-radius:50%;width:var(--_ui5-v2-17-0_slider_start_end_point_size);height:var(--_ui5-v2-17-0_slider_start_end_point_size);top:var(--_ui5-v2-17-0_slider_start_end_point_top)}.ui5-slider-progress-container:before{inset-inline-start:var(--_ui5-v2-17-0_slider_start_end_point_left);background-color:var(--_ui5-v2-17-0_slider_progress_before_background);border:var(--_ui5-v2-17-0_slider_progress_before_border)}.ui5-slider-progress-container:after{inset-inline-end:var(--_ui5-v2-17-0_slider_start_end_point_left);background-color:var(--_ui5-v2-17-0_slider_progress_after_background);border:var(--_ui5-v2-17-0_slider_progress_after_border)}.ui5-slider-progress{background:var(--_ui5-v2-17-0_slider_progress_background);border-radius:var(--_ui5-v2-17-0_slider_progress_border_radius);height:var(--_ui5-v2-17-0_slider_progress_height);position:relative;outline:none;box-sizing:var(--_ui5-v2-17-0_slider_active_progress_box_sizing);border:var(--_ui5-v2-17-0_slider_active_progress_border);left:var(--_ui5-v2-17-0_slider_active_progress_left);top:var(--_ui5-v2-17-0_slider_active_progress_top)}.ui5-slider-tickmarks{list-style:none;padding:0;margin:0;top:var(--_ui5-v2-17-0_slider_tickmark_top);display:flex;box-sizing:border-box;width:100%;justify-content:space-between;position:absolute;z-index:1}.ui5-slider-tickmarks li{height:var(--_ui5-v2-17-0_slider_tickmark_height);border-inline-start:.0625rem solid var(--_ui5-v2-17-0_slider_tickmark_bg)}.ui5-slider-handle{background:var(--_ui5-v2-17-0_slider_handle_background);border:var(--_ui5-v2-17-0_slider_handle_border);border-radius:var(--_ui5-v2-17-0_slider_handle_border_radius);position:relative;outline:none;height:var(--_ui5-v2-17-0_slider_handle_height);width:var(--_ui5-v2-17-0_slider_handle_width);box-sizing:var(--_ui5-v2-17-0_slider_handle_box_sizing);display:flex;justify-content:center;align-items:center;z-index:2}[slider-icon]{display:var(--_ui5-v2-17-0_slider_handle_icon_display);color:var(--sapContent_Selected_ForegroundColor);width:var(--_ui5-v2-17-0_slider_handle_icon_size);height:var(--_ui5-v2-17-0_slider_handle_icon_size)}.ui5-slider-root .ui5-slider-handle:focus [slider-icon]{display:var(--_ui5-v2-17-0_range_slider_active_handle_icon_display)}.ui5-slider-progress-container:hover~.ui5-slider-handle:not(:focus),.ui5-slider-handle:hover{background:var(--_ui5-v2-17-0_slider_handle_hover_background);border:var(--_ui5-v2-17-0_slider_handle_hover_border)}.ui5-slider-root:focus .ui5-slider-inner .ui5-slider-handle,.ui5-slider-handle:focus{outline:var(--_ui5-v2-17-0_slider_handle_outline);outline-offset:var(--_ui5-v2-17-0_slider_handle_outline_offset);border:var(--_ui5-v2-17-0_slider_handle_focus_border);background:var(--_ui5-v2-17-0_slider_handle_background_focus)}.ui5-slider-handle.ui5-slider-handle--start:focus,.ui5-slider-handle--end:focus{border:var(--_ui5-v2-17-0_slider_handle_focus_border)}.ui5-slider-root:focus:hover .ui5-slider-handle,.ui5-slider-handle:focus:hover{border:var(--_ui5-v2-17-0_slider_handle_focus_border)}.ui5-slider-handle-container{position:absolute;margin-inline-start:calc(-1 * var(--_ui5-v2-17-0_slider_handle_width) / 2);top:var(--_ui5-v2-17-0_slider_handle_top)}:host(:not([hidden])) .ui5-slider-handle-container .ui5-slider-tooltip{display:flex;font-family:var(--sapFontFamily);justify-content:center;align-items:center;visibility:hidden;position:absolute;left:50%;transform:translate(-50%);bottom:var(--_ui5-v2-17-0_slider_tooltip_bottom);background:var(--_ui5-v2-17-0_slider_tooltip_background);border:var(--_ui5-v2-17-0_slider_tooltip_border);border-radius:var(--_ui5-v2-17-0_slider_tooltip_border_radius);box-shadow:var(--_ui5-v2-17-0_slider_tooltip_box_shadow);font-size:var(--_ui5-v2-17-0_slider_tooltip_fontsize);color:var(--_ui5-v2-17-0_slider_tooltip_color);height:var(--_ui5-v2-17-0_slider_tooltip_height);min-width:var(--_ui5-v2-17-0_slider_tooltip_min_width);padding:var(--_ui5-v2-17-0_slider_tooltip_padding);box-sizing:var(--_ui5-v2-17-0_slider_tooltip_border_box)}:host(:not([hidden])):host([editable-tooltip]) .ui5-slider-handle-container .ui5-slider-tooltip{border:none;background:none;box-shadow:none}:host([editable-tooltip]) .ui5-slider-tooltip{padding:0;box-shadow:none}.ui5-slider-tooltip [ui5-input]{width:100%;text-align:center}.ui5-slider-tooltip-value{position:relative;display:flex;justify-content:center;align-items:center}.ui5-slider-labels{position:absolute;top:1.25rem;margin:0;padding:0;white-space:nowrap;height:1rem;width:100%;display:flex;justify-content:space-between}.ui5-slider-labels li{position:relative;list-style:none;margin:0;text-align:center;display:inline-block;font-family:var(--sapFontFamily);font-size:var(--_ui5-v2-17-0_slider_label_fontsize);padding-top:0;box-sizing:border-box;width:.0625rem;visibility:hidden}.ui5-slider-labels li:after{content:attr(data-counter);position:absolute;top:0;visibility:visible;display:inline-block;width:2rem;color:var(--_ui5-v2-17-0_slider_label_color);transform:translate(-50%)}.ui5-slider-hidden-labels li:not(:first-child):not(:last-child):after{visibility:hidden}.ui5-slider-handle:focus .ui5-slider-tooltip{bottom:var(--_ui5-v2-17-0_slider_handle_focused_tooltip_distance)}.ui5-slider-tickmarks li.ui5-slider-tickmark-in-range{border-inline-start:1px solid var(--_ui5-v2-17-0_slider_tickmark_in_range_bg)}:host([show-tickmarks]) .ui5-slider-progress{height:var(--_ui5-v2-17-0_slider_no_tickmarks_progress_height);border:var(--_ui5-v2-17-0_slider_no_tickmarks_active_progress_border);left:var(--_ui5-v2-17-0_slider_no_tickmarks_active_progress_left);top:var(--_ui5-v2-17-0_slider_no_tickmarks_active_progress_top)}:host([show-tickmarks]) .ui5-slider-progress-container{top:var(--_ui5-v2-17-0_slider_no_tickmarks_progress_container_top)}.ui5-slider-handle:focus:after{content:"";display:var(--_ui5-v2-17-0_slider_handle_focus_visibility);width:calc(100% + (var(--sapContent_FocusWidth) * 2) + 2px);height:calc(100% + (var(--sapContent_FocusWidth) * 2) + 2px);border:var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);position:absolute;border-radius:var(--_ui5-v2-17-0_slider_handle_border_radius);pointer-events:none}
 `;
-var __decorate$1r = function(decorators, target, key, desc) {
+var __decorate$1B = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -3724,52 +3728,52 @@ class SliderBase2 extends b$7 {
     return "";
   }
 };
-__decorate$1r([
+__decorate$1B([
   s$9({ type: Number })
 ], SliderBase.prototype, "min", void 0);
-__decorate$1r([
+__decorate$1B([
   s$9({ type: Number })
 ], SliderBase.prototype, "max", void 0);
-__decorate$1r([
+__decorate$1B([
   s$9()
 ], SliderBase.prototype, "name", void 0);
-__decorate$1r([
+__decorate$1B([
   s$9({ type: Number })
 ], SliderBase.prototype, "step", void 0);
-__decorate$1r([
+__decorate$1B([
   s$9({ type: Number })
 ], SliderBase.prototype, "labelInterval", void 0);
-__decorate$1r([
+__decorate$1B([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "showTickmarks", void 0);
-__decorate$1r([
+__decorate$1B([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "showTooltip", void 0);
-__decorate$1r([
+__decorate$1B([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "editableTooltip", void 0);
-__decorate$1r([
+__decorate$1B([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "disabled", void 0);
-__decorate$1r([
+__decorate$1B([
   s$9()
 ], SliderBase.prototype, "accessibleName", void 0);
-__decorate$1r([
+__decorate$1B([
   s$9({ type: Number })
 ], SliderBase.prototype, "value", void 0);
-__decorate$1r([
+__decorate$1B([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "_tooltipsOpen", void 0);
-__decorate$1r([
+__decorate$1B([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "_labelsOverlapping", void 0);
-__decorate$1r([
+__decorate$1B([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "_hiddenTickmarks", void 0);
-__decorate$1r([
+__decorate$1B([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "_isInputValueValid", void 0);
-SliderBase = SliderBase_1 = __decorate$1r([
+SliderBase = SliderBase_1 = __decorate$1B([
   l$e("change", {
     bubbles: true
   }),
@@ -3786,18 +3790,18 @@ SliderBase = SliderBase_1 = __decorate$1r([
    */
 ], SliderBase);
 const SliderBase$1 = SliderBase;
-const name$1s = "direction-arrows";
-const pathData$1r = "M507 244q5 5 5 12 0 6-5 11L394 379q-5 5-12 5-6 0-11-5t-5-11V144q0-12 10-15 2-1 6-1 8 0 12 4zM135 129q10 3 10 15v224q0 6-4.5 11t-11.5 5q-6 0-11-5L5 267q-5-5-5-11 0-7 5-12l113-112q4-4 11-4 4 0 6 1z";
-const ltr$1r = false;
-const collection$1r = "SAP-icons-v4";
-const packageName$1r = "@ui5/webcomponents-icons";
-y$2(name$1s, { pathData: pathData$1r, ltr: ltr$1r, collection: collection$1r, packageName: packageName$1r });
-const name$1r = "direction-arrows";
-const pathData$1q = "M135 128q11 0 18 7.5t7 18.5v204q0 11-8 18.5t-18 7.5-17-7L8 275q-8-8-8-19t8-19l109-102q7-7 18-7zm369 109q8 8 8 19t-8 19L395 377q-7 7-17 7t-18-7.5-8-18.5V154q0-12 8-19t19-7q9 0 16 7z";
-const ltr$1q = false;
-const collection$1q = "SAP-icons-v5";
-const packageName$1q = "@ui5/webcomponents-icons";
-y$2(name$1r, { pathData: pathData$1q, ltr: ltr$1q, collection: collection$1q, packageName: packageName$1q });
+const name$1y = "direction-arrows";
+const pathData$1x = "M507 244q5 5 5 12 0 6-5 11L394 379q-5 5-12 5-6 0-11-5t-5-11V144q0-12 10-15 2-1 6-1 8 0 12 4zM135 129q10 3 10 15v224q0 6-4.5 11t-11.5 5q-6 0-11-5L5 267q-5-5-5-11 0-7 5-12l113-112q4-4 11-4 4 0 6 1z";
+const ltr$1x = false;
+const collection$1x = "SAP-icons-v4";
+const packageName$1x = "@ui5/webcomponents-icons";
+y$2(name$1y, { pathData: pathData$1x, ltr: ltr$1x, collection: collection$1x, packageName: packageName$1x });
+const name$1x = "direction-arrows";
+const pathData$1w = "M135 128q11 0 18 7.5t7 18.5v204q0 11-8 18.5t-18 7.5-17-7L8 275q-8-8-8-19t8-19l109-102q7-7 18-7zm369 109q8 8 8 19t-8 19L395 377q-7 7-17 7t-18-7.5-8-18.5V154q0-12 8-19t19-7q9 0 16 7z";
+const ltr$1w = false;
+const collection$1w = "SAP-icons-v5";
+const packageName$1w = "@ui5/webcomponents-icons";
+y$2(name$1x, { pathData: pathData$1w, ltr: ltr$1w, collection: collection$1w, packageName: packageName$1w });
 const directionArrows = "direction-arrows";
 function SliderBaseTemplate(hooks) {
   return jsxs("div", { class: {
@@ -4138,59 +4142,59 @@ var InputType;
   InputType2["Search"] = "Search";
 })(InputType || (InputType = {}));
 const InputType$1 = InputType;
-const name$1q = "error";
-const pathData$1p = "M512 256q0 53-20.5 100t-55 81.5-81 54.5-99.5 20-100-20.5-81.5-55T20 355 0 256q0-54 20-100.5t55-81T156.5 20 256 0t99.5 20T437 75t55 81.5 20 99.5zM399 364q6-6 0-12l-86-86q-6-6 0-12l81-81q6-6 0-12l-37-37q-2-2-6-2t-6 2l-83 82q-1 3-6 3-3 0-6-3l-84-83q-1-2-6-2-4 0-6 2l-37 37q-6 6 0 12l83 82q6 6 0 12l-83 82q-2 2-2.5 6t2.5 6l36 37q4 2 6 2 4 0 6-2l85-84q2-2 6-2t6 2l88 88q4 2 6 2t6-2z";
-const ltr$1p = false;
+const name$1w = "error";
+const pathData$1v = "M512 256q0 53-20.5 100t-55 81.5-81 54.5-99.5 20-100-20.5-81.5-55T20 355 0 256q0-54 20-100.5t55-81T156.5 20 256 0t99.5 20T437 75t55 81.5 20 99.5zM399 364q6-6 0-12l-86-86q-6-6 0-12l81-81q6-6 0-12l-37-37q-2-2-6-2t-6 2l-83 82q-1 3-6 3-3 0-6-3l-84-83q-1-2-6-2-4 0-6 2l-37 37q-6 6 0 12l83 82q6 6 0 12l-83 82q-2 2-2.5 6t2.5 6l36 37q4 2 6 2 4 0 6-2l85-84q2-2 6-2t6 2l88 88q4 2 6 2t6-2z";
+const ltr$1v = false;
 const accData$l = ICON_ERROR;
+const collection$1v = "SAP-icons-v4";
+const packageName$1v = "@ui5/webcomponents-icons";
+y$2(name$1w, { pathData: pathData$1v, ltr: ltr$1v, accData: accData$l, collection: collection$1v, packageName: packageName$1v });
+const name$1v = "error";
+const pathData$1u = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm45 256l74-73q9-11 9-23 0-13-9.5-22.5T352 128q-12 0-23 9l-73 74-73-74q-10-9-23-9t-22.5 9.5T128 160q0 12 9 23l74 73-74 73q-9 10-9 23t9.5 22.5T160 384t23-9l73-74 73 74q11 9 23 9 13 0 22.5-9.5T384 352t-9-23z";
+const ltr$1u = false;
+const accData$k = ICON_ERROR;
+const collection$1u = "SAP-icons-v5";
+const packageName$1u = "@ui5/webcomponents-icons";
+y$2(name$1v, { pathData: pathData$1u, ltr: ltr$1u, accData: accData$k, collection: collection$1u, packageName: packageName$1u });
+const iconError = "error";
+const name$1u = "alert";
+const pathData$1t = "M501 374q5 10 7.5 19.5T512 412v5q0 31-23 47t-50 16H74q-13 0-26-4t-23.5-12-17-20T0 417q0-13 4-22.5t9-20.5L198 38q21-38 61-38 38 0 59 38zM257 127q-13 0-23.5 8T223 161q1 7 2 12 3 25 4.5 48t3.5 61q0 11 7.5 16t16.5 5q22 0 23-21l2-36 9-85q0-18-10.5-26t-23.5-8zm0 299q20 0 31.5-12t11.5-32q0-19-11.5-31T257 339t-31.5 12-11.5 31q0 20 11.5 32t31.5 12z";
+const ltr$1t = false;
+const collection$1t = "SAP-icons-v4";
+const packageName$1t = "@ui5/webcomponents-icons";
+y$2(name$1u, { pathData: pathData$1t, ltr: ltr$1t, collection: collection$1t, packageName: packageName$1t });
+const name$1t = "alert";
+const pathData$1s = "M505 399q7 13 7 27 0 21-15.5 37.5T456 480H56q-25 0-40.5-16.5T0 426q0-14 7-27L208 59q17-27 48-27 14 0 27 6.5T304 59zM288 176q0-14-9-23t-23-9-23 9-9 23v96q0 14 9 23t23 9 23-9 9-23v-96zm-32 240q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
+const ltr$1s = false;
+const collection$1s = "SAP-icons-v5";
+const packageName$1s = "@ui5/webcomponents-icons";
+y$2(name$1t, { pathData: pathData$1s, ltr: ltr$1s, collection: collection$1s, packageName: packageName$1s });
+const iconAlert = "alert";
+const name$1s = "sys-enter-2";
+const pathData$1r = "M512 256q0 54-20 100.5t-54.5 81T356 492t-100 20q-54 0-100.5-20t-81-55T20 355.5 0 256t20.5-100 55-81.5T157 20t99-20q53 0 100 20t81.5 54.5T492 156t20 100zm-118-87q4-8-1-13l-36-36q-3-4-8-4t-8 5L237 294q-3 1-4 0l-70-52q-4-3-7-3t-4.5 2-2.5 3l-29 41q-6 8 2 14l113 95q2 2 7 2t8-4z";
+const ltr$1r = true;
+const collection$1r = "SAP-icons-v4";
+const packageName$1r = "@ui5/webcomponents-icons";
+y$2(name$1s, { pathData: pathData$1r, ltr: ltr$1r, collection: collection$1r, packageName: packageName$1r });
+const name$1r = "sys-enter-2";
+const pathData$1q = "M256 0q53 0 100 20t81.5 54.5T492 156t20 100-20 100-54.5 81.5T356 492t-100 20-100-20-81.5-54.5T20 356 0 256t20-100 54.5-81.5T156 20 256 0zm150 183q10-9 10-23 0-13-9.5-22.5T384 128t-22 9L186 308l-68-63q-9-9-22-9t-22.5 9.5T64 268q0 15 10 24l91 83q9 9 21 9 13 0 23-9z";
+const ltr$1q = true;
+const collection$1q = "SAP-icons-v5";
+const packageName$1q = "@ui5/webcomponents-icons";
+y$2(name$1r, { pathData: pathData$1q, ltr: ltr$1q, collection: collection$1q, packageName: packageName$1q });
+const iconSysEnter2 = "sys-enter-2";
+const name$1q = "information";
+const pathData$1p = "M0 256q0-53 20.5-100t55-81.5T157 20t99-20q54 0 100.5 20t81 55 54.5 81.5 20 99.5q0 54-20 100.5t-54.5 81T356 492t-100 20q-54 0-100.5-20t-81-55T20 355.5 0 256zm192 112v33h128v-33h-32V215q0-6-7-6h-88v31h32v128h-33zm34-201q14 11 30 11 17 0 29.5-11.5T298 138q0-19-13-31-12-12-29-12-19 0-30.5 12.5T214 138q0 17 12 29z";
+const ltr$1p = false;
 const collection$1p = "SAP-icons-v4";
 const packageName$1p = "@ui5/webcomponents-icons";
-y$2(name$1q, { pathData: pathData$1p, ltr: ltr$1p, accData: accData$l, collection: collection$1p, packageName: packageName$1p });
-const name$1p = "error";
-const pathData$1o = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm45 256l74-73q9-11 9-23 0-13-9.5-22.5T352 128q-12 0-23 9l-73 74-73-74q-10-9-23-9t-22.5 9.5T128 160q0 12 9 23l74 73-74 73q-9 10-9 23t9.5 22.5T160 384t23-9l73-74 73 74q11 9 23 9 13 0 22.5-9.5T384 352t-9-23z";
+y$2(name$1q, { pathData: pathData$1p, ltr: ltr$1p, collection: collection$1p, packageName: packageName$1p });
+const name$1p = "information";
+const pathData$1o = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm0 160q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9zm32 64q0-14-9-23t-23-9-23 9-9 23v160q0 14 9 23t23 9 23-9 9-23V224z";
 const ltr$1o = false;
-const accData$k = ICON_ERROR;
 const collection$1o = "SAP-icons-v5";
 const packageName$1o = "@ui5/webcomponents-icons";
-y$2(name$1p, { pathData: pathData$1o, ltr: ltr$1o, accData: accData$k, collection: collection$1o, packageName: packageName$1o });
-const iconError = "error";
-const name$1o = "alert";
-const pathData$1n = "M501 374q5 10 7.5 19.5T512 412v5q0 31-23 47t-50 16H74q-13 0-26-4t-23.5-12-17-20T0 417q0-13 4-22.5t9-20.5L198 38q21-38 61-38 38 0 59 38zM257 127q-13 0-23.5 8T223 161q1 7 2 12 3 25 4.5 48t3.5 61q0 11 7.5 16t16.5 5q22 0 23-21l2-36 9-85q0-18-10.5-26t-23.5-8zm0 299q20 0 31.5-12t11.5-32q0-19-11.5-31T257 339t-31.5 12-11.5 31q0 20 11.5 32t31.5 12z";
-const ltr$1n = false;
-const collection$1n = "SAP-icons-v4";
-const packageName$1n = "@ui5/webcomponents-icons";
-y$2(name$1o, { pathData: pathData$1n, ltr: ltr$1n, collection: collection$1n, packageName: packageName$1n });
-const name$1n = "alert";
-const pathData$1m = "M505 399q7 13 7 27 0 21-15.5 37.5T456 480H56q-25 0-40.5-16.5T0 426q0-14 7-27L208 59q17-27 48-27 14 0 27 6.5T304 59zM288 176q0-14-9-23t-23-9-23 9-9 23v96q0 14 9 23t23 9 23-9 9-23v-96zm-32 240q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
-const ltr$1m = false;
-const collection$1m = "SAP-icons-v5";
-const packageName$1m = "@ui5/webcomponents-icons";
-y$2(name$1n, { pathData: pathData$1m, ltr: ltr$1m, collection: collection$1m, packageName: packageName$1m });
-const iconAlert = "alert";
-const name$1m = "sys-enter-2";
-const pathData$1l = "M512 256q0 54-20 100.5t-54.5 81T356 492t-100 20q-54 0-100.5-20t-81-55T20 355.5 0 256t20.5-100 55-81.5T157 20t99-20q53 0 100 20t81.5 54.5T492 156t20 100zm-118-87q4-8-1-13l-36-36q-3-4-8-4t-8 5L237 294q-3 1-4 0l-70-52q-4-3-7-3t-4.5 2-2.5 3l-29 41q-6 8 2 14l113 95q2 2 7 2t8-4z";
-const ltr$1l = true;
-const collection$1l = "SAP-icons-v4";
-const packageName$1l = "@ui5/webcomponents-icons";
-y$2(name$1m, { pathData: pathData$1l, ltr: ltr$1l, collection: collection$1l, packageName: packageName$1l });
-const name$1l = "sys-enter-2";
-const pathData$1k = "M256 0q53 0 100 20t81.5 54.5T492 156t20 100-20 100-54.5 81.5T356 492t-100 20-100-20-81.5-54.5T20 356 0 256t20-100 54.5-81.5T156 20 256 0zm150 183q10-9 10-23 0-13-9.5-22.5T384 128t-22 9L186 308l-68-63q-9-9-22-9t-22.5 9.5T64 268q0 15 10 24l91 83q9 9 21 9 13 0 23-9z";
-const ltr$1k = true;
-const collection$1k = "SAP-icons-v5";
-const packageName$1k = "@ui5/webcomponents-icons";
-y$2(name$1l, { pathData: pathData$1k, ltr: ltr$1k, collection: collection$1k, packageName: packageName$1k });
-const iconSysEnter2 = "sys-enter-2";
-const name$1k = "information";
-const pathData$1j = "M0 256q0-53 20.5-100t55-81.5T157 20t99-20q54 0 100.5 20t81 55 54.5 81.5 20 99.5q0 54-20 100.5t-54.5 81T356 492t-100 20q-54 0-100.5-20t-81-55T20 355.5 0 256zm192 112v33h128v-33h-32V215q0-6-7-6h-88v31h32v128h-33zm34-201q14 11 30 11 17 0 29.5-11.5T298 138q0-19-13-31-12-12-29-12-19 0-30.5 12.5T214 138q0 17 12 29z";
-const ltr$1j = false;
-const collection$1j = "SAP-icons-v4";
-const packageName$1j = "@ui5/webcomponents-icons";
-y$2(name$1k, { pathData: pathData$1j, ltr: ltr$1j, collection: collection$1j, packageName: packageName$1j });
-const name$1j = "information";
-const pathData$1i = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm0 160q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9zm32 64q0-14-9-23t-23-9-23 9-9 23v160q0 14 9 23t23 9 23-9 9-23V224z";
-const ltr$1i = false;
-const collection$1i = "SAP-icons-v5";
-const packageName$1i = "@ui5/webcomponents-icons";
-y$2(name$1j, { pathData: pathData$1i, ltr: ltr$1i, collection: collection$1i, packageName: packageName$1i });
+y$2(name$1p, { pathData: pathData$1o, ltr: ltr$1o, collection: collection$1o, packageName: packageName$1o });
 const iconInformation = "information";
 var PopoverHorizontalAlign;
 (function(PopoverHorizontalAlign2) {
@@ -4373,18 +4377,18 @@ const _updateTopModalPopup = () => {
   }
 };
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const popupStlyes = `:host{min-width:1px;overflow:visible;border:none;inset:unset;margin:0;padding:0}:host(:focus-visible){outline:none}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const popupBlockLayerStyles = `.ui5-block-layer{position:fixed;z-index:-1;display:none;inset:-500px;outline:none;pointer-events:all}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const globalStyles = `.ui5-popup-scroll-blocker{overflow:hidden}
 `;
-var __decorate$1q = function(decorators, target, key, desc) {
+var __decorate$1A = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -4760,52 +4764,52 @@ let Popup = Popup_1 = class Popup2 extends b$7 {
     };
   }
 };
-__decorate$1q([
+__decorate$1A([
   s$9()
 ], Popup.prototype, "initialFocus", void 0);
-__decorate$1q([
+__decorate$1A([
   s$9({ type: Boolean })
 ], Popup.prototype, "preventFocusRestore", void 0);
-__decorate$1q([
+__decorate$1A([
   s$9()
 ], Popup.prototype, "accessibleName", void 0);
-__decorate$1q([
+__decorate$1A([
   s$9()
 ], Popup.prototype, "accessibleNameRef", void 0);
-__decorate$1q([
+__decorate$1A([
   s$9()
 ], Popup.prototype, "accessibleRole", void 0);
-__decorate$1q([
+__decorate$1A([
   s$9()
 ], Popup.prototype, "accessibleDescription", void 0);
-__decorate$1q([
+__decorate$1A([
   s$9()
 ], Popup.prototype, "accessibleDescriptionRef", void 0);
-__decorate$1q([
+__decorate$1A([
   s$9({ noAttribute: true })
 ], Popup.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$1q([
+__decorate$1A([
   s$9()
 ], Popup.prototype, "mediaRange", void 0);
-__decorate$1q([
+__decorate$1A([
   s$9({ type: Boolean })
 ], Popup.prototype, "preventInitialFocus", void 0);
-__decorate$1q([
+__decorate$1A([
   s$9({ type: Boolean, noAttribute: true })
 ], Popup.prototype, "isTopModalPopup", void 0);
-__decorate$1q([
+__decorate$1A([
   d$8({ type: HTMLElement, "default": true })
 ], Popup.prototype, "content", void 0);
-__decorate$1q([
+__decorate$1A([
   s$9({ type: Boolean })
 ], Popup.prototype, "onPhone", void 0);
-__decorate$1q([
+__decorate$1A([
   s$9({ type: Boolean })
 ], Popup.prototype, "onDesktop", void 0);
-__decorate$1q([
+__decorate$1A([
   s$9({ type: Boolean })
 ], Popup.prototype, "open", null);
-Popup = Popup_1 = __decorate$1q([
+Popup = Popup_1 = __decorate$1A([
   m$8({
     renderer: y$5,
     styles: [popupStlyes, popupBlockLayerStyles],
@@ -5005,10 +5009,10 @@ function titleInner() {
   return jsx("span", { id: `${this._id}-inner`, children: jsx("slot", {}) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const titleCss = `:host(:not([hidden])){display:block;cursor:text}:host{max-width:100%;color:var(--sapGroup_TitleTextColor);font-size:var(--sapFontHeader5Size);font-family:var(--sapFontHeaderFamily);text-shadow:var(--sapContent_TextShadow)}.ui5-title-root{display:inline-block;position:relative;font-weight:400;font-size:inherit;box-sizing:border-box;overflow:hidden;text-overflow:ellipsis;max-width:100%;vertical-align:bottom;-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;margin:0;cursor:inherit}:host{white-space:pre-line}:host([wrapping-type="None"]){white-space:nowrap}.ui5-title-root,:host ::slotted(*){white-space:inherit}::slotted(*){font-size:inherit;font-family:inherit;text-shadow:inherit}:host([size="H1"]){font-size:var(--sapFontHeader1Size)}:host([size="H2"]){font-size:var(--sapFontHeader2Size)}:host([size="H3"]){font-size:var(--sapFontHeader3Size)}:host([size="H4"]){font-size:var(--sapFontHeader4Size)}:host([size="H5"]){font-size:var(--sapFontHeader5Size)}:host([size="H6"]){font-size:var(--sapFontHeader6Size)}
 `;
-var __decorate$1p = function(decorators, target, key, desc) {
+var __decorate$1z = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -5040,16 +5044,16 @@ let Title = class Title2 extends b$7 {
     return this.level === TitleLevel$1.H6;
   }
 };
-__decorate$1p([
+__decorate$1z([
   s$9()
 ], Title.prototype, "wrappingType", void 0);
-__decorate$1p([
+__decorate$1z([
   s$9()
 ], Title.prototype, "level", void 0);
-__decorate$1p([
+__decorate$1z([
   s$9()
 ], Title.prototype, "size", void 0);
-Title = __decorate$1p([
+Title = __decorate$1z([
   m$8({
     tag: "ui5-title",
     renderer: y$5,
@@ -5072,14 +5076,14 @@ function afterContent$1() {
   return jsx(Fragment, { children: this._displayFooter && !!this.footer.length && jsx("footer", { class: "ui5-popup-footer-root", part: "footer", children: jsx("slot", { name: "footer" }) }) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const PopupsCommonCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{position:fixed;background:var(--sapGroup_ContentBackground);border-radius:var(--_ui5-v2-17-0_popup_border_radius);min-height:2rem;box-sizing:border-box}:host([open]){display:flex}.ui5-popup-root{background:inherit;border-radius:inherit;width:100%;box-sizing:border-box;display:flex;flex-direction:column;overflow:hidden;flex:1 1 auto;outline:none}.ui5-popup-root .ui5-popup-header-root{box-shadow:var(--_ui5-v2-17-0_popup_header_shadow);border-bottom:var(--_ui5-v2-17-0_popup_header_border)}.ui5-popup-content{color:var(--sapTextColor);flex:auto}.ui5-popup-content:focus{outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);outline-offset:calc(-1 * var(--sapContent_FocusWidth));border-radius:var(--_ui5-v2-17-0_popup_border_radius)}.ui5-popup-footer-root{background:var(--sapPageFooter_Background);border-top:1px solid var(--sapPageFooter_BorderColor);color:var(--sapPageFooter_TextColor)}.ui5-popup-header-root,.ui5-popup-footer-root,:host([header-text]) .ui5-popup-header-text{margin:0;display:flex;justify-content:center;align-items:center}.ui5-popup-header-root .ui5-popup-header-text{font-weight:var(--sapFontHeaderFamily);font-size:var(--sapFontHeader5Size);color:var(--sapPageHeader_TextColor)}.ui5-popup-content{overflow:auto;box-sizing:border-box}:host([header-text]) .ui5-popup-header-text{min-height:var(--_ui5-v2-17-0_popup_default_header_height);max-height:var(--_ui5-v2-17-0_popup_default_header_height);line-height:var(--_ui5-v2-17-0_popup_default_header_height);text-overflow:ellipsis;overflow:hidden;white-space:nowrap;max-width:100%;display:inline-flex;justify-content:var(--_ui5-v2-17-0_popup_header_prop_header_text_alignment)}:host([header-text]) .ui5-popup-header-root{justify-content:var(--_ui5-v2-17-0_popup_header_prop_header_text_alignment)}:host(:not([header-text])) .ui5-popup-header-text{display:none}:host([media-range="S"]) .ui5-popup-content{padding:1rem var(--_ui5-v2-17-0_popup_content_padding_s)}:host([media-range="M"]) .ui5-popup-content,:host([media-range="L"]) .ui5-popup-content{padding:1rem var(--_ui5-v2-17-0_popup_content_padding_m_l)}:host([media-range="XL"]) .ui5-popup-content{padding:1rem var(--_ui5-v2-17-0_popup_content_padding_xl)}.ui5-popup-header-root{background:var(--sapPageHeader_Background)}:host([media-range="S"]) .ui5-popup-header-root,:host([media-range="S"]) .ui5-popup-footer-root{padding-left:var(--_ui5-v2-17-0_popup_header_footer_padding_s);padding-right:var(--_ui5-v2-17-0_popup_header_footer_padding_s)}:host([media-range="M"]) .ui5-popup-header-root,:host([media-range="L"]) .ui5-popup-header-root,:host([media-range="M"]) .ui5-popup-footer-root,:host([media-range="L"]) .ui5-popup-footer-root{padding-left:var(--_ui5-v2-17-0_popup_header_footer_padding_m_l);padding-right:var(--_ui5-v2-17-0_popup_header_footer_padding_m_l)}:host([media-range="XL"]) .ui5-popup-header-root,:host([media-range="XL"]) .ui5-popup-footer-root{padding-left:var(--_ui5-v2-17-0_popup_header_footer_padding_xl);padding-right:var(--_ui5-v2-17-0_popup_header_footer_padding_xl)}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const PopoverCss = `:host{box-shadow:var(--_ui5-v2-17-0_popover_box_shadow);background-color:var(--_ui5-v2-17-0_popover_background);max-width:calc(100vw - (100vw - 100%) - 2 * var(--_ui5-v2-17-0_popup_viewport_margin))}:host([hide-arrow]){box-shadow:var(--_ui5-v2-17-0_popover_no_arrow_box_shadow)}:host([actual-placement="Bottom"]) .ui5-popover-arrow{left:calc(50% - .5625rem);top:-.5rem;height:.5rem}:host([actual-placement="Bottom"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_upward_arrow_margin)}:host([actual-placement="Left"]) .ui5-popover-arrow{top:calc(50% - .5625rem);right:-.5625rem;width:.5625rem}:host([actual-placement="Left"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_right_arrow_margin)}:host([actual-placement="Top"]) .ui5-popover-arrow{left:calc(50% - .5625rem);height:.5625rem;top:100%}:host([actual-placement="Top"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_downward_arrow_margin)}:host(:not([actual-placement])) .ui5-popover-arrow,:host([actual-placement="Right"]) .ui5-popover-arrow{left:-.5625rem;top:calc(50% - .5625rem);width:.5625rem;height:1rem}:host(:not([actual-placement])) .ui5-popover-arrow:after,:host([actual-placement="Right"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_left_arrow_margin)}:host([hide-arrow]) .ui5-popover-arrow{display:none}.ui5-popover-root{min-width:6.25rem}.ui5-popover-arrow{pointer-events:none;display:block;width:1rem;height:1rem;position:absolute;overflow:hidden}.ui5-popover-arrow:after{content:"";display:block;width:.7rem;height:.7rem;background-color:var(--_ui5-v2-17-0_popover_background);box-shadow:var(--_ui5-v2-17-0_popover_box_shadow);transform:rotate(-45deg)}:host([modal])::backdrop{background-color:var(--_ui5-v2-17-0_popup_block_layer_background);opacity:var(--_ui5-v2-17-0_popup_block_layer_opacity)}:host([modal]) .ui5-block-layer{display:block}
 `;
-var __decorate$1o = function(decorators, target, key, desc) {
+var __decorate$1y = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -5629,52 +5633,52 @@ let Popover = Popover_1 = class Popover2 extends Popup$1 {
     }
   }
 };
-__decorate$1o([
+__decorate$1y([
   s$9()
 ], Popover.prototype, "headerText", void 0);
-__decorate$1o([
+__decorate$1y([
   s$9()
 ], Popover.prototype, "placement", void 0);
-__decorate$1o([
+__decorate$1y([
   s$9()
 ], Popover.prototype, "horizontalAlign", void 0);
-__decorate$1o([
+__decorate$1y([
   s$9()
 ], Popover.prototype, "verticalAlign", void 0);
-__decorate$1o([
+__decorate$1y([
   s$9({ type: Boolean })
 ], Popover.prototype, "modal", void 0);
-__decorate$1o([
+__decorate$1y([
   s$9({ type: Boolean })
 ], Popover.prototype, "hideArrow", void 0);
-__decorate$1o([
+__decorate$1y([
   s$9({ type: Boolean })
 ], Popover.prototype, "allowTargetOverlap", void 0);
-__decorate$1o([
+__decorate$1y([
   s$9({ type: Number, noAttribute: true })
 ], Popover.prototype, "arrowTranslateX", void 0);
-__decorate$1o([
+__decorate$1y([
   s$9({ type: Number, noAttribute: true })
 ], Popover.prototype, "arrowTranslateY", void 0);
-__decorate$1o([
+__decorate$1y([
   s$9()
 ], Popover.prototype, "actualPlacement", void 0);
-__decorate$1o([
+__decorate$1y([
   s$9({ type: Number, noAttribute: true })
 ], Popover.prototype, "_maxHeight", void 0);
-__decorate$1o([
+__decorate$1y([
   s$9({ type: Number, noAttribute: true })
 ], Popover.prototype, "_maxWidth", void 0);
-__decorate$1o([
+__decorate$1y([
   d$8({ type: HTMLElement })
 ], Popover.prototype, "header", void 0);
-__decorate$1o([
+__decorate$1y([
   d$8({ type: HTMLElement })
 ], Popover.prototype, "footer", void 0);
-__decorate$1o([
+__decorate$1y([
   s$9({ converter: e$8 })
 ], Popover.prototype, "opener", null);
-Popover = Popover_1 = __decorate$1o([
+Popover = Popover_1 = __decorate$1y([
   m$8({
     tag: "ui5-popover",
     styles: [
@@ -5697,11 +5701,11 @@ function InputPopoverTemplate(hooks) {
   return jsxs(Fragment, { children: [this._effectiveShowSuggestions && ((_a2 = this.Suggestions) == null ? void 0 : _a2.template.call(this, {
     suggestionsList,
     mobileHeader,
-    valueStateMessage: valueStateMessage$3,
+    valueStateMessage: valueStateMessage$4,
     valueStateMessageInputIcon: valueStateMessageInputIcon$2
-  })), this.hasValueStateMessage && jsx(Popover$1, { preventInitialFocus: true, preventFocusRestore: true, hideArrow: true, class: "ui5-valuestatemessage-popover", placement: "Bottom", tabindex: -1, horizontalAlign: PopoverHorizontalAlign$1.Start, opener: this, open: this.valueStateOpen, onClose: this._handleValueStatePopoverAfterClose, children: jsxs("div", { slot: "header", class: this.classes.popoverValueState, children: [jsx(Icon$1, { class: "ui5-input-value-state-message-icon", name: valueStateMessageInputIcon$2.call(this) }), this.valueStateOpen && valueStateMessage$3.call(this)] }) })] });
+  })), this.hasValueStateMessage && jsx(Popover$1, { preventInitialFocus: true, preventFocusRestore: true, hideArrow: true, class: "ui5-valuestatemessage-popover", placement: "Bottom", tabindex: -1, horizontalAlign: PopoverHorizontalAlign$1.Start, opener: this, open: this.valueStateOpen, onClose: this._handleValueStatePopoverAfterClose, children: jsxs("div", { slot: "header", class: this.classes.popoverValueState, children: [jsx(Icon$1, { class: "ui5-input-value-state-message-icon", name: valueStateMessageInputIcon$2.call(this) }), this.valueStateOpen && valueStateMessage$4.call(this)] }) })] });
 }
-function valueStateMessage$3() {
+function valueStateMessage$4() {
   return jsx(Fragment, { children: this.shouldDisplayDefaultValueStateMessage ? this.valueStateText : jsx("slot", { name: "valueStateMessage" }) });
 }
 function valueStateMessageInputIcon$2() {
@@ -5726,22 +5730,22 @@ function defaultPostContent() {
 }
 const StartsWith = (value, items, propName) => items.filter((item) => (item[propName] || "").toLowerCase().startsWith(value.toLowerCase()));
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const inputStyles = `:host{vertical-align:middle}.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}.inputIcon{color:var(--_ui5-v2-17-0_input_icon_color);cursor:pointer;outline:none;padding:var(--_ui5-v2-17-0_input_icon_padding);border-inline-start:var(--_ui5-v2-17-0_input_icon_border);min-width:1rem;min-height:1rem;border-radius:var(--_ui5-v2-17-0_input_icon_border_radius)}.inputIcon.inputIcon--pressed{background:var(--_ui5-v2-17-0_input_icon_pressed_bg);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow);border-inline-start:var(--_ui5-v2-17-0_select_hover_icon_left_border);color:var(--_ui5-v2-17-0_input_icon_pressed_color)}.inputIcon:active{background-color:var(--sapButton_Active_Background);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow);border-inline-start:var(--_ui5-v2-17-0_select_hover_icon_left_border);color:var(--_ui5-v2-17-0_input_icon_pressed_color)}.inputIcon:not(.inputIcon--pressed):not(:active):hover{background:var(--_ui5-v2-17-0_input_icon_hover_bg);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow)}.inputIcon:hover{border-inline-start:var(--_ui5-v2-17-0_select_hover_icon_left_border);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow)}:host(:not([hidden])){display:inline-block}:host{width:var(--_ui5-v2-17-0_input_width);min-width:calc(var(--_ui5-v2-17-0_input_min_width) + (var(--_ui5-v2-17-0-input-icons-count)*var(--_ui5-v2-17-0_input_icon_width)));margin:var(--_ui5-v2-17-0_input_margin_top_bottom) 0;height:var(--_ui5-v2-17-0_input_height);color:var(--sapField_TextColor);font-size:var(--sapFontSize);font-family:var(--sapFontFamily);font-style:normal;border:var(--_ui5-v2-17-0-input-border);border-radius:var(--_ui5-v2-17-0_input_border_radius);box-sizing:border-box;text-align:start;transition:var(--_ui5-v2-17-0_input_transition);background:var(--sapField_BackgroundStyle);background-color:var(--_ui5-v2-17-0_input_background_color)}:host(:not([readonly])),:host([readonly][disabled]){box-shadow:var(--sapField_Shadow)}:host([focused]:not([opened])){border-color:var(--_ui5-v2-17-0_input_focused_border_color);background-color:var(--sapField_Focus_Background)}.ui5-input-focusable-element{position:relative}:host([focused]:not([opened])) .ui5-input-focusable-element:after{content:var(--ui5-v2-17-0_input_focus_pseudo_element_content);position:absolute;pointer-events:none;z-index:2;border:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--_ui5-v2-17-0_input_focus_outline_color);border-radius:var(--_ui5-v2-17-0_input_focus_border_radius);top:var(--_ui5-v2-17-0_input_focus_offset);bottom:var(--_ui5-v2-17-0_input_focus_offset);left:var(--_ui5-v2-17-0_input_focus_offset);right:var(--_ui5-v2-17-0_input_focus_offset)}:host([focused][readonly]:not([opened])) .ui5-input-focusable-element:after{top:var(--_ui5-v2-17-0_input_readonly_focus_offset);bottom:var(--_ui5-v2-17-0_input_readonly_focus_offset);left:var(--_ui5-v2-17-0_input_readonly_focus_offset);right:var(--_ui5-v2-17-0_input_readonly_focus_offset);border-radius:var(--_ui5-v2-17-0_input_readonly_focus_border_radius)}.ui5-input-root:before{content:"";position:absolute;width:calc(100% - 2px);left:1px;bottom:-2px;border-bottom-left-radius:8px;border-bottom-right-radius:8px;height:var(--_ui5-v2-17-0_input_bottom_border_height);transition:var(--_ui5-v2-17-0_input_transition);background-color:var(--_ui5-v2-17-0_input_bottom_border_color)}.ui5-input-root{width:100%;height:100%;position:relative;background:transparent;display:inline-block;outline:none;box-sizing:border-box;color:inherit;transition:border-color .2s ease-in-out;border-radius:var(--_ui5-v2-17-0_input_border_radius);overflow:hidden}:host([disabled]){opacity:var(--_ui5-v2-17-0_input_disabled_opacity);cursor:default;pointer-events:none;background-color:var(--_ui5-v2-17-0-input_disabled_background);border-color:var(--_ui5-v2-17-0_input_disabled_border_color)}:host([disabled]) .ui5-input-root:before,:host([readonly]) .ui5-input-root:before{content:none}[inner-input]{background:transparent;color:inherit;border:none;font-style:inherit;-webkit-appearance:none;-moz-appearance:textfield;padding:var(--_ui5-v2-17-0_input_inner_padding);box-sizing:border-box;width:100%;text-overflow:ellipsis;flex:1;outline:none;font-size:inherit;font-family:inherit;line-height:inherit;letter-spacing:inherit;word-spacing:inherit;text-align:inherit}[inner-input][inner-input-with-icon]{padding:var(--_ui5-v2-17-0_input_inner_padding_with_icon)}[inner-input][type=search]::-webkit-search-decoration,[inner-input][type=search]::-webkit-search-cancel-button,[inner-input][type=search]::-webkit-search-results-button,[inner-input][type=search]::-webkit-search-results-decoration{display:none}[inner-input]::-ms-reveal,[inner-input]::-ms-clear{display:none}.ui5-input-value-state-icon{height:100%;display:var(--_ui5-v2-17-0-input-value-state-icon-display);align-items:center}.ui5-input-value-state-icon>svg{margin-right:8px}[inner-input]::selection{background:var(--sapSelectedColor);color:var(--sapContent_ContrastTextColor)}:host([disabled]) [inner-input]::-webkit-input-placeholder{visibility:hidden}:host([readonly]) [inner-input]::-webkit-input-placeholder{visibility:hidden}:host([disabled]) [inner-input]::-moz-placeholder{visibility:hidden}:host([readonly]) [inner-input]::-moz-placeholder{visibility:hidden}[inner-input]::-webkit-input-placeholder{font-weight:400;font-style:var(--_ui5-v2-17-0_input_placeholder_style);color:var(--_ui5-v2-17-0_input_placeholder_color);padding-right:.125rem}[inner-input]::-moz-placeholder{font-weight:400;font-style:var(--_ui5-v2-17-0_input_placeholder_style);color:var(--_ui5-v2-17-0_input_placeholder_color);padding-right:.125rem}:host([value-state="Negative"]) [inner-input]::-webkit-input-placeholder{color:var(--_ui5-v2-17-0-input_error_placeholder_color);font-weight:var(--_ui5-v2-17-0_input_value_state_error_warning_placeholder_font_weight)}:host([value-state="Negative"]) [inner-input]::-moz-placeholder{color:var(--_ui5-v2-17-0-input_error_placeholder_color);font-weight:var(--_ui5-v2-17-0_input_value_state_error_warning_placeholder_font_weight)}:host([value-state="Critical"]) [inner-input]::-webkit-input-placeholder{font-weight:var(--_ui5-v2-17-0_input_value_state_error_warning_placeholder_font_weight)}:host([value-state="Critical"]) [inner-input]::-moz-placeholder{font-weight:var(--_ui5-v2-17-0_input_value_state_error_warning_placeholder_font_weight)}:host([value-state="Positive"]) [inner-input]::-webkit-input-placeholder{color:var(--_ui5-v2-17-0_input_placeholder_color)}:host([value-state="Positive"]) [inner-input]::-moz-placeholder{color:var(--_ui5-v2-17-0_input_placeholder_color)}:host([value-state="Information"]) [inner-input]::-webkit-input-placeholder{color:var(--_ui5-v2-17-0_input_placeholder_color)}:host([value-state="Information"]) [inner-input]::-moz-placeholder{color:var(--_ui5-v2-17-0_input_placeholder_color)}.ui5-input-content{height:100%;box-sizing:border-box;display:flex;flex-direction:row;justify-content:flex-end;overflow:hidden;outline:none;background:transparent;color:inherit;border-radius:var(--_ui5-v2-17-0_input_border_radius)}:host([readonly]:not([disabled])){border:var(--_ui5-v2-17-0_input_readonly_border);background:var(--sapField_ReadOnly_BackgroundStyle);background-color:var(--_ui5-v2-17-0_input_readonly_background)}:host([value-state="None"]:not([readonly]):hover),:host(:not([value-state]):not([readonly]):hover){border:var(--_ui5-v2-17-0_input_hover_border);border-color:var(--_ui5-v2-17-0_input_focused_border_color);box-shadow:var(--sapField_Hover_Shadow);background:var(--sapField_Hover_BackgroundStyle);background-color:var(--sapField_Hover_Background)}:host(:not([value-state]):not([readonly])[focused]:not([opened]):hover),:host([value-state="None"]:not([readonly])[focused]:not([opened]):hover){box-shadow:none}:host([focused]):not([opened]) .ui5-input-root:before{content:none}:host(:not([readonly]):not([disabled])[value-state]:not([value-state="None"])){border-width:var(--_ui5-v2-17-0_input_state_border_width)}:host([value-state="Negative"]) [inner-input],:host([value-state="Critical"]) [inner-input]{font-style:var(--_ui5-v2-17-0_input_error_warning_font_style);text-indent:var(--_ui5-v2-17-0_input_error_warning_text_indent)}:host([value-state="Negative"]) [inner-input]{font-weight:var(--_ui5-v2-17-0_input_error_font_weight)}:host([value-state="Critical"]) [inner-input]{font-weight:var(--_ui5-v2-17-0_input_warning_font_weight)}:host([value-state="Negative"]:not([readonly]):not([disabled])){background:var(--sapField_InvalidBackgroundStyle);background-color:var(--sapField_InvalidBackground);border-color:var(--_ui5-v2-17-0_input_value_state_error_border_color);box-shadow:var(--sapField_InvalidShadow)}:host([value-state="Negative"][focused]:not([opened]):not([readonly])){background-color:var(--_ui5-v2-17-0_input_focused_value_state_error_background);border-color:var(--_ui5-v2-17-0_input_focused_value_state_error_border_color)}:host([value-state="Negative"][focused]:not([opened]):not([readonly])) .ui5-input-focusable-element:after{border-color:var(--_ui5-v2-17-0_input_focused_value_state_error_focus_outline_color)}:host([value-state="Negative"]:not([readonly])) .ui5-input-root:before{background-color:var(--_ui5-v2-17-0-input-value-state-error-border-botom-color)}:host([value-state="Negative"]:not([readonly]):not([focused]):hover),:host([value-state="Negative"]:not([readonly])[focused][opened]:hover){background-color:var(--_ui5-v2-17-0_input_value_state_error_hover_background);box-shadow:var(--sapField_Hover_InvalidShadow)}:host([value-state="Negative"]:not([readonly]):not([disabled])),:host([value-state="Critical"]:not([readonly]):not([disabled])),:host([value-state="Information"]:not([readonly]):not([disabled])){border-style:var(--_ui5-v2-17-0_input_error_warning_border_style)}:host([value-state="Critical"]:not([readonly]):not([disabled])){background:var(--sapField_WarningBackgroundStyle);background-color:var(--sapField_WarningBackground);border-color:var(--_ui5-v2-17-0_input_value_state_warning_border_color);box-shadow:var(--sapField_WarningShadow)}:host([value-state="Critical"][focused]:not([opened]):not([readonly])){background-color:var(--_ui5-v2-17-0_input_focused_value_state_warning_background);border-color:var(--_ui5-v2-17-0_input_focused_value_state_warning_border_color)}:host([value-state="Critical"][focused]:not([opened]):not([readonly])) .ui5-input-focusable-element:after{border-color:var(--_ui5-v2-17-0_input_focused_value_state_warning_focus_outline_color)}:host([value-state="Critical"]:not([readonly])) .ui5-input-root:before{background-color:var(--_ui5-v2-17-0_input_value_state_warning_border_botom_color)}:host([value-state="Critical"]:not([readonly]):not([focused]):hover),:host([value-state="Critical"]:not([readonly])[focused][opened]:hover){background-color:var(--sapField_Hover_Background);box-shadow:var(--sapField_Hover_WarningShadow)}:host([value-state="Positive"]:not([readonly]):not([disabled])){background:var(--sapField_SuccessBackgroundStyle);background-color:var(--sapField_SuccessBackground);border-color:var(--_ui5-v2-17-0_input_value_state_success_border_color);border-width:var(--_ui5-v2-17-0_input_value_state_success_border_width);box-shadow:var(--sapField_SuccessShadow)}:host([value-state="Positive"][focused]:not([opened]):not([readonly])){background-color:var(--_ui5-v2-17-0_input_focused_value_state_success_background);border-color:var(--_ui5-v2-17-0_input_focused_value_state_success_border_color)}:host([value-state="Positive"][focused]:not([opened]):not([readonly])) .ui5-input-focusable-element:after{border-color:var(--_ui5-v2-17-0_input_focused_value_state_success_focus_outline_color)}:host([value-state="Positive"]:not([readonly])) .ui5-input-root:before{background-color:var(--_ui5-v2-17-0_input_value_state_success_border_botom_color)}:host([value-state="Positive"]:not([readonly]):not([focused]):hover),:host([value-state="Positive"]:not([readonly])[focused][opened]:hover){background-color:var(--sapField_Hover_Background);box-shadow:var(--sapField_Hover_SuccessShadow)}:host([value-state="Information"]:not([readonly]):not([disabled])){background:var(--sapField_InformationBackgroundStyle);background-color:var(--sapField_InformationBackground);border-color:var(--_ui5-v2-17-0_input_value_state_information_border_color);border-width:var(--_ui5-v2-17-0_input_information_border_width);box-shadow:var(--sapField_InformationShadow)}:host([value-state="Information"][focused]:not([opened]):not([readonly])){background-color:var(--_ui5-v2-17-0_input_focused_value_state_information_background);border-color:var(--_ui5-v2-17-0_input_focused_value_state_information_border_color)}:host([value-state="Information"]:not([readonly])) .ui5-input-root:before{background-color:var(--_ui5-v2-17-0_input_value_success_information_border_botom_color)}:host([value-state="Information"]:not([readonly]):not([focused]):hover),:host([value-state="Information"]:not([readonly])[focused][opened]:hover){background-color:var(--sapField_Hover_Background);box-shadow:var(--sapField_Hover_InformationShadow)}.ui5-input-icon-root{min-width:var(--_ui5-v2-17-0_input_icon_min_width);height:100%;display:flex;justify-content:center;align-items:center}::slotted([ui5-icon][slot="icon"]){align-self:start;padding:var(--_ui5-v2-17-0_input_custom_icon_padding);box-sizing:content-box!important}:host([value-state="Negative"]) .inputIcon,:host([value-state="Critical"]) .inputIcon{padding:var(--_ui5-v2-17-0_input_error_warning_icon_padding)}:host([value-state="Negative"][focused]) .inputIcon,:host([value-state="Critical"][focused]) .inputIcon{padding:var(--_ui5-v2-17-0_input_error_warning_focused_icon_padding)}:host([value-state="Information"]) .inputIcon{padding:var(--_ui5-v2-17-0_input_information_icon_padding)}:host([value-state="Information"][focused]) .inputIcon{padding:var(--_ui5-v2-17-0_input_information_focused_icon_padding)}:host([value-state="Negative"]) ::slotted(.inputIcon[ui5-icon]),:host([value-state="Negative"]) ::slotted([ui5-icon][slot="icon"]),:host([value-state="Critical"]) ::slotted([ui5-icon][slot="icon"]){padding:var(--_ui5-v2-17-0_input_error_warning_custom_icon_padding)}:host([value-state="Negative"][focused]) ::slotted(.inputIcon[ui5-icon]),:host([value-state="Negative"][focused]) ::slotted([ui5-icon][slot="icon"]),:host([value-state="Critical"][focused]) ::slotted([ui5-icon][slot="icon"]){padding:var(--_ui5-v2-17-0_input_error_warning_custom_focused_icon_padding)}:host([value-state="Information"]) ::slotted([ui5-icon][slot="icon"]){padding:var(--_ui5-v2-17-0_input_information_custom_icon_padding)}:host([value-state="Information"][focused]) ::slotted([ui5-icon][slot="icon"]){padding:var(--_ui5-v2-17-0_input_information_custom_focused_icon_padding)}:host([value-state="Negative"]) .inputIcon:active,:host([value-state="Negative"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_error_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_error_pressed_color)}:host([value-state="Negative"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_error_icon_box_shadow)}:host([value-state="Critical"]) .inputIcon:active,:host([value-state="Critical"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_warning_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_warning_pressed_color)}:host([value-state="Critical"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_warning_icon_box_shadow)}:host([value-state="Information"]) .inputIcon:active,:host([value-state="Information"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_information_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_information_pressed_color)}:host([value-state="Information"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_information_icon_box_shadow)}:host([value-state="Positive"]) .inputIcon:active,:host([value-state="Positive"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_success_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_success_pressed_color)}:host([value-state="Positive"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_success_icon_box_shadow)}.ui5-input-clear-icon-wrapper{height:var(--_ui5-v2-17-0_input_icon_wrapper_height);padding:0;width:var(--_ui5-v2-17-0_input_icon_width);min-width:var(--_ui5-v2-17-0_input_icon_width);display:flex;justify-content:center;align-items:center;box-sizing:border-box}:host([value-state]:not([value-state="None"]):not([value-state="Positive"])) .ui5-input-clear-icon-wrapper{height:var(--_ui5-v2-17-0_input_icon_wrapper_state_height);vertical-align:top}:host([value-state="Positive"]) .ui5-input-clear-icon-wrapper{height:var(--_ui5-v2-17-0_input_icon_wrapper_success_state_height)}[ui5-icon].ui5-input-clear-icon{padding:0;color:inherit}[inner-input]::-webkit-outer-spin-button,[inner-input]::-webkit-inner-spin-button{-webkit-appearance:inherit;margin:inherit}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const ResponsivePopoverCommonCss = `.input-root-phone{flex:1;position:relative;height:var(--_ui5-v2-17-0_input_height);color:var(--sapField_TextColor);font-size:var(--sapFontSize);font-family:var(--sapFontFamily);background:var(--sapField_BackgroundStyle);background-color:var(--_ui5-v2-17-0_input_background_color);border:var(--_ui5-v2-17-0-input-border);border-radius:var(--_ui5-v2-17-0_input_border_radius);box-sizing:border-box}.input-root-phone [inner-input]{padding:0 .5rem;width:100%;height:100%}.input-root-phone [inner-input]:focus{background-color:var(--sapField_Focus_Background)}.input-root-phone:focus-within:before{content:"";position:absolute;pointer-events:none;z-index:2;border:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);border-radius:var(--_ui5-v2-17-0_input_focus_border_radius);top:var(--_ui5-v2-17-0_input_focus_offset);bottom:var(--_ui5-v2-17-0_input_focus_offset);left:var(--_ui5-v2-17-0_input_focus_offset);right:var(--_ui5-v2-17-0_input_focus_offset)}.input-root-phone [value-state=Negative] .inputIcon[data-ui5-compact-size],.input-root-phone [value-state=Positive] .inputIcon[data-ui5-compact-size],.input-root-phone [value-state=Critical] .inputIcon[data-ui5-compact-size]{padding:.1875rem .5rem}[inner-input]{background:transparent;color:inherit;border:none;font-style:normal;-webkit-appearance:none;-moz-appearance:textfield;line-height:normal;padding:var(--_ui5-v2-17-0_input_inner_padding);box-sizing:border-box;min-width:3rem;text-overflow:ellipsis;flex:1;outline:none;font-size:inherit;font-family:inherit;border-radius:var(--_ui5-v2-17-0_input_border_radius)}[inner-input]::selection,[inner-input]::-moz-selection{background:var(--sapSelectedColor);color:var(--sapContent_ContrastTextColor)}[inner-input]::-webkit-input-placeholder{font-style:var(--_ui5-v2-17-0_input_placeholder_style);color:var(--sapField_PlaceholderTextColor)}[inner-input]::-moz-placeholder{font-style:var(--_ui5-v2-17-0_input_placeholder_style);color:var(--sapField_PlaceholderTextColor)}.input-root-phone[value-state]:not([value-state=None]){border-width:var(--_ui5-v2-17-0_input_state_border_width)}.input-root-phone[value-state=Negative] [inner-input],.input-root-phone[value-state=Critical] [inner-input]{font-style:var(--_ui5-v2-17-0_input_error_warning_font_style)}.input-root-phone[value-state=Negative] [inner-input]{font-weight:var(--_ui5-v2-17-0_input_error_font_weight)}.input-root-phone[value-state=Negative]:not([readonly]){background:var(--sapField_InvalidBackgroundStyle);background-color:var(--sapField_InvalidBackground);border-color:var(--_ui5-v2-17-0_input_value_state_error_border_color)}.input-root-phone[value-state=Negative]:not([readonly]) [inner-input]:focus{background-color:var(--_ui5-v2-17-0_input_focused_value_state_error_background);border-color:var(--_ui5-v2-17-0_input_focused_value_state_error_border_color)}.input-root-phone[value-state=Negative]:not([readonly]):focus-within:before{border-color:var(--_ui5-v2-17-0_input_focused_value_state_error_focus_outline_color)}.input-root-phone[value-state=Negative]:not([readonly]):not([disabled]),.input-root-phone[value-state=Critical]:not([readonly]):not([disabled]),.input-root-phone[value-state=Information]:not([readonly]):not([disabled]){border-style:var(--_ui5-v2-17-0_input_error_warning_border_style)}.input-root-phone[value-state=Critical]:not([readonly]){background:var(--sapField_WarningBackgroundStyle);background-color:var(--sapField_WarningBackground);border-color:var(--_ui5-v2-17-0_input_value_state_warning_border_color)}.input-root-phone[value-state=Critical]:not([readonly]) [inner-input]:focus{background-color:var(--_ui5-v2-17-0_input_focused_value_state_warning_background);border-color:var(--_ui5-v2-17-0_input_focused_value_state_warning_border_color)}.input-root-phone[value-state=Critical]:not([readonly]):focus-within:before{border-color:var(--_ui5-v2-17-0_input_focused_value_state_warning_focus_outline_color)}.input-root-phone[value-state=Positive]:not([readonly]){background:var(--sapField_SuccessBackgroundStyle);background-color:var(--sapField_SuccessBackground);border-color:var(--_ui5-v2-17-0_input_value_state_success_border_color);border-width:var(--_ui5-v2-17-0_input_value_state_success_border_width)}.input-root-phone[value-state=Positive]:not([readonly]) [inner-input]:focus{background-color:var(--_ui5-v2-17-0_input_focused_value_state_success_background);border-color:var(--_ui5-v2-17-0_input_focused_value_state_success_border_color)}.input-root-phone[value-state=Positive]:not([readonly]):focus-within:before{border-color:var(--_ui5-v2-17-0_input_focused_value_state_success_focus_outline_color)}.input-root-phone[value-state=Information]:not([readonly]){background:var(--sapField_InformationBackgroundStyle);background-color:var(--sapField_InformationBackground);border-color:var(--_ui5-v2-17-0_input_value_state_information_border_color);border-width:var(--_ui5-v2-17-0_input_information_border_width)}.input-root-phone[value-state=Information]:not([readonly]) [inner-input]:focus{background-color:var(--_ui5-v2-17-0_input_focused_value_state_information_background);border-color:var(--_ui5-v2-17-0_input_focused_value_state_information_border_color)}.ui5-multi-combobox-toggle-button{margin-left:.5rem}.ui5-responsive-popover-header{width:100%;min-height:2.5rem;display:flex;flex-direction:column}.ui5-responsive-popover-header-text{width:calc(100% - var(--_ui5-v2-17-0_button_base_min_width))}.ui5-responsive-popover-header .row{box-sizing:border-box;padding:.25rem 1rem;min-height:2.5rem;display:flex;justify-content:center;align-items:center;font-size:var(--sapFontHeader5Size)}.ui5-responsive-popover-footer{display:flex;justify-content:flex-end;padding:.25rem 0;width:100%}.ui5-responsive-popover-footer .ui5-responsive-popover-close-btn{margin-left:.5rem}.ui5-responsive-popover-header .ui5-responsive-popover-close-btn{position:absolute;right:1rem}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
-const ValueStateMessageCss = `.ui5-valuestatemessage-popover{border-radius:var(--_ui5-v2-17-0_value_state_message_popover_border_radius);box-shadow:var(--_ui5-v2-17-0_value_state_message_popover_box_shadow)}.ui5-input-value-state-message-icon{width:var(--_ui5-v2-17-0_value_state_message_icon_width);height:var(--_ui5-v2-17-0_value_state_message_icon_height);display:var(--_ui5-v2-17-0_input_value_state_icon_display);position:absolute;padding-right:.375rem}.ui5-valuestatemessage-root .ui5-input-value-state-message-icon{left:var(--_ui5-v2-17-0_input_value_state_icon_offset)}.ui5-input-value-state-message-icon[name=error]{color:var(--sapNegativeElementColor)}.ui5-input-value-state-message-icon[name=alert]{color:var(--sapCriticalElementColor)}.ui5-input-value-state-message-icon[name=success]{color:var(--sapPositiveElementColor)}.ui5-input-value-state-message-icon[name=information]{color:var(--sapInformativeElementColor)}.ui5-valuestatemessage-root{box-sizing:border-box;display:inline-block;color:var(--sapTextColor);font-size:var(--sapFontSmallSize);font-family:var(--sapFontFamily);height:auto;padding:var(--_ui5-v2-17-0_value_state_message_padding);overflow:hidden;text-overflow:ellipsis;min-width:6.25rem;border:var(--_ui5-v2-17-0_value_state_message_border);line-height:var(--_ui5-v2-17-0_value_state_message_line_height)}[ui5-responsive-popover] .ui5-valuestatemessage-header,[ui5-popover] .ui5-valuestatemessage-header{min-height:var(--_ui5-v2-17-0_value_state_message_popover_header_min_height);min-width:var(--_ui5-v2-17-0_value_state_message_popover_header_min_width);max-width:var(--_ui5-v2-17-0_value_state_message_popover_header_max_width);width:var(--_ui5-v2-17-0_value_state_message_popover_header_width)}[ui5-responsive-popover] .ui5-valuestatemessage-header{padding:var(--_ui5-v2-17-0_value_state_header_padding);border:var(--_ui5-v2-17-0_value_state_header_border);border-bottom:var(--_ui5-v2-17-0_value_state_header_border_bottom);flex-grow:1;position:relative}.ui5-valuestatemessage--success{background:var(--sapSuccessBackground)}.ui5-valuestatemessage--warning{background:var(--sapWarningBackground)}.ui5-valuestatemessage--error{background:var(--sapErrorBackground)}.ui5-valuestatemessage--information{background:var(--sapInformationBackground)}.ui5-responsive-popover-header:focus{outline-offset:var(--_ui5-v2-17-0_value_state_header_offset);outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor)}.ui5-valuestatemessage-popover::part(header),.ui5-valuestatemessage-popover::part(content){padding:0}.ui5-valuestatemessage-popover::part(header),.ui5-valuestatemessage-popover::part(footer){min-height:0}.ui5-valuestatemessage-popover::part(header),.ui5-popover-with-value-state-header::part(header),.ui5-popover-with-value-state-header-phone::part(header){margin-bottom:0}.ui5-popover-with-value-state-header-phone .ui5-valuestatemessage-root{padding:var(--_ui5-v2-17-0_value_state_message_padding_phone);width:100%}.ui5-popover-with-value-state-header-phone .ui5-input-value-state-message-icon{left:var(--_ui5-v2-17-0_value_state_message_icon_offset_phone)}.ui5-popover-with-value-state-header-phone .ui5-valuestatemessage-header{position:relative;flex:none;top:0;left:0;max-width:100%}.ui5-popover-with-value-state-header-phone::part(content){padding:0;overflow:hidden;display:flex;flex-direction:column}.ui5-popover-with-value-state-header-phone [ui5-list]{overflow:auto}[ui5-responsive-popover] .ui5-valuestatemessage--error{box-shadow:var(--_ui5-v2-17-0_value_state_header_box_shadow_error)}[ui5-responsive-popover] .ui5-valuestatemessage--information{box-shadow:var(--_ui5-v2-17-0_value_state_header_box_shadow_information)}[ui5-responsive-popover] .ui5-valuestatemessage--success{box-shadow:var(--_ui5-v2-17-0_value_state_header_box_shadow_success)}[ui5-responsive-popover] .ui5-valuestatemessage--warning{box-shadow:var(--_ui5-v2-17-0_value_state_header_box_shadow_warning)}[ui5-responsive-popover].ui5-popover-with-value-state-header .ui5-valuestatemessage-root:has(+[ui5-list]:empty){box-shadow:none}
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
+const valueStateMessageStyles = `.ui5-valuestatemessage-popover{border-radius:var(--_ui5-v2-17-0_value_state_message_popover_border_radius);box-shadow:var(--_ui5-v2-17-0_value_state_message_popover_box_shadow)}.ui5-input-value-state-message-icon{width:var(--_ui5-v2-17-0_value_state_message_icon_width);height:var(--_ui5-v2-17-0_value_state_message_icon_height);display:var(--_ui5-v2-17-0_input_value_state_icon_display);position:absolute;padding-right:.375rem}.ui5-valuestatemessage-root .ui5-input-value-state-message-icon{left:var(--_ui5-v2-17-0_input_value_state_icon_offset)}.ui5-input-value-state-message-icon[name=error]{color:var(--sapNegativeElementColor)}.ui5-input-value-state-message-icon[name=alert]{color:var(--sapCriticalElementColor)}.ui5-input-value-state-message-icon[name=success]{color:var(--sapPositiveElementColor)}.ui5-input-value-state-message-icon[name=information]{color:var(--sapInformativeElementColor)}.ui5-valuestatemessage-root{box-sizing:border-box;display:inline-block;color:var(--sapTextColor);font-size:var(--sapFontSmallSize);font-family:var(--sapFontFamily);height:auto;padding:var(--_ui5-v2-17-0_value_state_message_padding);overflow:hidden;text-overflow:ellipsis;min-width:6.25rem;border:var(--_ui5-v2-17-0_value_state_message_border);line-height:var(--_ui5-v2-17-0_value_state_message_line_height)}[ui5-responsive-popover] .ui5-valuestatemessage-header,[ui5-popover] .ui5-valuestatemessage-header{min-height:var(--_ui5-v2-17-0_value_state_message_popover_header_min_height);min-width:var(--_ui5-v2-17-0_value_state_message_popover_header_min_width);max-width:var(--_ui5-v2-17-0_value_state_message_popover_header_max_width);width:var(--_ui5-v2-17-0_value_state_message_popover_header_width)}[ui5-responsive-popover] .ui5-valuestatemessage-header{padding:var(--_ui5-v2-17-0_value_state_header_padding);border:var(--_ui5-v2-17-0_value_state_header_border);border-bottom:var(--_ui5-v2-17-0_value_state_header_border_bottom);flex-grow:1;position:relative}.ui5-valuestatemessage--success{background:var(--sapSuccessBackground)}.ui5-valuestatemessage--warning{background:var(--sapWarningBackground)}.ui5-valuestatemessage--error{background:var(--sapErrorBackground)}.ui5-valuestatemessage--information{background:var(--sapInformationBackground)}.ui5-responsive-popover-header:focus{outline-offset:var(--_ui5-v2-17-0_value_state_header_offset);outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor)}.ui5-valuestatemessage-popover::part(header),.ui5-valuestatemessage-popover::part(content){padding:0}.ui5-valuestatemessage-popover::part(header),.ui5-valuestatemessage-popover::part(footer){min-height:0}.ui5-valuestatemessage-popover::part(header),.ui5-popover-with-value-state-header::part(header),.ui5-popover-with-value-state-header-phone::part(header){margin-bottom:0}.ui5-popover-with-value-state-header-phone .ui5-valuestatemessage-root{padding:var(--_ui5-v2-17-0_value_state_message_padding_phone);width:100%}.ui5-popover-with-value-state-header-phone .ui5-input-value-state-message-icon{left:var(--_ui5-v2-17-0_value_state_message_icon_offset_phone)}.ui5-popover-with-value-state-header-phone .ui5-valuestatemessage-header{position:relative;flex:none;top:0;left:0;max-width:100%}.ui5-popover-with-value-state-header-phone::part(content){padding:0;overflow:hidden;display:flex;flex-direction:column}.ui5-popover-with-value-state-header-phone [ui5-list]{overflow:auto}[ui5-responsive-popover] .ui5-valuestatemessage--error{box-shadow:var(--_ui5-v2-17-0_value_state_header_box_shadow_error)}[ui5-responsive-popover] .ui5-valuestatemessage--information{box-shadow:var(--_ui5-v2-17-0_value_state_header_box_shadow_information)}[ui5-responsive-popover] .ui5-valuestatemessage--success{box-shadow:var(--_ui5-v2-17-0_value_state_header_box_shadow_success)}[ui5-responsive-popover] .ui5-valuestatemessage--warning{box-shadow:var(--_ui5-v2-17-0_value_state_header_box_shadow_warning)}[ui5-responsive-popover].ui5-popover-with-value-state-header .ui5-valuestatemessage-root:has(+[ui5-list]:empty){box-shadow:none}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const SuggestionsCss = `.ui5-suggestions-popover{box-shadow:var(--sapContent_Shadow1)}.ui5-suggestions-popover::part(header),.ui5-suggestions-popover::part(content){padding:0}.ui5-suggestions-popover::part(footer){padding:0 1rem}.input-root-phone.native-input-wrapper{display:contents}.input-root-phone.native-input-wrapper:before{display:none}.native-input-wrapper .ui5-input-inner-phone{margin:0}.native-input-wrapper .ui5-multi-input-mobile-dialog-button{margin-inline-start:.5rem}
 `;
-var __decorate$1n = function(decorators, target, key, desc) {
+var __decorate$1x = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -6852,124 +6856,124 @@ let Input = Input_1 = class Input2 extends b$7 {
     return value;
   }
 };
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Boolean })
 ], Input.prototype, "disabled", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Boolean })
 ], Input.prototype, "highlight", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9()
 ], Input.prototype, "placeholder", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Boolean })
 ], Input.prototype, "readonly", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Boolean })
 ], Input.prototype, "required", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Boolean })
 ], Input.prototype, "noTypeahead", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9()
 ], Input.prototype, "type", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9()
 ], Input.prototype, "value", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ noAttribute: true })
 ], Input.prototype, "_innerValue", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9()
 ], Input.prototype, "valueState", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9()
 ], Input.prototype, "name", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Boolean })
 ], Input.prototype, "showSuggestions", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Number })
 ], Input.prototype, "maxlength", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9()
 ], Input.prototype, "accessibleName", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9()
 ], Input.prototype, "accessibleNameRef", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9()
 ], Input.prototype, "accessibleDescription", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9()
 ], Input.prototype, "accessibleDescriptionRef", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Boolean })
 ], Input.prototype, "showClearIcon", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Boolean })
 ], Input.prototype, "open", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Boolean })
 ], Input.prototype, "_effectiveShowClearIcon", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Boolean })
 ], Input.prototype, "focused", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9()
 ], Input.prototype, "hint", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Boolean })
 ], Input.prototype, "valueStateOpen", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Object })
 ], Input.prototype, "_inputAccInfo", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Object })
 ], Input.prototype, "_nativeInputAttributes", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Number })
 ], Input.prototype, "_inputWidth", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Number })
 ], Input.prototype, "_listWidth", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Boolean, noAttribute: true })
 ], Input.prototype, "_inputIconFocused", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ noAttribute: true })
 ], Input.prototype, "_associatedLabelsTexts", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ noAttribute: true })
 ], Input.prototype, "_accessibleLabelsRefTexts", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ noAttribute: true })
 ], Input.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Object })
 ], Input.prototype, "Suggestions", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Array })
 ], Input.prototype, "_linksListenersArray", void 0);
-__decorate$1n([
+__decorate$1x([
   s$9({ type: Boolean, noAttribute: true })
 ], Input.prototype, "_isComposing", void 0);
-__decorate$1n([
+__decorate$1x([
   d$8({ type: HTMLElement, "default": true })
 ], Input.prototype, "suggestionItems", void 0);
-__decorate$1n([
+__decorate$1x([
   d$8()
 ], Input.prototype, "icon", void 0);
-__decorate$1n([
+__decorate$1x([
   d$8({
     type: HTMLElement,
     invalidateOnChildChange: true
   })
 ], Input.prototype, "valueStateMessage", void 0);
-__decorate$1n([
+__decorate$1x([
   i$b("@ui5/webcomponents")
 ], Input, "i18nBundle", void 0);
-Input = Input_1 = __decorate$1n([
+Input = Input_1 = __decorate$1x([
   m$8({
     tag: "ui5-input",
     languageAware: true,
@@ -6979,7 +6983,7 @@ Input = Input_1 = __decorate$1n([
     styles: [
       inputStyles,
       ResponsivePopoverCommonCss,
-      ValueStateMessageCss,
+      valueStateMessageStyles,
       SuggestionsCss
     ]
   }),
@@ -7013,10 +7017,10 @@ function SliderTooltipTemplate() {
   return jsxs("div", { class: "ui5-slider-tooltip-root", children: [this.editable ? jsx(Input$1, { value: this.value, type: "Number", accessibleNameRef: "ui5-slider-InputLabel", onKeyDown: this._keydown, onFocusIn: this._onInputFocusin, onFocusOut: this._onInputFocusOut, tabIndex: -1, "data-sap-focus-ref": true, valueState: this.valueState }) : jsx("span", { class: "ui5-slider-tooltip-value", children: this.value }), this.editable && jsx(Fragment, { children: jsx("span", { id: "ui5-slider-InputLabel", class: "ui5-hidden-text", children: this._ariaLabelledByInputText }) })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const SliderTooltipCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:popover-open){margin:-28px 0 0;display:inline-block;height:1rem;background:var(--sapBackgroundColor);border:none;box-shadow:var(--sapContent_Shadow1);border-radius:.0625rem;padding:0 .5rem;font-family:var(--sapFontFamily);font-size:var(--sapFontSmallSize);color:var(--sapTextColor);display:flex;justify-content:center;align-items:center;overflow:hidden}:host([editable]:popover-open){cursor:pointer;height:fit-content;border:none;padding:0;margin-top:-3rem;box-shadow:none}:host([editable]:popover-open) [ui5-input]{width:min-content;text-align:center}
 `;
-var __decorate$1m = function(decorators, target, key, desc) {
+var __decorate$1w = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -7118,34 +7122,34 @@ let SliderTooltip = SliderTooltip_1 = class SliderTooltip2 extends b$7 {
     return SliderTooltip_1.i18nBundle.getText(SLIDER_TOOLTIP_INPUT_LABEL);
   }
 };
-__decorate$1m([
+__decorate$1w([
   s$9()
 ], SliderTooltip.prototype, "value", void 0);
-__decorate$1m([
+__decorate$1w([
   s$9()
 ], SliderTooltip.prototype, "inputValue", void 0);
-__decorate$1m([
+__decorate$1w([
   s$9({ type: Boolean })
 ], SliderTooltip.prototype, "open", void 0);
-__decorate$1m([
+__decorate$1w([
   s$9({ type: Number })
 ], SliderTooltip.prototype, "min", void 0);
-__decorate$1m([
+__decorate$1w([
   s$9({ type: Number })
 ], SliderTooltip.prototype, "max", void 0);
-__decorate$1m([
+__decorate$1w([
   s$9({ type: Boolean })
 ], SliderTooltip.prototype, "editable", void 0);
-__decorate$1m([
+__decorate$1w([
   s$9()
 ], SliderTooltip.prototype, "valueState", void 0);
-__decorate$1m([
+__decorate$1w([
   s$9({ type: Object })
 ], SliderTooltip.prototype, "followRef", void 0);
-__decorate$1m([
+__decorate$1w([
   i$b("@ui5/webcomponents")
 ], SliderTooltip, "i18nBundle", void 0);
-SliderTooltip = SliderTooltip_1 = __decorate$1m([
+SliderTooltip = SliderTooltip_1 = __decorate$1w([
   m$8({
     tag: "ui5-slider-tooltip",
     renderer: y$5,
@@ -7170,7 +7174,7 @@ function handles() {
   var _a2;
   return jsxs("div", { class: "ui5-slider-handle-container", style: this.styles.handle, part: "handle-container", children: [jsx("div", { class: "ui5-slider-handle", onFocusOut: this._onfocusout, onFocusIn: this._onfocusin, onKeyUp: this._onkeyup, role: "slider", tabIndex: this._tabIndex, "aria-orientation": "horizontal", "aria-valuemin": this.min, "aria-valuemax": this.max, "aria-valuenow": this.value, "aria-label": this._ariaLabel, "aria-disabled": this._ariaDisabled, "aria-keyshortcuts": this._ariaKeyshortcuts, "aria-describedby": this._ariaDescribedByHandleText, "data-sap-focus-ref": true, part: "handle", id: "handle1", children: jsx(Icon$1, { name: directionArrows, mode: "Decorative", part: "icon-slider", "slider-icon": true }) }), jsx(SliderTooltip$1, { open: this._tooltipsOpen, value: this.tooltipValue, min: this.min, max: this.max, editable: this.editableTooltip, followRef: (_a2 = this.shadowRoot) == null ? void 0 : _a2.querySelector("#handle1"), onChange: this._onTooltipChange, onForwardFocus: this._onTooltopForwardFocus })] });
 }
-var __decorate$1l = function(decorators, target, key, desc) {
+var __decorate$1v = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -7379,13 +7383,13 @@ let Slider = Slider_1 = class Slider2 extends SliderBase$1 {
     return arr;
   }
 };
-__decorate$1l([
+__decorate$1v([
   s$9({ type: Number })
 ], Slider.prototype, "value", void 0);
-__decorate$1l([
+__decorate$1v([
   i$b("@ui5/webcomponents")
 ], Slider, "i18nBundle", void 0);
-Slider = Slider_1 = __decorate$1l([
+Slider = Slider_1 = __decorate$1v([
   m$8({
     tag: "ui5-slider",
     languageAware: true,
@@ -7399,44 +7403,44 @@ i$m(() => {
   n$5 = void 0;
 });
 const d$1 = () => (n$5 === void 0 && (n$5 = C$5()), n$5);
-const name$1i = "status-negative";
-const pathData$1h = "M512 256q0 53-20.5 100t-55 81.5-81 54.5-99.5 20-100-20.5-81.5-55T20 355 0 256q0-54 20-100.5t55-81T156.5 20 256 0t99.5 20T437 75t55 81.5 20 99.5zM399 364q6-6 0-12l-86-86q-6-6 0-12l81-81q6-6 0-12l-37-37q-2-2-6-2t-6 2l-83 82q-1 3-6 3-3 0-6-3l-84-83q-1-2-6-2-4 0-6 2l-37 37q-6 6 0 12l83 82q6 6 0 12l-83 82q-2 2-2.5 6t2.5 6l36 37q4 2 6 2 4 0 6-2l85-84q2-2 6-2t6 2l88 88q4 2 6 2t6-2z";
-const ltr$1h = false;
-const collection$1h = "SAP-icons-v4";
-const packageName$1h = "@ui5/webcomponents-icons";
-y$2(name$1i, { pathData: pathData$1h, ltr: ltr$1h, collection: collection$1h, packageName: packageName$1h });
-const name$1h = "status-negative";
-const pathData$1g = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm45 256l74-73q9-11 9-23 0-13-9.5-22.5T352 128q-12 0-23 9l-73 74-73-74q-10-9-23-9t-22.5 9.5T128 160q0 12 9 23l74 73-74 73q-9 10-9 23t9.5 22.5T160 384t23-9l73-74 73 74q11 9 23 9 13 0 22.5-9.5T384 352t-9-23z";
-const ltr$1g = false;
-const collection$1g = "SAP-icons-v5";
-const packageName$1g = "@ui5/webcomponents-icons";
-y$2(name$1h, { pathData: pathData$1g, ltr: ltr$1g, collection: collection$1g, packageName: packageName$1g });
+const name$1o = "status-negative";
+const pathData$1n = "M512 256q0 53-20.5 100t-55 81.5-81 54.5-99.5 20-100-20.5-81.5-55T20 355 0 256q0-54 20-100.5t55-81T156.5 20 256 0t99.5 20T437 75t55 81.5 20 99.5zM399 364q6-6 0-12l-86-86q-6-6 0-12l81-81q6-6 0-12l-37-37q-2-2-6-2t-6 2l-83 82q-1 3-6 3-3 0-6-3l-84-83q-1-2-6-2-4 0-6 2l-37 37q-6 6 0 12l83 82q6 6 0 12l-83 82q-2 2-2.5 6t2.5 6l36 37q4 2 6 2 4 0 6-2l85-84q2-2 6-2t6 2l88 88q4 2 6 2t6-2z";
+const ltr$1n = false;
+const collection$1n = "SAP-icons-v4";
+const packageName$1n = "@ui5/webcomponents-icons";
+y$2(name$1o, { pathData: pathData$1n, ltr: ltr$1n, collection: collection$1n, packageName: packageName$1n });
+const name$1n = "status-negative";
+const pathData$1m = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm45 256l74-73q9-11 9-23 0-13-9.5-22.5T352 128q-12 0-23 9l-73 74-73-74q-10-9-23-9t-22.5 9.5T128 160q0 12 9 23l74 73-74 73q-9 10-9 23t9.5 22.5T160 384t23-9l73-74 73 74q11 9 23 9 13 0 22.5-9.5T384 352t-9-23z";
+const ltr$1m = false;
+const collection$1m = "SAP-icons-v5";
+const packageName$1m = "@ui5/webcomponents-icons";
+y$2(name$1n, { pathData: pathData$1m, ltr: ltr$1m, collection: collection$1m, packageName: packageName$1m });
 const statusNegative = "status-negative";
-const name$1g = "status-positive";
-const pathData$1f = "M512 256q0 54-20 100.5t-54.5 81T356 492t-100 20q-54 0-100.5-20t-81-55T20 355.5 0 256t20.5-100 55-81.5T157 20t99-20q53 0 100 20t81.5 54.5T492 156t20 100zm-118-87q4-8-1-13l-36-36q-3-4-8-4t-8 5L237 294q-3 1-4 0l-70-52q-4-3-7-3t-4.5 2-2.5 3l-29 41q-6 8 2 14l113 95q2 2 7 2t8-4z";
-const ltr$1f = false;
-const collection$1f = "SAP-icons-v4";
-const packageName$1f = "@ui5/webcomponents-icons";
-y$2(name$1g, { pathData: pathData$1f, ltr: ltr$1f, collection: collection$1f, packageName: packageName$1f });
-const name$1f = "status-positive";
-const pathData$1e = "M256 0q53 0 100 20t81.5 54.5T492 156t20 100-20 100-54.5 81.5T356 492t-100 20-100-20-81.5-54.5T20 356 0 256t20-100 54.5-81.5T156 20 256 0zm150 183q10-9 10-23 0-13-9.5-22.5T384 128t-22 9L186 308l-68-63q-9-9-22-9t-22.5 9.5T64 268q0 15 10 24l91 83q9 9 21 9 13 0 23-9z";
-const ltr$1e = false;
-const collection$1e = "SAP-icons-v5";
-const packageName$1e = "@ui5/webcomponents-icons";
-y$2(name$1f, { pathData: pathData$1e, ltr: ltr$1e, collection: collection$1e, packageName: packageName$1e });
+const name$1m = "status-positive";
+const pathData$1l = "M512 256q0 54-20 100.5t-54.5 81T356 492t-100 20q-54 0-100.5-20t-81-55T20 355.5 0 256t20.5-100 55-81.5T157 20t99-20q53 0 100 20t81.5 54.5T492 156t20 100zm-118-87q4-8-1-13l-36-36q-3-4-8-4t-8 5L237 294q-3 1-4 0l-70-52q-4-3-7-3t-4.5 2-2.5 3l-29 41q-6 8 2 14l113 95q2 2 7 2t8-4z";
+const ltr$1l = false;
+const collection$1l = "SAP-icons-v4";
+const packageName$1l = "@ui5/webcomponents-icons";
+y$2(name$1m, { pathData: pathData$1l, ltr: ltr$1l, collection: collection$1l, packageName: packageName$1l });
+const name$1l = "status-positive";
+const pathData$1k = "M256 0q53 0 100 20t81.5 54.5T492 156t20 100-20 100-54.5 81.5T356 492t-100 20-100-20-81.5-54.5T20 356 0 256t20-100 54.5-81.5T156 20 256 0zm150 183q10-9 10-23 0-13-9.5-22.5T384 128t-22 9L186 308l-68-63q-9-9-22-9t-22.5 9.5T64 268q0 15 10 24l91 83q9 9 21 9 13 0 23-9z";
+const ltr$1k = false;
+const collection$1k = "SAP-icons-v5";
+const packageName$1k = "@ui5/webcomponents-icons";
+y$2(name$1l, { pathData: pathData$1k, ltr: ltr$1k, collection: collection$1k, packageName: packageName$1k });
 const statusPositive = "status-positive";
-const name$1e = "status-critical";
-const pathData$1d = "M501 374q5 10 7.5 19.5T512 412v5q0 31-23 47t-50 16H74q-13 0-26-4t-23.5-12-17-20T0 417q0-13 4-22.5t9-20.5L198 38q21-38 61-38 38 0 59 38zM257 127q-13 0-23.5 8T223 161q1 7 2 12 3 25 4.5 48t3.5 61q0 11 7.5 16t16.5 5q22 0 23-21l2-36 9-85q0-18-10.5-26t-23.5-8zm0 299q20 0 31.5-12t11.5-32q0-19-11.5-31T257 339t-31.5 12-11.5 31q0 20 11.5 32t31.5 12z";
-const ltr$1d = false;
-const collection$1d = "SAP-icons-v4";
-const packageName$1d = "@ui5/webcomponents-icons";
-y$2(name$1e, { pathData: pathData$1d, ltr: ltr$1d, collection: collection$1d, packageName: packageName$1d });
-const name$1d = "status-critical";
-const pathData$1c = "M505 399q7 13 7 27 0 21-15.5 37.5T456 480H56q-25 0-40.5-16.5T0 426q0-14 7-27L208 59q17-27 48-27 14 0 27 6.5T304 59zM288 176q0-14-9-23t-23-9-23 9-9 23v96q0 14 9 23t23 9 23-9 9-23v-96zm-32 240q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
-const ltr$1c = false;
-const collection$1c = "SAP-icons-v5";
-const packageName$1c = "@ui5/webcomponents-icons";
-y$2(name$1d, { pathData: pathData$1c, ltr: ltr$1c, collection: collection$1c, packageName: packageName$1c });
+const name$1k = "status-critical";
+const pathData$1j = "M501 374q5 10 7.5 19.5T512 412v5q0 31-23 47t-50 16H74q-13 0-26-4t-23.5-12-17-20T0 417q0-13 4-22.5t9-20.5L198 38q21-38 61-38 38 0 59 38zM257 127q-13 0-23.5 8T223 161q1 7 2 12 3 25 4.5 48t3.5 61q0 11 7.5 16t16.5 5q22 0 23-21l2-36 9-85q0-18-10.5-26t-23.5-8zm0 299q20 0 31.5-12t11.5-32q0-19-11.5-31T257 339t-31.5 12-11.5 31q0 20 11.5 32t31.5 12z";
+const ltr$1j = false;
+const collection$1j = "SAP-icons-v4";
+const packageName$1j = "@ui5/webcomponents-icons";
+y$2(name$1k, { pathData: pathData$1j, ltr: ltr$1j, collection: collection$1j, packageName: packageName$1j });
+const name$1j = "status-critical";
+const pathData$1i = "M505 399q7 13 7 27 0 21-15.5 37.5T456 480H56q-25 0-40.5-16.5T0 426q0-14 7-27L208 59q17-27 48-27 14 0 27 6.5T304 59zM288 176q0-14-9-23t-23-9-23 9-9 23v96q0 14 9 23t23 9 23-9 9-23v-96zm-32 240q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
+const ltr$1i = false;
+const collection$1i = "SAP-icons-v5";
+const packageName$1i = "@ui5/webcomponents-icons";
+y$2(name$1j, { pathData: pathData$1i, ltr: ltr$1i, collection: collection$1i, packageName: packageName$1i });
 const statusCritical = "status-critical";
 const valueStateIconMappings = {
   "Negative": statusNegative,
@@ -7452,16 +7456,16 @@ function ProgressIndicatorTemplate() {
   }, role: "progressbar", "aria-valuemin": 0, "aria-valuenow": this.validatedValue, "aria-valuemax": 100, "aria-valuetext": this.valueStateText, "aria-label": this.accessibleName, children: [jsx("div", { class: "ui5-progress-indicator-bar", part: "bar", style: { "width": `${this.validatedValue}%`, "transition-duration": this.shouldAnimate ? `${this._transitionDuration}ms` : "none" }, children: !this.showValueInRemainingBar && valueLabel.call(this) }), jsx("div", { class: "ui5-progress-indicator-remaining-bar", part: "remaining-bar", children: this.showValueInRemainingBar && valueLabel.call(this) })] });
 }
 function valueLabel() {
-  return jsxs(Fragment, { children: [this.showIcon && jsx(Icon$1, { name: valueStateIcon.call(this), class: "ui5-progress-indicator-icon" }), !this.hideValue && jsxs("span", { class: "ui5-progress-indicator-value", children: [" ", this.displayValue ? this.displayValue : `${this.validatedValue}%`] })] });
+  return jsxs(Fragment, { children: [this.showIcon && jsx(Icon$1, { name: valueStateIcon$1.call(this), class: "ui5-progress-indicator-icon" }), !this.hideValue && jsxs("span", { class: "ui5-progress-indicator-value", children: [" ", this.displayValue ? this.displayValue : `${this.validatedValue}%`] })] });
 }
-function valueStateIcon() {
+function valueStateIcon$1() {
   return valueStateIconMappings[this.valueState];
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const ProgressIndicatorCss = `:host(:not([hidden])){display:inline-block;min-height:var(_ui5_progress_indicator_host_min_height);min-width:4rem;width:100%;height:var(--_ui5-v2-17-0_progress_indicator_host_height);overflow:hidden;box-sizing:var(--_ui5-v2-17-0_progress_indicator_host_box_sizing);padding:var(--_ui5-v2-17-0_progress_indicator_padding);padding-inline-end:var(--_ui5-v2-17-0_progress_indicator_padding_end)}:host(:not([hidden])[hide-value]){padding-top:var(--_ui5-v2-17-0_progress_indicator_padding_novalue);padding-bottom:var(--_ui5-v2-17-0_progress_indicator_padding_novalue)}.ui5-progress-indicator-root{display:flex;align-items:center;background:var(--_ui5-v2-17-0_progress_indicator_background_none);border-radius:var(--_ui5-v2-17-0_progress_indicator_root_border_radius);overflow:var(--_ui5-v2-17-0_progress_indicator_root_overflow);min-height:var(--_ui5-v2-17-0_progress_indicator_root_min_height);height:var(--_ui5-v2-17-0_progress_indicator_root_height);width:100%;font-size:var(--sapProgress_FontSize);font-family:var(--sapFontFamily);position:var(--_ui5-v2-17-0_progress_indicator_root_position);box-sizing:border-box}.ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_none);justify-content:flex-end;height:var(--_ui5-v2-17-0_progress_indicator_bar_height);display:flex;align-items:center;flex-direction:row;color:var(--_ui5-v2-17-0_progress_indicator_bar_color);transition-property:width;transition-timing-function:linear;box-sizing:border-box;border:var(--_ui5-v2-17-0_progress_indicator_bar_border_max);border-radius:var(--_ui5-v2-17-0_progress_indicator_bar_border_radius)}.ui5-progress-indicator-min-value .ui5-progress-indicator-bar,.ui5-progress-indicator-max-value .ui5-progress-indicator-remaining-bar{border:none}.ui5-progress-indicator-max-value .ui5-progress-indicator-bar{border-radius:.5rem}.ui5-progress-indicator-min-value .ui5-progress-indicator-remaining-bar{border-inline-start:var(--_ui5-v2-17-0_progress_indicator_border);border-radius:.5rem}.ui5-progress-indicator-remaining-bar{justify-content:flex-start;width:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_width);height:100%;display:flex;align-items:center;flex-direction:row;flex-grow:1;flex-basis:0;border:var(--_ui5-v2-17-0_progress_indicator_border);border-inline-start:none;border-radius:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_border_radius);box-sizing:border-box;color:var(--_ui5-v2-17-0_progress_indicator_color);overflow:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_overflow);position:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_position)}.ui5-progress-indicator-value{margin:var(--_ui5-v2-17-0_progress_indicator_value_margin);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;position:var(--_ui5-v2-17-0_progress_indicator_value_position);top:var(--_ui5-v2-17-0_progress_indicator_value_top_position);inset-inline-start:var(--_ui5-v2-17-0_progress_indicator_value_left_position)}.ui5-progress-indicator-icon{margin-inline-start:.375rem;width:var(--_ui5-v2-17-0_progress_indicator_icon_size);height:var(--_ui5-v2-17-0_progress_indicator_icon_size);display:var(--_ui5-v2-17-0_progress_indicator_icon_visibility);position:var(--_ui5-v2-17-0_progress_indicator_icon_position);inset-inline-end:var(--_ui5-v2-17-0_progress_indicator_icon_right_position)}:host([value-state="Negative"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_error_icon_color)}:host([value-state="Critical"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_warning_icon_color)}:host([value-state="Positive"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_success_icon_color)}:host([value-state="Information"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_information_icon_color)}:host([value-state="Negative"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_error)}:host([value-state="Critical"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_warning)}:host([value-state="Positive"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_success)}:host([value-state="Information"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_information)}:host([value-state="Negative"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_error)}:host([value-state="Critical"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_warning)}:host([value-state="Positive"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_success)}:host([value-state="Information"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_information)}:host([value-state="Negative"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_error)}:host([value-state="Critical"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_warning)}:host([value-state="Positive"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_success)}:host([value-state="Information"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_information)}.ui5-progress-indicator-remaining-bar:before,.ui5-progress-indicator-remaining-bar:after{content:"";display:block;width:.25rem;height:.25rem;position:absolute;border-radius:50%;display:var(--_ui5-v2-17-0_progress_indicator_side_points_visibility);background:var(--_ui5-v2-17-0_progress_indicator_value_state_none)}.ui5-progress-indicator-remaining-bar:before{left:.0625rem}.ui5-progress-indicator-remaining-bar:after{right:.0625rem}:host([value-state="Negative"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Negative"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_NegativeBackground)}:host([value-state="Critical"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Critical"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_CriticalBackground)}:host([value-state="Positive"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Positive"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_PositiveBackground)}:host([value-state="Information"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Information"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_InformationBackground)}
 `;
-var __decorate$1k = function(decorators, target, key, desc) {
+var __decorate$1u = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -7513,25 +7517,25 @@ let ProgressIndicator = ProgressIndicator_1 = class ProgressIndicator2 extends b
     return this.valueState !== o$6.None;
   }
 };
-__decorate$1k([
+__decorate$1u([
   s$9()
 ], ProgressIndicator.prototype, "accessibleName", void 0);
-__decorate$1k([
+__decorate$1u([
   s$9({ type: Boolean })
 ], ProgressIndicator.prototype, "hideValue", void 0);
-__decorate$1k([
+__decorate$1u([
   s$9({ type: Number })
 ], ProgressIndicator.prototype, "value", void 0);
-__decorate$1k([
+__decorate$1u([
   s$9()
 ], ProgressIndicator.prototype, "displayValue", void 0);
-__decorate$1k([
+__decorate$1u([
   s$9()
 ], ProgressIndicator.prototype, "valueState", void 0);
-__decorate$1k([
+__decorate$1u([
   i$b("@ui5/webcomponents")
 ], ProgressIndicator, "i18nBundle", void 0);
-ProgressIndicator = ProgressIndicator_1 = __decorate$1k([
+ProgressIndicator = ProgressIndicator_1 = __decorate$1u([
   m$8({
     tag: "ui5-progress-indicator",
     renderer: y$5,
@@ -7540,174 +7544,174 @@ ProgressIndicator = ProgressIndicator_1 = __decorate$1k([
   })
 ], ProgressIndicator);
 ProgressIndicator.define();
-const name$1c = "home";
-const pathData$1b = "M507.005 240.744Q512 245.738 512 252.23t-4.995 11.488-11.487 4.495-11.488-5.494L256.272 71.923 27.516 262.72q-4.995 4.995-10.988 5.494T5.54 263.72.045 252.231t4.496-11.487l119.872-101.892q21.976-18.98 43.454-36.96t38.459-32.466 27.47-23.475l10.49-8.99q4.994-4.995 11.986-4.995 5.994 0 10.989 4.995l10.489 8.99 27.47 23.475 38.46 32.465 44.452 36.961q52.944 44.952 118.873 101.892zM64.477 274.707q51.944-39.957 93.9-72.922 17.98-13.985 34.962-26.971t30.967-23.475 22.477-16.982 9.49-6.493 9.49 6.493 21.976 16.982 30.467 23.475 34.963 26.971q40.957 32.965 94.9 72.922v172.816q0 13.985-9.49 22.976t-22.477 8.99H288.238v-62.933q0-23.974-.5-43.953t.5-20.978h-63.932q-.998 1-.499 20.479t.5 43.453v63.932H96.442q-13.985 0-22.976-8.99t-8.99-22.976V274.707zm351.625 12.986l-159.83-119.872-159.83 119.872v159.83h95.899v-95.898q0-8.99 3.995-15.983 2.997-5.993 9.49-10.988t18.48-4.995h63.932q11.988 0 18.48 4.995t9.49 10.988 3.497 10.989l.5 4.994v95.898h95.897v-159.83z";
+const name$1i = "home";
+const pathData$1h = "M507.005 240.744Q512 245.738 512 252.23t-4.995 11.488-11.487 4.495-11.488-5.494L256.272 71.923 27.516 262.72q-4.995 4.995-10.988 5.494T5.54 263.72.045 252.231t4.496-11.487l119.872-101.892q21.976-18.98 43.454-36.96t38.459-32.466 27.47-23.475l10.49-8.99q4.994-4.995 11.986-4.995 5.994 0 10.989 4.995l10.489 8.99 27.47 23.475 38.46 32.465 44.452 36.961q52.944 44.952 118.873 101.892zM64.477 274.707q51.944-39.957 93.9-72.922 17.98-13.985 34.962-26.971t30.967-23.475 22.477-16.982 9.49-6.493 9.49 6.493 21.976 16.982 30.467 23.475 34.963 26.971q40.957 32.965 94.9 72.922v172.816q0 13.985-9.49 22.976t-22.477 8.99H288.238v-62.933q0-23.974-.5-43.953t.5-20.978h-63.932q-.998 1-.499 20.479t.5 43.453v63.932H96.442q-13.985 0-22.976-8.99t-8.99-22.976V274.707zm351.625 12.986l-159.83-119.872-159.83 119.872v159.83h95.899v-95.898q0-8.99 3.995-15.983 2.997-5.993 9.49-10.988t18.48-4.995h63.932q11.988 0 18.48 4.995t9.49 10.988 3.497 10.989l.5 4.994v95.898h95.897v-159.83z";
+const ltr$1h = false;
+const collection$1h = "SAP-icons-v4";
+const packageName$1h = "@ui5/webcomponents-icons";
+y$2(name$1i, { pathData: pathData$1h, ltr: ltr$1h, collection: collection$1h, packageName: packageName$1h });
+const name$1h = "home";
+const pathData$1g = "M451 148q29 26 29 66v208q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V214q0-39 29-66L195 24q26-24 61-24 36 0 61 24zm-22 66q0-16-12-28L282 61q-12-10-26-10t-26 10L96 186q-13 11-13 28v208q0 17 11 28t28 11h38V313q0-24 17-41t41-17h77q23 0 40 17t17 41v148h38q17 0 28-11t11-28V214zm-128 99q0-7-6-7h-77q-7 0-7 7v148h90V313z";
+const ltr$1g = false;
+const collection$1g = "SAP-icons-v5";
+const packageName$1g = "@ui5/webcomponents-icons";
+y$2(name$1h, { pathData: pathData$1g, ltr: ltr$1g, collection: collection$1g, packageName: packageName$1g });
+const name$1g = "lightbulb";
+const pathData$1f = "M256.5 0q33 0 61.5 12t50.5 33T403 95.5t12.5 64.5q0 24-7.5 42.5t-18 34-21.5 28-16 23.5q-1 1-6 16l-11 33q-7 21-15 47h-128l-16-48q-6-18-11-32.5t-5-15.5q-5-11-16-23.5T123 237t-18.5-34-8-44q0-35 12.5-64.5T143.5 44t51-32.5 62-11.5zm90 240q14-17 25.5-35.5t11.5-44.5q0-27-9.5-50.5t-27-41-40.5-27-50-9.5-50.5 9-40.5 26q-37 36-37 92 0 26 11 44t25 35q8 9 14 18t11 19q0 1 1 2.5t3 9T201 309t14.5 43h81q9-28 14.5-43t8-22.5 3.5-9.5 1-3q5-9 10.5-17t12.5-17zm-154 240h128l-10 10q-22 22-54 22-33 0-55-22zm121-80q6 0 10.5 4.5t4.5 11.5v32q0 7-4.5 11.5t-10.5 4.5h-115q-14 0-14-16v-32q0-16 14-16h115zm-43 48q14 0 14-16t-14-16-14 16 14 16z";
+const ltr$1f = false;
+const collection$1f = "SAP-icons-v4";
+const packageName$1f = "@ui5/webcomponents-icons";
+y$2(name$1g, { pathData: pathData$1f, ltr: ltr$1f, collection: collection$1f, packageName: packageName$1f });
+const name$1f = "lightbulb";
+const pathData$1e = "M160 380q0-9-2-18t-7-19-14.5-23-23.5-30q-17-22-33-48.5T64 176q0-38 16.5-70t44-55.5 62-37T257 0t70 13.5T388 51t43.5 56 16.5 70q0 39-16.5 65.5T398 291q-27 33-36.5 51t-9.5 36q0 19-7 28.5t-18 9.5H186q-15 0-20.5-10t-5.5-26zm97-329q-25 0-50.5 9.5t-46 26.5-33 39.5T115 176q0 26 11 44t28 38q17 21 33 46t21 61h96q5-36 21-61t33-46q17-20 28-37.5t11-43.5q0-27-12.5-50T352 87t-45-26.5-50-9.5zm69 461H186q-11 0-18.5-7.5T160 486t7.5-18 18.5-7h140q11 0 18.5 7t7.5 18-7.5 18.5T326 512z";
+const ltr$1e = false;
+const collection$1e = "SAP-icons-v5";
+const packageName$1e = "@ui5/webcomponents-icons";
+y$2(name$1f, { pathData: pathData$1e, ltr: ltr$1e, collection: collection$1e, packageName: packageName$1e });
+const name$1e = "temperature";
+const pathData$1d = "M96 249V80q0-33 23.5-56.5T176 0t56.5 23.5T256 80v169q29 19 46.5 50t17.5 69q0 30-11.5 56.5t-31 46T232 501t-56 11-56-11-45.5-30.5-31-46T32 368q0-38 17.5-69T96 249zm80 231q23 0 43.5-9t35.5-24 24-35.5 9-43.5q0-28-13-52.5T239 275l-15-9V80q0-20-14-34t-34-14-34 14-14 34v186l-14 9q-23 16-36.5 40.5T64 368q0 23 9 43.5T97 447t35.5 24 43.5 9zm-16-173V176q0-7 5-11.5t11-4.5q16 0 16 16v131q21 5 34.5 21.5T240 368q0 27-18.5 45.5T176 432q-26 0-45-18.5T112 368q0-23 14-39.5t34-21.5zm192-147h112q16 0 16 16t-16 16H352v-32zm0-96V32h112q16 0 16 16t-16 16H352zm48 160q16 0 16 16t-16 16h-48v-32h48zm-48-96V96h48q16 0 16 16t-16 16h-48z";
+const ltr$1d = false;
+const collection$1d = "SAP-icons-v4";
+const packageName$1d = "@ui5/webcomponents-icons";
+y$2(name$1e, { pathData: pathData$1d, ltr: ltr$1d, collection: collection$1d, packageName: packageName$1d });
+const name$1d = "temperature";
+const pathData$1c = "M274 262q22 21 34 48t12 58q0 30-11.5 56t-31 45.5-45.5 31-56 11.5-56-11.5-45.5-31-31-45.5T32 368q0-32 13.5-60.5T82 259V96q0-40 28-68t68-28 68 28 28 68v166zM378 83q-11 0-18.5-7T352 58t7.5-18.5T378 32h76q11 0 18.5 7.5T480 58t-7.5 18-18.5 7h-76zM176 461q19 0 36-7.5t29.5-20 20-29.5 7.5-36q0-22-9-41t-23-30q-14-10-14-23V96q0-19-13-32t-32-13-32 13-13 32v175q0 13-15 24t-25 30.5T83 368q0 19 7.5 36t20 29.5 29.5 20 36 7.5zm25-134q23 15 23 41 0 20-14 34t-34 14-34-14-14-34q0-13 6-23.5t16-16.5V154q0-11 7.5-18.5T176 128t18 7.5 7 18.5v173zm177-148q-11 0-18.5-7t-7.5-18 7.5-18.5T378 128h44q11 0 18.5 7.5T448 154t-7.5 18-18.5 7h-44zm76 45q11 0 18.5 7.5T480 250t-7.5 18-18.5 7h-76q-11 0-18.5-7t-7.5-18 7.5-18.5T378 224h76z";
+const ltr$1c = false;
+const collection$1c = "SAP-icons-v5";
+const packageName$1c = "@ui5/webcomponents-icons";
+y$2(name$1d, { pathData: pathData$1c, ltr: ltr$1c, collection: collection$1c, packageName: packageName$1c });
+const name$1c = "heating-cooling";
+const pathData$1b = "M256 148h38l24-42-22-33 18-34 24 36 18-34 26-6 6 26-19 32h42l-18 34-42-3-25 44 10 17 27-18h38l-19 37-24 17 11 21h49l17-38h39l-19 38h37l19 18-19 17h-37l19 52h-39l-17-52h-49l-11 21 24 17 18 38h-37l-26-18-11 17 25 43h51l18 30h-51l19 34-7 25-25-6-19-34-24 37-17-33 22-34-24-43h-38v-37h32l45-74-45-75h-32v-37zM1 193h139L70 78l117 70L209 9l22 87v54q-39 6-65 37t-26 73 26 72.5 65 37.5v53l-26 87-21-139-114 71 70-117L1 314l120-54zm230-10v144q-22-6-38-26.5T177 256q0-26 16-46.5t38-26.5zm26 41l31 36-31 36v-72z";
 const ltr$1b = false;
 const collection$1b = "SAP-icons-v4";
 const packageName$1b = "@ui5/webcomponents-icons";
 y$2(name$1c, { pathData: pathData$1b, ltr: ltr$1b, collection: collection$1b, packageName: packageName$1b });
-const name$1b = "home";
-const pathData$1a = "M451 148q29 26 29 66v208q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V214q0-39 29-66L195 24q26-24 61-24 36 0 61 24zm-22 66q0-16-12-28L282 61q-12-10-26-10t-26 10L96 186q-13 11-13 28v208q0 17 11 28t28 11h38V313q0-24 17-41t41-17h77q23 0 40 17t17 41v148h38q17 0 28-11t11-28V214zm-128 99q0-7-6-7h-77q-7 0-7 7v148h90V313z";
+const name$1b = "heating-cooling";
+const pathData$1a = "M487 224q11 0 18 7t7 18-7 18.5-18 7.5h-54l44 48q6 6 6 16 0 11-7.5 18.5T458 365q-11 0-20-9l-73-81h-71v20l90 89q7 7 7 18t-7.5 18.5T366 428q-12 0-18-8l-54-53v120q0 11-7 18t-18 7-18.5-7-7.5-18v-85q-29-2-54-14.5t-43-32-28.5-45.5-10.5-55 10.5-54.5 28.5-45 43-32 54-14.5V25q0-11 7.5-18T269 0t18 7 7 18v119l60-60q6-7 18-7 10 0 17.5 7.5T397 102q0 12-7 18l-96 96v8h72l72-87q8-9 20-9 10 0 17.5 7.5T483 153q0 9-6 17l-44 54h54zM52 85q-8-6-8-18 0-10 7.5-17.5T70 42t18 7l40 40q7 7 7 18t-7.5 18.5T110 133q-12 0-18-8zm106 170q0 38 24.5 64.5T243 350V161q-36 4-60.5 30T158 255zm-65-6q0 11-7 18.5T68 275H26q-11 0-18.5-7.5T0 249t7.5-18 18.5-7h42q11 0 18 7t7 18zm8 143q6-7 18-7 10 0 17.5 7.5T144 410q0 12-7 18l-40 40q-8 8-18 8-11 0-18.5-7.5T53 450q0-10 8-18z";
 const ltr$1a = false;
 const collection$1a = "SAP-icons-v5";
 const packageName$1a = "@ui5/webcomponents-icons";
 y$2(name$1b, { pathData: pathData$1a, ltr: ltr$1a, collection: collection$1a, packageName: packageName$1a });
-const name$1a = "lightbulb";
-const pathData$19 = "M256.5 0q33 0 61.5 12t50.5 33T403 95.5t12.5 64.5q0 24-7.5 42.5t-18 34-21.5 28-16 23.5q-1 1-6 16l-11 33q-7 21-15 47h-128l-16-48q-6-18-11-32.5t-5-15.5q-5-11-16-23.5T123 237t-18.5-34-8-44q0-35 12.5-64.5T143.5 44t51-32.5 62-11.5zm90 240q14-17 25.5-35.5t11.5-44.5q0-27-9.5-50.5t-27-41-40.5-27-50-9.5-50.5 9-40.5 26q-37 36-37 92 0 26 11 44t25 35q8 9 14 18t11 19q0 1 1 2.5t3 9T201 309t14.5 43h81q9-28 14.5-43t8-22.5 3.5-9.5 1-3q5-9 10.5-17t12.5-17zm-154 240h128l-10 10q-22 22-54 22-33 0-55-22zm121-80q6 0 10.5 4.5t4.5 11.5v32q0 7-4.5 11.5t-10.5 4.5h-115q-14 0-14-16v-32q0-16 14-16h115zm-43 48q14 0 14-16t-14-16-14 16 14 16z";
+const name$1a = "settings";
+const pathData$19 = "M146.556 358l31-12q-1-5-1.5-10.5t-.5-11.5q0-16 3-29l-30-13q-6-3-8.5-9.5t.5-12.5l12-28q4-10 16-10-2 0 0 .5t7 1.5l29 13q8-11 17.5-20t19.5-16l-11-30q-3-6 0-12.5t10-8.5l28-12q1-1 6-1 10 0 15 11l12 31q5-1 10.5-2t11.5-1q8 0 15 1l14 2 13-29q4-10 16-10 5 0 6 1l29 13q6 3 8.5 9.5t-.5 12.5l-13 30q21 16 34 37l31-12q1-1 6-1 11 0 16 11l11 28q2 7-.5 13.5t-9.5 8.5l-31 12q1 5 1.5 10.5t.5 10.5q0 15-3 30l30 13q7 3 9 9.5t0 12.5l-13 28q-4 10-16 10-5 0-6-1l-30-13q-8 10-16.5 18t-19.5 16l12 30q2 7-.5 13.5t-9.5 8.5l-29 11q-1 1-6 1-12 0-16-10l-12-31q-5 1-10.5 1.5t-10.5.5q-15 0-30-3l-13 30q-4 10-15 10 2 0 0-.5t-7-1.5l-27-12q-16-7-9-23l13-30q-10-8-19-16t-16-19l-30 11q-1 1-7 1-11 0-15-10l-11-29q-3-7 0-13.5t9-8.5zm177 63q20 0 37.5-7.5t31-20.5 21-31 7.5-38-7.5-37.5-21-30.5-31-20.5-37.5-7.5q-42 0-69 28t-27 68q0 42 27 69.5t69 27.5zm-322-290V99h34q1-14 12-28l-24-24 22-23 25 24q12-8 27-12V2h32v34q15 4 29 12l24-24 23 23-24 24q4 7 7 13.5t5 14.5h34v32h-34q-4 17-12 28l24 25-23 22-24-24q-14 9-29 12v34h-32v-34q-15-3-27-12l-25 24-22-22 24-25q-9-12-12-28h-34zm65-16q0 20 14 34.5t34 14.5q2 0 6-.5t9-1.5l6-3q18-10 25-28 1-4 1.5-7.5t.5-8.5q0-15-9.5-27.5t-23.5-17.5q-5-1-9-1.5t-6-.5q-9 0-17 3-18 6-27 23 0 2-.5 2.5t-.5 2.5q-3 7-3 16z";
 const ltr$19 = false;
+const accData$j = ICON_SETTINGS;
 const collection$19 = "SAP-icons-v4";
 const packageName$19 = "@ui5/webcomponents-icons";
-y$2(name$1a, { pathData: pathData$19, ltr: ltr$19, collection: collection$19, packageName: packageName$19 });
-const name$19 = "lightbulb";
-const pathData$18 = "M160 380q0-9-2-18t-7-19-14.5-23-23.5-30q-17-22-33-48.5T64 176q0-38 16.5-70t44-55.5 62-37T257 0t70 13.5T388 51t43.5 56 16.5 70q0 39-16.5 65.5T398 291q-27 33-36.5 51t-9.5 36q0 19-7 28.5t-18 9.5H186q-15 0-20.5-10t-5.5-26zm97-329q-25 0-50.5 9.5t-46 26.5-33 39.5T115 176q0 26 11 44t28 38q17 21 33 46t21 61h96q5-36 21-61t33-46q17-20 28-37.5t11-43.5q0-27-12.5-50T352 87t-45-26.5-50-9.5zm69 461H186q-11 0-18.5-7.5T160 486t7.5-18 18.5-7h140q11 0 18.5 7t7.5 18-7.5 18.5T326 512z";
+y$2(name$1a, { pathData: pathData$19, ltr: ltr$19, accData: accData$j, collection: collection$19, packageName: packageName$19 });
+const name$19 = "settings";
+const pathData$18 = "M188.902 201.895l10.994 30.984q0 9.995-7.996 12.993l-14.992 7.996h-2q-.999 1-2.998 1-7.995 0-10.994-6.997l-14.992-25.987q-4.997 1-8.995 1.5t-8.996.5-14.992-2L96.95 249.87q-2.999 5.997-10.995 5.997-1.999 0-2.998-.5t-2.999-.5l-14.992-7.996q-6.996-3.997-6.996-10.994 0-3.998 1-4.997l9.994-26.986Q55.971 191.9 44.977 176.908l-26.986 3.998q-4.998 1-8.496-2t-5.497-7.995L0 153.92v-2q0-4.997 1.999-8.495t6.996-4.497l22.988-7.996v-2.999q0-9.994 2-18.99t4.997-17.99L21.989 74.96q-3.998-2.998-3.998-8.995 0-4.998 2.998-8.996l9.995-12.993q4.997-4.997 10.994-4.997 2 0 5.997 1.999l18.99 12.993q7.996-6.996 16.991-11.494t18.99-7.496l2-22.988Q106.943 0 117.938 0h16.99q4.998 0 8.496 3.498t3.498 8.496l2 21.988q10.994 2 20.489 6.997t17.49 10.994l18.99-12.993q3.999-2 5.998-2 5.997 0 10.994 4.998l9.995 12.993q2.998 3.998 2.998 8.996t-3.998 8.995l-15.991 14.992q7.995 18.99 7.995 39.98v.999l22.988 6.996q8.996 2.999 8.996 12.993v2l-3.998 16.99q-2 9.995-11.994 9.995h-1.999l-25.986-3.998q-9.995 17.991-22.988 27.986zM82.957 127.933q0 18.99 12.493 31.984t32.483 12.993 32.483-12.993 12.494-31.984q0-19.99-12.494-32.483t-32.483-12.493T95.45 95.45t-12.493 32.483zm417.782 233.879q12.993 3.997 10.994 16.99v2l-4.997 20.989q-2.998 12.993-15.992 12.993h-1.999l-31.983-4.997q-8.995 18.99-28.985 34.981l12.993 33.983q0 5.997-.999 11.494t-6.996 9.495l-18.99 9.995q-5.997 1.998-6.997 1.998-8.995 0-13.993-7.995l-18.99-33.983q-4.997 1-10.494 1.5t-11.494.5q-4.998 0-9.495-.5t-9.495-1.5l-19.99 33.983q-4.997 7.995-12.993 7.995-4.998 0-6.997-1.998l-18.99-8.996q-8.995-3.998-8.995-13.993 0-3.997 1-5.996l12.993-33.983q-19.99-14.992-29.985-33.982l-33.982 4.997h-1.999q-12.993 0-15.992-12.993L191.9 383.8v-1.999q0-11.994 10.994-16.991l28.985-8.995v-3.998q0-24.987 8.996-45.976l-21.989-19.99q-2.998-2.998-4.997-10.994 0-6.997 3.998-10.994l12.993-16.992q4.997-5.996 11.994-5.996 5.996 0 8.995 2.998l23.987 15.992q19.99-16.991 44.977-23.988l1.999-28.985q1.999-14.992 15.992-14.992h20.989q15.991 0 15.991 14.992l2 27.986q24.986 5.997 47.974 21.988l22.988-15.991q4.998-2.999 8.996-2.999 7.995 0 11.993 5.997l12.994 16.991q3.997 3.998 3.997 10.994 0 5.997-4.997 10.995l-19.99 19.99q4.998 10.994 7.497 22.987t2.498 25.987v1zm-217.886-9.995q0 28.985 19.99 48.974t48.974 19.99 48.974-19.99 19.99-48.974-19.99-48.975-48.974-19.99-48.975 19.99-19.99 48.975z";
 const ltr$18 = false;
+const accData$i = ICON_SETTINGS;
 const collection$18 = "SAP-icons-v5";
 const packageName$18 = "@ui5/webcomponents-icons";
-y$2(name$19, { pathData: pathData$18, ltr: ltr$18, collection: collection$18, packageName: packageName$18 });
-const name$18 = "temperature";
-const pathData$17 = "M96 249V80q0-33 23.5-56.5T176 0t56.5 23.5T256 80v169q29 19 46.5 50t17.5 69q0 30-11.5 56.5t-31 46T232 501t-56 11-56-11-45.5-30.5-31-46T32 368q0-38 17.5-69T96 249zm80 231q23 0 43.5-9t35.5-24 24-35.5 9-43.5q0-28-13-52.5T239 275l-15-9V80q0-20-14-34t-34-14-34 14-14 34v186l-14 9q-23 16-36.5 40.5T64 368q0 23 9 43.5T97 447t35.5 24 43.5 9zm-16-173V176q0-7 5-11.5t11-4.5q16 0 16 16v131q21 5 34.5 21.5T240 368q0 27-18.5 45.5T176 432q-26 0-45-18.5T112 368q0-23 14-39.5t34-21.5zm192-147h112q16 0 16 16t-16 16H352v-32zm0-96V32h112q16 0 16 16t-16 16H352zm48 160q16 0 16 16t-16 16h-48v-32h48zm-48-96V96h48q16 0 16 16t-16 16h-48z";
+y$2(name$19, { pathData: pathData$18, ltr: ltr$18, accData: accData$i, collection: collection$18, packageName: packageName$18 });
+const name$18 = "synchronize";
+const pathData$17 = "M255.5 32q-38 0-72.5 12t-62.5 33.5-49 51-31 63.5h-33q11-41 34.5-76.5t56-61 72.5-40 85-14.5q73 0 132.5 36.5t91.5 96.5V76q1-7 6-11.5t11-3.5q7 0 11 5t4 11v84q-2 14-11.5 22.5t-22.5 8.5l-85-8q-6 0-10.5-5t-4.5-11q2-7 6.5-11.5t11.5-3.5l61 5q-28-56-81.5-91T255.5 32zm0 448q42 0 80-15t67.5-40.5 48.5-60.5 25-76h33q-6 47-28 88t-56 71-77.5 47.5-92.5 17.5q-72 0-131-36t-92-95v55q-1 7-6 11.5t-11 3.5q-7 0-11-5t-4-11v-84q2-14 11.5-22.5t23.5-8.5l84 8q7 0 11 5t4 11q-1 8-6 12t-11 4l-62-6q27 56 80.5 91t119.5 35z";
 const ltr$17 = false;
+const accData$h = ICON_SYNCHRONIZE;
 const collection$17 = "SAP-icons-v4";
 const packageName$17 = "@ui5/webcomponents-icons";
-y$2(name$18, { pathData: pathData$17, ltr: ltr$17, collection: collection$17, packageName: packageName$17 });
-const name$17 = "temperature";
-const pathData$16 = "M274 262q22 21 34 48t12 58q0 30-11.5 56t-31 45.5-45.5 31-56 11.5-56-11.5-45.5-31-31-45.5T32 368q0-32 13.5-60.5T82 259V96q0-40 28-68t68-28 68 28 28 68v166zM378 83q-11 0-18.5-7T352 58t7.5-18.5T378 32h76q11 0 18.5 7.5T480 58t-7.5 18-18.5 7h-76zM176 461q19 0 36-7.5t29.5-20 20-29.5 7.5-36q0-22-9-41t-23-30q-14-10-14-23V96q0-19-13-32t-32-13-32 13-13 32v175q0 13-15 24t-25 30.5T83 368q0 19 7.5 36t20 29.5 29.5 20 36 7.5zm25-134q23 15 23 41 0 20-14 34t-34 14-34-14-14-34q0-13 6-23.5t16-16.5V154q0-11 7.5-18.5T176 128t18 7.5 7 18.5v173zm177-148q-11 0-18.5-7t-7.5-18 7.5-18.5T378 128h44q11 0 18.5 7.5T448 154t-7.5 18-18.5 7h-44zm76 45q11 0 18.5 7.5T480 250t-7.5 18-18.5 7h-76q-11 0-18.5-7t-7.5-18 7.5-18.5T378 224h76z";
+y$2(name$18, { pathData: pathData$17, ltr: ltr$17, accData: accData$h, collection: collection$17, packageName: packageName$17 });
+const name$17 = "synchronize";
+const pathData$16 = "M26 192q-11 0-18.5-7.5T0 166q0-2 1-6t5-12q17-33 42.5-60.5t58-47 70-30T254 0q60 0 113.5 23.5T461 90V58q0-11 7-18.5t18-7.5 18.5 7.5T512 58v108q0 11-7.5 18.5T486 192H378q-11 0-18.5-7.5T352 166t7.5-18 18.5-7h59q-33-43-81-66.5T254 51q-66 0-121 34t-84 93q-8 14-23 14zm460 128q11 0 18.5 7.5T512 346q0 2-1 6t-5 12q-16 33-42.5 60.5t-59 47-70 30T258 512q-60 0-113.5-23.5T51 422v32q0 11-7 18.5T26 480t-18.5-7.5T0 454V346q0-11 7.5-18.5T26 320h108q11 0 18.5 7.5T160 346t-7.5 18-18.5 7H75q33 43 81 66.5T258 461q66 0 121-34t84-93q8-14 23-14z";
 const ltr$16 = false;
+const accData$g = ICON_SYNCHRONIZE;
 const collection$16 = "SAP-icons-v5";
 const packageName$16 = "@ui5/webcomponents-icons";
-y$2(name$17, { pathData: pathData$16, ltr: ltr$16, collection: collection$16, packageName: packageName$16 });
-const name$16 = "heating-cooling";
-const pathData$15 = "M256 148h38l24-42-22-33 18-34 24 36 18-34 26-6 6 26-19 32h42l-18 34-42-3-25 44 10 17 27-18h38l-19 37-24 17 11 21h49l17-38h39l-19 38h37l19 18-19 17h-37l19 52h-39l-17-52h-49l-11 21 24 17 18 38h-37l-26-18-11 17 25 43h51l18 30h-51l19 34-7 25-25-6-19-34-24 37-17-33 22-34-24-43h-38v-37h32l45-74-45-75h-32v-37zM1 193h139L70 78l117 70L209 9l22 87v54q-39 6-65 37t-26 73 26 72.5 65 37.5v53l-26 87-21-139-114 71 70-117L1 314l120-54zm230-10v144q-22-6-38-26.5T177 256q0-26 16-46.5t38-26.5zm26 41l31 36-31 36v-72z";
+y$2(name$17, { pathData: pathData$16, ltr: ltr$16, accData: accData$g, collection: collection$16, packageName: packageName$16 });
+const name$16 = "refresh";
+const pathData$15 = "M478 320q-6 41-25.5 76T404 456.5 337.5 497 257 512q-46 0-86.5-17.5t-71-48-48-71T34 288q0-45 16.5-85T96 133t68-48 84-20h61q26 0 60-1l-41-36q-5-5-5-11.5T328 5t11-5 11 5l58 51q9 10 9 23t-9 23l-57 54q-5 5-11 5t-11-5-5-11.5 5-11.5l40-37H257q-40 0-74.5 15T122 152t-41 61-15 75 15 75 41 61 60.5 41 74.5 15q36 0 68-12t56.5-33.5T423 384t23-64h32z";
 const ltr$15 = false;
+const accData$f = ICON_REFRESH;
 const collection$15 = "SAP-icons-v4";
 const packageName$15 = "@ui5/webcomponents-icons";
-y$2(name$16, { pathData: pathData$15, ltr: ltr$15, collection: collection$15, packageName: packageName$15 });
-const name$15 = "heating-cooling";
-const pathData$14 = "M487 224q11 0 18 7t7 18-7 18.5-18 7.5h-54l44 48q6 6 6 16 0 11-7.5 18.5T458 365q-11 0-20-9l-73-81h-71v20l90 89q7 7 7 18t-7.5 18.5T366 428q-12 0-18-8l-54-53v120q0 11-7 18t-18 7-18.5-7-7.5-18v-85q-29-2-54-14.5t-43-32-28.5-45.5-10.5-55 10.5-54.5 28.5-45 43-32 54-14.5V25q0-11 7.5-18T269 0t18 7 7 18v119l60-60q6-7 18-7 10 0 17.5 7.5T397 102q0 12-7 18l-96 96v8h72l72-87q8-9 20-9 10 0 17.5 7.5T483 153q0 9-6 17l-44 54h54zM52 85q-8-6-8-18 0-10 7.5-17.5T70 42t18 7l40 40q7 7 7 18t-7.5 18.5T110 133q-12 0-18-8zm106 170q0 38 24.5 64.5T243 350V161q-36 4-60.5 30T158 255zm-65-6q0 11-7 18.5T68 275H26q-11 0-18.5-7.5T0 249t7.5-18 18.5-7h42q11 0 18 7t7 18zm8 143q6-7 18-7 10 0 17.5 7.5T144 410q0 12-7 18l-40 40q-8 8-18 8-11 0-18.5-7.5T53 450q0-10 8-18z";
+y$2(name$16, { pathData: pathData$15, ltr: ltr$15, accData: accData$f, collection: collection$15, packageName: packageName$15 });
+const name$15 = "refresh";
+const pathData$14 = "M307 179q0-11 7.5-18t18.5-7h101q-27-48-75-75.5T255 51q-42 0-79.5 16t-65 43.5-43.5 65T51 256t16 80 44 65 65 44 80 16q35 0 67-11.5t58.5-31.5 45.5-48.5 28-62.5q2-8 9.5-13.5T480 288q11 0 18.5 7.5T506 314q0 2-.5 3.5L504 322q-10 42-34 76.5t-57 60-73 39.5-84 14q-53 0-100-20t-81.5-54.5T20 356 0 256t20-100 54.5-81.5 81-54.5T255 0q61 0 115.5 26.5T461 101V26q0-11 7-18.5T486 0t18.5 7.5T512 26v153q0 11-7.5 18.5T486 205H333q-11 0-18.5-7.5T307 179z";
 const ltr$14 = false;
+const accData$e = ICON_REFRESH;
 const collection$14 = "SAP-icons-v5";
 const packageName$14 = "@ui5/webcomponents-icons";
-y$2(name$15, { pathData: pathData$14, ltr: ltr$14, collection: collection$14, packageName: packageName$14 });
-const name$14 = "settings";
-const pathData$13 = "M146.556 358l31-12q-1-5-1.5-10.5t-.5-11.5q0-16 3-29l-30-13q-6-3-8.5-9.5t.5-12.5l12-28q4-10 16-10-2 0 0 .5t7 1.5l29 13q8-11 17.5-20t19.5-16l-11-30q-3-6 0-12.5t10-8.5l28-12q1-1 6-1 10 0 15 11l12 31q5-1 10.5-2t11.5-1q8 0 15 1l14 2 13-29q4-10 16-10 5 0 6 1l29 13q6 3 8.5 9.5t-.5 12.5l-13 30q21 16 34 37l31-12q1-1 6-1 11 0 16 11l11 28q2 7-.5 13.5t-9.5 8.5l-31 12q1 5 1.5 10.5t.5 10.5q0 15-3 30l30 13q7 3 9 9.5t0 12.5l-13 28q-4 10-16 10-5 0-6-1l-30-13q-8 10-16.5 18t-19.5 16l12 30q2 7-.5 13.5t-9.5 8.5l-29 11q-1 1-6 1-12 0-16-10l-12-31q-5 1-10.5 1.5t-10.5.5q-15 0-30-3l-13 30q-4 10-15 10 2 0 0-.5t-7-1.5l-27-12q-16-7-9-23l13-30q-10-8-19-16t-16-19l-30 11q-1 1-7 1-11 0-15-10l-11-29q-3-7 0-13.5t9-8.5zm177 63q20 0 37.5-7.5t31-20.5 21-31 7.5-38-7.5-37.5-21-30.5-31-20.5-37.5-7.5q-42 0-69 28t-27 68q0 42 27 69.5t69 27.5zm-322-290V99h34q1-14 12-28l-24-24 22-23 25 24q12-8 27-12V2h32v34q15 4 29 12l24-24 23 23-24 24q4 7 7 13.5t5 14.5h34v32h-34q-4 17-12 28l24 25-23 22-24-24q-14 9-29 12v34h-32v-34q-15-3-27-12l-25 24-22-22 24-25q-9-12-12-28h-34zm65-16q0 20 14 34.5t34 14.5q2 0 6-.5t9-1.5l6-3q18-10 25-28 1-4 1.5-7.5t.5-8.5q0-15-9.5-27.5t-23.5-17.5q-5-1-9-1.5t-6-.5q-9 0-17 3-18 6-27 23 0 2-.5 2.5t-.5 2.5q-3 7-3 16z";
+y$2(name$15, { pathData: pathData$14, ltr: ltr$14, accData: accData$e, collection: collection$14, packageName: packageName$14 });
+const name$14 = "warning";
+const pathData$13 = "M257 349q-9 0-13-3.5t-6-18.5L218 39q0-17 11-28t28-11q15 0 26.5 11T295 39l-19 288q-3 14-7 18t-12 4zm1 54q21 0 37 15.5t16 38.5q0 22-16 38.5T258 512q-24 0-40-16.5T202 457q0-23 16-38.5t40-15.5z";
 const ltr$13 = false;
-const accData$j = ICON_SETTINGS;
 const collection$13 = "SAP-icons-v4";
 const packageName$13 = "@ui5/webcomponents-icons";
-y$2(name$14, { pathData: pathData$13, ltr: ltr$13, accData: accData$j, collection: collection$13, packageName: packageName$13 });
-const name$13 = "settings";
-const pathData$12 = "M188.902 201.895l10.994 30.984q0 9.995-7.996 12.993l-14.992 7.996h-2q-.999 1-2.998 1-7.995 0-10.994-6.997l-14.992-25.987q-4.997 1-8.995 1.5t-8.996.5-14.992-2L96.95 249.87q-2.999 5.997-10.995 5.997-1.999 0-2.998-.5t-2.999-.5l-14.992-7.996q-6.996-3.997-6.996-10.994 0-3.998 1-4.997l9.994-26.986Q55.971 191.9 44.977 176.908l-26.986 3.998q-4.998 1-8.496-2t-5.497-7.995L0 153.92v-2q0-4.997 1.999-8.495t6.996-4.497l22.988-7.996v-2.999q0-9.994 2-18.99t4.997-17.99L21.989 74.96q-3.998-2.998-3.998-8.995 0-4.998 2.998-8.996l9.995-12.993q4.997-4.997 10.994-4.997 2 0 5.997 1.999l18.99 12.993q7.996-6.996 16.991-11.494t18.99-7.496l2-22.988Q106.943 0 117.938 0h16.99q4.998 0 8.496 3.498t3.498 8.496l2 21.988q10.994 2 20.489 6.997t17.49 10.994l18.99-12.993q3.999-2 5.998-2 5.997 0 10.994 4.998l9.995 12.993q2.998 3.998 2.998 8.996t-3.998 8.995l-15.991 14.992q7.995 18.99 7.995 39.98v.999l22.988 6.996q8.996 2.999 8.996 12.993v2l-3.998 16.99q-2 9.995-11.994 9.995h-1.999l-25.986-3.998q-9.995 17.991-22.988 27.986zM82.957 127.933q0 18.99 12.493 31.984t32.483 12.993 32.483-12.993 12.494-31.984q0-19.99-12.494-32.483t-32.483-12.493T95.45 95.45t-12.493 32.483zm417.782 233.879q12.993 3.997 10.994 16.99v2l-4.997 20.989q-2.998 12.993-15.992 12.993h-1.999l-31.983-4.997q-8.995 18.99-28.985 34.981l12.993 33.983q0 5.997-.999 11.494t-6.996 9.495l-18.99 9.995q-5.997 1.998-6.997 1.998-8.995 0-13.993-7.995l-18.99-33.983q-4.997 1-10.494 1.5t-11.494.5q-4.998 0-9.495-.5t-9.495-1.5l-19.99 33.983q-4.997 7.995-12.993 7.995-4.998 0-6.997-1.998l-18.99-8.996q-8.995-3.998-8.995-13.993 0-3.997 1-5.996l12.993-33.983q-19.99-14.992-29.985-33.982l-33.982 4.997h-1.999q-12.993 0-15.992-12.993L191.9 383.8v-1.999q0-11.994 10.994-16.991l28.985-8.995v-3.998q0-24.987 8.996-45.976l-21.989-19.99q-2.998-2.998-4.997-10.994 0-6.997 3.998-10.994l12.993-16.992q4.997-5.996 11.994-5.996 5.996 0 8.995 2.998l23.987 15.992q19.99-16.991 44.977-23.988l1.999-28.985q1.999-14.992 15.992-14.992h20.989q15.991 0 15.991 14.992l2 27.986q24.986 5.997 47.974 21.988l22.988-15.991q4.998-2.999 8.996-2.999 7.995 0 11.993 5.997l12.994 16.991q3.997 3.998 3.997 10.994 0 5.997-4.997 10.995l-19.99 19.99q4.998 10.994 7.497 22.987t2.498 25.987v1zm-217.886-9.995q0 28.985 19.99 48.974t48.974 19.99 48.974-19.99 19.99-48.974-19.99-48.975-48.974-19.99-48.975 19.99-19.99 48.975z";
+y$2(name$14, { pathData: pathData$13, ltr: ltr$13, collection: collection$13, packageName: packageName$13 });
+const name$13 = "warning";
+const pathData$12 = "M505 399q7 13 7 27 0 21-15.5 37.5T456 480H56q-25 0-40.5-16.5T0 426q0-14 7-27L208 59q17-27 48-27 14 0 27 6.5T304 59zM288 176q0-14-9-23t-23-9-23 9-9 23v96q0 14 9 23t23 9 23-9 9-23v-96zm-32 240q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
 const ltr$12 = false;
-const accData$i = ICON_SETTINGS;
 const collection$12 = "SAP-icons-v5";
 const packageName$12 = "@ui5/webcomponents-icons";
-y$2(name$13, { pathData: pathData$12, ltr: ltr$12, accData: accData$i, collection: collection$12, packageName: packageName$12 });
-const name$12 = "synchronize";
-const pathData$11 = "M255.5 32q-38 0-72.5 12t-62.5 33.5-49 51-31 63.5h-33q11-41 34.5-76.5t56-61 72.5-40 85-14.5q73 0 132.5 36.5t91.5 96.5V76q1-7 6-11.5t11-3.5q7 0 11 5t4 11v84q-2 14-11.5 22.5t-22.5 8.5l-85-8q-6 0-10.5-5t-4.5-11q2-7 6.5-11.5t11.5-3.5l61 5q-28-56-81.5-91T255.5 32zm0 448q42 0 80-15t67.5-40.5 48.5-60.5 25-76h33q-6 47-28 88t-56 71-77.5 47.5-92.5 17.5q-72 0-131-36t-92-95v55q-1 7-6 11.5t-11 3.5q-7 0-11-5t-4-11v-84q2-14 11.5-22.5t23.5-8.5l84 8q7 0 11 5t4 11q-1 8-6 12t-11 4l-62-6q27 56 80.5 91t119.5 35z";
+y$2(name$13, { pathData: pathData$12, ltr: ltr$12, collection: collection$12, packageName: packageName$12 });
+const name$12 = "add";
+const pathData$11 = "M32 240q0-7 5-11.5t11-4.5h176V48q0-7 5-11.5t11-4.5h32q16 0 16 16v176h176q16 0 16 16v32q0 16-16 16H288v176q0 16-16 16h-32q-6 0-11-4.5t-5-11.5V288H48q-6 0-11-4.5T32 272v-32z";
 const ltr$11 = false;
-const accData$h = ICON_SYNCHRONIZE;
+const accData$d = ICON_ADD;
 const collection$11 = "SAP-icons-v4";
 const packageName$11 = "@ui5/webcomponents-icons";
-y$2(name$12, { pathData: pathData$11, ltr: ltr$11, accData: accData$h, collection: collection$11, packageName: packageName$11 });
-const name$11 = "synchronize";
-const pathData$10 = "M26 192q-11 0-18.5-7.5T0 166q0-2 1-6t5-12q17-33 42.5-60.5t58-47 70-30T254 0q60 0 113.5 23.5T461 90V58q0-11 7-18.5t18-7.5 18.5 7.5T512 58v108q0 11-7.5 18.5T486 192H378q-11 0-18.5-7.5T352 166t7.5-18 18.5-7h59q-33-43-81-66.5T254 51q-66 0-121 34t-84 93q-8 14-23 14zm460 128q11 0 18.5 7.5T512 346q0 2-1 6t-5 12q-16 33-42.5 60.5t-59 47-70 30T258 512q-60 0-113.5-23.5T51 422v32q0 11-7 18.5T26 480t-18.5-7.5T0 454V346q0-11 7.5-18.5T26 320h108q11 0 18.5 7.5T160 346t-7.5 18-18.5 7H75q33 43 81 66.5T258 461q66 0 121-34t84-93q8-14 23-14z";
+y$2(name$12, { pathData: pathData$11, ltr: ltr$11, accData: accData$d, collection: collection$11, packageName: packageName$11 });
+const name$11 = "add";
+const pathData$10 = "M454 230q11 0 18.5 7.5T480 256t-7.5 18.5T454 282H282v172q0 11-7.5 18.5T256 480t-18.5-7.5T230 454V282H58q-11 0-18.5-7.5T32 256t7.5-18.5T58 230h172V58q0-11 7.5-18.5T256 32t18.5 7.5T282 58v172h172z";
 const ltr$10 = false;
-const accData$g = ICON_SYNCHRONIZE;
+const accData$c = ICON_ADD;
 const collection$10 = "SAP-icons-v5";
 const packageName$10 = "@ui5/webcomponents-icons";
-y$2(name$11, { pathData: pathData$10, ltr: ltr$10, accData: accData$g, collection: collection$10, packageName: packageName$10 });
-const name$10 = "refresh";
-const pathData$$ = "M478 320q-6 41-25.5 76T404 456.5 337.5 497 257 512q-46 0-86.5-17.5t-71-48-48-71T34 288q0-45 16.5-85T96 133t68-48 84-20h61q26 0 60-1l-41-36q-5-5-5-11.5T328 5t11-5 11 5l58 51q9 10 9 23t-9 23l-57 54q-5 5-11 5t-11-5-5-11.5 5-11.5l40-37H257q-40 0-74.5 15T122 152t-41 61-15 75 15 75 41 61 60.5 41 74.5 15q36 0 68-12t56.5-33.5T423 384t23-64h32z";
+y$2(name$11, { pathData: pathData$10, ltr: ltr$10, accData: accData$c, collection: collection$10, packageName: packageName$10 });
+const name$10 = "navigation-right-arrow";
+const pathData$$ = "M296 268q11-12 0-23L139 86q-10-10-10-23t10-22q9-10 22-10t23 10l191 193q9 9 9 22.5t-9 22.5L183 471q-10 10-23 10t-23-10q-9-9-9-22.5t9-22.5z";
 const ltr$$ = false;
-const accData$f = ICON_REFRESH;
 const collection$$ = "SAP-icons-v4";
 const packageName$$ = "@ui5/webcomponents-icons";
-y$2(name$10, { pathData: pathData$$, ltr: ltr$$, accData: accData$f, collection: collection$$, packageName: packageName$$ });
-const name$$ = "refresh";
-const pathData$_ = "M307 179q0-11 7.5-18t18.5-7h101q-27-48-75-75.5T255 51q-42 0-79.5 16t-65 43.5-43.5 65T51 256t16 80 44 65 65 44 80 16q35 0 67-11.5t58.5-31.5 45.5-48.5 28-62.5q2-8 9.5-13.5T480 288q11 0 18.5 7.5T506 314q0 2-.5 3.5L504 322q-10 42-34 76.5t-57 60-73 39.5-84 14q-53 0-100-20t-81.5-54.5T20 356 0 256t20-100 54.5-81.5 81-54.5T255 0q61 0 115.5 26.5T461 101V26q0-11 7-18.5T486 0t18.5 7.5T512 26v153q0 11-7.5 18.5T486 205H333q-11 0-18.5-7.5T307 179z";
+y$2(name$10, { pathData: pathData$$, ltr: ltr$$, collection: collection$$, packageName: packageName$$ });
+const name$$ = "navigation-right-arrow";
+const pathData$_ = "M186 416q-11 0-18.5-7.5T160 390q0-10 8-18l121-116-121-116q-8-8-8-18 0-11 7.5-18.5T186 96q10 0 17 7l141 134q8 8 8 19 0 12-8 18L203 409q-7 7-17 7z";
 const ltr$_ = false;
-const accData$e = ICON_REFRESH;
 const collection$_ = "SAP-icons-v5";
 const packageName$_ = "@ui5/webcomponents-icons";
-y$2(name$$, { pathData: pathData$_, ltr: ltr$_, accData: accData$e, collection: collection$_, packageName: packageName$_ });
-const name$_ = "warning";
-const pathData$Z = "M257 349q-9 0-13-3.5t-6-18.5L218 39q0-17 11-28t28-11q15 0 26.5 11T295 39l-19 288q-3 14-7 18t-12 4zm1 54q21 0 37 15.5t16 38.5q0 22-16 38.5T258 512q-24 0-40-16.5T202 457q0-23 16-38.5t40-15.5z";
+y$2(name$$, { pathData: pathData$_, ltr: ltr$_, collection: collection$_, packageName: packageName$_ });
+const iconNavigationRightArrow = "navigation-right-arrow";
+const name$_ = "navigation-left-arrow";
+const pathData$Z = "M375.5 426q9 9 9 22.5t-9 22.5q-10 10-23 10t-23-10l-192-192q-9-9-9-22.5t9-22.5l191-193q10-10 23-10t22 10q10 9 10 22t-10 23l-157 159q-5 5-5 11.5t5 11.5z";
 const ltr$Z = false;
 const collection$Z = "SAP-icons-v4";
 const packageName$Z = "@ui5/webcomponents-icons";
 y$2(name$_, { pathData: pathData$Z, ltr: ltr$Z, collection: collection$Z, packageName: packageName$Z });
-const name$Z = "warning";
-const pathData$Y = "M505 399q7 13 7 27 0 21-15.5 37.5T456 480H56q-25 0-40.5-16.5T0 426q0-14 7-27L208 59q17-27 48-27 14 0 27 6.5T304 59zM288 176q0-14-9-23t-23-9-23 9-9 23v96q0 14 9 23t23 9 23-9 9-23v-96zm-32 240q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
+const name$Z = "navigation-left-arrow";
+const pathData$Y = "M326 416q-10 0-17-7L168 274q-8-6-8-18 0-11 8-19l141-134q7-7 17-7 11 0 18.5 7.5T352 122q0 10-8 18L223 256l121 116q8 8 8 18 0 11-7.5 18.5T326 416z";
 const ltr$Y = false;
 const collection$Y = "SAP-icons-v5";
 const packageName$Y = "@ui5/webcomponents-icons";
 y$2(name$Z, { pathData: pathData$Y, ltr: ltr$Y, collection: collection$Y, packageName: packageName$Y });
-const name$Y = "add";
-const pathData$X = "M32 240q0-7 5-11.5t11-4.5h176V48q0-7 5-11.5t11-4.5h32q16 0 16 16v176h176q16 0 16 16v32q0 16-16 16H288v176q0 16-16 16h-32q-6 0-11-4.5t-5-11.5V288H48q-6 0-11-4.5T32 272v-32z";
+const name$Y = "overflow";
+const pathData$X = "M448 192q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm0 96q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9zm-192-96q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm0 96q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9zM64 192q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm0 96q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
 const ltr$X = false;
-const accData$d = ICON_ADD;
+const accData$b = ICON_OVERFLOW;
 const collection$X = "SAP-icons-v4";
 const packageName$X = "@ui5/webcomponents-icons";
-y$2(name$Y, { pathData: pathData$X, ltr: ltr$X, accData: accData$d, collection: collection$X, packageName: packageName$X });
-const name$X = "add";
-const pathData$W = "M454 230q11 0 18.5 7.5T480 256t-7.5 18.5T454 282H282v172q0 11-7.5 18.5T256 480t-18.5-7.5T230 454V282H58q-11 0-18.5-7.5T32 256t7.5-18.5T58 230h172V58q0-11 7.5-18.5T256 32t18.5 7.5T282 58v172h172z";
+y$2(name$Y, { pathData: pathData$X, ltr: ltr$X, accData: accData$b, collection: collection$X, packageName: packageName$X });
+const name$X = "overflow";
+const pathData$W = "M64 192q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm192 0q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm192 0q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19z";
 const ltr$W = false;
-const accData$c = ICON_ADD;
+const accData$a = ICON_OVERFLOW;
 const collection$W = "SAP-icons-v5";
 const packageName$W = "@ui5/webcomponents-icons";
-y$2(name$X, { pathData: pathData$W, ltr: ltr$W, accData: accData$c, collection: collection$W, packageName: packageName$W });
-const name$W = "navigation-right-arrow";
-const pathData$V = "M296 268q11-12 0-23L139 86q-10-10-10-23t10-22q9-10 22-10t23 10l191 193q9 9 9 22.5t-9 22.5L183 471q-10 10-23 10t-23-10q-9-9-9-22.5t9-22.5z";
+y$2(name$X, { pathData: pathData$W, ltr: ltr$W, accData: accData$a, collection: collection$W, packageName: packageName$W });
+const iconOverflow = "overflow";
+const name$W = "action";
+const pathData$V = "M416 319h32v129q0 13-9 22.5t-23 9.5H32q-13 0-22.5-9.5T0 448V64q0-14 9.5-23T32 32h128v32H32v384h384V319zm87-229q9 10 9 23t-9 23l-92 84q-5 5-11 5t-11-5-5-11.5 5-11.5l75-69h-48q-40 0-75 15t-61 41.5-41 61.5-15 74v16q0 16-16 16t-16-16v-18.5l1-4.5q1-45 19.5-84.5T261 160t70-46 85-17h48l-75-69q-5-5-5-11.5T389 5t11-5 11 5z";
 const ltr$V = false;
 const collection$V = "SAP-icons-v4";
 const packageName$V = "@ui5/webcomponents-icons";
 y$2(name$W, { pathData: pathData$V, ltr: ltr$V, collection: collection$V, packageName: packageName$V });
-const name$V = "navigation-right-arrow";
-const pathData$U = "M186 416q-11 0-18.5-7.5T160 390q0-10 8-18l121-116-121-116q-8-8-8-18 0-11 7.5-18.5T186 96q10 0 17 7l141 134q8 8 8 19 0 12-8 18L203 409q-7 7-17 7z";
+const name$V = "action";
+const pathData$U = "M504 109q8 8 8 19t-8 19L395 249q-7 7-17 7-11 0-18.5-7.5T352 230q0-10 8-18l69-65h-52q-21 0-39.5 8T305 177t-22 33-8 40v76q0 11-7 18.5t-18 7.5-18.5-7.5T224 326v-76q0-32 12-60t32.5-49 48.5-33 60-12h38l-55-52q-8-8-8-18 0-11 7.5-18.5T378 0q10 0 17 7zm-50 194q11 0 18.5 7t7.5 18v62q0 38-26 64t-64 26H90q-38 0-64-26T0 390V90q0-38 26-64T90 0h137q11 0 18.5 7.5T253 26t-7.5 18-18.5 7H90q-17 0-28 11T51 90v300q0 17 11 28t28 11h300q17 0 28-11t11-28v-62q0-11 7-18t18-7z";
 const ltr$U = false;
 const collection$U = "SAP-icons-v5";
 const packageName$U = "@ui5/webcomponents-icons";
 y$2(name$V, { pathData: pathData$U, ltr: ltr$U, collection: collection$U, packageName: packageName$U });
-const iconNavigationRightArrow = "navigation-right-arrow";
-const name$U = "navigation-left-arrow";
-const pathData$T = "M375.5 426q9 9 9 22.5t-9 22.5q-10 10-23 10t-23-10l-192-192q-9-9-9-22.5t9-22.5l191-193q10-10 23-10t22 10q10 9 10 22t-10 23l-157 159q-5 5-5 11.5t5 11.5z";
-const ltr$T = false;
-const collection$T = "SAP-icons-v4";
-const packageName$T = "@ui5/webcomponents-icons";
-y$2(name$U, { pathData: pathData$T, ltr: ltr$T, collection: collection$T, packageName: packageName$T });
-const name$T = "navigation-left-arrow";
-const pathData$S = "M326 416q-10 0-17-7L168 274q-8-6-8-18 0-11 8-19l141-134q7-7 17-7 11 0 18.5 7.5T352 122q0 10-8 18L223 256l121 116q8 8 8 18 0 11-7.5 18.5T326 416z";
-const ltr$S = false;
-const collection$S = "SAP-icons-v5";
-const packageName$S = "@ui5/webcomponents-icons";
-y$2(name$T, { pathData: pathData$S, ltr: ltr$S, collection: collection$S, packageName: packageName$S });
-const name$S = "overflow";
-const pathData$R = "M448 192q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm0 96q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9zm-192-96q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm0 96q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9zM64 192q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm0 96q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
-const ltr$R = false;
-const accData$b = ICON_OVERFLOW;
-const collection$R = "SAP-icons-v4";
-const packageName$R = "@ui5/webcomponents-icons";
-y$2(name$S, { pathData: pathData$R, ltr: ltr$R, accData: accData$b, collection: collection$R, packageName: packageName$R });
-const name$R = "overflow";
-const pathData$Q = "M64 192q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm192 0q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm192 0q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19z";
-const ltr$Q = false;
-const accData$a = ICON_OVERFLOW;
-const collection$Q = "SAP-icons-v5";
-const packageName$Q = "@ui5/webcomponents-icons";
-y$2(name$R, { pathData: pathData$Q, ltr: ltr$Q, accData: accData$a, collection: collection$Q, packageName: packageName$Q });
-const iconOverflow = "overflow";
-const name$Q = "action";
-const pathData$P = "M416 319h32v129q0 13-9 22.5t-23 9.5H32q-13 0-22.5-9.5T0 448V64q0-14 9.5-23T32 32h128v32H32v384h384V319zm87-229q9 10 9 23t-9 23l-92 84q-5 5-11 5t-11-5-5-11.5 5-11.5l75-69h-48q-40 0-75 15t-61 41.5-41 61.5-15 74v16q0 16-16 16t-16-16v-18.5l1-4.5q1-45 19.5-84.5T261 160t70-46 85-17h48l-75-69q-5-5-5-11.5T389 5t11-5 11 5z";
-const ltr$P = false;
-const collection$P = "SAP-icons-v4";
-const packageName$P = "@ui5/webcomponents-icons";
-y$2(name$Q, { pathData: pathData$P, ltr: ltr$P, collection: collection$P, packageName: packageName$P });
-const name$P = "action";
-const pathData$O = "M504 109q8 8 8 19t-8 19L395 249q-7 7-17 7-11 0-18.5-7.5T352 230q0-10 8-18l69-65h-52q-21 0-39.5 8T305 177t-22 33-8 40v76q0 11-7 18.5t-18 7.5-18.5-7.5T224 326v-76q0-32 12-60t32.5-49 48.5-33 60-12h38l-55-52q-8-8-8-18 0-11 7.5-18.5T378 0q10 0 17 7zm-50 194q11 0 18.5 7t7.5 18v62q0 38-26 64t-64 26H90q-38 0-64-26T0 390V90q0-38 26-64T90 0h137q11 0 18.5 7.5T253 26t-7.5 18-18.5 7H90q-17 0-28 11T51 90v300q0 17 11 28t28 11h300q17 0 28-11t11-28v-62q0-11 7-18t18-7z";
-const ltr$O = false;
-const collection$O = "SAP-icons-v5";
-const packageName$O = "@ui5/webcomponents-icons";
-y$2(name$P, { pathData: pathData$O, ltr: ltr$O, collection: collection$O, packageName: packageName$O });
 const e$6 = { Polite: "Polite", Assertive: "Assertive" };
 let t$4, n$4;
 const l$4 = (e2) => {
@@ -8072,10 +8076,10 @@ function DropIndicatorTemplate() {
   } });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const DropIndicatorCss = `:host{position:absolute;pointer-events:none;z-index:99}:host([orientation="Vertical"]) .ui5-di-needle{width:.125rem;height:100%;inset-block:0;background:var(--sapContent_DragAndDropActiveColor)}:host([orientation="Vertical"]){margin-left:-.0625rem}:host([orientation="Horizontal"]) .ui5-di-needle{height:.125rem;width:100%;inset-inline:0;background:var(--sapContent_DragAndDropActiveColor)}:host([orientation="Horizontal"]){margin-top:-.0625rem}:host([orientation="Horizontal"][placement="Before"][first]){margin-top:.3125rem}:host([orientation="Horizontal"][placement="After"][last]){margin-top:-.3125rem}:host([orientation="Vertical"]) .ui5-di-needle:before{left:-.1875rem;content:"";position:absolute;width:.25rem;height:.25rem;border-radius:.25rem;border:.125rem solid var(--sapContent_DragAndDropActiveColor);background-color:#fff;pointer-events:none}:host([orientation="Horizontal"]) .ui5-di-needle:before{top:-.1875rem;content:"";position:absolute;width:.25rem;height:.25rem;border-radius:.25rem;border:.125rem solid var(--sapContent_DragAndDropActiveColor);background-color:#fff;pointer-events:none}:host .ui5-di-rect{border:.125rem solid var(--sapContent_DragAndDropActiveColor);position:absolute;inset:0}:host .ui5-di-rect:before{content:" ";position:absolute;inset:0;background:var(--sapContent_DragAndDropActiveColor);opacity:.05}
 `;
-var __decorate$1j = function(decorators, target, key, desc) {
+var __decorate$1t = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -8156,19 +8160,19 @@ let DropIndicator = class DropIndicator2 extends b$7 {
     Object.assign(this.style, style);
   }
 };
-__decorate$1j([
+__decorate$1t([
   s$9({ type: Object })
 ], DropIndicator.prototype, "targetReference", void 0);
-__decorate$1j([
+__decorate$1t([
   s$9({ type: Object })
 ], DropIndicator.prototype, "ownerReference", void 0);
-__decorate$1j([
+__decorate$1t([
   s$9()
 ], DropIndicator.prototype, "placement", void 0);
-__decorate$1j([
+__decorate$1t([
   s$9()
 ], DropIndicator.prototype, "orientation", void 0);
-DropIndicator = __decorate$1j([
+DropIndicator = __decorate$1t([
   m$8({
     tag: "ui5-drop-indicator",
     renderer: y$5,
@@ -8189,7 +8193,7 @@ function moreRow$1() {
   }, "aria-label": this.growingButtonAriaLabel, "aria-labelledby": this.growingButtonAriaLabelledBy, "aria-describedby": this.growingButtonAriaDescribedBy, onClick: this._onLoadMoreClick, onKeyDown: this._onLoadMoreKeydown, onKeyUp: this._onLoadMoreKeyup, onMouseDown: this._onLoadMoreMousedown, onMouseUp: this._onLoadMoreMouseup, children: [this.loading && jsx(BusyIndicator$1, { delay: this.loadingDelay, part: "growing-button-busy-indicator", class: "ui5-list-growing-button-busy-indicator", active: true }), jsx("span", { id: `${this._id}-growingButton-text`, class: "ui5-growing-button-text", "growing-button-text": true, children: this._growingButtonText })] }), ((_a2 = this.accessibilityAttributes.growingButton) == null ? void 0 : _a2.description) && jsx("span", { id: `${this._id}-growingButton-description`, class: "ui5-hidden-text", children: this.accessibilityAttributes.growingButton.description })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const listCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}.ui5-growing-button{display:flex;align-items:center;padding:var(--_ui5-v2-17-0_load_more_padding);border-top:1px solid var(--sapList_BorderColor);border-bottom:var(--_ui5-v2-17-0_load_more_border-bottom);box-sizing:border-box;cursor:pointer;outline:none}.ui5-growing-button-inner{display:flex;align-items:center;justify-content:center;flex-direction:row;min-height:var(--_ui5-v2-17-0_load_more_text_height);width:100%;color:var(--sapButton_TextColor);background-color:var(--sapList_Background);border:var(--_ui5-v2-17-0_load_more_border);border-radius:var(--_ui5-v2-17-0_load_more_border_radius);box-sizing:border-box}.ui5-growing-button-inner:focus-visible{outline:var(--_ui5-v2-17-0_load_more_outline_width) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);outline-offset:-.125rem;border-color:transparent}.ui5-growing-button-inner:hover{background-color:var(--sapList_Hover_Background)}.ui5-growing-button-inner:active,.ui5-growing-button-inner.ui5-growing-button-inner--active{background-color:var(--sapList_Active_Background);border-color:var(--sapList_Active_Background)}.ui5-growing-button-inner:active>*,.ui5-growing-button-inner.ui5-growing-button-inner--active>*{color:var(--sapList_Active_TextColor)}.ui5-growing-button-text{text-align:center;font-family:var(--sapFontFamily);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-sizing:border-box}.ui5-growing-button-text{height:var(--_ui5-v2-17-0_load_more_text_height);padding:.875rem 1rem 1rem;font-size:var(--_ui5-v2-17-0_load_more_text_font_size);font-weight:700}:host([loading]) .ui5-list-growing-button-busy-indicator:not([_is-busy]){display:none}:host([loading]) .ui5-list-growing-button-busy-indicator[_is-busy]+.ui5-growing-button-text{padding-left:.5rem}:host(:not([hidden])){display:block;max-width:100%;width:100%;-webkit-tap-highlight-color:transparent}:host([indent]) .ui5-list-root{padding:2rem}:host([separators="None"]) .ui5-list-nodata{border-bottom:0}.ui5-list-root,.ui5-list-busy-indicator{width:100%;height:100%;position:relative;box-sizing:border-box}.ui5-list-scroll-container{overflow:auto;height:100%;width:100%}.ui5-list-ul{list-style-type:none;padding:0;margin:0}.ui5-list-ul:focus{outline:none}.ui5-list-focusarea{position:fixed}.ui5-list-header{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;box-sizing:border-box;font-size:var(--sapFontHeader4Size);font-family:var(--sapFontFamily);color:var(--sapGroup_TitleTextColor);height:3rem;line-height:3rem;padding:0 1rem;background-color:var(--sapGroup_TitleBackground);border-bottom:1px solid var(--sapGroup_TitleBorderColor)}.ui5-list-footer{height:2rem;box-sizing:border-box;-webkit-text-size-adjust:none;font-size:var(--sapFontSize);font-family:var(--sapFontFamily);line-height:2rem;background-color:var(--sapList_FooterBackground);color:var(--ui5-v2-17-0_list_footer_text_color);padding:0 1rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ui5-list-nodata{list-style-type:none;display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;color:var(--sapTextColor);background-color:var(--sapList_Background);border-bottom:1px solid var(--sapList_BorderColor);padding:0 1rem!important;outline:none;min-height:var(--_ui5-v2-17-0_list_no_data_height);font-size:var(--_ui5-v2-17-0_list_no_data_font_size);font-family:var(--sapFontFamily);position:relative}.ui5-list-nodata:focus:after{content:"";border:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);position:absolute;inset:.125rem;pointer-events:none}.ui5-list-nodata-text{overflow:hidden;text-overflow:ellipsis;white-space:normal;margin:var(--_ui5-v2-17-0_list_item_content_vertical_offset) 0}:host([growing="Scroll"]) .ui5-list-end-marker{display:inline-block}
 `;
 const r$2 = (e2) => {
@@ -8212,14 +8216,14 @@ const b$1 = (e2) => l$1(e2.tagName === "SLOT" ? [e2] : [...e2.children]), l$1 = 
   }), a4;
 };
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const styles$3 = `:host{box-sizing:border-box;height:var(--_ui5-v2-17-0_list_item_base_height);background-color:var(--ui5-v2-17-0-listitem-background-color);border-bottom:.0625rem solid transparent}:host(:not([hidden])){display:block}:host([disabled]){opacity:var(--_ui5-v2-17-0-listitembase_disabled_opacity);pointer-events:none}:host([actionable]:not([disabled]):not([ui5-li-group-header])){cursor:pointer}:host([has-border]){border-bottom:var(--ui5-v2-17-0-listitem-border-bottom)}:host([selected]){background-color:var(--sapList_SelectionBackgroundColor);border-bottom:var(--ui5-v2-17-0-listitem-selected-border-bottom)}:host([selected]) .ui5-li-additional-text{text-shadow:var(--sapContent_TextShadow)}:host([actionable]:not([active]):not([selected]):not([ui5-li-group-header]):hover){background-color:var(--sapList_Hover_Background)}:host([actionable]:not([active]):not([selected]):not([ui5-li-group-header]):hover) .ui5-li-additional-text{text-shadow:var(--sapContent_TextShadow)}:host([actionable][selected]:not([active],[data-moving]):hover){background-color:var(--sapList_Hover_SelectionBackground)}:host([active][actionable]:not([data-moving])),:host([active][actionable][selected]:not([data-moving])){background-color:var(--sapList_Active_Background)}:host([desktop]:not([data-moving])) .ui5-li-root.ui5-li--focusable:focus:after,:host([desktop][focused]:not([data-moving])) .ui5-li-root.ui5-li--focusable:after,:host(:not([data-moving])) .ui5-li-root.ui5-li--focusable:focus-visible:after,:host([desktop]:not([data-moving])) .ui5-li-root .ui5-li-content:focus:after,:host([desktop][focused]:not([data-moving])) .ui5-li-root .ui5-li-content:after,:host(:not([data-moving])) .ui5-li-root .ui5-li-content:focus-visible:after{content:"";border:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);position:absolute;inset:.125rem;pointer-events:none}.ui5-li-root{position:relative;display:flex;align-items:center;width:100%;height:100%;padding:var(--_ui5-v2-17-0_list_item_base_padding);box-sizing:border-box;background-color:inherit}.ui5-li-root.ui5-li--focusable{outline:none}.ui5-li-content{display:flex;align-items:center;flex:auto;overflow:hidden;max-width:100%;font-family:var(--sapFontFamily);color:var(--sapList_TextColor)}.ui5-li-content .ui5-li-title{color:var(--sapList_TextColor);font-size:var(--_ui5-v2-17-0_list_item_title_size)}.ui5-li-text-wrapper{display:flex;flex-direction:row;justify-content:space-between;flex:auto;min-width:1px;line-height:normal}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const draggableElementStyles = `[draggable=true]{cursor:grab!important}[draggable=true][data-moving]{cursor:grabbing!important;opacity:var(--sapContent_DisabledOpacity)}
 `;
-var __decorate$1i = function(decorators, target, key, desc) {
+var __decorate$1s = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -8362,28 +8366,28 @@ let ListItemBase = class ListItemBase2 extends b$7 {
     return true;
   }
 };
-__decorate$1i([
+__decorate$1s([
   s$9({ type: Boolean })
 ], ListItemBase.prototype, "selected", void 0);
-__decorate$1i([
+__decorate$1s([
   s$9({ type: Boolean })
 ], ListItemBase.prototype, "movable", void 0);
-__decorate$1i([
+__decorate$1s([
   s$9({ type: Boolean })
 ], ListItemBase.prototype, "hasBorder", void 0);
-__decorate$1i([
+__decorate$1s([
   s$9()
 ], ListItemBase.prototype, "forcedTabIndex", void 0);
-__decorate$1i([
+__decorate$1s([
   s$9({ type: Boolean })
 ], ListItemBase.prototype, "disabled", void 0);
-__decorate$1i([
+__decorate$1s([
   s$9({ type: Boolean })
 ], ListItemBase.prototype, "focused", void 0);
-__decorate$1i([
+__decorate$1s([
   s$9({ type: Boolean })
 ], ListItemBase.prototype, "actionable", void 0);
-ListItemBase = __decorate$1i([
+ListItemBase = __decorate$1s([
   m$8({
     renderer: y$5,
     styles: [styles$3, draggableElementStyles]
@@ -8431,7 +8435,7 @@ function renderTitle$1() {
   return jsx("span", { part: "title", class: "ui5-ghli-title", children: jsx("slot", {}) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const ListItemGroupHeaderCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{height:var(--_ui5-v2-17-0_group_header_list_item_height);background:var(--ui5-v2-17-0-group-header-listitem-background-color);color:var(--sapList_TableGroupHeaderTextColor)}:host([wrapping-type="Normal"]){height:auto}:host([has-border]){border-bottom:var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor)}:host([actionable]:not([disabled])){cursor:default}.ui5-li-root.ui5-ghli-root{padding-top:.5rem;color:currentColor;font-size:var(--sapFontHeader6Size);font-weight:400;line-height:2rem;margin:0}.ui5-ghli-title{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;font-family:var(--sapFontHeaderFamily)}.ui5-li-content{width:100%}
 `;
 var ListItemAccessibleRole;
@@ -8444,7 +8448,7 @@ var ListItemAccessibleRole;
   ListItemAccessibleRole2["None"] = "None";
 })(ListItemAccessibleRole || (ListItemAccessibleRole = {}));
 const ListItemAccessibleRole$1 = ListItemAccessibleRole;
-var __decorate$1h = function(decorators, target, key, desc) {
+var __decorate$1r = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -8510,28 +8514,28 @@ let ListItemGroupHeader = ListItemGroupHeader_1 = class ListItemGroupHeader2 ext
     return this.defaultSlotText || this.groupHeaderText || "";
   }
 };
-__decorate$1h([
+__decorate$1r([
   s$9()
 ], ListItemGroupHeader.prototype, "accessibleName", void 0);
-__decorate$1h([
+__decorate$1r([
   s$9()
 ], ListItemGroupHeader.prototype, "accessibleRole", void 0);
-__decorate$1h([
+__decorate$1r([
   s$9()
 ], ListItemGroupHeader.prototype, "wrappingType", void 0);
-__decorate$1h([
+__decorate$1r([
   s$9()
 ], ListItemGroupHeader.prototype, "mediaRange", void 0);
-__decorate$1h([
+__decorate$1r([
   s$9({ noAttribute: true })
 ], ListItemGroupHeader.prototype, "expandableTextTemplate", void 0);
-__decorate$1h([
+__decorate$1r([
   d$8()
 ], ListItemGroupHeader.prototype, "subItems", void 0);
-__decorate$1h([
+__decorate$1r([
   i$b("@ui5/webcomponents")
 ], ListItemGroupHeader, "i18nBundle", void 0);
-ListItemGroupHeader = ListItemGroupHeader_1 = __decorate$1h([
+ListItemGroupHeader = ListItemGroupHeader_1 = __decorate$1r([
   m$8({
     tag: "ui5-li-group-header",
     languageAware: true,
@@ -8545,10 +8549,10 @@ function ListItemGroupTemplate$1() {
   return jsxs(Fragment, { children: [this.hasHeader && jsxs(ListItemGroupHeader$1, { wrappingType: this.wrappingType, focused: this.focused, part: "header", accessibleRole: ListItemAccessibleRole$1.ListItem, children: [this.hasFormattedHeader ? jsx("slot", { name: "header" }) : this.headerText, jsx("div", { role: "list", slot: "subItems", "aria-owns": `${this._id}-content`, "aria-label": this.headerText })] }), jsxs("div", { class: "ui5-group-li-root", onDragEnter: this._ondragenter, onDragOver: this._ondragover, onDrop: this._ondrop, onDragLeave: this._ondragleave, id: `${this._id}-content`, children: [jsx("slot", {}), jsx(DropIndicator$1, { orientation: "Horizontal", ownerReference: this })] })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const ListItemGroupCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{height:var(--_ui5-v2-17-0_group_header_list_item_height);background:var(--ui5-v2-17-0-group-header-listitem-background-color);color:var(--sapList_TableGroupHeaderTextColor)}.ui5-group-li-root{width:100%;height:100%;position:relative;box-sizing:border-box;padding:0;margin:0;list-style-type:none}
 `;
-var __decorate$1g = function(decorators, target, key, desc) {
+var __decorate$1q = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -8602,29 +8606,29 @@ let ListItemGroup = class ListItemGroup2 extends b$7 {
     return this.groupHeaderItem || this.items.at(0);
   }
 };
-__decorate$1g([
+__decorate$1q([
   s$9()
 ], ListItemGroup.prototype, "headerText", void 0);
-__decorate$1g([
+__decorate$1q([
   s$9()
 ], ListItemGroup.prototype, "headerAccessibleName", void 0);
-__decorate$1g([
+__decorate$1q([
   d$8({
     "default": true,
     invalidateOnChildChange: true,
     type: HTMLElement
   })
 ], ListItemGroup.prototype, "items", void 0);
-__decorate$1g([
+__decorate$1q([
   s$9()
 ], ListItemGroup.prototype, "wrappingType", void 0);
-__decorate$1g([
+__decorate$1q([
   s$9({ type: Boolean })
 ], ListItemGroup.prototype, "focused", void 0);
-__decorate$1g([
+__decorate$1q([
   d$8({ type: HTMLElement })
 ], ListItemGroup.prototype, "header", void 0);
-ListItemGroup = __decorate$1g([
+ListItemGroup = __decorate$1q([
   m$8({
     tag: "ui5-li-group",
     renderer: y$5,
@@ -8645,7 +8649,7 @@ const isInstanceOfListItemGroup = (object) => {
   return "isListItemGroup" in object;
 };
 const ListItemGroup$1 = ListItemGroup;
-var __decorate$1f = function(decorators, target, key, desc) {
+var __decorate$1p = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -9400,83 +9404,83 @@ let List = List_1 = class List2 extends b$7 {
     return this._startIntersectionObserver;
   }
 };
-__decorate$1f([
+__decorate$1p([
   s$9()
 ], List.prototype, "headerText", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9()
 ], List.prototype, "footerText", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9({ type: Boolean })
 ], List.prototype, "indent", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9()
 ], List.prototype, "selectionMode", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9()
 ], List.prototype, "noDataText", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9()
 ], List.prototype, "separators", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9()
 ], List.prototype, "growing", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9()
 ], List.prototype, "growingButtonText", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9({ type: Boolean })
 ], List.prototype, "loading", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9({ type: Number })
 ], List.prototype, "loadingDelay", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9()
 ], List.prototype, "accessibleName", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9({ type: Object })
 ], List.prototype, "accessibilityAttributes", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9()
 ], List.prototype, "accessibleNameRef", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9()
 ], List.prototype, "accessibleDescription", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9()
 ], List.prototype, "accessibleDescriptionRef", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9({ noAttribute: true })
 ], List.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9({ noAttribute: true })
 ], List.prototype, "_associatedLabelsRefTexts", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9()
 ], List.prototype, "accessibleRole", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9({ type: Boolean })
 ], List.prototype, "_inViewport", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9({ type: Boolean })
 ], List.prototype, "_loadMoreActive", void 0);
-__decorate$1f([
+__decorate$1p([
   s$9()
 ], List.prototype, "mediaRange", void 0);
-__decorate$1f([
+__decorate$1p([
   d$8({
     type: HTMLElement,
     "default": true,
     invalidateOnChildChange: true
   })
 ], List.prototype, "items", void 0);
-__decorate$1f([
+__decorate$1p([
   d$8()
 ], List.prototype, "header", void 0);
-__decorate$1f([
+__decorate$1p([
   i$b("@ui5/webcomponents")
 ], List, "i18nBundle", void 0);
-List = List_1 = __decorate$1f([
+List = List_1 = __decorate$1p([
   m$8({
     tag: "ui5-list",
     fastNavigation: true,
@@ -9518,18 +9522,18 @@ List = List_1 = __decorate$1f([
   })
 ], List);
 List.define();
-const name$O = "resize-corner";
-const pathData$N = "M384 160v32q0 12-10 22L182 406q-10 10-22 10h-32zM224 416l160-160v32q0 12-10 22l-96 96q-10 10-22 10h-32zm160-64v32q0 12-10 22t-22 10h-32z";
-const ltr$N = false;
-const collection$N = "SAP-icons-v4";
-const packageName$N = "@ui5/webcomponents-icons";
-y$2(name$O, { pathData: pathData$N, ltr: ltr$N, collection: collection$N, packageName: packageName$N });
-const name$N = "resize-corner";
-const pathData$M = "M282 416q-11 0-18.5-7.5T256 390t7-18l109-109q7-7 18-7t18.5 7.5T416 282t-7 18L300 409q-7 7-18 7zm-160 0q-11 0-18.5-7.5T96 390t7-18l269-269q7-7 18-7t18.5 7.5T416 122t-7 18L140 409q-7 7-18 7z";
-const ltr$M = false;
-const collection$M = "SAP-icons-v5";
-const packageName$M = "@ui5/webcomponents-icons";
-y$2(name$N, { pathData: pathData$M, ltr: ltr$M, collection: collection$M, packageName: packageName$M });
+const name$U = "resize-corner";
+const pathData$T = "M384 160v32q0 12-10 22L182 406q-10 10-22 10h-32zM224 416l160-160v32q0 12-10 22l-96 96q-10 10-22 10h-32zm160-64v32q0 12-10 22t-22 10h-32z";
+const ltr$T = false;
+const collection$T = "SAP-icons-v4";
+const packageName$T = "@ui5/webcomponents-icons";
+y$2(name$U, { pathData: pathData$T, ltr: ltr$T, collection: collection$T, packageName: packageName$T });
+const name$T = "resize-corner";
+const pathData$S = "M282 416q-11 0-18.5-7.5T256 390t7-18l109-109q7-7 18-7t18.5 7.5T416 282t-7 18L300 409q-7 7-18 7zm-160 0q-11 0-18.5-7.5T96 390t7-18l269-269q7-7 18-7t18.5 7.5T416 122t-7 18L140 409q-7 7-18 7z";
+const ltr$S = false;
+const collection$S = "SAP-icons-v5";
+const packageName$S = "@ui5/webcomponents-icons";
+y$2(name$T, { pathData: pathData$S, ltr: ltr$S, collection: collection$S, packageName: packageName$S });
 const resizeCorner = "resize-corner";
 function DialogTemplate() {
   return PopupTemplate.call(this, {
@@ -9544,10 +9548,10 @@ function afterContent() {
   return jsxs(Fragment, { children: [!!this.footer.length && jsx("footer", { class: "ui5-popup-footer-root", part: "footer", children: jsx("slot", { name: "footer" }) }), this._showResizeHandle && jsx("div", { class: "ui5-popup-resize-handle", onMouseDown: this._onResizeMouseDown, children: jsx(Icon$1, { name: resizeCorner }) })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const dialogCSS = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{min-width:20rem;min-height:6rem;max-height:94%;max-width:90%;flex-direction:column;box-shadow:var(--sapContent_Shadow3);border-radius:var(--sapElement_BorderCornerRadius)}:host([stretch]){width:90%;height:94%}:host([stretch][on-phone]){width:100%;height:100%;max-height:100%;max-width:100%;border-radius:0;min-width:0}:host([draggable]) .ui5-popup-header-root,:host([draggable]) ::slotted([slot="header"]){cursor:move}:host([draggable]) .ui5-popup-header-root *{cursor:auto}:host([draggable]) .ui5-popup-root{user-select:text}::slotted([slot="header"]){max-width:100%}.ui5-popup-root{display:flex;flex-direction:column;max-width:100vw}.ui5-popup-header-root{position:relative}.ui5-popup-header-root:before{content:"";position:absolute;inset-block-start:auto;inset-block-end:0;inset-inline-start:0;inset-inline-end:0;height:var(--_ui5-v2-17-0_dialog_header_state_line_height);background:var(--sapObjectHeader_BorderColor)}:host([state="Negative"]) .ui5-popup-header-root:before{background:var(--sapErrorBorderColor)}:host([state="Information"]) .ui5-popup-header-root:before{background:var(--sapInformationBorderColor)}:host([state="Positive"]) .ui5-popup-header-root:before{background:var(--sapSuccessBorderColor)}:host([state="Critical"]) .ui5-popup-header-root:before{background:var(--sapWarningBorderColor)}.ui5-dialog-value-state-icon{margin-inline-end:.5rem;flex-shrink:0}:host([state="Negative"]) .ui5-dialog-value-state-icon{color:var(--sapNegativeElementColor)}:host([state="Information"]) .ui5-dialog-value-state-icon{color:var(--sapInformativeElementColor)}:host([state="Positive"]) .ui5-dialog-value-state-icon{color:var(--sapPositiveElementColor)}:host([state="Critical"]) .ui5-dialog-value-state-icon{color:var(--sapCriticalElementColor)}.ui5-popup-header-root{outline:none}:host([desktop]) .ui5-popup-header-root:focus:after,.ui5-popup-header-root:focus-visible:after{content:"";position:absolute;left:var(--_ui5-v2-17-0_dialog_header_focus_left_offset);bottom:var(--_ui5-v2-17-0_dialog_header_focus_bottom_offset);right:var(--_ui5-v2-17-0_dialog_header_focus_right_offset);top:var(--_ui5-v2-17-0_dialog_header_focus_top_offset);border:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);border-radius:var(--_ui5-v2-17-0_dialog_header_border_radius) var(--_ui5-v2-17-0_dialog_header_border_radius) 0 0;pointer-events:none}:host([stretch]) .ui5-popup-content{width:100%;height:100%}.ui5-popup-content{min-height:var(--_ui5-v2-17-0_dialog_content_min_height);flex:1 1 auto}.ui5-popup-resize-handle{position:absolute;bottom:-.5rem;inset-inline-end:-.5rem;cursor:var(--_ui5-v2-17-0_dialog_resize_cursor);width:1.5rem;height:1.5rem;border-radius:50%}.ui5-popup-resize-handle [ui5-icon]{color:var(--sapButton_Lite_TextColor)}::slotted([slot="footer"]){height:var(--_ui5-v2-17-0_dialog_footer_height)}::slotted([slot="footer"][ui5-bar][design="Footer"]){border-top:none}::slotted([slot="header"][ui5-bar]){box-shadow:none}::slotted([slot="footer"][ui5-toolbar]){border:0}:host::backdrop{background-color:var(--_ui5-v2-17-0_popup_block_layer_background);opacity:var(--_ui5-v2-17-0_popup_block_layer_opacity)}.ui5-block-layer{display:block}
 `;
-var __decorate$1e = function(decorators, target, key, desc) {
+var __decorate$1o = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -9881,31 +9885,31 @@ let Dialog = Dialog_1 = class Dialog2 extends Popup$1 {
     window.removeEventListener("mouseup", this._resizeMouseUpHandler);
   }
 };
-__decorate$1e([
+__decorate$1o([
   s$9()
 ], Dialog.prototype, "headerText", void 0);
-__decorate$1e([
+__decorate$1o([
   s$9({ type: Boolean })
 ], Dialog.prototype, "stretch", void 0);
-__decorate$1e([
+__decorate$1o([
   s$9({ type: Boolean })
 ], Dialog.prototype, "draggable", void 0);
-__decorate$1e([
+__decorate$1o([
   s$9({ type: Boolean })
 ], Dialog.prototype, "resizable", void 0);
-__decorate$1e([
+__decorate$1o([
   s$9()
 ], Dialog.prototype, "state", void 0);
-__decorate$1e([
+__decorate$1o([
   d$8()
 ], Dialog.prototype, "header", void 0);
-__decorate$1e([
+__decorate$1o([
   d$8()
 ], Dialog.prototype, "footer", void 0);
-__decorate$1e([
+__decorate$1o([
   i$b("@ui5/webcomponents")
 ], Dialog, "i18nBundle", void 0);
-Dialog = Dialog_1 = __decorate$1e([
+Dialog = Dialog_1 = __decorate$1o([
   m$8({
     tag: "ui5-dialog",
     template: DialogTemplate,
@@ -9925,10 +9929,10 @@ function ResponsivePopoverTemplate() {
   return jsxs(Dialog$1, { "root-element": true, accessibleName: this.accessibleName, accessibleNameRef: this.accessibleNameRef, accessibleDescription: this.accessibleDescription, accessibleDescriptionRef: this.accessibleDescriptionRef, accessibleRole: this.accessibleRole, stretch: true, preventInitialFocus: this.preventInitialFocus, preventFocusRestore: this.preventFocusRestore, initialFocus: this.initialFocus, onBeforeOpen: this._beforeDialogOpen, onOpen: this._afterDialogOpen, onBeforeClose: this._beforeDialogClose, onClose: this._afterDialogClose, exportparts: "content, header, footer", open: this.open, children: [!this._hideHeader && jsx(Fragment, { children: this.header.length ? jsx("slot", { slot: "header", name: "header" }) : jsxs("div", { class: this.classes.header, slot: "header", children: [this.headerText && jsx(Title$1, { level: "H1", wrappingType: "None", class: "ui5-popup-header-text ui5-responsive-popover-header-text", children: this.headerText }), !this._hideCloseButton && jsx(Button$1, { icon: iconDecline, design: "Transparent", accessibleName: this._closeDialogAriaLabel, onClick: this._dialogCloseButtonClick })] }) }), jsx("slot", {}), jsx("slot", { slot: "footer", name: "footer" })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const ResponsivePopoverCss = `:host{--_ui5-v2-17-0_input_width: 100%;min-width:6.25rem;min-height:2rem}:host([on-phone]){display:contents}.ui5-responsive-popover-header{height:var(--_ui5-v2-17-0-responsive_popover_header_height);display:flex;justify-content:var(--_ui5-v2-17-0_popup_header_prop_header_text_alignment);align-items:center;width:100%}.ui5-responsive-popover-header-text{width:calc(100% - var(--_ui5-v2-17-0_button_base_min_width))}.ui5-responsive-popover-header-no-title{justify-content:flex-end}
 `;
-var __decorate$1d = function(decorators, target, key, desc) {
+var __decorate$1n = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -10032,19 +10036,19 @@ let ResponsivePopover = ResponsivePopover_1 = class ResponsivePopover2 extends P
     return this._dialog.isModal;
   }
 };
-__decorate$1d([
+__decorate$1n([
   s$9({ type: Boolean })
 ], ResponsivePopover.prototype, "contentOnlyOnDesktop", void 0);
-__decorate$1d([
+__decorate$1n([
   s$9({ type: Boolean })
 ], ResponsivePopover.prototype, "_hideHeader", void 0);
-__decorate$1d([
+__decorate$1n([
   s$9({ type: Boolean })
 ], ResponsivePopover.prototype, "_hideCloseButton", void 0);
-__decorate$1d([
+__decorate$1n([
   i$b("@ui5/webcomponents")
 ], ResponsivePopover, "i18nBundle", void 0);
-ResponsivePopover = ResponsivePopover_1 = __decorate$1d([
+ResponsivePopover = ResponsivePopover_1 = __decorate$1n([
   m$8({
     tag: "ui5-responsive-popover",
     styles: [Popover$1.styles, ResponsivePopoverCss],
@@ -10052,18 +10056,18 @@ ResponsivePopover = ResponsivePopover_1 = __decorate$1d([
   })
 ], ResponsivePopover);
 ResponsivePopover.define();
-const name$M = "slim-arrow-down";
-const pathData$L = "M420.5 187q11-12 23 0 5 5 5 11t-5 11l-165 165q-10 9-23 9t-22-9l-166-165q-5-5-5-11.5t5-11.5 11.5-5 11.5 5l160 160q5 6 11 0z";
-const ltr$L = false;
-const collection$L = "SAP-icons-v4";
-const packageName$L = "@ui5/webcomponents-icons";
-y$2(name$M, { pathData: pathData$L, ltr: ltr$L, collection: collection$L, packageName: packageName$L });
-const name$L = "slim-arrow-down";
-const pathData$K = "M96 186q0-11 7.5-18.5T122 160q10 0 18 8l116 121 116-121q8-8 18-8 11 0 18.5 7.5T416 186q0 10-7 17L275 344q-8 8-19 8-12 0-18-8L103 203q-7-7-7-17z";
-const ltr$K = false;
-const collection$K = "SAP-icons-v5";
-const packageName$K = "@ui5/webcomponents-icons";
-y$2(name$L, { pathData: pathData$K, ltr: ltr$K, collection: collection$K, packageName: packageName$K });
+const name$S = "slim-arrow-down";
+const pathData$R = "M420.5 187q11-12 23 0 5 5 5 11t-5 11l-165 165q-10 9-23 9t-22-9l-166-165q-5-5-5-11.5t5-11.5 11.5-5 11.5 5l160 160q5 6 11 0z";
+const ltr$R = false;
+const collection$R = "SAP-icons-v4";
+const packageName$R = "@ui5/webcomponents-icons";
+y$2(name$S, { pathData: pathData$R, ltr: ltr$R, collection: collection$R, packageName: packageName$R });
+const name$R = "slim-arrow-down";
+const pathData$Q = "M96 186q0-11 7.5-18.5T122 160q10 0 18 8l116 121 116-121q8-8 18-8 11 0 18.5 7.5T416 186q0 10-7 17L275 344q-8 8-19 8-12 0-18-8L103 203q-7-7-7-17z";
+const ltr$Q = false;
+const collection$Q = "SAP-icons-v5";
+const packageName$Q = "@ui5/webcomponents-icons";
+y$2(name$R, { pathData: pathData$Q, ltr: ltr$Q, collection: collection$Q, packageName: packageName$Q });
 const slimArrowDown = "slim-arrow-down";
 function SelectPopoverTemplate() {
   return jsxs(Fragment, { children: [this.options.length > 0 && jsxs(ResponsivePopover, { id: this.responsivePopoverId, class: {
@@ -10073,9 +10077,9 @@ function SelectPopoverTemplate() {
     "row": true,
     "ui5-select-value-state-dialog-header": true,
     ...this.classes.popoverValueState
-  }, children: this._isPickerOpen && valueStateMessage$2.call(this) })] }), !this._isPhone && this.hasValueStateText && jsxs("div", { class: this.classes.popoverValueState, style: this.styles.responsivePopoverHeader, children: [jsx(Icon$1, { class: "ui5-input-value-state-message-icon", name: this._valueStateMessageInputIcon }), this._isPickerOpen && valueStateMessage$2.call(this)] }), jsx(List, { separators: "None", onMouseDown: this._itemMousedown, onItemClick: this._handleItemPress, accessibleRole: "ListBox", children: jsx("slot", {}) })] }), this.shouldOpenValueStateMessagePopover && jsx(Popover$1, { part: "popover", class: "ui5-valuestatemessage-popover", preventInitialFocus: true, preventFocusRestore: true, hideArrow: true, placement: "Bottom", horizontalAlign: "Start", children: jsxs("div", { class: this.classes.popoverValueState, style: this.styles.popoverHeader, children: [jsx(Icon$1, { class: "ui5-input-value-state-message-icon", name: this._valueStateMessageInputIcon }), valueStateMessage$2.call(this)] }) })] });
+  }, children: this._isPickerOpen && valueStateMessage$3.call(this) })] }), !this._isPhone && this.hasValueStateText && jsxs("div", { class: this.classes.popoverValueState, style: this.styles.responsivePopoverHeader, children: [jsx(Icon$1, { class: "ui5-input-value-state-message-icon", name: this._valueStateMessageInputIcon }), this._isPickerOpen && valueStateMessage$3.call(this)] }), jsx(List, { separators: "None", onMouseDown: this._itemMousedown, onItemClick: this._handleItemPress, accessibleRole: "ListBox", children: jsx("slot", {}) })] }), this.shouldOpenValueStateMessagePopover && jsx(Popover$1, { part: "popover", class: "ui5-valuestatemessage-popover", preventInitialFocus: true, preventFocusRestore: true, hideArrow: true, placement: "Bottom", horizontalAlign: "Start", children: jsxs("div", { class: this.classes.popoverValueState, style: this.styles.popoverHeader, children: [jsx(Icon$1, { class: "ui5-input-value-state-message-icon", name: this._valueStateMessageInputIcon }), valueStateMessage$3.call(this)] }) })] });
 }
-function valueStateMessage$2() {
+function valueStateMessage$3() {
   return jsx(Fragment, { children: this.shouldDisplayDefaultValueStateMessage ? this.valueStateText : jsx("slot", { onClick: this._applyFocus, name: "valueStateMessage" }) });
 }
 function SelectTemplate() {
@@ -10099,14 +10103,14 @@ function SelectTemplate() {
   } }) }), this.hasValueState && jsx("span", { id: `${this._id}-valueStateDesc`, class: "ui5-hidden-text", children: this.valueStateText }), this.ariaDescriptionText && jsx("span", { id: "accessibleDescription", class: "ui5-hidden-text", children: this.ariaDescriptionText })] }), SelectPopoverTemplate.call(this)] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const selectCss = `:host{vertical-align:middle}.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}.inputIcon{color:var(--_ui5-v2-17-0_input_icon_color);cursor:pointer;outline:none;padding:var(--_ui5-v2-17-0_input_icon_padding);border-inline-start:var(--_ui5-v2-17-0_input_icon_border);min-width:1rem;min-height:1rem;border-radius:var(--_ui5-v2-17-0_input_icon_border_radius)}.inputIcon.inputIcon--pressed{background:var(--_ui5-v2-17-0_input_icon_pressed_bg);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow);border-inline-start:var(--_ui5-v2-17-0_select_hover_icon_left_border);color:var(--_ui5-v2-17-0_input_icon_pressed_color)}.inputIcon:active{background-color:var(--sapButton_Active_Background);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow);border-inline-start:var(--_ui5-v2-17-0_select_hover_icon_left_border);color:var(--_ui5-v2-17-0_input_icon_pressed_color)}.inputIcon:not(.inputIcon--pressed):not(:active):hover{background:var(--_ui5-v2-17-0_input_icon_hover_bg);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow)}.inputIcon:hover{border-inline-start:var(--_ui5-v2-17-0_select_hover_icon_left_border);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow)}:host(:not([hidden])){display:inline-block}:host{width:var(--_ui5-v2-17-0_input_width);min-width:calc(var(--_ui5-v2-17-0_input_min_width) + (var(--_ui5-v2-17-0-input-icons-count)*var(--_ui5-v2-17-0_input_icon_width)));margin:var(--_ui5-v2-17-0_input_margin_top_bottom) 0;height:var(--_ui5-v2-17-0_input_height);color:var(--sapField_TextColor);font-size:var(--sapFontSize);font-family:var(--sapFontFamily);font-style:normal;border:var(--_ui5-v2-17-0-input-border);border-radius:var(--_ui5-v2-17-0_input_border_radius);box-sizing:border-box;text-align:start;transition:var(--_ui5-v2-17-0_input_transition);background:var(--sapField_BackgroundStyle);background-color:var(--_ui5-v2-17-0_input_background_color)}:host(:not([readonly])),:host([readonly][disabled]){box-shadow:var(--sapField_Shadow)}:host([focused]:not([opened])){border-color:var(--_ui5-v2-17-0_input_focused_border_color);background-color:var(--sapField_Focus_Background)}.ui5-input-focusable-element{position:relative}:host([focused]:not([opened])) .ui5-input-focusable-element:after{content:var(--ui5-v2-17-0_input_focus_pseudo_element_content);position:absolute;pointer-events:none;z-index:2;border:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--_ui5-v2-17-0_input_focus_outline_color);border-radius:var(--_ui5-v2-17-0_input_focus_border_radius);top:var(--_ui5-v2-17-0_input_focus_offset);bottom:var(--_ui5-v2-17-0_input_focus_offset);left:var(--_ui5-v2-17-0_input_focus_offset);right:var(--_ui5-v2-17-0_input_focus_offset)}:host([focused][readonly]:not([opened])) .ui5-input-focusable-element:after{top:var(--_ui5-v2-17-0_input_readonly_focus_offset);bottom:var(--_ui5-v2-17-0_input_readonly_focus_offset);left:var(--_ui5-v2-17-0_input_readonly_focus_offset);right:var(--_ui5-v2-17-0_input_readonly_focus_offset);border-radius:var(--_ui5-v2-17-0_input_readonly_focus_border_radius)}.ui5-input-root:before{content:"";position:absolute;width:calc(100% - 2px);left:1px;bottom:-2px;border-bottom-left-radius:8px;border-bottom-right-radius:8px;height:var(--_ui5-v2-17-0_input_bottom_border_height);transition:var(--_ui5-v2-17-0_input_transition);background-color:var(--_ui5-v2-17-0_input_bottom_border_color)}.ui5-input-root{width:100%;height:100%;position:relative;background:transparent;display:inline-block;outline:none;box-sizing:border-box;color:inherit;transition:border-color .2s ease-in-out;border-radius:var(--_ui5-v2-17-0_input_border_radius);overflow:hidden}:host([disabled]){opacity:var(--_ui5-v2-17-0_input_disabled_opacity);cursor:default;pointer-events:none;background-color:var(--_ui5-v2-17-0-input_disabled_background);border-color:var(--_ui5-v2-17-0_input_disabled_border_color)}:host([disabled]) .ui5-input-root:before,:host([readonly]) .ui5-input-root:before{content:none}[inner-input]{background:transparent;color:inherit;border:none;font-style:inherit;-webkit-appearance:none;-moz-appearance:textfield;padding:var(--_ui5-v2-17-0_input_inner_padding);box-sizing:border-box;width:100%;text-overflow:ellipsis;flex:1;outline:none;font-size:inherit;font-family:inherit;line-height:inherit;letter-spacing:inherit;word-spacing:inherit;text-align:inherit}[inner-input][inner-input-with-icon]{padding:var(--_ui5-v2-17-0_input_inner_padding_with_icon)}[inner-input][type=search]::-webkit-search-decoration,[inner-input][type=search]::-webkit-search-cancel-button,[inner-input][type=search]::-webkit-search-results-button,[inner-input][type=search]::-webkit-search-results-decoration{display:none}[inner-input]::-ms-reveal,[inner-input]::-ms-clear{display:none}.ui5-input-value-state-icon{height:100%;display:var(--_ui5-v2-17-0-input-value-state-icon-display);align-items:center}.ui5-input-value-state-icon>svg{margin-right:8px}[inner-input]::selection{background:var(--sapSelectedColor);color:var(--sapContent_ContrastTextColor)}:host([disabled]) [inner-input]::-webkit-input-placeholder{visibility:hidden}:host([readonly]) [inner-input]::-webkit-input-placeholder{visibility:hidden}:host([disabled]) [inner-input]::-moz-placeholder{visibility:hidden}:host([readonly]) [inner-input]::-moz-placeholder{visibility:hidden}[inner-input]::-webkit-input-placeholder{font-weight:400;font-style:var(--_ui5-v2-17-0_input_placeholder_style);color:var(--_ui5-v2-17-0_input_placeholder_color);padding-right:.125rem}[inner-input]::-moz-placeholder{font-weight:400;font-style:var(--_ui5-v2-17-0_input_placeholder_style);color:var(--_ui5-v2-17-0_input_placeholder_color);padding-right:.125rem}:host([value-state="Negative"]) [inner-input]::-webkit-input-placeholder{color:var(--_ui5-v2-17-0-input_error_placeholder_color);font-weight:var(--_ui5-v2-17-0_input_value_state_error_warning_placeholder_font_weight)}:host([value-state="Negative"]) [inner-input]::-moz-placeholder{color:var(--_ui5-v2-17-0-input_error_placeholder_color);font-weight:var(--_ui5-v2-17-0_input_value_state_error_warning_placeholder_font_weight)}:host([value-state="Critical"]) [inner-input]::-webkit-input-placeholder{font-weight:var(--_ui5-v2-17-0_input_value_state_error_warning_placeholder_font_weight)}:host([value-state="Critical"]) [inner-input]::-moz-placeholder{font-weight:var(--_ui5-v2-17-0_input_value_state_error_warning_placeholder_font_weight)}:host([value-state="Positive"]) [inner-input]::-webkit-input-placeholder{color:var(--_ui5-v2-17-0_input_placeholder_color)}:host([value-state="Positive"]) [inner-input]::-moz-placeholder{color:var(--_ui5-v2-17-0_input_placeholder_color)}:host([value-state="Information"]) [inner-input]::-webkit-input-placeholder{color:var(--_ui5-v2-17-0_input_placeholder_color)}:host([value-state="Information"]) [inner-input]::-moz-placeholder{color:var(--_ui5-v2-17-0_input_placeholder_color)}.ui5-input-content{height:100%;box-sizing:border-box;display:flex;flex-direction:row;justify-content:flex-end;overflow:hidden;outline:none;background:transparent;color:inherit;border-radius:var(--_ui5-v2-17-0_input_border_radius)}:host([readonly]:not([disabled])){border:var(--_ui5-v2-17-0_input_readonly_border);background:var(--sapField_ReadOnly_BackgroundStyle);background-color:var(--_ui5-v2-17-0_input_readonly_background)}:host([value-state="None"]:not([readonly]):hover),:host(:not([value-state]):not([readonly]):hover){border:var(--_ui5-v2-17-0_input_hover_border);border-color:var(--_ui5-v2-17-0_input_focused_border_color);box-shadow:var(--sapField_Hover_Shadow);background:var(--sapField_Hover_BackgroundStyle);background-color:var(--sapField_Hover_Background)}:host(:not([value-state]):not([readonly])[focused]:not([opened]):hover),:host([value-state="None"]:not([readonly])[focused]:not([opened]):hover){box-shadow:none}:host([focused]):not([opened]) .ui5-input-root:before{content:none}:host(:not([readonly]):not([disabled])[value-state]:not([value-state="None"])){border-width:var(--_ui5-v2-17-0_input_state_border_width)}:host([value-state="Negative"]) [inner-input],:host([value-state="Critical"]) [inner-input]{font-style:var(--_ui5-v2-17-0_input_error_warning_font_style);text-indent:var(--_ui5-v2-17-0_input_error_warning_text_indent)}:host([value-state="Negative"]) [inner-input]{font-weight:var(--_ui5-v2-17-0_input_error_font_weight)}:host([value-state="Critical"]) [inner-input]{font-weight:var(--_ui5-v2-17-0_input_warning_font_weight)}:host([value-state="Negative"]:not([readonly]):not([disabled])){background:var(--sapField_InvalidBackgroundStyle);background-color:var(--sapField_InvalidBackground);border-color:var(--_ui5-v2-17-0_input_value_state_error_border_color);box-shadow:var(--sapField_InvalidShadow)}:host([value-state="Negative"][focused]:not([opened]):not([readonly])){background-color:var(--_ui5-v2-17-0_input_focused_value_state_error_background);border-color:var(--_ui5-v2-17-0_input_focused_value_state_error_border_color)}:host([value-state="Negative"][focused]:not([opened]):not([readonly])) .ui5-input-focusable-element:after{border-color:var(--_ui5-v2-17-0_input_focused_value_state_error_focus_outline_color)}:host([value-state="Negative"]:not([readonly])) .ui5-input-root:before{background-color:var(--_ui5-v2-17-0-input-value-state-error-border-botom-color)}:host([value-state="Negative"]:not([readonly]):not([focused]):hover),:host([value-state="Negative"]:not([readonly])[focused][opened]:hover){background-color:var(--_ui5-v2-17-0_input_value_state_error_hover_background);box-shadow:var(--sapField_Hover_InvalidShadow)}:host([value-state="Negative"]:not([readonly]):not([disabled])),:host([value-state="Critical"]:not([readonly]):not([disabled])),:host([value-state="Information"]:not([readonly]):not([disabled])){border-style:var(--_ui5-v2-17-0_input_error_warning_border_style)}:host([value-state="Critical"]:not([readonly]):not([disabled])){background:var(--sapField_WarningBackgroundStyle);background-color:var(--sapField_WarningBackground);border-color:var(--_ui5-v2-17-0_input_value_state_warning_border_color);box-shadow:var(--sapField_WarningShadow)}:host([value-state="Critical"][focused]:not([opened]):not([readonly])){background-color:var(--_ui5-v2-17-0_input_focused_value_state_warning_background);border-color:var(--_ui5-v2-17-0_input_focused_value_state_warning_border_color)}:host([value-state="Critical"][focused]:not([opened]):not([readonly])) .ui5-input-focusable-element:after{border-color:var(--_ui5-v2-17-0_input_focused_value_state_warning_focus_outline_color)}:host([value-state="Critical"]:not([readonly])) .ui5-input-root:before{background-color:var(--_ui5-v2-17-0_input_value_state_warning_border_botom_color)}:host([value-state="Critical"]:not([readonly]):not([focused]):hover),:host([value-state="Critical"]:not([readonly])[focused][opened]:hover){background-color:var(--sapField_Hover_Background);box-shadow:var(--sapField_Hover_WarningShadow)}:host([value-state="Positive"]:not([readonly]):not([disabled])){background:var(--sapField_SuccessBackgroundStyle);background-color:var(--sapField_SuccessBackground);border-color:var(--_ui5-v2-17-0_input_value_state_success_border_color);border-width:var(--_ui5-v2-17-0_input_value_state_success_border_width);box-shadow:var(--sapField_SuccessShadow)}:host([value-state="Positive"][focused]:not([opened]):not([readonly])){background-color:var(--_ui5-v2-17-0_input_focused_value_state_success_background);border-color:var(--_ui5-v2-17-0_input_focused_value_state_success_border_color)}:host([value-state="Positive"][focused]:not([opened]):not([readonly])) .ui5-input-focusable-element:after{border-color:var(--_ui5-v2-17-0_input_focused_value_state_success_focus_outline_color)}:host([value-state="Positive"]:not([readonly])) .ui5-input-root:before{background-color:var(--_ui5-v2-17-0_input_value_state_success_border_botom_color)}:host([value-state="Positive"]:not([readonly]):not([focused]):hover),:host([value-state="Positive"]:not([readonly])[focused][opened]:hover){background-color:var(--sapField_Hover_Background);box-shadow:var(--sapField_Hover_SuccessShadow)}:host([value-state="Information"]:not([readonly]):not([disabled])){background:var(--sapField_InformationBackgroundStyle);background-color:var(--sapField_InformationBackground);border-color:var(--_ui5-v2-17-0_input_value_state_information_border_color);border-width:var(--_ui5-v2-17-0_input_information_border_width);box-shadow:var(--sapField_InformationShadow)}:host([value-state="Information"][focused]:not([opened]):not([readonly])){background-color:var(--_ui5-v2-17-0_input_focused_value_state_information_background);border-color:var(--_ui5-v2-17-0_input_focused_value_state_information_border_color)}:host([value-state="Information"]:not([readonly])) .ui5-input-root:before{background-color:var(--_ui5-v2-17-0_input_value_success_information_border_botom_color)}:host([value-state="Information"]:not([readonly]):not([focused]):hover),:host([value-state="Information"]:not([readonly])[focused][opened]:hover){background-color:var(--sapField_Hover_Background);box-shadow:var(--sapField_Hover_InformationShadow)}.ui5-input-icon-root{min-width:var(--_ui5-v2-17-0_input_icon_min_width);height:100%;display:flex;justify-content:center;align-items:center}::slotted([ui5-icon][slot="icon"]){align-self:start;padding:var(--_ui5-v2-17-0_input_custom_icon_padding);box-sizing:content-box!important}:host([value-state="Negative"]) .inputIcon,:host([value-state="Critical"]) .inputIcon{padding:var(--_ui5-v2-17-0_input_error_warning_icon_padding)}:host([value-state="Negative"][focused]) .inputIcon,:host([value-state="Critical"][focused]) .inputIcon{padding:var(--_ui5-v2-17-0_input_error_warning_focused_icon_padding)}:host([value-state="Information"]) .inputIcon{padding:var(--_ui5-v2-17-0_input_information_icon_padding)}:host([value-state="Information"][focused]) .inputIcon{padding:var(--_ui5-v2-17-0_input_information_focused_icon_padding)}:host([value-state="Negative"]) ::slotted(.inputIcon[ui5-icon]),:host([value-state="Negative"]) ::slotted([ui5-icon][slot="icon"]),:host([value-state="Critical"]) ::slotted([ui5-icon][slot="icon"]){padding:var(--_ui5-v2-17-0_input_error_warning_custom_icon_padding)}:host([value-state="Negative"][focused]) ::slotted(.inputIcon[ui5-icon]),:host([value-state="Negative"][focused]) ::slotted([ui5-icon][slot="icon"]),:host([value-state="Critical"][focused]) ::slotted([ui5-icon][slot="icon"]){padding:var(--_ui5-v2-17-0_input_error_warning_custom_focused_icon_padding)}:host([value-state="Information"]) ::slotted([ui5-icon][slot="icon"]){padding:var(--_ui5-v2-17-0_input_information_custom_icon_padding)}:host([value-state="Information"][focused]) ::slotted([ui5-icon][slot="icon"]){padding:var(--_ui5-v2-17-0_input_information_custom_focused_icon_padding)}:host([value-state="Negative"]) .inputIcon:active,:host([value-state="Negative"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_error_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_error_pressed_color)}:host([value-state="Negative"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_error_icon_box_shadow)}:host([value-state="Critical"]) .inputIcon:active,:host([value-state="Critical"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_warning_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_warning_pressed_color)}:host([value-state="Critical"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_warning_icon_box_shadow)}:host([value-state="Information"]) .inputIcon:active,:host([value-state="Information"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_information_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_information_pressed_color)}:host([value-state="Information"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_information_icon_box_shadow)}:host([value-state="Positive"]) .inputIcon:active,:host([value-state="Positive"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_success_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_success_pressed_color)}:host([value-state="Positive"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_success_icon_box_shadow)}.ui5-input-clear-icon-wrapper{height:var(--_ui5-v2-17-0_input_icon_wrapper_height);padding:0;width:var(--_ui5-v2-17-0_input_icon_width);min-width:var(--_ui5-v2-17-0_input_icon_width);display:flex;justify-content:center;align-items:center;box-sizing:border-box}:host([value-state]:not([value-state="None"]):not([value-state="Positive"])) .ui5-input-clear-icon-wrapper{height:var(--_ui5-v2-17-0_input_icon_wrapper_state_height);vertical-align:top}:host([value-state="Positive"]) .ui5-input-clear-icon-wrapper{height:var(--_ui5-v2-17-0_input_icon_wrapper_success_state_height)}[ui5-icon].ui5-input-clear-icon{padding:0;color:inherit}[inner-input]::-webkit-outer-spin-button,[inner-input]::-webkit-inner-spin-button{-webkit-appearance:inherit;margin:inherit}:host([icon]){min-width:var(--_ui5-v2-17-0_button_base_min_width);width:var(--_ui5-v2-17-0_button_base_min_width)}:host([icon]) .ui5-select-root{min-width:var(--_ui5-v2-17-0_button_base_min_width)}:host([icon]) .ui5-select-label-root{min-width:0;padding-inline-start:0}.ui5-select-root{min-width:calc(var(--_ui5-v2-17-0_input_min_width) + (var(--_ui5-v2-17-0-input-icons-count)*var(--_ui5-v2-17-0_input_icon_width)));width:100%;height:100%;display:flex;outline:none;cursor:pointer;overflow:hidden;border-radius:var(--_ui5-v2-17-0_input_border_radius)}.ui5-select-label-root{flex-shrink:1;flex-grow:1;align-self:center;min-width:1rem;padding-inline-start:.5rem;cursor:pointer;outline:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--_ui5-v2-17-0_select_label_color);font-family:var(--sapFontFamily);font-size:var(--sapFontSize);font-weight:400}.ui5-select-option-icon{padding-inline-start:.5rem;color:var(--sapField_TextColor);align-self:center}:host(:not([disabled])){cursor:pointer}.ui5-select-icon-root{display:flex;justify-content:center;align-items:center;box-sizing:border-box;width:var(--_ui5-v2-17-0_select_icon_width);min-width:var(--_ui5-v2-17-0_select_icon_width);height:var(--_ui5-v2-17-0_select_icon_wrapper_height);padding:0}.ui5-select-icon{color:inherit}:host([value-state]:not([value-state="None"],[value-state="Positive"])) .ui5-select-icon-root{height:var(--_ui5-v2-17-0_select_icon_wrapper_state_height)}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const SelectPopoverCss = `.ui5-select-popover::part(content),.ui5-select-popover::part(header){padding:0}.ui5-select-popover .ui5-responsive-popover-header .row{justify-content:flex-start}
 `;
-var __decorate$1c = function(decorators, target, key, desc) {
+var __decorate$1m = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -10733,73 +10737,73 @@ let Select = Select_1 = class Select2 extends b$7 {
     return this.shadowRoot.querySelector("[ui5-popover]");
   }
 };
-__decorate$1c([
+__decorate$1m([
   s$9({ type: Boolean })
 ], Select.prototype, "disabled", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9()
 ], Select.prototype, "icon", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9()
 ], Select.prototype, "name", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9()
 ], Select.prototype, "valueState", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9({ type: Boolean })
 ], Select.prototype, "required", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9({ type: Boolean })
 ], Select.prototype, "readonly", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9()
 ], Select.prototype, "accessibleName", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9()
 ], Select.prototype, "accessibleNameRef", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9()
 ], Select.prototype, "accessibleDescription", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9()
 ], Select.prototype, "accessibleDescriptionRef", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9()
 ], Select.prototype, "tooltip", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9()
 ], Select.prototype, "textSeparator", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9({ type: String, noAttribute: true })
 ], Select.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9({ type: Boolean, noAttribute: true })
 ], Select.prototype, "_iconPressed", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9({ type: Boolean })
 ], Select.prototype, "opened", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9({ type: Number, noAttribute: true })
 ], Select.prototype, "_listWidth", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9({ type: Boolean })
 ], Select.prototype, "focused", void 0);
-__decorate$1c([
+__decorate$1m([
   d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
 ], Select.prototype, "options", void 0);
-__decorate$1c([
+__decorate$1m([
   d$8()
 ], Select.prototype, "valueStateMessage", void 0);
-__decorate$1c([
+__decorate$1m([
   d$8()
 ], Select.prototype, "label", void 0);
-__decorate$1c([
+__decorate$1m([
   s$9()
 ], Select.prototype, "value", null);
-__decorate$1c([
+__decorate$1m([
   i$b("@ui5/webcomponents")
 ], Select, "i18nBundle", void 0);
-Select = Select_1 = __decorate$1c([
+Select = Select_1 = __decorate$1m([
   m$8({
     tag: "ui5-select",
     languageAware: true,
@@ -10809,7 +10813,7 @@ Select = Select_1 = __decorate$1c([
     styles: [
       selectCss,
       ResponsivePopoverCommonCss,
-      ValueStateMessageCss,
+      valueStateMessageStyles,
       SelectPopoverCss
     ],
     dependencies: [
@@ -10852,18 +10856,18 @@ function listItemContent$6() {
   return jsxs("div", { part: "content", id: `${this._id}-content`, class: "ui5-li-content", children: [this.displayIconBegin && jsx(Icon$1, { part: "icon", name: this.icon, class: "ui5-li-icon", mode: "Decorative" }), jsxs("div", { class: "ui5-li-text-wrapper", children: [jsx("span", { part: "title", class: "ui5-li-title", children: jsx("slot", {}) }), this.additionalText && jsx("span", { part: "additional-text", class: "ui5-li-additional-text", children: this.additionalText })] })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const optionBaseCss = `:host{height:var(--_ui5-v2-17-0_list_item_dropdown_base_height);--_ui5-v2-17-0_list_item_title_size: var(--sapFontSize)}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const listItemIconCss = `.ui5-li-icon{color:var(--sapList_TextColor);min-width:var(--_ui5-v2-17-0_list_item_icon_size);min-height:var(--_ui5-v2-17-0_list_item_icon_size);padding-inline-end:var(--_ui5-v2-17-0_list_item_icon_padding-inline-end)}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const listItemAdditionalTextCss = `.ui5-li-additional-text{margin:0 .25rem;color:var(--sapNeutralTextColor);font-size:var(--sapFontSize);min-width:3.75rem;text-align:end;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 `;
-var __decorate$1b = function(decorators, target, key, desc) {
+var __decorate$1l = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -10877,25 +10881,25 @@ let Option = class Option2 extends ListItemBase$1 {
     return this.textContent || "";
   }
 };
-__decorate$1b([
+__decorate$1l([
   d$8({ type: Node, "default": true, invalidateOnChildChange: true })
 ], Option.prototype, "text", void 0);
-__decorate$1b([
+__decorate$1l([
   s$9()
 ], Option.prototype, "value", void 0);
-__decorate$1b([
+__decorate$1l([
   s$9()
 ], Option.prototype, "icon", void 0);
-__decorate$1b([
+__decorate$1l([
   s$9()
 ], Option.prototype, "additionalText", void 0);
-__decorate$1b([
+__decorate$1l([
   s$9()
 ], Option.prototype, "tooltip", void 0);
-__decorate$1b([
+__decorate$1l([
   s$9({ type: Boolean })
 ], Option.prototype, "selected", void 0);
-Option = __decorate$1b([
+Option = __decorate$1l([
   m$8({
     tag: "ui5-option",
     template: OptionTemplate,
@@ -15401,18 +15405,18 @@ var CalendarPickersMode;
   CalendarPickersMode2["YEAR"] = "YEAR";
 })(CalendarPickersMode || (CalendarPickersMode = {}));
 const CalendarPickersMode$1 = CalendarPickersMode;
-const name$K = "appointment-2";
-const pathData$J = "M32 481V65q0-14 9.5-23T64 33h64V1h32v32h192V1h32v32h64q14 0 23 9t9 23v416q0 14-9 23t-23 9H64q-13 0-22.5-9T32 481zm416 0V129H64v352h384zM256 193q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9zM128 321q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9zm256-128q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9zm0 128q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9zm-128 0q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9zM96 225q0-14 9-23t23-9 23 9 9 23-9 23-23 9-23-9-9-23zM384 97V65h-32v32h32zM128 65v32h32V65h-32z";
-const ltr$J = false;
-const collection$J = "SAP-icons-v4";
-const packageName$J = "@ui5/webcomponents-icons";
-y$2(name$K, { pathData: pathData$J, ltr: ltr$J, collection: collection$J, packageName: packageName$J });
-const name$J = "appointment-2";
-const pathData$I = "M403 64q32 0 54.5 22.5T480 141v294q0 32-22.5 54.5T403 512H109q-32 0-54.5-22.5T32 435V141q0-32 22.5-54.5T109 64h25V26q0-11 7.5-18.5T160 0t18.5 7.5T186 26v38h140V26q0-11 7.5-18.5T352 0t18.5 7.5T378 26v38h25zm-294 51q-11 0-18.5 7.5T83 141v64h346v-64q0-11-7.5-18.5T403 115h-25v19q0 11-7.5 18.5T352 160t-18.5-7.5T326 134v-19H186v19q0 11-7.5 18.5T160 160t-18.5-7.5T134 134v-19h-25zm294 346q11 0 18.5-7.5T429 435V256H83v179q0 11 7.5 18.5T109 461h294zM160 320q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9zm96 0q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9zm96 0q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9z";
-const ltr$I = false;
-const collection$I = "SAP-icons-v5";
-const packageName$I = "@ui5/webcomponents-icons";
-y$2(name$J, { pathData: pathData$I, ltr: ltr$I, collection: collection$I, packageName: packageName$I });
+const name$Q = "appointment-2";
+const pathData$P = "M32 481V65q0-14 9.5-23T64 33h64V1h32v32h192V1h32v32h64q14 0 23 9t9 23v416q0 14-9 23t-23 9H64q-13 0-22.5-9T32 481zm416 0V129H64v352h384zM256 193q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9zM128 321q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9zm256-128q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9zm0 128q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9zm-128 0q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9zM96 225q0-14 9-23t23-9 23 9 9 23-9 23-23 9-23-9-9-23zM384 97V65h-32v32h32zM128 65v32h32V65h-32z";
+const ltr$P = false;
+const collection$P = "SAP-icons-v4";
+const packageName$P = "@ui5/webcomponents-icons";
+y$2(name$Q, { pathData: pathData$P, ltr: ltr$P, collection: collection$P, packageName: packageName$P });
+const name$P = "appointment-2";
+const pathData$O = "M403 64q32 0 54.5 22.5T480 141v294q0 32-22.5 54.5T403 512H109q-32 0-54.5-22.5T32 435V141q0-32 22.5-54.5T109 64h25V26q0-11 7.5-18.5T160 0t18.5 7.5T186 26v38h140V26q0-11 7.5-18.5T352 0t18.5 7.5T378 26v38h25zm-294 51q-11 0-18.5 7.5T83 141v64h346v-64q0-11-7.5-18.5T403 115h-25v19q0 11-7.5 18.5T352 160t-18.5-7.5T326 134v-19H186v19q0 11-7.5 18.5T160 160t-18.5-7.5T134 134v-19h-25zm294 346q11 0 18.5-7.5T429 435V256H83v179q0 11 7.5 18.5T109 461h294zM160 320q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9zm96 0q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9zm96 0q14 0 23 9t9 23-9 23-23 9-23-9-9-23 9-23 23-9z";
+const ltr$O = false;
+const collection$O = "SAP-icons-v5";
+const packageName$O = "@ui5/webcomponents-icons";
+y$2(name$P, { pathData: pathData$O, ltr: ltr$O, collection: collection$O, packageName: packageName$O });
 /*!
  * OpenUI5
  * (c) Copyright 2009-2024 SAP SE or an SAP affiliate company.
@@ -17873,7 +17877,7 @@ const getMaxCalendarDate = (primaryCalendarType) => {
   }
   return cache.get(key);
 };
-var __decorate$1a = function(decorators, target, key, desc) {
+var __decorate$1k = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -18032,34 +18036,34 @@ let DateComponentBase = class DateComponentBase2 extends b$7 {
     return this._isoFormatInstance;
   }
 };
-__decorate$1a([
+__decorate$1k([
   s$9()
 ], DateComponentBase.prototype, "primaryCalendarType", void 0);
-__decorate$1a([
+__decorate$1k([
   s$9()
 ], DateComponentBase.prototype, "secondaryCalendarType", void 0);
-__decorate$1a([
+__decorate$1k([
   s$9()
 ], DateComponentBase.prototype, "formatPattern", void 0);
-__decorate$1a([
+__decorate$1k([
   s$9()
 ], DateComponentBase.prototype, "displayFormat", void 0);
-__decorate$1a([
+__decorate$1k([
   s$9()
 ], DateComponentBase.prototype, "valueFormat", void 0);
-__decorate$1a([
+__decorate$1k([
   s$9()
 ], DateComponentBase.prototype, "minDate", void 0);
-__decorate$1a([
+__decorate$1k([
   s$9()
 ], DateComponentBase.prototype, "maxDate", void 0);
-__decorate$1a([
+__decorate$1k([
   s$9()
 ], DateComponentBase.prototype, "calendarWeekNumbering", void 0);
-__decorate$1a([
+__decorate$1k([
   i$b("@ui5/webcomponents")
 ], DateComponentBase, "i18nBundle", void 0);
-DateComponentBase = __decorate$1a([
+DateComponentBase = __decorate$1k([
   m$8({
     languageAware: true,
     cldr: true,
@@ -18067,7 +18071,7 @@ DateComponentBase = __decorate$1a([
   })
 ], DateComponentBase);
 const DateComponentBase$1 = DateComponentBase;
-var __decorate$19 = function(decorators, target, key, desc) {
+var __decorate$1j = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -18116,10 +18120,10 @@ let DateTimeInput = class DateTimeInput2 extends Input$1 {
     return valueState;
   }
 };
-__decorate$19([
+__decorate$1j([
   s$9({ noAttribute: true })
 ], DateTimeInput.prototype, "_shouldOpenValueStatePopover", void 0);
-DateTimeInput = __decorate$19([
+DateTimeInput = __decorate$1j([
   m$8({
     tag: "ui5-datetime-input"
   })
@@ -18170,33 +18174,33 @@ const convertMonthNumbersToMonthNames = (firstMonth, lastMonth, calendarType) =>
     textInfo: pattern.replace(/\{0\}/, secondaryMonthsNamesWide[firstMonth]).replace(/\{1\}/, secondaryMonthsNamesWide[lastMonth])
   };
 };
-const name$I = "slim-arrow-left";
-const pathData$H = "M351.5 421q12 12 0 23-5 5-11 5t-11-5l-166-165q-9-10-9-23t9-23l165-164q5-5 11.5-5t11.5 5 5 11-5 11l-159 159q-6 6 0 12z";
-const ltr$H = false;
-const collection$H = "SAP-icons-v4";
-const packageName$H = "@ui5/webcomponents-icons";
-y$2(name$I, { pathData: pathData$H, ltr: ltr$H, collection: collection$H, packageName: packageName$H });
-const name$H = "slim-arrow-left";
-const pathData$G = "M326 96q11 0 18.5 7.5T352 122q0 10-8 18L223 256l121 116q8 8 8 18 0 11-7.5 18.5T326 416q-10 0-17-7L168 274q-8-6-8-18 0-11 8-19l141-134q7-7 17-7z";
-const ltr$G = false;
-const collection$G = "SAP-icons-v5";
-const packageName$G = "@ui5/webcomponents-icons";
-y$2(name$H, { pathData: pathData$G, ltr: ltr$G, collection: collection$G, packageName: packageName$G });
+const name$O = "slim-arrow-left";
+const pathData$N = "M351.5 421q12 12 0 23-5 5-11 5t-11-5l-166-165q-9-10-9-23t9-23l165-164q5-5 11.5-5t11.5 5 5 11-5 11l-159 159q-6 6 0 12z";
+const ltr$N = false;
+const collection$N = "SAP-icons-v4";
+const packageName$N = "@ui5/webcomponents-icons";
+y$2(name$O, { pathData: pathData$N, ltr: ltr$N, collection: collection$N, packageName: packageName$N });
+const name$N = "slim-arrow-left";
+const pathData$M = "M326 96q11 0 18.5 7.5T352 122q0 10-8 18L223 256l121 116q8 8 8 18 0 11-7.5 18.5T326 416q-10 0-17-7L168 274q-8-6-8-18 0-11 8-19l141-134q7-7 17-7z";
+const ltr$M = false;
+const collection$M = "SAP-icons-v5";
+const packageName$M = "@ui5/webcomponents-icons";
+y$2(name$N, { pathData: pathData$M, ltr: ltr$M, collection: collection$M, packageName: packageName$M });
 const slimArowLeft = "slim-arrow-left";
-const name$G = "slim-arrow-right";
-const pathData$F = "M357.5 233q10 10 10 23t-10 23l-165 165q-12 11-23 0t0-23l160-159q6-6 0-12l-159-159q-5-5-5-11t5-11 11-5 11 5z";
-const ltr$F = false;
-const collection$F = "SAP-icons-v4";
-const packageName$F = "@ui5/webcomponents-icons";
-y$2(name$G, { pathData: pathData$F, ltr: ltr$F, collection: collection$F, packageName: packageName$F });
-const name$F = "slim-arrow-right";
-const pathData$E = "M186 416q-11 0-18.5-7.5T160 390q0-10 8-18l121-116-121-116q-8-8-8-18 0-11 7.5-18.5T186 96q10 0 17 7l141 134q8 8 8 19 0 12-8 18L203 409q-7 7-17 7z";
-const ltr$E = false;
-const collection$E = "SAP-icons-v5";
-const packageName$E = "@ui5/webcomponents-icons";
-y$2(name$F, { pathData: pathData$E, ltr: ltr$E, collection: collection$E, packageName: packageName$E });
+const name$M = "slim-arrow-right";
+const pathData$L = "M357.5 233q10 10 10 23t-10 23l-165 165q-12 11-23 0t0-23l160-159q6-6 0-12l-159-159q-5-5-5-11t5-11 11-5 11 5z";
+const ltr$L = false;
+const collection$L = "SAP-icons-v4";
+const packageName$L = "@ui5/webcomponents-icons";
+y$2(name$M, { pathData: pathData$L, ltr: ltr$L, collection: collection$L, packageName: packageName$L });
+const name$L = "slim-arrow-right";
+const pathData$K = "M186 416q-11 0-18.5-7.5T160 390q0-10 8-18l121-116-121-116q-8-8-8-18 0-11 7.5-18.5T186 96q10 0 17 7l141 134q8 8 8 19 0 12-8 18L203 409q-7 7-17 7z";
+const ltr$K = false;
+const collection$K = "SAP-icons-v5";
+const packageName$K = "@ui5/webcomponents-icons";
+y$2(name$L, { pathData: pathData$K, ltr: ltr$K, collection: collection$K, packageName: packageName$K });
 const slimArrowRightIcon = "slim-arrow-right";
-var __decorate$18 = function(decorators, target, key, desc) {
+var __decorate$1i = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -18208,15 +18212,15 @@ let CalendarDate2 = class CalendarDate3 extends b$7 {
     this.value = "";
   }
 };
-__decorate$18([
+__decorate$1i([
   s$9()
 ], CalendarDate2.prototype, "value", void 0);
-CalendarDate2 = __decorate$18([
+CalendarDate2 = __decorate$1i([
   m$8("ui5-date")
 ], CalendarDate2);
 CalendarDate2.define();
 const CalendarDate$1 = CalendarDate2;
-var __decorate$17 = function(decorators, target, key, desc) {
+var __decorate$1h = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -18229,18 +18233,18 @@ let CalendarDateRange = class CalendarDateRange2 extends b$7 {
     this.endValue = "";
   }
 };
-__decorate$17([
+__decorate$1h([
   s$9()
 ], CalendarDateRange.prototype, "startValue", void 0);
-__decorate$17([
+__decorate$1h([
   s$9()
 ], CalendarDateRange.prototype, "endValue", void 0);
-CalendarDateRange = __decorate$17([
+CalendarDateRange = __decorate$1h([
   m$8("ui5-date-range")
 ], CalendarDateRange);
 CalendarDateRange.define();
 const CalendarDateRange$1 = CalendarDateRange;
-var __decorate$16 = function(decorators, target, key, desc) {
+var __decorate$1g = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -18254,20 +18258,20 @@ let SpecialCalendarDate = class SpecialCalendarDate2 extends b$7 {
     this._tooltip = "";
   }
 };
-__decorate$16([
+__decorate$1g([
   s$9()
 ], SpecialCalendarDate.prototype, "value", void 0);
-__decorate$16([
+__decorate$1g([
   s$9()
 ], SpecialCalendarDate.prototype, "type", void 0);
-__decorate$16([
+__decorate$1g([
   s$9()
 ], SpecialCalendarDate.prototype, "_tooltip", void 0);
-SpecialCalendarDate = __decorate$16([
+SpecialCalendarDate = __decorate$1g([
   m$8("ui5-special-date")
 ], SpecialCalendarDate);
 SpecialCalendarDate.define();
-var __decorate$15 = function(decorators, target, key, desc) {
+var __decorate$1f = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -18335,10 +18339,10 @@ let CalendarPart = class CalendarPart2 extends DateComponentBase$1 {
     return parseInt(oMonthDomRef);
   }
 };
-__decorate$15([
+__decorate$1f([
   s$9({ type: Number })
 ], CalendarPart.prototype, "timestamp", void 0);
-CalendarPart = __decorate$15([
+CalendarPart = __decorate$1f([
   m$8()
 ], CalendarPart);
 const CalendarPart$1 = CalendarPart;
@@ -18400,10 +18404,10 @@ function DayPickerTemplate() {
   })] }) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const dayPickerCSS = `:host(:not([hidden])){display:block}:host{height:100%;width:100%}:host([hide-week-numbers]) .ui5-dp-content{flex-basis:100%}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item{flex-direction:column;justify-content:var(--_ui5-v2-17-0_day_picker_item_justify_content)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-daytext{height:1.5625rem;padding-inline-end:var(--_ui5-v2-17-0_dp_two_calendar_item_text_padding_top)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-daysectext{font-size:.75rem;height:var(--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_height);padding-block:var(--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_padding_block);padding-inline:50% .4375rem}.ui5-dp-weekname,.ui5-dp-dayname,.ui5-dp-item{width:var(--_ui5-v2-17-0_day_picker_item_width);height:var(--_ui5-v2-17-0_day_picker_item_height);margin-block-start:var(--_ui5-v2-17-0_daypicker_item_margin);margin-inline-end:var(--_ui5-v2-17-0_daypicker_item_margin);font-family:var(--sapFontFamily);border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius)}.ui5-dp-weekname,.ui5-dp-dayname{cursor:default}.ui5-dp-weekname{color:var(--_ui5-v2-17-0_daypicker_weekname_color)}.ui5-dp-weeks-row{display:flex}.ui5-dp-content{display:flex;flex-basis:87.5%;flex-direction:column;font-family:var(--sapFontFamily)}.ui5-dp-days-names-container{display:flex;height:var(--_ui5-v2-17-0_daypicker_daynames_container_height)}.ui5-dp-weeknumber-container{padding-block-start:var(--_ui5-v2-17-0_daypicker_weeknumbers_container_padding_top);flex-basis:12.5%}.ui5-dp-weekname,.ui5-dp-dayname,.ui5-dp-weekname-container,.ui5-dp-item{display:flex;flex-grow:1;justify-content:center;align-items:center;font-size:var(--sapFontSmallSize);outline:none;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;user-select:none}.ui5-dp-item{position:relative;color:var(--sapTextColor);background:var(--sapLegend_WorkingBackground);font-size:var(--sapFontSize);border:var(--_ui5-v2-17-0_daypicker_item_border);border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius);cursor:pointer}.ui5-dp-item:hover{background:var(--sapList_Hover_Background)}.ui5-dp-daytext{display:flex;width:100%;height:100%;justify-content:center;align-items:center;box-sizing:border-box}.ui5-dp-dayname{color:var(--_ui5-v2-17-0_daypicker_dayname_color);height:100%}.ui5-dp-item.ui5-dp-item--weekend{background:var(--sapLegend_NonWorkingBackground)}.ui5-dp-item.ui5-dp-item--disabled{pointer-events:none;opacity:.5}.ui5-dp-item.ui5-dp-item--weekend:hover{background:var(--sapList_Hover_Background);filter:var(--_ui5-v2-17-0_daypicker_item_weeekend_filter)}.ui5-dp-item.ui5-dp-item--othermonth{color:var(--_ui5-v2-17-0_daypicker_item_othermonth_color);background:var(--_ui5-v2-17-0_daypicker_item_othermonth_background_color);border-color:transparent}.ui5-dp-item.ui5-dp-item--othermonth:hover,.ui5-dp-item.ui5-dp-item--weekend.ui5-dp-item--othermonth:hover{color:var(--_ui5-v2-17-0_daypicker_item_othermonth_hover_color);background:var(--sapList_Hover_Background)}.ui5-dp-item:focus:after{content:"";border:var(--_ui5-v2-17-0_daypicker_item_not_selected_focus_border);position:absolute;inset:var(--_ui5-v2-17-0_daypicker_item_no_selected_inset);outline:none;border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius_focus_after)}.ui5-dp-item.ui5-dp-item--now:before{position:absolute;inset:var(--_ui5-v2-17-0_daypicker_item_now_not_selected_inset);border:.125rem solid var(--_ui5-v2-17-0_daypicker_item_now_border_color);content:"";border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius);z-index:1}.ui5-dp-item.ui5-dp-item--now.ui5-dp-item--selected{box-shadow:var(--_ui5-v2-17-0_daypicker_item_now_box_shadow)}.ui5-dp-item.ui5-dp-item--selected{background:var(--sapContent_Selected_Background)}.ui5-dp-item.ui5-dp-item--selected:not(.ui5-dp-item.ui5-dp-item--now) .ui5-dp-daytext:after{position:absolute;inset:0;border:var(--_ui5-v2-17-0_daypicker_item_selected_border);content:"";border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius_item);z-index:1}.ui5-dp-item.ui5-dp-item--selected.ui5-dp-item.ui5-dp-item--now .ui5-dp-daytext{border:var(--_ui5-v2-17-0_day_picker_item_selected_now_border);outline:var(--_ui5-v2-17-0_daypicker_item_selected_text_outline);outline-offset:var(--_ui5-v2-17-0_daypicker_item_now_selected_outline_offset);border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius_item);font-family:var(--_ui5-v2-17-0_daypicker_item_selected_text_font)}.ui5-dp-item.ui5-dp-item--selected .ui5-dp-daytext{background:var(--_ui5-v2-17-0_daypicker_item_selected_background);color:var(--sapContent_Selected_TextColor);border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius);border:var(--_ui5-v2-17-0_daypicker_item_selected_text_border);font-family:var(--_ui5-v2-17-0_daypicker_item_selected_text_font)}.ui5-dp-item.ui5-dp-item--selected .ui5-dp-daytext{background:var(--_ui5-v2-17-0_daypicker_item_selected_daytext_hover_background);color:var(--sapContent_Selected_TextColor)}.ui5-dp-item.ui5-dp-item--now:focus:after{inset:var(--_ui5-v2-17-0_daypicker_item_now_inset);border-radius:var(--_ui5-v2-17-0_daypicker_item_now_border_radius_focus_after);border:var(--_ui5-v2-17-0_daypicker_item_now_border_focus_after);position:absolute;content:"";width:auto;height:auto}.ui5-dp-item.ui5-dp-item--selected.ui5-dp-item--now:focus:after{inset:var(--_ui5-v2-17-0_daypicker_item_now_inset);border-radius:var(--_ui5-v2-17-0_day_picker_item_selected_now_border_radius_focus);border:var(--_ui5-v2-17-0_day_picker_item_selected_now_border_focus);position:absolute;content:"";width:auto;height:auto}.ui5-dp-item.ui5-dp-item--selected:hover{background:var(--_ui5-v2-17-0_daypicker_item_selected_hover);color:var(--sapContent_ContrastTextColor)}.ui5-dp-item.ui5-dp-item--selected:focus:after{border-color:var(--_ui5-v2-17-0_daypicker_item_selected_focus_color);border-width:var(--_ui5-v2-17-0_daypicker_item_selected_focus_width)}.ui5-dp-items-container{outline:none}.ui5-dp-item.ui5-dp-item--selected-between .ui5-dp-daytext{border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius);font-weight:var(--_ui5-v2-17-0_daypicker_item_selected_between_text_font)}.ui5-dp-item.ui5-dp-item--selected-between.ui5-dp-item--now:not(.ui5-dp-item--selected) .ui5-dp-daytext:after{content:"";position:absolute;inset:var(--_ui5-v2-17-0_daypicker_item_now_selected_between_inset);border:var(--_ui5-v2-17-0_daypicker_item_now_selected_between_border);border-radius:var(--_ui5-v2-17-0_daypicker_item_now_selected_between_border_radius)}.ui5-dp-item.ui5-dp-item--selected-between{border:var(--_ui5-v2-17-0_daypicker_item_select_between_border);border-radius:var(--_ui5-v2-17-0_daypicker_item_selected_between_border);background:var(--_ui5-v2-17-0_daypicker_item_selected_between_background)}.ui5-dp-item.ui5-dp-item--selected-between:hover{background:var(--_ui5-v2-17-0_daypicker_item_selected_between_hover_background)}.ui5-dp-item.ui5-dp-item--selected.ui5-dp-item--selected-between:focus:after{border-color:var(--sapContent_FocusColor)}.ui5-dp-items-container>:first-child{justify-content:flex-end}.ui5-dp-emptyweek{height:var(--_ui5-v2-17-0_day_picker_empty_height)}.ui5-dp-item.ui5-dp-item--now.ui5-dp-item--selected.ui5-dp-item--withsecondtype:focus:after{outline-offset:-.1875rem;border-radius:var(--_ui5-v2-17-0-dp-item_withsecondtype_border)}.ui5-dp-item.ui5-dp-item--selected.ui5-dp-item--now.ui5-dp-item--withsecondtype .ui5-dp-daysectext,.ui5-dp-item.ui5-dp-item--now.ui5-dp-item--selected.ui5-dp-item--withsecondtype .ui5-dp-daytext{border:none;outline:none}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--selected:not(.ui5-dp-item.ui5-dp-item--now) .ui5-dp-daytext:after{border-width:.0625rem}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--now .ui5-dp-daysectext{height:var(--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_height);padding-block-start:0;border-radius:var(--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_border_radios)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--selected.ui5-dp-item.ui5-dp-item--now .ui5-dp-daytext{border-radius:var(--_ui5-v2-17-0_daypicker_two_calendar_item_border_radius);margin-block-end:var(--_ui5-v2-17-0_daypicker_two_calendar_item_margin_bottom)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item:focus:after{inset:var(--_ui5-v2-17-0_daypicker_two_calendar_item_no_selected_inset);border-radius:var(--_ui5-v2-17-0_daypicker_two_calendar_item_border_focus_border_radius)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--now:after{inset:var(--_ui5-v2-17-0_daypicker_two_calendar_item_no_selected_focus_inset);border-radius:var(--_ui5-v2-17-0_daypicker_two_calendar_item_no_select_focus_border_radius)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--selected:focus:after{border-width:var(--_ui5-v2-17-0_daypicker_two_calendar_item_now_selected_border_width);inset:var(--_ui5-v2-17-0_daypicker_two_calendar_item_now_selected_border_inset);border-radius:var(--_ui5-v2-17-0_daypicker_two_calendar_item_border_focus_border_radius)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--selected.ui5-dp-item--now:after{inset:var(--_ui5-v2-17-0_daypicker_two_calendar_item_now_inset);border-radius:var(--_ui5-v2-17-0_daypicker_two_calendar_item_selected_now_border_radius_focus)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--now.ui5-dp-item--selected.ui5-dp-item--withsecondtype .ui5-dp-daytext:not(.ui5-dp-daysectext):before{content:var(--_ui5-v2-17-0_daypicker_two_calendar_item_now_day_text_content);position:absolute;inset:.25rem;border-radius:var(--_ui5-v2-17-0_daypicker_two_calendar_item_selected_now_border_radius_focus);outline:var(--_ui5-v2-17-0_daypicker_item_selected__secondary_type_text_outline);z-index:1}.ui5-dp-specialday{width:100%;height:.375rem;position:absolute;box-sizing:border-box;inset-block-start:var(--_ui5-v2-17-0_daypicker_special_day_top);border-end-end-radius:var(--_ui5-v2-17-0_daypicker_special_day_border_bottom_radius);border-end-start-radius:var(--_ui5-v2-17-0_daypicker_special_day_border_bottom_radius);border-block-start:var(--_ui5-v2-17-0_daypicker_special_day_border_top)}.ui5-dp-specialday.NonWorking,.ui5-dp-specialday.Working{border-block-start:none}.ui5-dp-item--selected .ui5-dp-specialday{width:var(--_ui5-v2-17-0_daypicker_selected_item_special_day_width)}.ui5-dp-item--selected.ui5-dp-item--now .ui5-dp-specialday{inset-block-start:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_top);width:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_width);border-end-end-radius:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_border_bottom_radius);border-end-start-radius:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_border_bottom_radius)}.ui5-dp-item--now .ui5-dp-specialday,.ui5-dp-item.ui5-dp-item--selected.ui5-dp-item--now .ui5-dp-specialday{height:.3125rem;border-end-end-radius:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_border_bottom_radius_alternate);border-end-start-radius:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_border_bottom_radius_alternate);inset-block-start:var(--_ui5-v2-17-0_daypicker_item_now_specialday_top);width:var(--_ui5-v2-17-0_daypicker_item_now_specialday_width)}.ui5-dp-item:not(:focus).ui5-dp-item--selected.ui5-dp-item--now .ui5-dp-specialday{border-end-end-radius:var(--_ui5-v2-17-0_daypicker_special_day_selected_border_radius_bottom);border-end-start-radius:var(--_ui5-v2-17-0_daypicker_special_day_selected_border_radius_bottom)}.ui5-dp-item--now .ui5-dp-specialday{width:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_width);inset-block-start:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_top)}.ui5-dp-item[data-ui5-special-day].ui5-dp-item--selected.ui5-dp-item--now .ui5-dp-daytext{border-radius:var(--_ui5-v2-17-0-daypicker_item_selected_now_border_radius)}.ui5-dp-item[data-ui5-special-day].ui5-dp-item--selected.ui5-dp-item--now:focus:after,.ui5-dp-item[data-ui5-special-day].ui5-dp-item--now:focus:after{margin:var(--_ui5-v2-17-0_daypicker_item_now_focus_margin)}.ui5-dp-item.ui5-dp-item--now:focus .ui5-dp-specialday{inset-block-start:var(--_ui5-v2-17-0_daypicker_specialday_focused_top);width:var(--_ui5-v2-17-0_daypicker_specialday_focused_width);border-end-end-radius:var(--_ui5-v2-17-0_daypicker_specialday_focused_border_bottom);border-end-start-radius:var(--_ui5-v2-17-0_daypicker_specialday_focused_border_bottom);height:.3125rem}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item[data-ui5-special-day].ui5-dp-item--selected.ui5-dp-item--now:after,.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item[data-ui5-special-day].ui5-dp-item--now:after{inset:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_now_inset);border-radius:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_now_border_radius);border-width:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_after_border_width);border-color:var(--_ui5-v2-17-0_daypicker_item_selected_focus_color)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item[data-ui5-special-day].ui5-dp-item--now:not(.ui5-dp-item--selected):after{inset:.1875rem}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item .ui5-dp-specialday{inset-block-start:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_top);inset-inline-end:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_right)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item:not(.ui5-dp-item--now) .ui5-dp-daysectext{padding-block:var(--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_padding)}.ui5-dp-item.ui5-dp-item--selected.ui5-dp-item--now.ui5-dp-item--withsecondtype:focus .ui5-dp-specialday{inset-block-start:var(--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_special_day_top);inset-inline-end:var(--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_special_day_right)}.ui5-dp-item.ui5-dp-item--selected.ui5-dp-item--now.ui5-dp-item--withsecondtype:focus .ui5-dp-daysectext{padding-block:var(--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_secondary_text_padding_block)}.ui5-dp-item--withsecondtype .ui5-dp-daytext{font-size:.75rem}.ui5-dp-item.ui5-dp-item--withsecondtype .ui5-dp-specialday,.ui5-dp-item.ui5-dp-item--withsecondtype.ui5-dp-item--now:focus .ui5-dp-specialday,.ui5-dp-item.ui5-dp-item--withsecondtype:not(:focus).ui5-dp-item--selected.ui5-dp-item--now .ui5-dp-specialday{border-radius:100%;width:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_dot);inset-block-start:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_top);inset-inline-end:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_right);height:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_dot);border-block-start:none}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--selected.ui5-dp-item.ui5-dp-item--now:focus .ui5-dp-daytext{margin-block-end:var(--_ui5-v2-17-0_daypicker_two_calendar_item_selected_focus_margin_bottom);padding-inline-end:var(--_ui5-v2-17-0_daypicker_two_calendar_item_selected_focus_padding_right)}.Type01{background:var(--sapLegendColor1)}.Type02{background:var(--sapLegendColor2)}.Type03{background:var(--sapLegendColor3)}.Type04{background:var(--sapLegendColor4)}.Type05{background:var(--sapLegendColor5)}.Type06{background:var(--sapLegendColor6)}.Type07{background:var(--sapLegendColor7)}.Type08{background:var(--sapLegendColor8)}.Type09{background:var(--sapLegendColor9)}.Type10{background:var(--sapLegendColor10)}.Type11{background:var(--sapLegendColor11)}.Type12{background:var(--sapLegendColor12)}.Type13{background:var(--sapLegendColor13)}.Type14{background:var(--sapLegendColor14)}.Type15{background:var(--sapLegendColor15)}.Type16{background:var(--sapLegendColor16)}.Type17{background:var(--sapLegendColor17)}.Type18{background:var(--sapLegendColor18)}.Type19{background:var(--sapLegendColor19)}.Type20{background:var(--sapLegendColor20)}
 `;
-var __decorate$14 = function(decorators, target, key, desc) {
+var __decorate$1e = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -19030,40 +19034,40 @@ let DayPicker = DayPicker_1 = class DayPicker2 extends CalendarPart$1 {
     return this.hasSecondaryCalendarType ? `${this._primaryCalendarType} calendar with secondary ${this.secondaryCalendarType} calendar` : `${this._primaryCalendarType} calendar`;
   }
 };
-__decorate$14([
+__decorate$1e([
   s$9({ type: Array })
 ], DayPicker.prototype, "selectedDates", void 0);
-__decorate$14([
+__decorate$1e([
   s$9()
 ], DayPicker.prototype, "selectionMode", void 0);
-__decorate$14([
+__decorate$1e([
   s$9({ type: Boolean })
 ], DayPicker.prototype, "hideWeekNumbers", void 0);
-__decorate$14([
+__decorate$1e([
   s$9({ type: Array })
 ], DayPicker.prototype, "_weeks", void 0);
-__decorate$14([
+__decorate$1e([
   s$9({ type: Array })
 ], DayPicker.prototype, "_dayNames", void 0);
-__decorate$14([
+__decorate$1e([
   s$9({ type: Boolean, noAttribute: true })
 ], DayPicker.prototype, "_hidden", void 0);
-__decorate$14([
+__decorate$1e([
   s$9({ type: Number })
 ], DayPicker.prototype, "_secondTimestamp", void 0);
-__decorate$14([
+__decorate$1e([
   s$9({ type: Array })
 ], DayPicker.prototype, "specialCalendarDates", void 0);
-__decorate$14([
+__decorate$1e([
   s$9({ type: Array })
 ], DayPicker.prototype, "disabledDates", void 0);
-__decorate$14([
+__decorate$1e([
   o$1("[data-sap-focus-ref]")
 ], DayPicker.prototype, "_focusableDay", void 0);
-__decorate$14([
+__decorate$1e([
   i$b("@ui5/webcomponents")
 ], DayPicker, "i18nBundle", void 0);
-DayPicker = DayPicker_1 = __decorate$14([
+DayPicker = DayPicker_1 = __decorate$1e([
   m$8({
     tag: "ui5-daypicker",
     styles: dayPickerCSS,
@@ -19082,10 +19086,10 @@ function MonthPickerTemplate() {
   return jsx("div", { class: "ui5-mp-root", part: "month-picker-root", role: "grid", "aria-roledescription": this.roleDescription, "aria-readonly": "false", "aria-multiselectable": "false", onMouseOver: this._onmouseover, onKeyDown: this._onkeydown, onKeyUp: this._onkeyup, onClick: this._selectMonth, onMouseDown: this._onmousedown, children: this._monthsInterval.map((months) => jsx("div", { role: "row", class: "ui5-mp-quarter", children: months.map((month) => jsxs("div", { "data-sap-timestamp": month.timestamp, tabindex: month._tabIndex, "data-sap-focus-ref": month.focusRef ? "true" : void 0, class: month.classes, part: month.parts, role: "gridcell", "aria-selected": month.ariaSelected, "aria-disabled": month.ariaDisabled, children: [jsx("span", { class: "ui5-dp-monthtext", children: month.name }), month.nameInSecType && jsx("span", { class: "ui5-dp-monthtext ui5-dp-monthsectext", children: month.nameInSecType })] })) })) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const monthPickerStyles = `:host(:not([hidden])){display:block}:host{width:100%;height:100%}.ui5-mp-root{box-sizing:border-box;padding:2rem 0 1rem;display:flex;flex-direction:column;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);justify-content:center;align-items:center}.ui5-mp-quarter{display:flex;justify-content:center;align-items:center;width:100%}.ui5-mp-item{display:flex;flex-direction:column;width:calc(33.333% - .125rem);height:var(--_ui5-v2-17-0_month_picker_item_height);color:var(--sapButton_Lite_TextColor);background-color:var(--sapButton_Lite_Background);align-items:center;justify-content:center;margin:var(--_ui5-v2-17-0_monthpicker_item_margin);box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;outline:none;position:relative;border:var(--_ui5-v2-17-0_monthpicker_item_border);border-radius:var(--_ui5-v2-17-0_monthpicker_item_border_radius)}.ui5-dp-monthsectext{font-size:.75rem;color:var(--sapNeutralElementColor)}.ui5-mp-item.ui5-mp-item--selected,.ui5-mp-item.ui5-mp-item--selected-between{background:var(--sapButton_Selected_Background);border:var(--_ui5-v2-17-0_monthpicker_item_selected_border);color:var(--sapButton_Selected_TextColor)}.ui5-mp-item.ui5-mp-item--selected .ui5-dp-monthsectext,.ui5-mp-item.ui5-mp-item--selected-between .ui5-dp-monthsectext{color:var(--sapButton_Selected_TextColor)}.ui5-mp-item:hover{background:var(--sapButton_Lite_Hover_Background);border:var(--_ui5-v2-17-0_monthpicker_item_hover_border);color:var(--sapButton_Lite_Hover_TextColor)}.ui5-mp-item.ui5-mp-item--selected:hover,.ui5-mp-item.ui5-mp-item--selected-between:hover{background:var(--sapButton_Selected_Hover_Background);border:var(--_ui5-v2-17-0_monthpicker_item_selected_hover_border);color:var(--sapButton_Selected_TextColor)}.ui5-mp-item.ui5-mp-item--selected:hover .ui5-dp-monthsectext,.ui5-mp-item.ui5-mp-item--selected-between:hover .ui5-dp-monthsectext{color:var(--sapButton_Selected_TextColor)}.ui5-mp-item:active,.ui5-mp-item.ui5-mp-item--selected:active,.ui5-mp-item.ui5-mp-item--selected-between:active{background:var(--sapButton_Active_Background);border:var(--_ui5-v2-17-0_monthpicker_item_active_border);color:var(--sapButton_Active_TextColor)}.ui5-mp-item:active .ui5-dp-monthsectext,.ui5-mp-item.ui5-mp-item--selected:active .ui5-dp-monthsectext,.ui5-mp-item.ui5-mp-item--selected-between:active .ui5-dp-monthsectext{color:var(--sapButton_Active_TextColor)}.ui5-mp-item.ui5-mp-item--disabled{pointer-events:none;opacity:.5}.ui5-mp-item:focus:after{content:"";position:absolute;inset:.0625rem;border:var(--_ui5-v2-17-0_button_focused_border);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}:host([secondary-calendar-type="Persian"]:not([primary-calendar-type="Persian"])) .ui5-mp-root,:host([secondary-calendar-type="Islamic"]:not([primary-calendar-type="Islamic"])) .ui5-mp-root{display:grid;padding:.5625rem 0;grid-template-columns:repeat(2,1fr);gap:var(--_ui5-v2-17-0_monthpicker_item_margin)}:host([secondary-calendar-type="Persian"]:not([primary-calendar-type="Persian"])) .ui5-mp-item,:host([secondary-calendar-type="Islamic"]:not([primary-calendar-type="Islamic"])) .ui5-mp-item{margin:0;width:auto}:host([secondary-calendar-type="Persian"]:not([primary-calendar-type="Persian"])) .ui5-mp-quarter,:host([secondary-calendar-type="Islamic"]:not([primary-calendar-type="Islamic"])) .ui5-mp-quarter{width:100%;display:contents}
 `;
-var __decorate$13 = function(decorators, target, key, desc) {
+var __decorate$1d = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -19356,25 +19360,25 @@ let MonthPicker = MonthPicker_1 = class MonthPicker2 extends CalendarPart$1 {
     return year < minYear || year === minYear && month < minMonth || year > maxYear || year === maxYear && month > maxMonth;
   }
 };
-__decorate$13([
+__decorate$1d([
   s$9({ type: Array })
 ], MonthPicker.prototype, "selectedDates", void 0);
-__decorate$13([
+__decorate$1d([
   s$9()
 ], MonthPicker.prototype, "selectionMode", void 0);
-__decorate$13([
+__decorate$1d([
   s$9({ type: Array })
 ], MonthPicker.prototype, "_monthsInterval", void 0);
-__decorate$13([
+__decorate$1d([
   s$9({ type: Boolean, noAttribute: true })
 ], MonthPicker.prototype, "_hidden", void 0);
-__decorate$13([
+__decorate$1d([
   s$9({ type: Number })
 ], MonthPicker.prototype, "_secondTimestamp", void 0);
-__decorate$13([
+__decorate$1d([
   i$b("@ui5/webcomponents")
 ], MonthPicker, "i18nBundle", void 0);
-MonthPicker = MonthPicker_1 = __decorate$13([
+MonthPicker = MonthPicker_1 = __decorate$1d([
   m$8({
     tag: "ui5-monthpicker",
     template: MonthPickerTemplate,
@@ -19393,10 +19397,10 @@ function YearPickerTemplate() {
   return jsx("div", { class: "ui5-yp-root", part: "year-picker-root", role: "grid", "aria-roledescription": this.roleDescription, "aria-readonly": "false", "aria-multiselectable": "false", onMouseOver: this._onmouseover, onKeyDown: this._onkeydown, onKeyUp: this._onkeyup, onClick: this._selectYear, children: this._yearsInterval.map((years) => jsx("div", { role: "row", class: "ui5-yp-interval-container", children: years.map((year) => jsxs("div", { "data-sap-timestamp": year.timestamp, tabindex: year._tabIndex, "data-sap-focus-ref": year.focusRef ? "true" : void 0, class: year.classes, part: year.parts, role: "gridcell", "aria-selected": year.ariaSelected, "aria-disabled": year.ariaDisabled, children: [jsx("span", { class: "ui5-dp-yeartext", children: year.year }), year.yearInSecType && jsx("span", { class: "ui5-yp-item-sec-type", children: year.yearInSecType })] })) })) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const yearPickerStyles = `:host(:not([hidden])){display:block}:host{width:100%;height:100%}.ui5-yp-root{padding:2rem 0 1rem;display:flex;flex-direction:column;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);justify-content:center;align-items:center}.ui5-yp-interval-container{display:flex;justify-content:center;align-items:center;width:100%}.ui5-yp-item{display:flex;margin:var(--_ui5-v2-17-0_yearpicker_item_margin);width:calc(25% - .125rem);height:var(--_ui5-v2-17-0_year_picker_item_height);color:var(--sapButton_Lite_TextColor);background-color:var(--sapButton_Lite_Background);align-items:center;justify-content:center;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;outline:none;position:relative;border:var(--_ui5-v2-17-0_yearpicker_item_border);border-radius:var(--_ui5-v2-17-0_yearpicker_item_border_radius)}.ui5-yp-item-secondary-type{flex-direction:column;width:calc(50% - .125rem)}.ui5-yp-item-sec-type{font-size:.75rem;color:var(--sapNeutralElementColor)}.ui5-yp-item.ui5-yp-item--selected,.ui5-yp-item.ui5-yp-item--selected-between{background:var(--sapButton_Selected_Background);border:var(--_ui5-v2-17-0_yearpicker_item_selected_border);color:var(--sapButton_Selected_TextColor)}.ui5-yp-item.ui5-yp-item--selected .ui5-yp-item-sec-type,.ui5-yp-item.ui5-yp-item--selected-between .ui5-yp-item-sec-type{color:var(--sapButton_Selected_TextColor)}.ui5-yp-item:hover{background:var(--sapButton_Lite_Hover_Background);border:var(--_ui5-v2-17-0_yearpicker_item_hover_border);color:var(--sapButton_Lite_Hover_TextColor)}.ui5-yp-item.ui5-yp-item--selected:hover,.ui5-yp-item.ui5-yp-item--selected-between:hover{background:var(--sapButton_Selected_Hover_Background);border:var(--_ui5-v2-17-0_yearpicker_item_selected_hover_border);color:var(--sapButton_Selected_TextColor)}.ui5-yp-item.ui5-yp-item--selected:hover .ui5-yp-item-sec-type,.ui5-yp-item.ui5-yp-item--selected-between:hover .ui5-yp-item-sec-type{color:var(--sapButton_Selected_TextColor)}.ui5-yp-item:active,.ui5-yp-item.ui5-yp-item--selected:active,.ui5-yp-item.ui5-yp-item--selected-between:active{background:var(--sapButton_Active_Background);border:var(--_ui5-v2-17-0_monthpicker_item_active_border);color:var(--sapButton_Active_TextColor)}.ui5-yp-item:active .ui5-yp-item-sec-type,.ui5-yp-item.ui5-yp-item--selected:active .ui5-yp-item-sec-type,.ui5-yp-item.ui5-yp-item--selected-between:active .ui5-yp-item-sec-type{color:var(--sapButton_Active_TextColor)}.ui5-yp-item.ui5-yp-item--disabled{pointer-events:none;opacity:.5}.ui5-yp-item:focus:after{content:"";position:absolute;inset:.0625rem;border:var(--_ui5-v2-17-0_button_focused_border);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}
 `;
-var __decorate$12 = function(decorators, target, key, desc) {
+var __decorate$1c = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -19653,28 +19657,28 @@ let YearPicker = YearPicker_1 = class YearPicker2 extends CalendarPart$1 {
     this._modifyTimestampBy(this._getPageSize());
   }
 };
-__decorate$12([
+__decorate$1c([
   s$9({ type: Array })
 ], YearPicker.prototype, "selectedDates", void 0);
-__decorate$12([
+__decorate$1c([
   s$9()
 ], YearPicker.prototype, "selectionMode", void 0);
-__decorate$12([
+__decorate$1c([
   s$9({ type: Array })
 ], YearPicker.prototype, "_yearsInterval", void 0);
-__decorate$12([
+__decorate$1c([
   s$9({ type: Boolean, noAttribute: true })
 ], YearPicker.prototype, "_hidden", void 0);
-__decorate$12([
+__decorate$1c([
   s$9({ type: Number })
 ], YearPicker.prototype, "_secondTimestamp", void 0);
-__decorate$12([
+__decorate$1c([
   s$9({ noAttribute: true })
 ], YearPicker.prototype, "_currentYearRange", void 0);
-__decorate$12([
+__decorate$1c([
   i$b("@ui5/webcomponents")
 ], YearPicker, "i18nBundle", void 0);
-YearPicker = YearPicker_1 = __decorate$12([
+YearPicker = YearPicker_1 = __decorate$1c([
   m$8({
     tag: "ui5-yearpicker",
     styles: yearPickerStyles,
@@ -19693,10 +19697,10 @@ function YearRangePickerTemplate() {
   return jsx("div", { class: "ui5-yrp-root", part: "year-range-picker-root", role: "grid", "aria-roledescription": this.roleDescription, "aria-readonly": "false", "aria-multiselectable": "false", onClick: this._selectYearRange, onMouseOver: this._onmouseover, onKeyDown: this._onkeydown, onKeyUp: this._onkeyup, children: this._yearRanges.map((rangeRow) => jsx("div", { role: "row", class: "ui5-yrp-interval-container", children: rangeRow.map((yearRange) => jsxs("div", { "data-sap-timestamp": yearRange.timestamp, tabindex: yearRange._tabIndex, "data-sap-focus-ref": yearRange.focusRef ? "true" : void 0, class: yearRange.classes, part: yearRange.parts, role: "gridcell", "aria-selected": yearRange.ariaSelected, "aria-disabled": yearRange.ariaDisabled, children: [jsx("span", { class: "ui5-dp-yeartext", children: yearRange.range }), yearRange.rangeInSecType && jsx("span", { class: "ui5-yrp-item-sec-type", children: yearRange.rangeInSecType })] })) })) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const yearRangePickerStyles = `:host(:not([hidden])){display:block}:host{width:100%;height:100%}.ui5-yrp-root{padding:2rem 0 1rem;display:flex;flex-direction:column;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);justify-content:center;align-items:center}.ui5-yrp-interval-container{display:flex;justify-content:space-evenly;align-items:center;width:100%}.ui5-yrp-item{display:flex;margin:var(--_ui5-v2-17-0_yearpicker_item_margin);width:calc(50% - .125rem);height:var(--_ui5-v2-17-0_year_picker_item_height);color:var(--sapButton_Lite_TextColor);background-color:var(--sapButton_Lite_Background);align-items:center;justify-content:center;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;outline:none;position:relative;border:var(--_ui5-v2-17-0_yearpicker_item_border);border-radius:var(--_ui5-v2-17-0_yearpicker_item_border_radius)}.ui5-yrp-item-secondary-type{flex-direction:column;width:calc(50% - .125rem)}.ui5-yrp-item-sec-type{font-size:.75rem;color:var(--sapNeutralElementColor)}.ui5-yrp-item-one-column-view{width:initial;padding-left:.5rem;padding-right:.5rem}.ui5-yrp-item.ui5-yrp-item--selected,.ui5-yrp-item.ui5-yrp-item--selected-between{background:var(--sapButton_Selected_Background);border:var(--_ui5-v2-17-0_yearpicker_item_selected_border);color:var(--sapButton_Selected_TextColor)}.ui5-yrp-item.ui5-yrp-item--selected .ui5-yrp-item-sec-type,.ui5-yrp-item.ui5-yrp-item--selected-between .ui5-yrp-item-sec-type{color:var(--sapButton_Selected_TextColor)}.ui5-yrp-item:hover{background:var(--sapButton_Lite_Hover_Background);border:var(--_ui5-v2-17-0_yearpicker_item_hover_border);color:var(--sapButton_Lite_Hover_TextColor)}.ui5-yrp-item.ui5-yrp-item--selected:hover,.ui5-yrp-item.ui5-yrp-item--selected-between:hover{background:var(--sapButton_Selected_Hover_Background);border:var(--_ui5-v2-17-0_yearpicker_item_selected_hover_border);color:var(--sapButton_Selected_TextColor)}.ui5-yrp-item.ui5-yrp-item--selected:hover .ui5-yrp-item-sec-type,.ui5-yrp-item.ui5-yrp-item--selected-between:hover .ui5-yrp-item-sec-type{color:var(--sapButton_Selected_TextColor)}.ui5-yrp-item:active,.ui5-yrp-item.ui5-yrp-item--selected:active,.ui5-yrp-item.ui5-yrp-item--selected-between:active{background:var(--sapButton_Active_Background);border:var(--_ui5-v2-17-0_monthpicker_item_active_border);color:var(--sapButton_Active_TextColor)}.ui5-yrp-item:active .ui5-yrp-item-sec-type,.ui5-yrp-item.ui5-yrp-item--selected:active .ui5-yrp-item-sec-type,.ui5-yrp-item.ui5-yrp-item--selected-between:active .ui5-yrp-item-sec-type{color:var(--sapButton_Active_TextColor)}.ui5-yrp-item.ui5-yrp-item--disabled{pointer-events:none;opacity:.5}.ui5-yrp-item:focus:after{content:"";position:absolute;inset:.0625rem;border:var(--_ui5-v2-17-0_button_focused_border);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}
 `;
-var __decorate$11 = function(decorators, target, key, desc) {
+var __decorate$1b = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -20011,28 +20015,28 @@ let YearRangePicker = YearRangePicker_1 = class YearRangePicker2 extends Calenda
     this._gridStartYear += years;
   }
 };
-__decorate$11([
+__decorate$1b([
   s$9({ type: Array })
 ], YearRangePicker.prototype, "selectedDates", void 0);
-__decorate$11([
+__decorate$1b([
   s$9({ type: Boolean, noAttribute: true })
 ], YearRangePicker.prototype, "_showRangeSelection", void 0);
-__decorate$11([
+__decorate$1b([
   s$9({ type: Number })
 ], YearRangePicker.prototype, "_secondTimestamp", void 0);
-__decorate$11([
+__decorate$1b([
   s$9({ type: Array })
 ], YearRangePicker.prototype, "_yearRanges", void 0);
-__decorate$11([
+__decorate$1b([
   s$9({ type: Boolean, noAttribute: true })
 ], YearRangePicker.prototype, "_hidden", void 0);
-__decorate$11([
+__decorate$1b([
   s$9({ noAttribute: true })
 ], YearRangePicker.prototype, "_currentYearRange", void 0);
-__decorate$11([
+__decorate$1b([
   i$b("@ui5/webcomponents")
 ], YearRangePicker, "i18nBundle", void 0);
-YearRangePicker = YearRangePicker_1 = __decorate$11([
+YearRangePicker = YearRangePicker_1 = __decorate$1b([
   m$8({
     tag: "ui5-yearrangepicker",
     styles: [
@@ -20062,14 +20066,14 @@ function CalendarTemplate() {
   return jsxs(Fragment, { children: [jsxs("div", { class: "ui5-cal-root", onKeyDown: this._onkeydown, children: [jsxs("div", { id: `${this._id}-content`, class: "ui5-cal-content", children: [jsx(DayPicker$1, { id: `${this._id}-daypicker`, hidden: this._isDayPickerHidden, formatPattern: this._formatPattern, selectedDates: this._selectedDatesTimestamps, specialCalendarDates: this._specialCalendarDates, disabledDates: this._disabledDates, _hidden: this._isDayPickerHidden, primaryCalendarType: this._primaryCalendarType, secondaryCalendarType: this._secondaryCalendarType, selectionMode: this.selectionMode, minDate: this.minDate, maxDate: this.maxDate, calendarWeekNumbering: this.calendarWeekNumbering, timestamp: this._timestamp, hideWeekNumbers: this.hideWeekNumbers, onChange: this.onSelectedDatesChange, onNavigate: this.onNavigate, exportparts: "day-cell, day-cell-selected, day-cell-selected-between" }), jsx(MonthPicker$1, { id: `${this._id}-MP`, hidden: this._isMonthPickerHidden, formatPattern: this._formatPattern, selectedDates: this._selectedDatesTimestamps, _hidden: this._isMonthPickerHidden, primaryCalendarType: this._primaryCalendarType, secondaryCalendarType: this._secondaryCalendarType, selectionMode: this.selectionMode, minDate: this.minDate, maxDate: this.maxDate, timestamp: this._timestamp, onChange: this.onSelectedMonthChange, onNavigate: this.onNavigate, exportparts: "month-cell, month-cell-selected, month-cell-selected-between, month-picker-root" }), jsx(YearPicker$1, { id: `${this._id}-YP`, hidden: this._isYearPickerHidden, formatPattern: this._formatPattern, selectedDates: this._selectedDatesTimestamps, _hidden: this._isYearPickerHidden, primaryCalendarType: this._primaryCalendarType, secondaryCalendarType: this._secondaryCalendarType, selectionMode: this.selectionMode, minDate: this.minDate, maxDate: this.maxDate, timestamp: this._timestamp, _currentYearRange: this._currentYearRange, onChange: this.onSelectedYearChange, onNavigate: this.onNavigate, exportparts: "year-cell, year-cell-selected, year-cell-selected-between, year-picker-root" }), jsx(YearRangePicker$1, { id: `${this._id}-YRP`, hidden: this._isYearRangePickerHidden, formatPattern: this._formatPattern, selectedDates: this._selectedDatesTimestamps, _showRangeSelection: this.selectionMode === CalendarSelectionMode$1.Range, _hidden: this._isYearRangePickerHidden, primaryCalendarType: this._primaryCalendarType, secondaryCalendarType: this._secondaryCalendarType, minDate: this.minDate, maxDate: this.maxDate, timestamp: this._timestamp, _currentYearRange: this._currentYearRange, onChange: this.onSelectedYearRangeChange, onNavigate: this.onNavigate, exportparts: "year-range-cell, year-range-cell-selected, year-range-cell-selected-between, year-range-picker-root" })] }), jsx("div", { class: "ui5-calheader", exportparts: "calendar-header-arrow-button, calendar-header-middle-button", children: CalendarTemplate$1.call(this) })] }), jsx("div", { "onui5-calendar-legend-selection-change": this._onCalendarLegendSelectionChange, "onui5-calendar-legend-focus-out": this._onLegendFocusOut, children: jsx("slot", { name: "calendarLegend" }) })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const calendarCSS = `:host(:not([hidden])){display:inline-block}.ui5-cal-root .ui5-calheader{display:block;height:var(--_ui5-v2-17-0_calendar_header_height);font-family:var(--_ui5-v2-17-0_button_fontFamily)}.ui5-cal-root{background:var(--sapList_Background);box-sizing:border-box;height:var(--_ui5-v2-17-0_calendar_height);width:var(--_ui5-v2-17-0_calendar_width);padding:var(--_ui5-v2-17-0_calendar_top_bottom_padding) var(--_ui5-v2-17-0_calendar_left_right_padding) 0;display:flex;flex-direction:column-reverse;justify-content:flex-end;overflow:hidden}.ui5-cal-root .ui5-cal-content{padding:0 var(--_ui5-v2-17-0_calendar_left_right_padding) var(--_ui5-v2-17-0_calendar_top_bottom_padding)}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const CalendarHeaderCss = `:host{display:block;width:100%;height:100%}.ui5-calheader-root{display:flex;height:100%;padding:var(--_ui5-v2-17-0_calendar_header_padding);box-sizing:border-box}.ui5-calheader-arrowbtn{display:flex;justify-content:center;align-items:center;width:var(--_ui5-v2-17-0_calendar_header_arrow_button_width);background-color:var(--sapButton_Lite_Background);color:var(--sapButton_Lite_TextColor);cursor:pointer;overflow:hidden;white-space:nowrap;padding:0;font-size:var(--sapFontSize);user-select:none}.ui5-calheader-arrowbtn.ui5-calheader-arrowbtn-disabled:hover,.ui5-calheader-arrowbtn.ui5-calheader-arrowbtn-disabled:active,.ui5-calheader-arrowbtn.ui5-calheader-arrowbtn-disabled:focus,.ui5-calheader-arrowbtn.ui5-calheader-arrowbtn-disabled{opacity:.4;cursor:default;outline:none;background-color:var(--sapButton_Lite_Background);color:var(--sapButton_Lite_TextColor)}[hidden].ui5-calheader-arrowbtn.ui5-calheader-middlebtn{display:none}.ui5-calheader-arrowbtn:focus{outline:none}.ui5-calheader-arrowbtn:hover{background-color:var(--sapButton_Hover_Background);color:var(--sapButton_Lite_TextColor);box-shadow:var(--_ui5-v2-17-0_calendar_header_arrow_button_box_shadow)}.ui5-calheader-arrowbtn:active{background-color:var(--sapButton_Active_Background);color:var(--sapButton_Active_TextColor)}.ui5-calheader-arrowbtn,.ui5-calheader-middlebtn{border:var(--_ui5-v2-17-0_calendar_header_arrow_button_border);border-radius:var(--_ui5-v2-17-0_calendar_header_arrow_button_border_radius);display:flex;background-color:var(--sapButton_Lite_Background);border-color:var(--sapButton_Lite_BorderColor)}.ui5-calheader-middlebtn{flex-direction:column;align-items:center;justify-content:center}.ui5-calheader-arrowbtn:not(:active) .ui5-calheader-btn-sectext{color:var(--sapNeutralElementColor);font-size:var(--sapFontSmallSize)}.ui5-calheader-arrowicon{color:currentColor;pointer-events:none}.ui5-calheader-midcontainer{display:flex;justify-content:space-around;flex:1 1 auto;padding:0 .5rem}.ui5-calheader-midcontainer .ui5-calheader-middlebtn:first-child{margin-inline-end:.5rem}.ui5-calheader-middlebtn{font-family:var(--_ui5-v2-17-0_button_fontFamily);width:var(--_ui5-v2-17-0_calendar_header_middle_button_width);flex:var(--_ui5-v2-17-0_calendar_header_middle_button_flex);position:relative;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;user-select:none}.ui5-calheader-middlebtn:focus{border:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_border);border-radius:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_border_radius);outline:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_outline);outline-offset:-.125rem;background:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_background)}.ui5-calheader-middlebtn:focus:active{outline:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_active_outline);outline-offset:-.0625rem;background:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_active_background)}.ui5-calheader-middlebtn:focus:after{content:"";display:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_after_display);width:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_after_width);height:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_after_height);border:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_after_border);position:absolute;top:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_after_top_offset);left:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_after_left_offset)}.ui5-calheader-middlebtn:focus:active:after{border-color:var(--sapContent_ContrastFocusColor)}
 `;
-var __decorate$10 = function(decorators, target, key, desc) {
+var __decorate$1a = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -20582,58 +20586,58 @@ let Calendar = Calendar_1 = class Calendar2 extends CalendarPart$1 {
     this._setSelectedDates(selectedDates);
   }
 };
-__decorate$10([
+__decorate$1a([
   s$9()
 ], Calendar.prototype, "selectionMode", void 0);
-__decorate$10([
+__decorate$1a([
   s$9({ type: Boolean })
 ], Calendar.prototype, "hideWeekNumbers", void 0);
-__decorate$10([
+__decorate$1a([
   s$9()
 ], Calendar.prototype, "_currentPicker", void 0);
-__decorate$10([
+__decorate$1a([
   s$9({ type: Boolean })
 ], Calendar.prototype, "_previousButtonDisabled", void 0);
-__decorate$10([
+__decorate$1a([
   s$9({ type: Boolean })
 ], Calendar.prototype, "_nextButtonDisabled", void 0);
-__decorate$10([
+__decorate$1a([
   s$9()
 ], Calendar.prototype, "_headerMonthButtonText", void 0);
-__decorate$10([
+__decorate$1a([
   s$9()
 ], Calendar.prototype, "_headerYearButtonText", void 0);
-__decorate$10([
+__decorate$1a([
   s$9()
 ], Calendar.prototype, "_headerYearButtonTextSecType", void 0);
-__decorate$10([
+__decorate$1a([
   s$9()
 ], Calendar.prototype, "_headerYearRangeButtonText", void 0);
-__decorate$10([
+__decorate$1a([
   s$9()
 ], Calendar.prototype, "_headerYearRangeButtonTextSecType", void 0);
-__decorate$10([
+__decorate$1a([
   s$9({ noAttribute: true })
 ], Calendar.prototype, "_pickersMode", void 0);
-__decorate$10([
+__decorate$1a([
   d$8({ type: HTMLElement, invalidateOnChildChange: true })
 ], Calendar.prototype, "calendarLegend", void 0);
-__decorate$10([
+__decorate$1a([
   d$8({ type: HTMLElement, invalidateOnChildChange: true, "default": true })
 ], Calendar.prototype, "dates", void 0);
-__decorate$10([
+__decorate$1a([
   d$8({ type: HTMLElement, invalidateOnChildChange: true })
 ], Calendar.prototype, "specialDates", void 0);
-__decorate$10([
+__decorate$1a([
   d$8({ type: HTMLElement, invalidateOnChildChange: true })
 ], Calendar.prototype, "disabledDates", void 0);
-__decorate$10([
+__decorate$1a([
   s$9()
 ], Calendar.prototype, "_selectedItemType", void 0);
-__decorate$10([
+__decorate$1a([
   i$b("@ui5/webcomponents")
 ], Calendar, "i18nBundle", void 0);
-Calendar = Calendar_1 = __decorate$10([
+Calendar = Calendar_1 = __decorate$1a([
   m$8({
     tag: "ui5-calendar",
     fastNavigation: true,
@@ -20668,7 +20672,7 @@ function defaultHeader() {
 function defaultContent() {
   return jsx(Calendar$1, { id: `${this._id}-calendar`, primaryCalendarType: this._primaryCalendarType, secondaryCalendarType: this.secondaryCalendarType, formatPattern: this._formatPattern, selectionMode: this._calendarSelectionMode, minDate: this.minDate, maxDate: this.maxDate, calendarWeekNumbering: this.calendarWeekNumbering, onSelectionChange: this.onSelectedDatesChange, onShowMonthView: this.onHeaderShowMonthPress, onShowYearView: this.onHeaderShowYearPress, hideWeekNumbers: this.hideWeekNumbers, _currentPicker: this._calendarCurrentPicker, _pickersMode: this._calendarPickersMode, children: this._calendarSelectedDates.map((date) => jsx(CalendarDate$1, { value: date })) });
 }
-function valueStateMessage$1() {
+function valueStateMessage$2() {
   return this.shouldDisplayDefaultValueStateMessage ? this.valueStateDefaultText : jsx("slot", { name: "valueStateMessage" });
 }
 function valueStateTextHeader$1() {
@@ -20683,7 +20687,7 @@ function valueStateTextHeader$1() {
     "ui5-valuestatemessage--error": this.valueState === o$6.Negative,
     "ui5-valuestatemessage--warning": this.valueState === o$6.Critical,
     "ui5-valuestatemessage--information": this.valueState === o$6.Information
-  }, children: [jsx(Icon$1, { class: "ui5-input-value-state-message-icon", name: valueStateMessageInputIcon$1.call(this) }), valueStateMessage$1.call(this)] });
+  }, children: [jsx(Icon$1, { class: "ui5-input-value-state-message-icon", name: valueStateMessageInputIcon$1.call(this) }), valueStateMessage$2.call(this)] });
 }
 function valueStateMessageInputIcon$1() {
   const iconPerValueState = {
@@ -20703,14 +20707,14 @@ function DatePickerTemplate() {
   ];
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const datePickerCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}.inputIcon{color:var(--_ui5-v2-17-0_input_icon_color);cursor:pointer;outline:none;padding:var(--_ui5-v2-17-0_input_icon_padding);border-inline-start:var(--_ui5-v2-17-0_input_icon_border);min-width:1rem;min-height:1rem;border-radius:var(--_ui5-v2-17-0_input_icon_border_radius)}.inputIcon.inputIcon--pressed{background:var(--_ui5-v2-17-0_input_icon_pressed_bg);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow);border-inline-start:var(--_ui5-v2-17-0_select_hover_icon_left_border);color:var(--_ui5-v2-17-0_input_icon_pressed_color)}.inputIcon:active{background-color:var(--sapButton_Active_Background);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow);border-inline-start:var(--_ui5-v2-17-0_select_hover_icon_left_border);color:var(--_ui5-v2-17-0_input_icon_pressed_color)}.inputIcon:not(.inputIcon--pressed):not(:active):hover{background:var(--_ui5-v2-17-0_input_icon_hover_bg);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow)}.inputIcon:hover{border-inline-start:var(--_ui5-v2-17-0_select_hover_icon_left_border);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow)}:host([disabled]){cursor:default;pointer-events:none;background:none}:host([readonly]:not([disabled])){border-color:var(--_ui5-v2-17-0_input_readonly_border_color);background:var(--sapField_ReadOnly_BackgroundStyle);background-color:var(--_ui5-v2-17-0_input_readonly_background)}:host([value-state="Negative"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_error_icon_box_shadow)}:host([value-state="Critical"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_warning_icon_box_shadow)}:host([value-state="Information"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_information_icon_box_shadow)}:host([value-state="Positive"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_success_icon_box_shadow)}:host([value-state="Negative"]:not([readonly]):not([disabled])){background:var(--sapField_InvalidBackgroundStyle);background-color:var(--sapField_InvalidBackground);border-color:var(--_ui5-v2-17-0_input_value_state_error_border_color);box-shadow:var(--sapField_InvalidShadow)}:host([value-state="Critical"]:not([readonly]):not([disabled])){background:var(--sapField_WarningBackgroundStyle);background-color:var(--sapField_WarningBackground);border-color:var(--_ui5-v2-17-0_input_value_state_warning_border_color);box-shadow:var(--sapField_WarningShadow)}:host([value-state="Positive"]:not([readonly]):not([disabled])){background:var(--sapField_SuccessBackgroundStyle);background-color:var(--sapField_SuccessBackground);border-color:var(--_ui5-v2-17-0_input_value_state_success_border_color);border-width:var(--_ui5-v2-17-0_input_value_state_success_border_width);box-shadow:var(--sapField_SuccessShadow)}:host([value-state="Information"]:not([readonly]):not([disabled])){background:var(--sapField_InformationBackgroundStyle);background-color:var(--sapField_InformationBackground);border-color:var(--_ui5-v2-17-0_input_value_state_information_border_color);border-width:var(--_ui5-v2-17-0_input_information_border_width);box-shadow:var(--sapField_InformationShadow)}:host([value-state="Negative"]) .inputIcon:active,:host([value-state="Negative"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_error_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_error_pressed_color)}:host([value-state="Critical"]) .inputIcon:active,:host([value-state="Critical"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_warning_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_warning_pressed_color)}:host([value-state="Information"]) .inputIcon:active,:host([value-state="Information"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_information_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_information_pressed_color)}:host([value-state="Positive"]) .inputIcon:active,:host([value-state="Positive"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_success_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_success_pressed_color)}:host([value-state="Negative"]) .inputIcon,:host([value-state="Critical"]) .inputIcon{padding:var(--_ui5-v2-17-0_input_error_warning_icon_padding)}:host([value-state="Information"]) .inputIcon{padding:var(--_ui5-v2-17-0_input_information_icon_padding)}:host(:not([hidden])){display:inline-block;line-height:normal;letter-spacing:normal;word-spacing:normal;height:var(--_ui5-v2-17-0_input_height);border-radius:var(--_ui5-v2-17-0_input_border_radius)}:host{min-width:calc(var(--_ui5-v2-17-0_input_min_width) + var(--_ui5-v2-17-0_input_icon_width));color:var(--sapField_TextColor);background-color:var(--sapField_Background);border-radius:var(--_ui5-v2-17-0-datepicker_border_radius);margin:var(--_ui5-v2-17-0_input_margin_top_bottom) 0;user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none}:host(:not([disabled]):not([readonly]):active){background:var(--_ui5-v2-17-0-datepicker-hover-background)}:host(:not([disabled]):not([readonly]):hover){background:var(--_ui5-v2-17-0-datepicker-hover-background)}.ui5-date-picker-root{border-radius:inherit;height:inherit;line-height:inherit;letter-spacing:inherit;word-spacing:inherit}:host .ui5-date-picker-input{width:100%;color:inherit;background-color:inherit;border-radius:inherit;height:inherit;line-height:inherit;letter-spacing:inherit;word-spacing:inherit;margin:inherit}:host([disabled]) .ui5-date-picker-input{background-color:var(--_ui5-v2-17-0-input_disabled_background);opacity:var(--_ui5-v2-17-0_input_disabled_opacity)}:host(:not([disabled]):not([readonly])) .ui5-date-picker-input[focused]{background-color:var(--_ui5-v2-17-0-datepicker-hover-background)}.ui5-date-picker-popover::part(header){padding:0}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const datePickerPopoverCss = `.ui5-date-picker-popover{width:var(--_ui5-v2-17-0_calendar_width);.ui5-popover-header{width:100%}}[ui5-calendar]{width:100%;display:flex;justify-content:center}[ui5-responsive-popover]::part(content){padding:0}
 `;
-var __decorate$$ = function(decorators, target, key, desc) {
+var __decorate$19 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -21279,64 +21283,64 @@ let DatePicker = DatePicker_1 = class DatePicker2 extends DateComponentBase$1 {
     return InputType$1.Text;
   }
 };
-__decorate$$([
+__decorate$19([
   s$9()
 ], DatePicker.prototype, "value", void 0);
-__decorate$$([
+__decorate$19([
   s$9()
 ], DatePicker.prototype, "valueState", void 0);
-__decorate$$([
+__decorate$19([
   s$9({ type: Boolean })
 ], DatePicker.prototype, "required", void 0);
-__decorate$$([
+__decorate$19([
   s$9({ type: Boolean })
 ], DatePicker.prototype, "disabled", void 0);
-__decorate$$([
+__decorate$19([
   s$9({ type: Boolean })
 ], DatePicker.prototype, "readonly", void 0);
-__decorate$$([
+__decorate$19([
   s$9()
 ], DatePicker.prototype, "placeholder", void 0);
-__decorate$$([
+__decorate$19([
   s$9()
 ], DatePicker.prototype, "name", void 0);
-__decorate$$([
+__decorate$19([
   s$9({ type: Boolean })
 ], DatePicker.prototype, "hideWeekNumbers", void 0);
-__decorate$$([
+__decorate$19([
   s$9({ type: Boolean })
 ], DatePicker.prototype, "open", void 0);
-__decorate$$([
+__decorate$19([
   s$9()
 ], DatePicker.prototype, "accessibleName", void 0);
-__decorate$$([
+__decorate$19([
   s$9()
 ], DatePicker.prototype, "accessibleNameRef", void 0);
-__decorate$$([
+__decorate$19([
   s$9()
 ], DatePicker.prototype, "accessibleDescription", void 0);
-__decorate$$([
+__decorate$19([
   s$9()
 ], DatePicker.prototype, "accessibleDescriptionRef", void 0);
-__decorate$$([
+__decorate$19([
   s$9({ type: Object })
 ], DatePicker.prototype, "_respPopoverConfig", void 0);
-__decorate$$([
+__decorate$19([
   s$9()
 ], DatePicker.prototype, "_calendarCurrentPicker", void 0);
-__decorate$$([
+__decorate$19([
   d$8({ type: HTMLElement })
 ], DatePicker.prototype, "valueStateMessage", void 0);
-__decorate$$([
+__decorate$19([
   o$1("[ui5-datetime-input]")
 ], DatePicker.prototype, "_dateTimeInput", void 0);
-__decorate$$([
+__decorate$19([
   o$1("[ui5-calendar]")
 ], DatePicker.prototype, "_calendar", void 0);
-__decorate$$([
+__decorate$19([
   i$b("@ui5/webcomponents")
 ], DatePicker, "i18nBundle", void 0);
-DatePicker = DatePicker_1 = __decorate$$([
+DatePicker = DatePicker_1 = __decorate$19([
   m$8({
     tag: "ui5-date-picker",
     languageAware: true,
@@ -21346,7 +21350,7 @@ DatePicker = DatePicker_1 = __decorate$$([
       datePickerCss,
       ResponsivePopoverCommonCss,
       datePickerPopoverCss,
-      ValueStateMessageCss
+      valueStateMessageStyles
     ]
   }),
   l$e("change", {
@@ -21411,7 +21415,7 @@ const getTimeControlsByFormat = (formatArray, hoursConfig) => {
   }
   return timeControls;
 };
-var __decorate$_ = function(decorators, target, key, desc) {
+var __decorate$18 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -21682,40 +21686,40 @@ let TimePickerInternals = TimePickerInternals_1 = class TimePickerInternals2 ext
   _setExactMatch() {
   }
 };
-__decorate$_([
+__decorate$18([
   s$9()
 ], TimePickerInternals.prototype, "value", void 0);
-__decorate$_([
+__decorate$18([
   s$9()
 ], TimePickerInternals.prototype, "formatPattern", void 0);
-__decorate$_([
+__decorate$18([
   s$9({ type: Number, noAttribute: true })
 ], TimePickerInternals.prototype, "_activeIndex", void 0);
-__decorate$_([
+__decorate$18([
   s$9()
 ], TimePickerInternals.prototype, "_calendarType", void 0);
-__decorate$_([
+__decorate$18([
   s$9({ type: Array })
 ], TimePickerInternals.prototype, "_entities", void 0);
-__decorate$_([
+__decorate$18([
   s$9({ type: Object })
 ], TimePickerInternals.prototype, "_componentMap", void 0);
-__decorate$_([
+__decorate$18([
   s$9({ type: Array })
 ], TimePickerInternals.prototype, "_periods", void 0);
-__decorate$_([
+__decorate$18([
   s$9({ type: Number, noAttribute: true })
 ], TimePickerInternals.prototype, "_typeCooldownId", void 0);
-__decorate$_([
+__decorate$18([
   s$9({ type: Number, noAttribute: true })
 ], TimePickerInternals.prototype, "_exactMatch", void 0);
-__decorate$_([
+__decorate$18([
   s$9({ noAttribute: true })
 ], TimePickerInternals.prototype, "_keyboardBuffer", void 0);
-__decorate$_([
+__decorate$18([
   i$b("@ui5/webcomponents")
 ], TimePickerInternals, "i18nBundle", void 0);
-TimePickerInternals = TimePickerInternals_1 = __decorate$_([
+TimePickerInternals = TimePickerInternals_1 = __decorate$18([
   m$8({
     cldr: true,
     renderer: y$5
@@ -21729,10 +21733,10 @@ function ToggleButtonTemplate() {
   return jsx(Fragment, { children: ButtonTemplate$1.call(this, { ariaPressed: this.pressed }) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const toggleBtnCss = `:host(:not([hidden])){display:inline-block}:host([design="Emphasized"]:not([pressed])){text-shadow:var(--_ui5-v2-17-0_toggle_button_emphasized_text_shadow)}:host([pressed]),:host([design="Default"][pressed]),:host([design="Transparent"][pressed]),:host([design="Emphasized"][pressed]){background:var(--sapButton_Selected_Background);border-color:var(--sapButton_Selected_BorderColor);color:var(--sapButton_Selected_TextColor);text-shadow:none}:host([pressed]:hover),:host([pressed]:not([active]):not([non-interactive]):not([_is-touch]):hover),:host([design="Default"][pressed]:hover),:host([design="Default"][pressed]:not([active]):not([non-interactive]):not([_is-touch]):hover),:host([design="Transparent"][pressed]:hover),:host([design="Transparent"][pressed]:not([active]):not([non-interactive]):not([_is-touch]):hover),:host([design="Emphasized"][pressed]:hover),:host([design="Emphasized"][pressed]:not([active]):not([non-interactive]):not([_is-touch]):hover){background:var(--sapButton_Selected_Hover_Background);border-color:var(--sapButton_Selected_Hover_BorderColor);color:var(--sapButton_Selected_TextColor)}:host([active]:not([disabled])),:host([design="Default"][active]:not([disabled])),:host([design="Transparent"][active]:not([disabled])),:host([design="Emphasized"][active]:not([disabled])){background:var(--sapButton_Active_Background);border-color:var(--sapButton_Active_BorderColor);color:var(--sapButton_Selected_TextColor)}:host([pressed][active]:not([disabled])),:host([design="Default"][pressed][active]:not([disabled])),:host([design="Transparent"][pressed][active]:not([disabled])),:host([design="Emphasized"][pressed][active]:not([disabled])){background:var(--sapButton_Selected_Hover_Background);border-color:var(--sapButton_Selected_Hover_BorderColor);color:var(--sapButton_Selected_TextColor)}:host([pressed]:not([active]):not([non-interactive]):not([_is-touch])),:host([design="Default"][pressed]:not([active]):not([non-interactive]):not([_is-touch])),:host([design="Transparent"][pressed]:not([active]):not([non-interactive]):not([_is-touch])),:host([design="Emphasized"][pressed]:not([active]):not([non-interactive]):not([_is-touch])){background:var(--sapButton_Selected_Background);border-color:var(--sapButton_Selected_BorderColor);color:var(--sapButton_Selected_TextColor)}:host([design="Negative"][pressed]){background:var(--sapButton_Reject_Selected_Background);border-color:var(--sapButton_Reject_Selected_BorderColor);color:var(--sapButton_Reject_Selected_TextColor)}:host([design="Negative"][active]:not([disabled])){background:var(--sapButton_Reject_Active_Background);border-color:var(--sapButton_Reject_Active_BorderColor);color:var(--sapButton_Reject_Active_TextColor)}:host([design="Negative"][pressed][active]:not([disabled])){background:var(--sapButton_Reject_Selected_Hover_Background);border-color:var(--sapButton_Reject_Selected_Hover_BorderColor);color:var(--sapButton_Reject_Selected_TextColor)}:host([design="Negative"][pressed][active]:hover),:host([design="Negative"][pressed]:not([active]):not([non-interactive]):not([_is-touch]):hover){background:var(--sapButton_Reject_Selected_Hover_Background);border-color:var(--sapButton_Reject_Selected_Hover_BorderColor);color:var(--sapButton_Reject_Selected_TextColor)}:host([design="Negative"][pressed]:not([active]):not([non-interactive]):not([_is-touch])){background:var(--sapButton_Reject_Selected_Background);border-color:var(--sapButton_Reject_Selected_BorderColor);color:var(--sapButton_Reject_Selected_TextColor)}:host([design="Positive"][pressed]){background:var(--sapButton_Accept_Selected_Background);border-color:var(--sapButton_Accept_Selected_BorderColor);color:var(--sapButton_Accept_Selected_TextColor)}:host([design="Positive"][active]:not([disabled])){background:var(--sapButton_Accept_Active_Background);border-color:var(--sapButton_Accept_Active_BorderColor);color:var(--sapButton_Accept_Selected_TextColor)}:host([design="Positive"][pressed][active]:not([disabled])){background:var(--sapButton_Accept_Selected_Hover_Background);border-color:var(--sapButton_Accept_Selected_Hover_BorderColor);color:var(--sapButton_Accept_Selected_TextColor)}:host([design="Positive"][pressed][active]:hover),:host([design="Positive"][pressed]:not([active]):not([non-interactive]):not([_is-touch]):hover){background:var(--sapButton_Accept_Selected_Hover_Background);border-color:var(--sapButton_Accept_Selected_Hover_BorderColor);color:var(--sapButton_Accept_Selected_TextColor)}:host([design="Positive"][pressed]:not([active]):not([non-interactive]):not([_is-touch])){background:var(--sapButton_Accept_Selected_Background);border-color:var(--sapButton_Accept_Selected_BorderColor);color:var(--sapButton_Accept_Selected_TextColor)}:host([design="Attention"][pressed]){background:var(--sapButton_Attention_Selected_Background);border-color:var(--sapButton_Attention_Selected_BorderColor);color:var(--sapButton_Attention_Selected_TextColor)}:host([design="Attention"][active]:not([disabled])){background:var(--sapButton_Attention_Active_Background);border-color:var(--sapButton_Attention_Active_BorderColor);color:var(--sapButton_Attention_Active_TextColor)}:host([design="Attention"][pressed][active]:not([disabled])){background:var(--sapButton_Attention_Selected_Hover_Background);border-color:var(--sapButton_Attention_Selected_Hover_BorderColor);color:var(--sapButton_Attention_Selected_TextColor)}:host([design="Attention"][pressed][active]:hover),:host([design="Attention"][pressed]:not([active]):not([non-interactive]):not([_is-touch]):hover){background:var(--sapButton_Attention_Selected_Hover_Background);border-color:var(--sapButton_Attention_Selected_Hover_BorderColor);color:var(--sapButton_Attention_Selected_TextColor)}:host([design="Attention"][pressed]:not([active]):not([non-interactive]):not([_is-touch])){background:var(--sapButton_Attention_Selected_Background);border-color:var(--sapButton_Attention_Selected_BorderColor);color:var(--sapButton_Attention_Selected_TextColor)}
 `;
-var __decorate$Z = function(decorators, target, key, desc) {
+var __decorate$17 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -21775,10 +21779,10 @@ let ToggleButton = class ToggleButton2 extends Button$1 {
     super._onkeyup(e2);
   }
 };
-__decorate$Z([
+__decorate$17([
   s$9({ type: Boolean })
 ], ToggleButton.prototype, "pressed", void 0);
-ToggleButton = __decorate$Z([
+ToggleButton = __decorate$17([
   m$8({
     tag: "ui5-toggle-button",
     template: ToggleButtonTemplate,
@@ -21796,7 +21800,7 @@ function ToggleSpinButtonTemplate() {
     ariaValueText: this.valueText
   }) });
 }
-var __decorate$Y = function(decorators, target, key, desc) {
+var __decorate$16 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -21821,19 +21825,19 @@ let ToggleSpinButton = class ToggleSpinButton2 extends ToggleButton$1 {
     return "spinbutton";
   }
 };
-__decorate$Y([
+__decorate$16([
   s$9({ type: Number })
 ], ToggleSpinButton.prototype, "valueMin", void 0);
-__decorate$Y([
+__decorate$16([
   s$9({ type: Number })
 ], ToggleSpinButton.prototype, "valueMax", void 0);
-__decorate$Y([
+__decorate$16([
   s$9({ type: Number })
 ], ToggleSpinButton.prototype, "valueNow", void 0);
-__decorate$Y([
+__decorate$16([
   s$9()
 ], ToggleSpinButton.prototype, "valueText", void 0);
-ToggleSpinButton = __decorate$Y([
+ToggleSpinButton = __decorate$16([
   m$8({
     tag: "ui5-toggle-spin-button",
     renderer: y$5,
@@ -21847,10 +21851,10 @@ function SegmentedButtonItemTemplate() {
   return jsxs("li", { role: "option", class: "ui5-segmented-button-item-root", "aria-posinset": this.posInSet, "aria-setsize": this.sizeOfSet, "aria-selected": this.selected, "aria-disabled": this.disabled, "aria-roledescription": this.ariaDescription, "data-sap-focus-ref": true, onClick: this._onclick, onKeyUp: this._onkeyup, tabindex: this.tabIndexValue ? parseInt(this.tabIndexValue) : void 0, "aria-label": this.ariaLabelText, "aria-description": this.ariaDescriptionText, title: this.tooltip || this.slotTextContent, children: [this.icon && jsx(Icon$1, { part: "icon", class: "ui5-segmented-button-item-icon", name: this.icon, showTooltip: this.showIconTooltip }), jsx("span", { id: `${this._id}-content`, class: "ui5-segmented-button-item-text", children: jsx("bdi", { children: jsx("slot", {}) }) })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const segmentedButtonItemCss = `:host{vertical-align:middle}:host(:not([hidden])){display:inline-block}:host{min-width:var(--_ui5-v2-17-0_button_base_min_width);height:var(--_ui5-v2-17-0_button_base_height);line-height:normal;font-family:var(--_ui5-v2-17-0_button_fontFamily);font-size:var(--sapFontSize);text-shadow:var(--_ui5-v2-17-0_button_text_shadow);border-radius:var(--_ui5-v2-17-0_button_border_radius);cursor:pointer;background-color:var(--sapButton_Background);border:var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);color:var(--sapButton_TextColor);box-sizing:border-box;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ui5-segmented-button-item-root{min-width:inherit;cursor:inherit;height:100%;width:100%;box-sizing:border-box;display:flex;justify-content:center;align-items:center;outline:none;padding:0 var(--_ui5-v2-17-0_button_base_padding);position:relative;background:transparent;border:none;color:inherit;text-shadow:inherit;font:inherit;white-space:inherit;overflow:inherit;text-overflow:inherit;letter-spacing:inherit;word-spacing:inherit;line-height:inherit;-webkit-user-select:none;-moz-user-select:none;user-select:none}:host(:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host(:not([hidden]):not([disabled]).ui5_hovered){background:var(--sapButton_Hover_Background);border:.0625rem solid var(--sapButton_Hover_BorderColor);color:var(--sapButton_Hover_TextColor)}.ui5-segmented-button-item-icon{color:inherit;flex-shrink:0;padding-inline-end:.375rem}:host([icon-only]) .ui5-segmented-button-item-icon{padding-inline-end:0}:host([icon-only]) .ui5-segmented-button-item-root{min-width:auto;padding:0}:host([icon-only]) .ui5-segmented-button-item-text{display:none}.ui5-segmented-button-item-text{outline:none;position:relative;white-space:inherit;overflow:inherit;text-overflow:inherit}:host([has-icon]:not([icon-end])) .ui5-segmented-button-item-text{margin-inline-start:var(--_ui5-v2-17-0_button_base_icon_margin)}:host([has-icon][icon-end]) .ui5-segmented-button-item-text{margin-inline-start:0}:host([disabled]){opacity:var(--sapContent_DisabledOpacity);pointer-events:unset;cursor:default}:host([has-icon]:not([icon-only])) .ui5-segmented-button-item-text{min-width:calc(var(--_ui5-v2-17-0_button_base_min_width) - var(--_ui5-v2-17-0_button_base_icon_margin) - 1rem)}:host([disabled]){pointer-events:none}:host([desktop]:not([active])) .ui5-segmented-button-item-root:focus-within:after,:host(:not([active])) .ui5-segmented-button-item-root:focus-visible:after,:host([desktop][active]) .ui5-segmented-button-item-root:focus-within:before,:host([active]) .ui5-segmented-button-item-root:focus-visible:before{content:"";position:absolute;box-sizing:border-box;inset:.0625rem;border:var(--_ui5-v2-17-0_button_focused_border);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}:host([desktop][active]) .ui5-segmented-button-item-root:focus-within:before,:host([active]) .ui5-segmented-button-item-root:focus-visible:before{border-color:var(--_ui5-v2-17-0_button_pressed_focused_border_color)}.ui5-segmented-button-item-root::-moz-focus-inner{border:0}bdi{display:block;white-space:inherit;overflow:inherit;text-overflow:inherit}:host([active][desktop]) .ui5-segmented-button-item-root:focus-within:after,:host([active]) .ui5-segmented-button-item-root:focus-visible:after,:host([selected][desktop]) .ui5-segmented-button-item-root:focus-within:after,:host([selected]) .ui5-segmented-button-item-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_pressed_focused_border_color);outline:none}:host([desktop]:not(:last-child)) .ui5-segmented-button-item-root:focus-within:after,:host(:not(:last-child)) .ui5-segmented-button-item-root:focus-visible:after{border-start-end-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius);border-end-end-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius)}:host([desktop]:not(:first-child)) .ui5-segmented-button-item-root:focus-within:after,:host(:not(:first-child)) .ui5-segmented-button-item-root:focus-visible:after{border-start-start-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius);border-end-start-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius)}
 `;
-var __decorate$X = function(decorators, target, key, desc) {
+var __decorate$15 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -21917,55 +21921,55 @@ let SegmentedButtonItem = SegmentedButtonItem_1 = class SegmentedButtonItem2 ext
     }).filter(Boolean).join(" ");
   }
 };
-__decorate$X([
+__decorate$15([
   s$9({ type: Boolean })
 ], SegmentedButtonItem.prototype, "disabled", void 0);
-__decorate$X([
+__decorate$15([
   s$9({ type: Boolean })
 ], SegmentedButtonItem.prototype, "selected", void 0);
-__decorate$X([
+__decorate$15([
   s$9()
 ], SegmentedButtonItem.prototype, "tooltip", void 0);
-__decorate$X([
+__decorate$15([
   s$9()
 ], SegmentedButtonItem.prototype, "accessibleName", void 0);
-__decorate$X([
+__decorate$15([
   s$9()
 ], SegmentedButtonItem.prototype, "accessibleNameRef", void 0);
-__decorate$X([
+__decorate$15([
   s$9()
 ], SegmentedButtonItem.prototype, "accessibleDescription", void 0);
-__decorate$X([
+__decorate$15([
   s$9()
 ], SegmentedButtonItem.prototype, "accessibleDescriptionRef", void 0);
-__decorate$X([
+__decorate$15([
   s$9()
 ], SegmentedButtonItem.prototype, "icon", void 0);
-__decorate$X([
+__decorate$15([
   s$9({ type: Boolean })
 ], SegmentedButtonItem.prototype, "iconOnly", void 0);
-__decorate$X([
+__decorate$15([
   s$9({ type: Boolean })
 ], SegmentedButtonItem.prototype, "nonInteractive", void 0);
-__decorate$X([
+__decorate$15([
   s$9({ noAttribute: true })
 ], SegmentedButtonItem.prototype, "forcedTabIndex", void 0);
-__decorate$X([
+__decorate$15([
   s$9({ type: Number })
 ], SegmentedButtonItem.prototype, "posInSet", void 0);
-__decorate$X([
+__decorate$15([
   s$9({ type: Number })
 ], SegmentedButtonItem.prototype, "sizeOfSet", void 0);
-__decorate$X([
+__decorate$15([
   s$9({ type: Boolean })
 ], SegmentedButtonItem.prototype, "hidden", void 0);
-__decorate$X([
+__decorate$15([
   d$8({ type: Node, "default": true })
 ], SegmentedButtonItem.prototype, "text", void 0);
-__decorate$X([
+__decorate$15([
   i$b("@ui5/webcomponents")
 ], SegmentedButtonItem, "i18nBundle", void 0);
-SegmentedButtonItem = SegmentedButtonItem_1 = __decorate$X([
+SegmentedButtonItem = SegmentedButtonItem_1 = __decorate$15([
   m$8({
     tag: "ui5-segmented-button-item",
     renderer: y$5,
@@ -21989,10 +21993,10 @@ function SegmentedButtonTemplate() {
   }, onClick: this._onclick, onMouseDown: this._onmousedown, onKeyDown: this._onkeydown, onKeyUp: this._onkeyup, onFocusIn: this._onfocusin, "aria-multiselectable": this.selectionMode === "Multiple" ? "true" : "false", "aria-orientation": "horizontal", "aria-description": this.ariaDescriptionText, "aria-label": this.ariaLabelText, "aria-roledescription": this.ariaRoleDescription, children: jsx("slot", {}) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const SegmentedButtonCss = `:host{vertical-align:middle}.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block;min-width:calc(var(--_ui5-v2-17-0_segmented_btn_items_count) * var(--_ui5-v2-17-0_button_base_min_width))}.ui5-segmented-button-root{width:inherit;margin:0;padding:0;background-color:var(--sapButton_Background);border-radius:var(--sapButton_BorderCornerRadius);box-shadow:inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_BorderColor)}.ui5-segmented-button-root-equal-sized-items{display:grid;grid-template-columns:repeat(var(--_ui5-v2-17-0_segmented_btn_items_count),minmax(var(--_ui5-v2-17-0_button_base_min_width),1fr))}.ui5-segmented-button-root-content-fit-items{display:inline-flex;gap:0}::slotted([ui5-segmented-button-item]){border-radius:var(--sapButton_Segment_BorderCornerRadius);border-color:var(--_ui5-v2-17-0_segmented_btn_border_color);background-color:var(--_ui5-v2-17-0_segmented_btn_background_color);height:var(--_ui5-v2-17-0_button_base_height);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;z-index:initial}::slotted([ui5-segmented-button-item]:hover){z-index:2;box-shadow:var(--_ui5-v2-17-0_segmented_btn_hover_box_shadow);border-color:var(--sapButton_Hover_BorderColor);background-color:var(--sapButton_Hover_Background)}::slotted([ui5-segmented-button-item][selected]),::slotted([ui5-segmented-button-item][active]){border-color:var(--sapButton_Selected_BorderColor);background-color:var(--sapButton_Selected_Background);color:var(--sapButton_Selected_TextColor)}::slotted([ui5-segmented-button-item][selected]:hover){border-color:var(--sapButton_Selected_Hover_BorderColor);background-color:var(--sapButton_Selected_Hover_Background);color:var(--sapButton_Selected_TextColor)}::slotted([ui5-segmented-button-item]:last-child){border-start-end-radius:var(--sapButton_BorderCornerRadius);border-end-end-radius:var(--sapButton_BorderCornerRadius)}::slotted([ui5-segmented-button-item]:first-child){border-start-start-radius:var(--sapButton_BorderCornerRadius);border-end-start-radius:var(--sapButton_BorderCornerRadius)}::slotted([ui5-segmented-button-item]:not(:first-child)){border-left-width:var(--_ui5-v2-17-0_segmented_btn_item_border_left);border-right-width:var(--_ui5-v2-17-0_segmented_btn_item_border_right)}::slotted([ui5-segmented-button-item][active]:not([active]):hover){border-color:var(--sapButton_BorderColor)}::slotted([ui5-segmented-button-item][active]:hover){border-color:var(--sapButton_Selected_BorderColor)}::slotted([ui5-segmented-button-item]:active){background-color:var(--sapButton_Active_Background)}
 `;
-var __decorate$W = function(decorators, target, key, desc) {
+var __decorate$14 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -22135,31 +22139,31 @@ let SegmentedButton = SegmentedButton_1 = class SegmentedButton2 extends b$7 {
     return SegmentedButton_1.i18nBundle.getText(SEGMENTEDBUTTON_ARIA_DESCRIPTION);
   }
 };
-__decorate$W([
+__decorate$14([
   s$9()
 ], SegmentedButton.prototype, "accessibleName", void 0);
-__decorate$W([
+__decorate$14([
   s$9()
 ], SegmentedButton.prototype, "accessibleNameRef", void 0);
-__decorate$W([
+__decorate$14([
   s$9()
 ], SegmentedButton.prototype, "accessibleDescription", void 0);
-__decorate$W([
+__decorate$14([
   s$9()
 ], SegmentedButton.prototype, "accessibleDescriptionRef", void 0);
-__decorate$W([
+__decorate$14([
   s$9()
 ], SegmentedButton.prototype, "selectionMode", void 0);
-__decorate$W([
+__decorate$14([
   s$9({ type: Boolean })
 ], SegmentedButton.prototype, "itemsFitContent", void 0);
-__decorate$W([
+__decorate$14([
   d$8({ type: HTMLElement, invalidateOnChildChange: true, "default": true })
 ], SegmentedButton.prototype, "items", void 0);
-__decorate$W([
+__decorate$14([
   i$b("@ui5/webcomponents")
 ], SegmentedButton, "i18nBundle", void 0);
-SegmentedButton = SegmentedButton_1 = __decorate$W([
+SegmentedButton = SegmentedButton_1 = __decorate$14([
   m$8({
     tag: "ui5-segmented-button",
     languageAware: true,
@@ -22183,10 +22187,10 @@ function TimePickerClockTemplate() {
   }, onTouchStart: this._onTouchStart, onTouchMove: this._onTouchMove, onTouchEnd: this._onTouchEnd, onMouseDown: this._onTouchStart, onMouseMove: this._onTouchMove, onMouseUp: this._onTouchEnd, onMouseOut: this._onMouseOut, onWheel: this._onMouseWheel })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const TimePickerClockCss = `.ui5-tp-clock{position:relative;width:auto;padding:.5625rem;outline:none;display:none}.ui5-tp-clock-active{display:block}.ui5-tp-clock-dial{position:relative;width:auto;display:block;border-radius:100%;background-color:var(--sapLegend_WorkingBackground);text-align:center;z-index:1}.ui5-tp-clock-dial:before{content:attr(data-label);display:flex;align-items:center;justify-content:center;position:absolute;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);color:var(--sapContent_LabelColor);inset:2.75rem;border-radius:100%;z-index:2}.ui5-tp-clock-dial:after{content:"";display:block;padding-bottom:100%}.ui5-tp-clock-inner .ui5-tp-clock-dial:before{background-color:var(--sapLegend_WorkingBackground)}.ui5-tp-clock-cover{position:absolute;inset:-.25rem;border-radius:100%;z-index:10;touch-action:none}.ui5-tp-clock-item{position:absolute;top:0;left:50%;display:inline-block;width:2.75rem;height:100%;z-index:3;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.ui5-tp-clock-item.ui5-tp-clock-marker{z-index:4}.ui5-tp-clock-dot{display:block;box-sizing:border-box;width:.25rem;height:.3125rem;margin:0 auto .25rem;border-radius:100%;background-color:var(--sapField_BorderColor)}.ui5-tp-clock-mid-dot{display:block;box-sizing:border-box;width:.125rem;height:.1875rem;margin:0 auto .375rem;border-radius:100%;background-color:var(--sapField_BorderColor)}.ui5-tp-clock-select-marker{box-sizing:border-box;width:.25rem;height:.5625rem;margin:0 auto;border-radius:100%;background-color:var(--sapButton_Selected_Background);border:.0625rem solid var(--sapButton_Selected_BorderColor)}.ui5-tp-clock-hover-marker{box-sizing:border-box;width:.25rem;height:.5625rem;margin:0 auto;border-radius:100%;background-color:var(--sapList_Hover_Background);border:.0625rem solid var(--sapGroup_TitleBorderColor)}.ui5-tp-clock-number{box-sizing:border-box;display:inline-block;width:2.75rem;height:2.75rem;border-radius:100%;line-height:2.75rem;text-align:center;vertical-align:top;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);color:var(--sapTextColor);border:.0625rem solid transparent}.ui5-tp-clock-number.ui5-tp-clock-number-hover:not(.ui5-tp-clock-selected){background-color:var(--sapList_Hover_Background);z-index:5}.ui5-tp-clock-selected{color:var(--sapButton_Selected_TextColor);background-color:var(--sapButton_Selected_Background);border:.0625rem solid var(--sapButton_Selected_BorderColor)}.ui5-tp-clock-hovered{background-color:var(--sapList_Hover_Background);z-index:5}.ui5-tp-clock-pointer{cursor:pointer}.ui5-tp-clock-items,.ui5-tp-clock-markers{position:absolute;inset:0}:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-items .ui5-tp-clock-number,:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-items .ui5-tp-clock-mid-dot,:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-number.ui5-tp-clock-selected,:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-select-marker,:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-dial:before{opacity:0}.ui5-tp-clock-transition .ui5-tp-clock-items .ui5-tp-clock-number{animation-name:fadeOutClockItems;animation-delay:.15s;animation-duration:.2s;animation-timing-function:ease-out;animation-fill-mode:forwards}.ui5-tp-clock-transition .ui5-tp-clock-dial:before{animation-name:fadeOutClockLabel;animation-duration:.35s;animation-timing-function:ease-out;animation-fill-mode:forwards}.ui5-tp-clock-transition .ui5-tp-clock-number.ui5-tp-clock-selected,.ui5-tp-clock-transition .ui5-tp-clock-select-marker{animation-name:fadeOutSelectedItem;animation-delay:.1s;animation-duration:.15s;animation-timing-function:ease-out;animation-fill-mode:forwards}.ui5-tp-clock-transition .ui5-tp-clock-items .ui5-tp-clock-mid-dot{animation-name:fadeOutSelectedItem;animation-delay:.15s;animation-duration:.2s;animation-timing-function:ease-out;animation-fill-mode:forwards}:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-items .ui5-tp-clock-number{animation-name:fadeInClockItems;animation-delay:.15s;animation-duration:.2s;animation-timing-function:ease-in;animation-fill-mode:forwards}:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-dial:before{animation-name:fadeInClockLabel;animation-duration:.35s;animation-timing-function:ease-in;animation-fill-mode:forwards}:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-number.ui5-tp-clock-selected,:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-select-marker{animation-name:fadeInSelectedItem;animation-delay:.1s;animation-duration:.15s;animation-timing-function:ease-in;animation-fill-mode:forwards}:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-items .ui5-tp-clock-mid-dot{animation-name:fadeInSelectedItem;animation-delay:.15s;animation-duration:.2s;animation-timing-function:ease-in;animation-fill-mode:forwards}@keyframes fadeOutClockItems{0%{opacity:1;display:block}to{opacity:0;display:block}}@keyframes fadeOutClockLabel{0%{opacity:1;display:flex;transform:translateY(0)}to{opacity:0;display:flex;transform:translateY(-16px)}}@keyframes fadeOutSelectedItem{0%{opacity:1;display:block}to{opacity:0;display:block}}@keyframes fadeInClockItems{0%{opacity:0;display:block}to{opacity:1;display:block}}@keyframes fadeInClockLabel{0%{opacity:0;display:flex;transform:translateY(16px)}to{opacity:1;display:flex;transform:translateY(0)}}@keyframes fadeInSelectedItem{0%{opacity:0;display:block}50%{opacity:.5;display:block}to{opacity:1;display:block}}
 `;
-var __decorate$V = function(decorators, target, key, desc) {
+var __decorate$13 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -22527,79 +22531,79 @@ let TimePickerClock = class TimePickerClock2 extends b$7 {
     return false;
   }
 };
-__decorate$V([
+__decorate$13([
   s$9({ type: Boolean })
 ], TimePickerClock.prototype, "disabled", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Boolean })
 ], TimePickerClock.prototype, "active", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Number })
 ], TimePickerClock.prototype, "itemMin", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Number })
 ], TimePickerClock.prototype, "itemMax", void 0);
-__decorate$V([
+__decorate$13([
   s$9()
 ], TimePickerClock.prototype, "label", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Boolean })
 ], TimePickerClock.prototype, "hideFractions", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Number })
 ], TimePickerClock.prototype, "lastItemReplacement", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Boolean })
 ], TimePickerClock.prototype, "prependZero", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Number })
 ], TimePickerClock.prototype, "selectedValue", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Number })
 ], TimePickerClock.prototype, "displayStep", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Number })
 ], TimePickerClock.prototype, "valueStep", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Array })
 ], TimePickerClock.prototype, "_items", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Object })
 ], TimePickerClock.prototype, "_selectedItem", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Object })
 ], TimePickerClock.prototype, "_hoveredItem", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Object })
 ], TimePickerClock.prototype, "_dimensionParameters", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Boolean, noAttribute: true })
 ], TimePickerClock.prototype, "_mouseOrTouchDown", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Boolean, noAttribute: true })
 ], TimePickerClock.prototype, "_cancelTouchOut", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Number, noAttribute: true })
 ], TimePickerClock.prototype, "_selectedValue", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Number, noAttribute: true })
 ], TimePickerClock.prototype, "_movSelectedValue", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Number, noAttribute: true })
 ], TimePickerClock.prototype, "_hoveredValue", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Number, noAttribute: true })
 ], TimePickerClock.prototype, "_prevHoveredValue", void 0);
-__decorate$V([
+__decorate$13([
   s$9({ type: Boolean })
 ], TimePickerClock.prototype, "_skipAnimation", void 0);
-__decorate$V([
+__decorate$13([
   o$1(".ui5-tp-clock-number")
 ], TimePickerClock.prototype, "_firstNumberElement", void 0);
-__decorate$V([
+__decorate$13([
   o$1(".ui5-tp-clock")
 ], TimePickerClock.prototype, "_clockWrapper", void 0);
-TimePickerClock = __decorate$V([
+TimePickerClock = __decorate$13([
   m$8({
     tag: "ui5-time-picker-clock",
     renderer: y$5,
@@ -22616,10 +22620,10 @@ function TimeSelectionClocksTemplate() {
   return jsxs("div", { id: `${this._id}`, class: "ui5-time-picker-tsc-container", tabindex: -1, onKeyDown: this._onkeydown, onKeyUp: this._onkeyup, onFocusIn: this._clocksFocusIn, children: [jsxs("div", { class: "ui5-time-picker-tsc-buttons", children: [this._entities.map((entity) => jsxs(Fragment, { children: [entity.hasSeparator && jsx("span", { class: "ui5-time-selection-separator", children: ":" }), jsx(ToggleSpinButton$1, { "data-sap-focus-ref": true, id: `${this._id}_button_${entity.entity}`, "data-ui5-clock": entity.entity, valueMin: entity.attributes && entity.attributes.min, valueMax: entity.attributes && entity.attributes.max, valueNow: entity.value, valueText: entity.textValue, accessibleName: entity.label, pressed: entity.active, onFocusIn: this._buttonFocusIn, children: entity.stringValue })] })), this._periods.length > 0 && jsxs(Fragment, { children: [jsx("span", { class: "ui5-time-selection-separator" }), jsx(SegmentedButton$1, { id: `${this._id}_AmPm`, onClick: this._periodChange, onFocusIn: this._amPmFocusIn, onFocusOut: this._amPmFocusOut, children: this._periods.map((period) => jsx(SegmentedButtonItem$1, { selected: period.selected, children: period.label })) })] })] }), jsx("div", { class: "ui5-time-picker-tsc-clocks", role: "img", "aria-label": this.clockDialAriaLabel, children: this._entities.map((entity) => jsx(TimePickerClock$1, { id: `${this._id}_clock_${entity.entity}`, "data-ui5-clock": entity.entity, active: entity.active, label: entity.label, itemMin: entity.itemMin, itemMax: entity.itemMax, selectedValue: entity.value, displayStep: entity.displayStep, valueStep: entity.attributes && entity.attributes.step, lastItemReplacement: entity.lastItemReplacement, hideFractions: entity.hideFractions, prependZero: entity.prependZero, _skipAnimation: entity.skipAnimation, onChange: this._clockChange })) })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const TimeSelectionClocksCss = `.ui5-time-picker-tsc-container{margin:0 auto;box-sizing:border-box;width:100%;padding:1rem;text-align:center}.ui5-time-picker-tsc-container:focus{outline:none}.ui5-time-picker-tsc-buttons{display:flex;justify-content:center;align-items:center;padding-bottom:1rem;width:100%}.ui5-time-picker-tsc-buttons .ui5-time-selection-separator{min-width:.5rem;padding:0 .125rem;text-align:center;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);color:var(--sapContent_LabelColor)}.ui5-time-picker-tsc-clocks{display:block;text-align:center;width:100%;touch-action:none}
 `;
-var __decorate$U = function(decorators, target, key, desc) {
+var __decorate$12 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -22998,19 +23002,19 @@ let TimeSelectionClocks = class TimeSelectionClocks2 extends TimePickerInternals
     }
   }
 };
-__decorate$U([
+__decorate$12([
   s$9({ type: Boolean, noAttribute: true })
 ], TimeSelectionClocks.prototype, "_spacePressed", void 0);
-__decorate$U([
+__decorate$12([
   s$9({ type: Boolean, noAttribute: true })
 ], TimeSelectionClocks.prototype, "_focused", void 0);
-__decorate$U([
+__decorate$12([
   s$9({ type: Boolean, noAttribute: true })
 ], TimeSelectionClocks.prototype, "_amPmFocused", void 0);
-__decorate$U([
+__decorate$12([
   s$9({ type: Boolean })
 ], TimeSelectionClocks.prototype, "_skipAnimation", void 0);
-TimeSelectionClocks = __decorate$U([
+TimeSelectionClocks = __decorate$12([
   l$e("close-picker", {
     bubbles: true
   }),
@@ -23026,10 +23030,10 @@ function TimeSelectionInputsTemplate() {
   return jsxs("div", { class: "ui5-time-selection-inputs", onKeyDown: this._onkeydown, children: [this._entities.map((entity) => jsxs(Fragment, { children: [entity.hasSeparator && jsx("span", { class: "ui5-time-selection-separator", children: ":" }), jsx(Input$1, { id: `${this._id}_input_${entity.entity}`, class: "ui5-time-selection-numeric-input", type: this._numberType, maxlength: 2, autocomplete: "off", pattern: "[0-9]*", inputmode: "numeric", value: entity.stringValue, accessibleName: entity.label, _nativeInputAttributes: entity.attributes, onFocusIn: this._onfocusin, onFocusOut: this._onfocusout, onInput: this._oninput })] })), this._periods.length > 0 && jsxs(Fragment, { children: [jsx("span", { class: "ui5-time-selection-separator" }), jsx(SegmentedButton$1, { id: `${this._id}_AmPm`, onClick: this._periodChange, children: this._periods.map((period) => jsx(SegmentedButtonItem$1, { selected: period.selected, children: period.label })) })] })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const TimeSelectionInputsCss = `.ui5-time-selection-numeric-input{width:2.875rem;text-align:center}.ui5-time-selection-inputs{min-width:12.5rem;display:flex;justify-content:center;align-items:center}.ui5-time-selection-separator{display:inline-block;min-width:.5rem;padding:0 .125rem;text-align:center;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);color:var(--sapTextColor)}.ui5-hidden-text{display:none}
 `;
-var __decorate$T = function(decorators, target, key, desc) {
+var __decorate$11 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -23280,13 +23284,13 @@ let TimeSelectionInputs = class TimeSelectionInputs2 extends TimePickerInternals
     }
   }
 };
-__decorate$T([
+__decorate$11([
   s$9({ type: Number })
 ], TimeSelectionInputs.prototype, "_editedInput", void 0);
-__decorate$T([
+__decorate$11([
   s$9()
 ], TimeSelectionInputs.prototype, "_editedInputValue", void 0);
-TimeSelectionInputs = __decorate$T([
+TimeSelectionInputs = __decorate$11([
   m$8({
     tag: "ui5-time-selection-inputs",
     styles: TimeSelectionInputsCss,
@@ -23301,7 +23305,7 @@ const TimeSelectionInputs$1 = TimeSelectionInputs;
 function TimePickerPopoverTemplate() {
   return jsxs(Fragment, { children: [jsxs(ResponsivePopover, { id: `${this._id}-responsive-popover`, class: "ui5-time-picker-popover", placement: "Bottom", horizontalAlign: "Start", opener: this, open: this.open, allowTargetOverlap: true, _hideHeader: !this.hasValueStateText, hideArrow: true, accessibleName: this.pickerAccessibleName, onClose: this.onResponsivePopoverAfterClose, onBeforeOpen: this.onResponsivePopoverBeforeOpen, onOpen: this.onResponsivePopoverAfterOpen, onWheel: this._handleWheel, onKeyDown: this._onkeydown, children: [this.shouldDisplayValueStateMessageInResponsivePopover && valueStateTextHeader.call(this), jsx(TimeSelectionClocks$1, { id: `${this._id}-time-sel`, value: this._timeSelectionValue, formatPattern: this._formatPattern, onChange: this.onTimeSelectionChange, onClosePicker: this.submitPickers }), jsxs("div", { slot: "footer", class: "ui5-time-picker-footer", children: [jsx(Button$1, { id: "submit", design: "Emphasized", onClick: this.submitPickers, children: this.submitButtonLabel }), jsx(Button$1, { id: "close", design: "Transparent", onClick: this._togglePicker, children: this.cancelButtonLabel })] })] }), this._isMobileDevice && jsxs(Popover$1, { id: `${this._id}-popover`, class: "ui5-time-picker-inputs-popover", placement: "Bottom", horizontalAlign: "Start", "allow-target-overlap": true, "_hide-header": true, "hide-arrow": true, onOpen: this.onInputsPopoverAfterOpen, onClose: this.onInputsPopoverAfterClose, onWheel: this._handleWheel, onKeyDown: this._onkeydown, children: [this.hasValueStateText && valueStateTextHeader.call(this, { "width": "100%" }), jsx("div", { class: "popover-content", children: jsx(TimeSelectionInputs$1, { id: `${this._id}-time-sel-inputs`, value: this._timeSelectionValue, formatPattern: this._formatPattern, onChange: this.onTimeSelectionChange, onCloseInputs: this.submitInputsPopover }) }), jsxs("div", { slot: "footer", class: "ui5-time-picker-footer", children: [jsx(Button$1, { id: "submitInputs", design: "Emphasized", onClick: this.submitInputsPopover, children: this.submitButtonLabel }), jsx(Button$1, { id: "closeInputs", design: "Transparent", onClick: this.closeInputsPopover, children: this.cancelButtonLabel })] })] })] });
 }
-function valueStateMessage() {
+function valueStateMessage$1() {
   return this.shouldDisplayDefaultValueStateMessage ? this.valueStateDefaultText : jsx("slot", { name: "valueStateMessage" });
 }
 function valueStateTextHeader(style) {
@@ -23316,7 +23320,7 @@ function valueStateTextHeader(style) {
     "ui5-valuestatemessage--error": this.valueState === o$6.Negative,
     "ui5-valuestatemessage--warning": this.valueState === o$6.Critical,
     "ui5-valuestatemessage--information": this.valueState === o$6.Information
-  }, style, children: [jsx(Icon$1, { class: "ui5-input-value-state-message-icon", name: valueStateMessageInputIcon.call(this) }), valueStateMessage.call(this)] });
+  }, style, children: [jsx(Icon$1, { class: "ui5-input-value-state-message-icon", name: valueStateMessageInputIcon.call(this) }), valueStateMessage$1.call(this)] });
 }
 function valueStateMessageInputIcon() {
   const iconPerValueState = {
@@ -23327,18 +23331,18 @@ function valueStateMessageInputIcon() {
   };
   return this.valueState !== o$6.None ? iconPerValueState[this.valueState] : "";
 }
-const name$E = "time-entry-request";
-const pathData$D = "M416 272q0 16-16 16H224V144q0-16 16-16t16 16v112h144q16 0 16 16zM256 0q53 0 99.5 20T437 75t55 81.5 20 99.5q0 49-17.5 92.5T447 426t-71 56-88 28v-32q40-6 75.5-25.5t61-49T465 336t15-80q0-46-17.5-87t-48-71.5-71.5-48T256 32q-38 0-72.5 12T121 77.5t-49 51T41 192H8q11-41 34.5-76.5t56-61 72.5-40T256 0zM144 480q16 0 16 16 0 6-4.5 11t-11.5 5H16q-6 0-11-5t-5-11q0-7 5-11.5t11-4.5h128zm0-64q16 0 16 16 0 6-4.5 11t-11.5 5H16q-6 0-11-5t-5-11q0-7 5-11.5t11-4.5h128zm0-64q16 0 16 16 0 6-4.5 11t-11.5 5H16q-6 0-11-5t-5-11q0-7 5-11.5t11-4.5h128z";
-const ltr$D = false;
-const collection$D = "SAP-icons-v4";
-const packageName$D = "@ui5/webcomponents-icons";
-y$2(name$E, { pathData: pathData$D, ltr: ltr$D, collection: collection$D, packageName: packageName$D });
-const name$D = "time-entry-request";
-const pathData$C = "M262 461q11 0 18.5 7t7.5 18-7.5 18.5T262 512h-6q-53 0-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0q44 0 84 14t73 39 56.5 59.5T503 188q2 5 2 6.5v3.5q0 11-7.5 18.5T479 224q-8 0-15.5-5.5T454 205q-9-34-27.5-62.5t-45-48.5T323 62.5 256 51q-42 0-79.5 16T111 111t-44 65.5T51 256t16 79.5 44 65.5 65.5 44 79.5 16h6zm0-365q11 0 18.5 7.5T288 122v131q0 8-5 15l-77 105q-8 11-20 11-11 0-18.5-7.5T160 358q0-7 5-15l72-98V122q0-11 7-18.5t18-7.5zm224 192q11 0 18.5 7.5T512 314t-7.5 18-18.5 7H378q-11 0-18.5-7t-7.5-18 7.5-18.5T378 288h108zm0 86q11 0 18.5 7.5T512 400t-7.5 18.5T486 426H378q-11 0-18.5-7.5T352 400t7.5-18.5T378 374h108zm0 87q11 0 18.5 7t7.5 18-7.5 18.5T486 512H378q-11 0-18.5-7.5T352 486t7.5-18 18.5-7h108z";
-const ltr$C = false;
-const collection$C = "SAP-icons-v5";
-const packageName$C = "@ui5/webcomponents-icons";
-y$2(name$D, { pathData: pathData$C, ltr: ltr$C, collection: collection$C, packageName: packageName$C });
+const name$K = "time-entry-request";
+const pathData$J = "M416 272q0 16-16 16H224V144q0-16 16-16t16 16v112h144q16 0 16 16zM256 0q53 0 99.5 20T437 75t55 81.5 20 99.5q0 49-17.5 92.5T447 426t-71 56-88 28v-32q40-6 75.5-25.5t61-49T465 336t15-80q0-46-17.5-87t-48-71.5-71.5-48T256 32q-38 0-72.5 12T121 77.5t-49 51T41 192H8q11-41 34.5-76.5t56-61 72.5-40T256 0zM144 480q16 0 16 16 0 6-4.5 11t-11.5 5H16q-6 0-11-5t-5-11q0-7 5-11.5t11-4.5h128zm0-64q16 0 16 16 0 6-4.5 11t-11.5 5H16q-6 0-11-5t-5-11q0-7 5-11.5t11-4.5h128zm0-64q16 0 16 16 0 6-4.5 11t-11.5 5H16q-6 0-11-5t-5-11q0-7 5-11.5t11-4.5h128z";
+const ltr$J = false;
+const collection$J = "SAP-icons-v4";
+const packageName$J = "@ui5/webcomponents-icons";
+y$2(name$K, { pathData: pathData$J, ltr: ltr$J, collection: collection$J, packageName: packageName$J });
+const name$J = "time-entry-request";
+const pathData$I = "M262 461q11 0 18.5 7t7.5 18-7.5 18.5T262 512h-6q-53 0-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0q44 0 84 14t73 39 56.5 59.5T503 188q2 5 2 6.5v3.5q0 11-7.5 18.5T479 224q-8 0-15.5-5.5T454 205q-9-34-27.5-62.5t-45-48.5T323 62.5 256 51q-42 0-79.5 16T111 111t-44 65.5T51 256t16 79.5 44 65.5 65.5 44 79.5 16h6zm0-365q11 0 18.5 7.5T288 122v131q0 8-5 15l-77 105q-8 11-20 11-11 0-18.5-7.5T160 358q0-7 5-15l72-98V122q0-11 7-18.5t18-7.5zm224 192q11 0 18.5 7.5T512 314t-7.5 18-18.5 7H378q-11 0-18.5-7t-7.5-18 7.5-18.5T378 288h108zm0 86q11 0 18.5 7.5T512 400t-7.5 18.5T486 426H378q-11 0-18.5-7.5T352 400t7.5-18.5T378 374h108zm0 87q11 0 18.5 7t7.5 18-7.5 18.5T486 512H378q-11 0-18.5-7.5T352 486t7.5-18 18.5-7h108z";
+const ltr$I = false;
+const collection$I = "SAP-icons-v5";
+const packageName$I = "@ui5/webcomponents-icons";
+y$2(name$J, { pathData: pathData$I, ltr: ltr$I, collection: collection$I, packageName: packageName$I });
 const timeEntryRequest = "time-entry-request";
 function TimePickerTemplate() {
   return jsxs(Fragment, { children: [jsx("div", { id: this._id, class: "ui5-time-picker-root", children: jsxs(DateTimeInput$1, { "data-sap-focus-ref": true, id: `${this._id}-inner`, class: "ui5-time-picker-input", part: "input", value: this.value, placeholder: this._placeholder, disabled: this.disabled, readonly: this.readonly, required: this.required, valueState: this.valueState, _shouldOpenValueStatePopover: !this.open, _inputAccInfo: this.accInfo, onClick: this._handleInputClick, onChange: this._handleInputChange, onInput: this._handleInputLiveChange, onFocusIn: this._onfocusin, onKeyDown: this._onkeydown, children: [this.shouldDisplayValueStateMessageOnDesktop && jsx("slot", { name: "valueStateMessage", slot: "valueStateMessage" }), !this.readonly && jsx(Icon$1, { slot: "icon", name: timeEntryRequest, tabindex: -1, showTooltip: true, accessibleName: this.openIconTitle, mode: this._iconMode, onClick: this._togglePicker, class: {
@@ -23348,14 +23352,14 @@ function TimePickerTemplate() {
   } })] }) }), TimePickerPopoverTemplate.call(this)] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const TimePickerCss = `:host{vertical-align:middle}.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}.inputIcon{color:var(--_ui5-v2-17-0_input_icon_color);cursor:pointer;outline:none;padding:var(--_ui5-v2-17-0_input_icon_padding);border-inline-start:var(--_ui5-v2-17-0_input_icon_border);min-width:1rem;min-height:1rem;border-radius:var(--_ui5-v2-17-0_input_icon_border_radius)}.inputIcon.inputIcon--pressed{background:var(--_ui5-v2-17-0_input_icon_pressed_bg);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow);border-inline-start:var(--_ui5-v2-17-0_select_hover_icon_left_border);color:var(--_ui5-v2-17-0_input_icon_pressed_color)}.inputIcon:active{background-color:var(--sapButton_Active_Background);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow);border-inline-start:var(--_ui5-v2-17-0_select_hover_icon_left_border);color:var(--_ui5-v2-17-0_input_icon_pressed_color)}.inputIcon:not(.inputIcon--pressed):not(:active):hover{background:var(--_ui5-v2-17-0_input_icon_hover_bg);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow)}.inputIcon:hover{border-inline-start:var(--_ui5-v2-17-0_select_hover_icon_left_border);box-shadow:var(--_ui5-v2-17-0_input_icon_box_shadow)}:host([disabled]){cursor:default;pointer-events:none;background:none}:host([readonly]:not([disabled])){border-color:var(--_ui5-v2-17-0_input_readonly_border_color);background:var(--sapField_ReadOnly_BackgroundStyle);background-color:var(--_ui5-v2-17-0_input_readonly_background)}:host([value-state="Negative"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_error_icon_box_shadow)}:host([value-state="Critical"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_warning_icon_box_shadow)}:host([value-state="Information"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_information_icon_box_shadow)}:host([value-state="Positive"]) .inputIcon:not(.inputIcon--pressed):not(:active):hover{box-shadow:var(--_ui5-v2-17-0_input_success_icon_box_shadow)}:host([value-state="Negative"]:not([readonly]):not([disabled])){background:var(--sapField_InvalidBackgroundStyle);background-color:var(--sapField_InvalidBackground);border-color:var(--_ui5-v2-17-0_input_value_state_error_border_color);box-shadow:var(--sapField_InvalidShadow)}:host([value-state="Critical"]:not([readonly]):not([disabled])){background:var(--sapField_WarningBackgroundStyle);background-color:var(--sapField_WarningBackground);border-color:var(--_ui5-v2-17-0_input_value_state_warning_border_color);box-shadow:var(--sapField_WarningShadow)}:host([value-state="Positive"]:not([readonly]):not([disabled])){background:var(--sapField_SuccessBackgroundStyle);background-color:var(--sapField_SuccessBackground);border-color:var(--_ui5-v2-17-0_input_value_state_success_border_color);border-width:var(--_ui5-v2-17-0_input_value_state_success_border_width);box-shadow:var(--sapField_SuccessShadow)}:host([value-state="Information"]:not([readonly]):not([disabled])){background:var(--sapField_InformationBackgroundStyle);background-color:var(--sapField_InformationBackground);border-color:var(--_ui5-v2-17-0_input_value_state_information_border_color);border-width:var(--_ui5-v2-17-0_input_information_border_width);box-shadow:var(--sapField_InformationShadow)}:host([value-state="Negative"]) .inputIcon:active,:host([value-state="Negative"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_error_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_error_pressed_color)}:host([value-state="Critical"]) .inputIcon:active,:host([value-state="Critical"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_warning_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_warning_pressed_color)}:host([value-state="Information"]) .inputIcon:active,:host([value-state="Information"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_information_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_information_pressed_color)}:host([value-state="Positive"]) .inputIcon:active,:host([value-state="Positive"]) .inputIcon.inputIcon--pressed{box-shadow:var(--_ui5-v2-17-0_input_success_icon_box_shadow);color:var(--_ui5-v2-17-0_input_icon_success_pressed_color)}:host([value-state="Negative"]) .inputIcon,:host([value-state="Critical"]) .inputIcon{padding:var(--_ui5-v2-17-0_input_error_warning_icon_padding)}:host([value-state="Information"]) .inputIcon{padding:var(--_ui5-v2-17-0_input_information_icon_padding)}:host(:not([hidden])){display:inline-block;line-height:normal;letter-spacing:normal;word-spacing:normal}:host{min-width:calc(var(--_ui5-v2-17-0_input_min_width) + var(--_ui5-v2-17-0_input_icon_width));height:var(--_ui5-v2-17-0_input_height);color:var(--sapField_TextColor);background-color:var(--sapField_Background);border-radius:var(--_ui5-v2-17-0-time_picker_border_radius);margin:var(--_ui5-v2-17-0_input_margin_top_bottom) 0;user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none}:host([value-state="Negative"]){background-color:var(--sapField_InvalidBackground)}:host(:not([disabled]):not([readonly]):hover){background:var(--sapField_Hover_Background)}.ui5-time-picker-root{line-height:inherit;letter-spacing:inherit;word-spacing:inherit;height:inherit}:host .ui5-time-picker-input{width:100%;color:inherit;background-color:inherit;line-height:inherit;letter-spacing:inherit;word-spacing:inherit;margin:inherit;height:inherit}:host([disabled]) .ui5-time-picker-input{background-color:var(--_ui5-v2-17-0-input_disabled_background);opacity:var(--_ui5-v2-17-0_input_disabled_opacity)}.ui5-time-picker-popover::part(header){padding:0}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const TimePickerPopoverCss = `.ui5-time-picker-popover{width:20rem}.ui5-time-picker-footer{height:fit-content;display:flex;justify-content:flex-end;width:100%}.ui5-time-picker-footer>[ui5-button]{margin:1%;min-width:20%}.ui5-time-picker-popover::part(content){padding:0}.ui5-time-picker-inputs-popover::part(header){padding:0;width:100%}
 `;
-var __decorate$S = function(decorators, target, key, desc) {
+var __decorate$10 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -23782,64 +23786,64 @@ let TimePicker = TimePicker_1 = class TimePicker2 extends b$7 {
     return "time-entry-request";
   }
 };
-__decorate$S([
+__decorate$10([
   s$9()
 ], TimePicker.prototype, "value", void 0);
-__decorate$S([
+__decorate$10([
   s$9()
 ], TimePicker.prototype, "name", void 0);
-__decorate$S([
+__decorate$10([
   s$9()
 ], TimePicker.prototype, "valueState", void 0);
-__decorate$S([
+__decorate$10([
   s$9({ type: Boolean })
 ], TimePicker.prototype, "disabled", void 0);
-__decorate$S([
+__decorate$10([
   s$9({ type: Boolean })
 ], TimePicker.prototype, "readonly", void 0);
-__decorate$S([
+__decorate$10([
   s$9()
 ], TimePicker.prototype, "placeholder", void 0);
-__decorate$S([
+__decorate$10([
   s$9()
 ], TimePicker.prototype, "formatPattern", void 0);
-__decorate$S([
+__decorate$10([
   s$9({ type: Boolean })
 ], TimePicker.prototype, "open", void 0);
-__decorate$S([
+__decorate$10([
   s$9({ type: Boolean })
 ], TimePicker.prototype, "required", void 0);
-__decorate$S([
+__decorate$10([
   s$9()
 ], TimePicker.prototype, "accessibleName", void 0);
-__decorate$S([
+__decorate$10([
   s$9()
 ], TimePicker.prototype, "accessibleNameRef", void 0);
-__decorate$S([
+__decorate$10([
   s$9()
 ], TimePicker.prototype, "accessibleDescription", void 0);
-__decorate$S([
+__decorate$10([
   s$9()
 ], TimePicker.prototype, "accessibleDescriptionRef", void 0);
-__decorate$S([
+__decorate$10([
   s$9({ type: Boolean, noAttribute: true })
 ], TimePicker.prototype, "_isInputsPopoverOpen", void 0);
-__decorate$S([
+__decorate$10([
   d$8()
 ], TimePicker.prototype, "valueStateMessage", void 0);
-__decorate$S([
+__decorate$10([
   o$1("[ui5-time-selection-clocks]")
 ], TimePicker.prototype, "_timeSelectionClocks", void 0);
-__decorate$S([
+__decorate$10([
   o$1("[ui5-popover]")
 ], TimePicker.prototype, "_inputsPopover", void 0);
-__decorate$S([
+__decorate$10([
   o$1("[ui5-datetime-input]")
 ], TimePicker.prototype, "_dateTimeInput", void 0);
-__decorate$S([
+__decorate$10([
   i$b("@ui5/webcomponents")
 ], TimePicker, "i18nBundle", void 0);
-TimePicker = TimePicker_1 = __decorate$S([
+TimePicker = TimePicker_1 = __decorate$10([
   m$8({
     tag: "ui5-time-picker",
     languageAware: true,
@@ -23851,7 +23855,7 @@ TimePicker = TimePicker_1 = __decorate$S([
       TimePickerCss,
       ResponsivePopoverCommonCss,
       TimePickerPopoverCss,
-      ValueStateMessageCss
+      valueStateMessageStyles
     ]
   }),
   l$e("change", {
@@ -23876,10 +23880,10 @@ function CardTemplate() {
   }, "aria-label": this._getAriaLabel, children: jsx(BusyIndicator$1, { id: `${this._id}-busyIndicator`, delay: this.loadingDelay, active: this.loading, class: "ui5-card-busy-indicator", children: jsxs("div", { class: "ui5-card-inner", children: [this._hasHeader && jsx("div", { class: "ui5-card-header-root", children: jsx("slot", { name: "header" }) }), jsx("div", { role: "group", "aria-label": this._ariaCardContentLabel, part: "content", children: jsx("slot", {}) })] }) }) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const cardCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block;width:100%}.ui5-card-root{width:100%;height:100%;color:var(--sapGroup_TitleTextColor);background:var(--sapTile_Background);box-shadow:var(--_ui5-v2-17-0_card_box_shadow);border-radius:var(--_ui5-v2-17-0_card_border-radius);border:var(--_ui5-v2-17-0_card_border);overflow:hidden;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);box-sizing:border-box}.ui5-card-busy-indicator{width:100%;height:100%;border-radius:var(--_ui5-v2-17-0_card_border-radius)}.ui5-card-inner{width:100%;height:100%}.ui5-card-root.ui5-card--interactive:hover{box-shadow:var(--_ui5-v2-17-0_card_hover_box_shadow)}.ui5-card-root.ui5-card--interactive:active{box-shadow:var(--_ui5-v2-17-0_card_box_shadow)}.ui5-card-root.ui5-card--nocontent{height:auto}.ui5-card-root.ui5-card--nocontent .ui5-card-header-root{border-bottom:none}.ui5-card--nocontent ::slotted([ui5-card-header]){--_ui5-v2-17-0_card_header_focus_bottom_radius: var(--_ui5-v2-17-0_card_header_focus_radius)}.ui5-card-root .ui5-card-header-root{border-bottom:var(--_ui5-v2-17-0_card_header_border)}
 `;
-var __decorate$R = function(decorators, target, key, desc) {
+var __decorate$$ = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -23903,28 +23907,28 @@ let Card = Card_1 = class Card2 extends b$7 {
     return Card_1.i18nBundle.getText(ARIA_LABEL_CARD_CONTENT);
   }
 };
-__decorate$R([
+__decorate$$([
   s$9()
 ], Card.prototype, "accessibleName", void 0);
-__decorate$R([
+__decorate$$([
   s$9()
 ], Card.prototype, "accessibleNameRef", void 0);
-__decorate$R([
+__decorate$$([
   d$8({ type: HTMLElement, "default": true })
 ], Card.prototype, "content", void 0);
-__decorate$R([
+__decorate$$([
   d$8({ type: HTMLElement, invalidateOnChildChange: true })
 ], Card.prototype, "header", void 0);
-__decorate$R([
+__decorate$$([
   s$9({ type: Boolean })
 ], Card.prototype, "loading", void 0);
-__decorate$R([
+__decorate$$([
   s$9({ type: Number })
 ], Card.prototype, "loadingDelay", void 0);
-__decorate$R([
+__decorate$$([
   i$b("@ui5/webcomponents")
 ], Card, "i18nBundle", void 0);
-Card = Card_1 = __decorate$R([
+Card = Card_1 = __decorate$$([
   m$8({
     tag: "ui5-card",
     languageAware: true,
@@ -23943,10 +23947,10 @@ function CardHeaderTemplate() {
   }, part: "root", onClick: this._click, onKeyDown: this._keydown, onKeyUp: this._keyup, children: [jsxs("div", { class: "ui5-card-header-focusable-element", "aria-labelledby": this.ariaLabelledBy, "aria-roledescription": this.ariaRoleDescription, role: this.ariaRoleFocusableElement, "data-sap-focus-ref": true, tabindex: 0, children: [this.hasAvatar && jsx("div", { id: `${this._id}-avatar`, class: "ui5-card-header-avatar", "aria-label": this.ariaCardAvatarLabel, children: jsx("slot", { name: "avatar" }) }), jsxs("div", { class: "ui5-card-header-text", children: [jsxs("div", { class: "ui5-card-header-first-line", children: [this.titleText && jsx("div", { id: `${this._id}-title`, class: "ui5-card-header-title", part: "title", role: "heading", "aria-level": 3, children: this.titleText }), this.additionalText && jsx("div", { class: "ui5-card-header-additionalText", children: jsx("span", { id: `${this._id}-additionalText`, part: "additional-text", dir: "auto", children: this.additionalText }) })] }), this.subtitleText && jsx("div", { id: `${this._id}-subtitle`, class: "ui5-card-header-subtitle", part: "subtitle", children: this.subtitleText })] })] }), this.hasAction && jsx("div", { class: "ui5-card-header-action", onFocusIn: this._actionsFocusin, onFocusOut: this._actionsFocusout, children: jsx("slot", { name: "action" }) })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const cardHeaderCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}.ui5-card-header{position:relative;display:flex;align-items:center;padding:var(--_ui5-v2-17-0_card_header_padding);outline:none}:host([subtitleText]) .ui5-card-header{align-items:flex-start}:host([desktop]) .ui5-card-header.ui5-card-header-ff:not(.ui5-card-header-hide-focus):focus-within:before,.ui5-card-header.ui5-card-header-ff:not(.ui5-card-header-hide-focus):focus-visible:before{outline:none;content:"";position:absolute;border:var(--_ui5-v2-17-0_card_header_focus_border);pointer-events:none;top:var(--_ui5-v2-17-0_card_header_focus_offset);left:var(--_ui5-v2-17-0_card_header_focus_offset);right:var(--_ui5-v2-17-0_card_header_focus_offset);bottom:var(--_ui5-v2-17-0_card_header_focus_offset);border-top-left-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-top-right-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-bottom-left-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius)}:host([desktop]) .ui5-card-header:not(.ui5-card-header-ff):not(.ui5-card-header-hide-focus):has(.ui5-card-header-focusable-element:focus):before,.ui5-card-header:not(.ui5-card-header-ff):not(.ui5-card-header-hide-focus):has(.ui5-card-header-focusable-element:focus-visible):before{outline:none;content:"";position:absolute;border:var(--_ui5-v2-17-0_card_header_focus_border);pointer-events:none;top:var(--_ui5-v2-17-0_card_header_focus_offset);left:var(--_ui5-v2-17-0_card_header_focus_offset);right:var(--_ui5-v2-17-0_card_header_focus_offset);bottom:var(--_ui5-v2-17-0_card_header_focus_offset);border-top-left-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-top-right-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-bottom-left-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius)}.ui5-card-header-focusable-element{outline:none}.ui5-card-header-focusable-element{display:inherit;align-items:inherit;flex:1;min-width:0}.ui5-card-header.ui5-card-header--interactive:hover{cursor:pointer;background:var(--_ui5-v2-17-0_card_header_hover_bg)}.ui5-card-header.ui5-card-header--active,.ui5-card-header.ui5-card-header--interactive:active{background:var(--_ui5-v2-17-0_card_header_active_bg)}.ui5-card-header .ui5-card-header-text{flex:1;min-width:0;pointer-events:none}.ui5-card-header-first-line{display:flex;flex-flow:row;justify-content:space-between}.ui5-card-header-additionalText{flex:none}.ui5-card-header .ui5-card-header-avatar{height:3rem;width:3rem;display:flex;align-items:center;justify-content:center;margin-inline-end:.75rem;pointer-events:none;align-self:flex-start}::slotted([ui5-icon]){width:1.5rem;height:1.5rem;color:var(--sapTile_IconColor)}::slotted(img[slot="avatar"]){width:100%;height:100%;border-radius:50%}.ui5-card-header .ui5-card-header-additionalText{display:inline-block;font-family:var(--sapFontFamily);font-size:var(--sapFontSmallSize);color:var(--sapTile_TextColor);text-align:left;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;vertical-align:middle;margin-inline-start:1rem;margin-block-start:.125rem}.ui5-card-header .ui5-card-header-text .ui5-card-header-title{font-family:var(--_ui5-v2-17-0_card_header_title_font_family);font-size:var(--_ui5-v2-17-0_card_header_title_font_size);font-weight:var(--_ui5-v2-17-0_card_header_title_font_weight);color:var(--sapTile_TitleTextColor);max-height:3.5rem;align-self:flex-end}.ui5-card-header .ui5-card-header-text .ui5-card-header-subtitle{font-family:var(--sapFontFamily);font-size:var(--sapFontSize);font-weight:400;color:var(--sapTile_TextColor);margin-top:var(--_ui5-v2-17-0_card_header_subtitle_margin_top);max-height:2.1rem}.ui5-card-header .ui5-card-header-text .ui5-card-header-title,.ui5-card-header .ui5-card-header-text .ui5-card-header-subtitle{text-align:start;text-overflow:ellipsis;white-space:normal;word-wrap:break-word;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;display:-webkit-box;max-width:100%}.ui5-card-header .ui5-card-header-text .ui5-card-header-title{-webkit-line-clamp:3}.ui5-card-header-action{display:flex;padding-inline-start:1rem;align-self:flex-start}
 `;
-var __decorate$Q = function(decorators, target, key, desc) {
+var __decorate$_ = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -24037,34 +24041,34 @@ let CardHeader = CardHeader_1 = class CardHeader2 extends b$7 {
     }
   }
 };
-__decorate$Q([
+__decorate$_([
   s$9()
 ], CardHeader.prototype, "titleText", void 0);
-__decorate$Q([
+__decorate$_([
   s$9()
 ], CardHeader.prototype, "subtitleText", void 0);
-__decorate$Q([
+__decorate$_([
   s$9()
 ], CardHeader.prototype, "additionalText", void 0);
-__decorate$Q([
+__decorate$_([
   s$9({ type: Boolean })
 ], CardHeader.prototype, "interactive", void 0);
-__decorate$Q([
+__decorate$_([
   s$9({ type: Number })
 ], CardHeader.prototype, "_ariaLevel", void 0);
-__decorate$Q([
+__decorate$_([
   s$9({ type: Boolean, noAttribute: true })
 ], CardHeader.prototype, "_headerActive", void 0);
-__decorate$Q([
+__decorate$_([
   d$8()
 ], CardHeader.prototype, "avatar", void 0);
-__decorate$Q([
+__decorate$_([
   d$8()
 ], CardHeader.prototype, "action", void 0);
-__decorate$Q([
+__decorate$_([
   i$b("@ui5/webcomponents")
 ], CardHeader, "i18nBundle", void 0);
-CardHeader = CardHeader_1 = __decorate$Q([
+CardHeader = CardHeader_1 = __decorate$_([
   m$8({
     tag: "ui5-card-header",
     languageAware: true,
@@ -24077,18 +24081,18 @@ CardHeader = CardHeader_1 = __decorate$Q([
   })
 ], CardHeader);
 CardHeader.define();
-const name$C = "sys-help-2";
-const pathData$B = "M256 0q53 0 99.5 20T437 74.5t55 81.5 20 100-20 99.5-55 81.5-81.5 55-99.5 20-100-20-81.5-55T20 355.5 0 256t20-100 54.5-81.5T156 20 256 0zm-5 425q15 0 26-11t11-26-11-25.5-26-10.5-25.5 10.5T215 388t10.5 26 25.5 11zm101-239q0-32-27-57t-77-25q-46 0-72.5 24T146 187h52q5-24 17.5-32.5T251 146t35 12.5 12 27.5q0 10-2.5 14T282 215l-20 17q-15 12-23 21t-11.5 18.5-4.5 21-1 27.5h50q0-12 .5-19t3-12.5T283 278t15-13l27-25 16-18 9-16z";
-const ltr$B = true;
-const collection$B = "SAP-icons-v4";
-const packageName$B = "@ui5/webcomponents-icons";
-y$2(name$C, { pathData: pathData$B, ltr: ltr$B, collection: collection$B, packageName: packageName$B });
-const name$B = "sys-help-2";
-const pathData$A = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm32 289q31-10 50.5-36.5T358 192q0-43-29.5-72.5T256 90q-21 0-39.5 8T184 118.5 162 148t-8 35q0 20 9 30.5t23 10.5q13 0 22.5-9t9.5-23q0-16 11-27t27-11 27 11 11 27-11 27-27 11q-14 0-23 9.5t-9 22.5v26q0 14 9 23t23 9q13 0 22-9t10-22zm-32 127q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
-const ltr$A = true;
-const collection$A = "SAP-icons-v5";
-const packageName$A = "@ui5/webcomponents-icons";
-y$2(name$B, { pathData: pathData$A, ltr: ltr$A, collection: collection$A, packageName: packageName$A });
+const name$I = "sys-help-2";
+const pathData$H = "M256 0q53 0 99.5 20T437 74.5t55 81.5 20 100-20 99.5-55 81.5-81.5 55-99.5 20-100-20-81.5-55T20 355.5 0 256t20-100 54.5-81.5T156 20 256 0zm-5 425q15 0 26-11t11-26-11-25.5-26-10.5-25.5 10.5T215 388t10.5 26 25.5 11zm101-239q0-32-27-57t-77-25q-46 0-72.5 24T146 187h52q5-24 17.5-32.5T251 146t35 12.5 12 27.5q0 10-2.5 14T282 215l-20 17q-15 12-23 21t-11.5 18.5-4.5 21-1 27.5h50q0-12 .5-19t3-12.5T283 278t15-13l27-25 16-18 9-16z";
+const ltr$H = true;
+const collection$H = "SAP-icons-v4";
+const packageName$H = "@ui5/webcomponents-icons";
+y$2(name$I, { pathData: pathData$H, ltr: ltr$H, collection: collection$H, packageName: packageName$H });
+const name$H = "sys-help-2";
+const pathData$G = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm32 289q31-10 50.5-36.5T358 192q0-43-29.5-72.5T256 90q-21 0-39.5 8T184 118.5 162 148t-8 35q0 20 9 30.5t23 10.5q13 0 22.5-9t9.5-23q0-16 11-27t27-11 27 11 11 27-11 27-27 11q-14 0-23 9.5t-9 22.5v26q0 14 9 23t23 9q13 0 22-9t10-22zm-32 127q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
+const ltr$G = true;
+const collection$G = "SAP-icons-v5";
+const packageName$G = "@ui5/webcomponents-icons";
+y$2(name$H, { pathData: pathData$G, ltr: ltr$G, collection: collection$G, packageName: packageName$G });
 var TagDesign;
 (function(TagDesign2) {
   TagDesign2["Set1"] = "Set1";
@@ -24107,10 +24111,10 @@ function content() {
   return jsxs(Fragment, { children: [jsx("slot", { name: "icon" }), this._semanticIconName && jsx(Icon$1, { class: "ui5-tag-semantic-icon", name: this._semanticIconName }), jsx("span", { class: "ui5-hidden-text", children: this.tagDescription }), this.hasText && jsx("span", { class: "ui5-tag-text", children: jsx("slot", {}) })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const tagCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block}:host{font-size:var(--sapFontSmallSize);font-family:var(--sapFontBoldFamily);font-weight:var(--_ui5-v2-17-0-tag-font-weight);letter-spacing:var(--_ui5-v2-17-0-tag-letter-spacing);line-height:var(--_ui5-v2-17-0-tag-height)}.ui5-tag-root{display:flex;align-items:baseline;justify-content:center;width:100%;min-width:1.125em;max-width:100%;box-sizing:border-box;padding:var(--_ui5-v2-17-0-tag-text-padding);border:.0625rem solid;border-radius:var(--sapButton_BorderCornerRadius);white-space:normal;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit;letter-spacing:inherit}:host([interactive]) .ui5-tag-root:active{text-shadow:var(--ui5-v2-17-0-tag-text-shadow)}:host([interactive]) .ui5-tag-root{cursor:pointer}:host([desktop][interactive]) .ui5-tag-root:focus,:host([interactive]) .ui5-tag-root:focus-visible{outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);outline-offset:1px}:host([wrapping-type="None"]) .ui5-tag-root{white-space:nowrap}:host([_icon-only]) .ui5-tag-root{padding-inline:var(--_ui5-v2-17-0-tag-padding-inline-icon-only)}.ui5-tag-text{text-transform:var(--_ui5-v2-17-0-tag-text-transform);text-align:start;pointer-events:none;overflow:hidden;text-overflow:ellipsis}:host([_has-icon]) .ui5-tag-text{padding-inline-start:var(--_ui5-v2-17-0-tag-icon-gap)}[ui5-icon],::slotted([ui5-icon]){width:var(--_ui5-v2-17-0-tag-icon-width);min-width:var(--_ui5-v2-17-0-tag-icon-width);color:inherit;pointer-events:none;align-self:flex-start}.ui5-tag-root{background-color:var(--sapNeutralBackground);border-color:var(--sapNeutralBorderColor);color:var(--sapTextColor);text-shadow:var(--ui5-v2-17-0-tag-text-shadow)}:host([interactive]) .ui5-tag-root:hover{background-color:var(--sapButton_Neutral_Hover_Background);border-color:var(--sapButton_Neutral_Hover_BorderColor);color:var(--sapButton_Neutral_Hover_TextColor)}:host([interactive]) .ui5-tag-root:active{background-color:var(--sapButton_Neutral_Active_Background);border-color:var(--sapButton_Neutral_Active_BorderColor);color:var(--sapButton_Active_TextColor)}:host([design="Positive"]) .ui5-tag-root{background-color:var(--sapButton_Success_Background);border-color:var(--sapButton_Success_BorderColor);color:var(--sapButton_Success_TextColor);text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([interactive][design="Positive"]) .ui5-tag-root:hover{background-color:var(--sapButton_Success_Hover_Background);border-color:var(--sapButton_Success_Hover_BorderColor);color:var(--sapButton_Success_Hover_TextColor)}:host([interactive][design="Positive"]) .ui5-tag-root:active{background-color:var(--sapButton_Success_Active_Background);border-color:var(--sapButton_Success_Active_BorderColor);color:var(--sapButton_Accept_Selected_TextColor)}:host([design="Negative"]) .ui5-tag-root{background-color:var(--sapButton_Negative_Background);border-color:var(--sapButton_Negative_BorderColor);color:var(--sapButton_Negative_TextColor);text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([interactive][design="Negative"]) .ui5-tag-root:hover{background-color:var(--sapButton_Negative_Hover_Background);border-color:var(--sapButton_Negative_Hover_BorderColor);color:var(--sapButton_Negative_Hover_TextColor)}:host([interactive][design="Negative"]) .ui5-tag-root:active{background-color:var(--sapButton_Negative_Active_Background);border-color:var(--sapButton_Negative_Active_BorderColor);color:var(--sapButton_Reject_Selected_TextColor)}:host([design="Critical"]) .ui5-tag-root{background-color:var(--sapButton_Critical_Background);border-color:var(--sapButton_Critical_BorderColor);color:var(--sapButton_Critical_TextColor);text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([interactive][design="Critical"]) .ui5-tag-root:hover{background-color:var(--sapButton_Critical_Hover_Background);border-color:var(--sapButton_Critical_Hover_BorderColor);color:var(--sapButton_Critical_Hover_TextColor)}:host([interactive][design="Critical"]) .ui5-tag-root:active{background-color:var(--sapButton_Critical_Active_Background);border-color:var(--sapButton_Critical_Active_BorderColor);color:var(--sapButton_Attention_Selected_TextColor)}:host([design="Information"]) .ui5-tag-root{background-color:var(--sapButton_Information_Background);border-color:var(--sapButton_Information_BorderColor);color:var(--sapButton_Information_TextColor);text-shadow:var(--ui5-v2-17-0-tag-information-text-shadow)}:host([interactive][design="Information"]) .ui5-tag-root:hover{background-color:var(--sapButton_Information_Hover_Background);border-color:var(--sapButton_Information_Hover_BorderColor);color:var(--sapButton_Information_Hover_TextColor)}:host([interactive][design="Information"]) .ui5-tag-root:active{background-color:var(--sapButton_Information_Active_Background);border-color:var(--sapButton_Information_Active_BorderColor);color:var(--sapButton_Selected_TextColor)}:host([design="Set1"]) .ui5-tag-root{text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([design="Set1"]) .ui5-tag-root,:host([interactive][design="Set1"]) .ui5-tag-root{background-color:var(--sapIndicationColor_1_Background);border-color:var(--sapIndicationColor_1_BorderColor);color:var(--sapIndicationColor_1_TextColor)}:host([interactive][design="Set1"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_1_Hover_Background)}:host([interactive][design="Set1"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_1_Active_Background);border-color:var(--sapIndicationColor_1_Active_BorderColor);color:var(--sapIndicationColor_1_Active_TextColor)}:host([design="Set1"][color-scheme="2"]) .ui5-tag-root{background-color:var(--sapIndicationColor_2_Background);border-color:var(--sapIndicationColor_2_BorderColor);color:var(--sapIndicationColor_2_TextColor)}:host([interactive][design="Set1"][color-scheme="2"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_2_Hover_Background)}:host([interactive][design="Set1"][color-scheme="2"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_2_Active_Background);border-color:var(--sapIndicationColor_2_Active_BorderColor);color:var(--sapIndicationColor_2_Active_TextColor)}:host([design="Set1"][color-scheme="3"]) .ui5-tag-root{background-color:var(--sapIndicationColor_3_Background);border-color:var(--sapIndicationColor_3_BorderColor);color:var(--sapIndicationColor_3_TextColor)}:host([interactive][design="Set1"][color-scheme="3"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_3_Hover_Background)}:host([interactive][design="Set1"][color-scheme="3"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_3_Active_Background);border-color:var(--sapIndicationColor_3_Active_BorderColor);color:var(--sapIndicationColor_3_Active_TextColor)}:host([design="Set1"][color-scheme="4"]) .ui5-tag-root{background-color:var(--sapIndicationColor_4_Background);border-color:var(--sapIndicationColor_4_BorderColor);color:var(--sapIndicationColor_4_TextColor)}:host([interactive][design="Set1"][color-scheme="4"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_4_Hover_Background)}:host([interactive][design="Set1"][color-scheme="4"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_4_Active_Background);border-color:var(--sapIndicationColor_4_Active_BorderColor);color:var(--sapIndicationColor_4_Active_TextColor)}:host([design="Set1"][color-scheme="5"]) .ui5-tag-root{background-color:var(--sapIndicationColor_5_Background);border-color:var(--sapIndicationColor_5_BorderColor);color:var(--sapIndicationColor_5_TextColor)}:host([interactive][design="Set1"][color-scheme="5"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_5_Hover_Background)}:host([interactive][design="Set1"][color-scheme="5"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_5_Active_Background);border-color:var(--sapIndicationColor_5_Active_BorderColor);color:var(--sapIndicationColor_5_Active_TextColor)}:host([design="Set1"][color-scheme="6"]) .ui5-tag-root{background-color:var(--sapIndicationColor_6_Background);border-color:var(--sapIndicationColor_6_BorderColor);color:var(--sapIndicationColor_6_TextColor)}:host([interactive][design="Set1"][color-scheme="6"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_6_Hover_Background)}:host([interactive][design="Set1"][color-scheme="6"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_6_Active_Background);border-color:var(--sapIndicationColor_6_Active_BorderColor);color:var(--sapIndicationColor_6_Active_TextColor)}:host([design="Set1"][color-scheme="7"]) .ui5-tag-root{background-color:var(--sapIndicationColor_7_Background);border-color:var(--sapIndicationColor_7_BorderColor);color:var(--sapIndicationColor_7_TextColor)}:host([interactive][design="Set1"][color-scheme="7"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_7_Hover_Background)}:host([interactive][design="Set1"][color-scheme="7"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_7_Active_Background);border-color:var(--sapIndicationColor_7_Active_BorderColor);color:var(--sapIndicationColor_7_Active_TextColor)}:host([design="Set1"][color-scheme="8"]) .ui5-tag-root{background-color:var(--sapIndicationColor_8_Background);border-color:var(--sapIndicationColor_8_BorderColor);color:var(--sapIndicationColor_8_TextColor)}:host([interactive][design="Set1"][color-scheme="8"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_8_Hover_Background)}:host([interactive][design="Set1"][color-scheme="8"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_8_Active_Background);border-color:var(--sapIndicationColor_8_Active_BorderColor);color:var(--sapIndicationColor_8_Active_TextColor)}:host([design="Set1"][color-scheme="9"]) .ui5-tag-root{background-color:var(--sapIndicationColor_9_Background);border-color:var(--sapIndicationColor_9_BorderColor);color:var(--sapIndicationColor_9_TextColor)}:host([interactive][design="Set1"][color-scheme="9"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_9_Hover_Background)}:host([interactive][design="Set1"][color-scheme="9"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_9_Active_Background);border-color:var(--sapIndicationColor_9_Active_BorderColor);color:var(--sapIndicationColor_9_Active_TextColor)}:host([design="Set1"][color-scheme="10"]) .ui5-tag-root{background-color:var(--sapIndicationColor_10_Background);border-color:var(--sapIndicationColor_10_BorderColor);color:var(--sapIndicationColor_10_TextColor)}:host([interactive][design="Set1"][color-scheme="10"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_10_Hover_Background)}:host([interactive][design="Set1"][color-scheme="10"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_10_Active_Background);border-color:var(--sapIndicationColor_10_Active_BorderColor);color:var(--sapIndicationColor_10_Active_TextColor)}:host([design="Set2"]) .ui5-tag-root{text-shadow:var(--ui5-v2-17-0-tag-text-shadow)}:host([design="Set2"]) .ui5-tag-root,:host([interactive][design="Set2"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-color)}:host([interactive][design="Set2"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-hover-background)}:host([interactive][design="Set2"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-active-color)}:host([design="Set2"][color-scheme="2"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-color)}:host([design="Set2"][color-scheme="3"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-color)}:host([interactive][design="Set2"][color-scheme="3"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-hover-background)}:host([interactive][design="Set2"][color-scheme="3"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-active-color)}:host([design="Set2"][color-scheme="4"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-color)}:host([interactive][design="Set2"][color-scheme="4"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-hover-background)}:host([interactive][design="Set2"][color-scheme="4"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-active-color)}:host([design="Set2"][color-scheme="5"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-color)}:host([interactive][design="Set2"][color-scheme="5"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-hover-background)}:host([interactive][design="Set2"][color-scheme="5"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-active-color)}:host([design="Set2"][color-scheme="6"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-color)}:host([interactive][design="Set2"][color-scheme="6"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-hover-background)}:host([interactive][design="Set2"][color-scheme="6"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-active-color)}:host([design="Set2"][color-scheme="7"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-color)}:host([interactive][design="Set2"][color-scheme="7"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-hover-background)}:host([interactive][design="Set2"][color-scheme="7"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-active-color)}:host([design="Set2"][color-scheme="8"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-color)}:host([interactive][design="Set2"][color-scheme="8"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-hover-background)}:host([interactive][design="Set2"][color-scheme="8"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-active-color)}:host([design="Set2"][color-scheme="9"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-color)}:host([interactive][design="Set2"][color-scheme="9"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-hover-background)}:host([interactive][design="Set2"][color-scheme="9"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-active-color)}:host([interactive][design="Set2"][color-scheme="10"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-hover-background)}:host([interactive][design="Set2"][color-scheme="10"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-active-color)}:host([design="Set2"][color-scheme="10"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-color)}:host([interactive][design="Set2"][color-scheme="2"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-hover-background)}:host([interactive][design="Set2"][color-scheme="2"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-active-color)}:host([size="L"]){font-family:var(--sapFontSemiboldDuplexFamily);line-height:var(--_ui5-v2-17-0-tag-height_size_l)}:host([size="L"]) .ui5-tag-root{font-size:var(--_ui5-v2-17-0-tag-font-size_size_l);min-width:var(--_ui5-v2-17-0-tag-min-width_size_l);padding:var(--_ui5-v2-17-0-tag-text_padding_size_l)}:host([size="L"]) [ui5-icon],:host([size="L"]) ::slotted([ui5-icon]){min-width:var(--_ui5-v2-17-0-tag-icon_min_width_size_l);min-height:var(--_ui5-v2-17-0-tag-icon_min_height_size_l);height:var(--_ui5-v2-17-0-tag-icon_height_size_l)}
 `;
-var __decorate$P = function(decorators, target, key, desc) {
+var __decorate$Z = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -24201,40 +24205,40 @@ let Tag = Tag_1 = class Tag2 extends b$7 {
     this.fireDecoratorEvent("click");
   }
 };
-__decorate$P([
+__decorate$Z([
   s$9()
 ], Tag.prototype, "design", void 0);
-__decorate$P([
+__decorate$Z([
   s$9()
 ], Tag.prototype, "colorScheme", void 0);
-__decorate$P([
+__decorate$Z([
   s$9({ type: Boolean })
 ], Tag.prototype, "hideStateIcon", void 0);
-__decorate$P([
+__decorate$Z([
   s$9({ type: Boolean })
 ], Tag.prototype, "interactive", void 0);
-__decorate$P([
+__decorate$Z([
   s$9()
 ], Tag.prototype, "wrappingType", void 0);
-__decorate$P([
+__decorate$Z([
   s$9()
 ], Tag.prototype, "size", void 0);
-__decorate$P([
+__decorate$Z([
   s$9({ type: Boolean })
 ], Tag.prototype, "_hasIcon", void 0);
-__decorate$P([
+__decorate$Z([
   s$9({ type: Boolean })
 ], Tag.prototype, "_iconOnly", void 0);
-__decorate$P([
+__decorate$Z([
   d$8({ type: Node, "default": true })
 ], Tag.prototype, "text", void 0);
-__decorate$P([
+__decorate$Z([
   d$8()
 ], Tag.prototype, "icon", void 0);
-__decorate$P([
+__decorate$Z([
   i$b("@ui5/webcomponents")
 ], Tag, "i18nBundle", void 0);
-Tag = Tag_1 = __decorate$P([
+Tag = Tag_1 = __decorate$Z([
   m$8({
     tag: "ui5-tag",
     languageAware: true,
@@ -24281,10 +24285,10 @@ function standardIconName() {
   }
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const messageStripCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block;width:100%}.ui5-message-strip-root{width:100%;height:100%;display:flex;border-radius:var(--sapPopover_BorderCornerRadius);padding:var(--_ui5-v2-17-0_message_strip_padding);border-width:var(--_ui5-v2-17-0_message_strip_border_width);border-style:solid;box-sizing:border-box;position:relative}.ui5-message-strip-root-hide-icon{padding-inline:var(--_ui5-v2-17-0_message_strip_padding_inline_no_icon);padding-block:var(--_ui5-v2-17-0_message_strip_padding_block_no_icon)}.ui5-message-strip-root-hide-close-button{padding-inline-end:1rem}.ui5-message-strip-root--info{background-color:var(--sapInformationBackground);border-color:var(--sapMessage_InformationBorderColor);color:var(--sapTextColor)}.ui5-message-strip-root--info .ui5-message-strip-icon{color:var(--sapInformativeElementColor)}.ui5-message-strip-root--positive{background-color:var(--sapSuccessBackground);border-color:var(--sapMessage_SuccessBorderColor)}.ui5-message-strip-root--positive .ui5-message-strip-icon{color:var(--sapPositiveElementColor)}.ui5-message-strip-root--negative{background-color:var(--sapErrorBackground);border-color:var(--sapMessage_ErrorBorderColor)}.ui5-message-strip-root--negative .ui5-message-strip-icon{color:var(--sapNegativeElementColor)}.ui5-message-strip-root--critical{background-color:var(--sapWarningBackground);border-color:var(--sapMessage_WarningBorderColor)}.ui5-message-strip-root--critical .ui5-message-strip-icon{color:var(--sapCriticalElementColor)}.ui5-message-strip-icon-wrapper{position:absolute;top:var(--_ui5-v2-17-0_message_strip_icon_top);inset-inline-start:.75rem;box-sizing:border-box}.ui5-message-strip-text{width:100%;color:var(--sapTextColor);line-height:1.2;font-family:var(--sapFontFamily);font-size:var(--sapFontSize)}.ui5-message-strip-close-button{height:1.625rem;min-height:1.625rem;position:absolute;top:var(--_ui5-v2-17-0_message_strip_close_button_top);inset-inline-end:var(--_ui5-v2-17-0_message_strip_close_button_right)}:host([color-scheme="1"]) .ui5-message-strip-root--color-set-1,:host(:not([color-scheme])[design="ColorSet1"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_1_Background);border-color:var(--sapIndicationColor_1_BorderColor)}:host([color-scheme="2"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_2_Background);border-color:var(--sapIndicationColor_2_BorderColor)}:host([color-scheme="3"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_3_Background);border-color:var(--sapIndicationColor_3_BorderColor)}:host([color-scheme="4"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_4_Background);border-color:var(--sapIndicationColor_4_BorderColor)}:host([color-scheme="5"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_5_Background);border-color:var(--sapIndicationColor_5_BorderColor)}:host([color-scheme="6"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_6_Background);border-color:var(--sapIndicationColor_6_BorderColor)}:host([color-scheme="7"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_7_Background);border-color:var(--sapIndicationColor_7_BorderColor)}:host([color-scheme="8"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_8_Background);border-color:var(--sapIndicationColor_8_BorderColor)}:host([color-scheme="9"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_9_Background);border-color:var(--sapIndicationColor_9_BorderColor)}:host([color-scheme="10"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_10_Background);border-color:var(--sapIndicationColor_10_BorderColor)}:host([color-scheme="1"]) .ui5-message-strip-root--color-set-2,:host(:not([color-scheme])[design="ColorSet2"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_1_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_1_set_2_border_color)}:host([color-scheme="2"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_2_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_2_set_2_border_color)}:host([color-scheme="3"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_3_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_3_set_2_border_color)}:host([color-scheme="4"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_4_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_4_set_2_border_color)}:host([color-scheme="5"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_5_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_5_set_2_border_color)}:host([color-scheme="6"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_6_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_6_set_2_border_color)}:host([color-scheme="7"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_7_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_7_set_2_border_color)}:host([color-scheme="8"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_8_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_8_set_2_border_color)}:host([color-scheme="9"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_9_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_9_set_2_border_color)}:host([color-scheme="10"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_10_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_10_set_2_border_color)}:host([design="ColorSet1"]) .ui5-message-strip-root .ui5-message-strip-text{color:var(--sapContent_ContrastTextColor);text-shadow:var(--sapContent_ContrastTextShadow)}:host([design="ColorSet1"]) .ui5-message-strip-root ::slotted([slot="icon"]){color:var(--sapContent_ContrastIconColor);text-shadow:var(--sapContent_ContrastTextShadow)}:host([design="ColorSet2"]) .ui5-message-strip-root .ui5-message-strip-text{color:var(--sapTextColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button{color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_1_color)}:host([design="ColorSet2"]) .ui5-message-strip-close-button,:host([design="ColorSet2"]) .ui5-message-strip-root ::slotted([slot="icon"]){color:var(--sapContent_IconColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button:hover{border-color:var(--sapContent_ContrastIconColor);background-color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_1_background);color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_1_color);text-shadow:var(--sapContent_ContrastTextShadow)}:host([design="ColorSet2"]) .ui5-message-strip-close-button:hover{background-color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_2_background);border-color:var(--sapContent_IconColor);color:var(--sapContent_IconColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button:active{background:none;border-color:var(--sapContent_ContrastIconColor)}:host([design="ColorSet2"]) .ui5-message-strip-close-button:active{background:none;border-color:var(--sapContent_IconColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button::part(button):after,:host([design="ColorSet1"]) .ui5-message-strip-close-button::part(button):before{border-color:var(--sapContent_ContrastFocusColor)}
 `;
-var __decorate$O = function(decorators, target, key, desc) {
+var __decorate$Y = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -24359,25 +24363,25 @@ let MessageStrip = MessageStrip_1 = class MessageStrip2 extends b$7 {
     return DesignClassesMapping[this.design];
   }
 };
-__decorate$O([
+__decorate$Y([
   s$9()
 ], MessageStrip.prototype, "design", void 0);
-__decorate$O([
+__decorate$Y([
   s$9()
 ], MessageStrip.prototype, "colorScheme", void 0);
-__decorate$O([
+__decorate$Y([
   s$9({ type: Boolean })
 ], MessageStrip.prototype, "hideIcon", void 0);
-__decorate$O([
+__decorate$Y([
   s$9({ type: Boolean })
 ], MessageStrip.prototype, "hideCloseButton", void 0);
-__decorate$O([
+__decorate$Y([
   d$8()
 ], MessageStrip.prototype, "icon", void 0);
-__decorate$O([
+__decorate$Y([
   i$b("@ui5/webcomponents")
 ], MessageStrip, "i18nBundle", void 0);
-MessageStrip = MessageStrip_1 = __decorate$O([
+MessageStrip = MessageStrip_1 = __decorate$Y([
   m$8({
     tag: "ui5-message-strip",
     languageAware: true,
@@ -24392,10 +24396,10 @@ function ToastTemplate() {
   return jsx(Fragment, { children: jsx("div", { class: "ui5-toast-root", role: "alert", tabindex: this._tabindex, children: jsx("bdi", { children: jsx("slot", {}) }) }) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const ToastCss = `:host{font-family:var(--sapFontFamily);color:var(--sapContent_ContrastTextColor);font-size:var(--sapFontSize);position:fixed;display:none;box-sizing:border-box;max-width:15rem;overflow:hidden;background:var(--_ui5-v2-17-0_toast_background);box-shadow:var(--_ui5-v2-17-0_toast_shadow);border-radius:var(--sapElement_BorderCornerRadius);transition-property:opacity;opacity:1;word-wrap:break-word;text-align:center;text-overflow:ellipsis;white-space:pre-line;padding:1rem;inset:unset;margin:0;border:none}.ui5-toast-root{height:100%;width:100%;padding:0;outline:none;box-sizing:border-box;display:flex;align-items:center;justify-content:center;min-height:fit-content}:host([open]){display:block}:host(:not([placement])){bottom:var(--_ui5-v2-17-0_toast_vertical_offset);left:50%;transform:translate(-50%)}:host([placement="TopStart"]){top:var(--_ui5-v2-17-0_toast_vertical_offset);left:var(--_ui5-v2-17-0_toast_horizontal_offset)}:host([placement="MiddleStart"]){left:var(--_ui5-v2-17-0_toast_horizontal_offset);top:50%;transform:translateY(-50%)}:host([placement="BottomStart"]){left:var(--_ui5-v2-17-0_toast_horizontal_offset);bottom:var(--_ui5-v2-17-0_toast_vertical_offset)}:host([placement="TopCenter"]){top:var(--_ui5-v2-17-0_toast_vertical_offset);left:50%;transform:translate(-50%)}:host([placement="MiddleCenter"]){left:50%;top:50%;transform:translate(-50%,-50%)}:host([placement="BottomCenter"]){bottom:var(--_ui5-v2-17-0_toast_vertical_offset);left:50%;transform:translate(-50%)}:host([placement="TopEnd"]){right:var(--_ui5-v2-17-0_toast_horizontal_offset);top:var(--_ui5-v2-17-0_toast_vertical_offset)}:host([placement="MiddleEnd"]){right:var(--_ui5-v2-17-0_toast_horizontal_offset);top:50%;transform:translateY(-50%)}:host([placement="BottomEnd"]){right:var(--_ui5-v2-17-0_toast_horizontal_offset);bottom:var(--_ui5-v2-17-0_toast_vertical_offset)}:host([focused]){outline-width:var(--sapContent_FocusWidth);outline-style:var(--sapContent_FocusStyle);outline-color:var(--sapContent_FocusColor);outline-offset:var(--_ui5-v2-17-0_toast_offset_width)}
 `;
-var __decorate$N = function(decorators, target, key, desc) {
+var __decorate$X = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -24525,25 +24529,25 @@ let Toast = class Toast2 extends b$7 {
     this.removeEventListener("transitioncancel", this._ontransitionendFn);
   }
 };
-__decorate$N([
+__decorate$X([
   s$9({ type: Number })
 ], Toast.prototype, "duration", void 0);
-__decorate$N([
+__decorate$X([
   s$9()
 ], Toast.prototype, "placement", void 0);
-__decorate$N([
+__decorate$X([
   s$9({ type: Boolean })
 ], Toast.prototype, "open", void 0);
-__decorate$N([
+__decorate$X([
   s$9({ type: Boolean })
 ], Toast.prototype, "hover", void 0);
-__decorate$N([
+__decorate$X([
   s$9({ type: Boolean })
 ], Toast.prototype, "focusable", void 0);
-__decorate$N([
+__decorate$X([
   s$9({ type: Boolean })
 ], Toast.prototype, "focused", void 0);
-Toast = __decorate$N([
+Toast = __decorate$X([
   m$8({
     tag: "ui5-toast",
     renderer: y$5,
@@ -24553,20 +24557,20 @@ Toast = __decorate$N([
   l$e("close")
 ], Toast);
 Toast.define();
-const name$A = "nav-back";
-const pathData$z = "M375.5 426q9 9 9 22.5t-9 22.5q-10 10-23 10t-23-10l-192-192q-9-9-9-22.5t9-22.5l191-193q10-10 23-10t22 10q10 9 10 22t-10 23l-157 159q-5 5-5 11.5t5 11.5z";
-const ltr$z = false;
+const name$G = "nav-back";
+const pathData$F = "M375.5 426q9 9 9 22.5t-9 22.5q-10 10-23 10t-23-10l-192-192q-9-9-9-22.5t9-22.5l191-193q10-10 23-10t22 10q10 9 10 22t-10 23l-157 159q-5 5-5 11.5t5 11.5z";
+const ltr$F = false;
 const accData$9 = ICON_NAV_BACK;
-const collection$z = "SAP-icons-v4";
-const packageName$z = "@ui5/webcomponents-icons";
-y$2(name$A, { pathData: pathData$z, ltr: ltr$z, accData: accData$9, collection: collection$z, packageName: packageName$z });
-const name$z = "nav-back";
-const pathData$y = "M326 96q11 0 18.5 7.5T352 122q0 10-8 18L223 256l121 116q8 8 8 18 0 11-7.5 18.5T326 416q-10 0-17-7L168 274q-8-6-8-18 0-11 8-19l141-134q7-7 17-7z";
-const ltr$y = false;
+const collection$F = "SAP-icons-v4";
+const packageName$F = "@ui5/webcomponents-icons";
+y$2(name$G, { pathData: pathData$F, ltr: ltr$F, accData: accData$9, collection: collection$F, packageName: packageName$F });
+const name$F = "nav-back";
+const pathData$E = "M326 96q11 0 18.5 7.5T352 122q0 10-8 18L223 256l121 116q8 8 8 18 0 11-7.5 18.5T326 416q-10 0-17-7L168 274q-8-6-8-18 0-11 8-19l141-134q7-7 17-7z";
+const ltr$E = false;
 const accData$8 = ICON_NAV_BACK;
-const collection$y = "SAP-icons-v5";
-const packageName$y = "@ui5/webcomponents-icons";
-y$2(name$z, { pathData: pathData$y, ltr: ltr$y, accData: accData$8, collection: collection$y, packageName: packageName$y });
+const collection$E = "SAP-icons-v5";
+const packageName$E = "@ui5/webcomponents-icons";
+y$2(name$F, { pathData: pathData$E, ltr: ltr$E, accData: accData$8, collection: collection$E, packageName: packageName$E });
 const navBackIcon = "nav-back";
 var MenuItemGroupCheckMode;
 (function(MenuItemGroupCheckMode2) {
@@ -24575,18 +24579,18 @@ var MenuItemGroupCheckMode;
   MenuItemGroupCheckMode2["Multiple"] = "Multiple";
 })(MenuItemGroupCheckMode || (MenuItemGroupCheckMode = {}));
 const MenuItemGroupCheckMode$1 = MenuItemGroupCheckMode;
-const name$y = "edit";
-const pathData$x = "M475 104q5 7 5 12 0 6-5 11L150 453q-4 4-8 4L32 480l22-110q0-5 4-9L384 36q4-4 11-4t11 4zm-121 99l-46-45L84 381l46 46zm87-88l-46-44-64 64 45 45z";
-const ltr$x = false;
-const collection$x = "SAP-icons-v4";
-const packageName$x = "@ui5/webcomponents-icons";
-y$2(name$y, { pathData: pathData$x, ltr: ltr$x, collection: collection$x, packageName: packageName$x });
-const name$x = "edit";
-const pathData$w = "M505 94q7 7 7 18t-6 17L130 505q-7 7-18 7H26q-11 0-18.5-7.5T0 486v-86q1-10 6-16L382 7q7-7 18-7t18 7zm-55 18l-50-50-50 50 50 50zm-86 86l-50-50L62 400l50 50z";
-const ltr$w = false;
-const collection$w = "SAP-icons-v5";
-const packageName$w = "@ui5/webcomponents-icons";
-y$2(name$x, { pathData: pathData$w, ltr: ltr$w, collection: collection$w, packageName: packageName$w });
+const name$E = "edit";
+const pathData$D = "M475 104q5 7 5 12 0 6-5 11L150 453q-4 4-8 4L32 480l22-110q0-5 4-9L384 36q4-4 11-4t11 4zm-121 99l-46-45L84 381l46 46zm87-88l-46-44-64 64 45 45z";
+const ltr$D = false;
+const collection$D = "SAP-icons-v4";
+const packageName$D = "@ui5/webcomponents-icons";
+y$2(name$E, { pathData: pathData$D, ltr: ltr$D, collection: collection$D, packageName: packageName$D });
+const name$D = "edit";
+const pathData$C = "M505 94q7 7 7 18t-6 17L130 505q-7 7-18 7H26q-11 0-18.5-7.5T0 486v-86q1-10 6-16L382 7q7-7 18-7t18 7zm-55 18l-50-50-50 50 50 50zm-86 86l-50-50L62 400l50 50z";
+const ltr$C = false;
+const collection$C = "SAP-icons-v5";
+const packageName$C = "@ui5/webcomponents-icons";
+y$2(name$D, { pathData: pathData$C, ltr: ltr$C, collection: collection$C, packageName: packageName$C });
 const editIcon = "edit";
 var Highlight;
 (function(Highlight2) {
@@ -24606,10 +24610,10 @@ var ListItemType;
 })(ListItemType || (ListItemType = {}));
 const ListItemType$1 = ListItemType;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const styles$2 = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host([navigated]) .ui5-li-root .ui5-li-navigated{width:.1875rem;position:absolute;right:0;top:0;bottom:0;background-color:var(--sapList_SelectionBorderColor)}:host([active][actionable]) .ui5-li-root .ui5-li-icon{color:var(--sapList_Active_TextColor)}:host([active][actionable]) .ui5-li-title,:host([active][actionable]) .ui5-li-desc,:host([active][actionable]) .ui5-li-additional-text{color:var(--sapList_Active_TextColor)}:host([active][actionable]) .ui5-li-additional-text{text-shadow:none}:host([additional-text-state="Critical"]) .ui5-li-additional-text{color:var(--sapCriticalTextColor)}:host([additional-text-state="Positive"]) .ui5-li-additional-text{color:var(--sapPositiveTextColor)}:host([additional-text-state="Negative"]) .ui5-li-additional-text{color:var(--sapNegativeTextColor)}:host([additional-text-state="Information"]) .ui5-li-additional-text{color:var(--sapInformativeTextColor)}:host([has-title][description]){height:5rem}:host([has-title][image]){height:5rem}:host([_has-image]){height:5rem}:host([image]) .ui5-li-content{height:3rem}::slotted(img[slot="image"]){width:var(--_ui5-v2-17-0_list_item_img_size);height:var(--_ui5-v2-17-0_list_item_img_size);border-radius:var(--ui5-v2-17-0-avatar-border-radius);object-fit:contain}::slotted([ui5-icon][slot="image"]){color:var(--sapContent_NonInteractiveIconColor);min-width:var(--_ui5-v2-17-0_list_item_icon_size);min-height:var(--_ui5-v2-17-0_list_item_icon_size);padding-inline-end:var(--_ui5-v2-17-0_list_item_icon_padding-inline-end)}::slotted([ui5-avatar][slot="image"]){min-width:var(--_ui5-v2-17-0_list_item_img_size);min-height:var(--_ui5-v2-17-0_list_item_img_size);margin-top:var(--_ui5-v2-17-0_list_item_img_top_margin);margin-bottom:var(--_ui5-v2-17-0_list_item_img_bottom_margin);margin-inline-end:var(--_ui5-v2-17-0_list_item_img_hn_margin)}:host([wrapping-type="None"][description]) .ui5-li-root{padding:1rem}:host([description]) .ui5-li-content{height:3rem}:host([has-title][description]) .ui5-li-title{padding-bottom:.5rem}.ui5-li-text-wrapper{flex-direction:column}:host([description]) .ui5-li-text-wrapper{justify-content:space-between;padding:.125rem 0}.ui5-li-description-info-wrapper{display:flex;justify-content:space-between}.ui5-li-additional-text,:host(:not([wrapping-type="Normal"])) .ui5-li-title,.ui5-li-desc{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}:host([wrapping-type="Normal"]){height:auto}:host([wrapping-type="Normal"]) .ui5-li-content{margin:var(--_ui5-v2-17-0_list_item_content_vertical_offset) 0}.ui5-li-desc{color:var(--sapContent_LabelColor);font-size:var(--sapFontSize)}:host([description]) .ui5-li-additional-text{align-self:flex-end}.ui5-li-icon{min-width:var(--_ui5-v2-17-0_list_item_icon_size);min-height:var(--_ui5-v2-17-0_list_item_icon_size);color:var(--sapContent_NonInteractiveIconColor);padding-inline-end:var(--_ui5-v2-17-0_list_item_icon_padding-inline-end)}:host([icon-end]) .ui5-li-icon{padding-inline-start:var(--_ui5-v2-17-0_list_item_icon_padding-inline-end)}.ui5-li-detailbtn,.ui5-li-deletebtn{display:flex;align-items:center;margin-left:var(--_ui5-v2-17-0_list_buttons_left_space)}.ui5-li-multisel-cb,.ui5-li-singlesel-radiobtn{flex-shrink:0}:host([description]) .ui5-li-singlesel-radiobtn{align-self:flex-start;margin-top:var(--_ui5-v2-17-0_list_item_selection_btn_margin_top)}:host([description]) .ui5-li-multisel-cb{align-self:flex-start;margin-top:var(--_ui5-v2-17-0_list_item_selection_btn_margin_top)}:host([_selection-mode="SingleStart"][wrapping-type]) .ui5-li-root{padding-inline:0 1rem}:host([_selection-mode="Multiple"][wrapping-type]) .ui5-li-root{padding-inline:0 1rem}:host([_selection-mode="SingleEnd"][wrapping-type]) .ui5-li-root{padding-inline:1rem 0}:host [ui5-checkbox].ui5-li-singlesel-radiobtn{margin-right:var(--_ui5-v2-17-0_list_item_cb_margin_right)}.ui5-li-highlight{position:absolute;width:.375rem;bottom:0;left:0;top:0;border-inline-end:.0625rem solid var(--ui5-v2-17-0-listitem-background-color);box-sizing:border-box}:host([highlight="Negative"]) .ui5-li-highlight{background:var(--sapErrorBorderColor)}:host([highlight="Critical"]) .ui5-li-highlight{background:var(--sapWarningBorderColor)}:host([highlight="Positive"]) .ui5-li-highlight{background:var(--sapSuccessBorderColor)}:host([highlight="Information"]) .ui5-li-highlight{background:var(--sapInformationBorderColor)}:host([wrapping-type="Normal"][description]),:host([wrapping-type="Normal"][has-title][description]),:host([wrapping-type="Normal"][has-title][image]){height:auto;min-height:5rem}:host([wrapping-type="Normal"][description]) .ui5-li-content,:host([wrapping-type="Normal"][image]) .ui5-li-content{height:auto;min-height:3rem}:host([wrapping-type="Normal"][has-title][description]) .ui5-li-title{padding-bottom:.75rem}:host([wrapping-type="Normal"][additional-text]) .ui5-li-additional-text{padding-inline-start:.75rem}:host([wrapping-type="Normal"]) .ui5-li-description-info-wrapper{flex-direction:column}:host([wrapping-type="Normal"]) .ui5-li-description-info-wrapper .ui5-li-additional-text{white-space:normal}:host([wrapping-type="Normal"]) .ui5-li-multisel-cb,:host([wrapping-type="Normal"]) .ui5-li-singlesel-radiobtn{display:flex;align-self:flex-start}:host([wrapping-type="Normal"][description]) .ui5-li-multisel-cb,:host([wrapping-type="Normal"][description]) .ui5-li-singlesel-radiobtn{margin-top:0}:host([wrapping-type="Normal"]) .ui5-li-icon,:host([wrapping-type="Normal"]) .ui5-li-image{display:flex;align-self:flex-start}:host([wrapping-type="Normal"][icon-end]) .ui5-li-icon{margin-top:var(--_ui5-v2-17-0_list_item_content_vertical_offset)}:host([wrapping-type="Normal"]) ::slotted([ui5-avatar][slot="image"]){margin-top:0;margin-bottom:0}:host([wrapping-type="Normal"]) .ui5-li-detailbtn,:host([wrapping-type="Normal"]) .ui5-li-deletebtn{margin-inline-start:.875rem}
 `;
-var __decorate$M = function(decorators, target, key, desc) {
+var __decorate$W = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -24854,46 +24858,46 @@ let ListItem = ListItem_1 = class ListItem2 extends ListItemBase$1 {
     return this.shadowRoot.querySelector("li");
   }
 };
-__decorate$M([
+__decorate$W([
   s$9()
 ], ListItem.prototype, "type", void 0);
-__decorate$M([
+__decorate$W([
   s$9({ type: Object })
 ], ListItem.prototype, "accessibilityAttributes", void 0);
-__decorate$M([
+__decorate$W([
   s$9({ type: Boolean })
 ], ListItem.prototype, "navigated", void 0);
-__decorate$M([
+__decorate$W([
   s$9()
 ], ListItem.prototype, "tooltip", void 0);
-__decorate$M([
+__decorate$W([
   s$9({ type: Boolean })
 ], ListItem.prototype, "active", void 0);
-__decorate$M([
+__decorate$W([
   s$9()
 ], ListItem.prototype, "highlight", void 0);
-__decorate$M([
+__decorate$W([
   s$9({ type: Boolean })
 ], ListItem.prototype, "selected", void 0);
-__decorate$M([
+__decorate$W([
   s$9()
 ], ListItem.prototype, "accessibleRole", void 0);
-__decorate$M([
+__decorate$W([
   s$9()
 ], ListItem.prototype, "_forcedAccessibleRole", void 0);
-__decorate$M([
+__decorate$W([
   s$9()
 ], ListItem.prototype, "_selectionMode", void 0);
-__decorate$M([
+__decorate$W([
   s$9()
 ], ListItem.prototype, "mediaRange", void 0);
-__decorate$M([
+__decorate$W([
   d$8()
 ], ListItem.prototype, "deleteButton", void 0);
-__decorate$M([
+__decorate$W([
   i$b("@ui5/webcomponents")
 ], ListItem, "i18nBundle", void 0);
-ListItem = ListItem_1 = __decorate$M([
+ListItem = ListItem_1 = __decorate$W([
   m$8({
     languageAware: true,
     renderer: y$5,
@@ -25128,10 +25132,10 @@ function RadioButtonTemplate() {
   }, children: [jsxs("svg", { class: "ui5-radio-svg", focusable: "false", "aria-hidden": "true", children: [jsx("circle", { part: "outer-ring", class: "ui5-radio-svg-outer", cx: "50%", cy: "50%", r: "50%" }), jsx("circle", { part: "inner-ring", class: "ui5-radio-svg-inner", cx: "50%", cy: "50%" })] }), jsx("input", { type: "radio", required: this.required, checked: this.checked, readonly: this.readonly, disabled: this.disabled, name: this.name, "data-sap-no-tab-ref": true })] }), this.text && jsx(Label$1, { id: `${this._id}-label`, class: "ui5-radio-label", for: this._id, wrappingType: this.wrappingType, children: this.text }), this.hasValueState && jsx("span", { id: `${this._id}-descr`, class: "ui5-hidden-text", children: this.valueStateText })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const radioButtonCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block}:host{min-width:var(--_ui5-v2-17-0_radio_button_min_width);max-width:100%;text-overflow:ellipsis;overflow:hidden;color:var(--_ui5-v2-17-0_radio_button_color);border-radius:var(--_ui5-v2-17-0_radio_button_border_radius)}:host(:not([disabled])) .ui5-radio-root{cursor:pointer}:host([checked]){color:var(--_ui5-v2-17-0_radio_button_checked_fill)}:host([checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_inner_ring_color)}:host([checked]) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_color)}:host([disabled]) .ui5-radio-root{color:var(--_ui5-v2-17-0_radio_button_color);opacity:var(--sapContent_DisabledOpacity)}:host([disabled][checked]) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_color)}:host(:not([disabled])[desktop]) .ui5-radio-root:focus:before,:host(:not([disabled])) .ui5-radio-root:focus-visible:before{content:"";display:var(--_ui5-v2-17-0_radio_button_focus_outline);position:absolute;inset:var(--_ui5-v2-17-0_radio_button_focus_dist);pointer-events:none;border:var(--_ui5-v2-17-0_radio_button_border_width) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);border-radius:var(--_ui5-v2-17-0_radio_button_border_radius)}:host(:not([value-state="Negative"]):not([value-state="Critical"]):not([value-state="Positive"]):not([value-state="Information"])) .ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_hover_color)}:host(:not([value-state="Negative"]):not([value-state="Critical"]):not([value-state="Positive"]):not([value-state="Information"])[checked]) .ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_checked_hover_color)}.ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer,:host([checked]) .ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill)}:host([active][checked]:not([value-state]):not([disabled]):not([readonly])) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_checked_hover_color)}:host([active]:not([checked]):not([value-state]):not([disabled]):not([readonly])) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_active_color)}:host([text]) .ui5-radio-root{padding-inline-end:var(--_ui5-v2-17-0_radio_button_border_width)}:host([text][desktop]) .ui5-radio-root:focus:before,:host([text]) .ui5-radio-root:focus-visible:before{inset-inline-end:0px}:host([text]) .ui5-radio-inner{padding:var(--_ui5-v2-17-0_radio_button_outer_ring_padding_with_label)}:host([checked][readonly]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_read_only_inner_ring_color)}:host([readonly]) .ui5-radio-root .ui5-radio-svg-outer{fill:var(--sapField_ReadOnly_Background);stroke:var(--sapField_ReadOnly_BorderColor);stroke-dasharray:var(--_ui5-v2-17-0_radio_button_read_only_border_type);stroke-width:var(--_ui5-v2-17-0_radio_button_read_only_border_width)}:host([value-state="Negative"]) .ui5-radio-svg-outer,:host([value-state="Critical"]) .ui5-radio-svg-outer{stroke-width:var(--sapField_InvalidBorderWidth)}:host([value-state="Information"]) .ui5-radio-svg-outer{stroke-width:var(--_ui5-v2-17-0_radio_button_information_border_width)}:host([value-state="Negative"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_error_fill)}:host([value-state="Negative"]) .ui5-radio-svg-outer,:host([value-state="Negative"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_InvalidColor);fill:var(--sapField_InvalidBackground)}:host([value-state="Negative"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_error)}:host([value-state="Critical"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_warning_fill)}:host([value-state="Critical"]) .ui5-radio-svg-outer,:host([value-state="Critical"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_WarningColor);fill:var(--sapField_WarningBackground)}:host([value-state="Critical"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_warning)}:host([value-state="Positive"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_success_fill)}:host([value-state="Positive"]) .ui5-radio-svg-outer,:host([value-state="Positive"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_SuccessColor);fill:var(--sapField_SuccessBackground)}:host([value-state="Positive"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_success)}:host([value-state="Information"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_information_fill)}:host([value-state="Information"]) .ui5-radio-svg-outer,:host([value-state="Information"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_InformationColor);fill:var(--sapField_InformationBackground)}:host([value-state="Information"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_information)}:host([value-state="Negative"]) .ui5-radio-root,:host([value-state="Critical"]) .ui5-radio-root,:host([value-state="Information"]) .ui5-radio-root{stroke-dasharray:var(--_ui5-v2-17-0_radio_button_warning_error_border_dash)}.ui5-radio-root{height:auto;position:relative;display:inline-flex;flex-wrap:nowrap;outline:none;max-width:100%;box-sizing:border-box;border:var(--_ui5-v2-17-0_radio_button_border);border-radius:var(--_ui5-v2-17-0_radio_button_border_radius)}.ui5-radio-inner{display:flex;align-items:center;padding:var(--_ui5-v2-17-0_radio_button_outer_ring_padding);flex-shrink:0;height:var(--_ui5-v2-17-0_radio_button_inner_size);font-size:1rem;pointer-events:none;vertical-align:top}.ui5-radio-inner{outline:none}.ui5-radio-inner input{-webkit-appearance:none;visibility:hidden;width:0;left:0;position:absolute;font-size:inherit;margin:0}[ui5-label].ui5-radio-label{display:flex;align-items:center;padding-inline-end:var(--_ui5-v2-17-0_radio_button_label_offset);padding-block:var(--_ui5-v2-17-0_radio_button_label_side_padding);vertical-align:top;max-width:100%;pointer-events:none;color:var(--_ui5-v2-17-0_radio_button_label_color);overflow-wrap:break-word}:host([wrapping-type="None"][text]) .ui5-radio-root{height:var(--_ui5-v2-17-0_radio_button_height)}:host([wrapping-type="None"][text]) [ui5-label].ui5-radio-label{text-overflow:ellipsis;overflow:hidden}.ui5-radio-svg{height:var(--_ui5-v2-17-0_radio_button_svg_size);width:var(--_ui5-v2-17-0_radio_button_svg_size);overflow:visible;pointer-events:none}.ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_outer_ring_bg);stroke:currentColor;stroke-width:var(--_ui5-v2-17-0_radio_button_outer_ring_width)}.ui5-radio-svg-inner{fill:none;r:var(--_ui5-v2-17-0_radio_button_inner_ring_radius)}.ui5-radio-svg-outer,.ui5-radio-svg-inner{flex-shrink:0}:host(.ui5-li-singlesel-radiobtn) .ui5-radio-root .ui5-radio-inner .ui5-radio-svg-outer{fill:var(--sapList_Background)}
 `;
-var __decorate$L = function(decorators, target, key, desc) {
+var __decorate$V = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -25316,55 +25320,55 @@ let RadioButton = RadioButton_1 = class RadioButton2 extends b$7 {
     return tabindex ? parseInt(tabindex) : 0;
   }
 };
-__decorate$L([
+__decorate$V([
   s$9({ type: Boolean })
 ], RadioButton.prototype, "disabled", void 0);
-__decorate$L([
+__decorate$V([
   s$9({ type: Boolean })
 ], RadioButton.prototype, "readonly", void 0);
-__decorate$L([
+__decorate$V([
   s$9({ type: Boolean })
 ], RadioButton.prototype, "required", void 0);
-__decorate$L([
+__decorate$V([
   s$9({ type: Boolean })
 ], RadioButton.prototype, "checked", void 0);
-__decorate$L([
+__decorate$V([
   s$9()
 ], RadioButton.prototype, "text", void 0);
-__decorate$L([
+__decorate$V([
   s$9()
 ], RadioButton.prototype, "valueState", void 0);
-__decorate$L([
+__decorate$V([
   s$9()
 ], RadioButton.prototype, "name", void 0);
-__decorate$L([
+__decorate$V([
   s$9()
 ], RadioButton.prototype, "value", void 0);
-__decorate$L([
+__decorate$V([
   s$9()
 ], RadioButton.prototype, "wrappingType", void 0);
-__decorate$L([
+__decorate$V([
   s$9()
 ], RadioButton.prototype, "accessibleName", void 0);
-__decorate$L([
+__decorate$V([
   s$9()
 ], RadioButton.prototype, "accessibleNameRef", void 0);
-__decorate$L([
+__decorate$V([
   s$9({ type: Number })
 ], RadioButton.prototype, "_tabIndex", void 0);
-__decorate$L([
+__decorate$V([
   s$9({ type: Boolean })
 ], RadioButton.prototype, "active", void 0);
-__decorate$L([
+__decorate$V([
   s$9({ type: Boolean, noAttribute: true })
 ], RadioButton.prototype, "_groupChecked", void 0);
-__decorate$L([
+__decorate$V([
   s$9({ type: Boolean, noAttribute: true })
 ], RadioButton.prototype, "_groupRequired", void 0);
-__decorate$L([
+__decorate$V([
   i$b("@ui5/webcomponents")
 ], RadioButton, "i18nBundle", void 0);
-RadioButton = RadioButton_1 = __decorate$L([
+RadioButton = RadioButton_1 = __decorate$V([
   m$8({
     tag: "ui5-radio-button",
     languageAware: true,
@@ -25380,47 +25384,47 @@ RadioButton = RadioButton_1 = __decorate$L([
 RadioButton.define();
 const RadioButton$1 = RadioButton;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const checkboxCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{-webkit-tap-highlight-color:rgba(0,0,0,0)}:host(:not([hidden])){display:inline-block}:host([required]){vertical-align:middle}:host{overflow:hidden;max-width:100%;outline:none;border-radius:var(--_ui5-v2-17-0_checkbox_border_radius);transition:var(--_ui5-v2-17-0_checkbox_transition);cursor:pointer;user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none}:host([disabled]){cursor:default}:host([disabled]) .ui5-checkbox-root{opacity:var(--_ui5-v2-17-0_checkbox_disabled_opacity)}:host([disabled]) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_disabled_border_color)}:host([disabled]) .ui5-checkbox-label{color:var(--_ui5-v2-17-0_checkbox_disabled_label_color)}:host([readonly]:not([value-state="Critical"]):not([value-state="Negative"])) .ui5-checkbox-inner{background:var(--sapField_ReadOnly_Background);border:var(--_ui5-v2-17-0_checkbox_inner_readonly_border);color:var(--sapField_TextColor)}:host(:not([wrapping-type="None"])[text]) .ui5-checkbox-root{min-height:auto;box-sizing:border-box;align-items:flex-start;padding-top:var(--_ui5-v2-17-0_checkbox_root_side_padding);padding-bottom:var(--_ui5-v2-17-0_checkbox_root_side_padding)}:host(:not([wrapping-type="None"])[text]) .ui5-checkbox-root .ui5-checkbox-label{overflow-wrap:break-word;align-self:center}:host([desktop][text]:not([wrapping-type="None"])) .ui5-checkbox-root:focus:before,.ui5-checkbox-root[text]:focus-visible:before{inset-block:var(--_ui5-v2-17-0_checkbox_wrapped_focus_inset_block)}:host([value-state="Negative"]) .ui5-checkbox-inner,:host([value-state="Negative"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_InvalidBackground);border:var(--_ui5-v2-17-0_checkbox_inner_error_border);color:var(--sapField_InvalidColor)}:host([value-state="Negative"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_error_background_hover)}:host([value-state="Critical"]) .ui5-checkbox-inner,:host([value-state="Critical"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_WarningBackground);border:var(--_ui5-v2-17-0_checkbox_inner_warning_border);color:var(--_ui5-v2-17-0_checkbox_inner_warning_color)}:host([value-state="Critical"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_warning_background_hover)}:host([value-state="Information"]) .ui5-checkbox-inner,:host([value-state="Information"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_InformationBackground);border:var(--_ui5-v2-17-0_checkbox_inner_information_border);color:var(--_ui5-v2-17-0_checkbox_inner_information_color)}:host([value-state="Information"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_information_background_hover)}:host([value-state="Positive"]) .ui5-checkbox-inner,:host([value-state="Positive"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_SuccessBackground);border:var(--_ui5-v2-17-0_checkbox_inner_success_border);color:var(--sapField_SuccessColor)}:host([value-state="Positive"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_success_background_hover)}:host([value-state="Critical"]) .ui5-checkbox-icon,:host([value-state="Critical"][indeterminate]) .ui5-checkbox-inner:after{color:var(--_ui5-v2-17-0_checkbox_checkmark_warning_color)}.ui5-checkbox-root{position:relative;display:inline-flex;align-items:center;max-width:100%;min-height:var(--_ui5-v2-17-0_checkbox_width_height);min-width:var(--_ui5-v2-17-0_checkbox_width_height);padding:0 var(--_ui5-v2-17-0_checkbox_wrapper_padding);outline:none;transition:var(--_ui5-v2-17-0_checkbox_transition);border:var(--_ui5-v2-17-0_checkbox_default_focus_border);border-radius:var(--_ui5-v2-17-0_checkbox_border_radius);box-sizing:border-box}:host([desktop]) .ui5-checkbox-root:focus:before,.ui5-checkbox-root:focus-visible:before{display:var(--_ui5-v2-17-0_checkbox_focus_outline_display);content:"";position:absolute;inset-inline:var(--_ui5-v2-17-0_checkbox_focus_position);inset-block:var(--_ui5-v2-17-0_checkbox_focus_position);border:var(--_ui5-v2-17-0_checkbox_focus_outline);border-radius:var(--_ui5-v2-17-0_checkbox_focus_border_radius)}:host([text]) .ui5-checkbox-root{padding-inline-end:var(--_ui5-v2-17-0_checkbox_right_focus_distance)}:host([text]) .ui5-checkbox-root:focus:before,:host([text]) .ui5-checkbox-root:focus-visible:before{inset-inline-end:0}:host(:hover:not([disabled])){background:var(--_ui5-v2-17-0_checkbox_outer_hover_background)}.ui5-checkbox--hoverable .ui5-checkbox-label:hover{color:var(--_ui5-v2-17-0_checkbox_label_color)}:host(:not([active]):not([checked]):not([value-state])) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner,:host(:not([active]):not([checked])[value-state="None"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_hover_background);border-color:var(--_ui5-v2-17-0_checkbox_inner_hover_border_color)}:host(:not([active])[checked]:not([value-state])) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner,:host(:not([active])[checked][value-state="None"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_hover_background);border-color:var(--_ui5-v2-17-0_checkbox_inner_hover_checked_border_color)}:host([checked]:not([value-state])) .ui5-checkbox-inner,:host([checked][value-state="None"]) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_selected_border_color)}:host([active]:not([checked]):not([value-state]):not([disabled])) .ui5-checkbox-inner,:host([active]:not([checked])[value-state="None"]:not([disabled])) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_active_border_color);background-color:var(--_ui5-v2-17-0_checkbox_active_background)}:host([active][checked]:not([value-state]):not([disabled])) .ui5-checkbox-inner,:host([active][checked][value-state="None"]:not([disabled])) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_selected_border_color);background-color:var(--_ui5-v2-17-0_checkbox_active_background)}.ui5-checkbox-inner{min-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);height:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-height:var(--_ui5-v2-17-0_checkbox_inner_width_height);border:var(--_ui5-v2-17-0_checkbox_inner_border);border-radius:var(--_ui5-v2-17-0_checkbox_inner_border_radius);background:var(--_ui5-v2-17-0_checkbox_inner_background);color:var(--_ui5-v2-17-0_checkbox_checkmark_color);box-sizing:border-box;position:relative;cursor:inherit}:host([indeterminate][checked]) .ui5-checkbox-inner:after{content:"";background-color:currentColor;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:var(--_ui5-v2-17-0_checkbox_partially_icon_size);height:var(--_ui5-v2-17-0_checkbox_partially_icon_size)}:host input{-webkit-appearance:none;visibility:hidden;width:0;left:0;position:absolute;font-size:inherit}.ui5-checkbox-root .ui5-checkbox-label{margin-inline-start:var(--_ui5-v2-17-0_checkbox_label_offset);cursor:inherit;text-overflow:ellipsis;overflow:hidden;pointer-events:none;color:var(--_ui5-v2-17-0_checkbox_label_color)}.ui5-checkbox-icon{width:var(--_ui5-v2-17-0_checkbox_icon_size);height:var(--_ui5-v2-17-0_checkbox_icon_size);color:currentColor;cursor:inherit;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}:host([display-only]){cursor:default}:host([display-only]) .ui5-checkbox-display-only-icon-inner [ui5-icon]{color:var(--sapTextColor)}:host([display-only]) .ui5-checkbox-display-only-icon-inner{min-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);height:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-height:var(--_ui5-v2-17-0_checkbox_inner_width_height);display:flex;align-items:center;justify-content:center}
 `;
-const name$w = "complete";
-const pathData$v = "M431.958 320h32v128q0 14-9.5 23t-22.5 9h-384q-14 0-23-9t-9-23V64q0-13 9-22.5t23-9.5h128v32h-128v384h384V320zm60-295q7 7 2 16l-185 272q-3 6-10 7t-12-4l-125-139q-9-9 0-18l21-21q10-10 19 0l80 80q5 5 11.5 4t9.5-8l146-207q3-6 9.5-7t11.5 4z";
-const ltr$v = true;
-const collection$v = "SAP-icons-v4";
-const packageName$v = "@ui5/webcomponents-icons";
-y$2(name$w, { pathData: pathData$v, ltr: ltr$v, collection: collection$v, packageName: packageName$v });
-const name$v = "complete";
-const pathData$u = "M438 224q11 0 18.5 7.5T464 250v140q0 38-26 64t-64 26H106q-38 0-64-26t-26-64V122q0-38 26-64t64-26h237q11 0 18 7.5t7 18.5-7 18-18 7H106q-16 0-27.5 11.5T67 122v268q0 16 11.5 27.5T106 429h268q16 0 27.5-11.5T413 390V250q0-11 7-18.5t18-7.5zm32-192q11 0 18.5 7.5T496 58q0 10-7 17L257 312q-6 8-18 8-10 0-18-8l-70-71q-7-7-7-18t7.5-18 18.5-7 18 7l51 53L452 40q8-8 18-8z";
-const ltr$u = true;
-const collection$u = "SAP-icons-v5";
-const packageName$u = "@ui5/webcomponents-icons";
-y$2(name$v, { pathData: pathData$u, ltr: ltr$u, collection: collection$u, packageName: packageName$u });
+const name$C = "complete";
+const pathData$B = "M431.958 320h32v128q0 14-9.5 23t-22.5 9h-384q-14 0-23-9t-9-23V64q0-13 9-22.5t23-9.5h128v32h-128v384h384V320zm60-295q7 7 2 16l-185 272q-3 6-10 7t-12-4l-125-139q-9-9 0-18l21-21q10-10 19 0l80 80q5 5 11.5 4t9.5-8l146-207q3-6 9.5-7t11.5 4z";
+const ltr$B = true;
+const collection$B = "SAP-icons-v4";
+const packageName$B = "@ui5/webcomponents-icons";
+y$2(name$C, { pathData: pathData$B, ltr: ltr$B, collection: collection$B, packageName: packageName$B });
+const name$B = "complete";
+const pathData$A = "M438 224q11 0 18.5 7.5T464 250v140q0 38-26 64t-64 26H106q-38 0-64-26t-26-64V122q0-38 26-64t64-26h237q11 0 18 7.5t7 18.5-7 18-18 7H106q-16 0-27.5 11.5T67 122v268q0 16 11.5 27.5T106 429h268q16 0 27.5-11.5T413 390V250q0-11 7-18.5t18-7.5zm32-192q11 0 18.5 7.5T496 58q0 10-7 17L257 312q-6 8-18 8-10 0-18-8l-70-71q-7-7-7-18t7.5-18 18.5-7 18 7l51 53L452 40q8-8 18-8z";
+const ltr$A = true;
+const collection$A = "SAP-icons-v5";
+const packageName$A = "@ui5/webcomponents-icons";
+y$2(name$B, { pathData: pathData$A, ltr: ltr$A, collection: collection$A, packageName: packageName$A });
 const complete = "complete";
-const name$u = "border";
-const pathData$t = "M448 32q13 0 22.5 9t9.5 23v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-14 9-23t23-9h384zm0 32H64v384h384V64z";
-const ltr$t = false;
-const collection$t = "SAP-icons-v4";
-const packageName$t = "@ui5/webcomponents-icons";
-y$2(name$u, { pathData: pathData$t, ltr: ltr$t, collection: collection$t, packageName: packageName$t });
-const name$t = "border";
-const pathData$s = "M390 480H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268q38 0 64 26t26 64v268q0 38-26 64t-64 26zM122 83q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122q0-17-11-28t-28-11H122z";
-const ltr$s = false;
-const collection$s = "SAP-icons-v5";
-const packageName$s = "@ui5/webcomponents-icons";
-y$2(name$t, { pathData: pathData$s, ltr: ltr$s, collection: collection$s, packageName: packageName$s });
+const name$A = "border";
+const pathData$z = "M448 32q13 0 22.5 9t9.5 23v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-14 9-23t23-9h384zm0 32H64v384h384V64z";
+const ltr$z = false;
+const collection$z = "SAP-icons-v4";
+const packageName$z = "@ui5/webcomponents-icons";
+y$2(name$A, { pathData: pathData$z, ltr: ltr$z, collection: collection$z, packageName: packageName$z });
+const name$z = "border";
+const pathData$y = "M390 480H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268q38 0 64 26t26 64v268q0 38-26 64t-64 26zM122 83q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122q0-17-11-28t-28-11H122z";
+const ltr$y = false;
+const collection$y = "SAP-icons-v5";
+const packageName$y = "@ui5/webcomponents-icons";
+y$2(name$z, { pathData: pathData$y, ltr: ltr$y, collection: collection$y, packageName: packageName$y });
 const border = "border";
-const name$s = "tri-state";
-const pathData$r = "M448 32q13 0 22.5 9.5T480 64v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-13 9-22.5T64 32h384zm0 32H64v384h384V64zM160 345V169q0-8 8-8h176q8 0 8 8v176q0 8-8 8H168q-8 0-8-8z";
-const ltr$r = false;
-const collection$r = "SAP-icons-v4";
-const packageName$r = "@ui5/webcomponents-icons";
-y$2(name$s, { pathData: pathData$r, ltr: ltr$r, collection: collection$r, packageName: packageName$r });
-const name$r = "tri-state";
-const pathData$q = "M390 32q38 0 64 26t26 64v268q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268zm39 90q0-17-11-28t-28-11H122q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122zm-77 38v192H160V160h192z";
-const ltr$q = false;
-const collection$q = "SAP-icons-v5";
-const packageName$q = "@ui5/webcomponents-icons";
-y$2(name$r, { pathData: pathData$q, ltr: ltr$q, collection: collection$q, packageName: packageName$q });
+const name$y = "tri-state";
+const pathData$x = "M448 32q13 0 22.5 9.5T480 64v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-13 9-22.5T64 32h384zm0 32H64v384h384V64zM160 345V169q0-8 8-8h176q8 0 8 8v176q0 8-8 8H168q-8 0-8-8z";
+const ltr$x = false;
+const collection$x = "SAP-icons-v4";
+const packageName$x = "@ui5/webcomponents-icons";
+y$2(name$y, { pathData: pathData$x, ltr: ltr$x, collection: collection$x, packageName: packageName$x });
+const name$x = "tri-state";
+const pathData$w = "M390 32q38 0 64 26t26 64v268q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268zm39 90q0-17-11-28t-28-11H122q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122zm-77 38v192H160V160h192z";
+const ltr$w = false;
+const collection$w = "SAP-icons-v5";
+const packageName$w = "@ui5/webcomponents-icons";
+y$2(name$x, { pathData: pathData$w, ltr: ltr$w, collection: collection$w, packageName: packageName$w });
 const triState = "tri-state";
 function CheckBoxTemplate() {
   return jsxs("div", { class: {
@@ -25437,7 +25441,7 @@ function displayOnlyIcon() {
   }
   return border;
 }
-var __decorate$K = function(decorators, target, key, desc) {
+var __decorate$U = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -25626,55 +25630,55 @@ let CheckBox = CheckBox_1 = class CheckBox2 extends b$7 {
     };
   }
 };
-__decorate$K([
+__decorate$U([
   s$9()
 ], CheckBox.prototype, "accessibleNameRef", void 0);
-__decorate$K([
+__decorate$U([
   s$9()
 ], CheckBox.prototype, "accessibleName", void 0);
-__decorate$K([
+__decorate$U([
   s$9({ type: Boolean })
 ], CheckBox.prototype, "disabled", void 0);
-__decorate$K([
+__decorate$U([
   s$9({ type: Boolean })
 ], CheckBox.prototype, "readonly", void 0);
-__decorate$K([
+__decorate$U([
   s$9({ type: Boolean })
 ], CheckBox.prototype, "displayOnly", void 0);
-__decorate$K([
+__decorate$U([
   s$9({ type: Boolean })
 ], CheckBox.prototype, "required", void 0);
-__decorate$K([
+__decorate$U([
   s$9({ type: Boolean })
 ], CheckBox.prototype, "indeterminate", void 0);
-__decorate$K([
+__decorate$U([
   s$9({ type: Boolean })
 ], CheckBox.prototype, "checked", void 0);
-__decorate$K([
+__decorate$U([
   s$9()
 ], CheckBox.prototype, "text", void 0);
-__decorate$K([
+__decorate$U([
   s$9()
 ], CheckBox.prototype, "valueState", void 0);
-__decorate$K([
+__decorate$U([
   s$9()
 ], CheckBox.prototype, "wrappingType", void 0);
-__decorate$K([
+__decorate$U([
   s$9()
 ], CheckBox.prototype, "name", void 0);
-__decorate$K([
+__decorate$U([
   s$9()
 ], CheckBox.prototype, "value", void 0);
-__decorate$K([
+__decorate$U([
   s$9({ type: Boolean })
 ], CheckBox.prototype, "active", void 0);
-__decorate$K([
+__decorate$U([
   s$9({ type: Object })
 ], CheckBox.prototype, "_accInfo", void 0);
-__decorate$K([
+__decorate$U([
   i$b("@ui5/webcomponents")
 ], CheckBox, "i18nBundle", void 0);
-CheckBox = CheckBox_1 = __decorate$K([
+CheckBox = CheckBox_1 = __decorate$U([
   m$8({
     tag: "ui5-checkbox",
     languageAware: true,
@@ -25737,10 +25741,10 @@ function listItemContent$4() {
   return jsx("slot", {});
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const ListItemCustomCss = `:host(:not([hidden])){display:block}:host{min-height:var(--_ui5-v2-17-0_list_item_base_height);height:auto;box-sizing:border-box}.ui5-li-root.ui5-custom-li-root{pointer-events:inherit;min-height:inherit}.ui5-li-root.ui5-custom-li-root .ui5-li-content{pointer-events:inherit}[ui5-checkbox].ui5-li-singlesel-radiobtn,[ui5-radio-button].ui5-li-singlesel-radiobtn{display:flex;align-items:center}.ui5-li-root.ui5-custom-li-root,[ui5-checkbox].ui5-li-singlesel-radiobtn,[ui5-radio-button].ui5-li-singlesel-radiobtn{min-width:var(--_ui5-v2-17-0_custom_list_item_rb_min_width)}:host([_selection-mode="SingleStart"]) .ui5-li-root.ui5-custom-li-root{padding-inline:0 1rem}:host([_selection-mode="Multiple"]) .ui5-li-root.ui5-custom-li-root{padding-inline:0 1rem}:host([_selection-mode="SingleEnd"]) .ui5-li-root.ui5-custom-li-root{padding-inline:1rem 0}
 `;
-var __decorate$J = function(decorators, target, key, desc) {
+var __decorate$T = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -25773,13 +25777,13 @@ let ListItemCustom = class ListItemCustom2 extends ListItem$1 {
     return result;
   }
 };
-__decorate$J([
+__decorate$T([
   s$9({ type: Boolean })
 ], ListItemCustom.prototype, "movable", void 0);
-__decorate$J([
+__decorate$T([
   s$9()
 ], ListItemCustom.prototype, "accessibleName", void 0);
-ListItemCustom = __decorate$J([
+ListItemCustom = __decorate$T([
   m$8({
     tag: "ui5-li-custom",
     template: ListItemCustomTemplate,
@@ -25793,10 +25797,10 @@ function MenuSeparatorTemplate() {
   return jsx(ListItemCustom$1, { class: "ui5-menu-separator", _forcedAccessibleRole: "separator", disabled: true });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const menuSeparatorCss = `:host{border-top:.0625rem solid var(--sapGroup_ContentBorderColor);min-height:.125rem}.ui5-menu-separator{border:inherit;min-height:inherit;background:inherit;opacity:1}
 `;
-var __decorate$I = function(decorators, target, key, desc) {
+var __decorate$S = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -25826,7 +25830,7 @@ let MenuSeparator = class MenuSeparator2 extends ListItemBase$1 {
     return false;
   }
 };
-MenuSeparator = __decorate$I([
+MenuSeparator = __decorate$S([
   m$8({
     tag: "ui5-menu-separator",
     renderer: y$5,
@@ -25841,7 +25845,7 @@ MenuSeparator.define();
 function MenuItemGroupTemplate() {
   return jsx("div", { role: "group", "aria-label": this.ariaLabelText, "onui5-check": this._handleItemCheck, children: jsx("slot", {}) });
 }
-var __decorate$H = function(decorators, target, key, desc) {
+var __decorate$R = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -25920,16 +25924,16 @@ let MenuItemGroup = MenuItemGroup_1 = class MenuItemGroup2 extends b$7 {
     }
   }
 };
-__decorate$H([
+__decorate$R([
   s$9()
 ], MenuItemGroup.prototype, "checkMode", void 0);
-__decorate$H([
+__decorate$R([
   d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
 ], MenuItemGroup.prototype, "items", void 0);
-__decorate$H([
+__decorate$R([
   i$b("@ui5/webcomponents")
 ], MenuItemGroup, "i18nBundle", void 0);
-MenuItemGroup = MenuItemGroup_1 = __decorate$H([
+MenuItemGroup = MenuItemGroup_1 = __decorate$R([
   m$8({
     tag: "ui5-menu-item-group",
     renderer: y$5,
@@ -25976,10 +25980,10 @@ function listItemPostContent() {
   return this.hasSubmenu && jsxs(ResponsivePopover, { id: `${this._id}-menu-rp`, class: "ui5-menu-rp ui5-menu-rp-sub-menu", preventInitialFocus: true, preventFocusRestore: true, hideArrow: true, allowTargetOverlap: true, placement: PopoverPlacement$1.End, verticalAlign: "Top", accessibleName: this.accessibleNameText, onBeforeOpen: this._beforePopoverOpen, onOpen: this._afterPopoverOpen, onBeforeClose: this._beforePopoverClose, onClose: this._afterPopoverClose, children: [this.isPhone && jsx(Fragment, { children: jsxs("div", { slot: "header", class: "ui5-menu-dialog-header", children: [jsx(Button$1, { icon: navBackIcon, class: "ui5-menu-back-button", design: "Transparent", "aria-label": this.labelBack, onClick: this._close }), jsx("div", { class: "ui5-menu-dialog-title", children: jsx("div", { children: this.text }) }), jsx(Button$1, { icon: iconDecline, design: "Transparent", "aria-label": this.labelClose, onClick: this._closeAll })] }) }), jsx("div", { id: `${this._id}-menu-main`, children: this.items.length ? jsx(List, { id: `${this._id}-menu-list`, selectionMode: "None", separators: "None", accessibleRole: "Menu", loading: this.loading, loadingDelay: this.loadingDelay, onMouseOver: this._itemMouseOver, onKeyDown: this._itemKeyDown, onKeyUp: this._itemKeyUp, "onui5-close-menu": this._close, "onui5-exit-end-content": this._navigateOutOfEndContent, children: jsx("slot", {}) }) : this.loading && jsx(BusyIndicator$1, { id: `${this._id}-menu-busy-indicator`, delay: this.loadingDelay, class: "ui5-menu-busy-indicator", active: true }) })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const menuItemCss = `:host{line-height:initial}::slotted([ui5-menu-item]){line-height:inherit}.ui5-menu-rp[ui5-responsive-popover]::part(header),.ui5-menu-rp[ui5-responsive-popover]::part(content),.ui5-menu-rp[ui5-responsive-popover]::part(footer){padding:0}.ui5-menu-rp[ui5-responsive-popover]{box-shadow:var(--sapContent_Shadow1);border-radius:var(--_ui5-v2-17-0_menu_popover_border_radius)}.ui5-menu-busy-indicator{width:100%}.ui5-menu-dialog-header{display:flex;height:var(--_ui5-v2-17-0-responsive_popover_header_height);align-items:center;justify-content:space-between;padding:0px 1rem;width:100%;overflow:hidden}.ui5-menu-dialog-title{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;width:calc(100% - 6.5rem);padding-right:1rem;font-family:var(--sapFontHeaderFamily)}.ui5-menu-dialog-title>h1{display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:var(--sapFontHeader5Size)}.ui5-menu-back-button{margin-right:1rem}.ui5-menu-rp.ui5-menu-rp-sub-menu{margin-top:.25rem;margin-inline:var(--_ui5-v2-17-0_menu_submenu_margin_offset)}:host([disabled]){pointer-events:initial;opacity:initial}:host([disabled])::part(content){opacity:var(--_ui5-v2-17-0-listitembase_disabled_opacity)}:host([disabled][actionable]:not([active]):not([selected]):hover),:host([disabled][active][actionable]){background:var(--ui5-v2-17-0-listitem-background-color)}:host([active]:not([disabled])),:host([active]:not([disabled])):hover{background-color:var(--sapList_Active_Background)}:host(:not([active]):not([selected]):not([disabled]):hover){background-color:var(--sapList_Hover_Background)}:host([disabled][active][actionable]) .ui5-li-root .ui5-li-icon{color:var(--sapContent_NonInteractiveIconColor)}:host([active]:not([disabled]))::part(content),:host([active]:not([disabled]))::part(additional-text),:host([active]:not([disabled])) .ui5-li-root .ui5-li-icon{color:var(--sapList_Active_TextColor)}:host([focused]:not([active]):not([disabled])){background-color:var(--sapList_Hover_Background)}:host::part(additional-text){margin:unset;margin-inline-start:1rem;color:var(--sapContent_LabelColor);min-width:max-content}.ui5-menu-item-text{width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;pointer-events:none;display:inline-block}.ui5-menu-item-dummy-icon{visibility:hidden}:host::part(title){font-size:var(--sapFontSize);padding-top:.125rem}:host([icon]:not([is-phone]))::part(title),:host([is-phone]:not([icon=""]))::part(title){padding-top:0}:host(:not([is-phone]))::part(native-li){user-select:none;padding:var(--_ui5-v2-17-0_menu_item_padding)}:host::part(content){padding-inline-end:.25rem}.ui5-menu-item-submenu-icon{min-width:var(--_ui5-v2-17-0_list_item_icon_size);min-height:var(--_ui5-v2-17-0_list_item_icon_size);display:inline-block;vertical-align:middle;pointer-events:none}.ui5-menu-item-icon-end{display:inline-block;vertical-align:middle;padding-inline-start:.5rem;pointer-events:none;position:absolute;inset-inline-end:var(--_ui5-v2-17-0_menu_item_submenu_icon_right)}.ui5-menu-item-submenu-icon .ui5-menu-item-icon-end{color:var(--sapContent_NonInteractiveIconColor)}.ui5-menu-item-dummy-icon{min-width:var(--_ui5-v2-17-0_list_item_icon_size);min-height:var(--_ui5-v2-17-0_list_item_icon_size);display:inline-block;vertical-align:middle;padding-inline-end:.75rem;pointer-events:none}.ui5-menu-item-checked{padding-inline-start:.5rem;padding-inline-end:0;font-weight:400;text-align:center}.ui5-menu-item-icon-checked{color:var(--sapContent_BusyColor);padding-top:.25rem}
 `;
-var __decorate$G = function(decorators, target, key, desc) {
+var __decorate$Q = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -26260,52 +26264,52 @@ let MenuItem = MenuItem_1 = class MenuItem2 extends ListItem$1 {
     this.fireDecoratorEvent("check");
   }
 };
-__decorate$G([
+__decorate$Q([
   s$9()
 ], MenuItem.prototype, "text", void 0);
-__decorate$G([
+__decorate$Q([
   s$9()
 ], MenuItem.prototype, "additionalText", void 0);
-__decorate$G([
+__decorate$Q([
   s$9()
 ], MenuItem.prototype, "icon", void 0);
-__decorate$G([
+__decorate$Q([
   s$9({ type: Boolean })
 ], MenuItem.prototype, "disabled", void 0);
-__decorate$G([
+__decorate$Q([
   s$9({ type: Boolean })
 ], MenuItem.prototype, "loading", void 0);
-__decorate$G([
+__decorate$Q([
   s$9({ type: Number })
 ], MenuItem.prototype, "loadingDelay", void 0);
-__decorate$G([
+__decorate$Q([
   s$9()
 ], MenuItem.prototype, "accessibleName", void 0);
-__decorate$G([
+__decorate$Q([
   s$9()
 ], MenuItem.prototype, "tooltip", void 0);
-__decorate$G([
+__decorate$Q([
   s$9({ type: Boolean })
 ], MenuItem.prototype, "checked", void 0);
-__decorate$G([
+__decorate$Q([
   s$9({ type: Object })
 ], MenuItem.prototype, "accessibilityAttributes", void 0);
-__decorate$G([
+__decorate$Q([
   s$9({ type: Boolean, noAttribute: true })
 ], MenuItem.prototype, "_siblingsWithIcon", void 0);
-__decorate$G([
+__decorate$Q([
   s$9()
 ], MenuItem.prototype, "_checkMode", void 0);
-__decorate$G([
+__decorate$Q([
   d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
 ], MenuItem.prototype, "items", void 0);
-__decorate$G([
+__decorate$Q([
   d$8({ type: HTMLElement })
 ], MenuItem.prototype, "endContent", void 0);
-__decorate$G([
+__decorate$Q([
   i$b("@ui5/webcomponents")
 ], MenuItem, "i18nBundle", void 0);
-MenuItem = MenuItem_1 = __decorate$G([
+MenuItem = MenuItem_1 = __decorate$Q([
   m$8({
     tag: "ui5-menu-item",
     renderer: y$5,
@@ -26339,10 +26343,10 @@ function MenuTemplate() {
   return jsxs(ResponsivePopover, { id: `${this._id}-menu-rp`, class: "ui5-menu-rp", placement: this.placement, verticalAlign: "Bottom", horizontalAlign: this.horizontalAlign, opener: this.opener, open: this.open, preventInitialFocus: true, hideArrow: true, allowTargetOverlap: true, accessibleName: this.accessibleNameText, onBeforeOpen: this._beforePopoverOpen, onOpen: this._afterPopoverOpen, onBeforeClose: this._beforePopoverClose, onClose: this._afterPopoverClose, children: [this.isPhone && jsxs("div", { slot: "header", class: "ui5-menu-dialog-header", children: [jsx("div", { class: "ui5-menu-dialog-title", children: jsx("h1", { children: this.headerText }) }), jsx(Button$1, { icon: iconDecline, design: "Transparent", "aria-label": this.labelClose, onClick: this._close })] }), jsx("div", { id: `${this._id}-menu-main`, children: this.items.length ? jsx(List, { id: `${this._id}- menu-list`, selectionMode: "None", loading: this.loading, loadingDelay: this.loadingDelay, separators: "None", accessibleRole: "Menu", onItemClick: this._itemClick, onMouseOver: this._itemMouseOver, onKeyDown: this._itemKeyDown, "onui5-close-menu": this._close, "onui5-exit-end-content": this._navigateOutOfEndContent, children: jsx("slot", {}) }) : this.loading && jsx(BusyIndicator$1, { id: `${this._id}-menu-busy-indicator`, delay: this.loadingDelay, class: "ui5-menu-busy-indicator", active: true }) })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const menuCss = `:host{line-height:initial}::slotted([ui5-menu-item]){line-height:inherit}.ui5-menu-rp[ui5-responsive-popover]::part(header),.ui5-menu-rp[ui5-responsive-popover]::part(content),.ui5-menu-rp[ui5-responsive-popover]::part(footer){padding:0}.ui5-menu-rp[ui5-responsive-popover]{box-shadow:var(--sapContent_Shadow1);border-radius:var(--_ui5-v2-17-0_menu_popover_border_radius)}.ui5-menu-busy-indicator{width:100%}.ui5-menu-dialog-header{display:flex;height:var(--_ui5-v2-17-0-responsive_popover_header_height);align-items:center;justify-content:space-between;padding:0px 1rem;width:100%;overflow:hidden}.ui5-menu-dialog-title{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;width:calc(100% - 6.5rem);padding-right:1rem;font-family:var(--sapFontHeaderFamily)}.ui5-menu-dialog-title>h1{display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:var(--sapFontHeader5Size)}.ui5-menu-back-button{margin-right:1rem}
 `;
-var __decorate$F = function(decorators, target, key, desc) {
+var __decorate$P = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -26551,34 +26555,34 @@ let Menu = Menu_1 = class Menu2 extends b$7 {
     this.fireDecoratorEvent("close");
   }
 };
-__decorate$F([
+__decorate$P([
   s$9()
 ], Menu.prototype, "headerText", void 0);
-__decorate$F([
+__decorate$P([
   s$9({ type: Boolean })
 ], Menu.prototype, "open", void 0);
-__decorate$F([
+__decorate$P([
   s$9()
 ], Menu.prototype, "placement", void 0);
-__decorate$F([
+__decorate$P([
   s$9()
 ], Menu.prototype, "horizontalAlign", void 0);
-__decorate$F([
+__decorate$P([
   s$9({ type: Boolean })
 ], Menu.prototype, "loading", void 0);
-__decorate$F([
+__decorate$P([
   s$9({ type: Number })
 ], Menu.prototype, "loadingDelay", void 0);
-__decorate$F([
+__decorate$P([
   s$9({ converter: e$8 })
 ], Menu.prototype, "opener", void 0);
-__decorate$F([
+__decorate$P([
   d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
 ], Menu.prototype, "items", void 0);
-__decorate$F([
+__decorate$P([
   i$b("@ui5/webcomponents")
 ], Menu, "i18nBundle", void 0);
-Menu = Menu_1 = __decorate$F([
+Menu = Menu_1 = __decorate$P([
   m$8({
     tag: "ui5-menu",
     renderer: y$5,
@@ -26667,7 +26671,7 @@ function iconEnd$1() {
     return jsx(Icon$1, { part: "icon", name: this.icon, class: "ui5-li-icon", mode: "Decorative" });
   }
 }
-var __decorate$E = function(decorators, target, key, desc) {
+var __decorate$O = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -26726,49 +26730,49 @@ let ListItemStandard = ListItemStandard_1 = class ListItemStandard2 extends List
     return !!this.image.length;
   }
 };
-__decorate$E([
+__decorate$O([
   s$9()
 ], ListItemStandard.prototype, "text", void 0);
-__decorate$E([
+__decorate$O([
   s$9()
 ], ListItemStandard.prototype, "description", void 0);
-__decorate$E([
+__decorate$O([
   s$9()
 ], ListItemStandard.prototype, "icon", void 0);
-__decorate$E([
+__decorate$O([
   s$9({ type: Boolean })
 ], ListItemStandard.prototype, "iconEnd", void 0);
-__decorate$E([
+__decorate$O([
   s$9()
 ], ListItemStandard.prototype, "additionalText", void 0);
-__decorate$E([
+__decorate$O([
   s$9()
 ], ListItemStandard.prototype, "additionalTextState", void 0);
-__decorate$E([
+__decorate$O([
   s$9({ type: Boolean })
 ], ListItemStandard.prototype, "movable", void 0);
-__decorate$E([
+__decorate$O([
   s$9()
 ], ListItemStandard.prototype, "accessibleName", void 0);
-__decorate$E([
+__decorate$O([
   s$9()
 ], ListItemStandard.prototype, "wrappingType", void 0);
-__decorate$E([
+__decorate$O([
   s$9({ type: Boolean })
 ], ListItemStandard.prototype, "hasTitle", void 0);
-__decorate$E([
+__decorate$O([
   s$9({ type: Boolean })
 ], ListItemStandard.prototype, "_hasImage", void 0);
-__decorate$E([
+__decorate$O([
   s$9({ noAttribute: true })
 ], ListItemStandard.prototype, "expandableTextTemplate", void 0);
-__decorate$E([
+__decorate$O([
   d$8({ type: Node, "default": true })
 ], ListItemStandard.prototype, "content", void 0);
-__decorate$E([
+__decorate$O([
   d$8()
 ], ListItemStandard.prototype, "image", void 0);
-ListItemStandard = ListItemStandard_1 = __decorate$E([
+ListItemStandard = ListItemStandard_1 = __decorate$O([
   m$8({
     tag: "ui5-li",
     renderer: y$5,
@@ -26848,14 +26852,14 @@ function TableCellTemplate() {
   return jsx(Fragment, { children: this._popin ? jsxs(Fragment, { children: [jsx("div", { id: "popin-header", ref: this._injectHeaderNodes.bind(this) }), jsx("span", { id: "popin-colon", "aria-hidden": "true", children: this._i18nPopinColon }), jsx("slot", { id: "popin-content" })] }) : jsx("slot", {}) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const TableCellStyles = `:host([_popin]){padding-inline-start:0;padding-inline-end:0;align-items:center}:host([_popin]) #popin-header{color:var(--sapContent_LabelColor)}#popin-colon{padding-inline-end:.5rem;white-space:pre}#popin-header{display:contents}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const TableCellBaseStyles = `:host{display:flex;flex-wrap:wrap;align-content:var(--_ui5-v2-17-0_table_cell_valign);min-width:var(--_ui5-v2-17-0_table_cell_min_width);max-width:100%;overflow:clip;overflow-clip-margin:content-box;padding:var(--_ui5-v2-17-0_table_cell_vertical_padding) var(--_ui5-v2-17-0_table_cell_horizontal_padding);box-sizing:border-box}:host([tabindex]:focus){outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);outline-offset:calc(-1 * var(--sapContent_FocusWidth))}:host(#selection-cell){width:auto;min-width:auto;background-color:inherit}:host([data-ui5-table-cell-fixed]){position:sticky;z-index:1}
 `;
-var __decorate$D = function(decorators, target, key, desc) {
+var __decorate$N = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -26879,29 +26883,29 @@ let TableCellBase = class TableCellBase2 extends b$7 {
     return true;
   }
 };
-__decorate$D([
+__decorate$N([
   d$8({ type: Node, "default": true })
 ], TableCellBase.prototype, "content", void 0);
-__decorate$D([
+__decorate$N([
   s$9()
 ], TableCellBase.prototype, "horizontalAlign", void 0);
-__decorate$D([
+__decorate$N([
   s$9({ type: Boolean })
 ], TableCellBase.prototype, "_popin", void 0);
-__decorate$D([
+__decorate$N([
   s$9({ type: Boolean, noAttribute: true })
 ], TableCellBase.prototype, "_popinHidden", void 0);
-__decorate$D([
+__decorate$N([
   i$b("@ui5/webcomponents")
 ], TableCellBase, "i18nBundle", void 0);
-TableCellBase = __decorate$D([
+TableCellBase = __decorate$N([
   m$8({
     renderer: y$5,
     styles: TableCellBaseStyles
   })
 ], TableCellBase);
 const TableCellBase$1 = TableCellBase;
-var __decorate$C = function(decorators, target, key, desc) {
+var __decorate$M = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -26944,13 +26948,13 @@ let TableCell = class TableCell2 extends TableCellBase$1 {
     return TableCellBase$1.i18nBundle.getText(LABEL_COLON);
   }
 };
-__decorate$C([
+__decorate$M([
   o$1("#popin-header")
 ], TableCell.prototype, "_popinHeader", void 0);
-__decorate$C([
+__decorate$M([
   o$1("#popin-content")
 ], TableCell.prototype, "_popinContent", void 0);
-TableCell = __decorate$C([
+TableCell = __decorate$M([
   m$8({
     tag: "ui5-table-cell",
     styles: [TableCellBase$1.styles, TableCellStyles],
@@ -26972,10 +26976,10 @@ function TableRowTemplate(ariaColIndex = 1) {
   }), this._rowActionCount > 0 && jsxs(TableCell$1, { id: "actions-cell", "aria-colindex": ariaColIndex++, "data-ui5-table-acc-text": this._actionCellAccText, children: [this._flexibleActions.map((action) => jsx("slot", { name: action._individualSlot })), this._hasOverflowActions && jsx(Button$1, { id: "overflow", icon: iconOverflow, design: ButtonDesign$1.Transparent, onClick: this._onOverflowButtonClick }), this._fixedActions.map((action) => jsx("slot", { name: action._individualSlot }))] }), this._renderNavigated && jsx(TableCell$1, { id: "navigated-cell", "data-excluded-from-navigation": true, "aria-hidden": true, role: "none", children: jsx("div", { id: "navigated" }) }), this._popinCells.length > 0 && jsx(TableCell$1, { id: "popin-cell", "data-ui5-table-popin-cell": true, "aria-colindex": ariaColIndex++, children: this._popinCells.map((cell) => jsx("slot", { name: cell._individualSlot })) })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const TableRowBaseCss = `:host{display:grid;grid-template-columns:subgrid;grid-column:1 / -1;min-height:var(--_ui5-v2-17-0_list_item_base_height);box-sizing:content-box;border-bottom:var(--sapList_BorderWidth) solid var(--sapList_BorderColor);overflow:clip}:host([tabindex]:focus){outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);outline-offset:calc(-1 * var(--sapContent_FocusWidth))}:host([tabindex]:focus) #selection-cell,:host([tabindex]:focus) #actions-cell{clip-path:inset(var(--sapContent_FocusWidth))}::slotted([ui5-table-cell]:first-of-type),::slotted([ui5-table-header-cell]:first-of-type),#popin-cell{padding-inline-start:var(--_ui5-v2-17-0_first_table_cell_horizontal_padding)}#selection-cell+::slotted([ui5-table-cell-base]:first-of-type),#selection-cell~#popin-cell{padding-inline-start:var(--_ui5-v2-17-0_table_cell_horizontal_padding)}#selection-cell{display:flex;align-items:center;justify-content:center;padding:0;left:0}:dir(rtl)#selection-cell{right:0}#selection-component{vertical-align:middle}#actions-cell{position:sticky;right:0;background-color:inherit;flex-wrap:nowrap}:dir(rtl)#actions-cell{left:0}
 `;
-var __decorate$B = function(decorators, target, key, desc) {
+var __decorate$L = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -27055,28 +27059,28 @@ let TableRowBase = TableRowBase_1 = class TableRowBase2 extends b$7 {
     return TableRowBase_1.i18nBundle.getText(TABLE_ROW_SELECTOR);
   }
 };
-__decorate$B([
+__decorate$L([
   s$9({ type: Number, noAttribute: true })
 ], TableRowBase.prototype, "_invalidate", void 0);
-__decorate$B([
+__decorate$L([
   s$9({ type: Number, noAttribute: true })
 ], TableRowBase.prototype, "_rowActionCount", void 0);
-__decorate$B([
+__decorate$L([
   s$9({ type: Boolean, noAttribute: true })
 ], TableRowBase.prototype, "_renderNavigated", void 0);
-__decorate$B([
+__decorate$L([
   s$9({ type: Boolean, noAttribute: true })
 ], TableRowBase.prototype, "_alternate", void 0);
-__decorate$B([
+__decorate$L([
   o$1("#selection-cell")
 ], TableRowBase.prototype, "_selectionCell", void 0);
-__decorate$B([
+__decorate$L([
   o$1("#navigated-cell")
 ], TableRowBase.prototype, "_navigatedCell", void 0);
-__decorate$B([
+__decorate$L([
   i$b("@ui5/webcomponents")
 ], TableRowBase, "i18nBundle", void 0);
-TableRowBase = TableRowBase_1 = __decorate$B([
+TableRowBase = TableRowBase_1 = __decorate$L([
   m$8({
     renderer: y$5,
     styles: TableRowBaseCss
@@ -27084,10 +27088,10 @@ TableRowBase = TableRowBase_1 = __decorate$B([
 ], TableRowBase);
 const TableRowBase$1 = TableRowBase;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const TableRowCss = `:host{background:var(--sapList_Background)}:host([_alternate]){background:var(--_ui5-v2-17-0_table_row_alternating_background)}:host([aria-selected=true]){background:var(--sapList_SelectionBackgroundColor);border-bottom:var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)}@media (hover: hover){:host([_interactive]:hover){background:var(--sapList_Hover_Background)}:host([_interactive][aria-selected=true]:hover){background:var(--sapList_Hover_SelectionBackground)}}:host([_interactive]:active),:host([_interactive][_active]),:host([_interactive][aria-selected=true]:active),:host([_interactive][aria-selected=true][_active]){background:var(--sapList_Active_Background)}:host([position]){height:var(--row-height)}:host([_interactive]){cursor:pointer}#popin-cell{align-content:initial;flex-direction:column;grid-column:1 / -1}#navigated-cell{position:sticky;right:0;overflow:visible;grid-row:span 2;min-width:0;padding:0;background:inherit}:dir(rtl)#navigated-cell{left:0}:host([navigated]) #navigated{position:absolute;inset:0;background:var(--sapList_SelectionBorderColor)}:host([tabindex]:focus) #navigated{transform:translate(calc(var(--_ui5-v2-17-0_table_navigated_cell_width) * -1));bottom:2px;top:3px}:host([tabindex]:focus) #navigated:dir(rtl){transform:translate(var(--_ui5-v2-17-0_table_navigated_cell_width))}:host([tabindex]:focus) #navigated-cell{clip-path:inset(var(--sapContent_FocusWidth) var(--sapContent_FocusWidth) var(--sapContent_FocusWidth) calc(var(--_ui5-v2-17-0_table_navigated_cell_width) * -1))}:host([tabindex]:focus) #navigated-cell:dir(rtl){clip-path:inset(var(--sapContent_FocusWidth) calc(var(--_ui5-v2-17-0_table_navigated_cell_width) * -1) var(--sapContent_FocusWidth) var(--sapContent_FocusWidth))}:host([navigated]) #popin-cell{grid-column:1 / -2}#selection-cell~#popin-cell{grid-column-start:2}#actions-cell{display:flex;align-items:center;gap:var(--_ui5-v2-17-0_table_row_actions_gap)}#actions-cell:has(+#navigated-cell){right:var(--_ui5-v2-17-0_table_navigated_cell_width);overflow:auto}:dir(rtl)#actions-cell:has(+#navigated-cell){left:var(--_ui5-v2-17-0_table_navigated_cell_width)}
 `;
-var __decorate$A = function(decorators, target, key, desc) {
+var __decorate$K = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -27220,7 +27224,7 @@ let TableRow = class TableRow2 extends TableRowBase$1 {
     }
   }
 };
-__decorate$A([
+__decorate$K([
   d$8({
     type: HTMLElement,
     "default": true,
@@ -27231,34 +27235,34 @@ __decorate$A([
     }
   })
 ], TableRow.prototype, "cells", void 0);
-__decorate$A([
+__decorate$K([
   d$8({
     type: HTMLElement,
     individualSlots: true
   })
 ], TableRow.prototype, "actions", void 0);
-__decorate$A([
+__decorate$K([
   s$9()
 ], TableRow.prototype, "rowKey", void 0);
-__decorate$A([
+__decorate$K([
   s$9({ type: Number })
 ], TableRow.prototype, "position", void 0);
-__decorate$A([
+__decorate$K([
   s$9({ type: Boolean })
 ], TableRow.prototype, "interactive", void 0);
-__decorate$A([
+__decorate$K([
   s$9({ type: Boolean })
 ], TableRow.prototype, "navigated", void 0);
-__decorate$A([
+__decorate$K([
   s$9({ type: Boolean })
 ], TableRow.prototype, "movable", void 0);
-__decorate$A([
+__decorate$K([
   o$1("#popin-cell")
 ], TableRow.prototype, "_popinCell", void 0);
-__decorate$A([
+__decorate$K([
   o$1("#actions-cell")
 ], TableRow.prototype, "_actionsCell", void 0);
-TableRow = __decorate$A([
+TableRow = __decorate$K([
   m$8({
     tag: "ui5-table-row",
     styles: [TableRowBase$1.styles, TableRowCss],
@@ -27272,7 +27276,7 @@ function TableTemplate() {
   return jsxs(Fragment, { children: [jsx("div", { id: "before", role: "none", tabindex: 0, "ui5-table-dummy-focus-area": true }), jsxs("div", { id: "table", role: "grid", style: this.styles.table, "aria-label": this._ariaLabel, "aria-description": this._ariaDescription, "aria-rowcount": this._ariaRowCount, "aria-colcount": this._ariaColCount, "aria-multiselectable": this._ariaMultiSelectable, children: [jsx("slot", { name: "headerRow" }), jsx("div", { id: "rows", children: jsx("div", { id: "spacer", style: this.styles.spacer, children: jsx("slot", {}) }) }), this.rows.length === 0 && jsx(TableRow$1, { id: "no-data-row", children: jsx(TableCell$1, { id: "no-data-cell", "data-excluded-from-navigation": true, "horizontal-align": "Center", children: this.noData.length > 0 ? jsx("slot", { name: "noData" }) : this._effectiveNoDataText }) }), jsx(DropIndicator$1, { orientation: "Horizontal", ownerReference: this }), jsx("div", { "aria-hidden": "true", id: "table-end-row" }), this.loading && jsx(BusyIndicator$1, { id: "loading", delay: this.loadingDelay, active: true, "data-sap-focus-ref": true })] }), jsx("div", { id: "after", role: "none", tabindex: 0, "ui5-table-dummy-focus-area": true }), this.rows.length > 0 && ((_a2 = this._getGrowing()) == null ? void 0 : _a2.hasGrowingComponent()) && jsx("slot", { name: (_b2 = this._getGrowing()) == null ? void 0 : _b2._individualSlot })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const TableStyles = `:host{display:block;position:relative;color:var(--sapList_TextColor);font:var(--sapFontSize) var(--sapFontFamily)}:host([hidden]){display:none}#table{display:grid;grid-auto-rows:minmax(min-content,max-content)}:host([overflow-mode="Scroll"]) #table{overflow-x:auto;height:100%}#rows,#spacer{display:grid;grid-template-rows:min-content;grid-template-columns:subgrid;grid-column:1 / -1}#no-data-cell{grid-column:1 / -1;justify-content:center}#loading{position:absolute;inset:0;height:100%;z-index:2}:host([loading]) #table:has(#loading[_is-busy]) ::slotted(*){opacity:var(--sapContent_DisabledOpacity)}
 `;
 class TableExtension {
@@ -27827,7 +27831,7 @@ class TableCustomAnnouncement extends TableExtension {
     }
   }
 }
-var __decorate$z = function(decorators, target, key, desc) {
+var __decorate$J = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -28096,7 +28100,7 @@ let Table = Table_1 = class Table2 extends b$7 {
     return true;
   }
 };
-__decorate$z([
+__decorate$J([
   d$8({
     type: HTMLElement,
     "default": true,
@@ -28106,73 +28110,73 @@ __decorate$z([
     }
   })
 ], Table.prototype, "rows", void 0);
-__decorate$z([
+__decorate$J([
   d$8({ type: HTMLElement, invalidateOnChildChange: { properties: false, slots: true } })
 ], Table.prototype, "headerRow", void 0);
-__decorate$z([
+__decorate$J([
   d$8()
 ], Table.prototype, "noData", void 0);
-__decorate$z([
+__decorate$J([
   d$8({ type: HTMLElement, individualSlots: true })
 ], Table.prototype, "features", void 0);
-__decorate$z([
+__decorate$J([
   s$9()
 ], Table.prototype, "accessibleName", void 0);
-__decorate$z([
+__decorate$J([
   s$9()
 ], Table.prototype, "accessibleNameRef", void 0);
-__decorate$z([
+__decorate$J([
   s$9()
 ], Table.prototype, "noDataText", void 0);
-__decorate$z([
+__decorate$J([
   s$9()
 ], Table.prototype, "overflowMode", void 0);
-__decorate$z([
+__decorate$J([
   s$9({ type: Boolean })
 ], Table.prototype, "loading", void 0);
-__decorate$z([
+__decorate$J([
   s$9({ type: Number })
 ], Table.prototype, "loadingDelay", void 0);
-__decorate$z([
+__decorate$J([
   s$9({ type: Number })
 ], Table.prototype, "rowActionCount", void 0);
-__decorate$z([
+__decorate$J([
   s$9({ type: Boolean })
 ], Table.prototype, "alternateRowColors", void 0);
-__decorate$z([
+__decorate$J([
   s$9()
 ], Table.prototype, "stickyTop", void 0);
-__decorate$z([
+__decorate$J([
   s$9({ type: Number, noAttribute: true })
 ], Table.prototype, "_invalidate", void 0);
-__decorate$z([
+__decorate$J([
   s$9({ type: Boolean, noAttribute: true })
 ], Table.prototype, "_renderNavigated", void 0);
-__decorate$z([
+__decorate$J([
   o$1("[ui5-drop-indicator]")
 ], Table.prototype, "dropIndicatorDOM", void 0);
-__decorate$z([
+__decorate$J([
   o$1("#no-data-row")
 ], Table.prototype, "_noDataRow", void 0);
-__decorate$z([
+__decorate$J([
   o$1("#table-end-row")
 ], Table.prototype, "_endRow", void 0);
-__decorate$z([
+__decorate$J([
   o$1("#table")
 ], Table.prototype, "_tableElement", void 0);
-__decorate$z([
+__decorate$J([
   o$1("#before")
 ], Table.prototype, "_beforeElement", void 0);
-__decorate$z([
+__decorate$J([
   o$1("#after")
 ], Table.prototype, "_afterElement", void 0);
-__decorate$z([
+__decorate$J([
   o$1("#loading")
 ], Table.prototype, "_loadingElement", void 0);
-__decorate$z([
+__decorate$J([
   i$b("@ui5/webcomponents")
 ], Table, "i18nBundle", void 0);
-Table = Table_1 = __decorate$z([
+Table = Table_1 = __decorate$J([
   m$8({
     tag: "ui5-table",
     renderer: y$5,
@@ -28196,35 +28200,35 @@ Table = Table_1 = __decorate$z([
 ], Table);
 Table.define();
 var e = ((n2) => (n2.None = "None", n2.Ascending = "Ascending", n2.Descending = "Descending", n2))(e || {});
-const name$q = "sort-ascending";
-const pathData$p = "M82 288h351l15 32H65zm-48 96h446l15 32H17zm366-160H113l16-32h255zm-47-96H161l17-32h158z";
-const ltr$p = false;
+const name$w = "sort-ascending";
+const pathData$v = "M82 288h351l15 32H65zm-48 96h446l15 32H17zm366-160H113l16-32h255zm-47-96H161l17-32h158z";
+const ltr$v = false;
 const accData$7 = ICON_SORT_ASCENDING;
-const collection$p = "SAP-icons-v4";
-const packageName$p = "@ui5/webcomponents-icons";
-y$2(name$q, { pathData: pathData$p, ltr: ltr$p, accData: accData$7, collection: collection$p, packageName: packageName$p });
-const name$p = "sort-ascending";
-const pathData$o = "M358 147H154q-11 0-18.5-7t-7.5-18 7.5-18.5T154 96h204q11 0 18.5 7.5T384 122t-7.5 18-18.5 7zm64 128H90q-11 0-18.5-7T64 250t7.5-18.5T90 224h332q11 0 18.5 7.5T448 250t-7.5 18-18.5 7zm64 128H26q-11 0-18.5-7T0 378t7.5-18.5T26 352h460q11 0 18.5 7.5T512 378t-7.5 18-18.5 7z";
-const ltr$o = false;
+const collection$v = "SAP-icons-v4";
+const packageName$v = "@ui5/webcomponents-icons";
+y$2(name$w, { pathData: pathData$v, ltr: ltr$v, accData: accData$7, collection: collection$v, packageName: packageName$v });
+const name$v = "sort-ascending";
+const pathData$u = "M358 147H154q-11 0-18.5-7t-7.5-18 7.5-18.5T154 96h204q11 0 18.5 7.5T384 122t-7.5 18-18.5 7zm64 128H90q-11 0-18.5-7T64 250t7.5-18.5T90 224h332q11 0 18.5 7.5T448 250t-7.5 18-18.5 7zm64 128H26q-11 0-18.5-7T0 378t7.5-18.5T26 352h460q11 0 18.5 7.5T512 378t-7.5 18-18.5 7z";
+const ltr$u = false;
 const accData$6 = ICON_SORT_ASCENDING;
-const collection$o = "SAP-icons-v5";
-const packageName$o = "@ui5/webcomponents-icons";
-y$2(name$p, { pathData: pathData$o, ltr: ltr$o, accData: accData$6, collection: collection$o, packageName: packageName$o });
+const collection$u = "SAP-icons-v5";
+const packageName$u = "@ui5/webcomponents-icons";
+y$2(name$v, { pathData: pathData$u, ltr: ltr$u, accData: accData$6, collection: collection$u, packageName: packageName$u });
 const SortAscending = "sort-ascending";
-const name$o = "sort-descending";
-const pathData$n = "M17 96h478l-15 32H34zm431 96l-15 32H82l-17-32h383zm-335 96h287l-16 32H129zm48 96h192l-16 32H177z";
-const ltr$n = false;
+const name$u = "sort-descending";
+const pathData$t = "M17 96h478l-15 32H34zm431 96l-15 32H82l-17-32h383zm-335 96h287l-16 32H129zm48 96h192l-16 32H177z";
+const ltr$t = false;
 const accData$5 = ICON_SORT_DESCENDING;
-const collection$n = "SAP-icons-v4";
-const packageName$n = "@ui5/webcomponents-icons";
-y$2(name$o, { pathData: pathData$n, ltr: ltr$n, accData: accData$5, collection: collection$n, packageName: packageName$n });
-const name$n = "sort-descending";
-const pathData$m = "M486 96q11 0 18.5 7.5T512 122t-7.5 18-18.5 7H26q-11 0-18.5-7T0 122t7.5-18.5T26 96h460zm-64 128q11 0 18.5 7.5T448 250t-7.5 18-18.5 7H90q-11 0-18.5-7T64 250t7.5-18.5T90 224h332zm-64 128q11 0 18.5 7.5T384 378t-7.5 18-18.5 7H154q-11 0-18.5-7t-7.5-18 7.5-18.5T154 352h204z";
-const ltr$m = false;
+const collection$t = "SAP-icons-v4";
+const packageName$t = "@ui5/webcomponents-icons";
+y$2(name$u, { pathData: pathData$t, ltr: ltr$t, accData: accData$5, collection: collection$t, packageName: packageName$t });
+const name$t = "sort-descending";
+const pathData$s = "M486 96q11 0 18.5 7.5T512 122t-7.5 18-18.5 7H26q-11 0-18.5-7T0 122t7.5-18.5T26 96h460zm-64 128q11 0 18.5 7.5T448 250t-7.5 18-18.5 7H90q-11 0-18.5-7T64 250t7.5-18.5T90 224h332zm-64 128q11 0 18.5 7.5T384 378t-7.5 18-18.5 7H154q-11 0-18.5-7t-7.5-18 7.5-18.5T154 352h204z";
+const ltr$s = false;
 const accData$4 = ICON_SORT_DESCENDING;
-const collection$m = "SAP-icons-v5";
-const packageName$m = "@ui5/webcomponents-icons";
-y$2(name$n, { pathData: pathData$m, ltr: ltr$m, accData: accData$4, collection: collection$m, packageName: packageName$m });
+const collection$s = "SAP-icons-v5";
+const packageName$s = "@ui5/webcomponents-icons";
+y$2(name$t, { pathData: pathData$s, ltr: ltr$s, accData: accData$4, collection: collection$s, packageName: packageName$s });
 const SortDescending = "sort-descending";
 function TableHeaderCellTemplate() {
   return jsxs(Fragment, { children: [jsx("slot", { name: "action" }), jsx("slot", {}), sortIcon.call(this)] });
@@ -28240,10 +28244,10 @@ function sortIcon() {
   }
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const TableHeaderCellStyles = `:host{font-family:var(--sapFontSemiboldDuplexFamily);color:var(--sapList_HeaderTextColor);align-items:center;flex-wrap:nowrap;max-width:100%;gap:.125rem}:host(:empty){padding:0}[ui5-icon]{margin-inline-start:.375rem;width:1rem;height:1rem;flex-shrink:0}::slotted([ui5-label]){color:inherit;font-family:inherit;overflow:hidden}
 `;
-var __decorate$y = function(decorators, target, key, desc) {
+var __decorate$I = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -28272,37 +28276,37 @@ let TableHeaderCell = class TableHeaderCell2 extends TableCellBase$1 {
     };
   }
 };
-__decorate$y([
+__decorate$I([
   s$9()
 ], TableHeaderCell.prototype, "width", void 0);
-__decorate$y([
+__decorate$I([
   s$9()
 ], TableHeaderCell.prototype, "minWidth", void 0);
-__decorate$y([
+__decorate$I([
   s$9({ type: Number })
 ], TableHeaderCell.prototype, "importance", void 0);
-__decorate$y([
+__decorate$I([
   s$9()
 ], TableHeaderCell.prototype, "popinText", void 0);
-__decorate$y([
+__decorate$I([
   s$9()
 ], TableHeaderCell.prototype, "sortIndicator", void 0);
-__decorate$y([
+__decorate$I([
   s$9({ type: Boolean })
 ], TableHeaderCell.prototype, "popinHidden", void 0);
-__decorate$y([
+__decorate$I([
   d$8()
 ], TableHeaderCell.prototype, "action", void 0);
-__decorate$y([
+__decorate$I([
   s$9({ type: Boolean, noAttribute: true })
 ], TableHeaderCell.prototype, "_popin", void 0);
-__decorate$y([
+__decorate$I([
   o$1("slot:not([name])")
 ], TableHeaderCell.prototype, "_defaultSlot", void 0);
-__decorate$y([
+__decorate$I([
   o$1("slot[name=action]")
 ], TableHeaderCell.prototype, "_actionSlot", void 0);
-TableHeaderCell = __decorate$y([
+TableHeaderCell = __decorate$I([
   m$8({
     tag: "ui5-table-header-cell",
     styles: [TableCellBase$1.styles, TableHeaderCellStyles],
@@ -28311,18 +28315,18 @@ TableHeaderCell = __decorate$y([
 ], TableHeaderCell);
 TableHeaderCell.define();
 const TableHeaderCell$1 = TableHeaderCell;
-const name$m = "clear-all";
-const pathData$l = "M432 449V288h32v161q0 13-8.5 22.5T433 481H48q-13 0-22.5-9.5T16 449V64q0-13 9-22t23-9h193v32H48v384h384zm64-385l-66 63 66 66-32 32-63-66-65 66-33-32 66-66-66-63 33-32 65 64 63-64z";
-const ltr$l = false;
-const collection$l = "SAP-icons-v4";
-const packageName$l = "@ui5/webcomponents-icons";
-y$2(name$m, { pathData: pathData$l, ltr: ltr$l, collection: collection$l, packageName: packageName$l });
-const name$l = "clear-all";
-const pathData$k = "M346 192q-11 0-18.5-7.5T320 166q0-10 8-18l36-36-36-36q-8-8-8-18 0-11 7.5-18.5T346 32t18 7l36 37 36-37q7-7 18-7t18.5 7.5T480 58t-7 18l-37 36 37 36q7 7 7 18t-7.5 18.5T454 192q-10 0-18-8l-36-36-36 36q-8 8-18 8zm108 64q11 0 18.5 7.5T480 282v108q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h108q11 0 18.5 7.5T256 58t-7.5 18-18.5 7H122q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q16 0 27.5-11t11.5-28V282q0-11 7-18.5t18-7.5z";
-const ltr$k = false;
-const collection$k = "SAP-icons-v5";
-const packageName$k = "@ui5/webcomponents-icons";
-y$2(name$l, { pathData: pathData$k, ltr: ltr$k, collection: collection$k, packageName: packageName$k });
+const name$s = "clear-all";
+const pathData$r = "M432 449V288h32v161q0 13-8.5 22.5T433 481H48q-13 0-22.5-9.5T16 449V64q0-13 9-22t23-9h193v32H48v384h384zm64-385l-66 63 66 66-32 32-63-66-65 66-33-32 66-66-66-63 33-32 65 64 63-64z";
+const ltr$r = false;
+const collection$r = "SAP-icons-v4";
+const packageName$r = "@ui5/webcomponents-icons";
+y$2(name$s, { pathData: pathData$r, ltr: ltr$r, collection: collection$r, packageName: packageName$r });
+const name$r = "clear-all";
+const pathData$q = "M346 192q-11 0-18.5-7.5T320 166q0-10 8-18l36-36-36-36q-8-8-8-18 0-11 7.5-18.5T346 32t18 7l36 37 36-37q7-7 18-7t18.5 7.5T480 58t-7 18l-37 36 37 36q7 7 7 18t-7.5 18.5T454 192q-10 0-18-8l-36-36-36 36q-8 8-18 8zm108 64q11 0 18.5 7.5T480 282v108q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h108q11 0 18.5 7.5T256 58t-7.5 18-18.5 7H122q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q16 0 27.5-11t11.5-28V282q0-11 7-18.5t18-7.5z";
+const ltr$q = false;
+const collection$q = "SAP-icons-v5";
+const packageName$q = "@ui5/webcomponents-icons";
+y$2(name$r, { pathData: pathData$q, ltr: ltr$q, collection: collection$q, packageName: packageName$q });
 const ClearAll = "clear-all";
 var IconDesign;
 (function(IconDesign2) {
@@ -28349,10 +28353,10 @@ function TableHeaderRowTemplate(ariaColIndex = 1) {
   }), this._rowActionCount > 0 && jsx(TableHeaderCell$1, { id: "actions-cell", "aria-colindex": ariaColIndex++, children: jsx("div", { id: "actions-cell-content", children: this._i18nRowActions }) }), this._popinCells.length > 0 && jsx(TableHeaderCell$1, { id: "popin-cell", "aria-colindex": ariaColIndex++, "data-excluded-from-navigation": true, children: jsx("div", { id: "popin-cell-content", children: this._i18nRowPopin }) })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const TableHeaderRowStyles = `:host{background:var(--sapList_HeaderBackground);border-top:var(--sapList_BorderWidth) solid var(--sapList_BorderColor);border-bottom:var(--sapList_BorderWidth) solid var(--sapList_HeaderBorderColor);grid-template-rows:auto 0px}:host([hidden]){display:none}:host([sticky]){position:sticky;top:var(--ui5-v2-17-0_grid_sticky_top, 0);z-index:3}#popin-cell{padding:0;width:0;height:0}#selection-cell [ui5-icon]{width:var(--_ui5-v2-17-0_checkbox_inner_width_height);height:var(--_ui5-v2-17-0_checkbox_inner_width_height)}#popin-cell-content,#actions-cell-content{position:absolute;clip:rect(0,0,0,0)}
 `;
-var __decorate$x = function(decorators, target, key, desc) {
+var __decorate$H = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -28414,7 +28418,7 @@ let TableHeaderRow = (
     }
   }
 );
-__decorate$x([
+__decorate$H([
   d$8({
     type: HTMLElement,
     "default": true,
@@ -28425,10 +28429,10 @@ __decorate$x([
     individualSlots: true
   })
 ], TableHeaderRow.prototype, "cells", void 0);
-__decorate$x([
+__decorate$H([
   s$9({ type: Boolean })
 ], TableHeaderRow.prototype, "sticky", void 0);
-TableHeaderRow = __decorate$x([
+TableHeaderRow = __decorate$H([
   m$8({
     tag: "ui5-table-header-row",
     languageAware: true,
@@ -28526,10 +28530,10 @@ function PanelTemplate() {
   }, part: "content", children: jsx("slot", {}) })] }) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const panelCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:block}:host{font-family:var(--sapFontFamily);background-color:var(--sapGroup_TitleBackground);border-radius:var(--_ui5-v2-17-0_panel_border_radius)}:host(:not([collapsed])){border-bottom:var(--_ui5-v2-17-0_panel_border_bottom)}:host([fixed]) .ui5-panel-header{padding-left:1rem}.ui5-panel-header{min-height:var(--_ui5-v2-17-0_panel_header_height);width:100%;position:relative;display:flex;justify-content:flex-start;align-items:center;outline:none;box-sizing:border-box;padding-right:var(--_ui5-v2-17-0_panel_header_padding_right);font-family:var(--sapFontHeaderFamily);font-size:var(--sapGroup_Title_FontSize);font-weight:400;color:var(--sapGroup_TitleTextColor)}.ui5-panel-header-icon{color:var(--_ui5-v2-17-0_panel_icon_color)}.ui5-panel-header-button-animated{transition:transform .4s ease-out}:host(:not([_has-header]):not([fixed])) .ui5-panel-header{cursor:pointer}:host(:not([_has-header]):not([fixed])) .ui5-panel-header:focus:after{content:"";position:absolute;pointer-events:none;z-index:2;border:var(--_ui5-v2-17-0_panel_focus_border);border-radius:var(--_ui5-v2-17-0_panel_border_radius);top:var(--_ui5-v2-17-0_panel_focus_offset);bottom:var(--_ui5-v2-17-0_panel_focus_bottom_offset);left:var(--_ui5-v2-17-0_panel_focus_offset);right:var(--_ui5-v2-17-0_panel_focus_offset)}:host(:not([collapsed]):not([_has-header]):not([fixed])) .ui5-panel-header:focus:after{border-radius:var(--_ui5-v2-17-0_panel_border_radius_expanded)}:host(:not([collapsed])) .ui5-panel-header-button:not(.ui5-panel-header-button-with-icon),:host(:not([collapsed])) .ui5-panel-header-icon-wrapper [ui5-icon]{transform:var(--_ui5-v2-17-0_panel_toggle_btn_rotation)}:host([fixed]) .ui5-panel-header-title{width:100%}.ui5-panel-heading-wrapper.ui5-panel-heading-wrapper-sticky{position:sticky;top:0;background-color:var(--_ui5-v2-17-0_panel_header_background_color);z-index:100;border-radius:var(--_ui5-v2-17-0_panel_border_radius)}.ui5-panel-header-title{width:calc(100% - var(--_ui5-v2-17-0_panel_button_root_width));overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ui5-panel-content{padding:var(--_ui5-v2-17-0_panel_content_padding);background-color:var(--sapGroup_ContentBackground);outline:none;border-bottom-left-radius:var(--_ui5-v2-17-0_panel_border_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_panel_border_radius);overflow:auto}.ui5-panel-header-button-root{display:flex;justify-content:center;align-items:center;flex-shrink:0;width:var(--_ui5-v2-17-0_panel_button_root_width);height:var(--_ui5-v2-17-0_panel_button_root_height);padding:var(--_ui5-v2-17-0_panel_header_button_wrapper_padding);box-sizing:border-box}:host([fixed]:not([collapsed]):not([_has-header])) .ui5-panel-header,:host([collapsed]) .ui5-panel-header{border-bottom:.0625rem solid var(--sapGroup_TitleBorderColor)}:host([collapsed]) .ui5-panel-header{border-bottom-left-radius:var(--_ui5-v2-17-0_panel_border_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_panel_border_radius)}:host(:not([fixed]):not([collapsed])) .ui5-panel-header{border-bottom:var(--_ui5-v2-17-0_panel_default_header_border)}[ui5-button].ui5-panel-header-button{display:flex;justify-content:center;align-items:center;min-width:initial;height:100%;width:100%}.ui5-panel-header-icon-wrapper{display:flex;justify-content:center;align-items:center}.ui5-panel-header-icon-wrapper,.ui5-panel-header-icon-wrapper .ui5-panel-header-icon{color:inherit}.ui5-panel-header-icon-wrapper,[ui5-button].ui5-panel-header-button-with-icon [ui5-icon]{pointer-events:none}.ui5-panel-root{height:100%;display:flex;flex-direction:column}
 `;
-var __decorate$w = function(decorators, target, key, desc) {
+var __decorate$G = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -28682,49 +28686,49 @@ let Panel = Panel_1 = class Panel2 extends b$7 {
     return !this.header.length;
   }
 };
-__decorate$w([
+__decorate$G([
   s$9()
 ], Panel.prototype, "headerText", void 0);
-__decorate$w([
+__decorate$G([
   s$9({ type: Boolean })
 ], Panel.prototype, "fixed", void 0);
-__decorate$w([
+__decorate$G([
   s$9({ type: Boolean })
 ], Panel.prototype, "collapsed", void 0);
-__decorate$w([
+__decorate$G([
   s$9({ type: Boolean })
 ], Panel.prototype, "noAnimation", void 0);
-__decorate$w([
+__decorate$G([
   s$9()
 ], Panel.prototype, "accessibleRole", void 0);
-__decorate$w([
+__decorate$G([
   s$9()
 ], Panel.prototype, "headerLevel", void 0);
-__decorate$w([
+__decorate$G([
   s$9()
 ], Panel.prototype, "accessibleName", void 0);
-__decorate$w([
+__decorate$G([
   s$9({ type: Boolean })
 ], Panel.prototype, "stickyHeader", void 0);
-__decorate$w([
+__decorate$G([
   s$9({ type: Boolean })
 ], Panel.prototype, "useAccessibleNameForToggleButton", void 0);
-__decorate$w([
+__decorate$G([
   s$9({ type: Boolean })
 ], Panel.prototype, "_hasHeader", void 0);
-__decorate$w([
+__decorate$G([
   s$9({ type: Boolean, noAttribute: true })
 ], Panel.prototype, "_contentExpanded", void 0);
-__decorate$w([
+__decorate$G([
   s$9({ type: Boolean, noAttribute: true })
 ], Panel.prototype, "_animationRunning", void 0);
-__decorate$w([
+__decorate$G([
   d$8()
 ], Panel.prototype, "header", void 0);
-__decorate$w([
+__decorate$G([
   i$b("@ui5/webcomponents")
 ], Panel, "i18nBundle", void 0);
-Panel = Panel_1 = __decorate$w([
+Panel = Panel_1 = __decorate$G([
   m$8({
     tag: "ui5-panel",
     fastNavigation: true,
@@ -28738,18 +28742,18 @@ Panel = Panel_1 = __decorate$w([
   })
 ], Panel);
 Panel.define();
-const name$k = "slim-arrow-up";
-const pathData$j = "M261.5 197q-6-6-11 0l-160 160q-5 5-11.5 5t-11.5-5-5-11.5 5-11.5l166-165q9-9 22-9t23 9l165 165q5 5 5 11t-5 11q-12 12-23 0z";
-const ltr$j = false;
-const collection$j = "SAP-icons-v4";
-const packageName$j = "@ui5/webcomponents-icons";
-y$2(name$k, { pathData: pathData$j, ltr: ltr$j, collection: collection$j, packageName: packageName$j });
-const name$j = "slim-arrow-up";
-const pathData$i = "M96 326q0-10 7-17l135-141q6-8 18-8 11 0 19 8l134 141q7 7 7 17 0 11-7.5 18.5T390 352q-10 0-18-8L256 223 140 344q-8 8-18 8-11 0-18.5-7.5T96 326z";
-const ltr$i = false;
-const collection$i = "SAP-icons-v5";
-const packageName$i = "@ui5/webcomponents-icons";
-y$2(name$j, { pathData: pathData$i, ltr: ltr$i, collection: collection$i, packageName: packageName$i });
+const name$q = "slim-arrow-up";
+const pathData$p = "M261.5 197q-6-6-11 0l-160 160q-5 5-11.5 5t-11.5-5-5-11.5 5-11.5l166-165q9-9 22-9t23 9l165 165q5 5 5 11t-5 11q-12 12-23 0z";
+const ltr$p = false;
+const collection$p = "SAP-icons-v4";
+const packageName$p = "@ui5/webcomponents-icons";
+y$2(name$q, { pathData: pathData$p, ltr: ltr$p, collection: collection$p, packageName: packageName$p });
+const name$p = "slim-arrow-up";
+const pathData$o = "M96 326q0-10 7-17l135-141q6-8 18-8 11 0 19 8l134 141q7 7 7 17 0 11-7.5 18.5T390 352q-10 0-18-8L256 223 140 344q-8 8-18 8-11 0-18.5-7.5T96 326z";
+const ltr$o = false;
+const collection$o = "SAP-icons-v5";
+const packageName$o = "@ui5/webcomponents-icons";
+y$2(name$p, { pathData: pathData$o, ltr: ltr$o, collection: collection$o, packageName: packageName$o });
 let a$1 = null, l2 = Date.now();
 const s = 300, D = (g2) => (u4, i3, e2) => {
   const o2 = e2.value;
@@ -28819,10 +28823,10 @@ function TabContainerTemplate(injectedPartials) {
   ) }), jsx("div", { id: `${this._id}-tabStrip`, class: "ui5-tc__tabStrip", role: "tablist", "aria-describedby": this.tablistAriaDescribedById, onClick: this._onTabStripClick, onKeyDown: this._onTabStripKeyDown, onKeyUp: this._onTabStripKeyUp, children: this.items.map((item) => item.stripPresentation) }), jsx("div", { class: "ui5-tc__overflow ui5-tc__overflow--end", onClick: this._onOverflowClick, onKeyDown: this._onOverflowKeyDown, hidden: true, children: this.overflowButton.length ? jsx("slot", { name: "overflowButton" }) : jsx(Button$1, { endIcon: this.overflowMenuIcon, "data-ui5-stable": "overflow-end", tooltip: this.overflowMenuTitle, accessibilityAttributes: this.overflowBtnAccessibilityAttributes, children: this._endOverflowText }) }), jsx(DropIndicator$1, { orientation: "Vertical", ownerReference: this })] }), !this.tabsAtTheBottom && partials.contentArea.call(this), this.hasItems && jsx("span", { id: `${this._id}-invisibleText`, class: "ui5-hidden-text", children: this.accInvisibleText })] }), TabContainerPopoverTemplate.call(this)] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const tabContainerCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:block;width:100%}.ui5-tc-root{display:flex;flex-direction:column;width:100%;height:100%;font-family:var(--sapFontHeaderFamily);font-size:1rem}.ui5-tc__header{position:relative;display:flex;align-items:center;background-color:var(--_ui5-v2-17-0_tc_header_background);--ui5-v2-17-0_tc_header_active_background_color: var(--_ui5-v2-17-0_tc_header_background);height:var(--_ui5-v2-17-0_tc_header_height);box-shadow:var(--_ui5-v2-17-0_tc_header_box_shadow);box-sizing:border-box}:host([tabs-placement="Bottom"]) .ui5-tc__header{border-top:var(--_ui5-v2-17-0_tc_header_border_bottom)}:host([header-background-design="Transparent"]) .ui5-tc__header{background-color:transparent;--ui5-v2-17-0_tc_header_active_background_color: transparent;box-shadow:none;border-bottom:.0625rem solid var(--sapObjectHeader_BorderColor)}:host([header-background-design="Translucent"]) .ui5-tc__header{background-color:var(--_ui5-v2-17-0_tc_header_background_translucent);--ui5-v2-17-0_tc_header_active_background_color: var(--_ui5-v2-17-0_tc_header_background_translucent)}.ui5-tc-root.ui5-tc--textOnly .ui5-tc__header{height:var(--_ui5-v2-17-0_tc_header_height_text_only)}.ui5-tc-root.ui5-tc--textOnly.ui5-tc--withAdditionalText.ui5-tc--standardTabLayout .ui5-tc__header{height:var(--_ui5-v2-17-0_tc_header_height_text_with_additional_text)}.ui5-tc__tabStrip{flex:1;display:flex;overflow:hidden;box-sizing:border-box;position:relative;white-space:nowrap}.ui5-tc__separator:focus{outline:none}.ui5-tc__overflow{flex:0 0 0}.ui5-tc__overflow.ui5-tc__overflow--end{padding-inline-start:.188rem;margin-inline-end:1rem}.ui5-tc__overflow.ui5-tc__overflow--start{margin-inline-start:1rem}.ui5-tc__overflow[hidden]{display:none}.ui5-tc__overflow>[ui5-button]{border-radius:.75rem;height:1.5rem;--_ui5-v2-17-0_button_focused_border_radius: .75rem}.ui5-tc__overflow>[ui5-button]:not([active]){color:var(--_ui5-v2-17-0_tc_overflow_text_color)}.ui5-tc__overflow>[ui5-button]:not([active]):hover{color:var(--_ui5-v2-17-0_tc_overflow_text_color)}.ui5-tc__overflow>[ui5-button][focused]{outline-offset:.125rem;--_ui5-v2-17-0_button_focused_border: none;outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor)}.ui5-tc-root.ui5-tc--textOnly .ui5-tc__content{height:calc(100% - var(--_ui5-v2-17-0_tc_header_height_text_only))}.ui5-tc__content{position:relative;display:flex;height:calc(100% - var(--_ui5-v2-17-0_tc_header_height));background-color:var(--_ui5-v2-17-0_tc_content_background);border-bottom:var(--_ui5-v2-17-0_tc_content_border_bottom);box-sizing:border-box}:host([tabs-placement="Bottom"]) .ui5-tc__content{border-top:var(--_ui5-v2-17-0_tc_content_border_bottom)}:host([content-background-design="Transparent"]) .ui5-tc__content{background-color:transparent}:host([content-background-design="Translucent"]) .ui5-tc__content{background-color:var(--_ui5-v2-17-0_tc_content_background_translucent)}:host([header-background-design="Transparent"]) .ui5-tc__content{border-bottom:none}.ui5-tc__content--collapsed{display:none}.ui5-tc--transparent .ui5-tc__content{background-color:transparent}.ui5-tc__contentItem{max-height:100%;display:flex;flex-grow:1;overflow:auto}.ui5-tc__contentItem[hidden]{display:none}.ui5-tc__header{padding:0}.ui5-tc__content{padding:1rem}:host([media-range="M"]) .ui5-tc__header,:host([media-range="L"]) .ui5-tc__header{padding:0 1rem}:host([media-range="M"]) .ui5-tc__content,:host([media-range="L"]) .ui5-tc__content{padding:1rem 2rem}:host([media-range="XL"]) .ui5-tc__header{padding:0 2rem}:host([media-range="XL"]) .ui5-tc__content{padding:1rem 3rem}.ui5-tc-root.ui5-tc--noTabSelected .ui5-tc__content{padding:0}
 `;
-var __decorate$v = function(decorators, target, key, desc) {
+var __decorate$F = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -29732,52 +29736,52 @@ let TabContainer = TabContainer_1 = class TabContainer2 extends b$7 {
     return this.hasItems ? `${this._id}-invisibleText` : void 0;
   }
 };
-__decorate$v([
+__decorate$F([
   s$9({ type: Boolean })
 ], TabContainer.prototype, "collapsed", void 0);
-__decorate$v([
+__decorate$F([
   s$9()
 ], TabContainer.prototype, "tabLayout", void 0);
-__decorate$v([
+__decorate$F([
   s$9()
 ], TabContainer.prototype, "overflowMode", void 0);
-__decorate$v([
+__decorate$F([
   s$9()
 ], TabContainer.prototype, "headerBackgroundDesign", void 0);
-__decorate$v([
+__decorate$F([
   s$9()
 ], TabContainer.prototype, "contentBackgroundDesign", void 0);
-__decorate$v([
+__decorate$F([
   s$9()
 ], TabContainer.prototype, "tabsPlacement", void 0);
-__decorate$v([
+__decorate$F([
   s$9({ type: Boolean })
 ], TabContainer.prototype, "noAutoSelection", void 0);
-__decorate$v([
+__decorate$F([
   s$9()
 ], TabContainer.prototype, "mediaRange", void 0);
-__decorate$v([
+__decorate$F([
   s$9({ type: Object })
 ], TabContainer.prototype, "_selectedTab", void 0);
-__decorate$v([
+__decorate$F([
   s$9({ type: Boolean, noAttribute: true })
 ], TabContainer.prototype, "_animationRunning", void 0);
-__decorate$v([
+__decorate$F([
   s$9({ type: Boolean, noAttribute: true })
 ], TabContainer.prototype, "_contentCollapsed", void 0);
-__decorate$v([
+__decorate$F([
   s$9({ noAttribute: true })
 ], TabContainer.prototype, "_startOverflowText", void 0);
-__decorate$v([
+__decorate$F([
   s$9({ noAttribute: true })
 ], TabContainer.prototype, "_endOverflowText", void 0);
-__decorate$v([
+__decorate$F([
   s$9({ type: Array })
 ], TabContainer.prototype, "_popoverItemsFlat", void 0);
-__decorate$v([
+__decorate$F([
   s$9({ type: Number, noAttribute: true })
 ], TabContainer.prototype, "_width", void 0);
-__decorate$v([
+__decorate$F([
   d$8({
     "default": true,
     type: HTMLElement,
@@ -29788,19 +29792,19 @@ __decorate$v([
     }
   })
 ], TabContainer.prototype, "items", void 0);
-__decorate$v([
+__decorate$F([
   d$8()
 ], TabContainer.prototype, "overflowButton", void 0);
-__decorate$v([
+__decorate$F([
   d$8()
 ], TabContainer.prototype, "startOverflowButton", void 0);
-__decorate$v([
+__decorate$F([
   D("[data-ui5-stable=overflow-start],[data-ui5-stable=overflow-end],[role=tab]")
 ], TabContainer.prototype, "_onHeaderDragOver", null);
-__decorate$v([
+__decorate$F([
   i$b("@ui5/webcomponents")
 ], TabContainer, "i18nBundle", void 0);
-TabContainer = TabContainer_1 = __decorate$v([
+TabContainer = TabContainer_1 = __decorate$F([
   m$8({
     tag: "ui5-tabcontainer",
     languageAware: true,
@@ -29861,18 +29865,18 @@ function TabInOverflowTemplate() {
   return jsx(ListItemCustom$1, { id: `${this._id}-li`, class: this.overflowClasses, style: this._forcedStyleInOverflow, type: this.overflowState, disabled: this.effectiveDisabled, selected: this.selected, movable: this.movable, ref: this.captureRef.bind(this), children: jsx("div", { class: "ui5-tab-overflow-itemContent-wrapper", children: jsxs("div", { class: "ui5-tab-overflow-itemContent", children: [this.semanticIconName && jsx(Icon$1, { class: this.semanticIconClasses, name: this.semanticIconName }), this.icon && jsx(Icon$1, { name: this.icon }), this.text, this.additionalText && jsxs(Fragment, { children: [" (", this.additionalText, ")"] }), this._designDescription && jsx("div", { id: `${this._id}-designDescription`, class: "ui5-hidden-text", children: this._designDescription })] }) }) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const css = `:host{display:inline-block;width:100%}.ui5-tab-root{width:100%;height:100%}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const stripCss$1 = `.ui5-tab-semantic-icon{display:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_display);height:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_size);width:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_size);margin-inline-end:.5rem}.ui5-tab-semantic-icon--positive{color:var(--sapPositiveTextColor)}.ui5-tab-semantic-icon--negative{color:var(--sapNegativeTextColor)}.ui5-tab-semantic-icon--critical{color:var(--sapCriticalTextColor)}.ui5-tab-strip-item{height:var(--_ui5-v2-17-0_tc_header_height);color:var(--_ui5-v2-17-0_tc_headerItem_color);cursor:pointer;padding:0 var(--_ui5-v2-17-0_tc_headeritem_padding);font-size:var(--sapFontSmallSize);font-weight:var(--_ui5-v2-17-0_tc_headeritem_text_font_weight);position:relative;display:flex;align-items:center;justify-content:center;flex-shrink:0;min-width:2rem;max-width:100%;box-sizing:border-box;outline:none}.ui5-tab-strip-item[data-moving]{background-color:var(--ui5-v2-17-0_tc_header_active_background_color)}.ui5-tab-strip-itemText{position:relative;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ui5-tc__separator[hidden],.ui5-tab-strip-item[hidden],.ui5-tab-strip-item--textOnly[hidden],.ui5-tab-strip-item.ui5-tab-strip-item--textOnly.ui5-tab-strip-item--inline[hidden],.ui5-tab-strip-design-description{display:none}.ui5-tab-strip-itemContent{display:flex;height:100%;min-width:0;justify-content:center;flex-direction:column;border:var(--_ui5-v2-17-0_tc_headerItemContent_default_focus_border);border-radius:var(--_ui5-v2-17-0_tc_headerItemContent_focus_border_radius);transition:var(--_ui5-v2-17-0_tc_headerItem_transition)}.ui5-tab-expand-button{display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1;background-color:var(--_ui5-v2-17-0_tc_header_background);padding-inline-end:.188rem}.ui5-tab-expand-button>[ui5-button]{height:1.5rem;min-width:1.5rem;margin-inline-start:var(--_ui5-v2-17-0_tc_headerItem_expand_button_margin_inline_start);--_ui5-v2-17-0_button_border_radius: var(--_ui5-v2-17-0_tc_headerItem_expand_button_border_radius);--_ui5-v2-17-0_button_focused_border_radius: var(--_ui5-v2-17-0_tc_headerItem_expand_button_border_radius)}.ui5-tab-expand-button>[ui5-button]:not([active]){color:var(--_ui5-v2-17-0_tc_headerItem_color)}.ui5-tab-strip-item--selected .ui5-tab-expand-button>[ui5-button]:not([active]){color:var(--_ui5-v2-17-0_tc_headerItem_text_selected_color)}.ui5-tab-expand-button>[ui5-button]:hover:not([active]){color:var(--_ui5-v2-17-0_tc_headerItem_text_selected_hover_color)}.ui5-tab-expand-button-separator{display:var(--_ui5-v2-17-0_tc_headerItem_expand_button_separator_display);position:relative;width:.0625rem;right:-.0625rem;height:.625rem;background:var(--sapTextColor);margin-inline-start:.0625rem;z-index:2;margin-left:.625rem}.ui5-tab-expand-button:hover{z-index:2}.ui5-tab-strip-item--selected .ui5-tab-expand-button-separator{background:var(--_ui5-v2-17-0_tc_headerItem_text_selected_color)}.ui5-tab-single-click-icon{margin-inline-start:var(--_ui5-v2-17-0_tc_headerItem_single_click_expand_button_margin_inline_start)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--textOnly{color:var(--_ui5-v2-17-0_tc_headerItem_text_selected_color)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--singleClickArea .ui5-tab-strip-itemText .ui5-tab-single-click-icon>[ui5-icon]{color:var(--_ui5-v2-17-0_tc_headerItem_text_selected_color)}.ui5-tab-strip-item--singleClickArea .ui5-tab-strip-itemText{display:flex;align-items:center}.ui5-tab-strip-item--singleClickArea .ui5-tab-strip-itemText .ui5-tab-single-click-icon{display:flex}.ui5-tab-strip-item--singleClickArea .ui5-tab-strip-itemText .ui5-tab-single-click-icon>[ui5-icon]{color:var(--_ui5-v2-17-0_tc_headerItem_color)}.ui5-tab-strip-item--textOnly:not(.ui5-tab-strip-item--twoClickArea):not(.ui5-tab-strip-item--selected):not(.ui5-tab-strip-item--negative):hover,.ui5-tab-strip-item--twoClickArea:not(.ui5-tab-strip-item--selected):not(.ui5-tab-strip-item--negative) .ui5-tab-strip-itemContent:hover,.ui5-tab-strip-item--singleClickArea:not(.ui5-tab-strip-item--selected):not(.ui5-tab-strip-item--disabled):hover .ui5-tab-single-click-icon>[ui5-icon]{color:var(--_ui5-v2-17-0_tc_headerItem_text_hover_color)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--selected.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon-outer:after{content:"";position:absolute;bottom:0;left:0;right:0;border-bottom:var(--sapTab_Selected_Indicator_Dimension) solid var(--sapTab_ForegroundColor);border-radius:var(--_ui5-v2-17-0_tc_headerItemContent_border_radius);background-color:var(--_ui5-v2-17-0_tc_headerItemContent_border_bg);height:var(--_ui5-v2-17-0_tc_headerItemContent_border_height)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--selected.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemContent:after{left:var(--_ui5-v2-17-0_tc_headeritem_padding);right:var(--_ui5-v2-17-0_tc_headeritem_padding)}.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon-outer:after{bottom:-1rem}.ui5-tab-strip-item--disabled{cursor:default;opacity:var(--sapContent_DisabledOpacity)}:host([desktop]) .ui5-tab-strip-item--textOnly:focus:not([data-moving]) .ui5-tab-strip-itemText:before,.ui5-tab-strip-item--textOnly:focus-visible:not([data-moving]) .ui5-tab-strip-itemText:before,:host([desktop]) .ui5-tab-strip-item--inline.ui5-tab-strip-item--textOnly:focus:not([data-moving]) .ui5-tab-strip-itemText:before,.ui5-tab-strip-item--inline.ui5-tab-strip-item--textOnly:focus-visible:not([data-moving]) .ui5-tab-strip-itemText:before{border-radius:var(--_ui5-v2-17-0_tc_headerItem_focus_border_radius);content:"";pointer-events:none;position:absolute;border:var(--_ui5-v2-17-0_tc_headerItem_focus_border);left:var(--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_left);right:var(--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_right);top:var(--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_top);bottom:var(--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_bottom)}:host([desktop]) .ui5-tab-strip-item--mixedMode:focus:not([data-moving]) .ui5-tab-strip-itemContent:before,.ui5-tab-strip-item--mixedMode:focus-visible:not([data-moving]) .ui5-tab-strip-itemContent:before{border-radius:var(--_ui5-v2-17-0_tc_headerItem_focus_border_radius);content:"";pointer-events:none;position:absolute;border:var(--_ui5-v2-17-0_tc_headerItem_focus_border);left:var(--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_left);right:var(--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_right);top:var(--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_top);bottom:var(--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_bottom)}:host([desktop]) .ui5-tab-strip-item--withIcon:focus:not([data-moving]) .ui5-tab-strip-item-icon-outer:before,.ui5-tab-strip-item--withIcon:focus-visible:not([data-moving]) .ui5-tab-strip-item-icon-outer:before{content:"";pointer-events:none;position:absolute;border:var(--_ui5-v2-17-0_tc_headerItem_focus_border);left:var(--_ui5-v2-17-0_tc_headerItem_focus_border_offset);right:var(--_ui5-v2-17-0_tc_headerItem_focus_border_offset);top:var(--_ui5-v2-17-0_tc_headerItem_focus_border_offset);bottom:var(--_ui5-v2-17-0_tc_headerItem_focus_border_offset);border-radius:var(--_ui5-v2-17-0_tc_headerItemIcon_focus_border_radius)}.ui5-tab-strip-item-icon-outer{display:flex;justify-content:center;align-items:center;position:relative;border:var(--_ui5-v2-17-0_tc_headerItemIcon_border);border-radius:50%;margin-inline-end:.25rem;height:var(--_ui5-v2-17-0_tc_item_icon_circle_size);width:var(--_ui5-v2-17-0_tc_item_icon_circle_size);pointer-events:none;background-color:var(--sapTab_Background)}.ui5-tab-strip-item-icon{width:var(--_ui5-v2-17-0_tc_item_icon_size);height:var(--_ui5-v2-17-0_tc_item_icon_size);color:var(--sapTab_IconColor);text-shadow:var(--sapContent_TextShadow);pointer-events:none}.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon-outer{background-color:var(--sapTab_Selected_Background)}.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon{color:var(--sapTab_Selected_IconColor);text-shadow:none}.ui5-tab-strip-itemAdditionalText+.ui5-tab-strip-itemText{display:flex}.ui5-tab-strip-itemAdditionalText-hidden{visibility:hidden;margin-top:1.25rem}.ui5-tab-strip-item--inline .ui5-tab-strip-itemAdditionalText+.ui5-tab-strip-itemText{display:inline}.ui5-tab-strip-item--withIcon .ui5-tab-strip-itemAdditionalText+.ui5-tab-strip-itemText{margin-block-start:var(--_ui5-v2-17-0_tc_item_add_text_margin_top)}.ui5-tab-strip-item--textOnly,.ui5-tab-strip-item.ui5-tab-strip-item--textOnly.ui5-tab-strip-item--inline{font-size:var(--sapFontSize);height:var(--_ui5-v2-17-0_tc_item_text_only_height);display:flex;align-items:center;line-height:var(--_ui5-v2-17-0_tc_item_text_line_height)}.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText{padding:0 .188rem}.ui5-tab-strip-item--textOnly.ui5-tab-strip-item--withAdditionalText{justify-content:flex-start;height:var(--_ui5-v2-17-0_tc_item_text_only_with_additional_text_height)}.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemText,.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemAdditionalText{display:inline-block;vertical-align:middle}.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemContent{flex-direction:row;align-items:center}.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemAdditionalText{font-size:1.5rem;margin-inline-end:.5rem}.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemText{color:var(--_ui5-v2-17-0_tc_mixedMode_itemText_color);font-family:var(--_ui5-v2-17-0_tc_mixedMode_itemText_font_family);font-size:var(--_ui5-v2-17-0_tc_mixedMode_itemText_font_size);font-weight:var(--_ui5-v2-17-0_tc_mixedMode_itemText_font_weight)}.ui5-tab-strip-item--positive.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText,.ui5-tab-strip-item--positive .ui5-tab-strip-item-icon-outer{color:var(--sapTab_Positive_TextColor);border-color:var(--sapTab_Positive_ForegroundColor)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--positive.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText{color:var(--sapTab_Positive_Selected_TextColor)}.ui5-tab-strip-item--positive .ui5-tab-strip-item-icon{color:var(--sapTab_Positive_IconColor)}.ui5-tab-strip-item--positive.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon-outer{background-color:var(--sapTab_Positive_Selected_Background);color:var(--_ui5-v2-17-0_tc_headerItemIcon_semantic_selected_color)}.ui5-tab-strip-item--positive.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon{color:var(--sapTab_Positive_Selected_IconColor)}.ui5-tab-strip-item.ui5-tab-strip-item--neutral .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--neutral .ui5-tab-strip-item-icon-outer:after{border-color:var(--_ui5-v2-17-0_tc_headerItem_neutral_border_color);background-color:var(--_ui5-v2-17-0_tc_headerItem_neutral_border_bg)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--neutral.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText{color:var(--sapTab_Neutral_Selected_TextColor)}.ui5-tab-strip-item.ui5-tab-strip-item--positive .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--positive .ui5-tab-strip-item-icon-outer:after{border-color:var(--sapTab_Positive_ForegroundColor);background-color:var(--_ui5-v2-17-0_tc_headerItem_positive_border_bg)}.ui5-tab-strip-item--negative.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText,.ui5-tab-strip-item--negative .ui5-tab-strip-item-icon-outer{color:var(--sapTab_Negative_TextColor);border-color:var(--sapTab_Negative_ForegroundColor)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--negative.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText{color:var(--sapTab_Negative_Selected_TextColor)}.ui5-tab-strip-item--negative .ui5-tab-strip-item-icon{color:var(--sapTab_Negative_IconColor)}.ui5-tab-strip-item--negative.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon-outer{background-color:var(--sapTab_Negative_Selected_Background)}.ui5-tab-strip-item--negative.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon{color:var(--sapTab_Negative_Selected_IconColor)}.ui5-tab-strip-item.ui5-tab-strip-item--negative .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--negative .ui5-tab-strip-item-icon-outer:after{border-color:var(--sapTab_Negative_ForegroundColor);background-color:var(--_ui5-v2-17-0_tc_headerItem_negative_border_bg)}.ui5-tab-strip-item--critical.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText,.ui5-tab-strip-item--critical .ui5-tab-strip-item-icon-outer{color:var(--sapTab_Critical_TextColor);border-color:var(--sapTab_Critical_ForegroundColor)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--critical.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText{color:var(--sapTab_Critical_Selected_TextColor)}.ui5-tab-strip-item--critical .ui5-tab-strip-item-icon{color:var(--sapTab_Critical_IconColor)}.ui5-tab-strip-item--critical.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon-outer{background-color:var(--sapTab_Critical_Selected_Background)}.ui5-tab-strip-item--critical.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon{color:var(--sapTab_Critical_Selected_IconColor)}.ui5-tab-strip-item.ui5-tab-strip-item--critical .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--critical .ui5-tab-strip-item-icon-outer:after{border-color:var(--sapTab_Critical_ForegroundColor);background-color:var(--_ui5-v2-17-0_tc_headerItem_critical_border_bg)}.ui5-tab-strip-item--neutral.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText,.ui5-tab-strip-item--neutral .ui5-tab-strip-item-icon-outer{color:var(--sapTab_Neutral_TextColor);border-color:var(--sapTab_Neutral_ForegroundColor)}.ui5-tab-strip-item--neutral .ui5-tab-strip-item-icon{color:var(--sapTab_Neutral_IconColor)}.ui5-tab-strip-item--neutral.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon-outer{background-color:var(--sapTab_Neutral_Selected_Background)}.ui5-tab-strip-item--neutral.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon{color:var(--sapTab_Neutral_Selected_IconColor)}.ui5-tab-strip-item.ui5-tab-strip-item--neutral .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--neutral .ui5-tab-strip-item-icon:after{border-color:var(--_ui5-v2-17-0_tc_headerItem_neutral_border_color);background-color:var(--_ui5-v2-17-0_tc_headerItem_neutral_border_bg)}.ui5-tab-strip-item--withIcon .ui5-tab-strip-itemContent .ui5-tab-strip-itemAdditionalText{padding:0}.ui5-tab-strip-item .ui5-tab-strip-itemAdditionalText{padding:0 .188rem;color:var(--_ui5-v2-17-0_tc_headerItem_additional_text_color);font-weight:var(--_ui5-v2-17-0_tc_headerItem_additional_text_font_weight)}.ui5-tab-strip-item.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemAdditionalText{color:var(--_ui5-v2-17-0_tc_headerItem_color)}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const overflowCss$1 = `.ui5-tab-semantic-icon{display:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_display);height:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_size);width:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_size);margin-inline-end:.5rem}.ui5-tab-semantic-icon--positive{color:var(--sapPositiveTextColor)}.ui5-tab-semantic-icon--negative{color:var(--sapNegativeTextColor)}.ui5-tab-semantic-icon--critical{color:var(--sapCriticalTextColor)}.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}.ui5-tab-overflow-item{color:var(--_ui5-v2-17-0_tc_overflowItem_default_color)}.ui5-tab-overflow-item--disabled{cursor:default;opacity:var(--sapContent_DisabledOpacity)}.ui5-tab-overflow-item[hidden]{display:none}.ui5-tab-overflow-item--positive:not(.ui5-tab-overflow-item--disabled) .ui5-tab-overflow-itemContent{color:var(--_ui5-v2-17-0_tc_overflowItem_positive_color)}.ui5-tab-overflow-item--negative:not(.ui5-tab-overflow-item--disabled) .ui5-tab-overflow-itemContent{color:var(--_ui5-v2-17-0_tc_overflowItem_negative_color)}.ui5-tab-overflow-item--critical:not(.ui5-tab-overflow-item--disabled) .ui5-tab-overflow-itemContent{color:var(--_ui5-v2-17-0_tc_overflowItem_critical_color)}.ui5-tab-overflow-item[active] .ui5-tab-overflow-itemContent{color:var(--sapList_Active_TextColor)}.ui5-tab-overflow-itemContent{display:flex;align-items:center;position:relative;height:var(--_ui5-v2-17-0_tc_item_text);pointer-events:none;font-size:.875rem}.ui5-tab-overflow-itemContent-wrapper{padding-inline-start:calc((calc(var(--_ui5-v2-17-0-tab-indentation-level) + var(--_ui5-v2-17-0-tab-level-has-icon) * var(--_ui5-v2-17-0_tc_overflowItem_additional, 0))) * (var(--_ui5-v2-17-0_tc_overflowItem_indent) + var(--_ui5-v2-17-0_tc_overflowItem_extra_indent)))}.ui5-tab-overflow-item .ui5-tab-semantic-icon{position:absolute;inset-inline-start:-1.25rem}.ui5-tab-overflow-item--selectedSubTab{background-color:var(--sapList_SelectionBackgroundColor)}.ui5-tab-overflow-item [ui5-icon]:not(.ui5-tab-semantic-icon){width:1.375rem;height:1.375rem;padding-inline-end:.75rem;color:var(--_ui5-v2-17-0_tc_overflowItem_current_color)}.ui5-tab-container-responsive-popover [ui5-li-custom][focused]::part(native-li):after{inset:var(--_ui5-v2-17-0_tc_overflowItem_focus_offset)}.ui5-tab-container-responsive-popover::part(content){padding:0}
 `;
-var __decorate$u = function(decorators, target, key, desc) {
+var __decorate$E = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -30146,34 +30150,34 @@ let Tab = Tab_1 = class Tab2 extends b$7 {
     }
   }
 };
-__decorate$u([
+__decorate$E([
   s$9()
 ], Tab.prototype, "text", void 0);
-__decorate$u([
+__decorate$E([
   s$9({ type: Boolean })
 ], Tab.prototype, "disabled", void 0);
-__decorate$u([
+__decorate$E([
   s$9()
 ], Tab.prototype, "additionalText", void 0);
-__decorate$u([
+__decorate$E([
   s$9()
 ], Tab.prototype, "icon", void 0);
-__decorate$u([
+__decorate$E([
   s$9()
 ], Tab.prototype, "design", void 0);
-__decorate$u([
+__decorate$E([
   s$9({ type: Boolean })
 ], Tab.prototype, "selected", void 0);
-__decorate$u([
+__decorate$E([
   s$9({ type: Boolean })
 ], Tab.prototype, "movable", void 0);
-__decorate$u([
+__decorate$E([
   s$9({ type: Boolean })
 ], Tab.prototype, "_isTopLevelTab", void 0);
-__decorate$u([
+__decorate$E([
   s$9({ type: Object })
 ], Tab.prototype, "_selectedTabReference", void 0);
-__decorate$u([
+__decorate$E([
   d$8({
     type: Node,
     "default": true,
@@ -30183,7 +30187,7 @@ __decorate$u([
     }
   })
 ], Tab.prototype, "content", void 0);
-__decorate$u([
+__decorate$E([
   d$8({
     type: HTMLElement,
     individualSlots: true,
@@ -30193,10 +30197,10 @@ __decorate$u([
     }
   })
 ], Tab.prototype, "items", void 0);
-__decorate$u([
+__decorate$E([
   i$b("@ui5/webcomponents")
 ], Tab, "i18nBundle", void 0);
-Tab = Tab_1 = __decorate$u([
+Tab = Tab_1 = __decorate$E([
   m$8({
     tag: "ui5-tab",
     languageAware: true,
@@ -30223,14 +30227,14 @@ function TabSeparatorInOverflowTemplate() {
   });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const stripCss = `div.ui5-tc__separator{position:relative;width:.5625rem}div.ui5-tc__separator:before{content:" ";position:absolute;width:.0625rem;left:.25rem;top:.5rem;bottom:.5rem;background:var(--sapGroup_TitleBorderColor)}
 `;
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const overflowCss = `[ui5-li-custom].ui5-tc__separator{min-height:.25rem;border-bottom:.0625rem solid var(--sapGroup_TitleBorderColor);margin-inline-start:calc(var(--_ui5-v2-17-0-tab-indentation-level) * .5rem);margin-inline-end:.5rem}[ui5-list]>[ui5-li-custom].ui5-tc__separator:first-child{min-height:.5rem}
 `;
-var __decorate$t = function(decorators, target, key, desc) {
+var __decorate$D = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -30278,7 +30282,7 @@ let TabSeparator = TabSeparator_1 = class TabSeparator2 extends b$7 {
     }
   }
 };
-TabSeparator = TabSeparator_1 = __decorate$t([
+TabSeparator = TabSeparator_1 = __decorate$D([
   m$8({
     tag: "ui5-tab-separator",
     renderer: y$5
@@ -30291,10 +30295,10 @@ function BarTemplate() {
   return jsxs("div", { class: "ui5-bar-root", "aria-label": this.accInfo.label, role: this.accInfo.role, part: "bar", children: [jsx("div", { class: "ui5-bar-content-container ui5-bar-startcontent-container", part: "startContent", children: jsx("slot", { name: "startContent" }) }), jsx("div", { class: "ui5-bar-content-container ui5-bar-midcontent-container", part: "midContent", children: jsx("slot", {}) }), jsx("div", { class: "ui5-bar-content-container ui5-bar-endcontent-container", part: "endContent", children: jsx("slot", { name: "endContent" }) })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const BarCss = `:host{background-color:var(--sapPageHeader_Background);height:var(--_ui5-v2-17-0_bar_base_height);width:100%;box-shadow:var(--sapContent_HeaderShadow);display:block}.ui5-bar-root{display:flex;align-items:center;justify-content:space-between;height:100%;width:100%;background-color:inherit;box-shadow:inherit;border-radius:inherit;min-width:0;overflow:hidden}.ui5-bar-root .ui5-bar-startcontent-container,.ui5-bar-root .ui5-bar-endcontent-container,.ui5-bar-root .ui5-bar-midcontent-container{display:flex;align-items:center}.ui5-bar-root .ui5-bar-startcontent-container{flex:0 1 auto}.ui5-bar-root .ui5-bar-endcontent-container{flex:0 0 auto}.ui5-bar-root .ui5-bar-midcontent-container{justify-content:center;flex:1 1 auto;padding:0 var(--_ui5-v2-17-0_bar-mid-container-padding-start-end);min-width:0;overflow:hidden}.ui5-bar-root .ui5-bar-startcontent-container{padding-inline-start:var(--_ui5-v2-17-0_bar-start-container-padding-start)}.ui5-bar-root .ui5-bar-content-container{min-width:calc(30% - calc(var(--_ui5-v2-17-0_bar-start-container-padding-start) + var(--_ui5-v2-17-0_bar-end-container-padding-end) + (2*var(--_ui5-v2-17-0_bar-mid-container-padding-start-end))))}.ui5-bar-root.ui5-bar-root-shrinked .ui5-bar-content-container{min-width:0px;overflow:hidden;height:100%}.ui5-bar-root .ui5-bar-endcontent-container{padding-inline-end:var(--_ui5-v2-17-0_bar-end-container-padding-end)}:host([design="Footer"]){background-color:var(--sapPageFooter_Background);border-top:.0625rem solid var(--sapPageFooter_BorderColor);box-shadow:none}:host([design="Subheader"]){height:var(--_ui5-v2-17-0_bar_subheader_height);margin-top:var(--_ui5-v2-17-0_bar_subheader_margin-top)}:host([design="FloatingFooter"]){border-radius:var(--sapElement_BorderCornerRadius);background-color:var(--sapPageFooter_Background);box-shadow:var(--sapContent_Shadow1);border:none}::slotted(*){margin:0 .25rem;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-sizing:border-box}
 `;
-var __decorate$s = function(decorators, target, key, desc) {
+var __decorate$C = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -30343,28 +30347,28 @@ let Bar = class Bar2 extends b$7 {
     return this.accessibleRole.toLowerCase() === "toolbar" ? "toolbar" : void 0;
   }
 };
-__decorate$s([
+__decorate$C([
   s$9()
 ], Bar.prototype, "design", void 0);
-__decorate$s([
+__decorate$C([
   s$9()
 ], Bar.prototype, "accessibleRole", void 0);
-__decorate$s([
+__decorate$C([
   s$9()
 ], Bar.prototype, "accessibleName", void 0);
-__decorate$s([
+__decorate$C([
   s$9()
 ], Bar.prototype, "accessibleNameRef", void 0);
-__decorate$s([
+__decorate$C([
   d$8({ type: HTMLElement })
 ], Bar.prototype, "startContent", void 0);
-__decorate$s([
+__decorate$C([
   d$8({ type: HTMLElement, "default": true })
 ], Bar.prototype, "middleContent", void 0);
-__decorate$s([
+__decorate$C([
   d$8({ type: HTMLElement })
 ], Bar.prototype, "endContent", void 0);
-Bar = __decorate$s([
+Bar = __decorate$C([
   m$8({
     tag: "ui5-bar",
     fastNavigation: true,
@@ -30374,6 +30378,1618 @@ Bar = __decorate$s([
   })
 ], Bar);
 Bar.define();
+const PROMPT_INPUT_CHARACTERS_LEFT = { key: "PROMPT_INPUT_CHARACTERS_LEFT", defaultText: "{0} characters remaining" };
+const PROMPT_INPUT_CHARACTERS_EXCEEDED = { key: "PROMPT_INPUT_CHARACTERS_EXCEEDED", defaultText: "{0} characters over limit" };
+const WRITING_ASSISTANT_LABEL = { key: "WRITING_ASSISTANT_LABEL", defaultText: "Writing Assistant Toolbar Shift + F4" };
+const VERSIONING_PREVIOUS_BUTTON_TEXT = { key: "VERSIONING_PREVIOUS_BUTTON_TEXT", defaultText: "Previous Version" };
+const VERSIONING_NEXT_BUTTON_TEXT = { key: "VERSIONING_NEXT_BUTTON_TEXT", defaultText: "Next Version" };
+const WRITING_ASSISTANT_GENERATING_ANNOUNCEMENT = { key: "WRITING_ASSISTANT_GENERATING_ANNOUNCEMENT", defaultText: "Stop generating (ESC)" };
+const WRITING_ASSISTANT_TOOLBAR_ACCESSIBLE_NAME = { key: "WRITING_ASSISTANT_TOOLBAR_ACCESSIBLE_NAME", defaultText: "Writing Assistant Toolbar" };
+const WRITING_ASSISTANT_BUTTON_ACCESSIBLE_NAME = { key: "WRITING_ASSISTANT_BUTTON_ACCESSIBLE_NAME", defaultText: "Writing Assistant" };
+const WRITING_ASSISTANT_BUTTON_TOOLTIP = { key: "WRITING_ASSISTANT_BUTTON_TOOLTIP", defaultText: "Writing Assistant (Shift + F4)" };
+const WRITING_ASSISTANT_STOP_TOOLTIP = { key: "WRITING_ASSISTANT_STOP_TOOLTIP", defaultText: "Stop Generating (Esc)" };
+const VERSIONING_PREVIOUS_BUTTON_TOOLTIP = { key: "VERSIONING_PREVIOUS_BUTTON_TOOLTIP", defaultText: "Previous Version" };
+const VERSIONING_NEXT_BUTTON_TOOLTIP = { key: "VERSIONING_NEXT_BUTTON_TOOLTIP", defaultText: "Next Version" };
+const name$o = "paper-plane";
+const pathData$n = "M494.98 31.928q7.982 0 13.47 7.483t2.494 15.465L361.28 471.936q-2.993 10.976-15.964 10.976-6.984 0-10.975-3.991l-115.74-105.762-69.842 61.86q-8.98 7.982-18.957 2.495t-8.98-16.463l10.975-126.714L6.082 180.593Q-1.9 173.609.594 164.13t13.47-12.472L490.989 32.926q.997-.998 3.99-.998zm-358.193 221.5L461.056 74.832 51.978 176.601zm70.84 110.751l-40.908-36.917-28.934 90.796zM467.043 75.83l-284.36 219.505 155.65 141.681z";
+const ltr$n = false;
+const collection$n = "SAP-icons-v4";
+const packageName$n = "@ui5/webcomponents-icons";
+y$2(name$o, { pathData: pathData$n, ltr: ltr$n, collection: collection$n, packageName: packageName$n });
+const name$n = "paper-plane";
+const pathData$m = "M455 32q10 0 17.5 7.5T480 58q0 6-2 9L323 464q-7 16-24 16-8 0-14.5-4t-9.5-12l-64-164-163-65q-16-6-16-24 0-17 16-24L445 34q6-2 10-2zM127 212l97 39 126-125zm259-50L260 287l39 98z";
+const ltr$m = false;
+const collection$m = "SAP-icons-v5";
+const packageName$m = "@ui5/webcomponents-icons";
+y$2(name$n, { pathData: pathData$m, ltr: ltr$m, collection: collection$m, packageName: packageName$m });
+const paperPlane = "paper-plane";
+function PromptInputTemplate() {
+  return jsxs("div", { class: "ai-prompt-input-wrapper", children: [this.label && jsx(Label$1, { for: "input", children: this.label }), jsxs("div", { class: "ai-prompt-input-form-wrapper", children: [jsxs("div", { class: "ai-prompt-inner-input-wrapper", children: [jsxs(Input$1, { id: "input", value: this.value, placeholder: this.placeholder, valueState: this.valueState, showClearIcon: this.showClearIcon, disabled: this.disabled, readonly: this.readonly, showSuggestions: this.showSuggestions, onKeyDown: this._onkeydown, onInput: this._onInnerInput, onChange: this._onInnerChange, onTypeAhead: this._onTypeAhead, children: [jsx("slot", {}), this.valueStateMessage.length > 0 && jsx("slot", { name: "valueStateMessage", slot: "valueStateMessage" })] }), this.showExceededText && jsx(Label$1, { class: "ai-prompt-input-counter", children: this._exceededText })] }), jsx(Button$1, { icon: paperPlane, disabled: this._submitButtonDisabled, class: "ai-prompt-input-button", design: "Emphasized", onClick: this._onButtonClick })] })] });
+}
+const defaultTheme$1 = ``;
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents-ai", "sap_horizon", async () => defaultTheme$1);
+const PromptInputCss = `:host(:not([hidden])){display:inline-block}.ai-prompt-input-button{margin-left:.5rem;margin-top:3px}.ai-prompt-input-wrapper{display:flex;flex-direction:column;min-width:270px}.ai-prompt-input-form-wrapper{display:flex;flex:1}.ai-prompt-input-counter{font-size:.75rem;align-self:flex-end}#input{width:100%}.ai-prompt-inner-input-wrapper{display:flex;flex-direction:column;flex:1}
+`;
+var __decorate$B = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var PromptInput_1;
+let PromptInput = PromptInput_1 = class PromptInput2 extends b$7 {
+  constructor() {
+    super(...arguments);
+    this.value = "";
+    this.showClearIcon = false;
+    this.showExceededText = false;
+    this.disabled = false;
+    this.readonly = false;
+    this.valueState = "None";
+    this.showSuggestions = false;
+  }
+  _onkeydown(e2) {
+    if (b$6(e2)) {
+      this.fireDecoratorEvent("submit");
+    }
+  }
+  _onInnerInput(e2) {
+    this.value = e2.currentTarget.value;
+    this.fireDecoratorEvent("input");
+  }
+  _onInnerChange() {
+    this.fireDecoratorEvent("change");
+  }
+  _onButtonClick() {
+    this.fireDecoratorEvent("submit");
+  }
+  _onTypeAhead(e2) {
+    this.value = e2.currentTarget.value;
+  }
+  get _exceededText() {
+    if (this.showExceededText) {
+      let leftCharactersCount;
+      const maxLength = this.maxlength;
+      if (maxLength !== void 0) {
+        leftCharactersCount = maxLength - this.value.length;
+        if (leftCharactersCount >= 0) {
+          return PromptInput_1.i18nBundle.getText(PROMPT_INPUT_CHARACTERS_LEFT, leftCharactersCount);
+        }
+        return PromptInput_1.i18nBundle.getText(PROMPT_INPUT_CHARACTERS_EXCEEDED, Math.abs(leftCharactersCount));
+      }
+    }
+  }
+  get _maxLenght() {
+    return this.maxlength || void 0;
+  }
+  get _submitButtonDisabled() {
+    return this.value.length <= 0 || this.disabled || this.readonly;
+  }
+};
+__decorate$B([
+  s$9()
+], PromptInput.prototype, "value", void 0);
+__decorate$B([
+  s$9()
+], PromptInput.prototype, "placeholder", void 0);
+__decorate$B([
+  s$9()
+], PromptInput.prototype, "label", void 0);
+__decorate$B([
+  s$9({ type: Boolean })
+], PromptInput.prototype, "showClearIcon", void 0);
+__decorate$B([
+  s$9({ type: Boolean })
+], PromptInput.prototype, "showExceededText", void 0);
+__decorate$B([
+  s$9({ type: Boolean })
+], PromptInput.prototype, "disabled", void 0);
+__decorate$B([
+  s$9({ type: Boolean })
+], PromptInput.prototype, "readonly", void 0);
+__decorate$B([
+  s$9({ type: Number })
+], PromptInput.prototype, "maxlength", void 0);
+__decorate$B([
+  s$9()
+], PromptInput.prototype, "valueState", void 0);
+__decorate$B([
+  s$9({ type: Boolean })
+], PromptInput.prototype, "showSuggestions", void 0);
+__decorate$B([
+  d$8({ type: HTMLElement, "default": true })
+], PromptInput.prototype, "suggestionItems", void 0);
+__decorate$B([
+  d$8({
+    type: HTMLElement,
+    invalidateOnChildChange: true
+  })
+], PromptInput.prototype, "valueStateMessage", void 0);
+__decorate$B([
+  i$b("@ui5/webcomponents-ai")
+], PromptInput, "i18nBundle", void 0);
+PromptInput = PromptInput_1 = __decorate$B([
+  m$8({
+    tag: "ui5-ai-prompt-input",
+    renderer: y$5,
+    styles: PromptInputCss,
+    template: PromptInputTemplate
+  }),
+  l$e("submit", {
+    bubbles: true
+  }),
+  l$e("input", {
+    bubbles: true
+  }),
+  l$e("change", {
+    bubbles: true
+  })
+], PromptInput);
+PromptInput.define();
+const IconPerValueState = {
+  Negative: iconError,
+  Critical: iconAlert,
+  Positive: iconSysEnter2,
+  Information: iconInformation
+};
+function TextAreaPopoverTemplate() {
+  return jsx(Fragment, { children: this.displayValueStateMessagePopover && jsx(Popover$1, { preventFocusRestore: true, hideArrow: true, preventInitialFocus: true, class: "ui5-valuestatemessage-popover", style: { "max-width": `${this._width}px` }, placement: "Bottom", horizontalAlign: PopoverHorizontalAlign$1.Start, children: jsxs("div", { slot: "header", class: {
+    "ui5-valuestatemessage-root": true,
+    ...this.classes.valueStateMsg
+  }, children: [jsx(Icon$1, { class: "ui5-input-value-state-message-icon", name: valueStateIcon.call(this) }), valueStateMessage.call(this)] }) }) });
+}
+function valueStateMessage() {
+  return this.hasCustomValueState ? jsx("slot", { name: "valueStateMessage" }) : this.valueStateDefaultText;
+}
+function valueStateIcon() {
+  return this.valueState !== o$6.None ? IconPerValueState[this.valueState] : "";
+}
+function TextAreaTemplate$1() {
+  return jsxs(Fragment, { children: [jsxs("div", { class: this.classes.root, onFocusIn: this._onfocusin, onFocusOut: this._onfocusout, children: [jsxs("div", { class: "ui5-textarea-wrapper", children: [this.growing && jsx("div", { id: `${this._id}-mirror`, class: "ui5-textarea-mirror", "aria-hidden": "true", children: this._mirrorText.map((mirrorText) => {
+    return jsxs(Fragment, { children: [mirrorText.text, jsx("br", {})] });
+  }) }), jsx("textarea", { id: `${this._id}-inner`, class: "ui5-textarea-inner", part: "textarea", placeholder: this.placeholder, disabled: this.disabled, readonly: this.readonly, "aria-label": this.ariaLabelText, "aria-describedby": this.ariaDescribedBy, "aria-invalid": this._ariaInvalid, "aria-required": this.required, maxlength: this._exceededTextProps.calcedMaxLength, value: this.value, "data-sap-focus-ref": true, onInput: this._oninput, onChange: this._onchange, onKeyUp: this._onkeyup, onKeyDown: this._onkeydown, onSelect: this._onselect, onScroll: this._onscroll })] }), afterTextarea.call(this), this.showExceededText && jsx("span", { class: "ui5-textarea-exceeded-text", children: this._exceededTextProps.exceededText }), this.ariaDescriptionText && jsx("span", { id: "accessibleDescription", class: "ui5-hidden-text", children: this.ariaDescriptionText }), this.hasValueState && jsx("span", { id: `${this._id}-valueStateDesc`, class: "ui5-hidden-text", children: this.ariaValueStateHiddenText })] }), TextAreaPopoverTemplate.call(this)] });
+}
+function afterTextarea() {
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
+const textareaStyles = `:host{vertical-align:middle}.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block}:host{width:100%;min-width:6rem;color:var(--sapField_TextColor);min-height:var(--_ui5-v2-17-0_textarea_min_height);font-size:var(--sapFontSize);font-family:var(--sapFontFamily);font-style:normal;box-sizing:border-box;line-height:var(--_ui5-v2-17-0_textarea_line_height);margin:var(--_ui5-v2-17-0_textarea_margin)}:host([value-state][disabled]) .ui5-textarea-wrapper,:host(:not([value-state]):not([readonly]):not([focused])) .ui5-textarea-wrapper,:host([readonly][disabled]) .ui5-textarea-wrapper,:host([value-state="None"]:not([readonly]):not([disabled]):not([focused])) .ui5-textarea-wrapper{background:var(--sapField_BackgroundStyle);background-color:var(--sapField_Background)}:host(:not([value-state]):not([readonly]):not([disabled]):hover) .ui5-textarea-wrapper,:host([value-state="None"]:not([readonly]):not([disabled]):hover) .ui5-textarea-wrapper{background:var(--sapField_Hover_BackgroundStyle);background-color:var(--sapField_Hover_Background);border:var(--_ui5-v2-17-0_textarea_hover_border)}:host(:not([value-state]):not([readonly]):not([disabled]):not([focused]):hover) .ui5-textarea-wrapper,:host([value-state="None"]:not([readonly]):not([disabled]):not([focused]):hover) .ui5-textarea-wrapper{box-shadow:var(--sapField_Hover_Shadow)}.ui5-textarea-root{width:100%;height:inherit;min-height:var(--_ui5-v2-17-0_textarea_min_height);display:inline-flex;vertical-align:top;outline:none;box-sizing:border-box;border-radius:inherit;border-color:inherit;position:relative}.ui5-textarea-wrapper{position:relative;box-sizing:border-box;width:100%;border-bottom:none;display:flex;height:100%;background-color:var(--sapField_Background);border-color:var(--sapField_BorderColor);border-radius:var(--sapField_BorderCornerRadius);border-width:var(--sapField_BorderWidth);border-style:var(--sapField_BorderStyle);padding:var(--_ui5-v2-17-0_textarea_wrapper_padding);outline:none}:host([disabled]) .ui5-textarea-wrapper{opacity:var(--_ui5-v2-17-0_textarea_disabled_opacity);cursor:default;pointer-events:none}:host(:not([readonly])) .ui5-textarea-wrapper,:host([readonly][disabled]) .ui5-textarea-wrapper{box-shadow:var(--sapField_Shadow)}:host([value-state]) .ui5-textarea-wrapper{border-color:inherit}:host([focused]) .ui5-textarea-wrapper{background-color:var(--sapField_Focus_Background);background-image:none;box-shadow:none}:host([focused]) .ui5-textarea-wrapper:after{content:var(--_ui5-v2-17-0_textarea_focus_pseudo_element_content);position:absolute;pointer-events:none;border:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--_ui5-v2-17-0_textarea_focus_outline_color);border-radius:var(--_ui5-v2-17-0_textarea_focus_border_radius);top:var(--_ui5-v2-17-0_textarea_focus_offset);bottom:var(--_ui5-v2-17-0_textarea_focus_offset);left:var(--_ui5-v2-17-0_textarea_focus_offset);right:var(--_ui5-v2-17-0_textarea_focus_offset)}:host([focused][readonly]) .ui5-textarea-wrapper:after{top:var(--_ui5-v2-17-0_textarea_readonly_focus_offset);bottom:var(--_ui5-v2-17-0_textarea_readonly_focus_offset);left:var(--_ui5-v2-17-0_textarea_readonly_focus_offset);right:var(--_ui5-v2-17-0_textarea_readonly_focus_offset)}:host([focused][value-state="Negative"]:not([disabled])) .ui5-textarea-wrapper:after,:host([focused][value-state="Critical"]:not([disabled])) .ui5-textarea-wrapper:after,:host([focused][value-state="Information"]:not([disabled])) .ui5-textarea-wrapper:after{top:var(--_ui5-v2-17-0_textarea_value_state_focus_offset);bottom:var(--_ui5-v2-17-0_textarea_value_state_focus_offset);left:var(--_ui5-v2-17-0_textarea_value_state_focus_offset);right:var(--_ui5-v2-17-0_textarea_value_state_focus_offset)}.ui5-textarea-inner{border:none;box-sizing:border-box;width:100%;margin:0;padding:var(--_ui5-v2-17-0_textarea_padding_top) var(--_ui5-v2-17-0_textarea_padding_right_and_left) var(--_ui5-v2-17-0_textarea_padding_bottom);color:inherit;font-size:inherit;font-family:inherit;font-style:inherit;-webkit-appearance:none;-moz-appearance:textfield;overflow:auto;resize:none;line-height:inherit;letter-spacing:inherit;word-spacing:inherit;background:transparent;outline:none}:host([growing]) .ui5-textarea-inner{box-sizing:border-box;height:calc(100% - (2 * var(--_ui5-v2-17-0_textarea_wrapper_padding)));width:var(--_ui5-v2-17-0_textarea_inner_width, calc(100% - (2 * var(--_ui5-v2-17-0_textarea_wrapper_padding))));position:absolute}:host([growing]:not([growing-max-rows])) .ui5-textarea-inner{overflow:hidden}.ui5-textarea-mirror{box-sizing:border-box;line-height:var(--_ui5-v2-17-0_textarea_line_height);visibility:hidden;width:100%;max-height:94vh;word-break:break-word;min-height:calc((var(--_textarea_rows) * var(--_ui5-v2-17-0_textarea_line_height)) * var(--sapFontSize) + var(--_ui5-v2-17-0_textarea_padding_top) + var(--_ui5-v2-17-0_textarea_padding_bottom));padding:var(--_ui5-v2-17-0_textarea_padding_top) var(--_ui5-v2-17-0_textarea_padding_right_and_left) var(--_ui5-v2-17-0_textarea_padding_bottom);font-size:var(--sapFontSize);font-family:var(--sapFontFamily);white-space:pre-wrap;overflow-y:auto}:host([style*="height"]) .ui5-textarea-root,:host([growing][style*="height"]) .ui5-textarea-wrapper{height:inherit;min-height:var(--_ui5-v2-17-0_textarea_min_height)}:host([rows]) .ui5-textarea-inner,:host([rows]) .ui5-textarea-mirror{min-height:calc((var(--_textarea_rows) * var(--_ui5-v2-17-0_textarea_line_height)) * var(--sapFontSize) + var(--_ui5-v2-17-0_textarea_padding_top) + var(--_ui5-v2-17-0_textarea_padding_bottom))}:host(:not([rows])) .ui5-textarea-inner{min-height:calc(2 * var(--_ui5-v2-17-0_textarea_line_height) * var(--sapFontSize) + var(--_ui5-v2-17-0_textarea_padding_top) + var(--_ui5-v2-17-0_textarea_padding_bottom))}:host([growing]):not([growing-max-rows="0"]) .ui5-textarea-inner{max-height:100%}:host([growing-max-rows]:not([growing-max-rows="0"])) .ui5-textarea-mirror{max-height:calc((var(--_textarea_growing_max_rows) * var(--_ui5-v2-17-0_textarea_line_height)) * var(--sapFontSize) + var(--_ui5-v2-17-0_textarea_padding_top) + var(--_ui5-v2-17-0_textarea_padding_bottom))}:host([rows="1"]) .ui5-textarea-inner{min-height:calc(var(--_ui5-v2-17-0_textarea_line_height) * var(--sapFontSize) + var(--_ui5-v2-17-0_textarea_padding_top) + var(--_ui5-v2-17-0_textarea_padding_bottom))}:host([growing-max-rows="1"]) .ui5-textarea-inner,:host([growing-max-rows="1"]) .ui5-textarea-mirror{max-height:calc(var(--_ui5-v2-17-0_textarea_line_height) * var(--sapFontSize) + var(--_ui5-v2-17-0_textarea_padding_top) + var(--_ui5-v2-17-0_textarea_padding_bottom));min-height:calc(var(--_ui5-v2-17-0_textarea_line_height) * var(--sapFontSize) + var(--_ui5-v2-17-0_textarea_padding_top) + var(--_ui5-v2-17-0_textarea_padding_bottom))}:host([rows="1"][growing-max-rows]) .ui5-textarea-inner,:host([rows="1"][growing-max-rows]) .ui5-textarea-mirror{min-height:calc(var(--_ui5-v2-17-0_textarea_line_height) * var(--sapFontSize) + var(--_ui5-v2-17-0_textarea_padding_top) + var(--_ui5-v2-17-0_textarea_padding_bottom));max-height:calc((var(--_textarea_growing_max_rows) * var(--_ui5-v2-17-0_textarea_line_height)) * var(--sapFontSize) + var(--_ui5-v2-17-0_textarea_padding_top) + var(--_ui5-v2-17-0_textarea_padding_bottom))}:host([value-state="Negative"]) .ui5-textarea-mirror,:host([value-state="Critical"]) .ui5-textarea-mirror{padding-top:var(--_ui5-v2-17-0_textarea_padding_top_error_warning);padding-bottom:var(--_ui5-v2-17-0_textarea_padding_bottom_error_warning);min-height:calc(var(--_textarea_rows) * var(--_ui5-v2-17-0_textarea_line_height) * var(--sapFontSize) + var(--_ui5-v2-17-0_textarea_padding_top_error_warning) + var(--_ui5-v2-17-0_textarea_padding_bottom_error_warning))}:host([growing-max-rows="1"][value-state="Negative"]) .ui5-textarea-inner,:host([growing-max-rows="1"][value-state="Negative"]) .ui5-textarea-mirror :host([growing-max-rows="1"][value-state="Critical"]) .ui5-textarea-inner,:host([growing-max-rows="1"][value-state="Critical"]) .ui5-textarea-mirror{max-height:var(--_ui5-v2-17-0_textarea_line_height) * var(--sapFontSize) + var(--_ui5-v2-17-0_textarea_padding_top_error_warning) + var(--_ui5-v2-17-0_textarea_padding_bottom_error_warning);min-height:var(--_ui5-v2-17-0_textarea_line_height) * var(--sapFontSize) + var(--_ui5-v2-17-0_textarea_padding_top_error_warning) + var(--_ui5-v2-17-0_textarea_padding_bottom_error_warning)}:host([value-state="Information"]) .ui5-textarea-mirror{padding-top:var(--_ui5-v2-17-0_textarea_padding_top_information);padding-bottom:var(--_ui5-v2-17-0_textarea_padding_bottom_information);min-height:calc(var(--_textarea_rows) * var(--_ui5-v2-17-0_textarea_line_height) * var(--sapFontSize) + var(--_ui5-v2-17-0_textarea_padding_top_information) + var(--_ui5-v2-17-0_textarea_padding_bottom_information))}:host([growing-max-rows="1"][value-state="Information"]) .ui5-textarea-inner,:host([growing-max-rows="1"][value-state="Information"]) .ui5-textarea-mirror{max-height:var(--_ui5-v2-17-0_textarea_line_height) * var(--sapFontSize) + var(--_ui5-v2-17-0_textarea_padding_top__ui5_textarea_padding_top_information) + var(--_ui5-v2-17-0_textarea_padding_bottom__ui5_textarea_padding_top_information);min-height:var(--_ui5-v2-17-0_textarea_line_height) * var(--sapFontSize) + var(--_ui5-v2-17-0_textarea_padding_top_error_warning) + var(--_ui5-v2-17-0_textarea_padding_bottom_information)}:host([readonly]:not([disabled])){border-color:var(--sapField_ReadOnly_BorderColor)}:host([readonly]:not([disabled])) .ui5-textarea-inner{padding:var(--_ui5-v2-17-0_textarea_padding_top_readonly) var(--_ui5-v2-17-0_textarea_padding_right_and_left_readonly) var(--_ui5-v2-17-0_textarea_padding_bottom_readonly)}:host([readonly]:not([disabled])) .ui5-textarea-root .ui5-textarea-wrapper{background-color:var(--sapField_ReadOnly_Background);border-color:var(--sapField_ReadOnly_BorderColor);border-style:var(--_ui5-v2-17-0_textarea_readonly_border_style)}:host([show-exceeded-text]) .ui5-textarea-root{flex-direction:column}.ui5-textarea-inner::-webkit-input-placeholder{font-weight:400;font-style:var(--_ui5-v2-17-0_textarea_placeholder_font_style);color:var(--sapField_PlaceholderTextColor)}.ui5-textarea-inner::-moz-placeholder{font-weight:400;font-style:var(--_ui5-v2-17-0_textarea_placeholder_font_style);color:var(--sapField_PlaceholderTextColor)}.ui5-textarea-inner:-moz-placeholder{font-weight:400;font-style:var(--_ui5-v2-17-0_textarea_placeholder_font_style);color:var(--sapField_PlaceholderTextColor)}:host([value-state="Negative"]) .ui5-textarea-inner::-webkit-input-placeholder{font-weight:var(--_ui5-v2-17-0_textarea_value_state_error_warning_placeholder_font_weight);font-style:var(--_ui5-v2-17-0_textarea_error_placeholder_font_style);color:var(--_ui5-v2-17-0_textarea_error_placeholder_color)}:host([value-state="Negative"]) .ui5-textarea-inner::-moz-placeholder{font-weight:var(--_ui5-v2-17-0_textarea_value_state_error_warning_placeholder_font_weight);font-style:var(--_ui5-v2-17-0_textarea_error_placeholder_font_style);color:var(--_ui5-v2-17-0_textarea_error_placeholder_color)}:host([value-state="Critical"]) .ui5-textarea-inner::-moz-placeholder{font-weight:var(--_ui5-v2-17-0_textarea_value_state_error_warning_placeholder_font_weight);font-style:var(--_ui5-v2-17-0_textarea_error_placeholder_font_style);color:var(--sapField_PlaceholderTextColor)}:host([value-state="Critical"]) .ui5-textarea-inner::-webkit-input-placeholder{font-weight:var(--_ui5-v2-17-0_textarea_value_state_error_warning_placeholder_font_weight);font-style:var(--_ui5-v2-17-0_textarea_error_placeholder_font_style);color:var(--sapField_PlaceholderTextColor)}:host([value-state="Negative"]:not([readonly]):not([disabled])) .ui5-textarea-wrapper{background:var(--sapField_InvalidBackgroundStyle);background-color:var(--sapField_InvalidBackground);border-color:var(--sapField_InvalidColor);box-shadow:var(--sapField_InvalidShadow)}:host([value-state="Negative"][focused]:not([readonly]):not([disabled])) .ui5-textarea-wrapper{background-color:var(--_ui5-v2-17-0_textarea_focused_value_state_error_background);border-color:var(--sapField_InvalidColor)}:host([value-state="Negative"][focused]:not([readonly]):not([disabled])) .ui5-textarea-wrapper:after{border-color:var(--_ui5-v2-17-0_textarea_focused_value_state_error_focus_outline_color)}:host([value-state="Negative"]:not([readonly]):not([focused]):not([disabled]):hover) .ui5-textarea-wrapper{background-color:var(--_ui5-v2-17-0_textarea_error_hover_background_color);box-shadow:var(--sapField_Hover_InvalidShadow)}:host([value-state="Negative"]:not([readonly]):not([disabled])) .ui5-textarea-inner,:host([value-state="Critical"]:not([readonly]):not([disabled])) .ui5-textarea-inner{font-style:var(--_ui5-v2-17-0_textarea_error_warning_font_style);font-weight:var(--_ui5-v2-17-0_textarea_error_warning_font_weight);padding:var(--_ui5-v2-17-0_textarea_padding_top_error_warning) var(--_ui5-v2-17-0_textarea_padding_right_and_left_error_warning) var(--_ui5-v2-17-0_textarea_padding_bottom_error_warning)}:host([value-state="Negative"]:not([readonly]):not([disabled])) .ui5-textarea-wrapper,:host([value-state="Critical"]:not([readonly]):not([disabled])) .ui5-textarea-wrapper{border-style:var(--_ui5-v2-17-0_textarea_error_warning_border_style);border-width:var(--_ui5-v2-17-0_textarea_state_border_width);padding:var(--_ui5-v2-17-0_textarea_warning_error_wrapper_padding)}:host([value-state="Negative"]:not([readonly]):not([disabled])) .ui5-textarea-inner,:host([value-state="Critical"]:not([readonly]):not([disabled])) .ui5-textarea-inner,:host([value-state="Information"]:not([readonly]):not([disabled])) .ui5-textarea-inner{border-style:none}:host([value-state="Critical"]:not([readonly]):not([disabled])) .ui5-textarea-wrapper{background:var(--sapField_WarningBackgroundStyle);background-color:var(--sapField_WarningBackground);border-color:var(--sapField_WarningColor);box-shadow:var(--sapField_WarningShadow)}:host([value-state="Critical"][focused]:not([readonly])) .ui5-textarea-wrapper{background-color:var(--_ui5-v2-17-0_textarea_focused_value_state_warning_background);border-color:var(--sapField_WarningColor)}:host([value-state="Critical"][focused]:not([readonly])) .ui5-textarea-wrapper:after{border-color:var(--_ui5-v2-17-0_textarea_focused_value_state_warning_focus_outline_color)}:host([value-state="Critical"]:not([readonly]):not([disabled]):not([focused]):hover) .ui5-textarea-wrapper{background-color:var(--sapField_Hover_Background);box-shadow:var(--sapField_Hover_WarningShadow)}:host([value-state="Positive"]:not([readonly]):not([disabled])) .ui5-textarea-wrapper{background:var(--sapField_SuccessBackgroundStyle);background-color:var(--sapField_SuccessBackground);border-color:var(--sapField_SuccessColor);border-width:var(--sapField_BorderWidth);box-shadow:var(--sapField_SuccessShadow);padding:var(--_ui5-v2-17-0_textarea_success_wrapper_padding)}:host([value-state="Positive"][focused]:not([readonly])) .ui5-textarea-wrapper{background-color:var(--_ui5-v2-17-0_textarea_focused_value_state_success_background);border-color:var(--sapField_SuccessColor)}:host([value-state="Positive"][focused]:not([readonly])) .ui5-textarea-wrapper:after{border-color:var(--_ui5-v2-17-0_textarea_focused_value_state_success_focus_outline_color)}:host([value-state="Positive"]:not([readonly]):not([disabled]):not([focused]):hover) .ui5-textarea-wrapper{background-color:var(--sapField_Hover_Background);box-shadow:var(--sapField_Hover_SuccessShadow)}:host([value-state][value-state="Positive"]) .ui5-textarea-inner{border-radius:var(--sapField_BorderCornerRadius)}:host([value-state="Information"]:not([readonly]):not([disabled])) .ui5-textarea-inner{padding:var(--_ui5-v2-17-0_textarea_padding_top_information) var(--_ui5-v2-17-0_textarea_padding_right_and_left_information) var(--_ui5-v2-17-0_textarea_padding_bottom_information)}:host([value-state="Information"]:not([readonly]):not([disabled])) .ui5-textarea-wrapper{background:var(--sapField_InformationBackgroundStyle);background-color:var(--sapField_InformationBackground);border-color:var(--sapField_InformationColor);box-shadow:var(--sapField_InformationShadow);padding:var(--_ui5-v2-17-0_textarea_information_wrapper_padding);border-width:var(--_ui5-v2-17-0_textarea_information_border_width);border-style:var(--_ui5-v2-17-0_textarea_error_warning_border_style)}:host([value-state="Information"][focused]:not([readonly])) .ui5-textarea-wrapper{background-color:var(--_ui5-v2-17-0_textarea_focused_value_state_information_background);border-color:var(--sapField_InformationColor)}:host([value-state="Information"]:not([readonly]):not([disabled]):not([focused]):hover) .ui5-textarea-wrapper{background-color:var(--sapField_Hover_Background);box-shadow:var(--sapField_Hover_InformationShadow)}.ui5-textarea-exceeded-text{align-self:flex-end;padding:.125rem .125rem .5rem;color:var(--sapContent_LabelColor);font-family:var(--sapFontFamily);font-size:var(--sapFontSmallSize)}:host([readonly]) .ui5-textarea-exceeded-text,:host([disabled]) .ui5-textarea-exceeded-text{display:none}
+`;
+var __decorate$A = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var TextArea_1$1;
+let TextArea$1 = TextArea_1$1 = class TextArea extends b$7 {
+  get formValidityMessage() {
+    return TextArea_1$1.i18nBundle.getText(FORM_TEXTFIELD_REQUIRED);
+  }
+  get formValidity() {
+    return { valueMissing: this.required && !this.value };
+  }
+  async formElementAnchor() {
+    return this.getFocusDomRefAsync();
+  }
+  get formFormattedValue() {
+    return this.value;
+  }
+  constructor() {
+    super();
+    this.value = "";
+    this.disabled = false;
+    this.readonly = false;
+    this.required = false;
+    this.valueState = "None";
+    this.rows = 0;
+    this.showExceededText = false;
+    this.growing = false;
+    this.growingMaxRows = 0;
+    this.focused = false;
+    this.exceeding = false;
+    this._mirrorText = [];
+    this._firstRendering = true;
+    this._openValueStateMsgPopover = false;
+    this._fnOnResize = this._onResize.bind(this);
+    this.previousValue = "";
+  }
+  onEnterDOM() {
+    f$6.register(this, this._fnOnResize);
+  }
+  onExitDOM() {
+    f$6.deregister(this, this._fnOnResize);
+  }
+  onBeforeRendering() {
+    if (!this.value) {
+      this.value = "";
+    }
+    this._exceededTextProps = this._calcExceededText();
+    this._mirrorText = this._tokenizeText(this.value);
+    this.exceeding = !!this._exceededTextProps.leftCharactersCount && this._exceededTextProps.leftCharactersCount < 0;
+    this._setCSSParams();
+  }
+  onAfterRendering() {
+    const nativeTextArea = this.getInputDomRef();
+    if (this.rows === 1) {
+      nativeTextArea.setAttribute("rows", "1");
+    } else {
+      nativeTextArea.removeAttribute("rows");
+    }
+    this.toggleValueStateMessage(this.openValueStateMsgPopover);
+    this._firstRendering = false;
+  }
+  getInputDomRef() {
+    return this.getDomRef().querySelector("textarea");
+  }
+  _onkeydown(e2) {
+    this._keyDown = true;
+    if (m$6(e2)) {
+      const nativeTextArea = this.getInputDomRef();
+      const prevented = !this.fireDecoratorEvent("input", {
+        escapePressed: true
+      });
+      if (!prevented) {
+        this.value = this.previousValue;
+        nativeTextArea.value = this.value;
+      }
+    }
+  }
+  _onkeyup() {
+    this._keyDown = false;
+  }
+  _onfocusin() {
+    this.focused = true;
+    this._openValueStateMsgPopover = true;
+    this.previousValue = this.getInputDomRef().value;
+  }
+  _onfocusout(e2) {
+    const eTarget = e2.relatedTarget;
+    const focusedOutToValueStateMessage = eTarget && this.contains(eTarget);
+    this.focused = false;
+    if (!focusedOutToValueStateMessage) {
+      this._openValueStateMsgPopover = false;
+    }
+  }
+  _onchange() {
+    this.fireDecoratorEvent("change");
+  }
+  _onselect() {
+    this.fireDecoratorEvent("select");
+  }
+  _onscroll() {
+    this.fireDecoratorEvent("scroll");
+  }
+  _oninput(e2) {
+    const nativeTextArea = this.getInputDomRef();
+    if (e2.target === nativeTextArea) {
+      e2.stopImmediatePropagation();
+    }
+    this.value = nativeTextArea.value;
+    const valueLength = this.value.length;
+    if (e2.inputType === "insertFromPaste" && this.maxlength && valueLength > this.maxlength) {
+      nativeTextArea.setSelectionRange(this.maxlength, valueLength);
+    }
+    this.fireDecoratorEvent("input");
+    this.fireDecoratorEvent("value-changed");
+  }
+  _onResize() {
+    if (this.displayValueStateMessagePopover) {
+      this._width = this.offsetWidth;
+    }
+  }
+  _setCSSParams() {
+    this.style.setProperty("--_textarea_rows", this.rows ? String(this.rows) : "2");
+    this.style.setProperty("--_textarea_growing_max_rows", String(this.growingMaxRows));
+  }
+  toggleValueStateMessage(toggle) {
+    if (toggle) {
+      this.openPopover();
+    } else {
+      this.closePopover();
+    }
+  }
+  openPopover() {
+    this.valueStatePopover = this._getPopover();
+    if (this.valueStatePopover) {
+      this.valueStatePopover.opener = this.shadowRoot.querySelector(".ui5-textarea-root .ui5-textarea-wrapper");
+      this.valueStatePopover.open = true;
+    }
+  }
+  closePopover() {
+    this.valueStatePopover = this._getPopover();
+    if (this.valueStatePopover) {
+      this.valueStatePopover.open = false;
+    }
+  }
+  _getPopover() {
+    return this.shadowRoot.querySelector("[ui5-popover]");
+  }
+  _tokenizeText(value) {
+    const tokenizedText = value.replace(/</gm, "<").replace(/>/gm, ">").split("\n");
+    return this._mapTokenizedTextToObject(tokenizedText);
+  }
+  _mapTokenizedTextToObject(tokenizedText) {
+    return tokenizedText.map((token, index) => {
+      return {
+        text: token,
+        last: index === tokenizedText.length - 1
+      };
+    });
+  }
+  _calcExceededText() {
+    let calcedMaxLength, exceededText, leftCharactersCount;
+    if (this.showExceededText) {
+      const maxLength = this.maxlength;
+      if (maxLength !== null && maxLength !== void 0) {
+        leftCharactersCount = maxLength - this.value.length;
+        if (leftCharactersCount >= 0) {
+          exceededText = TextArea_1$1.i18nBundle.getText(TEXTAREA_CHARACTERS_LEFT, leftCharactersCount);
+        } else {
+          exceededText = TextArea_1$1.i18nBundle.getText(TEXTAREA_CHARACTERS_EXCEEDED, Math.abs(leftCharactersCount));
+        }
+      }
+    } else {
+      calcedMaxLength = this.maxlength;
+    }
+    return {
+      exceededText,
+      leftCharactersCount,
+      calcedMaxLength
+    };
+  }
+  get classes() {
+    return {
+      root: {
+        "ui5-textarea-root": true
+      },
+      valueStateMsg: {
+        "ui5-valuestatemessage-header": true,
+        "ui5-valuestatemessage--error": this.valueState === o$6.Negative,
+        "ui5-valuestatemessage--warning": this.valueState === o$6.Critical,
+        "ui5-valuestatemessage--information": this.valueState === o$6.Information
+      }
+    };
+  }
+  get tabIndex() {
+    return this.disabled ? -1 : 0;
+  }
+  get ariaLabelText() {
+    const effectiveAriaLabelText = A$3(this) || M$1(this);
+    if (this.showExceededText) {
+      if (effectiveAriaLabelText) {
+        return effectiveAriaLabelText.concat(" ", this._exceededTextProps.exceededText);
+      }
+      return this._exceededTextProps.exceededText;
+    }
+    return effectiveAriaLabelText;
+  }
+  get ariaDescriptionText() {
+    return L$3(this);
+  }
+  get ariaDescriptionTextId() {
+    return this.ariaDescriptionText ? "accessibleDescription" : "";
+  }
+  get ariaDescribedBy() {
+    const ids = [
+      this.hasValueState ? `${this._id}-valueStateDesc` : "",
+      this.ariaDescriptionTextId
+    ].filter(Boolean).join(" ");
+    return ids || void 0;
+  }
+  get ariaValueStateHiddenText() {
+    if (!this.hasValueState) {
+      return;
+    }
+    if (this.valueState === o$6.None) {
+      return;
+    }
+    if (this.hasCustomValueState) {
+      return `${this.valueStateTypeMappings[this.valueState]}`.concat(" ", this.valueStateMessage.map((el) => el.textContent).join(" "));
+    }
+    return `${this.valueStateTypeMappings[this.valueState]} ${this.valueStateDefaultText}`;
+  }
+  get valueStateDefaultText() {
+    if (this.valueState !== o$6.None) {
+      return this.valueStateTextMappings[this.valueState];
+    }
+    return "";
+  }
+  get _ariaInvalid() {
+    return this.valueState === o$6.Negative ? "true" : void 0;
+  }
+  get openValueStateMsgPopover() {
+    return !this._firstRendering && this._openValueStateMsgPopover && this.displayValueStateMessagePopover;
+  }
+  get displayValueStateMessagePopover() {
+    return !this.readonly && (this.hasCustomValueState || this.hasValueState);
+  }
+  get hasCustomValueState() {
+    return !!this.valueStateMessage.length && this.hasValueState;
+  }
+  get hasValueState() {
+    return this.valueState === o$6.Negative || this.valueState === o$6.Critical || this.valueState === o$6.Information;
+  }
+  get valueStateTextMappings() {
+    return {
+      "Positive": TextArea_1$1.i18nBundle.getText(VALUE_STATE_SUCCESS),
+      "Information": TextArea_1$1.i18nBundle.getText(VALUE_STATE_INFORMATION),
+      "Negative": TextArea_1$1.i18nBundle.getText(VALUE_STATE_ERROR),
+      "Critical": TextArea_1$1.i18nBundle.getText(VALUE_STATE_WARNING)
+    };
+  }
+  get valueStateTypeMappings() {
+    return {
+      "Positive": TextArea_1$1.i18nBundle.getText(VALUE_STATE_TYPE_SUCCESS),
+      "Information": TextArea_1$1.i18nBundle.getText(VALUE_STATE_TYPE_INFORMATION),
+      "Negative": TextArea_1$1.i18nBundle.getText(VALUE_STATE_TYPE_ERROR),
+      "Critical": TextArea_1$1.i18nBundle.getText(VALUE_STATE_TYPE_WARNING)
+    };
+  }
+};
+__decorate$A([
+  s$9()
+], TextArea$1.prototype, "value", void 0);
+__decorate$A([
+  s$9({ type: Boolean })
+], TextArea$1.prototype, "disabled", void 0);
+__decorate$A([
+  s$9({ type: Boolean })
+], TextArea$1.prototype, "readonly", void 0);
+__decorate$A([
+  s$9({ type: Boolean })
+], TextArea$1.prototype, "required", void 0);
+__decorate$A([
+  s$9()
+], TextArea$1.prototype, "placeholder", void 0);
+__decorate$A([
+  s$9()
+], TextArea$1.prototype, "valueState", void 0);
+__decorate$A([
+  s$9({ type: Number })
+], TextArea$1.prototype, "rows", void 0);
+__decorate$A([
+  s$9({ type: Number })
+], TextArea$1.prototype, "maxlength", void 0);
+__decorate$A([
+  s$9({ type: Boolean })
+], TextArea$1.prototype, "showExceededText", void 0);
+__decorate$A([
+  s$9({ type: Boolean })
+], TextArea$1.prototype, "growing", void 0);
+__decorate$A([
+  s$9({ type: Number })
+], TextArea$1.prototype, "growingMaxRows", void 0);
+__decorate$A([
+  s$9()
+], TextArea$1.prototype, "name", void 0);
+__decorate$A([
+  s$9()
+], TextArea$1.prototype, "accessibleName", void 0);
+__decorate$A([
+  s$9()
+], TextArea$1.prototype, "accessibleNameRef", void 0);
+__decorate$A([
+  s$9()
+], TextArea$1.prototype, "accessibleDescription", void 0);
+__decorate$A([
+  s$9()
+], TextArea$1.prototype, "accessibleDescriptionRef", void 0);
+__decorate$A([
+  s$9({ type: Boolean })
+], TextArea$1.prototype, "focused", void 0);
+__decorate$A([
+  s$9({ type: Boolean })
+], TextArea$1.prototype, "exceeding", void 0);
+__decorate$A([
+  s$9({ type: Array })
+], TextArea$1.prototype, "_mirrorText", void 0);
+__decorate$A([
+  s$9({ noAttribute: true })
+], TextArea$1.prototype, "_maxHeight", void 0);
+__decorate$A([
+  s$9({ type: Number })
+], TextArea$1.prototype, "_width", void 0);
+__decorate$A([
+  d$8()
+], TextArea$1.prototype, "valueStateMessage", void 0);
+__decorate$A([
+  i$b("@ui5/webcomponents")
+], TextArea$1, "i18nBundle", void 0);
+TextArea$1 = TextArea_1$1 = __decorate$A([
+  m$8({
+    tag: "ui5-textarea",
+    formAssociated: true,
+    languageAware: true,
+    styles: [
+      textareaStyles,
+      valueStateMessageStyles
+    ],
+    renderer: y$5,
+    template: TextAreaTemplate$1
+  }),
+  l$e("change", {
+    bubbles: true
+  }),
+  l$e("value-changed", {
+    bubbles: true
+  }),
+  l$e("input", {
+    bubbles: true,
+    cancelable: true
+  }),
+  l$e("select", {
+    bubbles: true
+  }),
+  l$e("scroll", {
+    bubbles: true
+  })
+], TextArea$1);
+TextArea$1.define();
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents-ai", "sap_horizon", async () => defaultTheme$1);
+const TextAreaCss = `.ui5-ai-textarea-root{position:relative;display:flex;flex-direction:column;width:100%;height:100%}.ui5-ai-textarea-root .ui5-textarea-wrapper{display:flex;flex-direction:column;flex:1;position:relative}.ui5-ai-textarea-root [part=footer]{position:relative;width:100%;margin-top:auto;flex-shrink:0}.ui5-ai-writing-assistant-footer-bar{background:var(--_ui5-v2-17-0_texteditor_toolbar_background, var(--sapPageFooter_Background));width:100%;box-sizing:border-box;box-shadow:none;border-bottom:none;border-top:none}.ui5-ai-writing-assistant-footer-bar--with-border{border-top:1px solid var(--sapPageFooter_BorderColor)}.ui5-ai-writing-assistant-action-label{margin-left:.5rem;color:var(--sapContent_LabelColor);font-size:var(--sapFontSmallSize)}#ai-menu-wrapper{position:relative;z-index:1000}
+`;
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents-ai", "sap_horizon", async () => defaultTheme$1);
+const WritingAssistantCss = `.ui5-ai-textarea-root{position:relative;display:flex;flex-direction:column;width:100%;height:100%}.ui5-ai-textarea-root .ui5-textarea-wrapper{display:flex;flex-direction:column;flex:1;position:relative}.ui5-ai-textarea-root [part=footer]{width:100%;margin-top:auto;flex-shrink:0}.ui5-ai-writing-assistant-footer-bar{background:var(--_ui5-v2-17-0_texteditor_toolbar_background, var(--sapPageFooter_Background));width:100%;box-sizing:border-box;box-shadow:none;border-bottom:none;border-top:none;padding:.5rem;min-height:2.75rem;display:flex;align-items:center;justify-content:flex-start}.ui5-ai-writing-assistant-footer-bar--with-border{border-top:1px solid var(--sapPageFooter_BorderColor)}.ui5-ai-writing-assistant-action-label{color:var(--sapContent_LabelColor);font-size:var(--sapFontSize);font-family:"72override",var(--sapFontFamily);margin-left:.25rem}
+`;
+var __decorate$z = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+let ToolbarItem = (
+  /**
+   * @class
+   *
+   * Represents an abstract class for items, used in the `ui5-toolbar`.
+   * @constructor
+   * @extends UI5Element
+   * @abstract
+   * @public
+   * @since 1.17.0
+   */
+  class ToolbarItem2 extends b$7 {
+    constructor() {
+      super(...arguments);
+      this.overflowPriority = "Default";
+      this.preventOverflowClosing = false;
+      this.isOverflowed = false;
+      this._isRendering = true;
+    }
+    onAfterRendering() {
+      this._isRendering = false;
+    }
+    /**
+    * Defines if the width of the item should be ignored in calculating the whole width of the toolbar
+    * @protected
+    */
+    get ignoreSpace() {
+      return false;
+    }
+    /**
+     * Returns if the item is flexible. An item that is returning true for this property will make
+     * the toolbar expand to fill the 100% width of its container.
+     * @protected
+     */
+    get hasFlexibleWidth() {
+      return false;
+    }
+    /**
+     * Returns if the item is interactive.
+     * This value is used to determinate if the toolbar should have its accessibility role and attributes set.
+     * At least two interactive items are needed for the toolbar to have the role="toolbar" attribute set.
+     * @protected
+     */
+    get isInteractive() {
+      return true;
+    }
+    /**
+     * Returns if the item is separator.
+     * @protected
+     */
+    get isSeparator() {
+      return false;
+    }
+    get stableDomRef() {
+      return this.getAttribute("stable-dom-ref") || `${this._id}-stable-dom-ref`;
+    }
+    get classes() {
+      return {
+        root: {
+          "ui5-tb-popover-item": this.isOverflowed,
+          "ui5-tb-item": true
+        }
+      };
+    }
+  }
+);
+__decorate$z([
+  s$9()
+], ToolbarItem.prototype, "overflowPriority", void 0);
+__decorate$z([
+  s$9({ type: Boolean })
+], ToolbarItem.prototype, "preventOverflowClosing", void 0);
+__decorate$z([
+  s$9({ type: Boolean })
+], ToolbarItem.prototype, "isOverflowed", void 0);
+ToolbarItem = __decorate$z([
+  l$e("close-overflow", {
+    bubbles: true
+  })
+  /**
+   * @class
+   *
+   * Represents an abstract class for items, used in the `ui5-toolbar`.
+   * @constructor
+   * @extends UI5Element
+   * @abstract
+   * @public
+   * @since 1.17.0
+   */
+], ToolbarItem);
+const ToolbarItem$1 = ToolbarItem;
+function ToolbarButtonTemplate() {
+  return jsx(Button$1, { class: this.classes.root, id: this.id, style: {
+    width: this.width || "100%"
+  }, icon: this.icon, endIcon: this.endIcon, tooltip: this.tooltip, accessibleName: this.accessibleName, accessibleNameRef: this.accessibleNameRef, accessibilityAttributes: this.accessibilityAttributes, design: this.design, disabled: this.disabled, hidden: this.hidden, "data-ui5-external-action-item-id": this._id, "data-ui5-stable": this.stableDomRef, onClick: (...args) => this.onClick(...args), children: this.effectiveText });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
+const ToolbarButtonCss = `:host([disabled]:active){pointer-events:none}.ui5-tb-popover-item.ui5-tb-button::part(button){justify-content:start}.ui5-tb-popover-item.ui5-tb-button[icon-only]::part(button){padding:0 var(--_ui5-v2-17-0_button_base_padding)}
+`;
+var __decorate$y = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+let ToolbarButton = class ToolbarButton2 extends ToolbarItem$1 {
+  constructor() {
+    super(...arguments);
+    this.disabled = false;
+    this.design = "Default";
+    this.accessibilityAttributes = {};
+    this.showOverflowText = false;
+  }
+  get styles() {
+    return {
+      width: this.width,
+      display: this.hidden ? "none" : "inline-block"
+    };
+  }
+  /**
+   * Returns the effective text to display based on overflow state and showOverflowText property.
+   *
+   * When showOverflowText is true:
+   * - Normal state: returns empty string (icon-only)
+   * - Overflow state: returns text
+   *
+   * When showOverflowText is false:
+   * - Returns text in both states (normal behavior)
+   */
+  get effectiveText() {
+    if (this.showOverflowText) {
+      return this.isOverflowed ? this.text : "";
+    }
+    return this.text;
+  }
+  onClick(e2) {
+    e2.stopImmediatePropagation();
+    const prevented = !this.fireDecoratorEvent("click", { targetRef: e2.target });
+    if (!prevented && !this.preventOverflowClosing) {
+      this.fireDecoratorEvent("close-overflow");
+    }
+  }
+  /**
+   * @override
+   */
+  get classes() {
+    return {
+      root: {
+        ...super.classes.root,
+        "ui5-tb-button": true
+      }
+    };
+  }
+};
+__decorate$y([
+  s$9({ type: Boolean })
+], ToolbarButton.prototype, "disabled", void 0);
+__decorate$y([
+  s$9()
+], ToolbarButton.prototype, "design", void 0);
+__decorate$y([
+  s$9()
+], ToolbarButton.prototype, "icon", void 0);
+__decorate$y([
+  s$9()
+], ToolbarButton.prototype, "endIcon", void 0);
+__decorate$y([
+  s$9()
+], ToolbarButton.prototype, "tooltip", void 0);
+__decorate$y([
+  s$9()
+], ToolbarButton.prototype, "accessibleName", void 0);
+__decorate$y([
+  s$9()
+], ToolbarButton.prototype, "accessibleNameRef", void 0);
+__decorate$y([
+  s$9({ type: Object })
+], ToolbarButton.prototype, "accessibilityAttributes", void 0);
+__decorate$y([
+  s$9()
+], ToolbarButton.prototype, "text", void 0);
+__decorate$y([
+  s$9({ type: Boolean })
+], ToolbarButton.prototype, "showOverflowText", void 0);
+__decorate$y([
+  s$9()
+], ToolbarButton.prototype, "width", void 0);
+ToolbarButton = __decorate$y([
+  m$8({
+    tag: "ui5-toolbar-button",
+    template: ToolbarButtonTemplate,
+    renderer: y$5,
+    styles: [ToolbarButtonCss]
+  }),
+  l$e("click", {
+    bubbles: true,
+    cancelable: true
+  })
+], ToolbarButton);
+ToolbarButton.define();
+const ToolbarButton$1 = ToolbarButton;
+function ToolbarLabelTemplate() {
+  return jsx("span", { class: "ui5-ai-toolbar-label", children: this.text });
+}
+var __decorate$x = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+let ToolbarLabel = class ToolbarLabel2 extends ToolbarItem$1 {
+  constructor() {
+    super(...arguments);
+    this.text = "";
+  }
+  /**
+   * @override
+   * ToolbarLabel is not interactive.
+   */
+  get isInteractive() {
+    return false;
+  }
+  /**
+   * @override
+   */
+  get classes() {
+    return {
+      root: {
+        ...super.classes.root,
+        "ui5-ai-tb-label": true
+      }
+    };
+  }
+};
+__decorate$x([
+  s$9()
+], ToolbarLabel.prototype, "text", void 0);
+ToolbarLabel = __decorate$x([
+  m$8({
+    tag: "ui5-ai-toolbar-label",
+    template: ToolbarLabelTemplate,
+    renderer: y$5
+  })
+], ToolbarLabel);
+ToolbarLabel.define();
+const ToolbarLabel$1 = ToolbarLabel;
+function VersioningTemplate() {
+  return jsxs(Fragment, { children: [jsx(ToolbarButton$1, { design: "Transparent", icon: "navigation-left-arrow", tooltip: this._previousButtonTooltip, accessibleName: this._previousButtonAccessibleName, disabled: this.currentStep <= 1, onClick: this.handlePreviousVersionClick, "data-ui5-versioning-button": "previous" }), jsx(ToolbarLabel$1, { text: `${this.currentStep} / ${this.totalSteps}`, class: "version-step-counter" }), jsx(ToolbarButton$1, { design: "Transparent", icon: "navigation-right-arrow", tooltip: this._nextButtonTooltip, accessibleName: this._nextButtonAccessibleName, disabled: this.totalSteps <= 0 || this.currentStep >= this.totalSteps, onClick: this.handleNextVersionClick, "data-ui5-versioning-button": "next" })] });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents-ai", "sap_horizon", async () => defaultTheme$1);
+const VersioningCss = `:host{display:inline-flex;align-items:center}#versioning-history{display:flex;align-items:center;gap:0}.version-step-counter{margin:0 .25rem;display:flex;align-items:center;color:var(--sapContent_LabelColor);font-size:var(--sapFontSmallSize);line-height:1}
+`;
+var __decorate$w = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var Versioning_1;
+var LastClickedButton;
+(function(LastClickedButton2) {
+  LastClickedButton2["None"] = "";
+  LastClickedButton2["Previous"] = "previous";
+  LastClickedButton2["Next"] = "next";
+})(LastClickedButton || (LastClickedButton = {}));
+let Versioning = Versioning_1 = class Versioning2 extends ToolbarItem$1 {
+  constructor() {
+    super(...arguments);
+    this.currentStep = 0;
+    this.totalSteps = 0;
+    this._previousCurrentStep = 0;
+    this._previousTotalSteps = 0;
+    this._lastClickedButton = LastClickedButton.None;
+  }
+  static async onDefine() {
+    Versioning_1.i18nBundle = await f$e("@ui5/webcomponents-ai");
+  }
+  onAfterRendering() {
+    this._manageFocus();
+    this._previousCurrentStep = this.currentStep;
+    this._previousTotalSteps = this.totalSteps;
+    this._lastClickedButton = LastClickedButton.None;
+  }
+  /**
+   * Manages focus when navigation buttons become disabled/enabled.
+   * Automatically moves focus to available button when user reaches boundaries.
+   * @private
+   */
+  _manageFocus() {
+    if (!this.shadowRoot) {
+      return;
+    }
+    const previousButton = this.shadowRoot.querySelector('[data-ui5-versioning-button="previous"]');
+    const nextButton = this.shadowRoot.querySelector('[data-ui5-versioning-button="next"]');
+    if (!previousButton || !nextButton) {
+      return;
+    }
+    const isPreviousDisabled = this.currentStep <= 1;
+    const isNextDisabled = this.currentStep >= this.totalSteps;
+    const wasPreviousDisabled = this._previousCurrentStep <= 1;
+    const wasNextDisabled = this._previousCurrentStep >= this._previousTotalSteps;
+    if (isPreviousDisabled && !wasPreviousDisabled && !isNextDisabled && this._lastClickedButton === LastClickedButton.Previous && nextButton instanceof HTMLElement) {
+      nextButton.focus();
+      this._lastClickedButton = LastClickedButton.None;
+    } else if (isNextDisabled && !wasNextDisabled && !isPreviousDisabled && this._lastClickedButton === LastClickedButton.Next && previousButton instanceof HTMLElement) {
+      previousButton.focus();
+      this._lastClickedButton = LastClickedButton.None;
+    }
+  }
+  handlePreviousVersionClick() {
+    this._lastClickedButton = LastClickedButton.Previous;
+    this.fireDecoratorEvent("version-change", { backwards: true });
+  }
+  handleNextVersionClick() {
+    this._lastClickedButton = LastClickedButton.Next;
+    this.fireDecoratorEvent("version-change", { backwards: false });
+  }
+  get _previousButtonAccessibleName() {
+    return Versioning_1.i18nBundle.getText(VERSIONING_PREVIOUS_BUTTON_TEXT);
+  }
+  get _nextButtonAccessibleName() {
+    return Versioning_1.i18nBundle.getText(VERSIONING_NEXT_BUTTON_TEXT);
+  }
+  get _previousButtonTooltip() {
+    return Versioning_1.i18nBundle.getText(VERSIONING_PREVIOUS_BUTTON_TOOLTIP);
+  }
+  get _nextButtonTooltip() {
+    return Versioning_1.i18nBundle.getText(VERSIONING_NEXT_BUTTON_TOOLTIP);
+  }
+  /**
+   * @override
+   */
+  get classes() {
+    return {
+      root: {
+        ...super.classes.root,
+        "ui5-ai-versioning": true
+      }
+    };
+  }
+};
+__decorate$w([
+  s$9({ type: Number })
+], Versioning.prototype, "currentStep", void 0);
+__decorate$w([
+  s$9({ type: Number })
+], Versioning.prototype, "totalSteps", void 0);
+Versioning = Versioning_1 = __decorate$w([
+  m$8({
+    tag: "ui5-ai-versioning",
+    renderer: y$5,
+    styles: VersioningCss,
+    template: VersioningTemplate,
+    dependencies: [
+      Button$1,
+      Label$1,
+      ToolbarButton$1,
+      ToolbarLabel$1
+    ]
+  }),
+  l$e("version-change")
+], Versioning);
+Versioning.define();
+const Versioning$1 = Versioning;
+function ToolbarTemplate() {
+  return jsxs(Fragment, { children: [jsxs("div", { class: {
+    "ui5-tb-items": true,
+    "ui5-tb-items-full-width": this.hasFlexibleSpacers
+  }, role: this.accInfo.root.role, "aria-label": this.accInfo.root.accessibleName, children: [this.standardItems.map((item) => {
+    if ("styles" in item) {
+      return jsx("div", { class: "ui5-tb-item", id: item._individualSlot, style: item.styles, children: jsx("slot", { name: item._individualSlot }) });
+    }
+    return jsx("div", { class: "ui5-tb-item", id: item._individualSlot, children: jsx("slot", { name: item._individualSlot }) });
+  }), jsx(Button$1, { "aria-hidden": this.hideOverflowButton, icon: iconOverflow, design: "Transparent", onClick: this.toggleOverflow, class: {
+    "ui5-tb-item": true,
+    "ui5-tb-overflow-btn": true,
+    "ui5-tb-overflow-btn-hidden": this.hideOverflowButton
+  }, tooltip: this.accInfo.overflowButton.tooltip, accessibleName: this.accInfo.overflowButton.accessibleName, accessibilityAttributes: this.accInfo.overflowButton.accessibilityAttributes })] }), jsx(Popover$1, { class: "ui5-overflow-popover", placement: "Bottom", horizontalAlign: "End", onClose: this.onOverflowPopoverClosed, onOpen: this.onOverflowPopoverOpened, accessibleName: this.accInfo.popover.accessibleName, hideArrow: true, children: jsx("div", { class: {
+    "ui5-overflow-list": true
+  }, children: this.overflowItems.map((item) => {
+    if (item.isSeparator) {
+      return jsx("div", { class: "ui5-tb-popover-item ui5-tb-separator ui5-tb-separator-in-overflow", id: item._individualSlot, children: jsx("slot", { name: item._individualSlot }) });
+    }
+    return jsx("div", { class: "ui5-tb-popover-item", id: item._individualSlot, children: jsx("slot", { name: item._individualSlot }) });
+  }) }) })] });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
+const ToolbarCss = `:host(:not([hidden])){width:100%;height:var(--_ui5-v2-17-0-toolbar-height);display:flex;align-items:center;justify-content:flex-end;box-sizing:border-box;border-bottom:.0625rem solid var(--sapGroup_ContentBorderColor);padding:0 var(--_ui5-v2-17-0-toolbar-padding-left) 0 var(--_ui5-v2-17-0-toolbar-padding-right);background-color:var(--sapList_HeaderBackground)}:host([align-content="Start"]){justify-content:flex-start}.ui5-tb-items{width:100%;height:100%;display:inherit;align-items:inherit;justify-content:inherit}.ui5-tb-items-full-width{width:100%}.ui5-tb-item{flex-shrink:0}.ui5-tb-item{margin-inline-end:var(--_ui5-v2-17-0-toolbar-item-margin-right);margin-inline-start:var(--_ui5-v2-17-0-toolbar-item-margin-left)}.ui5-tb-overflow-btn,.ui5-tb-items:has(.ui5-tb-overflow-btn-hidden) .ui5-tb-item:nth-last-child(2){margin-inline-end:0;margin-inline-start:0}.ui5-tb-overflow-btn-hidden{visibility:hidden;position:absolute}:host([design="Transparent"]){background-color:transparent}
+`;
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
+const ToolbarPopoverCss = `.ui5-overflow-popover::part(content){padding:var(--_ui5-v2-17-0_toolbar_overflow_padding)}.ui5-overflow-list{display:flex;flex-direction:column;justify-content:center;align-items:center}.ui5-tb-popover-item{width:100%}::slotted([slot^="default"])::part(button){width:100%;display:block}.ui5-tb-popover-item:not(:last-child){margin-bottom:.25rem}.ui5-tb-separator-in-overflow{display:none;height:.0625rem;background:var(--sapToolbar_SeparatorColor);box-sizing:border-box}.ui5-tb-separator-in-overflow[visible]{display:block}
+`;
+var ToolbarItemOverflowBehavior;
+(function(ToolbarItemOverflowBehavior2) {
+  ToolbarItemOverflowBehavior2["Default"] = "Default";
+  ToolbarItemOverflowBehavior2["NeverOverflow"] = "NeverOverflow";
+  ToolbarItemOverflowBehavior2["AlwaysOverflow"] = "AlwaysOverflow";
+})(ToolbarItemOverflowBehavior || (ToolbarItemOverflowBehavior = {}));
+const ToolbarItemOverflowBehavior$1 = ToolbarItemOverflowBehavior;
+var __decorate$v = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var Toolbar_1;
+function calculateCSSREMValue(styleSet, propertyName) {
+  return Number(styleSet.getPropertyValue(propertyName).replace("rem", "")) * parseInt(getComputedStyle(document.body).getPropertyValue("font-size"));
+}
+function parsePxValue(styleSet, propertyName) {
+  return Number(styleSet.getPropertyValue(propertyName).replace("px", ""));
+}
+let Toolbar = Toolbar_1 = class Toolbar2 extends b$7 {
+  static get styles() {
+    return [
+      ToolbarCss,
+      ToolbarPopoverCss
+    ];
+  }
+  constructor() {
+    super();
+    this.alignContent = "End";
+    this.reverseOverflow = false;
+    this.design = "Solid";
+    this.popoverOpen = false;
+    this.itemsToOverflow = [];
+    this.itemsWidth = 0;
+    this.minContentWidth = 0;
+    this.ITEMS_WIDTH_MAP = /* @__PURE__ */ new Map();
+    this._onResize = this.onResize.bind(this);
+    this._onCloseOverflow = this.closeOverflow.bind(this);
+  }
+  /**
+   * Read-only members
+   */
+  get overflowButtonSize() {
+    var _a2;
+    return ((_a2 = this.overflowButtonDOM) == null ? void 0 : _a2.getBoundingClientRect().width) || 0;
+  }
+  get padding() {
+    const toolbarComputedStyle = getComputedStyle(this.getDomRef());
+    return calculateCSSREMValue(toolbarComputedStyle, d$g("--_ui5-toolbar-padding-left")) + calculateCSSREMValue(toolbarComputedStyle, d$g("--_ui5-toolbar-padding-right"));
+  }
+  get alwaysOverflowItems() {
+    return this.items.filter((item) => item.overflowPriority === ToolbarItemOverflowBehavior$1.AlwaysOverflow);
+  }
+  get movableItems() {
+    return this.items.filter((item) => item.overflowPriority !== ToolbarItemOverflowBehavior$1.AlwaysOverflow && item.overflowPriority !== ToolbarItemOverflowBehavior$1.NeverOverflow);
+  }
+  get overflowItems() {
+    const overflowItems = this.itemsToOverflow.filter((item) => !item.ignoreSpace);
+    return this.reverseOverflow ? overflowItems.reverse() : overflowItems;
+  }
+  get standardItems() {
+    return this.items.filter((item) => this.itemsToOverflow.indexOf(item) === -1);
+  }
+  get hideOverflowButton() {
+    return this.itemsToOverflow.filter((item) => !(item.ignoreSpace || item.isSeparator)).length === 0;
+  }
+  get interactiveItems() {
+    return this.items.filter((item) => item.isInteractive);
+  }
+  /**
+   * Accessibility
+   */
+  get hasAriaSemantics() {
+    return this.interactiveItems.length > 1;
+  }
+  get accessibleRole() {
+    return this.hasAriaSemantics ? "toolbar" : void 0;
+  }
+  get ariaLabelText() {
+    return this.hasAriaSemantics ? A$3(this) : void 0;
+  }
+  get accInfo() {
+    return {
+      root: {
+        role: this.accessibleRole,
+        accessibleName: this.ariaLabelText
+      },
+      overflowButton: {
+        accessibleName: Toolbar_1.i18nBundle.getText(TOOLBAR_OVERFLOW_BUTTON_ARIA_LABEL),
+        tooltip: Toolbar_1.i18nBundle.getText(TOOLBAR_OVERFLOW_BUTTON_ARIA_LABEL),
+        accessibilityAttributes: {
+          expanded: this.popoverOpen,
+          hasPopup: "menu"
+        }
+      },
+      popover: {
+        accessibleName: Toolbar_1.i18nBundle.getText(TOOLBAR_POPOVER_AVAILABLE_VALUES)
+      }
+    };
+  }
+  /**
+   * Toolbar Overflow Popover
+   */
+  get overflowButtonDOM() {
+    return this.shadowRoot.querySelector(".ui5-tb-overflow-btn");
+  }
+  get hasFlexibleSpacers() {
+    return this.items.some((item) => item.hasFlexibleWidth);
+  }
+  /**
+   * Lifecycle methods
+   */
+  onEnterDOM() {
+    f$6.register(this, this._onResize);
+  }
+  onExitDOM() {
+    f$6.deregister(this, this._onResize);
+  }
+  onInvalidation(changeInfo) {
+    if (changeInfo.reason === "childchange") {
+      const currentItemsWidth = this.items.reduce((total, item) => total + this.getItemWidth(item), 0);
+      if (currentItemsWidth !== this.itemsWidth) {
+        this.onToolbarItemChange();
+      }
+    }
+  }
+  onBeforeRendering() {
+    var _a2;
+    this.detachListeners();
+    this.attachListeners();
+    if (t$7() === ((_a2 = this.overflowButtonDOM) == null ? void 0 : _a2.getFocusDomRef()) && this.hideOverflowButton) {
+      const lastItem = this.interactiveItems.at(-1);
+      lastItem == null ? void 0 : lastItem.focus();
+    }
+  }
+  async onAfterRendering() {
+    await f$i();
+    this.storeItemsWidth();
+    this.processOverflowLayout();
+    this.items.forEach((item) => {
+      item.isOverflowed = this.overflowItems.map((overflowItem) => overflowItem).indexOf(item) !== -1;
+    });
+  }
+  /**
+   * Returns if the overflow popup is open.
+   * @public
+   */
+  isOverflowOpen() {
+    const overflowPopover = this.getOverflowPopover();
+    return overflowPopover.open;
+  }
+  openOverflow() {
+    const overflowPopover = this.getOverflowPopover();
+    overflowPopover.opener = this.overflowButtonDOM;
+    overflowPopover.open = true;
+    this.reverseOverflow = overflowPopover.actualPlacement === "Top";
+  }
+  closeOverflow() {
+    const overflowPopover = this.getOverflowPopover();
+    overflowPopover.open = false;
+  }
+  toggleOverflow() {
+    if (this.popoverOpen) {
+      this.closeOverflow();
+    } else {
+      this.openOverflow();
+    }
+  }
+  getOverflowPopover() {
+    return this.shadowRoot.querySelector(".ui5-overflow-popover");
+  }
+  /**
+   * Layout management
+   */
+  processOverflowLayout() {
+    if (this.offsetWidth === 0) {
+      return;
+    }
+    const containerWidth = this.offsetWidth - this.padding;
+    const contentWidth = this.itemsWidth;
+    let overflowSpace = contentWidth - containerWidth + this.overflowButtonSize;
+    if (contentWidth <= containerWidth) {
+      overflowSpace = 0;
+    }
+    if (this.width === containerWidth && this.contentWidth === contentWidth) {
+      return;
+    }
+    this.distributeItems(overflowSpace);
+    this.width = containerWidth;
+    this.contentWidth = contentWidth;
+  }
+  storeItemsWidth() {
+    let totalWidth = 0, minWidth = 0;
+    this.items.forEach((item) => {
+      const itemWidth = this.getItemWidth(item);
+      totalWidth += itemWidth;
+      if (item.overflowPriority === ToolbarItemOverflowBehavior$1.NeverOverflow) {
+        minWidth += itemWidth;
+      }
+      this.ITEMS_WIDTH_MAP.set(item._id, itemWidth);
+    });
+    if (minWidth !== this.minContentWidth) {
+      const spaceAroundContent = this.offsetWidth - this.getDomRef().offsetWidth;
+      this.fireDecoratorEvent("_min-content-width-change", {
+        minWidth: minWidth + spaceAroundContent + this.overflowButtonSize
+      });
+    }
+    this.itemsWidth = totalWidth;
+    this.minContentWidth = minWidth;
+  }
+  distributeItems(overflowSpace = 0) {
+    const movableItems = this.movableItems.reverse();
+    let index = 0;
+    let currentItem = movableItems[index];
+    this.itemsToOverflow = [];
+    this.distributeItemsThatAlwaysOverflow();
+    while (overflowSpace > 0 && currentItem) {
+      this.itemsToOverflow.unshift(currentItem);
+      overflowSpace -= this.getCachedItemWidth(currentItem == null ? void 0 : currentItem._id) || 0;
+      index++;
+      currentItem = movableItems[index];
+    }
+    if (index < movableItems.length) {
+      let lastItem = movableItems[index];
+      while (index <= movableItems.length - 1 && lastItem.isSeparator) {
+        this.itemsToOverflow.unshift(lastItem);
+        index++;
+        lastItem = movableItems[index];
+      }
+    }
+    this.setSeperatorsVisibilityInOverflow();
+  }
+  distributeItemsThatAlwaysOverflow() {
+    this.alwaysOverflowItems.forEach((item) => {
+      this.itemsToOverflow.push(item);
+    });
+  }
+  setSeperatorsVisibilityInOverflow() {
+    this.itemsToOverflow.forEach((item, idx, items) => {
+      if (item.isSeparator) {
+        item.visible = this.shouldShowSeparatorInOverflow(idx, items);
+      }
+    });
+  }
+  shouldShowSeparatorInOverflow(separatorIdx, overflowItems) {
+    let foundPrevNonSeparatorItem = false;
+    let foundNextNonSeperatorItem = false;
+    overflowItems.forEach((item, idx) => {
+      if (idx < separatorIdx && !item.isSeparator) {
+        foundPrevNonSeparatorItem = true;
+      }
+      if (idx > separatorIdx && !item.isSeparator) {
+        foundNextNonSeperatorItem = true;
+      }
+    });
+    return foundPrevNonSeparatorItem && foundNextNonSeperatorItem;
+  }
+  /**
+   * Event Handlers
+   */
+  onOverflowPopoverClosed() {
+    this.popoverOpen = false;
+  }
+  onBeforeClose(e2) {
+    e2.preventDefault();
+  }
+  onOverflowPopoverOpened() {
+    this.popoverOpen = true;
+  }
+  onResize() {
+    this.closeOverflow();
+    this.processOverflowLayout();
+  }
+  /**
+   * Private members
+   */
+  attachListeners() {
+    this.addEventListener("ui5-close-overflow", this._onCloseOverflow);
+  }
+  detachListeners() {
+    this.removeEventListener("ui5-close-overflow", this._onCloseOverflow);
+  }
+  onToolbarItemChange() {
+    this.itemsToOverflow = [];
+    this.contentWidth = 0;
+  }
+  getItemWidth(item) {
+    if (item.ignoreSpace || item.isSeparator) {
+      return 0;
+    }
+    const id = item._id;
+    const renderedItem = this.shadowRoot.querySelector(`#${item.slot}`);
+    let itemWidth = 0;
+    if (renderedItem && !renderedItem.classList.contains("ui5-tb-popover-item") && renderedItem.offsetWidth && item._isRendering === false) {
+      const ItemCSSStyleSet = getComputedStyle(renderedItem);
+      itemWidth = renderedItem.offsetWidth + parsePxValue(ItemCSSStyleSet, "margin-inline-end") + parsePxValue(ItemCSSStyleSet, "margin-inline-start");
+    } else {
+      itemWidth = this.getCachedItemWidth(id) || 0;
+    }
+    return Math.ceil(itemWidth);
+  }
+  getCachedItemWidth(id) {
+    return this.ITEMS_WIDTH_MAP.get(id);
+  }
+};
+__decorate$v([
+  s$9()
+], Toolbar.prototype, "alignContent", void 0);
+__decorate$v([
+  s$9({ type: Number })
+], Toolbar.prototype, "width", void 0);
+__decorate$v([
+  s$9({ type: Number })
+], Toolbar.prototype, "contentWidth", void 0);
+__decorate$v([
+  s$9({ type: Boolean })
+], Toolbar.prototype, "reverseOverflow", void 0);
+__decorate$v([
+  s$9()
+], Toolbar.prototype, "accessibleName", void 0);
+__decorate$v([
+  s$9()
+], Toolbar.prototype, "accessibleNameRef", void 0);
+__decorate$v([
+  s$9()
+], Toolbar.prototype, "design", void 0);
+__decorate$v([
+  s$9({ type: Boolean })
+], Toolbar.prototype, "popoverOpen", void 0);
+__decorate$v([
+  d$8({
+    "default": true,
+    type: HTMLElement,
+    invalidateOnChildChange: true,
+    individualSlots: true
+  })
+], Toolbar.prototype, "items", void 0);
+__decorate$v([
+  i$b("@ui5/webcomponents")
+], Toolbar, "i18nBundle", void 0);
+Toolbar = Toolbar_1 = __decorate$v([
+  m$8({
+    tag: "ui5-toolbar",
+    languageAware: true,
+    renderer: y$5,
+    template: ToolbarTemplate
+  }),
+  l$e("_min-content-width-change", {
+    bubbles: true
+  })
+], Toolbar);
+Toolbar.define();
+const Toolbar$1 = Toolbar;
+var __decorate$u = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+let ToolbarSpacer = class ToolbarSpacer2 extends ToolbarItem$1 {
+  get styles() {
+    return this.width ? { width: this.width } : { flex: "auto" };
+  }
+  get ignoreSpace() {
+    return this.width === "" || this.width === void 0 || this.width === "auto";
+  }
+  get hasFlexibleWidth() {
+    return this.width === "" || this.width === void 0 || this.width === "auto";
+  }
+  get isInteractive() {
+    return false;
+  }
+};
+__decorate$u([
+  s$9()
+], ToolbarSpacer.prototype, "width", void 0);
+ToolbarSpacer = __decorate$u([
+  m$8({
+    tag: "ui5-toolbar-spacer",
+    styles: ToolbarCss
+  })
+], ToolbarSpacer);
+ToolbarSpacer.define();
+const ToolbarSpacer$1 = ToolbarSpacer;
+function WritingAssistantTemplate() {
+  const isMultiResults = this.totalVersions > 1;
+  const hasResults = this.totalVersions > 0 && this.promptDescription || this.loading;
+  return jsxs(Toolbar$1, { accessibleName: this._toolbarAccessibleName, "aria-roledescription": "toolbar", class: `ui5-ai-writing-assistant-footer-bar${hasResults ? "--with-border" : ""}`, children: [isMultiResults && !this.loading && jsx(Versioning$1, { currentStep: this.currentVersion, totalSteps: this.totalVersions, "onVersion-change": this.handleVersionChange }), hasResults && this.promptDescription && jsx(ToolbarLabel$1, { text: this.promptDescription, class: "ui5-ai-writing-assistant-action-label" }), jsx(ToolbarSpacer$1, {}), jsx(ToolbarButton$1, { id: "ai-menu-btn", design: "Transparent", icon: this.loading ? "stop" : "ai", "data-state": this.loading ? "generating" : "generate", onClick: this.handleButtonClick, tooltip: this.loading ? this._stopTooltip : this._buttonTooltip, accessibilityAttributes: { hasPopup: this.loading ? "false" : "menu" }, accessibleName: this._buttonAccessibleName, overflowPriority: "NeverOverflow" })] });
+}
+const name$m = "ai";
+const pathData$l = "M334.347 359.298q-27.945 8.983-49.404 20.96t-37.426 27.446-27.447 36.928-21.458 50.401q-2.994 7.985-9.481 12.476T175.657 512t-13.474-4.491-9.481-12.476q-9.98-28.943-21.458-50.401t-27.447-36.928-36.928-27.447-49.902-20.959q-8.983-2.994-12.975-9.481T0 335.844t3.992-13.973 12.975-9.481q28.943-9.98 49.902-21.458t36.928-27.447 27.447-37.427 21.458-49.403q2.994-7.984 9.481-12.476t13.474-4.49 13.474 4.49 9.481 12.476q9.98 27.945 21.458 49.403t27.447 37.427 37.426 27.447 49.404 21.458q7.984 2.994 12.476 9.481t4.49 13.973-4.49 13.973-12.476 9.481zm167.672-250.51q-31.937 10.978-47.407 26.448t-26.448 47.407q-2.994 8.983-12.975 8.983t-12.975-8.983q-10.978-31.937-26.448-47.407t-47.407-26.448q-8.983-2.995-8.983-12.476t8.983-13.474q31.937-10.978 47.407-26.448t26.448-47.408Q405.21 0 415.19 0t12.975 8.982q10.978 31.938 26.448 47.408t47.407 26.448q8.983 3.992 8.983 13.474t-8.983 12.476z";
+const ltr$l = true;
+const collection$l = "SAP-icons-v4";
+const packageName$l = "@ui5/webcomponents-icons";
+y$2(name$m, { pathData: pathData$l, ltr: ltr$l, collection: collection$l, packageName: packageName$l });
+const name$l = "ai";
+const pathData$k = "M502.5 109q-31 11-47 27t-27 48q-3 9-13 9t-13-9q-11-32-26.5-48t-47.5-27q-9-3-9-12.5t9-12.5q32-11 47.5-27t26.5-48q3-9 13-9t13 9q11 32 27 48t47 27q10 3 10 12.5t-10 12.5zm-167 250q-28 10-49.5 21.5T248.5 408 221 445t-21.5 50q-2 8-8.5 12.5t-14.5 4.5q-7 0-13.5-4.5t-9.5-12.5q-19-57-49-87t-87-49q-8-3-12-9.5t-4-13.5 4-13.5 12-9.5q29-10 50-21.5t37-27.5 27.5-37.5 21.5-49.5q3-8 9.5-12.5t13.5-4.5q8 0 14.5 4.5t8.5 12.5q10 28 21.5 49.5t27.5 37.5 37.5 27.5 49.5 21.5q8 3 12.5 9.5t4.5 13.5-4.5 13.5-12.5 9.5z";
+const ltr$k = true;
+const collection$k = "SAP-icons-v5";
+const packageName$k = "@ui5/webcomponents-icons";
+y$2(name$l, { pathData: pathData$k, ltr: ltr$k, collection: collection$k, packageName: packageName$k });
+const name$k = "stop";
+const pathData$j = "M256 0q53 0 99.5 20T437 74.5t55 81.5 20 100-20 99.5-55 81.5-81.5 55-99.5 20-100-20-81.5-55T20 355.5 0 256t20-100 54.5-81.5T156 20 256 0zm0 480q46 0 87-17.5t71.5-48 48-71.5 17.5-87-17.5-87-48-71.5-71.5-48T256 32q-47 0-87.5 17.5t-71 48-48 71.5T32 256t17.5 87 48 71.5 71 48T256 480zm64-320q13 0 22.5 9t9.5 23v128q0 13-9.5 22.5T320 352H192q-14 0-23-9.5t-9-22.5V192q0-14 9-23t23-9h128z";
+const ltr$j = false;
+const collection$j = "SAP-icons-v4";
+const packageName$j = "@ui5/webcomponents-icons";
+y$2(name$k, { pathData: pathData$j, ltr: ltr$j, collection: collection$j, packageName: packageName$j });
+const name$j = "stop";
+const pathData$i = "M256 0q53 0 100 20t81.5 54.5T492 156t20 100-20 100-54.5 81.5T356 492t-100 20-100-20-81.5-54.5T20 356 0 256t20-100 54.5-81.5T156 20 256 0zm0 461q43 0 80.5-16t65-44 43.5-65 16-80-16-80.5-43.5-65-65-43.5T256 51t-80 16-65 43.5-44 65T51 256t16 80 44 65 65 44 80 16zm64-301q14 0 23 9t9 23v128q0 14-9 23t-23 9H192q-14 0-23-9.5t-9-22.5V192q0-14 9-23t23-9h128z";
+const ltr$i = false;
+const collection$i = "SAP-icons-v5";
+const packageName$i = "@ui5/webcomponents-icons";
+y$2(name$j, { pathData: pathData$i, ltr: ltr$i, collection: collection$i, packageName: packageName$i });
+var __decorate$t = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var WritingAssistant_1;
+let WritingAssistant = WritingAssistant_1 = class WritingAssistant2 extends b$7 {
+  constructor() {
+    super(...arguments);
+    this.loading = false;
+    this.promptDescription = "";
+    this.currentVersion = 0;
+    this.totalVersions = 0;
+  }
+  static async onDefine() {
+    WritingAssistant_1.i18nBundleAi = await f$e("@ui5/webcomponents-ai");
+  }
+  /**
+   * Handles the version change event from the versioning component.
+   */
+  handleVersionChange(e2) {
+    this.fireDecoratorEvent("version-change", { backwards: e2.detail.backwards });
+  }
+  /**
+   * Handles the click event for the AI generate button.
+   * Toggles between generate and stop states based on current button state.
+   *
+   * @public
+   */
+  handleButtonClick(e2) {
+    var _a2;
+    const target = e2.target;
+    if (((_a2 = target == null ? void 0 : target.dataset) == null ? void 0 : _a2.state) === "generating") {
+      this.fireDecoratorEvent("stop-generation");
+    } else {
+      this.fireDecoratorEvent("button-click", { clickTarget: target });
+      p$1(WritingAssistant_1.i18nBundleAi.getText(WRITING_ASSISTANT_GENERATING_ANNOUNCEMENT), "Polite");
+    }
+  }
+  get _ariaLabel() {
+    return WritingAssistant_1.i18nBundleAi.getText(WRITING_ASSISTANT_LABEL);
+  }
+  get _previousButtonAccessibleName() {
+    return WritingAssistant_1.i18nBundleAi.getText(VERSIONING_PREVIOUS_BUTTON_TEXT);
+  }
+  get _nextButtonAccessibleName() {
+    return WritingAssistant_1.i18nBundleAi.getText(VERSIONING_NEXT_BUTTON_TEXT);
+  }
+  get _toolbarAccessibleName() {
+    return WritingAssistant_1.i18nBundleAi.getText(WRITING_ASSISTANT_TOOLBAR_ACCESSIBLE_NAME);
+  }
+  get _buttonAccessibleName() {
+    return WritingAssistant_1.i18nBundleAi.getText(WRITING_ASSISTANT_BUTTON_ACCESSIBLE_NAME);
+  }
+  get _buttonTooltip() {
+    return WritingAssistant_1.i18nBundleAi.getText(WRITING_ASSISTANT_BUTTON_TOOLTIP);
+  }
+  get _stopTooltip() {
+    return WritingAssistant_1.i18nBundleAi.getText(WRITING_ASSISTANT_STOP_TOOLTIP);
+  }
+};
+__decorate$t([
+  s$9({ type: Boolean })
+], WritingAssistant.prototype, "loading", void 0);
+__decorate$t([
+  s$9()
+], WritingAssistant.prototype, "promptDescription", void 0);
+__decorate$t([
+  s$9({ type: Number })
+], WritingAssistant.prototype, "currentVersion", void 0);
+__decorate$t([
+  s$9({ type: Number })
+], WritingAssistant.prototype, "totalVersions", void 0);
+__decorate$t([
+  i$b("@ui5/webcomponents-ai")
+], WritingAssistant, "i18nBundleAi", void 0);
+WritingAssistant = WritingAssistant_1 = __decorate$t([
+  m$8({
+    tag: "ui5-ai-writing-assistant",
+    languageAware: true,
+    renderer: y$5,
+    template: WritingAssistantTemplate,
+    styles: [WritingAssistantCss],
+    dependencies: [
+      Versioning$1,
+      ToolbarLabel$1,
+      Toolbar$1,
+      ToolbarSpacer$1,
+      ToolbarButton$1
+    ]
+  }),
+  l$e("version-change"),
+  l$e("button-click"),
+  l$e("stop-generation")
+], WritingAssistant);
+WritingAssistant.define();
+const WritingAssistant$1 = WritingAssistant;
+function TextAreaTemplate() {
+  return jsxs("div", { class: "ui5-ai-textarea-root", children: [jsxs("div", { class: this.classes.root, onFocusIn: this._onfocusin, onFocusOut: this._onfocusout, children: [jsxs("div", { class: "ui5-textarea-wrapper", children: [this.growing && jsx("div", { id: `${this._id}-mirror`, class: "ui5-textarea-mirror", "aria-hidden": "true", children: this._mirrorText.map((mirrorText) => {
+    return jsxs(Fragment, { children: [mirrorText.text, jsx("br", {})] });
+  }) }), jsx(BusyIndicator$1, { id: `${this._id}-busyIndicator`, active: this.loading, class: "ui5-textarea-busy-indicator", children: jsx("textarea", { id: `${this._id}-inner`, class: "ui5-textarea-inner", part: "textarea", placeholder: this.placeholder, disabled: this.disabled, readonly: this.readonly, "aria-label": this._ariaLabel, "aria-describedby": this.ariaDescribedBy, "aria-invalid": this._ariaInvalid, "aria-required": this.required, maxlength: this._exceededTextProps.calcedMaxLength, value: this.value, "data-sap-focus-ref": true, onInput: this._oninput, onChange: this._onchange, onKeyUp: this._onkeyup, onKeyDown: this._onkeydown, onSelect: this._onselect, onScroll: this._onscroll }) }), jsx("div", { part: "footer", children: jsx("slot", { name: "footer", children: jsx(WritingAssistant$1, { loading: this.loading, currentVersion: this.currentVersion, totalVersions: this.totalVersions, promptDescription: this.promptDescription, onButtonClick: this._handleAIButtonClick, onStopGeneration: this.handleStopGeneration, onVersionChange: this._handleVersionChange }) }) })] }), this.showExceededText && jsx("span", { class: "ui5-textarea-exceeded-text", children: this._exceededTextProps.exceededText }), this.hasValueState && jsx("span", { id: `${this._id}-valueStateDesc`, class: "ui5-hidden-text", children: this.ariaValueStateHiddenText })] }), TextAreaPopoverTemplate.call(this), jsx("div", { "aria-live": "polite", "aria-atomic": "true", class: "ui5-hidden-text", children: this.loading ? this.promptDescription : "" }), jsx("div", { id: "ai-menu-wrapper", children: jsx("slot", { name: "menu" }) })] });
+}
+var __decorate$s = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var TextArea_1;
+let TextArea2 = TextArea_1 = class TextArea3 extends TextArea$1 {
+  constructor() {
+    super(...arguments);
+    this.loading = false;
+    this.promptDescription = "";
+    this.currentVersion = 0;
+    this.totalVersions = 0;
+    this._handleAIButtonClick = (e2) => {
+      var _a2;
+      const menuNodes = this.getSlottedNodes("menu");
+      if (menuNodes.length === 0) {
+        return;
+      }
+      if (!((_a2 = e2.detail) == null ? void 0 : _a2.clickTarget)) {
+        return;
+      }
+      const menu = menuNodes[0];
+      if (menu && typeof menu.open !== "undefined") {
+        menu.opener = e2.detail.clickTarget;
+        menu.open = true;
+      }
+    };
+    this.handleStopGeneration = () => {
+      this.fireDecoratorEvent("stop-generation");
+    };
+  }
+  static async onDefine() {
+    TextArea_1.i18nBundle = await f$e("@ui5/webcomponents-ai");
+  }
+  /**
+   * Handles the click event for the "Previous Version" button.
+   * Updates the current version index and syncs content.
+   */
+  _handlePreviousVersionClick() {
+    this.fireDecoratorEvent("version-change", { backwards: true });
+  }
+  /**
+   * Handles the click event for the "Next Version" button.
+   * Updates the current version index and syncs content.
+   */
+  _handleNextVersionClick() {
+    this.fireDecoratorEvent("version-change", { backwards: false });
+  }
+  /**
+   * Handles the version change event from the writing assistant.
+   */
+  _handleVersionChange(e2) {
+    if (e2.detail.backwards) {
+      this._handlePreviousVersionClick();
+    } else {
+      this._handleNextVersionClick();
+    }
+  }
+  /**
+   * Handles keydown events for keyboard shortcuts.
+   * @private
+   */
+  _handleKeydown(keyboardEvent) {
+    var _a2, _b2;
+    const isCtrlOrCmd = keyboardEvent.ctrlKey || keyboardEvent.metaKey;
+    const isShift = keyboardEvent.shiftKey;
+    if (isShift && keyboardEvent.key.toLowerCase() === "f4") {
+      const toolbar = (_a2 = this.shadowRoot) == null ? void 0 : _a2.querySelector("[ui5-ai-writing-assistant]");
+      const aiButton = (_b2 = toolbar == null ? void 0 : toolbar.shadowRoot) == null ? void 0 : _b2.querySelector("#ai-menu-btn");
+      if (aiButton) {
+        aiButton.focus();
+      }
+      return;
+    }
+    if (this.totalVersions > 1) {
+      if (isCtrlOrCmd && isShift && keyboardEvent.key.toLowerCase() === "z") {
+        keyboardEvent.preventDefault();
+        this._handlePreviousVersionClick();
+        return;
+      }
+      if (isCtrlOrCmd && isShift && keyboardEvent.key.toLowerCase() === "y") {
+        keyboardEvent.preventDefault();
+        this._handleNextVersionClick();
+      }
+    }
+  }
+  /**
+   * Overrides the parent's onAfterRendering to add keydown handler.
+   * @private
+   */
+  onAfterRendering() {
+    var _a2;
+    super.onAfterRendering();
+    const textarea = (_a2 = this.shadowRoot) == null ? void 0 : _a2.querySelector("textarea");
+    if (textarea && !this._keydownHandler) {
+      this._keydownHandler = this._handleKeydown.bind(this);
+      textarea.addEventListener("keydown", this._keydownHandler);
+    }
+  }
+  get _ariaLabel() {
+    return this.accessibleName || TextArea_1.i18nBundle.getText(WRITING_ASSISTANT_LABEL);
+  }
+};
+__decorate$s([
+  s$9({ type: Boolean })
+], TextArea2.prototype, "loading", void 0);
+__decorate$s([
+  s$9()
+], TextArea2.prototype, "promptDescription", void 0);
+__decorate$s([
+  s$9({ type: Number })
+], TextArea2.prototype, "currentVersion", void 0);
+__decorate$s([
+  s$9({ type: Number })
+], TextArea2.prototype, "totalVersions", void 0);
+__decorate$s([
+  d$8({ type: HTMLElement })
+], TextArea2.prototype, "menu", void 0);
+TextArea2 = TextArea_1 = __decorate$s([
+  m$8({
+    tag: "ui5-ai-textarea",
+    languageAware: true,
+    renderer: y$5,
+    template: TextAreaTemplate,
+    styles: [
+      textareaStyles,
+      valueStateMessageStyles,
+      TextAreaCss
+    ]
+  }),
+  l$e("version-change"),
+  l$e("stop-generation")
+], TextArea2);
+TextArea2.define();
 function initUI5Theme(isDark = false) {
   try {
     const theme = isDark ? "sap_horizon_dark" : "sap_horizon";
@@ -34732,6 +36348,208 @@ class UI5MenuCard extends BaseUI5Card {
 if (!customElements.get("ui5-menu-card")) {
   customElements.define("ui5-menu-card", UI5MenuCard);
 }
+class UI5PromptCard extends BaseUI5Card {
+  setConfig(config) {
+    if (!config.type) {
+      throw new Error("Card type is required");
+    }
+    super.setConfig(config);
+  }
+  get config() {
+    return this._config;
+  }
+  render() {
+    if (!this._hass || !this.config) {
+      return;
+    }
+    const entityState = this.config.entity ? this.getEntityState() : void 0;
+    const isUnavailable = entityState === "unavailable";
+    let initialValue = "";
+    if (this.config.entity) {
+      const entity = this._hass.states[this.config.entity];
+      if (entity) {
+        initialValue = entity.state !== "unavailable" ? entity.state : "";
+      }
+    }
+    const placeholder = this.config.placeholder || "Enter your prompt...";
+    const label = this.config.label || "";
+    const showClearIcon = this.config.show_clear_icon !== false;
+    const maxLength = this.config.max_length || 0;
+    this.shadowRoot.innerHTML = `
+      <style>
+        :host {
+          display: block;
+        }
+        .prompt-container {
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+        ui5-ai-prompt-input {
+          width: 100%;
+        }
+        .unavailable {
+          opacity: 0.5;
+        }
+        .experimental-badge {
+          font-size: 10px;
+          color: var(--warning-color, #e65100);
+          background: var(--warning-color-light, #fff3e0);
+          padding: 2px 6px;
+          border-radius: 4px;
+          align-self: flex-start;
+        }
+      </style>
+      <div class="prompt-container ${isUnavailable ? "unavailable" : ""}">
+        <span class="experimental-badge">Experimental</span>
+        <ui5-ai-prompt-input
+          id="prompt-input"
+          placeholder="${placeholder}"
+          ${label ? `label="${label}"` : ""}
+          ${showClearIcon ? "show-clear-icon" : ""}
+          ${maxLength > 0 ? `maxlength="${maxLength}"` : ""}
+          value="${initialValue}"
+        ></ui5-ai-prompt-input>
+      </div>
+    `;
+    const promptInput = this.shadowRoot.querySelector("#prompt-input");
+    if (promptInput) {
+      promptInput.addEventListener("submit", () => this.handleSubmit());
+    }
+  }
+  handleSubmit() {
+    var _a2;
+    const promptInput = this.shadowRoot.querySelector("#prompt-input");
+    const value = (promptInput == null ? void 0 : promptInput.value) || "";
+    if (((_a2 = this.config) == null ? void 0 : _a2.service) && this._hass) {
+      const [domain, service] = this.config.service.split(".");
+      if (domain && service) {
+        const serviceData = {
+          ...this.config.service_data,
+          value
+        };
+        if (this.config.entity) {
+          serviceData.entity_id = this.config.entity;
+        }
+        this._hass.callService(domain, service, serviceData);
+      }
+    }
+  }
+  static getStubConfig() {
+    return {
+      type: "custom:ui5-prompt-card",
+      placeholder: "Ask AI anything...",
+      label: "AI Prompt",
+      show_clear_icon: true
+    };
+  }
+}
+if (!customElements.get("ui5-prompt-card")) {
+  customElements.define("ui5-prompt-card", UI5PromptCard);
+}
+class UI5AITextareaCard extends BaseUI5Card {
+  setConfig(config) {
+    if (!config.type) {
+      throw new Error("Card type is required");
+    }
+    super.setConfig(config);
+  }
+  get config() {
+    return this._config;
+  }
+  render() {
+    if (!this._hass || !this.config) {
+      return;
+    }
+    const entityState = this.config.entity ? this.getEntityState() : void 0;
+    const isUnavailable = entityState === "unavailable";
+    let initialValue = "";
+    if (this.config.entity) {
+      const entity = this._hass.states[this.config.entity];
+      if (entity) {
+        initialValue = entity.state !== "unavailable" ? entity.state : "";
+      }
+    }
+    const placeholder = this.config.placeholder || "Enter text...";
+    const rows = this.config.rows || 3;
+    const maxLength = this.config.max_length || 0;
+    const growing = this.config.growing !== false;
+    const growingMaxRows = this.config.growing_max_rows || 10;
+    this.shadowRoot.innerHTML = `
+      <style>
+        :host {
+          display: block;
+        }
+        .textarea-container {
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+        ui5-ai-textarea {
+          width: 100%;
+        }
+        .unavailable {
+          opacity: 0.5;
+        }
+        .experimental-badge {
+          font-size: 10px;
+          color: var(--warning-color, #e65100);
+          background: var(--warning-color-light, #fff3e0);
+          padding: 2px 6px;
+          border-radius: 4px;
+          align-self: flex-start;
+        }
+      </style>
+      <div class="textarea-container ${isUnavailable ? "unavailable" : ""}">
+        <span class="experimental-badge">Experimental</span>
+        <ui5-ai-textarea
+          id="ai-textarea"
+          placeholder="${placeholder}"
+          rows="${rows}"
+          ${maxLength > 0 ? `maxlength="${maxLength}"` : ""}
+          ${growing ? "growing" : ""}
+          ${growing ? `growing-max-rows="${growingMaxRows}"` : ""}
+          value="${initialValue}"
+        ></ui5-ai-textarea>
+      </div>
+    `;
+    const textarea = this.shadowRoot.querySelector("#ai-textarea");
+    if (textarea) {
+      textarea.addEventListener("change", () => this.handleChange());
+    }
+  }
+  handleChange() {
+    var _a2;
+    const textarea = this.shadowRoot.querySelector("#ai-textarea");
+    const value = (textarea == null ? void 0 : textarea.value) || "";
+    if (((_a2 = this.config) == null ? void 0 : _a2.service) && this._hass) {
+      const [domain, service] = this.config.service.split(".");
+      if (domain && service) {
+        const serviceData = {
+          ...this.config.service_data,
+          value
+        };
+        if (this.config.entity) {
+          serviceData.entity_id = this.config.entity;
+        }
+        this._hass.callService(domain, service, serviceData);
+      }
+    }
+  }
+  static getStubConfig() {
+    return {
+      type: "custom:ui5-ai-textarea-card",
+      placeholder: "Enter text for AI assistance...",
+      rows: 4,
+      growing: true
+    };
+  }
+}
+if (!customElements.get("ui5-ai-textarea-card")) {
+  customElements.define("ui5-ai-textarea-card", UI5AITextareaCard);
+}
 const CARD_DEFINITIONS = [
   {
     type: "custom:ui5-button-card",
@@ -34894,6 +36712,18 @@ const CARD_DEFINITIONS = [
     name: "UI5 Menu Card",
     description: "A dropdown menu for actions and options",
     preview: true
+  },
+  {
+    type: "custom:ui5-prompt-card",
+    name: "UI5 Prompt Card (Experimental)",
+    description: "An AI prompt input for natural language instructions",
+    preview: true
+  },
+  {
+    type: "custom:ui5-ai-textarea-card",
+    name: "UI5 AI Textarea Card (Experimental)",
+    description: "An AI-powered textarea with text generation capabilities",
+    preview: true
   }
 ];
 function registerCards() {
@@ -34957,7 +36787,7 @@ function listItemContent$1() {
   return jsx("div", { part: "content", id: "content", class: "ui5-li-content", children: jsxs("div", { class: "ui5-li-text-wrapper", children: [jsx("span", { part: "title", className: "ui5-li-title", dangerouslySetInnerHTML: { __html: this.markupText } }), this.additionalText && jsx("span", { part: "additional-text", class: "ui5-li-additional-text", children: this.additionalText })] }) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const styles$1 = `:host([ui5-suggestion-item]){height:auto;min-height:var(--_ui5-v2-17-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-root{min-height:var(--_ui5-v2-17-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-content{padding-bottom:.5rem;padding-top:.5rem;box-sizing:border-box}
 `;
 var __decorate$r = function(decorators, target, key, desc) {
@@ -35432,7 +37262,7 @@ function TextTemplate() {
   return jsx(Fragment, { children: jsx("span", { children: this._renderEmptyIndicator ? jsxs(Fragment, { children: [jsx("span", { className: "empty-indicator", "aria-hidden": "true", children: this._emptyIndicatorSymbol }), jsx("span", { className: "empty-indicator-aria-label", children: this._emptyIndicatorAriaLabel })] }) : jsx("slot", {}) }) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const styles = `:host{max-width:100%;font-size:var(--sapFontSize);font-family:var(--sapFontFamily);color:var(--sapTextColor);line-height:normal;cursor:text;overflow:hidden}:host([max-lines="1"]){display:inline-block;text-overflow:ellipsis;white-space:nowrap}:host(:not([max-lines="1"])){display:-webkit-box;-webkit-line-clamp:var(--_ui5-v2-17-0_text_max_lines);line-clamp:var(--_ui5-v2-17-0_text_max_lines);-webkit-box-orient:vertical;white-space:normal;word-wrap:break-word}.empty-indicator-aria-label{position:absolute!important;clip:rect(1px,1px,1px,1px);user-select:none;left:0;top:0;font-size:0}
 `;
 var __decorate$p = function(decorators, target, key, desc) {
@@ -35497,7 +37327,7 @@ function LinkTemplate() {
   return jsxs("a", { part: "root", class: "ui5-link-root", role: this.effectiveAccRole, href: this.parsedRef, target: this.target, rel: this._rel, tabindex: this.effectiveTabIndex, title: this.tooltip, "aria-disabled": this.disabled, "aria-label": this.ariaLabelText, "aria-haspopup": this._hasPopup, "aria-expanded": this.accessibilityAttributes.expanded, "aria-current": this.accessibilityAttributes.current, "aria-description": this.ariaDescriptionText, onClick: this._onclick, onKeyDown: this._onkeydown, onKeyUp: this._onkeyup, children: [this.icon && jsx(Icon$1, { class: "ui5-link-icon", name: this.icon, mode: "Decorative", part: "icon" }), jsx("span", { class: "ui5-link-text", children: jsx("slot", {}) }), this.hasLinkType && jsx("span", { class: "ui5-hidden-text", children: this.linkTypeText }), this.endIcon && jsx(Icon$1, { class: "ui5-link-end-icon", name: this.endIcon, mode: "Decorative", part: "endIcon" })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const linkCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-flex}:host{max-width:100%;color:var(--sapLinkColor);font-family:var(--sapFontFamily);font-size:var(--sapFontSize);cursor:pointer;outline:none;text-decoration:var(--_ui5-v2-17-0_link_text_decoration);text-shadow:var(--sapContent_TextShadow);white-space:normal;overflow-wrap:break-word}:host(:hover){color:var(--sapLink_Hover_Color);text-decoration:var(--_ui5-v2-17-0_link_hover_text_decoration)}:host(:active){color:var(--sapLink_Active_Color);text-decoration:var(--_ui5-v2-17-0_link_active_text_decoration)}:host([disabled]){pointer-events:none}:host([disabled]) .ui5-link-root{text-shadow:none;outline:none;cursor:default;pointer-events:none;opacity:var(--sapContent_DisabledOpacity)}:host([design="Emphasized"]) .ui5-link-root{font-family:var(--sapFontBoldFamily)}:host([design="Subtle"]){color:var(--sapLink_SubtleColor);text-decoration:var(--_ui5-v2-17-0_link_subtle_text_decoration)}:host([design="Subtle"]:hover:not(:active)){color:var(--sapLink_SubtleColor);text-decoration:var(--_ui5-v2-17-0_link_subtle_text_decoration_hover)}:host([wrapping-type="None"]){white-space:nowrap;overflow-wrap:normal}.ui5-link-root{max-width:100%;display:inline-block;position:relative;overflow:hidden;text-overflow:ellipsis;outline:none;white-space:inherit;overflow-wrap:inherit;text-decoration:inherit;color:inherit}:host([wrapping-type="None"][end-icon]) .ui5-link-root{display:inline-flex;align-items:end}:host .ui5-link-root{outline-offset:-.0625rem;border-radius:var(--_ui5-v2-17-0_link_focus_border-radius)}.ui5-link-icon,.ui5-link-end-icon{color:inherit;flex-shrink:0}.ui5-link-icon{float:inline-start;margin-inline-end:.125rem}.ui5-link-end-icon{margin-inline-start:.125rem;vertical-align:bottom}.ui5-link-text{overflow:hidden;text-overflow:ellipsis}.ui5-link-root:focus-visible,:host([desktop]) .ui5-link-root:focus-within,:host([design="Subtle"]) .ui5-link-root:focus-visible,:host([design="Subtle"][desktop]) .ui5-link-root:focus-within{background-color:var(--_ui5-v2-17-0_link_focus_background_color);outline:var(--_ui5-v2-17-0_link_outline);border-radius:var(--_ui5-v2-17-0_link_focus_border-radius);text-shadow:none;color:var(--_ui5-v2-17-0_link_focus_color)}:host(:not([desktop])) .ui5-link-root:focus-visible,:host([desktop]:focus-within),:host([design="Subtle"][desktop]:focus-within){text-decoration:var(--_ui5-v2-17-0_link_focus_text_decoration)}:host([desktop]:hover:not(:active):focus-within),:host([design="Subtle"][desktop]:hover:not(:active):focus-within){color:var(--_ui5-v2-17-0_link_focused_hover_text_color);text-decoration:var(--_ui5-v2-17-0_link_focused_hover_text_decoration)}:host([interactive-area-size="Large"]) .ui5-link-root{line-height:var(--_ui5-v2-17-0_link_large_interactive_area_height)}:host([interactive-area-size="Large"])::part(icon),:host([interactive-area-size="Large"])::part(endIcon){height:var(--_ui5-v2-17-0_link_large_interactive_area_height)}
 `;
 var __decorate$o = function(decorators, target, key, desc) {
@@ -35668,7 +37498,7 @@ function ExpandableTextTemplate() {
   return jsxs("div", { children: [jsx(Text$1, { class: "ui5-exp-text-text", emptyIndicatorMode: this.emptyIndicatorMode, children: this._displayedText }), this._maxCharactersExceeded && jsxs(Fragment, { children: [jsx("span", { class: "ui5-exp-text-ellipsis", children: this._ellipsisText }), jsx(Link$1, { id: "toggle", class: "ui5-exp-text-toggle", accessibleRole: "Button", accessibleName: this._accessibleNameForToggle, accessibilityAttributes: this._accessibilityAttributesForToggle, onClick: this._handleToggleClick, children: this._textForToggle }), this._usePopover && jsxs(ResponsivePopover, { open: this._expanded, opener: "toggle", accessibleNameRef: "popover-text", contentOnlyOnDesktop: true, _hideHeader: true, class: "ui5-exp-text-popover", onClose: this._handlePopoverClose, children: [jsx(Text$1, { id: "popover-text", children: this.text }), jsx("div", { slot: "footer", class: "ui5-exp-text-footer", children: jsx(Button$1, { design: "Transparent", onClick: this._handleCloseButtonClick, children: this._closeButtonText }) })] })] })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const ExpandableTextCss = `:host{display:inline-block;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);color:var(--sapTextColor)}:host([hidden]){display:none}.ui5-exp-text-text{display:inline}.ui5-exp-text-text,.ui5-exp-text-toggle{font-family:inherit;font-size:inherit}.ui5-exp-text-text,.ui5-exp-text-ellipsis{color:inherit}.ui5-exp-text-popover::part(content){padding-inline:1rem}.ui5-exp-text-footer{width:100%;display:flex;align-items:center;justify-content:flex-end}
 `;
 var __decorate$n = function(decorators, target, key, desc) {
@@ -35788,7 +37618,7 @@ function ButtonTemplate() {
   return jsx(Tag$1, { design: "Critical", "hide-state-icon": true, children: this.effectiveText });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$2);
 const buttonBadgeCss = `[ui5-tag]::part(root){border:.0625rem solid var(--sapContent_BadgeBorderColor);background-color:var(--sapContent_BadgeBackground);color:var(--sapContent_BadgeTextColor);height:1rem;border-radius:.5rem;display:flex;align-items:center}:host([design="AttentionDot"]) [ui5-tag]::part(root){min-width:var(--_ui5-v2-17-0-button-badge-diameter);min-height:var(--_ui5-v2-17-0-button-badge-diameter);height:var(--_ui5-v2-17-0-button-badge-diameter);width:var(--_ui5-v2-17-0-button-badge-diameter);border-radius:100%}
 `;
 var __decorate$m = function(decorators, target, key, desc) {
