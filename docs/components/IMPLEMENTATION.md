@@ -86,7 +86,7 @@
 
 | #   | Komponente | Card Name         | Import Check | Card | Tests | CI  |
 | --- | ---------- | ----------------- | ------------ | ---- | ----- | --- |
-| 20  | Wizard     | `ui5-wizard-card` | ✅           | ✅   | ⬜    | ✅  |
+| 20  | Wizard     | `ui5-wizard-card` | ✅           | ✅   | ✅    | ✅  |
 
 ---
 
