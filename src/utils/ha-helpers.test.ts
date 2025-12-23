@@ -11,7 +11,6 @@ import {
   stateToNumber,
   calculatePrecisionFromStep,
   formatNumber,
-  formatEntityValue,
   getDomain,
   getObjectId,
   clamp,
