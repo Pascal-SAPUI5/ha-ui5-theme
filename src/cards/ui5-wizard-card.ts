@@ -8,7 +8,7 @@ import type { UI5WizardCardConfig } from "../types";
 import { ensureFiori } from "../ui5-loader";
 
 export class UI5WizardCard extends BaseUI5Card {
-  async connectedCallback(): void {
+  async connectedCallback(): Promise<void> {
     try {
       await ensureFiori();
     } catch (error) {

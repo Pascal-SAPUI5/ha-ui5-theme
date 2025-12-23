@@ -8,7 +8,7 @@ import type { UI5NotificationListCardConfig } from "../types";
 import { ensureFiori } from "../ui5-loader";
 
 export class UI5NotificationListCard extends BaseUI5Card {
-  async connectedCallback(): void {
+  async connectedCallback(): Promise<void> {
     try {
       await ensureFiori();
     } catch (error) {

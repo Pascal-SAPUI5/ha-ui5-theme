@@ -65,7 +65,8 @@ const CARD_DEFINITIONS = [
   {
     type: "custom:ui5-timeline-card",
     name: "UI5 Timeline Card",
-    description: "A timeline card using UI5 Fiori Timeline component",
+    description:
+      "A timeline card showing entity states or custom events using UI5 Fiori Timeline component",
     preview: true,
   },
   {

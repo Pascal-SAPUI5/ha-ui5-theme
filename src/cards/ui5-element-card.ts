@@ -68,7 +68,7 @@ const ALLOWED_UI5_ELEMENTS = new Set([
 const ATTRIBUTE_NAME_PATTERN = /^[a-z0-9_-]+$/i;
 
 export class UI5ElementCard extends BaseUI5Card {
-  async connectedCallback(): void {
+  async connectedCallback(): Promise<void> {
     // Ensure Fiori components are loaded for flexibility
     try {
       await ensureFiori();

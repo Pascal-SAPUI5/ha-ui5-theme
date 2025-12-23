@@ -8,7 +8,7 @@ import type { UI5SideNavCardConfig } from "../types";
 import { ensureFiori } from "../ui5-loader";
 
 export class UI5SideNavCard extends BaseUI5Card {
-  async connectedCallback(): void {
+  async connectedCallback(): Promise<void> {
     try {
       await ensureFiori();
     } catch (error) {

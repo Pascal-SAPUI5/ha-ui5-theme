@@ -206,6 +206,8 @@ export interface UI5SideNavCardConfig extends BaseCardConfig {
 export interface UI5TimelineCardConfig extends BaseCardConfig {
   type: "custom:ui5-timeline-card";
   layout?: "Vertical" | "Horizontal";
+  entities?: string[];
+  max_items?: number;
   items?: Array<{
     title_text: string;
     subtitle_text?: string;

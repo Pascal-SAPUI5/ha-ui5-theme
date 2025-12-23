@@ -8,7 +8,7 @@ import type { UI5PageCardConfig } from "../types";
 import { ensureFiori } from "../ui5-loader";
 
 export class UI5PageCard extends BaseUI5Card {
-  async connectedCallback(): void {
+  async connectedCallback(): Promise<void> {
     try {
       await ensureFiori();
     } catch (error) {

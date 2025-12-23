@@ -12,6 +12,7 @@ jobs:
   release:
     name: Build and Release
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -31,17 +32,22 @@ jobs:
       - name: Run type check
         run: npx tsc --noEmit
 
+      - name: Run tests
+        run: npm test
+
       - name: Build project
         run: npm run build
 
       - name: Verify build output
         run: |
-          if [ ! -f "dist/ha-ui5-theme.js" ]; then
-            echo "Error: Build output file not found"
+          if [ ! -f "dist/ui5-webcomponents-ha.js" ]; then
+            echo "Error: Build output file not found: dist/ui5-webcomponents-ha.js"
+            echo "dist contents:"
+            ls -la dist || true
             exit 1
           fi
           echo "Build output created:"
-          ls -lh dist/ha-ui5-theme.js
+          ls -lh dist/ui5-webcomponents-ha.js
 
       - name: Extract version from tag
         id: version
@@ -53,49 +59,48 @@ jobs:
           echo "Release version: $VERSION"
 
       - name: Generate release notes
-        id: release_notes
         run: |
           cat > release_notes.md << 'NOTES'
-          ## Home Assistant UI5 Theme ${{ steps.version.outputs.version }}
+          ## UI5 Web Components for Home Assistant ${{ steps.version.outputs.version }}
 
           ### Installation
 
-          1. Download `ha-ui5-theme.js` from the assets below
-          2. Install via HACS or manually place in your Home Assistant installation
+          1. Download `ui5-webcomponents-ha.js` from the assets below
+          2. Install via HACS (Frontend) or manually place in your Home Assistant installation
           3. Add to your `configuration.yaml`:
 
           ```yaml
           frontend:
             extra_module_url:
-              - /hacsfiles/ha-ui5-theme/ha-ui5-theme.js
+              - /hacsfiles/ui5-webcomponents-ha/ui5-webcomponents-ha.js
           ```
 
           4. Restart Home Assistant
 
           ### What's Included
 
-          - **UI5 Web Components**: 16 components + 6 icons
-          - **Global CSS theming**: Light/dark mode support
-          - **Interactive proof widget**: Draggable demo card (Ctrl+Shift+U to toggle)
-          - **Configuration system**: localStorage-based settings
-          - **Defensive implementation**: Error-resilient, won't break HA UI
+          - UI5 Web Components integration (Main + Fiori + optional AI)
+          - Lovelace Custom Cards (UI5 Button/Switch/Slider/Progress + weitere)
+          - Action handling (tap/hold/double_tap) kompatibel zu HA
+          - Template support (escaped) für entity states/attrs
+          - Single-file ESM bundle (no code splitting)
 
           ### Build Info
 
-          - **Build Size**: See artifact details below
-          - **TypeScript**: ✅ Type-checked
-          - **Linted**: ✅ ESLint passed
-          - **Tested**: ✅ Build verified
+          - TypeScript: ✅
+          - Lint: ✅
+          - Tests: ✅ (Cards/Buttons interaction tests)
+          - Build: ✅ (single ESM file)
 
           ### Documentation
 
-          See [README.md](https://github.com/${{ github.repository }}/blob/${{ steps.version.outputs.tag }}/README.md) for full documentation.
+          See README in the tagged version:
+          https://github.com/${{ github.repository }}/blob/${{ steps.version.outputs.tag }}/README.md
 
           ---
 
-          **Generated with GitHub Actions** • Built from commit ${{ github.sha }}
+          Built from commit ${{ github.sha }}
           NOTES
-          echo "notes_file=release_notes.md" >> $GITHUB_OUTPUT
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
@@ -103,12 +108,11 @@ jobs:
           name: Release ${{ steps.version.outputs.version }}
           body_path: release_notes.md
           files: |
-            dist/ha-ui5-theme.js
+            dist/ui5-webcomponents-ha.js
             hacs.json
             README.md
           draft: false
           prerelease: ${{ contains(steps.version.outputs.version, '-') }}
-          generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
