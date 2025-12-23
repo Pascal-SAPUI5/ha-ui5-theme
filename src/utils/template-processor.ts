@@ -15,6 +15,24 @@ export function escapeHtml(text: string): string {
 }
 
 /**
+ * Maximum template string length to prevent ReDoS attacks
+ */
+const MAX_TEMPLATE_LENGTH = 10000;
+
+/**
+ * Entity ID validation pattern
+ * Format: domain.entity_name (lowercase, numbers, underscores)
+ */
+const ENTITY_ID_PATTERN = /^[a-z_][a-z0-9_]*\.[a-z0-9_]+$/;
+
+/**
+ * Validate entity ID format
+ */
+function isValidEntityId(entityId: string): boolean {
+  return ENTITY_ID_PATTERN.test(entityId);
+}
+
+/**
  * Process a template string with Home Assistant context
  * Note: Output is NOT escaped - caller must escape when inserting into HTML
  */
@@ -27,8 +45,22 @@ export function processTemplate(
     return "";
   }
 
+  // Security: Prevent ReDoS attacks with length limit
+  if (template.length > MAX_TEMPLATE_LENGTH) {
+    console.warn(
+      `[template-processor] Template exceeds maximum length (${MAX_TEMPLATE_LENGTH} chars)`,
+    );
+    return template.substring(0, MAX_TEMPLATE_LENGTH);
+  }
+
   // If no template markers, return as-is
   if (!template.includes("{{") && !template.includes("{%")) {
+    return template;
+  }
+
+  // Security: Validate entity ID if provided
+  if (entityId && !isValidEntityId(entityId)) {
+    console.warn(`[template-processor] Invalid entity ID format: ${entityId}`);
     return template;
   }
 
@@ -92,9 +124,20 @@ export function processTemplate(
  * Get entity state value
  */
 function getEntityState(hass: HomeAssistant, entityId: string): string {
+  // Security: Validate entity ID format
+  if (!isValidEntityId(entityId)) {
+    console.warn(`[template-processor] Invalid entity ID: ${entityId}`);
+    return "unavailable";
+  }
+
+  // Security: Prevent prototype pollution
+  if (!Object.prototype.hasOwnProperty.call(hass.states, entityId)) {
+    console.warn(`[template-processor] Entity not found: ${entityId}`);
+    return "unavailable";
+  }
+
   const entity = hass.states[entityId];
   if (!entity) {
-    console.warn(`[template-processor] Entity not found: ${entityId}`);
     return "unavailable";
   }
   return entity.state || "unknown";
@@ -108,9 +151,25 @@ function getEntityAttribute(
   entityId: string,
   attribute: string,
 ): string {
+  // Security: Validate entity ID format
+  if (!isValidEntityId(entityId)) {
+    console.warn(`[template-processor] Invalid entity ID: ${entityId}`);
+    return "";
+  }
+
+  // Security: Prevent prototype pollution
+  if (!Object.prototype.hasOwnProperty.call(hass.states, entityId)) {
+    console.warn(`[template-processor] Entity not found: ${entityId}`);
+    return "";
+  }
+
   const entity = hass.states[entityId];
   if (!entity) {
-    console.warn(`[template-processor] Entity not found: ${entityId}`);
+    return "";
+  }
+
+  // Security: Validate attribute name
+  if (!Object.prototype.hasOwnProperty.call(entity.attributes, attribute)) {
     return "";
   }
 

@@ -5,22 +5,31 @@
  */
 
 import { BaseUI5Card } from "./base-card";
-import type {
-  UI5TimelineCardConfig,
-  TimelineItemConfig,
-  HassEntity,
-} from "../types";
-import { escapeHtml } from "../utils/template-processor";
-import "../ui5-loader";
+import type { UI5TimelineCardConfig, HassEntity } from "../types";
+import { ensureFiori } from "../ui5-loader";
 
 interface TimelineEntry {
   title: string;
   subtitle: string;
   icon: string;
-  state: string;
+  name: string;
 }
 
 export class UI5TimelineCard extends BaseUI5Card {
+  async connectedCallback(): Promise<void> {
+    try {
+      await ensureFiori();
+    } catch (error) {
+      console.error(
+        "[ui5-timeline-card] Failed to load Fiori components:",
+        error,
+      );
+      this.renderError("Failed to load UI5 Fiori components");
+      return;
+    }
+    super.connectedCallback();
+  }
+
   setConfig(config: UI5TimelineCardConfig): void {
     if (!config.type) {
       throw new Error("Card type is required");
@@ -79,7 +88,7 @@ export class UI5TimelineCard extends BaseUI5Card {
         title: entity.attributes.friendly_name || entityId,
         subtitle: this.formatEntityState(entity),
         icon: this.getEntityIcon(entity),
-        state: this.getValueState(entity),
+        name: this.getValueState(entity),
       });
 
       if (entries.length >= maxItems) {
@@ -100,11 +109,11 @@ export class UI5TimelineCard extends BaseUI5Card {
 
     const maxItems = this.config.max_items ?? 10;
 
-    return this.config.items.slice(0, maxItems).map((item: TimelineItemConfig) => ({
-      title: item.title,
-      subtitle: item.subtitle || "",
-      icon: item.icon || "status-positive",
-      state: item.state || "None",
+    return this.config.items.slice(0, maxItems).map((item) => ({
+      title: this.processTemplateEscaped(item.title_text),
+      subtitle: this.processTemplateEscaped(item.subtitle_text || ""),
+      icon: item.icon || "",
+      name: item.name || "",
     }));
   }
 
@@ -146,7 +155,7 @@ export class UI5TimelineCard extends BaseUI5Card {
       binary_sensor: "status-positive",
       climate: "temperature",
       cover: "window",
-      fan: "fan",
+      fan: "retail-store",
       media_player: "play",
       lock: "locked",
       alarm_control_panel: "shield",
@@ -178,10 +187,10 @@ export class UI5TimelineCard extends BaseUI5Card {
     }
 
     if (state === "off" || state === "closed" || state === "locked") {
-      return "None";
+      return "";
     }
 
-    // For numeric sensors, could add threshold-based states
+    // For numeric sensors
     return "Information";
   }
 
@@ -196,8 +205,10 @@ export class UI5TimelineCard extends BaseUI5Card {
         ? this.getEntityEntries()
         : this.getStaticEntries();
 
+    const entityState = this.config.entity ? this.getEntityState() : undefined;
+    const isUnavailable = entityState === "unavailable";
     const layout = this.config.layout || "Vertical";
-    const title = this.processTemplateEscaped(this.config.name || "Timeline");
+    const title = this.processTemplateEscaped(this.config.name || "");
 
     // Generate timeline items HTML
     const itemsHtml = entries
@@ -205,10 +216,10 @@ export class UI5TimelineCard extends BaseUI5Card {
         (entry, index) => `
         <ui5-timeline-item
           id="timeline-item-${index}"
-          title-text="${escapeHtml(entry.title)}"
-          subtitle-text="${escapeHtml(entry.subtitle)}"
-          icon="sap-icon://${escapeHtml(entry.icon)}"
-          ${entry.state !== "None" ? `name="${entry.state}"` : ""}
+          title-text="${entry.title}"
+          ${entry.subtitle ? `subtitle-text="${entry.subtitle}"` : ""}
+          ${entry.icon ? `icon="sap-icon://${entry.icon}"` : ""}
+          ${entry.name ? `name="${entry.name}"` : ""}
         ></ui5-timeline-item>
       `,
       )
@@ -233,6 +244,7 @@ export class UI5TimelineCard extends BaseUI5Card {
 
         ui5-timeline {
           width: 100%;
+          min-height: 100px;
           --sapContent_NonInteractiveIconColor: var(--primary-color);
         }
 
@@ -254,9 +266,15 @@ export class UI5TimelineCard extends BaseUI5Card {
           color: var(--secondary-text-color);
           font-style: italic;
         }
+
+        .entity-info {
+          font-size: 12px;
+          color: var(--secondary-text-color);
+          text-align: center;
+        }
       </style>
 
-      <div class="card-container">
+      <div class="card-container ${isUnavailable ? "unavailable" : ""}">
         <div class="timeline-container">
           ${title ? `<div class="timeline-header">${title}</div>` : ""}
           ${
@@ -269,6 +287,11 @@ export class UI5TimelineCard extends BaseUI5Card {
               : `
             <div class="empty-state">No timeline entries</div>
           `
+          }
+          ${
+            this.config.entity
+              ? `<div class="entity-info">${entityState}</div>`
+              : ""
           }
         </div>
       </div>
@@ -284,7 +307,8 @@ export class UI5TimelineCard extends BaseUI5Card {
   }
 
   getCardSize(): number {
-    const entries = this.config?.entities?.length || this.config?.items?.length || 0;
+    const entries =
+      this.config?.entities?.length || this.config?.items?.length || 0;
     return Math.max(1, Math.ceil(entries / 3));
   }
 
@@ -292,10 +316,18 @@ export class UI5TimelineCard extends BaseUI5Card {
     return {
       type: "custom:ui5-timeline-card",
       name: "Timeline",
+      layout: "Vertical",
       items: [
-        { title: "Event 1", subtitle: "Description", icon: "activities" },
-        { title: "Event 2", subtitle: "Description", icon: "activities" },
-        { title: "Event 3", subtitle: "Description", icon: "activities" },
+        {
+          title_text: "Event 1",
+          subtitle_text: "Just now",
+          icon: "phone",
+        },
+        {
+          title_text: "Event 2",
+          subtitle_text: "5 minutes ago",
+          icon: "message",
+        },
       ],
     };
   }

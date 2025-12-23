@@ -16,21 +16,55 @@ This plugin uses UI5 Web Components (NOT classic SAPUI5/OpenUI5) to create beaut
 
 ## Available Cards
 
-### UI5 Button Card
+### Core Cards
+
+#### UI5 Button Card
 
 A customizable button card with support for icons, different designs, and entity state display.
 
-### UI5 Switch Card
+#### UI5 Switch Card
 
 A toggle switch card for controlling binary entities (lights, switches, etc.).
 
-### UI5 Slider Card
+#### UI5 Slider Card
 
 A slider control card for adjusting numeric values (brightness, volume, temperature, etc.).
 
-### UI5 Progress Card
+#### UI5 Progress Card
 
 A progress indicator card for displaying percentage-based values.
+
+### Fiori Cards
+
+#### UI5 ShellBar Card
+
+A shell bar card for displaying a top application bar with title and logo.
+
+#### UI5 SideNavigation Card
+
+A side navigation card for displaying hierarchical navigation menus.
+
+#### UI5 Timeline Card
+
+A timeline card for displaying chronological events and activities.
+
+#### UI5 Wizard Card
+
+A wizard card for multi-step processes and workflows.
+
+#### UI5 NotificationList Card
+
+A notification list card for displaying system notifications and alerts.
+
+#### UI5 Page Card
+
+A page layout card for organizing content with consistent styling.
+
+### Generic Card
+
+#### UI5 Element Card
+
+A generic card that can render any UI5 Web Component with custom properties and slots.
 
 ## Installation
 
@@ -113,6 +147,114 @@ display_value: true
 state: Success # None | Success | Warning | Error | Information
 ```
 
+### UI5 ShellBar Card
+
+```yaml
+type: custom:ui5-shellbar-card
+primary_title: Home Assistant
+secondary_title: Dashboard
+logo: /local/logo.png
+```
+
+### UI5 SideNavigation Card
+
+```yaml
+type: custom:ui5-sidenav-card
+collapsed: false
+items:
+  - text: Home
+    icon: home
+  - text: Lights
+    icon: lightbulb
+  - text: Climate
+    icon: temperature
+  - text: Settings
+    icon: settings
+```
+
+### UI5 Timeline Card
+
+```yaml
+type: custom:ui5-timeline-card
+layout: Vertical
+items:
+  - title_text: Door opened
+    subtitle_text: 5 minutes ago
+    icon: door-open
+    name: Front Door
+  - title_text: Motion detected
+    subtitle_text: 10 minutes ago
+    icon: walking
+    name: Living Room
+  - title_text: Light turned on
+    subtitle_text: 15 minutes ago
+    icon: lightbulb
+    name: Kitchen
+```
+
+### UI5 Wizard Card
+
+```yaml
+type: custom:ui5-wizard-card
+steps:
+  - title_text: Welcome
+    icon: hello-world
+  - title_text: Configure
+    icon: settings
+  - title_text: Review
+    icon: overview-chart
+  - title_text: Complete
+    icon: accept
+```
+
+### UI5 NotificationList Card
+
+```yaml
+type: custom:ui5-notification-list-card
+items:
+  - title_text: Security Alert
+    description: Front door left open
+    priority: High
+    read: false
+  - title_text: System Update
+    description: New version available
+    priority: Medium
+    read: false
+  - title_text: Weather Alert
+    description: Rain expected this evening
+    priority: Low
+    read: true
+```
+
+### UI5 Page Card
+
+```yaml
+type: custom:ui5-page-card
+content: Welcome to your Home Assistant dashboard!
+background_design: Solid
+floating_footer: false
+```
+
+### UI5 Element Card (Generic)
+
+The Element Card allows you to use any UI5 Web Component:
+
+```yaml
+type: custom:ui5-element-card
+element: ui5-illustrated-message
+props:
+  name: BeforeSearch
+slot_content: Start searching for devices
+```
+
+```yaml
+type: custom:ui5-element-card
+element: ui5-message-strip
+props:
+  design: Positive
+slot_content: System is running normally
+```
+
 ### Template Support
 
 You can use Home Assistant templates in text fields:
@@ -120,6 +262,13 @@ You can use Home Assistant templates in text fields:
 ```yaml
 type: custom:ui5-button-card
 text: "Light is {{ states('light.living_room') }}"
+```
+
+```yaml
+type: custom:ui5-timeline-card
+items:
+  - title_text: "Temperature: {{ states('sensor.temperature') }}°C"
+    subtitle_text: "{{ relative_time(states.sensor.temperature.last_changed) }}"
 ```
 
 ### Action Configuration

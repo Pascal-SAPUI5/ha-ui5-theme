@@ -112,6 +112,60 @@ export abstract class BaseUI5Card extends HTMLElement implements LovelaceCard {
   protected abstract render(): void;
 
   /**
+   * Render error state
+   */
+  protected renderError(message: string): void {
+    this.shadow.innerHTML = `
+      <style>
+        ${this.getBaseStyles()}
+
+        .error-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          padding: 24px;
+          text-align: center;
+        }
+
+        .error-icon {
+          font-size: 48px;
+          color: var(--error-color, #f44336);
+        }
+
+        .error-message {
+          font-size: 14px;
+          color: var(--primary-text-color);
+          font-weight: 500;
+        }
+
+        .error-details {
+          font-size: 12px;
+          color: var(--secondary-text-color);
+        }
+      </style>
+
+      <div class="card-container">
+        <div class="error-container">
+          <div class="error-icon">⚠️</div>
+          <div class="error-message">Error Loading Card</div>
+          <div class="error-details">${this.escapeHtml(message)}</div>
+        </div>
+      </div>
+    `;
+  }
+
+  /**
+   * Escape HTML for safe insertion
+   */
+  private escapeHtml(text: string): string {
+    const div = document.createElement("div");
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  /**
    * Get card size for layout purposes
    */
   getCardSize(): number {
