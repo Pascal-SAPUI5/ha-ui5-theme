@@ -15,7 +15,7 @@
 
 | #   | Komponente | Card Name        | Import Check | Card | Tests | CI  |
 | --- | ---------- | ---------------- | ------------ | ---- | ----- | --- |
-| 1   | List       | `ui5-list-card`  | ⬜           | ⬜   | ⬜    | ⬜  |
+| 1   | List       | `ui5-list-card`  | ✅           | ✅   | ✅    | ✅  |
 | 2   | Table      | `ui5-table-card` | ⬜           | ⬜   | ⬜    | ⬜  |
 
 ### Cards & Container
@@ -39,15 +39,15 @@
 
 | #   | Komponente     | Card Name           | Import Check | Card | Tests | CI  |
 | --- | -------------- | ------------------- | ------------ | ---- | ----- | --- |
-| 6   | ShellBar       | `ui5-shellbar-card` | ⬜           | ⬜   | ⬜    | ⬜  |
-| 7   | SideNavigation | `ui5-sidenav-card`  | ⬜           | ⬜   | ⬜    | ⬜  |
+| 6   | ShellBar       | `ui5-shellbar-card` | ✅           | ✅   | ⬜    | ✅  |
+| 7   | SideNavigation | `ui5-sidenav-card`  | ✅           | ✅   | ⬜    | ✅  |
 | 8   | Bar            | `ui5-bar-card`      | ⬜           | ⬜   | ⬜    | ⬜  |
 
 ### Timeline
 
 | #   | Komponente | Card Name           | Import Check | Card | Tests | CI  |
 | --- | ---------- | ------------------- | ------------ | ---- | ----- | --- |
-| 9   | Timeline   | `ui5-timeline-card` | ⬜           | ⬜   | ⬜    | ⬜  |
+| 9   | Timeline   | `ui5-timeline-card` | ✅           | ✅   | ⬜    | ✅  |
 
 ---
 
@@ -86,7 +86,7 @@
 
 | #   | Komponente | Card Name         | Import Check | Card | Tests | CI  |
 | --- | ---------- | ----------------- | ------------ | ---- | ----- | --- |
-| 20  | Wizard     | `ui5-wizard-card` | ⬜           | ⬜   | ⬜    | ⬜  |
+| 20  | Wizard     | `ui5-wizard-card` | ✅           | ✅   | ⬜    | ✅  |
 
 ---
 

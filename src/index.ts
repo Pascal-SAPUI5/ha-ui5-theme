@@ -21,6 +21,7 @@ import "./cards/ui5-wizard-card";
 import "./cards/ui5-notification-list-card";
 import "./cards/ui5-page-card";
 import "./cards/ui5-element-card";
+import "./cards/ui5-list-card";
 
 // Card registration information
 const CARD_DEFINITIONS = [
@@ -92,6 +93,12 @@ const CARD_DEFINITIONS = [
     type: "custom:ui5-element-card",
     name: "UI5 Element Card",
     description: "A generic card that can render any UI5 element",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-list-card",
+    name: "UI5 List Card",
+    description: "Display entities in a list with state indicators and grouping",
     preview: true,
   },
 ];

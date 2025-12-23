@@ -249,6 +249,28 @@ export interface UI5ElementCardConfig extends BaseCardConfig {
   slot_content?: string;
 }
 
+export interface UI5ListCardConfig extends BaseCardConfig {
+  type: "custom:ui5-list-card";
+  title?: string;
+  mode?: "None" | "SingleSelect" | "SingleSelectBegin" | "SingleSelectEnd" | "MultiSelect" | "Delete";
+  header_text?: string;
+  footer_text?: string;
+  no_data_text?: string;
+  growing?: "None" | "Scroll" | "Button";
+  entities?: string[];
+  items?: Array<{
+    text: string;
+    description?: string;
+    icon?: string;
+    icon_end?: string;
+    additional_text?: string;
+    additional_text_state?: "None" | "Success" | "Warning" | "Error" | "Information";
+    type?: "Active" | "Inactive" | "Detail";
+    entity?: string;
+  }>;
+  group_by?: "domain" | "area" | "none";
+}
+
 export type UI5CardConfig =
   | UI5ButtonCardConfig
   | UI5SwitchCardConfig
@@ -260,7 +282,8 @@ export type UI5CardConfig =
   | UI5WizardCardConfig
   | UI5NotificationListCardConfig
   | UI5PageCardConfig
-  | UI5ElementCardConfig;
+  | UI5ElementCardConfig
+  | UI5ListCardConfig;
 
 // ==================== Card Registration ====================
 
@@ -303,5 +326,6 @@ declare global {
     "ui5-notification-list-card": LovelaceCard;
     "ui5-page-card": LovelaceCard;
     "ui5-element-card": LovelaceCard;
+    "ui5-list-card": LovelaceCard;
   }
 }
