@@ -13,7 +13,7 @@ import {
 import type { LovelaceCard, UI5ButtonCardConfig } from "../types";
 
 // Import the card (registers the custom element)
-import "../cards/ui5-button-card";
+import "../components/Button/Button";
 
 describe("ui5-button-card", () => {
   beforeAll(async () => {

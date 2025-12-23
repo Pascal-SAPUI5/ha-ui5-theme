@@ -16,20 +16,20 @@
 | #   | Komponente | Card Name        | Import Check | Card | Tests | CI  |
 | --- | ---------- | ---------------- | ------------ | ---- | ----- | --- |
 | 1   | List       | `ui5-list-card`  | ✅           | ✅   | ✅    | ✅  |
-| 2   | Table      | `ui5-table-card` | ⬜           | ⬜   | ⬜    | ⬜  |
+| 2   | Table      | `ui5-table-card` | ✅           | ✅   | ✅    | ✅  |
 
 ### Cards & Container
 
 | #   | Komponente | Card Name        | Import Check | Card | Tests | CI  |
 | --- | ---------- | ---------------- | ------------ | ---- | ----- | --- |
-| 3   | Card       | `ui5-card-card`  | ⬜           | ⬜   | ⬜    | ⬜  |
-| 4   | Panel      | `ui5-panel-card` | ⬜           | ⬜   | ⬜    | ⬜  |
+| 3   | Card       | `ui5-card-card`  | ✅           | ✅   | ✅    | ✅  |
+| 4   | Panel      | `ui5-panel-card` | ✅           | ✅   | ✅    | ✅  |
 
 ### Navigation
 
 | #   | Komponente   | Card Name       | Import Check | Card | Tests | CI  |
 | --- | ------------ | --------------- | ------------ | ---- | ----- | --- |
-| 5   | TabContainer | `ui5-tabs-card` | ⬜           | ⬜   | ⬜    | ⬜  |
+| 5   | TabContainer | `ui5-tabs-card` | ✅           | ✅   | ✅    | ✅  |
 
 ---
 

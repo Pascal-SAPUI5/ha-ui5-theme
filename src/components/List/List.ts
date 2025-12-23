@@ -10,10 +10,10 @@
  * - Custom items support
  */
 
-import { BaseUI5Card } from "./base-card";
-import type { UI5ListCardConfig, HassEntity } from "../types";
-import { getEntityName, getDomain, formatEntityState } from "../utils/ha-helpers";
-import "../ui5-loader";
+import { BaseUI5Card } from "../shared/base-card";
+import type { UI5ListCardConfig, HassEntity } from "../../types";
+import { getEntityName, getDomain, formatEntityState } from "../../utils/ha-helpers";
+import "../../ui5-loader";
 
 interface ListItem {
   text: string;

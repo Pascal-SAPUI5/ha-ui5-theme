@@ -3,9 +3,9 @@
  * A Lovelace card that displays a UI5 Page component
  */
 
-import { BaseUI5Card } from "./base-card";
-import type { UI5PageCardConfig } from "../types";
-import { ensureFiori } from "../ui5-loader";
+import { BaseUI5Card } from "../shared/base-card";
+import type { UI5PageCardConfig } from "../../types";
+import { ensureFiori } from "../../ui5-loader";
 
 export class UI5PageCard extends BaseUI5Card {
   async connectedCallback(): Promise<void> {

@@ -1,15 +1,15 @@
 var _a, _b;
-var c$k = {}, e$n = c$k.hasOwnProperty, a$o = c$k.toString, o$n = e$n.toString, l$s = o$n.call(Object), i$r = function(r3) {
+var c$k = {}, e$o = c$k.hasOwnProperty, a$q = c$k.toString, o$n = e$o.toString, l$t = o$n.call(Object), i$r = function(r3) {
   var t2, n2;
-  return !r3 || a$o.call(r3) !== "[object Object]" ? false : (t2 = Object.getPrototypeOf(r3), t2 ? (n2 = e$n.call(t2, "constructor") && t2.constructor, typeof n2 == "function" && o$n.call(n2) === l$s) : true);
+  return !r3 || a$q.call(r3) !== "[object Object]" ? false : (t2 = Object.getPrototypeOf(r3), t2 ? (n2 = e$o.call(t2, "constructor") && t2.constructor, typeof n2 == "function" && o$n.call(n2) === l$t) : true);
 };
-var c$j = /* @__PURE__ */ Object.create(null), u$m = function(p2, m2, A2, d2) {
-  var n2, t2, e2, a2, o2, i3, r3 = arguments[2] || {}, f4 = 3, l3 = arguments.length, s2 = arguments[0] || false, y2 = arguments[1] ? void 0 : c$j;
-  for (typeof r3 != "object" && typeof r3 != "function" && (r3 = {}); f4 < l3; f4++) if ((o2 = arguments[f4]) != null) for (a2 in o2) n2 = r3[a2], e2 = o2[a2], !(a2 === "__proto__" || r3 === e2) && (s2 && e2 && (i$r(e2) || (t2 = Array.isArray(e2))) ? (t2 ? (t2 = false, i3 = n2 && Array.isArray(n2) ? n2 : []) : i3 = n2 && i$r(n2) ? n2 : {}, r3[a2] = u$m(s2, arguments[1], i3, e2)) : e2 !== y2 && (r3[a2] = e2));
+var c$j = /* @__PURE__ */ Object.create(null), u$n = function(p2, m2, A2, d2) {
+  var n2, t2, e2, a3, o2, i3, r3 = arguments[2] || {}, f4 = 3, l3 = arguments.length, s2 = arguments[0] || false, y2 = arguments[1] ? void 0 : c$j;
+  for (typeof r3 != "object" && typeof r3 != "function" && (r3 = {}); f4 < l3; f4++) if ((o2 = arguments[f4]) != null) for (a3 in o2) n2 = r3[a3], e2 = o2[a3], !(a3 === "__proto__" || r3 === e2) && (s2 && e2 && (i$r(e2) || (t2 = Array.isArray(e2))) ? (t2 ? (t2 = false, i3 = n2 && Array.isArray(n2) ? n2 : []) : i3 = n2 && i$r(n2) ? n2 : {}, r3[a3] = u$n(s2, arguments[1], i3, e2)) : e2 !== y2 && (r3[a3] = e2));
   return r3;
 };
-const e$m = function(n2, t2) {
-  return u$m(true, false, ...arguments);
+const e$n = function(n2, t2) {
+  return u$n(true, false, ...arguments);
 };
 const d$i = () => new Promise((e2) => {
   document.body ? e2() : document.addEventListener("DOMContentLoaded", () => {
@@ -53,12 +53,12 @@ const o$m = (t2, n2 = document.body, r3) => {
   let e2 = document.querySelector(t2);
   return e2 || (e2 = r3 ? r3() : document.createElement(t2), n2.insertBefore(e2, n2.firstChild));
 };
-const u$l = () => {
+const u$m = () => {
   const t2 = document.createElement("meta");
   return t2.setAttribute("name", "ui5-shared-resources"), t2.setAttribute("content", ""), t2;
-}, l$r = () => typeof document > "u" ? null : o$m('meta[name="ui5-shared-resources"]', document.head, u$l), m$j = (t2, o2) => {
+}, l$s = () => typeof document > "u" ? null : o$m('meta[name="ui5-shared-resources"]', document.head, u$m), m$j = (t2, o2) => {
   const r3 = t2.split(".");
-  let e2 = l$r();
+  let e2 = l$s();
   if (!e2) return o2;
   for (let n2 = 0; n2 < r3.length; n2++) {
     const s2 = r3[n2], c2 = n2 === r3.length - 1;
@@ -82,60 +82,60 @@ const m$i = -1, h$9 = (e2) => {
 Loading order (versions before 1.1.0 not listed): ${e2.map((s2) => `
 ${s2.description}`).join("")}`), [...i$p.keys()].forEach((s2) => {
     let o2, r3;
-    s2 === m$i ? (o2 = 1, r3 = { description: "Older unknown runtime" }) : (o2 = b$c(n2, s2), r3 = e2[s2]);
-    let a2;
-    o2 > 0 ? a2 = "an older" : o2 < 0 ? a2 = "a newer" : a2 = "the same", t2 = `${t2}
+    s2 === m$i ? (o2 = 1, r3 = { description: "Older unknown runtime" }) : (o2 = b$d(n2, s2), r3 = e2[s2]);
+    let a3;
+    o2 > 0 ? a3 = "an older" : o2 < 0 ? a3 = "a newer" : a3 = "the same", t2 = `${t2}
 
-"${l3.description}" failed to define ${i$p.get(s2).size} tag(s) as they were defined by a runtime of ${a2} version "${r3.description}": ${[...i$p.get(s2)].sort().join(", ")}.`, o2 > 0 ? t2 = `${t2}
+"${l3.description}" failed to define ${i$p.get(s2).size} tag(s) as they were defined by a runtime of ${a3} version "${r3.description}": ${[...i$p.get(s2)].sort().join(", ")}.`, o2 > 0 ? t2 = `${t2}
 WARNING! If your code uses features of the above web components, unavailable in ${r3.description}, it might not work as expected!` : t2 = `${t2}
 Since the above web components were defined by the same or newer version runtime, they should be compatible with your code.`;
   }), t2 = `${t2}
 
 To prevent other runtimes from defining tags that you use, consider using scoping or have third-party libraries use scoping: https://github.com/UI5/webcomponents/blob/main/docs/2-advanced/06-scoping.md.`, console.warn(t2);
 };
-const e$l = { version: "2.17.0", major: 2, minor: 17, patch: 0, suffix: "", isNext: false, buildTime: 1765979913 };
-let s$t, t$s = { include: [/^ui5-/], exclude: [] };
-const o$l = /* @__PURE__ */ new Map(), c$h = () => s$t, m$h = () => t$s, i$o = (e2) => {
+const e$m = { version: "2.17.0", major: 2, minor: 17, patch: 0, suffix: "", isNext: false, buildTime: 1765979913 };
+let s$u, t$t = { include: [/^ui5-/], exclude: [] };
+const o$l = /* @__PURE__ */ new Map(), c$h = () => s$u, m$h = () => t$t, i$o = (e2) => {
   if (!o$l.has(e2)) {
-    const n2 = t$s.include.some((r3) => e2.match(r3)) && !t$s.exclude.some((r3) => e2.match(r3));
+    const n2 = t$t.include.some((r3) => e2.match(r3)) && !t$t.exclude.some((r3) => e2.match(r3));
     o$l.set(e2, n2);
   }
   return o$l.get(e2);
 }, g$d = (e2) => {
   if (i$o(e2)) return c$h();
 }, d$g = (e2) => {
-  const n2 = `v${e$l.version.replaceAll(".", "-")}`, r3 = /(--_?ui5)([^,:)\s]+)/g;
+  const n2 = `v${e$m.version.replaceAll(".", "-")}`, r3 = /(--_?ui5)([^,:)\s]+)/g;
   return e2.replaceAll(r3, `$1-${n2}$2`);
 };
-let i$n, s$s = "";
-const u$k = /* @__PURE__ */ new Map(), r$p = m$j("Runtimes", []), x$3 = () => {
+let i$n, s$t = "";
+const u$l = /* @__PURE__ */ new Map(), r$p = m$j("Runtimes", []), x$3 = () => {
   if (i$n === void 0) {
     i$n = r$p.length;
-    const e2 = e$l;
+    const e2 = e$m;
     r$p.push({ ...e2, get scopingSuffix() {
       return c$h();
     }, get registeredTags() {
       return T$7();
     }, get scopingRules() {
       return m$h();
-    }, alias: s$s, description: `Runtime ${i$n} - ver ${e2.version}${""}` });
+    }, alias: s$t, description: `Runtime ${i$n} - ver ${e2.version}${""}` });
   }
-}, I$5 = () => i$n, b$c = (e2, m2) => {
+}, I$5 = () => i$n, b$d = (e2, m2) => {
   const o2 = `${e2},${m2}`;
-  if (u$k.has(o2)) return u$k.get(o2);
+  if (u$l.has(o2)) return u$l.get(o2);
   const t2 = r$p[e2], n2 = r$p[m2];
   if (!t2 || !n2) throw new Error("Invalid runtime index supplied");
   if (t2.isNext || n2.isNext) return t2.buildTime - n2.buildTime;
   const c2 = t2.major - n2.major;
   if (c2) return c2;
-  const a2 = t2.minor - n2.minor;
-  if (a2) return a2;
+  const a3 = t2.minor - n2.minor;
+  if (a3) return a3;
   const f4 = t2.patch - n2.patch;
   if (f4) return f4;
   const l3 = new Intl.Collator(void 0, { numeric: true, sensitivity: "base" }).compare(t2.suffix, n2.suffix);
-  return u$k.set(o2, l3), l3;
+  return u$l.set(o2, l3), l3;
 }, $$2 = () => r$p;
-const g$c = typeof document > "u", i$m = (e2, t2) => t2 ? `${e2}|${t2}` : e2, l$q = (e2) => e2 === void 0 ? true : b$c(I$5(), parseInt(e2)) === 1, c$g = (e2, t2, r3 = "", s2) => {
+const g$c = typeof document > "u", i$m = (e2, t2) => t2 ? `${e2}|${t2}` : e2, l$r = (e2) => e2 === void 0 ? true : b$d(I$5(), parseInt(e2)) === 1, c$g = (e2, t2, r3 = "", s2) => {
   const d2 = I$5(), n2 = new CSSStyleSheet();
   n2.replaceSync(e2), n2._ui5StyleId = i$m(t2, r3), s2 && (n2._ui5RuntimeIndex = d2, n2._ui5Theme = s2), document.adoptedStyleSheets = [...document.adoptedStyleSheets, n2];
 }, y$b = (e2, t2, r3 = "", s2) => {
@@ -143,16 +143,16 @@ const g$c = typeof document > "u", i$m = (e2, t2) => t2 ? `${e2}|${t2}` : e2, l$
   if (n2) if (!s2) n2.replaceSync(e2 || "");
   else {
     const o2 = n2._ui5RuntimeIndex;
-    (n2._ui5Theme !== s2 || l$q(o2)) && (n2.replaceSync(e2 || ""), n2._ui5RuntimeIndex = String(d2), n2._ui5Theme = s2);
+    (n2._ui5Theme !== s2 || l$r(o2)) && (n2.replaceSync(e2 || ""), n2._ui5RuntimeIndex = String(d2), n2._ui5Theme = s2);
   }
-}, S$7 = (e2, t2 = "") => g$c ? true : !!document.adoptedStyleSheets.find((r3) => r3._ui5StyleId === i$m(e2, t2)), f$j = (e2, t2 = "") => {
+}, S$7 = (e2, t2 = "") => g$c ? true : !!document.adoptedStyleSheets.find((r3) => r3._ui5StyleId === i$m(e2, t2)), f$k = (e2, t2 = "") => {
   document.adoptedStyleSheets = document.adoptedStyleSheets.filter((r3) => r3._ui5StyleId !== i$m(e2, t2));
 }, R$4 = (e2, t2, r3 = "", s2) => {
   S$7(t2, r3) ? y$b(e2, t2, r3, s2) : c$g(e2, t2, r3, s2);
 }, m$g = (e2, t2) => e2 === void 0 ? t2 : t2 === void 0 ? e2 : `${e2} ${t2}`;
-const e$k = /* @__PURE__ */ new Map(), s$r = (t2, r3) => {
-  e$k.set(t2, r3);
-}, n$w = (t2) => e$k.get(t2);
+const e$l = /* @__PURE__ */ new Map(), s$s = (t2, r3) => {
+  e$l.set(t2, r3);
+}, n$w = (t2) => e$l.get(t2);
 const n$v = `@font-face{font-family:"72";font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/@sap-theming/theming-base-content@11.29.3/content/Base/baseLib/baseTheme/fonts/72-Regular.woff2) format("woff2"),local("72");unicode-range:U+00,U+0D,U+20-7E,U+A0-FF,U+131,U+152-153,U+161,U+178,U+17D-17E,U+192,U+237,U+2C6,U+2DC,U+3BC,U+1E9E,U+2013-2014,U+2018-201A,U+201C-201E,U+2020-2022,U+2026,U+2030,U+2039-203A,U+2044,U+20AC,U+2122}
 @font-face{font-family:"72full";font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/@sap-theming/theming-base-content@11.29.3/content/Base/baseLib/baseTheme/fonts/72-Regular-full.woff2) format("woff2")}
 @font-face{font-family:"72-Bold";src:url(https://cdn.jsdelivr.net/npm/@sap-theming/theming-base-content@11.29.3/content/Base/baseLib/baseTheme/fonts/72-Bold.woff2) format("woff2"),local("72-Bold");unicode-range:U+00,U+0D,U+20-7E,U+A0-FF,U+131,U+152-153,U+161,U+178,U+17D-17E,U+192,U+237,U+2C6,U+2DC,U+3BC,U+1E9E,U+2013-2014,U+2018-201A,U+201C-201E,U+2020-2022,U+2026,U+2030,U+2039-203A,U+2044,U+20AC,U+2122}
@@ -189,45 +189,45 @@ const n$v = `@font-face{font-family:"72";font-style:normal;font-weight:400;src:u
 @font-face{font-family:"72Monofull";src:url(https://cdn.jsdelivr.net/npm/@sap-theming/theming-base-content@11.29.3/content/Base/baseLib/baseTheme/fonts/72Mono-Regular-full.woff2) format("woff2")}
 @font-face{font-family:"72Mono-Bold";src:url(https://cdn.jsdelivr.net/npm/@sap-theming/theming-base-content@11.29.3/content/Base/baseLib/baseTheme/fonts/72Mono-Bold.woff2) format("woff2"),local("72Mono-Bold");unicode-range:U+00,U+0D,U+20-7E,U+A0-FF,U+131,U+152-153,U+161,U+178,U+17D-17E,U+192,U+237,U+2C6,U+2DC,U+3BC,U+1E9E,U+2013-2014,U+2018-201A,U+201C-201E,U+2020-2022,U+2026,U+2030,U+2039-203A,U+2044,U+20AC,U+2122}
 @font-face{font-family:"72Mono-Boldfull";src:url(https://cdn.jsdelivr.net/npm/@sap-theming/theming-base-content@11.29.3/content/Base/baseLib/baseTheme/fonts/72Mono-Bold-full.woff2) format("woff2")}`;
-const _$4 = { themes: { default: "sap_horizon", all: ["sap_fiori_3", "sap_fiori_3_dark", "sap_fiori_3_hcb", "sap_fiori_3_hcw", "sap_horizon", "sap_horizon_dark", "sap_horizon_hcb", "sap_horizon_hcw"] }, languages: { default: "en" }, locales: { default: "en", all: ["ar", "ar_EG", "ar_SA", "bg", "ca", "cnr", "cs", "da", "de", "de_AT", "de_CH", "el", "el_CY", "en", "en_AU", "en_GB", "en_HK", "en_IE", "en_IN", "en_NZ", "en_PG", "en_SG", "en_ZA", "es", "es_AR", "es_BO", "es_CL", "es_CO", "es_MX", "es_PE", "es_UY", "es_VE", "et", "fa", "fi", "fr", "fr_BE", "fr_CA", "fr_CH", "fr_LU", "he", "hi", "hr", "hu", "id", "it", "it_CH", "ja", "kk", "ko", "lt", "lv", "ms", "mk", "nb", "nl", "nl_BE", "pl", "pt", "pt_PT", "ro", "ru", "ru_UA", "sk", "sl", "sr", "sr_Latn", "sv", "th", "tr", "uk", "vi", "zh_CN", "zh_HK", "zh_SG", "zh_TW"] } }, e$j = _$4.themes.default, s$q = _$4.themes.all, a$n = _$4.languages.default, r$o = _$4.locales.default, l$p = _$4.locales.all;
+const _$4 = { themes: { default: "sap_horizon", all: ["sap_fiori_3", "sap_fiori_3_dark", "sap_fiori_3_hcb", "sap_fiori_3_hcw", "sap_horizon", "sap_horizon_dark", "sap_horizon_hcb", "sap_horizon_hcw"] }, languages: { default: "en" }, locales: { default: "en", all: ["ar", "ar_EG", "ar_SA", "bg", "ca", "cnr", "cs", "da", "de", "de_AT", "de_CH", "el", "el_CY", "en", "en_AU", "en_GB", "en_HK", "en_IE", "en_IN", "en_NZ", "en_PG", "en_SG", "en_ZA", "es", "es_AR", "es_BO", "es_CL", "es_CO", "es_MX", "es_PE", "es_UY", "es_VE", "et", "fa", "fi", "fr", "fr_BE", "fr_CA", "fr_CH", "fr_LU", "he", "hi", "hr", "hu", "id", "it", "it_CH", "ja", "kk", "ko", "lt", "lv", "ms", "mk", "nb", "nl", "nl_BE", "pl", "pt", "pt_PT", "ro", "ru", "ru_UA", "sk", "sl", "sr", "sr_Latn", "sv", "th", "tr", "uk", "vi", "zh_CN", "zh_HK", "zh_SG", "zh_TW"] } }, e$k = _$4.themes.default, s$r = _$4.themes.all, a$p = _$4.languages.default, r$o = _$4.locales.default, l$q = _$4.locales.all;
 const o$k = typeof document > "u", n$u = { search() {
   return o$k ? "" : window.location.search;
-} }, i$l = () => o$k ? "" : window.location.hostname, c$f = () => o$k ? "" : window.location.port, a$m = () => o$k ? "" : window.location.protocol, s$p = () => o$k ? "" : window.location.href, u$j = () => n$u.search();
-const s$o = (e2) => {
+} }, i$l = () => o$k ? "" : window.location.hostname, c$f = () => o$k ? "" : window.location.port, a$o = () => o$k ? "" : window.location.protocol, s$q = () => o$k ? "" : window.location.href, u$k = () => n$u.search();
+const s$p = (e2) => {
   const t2 = document.querySelector(`META[name="${e2}"]`);
   return t2 && t2.getAttribute("content");
 }, o$j = (e2) => {
-  const t2 = s$o("sap-allowed-theme-origins") ?? s$o("sap-allowedThemeOrigins");
+  const t2 = s$p("sap-allowed-theme-origins") ?? s$p("sap-allowedThemeOrigins");
   return t2 ? t2.split(",").some((n2) => n2 === "*" || e2 === n2.trim()) : false;
-}, a$l = (e2, t2) => {
+}, a$n = (e2, t2) => {
   const n2 = new URL(e2).pathname;
   return new URL(n2, t2).toString();
 }, g$b = (e2) => {
   let t2;
   try {
-    if (e2.startsWith(".") || e2.startsWith("/")) t2 = new URL(e2, s$p()).toString();
+    if (e2.startsWith(".") || e2.startsWith("/")) t2 = new URL(e2, s$q()).toString();
     else {
       const n2 = new URL(e2), r3 = n2.origin;
-      r3 && o$j(r3) ? t2 = n2.toString() : t2 = a$l(n2.toString(), s$p());
+      r3 && o$j(r3) ? t2 = n2.toString() : t2 = a$n(n2.toString(), s$q());
     }
     return t2.endsWith("/") || (t2 = `${t2}/`), `${t2}UI5/`;
   } catch {
   }
 };
-var u$i = ((l3) => (l3.Full = "full", l3.Basic = "basic", l3.Minimal = "minimal", l3.None = "none", l3))(u$i || {});
-const e$i = new i$q(), t$r = "configurationReset", i$k = (n2) => {
-  e$i.attachEvent(t$r, n2);
+var u$j = ((l3) => (l3.Full = "full", l3.Basic = "basic", l3.Minimal = "minimal", l3.None = "none", l3))(u$j || {});
+const e$j = new i$q(), t$s = "configurationReset", i$k = (n2) => {
+  e$j.attachEvent(t$s, n2);
 };
-let p$8 = false, t$q = { animationMode: u$i.Full, theme: e$j, themeRoot: void 0, rtl: void 0, language: void 0, timezone: void 0, calendarType: void 0, secondaryCalendarType: void 0, noConflict: false, formatSettings: {}, fetchDefaultLanguage: false, defaultFontLoading: true, enableDefaultTooltips: true };
-const C$5 = () => (o$i(), t$q.animationMode), T$6 = () => (o$i(), t$q.theme), S$6 = () => {
-  if (o$i(), t$q.themeRoot !== void 0) {
-    if (!g$b(t$q.themeRoot)) {
-      console.warn(`The ${t$q.themeRoot} is not valid. Check the allowed origins as suggested in the "setThemeRoot" description.`);
+let p$8 = false, t$r = { animationMode: u$j.Full, theme: e$k, themeRoot: void 0, rtl: void 0, language: void 0, timezone: void 0, calendarType: void 0, secondaryCalendarType: void 0, noConflict: false, formatSettings: {}, fetchDefaultLanguage: false, defaultFontLoading: true, enableDefaultTooltips: true };
+const C$5 = () => (o$i(), t$r.animationMode), T$6 = () => (o$i(), t$r.theme), S$6 = () => {
+  if (o$i(), t$r.themeRoot !== void 0) {
+    if (!g$b(t$r.themeRoot)) {
+      console.warn(`The ${t$r.themeRoot} is not valid. Check the allowed origins as suggested in the "setThemeRoot" description.`);
       return;
     }
-    return t$q.themeRoot;
+    return t$r.themeRoot;
   }
-}, L$6 = () => (o$i(), t$q.language), R$3 = () => (o$i(), t$q.fetchDefaultLanguage), F$2 = () => (o$i(), t$q.noConflict), U$3 = () => (o$i(), t$q.defaultFontLoading), b$b = () => (o$i(), t$q.enableDefaultTooltips), i$j = /* @__PURE__ */ new Map();
+}, L$6 = () => (o$i(), t$r.language), R$3 = () => (o$i(), t$r.fetchDefaultLanguage), F$2 = () => (o$i(), t$r.noConflict), U$3 = () => (o$i(), t$r.defaultFontLoading), b$c = () => (o$i(), t$r.enableDefaultTooltips), i$j = /* @__PURE__ */ new Map();
 i$j.set("true", true), i$j.set("false", false);
 const w$7 = () => {
   const n2 = document.querySelector("[data-ui5-config]") || document.querySelector("[data-id='sap-ui-config']");
@@ -238,13 +238,13 @@ const w$7 = () => {
     } catch {
       console.warn("Incorrect data-sap-ui-config format. Please use JSON");
     }
-    e2 && (t$q = e$m(t$q, e2));
+    e2 && (t$r = e$n(t$r, e2));
   }
 }, z$2 = () => {
-  const n2 = new URLSearchParams(u$j());
+  const n2 = new URLSearchParams(u$k());
   n2.forEach((e2, r3) => {
-    const a2 = r3.split("sap-").length;
-    a2 === 0 || a2 === r3.split("sap-ui-").length || g$a(r3, e2, "sap");
+    const a3 = r3.split("sap-").length;
+    a3 === 0 || a3 === r3.split("sap-ui-").length || g$a(r3, e2, "sap");
   }), n2.forEach((e2, r3) => {
     r3.startsWith("sap-ui") && g$a(r3, e2, "sap-ui");
   });
@@ -252,39 +252,39 @@ const w$7 = () => {
   const e2 = n2.split("@")[1];
   return g$b(e2);
 }, P$9 = (n2, e2) => n2 === "theme" && e2.includes("@") ? e2.split("@")[0] : e2, g$a = (n2, e2, r3) => {
-  const a2 = e2.toLowerCase(), s2 = n2.split(`${r3}-`)[1];
-  i$j.has(e2) && (e2 = i$j.get(a2)), s2 === "theme" ? (t$q.theme = P$9(s2, e2), e2 && e2.includes("@") && (t$q.themeRoot = E$5(e2))) : t$q[s2] = e2;
+  const a3 = e2.toLowerCase(), s2 = n2.split(`${r3}-`)[1];
+  i$j.has(e2) && (e2 = i$j.get(a3)), s2 === "theme" ? (t$r.theme = P$9(s2, e2), e2 && e2.includes("@") && (t$r.themeRoot = E$5(e2))) : t$r[s2] = e2;
 }, j$2 = () => {
   const n2 = n$w("OpenUI5Support");
   if (!n2 || !n2.isOpenUI5Detected()) return;
   const e2 = n2.getConfigurationSettingsObject();
-  t$q = e$m(t$q, e2);
+  t$r = e$n(t$r, e2);
 }, o$i = () => {
-  typeof document > "u" || p$8 || (l$o(), p$8 = true);
-}, l$o = (n2) => {
+  typeof document > "u" || p$8 || (l$p(), p$8 = true);
+}, l$p = (n2) => {
   w$7(), z$2(), j$2();
 };
 let o$h;
 i$k(() => {
   o$h = void 0;
 });
-const a$k = () => (o$h === void 0 && (o$h = U$3()), o$h);
-const a$j = () => {
+const a$m = () => (o$h === void 0 && (o$h = U$3()), o$h);
+const a$l = () => {
   const t2 = n$w("OpenUI5Support");
-  (!t2 || !t2.isOpenUI5Detected()) && f$i();
-}, f$i = () => {
+  (!t2 || !t2.isOpenUI5Detected()) && f$j();
+}, f$j = () => {
   const t2 = document.querySelector("head>style[data-ui5-font-face]");
-  !a$k() || t2 || S$7("data-ui5-font-face") || c$g(n$v, "data-ui5-font-face");
+  !a$m() || t2 || S$7("data-ui5-font-face") || c$g(n$v, "data-ui5-font-face");
 };
-const a$i = ":root{--_ui5_content_density:cozy}.sapUiSizeCompact,.ui5-content-density-compact,[data-ui5-compact-size]{--_ui5_content_density:compact}";
-const e$h = () => {
-  S$7("data-ui5-system-css-vars") || c$g(a$i, "data-ui5-system-css-vars");
+const a$k = ":root{--_ui5_content_density:cozy}.sapUiSizeCompact,.ui5-content-density-compact,[data-ui5-compact-size]{--_ui5_content_density:compact}";
+const e$i = () => {
+  S$7("data-ui5-system-css-vars") || c$g(a$k, "data-ui5-system-css-vars");
 };
-const t$p = "html:not(.ui5-content-native-scrollbars){scrollbar-color:var(--sapScrollBar_FaceColor) var(--sapScrollBar_TrackColor)}";
-const s$n = () => {
-  S$7("data-ui5-scrollbar-styles") || c$g(t$p, "data-ui5-scrollbar-styles");
+const t$q = "html:not(.ui5-content-native-scrollbars){scrollbar-color:var(--sapScrollBar_FaceColor) var(--sapScrollBar_TrackColor)}";
+const s$o = () => {
+  S$7("data-ui5-scrollbar-styles") || c$g(t$q, "data-ui5-scrollbar-styles");
 };
-let l$n = class l {
+let l$o = class l {
   constructor() {
     this.list = [], this.lookup = /* @__PURE__ */ new Set();
   }
@@ -314,17 +314,17 @@ let l$n = class l {
     }
   }
 };
-const t$o = /* @__PURE__ */ new Set(), n$t = (e2) => {
-  t$o.add(e2);
-}, r$n = (e2) => t$o.has(e2);
-const s$m = /* @__PURE__ */ new Set(), d$f = new i$q(), n$s = new l$n();
-let t$n, a$h, m$f, i$i;
-const l$m = async (e2) => {
+const t$p = /* @__PURE__ */ new Set(), n$t = (e2) => {
+  t$p.add(e2);
+}, r$n = (e2) => t$p.has(e2);
+const s$n = /* @__PURE__ */ new Set(), d$f = new i$q(), n$s = new l$o();
+let t$o, a$j, m$f, i$i;
+const l$n = async (e2) => {
   n$s.add(e2), await P$8();
 }, c$e = (e2) => {
-  d$f.fireEvent("beforeComponentRender", e2), s$m.add(e2), e2._render();
+  d$f.fireEvent("beforeComponentRender", e2), s$n.add(e2), e2._render();
 }, h$8 = (e2) => {
-  n$s.remove(e2), s$m.delete(e2);
+  n$s.remove(e2), s$n.delete(e2);
 }, P$8 = async () => {
   i$i || (i$i = new Promise((e2) => {
     window.requestAnimationFrame(() => {
@@ -333,39 +333,39 @@ const l$m = async (e2) => {
       }, 200));
     });
   })), await i$i;
-}, y$a = () => t$n || (t$n = new Promise((e2) => {
-  a$h = e2, window.requestAnimationFrame(() => {
-    n$s.isEmpty() && (t$n = void 0, e2());
+}, y$a = () => t$o || (t$o = new Promise((e2) => {
+  a$j = e2, window.requestAnimationFrame(() => {
+    n$s.isEmpty() && (t$o = void 0, e2());
   });
-}), t$n), I$4 = () => {
+}), t$o), I$4 = () => {
   const e2 = T$7().map((r3) => customElements.whenDefined(r3));
   return Promise.all(e2);
-}, f$h = async () => {
+}, f$i = async () => {
   await I$4(), await y$a();
 }, U$2 = () => {
-  n$s.isEmpty() && a$h && (a$h(), a$h = void 0, t$n = void 0);
+  n$s.isEmpty() && a$j && (a$j(), a$j = void 0, t$o = void 0);
 }, C$4 = async (e2) => {
-  s$m.forEach((r3) => {
+  s$n.forEach((r3) => {
     const o2 = r3.constructor, u4 = o2.getMetadata().getTag(), w2 = r$n(o2), p2 = o2.getMetadata().isLanguageAware(), E2 = o2.getMetadata().isThemeAware();
-    (!e2 || e2.tag === u4 || e2.rtlAware && w2 || e2.languageAware && p2 || e2.themeAware && E2) && l$m(r3);
-  }), await f$h();
+    (!e2 || e2.tag === u4 || e2.rtlAware && w2 || e2.languageAware && p2 || e2.themeAware && E2) && l$n(r3);
+  }), await f$i();
 };
-const t$m = new i$q(), r$m = "themeRegistered", n$r = (e2) => {
-  t$m.attachEvent(r$m, e2);
-}, s$l = (e2) => t$m.fireEvent(r$m, e2);
-const l$l = /* @__PURE__ */ new Map(), h$7 = /* @__PURE__ */ new Map(), u$h = /* @__PURE__ */ new Map(), T$5 = /* @__PURE__ */ new Set(), i$h = /* @__PURE__ */ new Set(), p$7 = (e2, r3, t2) => {
-  h$7.set(`${e2}/${r3}`, t2), T$5.add(e2), i$h.add(r3), s$l(r3);
+const t$n = new i$q(), r$m = "themeRegistered", n$r = (e2) => {
+  t$n.attachEvent(r$m, e2);
+}, s$m = (e2) => t$n.fireEvent(r$m, e2);
+const l$m = /* @__PURE__ */ new Map(), h$7 = /* @__PURE__ */ new Map(), u$i = /* @__PURE__ */ new Map(), T$5 = /* @__PURE__ */ new Set(), i$h = /* @__PURE__ */ new Set(), p$7 = (e2, r3, t2) => {
+  h$7.set(`${e2}/${r3}`, t2), T$5.add(e2), i$h.add(r3), s$m(r3);
 }, m$e = async (e2, r3, t2) => {
-  const g2 = `${e2}_${r3}_${t2 || ""}`, s2 = l$l.get(g2);
+  const g2 = `${e2}_${r3}_${t2 || ""}`, s2 = l$m.get(g2);
   if (s2 !== void 0) return s2;
   if (!i$h.has(r3)) {
     const $2 = [...i$h.values()].join(", ");
-    return console.warn(`You have requested a non-registered theme ${r3} - falling back to ${e$j}. Registered themes are: ${$2}`), a$g(e2, e$j);
+    return console.warn(`You have requested a non-registered theme ${r3} - falling back to ${e$k}. Registered themes are: ${$2}`), a$i(e2, e$k);
   }
-  const [n2, d2] = await Promise.all([a$g(e2, r3), t2 ? a$g(e2, t2, true) : void 0]), o2 = m$g(n2, d2);
-  return o2 && l$l.set(g2, o2), o2;
-}, a$g = async (e2, r3, t2 = false) => {
-  const s2 = (t2 ? u$h : h$7).get(`${e2}/${r3}`);
+  const [n2, d2] = await Promise.all([a$i(e2, r3), t2 ? a$i(e2, t2, true) : void 0]), o2 = m$g(n2, d2);
+  return o2 && l$m.set(g2, o2), o2;
+}, a$i = async (e2, r3, t2 = false) => {
+  const s2 = (t2 ? u$i : h$7).get(`${e2}/${r3}`);
   if (!s2) {
     t2 || console.error(`Theme [${r3}] not registered for package [${e2}]`);
     return;
@@ -379,7 +379,7 @@ const l$l = /* @__PURE__ */ new Map(), h$7 = /* @__PURE__ */ new Map(), u$h = /*
   }
   return n2;
 }, w$6 = () => T$5, P$7 = (e2) => i$h.has(e2);
-const r$l = /* @__PURE__ */ new Set(), s$k = () => {
+const r$l = /* @__PURE__ */ new Set(), s$l = () => {
   let e2 = document.querySelector(".sapThemeMetaData-Base-baseLib") || document.querySelector(".sapThemeMetaData-UI5-sap-ui-core");
   if (e2) return getComputedStyle(e2).backgroundImage;
   e2 = document.createElement("span"), e2.style.display = "none", e2.classList.add("sapThemeMetaData-Base-baseLib"), document.body.appendChild(e2);
@@ -388,62 +388,62 @@ const r$l = /* @__PURE__ */ new Set(), s$k = () => {
 }, o$g = (e2) => {
   const t2 = /\(["']?data:text\/plain;utf-8,(.*?)['"]?\)$/i.exec(e2);
   if (t2 && t2.length >= 2) {
-    let a2 = t2[1];
-    if (a2 = a2.replace(/\\"/g, '"'), a2.charAt(0) !== "{" && a2.charAt(a2.length - 1) !== "}") try {
-      a2 = decodeURIComponent(a2);
+    let a3 = t2[1];
+    if (a3 = a3.replace(/\\"/g, '"'), a3.charAt(0) !== "{" && a3.charAt(a3.length - 1) !== "}") try {
+      a3 = decodeURIComponent(a3);
     } catch {
       r$l.has("decode") || (console.warn("Malformed theme metadata string, unable to decodeURIComponent"), r$l.add("decode"));
       return;
     }
     try {
-      return JSON.parse(a2);
+      return JSON.parse(a3);
     } catch {
       r$l.has("parse") || (console.warn("Malformed theme metadata string, unable to parse JSON"), r$l.add("parse"));
     }
   }
 }, d$e = (e2) => {
-  let t2, a2;
+  let t2, a3;
   try {
     const n2 = e2.Path.split(".");
-    t2 = n2.length === 4 ? n2[2] : getComputedStyle(document.body).getPropertyValue("--sapSapThemeId"), a2 = e2.Extends[0];
+    t2 = n2.length === 4 ? n2[2] : getComputedStyle(document.body).getPropertyValue("--sapSapThemeId"), a3 = e2.Extends[0];
   } catch {
     r$l.has("object") || (console.warn("Malformed theme metadata Object", e2), r$l.add("object"));
     return;
   }
-  return { themeName: t2, baseThemeName: a2 };
+  return { themeName: t2, baseThemeName: a3 };
 }, m$d = () => {
-  const e2 = s$k();
+  const e2 = s$l();
   if (!e2 || e2 === "none") return;
   const t2 = o$g(e2);
   if (t2) return d$e(t2);
 };
-const t$l = new i$q(), d$d = "themeLoaded", r$k = (e2) => t$l.fireEvent(d$d, e2);
+const t$m = new i$q(), d$d = "themeLoaded", r$k = (e2) => t$m.fireEvent(d$d, e2);
 const d$c = (r3, n2) => {
   const e2 = document.createElement("link");
   return e2.type = "text/css", e2.rel = "stylesheet", n2 && Object.entries(n2).forEach((t2) => e2.setAttribute(...t2)), e2.href = r3, document.head.appendChild(e2), new Promise((t2) => {
     e2.addEventListener("load", t2), e2.addEventListener("error", t2);
   });
 };
-let t$k;
+let t$l;
 i$k(() => {
-  t$k = void 0;
+  t$l = void 0;
 });
-const n$q = () => (t$k === void 0 && (t$k = S$6()), t$k), u$g = (e2) => `${n$q()}Base/baseLib/${e2}/css_variables.css`, i$g = async (e2) => {
+const n$q = () => (t$l === void 0 && (t$l = S$6()), t$l), u$h = (e2) => `${n$q()}Base/baseLib/${e2}/css_variables.css`, i$g = async (e2) => {
   const o2 = document.querySelector(`[sap-ui-webcomponents-theme="${e2}"]`);
-  o2 && document.head.removeChild(o2), await d$c(u$g(e2), { "sap-ui-webcomponents-theme": e2 });
+  o2 && document.head.removeChild(o2), await d$c(u$h(e2), { "sap-ui-webcomponents-theme": e2 });
 };
 let _lib = "ui5", _package = "webcomponents-theming";
-const s$j = "@" + _lib + "/" + _package, S$5 = () => w$6().has(s$j), P$6 = async (e2) => {
+const s$k = "@" + _lib + "/" + _package, S$5 = () => w$6().has(s$k), P$6 = async (e2) => {
   if (!S$5()) return;
-  const t2 = await m$e(s$j, e2);
-  t2 && R$4(t2, "data-ui5-theme-properties", s$j, e2);
+  const t2 = await m$e(s$k, e2);
+  t2 && R$4(t2, "data-ui5-theme-properties", s$k, e2);
 }, E$4 = () => {
-  f$j("data-ui5-theme-properties", s$j);
+  f$k("data-ui5-theme-properties", s$k);
 }, U$1 = async (e2, t2) => {
-  const o2 = [...w$6()].map(async (a2) => {
-    if (a2 === s$j) return;
-    const i3 = await m$e(a2, e2, t2);
-    i3 && R$4(i3, `data-ui5-component-properties-${I$5()}`, a2);
+  const o2 = [...w$6()].map(async (a3) => {
+    if (a3 === s$k) return;
+    const i3 = await m$e(a3, e2, t2);
+    i3 && R$4(i3, `data-ui5-component-properties-${I$5()}`, a3);
   });
   return Promise.all(o2);
 }, k$6 = async (e2) => {
@@ -458,88 +458,88 @@ const s$j = "@" + _lib + "/" + _package, S$5 = () => w$6().has(s$j), P$6 = async
   const t2 = await k$6(e2);
   !t2 || e2 !== t2.themeName ? await P$6(e2) : E$4();
   const r3 = P$7(e2) ? e2 : t2 && t2.baseThemeName;
-  await U$1(r3 || e$j, t2 && t2.themeName === e2 ? e2 : void 0), r$k(e2);
+  await U$1(r3 || e$k, t2 && t2.themeName === e2 ? e2 : void 0), r$k(e2);
 };
-let t$j;
+let t$k;
 i$k(() => {
-  t$j = void 0;
+  t$k = void 0;
 });
-const r$j = () => (t$j === void 0 && (t$j = T$6()), t$j), u$f = async (e2) => {
-  t$j !== e2 && (t$j = e2, h$5() && (await w$5(t$j), await C$4({ themeAware: true })));
+const r$j = () => (t$k === void 0 && (t$k = T$6()), t$k), u$g = async (e2) => {
+  t$k !== e2 && (t$k = e2, h$5() && (await w$5(t$k), await C$4({ themeAware: true })));
 }, n$p = () => {
   var _a2, _b2;
   const e2 = r$j();
-  return l$k(e2) ? !e2.startsWith("sap_horizon") : !((_b2 = (_a2 = m$d()) == null ? void 0 : _a2.baseThemeName) == null ? void 0 : _b2.startsWith("sap_horizon"));
-}, l$k = (e2) => s$q.includes(e2);
-const t$i = typeof document > "u", e$g = { get userAgent() {
-  return t$i ? "" : navigator.userAgent;
+  return l$l(e2) ? !e2.startsWith("sap_horizon") : !((_b2 = (_a2 = m$d()) == null ? void 0 : _a2.baseThemeName) == null ? void 0 : _b2.startsWith("sap_horizon"));
+}, l$l = (e2) => s$r.includes(e2);
+const t$j = typeof document > "u", e$h = { get userAgent() {
+  return t$j ? "" : navigator.userAgent;
 }, get touch() {
-  return t$i ? false : "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  return t$j ? false : "ontouchstart" in window || navigator.maxTouchPoints > 0;
 }, get chrome() {
-  return t$i ? false : /(Chrome|CriOS)/.test(e$g.userAgent);
+  return t$j ? false : /(Chrome|CriOS)/.test(e$h.userAgent);
 }, get firefox() {
-  return t$i ? false : /Firefox/.test(e$g.userAgent);
+  return t$j ? false : /Firefox/.test(e$h.userAgent);
 }, get safari() {
-  return t$i ? false : !e$g.chrome && /(Version|PhantomJS)\/(\d+\.\d+).*Safari/.test(e$g.userAgent);
+  return t$j ? false : !e$h.chrome && /(Version|PhantomJS)\/(\d+\.\d+).*Safari/.test(e$h.userAgent);
 }, get webkit() {
-  return t$i ? false : /webkit/.test(e$g.userAgent);
+  return t$j ? false : /webkit/.test(e$h.userAgent);
 }, get windows() {
-  return t$i ? false : navigator.platform.indexOf("Win") !== -1;
+  return t$j ? false : navigator.platform.indexOf("Win") !== -1;
 }, get macOS() {
-  return t$i ? false : !!navigator.userAgent.match(/Macintosh|Mac OS X/i);
+  return t$j ? false : !!navigator.userAgent.match(/Macintosh|Mac OS X/i);
 }, get iOS() {
-  return t$i ? false : !!navigator.platform.match(/iPhone|iPad|iPod/) || !!(e$g.userAgent.match(/Mac/) && "ontouchend" in document);
+  return t$j ? false : !!navigator.platform.match(/iPhone|iPad|iPod/) || !!(e$h.userAgent.match(/Mac/) && "ontouchend" in document);
 }, get android() {
-  return t$i ? false : !e$g.windows && /Android/.test(e$g.userAgent);
+  return t$j ? false : !e$h.windows && /Android/.test(e$h.userAgent);
 }, get androidPhone() {
-  return t$i ? false : e$g.android && /(?=android)(?=.*mobile)/i.test(e$g.userAgent);
+  return t$j ? false : e$h.android && /(?=android)(?=.*mobile)/i.test(e$h.userAgent);
 }, get ipad() {
-  return t$i ? false : /ipad/i.test(e$g.userAgent) || /Macintosh/i.test(e$g.userAgent) && "ontouchend" in document;
+  return t$j ? false : /ipad/i.test(e$h.userAgent) || /Macintosh/i.test(e$h.userAgent) && "ontouchend" in document;
 }, _isPhone() {
-  return u$e(), e$g.touch && !r$i;
+  return u$f(), e$h.touch && !r$i;
 } };
 let o$f, i$f, r$i;
-const s$i = () => {
-  if (t$i || !e$g.windows) return false;
+const s$j = () => {
+  if (t$j || !e$h.windows) return false;
   if (o$f === void 0) {
-    const n2 = e$g.userAgent.match(/Windows NT (\d+).(\d)/);
+    const n2 = e$h.userAgent.match(/Windows NT (\d+).(\d)/);
     o$f = n2 ? parseFloat(n2[1]) : 0;
   }
   return o$f >= 8;
 }, c$d = () => {
-  if (t$i || !e$g.webkit) return false;
+  if (t$j || !e$h.webkit) return false;
   if (i$f === void 0) {
-    const n2 = e$g.userAgent.match(/(webkit)[ /]([\w.]+)/);
+    const n2 = e$h.userAgent.match(/(webkit)[ /]([\w.]+)/);
     i$f = n2 ? parseFloat(n2[1]) : 0;
   }
   return i$f >= 537.1;
-}, u$e = () => {
-  if (t$i) return false;
+}, u$f = () => {
+  if (t$j) return false;
   if (r$i === void 0) {
-    if (e$g.ipad) {
+    if (e$h.ipad) {
       r$i = true;
       return;
     }
-    if (e$g.touch) {
-      if (s$i()) {
+    if (e$h.touch) {
+      if (s$j()) {
         r$i = true;
         return;
       }
-      if (e$g.chrome && e$g.android) {
-        r$i = !/Mobile Safari\/[.0-9]+/.test(e$g.userAgent);
+      if (e$h.chrome && e$h.android) {
+        r$i = !/Mobile Safari\/[.0-9]+/.test(e$h.userAgent);
         return;
       }
       let n2 = window.devicePixelRatio ? window.devicePixelRatio : 1;
-      e$g.android && c$d() && (n2 = 1), r$i = Math.min(window.screen.width / n2, window.screen.height / n2) >= 600;
+      e$h.android && c$d() && (n2 = 1), r$i = Math.min(window.screen.width / n2, window.screen.height / n2) >= 600;
       return;
     }
-    r$i = e$g.userAgent.indexOf("Touch") !== -1 || e$g.android && !e$g.androidPhone;
+    r$i = e$h.userAgent.indexOf("Touch") !== -1 || e$h.android && !e$h.androidPhone;
   }
-}, l$j = () => e$g.touch, h$6 = () => e$g.safari, g$9 = () => e$g.chrome, b$a = () => e$g.firefox, a$f = () => (u$e(), (e$g.touch || s$i()) && r$i), d$b = () => e$g._isPhone(), f$g = () => t$i ? false : !a$f() && !d$b() || s$i(), m$c = () => a$f() && f$g(), w$4 = () => e$g.iOS, A$7 = () => e$g.macOS, P$5 = () => e$g.android || e$g.androidPhone;
-let t$h = false;
+}, l$k = () => e$h.touch, h$6 = () => e$h.safari, g$9 = () => e$h.chrome, b$b = () => e$h.firefox, a$h = () => (u$f(), (e$h.touch || s$j()) && r$i), d$b = () => e$h._isPhone(), f$h = () => t$j ? false : !a$h() && !d$b() || s$j(), m$c = () => a$h() && f$h(), w$4 = () => e$h.iOS, A$7 = () => e$h.macOS, P$5 = () => e$h.android || e$h.androidPhone;
+let t$i = false;
 const i$e = () => {
-  h$6() && w$4() && !t$h && (document.body.addEventListener("touchstart", () => {
-  }), t$h = true);
+  h$6() && w$4() && !t$i && (document.body.addEventListener("touchstart", () => {
+  }), t$i = true);
 };
 let o$e = false, r$h;
 const p$6 = new i$q(), h$5 = () => o$e, P$4 = (t2) => {
@@ -548,7 +548,7 @@ const p$6 = new i$q(), h$5 = () => o$e, P$4 = (t2) => {
     return;
   }
   t2();
-}, b$9 = async () => {
+}, b$a = async () => {
   if (r$h !== void 0) return r$h;
   const t2 = async (n2) => {
     if (x$3(), typeof document > "u") {
@@ -557,27 +557,27 @@ const p$6 = new i$q(), h$5 = () => o$e, P$4 = (t2) => {
     }
     n$r(F$1);
     const e2 = n$w("OpenUI5Support"), f4 = e2 ? e2.isOpenUI5Detected() : false, s2 = n$w("F6Navigation");
-    e2 && await e2.init(), s2 && !f4 && s2.init(), await d$i(), await w$5(r$j()), e2 && e2.attachListeners(), a$j(), e$h(), s$n(), i$e(), n2(), o$e = true, p$6.fireEvent("boot");
+    e2 && await e2.init(), s2 && !f4 && s2.init(), await d$i(), await w$5(r$j()), e2 && e2.attachListeners(), a$l(), e$i(), s$o(), i$e(), n2(), o$e = true, p$6.fireEvent("boot");
   };
   return r$h = new Promise(t2), r$h;
 }, F$1 = (t2) => {
   o$e && t2 === r$j() && w$5(r$j());
 };
-const s$h = /* @__PURE__ */ new Map(), o$d = /* @__PURE__ */ new Map(), n$o = /* @__PURE__ */ new Map(), c$c = (e2) => {
-  if (!s$h.has(e2)) {
-    const a2 = b$8(e2.split("-"));
-    s$h.set(e2, a2);
+const s$i = /* @__PURE__ */ new Map(), o$d = /* @__PURE__ */ new Map(), n$o = /* @__PURE__ */ new Map(), c$c = (e2) => {
+  if (!s$i.has(e2)) {
+    const a3 = b$9(e2.split("-"));
+    s$i.set(e2, a3);
   }
-  return s$h.get(e2);
-}, l$i = (e2) => {
+  return s$i.get(e2);
+}, l$j = (e2) => {
   if (!o$d.has(e2)) {
-    const a2 = e2.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
-    o$d.set(e2, a2);
+    const a3 = e2.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
+    o$d.set(e2, a3);
   }
   return o$d.get(e2);
-}, b$8 = (e2) => e2.map((a2, t2) => t2 === 0 ? a2.toLowerCase() : a2.charAt(0).toUpperCase() + a2.slice(1).toLowerCase()).join(""), C$3 = (e2) => {
-  const a2 = n$o.get(e2);
-  if (a2) return a2;
+}, b$9 = (e2) => e2.map((a3, t2) => t2 === 0 ? a3.toLowerCase() : a3.charAt(0).toUpperCase() + a3.slice(1).toLowerCase()).join(""), C$3 = (e2) => {
+  const a3 = n$o.get(e2);
+  if (a3) return a3;
   const t2 = c$c(e2), r3 = t2.charAt(0).toUpperCase() + t2.slice(1);
   return n$o.set(e2, r3), r3;
 };
@@ -589,8 +589,8 @@ const o$c = (t2) => {
     return r3 ? r3[1] : e2;
   }
   return "default";
-}, n$n = (t2) => t2 instanceof HTMLSlotElement ? t2.assignedNodes({ flatten: true }).filter((e2) => e2 instanceof HTMLElement) : [t2], s$g = (t2) => t2.reduce((e2, r3) => e2.concat(n$n(r3)), []);
-let u$d = class u {
+}, n$n = (t2) => t2 instanceof HTMLSlotElement ? t2.assignedNodes({ flatten: true }).filter((e2) => e2 instanceof HTMLElement) : [t2], s$h = (t2) => t2.reduce((e2, r3) => e2.concat(n$n(r3)), []);
+let u$e = class u {
   constructor(t2) {
     this.metadata = t2;
   }
@@ -606,8 +606,8 @@ let u$d = class u {
     }
     return this._initialState = t2, t2;
   }
-  static validateSlotValue(t2, a2) {
-    return g$8(t2, a2);
+  static validateSlotValue(t2, a3) {
+    return g$8(t2, a3);
   }
   getPureTag() {
     return this.metadata.tag || "";
@@ -615,18 +615,18 @@ let u$d = class u {
   getTag() {
     const t2 = this.metadata.tag;
     if (!t2) return "";
-    const a2 = g$d(t2);
-    return a2 ? `${t2}-${a2}` : t2;
+    const a3 = g$d(t2);
+    return a3 ? `${t2}-${a3}` : t2;
   }
   hasAttribute(t2) {
-    const a2 = this.getProperties()[t2];
-    return a2.type !== Object && a2.type !== Array && !a2.noAttribute;
+    const a3 = this.getProperties()[t2];
+    return a3.type !== Object && a3.type !== Array && !a3.noAttribute;
   }
   getPropertiesList() {
     return Object.keys(this.getProperties());
   }
   getAttributesList() {
-    return this.getPropertiesList().filter(this.hasAttribute.bind(this)).map(l$i);
+    return this.getPropertiesList().filter(this.hasAttribute.bind(this)).map(l$j);
   }
   canSlotText() {
     var _a2;
@@ -668,18 +668,18 @@ let u$d = class u {
   isFormAssociated() {
     return !!this.metadata.formAssociated;
   }
-  shouldInvalidateOnChildChange(t2, a2, o2) {
+  shouldInvalidateOnChildChange(t2, a3, o2) {
     const e2 = this.getSlots()[t2].invalidateOnChildChange;
     if (e2 === void 0) return false;
     if (typeof e2 == "boolean") return e2;
     if (typeof e2 == "object") {
-      if (a2 === "property") {
+      if (a3 === "property") {
         if (e2.properties === void 0) return false;
         if (typeof e2.properties == "boolean") return e2.properties;
         if (Array.isArray(e2.properties)) return e2.properties.includes(o2);
         throw new Error("Wrong format for invalidateOnChildChange.properties: boolean or array is expected");
       }
-      if (a2 === "slot") {
+      if (a3 === "slot") {
         if (e2.slots === void 0) return false;
         if (typeof e2.slots == "boolean") return e2.slots;
         if (Array.isArray(e2.slots)) return e2.slots.includes(o2);
@@ -692,8 +692,8 @@ let u$d = class u {
     return this.metadata.i18n || (this.metadata.i18n = {}), this.metadata.i18n;
   }
 };
-const g$8 = (r3, t2) => (r3 && n$n(r3).forEach((a2) => {
-  if (!(a2 instanceof t2.type)) throw new Error(`The element is not of type ${t2.type.toString()}`);
+const g$8 = (r3, t2) => (r3 && n$n(r3).forEach((a3) => {
+  if (!(a3 instanceof t2.type)) throw new Error(`The element is not of type ${t2.type.toString()}`);
 }), r3);
 const r$g = () => m$j("CustomStyle.eventProvider", new i$q()), n$m = "CustomCSSChange", i$d = (t2) => {
   r$g().attachEvent(n$m, t2);
@@ -701,67 +701,67 @@ const r$g = () => m$j("CustomStyle.eventProvider", new i$q()), n$m = "CustomCSSC
 i$d((t2) => {
   C$4({ tag: t2 });
 });
-const l$h = (t2) => {
+const l$i = (t2) => {
   const e2 = c$b();
   return e2[t2] ? e2[t2].join("") : "";
 };
-const e$f = (t2) => Array.isArray(t2) ? t2.filter((r3) => !!r3).flat(10).join(" ") : t2;
+const e$g = (t2) => Array.isArray(t2) ? t2.filter((r3) => !!r3).flat(10).join(" ") : t2;
+const e$f = /* @__PURE__ */ new Map();
+i$d((t2) => {
+  e$f.delete(`${t2}_normal`);
+});
+const y$9 = (t2) => {
+  const o2 = t2.getMetadata().getTag(), n2 = `${o2}_normal`, s2 = n$w("OpenUI5Enablement");
+  if (!e$f.has(n2)) {
+    let l3 = "";
+    s2 && (l3 = e$g(s2.getBusyIndicatorStyles()));
+    const a3 = l$i(o2) || "", m2 = `${e$g(t2.styles)} ${a3} ${l3}`;
+    e$f.set(n2, m2);
+  }
+  return e$f.get(n2);
+};
 const e$e = /* @__PURE__ */ new Map();
 i$d((t2) => {
   e$e.delete(`${t2}_normal`);
 });
-const y$9 = (t2) => {
-  const o2 = t2.getMetadata().getTag(), n2 = `${o2}_normal`, s2 = n$w("OpenUI5Enablement");
+const s$g = (t2) => {
+  const n2 = `${t2.getMetadata().getTag()}_normal`;
   if (!e$e.has(n2)) {
-    let l3 = "";
-    s2 && (l3 = e$f(s2.getBusyIndicatorStyles()));
-    const a2 = l$h(o2) || "", m2 = `${e$f(t2.styles)} ${a2} ${l3}`;
-    e$e.set(n2, m2);
+    const a3 = y$9(t2), o2 = new CSSStyleSheet();
+    o2.replaceSync(a3), e$e.set(n2, [o2]);
   }
   return e$e.get(n2);
 };
-const e$d = /* @__PURE__ */ new Map();
-i$d((t2) => {
-  e$d.delete(`${t2}_normal`);
-});
-const s$f = (t2) => {
-  const n2 = `${t2.getMetadata().getTag()}_normal`;
-  if (!e$d.has(n2)) {
-    const a2 = y$9(t2), o2 = new CSSStyleSheet();
-    o2.replaceSync(a2), e$d.set(n2, [o2]);
-  }
-  return e$d.get(n2);
-};
-const s$e = (o2) => {
+const s$f = (o2) => {
   const e2 = o2.constructor, t2 = o2.shadowRoot;
   if (!t2) {
     console.warn("There is no shadow root to update");
     return;
   }
-  t2.adoptedStyleSheets = s$f(e2), e2.renderer(o2, t2);
+  t2.adoptedStyleSheets = s$g(e2), e2.renderer(o2, t2);
 };
 const r$f = [], o$b = (t2) => r$f.some((s2) => t2.startsWith(s2));
-const t$g = /* @__PURE__ */ new WeakMap(), n$l = (e2, o2, r3) => {
+const t$h = /* @__PURE__ */ new WeakMap(), n$l = (e2, o2, r3) => {
   const s2 = new MutationObserver(o2);
-  t$g.set(e2, s2), s2.observe(e2, r3);
-}, b$7 = (e2) => {
-  const o2 = t$g.get(e2);
-  o2 && (o2.disconnect(), t$g.delete(e2));
+  t$h.set(e2, s2), s2.observe(e2, r3);
+}, b$8 = (e2) => {
+  const o2 = t$h.get(e2);
+  o2 && (o2.disconnect(), t$h.delete(e2));
 };
 const c$a = ["value-changed", "click"];
-let e$c;
+let e$d;
 i$k(() => {
-  e$c = void 0;
+  e$d = void 0;
 });
-const s$d = (t2) => c$a.includes(t2), l$g = (t2) => {
+const s$e = (t2) => c$a.includes(t2), l$h = (t2) => {
   const n2 = o$a();
   return !(typeof n2 != "boolean" && n2.events && n2.events.includes && n2.events.includes(t2));
-}, o$a = () => (e$c === void 0 && (e$c = F$2()), e$c), a$e = (t2) => {
+}, o$a = () => (e$d === void 0 && (e$d = F$2()), e$d), a$g = (t2) => {
   const n2 = o$a();
-  return s$d(t2) ? false : n2 === true ? true : !l$g(t2);
+  return s$e(t2) ? false : n2 === true ? true : !l$h(t2);
 };
 const r$e = (t2) => t2.matches(":dir(rtl)") ? "rtl" : "ltr";
-const s$c = ["disabled", "title", "hidden", "role", "draggable"], r$d = (e2) => s$c.includes(e2) || e2.startsWith("aria") ? true : ![HTMLElement, Element, Node].some((t2) => t2.prototype.hasOwnProperty(e2));
+const s$d = ["disabled", "title", "hidden", "role", "draggable"], r$d = (e2) => s$d.includes(e2) || e2.startsWith("aria") ? true : ![HTMLElement, Element, Node].some((t2) => t2.prototype.hasOwnProperty(e2));
 const n$k = (t2, r3) => {
   if (t2.length !== r3.length) return false;
   for (let e2 = 0; e2 < t2.length; e2++) if (t2[e2] !== r3[e2]) return false;
@@ -769,8 +769,8 @@ const n$k = (t2, r3) => {
 };
 const n$j = (e2, t2) => e2.call(t2);
 const o$9 = (t2) => {
-  s$b(t2) && e$b(t2);
-}, e$b = (t2) => {
+  s$c(t2) && e$c(t2);
+}, e$c = (t2) => {
   var _a2, _b2;
   if ((_a2 = t2._internals) == null ? void 0 : _a2.form) {
     if (n$i(t2), !t2.name) {
@@ -791,27 +791,27 @@ const o$9 = (t2) => {
 }, m$b = (t2) => {
   var _a2, _b2;
   (_b2 = (_a2 = t2._internals) == null ? void 0 : _a2.form) == null ? void 0 : _b2.reset();
-}, s$b = (t2) => "formFormattedValue" in t2 && "name" in t2;
-const t$f = typeof document > "u", o$8 = () => {
-  if (t$f) return a$n;
-  const a2 = navigator.languages, n2 = () => navigator.language;
-  return a2 && a2[0] || n2() || a$n;
+}, s$c = (t2) => "formFormattedValue" in t2 && "name" in t2;
+const t$g = typeof document > "u", o$8 = () => {
+  if (t$g) return a$p;
+  const a3 = navigator.languages, n2 = () => navigator.language;
+  return a3 && a3[0] || n2() || a$p;
 };
-const e$a = new i$q(), n$h = "languageChange", t$e = (a2) => {
-  e$a.attachEvent(n$h, a2);
+const e$b = new i$q(), n$h = "languageChange", t$f = (a3) => {
+  e$b.attachEvent(n$h, a3);
 };
-let e$9, t$d;
+let e$a, t$e;
 i$k(() => {
-  e$9 = void 0, t$d = void 0;
+  e$a = void 0, t$e = void 0;
 });
-let a$d = false;
-const s$a = () => a$d, l$f = () => (e$9 === void 0 && (e$9 = L$6()), e$9), h$4 = () => (t$d === void 0 && (t$d = R$3()), t$d);
+let a$f = false;
+const s$b = () => a$f, l$g = () => (e$a === void 0 && (e$a = L$6()), e$a), h$4 = () => (t$e === void 0 && (t$e = R$3()), t$e);
 const n$g = /^((?:[A-Z]{2,3}(?:-[A-Z]{3}){0,3})|[A-Z]{4}|[A-Z]{5,8})(?:-([A-Z]{4}))?(?:-([A-Z]{2}|[0-9]{3}))?((?:-[0-9A-Z]{5,8}|-[0-9][0-9A-Z]{3})*)((?:-[0-9A-WYZ](?:-[0-9A-Z]{2,8})+)*)(?:-(X(?:-[0-9A-Z]{1,8})+))?$/i;
 let r$c = class r {
   constructor(s2) {
     const t2 = n$g.exec(s2.replace(/_/g, "-"));
     if (t2 === null) throw new Error(`The given language ${s2} does not adhere to BCP-47.`);
-    this.sLocaleId = s2, this.sLanguage = t2[1] || a$n, this.sScript = t2[2] || "", this.sRegion = t2[3] || "", this.sVariant = t2[4] && t2[4].slice(1) || null, this.sExtension = t2[5] && t2[5].slice(1) || null, this.sPrivateUse = t2[6] || null, this.sLanguage && (this.sLanguage = this.sLanguage.toLowerCase()), this.sScript && (this.sScript = this.sScript.toLowerCase().replace(/^[a-z]/, (i3) => i3.toUpperCase())), this.sRegion && (this.sRegion = this.sRegion.toUpperCase());
+    this.sLocaleId = s2, this.sLanguage = t2[1] || a$p, this.sScript = t2[2] || "", this.sRegion = t2[3] || "", this.sVariant = t2[4] && t2[4].slice(1) || null, this.sExtension = t2[5] && t2[5].slice(1) || null, this.sPrivateUse = t2[6] || null, this.sLanguage && (this.sLanguage = this.sLanguage.toLowerCase()), this.sScript && (this.sScript = this.sScript.toLowerCase().replace(/^[a-z]/, (i3) => i3.toUpperCase())), this.sRegion && (this.sRegion = this.sRegion.toUpperCase());
   }
   getLanguage() {
     return this.sLanguage;
@@ -854,17 +854,17 @@ const r$b = /* @__PURE__ */ new Map(), n$f = (t2) => (r$b.has(t2) || r$b.set(t2,
   } catch {
   }
   return new r$c(r$o);
-}, s$9 = (t2) => {
-  const e2 = l$f();
+}, s$a = (t2) => {
+  const e2 = l$g();
   return e2 ? n$f(e2) : c$9(o$8());
 };
-const _$3 = /^((?:[A-Z]{2,3}(?:-[A-Z]{3}){0,3})|[A-Z]{4}|[A-Z]{5,8})(?:-([A-Z]{4}))?(?:-([A-Z]{2}|[0-9]{3}))?((?:-[0-9A-Z]{5,8}|-[0-9][0-9A-Z]{3})*)((?:-[0-9A-WYZ](?:-[0-9A-Z]{2,8})+)*)(?:-(X(?:-[0-9A-Z]{1,8})+))?$/i, c$8 = /(?:^|-)(saptrc|sappsd)(?:-|$)/i, f$f = { he: "iw", yi: "ji", nb: "no", sr: "sh" }, p$5 = (i3) => {
+const _$3 = /^((?:[A-Z]{2,3}(?:-[A-Z]{3}){0,3})|[A-Z]{4}|[A-Z]{5,8})(?:-([A-Z]{4}))?(?:-([A-Z]{2}|[0-9]{3}))?((?:-[0-9A-Z]{5,8}|-[0-9][0-9A-Z]{3})*)((?:-[0-9A-WYZ](?:-[0-9A-Z]{2,8})+)*)(?:-(X(?:-[0-9A-Z]{1,8})+))?$/i, c$8 = /(?:^|-)(saptrc|sappsd)(?:-|$)/i, f$g = { he: "iw", yi: "ji", nb: "no", sr: "sh" }, p$5 = (i3) => {
   let e2;
   if (!i3) return r$o;
   if (typeof i3 == "string" && (e2 = _$3.exec(i3.replace(/_/g, "-")))) {
     let t2 = e2[1].toLowerCase(), n2 = e2[3] ? e2[3].toUpperCase() : void 0;
     const s2 = e2[2] ? e2[2].toLowerCase() : void 0, r3 = e2[4] ? e2[4].slice(1) : void 0, o2 = e2[6];
-    return t2 = f$f[t2] || t2, o2 && (e2 = c$8.exec(o2)) || r3 && (e2 = c$8.exec(r3)) ? `en_US_${e2[1].toLowerCase()}` : (t2 === "zh" && !n2 && (s2 === "hans" ? n2 = "CN" : s2 === "hant" && (n2 = "TW")), t2 + (n2 ? "_" + n2 + (r3 ? "_" + r3.replace("-", "_") : "") : ""));
+    return t2 = f$g[t2] || t2, o2 && (e2 = c$8.exec(o2)) || r3 && (e2 = c$8.exec(r3)) ? `en_US_${e2[1].toLowerCase()}` : (t2 === "zh" && !n2 && (s2 === "hans" ? n2 = "CN" : s2 === "hant" && (n2 = "TW")), t2 + (n2 ? "_" + n2 + (r3 ? "_" + r3.replace("-", "_") : "") : ""));
   }
   return r$o;
 };
@@ -874,23 +874,23 @@ const r$a = { zh_HK: "zh_TW", in: "id" }, n$e = (t2) => {
   const L3 = t2.lastIndexOf("_");
   return L3 >= 0 ? t2.slice(0, L3) : t2 !== r$o ? r$o : "";
 };
-const d$a = /* @__PURE__ */ new Set(), m$a = /* @__PURE__ */ new Set(), g$7 = /* @__PURE__ */ new Map(), l$e = /* @__PURE__ */ new Map(), u$c = /* @__PURE__ */ new Map(), f$e = (n2, t2) => {
+const d$a = /* @__PURE__ */ new Set(), m$a = /* @__PURE__ */ new Set(), g$7 = /* @__PURE__ */ new Map(), l$f = /* @__PURE__ */ new Map(), u$d = /* @__PURE__ */ new Map(), f$f = (n2, t2) => {
   g$7.set(n2, t2);
 }, A$6 = (n2) => g$7.get(n2), h$3 = (n2, t2) => {
   const e2 = `${n2}/${t2}`;
-  return u$c.has(e2);
+  return u$d.has(e2);
 }, B$2 = (n2, t2) => {
-  const e2 = `${n2}/${t2}`, r3 = u$c.get(e2);
-  return r3 && !l$e.get(e2) && l$e.set(e2, r3(t2)), l$e.get(e2);
+  const e2 = `${n2}/${t2}`, r3 = u$d.get(e2);
+  return r3 && !l$f.get(e2) && l$f.set(e2, r3(t2)), l$f.get(e2);
 }, M$4 = (n2) => {
   d$a.has(n2) || (console.warn(`[${n2}]: Message bundle assets are not configured. Falling back to English texts.`, ` Add \`import "${n2}/dist/Assets.js"\` in your bundle and make sure your build tool supports dynamic imports and JSON imports. See section "Assets" in the documentation for more information.`), d$a.add(n2));
-}, L$5 = (n2, t2) => t2 !== a$n && !h$3(n2, t2), w$3 = async (n2) => {
-  const t2 = s$9().getLanguage(), e2 = s$9().getRegion(), r3 = s$9().getVariant();
+}, L$5 = (n2, t2) => t2 !== a$p && !h$3(n2, t2), w$3 = async (n2) => {
+  const t2 = s$a().getLanguage(), e2 = s$a().getRegion(), r3 = s$a().getVariant();
   let s2 = t2 + (e2 ? `-${e2}` : "") + (r3 ? `-${r3}` : "");
   if (L$5(n2, s2)) for (s2 = p$5(s2); L$5(n2, s2); ) s2 = n$e(s2);
   const I2 = h$4();
-  if (s2 === a$n && !I2) {
-    f$e(n2, null);
+  if (s2 === a$p && !I2) {
+    f$f(n2, null);
     return;
   }
   if (!h$3(n2, s2)) {
@@ -899,13 +899,13 @@ const d$a = /* @__PURE__ */ new Set(), m$a = /* @__PURE__ */ new Set(), g$7 = /*
   }
   try {
     const o2 = await B$2(n2, s2);
-    f$e(n2, o2);
+    f$f(n2, o2);
   } catch (o2) {
-    const a2 = o2;
-    m$a.has(a2.message) || (m$a.add(a2.message), console.error(a2.message));
+    const a3 = o2;
+    m$a.has(a3.message) || (m$a.add(a3.message), console.error(a3.message));
   }
 };
-t$e((n2) => {
+t$f((n2) => {
   const t2 = [...g$7.keys()];
   return Promise.all(t2.map(w$3));
 });
@@ -913,13 +913,13 @@ const g$6 = /('')|'([^']+(?:''[^']*)*)(?:'|$)|\{([0-9]+(?:\s*,[^{}]*)?)\}|[{}]/g
   if (s2) return "'";
   if (e2) return e2.replace(/''/g, "'");
   if (r3) {
-    const a2 = typeof r3 == "string" ? parseInt(r3) : r3;
-    return String(t2[a2]);
+    const a3 = typeof r3 == "string" ? parseInt(r3) : r3;
+    return String(t2[a3]);
   }
   throw new Error(`[i18n]: pattern syntax error at pos ${o2}`);
 }));
 const r$9 = /* @__PURE__ */ new Map();
-let u$b = class u2 {
+let u$c = class u2 {
   constructor(e2) {
     this.packageName = e2;
   }
@@ -931,24 +931,24 @@ let u$b = class u2 {
     return i$b(l3, i3);
   }
 };
-const a$c = (n2) => {
+const a$e = (n2) => {
   if (r$9.has(n2)) return r$9.get(n2);
-  const e2 = new u$b(n2);
+  const e2 = new u$c(n2);
   return r$9.set(n2, e2), e2;
-}, f$d = async (n2) => (await w$3(n2), a$c(n2));
-const f$c = /* @__PURE__ */ new Map(), s$8 = /* @__PURE__ */ new Map(), i$a = /* @__PURE__ */ new Map(), L$4 = /* @__PURE__ */ new Set();
+}, f$e = async (n2) => (await w$3(n2), a$e(n2));
+const f$d = /* @__PURE__ */ new Map(), s$9 = /* @__PURE__ */ new Map(), i$a = /* @__PURE__ */ new Map(), L$4 = /* @__PURE__ */ new Set();
 let d$9 = false;
-const O$3 = { iw: "he", ji: "yi", in: "id" }, D$4 = (t2) => {
+const O$3 = { iw: "he", ji: "yi", in: "id" }, D$5 = (t2) => {
   d$9 || (console.warn(`[LocaleData] Supported locale "${t2}" not configured, import the "Assets.js" module from the webcomponents package you are using.`), d$9 = true);
 }, y$8 = (t2, e2, n2) => {
   t2 = t2 && O$3[t2] || t2, t2 === "no" && (t2 = "nb"), t2 === "zh" && !e2 && (n2 === "Hans" ? e2 = "CN" : n2 === "Hant" && (e2 = "TW")), (t2 === "sh" || t2 === "sr" && n2 === "Latn") && (t2 = "sr", e2 = "Latn");
   let o2 = `${t2}_${e2}`;
-  return l$p.includes(o2) ? s$8.has(o2) ? o2 : (D$4(o2), r$o) : (o2 = t2, l$p.includes(o2) ? s$8.has(o2) ? o2 : (D$4(o2), r$o) : r$o);
-}, u$a = (t2, e2) => {
-  f$c.set(t2, e2);
+  return l$q.includes(o2) ? s$9.has(o2) ? o2 : (D$5(o2), r$o) : (o2 = t2, l$q.includes(o2) ? s$9.has(o2) ? o2 : (D$5(o2), r$o) : r$o);
+}, u$b = (t2, e2) => {
+  f$d.set(t2, e2);
 }, S$4 = (t2) => {
   if (!i$a.get(t2)) {
-    const e2 = s$8.get(t2);
+    const e2 = s$9.get(t2);
     if (!e2) throw new Error(`CLDR data for locale ${t2} is not loaded!`);
     i$a.set(t2, e2(t2));
   }
@@ -958,22 +958,22 @@ const O$3 = { iw: "he", ji: "yi", in: "id" }, D$4 = (t2) => {
   if (p2) {
     const r3 = p2.getLocaleDataObject();
     if (r3) {
-      u$a(o2, r3);
+      u$b(o2, r3);
       return;
     }
   }
   try {
     const r3 = await S$4(o2);
-    u$a(o2, r3);
+    u$b(o2, r3);
   } catch (r3) {
     const c2 = r3;
     L$4.has(c2.message) || (L$4.add(c2.message), console.error(c2.message));
   }
 }, m$9 = (t2, e2) => {
-  s$8.set(t2, e2);
+  s$9.set(t2, e2);
 };
-m$9("en", async () => (console.warn('[LocaleData] Falling back to loading "en" locale data from CDN.', 'For production usage, please configure locale data loading via the "Assets.js" module of the webcomponents package you are using.'), (await fetch("https://cdn.jsdelivr.net/npm/@openui5/sap.ui.core@1.120.17/src/sap/ui/core/cldr/en.json")).json())), t$e(() => {
-  const t2 = s$9();
+m$9("en", async () => (console.warn('[LocaleData] Falling back to loading "en" locale data from CDN.', 'For production usage, please configure locale data loading via the "Assets.js" module of the webcomponents package you are using.'), (await fetch("https://cdn.jsdelivr.net/npm/@openui5/sap.ui.core@1.120.17/src/sap/ui/core/cldr/en.json")).json())), t$f(() => {
+  const t2 = s$a();
   return g$5(t2.getLanguage(), t2.getRegion(), t2.getScript());
 });
 let it = 0;
@@ -983,7 +983,7 @@ const R$2 = /* @__PURE__ */ new Map(), I$3 = /* @__PURE__ */ new Map(), O$2 = { 
   return f4 === Boolean ? c2 ? "" : null : f4 === Object || f4 === Array || c2 == null ? null : String(c2);
 } };
 function y$7(c2) {
-  this._suppressInvalidation || this.constructor.getMetadata().isLanguageAware() && s$a() || (this.onInvalidation(c2), this._changedState.push(c2), l$m(this), this._invalidationEventProvider.fireEvent("invalidate", { ...c2, target: this }));
+  this._suppressInvalidation || this.constructor.getMetadata().isLanguageAware() && s$b() || (this.onInvalidation(c2), this._changedState.push(c2), l$n(this), this._invalidationEventProvider.fireEvent("invalidate", { ...c2, target: this }));
 }
 function at(c2, f4) {
   do {
@@ -992,7 +992,7 @@ function at(c2, f4) {
     c2 = Object.getPrototypeOf(c2);
   } while (c2 && c2 !== HTMLElement.prototype);
 }
-let b$6 = (_a = class extends HTMLElement {
+let b$7 = (_a = class extends HTMLElement {
   constructor() {
     super();
     this.__shouldHydrate = false;
@@ -1052,16 +1052,16 @@ let b$6 = (_a = class extends HTMLElement {
     n$l(this, this._processChildren.bind(this), o2);
   }
   _stopObservingDOMChildren() {
-    b$7(this);
+    b$8(this);
   }
   async _processChildren() {
     this.constructor.getMetadata().hasSlots() && await this._updateSlots();
   }
   async _updateSlots() {
-    const t2 = this.constructor, e2 = t2.getMetadata().getSlots(), s2 = t2.getMetadata().canSlotText(), n2 = Array.from(s2 ? this.childNodes : this.children), o2 = /* @__PURE__ */ new Map(), a2 = /* @__PURE__ */ new Map();
+    const t2 = this.constructor, e2 = t2.getMetadata().getSlots(), s2 = t2.getMetadata().canSlotText(), n2 = Array.from(s2 ? this.childNodes : this.children), o2 = /* @__PURE__ */ new Map(), a3 = /* @__PURE__ */ new Map();
     for (const [l3, u4] of Object.entries(e2)) {
       const d2 = u4.propertyName || l3;
-      a2.set(d2, l3), o2.set(d2, [...this._state[d2]]), this._clearSlot(l3, u4);
+      a3.set(d2, l3), o2.set(d2, [...this._state[d2]]), this._clearSlot(l3, u4);
     }
     const r3 = /* @__PURE__ */ new Map(), i3 = /* @__PURE__ */ new Map(), h2 = n2.map(async (l3, u4) => {
       const d2 = o$c(l3), g2 = e2[d2];
@@ -1087,7 +1087,7 @@ let b$6 = (_a = class extends HTMLElement {
           customElements.upgrade(l3);
         }
       }
-      if (l3 = t2.getMetadata().constructor.validateSlotValue(l3, g2), v$3(l3) && g2.invalidateOnChildChange) {
+      if (l3 = t2.getMetadata().constructor.validateSlotValue(l3, g2), v$4(l3) && g2.invalidateOnChildChange) {
         const p2 = this._getChildChangeListener(d2);
         l3.attachInvalidate.call(l3, p2);
       }
@@ -1101,16 +1101,16 @@ let b$6 = (_a = class extends HTMLElement {
     let _2 = false;
     for (const [l3, u4] of Object.entries(e2)) {
       const d2 = u4.propertyName || l3;
-      n$k(o2.get(d2), this._state[d2]) || (y$7.call(this, { type: "slot", name: a2.get(d2), reason: "children" }), _2 = true, t2.getMetadata().isFormAssociated() && e$b(this));
+      n$k(o2.get(d2), this._state[d2]) || (y$7.call(this, { type: "slot", name: a3.get(d2), reason: "children" }), _2 = true, t2.getMetadata().isFormAssociated() && e$c(this));
     }
     _2 || y$7.call(this, { type: "slot", name: "default", reason: "textcontent" });
   }
   _clearSlot(t2, e2) {
     const s2 = e2.propertyName || t2;
     this._state[s2].forEach((o2) => {
-      if (v$3(o2)) {
-        const a2 = this._getChildChangeListener(t2);
-        o2.detachInvalidate.call(o2, a2);
+      if (v$4(o2)) {
+        const a3 = this._getChildChangeListener(t2);
+        o2.detachInvalidate.call(o2, a3);
       }
       o2 instanceof HTMLSlotElement && this._detachSlotChange(o2, t2);
     }), this._state[s2] = [], this._state[c$c(s2)] = this._state[s2];
@@ -1127,7 +1127,7 @@ let b$6 = (_a = class extends HTMLElement {
   attributeChangedCallback(t2, e2, s2) {
     let n2;
     if (this._doNotSyncAttributes.has(t2)) return;
-    const o2 = this.constructor.getMetadata().getProperties(), a2 = t2.replace(/^ui5-/, ""), r3 = c$c(a2);
+    const o2 = this.constructor.getMetadata().getProperties(), a3 = t2.replace(/^ui5-/, ""), r3 = c$c(a3);
     if (o2.hasOwnProperty(r3)) {
       const i3 = o2[r3];
       n2 = (i3.converter ?? O$2).fromAttribute(s2, i3.type), this[r3] = n2;
@@ -1142,8 +1142,8 @@ let b$6 = (_a = class extends HTMLElement {
   _updateAttribute(t2, e2) {
     const s2 = this.constructor;
     if (!s2.getMetadata().hasAttribute(t2)) return;
-    const o2 = s2.getMetadata().getProperties()[t2], a2 = l$i(t2), i3 = (o2.converter || O$2).toAttribute(e2, o2.type);
-    this._doNotSyncAttributes.add(a2), i3 == null ? this.removeAttribute(a2) : this.setAttribute(a2, i3), this._doNotSyncAttributes.delete(a2);
+    const o2 = s2.getMetadata().getProperties()[t2], a3 = l$j(t2), i3 = (o2.converter || O$2).toAttribute(e2, o2.type);
+    this._doNotSyncAttributes.add(a3), i3 == null ? this.removeAttribute(a3) : this.setAttribute(a3, i3), this._doNotSyncAttributes.delete(a3);
   }
   _getChildChangeListener(t2) {
     return this._childChangeListeners.has(t2) || this._childChangeListeners.set(t2, this._onChildChange.bind(this, t2)), this._childChangeListeners.get(t2);
@@ -1155,16 +1155,16 @@ let b$6 = (_a = class extends HTMLElement {
     const n2 = this._getSlotChangeListener(e2);
     t2.addEventListener("slotchange", (o2) => {
       if (n2.call(t2, o2), s2) {
-        const a2 = this._slotsAssignedNodes.get(t2);
-        a2 && a2.forEach((i3) => {
-          if (v$3(i3)) {
+        const a3 = this._slotsAssignedNodes.get(t2);
+        a3 && a3.forEach((i3) => {
+          if (v$4(i3)) {
             const h2 = this._getChildChangeListener(e2);
             i3.detachInvalidate.call(i3, h2);
           }
         });
-        const r3 = s$g([t2]);
+        const r3 = s$h([t2]);
         this._slotsAssignedNodes.set(t2, r3), r3.forEach((i3) => {
-          if (v$3(i3)) {
+          if (v$4(i3)) {
             const h2 = this._getChildChangeListener(e2);
             i3.attachInvalidate.call(i3, h2);
           }
@@ -1194,7 +1194,7 @@ let b$6 = (_a = class extends HTMLElement {
     } finally {
       this._suppressInvalidation = false;
     }
-    this._changedState = [], t2._needsShadowDOM() && s$e(this), this._rendered = true, e2 && this._assignIndividualSlotsToChildren(), this.onAfterRendering();
+    this._changedState = [], t2._needsShadowDOM() && s$f(this), this._rendered = true, e2 && this._assignIndividualSlotsToChildren(), this.onAfterRendering();
   }
   _assignIndividualSlotsToChildren() {
     Array.from(this.children).forEach((e2) => {
@@ -1221,24 +1221,24 @@ let b$6 = (_a = class extends HTMLElement {
     e2 === this || !this.isConnected ? HTMLElement.prototype.focus.call(this, t2) : e2 && typeof e2.focus == "function" && e2.focus(t2);
   }
   fireEvent(t2, e2, s2 = false, n2 = true) {
-    const o2 = this._fireEvent(t2, e2, s2, n2), a2 = C$3(t2);
-    return a2 !== t2 ? o2 && this._fireEvent(a2, e2, s2, n2) : o2;
+    const o2 = this._fireEvent(t2, e2, s2, n2), a3 = C$3(t2);
+    return a3 !== t2 ? o2 && this._fireEvent(a3, e2, s2, n2) : o2;
   }
   fireDecoratorEvent(t2, e2) {
-    const s2 = this.getEventData(t2), n2 = s2 ? s2.cancelable : false, o2 = s2 ? s2.bubbles : false, a2 = this._fireEvent(t2, e2, n2, o2), r3 = C$3(t2);
-    return r3 !== t2 ? a2 && this._fireEvent(r3, e2, n2, o2) : a2;
+    const s2 = this.getEventData(t2), n2 = s2 ? s2.cancelable : false, o2 = s2 ? s2.bubbles : false, a3 = this._fireEvent(t2, e2, n2, o2), r3 = C$3(t2);
+    return r3 !== t2 ? a3 && this._fireEvent(r3, e2, n2, o2) : a3;
   }
   _fireEvent(t2, e2, s2 = false, n2 = true) {
-    const o2 = new CustomEvent(`ui5-${t2}`, { detail: e2, composed: false, bubbles: n2, cancelable: s2 }), a2 = this.dispatchEvent(o2);
-    if (a$e(t2)) return a2;
+    const o2 = new CustomEvent(`ui5-${t2}`, { detail: e2, composed: false, bubbles: n2, cancelable: s2 }), a3 = this.dispatchEvent(o2);
+    if (a$g(t2)) return a3;
     const r3 = new CustomEvent(t2, { detail: e2, composed: false, bubbles: n2, cancelable: s2 });
-    return this.dispatchEvent(r3) && a2;
+    return this.dispatchEvent(r3) && a3;
   }
   getEventData(t2) {
     return this.constructor.getMetadata().getEvents()[t2];
   }
   getSlottedNodes(t2) {
-    return s$g(this[t2]);
+    return s$h(this[t2]);
   }
   attachComponentStateFinalized(t2) {
     this._componentStateFinalizedEventProvider.attachEvent("componentStateFinalized", t2);
@@ -1274,11 +1274,11 @@ let b$6 = (_a = class extends HTMLElement {
     const t2 = this.prototype, e2 = this.getMetadata().slotsAreManaged(), s2 = this.getMetadata().getProperties();
     for (const [n2, o2] of Object.entries(s2)) {
       r$d(n2) || console.warn(`"${n2}" is not a valid property name. Use a name that does not collide with DOM APIs`);
-      const a2 = at(t2, n2);
+      const a3 = at(t2, n2);
       let r3;
-      (a2 == null ? void 0 : a2.set) && (r3 = a2.set);
+      (a3 == null ? void 0 : a3.set) && (r3 = a3.set);
       let i3;
-      (a2 == null ? void 0 : a2.get) && (i3 = a2.get), Object.defineProperty(t2, n2, { get() {
+      (a3 == null ? void 0 : a3.get) && (i3 = a3.get), Object.defineProperty(t2, n2, { get() {
         return i3 ? i3.call(this) : this._state[n2];
       }, set(h2) {
         const _2 = this.constructor, l3 = i3 ? i3.call(this) : this._state[n2];
@@ -1287,15 +1287,15 @@ let b$6 = (_a = class extends HTMLElement {
             const d2 = i3 ? i3.call(this) : this._state[n2];
             this._updateAttribute(n2, d2);
           }
-          _2.getMetadata().isFormAssociated() && e$b(this);
+          _2.getMetadata().isFormAssociated() && e$c(this);
         }
       } });
     }
     if (e2) {
       const n2 = this.getMetadata().getSlots();
-      for (const [o2, a2] of Object.entries(n2)) {
+      for (const [o2, a3] of Object.entries(n2)) {
         r$d(o2) || console.warn(`"${o2}" is not a valid property name. Use a name that does not collide with DOM APIs`);
-        const r3 = a2.propertyName || o2, i3 = { get() {
+        const r3 = a3.propertyName || o2, i3 = { get() {
           return this._state[r3] !== void 0 ? this._state[r3] : [];
         }, set() {
           throw new Error("Cannot set slot content directly, use the DOM APIs (appendChild, removeChild, etc...)");
@@ -1320,22 +1320,22 @@ let b$6 = (_a = class extends HTMLElement {
   static fetchI18nBundles() {
     return Promise.all(Object.entries(this.getMetadata().getI18n()).map((t2) => {
       const { bundleName: e2 } = t2[1];
-      return f$d(e2);
+      return f$e(e2);
     }));
   }
   static fetchCLDR() {
-    return this.getMetadata().needsCLDR() ? g$5(s$9().getLanguage(), s$9().getRegion(), s$9().getScript()) : Promise.resolve();
+    return this.getMetadata().needsCLDR() ? g$5(s$a().getLanguage(), s$a().getRegion(), s$a().getScript()) : Promise.resolve();
   }
   static get i18nBundles() {
     return this.i18nBundleStorage;
   }
   static define() {
     const t2 = async () => {
-      await b$9();
-      const o2 = await Promise.all([this.fetchI18nBundles(), this.fetchCLDR(), this.onDefine()]), [a2] = o2;
+      await b$a();
+      const o2 = await Promise.all([this.fetchI18nBundles(), this.fetchCLDR(), this.onDefine()]), [a3] = o2;
       Object.entries(this.getMetadata().getI18n()).forEach((r3, i3) => {
         const h2 = r3[1].bundleName;
-        this.i18nBundleStorage[h2] = a2[i3];
+        this.i18nBundleStorage[h2] = a3[i3];
       }), this.asyncFinished = true;
     };
     this.definePromise = t2();
@@ -1347,8 +1347,8 @@ let b$6 = (_a = class extends HTMLElement {
     const t2 = [this.metadata];
     let e2 = this;
     for (; e2 !== _a; ) e2 = Object.getPrototypeOf(e2), t2.unshift(e2.metadata);
-    const s2 = e$m({}, ...t2);
-    return this._metadata = new u$d(s2), this._metadata;
+    const s2 = e$n({}, ...t2);
+    return this._metadata = new u$e(s2), this._metadata;
   }
   get validity() {
     return this._internals.validity;
@@ -1363,41 +1363,41 @@ let b$6 = (_a = class extends HTMLElement {
     return this._internals.reportValidity();
   }
 }, _a.metadata = {}, _a.styles = "", _a.i18nBundleStorage = {}, _a);
-const v$3 = (c2) => "isUI5Element" in c2;
-const m$8 = (a2 = {}) => (e2) => {
-  if (Object.prototype.hasOwnProperty.call(e2, "metadata") || (e2.metadata = {}), typeof a2 == "string") {
-    e2.metadata.tag = a2;
+const v$4 = (c2) => "isUI5Element" in c2;
+const m$8 = (a3 = {}) => (e2) => {
+  if (Object.prototype.hasOwnProperty.call(e2, "metadata") || (e2.metadata = {}), typeof a3 == "string") {
+    e2.metadata.tag = a3;
     return;
   }
-  const { tag: i3, languageAware: o2, themeAware: r3, cldr: s2, fastNavigation: l3, formAssociated: n2, shadowRootOptions: d2 } = a2;
+  const { tag: i3, languageAware: o2, themeAware: r3, cldr: s2, fastNavigation: l3, formAssociated: n2, shadowRootOptions: d2 } = a3;
   e2.metadata.tag = i3, o2 && (e2.metadata.languageAware = o2), s2 && (e2.metadata.cldr = s2), r3 && (e2.metadata.themeAware = r3), l3 && (e2.metadata.fastNavigation = l3), n2 && (e2.metadata.formAssociated = n2), d2 && (e2.metadata.shadowRootOptions = d2), ["renderer", "template", "styles", "dependencies"].forEach((t2) => {
-    a2[t2] && Object.defineProperty(e2, t2, { get: () => a2[t2] });
+    a3[t2] && Object.defineProperty(e2, t2, { get: () => a3[t2] });
   });
 };
-const s$7 = (o2) => (p2, r3) => {
+const s$8 = (o2) => (p2, r3) => {
   const t2 = p2.constructor;
   Object.prototype.hasOwnProperty.call(t2, "metadata") || (t2.metadata = {});
   const e2 = t2.metadata;
   e2.properties || (e2.properties = {});
-  const a2 = e2.properties;
-  a2[r3] || (a2[r3] = o2 ?? {});
+  const a3 = e2.properties;
+  a3[r3] || (a3[r3] = o2 ?? {});
 };
-const l$d = (s2, e2 = {}) => (t2) => {
+const l$e = (s2, e2 = {}) => (t2) => {
   Object.prototype.hasOwnProperty.call(t2, "metadata") || (t2.metadata = {});
   const n2 = t2.metadata;
   n2.events || (n2.events = {});
-  const a2 = n2.events;
-  a2[s2] || (e2.bubbles = !!e2.bubbles, e2.cancelable = !!e2.cancelable, a2[s2] = e2);
+  const a3 = n2.events;
+  a3[s2] || (e2.bubbles = !!e2.bubbles, e2.cancelable = !!e2.cancelable, a3[s2] = e2);
 };
-const d$8 = (e2) => (l3, a2) => {
+const d$8 = (e2) => (l3, a3) => {
   const r3 = l3.constructor;
   Object.prototype.hasOwnProperty.call(r3, "metadata") || (r3.metadata = {});
   const o2 = r3.metadata;
   o2.slots || (o2.slots = {});
   const t2 = o2.slots;
   if (e2 && e2.default && t2.default) throw new Error("Only one slot can be the default slot.");
-  const n2 = e2 && e2.default ? "default" : a2;
-  e2 = e2 || { type: HTMLElement }, e2.type || (e2.type = HTMLElement), t2[n2] || (t2[n2] = e2), e2.default && (delete t2.default.default, t2.default.propertyName = a2), r3.metadata.managedSlots = true;
+  const n2 = e2 && e2.default ? "default" : a3;
+  e2 = e2 || { type: HTMLElement }, e2.type || (e2.type = HTMLElement), t2[n2] || (t2[n2] = e2), e2.default && (delete t2.default.default, t2.default.propertyName = a3), r3.metadata.managedSlots = true;
 };
 const i$9 = (t2) => (e2, n2) => {
   e2.metadata.i18n || (e2.metadata.i18n = {}), Object.defineProperty(e2, n2, { get() {
@@ -1405,7 +1405,7 @@ const i$9 = (t2) => (e2, n2) => {
   }, set() {
   } }), e2.metadata.i18n[n2] = { bundleName: t2, target: e2 };
 };
-var n$d, l$c, t$c, i$8, o$7, r$8, e$8, f$b, c$7, s$6, a$b, h$2, p$4 = {}, v$2 = [], y$6 = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i, d$7 = Array.isArray;
+var n$d, l$d, t$d, i$8, o$7, r$8, e$9, f$c, c$7, s$7, a$d, h$2, p$4 = {}, v$3 = [], y$6 = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i, d$7 = Array.isArray;
 function w$2(n2, l3) {
   for (var t2 in l3) n2[t2] = l3[t2];
   return n2;
@@ -1420,8 +1420,8 @@ function g$4(l3, t2, u4) {
   return m$7(l3, e2, i3, o2, null);
 }
 function m$7(n2, u4, i3, o2, r3) {
-  var e2 = { type: n2, props: u4, key: i3, ref: o2, __k: null, __: null, __b: 0, __e: null, __c: null, constructor: void 0, __v: null == r3 ? ++t$c : r3, __i: -1, __u: 0 };
-  return null == r3 && null != l$c.vnode && l$c.vnode(e2), e2;
+  var e2 = { type: n2, props: u4, key: i3, ref: o2, __k: null, __: null, __b: 0, __e: null, __c: null, constructor: void 0, __v: null == r3 ? ++t$d : r3, __i: -1, __u: 0 };
+  return null == r3 && null != l$d.vnode && l$d.vnode(e2), e2;
 }
 function k$5(n2) {
   return n2.children;
@@ -1445,22 +1445,22 @@ function S$3(n2) {
   }
 }
 function M$3(n2) {
-  (!n2.__d && (n2.__d = true) && i$8.push(n2) && !P$3.__r++ || o$7 !== l$c.debounceRendering) && ((o$7 = l$c.debounceRendering) || r$8)(P$3);
+  (!n2.__d && (n2.__d = true) && i$8.push(n2) && !P$3.__r++ || o$7 !== l$d.debounceRendering) && ((o$7 = l$d.debounceRendering) || r$8)(P$3);
 }
 function P$3() {
   var n2, t2, u4, o2, r3, f4, c2, s2;
-  for (i$8.sort(e$8); n2 = i$8.shift(); ) n2.__d && (t2 = i$8.length, o2 = void 0, f4 = (r3 = (u4 = n2).__v).__e, c2 = [], s2 = [], u4.__P && ((o2 = w$2({}, r3)).__v = r3.__v + 1, l$c.vnode && l$c.vnode(o2), F(u4.__P, o2, r3, u4.__n, u4.__P.namespaceURI, 32 & r3.__u ? [f4] : null, c2, null == f4 ? C$2(r3) : f4, !!(32 & r3.__u), s2), o2.__v = r3.__v, o2.__.__k[o2.__i] = o2, z$1(c2, o2, s2), o2.__e != f4 && S$3(o2)), i$8.length > t2 && i$8.sort(e$8));
+  for (i$8.sort(e$9); n2 = i$8.shift(); ) n2.__d && (t2 = i$8.length, o2 = void 0, f4 = (r3 = (u4 = n2).__v).__e, c2 = [], s2 = [], u4.__P && ((o2 = w$2({}, r3)).__v = r3.__v + 1, l$d.vnode && l$d.vnode(o2), F(u4.__P, o2, r3, u4.__n, u4.__P.namespaceURI, 32 & r3.__u ? [f4] : null, c2, null == f4 ? C$2(r3) : f4, !!(32 & r3.__u), s2), o2.__v = r3.__v, o2.__.__k[o2.__i] = o2, z$1(c2, o2, s2), o2.__e != f4 && S$3(o2)), i$8.length > t2 && i$8.sort(e$9));
   P$3.__r = 0;
 }
 function $$1(n2, l3, t2, u4, i3, o2, r3, e2, f4, c2, s2) {
-  var a2, h2, y2, d2, w2, _2, g2 = u4 && u4.__k || v$2, m2 = l3.length;
-  for (f4 = I$2(t2, l3, g2, f4), a2 = 0; a2 < m2; a2++) null != (y2 = t2.__k[a2]) && (h2 = -1 === y2.__i ? p$4 : g2[y2.__i] || p$4, y2.__i = a2, _2 = F(n2, y2, h2, i3, o2, r3, e2, f4, c2, s2), d2 = y2.__e, y2.ref && h2.ref != y2.ref && (h2.ref && V$2(h2.ref, null, y2), s2.push(y2.ref, y2.__c || d2, y2)), null == w2 && null != d2 && (w2 = d2), 4 & y2.__u || h2.__k === y2.__k ? f4 = H$2(y2, f4, n2) : "function" == typeof y2.type && void 0 !== _2 ? f4 = _2 : d2 && (f4 = d2.nextSibling), y2.__u &= -7);
+  var a3, h2, y2, d2, w2, _2, g2 = u4 && u4.__k || v$3, m2 = l3.length;
+  for (f4 = I$2(t2, l3, g2, f4), a3 = 0; a3 < m2; a3++) null != (y2 = t2.__k[a3]) && (h2 = -1 === y2.__i ? p$4 : g2[y2.__i] || p$4, y2.__i = a3, _2 = F(n2, y2, h2, i3, o2, r3, e2, f4, c2, s2), d2 = y2.__e, y2.ref && h2.ref != y2.ref && (h2.ref && V$2(h2.ref, null, y2), s2.push(y2.ref, y2.__c || d2, y2)), null == w2 && null != d2 && (w2 = d2), 4 & y2.__u || h2.__k === y2.__k ? f4 = H$2(y2, f4, n2) : "function" == typeof y2.type && void 0 !== _2 ? f4 = _2 : d2 && (f4 = d2.nextSibling), y2.__u &= -7);
   return t2.__e = w2, f4;
 }
 function I$2(n2, l3, t2, u4) {
-  var i3, o2, r3, e2, f4, c2 = l3.length, s2 = t2.length, a2 = s2, h2 = 0;
-  for (n2.__k = [], i3 = 0; i3 < c2; i3++) null != (o2 = l3[i3]) && "boolean" != typeof o2 && "function" != typeof o2 ? (e2 = i3 + h2, (o2 = n2.__k[i3] = "string" == typeof o2 || "number" == typeof o2 || "bigint" == typeof o2 || o2.constructor == String ? m$7(null, o2, null, null, null) : d$7(o2) ? m$7(k$5, { children: o2 }, null, null, null) : void 0 === o2.constructor && o2.__b > 0 ? m$7(o2.type, o2.props, o2.key, o2.ref ? o2.ref : null, o2.__v) : o2).__ = n2, o2.__b = n2.__b + 1, r3 = null, -1 !== (f4 = o2.__i = O$1(o2, t2, e2, a2)) && (a2--, (r3 = t2[f4]) && (r3.__u |= 2)), null == r3 || null === r3.__v ? (-1 == f4 && h2--, "function" != typeof o2.type && (o2.__u |= 4)) : f4 !== e2 && (f4 == e2 - 1 ? h2-- : f4 == e2 + 1 ? h2++ : (f4 > e2 ? h2-- : h2++, o2.__u |= 4))) : o2 = n2.__k[i3] = null;
-  if (a2) for (i3 = 0; i3 < s2; i3++) null != (r3 = t2[i3]) && 0 == (2 & r3.__u) && (r3.__e == u4 && (u4 = C$2(r3)), q$1(r3, r3));
+  var i3, o2, r3, e2, f4, c2 = l3.length, s2 = t2.length, a3 = s2, h2 = 0;
+  for (n2.__k = [], i3 = 0; i3 < c2; i3++) null != (o2 = l3[i3]) && "boolean" != typeof o2 && "function" != typeof o2 ? (e2 = i3 + h2, (o2 = n2.__k[i3] = "string" == typeof o2 || "number" == typeof o2 || "bigint" == typeof o2 || o2.constructor == String ? m$7(null, o2, null, null, null) : d$7(o2) ? m$7(k$5, { children: o2 }, null, null, null) : void 0 === o2.constructor && o2.__b > 0 ? m$7(o2.type, o2.props, o2.key, o2.ref ? o2.ref : null, o2.__v) : o2).__ = n2, o2.__b = n2.__b + 1, r3 = null, -1 !== (f4 = o2.__i = O$1(o2, t2, e2, a3)) && (a3--, (r3 = t2[f4]) && (r3.__u |= 2)), null == r3 || null === r3.__v ? (-1 == f4 && h2--, "function" != typeof o2.type && (o2.__u |= 4)) : f4 !== e2 && (f4 == e2 - 1 ? h2-- : f4 == e2 + 1 ? h2++ : (f4 > e2 ? h2-- : h2++, o2.__u |= 4))) : o2 = n2.__k[i3] = null;
+  if (a3) for (i3 = 0; i3 < s2; i3++) null != (r3 = t2[i3]) && 0 == (2 & r3.__u) && (r3.__e == u4 && (u4 = C$2(r3)), q$1(r3, r3));
   return u4;
 }
 function H$2(n2, l3, t2) {
@@ -1500,7 +1500,7 @@ function j$1(n2, l3, t2, u4, i3) {
     if ("string" == typeof u4 && (n2.style.cssText = u4 = ""), u4) for (l3 in u4) t2 && l3 in t2 || T$4(n2.style, l3, "");
     if (t2) for (l3 in t2) u4 && t2[l3] === u4[l3] || T$4(n2.style, l3, t2[l3]);
   }
-  else if ("o" === l3[0] && "n" === l3[1]) o2 = l3 !== (l3 = l3.replace(f$b, "$1")), l3 = l3.toLowerCase() in n2 || "onFocusOut" === l3 || "onFocusIn" === l3 ? l3.toLowerCase().slice(2) : l3.slice(2), n2.l || (n2.l = {}), n2.l[l3 + o2] = t2, t2 ? u4 ? t2.t = u4.t : (t2.t = c$7, n2.addEventListener(l3, o2 ? a$b : s$6, o2)) : n2.removeEventListener(l3, o2 ? a$b : s$6, o2);
+  else if ("o" === l3[0] && "n" === l3[1]) o2 = l3 !== (l3 = l3.replace(f$c, "$1")), l3 = l3.toLowerCase() in n2 || "onFocusOut" === l3 || "onFocusIn" === l3 ? l3.toLowerCase().slice(2) : l3.slice(2), n2.l || (n2.l = {}), n2.l[l3 + o2] = t2, t2 ? u4 ? t2.t = u4.t : (t2.t = c$7, n2.addEventListener(l3, o2 ? a$d : s$7, o2)) : n2.removeEventListener(l3, o2 ? a$d : s$7, o2);
   else {
     if ("http://www.w3.org/2000/svg" == i3) l3 = l3.replace(/xlink(H|:h)/, "h").replace(/sName$/, "s");
     else if ("width" != l3 && "height" != l3 && "href" != l3 && "list" != l3 && "form" != l3 && "tabIndex" != l3 && "download" != l3 && "rowSpan" != l3 && "colSpan" != l3 && "role" != l3 && "popover" != l3 && l3 in n2) try {
@@ -1517,16 +1517,16 @@ function A$5(n2) {
       var u4 = this.l[t2.type + n2];
       if (null == t2.u) t2.u = c$7++;
       else if (t2.u < u4.t) return;
-      return u4(l$c.event ? l$c.event(t2) : t2);
+      return u4(l$d.event ? l$d.event(t2) : t2);
     }
   };
 }
 function F(n2, t2, u4, i3, o2, r3, e2, f4, c2, s2) {
-  var a2, h2, p2, v2, y2, g2, m2, b2, C2, S2, M2, P2, I2, H3, L3, O2, T2, j2 = t2.type;
+  var a3, h2, p2, v2, y2, g2, m2, b2, C2, S2, M2, P2, I2, H3, L3, O2, T2, j2 = t2.type;
   if (void 0 !== t2.constructor) return null;
-  128 & u4.__u && (c2 = !!(32 & u4.__u), r3 = [f4 = t2.__e = u4.__e]), (a2 = l$c.__b) && a2(t2);
+  128 & u4.__u && (c2 = !!(32 & u4.__u), r3 = [f4 = t2.__e = u4.__e]), (a3 = l$d.__b) && a3(t2);
   n: if ("function" == typeof j2) try {
-    if (b2 = t2.props, C2 = "prototype" in j2 && j2.prototype.render, S2 = (a2 = j2.contextType) && i3[a2.__c], M2 = a2 ? S2 ? S2.props.value : a2.__ : i3, u4.__c ? m2 = (h2 = t2.__c = u4.__c).__ = h2.__E : (C2 ? t2.__c = h2 = new j2(b2, M2) : (t2.__c = h2 = new x$2(b2, M2), h2.constructor = j2, h2.render = B$1), S2 && S2.sub(h2), h2.props = b2, h2.state || (h2.state = {}), h2.context = M2, h2.__n = i3, p2 = h2.__d = true, h2.__h = [], h2._sb = []), C2 && null == h2.__s && (h2.__s = h2.state), C2 && null != j2.getDerivedStateFromProps && (h2.__s == h2.state && (h2.__s = w$2({}, h2.__s)), w$2(h2.__s, j2.getDerivedStateFromProps(b2, h2.__s))), v2 = h2.props, y2 = h2.state, h2.__v = t2, p2) C2 && null == j2.getDerivedStateFromProps && null != h2.componentWillMount && h2.componentWillMount(), C2 && null != h2.componentDidMount && h2.__h.push(h2.componentDidMount);
+    if (b2 = t2.props, C2 = "prototype" in j2 && j2.prototype.render, S2 = (a3 = j2.contextType) && i3[a3.__c], M2 = a3 ? S2 ? S2.props.value : a3.__ : i3, u4.__c ? m2 = (h2 = t2.__c = u4.__c).__ = h2.__E : (C2 ? t2.__c = h2 = new j2(b2, M2) : (t2.__c = h2 = new x$2(b2, M2), h2.constructor = j2, h2.render = B$1), S2 && S2.sub(h2), h2.props = b2, h2.state || (h2.state = {}), h2.context = M2, h2.__n = i3, p2 = h2.__d = true, h2.__h = [], h2._sb = []), C2 && null == h2.__s && (h2.__s = h2.state), C2 && null != j2.getDerivedStateFromProps && (h2.__s == h2.state && (h2.__s = w$2({}, h2.__s)), w$2(h2.__s, j2.getDerivedStateFromProps(b2, h2.__s))), v2 = h2.props, y2 = h2.state, h2.__v = t2, p2) C2 && null == j2.getDerivedStateFromProps && null != h2.componentWillMount && h2.componentWillMount(), C2 && null != h2.componentDidMount && h2.__h.push(h2.componentDidMount);
     else {
       if (C2 && null == j2.getDerivedStateFromProps && b2 !== v2 && null != h2.componentWillReceiveProps && h2.componentWillReceiveProps(b2, M2), !h2.__e && (null != h2.shouldComponentUpdate && false === h2.shouldComponentUpdate(b2, h2.__s, M2) || t2.__v === u4.__v)) {
         for (t2.__v !== u4.__v && (h2.props = b2, h2.state = h2.__s, h2.__d = false), t2.__e = u4.__e, t2.__k = u4.__k, t2.__k.some(function(n3) {
@@ -1539,61 +1539,61 @@ function F(n2, t2, u4, i3, o2, r3, e2, f4, c2, s2) {
         h2.componentDidUpdate(v2, y2, g2);
       });
     }
-    if (h2.context = M2, h2.props = b2, h2.__P = n2, h2.__e = false, I2 = l$c.__r, H3 = 0, C2) {
-      for (h2.state = h2.__s, h2.__d = false, I2 && I2(t2), a2 = h2.render(h2.props, h2.state, h2.context), L3 = 0; L3 < h2._sb.length; L3++) h2.__h.push(h2._sb[L3]);
+    if (h2.context = M2, h2.props = b2, h2.__P = n2, h2.__e = false, I2 = l$d.__r, H3 = 0, C2) {
+      for (h2.state = h2.__s, h2.__d = false, I2 && I2(t2), a3 = h2.render(h2.props, h2.state, h2.context), L3 = 0; L3 < h2._sb.length; L3++) h2.__h.push(h2._sb[L3]);
       h2._sb = [];
     } else do {
-      h2.__d = false, I2 && I2(t2), a2 = h2.render(h2.props, h2.state, h2.context), h2.state = h2.__s;
+      h2.__d = false, I2 && I2(t2), a3 = h2.render(h2.props, h2.state, h2.context), h2.state = h2.__s;
     } while (h2.__d && ++H3 < 25);
-    h2.state = h2.__s, null != h2.getChildContext && (i3 = w$2(w$2({}, i3), h2.getChildContext())), C2 && !p2 && null != h2.getSnapshotBeforeUpdate && (g2 = h2.getSnapshotBeforeUpdate(v2, y2)), f4 = $$1(n2, d$7(O2 = null != a2 && a2.type === k$5 && null == a2.key ? a2.props.children : a2) ? O2 : [O2], t2, u4, i3, o2, r3, e2, f4, c2, s2), h2.base = t2.__e, t2.__u &= -161, h2.__h.length && e2.push(h2), m2 && (h2.__E = h2.__ = null);
+    h2.state = h2.__s, null != h2.getChildContext && (i3 = w$2(w$2({}, i3), h2.getChildContext())), C2 && !p2 && null != h2.getSnapshotBeforeUpdate && (g2 = h2.getSnapshotBeforeUpdate(v2, y2)), f4 = $$1(n2, d$7(O2 = null != a3 && a3.type === k$5 && null == a3.key ? a3.props.children : a3) ? O2 : [O2], t2, u4, i3, o2, r3, e2, f4, c2, s2), h2.base = t2.__e, t2.__u &= -161, h2.__h.length && e2.push(h2), m2 && (h2.__E = h2.__ = null);
   } catch (n3) {
     if (t2.__v = null, c2 || null != r3) if (n3.then) {
       for (t2.__u |= c2 ? 160 : 128; f4 && 8 === f4.nodeType && f4.nextSibling; ) f4 = f4.nextSibling;
       r3[r3.indexOf(f4)] = null, t2.__e = f4;
     } else for (T2 = r3.length; T2--; ) _$2(r3[T2]);
     else t2.__e = u4.__e, t2.__k = u4.__k;
-    l$c.__e(n3, t2, u4);
+    l$d.__e(n3, t2, u4);
   }
   else null == r3 && t2.__v === u4.__v ? (t2.__k = u4.__k, t2.__e = u4.__e) : f4 = t2.__e = N$3(u4.__e, t2, u4, i3, o2, r3, e2, c2, s2);
-  return (a2 = l$c.diffed) && a2(t2), 128 & t2.__u ? void 0 : f4;
+  return (a3 = l$d.diffed) && a3(t2), 128 & t2.__u ? void 0 : f4;
 }
 function z$1(n2, t2, u4) {
   for (var i3 = 0; i3 < u4.length; i3++) V$2(u4[i3], u4[++i3], u4[++i3]);
-  l$c.__c && l$c.__c(t2, n2), n2.some(function(t3) {
+  l$d.__c && l$d.__c(t2, n2), n2.some(function(t3) {
     try {
       n2 = t3.__h, t3.__h = [], n2.some(function(n3) {
         n3.call(t3);
       });
     } catch (n3) {
-      l$c.__e(n3, t3.__v);
+      l$d.__e(n3, t3.__v);
     }
   });
 }
 function N$3(t2, u4, i3, o2, r3, e2, f4, c2, s2) {
-  var a2, h2, v2, y2, w2, g2, m2, b2, k3 = i3.props, x2 = u4.props, S2 = u4.type;
+  var a3, h2, v2, y2, w2, g2, m2, b2, k3 = i3.props, x2 = u4.props, S2 = u4.type;
   if ("svg" === S2 ? r3 = "http://www.w3.org/2000/svg" : "math" === S2 ? r3 = "http://www.w3.org/1998/Math/MathML" : r3 || (r3 = "http://www.w3.org/1999/xhtml"), null != e2) {
-    for (a2 = 0; a2 < e2.length; a2++) if ((w2 = e2[a2]) && "setAttribute" in w2 == !!S2 && (S2 ? w2.localName === S2 : 3 === w2.nodeType)) {
-      t2 = w2, e2[a2] = null;
+    for (a3 = 0; a3 < e2.length; a3++) if ((w2 = e2[a3]) && "setAttribute" in w2 == !!S2 && (S2 ? w2.localName === S2 : 3 === w2.nodeType)) {
+      t2 = w2, e2[a3] = null;
       break;
     }
   }
   if (null == t2) {
     if (null === S2) return document.createTextNode(x2);
-    t2 = document.createElementNS(r3, S2, x2.is && x2), c2 && (l$c.__m && l$c.__m(u4, e2), c2 = false), e2 = null;
+    t2 = document.createElementNS(r3, S2, x2.is && x2), c2 && (l$d.__m && l$d.__m(u4, e2), c2 = false), e2 = null;
   }
   if (null === S2) k3 === x2 || c2 && t2.data === x2 || (t2.data = x2);
   else {
-    if (e2 = e2 && n$d.call(t2.childNodes), k3 = i3.props || p$4, !c2 && null != e2) for (k3 = {}, a2 = 0; a2 < t2.attributes.length; a2++) k3[(w2 = t2.attributes[a2]).name] = w2.value;
-    for (a2 in k3) if (w2 = k3[a2], "children" == a2) ;
-    else if ("dangerouslySetInnerHTML" == a2) v2 = w2;
-    else if (!(a2 in x2)) {
-      if ("value" == a2 && "defaultValue" in x2 || "checked" == a2 && "defaultChecked" in x2) continue;
-      j$1(t2, a2, null, w2, r3);
+    if (e2 = e2 && n$d.call(t2.childNodes), k3 = i3.props || p$4, !c2 && null != e2) for (k3 = {}, a3 = 0; a3 < t2.attributes.length; a3++) k3[(w2 = t2.attributes[a3]).name] = w2.value;
+    for (a3 in k3) if (w2 = k3[a3], "children" == a3) ;
+    else if ("dangerouslySetInnerHTML" == a3) v2 = w2;
+    else if (!(a3 in x2)) {
+      if ("value" == a3 && "defaultValue" in x2 || "checked" == a3 && "defaultChecked" in x2) continue;
+      j$1(t2, a3, null, w2, r3);
     }
-    for (a2 in x2) w2 = x2[a2], "children" == a2 ? y2 = w2 : "dangerouslySetInnerHTML" == a2 ? h2 = w2 : "value" == a2 ? g2 = w2 : "checked" == a2 ? m2 = w2 : c2 && "function" != typeof w2 || k3[a2] === w2 || ((a2.startsWith("on") || "ref" === a2 && "function" == typeof w2) && (b2 = o2[Object.keys(o2)[0]]) && (w2 = w2.bind(b2.props.value)), j$1(t2, a2, w2, k3[a2], r3));
+    for (a3 in x2) w2 = x2[a3], "children" == a3 ? y2 = w2 : "dangerouslySetInnerHTML" == a3 ? h2 = w2 : "value" == a3 ? g2 = w2 : "checked" == a3 ? m2 = w2 : c2 && "function" != typeof w2 || k3[a3] === w2 || ((a3.startsWith("on") || "ref" === a3 && "function" == typeof w2) && (b2 = o2[Object.keys(o2)[0]]) && (w2 = w2.bind(b2.props.value)), j$1(t2, a3, w2, k3[a3], r3));
     if (h2) c2 || v2 && (h2.__html === v2.__html || h2.__html === t2.innerHTML) || (t2.innerHTML = h2.__html), u4.__k = [];
-    else if (v2 && (t2.innerHTML = ""), $$1(t2, d$7(y2) ? y2 : [y2], u4, i3, o2, "foreignObject" === S2 ? "http://www.w3.org/1999/xhtml" : r3, e2, f4, e2 ? e2[0] : i3.__k && C$2(i3, 0), c2, s2), null != e2) for (a2 = e2.length; a2--; ) _$2(e2[a2]);
-    c2 || (a2 = "value", "progress" === S2 && null == g2 ? t2.removeAttribute("value") : void 0 !== g2 && (g2 !== t2[a2] || "progress" === S2 && !g2 || "option" === S2 && g2 !== k3[a2]) && j$1(t2, a2, g2, k3[a2], r3), a2 = "checked", void 0 !== m2 && m2 !== t2[a2] && j$1(t2, a2, m2, k3[a2], r3));
+    else if (v2 && (t2.innerHTML = ""), $$1(t2, d$7(y2) ? y2 : [y2], u4, i3, o2, "foreignObject" === S2 ? "http://www.w3.org/1999/xhtml" : r3, e2, f4, e2 ? e2[0] : i3.__k && C$2(i3, 0), c2, s2), null != e2) for (a3 = e2.length; a3--; ) _$2(e2[a3]);
+    c2 || (a3 = "value", "progress" === S2 && null == g2 ? t2.removeAttribute("value") : void 0 !== g2 && (g2 !== t2[a3] || "progress" === S2 && !g2 || "option" === S2 && g2 !== k3[a3]) && j$1(t2, a3, g2, k3[a3], r3), a3 = "checked", void 0 !== m2 && m2 !== t2[a3] && j$1(t2, a3, m2, k3[a3], r3));
   }
   return t2;
 }
@@ -1604,16 +1604,16 @@ function V$2(n2, t2, u4) {
       i3 && n2.__u(), i3 && null == t2 || (n2.__u = n2(t2));
     } else n2.current = t2;
   } catch (n3) {
-    l$c.__e(n3, u4);
+    l$d.__e(n3, u4);
   }
 }
 function q$1(n2, t2, u4) {
   var i3, o2;
-  if (l$c.unmount && l$c.unmount(n2), (i3 = n2.ref) && (i3.current && i3.current !== n2.__e || V$2(i3, null, t2)), null != (i3 = n2.__c)) {
+  if (l$d.unmount && l$d.unmount(n2), (i3 = n2.ref) && (i3.current && i3.current !== n2.__e || V$2(i3, null, t2)), null != (i3 = n2.__c)) {
     if (i3.componentWillUnmount) try {
       i3.componentWillUnmount();
     } catch (n3) {
-      l$c.__e(n3, t2);
+      l$d.__e(n3, t2);
     }
     i3.base = i3.__P = null;
   }
@@ -1623,12 +1623,12 @@ function q$1(n2, t2, u4) {
 function B$1(n2, l3, t2) {
   return this.constructor(n2, t2);
 }
-function D$3(t2, u4, i3) {
+function D$4(t2, u4, i3) {
   var o2, r3, e2, f4;
-  u4 === document && (u4 = document.documentElement), l$c.__ && l$c.__(t2, u4), r3 = (o2 = "function" == typeof i3) ? null : i3 && i3.__k || u4.__k, e2 = [], f4 = [], F(u4, t2 = (!o2 && i3 || u4).__k = g$4(k$5, null, [t2]), r3 || p$4, p$4, u4.namespaceURI, !o2 && i3 ? [i3] : r3 ? null : u4.firstChild ? n$d.call(u4.childNodes) : null, e2, !o2 && i3 ? i3 : r3 ? r3.__e : u4.firstChild, o2, f4), z$1(e2, t2, f4);
+  u4 === document && (u4 = document.documentElement), l$d.__ && l$d.__(t2, u4), r3 = (o2 = "function" == typeof i3) ? null : i3 && i3.__k || u4.__k, e2 = [], f4 = [], F(u4, t2 = (!o2 && i3 || u4).__k = g$4(k$5, null, [t2]), r3 || p$4, p$4, u4.namespaceURI, !o2 && i3 ? [i3] : r3 ? null : u4.firstChild ? n$d.call(u4.childNodes) : null, e2, !o2 && i3 ? i3 : r3 ? r3.__e : u4.firstChild, o2, f4), z$1(e2, t2, f4);
 }
 function E$3(n2, l3) {
-  D$3(n2, l3, E$3);
+  D$4(n2, l3, E$3);
 }
 function J(n2, l3) {
   var t2 = { __c: l3 = "__cC" + h$2++, __: n2, Consumer: function(n3, l4) {
@@ -1653,39 +1653,39 @@ function J(n2, l3) {
   } };
   return t2.Provider.__ = t2.Consumer.contextType = t2;
 }
-n$d = v$2.slice, l$c = { __e: function(n2, l3, t2, u4) {
+n$d = v$3.slice, l$d = { __e: function(n2, l3, t2, u4) {
   for (var i3, o2, r3; l3 = l3.__; ) if ((i3 = l3.__c) && !i3.__) try {
     if ((o2 = i3.constructor) && null != o2.getDerivedStateFromError && (i3.setState(o2.getDerivedStateFromError(n2)), r3 = i3.__d), null != i3.componentDidCatch && (i3.componentDidCatch(n2, u4 || {}), r3 = i3.__d), r3) return i3.__E = i3;
   } catch (l4) {
     n2 = l4;
   }
   throw n2;
-} }, t$c = 0, x$2.prototype.setState = function(n2, l3) {
+} }, t$d = 0, x$2.prototype.setState = function(n2, l3) {
   var t2;
   t2 = null != this.__s && this.__s !== this.state ? this.__s : this.__s = w$2({}, this.state), "function" == typeof n2 && (n2 = n2(w$2({}, t2), this.props)), n2 && w$2(t2, n2), null != n2 && this.__v && (l3 && this._sb.push(l3), M$3(this));
 }, x$2.prototype.forceUpdate = function(n2) {
   this.__v && (this.__e = true, n2 && this.__h.push(n2), M$3(this));
-}, x$2.prototype.render = k$5, i$8 = [], r$8 = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, e$8 = function(n2, l3) {
+}, x$2.prototype.render = k$5, i$8 = [], r$8 = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, e$9 = function(n2, l3) {
   return n2.__v.__b - l3.__v.__b;
-}, P$3.__r = 0, f$b = /(PointerCapture)$|Capture$/i, c$7 = 0, s$6 = A$5(false), a$b = A$5(true), h$2 = 0;
-var f$a = 0;
-function u$9(e2, t2, n2, o2, i3, u4) {
+}, P$3.__r = 0, f$c = /(PointerCapture)$|Capture$/i, c$7 = 0, s$7 = A$5(false), a$d = A$5(true), h$2 = 0;
+var f$b = 0;
+function u$a(e2, t2, n2, o2, i3, u4) {
   t2 || (t2 = {});
-  var a2, c2, l3 = t2;
-  "ref" in t2 && (a2 = t2.ref, delete t2.ref);
-  var p2 = { type: e2, props: l3, key: n2, ref: a2, __k: null, __: null, __b: 0, __e: null, __c: null, constructor: void 0, __v: --f$a, __i: -1, __u: 0, __source: i3, __self: u4 };
-  if ("function" == typeof e2 && (a2 = e2.defaultProps)) for (c2 in a2) void 0 === l3[c2] && (l3[c2] = a2[c2]);
-  return l$c.vnode && l$c.vnode(p2), p2;
+  var a3, c2, l3 = t2;
+  "ref" in t2 && (a3 = t2.ref, delete t2.ref);
+  var p2 = { type: e2, props: l3, key: n2, ref: a3, __k: null, __: null, __b: 0, __e: null, __c: null, constructor: void 0, __v: --f$b, __i: -1, __u: 0, __source: i3, __self: u4 };
+  if ("function" == typeof e2 && (a3 = e2.defaultProps)) for (c2 in a3) void 0 === l3[c2] && (l3[c2] = a3[c2]);
+  return l$d.vnode && l$d.vnode(p2), p2;
 }
-const l$b = /* @__PURE__ */ new WeakMap(), y$5 = (e2, r3) => {
+const l$c = /* @__PURE__ */ new WeakMap(), y$5 = (e2, r3) => {
   var _a2;
-  let t2 = l$b.get(e2);
-  t2 || (t2 = J(e2), l$b.set(e2, t2));
-  const m2 = e2.render(), o2 = u$9(t2.Provider, { value: e2, children: m2 });
-  e2.__shouldHydrate ? ((_a2 = e2.shadowRoot) == null ? void 0 : _a2.querySelectorAll("style").forEach((d2) => d2.remove()), E$3(o2, r3), e2.__shouldHydrate = false) : D$3(o2, r3);
+  let t2 = l$c.get(e2);
+  t2 || (t2 = J(e2), l$c.set(e2, t2));
+  const m2 = e2.render(), o2 = u$a(t2.Provider, { value: e2, children: m2 });
+  e2.__shouldHydrate ? ((_a2 = e2.shadowRoot) == null ? void 0 : _a2.querySelectorAll("style").forEach((d2) => d2.remove()), E$3(o2, r3), e2.__shouldHydrate = false) : D$4(o2, r3);
 };
-const y$4 = { BACKSPACE: 8, TAB: 9, ENTER: 13, SHIFT: 16, ESCAPE: 27, SPACE: 32, PAGE_UP: 33, PAGE_DOWN: 34, END: 35, HOME: 36, ARROW_LEFT: 37, ARROW_UP: 38, ARROW_RIGHT: 39, ARROW_DOWN: 40, DELETE: 46, NUMPAD_PLUS: 107, NUMPAD_MINUS: 109, F4: 115, F8: 119, F10: 121, PLUS: 187, MINUS: 219 }, b$5 = (o2) => (o2.key ? o2.key === "Enter" : o2.keyCode === y$4.ENTER) && !a$a(o2), d$6 = (o2) => (o2.key ? o2.key === "Enter" : o2.keyCode === y$4.ENTER) && e$7(o2, true, false, false), f$9 = (o2) => (o2.key ? o2.key === "Enter" : o2.keyCode === y$4.ENTER) && e$7(o2, false, true, false), i$7 = (o2) => (o2.key ? o2.key === "Enter" : o2.keyCode === y$4.ENTER) && e$7(o2, false, false, true), C$1 = (o2) => e$7(o2, true, false, false), A$4 = (o2) => (o2.key ? o2.key === "Spacebar" || o2.key === " " : o2.keyCode === y$4.SPACE) && !a$a(o2), K = (o2) => (o2.key ? o2.key === "Spacebar" || o2.key === " " : o2.keyCode === y$4.SPACE) && e$7(o2, false, false, true), D$2 = (o2) => (o2.key ? o2.key === "ArrowLeft" || o2.key === "Left" : o2.keyCode === y$4.ARROW_LEFT) && !a$a(o2), R$1 = (o2) => (o2.key ? o2.key === "ArrowRight" || o2.key === "Right" : o2.keyCode === y$4.ARROW_RIGHT) && !a$a(o2), P$2 = (o2) => (o2.key ? o2.key === "ArrowUp" || o2.key === "Up" : o2.keyCode === y$4.ARROW_UP) && !a$a(o2), _$1 = (o2) => (o2.key ? o2.key === "ArrowDown" || o2.key === "Down" : o2.keyCode === y$4.ARROW_DOWN) && !a$a(o2), U = (o2) => (o2.key ? o2.key === "ArrowLeft" || o2.key === "Left" : o2.keyCode === y$4.ARROW_LEFT) && e$7(o2, true, false, false), t$b = (o2) => (o2.key ? o2.key === "ArrowRight" || o2.key === "Right" : o2.keyCode === y$4.ARROW_RIGHT) && e$7(o2, true, false, false), S$2 = (o2) => (o2.key ? o2.key === "ArrowUp" || o2.key === "Up" : o2.keyCode === y$4.ARROW_UP) && e$7(o2, true, false, false), u$8 = (o2) => (o2.key ? o2.key === "ArrowDown" || o2.key === "Down" : o2.keyCode === y$4.ARROW_DOWN) && e$7(o2, true, false, false), O = (o2) => (o2.key ? o2.key === "ArrowUp" || o2.key === "Up" : o2.keyCode === y$4.ARROW_UP) && e$7(o2, false, false, true), N$2 = (o2) => (o2.key ? o2.key === "ArrowDown" || o2.key === "Down" : o2.keyCode === y$4.ARROW_DOWN) && e$7(o2, false, false, true), h$1 = (o2) => (o2.key ? o2.key === "ArrowLeft" || o2.key === "Left" : o2.keyCode === y$4.ARROW_LEFT) && e$7(o2, false, false, true), I$1 = (o2) => (o2.key ? o2.key === "ArrowRight" || o2.key === "Right" : o2.keyCode === y$4.ARROW_RIGHT) && e$7(o2, false, false, true), M$2 = (o2) => (o2.key ? o2.key === "Home" : o2.keyCode === y$4.HOME) && !a$a(o2), n$c = (o2) => (o2.key ? o2.key === "End" : o2.keyCode === y$4.END) && !a$a(o2), m$6 = (o2) => (o2.key ? o2.key === "Escape" || o2.key === "Esc" : o2.keyCode === y$4.ESCAPE) && !a$a(o2), x$1 = (o2) => (o2.key ? o2.key === "Tab" : o2.keyCode === y$4.TAB) && !a$a(o2), V$1 = (o2) => (o2.key ? o2.key === "Tab" : o2.keyCode === y$4.TAB) && e$7(o2, false, false, true), Q = (o2) => (o2.key ? o2.key === "Backspace" : o2.keyCode === y$4.BACKSPACE) && !a$a(o2), X = (o2) => (o2.key ? o2.key === "Delete" : o2.keyCode === y$4.DELETE) && !a$a(o2), j = (o2) => (o2.key ? o2.key === "PageUp" : o2.keyCode === y$4.PAGE_UP) && !a$a(o2), q = (o2) => (o2.key ? o2.key === "PageDown" : o2.keyCode === y$4.PAGE_DOWN) && !a$a(o2), ao = (o2) => (o2.key ? o2.key === "+" : o2.keyCode === y$4.PLUS) || o2.keyCode === y$4.NUMPAD_PLUS && !a$a(o2), so = (o2) => (o2.key ? o2.key === "-" : o2.keyCode === y$4.MINUS) || o2.keyCode === y$4.NUMPAD_MINUS && !a$a(o2), ko = (o2) => o2.key ? s$5(o2) || Ao(o2) : o2.keyCode === y$4.F4 && !a$a(o2) || o2.keyCode === y$4.ARROW_DOWN && e$7(o2, false, true, false), ro = (o2) => o2.key === "F2" && !a$a(o2), s$5 = (o2) => o2.key === "F4" && !a$a(o2), Eo = (o2) => (o2.key ? o2.key === "F10" : o2.keyCode === y$4.F10) && e$7(o2, false, false, true), Co = (o2) => (o2.key ? o2.key === "F8" : o2.keyCode === y$4.F8) && e$7(o2, true, true, false), Ao = (o2) => (o2.key === "ArrowDown" || o2.key === "Down" || o2.key === "ArrowUp" || o2.key === "Up") && e$7(o2, false, true, false), Ko = (o2) => o2.key === "Shift" || o2.keyCode === y$4.SHIFT, a$a = (o2) => o2.shiftKey || o2.altKey || k$4(o2), k$4 = (o2) => !!(o2.metaKey || o2.ctrlKey), e$7 = (o2, r3, l3, E2) => o2.shiftKey === E2 && o2.altKey === l3 && k$4(o2) === r3;
-const b$4 = /* @__PURE__ */ new WeakMap(), o$6 = /* @__PURE__ */ new WeakMap(), v$1 = { attributes: true, childList: true, characterData: true, subtree: true }, A$3 = (e2) => {
+const y$4 = { BACKSPACE: 8, TAB: 9, ENTER: 13, SHIFT: 16, ESCAPE: 27, SPACE: 32, PAGE_UP: 33, PAGE_DOWN: 34, END: 35, HOME: 36, ARROW_LEFT: 37, ARROW_UP: 38, ARROW_RIGHT: 39, ARROW_DOWN: 40, DELETE: 46, NUMPAD_PLUS: 107, NUMPAD_MINUS: 109, F4: 115, F8: 119, F10: 121, PLUS: 187, MINUS: 219 }, b$6 = (o2) => (o2.key ? o2.key === "Enter" : o2.keyCode === y$4.ENTER) && !a$c(o2), d$6 = (o2) => (o2.key ? o2.key === "Enter" : o2.keyCode === y$4.ENTER) && e$8(o2, true, false, false), f$a = (o2) => (o2.key ? o2.key === "Enter" : o2.keyCode === y$4.ENTER) && e$8(o2, false, true, false), i$7 = (o2) => (o2.key ? o2.key === "Enter" : o2.keyCode === y$4.ENTER) && e$8(o2, false, false, true), C$1 = (o2) => e$8(o2, true, false, false), A$4 = (o2) => (o2.key ? o2.key === "Spacebar" || o2.key === " " : o2.keyCode === y$4.SPACE) && !a$c(o2), K = (o2) => (o2.key ? o2.key === "Spacebar" || o2.key === " " : o2.keyCode === y$4.SPACE) && e$8(o2, false, false, true), D$3 = (o2) => (o2.key ? o2.key === "ArrowLeft" || o2.key === "Left" : o2.keyCode === y$4.ARROW_LEFT) && !a$c(o2), R$1 = (o2) => (o2.key ? o2.key === "ArrowRight" || o2.key === "Right" : o2.keyCode === y$4.ARROW_RIGHT) && !a$c(o2), P$2 = (o2) => (o2.key ? o2.key === "ArrowUp" || o2.key === "Up" : o2.keyCode === y$4.ARROW_UP) && !a$c(o2), _$1 = (o2) => (o2.key ? o2.key === "ArrowDown" || o2.key === "Down" : o2.keyCode === y$4.ARROW_DOWN) && !a$c(o2), U = (o2) => (o2.key ? o2.key === "ArrowLeft" || o2.key === "Left" : o2.keyCode === y$4.ARROW_LEFT) && e$8(o2, true, false, false), t$c = (o2) => (o2.key ? o2.key === "ArrowRight" || o2.key === "Right" : o2.keyCode === y$4.ARROW_RIGHT) && e$8(o2, true, false, false), S$2 = (o2) => (o2.key ? o2.key === "ArrowUp" || o2.key === "Up" : o2.keyCode === y$4.ARROW_UP) && e$8(o2, true, false, false), u$9 = (o2) => (o2.key ? o2.key === "ArrowDown" || o2.key === "Down" : o2.keyCode === y$4.ARROW_DOWN) && e$8(o2, true, false, false), O = (o2) => (o2.key ? o2.key === "ArrowUp" || o2.key === "Up" : o2.keyCode === y$4.ARROW_UP) && e$8(o2, false, false, true), N$2 = (o2) => (o2.key ? o2.key === "ArrowDown" || o2.key === "Down" : o2.keyCode === y$4.ARROW_DOWN) && e$8(o2, false, false, true), h$1 = (o2) => (o2.key ? o2.key === "ArrowLeft" || o2.key === "Left" : o2.keyCode === y$4.ARROW_LEFT) && e$8(o2, false, false, true), I$1 = (o2) => (o2.key ? o2.key === "ArrowRight" || o2.key === "Right" : o2.keyCode === y$4.ARROW_RIGHT) && e$8(o2, false, false, true), M$2 = (o2) => (o2.key ? o2.key === "Home" : o2.keyCode === y$4.HOME) && !a$c(o2), n$c = (o2) => (o2.key ? o2.key === "End" : o2.keyCode === y$4.END) && !a$c(o2), m$6 = (o2) => (o2.key ? o2.key === "Escape" || o2.key === "Esc" : o2.keyCode === y$4.ESCAPE) && !a$c(o2), x$1 = (o2) => (o2.key ? o2.key === "Tab" : o2.keyCode === y$4.TAB) && !a$c(o2), V$1 = (o2) => (o2.key ? o2.key === "Tab" : o2.keyCode === y$4.TAB) && e$8(o2, false, false, true), Q = (o2) => (o2.key ? o2.key === "Backspace" : o2.keyCode === y$4.BACKSPACE) && !a$c(o2), X = (o2) => (o2.key ? o2.key === "Delete" : o2.keyCode === y$4.DELETE) && !a$c(o2), j = (o2) => (o2.key ? o2.key === "PageUp" : o2.keyCode === y$4.PAGE_UP) && !a$c(o2), q = (o2) => (o2.key ? o2.key === "PageDown" : o2.keyCode === y$4.PAGE_DOWN) && !a$c(o2), ao = (o2) => (o2.key ? o2.key === "+" : o2.keyCode === y$4.PLUS) || o2.keyCode === y$4.NUMPAD_PLUS && !a$c(o2), so = (o2) => (o2.key ? o2.key === "-" : o2.keyCode === y$4.MINUS) || o2.keyCode === y$4.NUMPAD_MINUS && !a$c(o2), ko = (o2) => o2.key ? s$6(o2) || Ao(o2) : o2.keyCode === y$4.F4 && !a$c(o2) || o2.keyCode === y$4.ARROW_DOWN && e$8(o2, false, true, false), ro = (o2) => o2.key === "F2" && !a$c(o2), s$6 = (o2) => o2.key === "F4" && !a$c(o2), Eo = (o2) => (o2.key ? o2.key === "F10" : o2.keyCode === y$4.F10) && e$8(o2, false, false, true), Co = (o2) => (o2.key ? o2.key === "F8" : o2.keyCode === y$4.F8) && e$8(o2, true, true, false), Ao = (o2) => (o2.key === "ArrowDown" || o2.key === "Down" || o2.key === "ArrowUp" || o2.key === "Up") && e$8(o2, false, true, false), Ko = (o2) => o2.key === "Shift" || o2.keyCode === y$4.SHIFT, a$c = (o2) => o2.shiftKey || o2.altKey || k$4(o2), k$4 = (o2) => !!(o2.metaKey || o2.ctrlKey), e$8 = (o2, r3, l3, E2) => o2.shiftKey === E2 && o2.altKey === l3 && k$4(o2) === r3;
+const b$5 = /* @__PURE__ */ new WeakMap(), o$6 = /* @__PURE__ */ new WeakMap(), v$2 = { attributes: true, childList: true, characterData: true, subtree: true }, A$3 = (e2) => {
   const t2 = e2;
   return t2.accessibleNameRef ? E$2(e2) : t2.accessibleName ? t2.accessibleName : void 0;
 }, E$2 = (e2) => {
@@ -1693,12 +1693,12 @@ const b$4 = /* @__PURE__ */ new WeakMap(), o$6 = /* @__PURE__ */ new WeakMap(), 
   const t2 = ((_a2 = e2.accessibleNameRef) == null ? void 0 : _a2.split(" ")) ?? [];
   let s2 = "";
   return t2.forEach((n2, c2) => {
-    const l3 = m$5(e2, n2), a2 = `${l3 && l3.textContent ? l3.textContent : ""}`;
-    a2 && (s2 += a2, c2 < t2.length - 1 && (s2 += " "));
+    const l3 = m$5(e2, n2), a3 = `${l3 && l3.textContent ? l3.textContent : ""}`;
+    a3 && (s2 += a3, c2 < t2.length - 1 && (s2 += " "));
   }), s2;
-}, f$8 = (e2) => {
+}, f$9 = (e2) => {
   const t2 = /* @__PURE__ */ new Set();
-  u$7(e2).forEach((r3) => {
+  u$8(e2).forEach((r3) => {
     t2.add(r3);
   });
   const n2 = e2.accessibleNameRef, c2 = e2.accessibleDescriptionRef, l3 = [n2, c2].filter(Boolean).join(" ");
@@ -1706,12 +1706,12 @@ const b$4 = /* @__PURE__ */ new WeakMap(), o$6 = /* @__PURE__ */ new WeakMap(), 
     const i3 = m$5(e2, r3);
     i3 && t2.add(i3);
   }), Array.from(t2);
-}, u$7 = (e2) => {
+}, u$8 = (e2) => {
   const t2 = e2.getRootNode().querySelectorAll(`[for="${e2.id}"]`);
   return Array.from(t2);
 }, m$5 = (e2, t2) => e2.getRootNode().querySelector(`[id='${t2}']`) || document.getElementById(t2), M$1 = (e2) => {
   const t2 = [];
-  if (u$7(e2).forEach((n2) => {
+  if (u$8(e2).forEach((n2) => {
     const c2 = n2.textContent;
     c2 && t2.push(c2);
   }), t2.length) return t2.join(" ");
@@ -1720,36 +1720,36 @@ const b$4 = /* @__PURE__ */ new WeakMap(), o$6 = /* @__PURE__ */ new WeakMap(), 
   if (!n2 && !c2) return;
   const l3 = o$6.get(e2);
   if (!l3) return;
-  const a2 = l3.observedElements, r3 = f$8(e2);
-  a2.forEach((i3) => {
+  const a3 = l3.observedElements, r3 = f$9(e2);
+  a3.forEach((i3) => {
     r3.includes(i3) || d$5(l3, i3);
   }), r3.forEach((i3) => {
-    a2.includes(i3) || (g$3(l3, i3), l3.observedElements.push(i3));
+    a3.includes(i3) || (g$3(l3, i3), l3.observedElements.push(i3));
   }), l3 == null ? void 0 : l3.callback();
 }, y$3 = (e2, t2) => {
   if (o$6.has(e2)) return;
-  const s2 = f$8(e2), n2 = k$3(e2), c2 = { host: e2, observedElements: s2, callback: t2, invalidationCallback: n2 };
+  const s2 = f$9(e2), n2 = k$3(e2), c2 = { host: e2, observedElements: s2, callback: t2, invalidationCallback: n2 };
   o$6.set(e2, c2), e2.attachInvalidate(n2), s2.forEach((l3) => {
     g$3(c2, l3);
   }), t2();
 }, g$3 = (e2, t2) => {
-  let s2 = b$4.get(t2);
+  let s2 = b$5.get(t2);
   if (!s2) {
     s2 = { observer: null, callbacks: [] };
     const n2 = new MutationObserver(() => {
-      s2.callbacks.forEach((a2) => {
-        a2();
+      s2.callbacks.forEach((a3) => {
+        a3();
       });
       const l3 = document.getElementById(t2.id);
       e2.host.id === t2.getAttribute("for") || l3 || d$5(e2, t2);
     });
-    s2.observer = n2, n2.observe(t2, v$1), b$4.set(t2, s2);
+    s2.observer = n2, n2.observe(t2, v$2), b$5.set(t2, s2);
   }
   s2.callbacks.includes(e2.callback) || s2.callbacks.push(e2.callback);
 }, d$5 = (e2, t2) => {
   var _a2;
-  const s2 = b$4.get(t2);
-  s2 && (s2.callbacks = s2.callbacks.filter((n2) => n2 !== e2.callback), s2.callbacks.length || ((_a2 = s2.observer) == null ? void 0 : _a2.disconnect(), b$4.delete(t2))), e2.observedElements = e2.observedElements.filter((n2) => n2 !== t2);
+  const s2 = b$5.get(t2);
+  s2 && (s2.callbacks = s2.callbacks.filter((n2) => n2 !== e2.callback), s2.callbacks.length || ((_a2 = s2.observer) == null ? void 0 : _a2.disconnect(), b$5.delete(t2))), e2.observedElements = e2.observedElements.filter((n2) => n2 !== t2);
 }, T$3 = (e2) => {
   const t2 = o$6.get(e2);
   if (!t2) return;
@@ -1764,77 +1764,77 @@ const b$4 = /* @__PURE__ */ new WeakMap(), o$6 = /* @__PURE__ */ new WeakMap(), 
   const t2 = ((_a2 = e2.accessibleDescriptionRef) == null ? void 0 : _a2.split(" ")) ?? [];
   let s2 = "";
   return t2.forEach((n2, c2) => {
-    const l3 = m$5(e2, n2), a2 = `${l3 && l3.textContent ? l3.textContent : ""}`;
-    a2 && (s2 += a2, c2 < t2.length - 1 && (s2 += " "));
+    const l3 = m$5(e2, n2), a3 = `${l3 && l3.textContent ? l3.textContent : ""}`;
+    a3 && (s2 += a3, c2 < t2.length - 1 && (s2 += " "));
   }), s2;
 };
-var t$a = ((s2) => (s2["SAP-icons"] = "SAP-icons-v4", s2.horizon = "SAP-icons-v5", s2["SAP-icons-TNT"] = "tnt", s2.BusinessSuiteInAppSymbols = "business-suite", s2))(t$a || {});
-const n$b = (e2) => t$a[e2] ? t$a[e2] : e2;
-var t$9 = ((o2) => (o2.SAPIconsV4 = "SAP-icons-v4", o2.SAPIconsV5 = "SAP-icons-v5", o2.SAPIconsTNTV2 = "tnt-v2", o2.SAPIconsTNTV3 = "tnt-v3", o2.SAPBSIconsV1 = "business-suite-v1", o2.SAPBSIconsV2 = "business-suite-v2", o2))(t$9 || {});
-const s$4 = /* @__PURE__ */ new Map();
-s$4.set("SAP-icons", { legacy: "SAP-icons-v4", sap_horizon: "SAP-icons-v5" }), s$4.set("tnt", { legacy: "tnt-v2", sap_horizon: "tnt-v3" }), s$4.set("business-suite", { legacy: "business-suite-v1", sap_horizon: "business-suite-v2" });
+var t$b = ((s2) => (s2["SAP-icons"] = "SAP-icons-v4", s2.horizon = "SAP-icons-v5", s2["SAP-icons-TNT"] = "tnt", s2.BusinessSuiteInAppSymbols = "business-suite", s2))(t$b || {});
+const n$b = (e2) => t$b[e2] ? t$b[e2] : e2;
+var t$a = ((o2) => (o2.SAPIconsV4 = "SAP-icons-v4", o2.SAPIconsV5 = "SAP-icons-v5", o2.SAPIconsTNTV2 = "tnt-v2", o2.SAPIconsTNTV3 = "tnt-v3", o2.SAPBSIconsV1 = "business-suite-v1", o2.SAPBSIconsV2 = "business-suite-v2", o2))(t$a || {});
+const s$5 = /* @__PURE__ */ new Map();
+s$5.set("SAP-icons", { legacy: "SAP-icons-v4", sap_horizon: "SAP-icons-v5" }), s$5.set("tnt", { legacy: "tnt-v2", sap_horizon: "tnt-v3" }), s$5.set("business-suite", { legacy: "business-suite-v1", sap_horizon: "business-suite-v2" });
 const c$6 = (n2, e2) => {
-  if (s$4.has(n2)) {
-    s$4.set(n2, { ...e2, ...s$4.get(n2) });
+  if (s$5.has(n2)) {
+    s$5.set(n2, { ...e2, ...s$5.get(n2) });
     return;
   }
-  s$4.set(n2, e2);
+  s$5.set(n2, e2);
 }, r$7 = (n2) => {
   const e2 = n$p() ? "legacy" : "sap_horizon";
-  return s$4.has(n2) ? s$4.get(n2)[e2] : n2;
+  return s$5.has(n2) ? s$5.get(n2)[e2] : n2;
 };
-const t$8 = /* @__PURE__ */ new Map(), c$5 = (n2) => t$8.get(n2);
+const t$9 = /* @__PURE__ */ new Map(), c$5 = (n2) => t$9.get(n2);
 const i$6 = (o2) => {
   const t2 = c$5(r$j());
   return !o2 && t2 ? n$b(t2) : o2 ? r$7(o2) : r$7("SAP-icons");
 };
-const w$1 = "legacy", s$3 = /* @__PURE__ */ new Map(), c$4 = m$j("SVGIcons.registry", /* @__PURE__ */ new Map()), i$5 = m$j("SVGIcons.promises", /* @__PURE__ */ new Map()), l$a = "ICON_NOT_FOUND", N$1 = async (e2) => {
+const w$1 = "legacy", s$4 = /* @__PURE__ */ new Map(), c$4 = m$j("SVGIcons.registry", /* @__PURE__ */ new Map()), i$5 = m$j("SVGIcons.promises", /* @__PURE__ */ new Map()), l$b = "ICON_NOT_FOUND", N$1 = async (e2) => {
   if (!i$5.has(e2)) {
-    if (!s$3.has(e2)) throw new Error(`No loader registered for the ${e2} icons collection. Probably you forgot to import the "AllIcons.js" module for the respective package.`);
-    const t2 = s$3.get(e2);
+    if (!s$4.has(e2)) throw new Error(`No loader registered for the ${e2} icons collection. Probably you forgot to import the "AllIcons.js" module for the respective package.`);
+    const t2 = s$4.get(e2);
     i$5.set(e2, t2(e2));
   }
   return i$5.get(e2);
-}, f$7 = (e2) => {
+}, f$8 = (e2) => {
   Object.keys(e2.data).forEach((t2) => {
-    const a2 = e2.data[t2];
-    y$2(t2, { pathData: a2.path || a2.paths, ltr: a2.ltr, accData: a2.acc, collection: e2.collection, packageName: e2.packageName });
+    const a3 = e2.data[t2];
+    y$2(t2, { pathData: a3.path || a3.paths, ltr: a3.ltr, accData: a3.acc, collection: e2.collection, packageName: e2.packageName });
   });
 }, y$2 = (e2, t2) => {
-  const a2 = `${t2.collection}/${e2}`, o2 = { collection: t2.collection, packageName: t2.packageName, pathData: t2.pathData, viewBox: t2.viewBox, ltr: t2.ltr, accData: t2.accData, customTemplate: t2.customTemplate };
-  c$4.set(a2, o2);
-}, u$6 = (e2) => {
+  const a3 = `${t2.collection}/${e2}`, o2 = { collection: t2.collection, packageName: t2.packageName, pathData: t2.pathData, viewBox: t2.viewBox, ltr: t2.ltr, accData: t2.accData, customTemplate: t2.customTemplate };
+  c$4.set(a3, o2);
+}, u$7 = (e2) => {
   e2.startsWith("sap-icon://") && (e2 = e2.replace("sap-icon://", ""));
   let t2;
   return [e2, t2] = e2.split("/").reverse(), e2 = e2.replace("icon-", ""), t2 && (t2 = n$b(t2)), { name: e2, collection: t2 };
-}, D$1 = (e2) => {
-  const { name: t2, collection: a2 } = u$6(e2);
-  return g$2(a2, t2);
+}, D$2 = (e2) => {
+  const { name: t2, collection: a3 } = u$7(e2);
+  return g$2(a3, t2);
 }, n$a = async (e2) => {
-  const { name: t2, collection: a2 } = u$6(e2);
-  let o2 = l$a;
+  const { name: t2, collection: a3 } = u$7(e2);
+  let o2 = l$b;
   try {
-    o2 = await N$1(i$6(a2));
+    o2 = await N$1(i$6(a3));
   } catch (r3) {
     console.error(r3.message);
   }
-  if (o2 === l$a) return o2;
-  const p2 = g$2(a2, t2);
+  if (o2 === l$b) return o2;
+  const p2 = g$2(a3, t2);
   return p2 || (Array.isArray(o2) ? o2.forEach((r3) => {
-    f$7(r3), c$6(a2, { [r3.themeFamily || w$1]: r3.collection });
-  }) : f$7(o2), g$2(a2, t2));
+    f$8(r3), c$6(a3, { [r3.themeFamily || w$1]: r3.collection });
+  }) : f$8(o2), g$2(a3, t2));
 }, g$2 = (e2, t2) => {
-  const a2 = `${i$6(e2)}/${t2}`;
-  return c$4.get(a2);
+  const a3 = `${i$6(e2)}/${t2}`;
+  return c$4.get(a3);
 }, A$2 = async (e2) => {
   var _a2;
   if (!e2) return;
-  let t2 = D$1(e2);
-  if (t2 || (t2 = await n$a(e2)), t2 && t2 !== l$a && t2.accData) return t2.packageName ? (await f$d(t2.packageName)).getText(t2.accData) : ((_a2 = t2.accData) == null ? void 0 : _a2.defaultText) || "";
+  let t2 = D$2(e2);
+  if (t2 || (t2 = await n$a(e2)), t2 && t2 !== l$b && t2.accData) return t2.packageName ? (await f$e(t2.packageName)).getText(t2.accData) : ((_a2 = t2.accData) == null ? void 0 : _a2.defaultText) || "";
 };
-const t$7 = (r3) => Array.from(r3).filter((e2) => e2.nodeType !== Node.COMMENT_NODE && (e2.nodeType !== Node.TEXT_NODE || (e2.nodeValue || "").trim().length !== 0)).length > 0;
-let e$6;
-const l$9 = () => (e$6 === void 0 && (e$6 = b$b()), e$6);
+const t$8 = (r3) => Array.from(r3).filter((e2) => e2.nodeType !== Node.COMMENT_NODE && (e2.nodeType !== Node.TEXT_NODE || (e2.nodeValue || "").trim().length !== 0)).length > 0;
+let e$7;
+const l$a = () => (e$7 === void 0 && (e$7 = b$c()), e$7);
 function n$9(e2) {
   return e2.toLowerCase();
 }
@@ -1868,11 +1868,11 @@ var ButtonAccessibleRole;
   ButtonAccessibleRole2["Link"] = "Link";
 })(ButtonAccessibleRole || (ButtonAccessibleRole = {}));
 const ButtonAccessibleRole$1 = ButtonAccessibleRole;
-var l$8;
+var l$9;
 function k$2(n2) {
   return n2.children;
 }
-l$8 = { __e: function(n2, l3, t2, u4) {
+l$9 = { __e: function(n2, l3, t2, u4) {
   for (var i3, o2, r3; l3 = l3.__; ) if ((i3 = l3.__c) && !i3.__) try {
     if ((o2 = i3.constructor) && null != o2.getDerivedStateFromError && (i3.setState(o2.getDerivedStateFromError(n2)), r3 = i3.__d), null != i3.componentDidCatch && (i3.componentDidCatch(n2, u4 || {}), r3 = i3.__d), r3) return i3.__E = i3;
   } catch (l4) {
@@ -1880,14 +1880,14 @@ l$8 = { __e: function(n2, l3, t2, u4) {
   }
   throw n2;
 } }, "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout;
-var f$6 = 0;
-function u$5(e2, t2, n2, o2, i3, u4) {
+var f$7 = 0;
+function u$6(e2, t2, n2, o2, i3, u4) {
   t2 || (t2 = {});
-  var a2, c2, l3 = t2;
-  "ref" in t2 && (a2 = t2.ref, delete t2.ref);
-  var p2 = { type: e2, props: l3, key: n2, ref: a2, __k: null, __: null, __b: 0, __e: null, __c: null, constructor: void 0, __v: --f$6, __i: -1, __u: 0, __source: i3, __self: u4 };
-  if ("function" == typeof e2 && (a2 = e2.defaultProps)) for (c2 in a2) void 0 === l3[c2] && (l3[c2] = a2[c2]);
-  return l$8.vnode && l$8.vnode(p2), p2;
+  var a3, c2, l3 = t2;
+  "ref" in t2 && (a3 = t2.ref, delete t2.ref);
+  var p2 = { type: e2, props: l3, key: n2, ref: a3, __k: null, __: null, __b: 0, __e: null, __c: null, constructor: void 0, __v: --f$7, __i: -1, __u: 0, __source: i3, __self: u4 };
+  if ("function" == typeof e2 && (a3 = e2.defaultProps)) for (c2 in a3) void 0 === l3[c2] && (l3[c2] = a3[c2]);
+  return l$9.vnode && l$9.vnode(p2), p2;
 }
 function hash2str(hash) {
   let str = "";
@@ -1950,8 +1950,8 @@ function preprocess(type, props, key) {
   }
   return tag;
 }
-const old = l$8.vnode;
-l$8.vnode = (vnode) => {
+const old = l$9.vnode;
+l$9.vnode = (vnode) => {
   const props = vnode.props;
   if (props !== null && typeof props === "object") {
     if (props.class && typeof props.class === "object") ;
@@ -1963,11 +1963,11 @@ function Fragment(props, context) {
 }
 function jsx(type, props, key) {
   const tag = preprocess(type, props);
-  return u$5(tag, props, key);
+  return u$6(tag, props, key);
 }
 function jsxs(type, props, key) {
   const tag = preprocess(type, props);
-  return u$5(tag, props, key);
+  return u$6(tag, props, key);
 }
 function IconTemplate() {
   return jsxs("svg", { class: "ui5-icon-root", part: "root", tabindex: this._tabIndex, dir: this._dir, viewBox: this.viewBox, role: this.effectiveAccessibleRole, focusable: "false", preserveAspectRatio: "xMidYMid meet", "aria-label": this.effectiveAccessibleName, "aria-hidden": this.effectiveAriaHidden, xmlns: "http://www.w3.org/2000/svg", onKeyDown: this._onkeydown, onKeyUp: this._onkeyup, children: [this.hasIconTooltip && jsxs("title", { id: `${this._id}-tooltip`, children: [" ", this.effectiveAccessibleName, " "] }), jsx("g", { role: "presentation", children: content$1.call(this) })] });
@@ -1996,14 +1996,14 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const iconCss = `:host{-webkit-tap-highlight-color:rgba(0,0,0,0)}:host([hidden]){display:none}:host([invalid]){display:none}:host(:not([hidden]).ui5_hovered){opacity:.7}:host{display:inline-block;width:1rem;height:1rem;color:var(--sapContent_IconColor);fill:currentColor;outline:none}:host([design="Contrast"]){color:var(--sapContent_ContrastIconColor)}:host([design="Critical"]){color:var(--sapCriticalElementColor)}:host([design="Information"]){color:var(--sapInformativeElementColor)}:host([design="Negative"]){color:var(--sapNegativeElementColor)}:host([design="Neutral"]){color:var(--sapNeutralElementColor)}:host([design="NonInteractive"]){color:var(--sapContent_NonInteractiveIconColor)}:host([design="Positive"]){color:var(--sapPositiveElementColor)}:host([mode="Interactive"][desktop]) .ui5-icon-root:focus,:host([mode="Interactive"]) .ui5-icon-root:focus-visible{outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);border-radius:var(--ui5-v2-17-0-icon-focus-border-radius)}.ui5-icon-root{display:flex;height:100%;width:100%;outline:none;vertical-align:top}:host([mode="Interactive"]){cursor:pointer}.ui5-icon-root:not([dir=ltr])>g{transform:var(--_ui5-v2-17-0_icon_transform_scale);transform-origin:center}
 `;
-var __decorate$_ = function(decorators, target, key, desc) {
+var __decorate$19 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 const ICON_NOT_FOUND = "ICON_NOT_FOUND";
-let Icon = class Icon2 extends b$6 {
+let Icon = class Icon2 extends b$7 {
   constructor() {
     super(...arguments);
     this.design = "Default";
@@ -2016,7 +2016,7 @@ let Icon = class Icon2 extends b$6 {
     if (this.mode !== IconMode$1.Interactive) {
       return;
     }
-    if (b$5(e2)) {
+    if (b$6(e2)) {
       this.fireDecoratorEvent("click");
     }
     if (A$4(e2)) {
@@ -2051,7 +2051,7 @@ let Icon = class Icon2 extends b$6 {
     }
   }
   onEnterDOM() {
-    if (f$g()) {
+    if (f$h()) {
       this.setAttribute("desktop", "");
     }
   }
@@ -2061,7 +2061,7 @@ let Icon = class Icon2 extends b$6 {
     if (!name2) {
       return;
     }
-    let iconData = D$1(name2);
+    let iconData = D$2(name2);
     if (!iconData) {
       iconData = await n$a(name2);
     }
@@ -2091,8 +2091,8 @@ let Icon = class Icon2 extends b$6 {
       this.effectiveAccessibleName = this.accessibleName;
     } else if (this.accData) {
       if (this.packageName) {
-        const i18nBundle = await f$d(this.packageName);
-        this.effectiveAccessibleName = i18nBundle.getText(this.accData) || void 0;
+        const i18nBundle2 = await f$e(this.packageName);
+        this.effectiveAccessibleName = i18nBundle2.getText(this.accData) || void 0;
       } else {
         this.effectiveAccessibleName = ((_a2 = this.accData) == null ? void 0 : _a2.defaultText) || void 0;
       }
@@ -2104,34 +2104,34 @@ let Icon = class Icon2 extends b$6 {
     return this.showTooltip && this.effectiveAccessibleName;
   }
 };
-__decorate$_([
-  s$7()
+__decorate$19([
+  s$8()
 ], Icon.prototype, "design", void 0);
-__decorate$_([
-  s$7()
+__decorate$19([
+  s$8()
 ], Icon.prototype, "name", void 0);
-__decorate$_([
-  s$7()
+__decorate$19([
+  s$8()
 ], Icon.prototype, "accessibleName", void 0);
-__decorate$_([
-  s$7({ type: Boolean })
+__decorate$19([
+  s$8({ type: Boolean })
 ], Icon.prototype, "showTooltip", void 0);
-__decorate$_([
-  s$7()
+__decorate$19([
+  s$8()
 ], Icon.prototype, "mode", void 0);
-__decorate$_([
-  s$7({ type: Array })
+__decorate$19([
+  s$8({ type: Array })
 ], Icon.prototype, "pathData", void 0);
-__decorate$_([
-  s$7({ type: Object, noAttribute: true })
+__decorate$19([
+  s$8({ type: Object, noAttribute: true })
 ], Icon.prototype, "accData", void 0);
-__decorate$_([
-  s$7({ type: Boolean })
+__decorate$19([
+  s$8({ type: Boolean })
 ], Icon.prototype, "invalid", void 0);
-__decorate$_([
-  s$7({ noAttribute: true })
+__decorate$19([
+  s$8({ noAttribute: true })
 ], Icon.prototype, "effectiveAccessibleName", void 0);
-Icon = __decorate$_([
+Icon = __decorate$19([
   m$8({
     tag: "ui5-icon",
     languageAware: true,
@@ -2140,7 +2140,7 @@ Icon = __decorate$_([
     template: IconTemplate,
     styles: iconCss
   }),
-  l$d("click", {
+  l$e("click", {
     bubbles: true
   })
 ], Icon);
@@ -2216,9 +2216,21 @@ const MESSAGE_STRIP_SUCCESS = { key: "MESSAGE_STRIP_SUCCESS", defaultText: "Succ
 const MESSAGE_STRIP_INFORMATION = { key: "MESSAGE_STRIP_INFORMATION", defaultText: "Message Strip" };
 const MESSAGE_STRIP_CUSTOM = { key: "MESSAGE_STRIP_CUSTOM", defaultText: "Custom Message Strip" };
 const INPUT_AVALIABLE_VALUES = { key: "INPUT_AVALIABLE_VALUES", defaultText: "Available Values" };
+const PANEL_ICON = { key: "PANEL_ICON", defaultText: "Expand/Collapse" };
 const RESPONSIVE_POPOVER_CLOSE_DIALOG_BUTTON = { key: "RESPONSIVE_POPOVER_CLOSE_DIALOG_BUTTON", defaultText: "Decline" };
 const SLIDER_ARIA_DESCRIPTION = { key: "SLIDER_ARIA_DESCRIPTION", defaultText: "Slider handle" };
 const LOAD_MORE_TEXT = { key: "LOAD_MORE_TEXT", defaultText: "More" };
+const TAB_ARIA_DESIGN_POSITIVE = { key: "TAB_ARIA_DESIGN_POSITIVE", defaultText: "Positive" };
+const TAB_ARIA_DESIGN_NEGATIVE = { key: "TAB_ARIA_DESIGN_NEGATIVE", defaultText: "Negative" };
+const TAB_ARIA_DESIGN_CRITICAL = { key: "TAB_ARIA_DESIGN_CRITICAL", defaultText: "Critical" };
+const TAB_ARIA_DESIGN_NEUTRAL = { key: "TAB_ARIA_DESIGN_NEUTRAL", defaultText: "Neutral" };
+const TAB_SPLIT_ROLE_DESCRIPTION = { key: "TAB_SPLIT_ROLE_DESCRIPTION", defaultText: "Tab with Subitems" };
+const TABCONTAINER_NEXT_ICON_ACC_NAME = { key: "TABCONTAINER_NEXT_ICON_ACC_NAME", defaultText: "Next" };
+const TABCONTAINER_PREVIOUS_ICON_ACC_NAME = { key: "TABCONTAINER_PREVIOUS_ICON_ACC_NAME", defaultText: "Previous" };
+const TABCONTAINER_OVERFLOW_MENU_TITLE = { key: "TABCONTAINER_OVERFLOW_MENU_TITLE", defaultText: "Overflow Menu" };
+const TABCONTAINER_END_OVERFLOW = { key: "TABCONTAINER_END_OVERFLOW", defaultText: "More" };
+const TABCONTAINER_POPOVER_CANCEL_BUTTON = { key: "TABCONTAINER_POPOVER_CANCEL_BUTTON", defaultText: "Cancel" };
+const TABCONTAINER_SUBTABS_DESCRIPTION = { key: "TABCONTAINER_SUBTABS_DESCRIPTION", defaultText: "Press down arrow key to open subitems menu" };
 const VALUE_STATE_TYPE_ERROR = { key: "VALUE_STATE_TYPE_ERROR", defaultText: "Value State Error" };
 const VALUE_STATE_TYPE_WARNING = { key: "VALUE_STATE_TYPE_WARNING", defaultText: "Value State Warning" };
 const VALUE_STATE_TYPE_SUCCESS = { key: "VALUE_STATE_TYPE_SUCCESS", defaultText: "Value State Success" };
@@ -2248,6 +2260,28 @@ const FORM_CHECKABLE_REQUIRED = { key: "FORM_CHECKABLE_REQUIRED", defaultText: "
 const FORM_SELECTABLE_REQUIRED = { key: "FORM_SELECTABLE_REQUIRED", defaultText: "Please select an item in the list." };
 const FORM_SELECTABLE_REQUIRED2 = { key: "FORM_SELECTABLE_REQUIRED2", defaultText: "Please select one of these options." };
 const FORM_TEXTFIELD_REQUIRED = { key: "FORM_TEXTFIELD_REQUIRED", defaultText: "Please fill in this field." };
+const TABLE_SELECTION = { key: "TABLE_SELECTION", defaultText: "Selection" };
+const TABLE_ROW_SELECTOR = { key: "TABLE_ROW_SELECTOR", defaultText: "Row Selector" };
+const TABLE_ROW_NAVIGATED = { key: "TABLE_ROW_NAVIGATED", defaultText: "Navigated" };
+const TABLE_NO_DATA = { key: "TABLE_NO_DATA", defaultText: "No Data" };
+const TABLE_CELL_SINGLE_CONTROL = { key: "TABLE_CELL_SINGLE_CONTROL", defaultText: "Includes element" };
+const TABLE_CELL_MULTIPLE_CONTROLS = { key: "TABLE_CELL_MULTIPLE_CONTROLS", defaultText: "Includes elements" };
+const TABLE_ROW = { key: "TABLE_ROW", defaultText: "Row" };
+const TABLE_ROW_POPIN = { key: "TABLE_ROW_POPIN", defaultText: "Row Popin" };
+const TABLE_ROW_INDEX = { key: "TABLE_ROW_INDEX", defaultText: "{0} of {1}" };
+const TABLE_ROW_SELECTED = { key: "TABLE_ROW_SELECTED", defaultText: "Selected" };
+const TABLE_ROW_ACTIVE = { key: "TABLE_ROW_ACTIVE", defaultText: "Is Active" };
+const TABLE_ROW_NAVIGABLE = { key: "TABLE_ROW_NAVIGABLE", defaultText: "Has Details" };
+const TABLE_COLUMN_HEADER_ROW = { key: "TABLE_COLUMN_HEADER_ROW", defaultText: "Column Header Row" };
+const TABLE_ROW_ACTIONS = { key: "TABLE_ROW_ACTIONS", defaultText: "Row Actions" };
+const TABLE_ROW_SINGLE_ACTION = { key: "TABLE_ROW_SINGLE_ACTION", defaultText: "1 row action available" };
+const TABLE_ROW_MULTIPLE_ACTIONS = { key: "TABLE_ROW_MULTIPLE_ACTIONS", defaultText: "{0} row actions available" };
+const TABLE_SELECT_ALL_ROWS = { key: "TABLE_SELECT_ALL_ROWS", defaultText: "Select All Rows" };
+const TABLE_DESELECT_ALL_ROWS = { key: "TABLE_DESELECT_ALL_ROWS", defaultText: "Deselect All Rows" };
+const TABLE_ACC_STATE_DISABLED = { key: "TABLE_ACC_STATE_DISABLED", defaultText: "Disabled" };
+const TABLE_ACC_STATE_READONLY = { key: "TABLE_ACC_STATE_READONLY", defaultText: "Read Only" };
+const TABLE_ACC_STATE_REQUIRED = { key: "TABLE_ACC_STATE_REQUIRED", defaultText: "Required" };
+const TABLE_ACC_STATE_EMPTY = { key: "TABLE_ACC_STATE_EMPTY", defaultText: "Empty" };
 const CHECKBOX_CHECKED = { key: "CHECKBOX_CHECKED", defaultText: "Checked" };
 const CHECKBOX_NOT_CHECKED = { key: "CHECKBOX_NOT_CHECKED", defaultText: "Not checked" };
 const CHECKBOX_ARIA_TYPE = { key: "CHECKBOX_ARIA_TYPE", defaultText: "Checkbox" };
@@ -2258,14 +2292,14 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const labelCss = `:host(:not([hidden])){display:inline-flex}:host{max-width:100%;color:var(--sapContent_LabelColor);font-family:var(--sapFontFamily);font-size:var(--sapFontSize);font-weight:400;cursor:text}.ui5-label-root{width:100%;cursor:inherit}:host{white-space:normal}:host([wrapping-type="None"]){white-space:nowrap}:host([wrapping-type="None"]) .ui5-label-root{display:inline-flex}:host([wrapping-type="None"]) .ui5-label-text-wrapper{text-overflow:ellipsis;overflow:hidden;display:inline-block;vertical-align:top;flex:0 1 auto;min-width:0}:host([show-colon]) .ui5-label-required-colon:before{content:attr(data-ui5-colon)}:host([required]) .ui5-label-required-colon:after{content:"*";color:var(--sapField_RequiredColor);font-size:var(--sapFontLargeSize);font-weight:700;position:relative;font-style:normal;vertical-align:middle;line-height:0}.ui5-label-text-wrapper{padding-inline-end:.075rem}:host([required][show-colon]) .ui5-label-required-colon:after{margin-inline-start:.125rem}:host([show-colon]) .ui5-label-required-colon{margin-inline-start:-.05rem;white-space:pre}
 `;
-var __decorate$Z = function(decorators, target, key, desc) {
+var __decorate$18 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 var Label_1;
-let Label = Label_1 = class Label2 extends b$6 {
+let Label = Label_1 = class Label2 extends b$7 {
   constructor() {
     super(...arguments);
     this.showColon = false;
@@ -2285,22 +2319,22 @@ let Label = Label_1 = class Label2 extends b$6 {
     return Label_1.i18nBundle.getText(LABEL_COLON);
   }
 };
-__decorate$Z([
-  s$7()
+__decorate$18([
+  s$8()
 ], Label.prototype, "for", void 0);
-__decorate$Z([
-  s$7({ type: Boolean })
+__decorate$18([
+  s$8({ type: Boolean })
 ], Label.prototype, "showColon", void 0);
-__decorate$Z([
-  s$7({ type: Boolean })
+__decorate$18([
+  s$8({ type: Boolean })
 ], Label.prototype, "required", void 0);
-__decorate$Z([
-  s$7()
+__decorate$18([
+  s$8()
 ], Label.prototype, "wrappingType", void 0);
-__decorate$Z([
+__decorate$18([
   i$9("@ui5/webcomponents")
 ], Label, "i18nBundle", void 0);
-Label = Label_1 = __decorate$Z([
+Label = Label_1 = __decorate$18([
   m$8({
     tag: "ui5-label",
     renderer: y$5,
@@ -2324,14 +2358,14 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const busyIndicatorCss = `:host(:not([hidden])){display:inline-block}:host([_is-busy]){color:var(--_ui5-v2-17-0_busy_indicator_color)}:host([size="S"]) .ui5-busy-indicator-root{min-width:1.625rem;min-height:.5rem}:host([size="S"][text]:not([text=""])) .ui5-busy-indicator-root{min-height:1.75rem}:host([size="S"]) .ui5-busy-indicator-circle{width:.5rem;height:.5rem}:host([size="S"]) .ui5-busy-indicator-circle:first-child,:host([size="S"]) .ui5-busy-indicator-circle:nth-child(2){margin-inline-end:.0625rem}:host(:not([size])) .ui5-busy-indicator-root,:host([size="M"]) .ui5-busy-indicator-root{min-width:3.375rem;min-height:1rem}:host([size="M"]) .ui5-busy-indicator-circle:first-child,:host([size="M"]) .ui5-busy-indicator-circle:nth-child(2){margin-inline-end:.1875rem}:host(:not([size])[text]:not([text=""])) .ui5-busy-indicator-root,:host([size="M"][text]:not([text=""])) .ui5-busy-indicator-root{min-height:2.25rem}:host(:not([size])) .ui5-busy-indicator-circle,:host([size="M"]) .ui5-busy-indicator-circle{width:1rem;height:1rem}:host([size="L"]) .ui5-busy-indicator-root{min-width:6.5rem;min-height:2rem}:host([size="L"]) .ui5-busy-indicator-circle:first-child,:host([size="L"]) .ui5-busy-indicator-circle:nth-child(2){margin-inline-end:.25rem}:host([size="L"][text]:not([text=""])) .ui5-busy-indicator-root{min-height:3.25rem}:host([size="L"]) .ui5-busy-indicator-circle{width:2rem;height:2rem}.ui5-busy-indicator-root{display:flex;justify-content:center;align-items:center;position:relative;background-color:inherit;height:inherit;border-radius:inherit}.ui5-busy-indicator-busy-area.ui5-busy-indicator-busy-area-over-content{position:absolute;inset:0;z-index:99}.ui5-busy-indicator-busy-area{display:flex;justify-content:center;align-items:center;background-color:inherit;flex-direction:column;border-radius:inherit}:host([active]) ::slotted(*){opacity:var(--sapContent_DisabledOpacity)}:host([desktop]) .ui5-busy-indicator-busy-area:focus,.ui5-busy-indicator-busy-area:focus-visible{outline:var(--_ui5-v2-17-0_busy_indicator_focus_outline);outline-offset:-2px}.ui5-busy-indicator-circles-wrapper{line-height:0}.ui5-busy-indicator-circle{display:inline-block;background-color:currentColor;border-radius:50%}.ui5-busy-indicator-circle:before{content:"";width:100%;height:100%;border-radius:100%}.circle-animation-0{animation:grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11)}.circle-animation-1{animation:grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);animation-delay:.2s}.circle-animation-2{animation:grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);animation-delay:.4s}.ui5-busy-indicator-text{width:100%;text-align:center}:host([text-placement="Top"]) .ui5-busy-indicator-text{margin-bottom:.5rem}:host(:not([text-placement])) .ui5-busy-indicator-text,:host([text-placement="Bottom"]) .ui5-busy-indicator-text{margin-top:.5rem}@keyframes grow{0%,50%,to{-webkit-transform:scale(.5);-moz-transform:scale(.5);transform:scale(.5)}25%{-webkit-transform:scale(1);-moz-transform:scale(1);transform:scale(1)}}
 `;
-var __decorate$Y = function(decorators, target, key, desc) {
+var __decorate$17 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 var BusyIndicator_1;
-let BusyIndicator = BusyIndicator_1 = class BusyIndicator2 extends b$6 {
+let BusyIndicator = BusyIndicator_1 = class BusyIndicator2 extends b$7 {
   constructor() {
     super();
     this.size = "M";
@@ -2349,7 +2383,7 @@ let BusyIndicator = BusyIndicator_1 = class BusyIndicator2 extends b$6 {
     this.addEventListener("keyup", this._preventEventHandler, {
       capture: true
     });
-    if (f$g()) {
+    if (f$h()) {
       this.setAttribute("desktop", "");
     }
   }
@@ -2374,7 +2408,7 @@ let BusyIndicator = BusyIndicator_1 = class BusyIndicator2 extends b$6 {
     };
   }
   get hasContent() {
-    return t$7(Array.from(this.children));
+    return t$8(Array.from(this.children));
   }
   onBeforeRendering() {
     if (this.active) {
@@ -2419,28 +2453,28 @@ let BusyIndicator = BusyIndicator_1 = class BusyIndicator2 extends b$6 {
     this.shadowRoot.querySelector(".ui5-busy-indicator-busy-area").focus();
   }
 };
-__decorate$Y([
-  s$7()
+__decorate$17([
+  s$8()
 ], BusyIndicator.prototype, "text", void 0);
-__decorate$Y([
-  s$7()
+__decorate$17([
+  s$8()
 ], BusyIndicator.prototype, "size", void 0);
-__decorate$Y([
-  s$7({ type: Boolean })
+__decorate$17([
+  s$8({ type: Boolean })
 ], BusyIndicator.prototype, "active", void 0);
-__decorate$Y([
-  s$7({ type: Number })
+__decorate$17([
+  s$8({ type: Number })
 ], BusyIndicator.prototype, "delay", void 0);
-__decorate$Y([
-  s$7()
+__decorate$17([
+  s$8()
 ], BusyIndicator.prototype, "textPlacement", void 0);
-__decorate$Y([
-  s$7({ type: Boolean })
+__decorate$17([
+  s$8({ type: Boolean })
 ], BusyIndicator.prototype, "_isBusy", void 0);
-__decorate$Y([
+__decorate$17([
   i$9("@ui5/webcomponents")
 ], BusyIndicator, "i18nBundle", void 0);
-BusyIndicator = BusyIndicator_1 = __decorate$Y([
+BusyIndicator = BusyIndicator_1 = __decorate$17([
   m$8({
     tag: "ui5-busy-indicator",
     languageAware: true,
@@ -2471,7 +2505,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const buttonCss = `:host{vertical-align:middle}.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block}:host{min-width:var(--_ui5-v2-17-0_button_base_min_width);height:var(--_ui5-v2-17-0_button_base_height);line-height:normal;font-family:var(--_ui5-v2-17-0_button_fontFamily);font-size:var(--sapFontSize);text-shadow:var(--_ui5-v2-17-0_button_text_shadow);border-radius:var(--_ui5-v2-17-0_button_border_radius);cursor:pointer;background-color:var(--sapButton_Background);border:var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);color:var(--sapButton_TextColor);box-sizing:border-box;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-webkit-tap-highlight-color:transparent}.ui5-button-root{min-width:inherit;cursor:inherit;height:100%;width:100%;box-sizing:border-box;display:flex;justify-content:center;align-items:center;outline:none;padding:0 var(--_ui5-v2-17-0_button_base_padding);position:relative;background:transparent;border:none;color:inherit;text-shadow:inherit;font:inherit;white-space:inherit;overflow:inherit;text-overflow:inherit;letter-spacing:inherit;word-spacing:inherit;line-height:inherit;-webkit-user-select:none;-moz-user-select:none;user-select:none}:host(:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host(:not([hidden]):not([disabled]).ui5_hovered){background:var(--sapButton_Hover_Background);border:1px solid var(--sapButton_Hover_BorderColor);color:var(--sapButton_Hover_TextColor)}.ui5-button-icon,.ui5-button-end-icon{color:inherit;flex-shrink:0}.ui5-button-end-icon{margin-inline-start:var(--_ui5-v2-17-0_button_base_icon_margin)}:host([icon-only]:not([has-end-icon])) .ui5-button-root{min-width:auto;padding:0}:host([icon-only]) .ui5-button-text{display:none}.ui5-button-text{outline:none;position:relative;white-space:inherit;overflow:inherit;text-overflow:inherit}:host([has-icon]:not(:empty)) .ui5-button-text{margin-inline-start:var(--_ui5-v2-17-0_button_base_icon_margin)}:host([has-end-icon]:not([has-icon]):empty) .ui5-button-end-icon{margin-inline-start:0}:host([disabled]){opacity:var(--sapContent_DisabledOpacity);pointer-events:unset;cursor:default}:host([has-icon]:not([icon-only]):not([has-end-icon])) .ui5-button-text{min-width:calc(var(--_ui5-v2-17-0_button_base_min_width) - var(--_ui5-v2-17-0_button_base_icon_margin) - 1rem)}:host([disabled]:active){pointer-events:none}:host([desktop]:not([loading])) .ui5-button-root:focus-within:after,:host(:not([active])) .ui5-button-root:focus-visible:after,:host([desktop][active][design="Emphasized"]) .ui5-button-root:focus-within:after,:host([active][design="Emphasized"]) .ui5-button-root:focus-visible:after,:host([desktop][active]) .ui5-button-root:focus-within:before,:host([active]) .ui5-button-root:focus-visible:before{content:"";position:absolute;box-sizing:border-box;pointer-events:none;inset:.0625rem;border:var(--_ui5-v2-17-0_button_focused_border);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}:host([desktop][active]) .ui5-button-root:focus-within:before,:host([active]) .ui5-button-root:focus-visible:before{border-color:var(--_ui5-v2-17-0_button_pressed_focused_border_color)}:host([design="Emphasized"][desktop]) .ui5-button-root:focus-within:after,:host([design="Emphasized"]) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_emphasized_focused_border_color)}:host([design="Emphasized"][desktop]) .ui5-button-root:focus-within:before,:host([design="Emphasized"]) .ui5-button-root:focus-visible:before{content:"";position:absolute;box-sizing:border-box;inset:.0625rem;border:var(--_ui5-v2-17-0_button_emphasized_focused_border_before);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}.ui5-button-root::-moz-focus-inner{border:0}bdi{display:block;white-space:inherit;overflow:inherit;text-overflow:inherit}:host([ui5-button][active]:not([disabled]):not([non-interactive])){background-image:none;background-color:var(--sapButton_Active_Background);border-color:var(--sapButton_Active_BorderColor);color:var(--sapButton_Active_TextColor)}:host([design="Positive"]){background-color:var(--sapButton_Accept_Background);border-color:var(--sapButton_Accept_BorderColor);color:var(--sapButton_Accept_TextColor)}:host([design="Positive"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Positive"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Accept_Hover_Background);border-color:var(--sapButton_Accept_Hover_BorderColor);color:var(--sapButton_Accept_Hover_TextColor)}:host([ui5-button][design="Positive"][active]:not([non-interactive])){background-color:var(--sapButton_Accept_Active_Background);border-color:var(--sapButton_Accept_Active_BorderColor);color:var(--sapButton_Accept_Active_TextColor)}:host([design="Negative"]){background-color:var(--sapButton_Reject_Background);border-color:var(--sapButton_Reject_BorderColor);color:var(--sapButton_Reject_TextColor)}:host([design="Negative"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Negative"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Reject_Hover_Background);border-color:var(--sapButton_Reject_Hover_BorderColor);color:var(--sapButton_Reject_Hover_TextColor)}:host([ui5-button][design="Negative"][active]:not([non-interactive])){background-color:var(--sapButton_Reject_Active_Background);border-color:var(--sapButton_Reject_Active_BorderColor);color:var(--sapButton_Reject_Active_TextColor)}:host([design="Attention"]){background-color:var(--sapButton_Attention_Background);border-color:var(--sapButton_Attention_BorderColor);color:var(--sapButton_Attention_TextColor)}:host([design="Attention"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Attention"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Attention_Hover_Background);border-color:var(--sapButton_Attention_Hover_BorderColor);color:var(--sapButton_Attention_Hover_TextColor)}:host([ui5-button][design="Attention"][active]:not([non-interactive])){background-color:var(--sapButton_Attention_Active_Background);border-color:var(--sapButton_Attention_Active_BorderColor);color:var(--sapButton_Attention_Active_TextColor)}:host([design="Emphasized"]){background-color:var(--sapButton_Emphasized_Background);border-color:var(--sapButton_Emphasized_BorderColor);border-width:var(--_ui5-v2-17-0_button_emphasized_border_width);color:var(--sapButton_Emphasized_TextColor);font-family:var(--sapButton_Emphasized_FontFamily)}:host([design="Emphasized"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Emphasized"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Emphasized_Hover_Background);border-color:var(--sapButton_Emphasized_Hover_BorderColor);border-width:var(--_ui5-v2-17-0_button_emphasized_border_width);color:var(--sapButton_Emphasized_Hover_TextColor)}:host([ui5-button][design="Empasized"][active]:not([non-interactive])){background-color:var(--sapButton_Emphasized_Active_Background);border-color:var(--sapButton_Emphasized_Active_BorderColor);color:var(--sapButton_Emphasized_Active_TextColor)}:host([design="Emphasized"][desktop]) .ui5-button-root:focus-within:after,:host([design="Emphasized"]) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_emphasized_focused_border_color);outline:none}:host([design="Emphasized"][desktop][active]:not([non-interactive])) .ui5-button-root:focus-within:after,:host([design="Emphasized"][active]:not([non-interactive])) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_emphasized_focused_active_border_color)}:host([design="Transparent"]){background-color:var(--sapButton_Lite_Background);color:var(--sapButton_Lite_TextColor);border-color:var(--sapButton_Lite_BorderColor)}:host([design="Transparent"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Transparent"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Lite_Hover_Background);border-color:var(--sapButton_Lite_Hover_BorderColor);color:var(--sapButton_Lite_Hover_TextColor)}:host([ui5-button][design="Transparent"][active]:not([non-interactive])){background-color:var(--sapButton_Lite_Active_Background);border-color:var(--sapButton_Lite_Active_BorderColor);color:var(--sapButton_Active_TextColor)}:host([ui5-segmented-button-item][active][desktop]) .ui5-button-root:focus-within:after,:host([ui5-segmented-button-item][active]) .ui5-button-root:focus-visible:after,:host([pressed][desktop]) .ui5-button-root:focus-within:after,:host([pressed]) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_pressed_focused_border_color);outline:none}:host([ui5-segmented-button-item][desktop]:not(:last-child)) .ui5-button-root:focus-within:after,:host([ui5-segmented-button-item]:not(:last-child)) .ui5-button-root:focus-visible:after{border-top-right-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius)}:host([ui5-segmented-button-item][desktop]:not(:first-child)) .ui5-button-root:focus-within:after,:host([ui5-segmented-button-item]:not(:first-child)) .ui5-button-root:focus-visible:after{border-top-left-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius);border-bottom-left-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius)}::slotted([slot="badge"][design="InlineText"]){pointer-events:initial;font-family:var(--sapButton_FontFamily);font-size:var(--sapFontSmallSize);padding-inline-start:.25rem;--_ui5-v2-17-0-tag-height: .625rem}::slotted([slot="badge"][design="OverlayText"]){pointer-events:initial;position:absolute;top:0;inset-inline-end:0;margin:-.5rem;z-index:1;font-family:var(--sapButton_FontFamily);font-size:var(--sapFontSmallSize);--_ui5-v2-17-0-tag-height: .625rem}::slotted([slot="badge"][design="AttentionDot"]){pointer-events:initial;content:"";position:absolute;top:0;inset-inline-end:0;margin:-.25rem;z-index:1}:host(:state(has-overlay-badge)){overflow:visible;margin-inline-end:.3125rem}:host([loading]){position:relative;pointer-events:unset}:host([loading]) .ui5-button-root{opacity:var(--sapContent_DisabledOpacity)}:host([loading][design="Emphasized"]){background-color:inherit;border:inherit}:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:inherit;border:inherit}:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover) .ui5-button-root,:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered) .ui5-button-root{background-color:var(--sapButton_Emphasized_Hover_Background)}:host([loading][design="Emphasized"]) .ui5-button-root{background-color:var(--sapButton_Emphasized_Background);border-color:var(--sapButton_Emphasized_BorderColor)}.ui5-button-busy-indicator{position:absolute;height:100%;width:100%;top:0}:host([has-end-icon]) .ui5-button-root{justify-content:flex-start}:host([icon-only]) .ui5-button-root{justify-content:center}:host([has-end-icon]) .ui5-button-end-icon{margin-left:auto}
 `;
-var __decorate$X = function(decorators, target, key, desc) {
+var __decorate$16 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -2480,7 +2514,7 @@ var __decorate$X = function(decorators, target, key, desc) {
 var Button_1;
 let isGlobalHandlerAttached$2 = false;
 let activeButton = null;
-let Button = Button_1 = class Button2 extends b$6 {
+let Button = Button_1 = class Button2 extends b$7 {
   constructor() {
     super();
     this.design = "Default";
@@ -2528,7 +2562,7 @@ let Button = Button_1 = class Button2 extends b$6 {
     this._setActiveState(true);
   }
   onEnterDOM() {
-    if (f$g()) {
+    if (f$h()) {
       this.setAttribute("desktop", "");
     }
     if (!this._clickHandlerAttached) {
@@ -2614,7 +2648,7 @@ let Button = Button_1 = class Button2 extends b$6 {
   }
   _onkeydown(e2) {
     this._cancelAction = Ko(e2) || m$6(e2);
-    if (A$4(e2) || b$5(e2)) {
+    if (A$4(e2) || b$6(e2)) {
       this._setActiveState(true);
     } else if (this._cancelAction) {
       this._setActiveState(false);
@@ -2624,7 +2658,7 @@ let Button = Button_1 = class Button2 extends b$6 {
     if (this._cancelAction) {
       e2.preventDefault();
     }
-    if (A$4(e2) || b$5(e2)) {
+    if (A$4(e2) || b$6(e2)) {
       if (this.active) {
         this._setActiveState(false);
       }
@@ -2649,7 +2683,7 @@ let Button = Button_1 = class Button2 extends b$6 {
     return this.design !== ButtonDesign$1.Default && this.design !== ButtonDesign$1.Transparent;
   }
   get isIconOnly() {
-    return !t$7(this.text);
+    return !t$8(this.text);
   }
   static typeTextMappings() {
     return {
@@ -2660,7 +2694,7 @@ let Button = Button_1 = class Button2 extends b$6 {
     };
   }
   getDefaultTooltip() {
-    if (!l$9()) {
+    if (!l$a()) {
       return;
     }
     return A$2(this.icon);
@@ -2746,88 +2780,88 @@ let Button = Button_1 = class Button2 extends b$6 {
     return !!this.badge.length && (!!this.badge[0].text.length || this.badge[0].design === ButtonBadgeDesign$1.AttentionDot);
   }
 };
-__decorate$X([
-  s$7()
+__decorate$16([
+  s$8()
 ], Button.prototype, "design", void 0);
-__decorate$X([
-  s$7({ type: Boolean })
+__decorate$16([
+  s$8({ type: Boolean })
 ], Button.prototype, "disabled", void 0);
-__decorate$X([
-  s$7()
+__decorate$16([
+  s$8()
 ], Button.prototype, "icon", void 0);
-__decorate$X([
-  s$7()
+__decorate$16([
+  s$8()
 ], Button.prototype, "endIcon", void 0);
-__decorate$X([
-  s$7({ type: Boolean })
+__decorate$16([
+  s$8({ type: Boolean })
 ], Button.prototype, "submits", void 0);
-__decorate$X([
-  s$7()
+__decorate$16([
+  s$8()
 ], Button.prototype, "tooltip", void 0);
-__decorate$X([
-  s$7()
+__decorate$16([
+  s$8()
 ], Button.prototype, "accessibleName", void 0);
-__decorate$X([
-  s$7()
+__decorate$16([
+  s$8()
 ], Button.prototype, "accessibleNameRef", void 0);
-__decorate$X([
-  s$7({ type: Object })
+__decorate$16([
+  s$8({ type: Object })
 ], Button.prototype, "accessibilityAttributes", void 0);
-__decorate$X([
-  s$7()
+__decorate$16([
+  s$8()
 ], Button.prototype, "accessibleDescription", void 0);
-__decorate$X([
-  s$7()
+__decorate$16([
+  s$8()
 ], Button.prototype, "type", void 0);
-__decorate$X([
-  s$7()
+__decorate$16([
+  s$8()
 ], Button.prototype, "accessibleRole", void 0);
-__decorate$X([
-  s$7({ type: Boolean })
+__decorate$16([
+  s$8({ type: Boolean })
 ], Button.prototype, "active", void 0);
-__decorate$X([
-  s$7({ type: Boolean })
+__decorate$16([
+  s$8({ type: Boolean })
 ], Button.prototype, "iconOnly", void 0);
-__decorate$X([
-  s$7({ type: Boolean })
+__decorate$16([
+  s$8({ type: Boolean })
 ], Button.prototype, "hasIcon", void 0);
-__decorate$X([
-  s$7({ type: Boolean })
+__decorate$16([
+  s$8({ type: Boolean })
 ], Button.prototype, "hasEndIcon", void 0);
-__decorate$X([
-  s$7({ type: Boolean })
+__decorate$16([
+  s$8({ type: Boolean })
 ], Button.prototype, "nonInteractive", void 0);
-__decorate$X([
-  s$7({ type: Boolean })
+__decorate$16([
+  s$8({ type: Boolean })
 ], Button.prototype, "loading", void 0);
-__decorate$X([
-  s$7({ type: Number })
+__decorate$16([
+  s$8({ type: Number })
 ], Button.prototype, "loadingDelay", void 0);
-__decorate$X([
-  s$7({ noAttribute: true })
+__decorate$16([
+  s$8({ noAttribute: true })
 ], Button.prototype, "buttonTitle", void 0);
-__decorate$X([
-  s$7({ type: Object })
+__decorate$16([
+  s$8({ type: Object })
 ], Button.prototype, "_iconSettings", void 0);
-__decorate$X([
-  s$7({ noAttribute: true })
+__decorate$16([
+  s$8({ noAttribute: true })
 ], Button.prototype, "forcedTabIndex", void 0);
-__decorate$X([
-  s$7({ type: Boolean })
+__decorate$16([
+  s$8({ type: Boolean })
 ], Button.prototype, "_isTouch", void 0);
-__decorate$X([
-  s$7({ type: Boolean, noAttribute: true })
+__decorate$16([
+  s$8({ type: Boolean, noAttribute: true })
 ], Button.prototype, "_cancelAction", void 0);
-__decorate$X([
+__decorate$16([
   d$8({ type: Node, "default": true })
 ], Button.prototype, "text", void 0);
-__decorate$X([
+__decorate$16([
   d$8({ type: HTMLElement, invalidateOnChildChange: true })
 ], Button.prototype, "badge", void 0);
-__decorate$X([
+__decorate$16([
   i$9("@ui5/webcomponents")
 ], Button, "i18nBundle", void 0);
-Button = Button_1 = __decorate$X([
+Button = Button_1 = __decorate$16([
   m$8({
     tag: "ui5-button",
     formAssociated: true,
@@ -2837,29 +2871,29 @@ Button = Button_1 = __decorate$X([
     styles: buttonCss,
     shadowRootOptions: { delegatesFocus: true }
   }),
-  l$d("click", {
+  l$e("click", {
     bubbles: true,
     cancelable: true
   }),
-  l$d("active-state-change", {
+  l$e("active-state-change", {
     bubbles: true,
     cancelable: true
   })
 ], Button);
 Button.define();
 const Button$1 = Button;
-const name$1k = "accept";
-const pathData$1j = "M455.8 94q9 9 3 19l-222 326q-4 8-12 9t-14-5l-151-167q-5-5-4.5-11t5.5-11l25-25q12-12 23 0l96 96q5 5 13 4.5t12-8.5l175-249q4-7 11.5-8t13.5 4z";
-const ltr$1j = true;
-const collection$1j = "SAP-icons-v4";
-const packageName$1j = "@ui5/webcomponents-icons";
-y$2(name$1k, { pathData: pathData$1j, ltr: ltr$1j, collection: collection$1j, packageName: packageName$1j });
-const name$1j = "accept";
-const pathData$1i = "M187 416q-12 0-20-9L71 299q-7-7-7-17 0-11 7.5-18.5T90 256q12 0 19 9l77 87 217-247q8-9 19-9t18.5 7.5T448 122q0 10-6 16L206 407q-7 9-19 9z";
-const ltr$1i = true;
-const collection$1i = "SAP-icons-v5";
-const packageName$1i = "@ui5/webcomponents-icons";
-y$2(name$1j, { pathData: pathData$1i, ltr: ltr$1i, collection: collection$1i, packageName: packageName$1i });
+const name$1s = "accept";
+const pathData$1r = "M455.8 94q9 9 3 19l-222 326q-4 8-12 9t-14-5l-151-167q-5-5-4.5-11t5.5-11l25-25q12-12 23 0l96 96q5 5 13 4.5t12-8.5l175-249q4-7 11.5-8t13.5 4z";
+const ltr$1r = true;
+const collection$1r = "SAP-icons-v4";
+const packageName$1r = "@ui5/webcomponents-icons";
+y$2(name$1s, { pathData: pathData$1r, ltr: ltr$1r, collection: collection$1r, packageName: packageName$1r });
+const name$1r = "accept";
+const pathData$1q = "M187 416q-12 0-20-9L71 299q-7-7-7-17 0-11 7.5-18.5T90 256q12 0 19 9l77 87 217-247q8-9 19-9t18.5 7.5T448 122q0 10-6 16L206 407q-7 9-19 9z";
+const ltr$1q = true;
+const collection$1q = "SAP-icons-v5";
+const packageName$1q = "@ui5/webcomponents-icons";
+y$2(name$1r, { pathData: pathData$1q, ltr: ltr$1q, collection: collection$1q, packageName: packageName$1q });
 const checkIcon = "accept";
 const ICON_ADD = { key: "ICON_ADD", defaultText: "Add" };
 const ICON_DECLINE = { key: "ICON_DECLINE", defaultText: "Decline" };
@@ -2870,34 +2904,36 @@ const ICON_OVERFLOW = { key: "ICON_OVERFLOW", defaultText: "More" };
 const ICON_REFRESH = { key: "ICON_REFRESH", defaultText: "Refresh" };
 const ICON_SEARCH = { key: "ICON_SEARCH", defaultText: "Search" };
 const ICON_SETTINGS = { key: "ICON_SETTINGS", defaultText: "Settings" };
+const ICON_SORT_ASCENDING = { key: "ICON_SORT_ASCENDING", defaultText: "Sort Ascending" };
+const ICON_SORT_DESCENDING = { key: "ICON_SORT_DESCENDING", defaultText: "Sort Descending" };
 const ICON_SYNCHRONIZE = { key: "ICON_SYNCHRONIZE", defaultText: "Synchronize" };
-const name$1i = "decline";
-const pathData$1h = "M86 109l22-23q5-5 12-5 6 0 11 5l124 125L380 86q5-5 11-5 7 0 12 5l22 23q12 11 0 23L301 256l124 125q11 11 0 22l-22 23q-8 5-12 5-3 0-11-5L255 301 131 426q-5 5-11 5-4 0-12-5l-22-23q-11-11 0-22l124-125L86 132q-12-12 0-23z";
-const ltr$1h = false;
-const accData$j = ICON_DECLINE;
-const collection$1h = "SAP-icons-v4";
-const packageName$1h = "@ui5/webcomponents-icons";
-y$2(name$1i, { pathData: pathData$1h, ltr: ltr$1h, accData: accData$j, collection: collection$1h, packageName: packageName$1h });
-const name$1h = "decline";
-const pathData$1g = "M292 256l117 116q7 7 7 18 0 12-7.5 19t-18.5 7q-10 0-18-8L256 292 140 408q-8 8-18 8-11 0-18.5-7.5T96 390q0-10 8-18l116-116-116-116q-8-8-8-18 0-11 7.5-18.5T122 96t18 7l116 117 116-117q7-7 18-7t18.5 7.5T416 122t-7 18z";
-const ltr$1g = false;
-const accData$i = ICON_DECLINE;
-const collection$1g = "SAP-icons-v5";
-const packageName$1g = "@ui5/webcomponents-icons";
-y$2(name$1h, { pathData: pathData$1g, ltr: ltr$1g, accData: accData$i, collection: collection$1g, packageName: packageName$1g });
+const name$1q = "decline";
+const pathData$1p = "M86 109l22-23q5-5 12-5 6 0 11 5l124 125L380 86q5-5 11-5 7 0 12 5l22 23q12 11 0 23L301 256l124 125q11 11 0 22l-22 23q-8 5-12 5-3 0-11-5L255 301 131 426q-5 5-11 5-4 0-12-5l-22-23q-11-11 0-22l124-125L86 132q-12-12 0-23z";
+const ltr$1p = false;
+const accData$n = ICON_DECLINE;
+const collection$1p = "SAP-icons-v4";
+const packageName$1p = "@ui5/webcomponents-icons";
+y$2(name$1q, { pathData: pathData$1p, ltr: ltr$1p, accData: accData$n, collection: collection$1p, packageName: packageName$1p });
+const name$1p = "decline";
+const pathData$1o = "M292 256l117 116q7 7 7 18 0 12-7.5 19t-18.5 7q-10 0-18-8L256 292 140 408q-8 8-18 8-11 0-18.5-7.5T96 390q0-10 8-18l116-116-116-116q-8-8-8-18 0-11 7.5-18.5T122 96t18 7l116 117 116-117q7-7 18-7t18.5 7.5T416 122t-7 18z";
+const ltr$1o = false;
+const accData$m = ICON_DECLINE;
+const collection$1o = "SAP-icons-v5";
+const packageName$1o = "@ui5/webcomponents-icons";
+y$2(name$1p, { pathData: pathData$1o, ltr: ltr$1o, accData: accData$m, collection: collection$1o, packageName: packageName$1o });
 const iconDecline = "decline";
-const name$1g = "less";
-const pathData$1f = "M464 224q16 0 16 16v32q0 16-16 16H48q-6 0-11-4.5T32 272v-32q0-7 5-11.5t11-4.5h416z";
-const ltr$1f = false;
-const collection$1f = "SAP-icons-v4";
-const packageName$1f = "@ui5/webcomponents-icons";
-y$2(name$1g, { pathData: pathData$1f, ltr: ltr$1f, collection: collection$1f, packageName: packageName$1f });
-const name$1f = "less";
-const pathData$1e = "M454 275H58q-11 0-18.5-7T32 250t7.5-18.5T58 224h396q11 0 18.5 7.5T480 250t-7.5 18-18.5 7z";
-const ltr$1e = false;
-const collection$1e = "SAP-icons-v5";
-const packageName$1e = "@ui5/webcomponents-icons";
-y$2(name$1f, { pathData: pathData$1e, ltr: ltr$1e, collection: collection$1e, packageName: packageName$1e });
+const name$1o = "less";
+const pathData$1n = "M464 224q16 0 16 16v32q0 16-16 16H48q-6 0-11-4.5T32 272v-32q0-7 5-11.5t11-4.5h416z";
+const ltr$1n = false;
+const collection$1n = "SAP-icons-v4";
+const packageName$1n = "@ui5/webcomponents-icons";
+y$2(name$1o, { pathData: pathData$1n, ltr: ltr$1n, collection: collection$1n, packageName: packageName$1n });
+const name$1n = "less";
+const pathData$1m = "M454 275H58q-11 0-18.5-7T32 250t7.5-18.5T58 224h396q11 0 18.5 7.5T480 250t-7.5 18-18.5 7z";
+const ltr$1m = false;
+const collection$1m = "SAP-icons-v5";
+const packageName$1m = "@ui5/webcomponents-icons";
+y$2(name$1n, { pathData: pathData$1m, ltr: ltr$1m, collection: collection$1m, packageName: packageName$1m });
 var SwitchDesign;
 (function(SwitchDesign2) {
   SwitchDesign2["Textual"] = "Textual";
@@ -2907,7 +2943,7 @@ const SwitchDesign$1 = SwitchDesign;
 function SwitchTemplate() {
   return jsxs("div", { class: {
     "ui5-switch-root": true,
-    "ui5-switch--desktop": f$g(),
+    "ui5-switch--desktop": f$h(),
     "ui5-switch--disabled": this.disabled,
     "ui5-switch--checked": this.checked,
     "ui5-switch--semantic": this.graphical,
@@ -2919,14 +2955,14 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const switchCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{-webkit-tap-highlight-color:rgba(0,0,0,0)}:host(:not([hidden])){display:inline-block}.ui5-switch-root{position:relative;display:flex;align-items:center;width:var(--_ui5-v2-17-0_switch_width);height:var(--_ui5-v2-17-0_switch_height);min-width:var(--_ui5-v2-17-0_switch_min_width);cursor:pointer;outline:none;border-radius:var(--_ui5-v2-17-0-switch-root-border-radius)}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic){width:var(--_ui5-v2-17-0_switch_with_label_width);height:var(--_ui5-v2-17-0_switch_height)}.ui5-switch-root.ui5-switch--no-label{min-width:var(--_ui5-v2-17-0_switch_width)}.ui5-switch-inner{display:flex;align-items:center;justify-content:center;height:100%;width:100%;min-width:inherit;overflow:hidden;pointer-events:none;will-change:transform}:host([checked]) .ui5-switch-inner{border-radius:6.25rem;box-shadow:var(--_ui5-v2-17-0-switch-root-box-shadow)}.ui5-switch-track{display:flex;align-items:center;height:var(--_ui5-v2-17-0_switch_track_height);width:var(--_ui5-v2-17-0_switch_track_width);border:var(--_ui5-v2-17-0-switch-track-border);border-radius:var(--_ui5-v2-17-0_switch_track_border_radius);box-sizing:border-box;transition:var(--_ui5-v2-17-0_switch_track_transition)}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-track{height:var(--_ui5-v2-17-0_switch_track_with_label_height);width:var(--_ui5-v2-17-0_switch_track_with_label_width)}.ui5-switch-slider{position:relative;height:var(--_ui5-v2-17-0_switch_height);width:100%;transition:transform .1s ease-in;transform-origin:top left}.ui5-switch-slider>*:not(.ui5-switch-handle){display:var(--_ui5-v2-17-0-switch-slider-texts-display)}.ui5-switch-handle{position:absolute;display:flex;justify-content:center;align-items:center;width:var(--_ui5-v2-17-0_switch_handle_width);height:var(--_ui5-v2-17-0_switch_handle_height);border:var(--_ui5-v2-17-0_switch_handle_border);border-radius:var(--_ui5-v2-17-0_switch_handle_border_radius);box-sizing:border-box}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-handle{height:var(--_ui5-v2-17-0_switch_handle_with_label_height);width:var(--_ui5-v2-17-0_switch_handle_with_label_width)}.ui5-switch-text{display:flex;justify-content:center;position:absolute;z-index:var(--_ui5-v2-17-0_switch_text_z_index);min-width:var(--_ui5-v2-17-0_switch_text_min_width);font-size:var(--_ui5-v2-17-0_switch_text_font_size);font-family:var(--_ui5-v2-17-0-switch-text_font_family);text-transform:uppercase;text-align:center;white-space:nowrap;user-select:none;-webkit-user-select:none}.ui5-switch-handle,.ui5-switch-text{inset-inline-start:var(--_ui5-v2-17-0_switch_handle_left);top:50%;transform:translateY(-50%)}.ui5-switch-root:focus-visible:after,.ui5-switch--desktop.ui5-switch-root:focus-within:after{content:"";position:absolute;inset-inline-start:var(--_ui5-v2-17-0_switch_root_outline_left);inset-inline-end:var(--_ui5-v2-17-0_switch_root_outline_right);top:var(--_ui5-v2-17-0_switch_root_outline_top);bottom:var(--_ui5-v2-17-0_switch_root_outline_bottom);border:var(--_ui5-v2-17-0_switch_focus_outline);border-radius:var(--_ui5-v2-17-0_switch_root_after_boreder_radius);pointer-events:none;transition:var(--_ui5-v2-17-0_switch_track_transition);outline:var(--_ui5-v2-17-0_switch_root_after_outline)}.ui5-switch-root .ui5-switch-input{position:absolute;inset-inline-start:0;width:0;height:0;margin:0;visibility:hidden;appearance:none;-webkit-appearance:none}.ui5-switch-root.ui5-switch--disabled{opacity:var(--_ui5-v2-17-0_switch_disabled_opacity);cursor:default}.ui5-switch-root.ui5-switch--checked .ui5-switch-text--off{visibility:var(--_ui5-v2-17-0_switch_text_hidden)}.ui5-switch-root:not(.ui5-switch--checked) .ui5-switch-text--on{visibility:var(--_ui5-v2-17-0_switch_text_hidden)}.ui5-switch-root.ui5-switch--checked.ui5-switch--semantic .ui5-switch-text--on,.ui5-switch-root.ui5-switch--checked.ui5-switch--desktop.ui5-switch--no-label .ui5-switch-text--on{inset-inline-start:var(--_ui5-v2-17-0_switch_text_active_left)}.ui5-switch-root:not(.ui5-switch--checked).ui5-switch--semantic .ui5-switch-text--off,.ui5-switch-root:not(.ui5-switch--checked).ui5-switch--desktop.ui5-switch--no-label .ui5-switch-text--off{inset-inline-start:var(--_ui5-v2-17-0_switch_text_inactive_left);inset-inline-end:var(--_ui5-v2-17-0_switch_text_inactive_right)}.ui5-switch-root.ui5-switch--checked .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_active_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_active_border_color)}.ui5-switch-root:not(.ui5-switch--checked) .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_inactive_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_hover_active_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_hover_active_border_color)}.ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--disabled):not(.ui5-switch--checked):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_hover_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_hover_inactive_border_color)}.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_accept_border_color)}.ui5-switch-root.ui5-switch--semantic:not(.ui5-switch--checked) .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_reject_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_hover_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_hover_accept_border_color)}.ui5-switch--desktop.ui5-switch--semantic.ui5-switch-root:not(.ui5-switch--checked):not(.ui5-switch--disabled):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_hover_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_hover_reject_border_color)}.ui5-switch-root.ui5-switch--checked .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_active_background_color);border-color:var(--_ui5-v2-17-0_switch_track_active_border_color)}.ui5-switch-root:not(.ui5-switch--checked) .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_track_inactive_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_hover_active_background_color);border-color:var(--_ui5-v2-17-0_switch_track_hover_active_border_color)}.ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--checked):not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_hover_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_track_hover_inactive_border_color)}.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_accept_border_color)}.ui5-switch-root.ui5-switch--semantic:not(.ui5-switch--checked) .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_reject_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_hover_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_hover_accept_border_color)}.ui5-switch--desktop.ui5-switch--semantic.ui5-switch-root:not(.ui5-switch--checked):not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_hover_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_hover_reject_border_color)}.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_transform_with_label)}.ui5-switch-root.ui5-switch--checked .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_transform)}.ui5-switch-text .ui5-switch-text--on .ui5-switch-no-label-icon,.ui5-switch-root.ui5-switch--semantic .ui5-switch-text,.ui5-switch-root.ui5-switch--no-label .ui5-switch-text{display:flex;justify-content:center}.ui5-switch--no-label .ui5-switch-no-label-icon-on,.ui5-switch--no-label .ui5-switch-no-label-icon-off{width:var(--_ui5-v2-17-0_switch_icon_width);height:var(--_ui5-v2-17-0_switch_icon_height);display:var(--_ui5-v2-17-0_switch_track_icon_display)}.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-on,.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-off{width:var(--_ui5-v2-17-0_switch_icon_width);height:var(--_ui5-v2-17-0_switch_icon_height)}.ui5-switch-root .ui5-switch-text{font-family:var(--_ui5-v2-17-0_switch_text_font_family);font-size:var(--_ui5-v2-17-0_switch_text_font_size);width:var(--_ui5-v2-17-0_switch_text_width)}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-text{font-family:var(--_ui5-v2-17-0_switch_text_with_label_font_family);font-size:var(--_ui5-v2-17-0_switch_text_with_label_font_size);width:var(--_ui5-v2-17-0_switch_text_with_label_width)}:host([active]) .ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--disabled) .ui5-switch-track{background:var(--_ui5-v2-17-0-switch_track-off-active-background)}:host([active]) .ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0-switch_track-on-active-background)}.ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_off_hover_box_shadow)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_on_hover_box_shadow)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_semantic_off_hover_box_shadow)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_semantic_on_hover_box_shadow)}.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-on,.ui5-switch-root.ui5-switch--semantic .ui5-switch-text--on{color:var(--_ui5-v2-17-0_switch_text_semantic_accept_color)}.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-off,.ui5-switch-root.ui5-switch--semantic .ui5-switch-text--off{color:var(--_ui5-v2-17-0_switch_text_semantic_reject_color)}.ui5-switch-root .ui5-switch-text--on{color:var(--_ui5-v2-17-0_switch_text_active_color);overflow:var(--_ui5-v2-17-0_switch_text_overflow);text-overflow:ellipsis;inset-inline-start:var(--_ui5-v2-17-0_switch_text_active_left_alternate)}.ui5-switch-root .ui5-switch-text--off{color:var(--_ui5-v2-17-0_switch_text_inactive_color);overflow:var(--_ui5-v2-17-0_switch_text_overflow);text-overflow:ellipsis;inset-inline-start:var(--_ui5-v2-17-0_switch_text_inactive_left_alternate);inset-inline-end:var(--_ui5-v2-17-0_switch_text_inactive_right_alternate)}.ui5-switch-root.ui5-switch--safari .ui5-switch-text--on.ui5-switch-no-label-icon,.ui5-switch-root.ui5-switch--safari .ui5-switch-text--off.ui5-switch-no-label-icon{inset-inline-start:.1875rem}.ui5-switch-root .ui5-switch-no-label-icon-on,.ui5-switch-root .ui5-switch-icon-on{color:var(--_ui5-v2-17-0_switch_text_active_color)}.ui5-switch-root .ui5-switch-no-label-icon-off,.ui5-switch-root .ui5-switch-icon-off{color:var(--_ui5-v2-17-0_switch_text_inactive_color)}:dir(rtl).ui5-switch-root.ui5-switch--checked:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_rtl_transform_with_label)}:dir(rtl).ui5-switch-root.ui5-switch--checked .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_rtl_transform)}
 `;
-var __decorate$W = function(decorators, target, key, desc) {
+var __decorate$15 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 var Switch_1;
-let Switch = Switch_1 = class Switch2 extends b$6 {
+let Switch = Switch_1 = class Switch2 extends b$7 {
   constructor() {
     super(...arguments);
     this.design = "Textual";
@@ -2962,7 +2998,7 @@ let Switch = Switch_1 = class Switch2 extends b$6 {
     if (A$4(e2)) {
       e2.preventDefault();
     }
-    if (b$5(e2)) {
+    if (b$6(e2)) {
       this._onclick();
     }
   }
@@ -3012,46 +3048,46 @@ let Switch = Switch_1 = class Switch2 extends b$6 {
     return [A$3(this), this.hiddenText].join(" ").trim();
   }
 };
-__decorate$W([
-  s$7()
+__decorate$15([
+  s$8()
 ], Switch.prototype, "design", void 0);
-__decorate$W([
-  s$7({ type: Boolean })
+__decorate$15([
+  s$8({ type: Boolean })
 ], Switch.prototype, "checked", void 0);
-__decorate$W([
-  s$7({ type: Boolean })
+__decorate$15([
+  s$8({ type: Boolean })
 ], Switch.prototype, "disabled", void 0);
-__decorate$W([
-  s$7()
+__decorate$15([
+  s$8()
 ], Switch.prototype, "textOn", void 0);
-__decorate$W([
-  s$7()
+__decorate$15([
+  s$8()
 ], Switch.prototype, "textOff", void 0);
-__decorate$W([
-  s$7()
+__decorate$15([
+  s$8()
 ], Switch.prototype, "accessibleName", void 0);
-__decorate$W([
-  s$7()
+__decorate$15([
+  s$8()
 ], Switch.prototype, "accessibleNameRef", void 0);
-__decorate$W([
-  s$7()
+__decorate$15([
+  s$8()
 ], Switch.prototype, "tooltip", void 0);
-__decorate$W([
-  s$7({ type: Boolean })
+__decorate$15([
+  s$8({ type: Boolean })
 ], Switch.prototype, "required", void 0);
-__decorate$W([
-  s$7()
+__decorate$15([
+  s$8()
 ], Switch.prototype, "name", void 0);
-__decorate$W([
-  s$7()
+__decorate$15([
+  s$8()
 ], Switch.prototype, "value", void 0);
-__decorate$W([
-  s$7({ type: Boolean, noAttribute: true })
+__decorate$15([
+  s$8({ type: Boolean, noAttribute: true })
 ], Switch.prototype, "_cancelAction", void 0);
-__decorate$W([
+__decorate$15([
   i$9("@ui5/webcomponents")
 ], Switch, "i18nBundle", void 0);
-Switch = Switch_1 = __decorate$W([
+Switch = Switch_1 = __decorate$15([
   m$8({
     tag: "ui5-switch",
     formAssociated: true,
@@ -3060,48 +3096,48 @@ Switch = Switch_1 = __decorate$W([
     renderer: y$5,
     template: SwitchTemplate
   }),
-  l$d("change", {
+  l$e("change", {
     bubbles: true,
     cancelable: true
   }),
-  l$d("value-changed", {
+  l$e("value-changed", {
     bubbles: true,
     cancelable: true
   })
 ], Switch);
 Switch.define();
 let n$8;
-const l$7 = /* @__PURE__ */ new Map(), a$9 = () => (n$8 || (n$8 = new window.ResizeObserver((r3) => {
+const l$8 = /* @__PURE__ */ new Map(), a$b = () => (n$8 || (n$8 = new window.ResizeObserver((r3) => {
   window.requestAnimationFrame(() => {
     r3.forEach((t2) => {
-      const s2 = l$7.get(t2.target);
+      const s2 = l$8.get(t2.target);
       s2 && Promise.all(s2.map((e2) => e2()));
     });
   });
 })), n$8), c$3 = (r3, t2) => {
-  const s2 = l$7.get(r3) || [];
-  s2.length || a$9().observe(r3), l$7.set(r3, [...s2, t2]);
-}, b$3 = (r3, t2) => {
-  const s2 = l$7.get(r3) || [];
+  const s2 = l$8.get(r3) || [];
+  s2.length || a$b().observe(r3), l$8.set(r3, [...s2, t2]);
+}, b$4 = (r3, t2) => {
+  const s2 = l$8.get(r3) || [];
   if (s2.length === 0) return;
   const e2 = s2.filter((o2) => o2 !== t2);
-  e2.length === 0 ? (a$9().unobserve(r3), l$7.delete(r3)) : l$7.set(r3, e2);
+  e2.length === 0 ? (a$b().unobserve(r3), l$8.delete(r3)) : l$8.set(r3, e2);
 };
-let f$5 = class f {
+let f$6 = class f {
   static register(t2, s2) {
     let e2 = t2;
-    v$3(e2) && (e2 = e2.getDomRef()), e2 instanceof HTMLElement ? c$3(e2, s2) : console.warn("Cannot register ResizeHandler for element", t2);
+    v$4(e2) && (e2 = e2.getDomRef()), e2 instanceof HTMLElement ? c$3(e2, s2) : console.warn("Cannot register ResizeHandler for element", t2);
   }
   static deregister(t2, s2) {
     let e2 = t2;
-    v$3(e2) && (e2 = e2.getDomRef()), e2 instanceof HTMLElement ? b$3(e2, s2) : console.warn("Cannot deregister ResizeHandler for element", t2);
+    v$4(e2) && (e2 = e2.getDomRef()), e2 instanceof HTMLElement ? b$4(e2, s2) : console.warn("Cannot deregister ResizeHandler for element", t2);
   }
 };
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const sliderBaseStyles = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host([disabled]){opacity:var(--_ui5-v2-17-0_slider_disabled_opacity);cursor:default;pointer-events:none}:host{box-sizing:border-box;cursor:pointer;vertical-align:top;width:100%}:host(:not([hidden])){display:inline-block}.ui5-slider-root{box-sizing:border-box;height:3.3125rem;outline:none;padding:var(--_ui5-v2-17-0_slider_padding);touch-action:none}.ui5-slider-inner{background-repeat:no-repeat;position:relative;min-width:var(--_ui5-v2-17-0_slider_inner_min_width);height:100%}.ui5-slider-progress-container{width:100%;background:var(--_ui5-v2-17-0_slider_progress_container_background);border:var(--_ui5-v2-17-0_slider_progress_border);border-radius:var(--_ui5-v2-17-0_slider_progress_border_radius);height:var(--_ui5-v2-17-0_slider_inner_height);position:relative;box-sizing:var(--_ui5-v2-17-0_slider_progress_box_sizing);top:var(--_ui5-v2-17-0_slider_progress_container_top)}.ui5-slider-progress-container:before,.ui5-slider-progress-container:after{display:var(--_ui5-v2-17-0_slider_progress_container_dot_display);content:"";position:absolute;border-radius:50%;width:var(--_ui5-v2-17-0_slider_start_end_point_size);height:var(--_ui5-v2-17-0_slider_start_end_point_size);top:var(--_ui5-v2-17-0_slider_start_end_point_top)}.ui5-slider-progress-container:before{inset-inline-start:var(--_ui5-v2-17-0_slider_start_end_point_left);background-color:var(--_ui5-v2-17-0_slider_progress_before_background);border:var(--_ui5-v2-17-0_slider_progress_before_border)}.ui5-slider-progress-container:after{inset-inline-end:var(--_ui5-v2-17-0_slider_start_end_point_left);background-color:var(--_ui5-v2-17-0_slider_progress_after_background);border:var(--_ui5-v2-17-0_slider_progress_after_border)}.ui5-slider-progress{background:var(--_ui5-v2-17-0_slider_progress_background);border-radius:var(--_ui5-v2-17-0_slider_progress_border_radius);height:var(--_ui5-v2-17-0_slider_progress_height);position:relative;outline:none;box-sizing:var(--_ui5-v2-17-0_slider_active_progress_box_sizing);border:var(--_ui5-v2-17-0_slider_active_progress_border);left:var(--_ui5-v2-17-0_slider_active_progress_left);top:var(--_ui5-v2-17-0_slider_active_progress_top)}.ui5-slider-tickmarks{list-style:none;padding:0;margin:0;top:var(--_ui5-v2-17-0_slider_tickmark_top);display:flex;box-sizing:border-box;width:100%;justify-content:space-between;position:absolute;z-index:1}.ui5-slider-tickmarks li{height:var(--_ui5-v2-17-0_slider_tickmark_height);border-inline-start:.0625rem solid var(--_ui5-v2-17-0_slider_tickmark_bg)}.ui5-slider-handle{background:var(--_ui5-v2-17-0_slider_handle_background);border:var(--_ui5-v2-17-0_slider_handle_border);border-radius:var(--_ui5-v2-17-0_slider_handle_border_radius);position:relative;outline:none;height:var(--_ui5-v2-17-0_slider_handle_height);width:var(--_ui5-v2-17-0_slider_handle_width);box-sizing:var(--_ui5-v2-17-0_slider_handle_box_sizing);display:flex;justify-content:center;align-items:center;z-index:2}[slider-icon]{display:var(--_ui5-v2-17-0_slider_handle_icon_display);color:var(--sapContent_Selected_ForegroundColor);width:var(--_ui5-v2-17-0_slider_handle_icon_size);height:var(--_ui5-v2-17-0_slider_handle_icon_size)}.ui5-slider-root .ui5-slider-handle:focus [slider-icon]{display:var(--_ui5-v2-17-0_range_slider_active_handle_icon_display)}.ui5-slider-progress-container:hover~.ui5-slider-handle:not(:focus),.ui5-slider-handle:hover{background:var(--_ui5-v2-17-0_slider_handle_hover_background);border:var(--_ui5-v2-17-0_slider_handle_hover_border)}.ui5-slider-root:focus .ui5-slider-inner .ui5-slider-handle,.ui5-slider-handle:focus{outline:var(--_ui5-v2-17-0_slider_handle_outline);outline-offset:var(--_ui5-v2-17-0_slider_handle_outline_offset);border:var(--_ui5-v2-17-0_slider_handle_focus_border);background:var(--_ui5-v2-17-0_slider_handle_background_focus)}.ui5-slider-handle.ui5-slider-handle--start:focus,.ui5-slider-handle--end:focus{border:var(--_ui5-v2-17-0_slider_handle_focus_border)}.ui5-slider-root:focus:hover .ui5-slider-handle,.ui5-slider-handle:focus:hover{border:var(--_ui5-v2-17-0_slider_handle_focus_border)}.ui5-slider-handle-container{position:absolute;margin-inline-start:calc(-1 * var(--_ui5-v2-17-0_slider_handle_width) / 2);top:var(--_ui5-v2-17-0_slider_handle_top)}:host(:not([hidden])) .ui5-slider-handle-container .ui5-slider-tooltip{display:flex;font-family:var(--sapFontFamily);justify-content:center;align-items:center;visibility:hidden;position:absolute;left:50%;transform:translate(-50%);bottom:var(--_ui5-v2-17-0_slider_tooltip_bottom);background:var(--_ui5-v2-17-0_slider_tooltip_background);border:var(--_ui5-v2-17-0_slider_tooltip_border);border-radius:var(--_ui5-v2-17-0_slider_tooltip_border_radius);box-shadow:var(--_ui5-v2-17-0_slider_tooltip_box_shadow);font-size:var(--_ui5-v2-17-0_slider_tooltip_fontsize);color:var(--_ui5-v2-17-0_slider_tooltip_color);height:var(--_ui5-v2-17-0_slider_tooltip_height);min-width:var(--_ui5-v2-17-0_slider_tooltip_min_width);padding:var(--_ui5-v2-17-0_slider_tooltip_padding);box-sizing:var(--_ui5-v2-17-0_slider_tooltip_border_box)}:host(:not([hidden])):host([editable-tooltip]) .ui5-slider-handle-container .ui5-slider-tooltip{border:none;background:none;box-shadow:none}:host([editable-tooltip]) .ui5-slider-tooltip{padding:0;box-shadow:none}.ui5-slider-tooltip [ui5-input]{width:100%;text-align:center}.ui5-slider-tooltip-value{position:relative;display:flex;justify-content:center;align-items:center}.ui5-slider-labels{position:absolute;top:1.25rem;margin:0;padding:0;white-space:nowrap;height:1rem;width:100%;display:flex;justify-content:space-between}.ui5-slider-labels li{position:relative;list-style:none;margin:0;text-align:center;display:inline-block;font-family:var(--sapFontFamily);font-size:var(--_ui5-v2-17-0_slider_label_fontsize);padding-top:0;box-sizing:border-box;width:.0625rem;visibility:hidden}.ui5-slider-labels li:after{content:attr(data-counter);position:absolute;top:0;visibility:visible;display:inline-block;width:2rem;color:var(--_ui5-v2-17-0_slider_label_color);transform:translate(-50%)}.ui5-slider-hidden-labels li:not(:first-child):not(:last-child):after{visibility:hidden}.ui5-slider-handle:focus .ui5-slider-tooltip{bottom:var(--_ui5-v2-17-0_slider_handle_focused_tooltip_distance)}.ui5-slider-tickmarks li.ui5-slider-tickmark-in-range{border-inline-start:1px solid var(--_ui5-v2-17-0_slider_tickmark_in_range_bg)}:host([show-tickmarks]) .ui5-slider-progress{height:var(--_ui5-v2-17-0_slider_no_tickmarks_progress_height);border:var(--_ui5-v2-17-0_slider_no_tickmarks_active_progress_border);left:var(--_ui5-v2-17-0_slider_no_tickmarks_active_progress_left);top:var(--_ui5-v2-17-0_slider_no_tickmarks_active_progress_top)}:host([show-tickmarks]) .ui5-slider-progress-container{top:var(--_ui5-v2-17-0_slider_no_tickmarks_progress_container_top)}.ui5-slider-handle:focus:after{content:"";display:var(--_ui5-v2-17-0_slider_handle_focus_visibility);width:calc(100% + (var(--sapContent_FocusWidth) * 2) + 2px);height:calc(100% + (var(--sapContent_FocusWidth) * 2) + 2px);border:var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);position:absolute;border-radius:var(--_ui5-v2-17-0_slider_handle_border_radius);pointer-events:none}
 `;
-var __decorate$V = function(decorators, target, key, desc) {
+var __decorate$14 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -3116,7 +3152,7 @@ let SliderBase = SliderBase_1 = /**
  * @extends UI5Element
  * @public
  */
-class SliderBase2 extends b$6 {
+class SliderBase2 extends b$7 {
   async formElementAnchor() {
     return this.getFocusDomRefAsync();
   }
@@ -3168,14 +3204,14 @@ class SliderBase2 extends b$6 {
   // eslint-disable-line
   static get ACTION_KEYS() {
     return [
-      D$2,
+      D$3,
       R$1,
       P$2,
       _$1,
       U,
-      t$b,
+      t$c,
       S$2,
-      u$8,
+      u$9,
       ao,
       so,
       M$2,
@@ -3211,10 +3247,10 @@ class SliderBase2 extends b$6 {
     };
   }
   onEnterDOM() {
-    f$5.register(this, this._resizeHandler);
+    f$6.register(this, this._resizeHandler);
   }
   onExitDOM() {
-    f$5.deregister(this, this._resizeHandler);
+    f$6.deregister(this, this._resizeHandler);
   }
   onAfterRendering() {
     if (this.notResized) {
@@ -3340,7 +3376,7 @@ class SliderBase2 extends b$6 {
     window.addEventListener("mouseup", this._upHandler);
     window.addEventListener("touchend", this._upHandler);
     window.addEventListener("mouseout", this._windowMouseoutHandler);
-    if (l$j() && e2 instanceof TouchEvent) {
+    if (l$k() && e2 instanceof TouchEvent) {
       window.addEventListener("touchmove", this._moveHandler);
     } else {
       window.addEventListener("mousemove", this._moveHandler);
@@ -3428,7 +3464,7 @@ class SliderBase2 extends b$6 {
    * @protected
    */
   static getPageXValueFromEvent(e2) {
-    if (l$j() && e2 instanceof TouchEvent) {
+    if (l$k() && e2 instanceof TouchEvent) {
       if (e2.targetTouches && e2.targetTouches.length > 0) {
         return e2.targetTouches[0].pageX;
       }
@@ -3550,12 +3586,12 @@ class SliderBase2 extends b$6 {
   }
   static _isIncreaseValueAction(e2, directionStart) {
     if (directionStart === "right") {
-      return P$2(e2) || S$2(e2) || D$2(e2) || U(e2) || ao(e2) || j(e2);
+      return P$2(e2) || S$2(e2) || D$3(e2) || U(e2) || ao(e2) || j(e2);
     }
-    return P$2(e2) || S$2(e2) || R$1(e2) || t$b(e2) || ao(e2) || j(e2);
+    return P$2(e2) || S$2(e2) || R$1(e2) || t$c(e2) || ao(e2) || j(e2);
   }
   static _isBigStepAction(e2) {
-    return u$8(e2) || S$2(e2) || U(e2) || t$b(e2) || j(e2) || q(e2);
+    return u$9(e2) || S$2(e2) || U(e2) || t$c(e2) || j(e2) || q(e2);
   }
   get _tickmarksCount() {
     return (this._effectiveMax - this._effectiveMin) / this._effectiveStep;
@@ -3631,56 +3667,56 @@ class SliderBase2 extends b$6 {
     return "";
   }
 };
-__decorate$V([
-  s$7({ type: Number })
+__decorate$14([
+  s$8({ type: Number })
 ], SliderBase.prototype, "min", void 0);
-__decorate$V([
-  s$7({ type: Number })
+__decorate$14([
+  s$8({ type: Number })
 ], SliderBase.prototype, "max", void 0);
-__decorate$V([
-  s$7()
+__decorate$14([
+  s$8()
 ], SliderBase.prototype, "name", void 0);
-__decorate$V([
-  s$7({ type: Number })
+__decorate$14([
+  s$8({ type: Number })
 ], SliderBase.prototype, "step", void 0);
-__decorate$V([
-  s$7({ type: Number })
+__decorate$14([
+  s$8({ type: Number })
 ], SliderBase.prototype, "labelInterval", void 0);
-__decorate$V([
-  s$7({ type: Boolean })
+__decorate$14([
+  s$8({ type: Boolean })
 ], SliderBase.prototype, "showTickmarks", void 0);
-__decorate$V([
-  s$7({ type: Boolean })
+__decorate$14([
+  s$8({ type: Boolean })
 ], SliderBase.prototype, "showTooltip", void 0);
-__decorate$V([
-  s$7({ type: Boolean })
+__decorate$14([
+  s$8({ type: Boolean })
 ], SliderBase.prototype, "editableTooltip", void 0);
-__decorate$V([
-  s$7({ type: Boolean })
+__decorate$14([
+  s$8({ type: Boolean })
 ], SliderBase.prototype, "disabled", void 0);
-__decorate$V([
-  s$7()
+__decorate$14([
+  s$8()
 ], SliderBase.prototype, "accessibleName", void 0);
-__decorate$V([
-  s$7({ type: Number })
+__decorate$14([
+  s$8({ type: Number })
 ], SliderBase.prototype, "value", void 0);
-__decorate$V([
-  s$7({ type: Boolean })
+__decorate$14([
+  s$8({ type: Boolean })
 ], SliderBase.prototype, "_tooltipsOpen", void 0);
-__decorate$V([
-  s$7({ type: Boolean })
+__decorate$14([
+  s$8({ type: Boolean })
 ], SliderBase.prototype, "_labelsOverlapping", void 0);
-__decorate$V([
-  s$7({ type: Boolean })
+__decorate$14([
+  s$8({ type: Boolean })
 ], SliderBase.prototype, "_hiddenTickmarks", void 0);
-__decorate$V([
-  s$7({ type: Boolean })
+__decorate$14([
+  s$8({ type: Boolean })
 ], SliderBase.prototype, "_isInputValueValid", void 0);
-SliderBase = SliderBase_1 = __decorate$V([
-  l$d("change", {
+SliderBase = SliderBase_1 = __decorate$14([
+  l$e("change", {
     bubbles: true
   }),
-  l$d("input", {
+  l$e("input", {
     bubbles: true
   })
   /**
@@ -3693,18 +3729,18 @@ SliderBase = SliderBase_1 = __decorate$V([
    */
 ], SliderBase);
 const SliderBase$1 = SliderBase;
-const name$1e = "direction-arrows";
-const pathData$1d = "M507 244q5 5 5 12 0 6-5 11L394 379q-5 5-12 5-6 0-11-5t-5-11V144q0-12 10-15 2-1 6-1 8 0 12 4zM135 129q10 3 10 15v224q0 6-4.5 11t-11.5 5q-6 0-11-5L5 267q-5-5-5-11 0-7 5-12l113-112q4-4 11-4 4 0 6 1z";
-const ltr$1d = false;
-const collection$1d = "SAP-icons-v4";
-const packageName$1d = "@ui5/webcomponents-icons";
-y$2(name$1e, { pathData: pathData$1d, ltr: ltr$1d, collection: collection$1d, packageName: packageName$1d });
-const name$1d = "direction-arrows";
-const pathData$1c = "M135 128q11 0 18 7.5t7 18.5v204q0 11-8 18.5t-18 7.5-17-7L8 275q-8-8-8-19t8-19l109-102q7-7 18-7zm369 109q8 8 8 19t-8 19L395 377q-7 7-17 7t-18-7.5-8-18.5V154q0-12 8-19t19-7q9 0 16 7z";
-const ltr$1c = false;
-const collection$1c = "SAP-icons-v5";
-const packageName$1c = "@ui5/webcomponents-icons";
-y$2(name$1d, { pathData: pathData$1c, ltr: ltr$1c, collection: collection$1c, packageName: packageName$1c });
+const name$1m = "direction-arrows";
+const pathData$1l = "M507 244q5 5 5 12 0 6-5 11L394 379q-5 5-12 5-6 0-11-5t-5-11V144q0-12 10-15 2-1 6-1 8 0 12 4zM135 129q10 3 10 15v224q0 6-4.5 11t-11.5 5q-6 0-11-5L5 267q-5-5-5-11 0-7 5-12l113-112q4-4 11-4 4 0 6 1z";
+const ltr$1l = false;
+const collection$1l = "SAP-icons-v4";
+const packageName$1l = "@ui5/webcomponents-icons";
+y$2(name$1m, { pathData: pathData$1l, ltr: ltr$1l, collection: collection$1l, packageName: packageName$1l });
+const name$1l = "direction-arrows";
+const pathData$1k = "M135 128q11 0 18 7.5t7 18.5v204q0 11-8 18.5t-18 7.5-17-7L8 275q-8-8-8-19t8-19l109-102q7-7 18-7zm369 109q8 8 8 19t-8 19L395 377q-7 7-17 7t-18-7.5-8-18.5V154q0-12 8-19t19-7q9 0 16 7z";
+const ltr$1k = false;
+const collection$1k = "SAP-icons-v5";
+const packageName$1k = "@ui5/webcomponents-icons";
+y$2(name$1l, { pathData: pathData$1k, ltr: ltr$1k, collection: collection$1k, packageName: packageName$1k });
 const directionArrows = "direction-arrows";
 function SliderBaseTemplate(hooks) {
   return jsxs("div", { class: {
@@ -3727,22 +3763,22 @@ var o$5 = ((i3) => (i3.None = "None", i3.Positive = "Positive", i3.Critical = "C
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-var t$6;
-const i$4 = window, s$2 = i$4.trustedTypes, e$5 = s$2 ? s$2.createPolicy("lit-html", { createHTML: (t2) => t2 }) : void 0, o$4 = "$lit$", n$7 = `lit$${(Math.random() + "").slice(9)}$`, l$6 = "?" + n$7, h = `<${l$6}>`, r$6 = document, u$4 = () => r$6.createComment(""), d$4 = (t2) => null === t2 || "object" != typeof t2 && "function" != typeof t2, c$2 = Array.isArray, v = (t2) => c$2(t2) || "function" == typeof (null == t2 ? void 0 : t2[Symbol.iterator]), a$8 = "[ 	\n\f\r]", f$4 = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g, _ = /-->/g, m$4 = />/g, p$2 = RegExp(`>|${a$8}(?:([^\\s"'>=/]+)(${a$8}*=${a$8}*(?:[^ 	
-\f\r"'\`<>=]|("|')|))|$)`, "g"), g$1 = /'/g, $ = /"/g, y$1 = /^(?:script|style|textarea|title)$/i, w = (t2) => (i3, ...s2) => ({ _$litType$: t2, strings: i3, values: s2 }), x = w(1), b$2 = w(2), T$2 = Symbol.for("lit-noChange"), A$1 = Symbol.for("lit-nothing"), E$1 = /* @__PURE__ */ new WeakMap(), C = r$6.createTreeWalker(r$6, 129, null, false);
+var t$7;
+const i$4 = window, s$3 = i$4.trustedTypes, e$6 = s$3 ? s$3.createPolicy("lit-html", { createHTML: (t2) => t2 }) : void 0, o$4 = "$lit$", n$7 = `lit$${(Math.random() + "").slice(9)}$`, l$7 = "?" + n$7, h = `<${l$7}>`, r$6 = document, u$5 = () => r$6.createComment(""), d$4 = (t2) => null === t2 || "object" != typeof t2 && "function" != typeof t2, c$2 = Array.isArray, v$1 = (t2) => c$2(t2) || "function" == typeof (null == t2 ? void 0 : t2[Symbol.iterator]), a$a = "[ 	\n\f\r]", f$5 = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g, _ = /-->/g, m$4 = />/g, p$2 = RegExp(`>|${a$a}(?:([^\\s"'>=/]+)(${a$a}*=${a$a}*(?:[^ 	
+\f\r"'\`<>=]|("|')|))|$)`, "g"), g$1 = /'/g, $ = /"/g, y$1 = /^(?:script|style|textarea|title)$/i, w = (t2) => (i3, ...s2) => ({ _$litType$: t2, strings: i3, values: s2 }), x = w(1), b$3 = w(2), T$2 = Symbol.for("lit-noChange"), A$1 = Symbol.for("lit-nothing"), E$1 = /* @__PURE__ */ new WeakMap(), C = r$6.createTreeWalker(r$6, 129, null, false);
 function P$1(t2, i3) {
   if (!Array.isArray(t2) || !t2.hasOwnProperty("raw")) throw Error("invalid template strings array");
-  return void 0 !== e$5 ? e$5.createHTML(i3) : i3;
+  return void 0 !== e$6 ? e$6.createHTML(i3) : i3;
 }
 const V = (t2, i3) => {
   const s2 = t2.length - 1, e2 = [];
-  let l3, r3 = 2 === i3 ? "<svg>" : "", u4 = f$4;
+  let l3, r3 = 2 === i3 ? "<svg>" : "", u4 = f$5;
   for (let i4 = 0; i4 < s2; i4++) {
     const s3 = t2[i4];
-    let d2, c2, v2 = -1, a2 = 0;
-    for (; a2 < s3.length && (u4.lastIndex = a2, c2 = u4.exec(s3), null !== c2); ) a2 = u4.lastIndex, u4 === f$4 ? "!--" === c2[1] ? u4 = _ : void 0 !== c2[1] ? u4 = m$4 : void 0 !== c2[2] ? (y$1.test(c2[2]) && (l3 = RegExp("</" + c2[2], "g")), u4 = p$2) : void 0 !== c2[3] && (u4 = p$2) : u4 === p$2 ? ">" === c2[0] ? (u4 = null != l3 ? l3 : f$4, v2 = -1) : void 0 === c2[1] ? v2 = -2 : (v2 = u4.lastIndex - c2[2].length, d2 = c2[1], u4 = void 0 === c2[3] ? p$2 : '"' === c2[3] ? $ : g$1) : u4 === $ || u4 === g$1 ? u4 = p$2 : u4 === _ || u4 === m$4 ? u4 = f$4 : (u4 = p$2, l3 = void 0);
+    let d2, c2, v2 = -1, a3 = 0;
+    for (; a3 < s3.length && (u4.lastIndex = a3, c2 = u4.exec(s3), null !== c2); ) a3 = u4.lastIndex, u4 === f$5 ? "!--" === c2[1] ? u4 = _ : void 0 !== c2[1] ? u4 = m$4 : void 0 !== c2[2] ? (y$1.test(c2[2]) && (l3 = RegExp("</" + c2[2], "g")), u4 = p$2) : void 0 !== c2[3] && (u4 = p$2) : u4 === p$2 ? ">" === c2[0] ? (u4 = null != l3 ? l3 : f$5, v2 = -1) : void 0 === c2[1] ? v2 = -2 : (v2 = u4.lastIndex - c2[2].length, d2 = c2[1], u4 = void 0 === c2[3] ? p$2 : '"' === c2[3] ? $ : g$1) : u4 === $ || u4 === g$1 ? u4 = p$2 : u4 === _ || u4 === m$4 ? u4 = f$5 : (u4 = p$2, l3 = void 0);
     const w2 = u4 === p$2 && t2[i4 + 1].startsWith("/>") ? " " : "";
-    r3 += u4 === f$4 ? s3 + h : v2 >= 0 ? (e2.push(d2), s3.slice(0, v2) + o$4 + s3.slice(v2) + n$7 + w2) : s3 + n$7 + (-2 === v2 ? (e2.push(void 0), i4) : w2);
+    r3 += u4 === f$5 ? s3 + h : v2 >= 0 ? (e2.push(d2), s3.slice(0, v2) + o$4 + s3.slice(v2) + n$7 + w2) : s3 + n$7 + (-2 === v2 ? (e2.push(void 0), i4) : w2);
   }
   return [P$1(t2, r3 + (t2[s2] || "<?>") + (2 === i3 ? "</svg>" : "")), e2];
 };
@@ -3751,8 +3787,8 @@ class N {
     let h2;
     this.parts = [];
     let r3 = 0, d2 = 0;
-    const c2 = t2.length - 1, v2 = this.parts, [a2, f4] = V(t2, i3);
-    if (this.el = N.createElement(a2, e2), C.currentNode = this.el.content, 2 === i3) {
+    const c2 = t2.length - 1, v2 = this.parts, [a3, f4] = V(t2, i3);
+    if (this.el = N.createElement(a3, e2), C.currentNode = this.el.content, 2 === i3) {
       const t3 = this.el.content, i4 = t3.firstChild;
       i4.remove(), t3.append(...i4.childNodes);
     }
@@ -3772,12 +3808,12 @@ class N {
         if (y$1.test(h2.tagName)) {
           const t3 = h2.textContent.split(n$7), i4 = t3.length - 1;
           if (i4 > 0) {
-            h2.textContent = s$2 ? s$2.emptyScript : "";
-            for (let s2 = 0; s2 < i4; s2++) h2.append(t3[s2], u$4()), C.nextNode(), v2.push({ type: 2, index: ++r3 });
-            h2.append(t3[i4], u$4());
+            h2.textContent = s$3 ? s$3.emptyScript : "";
+            for (let s2 = 0; s2 < i4; s2++) h2.append(t3[s2], u$5()), C.nextNode(), v2.push({ type: 2, index: ++r3 });
+            h2.append(t3[i4], u$5());
           }
         }
-      } else if (8 === h2.nodeType) if (h2.data === l$6) v2.push({ type: 2, index: r3 });
+      } else if (8 === h2.nodeType) if (h2.data === l$7) v2.push({ type: 2, index: r3 });
       else {
         let t3 = -1;
         for (; -1 !== (t3 = h2.data.indexOf(n$7, t3 + 1)); ) v2.push({ type: 7, index: r3 }), t3 += n$7.length - 1;
@@ -3847,7 +3883,7 @@ class R {
     return this._$AB;
   }
   _$AI(t2, i3 = this) {
-    t2 = S$1(this, t2, i3), d$4(t2) ? t2 === A$1 || null == t2 || "" === t2 ? (this._$AH !== A$1 && this._$AR(), this._$AH = A$1) : t2 !== this._$AH && t2 !== T$2 && this._(t2) : void 0 !== t2._$litType$ ? this.g(t2) : void 0 !== t2.nodeType ? this.$(t2) : v(t2) ? this.T(t2) : this._(t2);
+    t2 = S$1(this, t2, i3), d$4(t2) ? t2 === A$1 || null == t2 || "" === t2 ? (this._$AH !== A$1 && this._$AR(), this._$AH = A$1) : t2 !== this._$AH && t2 !== T$2 && this._(t2) : void 0 !== t2._$litType$ ? this.g(t2) : void 0 !== t2.nodeType ? this.$(t2) : v$1(t2) ? this.T(t2) : this._(t2);
   }
   k(t2) {
     return this._$AA.parentNode.insertBefore(t2, this._$AB);
@@ -3875,7 +3911,7 @@ class R {
     c$2(this._$AH) || (this._$AH = [], this._$AR());
     const i3 = this._$AH;
     let s2, e2 = 0;
-    for (const o2 of t2) e2 === i3.length ? i3.push(s2 = new R(this.k(u$4()), this.k(u$4()), this, this.options)) : s2 = i3[e2], s2._$AI(o2), e2++;
+    for (const o2 of t2) e2 === i3.length ? i3.push(s2 = new R(this.k(u$5()), this.k(u$5()), this, this.options)) : s2 = i3[e2], s2._$AI(o2), e2++;
     e2 < i3.length && (this._$AR(s2 && s2._$AB.nextSibling, e2), i3.length = e2);
   }
   _$AR(t2 = this._$AA.nextSibling, i3) {
@@ -3923,7 +3959,7 @@ let H$1 = class H extends k$1 {
     this.element[this.name] = t2 === A$1 ? void 0 : t2;
   }
 };
-const I = s$2 ? s$2.emptyScript : "";
+const I = s$3 ? s$3.emptyScript : "";
 let L$2 = class L extends k$1 {
   constructor() {
     super(...arguments), this.type = 4;
@@ -3959,32 +3995,32 @@ class Z {
   }
 }
 const B = i$4.litHtmlPolyfillSupport;
-null == B || B(N, R), (null !== (t$6 = i$4.litHtmlVersions) && void 0 !== t$6 ? t$6 : i$4.litHtmlVersions = []).push("2.8.0");
+null == B || B(N, R), (null !== (t$7 = i$4.litHtmlVersions) && void 0 !== t$7 ? t$7 : i$4.litHtmlVersions = []).push("2.8.0");
 /**
  * @license
  * Copyright 2020 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const e$4 = Symbol.for(""), l$5 = (t2) => {
-  if ((null == t2 ? void 0 : t2.r) === e$4) return null == t2 ? void 0 : t2._$litStatic$;
-}, o$3 = (t2) => ({ _$litStatic$: t2, r: e$4 }), s$1 = /* @__PURE__ */ new Map(), a$7 = (t2) => (r3, ...e2) => {
+const e$5 = Symbol.for(""), l$6 = (t2) => {
+  if ((null == t2 ? void 0 : t2.r) === e$5) return null == t2 ? void 0 : t2._$litStatic$;
+}, o$3 = (t2) => ({ _$litStatic$: t2, r: e$5 }), s$2 = /* @__PURE__ */ new Map(), a$9 = (t2) => (r3, ...e2) => {
   const o2 = e2.length;
-  let i3, a2;
+  let i3, a3;
   const n2 = [], u4 = [];
   let c2, $2 = 0, f4 = false;
   for (; $2 < o2; ) {
-    for (c2 = r3[$2]; $2 < o2 && void 0 !== (a2 = e2[$2], i3 = l$5(a2)); ) c2 += i3 + r3[++$2], f4 = true;
-    $2 !== o2 && u4.push(a2), n2.push(c2), $2++;
+    for (c2 = r3[$2]; $2 < o2 && void 0 !== (a3 = e2[$2], i3 = l$6(a3)); ) c2 += i3 + r3[++$2], f4 = true;
+    $2 !== o2 && u4.push(a3), n2.push(c2), $2++;
   }
   if ($2 === o2 && n2.push(r3[o2]), f4) {
     const t3 = n2.join("$$lit$$");
-    void 0 === (r3 = s$1.get(t3)) && (n2.raw = n2, s$1.set(t3, r3 = n2)), e2 = u4;
+    void 0 === (r3 = s$2.get(t3)) && (n2.raw = n2, s$2.set(t3, r3 = n2)), e2 = u4;
   }
   return t2(r3, ...e2);
-}, n$6 = a$7(x), u$3 = a$7(b$2);
-let t$5 = (_b = class {
-}, _b.html = n$6, _b.svg = u$3, _b.unsafeStatic = o$3, _b);
-s$r("LitStatic", t$5);
+}, n$6 = a$9(x), u$4 = a$9(b$3);
+let t$6 = (_b = class {
+}, _b.html = n$6, _b.svg = u$4, _b.unsafeStatic = o$3, _b);
+s$s("LitStatic", t$6);
 /*!
  * OpenUI5
  * (c) Copyright 2009-2024 SAP SE or an SAP affiliate company.
@@ -4020,8 +4056,8 @@ var fnHtml = function(sChar) {
 var fnEncodeXML = function(sString) {
   return sString.replace(rHtml, fnHtml);
 };
-const f$3 = (t2, a2, e2, o2) => {
-  x$1(t2) && (e2 !== a2.length - 1 ? (t2.stopImmediatePropagation(), t2.preventDefault(), a2[e2 + 1].focus()) : (o2.closeValueState(), o2.focusInput())), V$1(t2) && (t2.preventDefault(), t2.stopImmediatePropagation(), e2 > 0 ? a2[e2 - 1].focus() : o2.focusInput()), P$2(t2) && (t2.preventDefault(), t2.stopImmediatePropagation(), o2.isPopoverOpen() && o2.focusInput()), _$1(t2) && (t2.preventDefault(), t2.stopImmediatePropagation(), o2.navigateToItem()), m$6(t2) && (t2.preventDefault(), t2.stopImmediatePropagation());
+const f$4 = (t2, a3, e2, o2) => {
+  x$1(t2) && (e2 !== a3.length - 1 ? (t2.stopImmediatePropagation(), t2.preventDefault(), a3[e2 + 1].focus()) : (o2.closeValueState(), o2.focusInput())), V$1(t2) && (t2.preventDefault(), t2.stopImmediatePropagation(), e2 > 0 ? a3[e2 - 1].focus() : o2.focusInput()), P$2(t2) && (t2.preventDefault(), t2.stopImmediatePropagation(), o2.isPopoverOpen() && o2.focusInput()), _$1(t2) && (t2.preventDefault(), t2.stopImmediatePropagation(), o2.navigateToItem()), m$6(t2) && (t2.preventDefault(), t2.stopImmediatePropagation());
 };
 const n$5 = (t2) => {
   let e2 = 0;
@@ -4029,7 +4065,7 @@ const n$5 = (t2) => {
 }, o$2 = (t2, e2) => {
   t2.selectionStart ? (t2.focus(), t2.setSelectionRange(e2, e2)) : t2.focus();
 };
-const t$4 = () => {
+const t$5 = () => {
   let e2 = document.activeElement;
   for (; e2 && e2.shadowRoot && e2.shadowRoot.activeElement; ) e2 = e2.shadowRoot.activeElement;
   return e2;
@@ -4045,59 +4081,59 @@ var InputType;
   InputType2["Search"] = "Search";
 })(InputType || (InputType = {}));
 const InputType$1 = InputType;
-const name$1c = "error";
-const pathData$1b = "M512 256q0 53-20.5 100t-55 81.5-81 54.5-99.5 20-100-20.5-81.5-55T20 355 0 256q0-54 20-100.5t55-81T156.5 20 256 0t99.5 20T437 75t55 81.5 20 99.5zM399 364q6-6 0-12l-86-86q-6-6 0-12l81-81q6-6 0-12l-37-37q-2-2-6-2t-6 2l-83 82q-1 3-6 3-3 0-6-3l-84-83q-1-2-6-2-4 0-6 2l-37 37q-6 6 0 12l83 82q6 6 0 12l-83 82q-2 2-2.5 6t2.5 6l36 37q4 2 6 2 4 0 6-2l85-84q2-2 6-2t6 2l88 88q4 2 6 2t6-2z";
-const ltr$1b = false;
-const accData$h = ICON_ERROR;
-const collection$1b = "SAP-icons-v4";
-const packageName$1b = "@ui5/webcomponents-icons";
-y$2(name$1c, { pathData: pathData$1b, ltr: ltr$1b, accData: accData$h, collection: collection$1b, packageName: packageName$1b });
-const name$1b = "error";
-const pathData$1a = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm45 256l74-73q9-11 9-23 0-13-9.5-22.5T352 128q-12 0-23 9l-73 74-73-74q-10-9-23-9t-22.5 9.5T128 160q0 12 9 23l74 73-74 73q-9 10-9 23t9.5 22.5T160 384t23-9l73-74 73 74q11 9 23 9 13 0 22.5-9.5T384 352t-9-23z";
-const ltr$1a = false;
-const accData$g = ICON_ERROR;
-const collection$1a = "SAP-icons-v5";
-const packageName$1a = "@ui5/webcomponents-icons";
-y$2(name$1b, { pathData: pathData$1a, ltr: ltr$1a, accData: accData$g, collection: collection$1a, packageName: packageName$1a });
+const name$1k = "error";
+const pathData$1j = "M512 256q0 53-20.5 100t-55 81.5-81 54.5-99.5 20-100-20.5-81.5-55T20 355 0 256q0-54 20-100.5t55-81T156.5 20 256 0t99.5 20T437 75t55 81.5 20 99.5zM399 364q6-6 0-12l-86-86q-6-6 0-12l81-81q6-6 0-12l-37-37q-2-2-6-2t-6 2l-83 82q-1 3-6 3-3 0-6-3l-84-83q-1-2-6-2-4 0-6 2l-37 37q-6 6 0 12l83 82q6 6 0 12l-83 82q-2 2-2.5 6t2.5 6l36 37q4 2 6 2 4 0 6-2l85-84q2-2 6-2t6 2l88 88q4 2 6 2t6-2z";
+const ltr$1j = false;
+const accData$l = ICON_ERROR;
+const collection$1j = "SAP-icons-v4";
+const packageName$1j = "@ui5/webcomponents-icons";
+y$2(name$1k, { pathData: pathData$1j, ltr: ltr$1j, accData: accData$l, collection: collection$1j, packageName: packageName$1j });
+const name$1j = "error";
+const pathData$1i = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm45 256l74-73q9-11 9-23 0-13-9.5-22.5T352 128q-12 0-23 9l-73 74-73-74q-10-9-23-9t-22.5 9.5T128 160q0 12 9 23l74 73-74 73q-9 10-9 23t9.5 22.5T160 384t23-9l73-74 73 74q11 9 23 9 13 0 22.5-9.5T384 352t-9-23z";
+const ltr$1i = false;
+const accData$k = ICON_ERROR;
+const collection$1i = "SAP-icons-v5";
+const packageName$1i = "@ui5/webcomponents-icons";
+y$2(name$1j, { pathData: pathData$1i, ltr: ltr$1i, accData: accData$k, collection: collection$1i, packageName: packageName$1i });
 const iconError = "error";
-const name$1a = "alert";
-const pathData$19 = "M501 374q5 10 7.5 19.5T512 412v5q0 31-23 47t-50 16H74q-13 0-26-4t-23.5-12-17-20T0 417q0-13 4-22.5t9-20.5L198 38q21-38 61-38 38 0 59 38zM257 127q-13 0-23.5 8T223 161q1 7 2 12 3 25 4.5 48t3.5 61q0 11 7.5 16t16.5 5q22 0 23-21l2-36 9-85q0-18-10.5-26t-23.5-8zm0 299q20 0 31.5-12t11.5-32q0-19-11.5-31T257 339t-31.5 12-11.5 31q0 20 11.5 32t31.5 12z";
-const ltr$19 = false;
-const collection$19 = "SAP-icons-v4";
-const packageName$19 = "@ui5/webcomponents-icons";
-y$2(name$1a, { pathData: pathData$19, ltr: ltr$19, collection: collection$19, packageName: packageName$19 });
-const name$19 = "alert";
-const pathData$18 = "M505 399q7 13 7 27 0 21-15.5 37.5T456 480H56q-25 0-40.5-16.5T0 426q0-14 7-27L208 59q17-27 48-27 14 0 27 6.5T304 59zM288 176q0-14-9-23t-23-9-23 9-9 23v96q0 14 9 23t23 9 23-9 9-23v-96zm-32 240q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
-const ltr$18 = false;
-const collection$18 = "SAP-icons-v5";
-const packageName$18 = "@ui5/webcomponents-icons";
-y$2(name$19, { pathData: pathData$18, ltr: ltr$18, collection: collection$18, packageName: packageName$18 });
+const name$1i = "alert";
+const pathData$1h = "M501 374q5 10 7.5 19.5T512 412v5q0 31-23 47t-50 16H74q-13 0-26-4t-23.5-12-17-20T0 417q0-13 4-22.5t9-20.5L198 38q21-38 61-38 38 0 59 38zM257 127q-13 0-23.5 8T223 161q1 7 2 12 3 25 4.5 48t3.5 61q0 11 7.5 16t16.5 5q22 0 23-21l2-36 9-85q0-18-10.5-26t-23.5-8zm0 299q20 0 31.5-12t11.5-32q0-19-11.5-31T257 339t-31.5 12-11.5 31q0 20 11.5 32t31.5 12z";
+const ltr$1h = false;
+const collection$1h = "SAP-icons-v4";
+const packageName$1h = "@ui5/webcomponents-icons";
+y$2(name$1i, { pathData: pathData$1h, ltr: ltr$1h, collection: collection$1h, packageName: packageName$1h });
+const name$1h = "alert";
+const pathData$1g = "M505 399q7 13 7 27 0 21-15.5 37.5T456 480H56q-25 0-40.5-16.5T0 426q0-14 7-27L208 59q17-27 48-27 14 0 27 6.5T304 59zM288 176q0-14-9-23t-23-9-23 9-9 23v96q0 14 9 23t23 9 23-9 9-23v-96zm-32 240q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
+const ltr$1g = false;
+const collection$1g = "SAP-icons-v5";
+const packageName$1g = "@ui5/webcomponents-icons";
+y$2(name$1h, { pathData: pathData$1g, ltr: ltr$1g, collection: collection$1g, packageName: packageName$1g });
 const iconAlert = "alert";
-const name$18 = "sys-enter-2";
-const pathData$17 = "M512 256q0 54-20 100.5t-54.5 81T356 492t-100 20q-54 0-100.5-20t-81-55T20 355.5 0 256t20.5-100 55-81.5T157 20t99-20q53 0 100 20t81.5 54.5T492 156t20 100zm-118-87q4-8-1-13l-36-36q-3-4-8-4t-8 5L237 294q-3 1-4 0l-70-52q-4-3-7-3t-4.5 2-2.5 3l-29 41q-6 8 2 14l113 95q2 2 7 2t8-4z";
-const ltr$17 = true;
-const collection$17 = "SAP-icons-v4";
-const packageName$17 = "@ui5/webcomponents-icons";
-y$2(name$18, { pathData: pathData$17, ltr: ltr$17, collection: collection$17, packageName: packageName$17 });
-const name$17 = "sys-enter-2";
-const pathData$16 = "M256 0q53 0 100 20t81.5 54.5T492 156t20 100-20 100-54.5 81.5T356 492t-100 20-100-20-81.5-54.5T20 356 0 256t20-100 54.5-81.5T156 20 256 0zm150 183q10-9 10-23 0-13-9.5-22.5T384 128t-22 9L186 308l-68-63q-9-9-22-9t-22.5 9.5T64 268q0 15 10 24l91 83q9 9 21 9 13 0 23-9z";
-const ltr$16 = true;
-const collection$16 = "SAP-icons-v5";
-const packageName$16 = "@ui5/webcomponents-icons";
-y$2(name$17, { pathData: pathData$16, ltr: ltr$16, collection: collection$16, packageName: packageName$16 });
+const name$1g = "sys-enter-2";
+const pathData$1f = "M512 256q0 54-20 100.5t-54.5 81T356 492t-100 20q-54 0-100.5-20t-81-55T20 355.5 0 256t20.5-100 55-81.5T157 20t99-20q53 0 100 20t81.5 54.5T492 156t20 100zm-118-87q4-8-1-13l-36-36q-3-4-8-4t-8 5L237 294q-3 1-4 0l-70-52q-4-3-7-3t-4.5 2-2.5 3l-29 41q-6 8 2 14l113 95q2 2 7 2t8-4z";
+const ltr$1f = true;
+const collection$1f = "SAP-icons-v4";
+const packageName$1f = "@ui5/webcomponents-icons";
+y$2(name$1g, { pathData: pathData$1f, ltr: ltr$1f, collection: collection$1f, packageName: packageName$1f });
+const name$1f = "sys-enter-2";
+const pathData$1e = "M256 0q53 0 100 20t81.5 54.5T492 156t20 100-20 100-54.5 81.5T356 492t-100 20-100-20-81.5-54.5T20 356 0 256t20-100 54.5-81.5T156 20 256 0zm150 183q10-9 10-23 0-13-9.5-22.5T384 128t-22 9L186 308l-68-63q-9-9-22-9t-22.5 9.5T64 268q0 15 10 24l91 83q9 9 21 9 13 0 23-9z";
+const ltr$1e = true;
+const collection$1e = "SAP-icons-v5";
+const packageName$1e = "@ui5/webcomponents-icons";
+y$2(name$1f, { pathData: pathData$1e, ltr: ltr$1e, collection: collection$1e, packageName: packageName$1e });
 const iconSysEnter2 = "sys-enter-2";
-const name$16 = "information";
-const pathData$15 = "M0 256q0-53 20.5-100t55-81.5T157 20t99-20q54 0 100.5 20t81 55 54.5 81.5 20 99.5q0 54-20 100.5t-54.5 81T356 492t-100 20q-54 0-100.5-20t-81-55T20 355.5 0 256zm192 112v33h128v-33h-32V215q0-6-7-6h-88v31h32v128h-33zm34-201q14 11 30 11 17 0 29.5-11.5T298 138q0-19-13-31-12-12-29-12-19 0-30.5 12.5T214 138q0 17 12 29z";
-const ltr$15 = false;
-const collection$15 = "SAP-icons-v4";
-const packageName$15 = "@ui5/webcomponents-icons";
-y$2(name$16, { pathData: pathData$15, ltr: ltr$15, collection: collection$15, packageName: packageName$15 });
-const name$15 = "information";
-const pathData$14 = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm0 160q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9zm32 64q0-14-9-23t-23-9-23 9-9 23v160q0 14 9 23t23 9 23-9 9-23V224z";
-const ltr$14 = false;
-const collection$14 = "SAP-icons-v5";
-const packageName$14 = "@ui5/webcomponents-icons";
-y$2(name$15, { pathData: pathData$14, ltr: ltr$14, collection: collection$14, packageName: packageName$14 });
+const name$1e = "information";
+const pathData$1d = "M0 256q0-53 20.5-100t55-81.5T157 20t99-20q54 0 100.5 20t81 55 54.5 81.5 20 99.5q0 54-20 100.5t-54.5 81T356 492t-100 20q-54 0-100.5-20t-81-55T20 355.5 0 256zm192 112v33h128v-33h-32V215q0-6-7-6h-88v31h32v128h-33zm34-201q14 11 30 11 17 0 29.5-11.5T298 138q0-19-13-31-12-12-29-12-19 0-30.5 12.5T214 138q0 17 12 29z";
+const ltr$1d = false;
+const collection$1d = "SAP-icons-v4";
+const packageName$1d = "@ui5/webcomponents-icons";
+y$2(name$1e, { pathData: pathData$1d, ltr: ltr$1d, collection: collection$1d, packageName: packageName$1d });
+const name$1d = "information";
+const pathData$1c = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm0 160q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9zm32 64q0-14-9-23t-23-9-23 9-9 23v160q0 14 9 23t23 9 23-9 9-23V224z";
+const ltr$1c = false;
+const collection$1c = "SAP-icons-v5";
+const packageName$1c = "@ui5/webcomponents-icons";
+y$2(name$1d, { pathData: pathData$1c, ltr: ltr$1c, collection: collection$1c, packageName: packageName$1c });
 const iconInformation = "information";
 var PopoverHorizontalAlign;
 (function(PopoverHorizontalAlign2) {
@@ -4108,18 +4144,18 @@ var PopoverHorizontalAlign;
 })(PopoverHorizontalAlign || (PopoverHorizontalAlign = {}));
 const PopoverHorizontalAlign$1 = PopoverHorizontalAlign;
 const r$5 = () => {
-  const e2 = t$4();
+  const e2 = t$5();
   return e2 && typeof e2.focus == "function" ? e2 : null;
-}, a$6 = (e2) => {
+}, a$8 = (e2) => {
   const n2 = r$5();
-  return n2 ? l$4(e2, n2) : false;
-}, l$4 = (e2, n2) => {
+  return n2 ? l$5(e2, n2) : false;
+}, l$5 = (e2, n2) => {
   let t2 = e2;
   if (t2.shadowRoot && (t2 = Array.from(t2.shadowRoot.children).find((c2) => c2.localName !== "style"), !t2)) return false;
   if (t2 === n2) return true;
   const o2 = t2.localName === "slot" ? t2.assignedNodes() : t2.children;
-  return o2 ? Array.from(o2).some((s2) => l$4(s2, n2)) : false;
-}, m$3 = (e2, n2, t2) => e2 >= t2.left && e2 <= t2.right && n2 >= t2.top && n2 <= t2.bottom, f$2 = (e2, n2) => {
+  return o2 ? Array.from(o2).some((s2) => l$5(s2, n2)) : false;
+}, m$3 = (e2, n2, t2) => e2 >= t2.left && e2 <= t2.right && n2 >= t2.top && n2 <= t2.bottom, f$3 = (e2, n2) => {
   let t2, o2;
   if (e2 instanceof MouseEvent) t2 = e2.clientX, o2 = e2.clientY;
   else {
@@ -4135,8 +4171,8 @@ const i$3 = (e2) => {
   const n2 = e2.parentElement || e2.getRootNode && e2.getRootNode().host;
   return n2 && (d$3(n2) || n2 === document.documentElement) ? n2 : i$3(n2);
 };
-const m$2 = (t2, a2, e2) => Math.min(Math.max(t2, a2), Math.max(a2, e2));
-const e$3 = { toAttribute(t2) {
+const m$2 = (t2, a3, e2) => Math.min(Math.max(t2, a3), Math.max(a3, e2));
+const e$4 = { toAttribute(t2) {
   return t2 instanceof HTMLElement ? null : t2;
 }, fromAttribute(t2) {
   return t2;
@@ -4146,30 +4182,30 @@ const i$2 = (t2) => {
   const e2 = window.getComputedStyle(t2);
   return e2.display !== "contents" && t2.offsetWidth <= 0 && t2.offsetHeight <= 0 || e2.visibility === "hidden";
 };
-const n$4 = /^(?:a|area)$/i, a$5 = /^(?:input|select|textarea|button)$/i, r$4 = (e2) => {
+const n$4 = /^(?:a|area)$/i, a$7 = /^(?:input|select|textarea|button)$/i, r$4 = (e2) => {
   if (e2.disabled) return false;
   const t2 = e2.getAttribute("tabindex");
-  return t2 != null ? parseInt(t2) >= 0 : a$5.test(e2.nodeName) || n$4.test(e2.nodeName) && !!e2.href;
+  return t2 != null ? parseInt(t2) >= 0 : a$7.test(e2.nodeName) || n$4.test(e2.nodeName) && !!e2.href;
 };
 const c$1 = (e2) => e2.hasAttribute("data-ui5-focus-trap"), d$2 = (e2) => {
   const l3 = getComputedStyle(e2);
   return e2.scrollHeight > e2.clientHeight && ["scroll", "auto"].indexOf(l3.overflowY) >= 0 || e2.scrollWidth > e2.clientWidth && ["scroll", "auto"].indexOf(l3.overflowX) >= 0;
-}, b$1 = async (e2, l3) => !e2 || i$2(e2) ? null : u$2(e2, true), H2 = async (e2, l3) => !e2 || i$2(e2) ? null : u$2(e2, false), T$1 = (e2) => e2.hasAttribute("data-ui5-focus-redirect") || !i$2(e2), L$1 = (e2) => {
-  if (v$3(e2)) {
+}, b$2 = async (e2, l3) => !e2 || i$2(e2) ? null : u$3(e2, true), H2 = async (e2, l3) => !e2 || i$2(e2) ? null : u$3(e2, false), T$1 = (e2) => e2.hasAttribute("data-ui5-focus-redirect") || !i$2(e2), L$1 = (e2) => {
+  if (v$4(e2)) {
     const l3 = e2.getAttribute("tabindex");
     if (l3 !== null && parseInt(l3) < 0) return true;
   }
   return false;
-}, u$2 = async (e2, l3, r3) => {
+}, u$3 = async (e2, l3, r3) => {
   let t2, s2, n2 = -1;
   e2.shadowRoot ? t2 = l3 ? e2.shadowRoot.firstElementChild : e2.shadowRoot.lastElementChild : e2 instanceof HTMLSlotElement && e2.assignedNodes() ? (s2 = e2.assignedElements(), n2 = l3 ? 0 : s2.length - 1, t2 = s2[n2]) : t2 = l3 ? e2.firstElementChild : e2.lastElementChild;
   let i3;
   for (; t2; ) {
     const m2 = t2;
     if (!i$2(m2) && !L$1(m2)) {
-      if (v$3(t2) && (await t2._waitForDomRef(), t2 = t2.getDomRef()), !t2 || i$2(t2)) return null;
+      if (v$4(t2) && (await t2._waitForDomRef(), t2 = t2.getDomRef()), !t2 || i$2(t2)) return null;
       if (t2.nodeType === 1 && T$1(t2) && !c$1(t2)) {
-        if (r$4(t2) || (i3 = await u$2(t2, l3), !h$6() && !i3 && d$2(t2))) return t2 && typeof t2.focus == "function" ? t2 : null;
+        if (r$4(t2) || (i3 = await u$3(t2, l3), !h$6() && !i3 && d$2(t2))) return t2 && typeof t2.focus == "function" ? t2 : null;
         if (i3) return i3 && typeof i3.focus == "function" ? i3 : null;
       }
     }
@@ -4177,21 +4213,21 @@ const c$1 = (e2) => e2.hasAttribute("data-ui5-focus-trap"), d$2 = (e2) => {
   }
   return null;
 };
-const a$4 = /* @__PURE__ */ new Map(), t$3 = /* @__PURE__ */ new Map();
-t$3.set("S", [0, 599]), t$3.set("M", [600, 1023]), t$3.set("L", [1024, 1439]), t$3.set("XL", [1440, 1 / 0]);
+const a$6 = /* @__PURE__ */ new Map(), t$4 = /* @__PURE__ */ new Map();
+t$4.set("S", [0, 599]), t$4.set("M", [600, 1023]), t$4.set("L", [1024, 1439]), t$4.set("XL", [1440, 1 / 0]);
 var S = ((e2) => (e2.RANGE_4STEPS = "4Step", e2))(S || {});
 const o$1 = (r3, e2) => {
-  a$4.set(r3, e2);
+  a$6.set(r3, e2);
 }, c = (r3, e2 = window.innerWidth) => {
-  let n2 = a$4.get(r3);
-  n2 || (n2 = a$4.get("4Step"));
+  let n2 = a$6.get(r3);
+  n2 || (n2 = a$6.get("4Step"));
   let g2;
   const s2 = Math.floor(e2);
   return n2.forEach((R2, E2) => {
     s2 >= R2[0] && s2 <= R2[1] && (g2 = E2);
   }), g2 || [...n2.keys()][0];
 }, i$1 = { RANGESETS: S, initRangeSet: o$1, getCurrentRange: c };
-i$1.initRangeSet(i$1.RANGESETS.RANGE_4STEPS, t$3);
+i$1.initRangeSet(i$1.RANGESETS.RANGE_4STEPS, t$4);
 function PopubBlockLayerTemplate() {
   return jsx("div", { class: "ui5-block-layer", onKeyDown: this._preventBlockLayerFocus, onMouseDown: this._preventBlockLayerFocus });
 }
@@ -4209,7 +4245,7 @@ var PopupAccessibleRole;
   PopupAccessibleRole2["AlertDialog"] = "AlertDialog";
 })(PopupAccessibleRole || (PopupAccessibleRole = {}));
 const PopupAccessibleRole$1 = PopupAccessibleRole;
-const t$2 = "handledByControl", a$3 = (e2, n2 = t$2) => !!e2[`_sapui_${n2}`];
+const t$3 = "handledByControl", a$5 = (e2, n2 = t$3) => !!e2[`_sapui_${n2}`];
 const OpenedPopupsRegistry = m$j("OpenedPopupsRegistry", { openedRegistry: [] });
 const openUI5Support = n$w("OpenUI5Support");
 function registerPopupWithOpenUI5Support(popupInfo) {
@@ -4251,7 +4287,7 @@ const _keydownListener = (event) => {
   if (!OpenedPopupsRegistry.openedRegistry.length) {
     return;
   }
-  if (m$6(event) && !a$3(event)) {
+  if (m$6(event) && !a$5(event)) {
     const topmostPopup = OpenedPopupsRegistry.openedRegistry[OpenedPopupsRegistry.openedRegistry.length - 1].instance;
     if (openUI5Support && topmostPopup !== openUI5Support.getTopmostPopup()) {
       return;
@@ -4291,7 +4327,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const globalStyles = `.ui5-popup-scroll-blocker{overflow:hidden}
 `;
-var __decorate$U = function(decorators, target, key, desc) {
+var __decorate$13 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -4305,7 +4341,7 @@ const createBlockingStyle = () => {
 };
 createBlockingStyle();
 const pageScrollingBlockers = /* @__PURE__ */ new Set();
-let Popup = Popup_1 = class Popup2 extends b$6 {
+let Popup = Popup_1 = class Popup2 extends b$7 {
   constructor() {
     super();
     this.preventFocusRestore = false;
@@ -4324,10 +4360,10 @@ let Popup = Popup_1 = class Popup2 extends b$6 {
   }
   onBeforeRendering() {
     this.onPhone = d$b();
-    this.onDesktop = f$g();
+    this.onDesktop = f$h();
   }
   onAfterRendering() {
-    f$h().then(() => {
+    f$i().then(() => {
       this._updateMediaRange();
     });
     if (this.open) {
@@ -4338,7 +4374,7 @@ let Popup = Popup_1 = class Popup2 extends b$6 {
   }
   onEnterDOM() {
     this.setAttribute("popover", "manual");
-    if (f$g()) {
+    if (f$h()) {
       this.setAttribute("desktop", "");
     }
     this.tabIndex = -1;
@@ -4357,7 +4393,7 @@ let Popup = Popup_1 = class Popup2 extends b$6 {
       Popup_1.unblockPageScrolling(this);
       this._removeOpenedPopup();
     }
-    f$5.deregister(this, this._resizeHandler);
+    f$6.deregister(this, this._resizeHandler);
     T$3(this);
   }
   /**
@@ -4401,7 +4437,7 @@ let Popup = Popup_1 = class Popup2 extends b$6 {
     this._addOpenedPopup();
     this.open = true;
     await this.applyInitialFocus();
-    await f$h();
+    await f$i();
     if (this.isConnected) {
       this.fireDecoratorEvent("open");
     }
@@ -4445,7 +4481,7 @@ let Popup = Popup_1 = class Popup2 extends b$6 {
   }
   _onkeydown(e2) {
     const isTabOutAttempt = e2.target === this._root && V$1(e2);
-    const isEnterOnClosedPopupChild = b$5(e2) && !this.open;
+    const isEnterOnClosedPopupChild = b$6(e2) && !this.open;
     if (isTabOutAttempt || isEnterOnClosedPopupChild) {
       e2.preventDefault();
     }
@@ -4475,7 +4511,7 @@ let Popup = Popup_1 = class Popup2 extends b$6 {
    * @private
    */
   async forwardToFirst() {
-    const firstFocusable = await b$1(this);
+    const firstFocusable = await b$2(this);
     if (firstFocusable) {
       firstFocusable.focus();
     } else {
@@ -4522,7 +4558,7 @@ let Popup = Popup_1 = class Popup2 extends b$6 {
     if (this.initialFocus) {
       element = this.getRootNode().getElementById(this.initialFocus) || document.getElementById(this.initialFocus);
     }
-    element = element || await b$1(this) || this._root;
+    element = element || await b$2(this) || this._root;
     if (element) {
       if (element === this._root) {
         element.tabIndex = -1;
@@ -4531,7 +4567,7 @@ let Popup = Popup_1 = class Popup2 extends b$6 {
     }
   }
   isFocusWithin() {
-    return a$6(this._root);
+    return a$8(this._root);
   }
   _updateMediaRange() {
     this.mediaRange = i$1.getCurrentRange(i$1.RANGESETS.RANGE_4STEPS, this.getDomRef().offsetWidth);
@@ -4600,13 +4636,13 @@ let Popup = Popup_1 = class Popup2 extends b$6 {
   }
   _registerResizeHandler() {
     if (!this._resizeHandlerRegistered) {
-      f$5.register(this, this._resizeHandler);
+      f$6.register(this, this._resizeHandler);
       this._resizeHandlerRegistered = true;
     }
   }
   _deregisterResizeHandler() {
     if (this._resizeHandlerRegistered) {
-      f$5.deregister(this, this._resizeHandler);
+      f$6.deregister(this, this._resizeHandler);
       this._resizeHandlerRegistered = false;
     }
   }
@@ -4667,66 +4703,66 @@ let Popup = Popup_1 = class Popup2 extends b$6 {
     };
   }
 };
-__decorate$U([
-  s$7()
+__decorate$13([
+  s$8()
 ], Popup.prototype, "initialFocus", void 0);
-__decorate$U([
-  s$7({ type: Boolean })
+__decorate$13([
+  s$8({ type: Boolean })
 ], Popup.prototype, "preventFocusRestore", void 0);
-__decorate$U([
-  s$7()
+__decorate$13([
+  s$8()
 ], Popup.prototype, "accessibleName", void 0);
-__decorate$U([
-  s$7()
+__decorate$13([
+  s$8()
 ], Popup.prototype, "accessibleNameRef", void 0);
-__decorate$U([
-  s$7()
+__decorate$13([
+  s$8()
 ], Popup.prototype, "accessibleRole", void 0);
-__decorate$U([
-  s$7()
+__decorate$13([
+  s$8()
 ], Popup.prototype, "accessibleDescription", void 0);
-__decorate$U([
-  s$7()
+__decorate$13([
+  s$8()
 ], Popup.prototype, "accessibleDescriptionRef", void 0);
-__decorate$U([
-  s$7({ noAttribute: true })
+__decorate$13([
+  s$8({ noAttribute: true })
 ], Popup.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$U([
-  s$7()
+__decorate$13([
+  s$8()
 ], Popup.prototype, "mediaRange", void 0);
-__decorate$U([
-  s$7({ type: Boolean })
+__decorate$13([
+  s$8({ type: Boolean })
 ], Popup.prototype, "preventInitialFocus", void 0);
-__decorate$U([
-  s$7({ type: Boolean, noAttribute: true })
+__decorate$13([
+  s$8({ type: Boolean, noAttribute: true })
 ], Popup.prototype, "isTopModalPopup", void 0);
-__decorate$U([
+__decorate$13([
   d$8({ type: HTMLElement, "default": true })
 ], Popup.prototype, "content", void 0);
-__decorate$U([
-  s$7({ type: Boolean })
+__decorate$13([
+  s$8({ type: Boolean })
 ], Popup.prototype, "onPhone", void 0);
-__decorate$U([
-  s$7({ type: Boolean })
+__decorate$13([
+  s$8({ type: Boolean })
 ], Popup.prototype, "onDesktop", void 0);
-__decorate$U([
-  s$7({ type: Boolean })
+__decorate$13([
+  s$8({ type: Boolean })
 ], Popup.prototype, "open", null);
-Popup = Popup_1 = __decorate$U([
+Popup = Popup_1 = __decorate$13([
   m$8({
     renderer: y$5,
     styles: [popupStlyes, popupBlockLayerStyles],
     template: PopupTemplate
   }),
-  l$d("before-open", {
+  l$e("before-open", {
     cancelable: true
   }),
-  l$d("open"),
-  l$d("before-close", {
+  l$e("open"),
+  l$e("before-close", {
     cancelable: true
   }),
-  l$d("close"),
-  l$d("scroll", {
+  l$e("close"),
+  l$e("scroll", {
     bubbles: true
   })
 ], Popup);
@@ -4747,7 +4783,7 @@ var PopoverVerticalAlign;
   PopoverVerticalAlign2["Stretch"] = "Stretch";
 })(PopoverVerticalAlign || (PopoverVerticalAlign = {}));
 const PopoverVerticalAlign$1 = PopoverVerticalAlign;
-const e$2 = (t2) => t2.parentElement ? t2.parentElement : t2.parentNode.host;
+const e$3 = (t2) => t2.parentElement ? t2.parentElement : t2.parentNode.host;
 let updateInterval;
 const intervalTimeout = 300;
 const openedRegistry = [];
@@ -4757,7 +4793,7 @@ const repositionPopovers = () => {
   });
 };
 const closePopoversIfLostFocus = () => {
-  let activeElement = t$4();
+  let activeElement = t$5();
   if (activeElement.tagName === "IFRAME") {
     getRegistry().reverse().forEach((popup) => {
       const popover = popup.instance;
@@ -4766,7 +4802,7 @@ const closePopoversIfLostFocus = () => {
         if (activeElement === opener) {
           return;
         }
-        activeElement = e$2(activeElement);
+        activeElement = e$3(activeElement);
       }
       popover.closePopup(false, false, true);
     });
@@ -4813,7 +4849,7 @@ const clickHandler = (event) => {
     if (popup.isModal || popup.isOpenerClicked(event)) {
       return;
     }
-    if (f$2(event, popup.getBoundingClientRect())) {
+    if (f$3(event, popup.getBoundingClientRect())) {
       break;
     }
     popup.closePopup();
@@ -4915,13 +4951,13 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const titleCss = `:host(:not([hidden])){display:block;cursor:text}:host{max-width:100%;color:var(--sapGroup_TitleTextColor);font-size:var(--sapFontHeader5Size);font-family:var(--sapFontHeaderFamily);text-shadow:var(--sapContent_TextShadow)}.ui5-title-root{display:inline-block;position:relative;font-weight:400;font-size:inherit;box-sizing:border-box;overflow:hidden;text-overflow:ellipsis;max-width:100%;vertical-align:bottom;-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;margin:0;cursor:inherit}:host{white-space:pre-line}:host([wrapping-type="None"]){white-space:nowrap}.ui5-title-root,:host ::slotted(*){white-space:inherit}::slotted(*){font-size:inherit;font-family:inherit;text-shadow:inherit}:host([size="H1"]){font-size:var(--sapFontHeader1Size)}:host([size="H2"]){font-size:var(--sapFontHeader2Size)}:host([size="H3"]){font-size:var(--sapFontHeader3Size)}:host([size="H4"]){font-size:var(--sapFontHeader4Size)}:host([size="H5"]){font-size:var(--sapFontHeader5Size)}:host([size="H6"]){font-size:var(--sapFontHeader6Size)}
 `;
-var __decorate$T = function(decorators, target, key, desc) {
+var __decorate$12 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
-let Title = class Title2 extends b$6 {
+let Title = class Title2 extends b$7 {
   constructor() {
     super(...arguments);
     this.wrappingType = "Normal";
@@ -4947,16 +4983,16 @@ let Title = class Title2 extends b$6 {
     return this.level === TitleLevel$1.H6;
   }
 };
-__decorate$T([
-  s$7()
+__decorate$12([
+  s$8()
 ], Title.prototype, "wrappingType", void 0);
-__decorate$T([
-  s$7()
+__decorate$12([
+  s$8()
 ], Title.prototype, "level", void 0);
-__decorate$T([
-  s$7()
+__decorate$12([
+  s$8()
 ], Title.prototype, "size", void 0);
-Title = __decorate$T([
+Title = __decorate$12([
   m$8({
     tag: "ui5-title",
     renderer: y$5,
@@ -4986,7 +5022,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const PopoverCss = `:host{box-shadow:var(--_ui5-v2-17-0_popover_box_shadow);background-color:var(--_ui5-v2-17-0_popover_background);max-width:calc(100vw - (100vw - 100%) - 2 * var(--_ui5-v2-17-0_popup_viewport_margin))}:host([hide-arrow]){box-shadow:var(--_ui5-v2-17-0_popover_no_arrow_box_shadow)}:host([actual-placement="Bottom"]) .ui5-popover-arrow{left:calc(50% - .5625rem);top:-.5rem;height:.5rem}:host([actual-placement="Bottom"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_upward_arrow_margin)}:host([actual-placement="Left"]) .ui5-popover-arrow{top:calc(50% - .5625rem);right:-.5625rem;width:.5625rem}:host([actual-placement="Left"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_right_arrow_margin)}:host([actual-placement="Top"]) .ui5-popover-arrow{left:calc(50% - .5625rem);height:.5625rem;top:100%}:host([actual-placement="Top"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_downward_arrow_margin)}:host(:not([actual-placement])) .ui5-popover-arrow,:host([actual-placement="Right"]) .ui5-popover-arrow{left:-.5625rem;top:calc(50% - .5625rem);width:.5625rem;height:1rem}:host(:not([actual-placement])) .ui5-popover-arrow:after,:host([actual-placement="Right"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_left_arrow_margin)}:host([hide-arrow]) .ui5-popover-arrow{display:none}.ui5-popover-root{min-width:6.25rem}.ui5-popover-arrow{pointer-events:none;display:block;width:1rem;height:1rem;position:absolute;overflow:hidden}.ui5-popover-arrow:after{content:"";display:block;width:.7rem;height:.7rem;background-color:var(--_ui5-v2-17-0_popover_background);box-shadow:var(--_ui5-v2-17-0_popover_box_shadow);transform:rotate(-45deg)}:host([modal])::backdrop{background-color:var(--_ui5-v2-17-0_popup_block_layer_background);opacity:var(--_ui5-v2-17-0_popup_block_layer_opacity)}:host([modal]) .ui5-block-layer{display:block}
 `;
-var __decorate$S = function(decorators, target, key, desc) {
+var __decorate$11 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -5053,7 +5089,7 @@ let Popover = Popover_1 = class Popover2 extends Popup$1 {
       return;
     }
     if (!opener || this.isOpenerOutsideViewport(opener.getBoundingClientRect())) {
-      await f$h();
+      await f$i();
       this.open = false;
       this.fireDecoratorEvent("close");
       return;
@@ -5156,7 +5192,7 @@ let Popover = Popover_1 = class Popover2 extends Popup$1 {
       });
       return;
     }
-    if (opener && v$3(opener) && !opener.getDomRef()) {
+    if (opener && v$4(opener) && !opener.getDomRef()) {
       return;
     }
     if (!this._opened) {
@@ -5241,7 +5277,7 @@ let Popover = Popover_1 = class Popover2 extends Popup$1 {
     });
   }
   _isUI5AbstractElement(el) {
-    return v$3(el) && el.isUI5AbstractElement;
+    return v$4(el) && el.isUI5AbstractElement;
   }
   get arrowDOM() {
     return this.shadowRoot.querySelector(".ui5-popover-arrow");
@@ -5536,52 +5572,52 @@ let Popover = Popover_1 = class Popover2 extends Popup$1 {
     }
   }
 };
-__decorate$S([
-  s$7()
+__decorate$11([
+  s$8()
 ], Popover.prototype, "headerText", void 0);
-__decorate$S([
-  s$7()
+__decorate$11([
+  s$8()
 ], Popover.prototype, "placement", void 0);
-__decorate$S([
-  s$7()
+__decorate$11([
+  s$8()
 ], Popover.prototype, "horizontalAlign", void 0);
-__decorate$S([
-  s$7()
+__decorate$11([
+  s$8()
 ], Popover.prototype, "verticalAlign", void 0);
-__decorate$S([
-  s$7({ type: Boolean })
+__decorate$11([
+  s$8({ type: Boolean })
 ], Popover.prototype, "modal", void 0);
-__decorate$S([
-  s$7({ type: Boolean })
+__decorate$11([
+  s$8({ type: Boolean })
 ], Popover.prototype, "hideArrow", void 0);
-__decorate$S([
-  s$7({ type: Boolean })
+__decorate$11([
+  s$8({ type: Boolean })
 ], Popover.prototype, "allowTargetOverlap", void 0);
-__decorate$S([
-  s$7({ type: Number, noAttribute: true })
+__decorate$11([
+  s$8({ type: Number, noAttribute: true })
 ], Popover.prototype, "arrowTranslateX", void 0);
-__decorate$S([
-  s$7({ type: Number, noAttribute: true })
+__decorate$11([
+  s$8({ type: Number, noAttribute: true })
 ], Popover.prototype, "arrowTranslateY", void 0);
-__decorate$S([
-  s$7()
+__decorate$11([
+  s$8()
 ], Popover.prototype, "actualPlacement", void 0);
-__decorate$S([
-  s$7({ type: Number, noAttribute: true })
+__decorate$11([
+  s$8({ type: Number, noAttribute: true })
 ], Popover.prototype, "_maxHeight", void 0);
-__decorate$S([
-  s$7({ type: Number, noAttribute: true })
+__decorate$11([
+  s$8({ type: Number, noAttribute: true })
 ], Popover.prototype, "_maxWidth", void 0);
-__decorate$S([
+__decorate$11([
   d$8({ type: HTMLElement })
 ], Popover.prototype, "header", void 0);
-__decorate$S([
+__decorate$11([
   d$8({ type: HTMLElement })
 ], Popover.prototype, "footer", void 0);
-__decorate$S([
-  s$7({ converter: e$3 })
+__decorate$11([
+  s$8({ converter: e$4 })
 ], Popover.prototype, "opener", null);
-Popover = Popover_1 = __decorate$S([
+Popover = Popover_1 = __decorate$11([
   m$8({
     tag: "ui5-popover",
     styles: [
@@ -5648,7 +5684,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const SuggestionsCss = `.ui5-suggestions-popover{box-shadow:var(--sapContent_Shadow1)}.ui5-suggestions-popover::part(header),.ui5-suggestions-popover::part(content){padding:0}.ui5-suggestions-popover::part(footer){padding:0 1rem}.input-root-phone.native-input-wrapper{display:contents}.input-root-phone.native-input-wrapper:before{display:none}.native-input-wrapper .ui5-input-inner-phone{margin:0}.native-input-wrapper .ui5-multi-input-mobile-dialog-button{margin-inline-start:.5rem}
 `;
-var __decorate$R = function(decorators, target, key, desc) {
+var __decorate$10 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -5666,7 +5702,7 @@ var INPUT_ACTIONS;
   INPUT_ACTIONS2["ACTION_ENTER"] = "enter";
   INPUT_ACTIONS2["ACTION_USER_INPUT"] = "input";
 })(INPUT_ACTIONS || (INPUT_ACTIONS = {}));
-let Input = Input_1 = class Input2 extends b$6 {
+let Input = Input_1 = class Input2 extends b$7 {
   get formValidityMessage() {
     return Input_1.i18nBundle.getText(FORM_TEXTFIELD_REQUIRED);
   }
@@ -5722,13 +5758,13 @@ let Input = Input_1 = class Input2 extends b$6 {
     this._valueStateLinks = [];
   }
   onEnterDOM() {
-    f$5.register(this, this._handleResizeBound);
+    f$6.register(this, this._handleResizeBound);
     y$3(this, this._updateAssociatedLabelsTexts.bind(this));
     this._enableComposition();
   }
   onExitDOM() {
     var _a2;
-    f$5.deregister(this, this._handleResizeBound);
+    f$6.deregister(this, this._handleResizeBound);
     T$3(this);
     this._removeLinksEventListeners();
     (_a2 = this._composition) == null ? void 0 : _a2.removeEventListeners();
@@ -5761,7 +5797,7 @@ let Input = Input_1 = class Input2 extends b$6 {
     this.style.setProperty(d$g("--_ui5-input-icons-count"), `${this.iconsCount}`);
     const hasItems = !!this._flattenItems.length;
     const hasValue = !!this.value;
-    const isFocused = this.shadowRoot.querySelector("input") === t$4();
+    const isFocused = this.shadowRoot.querySelector("input") === t$5();
     const preventOpenPicker = this.disabled || this.readonly;
     const shouldOpenSuggestions = !preventOpenPicker && !this._isPhone && hasItems && (this.open || hasValue && isFocused && this.isTyping);
     if (preventOpenPicker) {
@@ -5828,7 +5864,7 @@ let Input = Input_1 = class Input2 extends b$6 {
     if (x$1(e2)) {
       return this._handleTab();
     }
-    if (b$5(e2)) {
+    if (b$6(e2)) {
       const isValueUnchanged = this.previousValue === this.getInputDOMRefSync().value;
       const shouldSubmit = this._internals.form && this._internals.form.querySelectorAll("[ui5-input]").length === 1;
       this._enterKeyDown = true;
@@ -5908,7 +5944,7 @@ let Input = Input_1 = class Input2 extends b$6 {
     const links = this.linksInAriaValueStateHiddenText;
     links.forEach((link, index) => {
       this._linksListenersArray.push((e2) => {
-        f$3(e2, links, index, {
+        f$4(e2, links, index, {
           closeValueState: () => {
             var _a2, _b2;
             if ((_a2 = this.Suggestions) == null ? void 0 : _a2.isOpened()) {
@@ -6471,9 +6507,9 @@ let Input = Input_1 = class Input2 extends b$6 {
     };
   }
   announceSelectedItem() {
-    const invisibleText = this.shadowRoot.querySelector(`#selectionText`);
-    if (invisibleText) {
-      invisibleText.textContent = this.itemSelectionAnnounce;
+    const invisibleText2 = this.shadowRoot.querySelector(`#selectionText`);
+    if (invisibleText2) {
+      invisibleText2.textContent = this.itemSelectionAnnounce;
     }
   }
   fireSelectionChange(item, isValueFromSuggestions) {
@@ -6759,124 +6795,124 @@ let Input = Input_1 = class Input2 extends b$6 {
     return value;
   }
 };
-__decorate$R([
-  s$7({ type: Boolean })
+__decorate$10([
+  s$8({ type: Boolean })
 ], Input.prototype, "disabled", void 0);
-__decorate$R([
-  s$7({ type: Boolean })
+__decorate$10([
+  s$8({ type: Boolean })
 ], Input.prototype, "highlight", void 0);
-__decorate$R([
-  s$7()
+__decorate$10([
+  s$8()
 ], Input.prototype, "placeholder", void 0);
-__decorate$R([
-  s$7({ type: Boolean })
+__decorate$10([
+  s$8({ type: Boolean })
 ], Input.prototype, "readonly", void 0);
-__decorate$R([
-  s$7({ type: Boolean })
+__decorate$10([
+  s$8({ type: Boolean })
 ], Input.prototype, "required", void 0);
-__decorate$R([
-  s$7({ type: Boolean })
+__decorate$10([
+  s$8({ type: Boolean })
 ], Input.prototype, "noTypeahead", void 0);
-__decorate$R([
-  s$7()
+__decorate$10([
+  s$8()
 ], Input.prototype, "type", void 0);
-__decorate$R([
-  s$7()
+__decorate$10([
+  s$8()
 ], Input.prototype, "value", void 0);
-__decorate$R([
-  s$7({ noAttribute: true })
+__decorate$10([
+  s$8({ noAttribute: true })
 ], Input.prototype, "_innerValue", void 0);
-__decorate$R([
-  s$7()
+__decorate$10([
+  s$8()
 ], Input.prototype, "valueState", void 0);
-__decorate$R([
-  s$7()
+__decorate$10([
+  s$8()
 ], Input.prototype, "name", void 0);
-__decorate$R([
-  s$7({ type: Boolean })
+__decorate$10([
+  s$8({ type: Boolean })
 ], Input.prototype, "showSuggestions", void 0);
-__decorate$R([
-  s$7({ type: Number })
+__decorate$10([
+  s$8({ type: Number })
 ], Input.prototype, "maxlength", void 0);
-__decorate$R([
-  s$7()
+__decorate$10([
+  s$8()
 ], Input.prototype, "accessibleName", void 0);
-__decorate$R([
-  s$7()
+__decorate$10([
+  s$8()
 ], Input.prototype, "accessibleNameRef", void 0);
-__decorate$R([
-  s$7()
+__decorate$10([
+  s$8()
 ], Input.prototype, "accessibleDescription", void 0);
-__decorate$R([
-  s$7()
+__decorate$10([
+  s$8()
 ], Input.prototype, "accessibleDescriptionRef", void 0);
-__decorate$R([
-  s$7({ type: Boolean })
+__decorate$10([
+  s$8({ type: Boolean })
 ], Input.prototype, "showClearIcon", void 0);
-__decorate$R([
-  s$7({ type: Boolean })
+__decorate$10([
+  s$8({ type: Boolean })
 ], Input.prototype, "open", void 0);
-__decorate$R([
-  s$7({ type: Boolean })
+__decorate$10([
+  s$8({ type: Boolean })
 ], Input.prototype, "_effectiveShowClearIcon", void 0);
-__decorate$R([
-  s$7({ type: Boolean })
+__decorate$10([
+  s$8({ type: Boolean })
 ], Input.prototype, "focused", void 0);
-__decorate$R([
-  s$7()
+__decorate$10([
+  s$8()
 ], Input.prototype, "hint", void 0);
-__decorate$R([
-  s$7({ type: Boolean })
+__decorate$10([
+  s$8({ type: Boolean })
 ], Input.prototype, "valueStateOpen", void 0);
-__decorate$R([
-  s$7({ type: Object })
+__decorate$10([
+  s$8({ type: Object })
 ], Input.prototype, "_inputAccInfo", void 0);
-__decorate$R([
-  s$7({ type: Object })
+__decorate$10([
+  s$8({ type: Object })
 ], Input.prototype, "_nativeInputAttributes", void 0);
-__decorate$R([
-  s$7({ type: Number })
+__decorate$10([
+  s$8({ type: Number })
 ], Input.prototype, "_inputWidth", void 0);
-__decorate$R([
-  s$7({ type: Number })
+__decorate$10([
+  s$8({ type: Number })
 ], Input.prototype, "_listWidth", void 0);
-__decorate$R([
-  s$7({ type: Boolean, noAttribute: true })
+__decorate$10([
+  s$8({ type: Boolean, noAttribute: true })
 ], Input.prototype, "_inputIconFocused", void 0);
-__decorate$R([
-  s$7({ noAttribute: true })
+__decorate$10([
+  s$8({ noAttribute: true })
 ], Input.prototype, "_associatedLabelsTexts", void 0);
-__decorate$R([
-  s$7({ noAttribute: true })
+__decorate$10([
+  s$8({ noAttribute: true })
 ], Input.prototype, "_accessibleLabelsRefTexts", void 0);
-__decorate$R([
-  s$7({ noAttribute: true })
+__decorate$10([
+  s$8({ noAttribute: true })
 ], Input.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$R([
-  s$7({ type: Object })
+__decorate$10([
+  s$8({ type: Object })
 ], Input.prototype, "Suggestions", void 0);
-__decorate$R([
-  s$7({ type: Array })
+__decorate$10([
+  s$8({ type: Array })
 ], Input.prototype, "_linksListenersArray", void 0);
-__decorate$R([
-  s$7({ type: Boolean, noAttribute: true })
+__decorate$10([
+  s$8({ type: Boolean, noAttribute: true })
 ], Input.prototype, "_isComposing", void 0);
-__decorate$R([
+__decorate$10([
   d$8({ type: HTMLElement, "default": true })
 ], Input.prototype, "suggestionItems", void 0);
-__decorate$R([
+__decorate$10([
   d$8()
 ], Input.prototype, "icon", void 0);
-__decorate$R([
+__decorate$10([
   d$8({
     type: HTMLElement,
     invalidateOnChildChange: true
   })
 ], Input.prototype, "valueStateMessage", void 0);
-__decorate$R([
+__decorate$10([
   i$9("@ui5/webcomponents")
 ], Input, "i18nBundle", void 0);
-Input = Input_1 = __decorate$R([
+Input = Input_1 = __decorate$10([
   m$8({
     tag: "ui5-input",
     languageAware: true,
@@ -6890,29 +6926,29 @@ Input = Input_1 = __decorate$R([
       SuggestionsCss
     ]
   }),
-  l$d("change", {
+  l$e("change", {
     bubbles: true
   }),
-  l$d("input", {
+  l$e("input", {
     bubbles: true,
     cancelable: true
   }),
-  l$d("select", {
+  l$e("select", {
     bubbles: true
   }),
-  l$d("selection-change", {
+  l$e("selection-change", {
     bubbles: true
   }),
-  l$d("type-ahead", {
+  l$e("type-ahead", {
     bubbles: true
   }),
-  l$d("suggestion-scroll", {
+  l$e("suggestion-scroll", {
     bubbles: true
   }),
-  l$d("open", {
+  l$e("open", {
     bubbles: true
   }),
-  l$d("close")
+  l$e("close")
 ], Input);
 Input.define();
 const Input$1 = Input;
@@ -6923,14 +6959,14 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const SliderTooltipCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:popover-open){margin:-28px 0 0;display:inline-block;height:1rem;background:var(--sapBackgroundColor);border:none;box-shadow:var(--sapContent_Shadow1);border-radius:.0625rem;padding:0 .5rem;font-family:var(--sapFontFamily);font-size:var(--sapFontSmallSize);color:var(--sapTextColor);display:flex;justify-content:center;align-items:center;overflow:hidden}:host([editable]:popover-open){cursor:pointer;height:fit-content;border:none;padding:0;margin-top:-3rem;box-shadow:none}:host([editable]:popover-open) [ui5-input]{width:min-content;text-align:center}
 `;
-var __decorate$Q = function(decorators, target, key, desc) {
+var __decorate$$ = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 var SliderTooltip_1;
-let SliderTooltip = SliderTooltip_1 = class SliderTooltip2 extends b$6 {
+let SliderTooltip = SliderTooltip_1 = class SliderTooltip2 extends b$7 {
   constructor() {
     super();
     this.open = false;
@@ -6991,7 +7027,7 @@ let SliderTooltip = SliderTooltip_1 = class SliderTooltip2 extends b$6 {
       this.fireDecoratorEvent("change", { value: this.inputRef.value });
       this.fireDecoratorEvent("forward-focus");
     }
-    if (b$5(e2)) {
+    if (b$6(e2)) {
       if (!this.isValueValid(this.inputRef.value)) {
         this.valueState = o$5.Negative;
         return;
@@ -7025,42 +7061,42 @@ let SliderTooltip = SliderTooltip_1 = class SliderTooltip2 extends b$6 {
     return SliderTooltip_1.i18nBundle.getText(SLIDER_TOOLTIP_INPUT_LABEL);
   }
 };
-__decorate$Q([
-  s$7()
+__decorate$$([
+  s$8()
 ], SliderTooltip.prototype, "value", void 0);
-__decorate$Q([
-  s$7()
+__decorate$$([
+  s$8()
 ], SliderTooltip.prototype, "inputValue", void 0);
-__decorate$Q([
-  s$7({ type: Boolean })
+__decorate$$([
+  s$8({ type: Boolean })
 ], SliderTooltip.prototype, "open", void 0);
-__decorate$Q([
-  s$7({ type: Number })
+__decorate$$([
+  s$8({ type: Number })
 ], SliderTooltip.prototype, "min", void 0);
-__decorate$Q([
-  s$7({ type: Number })
+__decorate$$([
+  s$8({ type: Number })
 ], SliderTooltip.prototype, "max", void 0);
-__decorate$Q([
-  s$7({ type: Boolean })
+__decorate$$([
+  s$8({ type: Boolean })
 ], SliderTooltip.prototype, "editable", void 0);
-__decorate$Q([
-  s$7()
+__decorate$$([
+  s$8()
 ], SliderTooltip.prototype, "valueState", void 0);
-__decorate$Q([
-  s$7({ type: Object })
+__decorate$$([
+  s$8({ type: Object })
 ], SliderTooltip.prototype, "followRef", void 0);
-__decorate$Q([
+__decorate$$([
   i$9("@ui5/webcomponents")
 ], SliderTooltip, "i18nBundle", void 0);
-SliderTooltip = SliderTooltip_1 = __decorate$Q([
+SliderTooltip = SliderTooltip_1 = __decorate$$([
   m$8({
     tag: "ui5-slider-tooltip",
     renderer: y$5,
     template: SliderTooltipTemplate,
     styles: SliderTooltipCss
   }),
-  l$d("change"),
-  l$d("forward-focus")
+  l$e("change"),
+  l$e("forward-focus")
 ], SliderTooltip);
 SliderTooltip.define();
 const SliderTooltip$1 = SliderTooltip;
@@ -7077,7 +7113,7 @@ function handles() {
   var _a2;
   return jsxs("div", { class: "ui5-slider-handle-container", style: this.styles.handle, part: "handle-container", children: [jsx("div", { class: "ui5-slider-handle", onFocusOut: this._onfocusout, onFocusIn: this._onfocusin, onKeyUp: this._onkeyup, role: "slider", tabIndex: this._tabIndex, "aria-orientation": "horizontal", "aria-valuemin": this.min, "aria-valuemax": this.max, "aria-valuenow": this.value, "aria-label": this._ariaLabel, "aria-disabled": this._ariaDisabled, "aria-keyshortcuts": this._ariaKeyshortcuts, "aria-describedby": this._ariaDescribedByHandleText, "data-sap-focus-ref": true, part: "handle", id: "handle1", children: jsx(Icon$1, { name: directionArrows, mode: "Decorative", part: "icon-slider", "slider-icon": true }) }), jsx(SliderTooltip$1, { open: this._tooltipsOpen, value: this.tooltipValue, min: this.min, max: this.max, editable: this.editableTooltip, followRef: (_a2 = this.shadowRoot) == null ? void 0 : _a2.querySelector("#handle1"), onChange: this._onTooltipChange, onForwardFocus: this._onTooltopForwardFocus })] });
 }
-var __decorate$P = function(decorators, target, key, desc) {
+var __decorate$_ = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -7286,13 +7322,13 @@ let Slider = Slider_1 = class Slider2 extends SliderBase$1 {
     return arr;
   }
 };
-__decorate$P([
-  s$7({ type: Number })
+__decorate$_([
+  s$8({ type: Number })
 ], Slider.prototype, "value", void 0);
-__decorate$P([
+__decorate$_([
   i$9("@ui5/webcomponents")
 ], Slider, "i18nBundle", void 0);
-Slider = Slider_1 = __decorate$P([
+Slider = Slider_1 = __decorate$_([
   m$8({
     tag: "ui5-slider",
     languageAware: true,
@@ -7306,44 +7342,44 @@ i$k(() => {
   n$3 = void 0;
 });
 const d$1 = () => (n$3 === void 0 && (n$3 = C$5()), n$3);
-const name$14 = "status-negative";
-const pathData$13 = "M512 256q0 53-20.5 100t-55 81.5-81 54.5-99.5 20-100-20.5-81.5-55T20 355 0 256q0-54 20-100.5t55-81T156.5 20 256 0t99.5 20T437 75t55 81.5 20 99.5zM399 364q6-6 0-12l-86-86q-6-6 0-12l81-81q6-6 0-12l-37-37q-2-2-6-2t-6 2l-83 82q-1 3-6 3-3 0-6-3l-84-83q-1-2-6-2-4 0-6 2l-37 37q-6 6 0 12l83 82q6 6 0 12l-83 82q-2 2-2.5 6t2.5 6l36 37q4 2 6 2 4 0 6-2l85-84q2-2 6-2t6 2l88 88q4 2 6 2t6-2z";
-const ltr$13 = false;
-const collection$13 = "SAP-icons-v4";
-const packageName$13 = "@ui5/webcomponents-icons";
-y$2(name$14, { pathData: pathData$13, ltr: ltr$13, collection: collection$13, packageName: packageName$13 });
-const name$13 = "status-negative";
-const pathData$12 = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm45 256l74-73q9-11 9-23 0-13-9.5-22.5T352 128q-12 0-23 9l-73 74-73-74q-10-9-23-9t-22.5 9.5T128 160q0 12 9 23l74 73-74 73q-9 10-9 23t9.5 22.5T160 384t23-9l73-74 73 74q11 9 23 9 13 0 22.5-9.5T384 352t-9-23z";
-const ltr$12 = false;
-const collection$12 = "SAP-icons-v5";
-const packageName$12 = "@ui5/webcomponents-icons";
-y$2(name$13, { pathData: pathData$12, ltr: ltr$12, collection: collection$12, packageName: packageName$12 });
+const name$1c = "status-negative";
+const pathData$1b = "M512 256q0 53-20.5 100t-55 81.5-81 54.5-99.5 20-100-20.5-81.5-55T20 355 0 256q0-54 20-100.5t55-81T156.5 20 256 0t99.5 20T437 75t55 81.5 20 99.5zM399 364q6-6 0-12l-86-86q-6-6 0-12l81-81q6-6 0-12l-37-37q-2-2-6-2t-6 2l-83 82q-1 3-6 3-3 0-6-3l-84-83q-1-2-6-2-4 0-6 2l-37 37q-6 6 0 12l83 82q6 6 0 12l-83 82q-2 2-2.5 6t2.5 6l36 37q4 2 6 2 4 0 6-2l85-84q2-2 6-2t6 2l88 88q4 2 6 2t6-2z";
+const ltr$1b = false;
+const collection$1b = "SAP-icons-v4";
+const packageName$1b = "@ui5/webcomponents-icons";
+y$2(name$1c, { pathData: pathData$1b, ltr: ltr$1b, collection: collection$1b, packageName: packageName$1b });
+const name$1b = "status-negative";
+const pathData$1a = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm45 256l74-73q9-11 9-23 0-13-9.5-22.5T352 128q-12 0-23 9l-73 74-73-74q-10-9-23-9t-22.5 9.5T128 160q0 12 9 23l74 73-74 73q-9 10-9 23t9.5 22.5T160 384t23-9l73-74 73 74q11 9 23 9 13 0 22.5-9.5T384 352t-9-23z";
+const ltr$1a = false;
+const collection$1a = "SAP-icons-v5";
+const packageName$1a = "@ui5/webcomponents-icons";
+y$2(name$1b, { pathData: pathData$1a, ltr: ltr$1a, collection: collection$1a, packageName: packageName$1a });
 const statusNegative = "status-negative";
-const name$12 = "status-positive";
-const pathData$11 = "M512 256q0 54-20 100.5t-54.5 81T356 492t-100 20q-54 0-100.5-20t-81-55T20 355.5 0 256t20.5-100 55-81.5T157 20t99-20q53 0 100 20t81.5 54.5T492 156t20 100zm-118-87q4-8-1-13l-36-36q-3-4-8-4t-8 5L237 294q-3 1-4 0l-70-52q-4-3-7-3t-4.5 2-2.5 3l-29 41q-6 8 2 14l113 95q2 2 7 2t8-4z";
-const ltr$11 = false;
-const collection$11 = "SAP-icons-v4";
-const packageName$11 = "@ui5/webcomponents-icons";
-y$2(name$12, { pathData: pathData$11, ltr: ltr$11, collection: collection$11, packageName: packageName$11 });
-const name$11 = "status-positive";
-const pathData$10 = "M256 0q53 0 100 20t81.5 54.5T492 156t20 100-20 100-54.5 81.5T356 492t-100 20-100-20-81.5-54.5T20 356 0 256t20-100 54.5-81.5T156 20 256 0zm150 183q10-9 10-23 0-13-9.5-22.5T384 128t-22 9L186 308l-68-63q-9-9-22-9t-22.5 9.5T64 268q0 15 10 24l91 83q9 9 21 9 13 0 23-9z";
-const ltr$10 = false;
-const collection$10 = "SAP-icons-v5";
-const packageName$10 = "@ui5/webcomponents-icons";
-y$2(name$11, { pathData: pathData$10, ltr: ltr$10, collection: collection$10, packageName: packageName$10 });
+const name$1a = "status-positive";
+const pathData$19 = "M512 256q0 54-20 100.5t-54.5 81T356 492t-100 20q-54 0-100.5-20t-81-55T20 355.5 0 256t20.5-100 55-81.5T157 20t99-20q53 0 100 20t81.5 54.5T492 156t20 100zm-118-87q4-8-1-13l-36-36q-3-4-8-4t-8 5L237 294q-3 1-4 0l-70-52q-4-3-7-3t-4.5 2-2.5 3l-29 41q-6 8 2 14l113 95q2 2 7 2t8-4z";
+const ltr$19 = false;
+const collection$19 = "SAP-icons-v4";
+const packageName$19 = "@ui5/webcomponents-icons";
+y$2(name$1a, { pathData: pathData$19, ltr: ltr$19, collection: collection$19, packageName: packageName$19 });
+const name$19 = "status-positive";
+const pathData$18 = "M256 0q53 0 100 20t81.5 54.5T492 156t20 100-20 100-54.5 81.5T356 492t-100 20-100-20-81.5-54.5T20 356 0 256t20-100 54.5-81.5T156 20 256 0zm150 183q10-9 10-23 0-13-9.5-22.5T384 128t-22 9L186 308l-68-63q-9-9-22-9t-22.5 9.5T64 268q0 15 10 24l91 83q9 9 21 9 13 0 23-9z";
+const ltr$18 = false;
+const collection$18 = "SAP-icons-v5";
+const packageName$18 = "@ui5/webcomponents-icons";
+y$2(name$19, { pathData: pathData$18, ltr: ltr$18, collection: collection$18, packageName: packageName$18 });
 const statusPositive = "status-positive";
-const name$10 = "status-critical";
-const pathData$$ = "M501 374q5 10 7.5 19.5T512 412v5q0 31-23 47t-50 16H74q-13 0-26-4t-23.5-12-17-20T0 417q0-13 4-22.5t9-20.5L198 38q21-38 61-38 38 0 59 38zM257 127q-13 0-23.5 8T223 161q1 7 2 12 3 25 4.5 48t3.5 61q0 11 7.5 16t16.5 5q22 0 23-21l2-36 9-85q0-18-10.5-26t-23.5-8zm0 299q20 0 31.5-12t11.5-32q0-19-11.5-31T257 339t-31.5 12-11.5 31q0 20 11.5 32t31.5 12z";
-const ltr$$ = false;
-const collection$$ = "SAP-icons-v4";
-const packageName$$ = "@ui5/webcomponents-icons";
-y$2(name$10, { pathData: pathData$$, ltr: ltr$$, collection: collection$$, packageName: packageName$$ });
-const name$$ = "status-critical";
-const pathData$_ = "M505 399q7 13 7 27 0 21-15.5 37.5T456 480H56q-25 0-40.5-16.5T0 426q0-14 7-27L208 59q17-27 48-27 14 0 27 6.5T304 59zM288 176q0-14-9-23t-23-9-23 9-9 23v96q0 14 9 23t23 9 23-9 9-23v-96zm-32 240q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
-const ltr$_ = false;
-const collection$_ = "SAP-icons-v5";
-const packageName$_ = "@ui5/webcomponents-icons";
-y$2(name$$, { pathData: pathData$_, ltr: ltr$_, collection: collection$_, packageName: packageName$_ });
+const name$18 = "status-critical";
+const pathData$17 = "M501 374q5 10 7.5 19.5T512 412v5q0 31-23 47t-50 16H74q-13 0-26-4t-23.5-12-17-20T0 417q0-13 4-22.5t9-20.5L198 38q21-38 61-38 38 0 59 38zM257 127q-13 0-23.5 8T223 161q1 7 2 12 3 25 4.5 48t3.5 61q0 11 7.5 16t16.5 5q22 0 23-21l2-36 9-85q0-18-10.5-26t-23.5-8zm0 299q20 0 31.5-12t11.5-32q0-19-11.5-31T257 339t-31.5 12-11.5 31q0 20 11.5 32t31.5 12z";
+const ltr$17 = false;
+const collection$17 = "SAP-icons-v4";
+const packageName$17 = "@ui5/webcomponents-icons";
+y$2(name$18, { pathData: pathData$17, ltr: ltr$17, collection: collection$17, packageName: packageName$17 });
+const name$17 = "status-critical";
+const pathData$16 = "M505 399q7 13 7 27 0 21-15.5 37.5T456 480H56q-25 0-40.5-16.5T0 426q0-14 7-27L208 59q17-27 48-27 14 0 27 6.5T304 59zM288 176q0-14-9-23t-23-9-23 9-9 23v96q0 14 9 23t23 9 23-9 9-23v-96zm-32 240q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
+const ltr$16 = false;
+const collection$16 = "SAP-icons-v5";
+const packageName$16 = "@ui5/webcomponents-icons";
+y$2(name$17, { pathData: pathData$16, ltr: ltr$16, collection: collection$16, packageName: packageName$16 });
 const statusCritical = "status-critical";
 const valueStateIconMappings = {
   "Negative": statusNegative,
@@ -7368,14 +7404,14 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const ProgressIndicatorCss = `:host(:not([hidden])){display:inline-block;min-height:var(_ui5_progress_indicator_host_min_height);min-width:4rem;width:100%;height:var(--_ui5-v2-17-0_progress_indicator_host_height);overflow:hidden;box-sizing:var(--_ui5-v2-17-0_progress_indicator_host_box_sizing);padding:var(--_ui5-v2-17-0_progress_indicator_padding);padding-inline-end:var(--_ui5-v2-17-0_progress_indicator_padding_end)}:host(:not([hidden])[hide-value]){padding-top:var(--_ui5-v2-17-0_progress_indicator_padding_novalue);padding-bottom:var(--_ui5-v2-17-0_progress_indicator_padding_novalue)}.ui5-progress-indicator-root{display:flex;align-items:center;background:var(--_ui5-v2-17-0_progress_indicator_background_none);border-radius:var(--_ui5-v2-17-0_progress_indicator_root_border_radius);overflow:var(--_ui5-v2-17-0_progress_indicator_root_overflow);min-height:var(--_ui5-v2-17-0_progress_indicator_root_min_height);height:var(--_ui5-v2-17-0_progress_indicator_root_height);width:100%;font-size:var(--sapProgress_FontSize);font-family:var(--sapFontFamily);position:var(--_ui5-v2-17-0_progress_indicator_root_position);box-sizing:border-box}.ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_none);justify-content:flex-end;height:var(--_ui5-v2-17-0_progress_indicator_bar_height);display:flex;align-items:center;flex-direction:row;color:var(--_ui5-v2-17-0_progress_indicator_bar_color);transition-property:width;transition-timing-function:linear;box-sizing:border-box;border:var(--_ui5-v2-17-0_progress_indicator_bar_border_max);border-radius:var(--_ui5-v2-17-0_progress_indicator_bar_border_radius)}.ui5-progress-indicator-min-value .ui5-progress-indicator-bar,.ui5-progress-indicator-max-value .ui5-progress-indicator-remaining-bar{border:none}.ui5-progress-indicator-max-value .ui5-progress-indicator-bar{border-radius:.5rem}.ui5-progress-indicator-min-value .ui5-progress-indicator-remaining-bar{border-inline-start:var(--_ui5-v2-17-0_progress_indicator_border);border-radius:.5rem}.ui5-progress-indicator-remaining-bar{justify-content:flex-start;width:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_width);height:100%;display:flex;align-items:center;flex-direction:row;flex-grow:1;flex-basis:0;border:var(--_ui5-v2-17-0_progress_indicator_border);border-inline-start:none;border-radius:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_border_radius);box-sizing:border-box;color:var(--_ui5-v2-17-0_progress_indicator_color);overflow:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_overflow);position:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_position)}.ui5-progress-indicator-value{margin:var(--_ui5-v2-17-0_progress_indicator_value_margin);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;position:var(--_ui5-v2-17-0_progress_indicator_value_position);top:var(--_ui5-v2-17-0_progress_indicator_value_top_position);inset-inline-start:var(--_ui5-v2-17-0_progress_indicator_value_left_position)}.ui5-progress-indicator-icon{margin-inline-start:.375rem;width:var(--_ui5-v2-17-0_progress_indicator_icon_size);height:var(--_ui5-v2-17-0_progress_indicator_icon_size);display:var(--_ui5-v2-17-0_progress_indicator_icon_visibility);position:var(--_ui5-v2-17-0_progress_indicator_icon_position);inset-inline-end:var(--_ui5-v2-17-0_progress_indicator_icon_right_position)}:host([value-state="Negative"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_error_icon_color)}:host([value-state="Critical"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_warning_icon_color)}:host([value-state="Positive"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_success_icon_color)}:host([value-state="Information"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_information_icon_color)}:host([value-state="Negative"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_error)}:host([value-state="Critical"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_warning)}:host([value-state="Positive"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_success)}:host([value-state="Information"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_information)}:host([value-state="Negative"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_error)}:host([value-state="Critical"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_warning)}:host([value-state="Positive"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_success)}:host([value-state="Information"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_information)}:host([value-state="Negative"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_error)}:host([value-state="Critical"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_warning)}:host([value-state="Positive"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_success)}:host([value-state="Information"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_information)}.ui5-progress-indicator-remaining-bar:before,.ui5-progress-indicator-remaining-bar:after{content:"";display:block;width:.25rem;height:.25rem;position:absolute;border-radius:50%;display:var(--_ui5-v2-17-0_progress_indicator_side_points_visibility);background:var(--_ui5-v2-17-0_progress_indicator_value_state_none)}.ui5-progress-indicator-remaining-bar:before{left:.0625rem}.ui5-progress-indicator-remaining-bar:after{right:.0625rem}:host([value-state="Negative"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Negative"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_NegativeBackground)}:host([value-state="Critical"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Critical"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_CriticalBackground)}:host([value-state="Positive"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Positive"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_PositiveBackground)}:host([value-state="Information"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Information"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_InformationBackground)}
 `;
-var __decorate$O = function(decorators, target, key, desc) {
+var __decorate$Z = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 var ProgressIndicator_1;
-let ProgressIndicator = ProgressIndicator_1 = class ProgressIndicator2 extends b$6 {
+let ProgressIndicator = ProgressIndicator_1 = class ProgressIndicator2 extends b$7 {
   constructor() {
     super();
     this.hideValue = false;
@@ -7409,7 +7445,7 @@ let ProgressIndicator = ProgressIndicator_1 = class ProgressIndicator2 extends b
     return this.value <= 50;
   }
   get shouldAnimate() {
-    return d$1() !== u$i.None;
+    return d$1() !== u$j.None;
   }
   get valueStateText() {
     const percentValue = `${this.validatedValue}%`;
@@ -7420,25 +7456,25 @@ let ProgressIndicator = ProgressIndicator_1 = class ProgressIndicator2 extends b
     return this.valueState !== o$5.None;
   }
 };
-__decorate$O([
-  s$7()
+__decorate$Z([
+  s$8()
 ], ProgressIndicator.prototype, "accessibleName", void 0);
-__decorate$O([
-  s$7({ type: Boolean })
+__decorate$Z([
+  s$8({ type: Boolean })
 ], ProgressIndicator.prototype, "hideValue", void 0);
-__decorate$O([
-  s$7({ type: Number })
+__decorate$Z([
+  s$8({ type: Number })
 ], ProgressIndicator.prototype, "value", void 0);
-__decorate$O([
-  s$7()
+__decorate$Z([
+  s$8()
 ], ProgressIndicator.prototype, "displayValue", void 0);
-__decorate$O([
-  s$7()
+__decorate$Z([
+  s$8()
 ], ProgressIndicator.prototype, "valueState", void 0);
-__decorate$O([
+__decorate$Z([
   i$9("@ui5/webcomponents")
 ], ProgressIndicator, "i18nBundle", void 0);
-ProgressIndicator = ProgressIndicator_1 = __decorate$O([
+ProgressIndicator = ProgressIndicator_1 = __decorate$Z([
   m$8({
     tag: "ui5-progress-indicator",
     renderer: y$5,
@@ -7447,183 +7483,183 @@ ProgressIndicator = ProgressIndicator_1 = __decorate$O([
   })
 ], ProgressIndicator);
 ProgressIndicator.define();
-const name$_ = "home";
-const pathData$Z = "M507.005 240.744Q512 245.738 512 252.23t-4.995 11.488-11.487 4.495-11.488-5.494L256.272 71.923 27.516 262.72q-4.995 4.995-10.988 5.494T5.54 263.72.045 252.231t4.496-11.487l119.872-101.892q21.976-18.98 43.454-36.96t38.459-32.466 27.47-23.475l10.49-8.99q4.994-4.995 11.986-4.995 5.994 0 10.989 4.995l10.489 8.99 27.47 23.475 38.46 32.465 44.452 36.961q52.944 44.952 118.873 101.892zM64.477 274.707q51.944-39.957 93.9-72.922 17.98-13.985 34.962-26.971t30.967-23.475 22.477-16.982 9.49-6.493 9.49 6.493 21.976 16.982 30.467 23.475 34.963 26.971q40.957 32.965 94.9 72.922v172.816q0 13.985-9.49 22.976t-22.477 8.99H288.238v-62.933q0-23.974-.5-43.953t.5-20.978h-63.932q-.998 1-.499 20.479t.5 43.453v63.932H96.442q-13.985 0-22.976-8.99t-8.99-22.976V274.707zm351.625 12.986l-159.83-119.872-159.83 119.872v159.83h95.899v-95.898q0-8.99 3.995-15.983 2.997-5.993 9.49-10.988t18.48-4.995h63.932q11.988 0 18.48 4.995t9.49 10.988 3.497 10.989l.5 4.994v95.898h95.897v-159.83z";
+const name$16 = "home";
+const pathData$15 = "M507.005 240.744Q512 245.738 512 252.23t-4.995 11.488-11.487 4.495-11.488-5.494L256.272 71.923 27.516 262.72q-4.995 4.995-10.988 5.494T5.54 263.72.045 252.231t4.496-11.487l119.872-101.892q21.976-18.98 43.454-36.96t38.459-32.466 27.47-23.475l10.49-8.99q4.994-4.995 11.986-4.995 5.994 0 10.989 4.995l10.489 8.99 27.47 23.475 38.46 32.465 44.452 36.961q52.944 44.952 118.873 101.892zM64.477 274.707q51.944-39.957 93.9-72.922 17.98-13.985 34.962-26.971t30.967-23.475 22.477-16.982 9.49-6.493 9.49 6.493 21.976 16.982 30.467 23.475 34.963 26.971q40.957 32.965 94.9 72.922v172.816q0 13.985-9.49 22.976t-22.477 8.99H288.238v-62.933q0-23.974-.5-43.953t.5-20.978h-63.932q-.998 1-.499 20.479t.5 43.453v63.932H96.442q-13.985 0-22.976-8.99t-8.99-22.976V274.707zm351.625 12.986l-159.83-119.872-159.83 119.872v159.83h95.899v-95.898q0-8.99 3.995-15.983 2.997-5.993 9.49-10.988t18.48-4.995h63.932q11.988 0 18.48 4.995t9.49 10.988 3.497 10.989l.5 4.994v95.898h95.897v-159.83z";
+const ltr$15 = false;
+const collection$15 = "SAP-icons-v4";
+const packageName$15 = "@ui5/webcomponents-icons";
+y$2(name$16, { pathData: pathData$15, ltr: ltr$15, collection: collection$15, packageName: packageName$15 });
+const name$15 = "home";
+const pathData$14 = "M451 148q29 26 29 66v208q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V214q0-39 29-66L195 24q26-24 61-24 36 0 61 24zm-22 66q0-16-12-28L282 61q-12-10-26-10t-26 10L96 186q-13 11-13 28v208q0 17 11 28t28 11h38V313q0-24 17-41t41-17h77q23 0 40 17t17 41v148h38q17 0 28-11t11-28V214zm-128 99q0-7-6-7h-77q-7 0-7 7v148h90V313z";
+const ltr$14 = false;
+const collection$14 = "SAP-icons-v5";
+const packageName$14 = "@ui5/webcomponents-icons";
+y$2(name$15, { pathData: pathData$14, ltr: ltr$14, collection: collection$14, packageName: packageName$14 });
+const name$14 = "lightbulb";
+const pathData$13 = "M256.5 0q33 0 61.5 12t50.5 33T403 95.5t12.5 64.5q0 24-7.5 42.5t-18 34-21.5 28-16 23.5q-1 1-6 16l-11 33q-7 21-15 47h-128l-16-48q-6-18-11-32.5t-5-15.5q-5-11-16-23.5T123 237t-18.5-34-8-44q0-35 12.5-64.5T143.5 44t51-32.5 62-11.5zm90 240q14-17 25.5-35.5t11.5-44.5q0-27-9.5-50.5t-27-41-40.5-27-50-9.5-50.5 9-40.5 26q-37 36-37 92 0 26 11 44t25 35q8 9 14 18t11 19q0 1 1 2.5t3 9T201 309t14.5 43h81q9-28 14.5-43t8-22.5 3.5-9.5 1-3q5-9 10.5-17t12.5-17zm-154 240h128l-10 10q-22 22-54 22-33 0-55-22zm121-80q6 0 10.5 4.5t4.5 11.5v32q0 7-4.5 11.5t-10.5 4.5h-115q-14 0-14-16v-32q0-16 14-16h115zm-43 48q14 0 14-16t-14-16-14 16 14 16z";
+const ltr$13 = false;
+const collection$13 = "SAP-icons-v4";
+const packageName$13 = "@ui5/webcomponents-icons";
+y$2(name$14, { pathData: pathData$13, ltr: ltr$13, collection: collection$13, packageName: packageName$13 });
+const name$13 = "lightbulb";
+const pathData$12 = "M160 380q0-9-2-18t-7-19-14.5-23-23.5-30q-17-22-33-48.5T64 176q0-38 16.5-70t44-55.5 62-37T257 0t70 13.5T388 51t43.5 56 16.5 70q0 39-16.5 65.5T398 291q-27 33-36.5 51t-9.5 36q0 19-7 28.5t-18 9.5H186q-15 0-20.5-10t-5.5-26zm97-329q-25 0-50.5 9.5t-46 26.5-33 39.5T115 176q0 26 11 44t28 38q17 21 33 46t21 61h96q5-36 21-61t33-46q17-20 28-37.5t11-43.5q0-27-12.5-50T352 87t-45-26.5-50-9.5zm69 461H186q-11 0-18.5-7.5T160 486t7.5-18 18.5-7h140q11 0 18.5 7t7.5 18-7.5 18.5T326 512z";
+const ltr$12 = false;
+const collection$12 = "SAP-icons-v5";
+const packageName$12 = "@ui5/webcomponents-icons";
+y$2(name$13, { pathData: pathData$12, ltr: ltr$12, collection: collection$12, packageName: packageName$12 });
+const name$12 = "temperature";
+const pathData$11 = "M96 249V80q0-33 23.5-56.5T176 0t56.5 23.5T256 80v169q29 19 46.5 50t17.5 69q0 30-11.5 56.5t-31 46T232 501t-56 11-56-11-45.5-30.5-31-46T32 368q0-38 17.5-69T96 249zm80 231q23 0 43.5-9t35.5-24 24-35.5 9-43.5q0-28-13-52.5T239 275l-15-9V80q0-20-14-34t-34-14-34 14-14 34v186l-14 9q-23 16-36.5 40.5T64 368q0 23 9 43.5T97 447t35.5 24 43.5 9zm-16-173V176q0-7 5-11.5t11-4.5q16 0 16 16v131q21 5 34.5 21.5T240 368q0 27-18.5 45.5T176 432q-26 0-45-18.5T112 368q0-23 14-39.5t34-21.5zm192-147h112q16 0 16 16t-16 16H352v-32zm0-96V32h112q16 0 16 16t-16 16H352zm48 160q16 0 16 16t-16 16h-48v-32h48zm-48-96V96h48q16 0 16 16t-16 16h-48z";
+const ltr$11 = false;
+const collection$11 = "SAP-icons-v4";
+const packageName$11 = "@ui5/webcomponents-icons";
+y$2(name$12, { pathData: pathData$11, ltr: ltr$11, collection: collection$11, packageName: packageName$11 });
+const name$11 = "temperature";
+const pathData$10 = "M274 262q22 21 34 48t12 58q0 30-11.5 56t-31 45.5-45.5 31-56 11.5-56-11.5-45.5-31-31-45.5T32 368q0-32 13.5-60.5T82 259V96q0-40 28-68t68-28 68 28 28 68v166zM378 83q-11 0-18.5-7T352 58t7.5-18.5T378 32h76q11 0 18.5 7.5T480 58t-7.5 18-18.5 7h-76zM176 461q19 0 36-7.5t29.5-20 20-29.5 7.5-36q0-22-9-41t-23-30q-14-10-14-23V96q0-19-13-32t-32-13-32 13-13 32v175q0 13-15 24t-25 30.5T83 368q0 19 7.5 36t20 29.5 29.5 20 36 7.5zm25-134q23 15 23 41 0 20-14 34t-34 14-34-14-14-34q0-13 6-23.5t16-16.5V154q0-11 7.5-18.5T176 128t18 7.5 7 18.5v173zm177-148q-11 0-18.5-7t-7.5-18 7.5-18.5T378 128h44q11 0 18.5 7.5T448 154t-7.5 18-18.5 7h-44zm76 45q11 0 18.5 7.5T480 250t-7.5 18-18.5 7h-76q-11 0-18.5-7t-7.5-18 7.5-18.5T378 224h76z";
+const ltr$10 = false;
+const collection$10 = "SAP-icons-v5";
+const packageName$10 = "@ui5/webcomponents-icons";
+y$2(name$11, { pathData: pathData$10, ltr: ltr$10, collection: collection$10, packageName: packageName$10 });
+const name$10 = "heating-cooling";
+const pathData$$ = "M256 148h38l24-42-22-33 18-34 24 36 18-34 26-6 6 26-19 32h42l-18 34-42-3-25 44 10 17 27-18h38l-19 37-24 17 11 21h49l17-38h39l-19 38h37l19 18-19 17h-37l19 52h-39l-17-52h-49l-11 21 24 17 18 38h-37l-26-18-11 17 25 43h51l18 30h-51l19 34-7 25-25-6-19-34-24 37-17-33 22-34-24-43h-38v-37h32l45-74-45-75h-32v-37zM1 193h139L70 78l117 70L209 9l22 87v54q-39 6-65 37t-26 73 26 72.5 65 37.5v53l-26 87-21-139-114 71 70-117L1 314l120-54zm230-10v144q-22-6-38-26.5T177 256q0-26 16-46.5t38-26.5zm26 41l31 36-31 36v-72z";
+const ltr$$ = false;
+const collection$$ = "SAP-icons-v4";
+const packageName$$ = "@ui5/webcomponents-icons";
+y$2(name$10, { pathData: pathData$$, ltr: ltr$$, collection: collection$$, packageName: packageName$$ });
+const name$$ = "heating-cooling";
+const pathData$_ = "M487 224q11 0 18 7t7 18-7 18.5-18 7.5h-54l44 48q6 6 6 16 0 11-7.5 18.5T458 365q-11 0-20-9l-73-81h-71v20l90 89q7 7 7 18t-7.5 18.5T366 428q-12 0-18-8l-54-53v120q0 11-7 18t-18 7-18.5-7-7.5-18v-85q-29-2-54-14.5t-43-32-28.5-45.5-10.5-55 10.5-54.5 28.5-45 43-32 54-14.5V25q0-11 7.5-18T269 0t18 7 7 18v119l60-60q6-7 18-7 10 0 17.5 7.5T397 102q0 12-7 18l-96 96v8h72l72-87q8-9 20-9 10 0 17.5 7.5T483 153q0 9-6 17l-44 54h54zM52 85q-8-6-8-18 0-10 7.5-17.5T70 42t18 7l40 40q7 7 7 18t-7.5 18.5T110 133q-12 0-18-8zm106 170q0 38 24.5 64.5T243 350V161q-36 4-60.5 30T158 255zm-65-6q0 11-7 18.5T68 275H26q-11 0-18.5-7.5T0 249t7.5-18 18.5-7h42q11 0 18 7t7 18zm8 143q6-7 18-7 10 0 17.5 7.5T144 410q0 12-7 18l-40 40q-8 8-18 8-11 0-18.5-7.5T53 450q0-10 8-18z";
+const ltr$_ = false;
+const collection$_ = "SAP-icons-v5";
+const packageName$_ = "@ui5/webcomponents-icons";
+y$2(name$$, { pathData: pathData$_, ltr: ltr$_, collection: collection$_, packageName: packageName$_ });
+const name$_ = "settings";
+const pathData$Z = "M146.556 358l31-12q-1-5-1.5-10.5t-.5-11.5q0-16 3-29l-30-13q-6-3-8.5-9.5t.5-12.5l12-28q4-10 16-10-2 0 0 .5t7 1.5l29 13q8-11 17.5-20t19.5-16l-11-30q-3-6 0-12.5t10-8.5l28-12q1-1 6-1 10 0 15 11l12 31q5-1 10.5-2t11.5-1q8 0 15 1l14 2 13-29q4-10 16-10 5 0 6 1l29 13q6 3 8.5 9.5t-.5 12.5l-13 30q21 16 34 37l31-12q1-1 6-1 11 0 16 11l11 28q2 7-.5 13.5t-9.5 8.5l-31 12q1 5 1.5 10.5t.5 10.5q0 15-3 30l30 13q7 3 9 9.5t0 12.5l-13 28q-4 10-16 10-5 0-6-1l-30-13q-8 10-16.5 18t-19.5 16l12 30q2 7-.5 13.5t-9.5 8.5l-29 11q-1 1-6 1-12 0-16-10l-12-31q-5 1-10.5 1.5t-10.5.5q-15 0-30-3l-13 30q-4 10-15 10 2 0 0-.5t-7-1.5l-27-12q-16-7-9-23l13-30q-10-8-19-16t-16-19l-30 11q-1 1-7 1-11 0-15-10l-11-29q-3-7 0-13.5t9-8.5zm177 63q20 0 37.5-7.5t31-20.5 21-31 7.5-38-7.5-37.5-21-30.5-31-20.5-37.5-7.5q-42 0-69 28t-27 68q0 42 27 69.5t69 27.5zm-322-290V99h34q1-14 12-28l-24-24 22-23 25 24q12-8 27-12V2h32v34q15 4 29 12l24-24 23 23-24 24q4 7 7 13.5t5 14.5h34v32h-34q-4 17-12 28l24 25-23 22-24-24q-14 9-29 12v34h-32v-34q-15-3-27-12l-25 24-22-22 24-25q-9-12-12-28h-34zm65-16q0 20 14 34.5t34 14.5q2 0 6-.5t9-1.5l6-3q18-10 25-28 1-4 1.5-7.5t.5-8.5q0-15-9.5-27.5t-23.5-17.5q-5-1-9-1.5t-6-.5q-9 0-17 3-18 6-27 23 0 2-.5 2.5t-.5 2.5q-3 7-3 16z";
 const ltr$Z = false;
+const accData$j = ICON_SETTINGS;
 const collection$Z = "SAP-icons-v4";
 const packageName$Z = "@ui5/webcomponents-icons";
-y$2(name$_, { pathData: pathData$Z, ltr: ltr$Z, collection: collection$Z, packageName: packageName$Z });
-const name$Z = "home";
-const pathData$Y = "M451 148q29 26 29 66v208q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V214q0-39 29-66L195 24q26-24 61-24 36 0 61 24zm-22 66q0-16-12-28L282 61q-12-10-26-10t-26 10L96 186q-13 11-13 28v208q0 17 11 28t28 11h38V313q0-24 17-41t41-17h77q23 0 40 17t17 41v148h38q17 0 28-11t11-28V214zm-128 99q0-7-6-7h-77q-7 0-7 7v148h90V313z";
+y$2(name$_, { pathData: pathData$Z, ltr: ltr$Z, accData: accData$j, collection: collection$Z, packageName: packageName$Z });
+const name$Z = "settings";
+const pathData$Y = "M188.902 201.895l10.994 30.984q0 9.995-7.996 12.993l-14.992 7.996h-2q-.999 1-2.998 1-7.995 0-10.994-6.997l-14.992-25.987q-4.997 1-8.995 1.5t-8.996.5-14.992-2L96.95 249.87q-2.999 5.997-10.995 5.997-1.999 0-2.998-.5t-2.999-.5l-14.992-7.996q-6.996-3.997-6.996-10.994 0-3.998 1-4.997l9.994-26.986Q55.971 191.9 44.977 176.908l-26.986 3.998q-4.998 1-8.496-2t-5.497-7.995L0 153.92v-2q0-4.997 1.999-8.495t6.996-4.497l22.988-7.996v-2.999q0-9.994 2-18.99t4.997-17.99L21.989 74.96q-3.998-2.998-3.998-8.995 0-4.998 2.998-8.996l9.995-12.993q4.997-4.997 10.994-4.997 2 0 5.997 1.999l18.99 12.993q7.996-6.996 16.991-11.494t18.99-7.496l2-22.988Q106.943 0 117.938 0h16.99q4.998 0 8.496 3.498t3.498 8.496l2 21.988q10.994 2 20.489 6.997t17.49 10.994l18.99-12.993q3.999-2 5.998-2 5.997 0 10.994 4.998l9.995 12.993q2.998 3.998 2.998 8.996t-3.998 8.995l-15.991 14.992q7.995 18.99 7.995 39.98v.999l22.988 6.996q8.996 2.999 8.996 12.993v2l-3.998 16.99q-2 9.995-11.994 9.995h-1.999l-25.986-3.998q-9.995 17.991-22.988 27.986zM82.957 127.933q0 18.99 12.493 31.984t32.483 12.993 32.483-12.993 12.494-31.984q0-19.99-12.494-32.483t-32.483-12.493T95.45 95.45t-12.493 32.483zm417.782 233.879q12.993 3.997 10.994 16.99v2l-4.997 20.989q-2.998 12.993-15.992 12.993h-1.999l-31.983-4.997q-8.995 18.99-28.985 34.981l12.993 33.983q0 5.997-.999 11.494t-6.996 9.495l-18.99 9.995q-5.997 1.998-6.997 1.998-8.995 0-13.993-7.995l-18.99-33.983q-4.997 1-10.494 1.5t-11.494.5q-4.998 0-9.495-.5t-9.495-1.5l-19.99 33.983q-4.997 7.995-12.993 7.995-4.998 0-6.997-1.998l-18.99-8.996q-8.995-3.998-8.995-13.993 0-3.997 1-5.996l12.993-33.983q-19.99-14.992-29.985-33.982l-33.982 4.997h-1.999q-12.993 0-15.992-12.993L191.9 383.8v-1.999q0-11.994 10.994-16.991l28.985-8.995v-3.998q0-24.987 8.996-45.976l-21.989-19.99q-2.998-2.998-4.997-10.994 0-6.997 3.998-10.994l12.993-16.992q4.997-5.996 11.994-5.996 5.996 0 8.995 2.998l23.987 15.992q19.99-16.991 44.977-23.988l1.999-28.985q1.999-14.992 15.992-14.992h20.989q15.991 0 15.991 14.992l2 27.986q24.986 5.997 47.974 21.988l22.988-15.991q4.998-2.999 8.996-2.999 7.995 0 11.993 5.997l12.994 16.991q3.997 3.998 3.997 10.994 0 5.997-4.997 10.995l-19.99 19.99q4.998 10.994 7.497 22.987t2.498 25.987v1zm-217.886-9.995q0 28.985 19.99 48.974t48.974 19.99 48.974-19.99 19.99-48.974-19.99-48.975-48.974-19.99-48.975 19.99-19.99 48.975z";
 const ltr$Y = false;
+const accData$i = ICON_SETTINGS;
 const collection$Y = "SAP-icons-v5";
 const packageName$Y = "@ui5/webcomponents-icons";
-y$2(name$Z, { pathData: pathData$Y, ltr: ltr$Y, collection: collection$Y, packageName: packageName$Y });
-const name$Y = "lightbulb";
-const pathData$X = "M256.5 0q33 0 61.5 12t50.5 33T403 95.5t12.5 64.5q0 24-7.5 42.5t-18 34-21.5 28-16 23.5q-1 1-6 16l-11 33q-7 21-15 47h-128l-16-48q-6-18-11-32.5t-5-15.5q-5-11-16-23.5T123 237t-18.5-34-8-44q0-35 12.5-64.5T143.5 44t51-32.5 62-11.5zm90 240q14-17 25.5-35.5t11.5-44.5q0-27-9.5-50.5t-27-41-40.5-27-50-9.5-50.5 9-40.5 26q-37 36-37 92 0 26 11 44t25 35q8 9 14 18t11 19q0 1 1 2.5t3 9T201 309t14.5 43h81q9-28 14.5-43t8-22.5 3.5-9.5 1-3q5-9 10.5-17t12.5-17zm-154 240h128l-10 10q-22 22-54 22-33 0-55-22zm121-80q6 0 10.5 4.5t4.5 11.5v32q0 7-4.5 11.5t-10.5 4.5h-115q-14 0-14-16v-32q0-16 14-16h115zm-43 48q14 0 14-16t-14-16-14 16 14 16z";
+y$2(name$Z, { pathData: pathData$Y, ltr: ltr$Y, accData: accData$i, collection: collection$Y, packageName: packageName$Y });
+const name$Y = "synchronize";
+const pathData$X = "M255.5 32q-38 0-72.5 12t-62.5 33.5-49 51-31 63.5h-33q11-41 34.5-76.5t56-61 72.5-40 85-14.5q73 0 132.5 36.5t91.5 96.5V76q1-7 6-11.5t11-3.5q7 0 11 5t4 11v84q-2 14-11.5 22.5t-22.5 8.5l-85-8q-6 0-10.5-5t-4.5-11q2-7 6.5-11.5t11.5-3.5l61 5q-28-56-81.5-91T255.5 32zm0 448q42 0 80-15t67.5-40.5 48.5-60.5 25-76h33q-6 47-28 88t-56 71-77.5 47.5-92.5 17.5q-72 0-131-36t-92-95v55q-1 7-6 11.5t-11 3.5q-7 0-11-5t-4-11v-84q2-14 11.5-22.5t23.5-8.5l84 8q7 0 11 5t4 11q-1 8-6 12t-11 4l-62-6q27 56 80.5 91t119.5 35z";
 const ltr$X = false;
+const accData$h = ICON_SYNCHRONIZE;
 const collection$X = "SAP-icons-v4";
 const packageName$X = "@ui5/webcomponents-icons";
-y$2(name$Y, { pathData: pathData$X, ltr: ltr$X, collection: collection$X, packageName: packageName$X });
-const name$X = "lightbulb";
-const pathData$W = "M160 380q0-9-2-18t-7-19-14.5-23-23.5-30q-17-22-33-48.5T64 176q0-38 16.5-70t44-55.5 62-37T257 0t70 13.5T388 51t43.5 56 16.5 70q0 39-16.5 65.5T398 291q-27 33-36.5 51t-9.5 36q0 19-7 28.5t-18 9.5H186q-15 0-20.5-10t-5.5-26zm97-329q-25 0-50.5 9.5t-46 26.5-33 39.5T115 176q0 26 11 44t28 38q17 21 33 46t21 61h96q5-36 21-61t33-46q17-20 28-37.5t11-43.5q0-27-12.5-50T352 87t-45-26.5-50-9.5zm69 461H186q-11 0-18.5-7.5T160 486t7.5-18 18.5-7h140q11 0 18.5 7t7.5 18-7.5 18.5T326 512z";
+y$2(name$Y, { pathData: pathData$X, ltr: ltr$X, accData: accData$h, collection: collection$X, packageName: packageName$X });
+const name$X = "synchronize";
+const pathData$W = "M26 192q-11 0-18.5-7.5T0 166q0-2 1-6t5-12q17-33 42.5-60.5t58-47 70-30T254 0q60 0 113.5 23.5T461 90V58q0-11 7-18.5t18-7.5 18.5 7.5T512 58v108q0 11-7.5 18.5T486 192H378q-11 0-18.5-7.5T352 166t7.5-18 18.5-7h59q-33-43-81-66.5T254 51q-66 0-121 34t-84 93q-8 14-23 14zm460 128q11 0 18.5 7.5T512 346q0 2-1 6t-5 12q-16 33-42.5 60.5t-59 47-70 30T258 512q-60 0-113.5-23.5T51 422v32q0 11-7 18.5T26 480t-18.5-7.5T0 454V346q0-11 7.5-18.5T26 320h108q11 0 18.5 7.5T160 346t-7.5 18-18.5 7H75q33 43 81 66.5T258 461q66 0 121-34t84-93q8-14 23-14z";
 const ltr$W = false;
+const accData$g = ICON_SYNCHRONIZE;
 const collection$W = "SAP-icons-v5";
 const packageName$W = "@ui5/webcomponents-icons";
-y$2(name$X, { pathData: pathData$W, ltr: ltr$W, collection: collection$W, packageName: packageName$W });
-const name$W = "temperature";
-const pathData$V = "M96 249V80q0-33 23.5-56.5T176 0t56.5 23.5T256 80v169q29 19 46.5 50t17.5 69q0 30-11.5 56.5t-31 46T232 501t-56 11-56-11-45.5-30.5-31-46T32 368q0-38 17.5-69T96 249zm80 231q23 0 43.5-9t35.5-24 24-35.5 9-43.5q0-28-13-52.5T239 275l-15-9V80q0-20-14-34t-34-14-34 14-14 34v186l-14 9q-23 16-36.5 40.5T64 368q0 23 9 43.5T97 447t35.5 24 43.5 9zm-16-173V176q0-7 5-11.5t11-4.5q16 0 16 16v131q21 5 34.5 21.5T240 368q0 27-18.5 45.5T176 432q-26 0-45-18.5T112 368q0-23 14-39.5t34-21.5zm192-147h112q16 0 16 16t-16 16H352v-32zm0-96V32h112q16 0 16 16t-16 16H352zm48 160q16 0 16 16t-16 16h-48v-32h48zm-48-96V96h48q16 0 16 16t-16 16h-48z";
+y$2(name$X, { pathData: pathData$W, ltr: ltr$W, accData: accData$g, collection: collection$W, packageName: packageName$W });
+const name$W = "refresh";
+const pathData$V = "M478 320q-6 41-25.5 76T404 456.5 337.5 497 257 512q-46 0-86.5-17.5t-71-48-48-71T34 288q0-45 16.5-85T96 133t68-48 84-20h61q26 0 60-1l-41-36q-5-5-5-11.5T328 5t11-5 11 5l58 51q9 10 9 23t-9 23l-57 54q-5 5-11 5t-11-5-5-11.5 5-11.5l40-37H257q-40 0-74.5 15T122 152t-41 61-15 75 15 75 41 61 60.5 41 74.5 15q36 0 68-12t56.5-33.5T423 384t23-64h32z";
 const ltr$V = false;
+const accData$f = ICON_REFRESH;
 const collection$V = "SAP-icons-v4";
 const packageName$V = "@ui5/webcomponents-icons";
-y$2(name$W, { pathData: pathData$V, ltr: ltr$V, collection: collection$V, packageName: packageName$V });
-const name$V = "temperature";
-const pathData$U = "M274 262q22 21 34 48t12 58q0 30-11.5 56t-31 45.5-45.5 31-56 11.5-56-11.5-45.5-31-31-45.5T32 368q0-32 13.5-60.5T82 259V96q0-40 28-68t68-28 68 28 28 68v166zM378 83q-11 0-18.5-7T352 58t7.5-18.5T378 32h76q11 0 18.5 7.5T480 58t-7.5 18-18.5 7h-76zM176 461q19 0 36-7.5t29.5-20 20-29.5 7.5-36q0-22-9-41t-23-30q-14-10-14-23V96q0-19-13-32t-32-13-32 13-13 32v175q0 13-15 24t-25 30.5T83 368q0 19 7.5 36t20 29.5 29.5 20 36 7.5zm25-134q23 15 23 41 0 20-14 34t-34 14-34-14-14-34q0-13 6-23.5t16-16.5V154q0-11 7.5-18.5T176 128t18 7.5 7 18.5v173zm177-148q-11 0-18.5-7t-7.5-18 7.5-18.5T378 128h44q11 0 18.5 7.5T448 154t-7.5 18-18.5 7h-44zm76 45q11 0 18.5 7.5T480 250t-7.5 18-18.5 7h-76q-11 0-18.5-7t-7.5-18 7.5-18.5T378 224h76z";
+y$2(name$W, { pathData: pathData$V, ltr: ltr$V, accData: accData$f, collection: collection$V, packageName: packageName$V });
+const name$V = "refresh";
+const pathData$U = "M307 179q0-11 7.5-18t18.5-7h101q-27-48-75-75.5T255 51q-42 0-79.5 16t-65 43.5-43.5 65T51 256t16 80 44 65 65 44 80 16q35 0 67-11.5t58.5-31.5 45.5-48.5 28-62.5q2-8 9.5-13.5T480 288q11 0 18.5 7.5T506 314q0 2-.5 3.5L504 322q-10 42-34 76.5t-57 60-73 39.5-84 14q-53 0-100-20t-81.5-54.5T20 356 0 256t20-100 54.5-81.5 81-54.5T255 0q61 0 115.5 26.5T461 101V26q0-11 7-18.5T486 0t18.5 7.5T512 26v153q0 11-7.5 18.5T486 205H333q-11 0-18.5-7.5T307 179z";
 const ltr$U = false;
+const accData$e = ICON_REFRESH;
 const collection$U = "SAP-icons-v5";
 const packageName$U = "@ui5/webcomponents-icons";
-y$2(name$V, { pathData: pathData$U, ltr: ltr$U, collection: collection$U, packageName: packageName$U });
-const name$U = "heating-cooling";
-const pathData$T = "M256 148h38l24-42-22-33 18-34 24 36 18-34 26-6 6 26-19 32h42l-18 34-42-3-25 44 10 17 27-18h38l-19 37-24 17 11 21h49l17-38h39l-19 38h37l19 18-19 17h-37l19 52h-39l-17-52h-49l-11 21 24 17 18 38h-37l-26-18-11 17 25 43h51l18 30h-51l19 34-7 25-25-6-19-34-24 37-17-33 22-34-24-43h-38v-37h32l45-74-45-75h-32v-37zM1 193h139L70 78l117 70L209 9l22 87v54q-39 6-65 37t-26 73 26 72.5 65 37.5v53l-26 87-21-139-114 71 70-117L1 314l120-54zm230-10v144q-22-6-38-26.5T177 256q0-26 16-46.5t38-26.5zm26 41l31 36-31 36v-72z";
+y$2(name$V, { pathData: pathData$U, ltr: ltr$U, accData: accData$e, collection: collection$U, packageName: packageName$U });
+const name$U = "warning";
+const pathData$T = "M257 349q-9 0-13-3.5t-6-18.5L218 39q0-17 11-28t28-11q15 0 26.5 11T295 39l-19 288q-3 14-7 18t-12 4zm1 54q21 0 37 15.5t16 38.5q0 22-16 38.5T258 512q-24 0-40-16.5T202 457q0-23 16-38.5t40-15.5z";
 const ltr$T = false;
 const collection$T = "SAP-icons-v4";
 const packageName$T = "@ui5/webcomponents-icons";
 y$2(name$U, { pathData: pathData$T, ltr: ltr$T, collection: collection$T, packageName: packageName$T });
-const name$T = "heating-cooling";
-const pathData$S = "M487 224q11 0 18 7t7 18-7 18.5-18 7.5h-54l44 48q6 6 6 16 0 11-7.5 18.5T458 365q-11 0-20-9l-73-81h-71v20l90 89q7 7 7 18t-7.5 18.5T366 428q-12 0-18-8l-54-53v120q0 11-7 18t-18 7-18.5-7-7.5-18v-85q-29-2-54-14.5t-43-32-28.5-45.5-10.5-55 10.5-54.5 28.5-45 43-32 54-14.5V25q0-11 7.5-18T269 0t18 7 7 18v119l60-60q6-7 18-7 10 0 17.5 7.5T397 102q0 12-7 18l-96 96v8h72l72-87q8-9 20-9 10 0 17.5 7.5T483 153q0 9-6 17l-44 54h54zM52 85q-8-6-8-18 0-10 7.5-17.5T70 42t18 7l40 40q7 7 7 18t-7.5 18.5T110 133q-12 0-18-8zm106 170q0 38 24.5 64.5T243 350V161q-36 4-60.5 30T158 255zm-65-6q0 11-7 18.5T68 275H26q-11 0-18.5-7.5T0 249t7.5-18 18.5-7h42q11 0 18 7t7 18zm8 143q6-7 18-7 10 0 17.5 7.5T144 410q0 12-7 18l-40 40q-8 8-18 8-11 0-18.5-7.5T53 450q0-10 8-18z";
+const name$T = "warning";
+const pathData$S = "M505 399q7 13 7 27 0 21-15.5 37.5T456 480H56q-25 0-40.5-16.5T0 426q0-14 7-27L208 59q17-27 48-27 14 0 27 6.5T304 59zM288 176q0-14-9-23t-23-9-23 9-9 23v96q0 14 9 23t23 9 23-9 9-23v-96zm-32 240q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
 const ltr$S = false;
 const collection$S = "SAP-icons-v5";
 const packageName$S = "@ui5/webcomponents-icons";
 y$2(name$T, { pathData: pathData$S, ltr: ltr$S, collection: collection$S, packageName: packageName$S });
-const name$S = "settings";
-const pathData$R = "M146.556 358l31-12q-1-5-1.5-10.5t-.5-11.5q0-16 3-29l-30-13q-6-3-8.5-9.5t.5-12.5l12-28q4-10 16-10-2 0 0 .5t7 1.5l29 13q8-11 17.5-20t19.5-16l-11-30q-3-6 0-12.5t10-8.5l28-12q1-1 6-1 10 0 15 11l12 31q5-1 10.5-2t11.5-1q8 0 15 1l14 2 13-29q4-10 16-10 5 0 6 1l29 13q6 3 8.5 9.5t-.5 12.5l-13 30q21 16 34 37l31-12q1-1 6-1 11 0 16 11l11 28q2 7-.5 13.5t-9.5 8.5l-31 12q1 5 1.5 10.5t.5 10.5q0 15-3 30l30 13q7 3 9 9.5t0 12.5l-13 28q-4 10-16 10-5 0-6-1l-30-13q-8 10-16.5 18t-19.5 16l12 30q2 7-.5 13.5t-9.5 8.5l-29 11q-1 1-6 1-12 0-16-10l-12-31q-5 1-10.5 1.5t-10.5.5q-15 0-30-3l-13 30q-4 10-15 10 2 0 0-.5t-7-1.5l-27-12q-16-7-9-23l13-30q-10-8-19-16t-16-19l-30 11q-1 1-7 1-11 0-15-10l-11-29q-3-7 0-13.5t9-8.5zm177 63q20 0 37.5-7.5t31-20.5 21-31 7.5-38-7.5-37.5-21-30.5-31-20.5-37.5-7.5q-42 0-69 28t-27 68q0 42 27 69.5t69 27.5zm-322-290V99h34q1-14 12-28l-24-24 22-23 25 24q12-8 27-12V2h32v34q15 4 29 12l24-24 23 23-24 24q4 7 7 13.5t5 14.5h34v32h-34q-4 17-12 28l24 25-23 22-24-24q-14 9-29 12v34h-32v-34q-15-3-27-12l-25 24-22-22 24-25q-9-12-12-28h-34zm65-16q0 20 14 34.5t34 14.5q2 0 6-.5t9-1.5l6-3q18-10 25-28 1-4 1.5-7.5t.5-8.5q0-15-9.5-27.5t-23.5-17.5q-5-1-9-1.5t-6-.5q-9 0-17 3-18 6-27 23 0 2-.5 2.5t-.5 2.5q-3 7-3 16z";
+const name$S = "add";
+const pathData$R = "M32 240q0-7 5-11.5t11-4.5h176V48q0-7 5-11.5t11-4.5h32q16 0 16 16v176h176q16 0 16 16v32q0 16-16 16H288v176q0 16-16 16h-32q-6 0-11-4.5t-5-11.5V288H48q-6 0-11-4.5T32 272v-32z";
 const ltr$R = false;
-const accData$f = ICON_SETTINGS;
+const accData$d = ICON_ADD;
 const collection$R = "SAP-icons-v4";
 const packageName$R = "@ui5/webcomponents-icons";
-y$2(name$S, { pathData: pathData$R, ltr: ltr$R, accData: accData$f, collection: collection$R, packageName: packageName$R });
-const name$R = "settings";
-const pathData$Q = "M188.902 201.895l10.994 30.984q0 9.995-7.996 12.993l-14.992 7.996h-2q-.999 1-2.998 1-7.995 0-10.994-6.997l-14.992-25.987q-4.997 1-8.995 1.5t-8.996.5-14.992-2L96.95 249.87q-2.999 5.997-10.995 5.997-1.999 0-2.998-.5t-2.999-.5l-14.992-7.996q-6.996-3.997-6.996-10.994 0-3.998 1-4.997l9.994-26.986Q55.971 191.9 44.977 176.908l-26.986 3.998q-4.998 1-8.496-2t-5.497-7.995L0 153.92v-2q0-4.997 1.999-8.495t6.996-4.497l22.988-7.996v-2.999q0-9.994 2-18.99t4.997-17.99L21.989 74.96q-3.998-2.998-3.998-8.995 0-4.998 2.998-8.996l9.995-12.993q4.997-4.997 10.994-4.997 2 0 5.997 1.999l18.99 12.993q7.996-6.996 16.991-11.494t18.99-7.496l2-22.988Q106.943 0 117.938 0h16.99q4.998 0 8.496 3.498t3.498 8.496l2 21.988q10.994 2 20.489 6.997t17.49 10.994l18.99-12.993q3.999-2 5.998-2 5.997 0 10.994 4.998l9.995 12.993q2.998 3.998 2.998 8.996t-3.998 8.995l-15.991 14.992q7.995 18.99 7.995 39.98v.999l22.988 6.996q8.996 2.999 8.996 12.993v2l-3.998 16.99q-2 9.995-11.994 9.995h-1.999l-25.986-3.998q-9.995 17.991-22.988 27.986zM82.957 127.933q0 18.99 12.493 31.984t32.483 12.993 32.483-12.993 12.494-31.984q0-19.99-12.494-32.483t-32.483-12.493T95.45 95.45t-12.493 32.483zm417.782 233.879q12.993 3.997 10.994 16.99v2l-4.997 20.989q-2.998 12.993-15.992 12.993h-1.999l-31.983-4.997q-8.995 18.99-28.985 34.981l12.993 33.983q0 5.997-.999 11.494t-6.996 9.495l-18.99 9.995q-5.997 1.998-6.997 1.998-8.995 0-13.993-7.995l-18.99-33.983q-4.997 1-10.494 1.5t-11.494.5q-4.998 0-9.495-.5t-9.495-1.5l-19.99 33.983q-4.997 7.995-12.993 7.995-4.998 0-6.997-1.998l-18.99-8.996q-8.995-3.998-8.995-13.993 0-3.997 1-5.996l12.993-33.983q-19.99-14.992-29.985-33.982l-33.982 4.997h-1.999q-12.993 0-15.992-12.993L191.9 383.8v-1.999q0-11.994 10.994-16.991l28.985-8.995v-3.998q0-24.987 8.996-45.976l-21.989-19.99q-2.998-2.998-4.997-10.994 0-6.997 3.998-10.994l12.993-16.992q4.997-5.996 11.994-5.996 5.996 0 8.995 2.998l23.987 15.992q19.99-16.991 44.977-23.988l1.999-28.985q1.999-14.992 15.992-14.992h20.989q15.991 0 15.991 14.992l2 27.986q24.986 5.997 47.974 21.988l22.988-15.991q4.998-2.999 8.996-2.999 7.995 0 11.993 5.997l12.994 16.991q3.997 3.998 3.997 10.994 0 5.997-4.997 10.995l-19.99 19.99q4.998 10.994 7.497 22.987t2.498 25.987v1zm-217.886-9.995q0 28.985 19.99 48.974t48.974 19.99 48.974-19.99 19.99-48.974-19.99-48.975-48.974-19.99-48.975 19.99-19.99 48.975z";
+y$2(name$S, { pathData: pathData$R, ltr: ltr$R, accData: accData$d, collection: collection$R, packageName: packageName$R });
+const name$R = "add";
+const pathData$Q = "M454 230q11 0 18.5 7.5T480 256t-7.5 18.5T454 282H282v172q0 11-7.5 18.5T256 480t-18.5-7.5T230 454V282H58q-11 0-18.5-7.5T32 256t7.5-18.5T58 230h172V58q0-11 7.5-18.5T256 32t18.5 7.5T282 58v172h172z";
 const ltr$Q = false;
-const accData$e = ICON_SETTINGS;
+const accData$c = ICON_ADD;
 const collection$Q = "SAP-icons-v5";
 const packageName$Q = "@ui5/webcomponents-icons";
-y$2(name$R, { pathData: pathData$Q, ltr: ltr$Q, accData: accData$e, collection: collection$Q, packageName: packageName$Q });
-const name$Q = "synchronize";
-const pathData$P = "M255.5 32q-38 0-72.5 12t-62.5 33.5-49 51-31 63.5h-33q11-41 34.5-76.5t56-61 72.5-40 85-14.5q73 0 132.5 36.5t91.5 96.5V76q1-7 6-11.5t11-3.5q7 0 11 5t4 11v84q-2 14-11.5 22.5t-22.5 8.5l-85-8q-6 0-10.5-5t-4.5-11q2-7 6.5-11.5t11.5-3.5l61 5q-28-56-81.5-91T255.5 32zm0 448q42 0 80-15t67.5-40.5 48.5-60.5 25-76h33q-6 47-28 88t-56 71-77.5 47.5-92.5 17.5q-72 0-131-36t-92-95v55q-1 7-6 11.5t-11 3.5q-7 0-11-5t-4-11v-84q2-14 11.5-22.5t23.5-8.5l84 8q7 0 11 5t4 11q-1 8-6 12t-11 4l-62-6q27 56 80.5 91t119.5 35z";
+y$2(name$R, { pathData: pathData$Q, ltr: ltr$Q, accData: accData$c, collection: collection$Q, packageName: packageName$Q });
+const name$Q = "navigation-right-arrow";
+const pathData$P = "M296 268q11-12 0-23L139 86q-10-10-10-23t10-22q9-10 22-10t23 10l191 193q9 9 9 22.5t-9 22.5L183 471q-10 10-23 10t-23-10q-9-9-9-22.5t9-22.5z";
 const ltr$P = false;
-const accData$d = ICON_SYNCHRONIZE;
 const collection$P = "SAP-icons-v4";
 const packageName$P = "@ui5/webcomponents-icons";
-y$2(name$Q, { pathData: pathData$P, ltr: ltr$P, accData: accData$d, collection: collection$P, packageName: packageName$P });
-const name$P = "synchronize";
-const pathData$O = "M26 192q-11 0-18.5-7.5T0 166q0-2 1-6t5-12q17-33 42.5-60.5t58-47 70-30T254 0q60 0 113.5 23.5T461 90V58q0-11 7-18.5t18-7.5 18.5 7.5T512 58v108q0 11-7.5 18.5T486 192H378q-11 0-18.5-7.5T352 166t7.5-18 18.5-7h59q-33-43-81-66.5T254 51q-66 0-121 34t-84 93q-8 14-23 14zm460 128q11 0 18.5 7.5T512 346q0 2-1 6t-5 12q-16 33-42.5 60.5t-59 47-70 30T258 512q-60 0-113.5-23.5T51 422v32q0 11-7 18.5T26 480t-18.5-7.5T0 454V346q0-11 7.5-18.5T26 320h108q11 0 18.5 7.5T160 346t-7.5 18-18.5 7H75q33 43 81 66.5T258 461q66 0 121-34t84-93q8-14 23-14z";
+y$2(name$Q, { pathData: pathData$P, ltr: ltr$P, collection: collection$P, packageName: packageName$P });
+const name$P = "navigation-right-arrow";
+const pathData$O = "M186 416q-11 0-18.5-7.5T160 390q0-10 8-18l121-116-121-116q-8-8-8-18 0-11 7.5-18.5T186 96q10 0 17 7l141 134q8 8 8 19 0 12-8 18L203 409q-7 7-17 7z";
 const ltr$O = false;
-const accData$c = ICON_SYNCHRONIZE;
 const collection$O = "SAP-icons-v5";
 const packageName$O = "@ui5/webcomponents-icons";
-y$2(name$P, { pathData: pathData$O, ltr: ltr$O, accData: accData$c, collection: collection$O, packageName: packageName$O });
-const name$O = "refresh";
-const pathData$N = "M478 320q-6 41-25.5 76T404 456.5 337.5 497 257 512q-46 0-86.5-17.5t-71-48-48-71T34 288q0-45 16.5-85T96 133t68-48 84-20h61q26 0 60-1l-41-36q-5-5-5-11.5T328 5t11-5 11 5l58 51q9 10 9 23t-9 23l-57 54q-5 5-11 5t-11-5-5-11.5 5-11.5l40-37H257q-40 0-74.5 15T122 152t-41 61-15 75 15 75 41 61 60.5 41 74.5 15q36 0 68-12t56.5-33.5T423 384t23-64h32z";
+y$2(name$P, { pathData: pathData$O, ltr: ltr$O, collection: collection$O, packageName: packageName$O });
+const iconNavigationRightArrow = "navigation-right-arrow";
+const name$O = "navigation-left-arrow";
+const pathData$N = "M375.5 426q9 9 9 22.5t-9 22.5q-10 10-23 10t-23-10l-192-192q-9-9-9-22.5t9-22.5l191-193q10-10 23-10t22 10q10 9 10 22t-10 23l-157 159q-5 5-5 11.5t5 11.5z";
 const ltr$N = false;
-const accData$b = ICON_REFRESH;
 const collection$N = "SAP-icons-v4";
 const packageName$N = "@ui5/webcomponents-icons";
-y$2(name$O, { pathData: pathData$N, ltr: ltr$N, accData: accData$b, collection: collection$N, packageName: packageName$N });
-const name$N = "refresh";
-const pathData$M = "M307 179q0-11 7.5-18t18.5-7h101q-27-48-75-75.5T255 51q-42 0-79.5 16t-65 43.5-43.5 65T51 256t16 80 44 65 65 44 80 16q35 0 67-11.5t58.5-31.5 45.5-48.5 28-62.5q2-8 9.5-13.5T480 288q11 0 18.5 7.5T506 314q0 2-.5 3.5L504 322q-10 42-34 76.5t-57 60-73 39.5-84 14q-53 0-100-20t-81.5-54.5T20 356 0 256t20-100 54.5-81.5 81-54.5T255 0q61 0 115.5 26.5T461 101V26q0-11 7-18.5T486 0t18.5 7.5T512 26v153q0 11-7.5 18.5T486 205H333q-11 0-18.5-7.5T307 179z";
+y$2(name$O, { pathData: pathData$N, ltr: ltr$N, collection: collection$N, packageName: packageName$N });
+const name$N = "navigation-left-arrow";
+const pathData$M = "M326 416q-10 0-17-7L168 274q-8-6-8-18 0-11 8-19l141-134q7-7 17-7 11 0 18.5 7.5T352 122q0 10-8 18L223 256l121 116q8 8 8 18 0 11-7.5 18.5T326 416z";
 const ltr$M = false;
-const accData$a = ICON_REFRESH;
 const collection$M = "SAP-icons-v5";
 const packageName$M = "@ui5/webcomponents-icons";
-y$2(name$N, { pathData: pathData$M, ltr: ltr$M, accData: accData$a, collection: collection$M, packageName: packageName$M });
-const name$M = "warning";
-const pathData$L = "M257 349q-9 0-13-3.5t-6-18.5L218 39q0-17 11-28t28-11q15 0 26.5 11T295 39l-19 288q-3 14-7 18t-12 4zm1 54q21 0 37 15.5t16 38.5q0 22-16 38.5T258 512q-24 0-40-16.5T202 457q0-23 16-38.5t40-15.5z";
+y$2(name$N, { pathData: pathData$M, ltr: ltr$M, collection: collection$M, packageName: packageName$M });
+const name$M = "overflow";
+const pathData$L = "M448 192q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm0 96q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9zm-192-96q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm0 96q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9zM64 192q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm0 96q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
 const ltr$L = false;
+const accData$b = ICON_OVERFLOW;
 const collection$L = "SAP-icons-v4";
 const packageName$L = "@ui5/webcomponents-icons";
-y$2(name$M, { pathData: pathData$L, ltr: ltr$L, collection: collection$L, packageName: packageName$L });
-const name$L = "warning";
-const pathData$K = "M505 399q7 13 7 27 0 21-15.5 37.5T456 480H56q-25 0-40.5-16.5T0 426q0-14 7-27L208 59q17-27 48-27 14 0 27 6.5T304 59zM288 176q0-14-9-23t-23-9-23 9-9 23v96q0 14 9 23t23 9 23-9 9-23v-96zm-32 240q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
+y$2(name$M, { pathData: pathData$L, ltr: ltr$L, accData: accData$b, collection: collection$L, packageName: packageName$L });
+const name$L = "overflow";
+const pathData$K = "M64 192q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm192 0q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm192 0q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19z";
 const ltr$K = false;
+const accData$a = ICON_OVERFLOW;
 const collection$K = "SAP-icons-v5";
 const packageName$K = "@ui5/webcomponents-icons";
-y$2(name$L, { pathData: pathData$K, ltr: ltr$K, collection: collection$K, packageName: packageName$K });
-const name$K = "add";
-const pathData$J = "M32 240q0-7 5-11.5t11-4.5h176V48q0-7 5-11.5t11-4.5h32q16 0 16 16v176h176q16 0 16 16v32q0 16-16 16H288v176q0 16-16 16h-32q-6 0-11-4.5t-5-11.5V288H48q-6 0-11-4.5T32 272v-32z";
+y$2(name$L, { pathData: pathData$K, ltr: ltr$K, accData: accData$a, collection: collection$K, packageName: packageName$K });
+const iconOverflow = "overflow";
+const name$K = "action";
+const pathData$J = "M416 319h32v129q0 13-9 22.5t-23 9.5H32q-13 0-22.5-9.5T0 448V64q0-14 9.5-23T32 32h128v32H32v384h384V319zm87-229q9 10 9 23t-9 23l-92 84q-5 5-11 5t-11-5-5-11.5 5-11.5l75-69h-48q-40 0-75 15t-61 41.5-41 61.5-15 74v16q0 16-16 16t-16-16v-18.5l1-4.5q1-45 19.5-84.5T261 160t70-46 85-17h48l-75-69q-5-5-5-11.5T389 5t11-5 11 5z";
 const ltr$J = false;
-const accData$9 = ICON_ADD;
 const collection$J = "SAP-icons-v4";
 const packageName$J = "@ui5/webcomponents-icons";
-y$2(name$K, { pathData: pathData$J, ltr: ltr$J, accData: accData$9, collection: collection$J, packageName: packageName$J });
-const name$J = "add";
-const pathData$I = "M454 230q11 0 18.5 7.5T480 256t-7.5 18.5T454 282H282v172q0 11-7.5 18.5T256 480t-18.5-7.5T230 454V282H58q-11 0-18.5-7.5T32 256t7.5-18.5T58 230h172V58q0-11 7.5-18.5T256 32t18.5 7.5T282 58v172h172z";
+y$2(name$K, { pathData: pathData$J, ltr: ltr$J, collection: collection$J, packageName: packageName$J });
+const name$J = "action";
+const pathData$I = "M504 109q8 8 8 19t-8 19L395 249q-7 7-17 7-11 0-18.5-7.5T352 230q0-10 8-18l69-65h-52q-21 0-39.5 8T305 177t-22 33-8 40v76q0 11-7 18.5t-18 7.5-18.5-7.5T224 326v-76q0-32 12-60t32.5-49 48.5-33 60-12h38l-55-52q-8-8-8-18 0-11 7.5-18.5T378 0q10 0 17 7zm-50 194q11 0 18.5 7t7.5 18v62q0 38-26 64t-64 26H90q-38 0-64-26T0 390V90q0-38 26-64T90 0h137q11 0 18.5 7.5T253 26t-7.5 18-18.5 7H90q-17 0-28 11T51 90v300q0 17 11 28t28 11h300q17 0 28-11t11-28v-62q0-11 7-18t18-7z";
 const ltr$I = false;
-const accData$8 = ICON_ADD;
 const collection$I = "SAP-icons-v5";
 const packageName$I = "@ui5/webcomponents-icons";
-y$2(name$J, { pathData: pathData$I, ltr: ltr$I, accData: accData$8, collection: collection$I, packageName: packageName$I });
-const name$I = "navigation-right-arrow";
-const pathData$H = "M296 268q11-12 0-23L139 86q-10-10-10-23t10-22q9-10 22-10t23 10l191 193q9 9 9 22.5t-9 22.5L183 471q-10 10-23 10t-23-10q-9-9-9-22.5t9-22.5z";
-const ltr$H = false;
-const collection$H = "SAP-icons-v4";
-const packageName$H = "@ui5/webcomponents-icons";
-y$2(name$I, { pathData: pathData$H, ltr: ltr$H, collection: collection$H, packageName: packageName$H });
-const name$H = "navigation-right-arrow";
-const pathData$G = "M186 416q-11 0-18.5-7.5T160 390q0-10 8-18l121-116-121-116q-8-8-8-18 0-11 7.5-18.5T186 96q10 0 17 7l141 134q8 8 8 19 0 12-8 18L203 409q-7 7-17 7z";
-const ltr$G = false;
-const collection$G = "SAP-icons-v5";
-const packageName$G = "@ui5/webcomponents-icons";
-y$2(name$H, { pathData: pathData$G, ltr: ltr$G, collection: collection$G, packageName: packageName$G });
-const iconNavigationRightArrow = "navigation-right-arrow";
-const name$G = "navigation-left-arrow";
-const pathData$F = "M375.5 426q9 9 9 22.5t-9 22.5q-10 10-23 10t-23-10l-192-192q-9-9-9-22.5t9-22.5l191-193q10-10 23-10t22 10q10 9 10 22t-10 23l-157 159q-5 5-5 11.5t5 11.5z";
-const ltr$F = false;
-const collection$F = "SAP-icons-v4";
-const packageName$F = "@ui5/webcomponents-icons";
-y$2(name$G, { pathData: pathData$F, ltr: ltr$F, collection: collection$F, packageName: packageName$F });
-const name$F = "navigation-left-arrow";
-const pathData$E = "M326 416q-10 0-17-7L168 274q-8-6-8-18 0-11 8-19l141-134q7-7 17-7 11 0 18.5 7.5T352 122q0 10-8 18L223 256l121 116q8 8 8 18 0 11-7.5 18.5T326 416z";
-const ltr$E = false;
-const collection$E = "SAP-icons-v5";
-const packageName$E = "@ui5/webcomponents-icons";
-y$2(name$F, { pathData: pathData$E, ltr: ltr$E, collection: collection$E, packageName: packageName$E });
-const name$E = "overflow";
-const pathData$D = "M448 192q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm0 96q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9zm-192-96q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm0 96q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9zM64 192q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm0 96q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
-const ltr$D = false;
-const accData$7 = ICON_OVERFLOW;
-const collection$D = "SAP-icons-v4";
-const packageName$D = "@ui5/webcomponents-icons";
-y$2(name$E, { pathData: pathData$D, ltr: ltr$D, accData: accData$7, collection: collection$D, packageName: packageName$D });
-const name$D = "overflow";
-const pathData$C = "M64 192q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm192 0q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zm192 0q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19z";
-const ltr$C = false;
-const accData$6 = ICON_OVERFLOW;
-const collection$C = "SAP-icons-v5";
-const packageName$C = "@ui5/webcomponents-icons";
-y$2(name$D, { pathData: pathData$C, ltr: ltr$C, accData: accData$6, collection: collection$C, packageName: packageName$C });
-const iconOverflow = "overflow";
-const name$C = "action";
-const pathData$B = "M416 319h32v129q0 13-9 22.5t-23 9.5H32q-13 0-22.5-9.5T0 448V64q0-14 9.5-23T32 32h128v32H32v384h384V319zm87-229q9 10 9 23t-9 23l-92 84q-5 5-11 5t-11-5-5-11.5 5-11.5l75-69h-48q-40 0-75 15t-61 41.5-41 61.5-15 74v16q0 16-16 16t-16-16v-18.5l1-4.5q1-45 19.5-84.5T261 160t70-46 85-17h48l-75-69q-5-5-5-11.5T389 5t11-5 11 5z";
-const ltr$B = false;
-const collection$B = "SAP-icons-v4";
-const packageName$B = "@ui5/webcomponents-icons";
-y$2(name$C, { pathData: pathData$B, ltr: ltr$B, collection: collection$B, packageName: packageName$B });
-const name$B = "action";
-const pathData$A = "M504 109q8 8 8 19t-8 19L395 249q-7 7-17 7-11 0-18.5-7.5T352 230q0-10 8-18l69-65h-52q-21 0-39.5 8T305 177t-22 33-8 40v76q0 11-7 18.5t-18 7.5-18.5-7.5T224 326v-76q0-32 12-60t32.5-49 48.5-33 60-12h38l-55-52q-8-8-8-18 0-11 7.5-18.5T378 0q10 0 17 7zm-50 194q11 0 18.5 7t7.5 18v62q0 38-26 64t-64 26H90q-38 0-64-26T0 390V90q0-38 26-64T90 0h137q11 0 18.5 7.5T253 26t-7.5 18-18.5 7H90q-17 0-28 11T51 90v300q0 17 11 28t28 11h300q17 0 28-11t11-28v-62q0-11 7-18t18-7z";
-const ltr$A = false;
-const collection$A = "SAP-icons-v5";
-const packageName$A = "@ui5/webcomponents-icons";
-y$2(name$B, { pathData: pathData$A, ltr: ltr$A, collection: collection$A, packageName: packageName$A });
-let t$1, n$2;
-const l$3 = (e2) => {
+y$2(name$J, { pathData: pathData$I, ltr: ltr$I, collection: collection$I, packageName: packageName$I });
+let t$2, n$2;
+const l$4 = (e2) => {
   e2.style.position = "absolute", e2.style.clip = "rect(1px,1px,1px,1px)", e2.style.userSelect = "none", e2.style.left = "-1000px", e2.style.top = "-1000px", e2.style.pointerEvents = "none";
 };
 P$4(() => {
-  t$1 && n$2 || (t$1 = document.createElement("span"), n$2 = document.createElement("span"), t$1.classList.add("ui5-invisiblemessage-polite"), n$2.classList.add("ui5-invisiblemessage-assertive"), t$1.setAttribute("aria-live", "polite"), n$2.setAttribute("aria-live", "assertive"), t$1.setAttribute("role", "alert"), n$2.setAttribute("role", "alert"), l$3(t$1), l$3(n$2), o$m("ui5-announcement-area").appendChild(t$1), o$m("ui5-announcement-area").appendChild(n$2));
+  t$2 && n$2 || (t$2 = document.createElement("span"), n$2 = document.createElement("span"), t$2.classList.add("ui5-invisiblemessage-polite"), n$2.classList.add("ui5-invisiblemessage-assertive"), t$2.setAttribute("aria-live", "polite"), n$2.setAttribute("aria-live", "assertive"), t$2.setAttribute("role", "alert"), n$2.setAttribute("role", "alert"), l$4(t$2), l$4(n$2), o$m("ui5-announcement-area").appendChild(t$2), o$m("ui5-announcement-area").appendChild(n$2));
 });
 const p$1 = (e2, s2) => {
-  const i3 = t$1;
+  const i3 = t$2;
   i3.textContent = "", i3.textContent = e2, setTimeout(() => {
     i3.textContent === e2 && (i3.textContent = "");
   }, 3e3);
@@ -7636,12 +7672,12 @@ var SelectTextSeparator;
 })(SelectTextSeparator || (SelectTextSeparator = {}));
 const SelectTextSeparator$1 = SelectTextSeparator;
 var r$3 = ((l3) => (l3.Auto = "Auto", l3.Vertical = "Vertical", l3.Horizontal = "Horizontal", l3.Paging = "Paging", l3))(r$3 || {});
-var l$2 = ((c2) => (c2.Static = "Static", c2.Cyclic = "Cyclic", c2))(l$2 || {});
-let f$1 = class f2 {
+var l$3 = ((c2) => (c2.Static = "Static", c2.Cyclic = "Cyclic", c2))(l$3 || {});
+let f$2 = class f2 {
   constructor(e2, t2) {
     if (!e2.isUI5Element) throw new Error("The root web component must be a UI5 Element instance");
     if (this.rootWebComponent = e2, this.rootWebComponent.addEventListener("keydown", this._onkeydown.bind(this)), this._initBound = this._init.bind(this), this.rootWebComponent.attachComponentStateFinalized(this._initBound), typeof t2.getItemsCallback != "function") throw new Error("getItemsCallback is required");
-    this._getItems = t2.getItemsCallback, this._currentIndex = t2.currentIndex || 0, this._rowSize = t2.rowSize || 1, this._behavior = t2.behavior || l$2.Static, this._navigationMode = t2.navigationMode || r$3.Auto, this._affectedPropertiesNames = t2.affectedPropertiesNames || [], this._skipItemsSize = t2.skipItemsSize || null;
+    this._getItems = t2.getItemsCallback, this._currentIndex = t2.currentIndex || 0, this._rowSize = t2.rowSize || 1, this._behavior = t2.behavior || l$3.Static, this._navigationMode = t2.navigationMode || r$3.Auto, this._affectedPropertiesNames = t2.affectedPropertiesNames || [], this._skipItemsSize = t2.skipItemsSize || null;
   }
   setCurrentItem(e2) {
     const t2 = this._getItems().indexOf(e2);
@@ -7662,9 +7698,9 @@ let f$1 = class f2 {
   _onkeydown(e2) {
     if (!this._canNavigate()) return;
     const t2 = this._navigationMode === r$3.Horizontal || this._navigationMode === r$3.Auto, i3 = this._navigationMode === r$3.Vertical || this._navigationMode === r$3.Auto, s2 = this.rootWebComponent.effectiveDir === "rtl";
-    if (s2 && D$2(e2) && t2) this._handleRight();
+    if (s2 && D$3(e2) && t2) this._handleRight();
     else if (s2 && R$1(e2) && t2) this._handleLeft();
-    else if (D$2(e2) && t2) this._handleLeft();
+    else if (D$3(e2) && t2) this._handleLeft();
     else if (R$1(e2) && t2) this._handleRight();
     else if (P$2(e2) && i3) this._handleUp();
     else if (_$1(e2) && i3) this._handleDown();
@@ -7681,7 +7717,7 @@ let f$1 = class f2 {
       this._currentIndex -= this._rowSize;
       return;
     }
-    if (this._behavior === l$2.Cyclic) {
+    if (this._behavior === l$3.Cyclic) {
       const t2 = this._currentIndex % this._rowSize, i3 = t2 === 0 ? this._rowSize - 1 : t2 - 1, s2 = Math.ceil(e2 / this._rowSize);
       let o2 = i3 + (s2 - 1) * this._rowSize;
       o2 > e2 - 1 && (o2 -= this._rowSize), this._currentIndex = o2;
@@ -7693,7 +7729,7 @@ let f$1 = class f2 {
       this._currentIndex += this._rowSize;
       return;
     }
-    if (this._behavior === l$2.Cyclic) {
+    if (this._behavior === l$3.Cyclic) {
       const i3 = (this._currentIndex % this._rowSize + 1) % this._rowSize;
       this._currentIndex = i3;
     } else this._currentIndex = e2 - 1;
@@ -7704,7 +7740,7 @@ let f$1 = class f2 {
       this._currentIndex -= 1;
       return;
     }
-    this._behavior === l$2.Cyclic && (this._currentIndex = e2 - 1);
+    this._behavior === l$3.Cyclic && (this._currentIndex = e2 - 1);
   }
   _handleRight() {
     const e2 = this._getItems().length;
@@ -7712,7 +7748,7 @@ let f$1 = class f2 {
       this._currentIndex += 1;
       return;
     }
-    this._behavior === l$2.Cyclic && (this._currentIndex = 0);
+    this._behavior === l$3.Cyclic && (this._currentIndex = 0);
   }
   _handleHome() {
     const e2 = this._rowSize > 1 ? this._rowSize : this._getItems().length;
@@ -7755,7 +7791,7 @@ let f$1 = class f2 {
     e2 && e2.focus();
   }
   _canNavigate() {
-    const e2 = this._getCurrentItem(), t2 = t$4();
+    const e2 = this._getCurrentItem(), t2 = t$5();
     return e2 && e2 === t2;
   }
   _getCurrentItem() {
@@ -7765,53 +7801,53 @@ let f$1 = class f2 {
     this._currentIndex < 0 && (this._currentIndex = 0);
     const t2 = e2[this._currentIndex];
     if (!t2) return;
-    if (v$3(t2)) return t2.getFocusDomRef();
+    if (v$4(t2)) return t2.getFocusDomRef();
     const i3 = this.rootWebComponent.getDomRef();
     if (i3 && t2.id) return i3.querySelector(`[id="${t2.id}"]`);
   }
 };
-const s = ":host{justify-content:center;align-items:center;display:flex;color:var(--sapList_TextColor);background-color:var(--sapList_Background);font-family:var(--sapFontFamily);height:var(--sapElement_LineHeight);border-bottom:var(--sapList_BorderWidth) solid var(--sapList_BorderColor);opacity:.8;position:absolute;padding:0 1rem;top:-1000px;left:-1000px}";
-const e$1 = { key: "DRAG_DROP_MULTIPLE_TEXT", defaultText: "{0} items" };
-const l$1 = 2;
-let a$2 = null;
+const s$1 = ":host{justify-content:center;align-items:center;display:flex;color:var(--sapList_TextColor);background-color:var(--sapList_Background);font-family:var(--sapFontFamily);height:var(--sapElement_LineHeight);border-bottom:var(--sapList_BorderWidth) solid var(--sapList_BorderColor);opacity:.8;position:absolute;padding:0 1rem;top:-1000px;left:-1000px}";
+const e$2 = { key: "DRAG_DROP_MULTIPLE_TEXT", defaultText: "{0} items" };
+const l$2 = 2;
+let a$4 = null;
 const g = (e2) => {
-  a$2 = e2;
+  a$4 = e2;
 }, d = () => {
-  a$2 = null;
-}, p = () => a$2, u$1 = async (e2) => {
-  const t2 = document.createElement("div"), n2 = await f$d("@ui5/webcomponents-base"), r3 = t2.attachShadow({ mode: "open" }), o2 = new CSSStyleSheet();
-  return o2.replaceSync(s), r3.adoptedStyleSheets = [o2], r3.textContent = n2.getText(e$1, e2), t2;
+  a$4 = null;
+}, p = () => a$4, u$2 = async (e2) => {
+  const t2 = document.createElement("div"), n2 = await f$e("@ui5/webcomponents-base"), r3 = t2.attachShadow({ mode: "open" }), o2 = new CSSStyleSheet();
+  return o2.replaceSync(s$1), r3.adoptedStyleSheets = [o2], r3.textContent = n2.getText(e$2, e2), t2;
 }, m$1 = async (e2, t2) => {
-  if (e2 < l$1) {
-    console.warn(`Cannot start multiple drag with count ${e2}. Minimum is ${l$1}.`);
+  if (e2 < l$2) {
+    console.warn(`Cannot start multiple drag with count ${e2}. Minimum is ${l$2}.`);
     return;
   }
   if (!t2.dataTransfer) return;
-  const n2 = await u$1(e2);
+  const n2 = await u$2(e2);
   document.body.appendChild(n2), t2.dataTransfer.setDragImage(n2, 0, 0), requestAnimationFrame(() => {
     n2.remove();
   });
-}, D = { setDraggedElement: g, clearDraggedElement: d, getDraggedElement: p, startMultipleDrag: m$1 };
+}, D$1 = { setDraggedElement: g, clearDraggedElement: d, getDraggedElement: p, startMultipleDrag: m$1 };
 function i2(t2, o2, n2, m2, r3 = {}) {
-  const a2 = D.getDraggedElement(), e2 = { targetReference: null, placement: null };
-  if (!a2 && !(r3 == null ? void 0 : r3.crossDnD)) return e2;
+  const a3 = D$1.getDraggedElement(), e2 = { targetReference: null, placement: null };
+  if (!a3 && !(r3 == null ? void 0 : r3.crossDnD)) return e2;
   const s2 = n2.placements;
   return e2.targetReference = t2.target, s2.some((l3) => {
     const c2 = r3.originalEvent ? { originalEvent: t2 } : {};
-    return o2.fireDecoratorEvent("move-over", { ...c2, source: { element: a2 }, destination: { element: m2, placement: l3 } }) ? false : (t2.preventDefault(), e2.targetReference = n2.element, e2.placement = l3, true);
+    return o2.fireDecoratorEvent("move-over", { ...c2, source: { element: a3 }, destination: { element: m2, placement: l3 } }) ? false : (t2.preventDefault(), e2.targetReference = n2.element, e2.placement = l3, true);
   }) || (e2.targetReference = null), e2;
 }
-function m(t2, r3, o2, a2, n2 = {}) {
+function m(t2, r3, o2, a3, n2 = {}) {
   t2.preventDefault();
-  const e2 = D.getDraggedElement();
+  const e2 = D$1.getDraggedElement();
   if (!e2 && (n2 == null ? void 0 : n2.crossDnD)) return;
   const i3 = n2.originalEvent ? { originalEvent: t2 } : {};
-  r3.fireDecoratorEvent("move", { ...i3, source: { element: e2 }, destination: { element: o2, placement: a2 } }), e2 == null ? void 0 : e2.focus();
+  r3.fireDecoratorEvent("move", { ...i3, source: { element: e2 }, destination: { element: o2, placement: a3 } }), e2 == null ? void 0 : e2.focus();
 }
 var r$2 = ((f4) => (f4.On = "On", f4.Before = "Before", f4.After = "After", f4))(r$2 || {});
-var a$1 = ((l3) => (l3.Vertical = "Vertical", l3.Horizontal = "Horizontal", l3))(a$1 || {});
-const A = (e2, t2, r3, a2) => {
-  const o2 = Math.abs(e2 - t2), m2 = Math.abs(e2 - r3), s2 = Math.abs(e2 - a2), c2 = Math.min(o2, m2, s2);
+var a$3 = ((l3) => (l3.Vertical = "Vertical", l3.Horizontal = "Horizontal", l3))(a$3 || {});
+const A = (e2, t2, r3, a3) => {
+  const o2 = Math.abs(e2 - t2), m2 = Math.abs(e2 - r3), s2 = Math.abs(e2 - a3), c2 = Math.min(o2, m2, s2);
   let l3 = [];
   switch (c2) {
     case o2:
@@ -7826,24 +7862,24 @@ const A = (e2, t2, r3, a2) => {
   }
   return l3;
 }, L2 = (e2, t2, r3) => {
-  let a2 = Number.POSITIVE_INFINITY, o2 = null;
+  let a3 = Number.POSITIVE_INFINITY, o2 = null;
   for (let f4 = 0; f4 < e2.length; f4++) {
     const h2 = e2[f4], { left: p2, width: w2, top: B2, height: H3 } = h2.getBoundingClientRect();
     let u4;
-    r3 === a$1.Vertical ? u4 = B2 + H3 / 2 : u4 = p2 + w2 / 2;
+    r3 === a$3.Vertical ? u4 = B2 + H3 / 2 : u4 = p2 + w2 / 2;
     const M2 = Math.abs(t2 - u4);
-    M2 < a2 && (a2 = M2, o2 = h2);
+    M2 < a3 && (a3 = M2, o2 = h2);
   }
   if (!o2) return null;
   const { width: m2, height: s2, left: c2, right: l3, top: b2, bottom: d2 } = o2.getBoundingClientRect();
   let i3;
-  return r3 === a$1.Vertical ? i3 = A(t2, b2, b2 + s2 / 2, d2) : i3 = A(t2, c2, c2 + m2 / 2, l3), { element: o2, placements: i3 };
+  return r3 === a$3.Vertical ? i3 = A(t2, b2, b2 + s2 / 2, d2) : i3 = A(t2, c2, c2 + m2 / 2, l3), { element: o2, placements: i3 };
 }, T = (e2, t2) => (t2--, t2 < 0 ? [] : [{ element: e2[t2], placement: r$2.Before }]), y = (e2, t2) => (t2++, t2 >= e2.length ? [] : [{ element: e2[t2], placement: r$2.After }]), E = { ArrowLeft: T, ArrowUp: T, ArrowRight: y, ArrowDown: y, Home: (e2, t2) => e2.slice(0, t2).map((r3) => ({ element: r3, placement: r$2.Before })), End: (e2, t2) => e2.slice(t2 + 1, e2.length).reverse().map((r3) => ({ element: r3, placement: r$2.After })) }, k2 = (e2, t2, r3) => P(r3.key) ? E[r3.key](e2, e2.indexOf(t2)) : [], P = (e2) => e2 in E;
 class DragAndDropHandler {
   constructor(component, config) {
     this.component = component;
     this.config = {
-      orientation: a$1.Vertical,
+      orientation: a$3.Vertical,
       clientCoordinate: "clientY",
       ...config
     };
@@ -7865,7 +7901,7 @@ class DragAndDropHandler {
     if (!this._validateDragOver(e2)) {
       return;
     }
-    const draggedElement = D.getDraggedElement();
+    const draggedElement = D$1.getDraggedElement();
     const dropIndicator = this.config.getDropIndicator();
     const closestPosition = this._findClosestPosition(e2);
     if (!closestPosition) {
@@ -7900,7 +7936,7 @@ class DragAndDropHandler {
     if (!(e2.target instanceof HTMLElement)) {
       return false;
     }
-    const draggedElement = D.getDraggedElement();
+    const draggedElement = D$1.getDraggedElement();
     const dropIndicator = this.config.getDropIndicator();
     return !!(draggedElement && dropIndicator);
   }
@@ -7928,14 +7964,14 @@ class DragAndDropHandler {
     return placements;
   }
 }
-const t = (e2) => {
+const t$1 = (e2) => {
   let o2 = e2;
   return e2.shadowRoot && e2.shadowRoot.activeElement && (o2 = e2.shadowRoot.activeElement), o2;
 };
-let e = null;
-const u3 = (t2, o2) => {
-  e && clearTimeout(e), e = setTimeout(() => {
-    e = null, t2();
+let e$1 = null;
+const u$1 = (t2, o2) => {
+  e$1 && clearTimeout(e$1), e$1 = setTimeout(() => {
+    e$1 = null, t2();
   }, o2);
 };
 const n$1 = (e2) => {
@@ -7981,15 +8017,15 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const DropIndicatorCss = `:host{position:absolute;pointer-events:none;z-index:99}:host([orientation="Vertical"]) .ui5-di-needle{width:.125rem;height:100%;inset-block:0;background:var(--sapContent_DragAndDropActiveColor)}:host([orientation="Vertical"]){margin-left:-.0625rem}:host([orientation="Horizontal"]) .ui5-di-needle{height:.125rem;width:100%;inset-inline:0;background:var(--sapContent_DragAndDropActiveColor)}:host([orientation="Horizontal"]){margin-top:-.0625rem}:host([orientation="Horizontal"][placement="Before"][first]){margin-top:.3125rem}:host([orientation="Horizontal"][placement="After"][last]){margin-top:-.3125rem}:host([orientation="Vertical"]) .ui5-di-needle:before{left:-.1875rem;content:"";position:absolute;width:.25rem;height:.25rem;border-radius:.25rem;border:.125rem solid var(--sapContent_DragAndDropActiveColor);background-color:#fff;pointer-events:none}:host([orientation="Horizontal"]) .ui5-di-needle:before{top:-.1875rem;content:"";position:absolute;width:.25rem;height:.25rem;border-radius:.25rem;border:.125rem solid var(--sapContent_DragAndDropActiveColor);background-color:#fff;pointer-events:none}:host .ui5-di-rect{border:.125rem solid var(--sapContent_DragAndDropActiveColor);position:absolute;inset:0}:host .ui5-di-rect:before{content:" ";position:absolute;inset:0;background:var(--sapContent_DragAndDropActiveColor);opacity:.05}
 `;
-var __decorate$N = function(decorators, target, key, desc) {
+var __decorate$Y = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
-let DropIndicator = class DropIndicator2 extends b$6 {
+let DropIndicator = class DropIndicator2 extends b$7 {
   get _positionProperty() {
-    if (this.orientation === a$1.Vertical) {
+    if (this.orientation === a$3.Vertical) {
       return "left";
     }
     return "top";
@@ -8019,7 +8055,7 @@ let DropIndicator = class DropIndicator2 extends b$6 {
     let position = 0;
     let isLast = false;
     let isFirst = false;
-    if (this.orientation === a$1.Vertical) {
+    if (this.orientation === a$3.Vertical) {
       switch (this.placement) {
         case r$2.Before:
           position = left;
@@ -8034,7 +8070,7 @@ let DropIndicator = class DropIndicator2 extends b$6 {
       }
       style.height = `${height}px`;
     }
-    if (this.orientation === a$1.Horizontal) {
+    if (this.orientation === a$3.Horizontal) {
       switch (this.placement) {
         case r$2.Before:
           position = top;
@@ -8062,19 +8098,19 @@ let DropIndicator = class DropIndicator2 extends b$6 {
     Object.assign(this.style, style);
   }
 };
-__decorate$N([
-  s$7({ type: Object })
+__decorate$Y([
+  s$8({ type: Object })
 ], DropIndicator.prototype, "targetReference", void 0);
-__decorate$N([
-  s$7({ type: Object })
+__decorate$Y([
+  s$8({ type: Object })
 ], DropIndicator.prototype, "ownerReference", void 0);
-__decorate$N([
-  s$7()
+__decorate$Y([
+  s$8()
 ], DropIndicator.prototype, "placement", void 0);
-__decorate$N([
-  s$7()
+__decorate$Y([
+  s$8()
 ], DropIndicator.prototype, "orientation", void 0);
-DropIndicator = __decorate$N([
+DropIndicator = __decorate$Y([
   m$8({
     tag: "ui5-drop-indicator",
     renderer: y$5,
@@ -8105,17 +8141,17 @@ const r$1 = (e2) => {
   const n2 = e2.nodeName.toLowerCase();
   return n2 === "a" || /^(input|select|textarea|button|object)$/.test(n2) ? !e2.disabled : false;
 };
-const b = (e2) => l2(e2.tagName === "SLOT" ? [e2] : [...e2.children]), l2 = (e2, n2) => {
-  const a2 = n2 || [];
+const b$1 = (e2) => l$1(e2.tagName === "SLOT" ? [e2] : [...e2.children]), l$1 = (e2, n2) => {
+  const a3 = n2 || [];
   return e2 && e2.forEach((r3) => {
     if (r3.nodeType === Node.TEXT_NODE || r3.nodeType === Node.COMMENT_NODE) return;
     const t2 = r3;
-    if (!t2.hasAttribute("data-sap-no-tab-ref")) if (r$1(t2) && a2.push(t2), t2.tagName === "SLOT") l2(t2.assignedElements(), a2);
+    if (!t2.hasAttribute("data-sap-no-tab-ref")) if (r$1(t2) && a3.push(t2), t2.tagName === "SLOT") l$1(t2.assignedElements(), a3);
     else {
       const s2 = t2.shadowRoot ? t2.shadowRoot.children : t2.children;
-      l2([...s2], a2);
+      l$1([...s2], a3);
     }
-  }), a2;
+  }), a3;
 };
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
@@ -8125,13 +8161,13 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const draggableElementStyles = `[draggable=true]{cursor:grab!important}[draggable=true][data-moving]{cursor:grabbing!important;opacity:var(--sapContent_DisabledOpacity)}
 `;
-var __decorate$M = function(decorators, target, key, desc) {
+var __decorate$X = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
-let ListItemBase = class ListItemBase2 extends b$6 {
+let ListItemBase = class ListItemBase2 extends b$7 {
   constructor() {
     super(...arguments);
     this.selected = false;
@@ -8142,7 +8178,7 @@ let ListItemBase = class ListItemBase2 extends b$6 {
     this.actionable = false;
   }
   onEnterDOM() {
-    if (f$g()) {
+    if (f$h()) {
       this.setAttribute("desktop", "");
     }
   }
@@ -8197,13 +8233,13 @@ let ListItemBase = class ListItemBase2 extends b$6 {
    * Override from subcomponent, if needed
    */
   _isEnter(e2) {
-    return b$5(e2);
+    return b$6(e2);
   }
   fireItemPress(e2) {
     if (this.disabled || !this._pressable) {
       return;
     }
-    if (b$5(e2)) {
+    if (b$6(e2)) {
       e2.preventDefault();
     }
     this.fireDecoratorEvent("_press", { item: this, selected: this.selected, key: e2.key });
@@ -8226,8 +8262,8 @@ let ListItemBase = class ListItemBase2 extends b$6 {
    * [Tab] is performed onto the last tabbale content item.
    */
   shouldForwardTabAfter() {
-    const aContent = b(this.getFocusDomRef());
-    return aContent.length === 0 || aContent[aContent.length - 1] === t$4();
+    const aContent = b$1(this.getFocusDomRef());
+    return aContent.length === 0 || aContent[aContent.length - 1] === t$5();
   }
   /**
    * Determines if the current list item is target of [SHIFT+TAB].
@@ -8268,46 +8304,46 @@ let ListItemBase = class ListItemBase2 extends b$6 {
     return true;
   }
 };
-__decorate$M([
-  s$7({ type: Boolean })
+__decorate$X([
+  s$8({ type: Boolean })
 ], ListItemBase.prototype, "selected", void 0);
-__decorate$M([
-  s$7({ type: Boolean })
+__decorate$X([
+  s$8({ type: Boolean })
 ], ListItemBase.prototype, "movable", void 0);
-__decorate$M([
-  s$7({ type: Boolean })
+__decorate$X([
+  s$8({ type: Boolean })
 ], ListItemBase.prototype, "hasBorder", void 0);
-__decorate$M([
-  s$7()
+__decorate$X([
+  s$8()
 ], ListItemBase.prototype, "forcedTabIndex", void 0);
-__decorate$M([
-  s$7({ type: Boolean })
+__decorate$X([
+  s$8({ type: Boolean })
 ], ListItemBase.prototype, "disabled", void 0);
-__decorate$M([
-  s$7({ type: Boolean })
+__decorate$X([
+  s$8({ type: Boolean })
 ], ListItemBase.prototype, "focused", void 0);
-__decorate$M([
-  s$7({ type: Boolean })
+__decorate$X([
+  s$8({ type: Boolean })
 ], ListItemBase.prototype, "actionable", void 0);
-ListItemBase = __decorate$M([
+ListItemBase = __decorate$X([
   m$8({
     renderer: y$5,
     styles: [styles$3, draggableElementStyles]
   }),
-  l$d("request-tabindex-change", {
+  l$e("request-tabindex-change", {
     bubbles: true
   }),
-  l$d("_press", {
+  l$e("_press", {
     bubbles: true
   }),
-  l$d("_focused", {
+  l$e("_focused", {
     bubbles: true
   }),
-  l$d("forward-after", {
+  l$e("forward-after", {
     bubbles: true,
     cancelable: true
   }),
-  l$d("forward-before", {
+  l$e("forward-before", {
     bubbles: true
   })
 ], ListItemBase);
@@ -8350,7 +8386,7 @@ var ListItemAccessibleRole;
   ListItemAccessibleRole2["None"] = "None";
 })(ListItemAccessibleRole || (ListItemAccessibleRole = {}));
 const ListItemAccessibleRole$1 = ListItemAccessibleRole;
-var __decorate$L = function(decorators, target, key, desc) {
+var __decorate$W = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -8416,28 +8452,28 @@ let ListItemGroupHeader = ListItemGroupHeader_1 = class ListItemGroupHeader2 ext
     return this.defaultSlotText || this.groupHeaderText || "";
   }
 };
-__decorate$L([
-  s$7()
+__decorate$W([
+  s$8()
 ], ListItemGroupHeader.prototype, "accessibleName", void 0);
-__decorate$L([
-  s$7()
+__decorate$W([
+  s$8()
 ], ListItemGroupHeader.prototype, "accessibleRole", void 0);
-__decorate$L([
-  s$7()
+__decorate$W([
+  s$8()
 ], ListItemGroupHeader.prototype, "wrappingType", void 0);
-__decorate$L([
-  s$7()
+__decorate$W([
+  s$8()
 ], ListItemGroupHeader.prototype, "mediaRange", void 0);
-__decorate$L([
-  s$7({ noAttribute: true })
+__decorate$W([
+  s$8({ noAttribute: true })
 ], ListItemGroupHeader.prototype, "expandableTextTemplate", void 0);
-__decorate$L([
+__decorate$W([
   d$8()
 ], ListItemGroupHeader.prototype, "subItems", void 0);
-__decorate$L([
+__decorate$W([
   i$9("@ui5/webcomponents")
 ], ListItemGroupHeader, "i18nBundle", void 0);
-ListItemGroupHeader = ListItemGroupHeader_1 = __decorate$L([
+ListItemGroupHeader = ListItemGroupHeader_1 = __decorate$W([
   m$8({
     tag: "ui5-li-group-header",
     languageAware: true,
@@ -8454,13 +8490,13 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const ListItemGroupCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{height:var(--_ui5-v2-17-0_group_header_list_item_height);background:var(--ui5-v2-17-0-group-header-listitem-background-color);color:var(--sapList_TableGroupHeaderTextColor)}.ui5-group-li-root{width:100%;height:100%;position:relative;box-sizing:border-box;padding:0;margin:0;list-style-type:none}
 `;
-var __decorate$K = function(decorators, target, key, desc) {
+var __decorate$V = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
-let ListItemGroup = class ListItemGroup2 extends b$6 {
+let ListItemGroup = class ListItemGroup2 extends b$7 {
   constructor() {
     super();
     this.wrappingType = "None";
@@ -8508,29 +8544,29 @@ let ListItemGroup = class ListItemGroup2 extends b$6 {
     return this.groupHeaderItem || this.items.at(0);
   }
 };
-__decorate$K([
-  s$7()
+__decorate$V([
+  s$8()
 ], ListItemGroup.prototype, "headerText", void 0);
-__decorate$K([
-  s$7()
+__decorate$V([
+  s$8()
 ], ListItemGroup.prototype, "headerAccessibleName", void 0);
-__decorate$K([
+__decorate$V([
   d$8({
     "default": true,
     invalidateOnChildChange: true,
     type: HTMLElement
   })
 ], ListItemGroup.prototype, "items", void 0);
-__decorate$K([
-  s$7()
+__decorate$V([
+  s$8()
 ], ListItemGroup.prototype, "wrappingType", void 0);
-__decorate$K([
-  s$7({ type: Boolean })
+__decorate$V([
+  s$8({ type: Boolean })
 ], ListItemGroup.prototype, "focused", void 0);
-__decorate$K([
+__decorate$V([
   d$8({ type: HTMLElement })
 ], ListItemGroup.prototype, "header", void 0);
-ListItemGroup = __decorate$K([
+ListItemGroup = __decorate$V([
   m$8({
     tag: "ui5-li-group",
     renderer: y$5,
@@ -8538,11 +8574,11 @@ ListItemGroup = __decorate$K([
     template: ListItemGroupTemplate$1,
     styles: [ListItemGroupCss]
   }),
-  l$d("move-over", {
+  l$e("move-over", {
     bubbles: true,
     cancelable: true
   }),
-  l$d("move", {
+  l$e("move", {
     bubbles: true
   })
 ], ListItemGroup);
@@ -8551,7 +8587,7 @@ const isInstanceOfListItemGroup = (object) => {
   return "isListItemGroup" in object;
 };
 const ListItemGroup$1 = ListItemGroup;
-var __decorate$J = function(decorators, target, key, desc) {
+var __decorate$U = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -8559,8 +8595,8 @@ var __decorate$J = function(decorators, target, key, desc) {
 };
 var List_1;
 const INFINITE_SCROLL_DEBOUNCE_RATE = 250;
-const PAGE_UP_DOWN_SIZE$1 = 10;
-let List = List_1 = class List2 extends b$6 {
+const PAGE_UP_DOWN_SIZE$2 = 10;
+let List = List_1 = class List2 extends b$7 {
   constructor() {
     super();
     this.indent = false;
@@ -8577,8 +8613,8 @@ let List = List_1 = class List2 extends b$6 {
     this._startMarkerOutOfView = false;
     this._previouslyFocusedItem = null;
     this._forwardingFocus = false;
-    this._itemNavigation = new f$1(this, {
-      skipItemsSize: PAGE_UP_DOWN_SIZE$1,
+    this._itemNavigation = new f$2(this, {
+      skipItemsSize: PAGE_UP_DOWN_SIZE$2,
       // PAGE_UP and PAGE_DOWN will skip trough 10 items
       navigationMode: r$3.Vertical,
       getItemsCallback: () => this.getEnabledItems()
@@ -8611,13 +8647,13 @@ let List = List_1 = class List2 extends b$6 {
   }
   onEnterDOM() {
     y$3(this, this._updateAssociatedLabelsTexts.bind(this));
-    f$5.register(this.getDomRef(), this.handleResizeCallback);
+    f$6.register(this.getDomRef(), this.handleResizeCallback);
   }
   onExitDOM() {
     T$3(this);
     this.unobserveListEnd();
     this.unobserveListStart();
-    f$5.deregister(this.getDomRef(), this.handleResizeCallback);
+    f$6.deregister(this.getDomRef(), this.handleResizeCallback);
   }
   onBeforeRendering() {
     this.detachGroupHeaderEvents();
@@ -8795,7 +8831,7 @@ let List = List_1 = class List2 extends b$6 {
     });
   }
   async observeListEnd() {
-    await f$h();
+    await f$i();
     this.getEndIntersectionObserver().observe(this.listEndDOM);
   }
   unobserveListEnd() {
@@ -8805,7 +8841,7 @@ let List = List_1 = class List2 extends b$6 {
     }
   }
   async observeListStart() {
-    await f$h();
+    await f$i();
     this.getStartIntersectionObserver().observe(this.listStartDOM);
   }
   unobserveListStart() {
@@ -8817,7 +8853,7 @@ let List = List_1 = class List2 extends b$6 {
   onEndIntersection(entries) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        u3(this.loadMore.bind(this), INFINITE_SCROLL_DEBOUNCE_RATE);
+        u$1(this.loadMore.bind(this), INFINITE_SCROLL_DEBOUNCE_RATE);
       }
     });
   }
@@ -8982,7 +9018,7 @@ let List = List_1 = class List2 extends b$6 {
       e2.preventDefault();
       this._loadMoreActive = true;
     }
-    if (b$5(e2)) {
+    if (b$6(e2)) {
       this._onLoadMoreClick();
       this._loadMoreActive = true;
     }
@@ -9044,7 +9080,7 @@ let List = List_1 = class List2 extends b$6 {
   * KEYBOARD SUPPORT
   */
   _handleTabNext(e2) {
-    t(e2.target);
+    t$1(e2.target);
     {
       return;
     }
@@ -9068,7 +9104,7 @@ let List = List_1 = class List2 extends b$6 {
     this._shouldFocusGrowingButton();
   }
   _onfocusin(e2) {
-    const target = t(e2.target);
+    const target = t$1(e2.target);
     if (!this.isForwardElement(target)) {
       return;
     }
@@ -9306,83 +9342,83 @@ let List = List_1 = class List2 extends b$6 {
     return this._startIntersectionObserver;
   }
 };
-__decorate$J([
-  s$7()
+__decorate$U([
+  s$8()
 ], List.prototype, "headerText", void 0);
-__decorate$J([
-  s$7()
+__decorate$U([
+  s$8()
 ], List.prototype, "footerText", void 0);
-__decorate$J([
-  s$7({ type: Boolean })
+__decorate$U([
+  s$8({ type: Boolean })
 ], List.prototype, "indent", void 0);
-__decorate$J([
-  s$7()
+__decorate$U([
+  s$8()
 ], List.prototype, "selectionMode", void 0);
-__decorate$J([
-  s$7()
+__decorate$U([
+  s$8()
 ], List.prototype, "noDataText", void 0);
-__decorate$J([
-  s$7()
+__decorate$U([
+  s$8()
 ], List.prototype, "separators", void 0);
-__decorate$J([
-  s$7()
+__decorate$U([
+  s$8()
 ], List.prototype, "growing", void 0);
-__decorate$J([
-  s$7()
+__decorate$U([
+  s$8()
 ], List.prototype, "growingButtonText", void 0);
-__decorate$J([
-  s$7({ type: Boolean })
+__decorate$U([
+  s$8({ type: Boolean })
 ], List.prototype, "loading", void 0);
-__decorate$J([
-  s$7({ type: Number })
+__decorate$U([
+  s$8({ type: Number })
 ], List.prototype, "loadingDelay", void 0);
-__decorate$J([
-  s$7()
+__decorate$U([
+  s$8()
 ], List.prototype, "accessibleName", void 0);
-__decorate$J([
-  s$7({ type: Object })
+__decorate$U([
+  s$8({ type: Object })
 ], List.prototype, "accessibilityAttributes", void 0);
-__decorate$J([
-  s$7()
+__decorate$U([
+  s$8()
 ], List.prototype, "accessibleNameRef", void 0);
-__decorate$J([
-  s$7()
+__decorate$U([
+  s$8()
 ], List.prototype, "accessibleDescription", void 0);
-__decorate$J([
-  s$7()
+__decorate$U([
+  s$8()
 ], List.prototype, "accessibleDescriptionRef", void 0);
-__decorate$J([
-  s$7({ noAttribute: true })
+__decorate$U([
+  s$8({ noAttribute: true })
 ], List.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$J([
-  s$7({ noAttribute: true })
+__decorate$U([
+  s$8({ noAttribute: true })
 ], List.prototype, "_associatedLabelsRefTexts", void 0);
-__decorate$J([
-  s$7()
+__decorate$U([
+  s$8()
 ], List.prototype, "accessibleRole", void 0);
-__decorate$J([
-  s$7({ type: Boolean })
+__decorate$U([
+  s$8({ type: Boolean })
 ], List.prototype, "_inViewport", void 0);
-__decorate$J([
-  s$7({ type: Boolean })
+__decorate$U([
+  s$8({ type: Boolean })
 ], List.prototype, "_loadMoreActive", void 0);
-__decorate$J([
-  s$7()
+__decorate$U([
+  s$8()
 ], List.prototype, "mediaRange", void 0);
-__decorate$J([
+__decorate$U([
   d$8({
     type: HTMLElement,
     "default": true,
     invalidateOnChildChange: true
   })
 ], List.prototype, "items", void 0);
-__decorate$J([
+__decorate$U([
   d$8()
 ], List.prototype, "header", void 0);
-__decorate$J([
+__decorate$U([
   i$9("@ui5/webcomponents")
 ], List, "i18nBundle", void 0);
-List = List_1 = __decorate$J([
+List = List_1 = __decorate$U([
   m$8({
     tag: "ui5-list",
     fastNavigation: true,
@@ -9392,50 +9428,50 @@ List = List_1 = __decorate$J([
       listCss
     ]
   }),
-  l$d("item-click", {
+  l$e("item-click", {
     bubbles: true,
     cancelable: true
   }),
-  l$d("item-close", {
+  l$e("item-close", {
     bubbles: true
   }),
-  l$d("item-toggle", {
+  l$e("item-toggle", {
     bubbles: true
   }),
-  l$d("item-delete", {
+  l$e("item-delete", {
     bubbles: true
   }),
-  l$d("selection-change", {
+  l$e("selection-change", {
     bubbles: true,
     cancelable: true
   }),
-  l$d("load-more", {
+  l$e("load-more", {
     bubbles: true
   }),
-  l$d("item-focused", {
+  l$e("item-focused", {
     bubbles: true
   }),
-  l$d("move-over", {
+  l$e("move-over", {
     bubbles: true,
     cancelable: true
   }),
-  l$d("move", {
+  l$e("move", {
     bubbles: true
   })
 ], List);
 List.define();
-const name$A = "resize-corner";
-const pathData$z = "M384 160v32q0 12-10 22L182 406q-10 10-22 10h-32zM224 416l160-160v32q0 12-10 22l-96 96q-10 10-22 10h-32zm160-64v32q0 12-10 22t-22 10h-32z";
-const ltr$z = false;
-const collection$z = "SAP-icons-v4";
-const packageName$z = "@ui5/webcomponents-icons";
-y$2(name$A, { pathData: pathData$z, ltr: ltr$z, collection: collection$z, packageName: packageName$z });
-const name$z = "resize-corner";
-const pathData$y = "M282 416q-11 0-18.5-7.5T256 390t7-18l109-109q7-7 18-7t18.5 7.5T416 282t-7 18L300 409q-7 7-18 7zm-160 0q-11 0-18.5-7.5T96 390t7-18l269-269q7-7 18-7t18.5 7.5T416 122t-7 18L140 409q-7 7-18 7z";
-const ltr$y = false;
-const collection$y = "SAP-icons-v5";
-const packageName$y = "@ui5/webcomponents-icons";
-y$2(name$z, { pathData: pathData$y, ltr: ltr$y, collection: collection$y, packageName: packageName$y });
+const name$I = "resize-corner";
+const pathData$H = "M384 160v32q0 12-10 22L182 406q-10 10-22 10h-32zM224 416l160-160v32q0 12-10 22l-96 96q-10 10-22 10h-32zm160-64v32q0 12-10 22t-22 10h-32z";
+const ltr$H = false;
+const collection$H = "SAP-icons-v4";
+const packageName$H = "@ui5/webcomponents-icons";
+y$2(name$I, { pathData: pathData$H, ltr: ltr$H, collection: collection$H, packageName: packageName$H });
+const name$H = "resize-corner";
+const pathData$G = "M282 416q-11 0-18.5-7.5T256 390t7-18l109-109q7-7 18-7t18.5 7.5T416 282t-7 18L300 409q-7 7-18 7zm-160 0q-11 0-18.5-7.5T96 390t7-18l269-269q7-7 18-7t18.5 7.5T416 122t-7 18L140 409q-7 7-18 7z";
+const ltr$G = false;
+const collection$G = "SAP-icons-v5";
+const packageName$G = "@ui5/webcomponents-icons";
+y$2(name$H, { pathData: pathData$G, ltr: ltr$G, collection: collection$G, packageName: packageName$G });
 const resizeCorner = "resize-corner";
 function DialogTemplate() {
   return PopupTemplate.call(this, {
@@ -9453,7 +9489,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const dialogCSS = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{min-width:20rem;min-height:6rem;max-height:94%;max-width:90%;flex-direction:column;box-shadow:var(--sapContent_Shadow3);border-radius:var(--sapElement_BorderCornerRadius)}:host([stretch]){width:90%;height:94%}:host([stretch][on-phone]){width:100%;height:100%;max-height:100%;max-width:100%;border-radius:0;min-width:0}:host([draggable]) .ui5-popup-header-root,:host([draggable]) ::slotted([slot="header"]){cursor:move}:host([draggable]) .ui5-popup-header-root *{cursor:auto}:host([draggable]) .ui5-popup-root{user-select:text}::slotted([slot="header"]){max-width:100%}.ui5-popup-root{display:flex;flex-direction:column;max-width:100vw}.ui5-popup-header-root{position:relative}.ui5-popup-header-root:before{content:"";position:absolute;inset-block-start:auto;inset-block-end:0;inset-inline-start:0;inset-inline-end:0;height:var(--_ui5-v2-17-0_dialog_header_state_line_height);background:var(--sapObjectHeader_BorderColor)}:host([state="Negative"]) .ui5-popup-header-root:before{background:var(--sapErrorBorderColor)}:host([state="Information"]) .ui5-popup-header-root:before{background:var(--sapInformationBorderColor)}:host([state="Positive"]) .ui5-popup-header-root:before{background:var(--sapSuccessBorderColor)}:host([state="Critical"]) .ui5-popup-header-root:before{background:var(--sapWarningBorderColor)}.ui5-dialog-value-state-icon{margin-inline-end:.5rem;flex-shrink:0}:host([state="Negative"]) .ui5-dialog-value-state-icon{color:var(--sapNegativeElementColor)}:host([state="Information"]) .ui5-dialog-value-state-icon{color:var(--sapInformativeElementColor)}:host([state="Positive"]) .ui5-dialog-value-state-icon{color:var(--sapPositiveElementColor)}:host([state="Critical"]) .ui5-dialog-value-state-icon{color:var(--sapCriticalElementColor)}.ui5-popup-header-root{outline:none}:host([desktop]) .ui5-popup-header-root:focus:after,.ui5-popup-header-root:focus-visible:after{content:"";position:absolute;left:var(--_ui5-v2-17-0_dialog_header_focus_left_offset);bottom:var(--_ui5-v2-17-0_dialog_header_focus_bottom_offset);right:var(--_ui5-v2-17-0_dialog_header_focus_right_offset);top:var(--_ui5-v2-17-0_dialog_header_focus_top_offset);border:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);border-radius:var(--_ui5-v2-17-0_dialog_header_border_radius) var(--_ui5-v2-17-0_dialog_header_border_radius) 0 0;pointer-events:none}:host([stretch]) .ui5-popup-content{width:100%;height:100%}.ui5-popup-content{min-height:var(--_ui5-v2-17-0_dialog_content_min_height);flex:1 1 auto}.ui5-popup-resize-handle{position:absolute;bottom:-.5rem;inset-inline-end:-.5rem;cursor:var(--_ui5-v2-17-0_dialog_resize_cursor);width:1.5rem;height:1.5rem;border-radius:50%}.ui5-popup-resize-handle [ui5-icon]{color:var(--sapButton_Lite_TextColor)}::slotted([slot="footer"]){height:var(--_ui5-v2-17-0_dialog_footer_height)}::slotted([slot="footer"][ui5-bar][design="Footer"]){border-top:none}::slotted([slot="header"][ui5-bar]){box-shadow:none}::slotted([slot="footer"][ui5-toolbar]){border:0}:host::backdrop{background-color:var(--_ui5-v2-17-0_popup_block_layer_background);opacity:var(--_ui5-v2-17-0_popup_block_layer_opacity)}.ui5-block-layer{display:block}
 `;
-var __decorate$I = function(decorators, target, key, desc) {
+var __decorate$T = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -9651,7 +9687,7 @@ let Dialog = Dialog_1 = class Dialog2 extends Popup$1 {
     if (!this._movable || !Dialog_1._isHeader(e2.target)) {
       return;
     }
-    if (this.draggable && [P$2, _$1, D$2, R$1].some((key) => key(e2))) {
+    if (this.draggable && [P$2, _$1, D$3, R$1].some((key) => key(e2))) {
       this._dragWithEvent(e2);
       return;
     }
@@ -9672,7 +9708,7 @@ let Dialog = Dialog_1 = class Dialog2 extends Popup$1 {
         newPos = top + STEP_SIZE;
         posDirection = "top";
         break;
-      case D$2(e2):
+      case D$3(e2):
         newPos = left - STEP_SIZE;
         posDirection = "left";
         break;
@@ -9787,31 +9823,31 @@ let Dialog = Dialog_1 = class Dialog2 extends Popup$1 {
     window.removeEventListener("mouseup", this._resizeMouseUpHandler);
   }
 };
-__decorate$I([
-  s$7()
+__decorate$T([
+  s$8()
 ], Dialog.prototype, "headerText", void 0);
-__decorate$I([
-  s$7({ type: Boolean })
+__decorate$T([
+  s$8({ type: Boolean })
 ], Dialog.prototype, "stretch", void 0);
-__decorate$I([
-  s$7({ type: Boolean })
+__decorate$T([
+  s$8({ type: Boolean })
 ], Dialog.prototype, "draggable", void 0);
-__decorate$I([
-  s$7({ type: Boolean })
+__decorate$T([
+  s$8({ type: Boolean })
 ], Dialog.prototype, "resizable", void 0);
-__decorate$I([
-  s$7()
+__decorate$T([
+  s$8()
 ], Dialog.prototype, "state", void 0);
-__decorate$I([
+__decorate$T([
   d$8()
 ], Dialog.prototype, "header", void 0);
-__decorate$I([
+__decorate$T([
   d$8()
 ], Dialog.prototype, "footer", void 0);
-__decorate$I([
+__decorate$T([
   i$9("@ui5/webcomponents")
 ], Dialog, "i18nBundle", void 0);
-Dialog = Dialog_1 = __decorate$I([
+Dialog = Dialog_1 = __decorate$T([
   m$8({
     tag: "ui5-dialog",
     template: DialogTemplate,
@@ -9834,7 +9870,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const ResponsivePopoverCss = `:host{--_ui5-v2-17-0_input_width: 100%;min-width:6.25rem;min-height:2rem}:host([on-phone]){display:contents}.ui5-responsive-popover-header{height:var(--_ui5-v2-17-0-responsive_popover_header_height);display:flex;justify-content:var(--_ui5-v2-17-0_popup_header_prop_header_text_alignment);align-items:center;width:100%}.ui5-responsive-popover-header-text{width:calc(100% - var(--_ui5-v2-17-0_button_base_min_width))}.ui5-responsive-popover-header-no-title{justify-content:flex-end}
 `;
-var __decorate$H = function(decorators, target, key, desc) {
+var __decorate$S = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -9938,19 +9974,19 @@ let ResponsivePopover = ResponsivePopover_1 = class ResponsivePopover2 extends P
     return this._dialog.isModal;
   }
 };
-__decorate$H([
-  s$7({ type: Boolean })
+__decorate$S([
+  s$8({ type: Boolean })
 ], ResponsivePopover.prototype, "contentOnlyOnDesktop", void 0);
-__decorate$H([
-  s$7({ type: Boolean })
+__decorate$S([
+  s$8({ type: Boolean })
 ], ResponsivePopover.prototype, "_hideHeader", void 0);
-__decorate$H([
-  s$7({ type: Boolean })
+__decorate$S([
+  s$8({ type: Boolean })
 ], ResponsivePopover.prototype, "_hideCloseButton", void 0);
-__decorate$H([
+__decorate$S([
   i$9("@ui5/webcomponents")
 ], ResponsivePopover, "i18nBundle", void 0);
-ResponsivePopover = ResponsivePopover_1 = __decorate$H([
+ResponsivePopover = ResponsivePopover_1 = __decorate$S([
   m$8({
     tag: "ui5-responsive-popover",
     styles: [Popover$1.styles, ResponsivePopoverCss],
@@ -9958,18 +9994,18 @@ ResponsivePopover = ResponsivePopover_1 = __decorate$H([
   })
 ], ResponsivePopover);
 ResponsivePopover.define();
-const name$y = "slim-arrow-down";
-const pathData$x = "M420.5 187q11-12 23 0 5 5 5 11t-5 11l-165 165q-10 9-23 9t-22-9l-166-165q-5-5-5-11.5t5-11.5 11.5-5 11.5 5l160 160q5 6 11 0z";
-const ltr$x = false;
-const collection$x = "SAP-icons-v4";
-const packageName$x = "@ui5/webcomponents-icons";
-y$2(name$y, { pathData: pathData$x, ltr: ltr$x, collection: collection$x, packageName: packageName$x });
-const name$x = "slim-arrow-down";
-const pathData$w = "M96 186q0-11 7.5-18.5T122 160q10 0 18 8l116 121 116-121q8-8 18-8 11 0 18.5 7.5T416 186q0 10-7 17L275 344q-8 8-19 8-12 0-18-8L103 203q-7-7-7-17z";
-const ltr$w = false;
-const collection$w = "SAP-icons-v5";
-const packageName$w = "@ui5/webcomponents-icons";
-y$2(name$x, { pathData: pathData$w, ltr: ltr$w, collection: collection$w, packageName: packageName$w });
+const name$G = "slim-arrow-down";
+const pathData$F = "M420.5 187q11-12 23 0 5 5 5 11t-5 11l-165 165q-10 9-23 9t-22-9l-166-165q-5-5-5-11.5t5-11.5 11.5-5 11.5 5l160 160q5 6 11 0z";
+const ltr$F = false;
+const collection$F = "SAP-icons-v4";
+const packageName$F = "@ui5/webcomponents-icons";
+y$2(name$G, { pathData: pathData$F, ltr: ltr$F, collection: collection$F, packageName: packageName$F });
+const name$F = "slim-arrow-down";
+const pathData$E = "M96 186q0-11 7.5-18.5T122 160q10 0 18 8l116 121 116-121q8-8 18-8 11 0 18.5 7.5T416 186q0 10-7 17L275 344q-8 8-19 8-12 0-18-8L103 203q-7-7-7-17z";
+const ltr$E = false;
+const collection$E = "SAP-icons-v5";
+const packageName$E = "@ui5/webcomponents-icons";
+y$2(name$F, { pathData: pathData$E, ltr: ltr$E, collection: collection$E, packageName: packageName$E });
 const slimArrowDown = "slim-arrow-down";
 function SelectPopoverTemplate() {
   return jsxs(Fragment, { children: [this.options.length > 0 && jsxs(ResponsivePopover, { id: this.responsivePopoverId, class: {
@@ -10012,14 +10048,14 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const SelectPopoverCss = `.ui5-select-popover::part(content),.ui5-select-popover::part(header){padding:0}.ui5-select-popover .ui5-responsive-popover-header .row{justify-content:flex-start}
 `;
-var __decorate$G = function(decorators, target, key, desc) {
+var __decorate$R = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 var Select_1;
-let Select = Select_1 = class Select2 extends b$6 {
+let Select = Select_1 = class Select2 extends b$7 {
   constructor() {
     super(...arguments);
     this.disabled = false;
@@ -10180,11 +10216,11 @@ let Select = Select_1 = class Select2 extends b$6 {
    * @returns The combined text with separator if additionalText exists, otherwise just mainText
    * @private
    */
-  _buildDisplayText(mainText, additionalText) {
-    if (!additionalText) {
+  _buildDisplayText(mainText, additionalText2) {
+    if (!additionalText2) {
       return mainText;
     }
-    return `${mainText} ${this._separatorSymbol} ${additionalText}`;
+    return `${mainText} ${this._separatorSymbol} ${additionalText2}`;
   }
   get text() {
     const selectedOption = this.selectedOption;
@@ -10251,14 +10287,14 @@ let Select = Select_1 = class Select2 extends b$6 {
       this._handleHomeKey(e2);
     } else if (n$c(e2)) {
       this._handleEndKey(e2);
-    } else if (b$5(e2)) {
+    } else if (b$6(e2)) {
       this._handleSelectionChange();
     } else if (P$2(e2) || _$1(e2)) {
       this._handleArrowNavigation(e2);
     }
   }
   _handleKeyboardNavigation(e2) {
-    if (b$5(e2) || this.readonly) {
+    if (b$6(e2) || this.readonly) {
       return;
     }
     const typedCharacter = e2.key.toLowerCase();
@@ -10639,73 +10675,73 @@ let Select = Select_1 = class Select2 extends b$6 {
     return this.shadowRoot.querySelector("[ui5-popover]");
   }
 };
-__decorate$G([
-  s$7({ type: Boolean })
+__decorate$R([
+  s$8({ type: Boolean })
 ], Select.prototype, "disabled", void 0);
-__decorate$G([
-  s$7()
+__decorate$R([
+  s$8()
 ], Select.prototype, "icon", void 0);
-__decorate$G([
-  s$7()
+__decorate$R([
+  s$8()
 ], Select.prototype, "name", void 0);
-__decorate$G([
-  s$7()
+__decorate$R([
+  s$8()
 ], Select.prototype, "valueState", void 0);
-__decorate$G([
-  s$7({ type: Boolean })
+__decorate$R([
+  s$8({ type: Boolean })
 ], Select.prototype, "required", void 0);
-__decorate$G([
-  s$7({ type: Boolean })
+__decorate$R([
+  s$8({ type: Boolean })
 ], Select.prototype, "readonly", void 0);
-__decorate$G([
-  s$7()
+__decorate$R([
+  s$8()
 ], Select.prototype, "accessibleName", void 0);
-__decorate$G([
-  s$7()
+__decorate$R([
+  s$8()
 ], Select.prototype, "accessibleNameRef", void 0);
-__decorate$G([
-  s$7()
+__decorate$R([
+  s$8()
 ], Select.prototype, "accessibleDescription", void 0);
-__decorate$G([
-  s$7()
+__decorate$R([
+  s$8()
 ], Select.prototype, "accessibleDescriptionRef", void 0);
-__decorate$G([
-  s$7()
+__decorate$R([
+  s$8()
 ], Select.prototype, "tooltip", void 0);
-__decorate$G([
-  s$7()
+__decorate$R([
+  s$8()
 ], Select.prototype, "textSeparator", void 0);
-__decorate$G([
-  s$7({ type: String, noAttribute: true })
+__decorate$R([
+  s$8({ type: String, noAttribute: true })
 ], Select.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$G([
-  s$7({ type: Boolean, noAttribute: true })
+__decorate$R([
+  s$8({ type: Boolean, noAttribute: true })
 ], Select.prototype, "_iconPressed", void 0);
-__decorate$G([
-  s$7({ type: Boolean })
+__decorate$R([
+  s$8({ type: Boolean })
 ], Select.prototype, "opened", void 0);
-__decorate$G([
-  s$7({ type: Number, noAttribute: true })
+__decorate$R([
+  s$8({ type: Number, noAttribute: true })
 ], Select.prototype, "_listWidth", void 0);
-__decorate$G([
-  s$7({ type: Boolean })
+__decorate$R([
+  s$8({ type: Boolean })
 ], Select.prototype, "focused", void 0);
-__decorate$G([
+__decorate$R([
   d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
 ], Select.prototype, "options", void 0);
-__decorate$G([
+__decorate$R([
   d$8()
 ], Select.prototype, "valueStateMessage", void 0);
-__decorate$G([
+__decorate$R([
   d$8()
 ], Select.prototype, "label", void 0);
-__decorate$G([
-  s$7()
+__decorate$R([
+  s$8()
 ], Select.prototype, "value", null);
-__decorate$G([
+__decorate$R([
   i$9("@ui5/webcomponents")
 ], Select, "i18nBundle", void 0);
-Select = Select_1 = __decorate$G([
+Select = Select_1 = __decorate$R([
   m$8({
     tag: "ui5-select",
     languageAware: true,
@@ -10727,19 +10763,19 @@ Select = Select_1 = __decorate$G([
       Button$1
     ]
   }),
-  l$d("change", {
+  l$e("change", {
     bubbles: true,
     cancelable: true
   }),
-  l$d("live-change", {
+  l$e("live-change", {
     bubbles: true
   }),
-  l$d("open"),
-  l$d("close"),
-  l$d("selected-item-changed", {
+  l$e("open"),
+  l$e("close"),
+  l$e("selected-item-changed", {
     bubbles: true
   }),
-  l$d("input", {
+  l$e("input", {
     bubbles: true
   })
 ], Select);
@@ -10769,7 +10805,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const listItemAdditionalTextCss = `.ui5-li-additional-text{margin:0 .25rem;color:var(--sapNeutralTextColor);font-size:var(--sapFontSize);min-width:3.75rem;text-align:end;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 `;
-var __decorate$F = function(decorators, target, key, desc) {
+var __decorate$Q = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -10783,25 +10819,25 @@ let Option = class Option2 extends ListItemBase$1 {
     return this.textContent || "";
   }
 };
-__decorate$F([
+__decorate$Q([
   d$8({ type: Node, "default": true, invalidateOnChildChange: true })
 ], Option.prototype, "text", void 0);
-__decorate$F([
-  s$7()
+__decorate$Q([
+  s$8()
 ], Option.prototype, "value", void 0);
-__decorate$F([
-  s$7()
+__decorate$Q([
+  s$8()
 ], Option.prototype, "icon", void 0);
-__decorate$F([
-  s$7()
+__decorate$Q([
+  s$8()
 ], Option.prototype, "additionalText", void 0);
-__decorate$F([
-  s$7()
+__decorate$Q([
+  s$8()
 ], Option.prototype, "tooltip", void 0);
-__decorate$F([
-  s$7({ type: Boolean })
+__decorate$Q([
+  s$8({ type: Boolean })
 ], Option.prototype, "selected", void 0);
-Option = __decorate$F([
+Option = __decorate$Q([
   m$8({
     tag: "ui5-option",
     template: OptionTemplate,
@@ -10825,14 +10861,14 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const cardCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block;width:100%}.ui5-card-root{width:100%;height:100%;color:var(--sapGroup_TitleTextColor);background:var(--sapTile_Background);box-shadow:var(--_ui5-v2-17-0_card_box_shadow);border-radius:var(--_ui5-v2-17-0_card_border-radius);border:var(--_ui5-v2-17-0_card_border);overflow:hidden;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);box-sizing:border-box}.ui5-card-busy-indicator{width:100%;height:100%;border-radius:var(--_ui5-v2-17-0_card_border-radius)}.ui5-card-inner{width:100%;height:100%}.ui5-card-root.ui5-card--interactive:hover{box-shadow:var(--_ui5-v2-17-0_card_hover_box_shadow)}.ui5-card-root.ui5-card--interactive:active{box-shadow:var(--_ui5-v2-17-0_card_box_shadow)}.ui5-card-root.ui5-card--nocontent{height:auto}.ui5-card-root.ui5-card--nocontent .ui5-card-header-root{border-bottom:none}.ui5-card--nocontent ::slotted([ui5-card-header]){--_ui5-v2-17-0_card_header_focus_bottom_radius: var(--_ui5-v2-17-0_card_header_focus_radius)}.ui5-card-root .ui5-card-header-root{border-bottom:var(--_ui5-v2-17-0_card_header_border)}
 `;
-var __decorate$E = function(decorators, target, key, desc) {
+var __decorate$P = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 var Card_1;
-let Card = Card_1 = class Card2 extends b$6 {
+let Card = Card_1 = class Card2 extends b$7 {
   constructor() {
     super(...arguments);
     this.loading = false;
@@ -10849,28 +10885,28 @@ let Card = Card_1 = class Card2 extends b$6 {
     return Card_1.i18nBundle.getText(ARIA_LABEL_CARD_CONTENT);
   }
 };
-__decorate$E([
-  s$7()
+__decorate$P([
+  s$8()
 ], Card.prototype, "accessibleName", void 0);
-__decorate$E([
-  s$7()
+__decorate$P([
+  s$8()
 ], Card.prototype, "accessibleNameRef", void 0);
-__decorate$E([
+__decorate$P([
   d$8({ type: HTMLElement, "default": true })
 ], Card.prototype, "content", void 0);
-__decorate$E([
+__decorate$P([
   d$8({ type: HTMLElement, invalidateOnChildChange: true })
 ], Card.prototype, "header", void 0);
-__decorate$E([
-  s$7({ type: Boolean })
+__decorate$P([
+  s$8({ type: Boolean })
 ], Card.prototype, "loading", void 0);
-__decorate$E([
-  s$7({ type: Number })
+__decorate$P([
+  s$8({ type: Number })
 ], Card.prototype, "loadingDelay", void 0);
-__decorate$E([
+__decorate$P([
   i$9("@ui5/webcomponents")
 ], Card, "i18nBundle", void 0);
-Card = Card_1 = __decorate$E([
+Card = Card_1 = __decorate$P([
   m$8({
     tag: "ui5-card",
     languageAware: true,
@@ -10885,21 +10921,21 @@ function CardHeaderTemplate() {
     "ui5-card-header": true,
     "ui5-card-header--interactive": this.interactive,
     "ui5-card-header--active": this.interactive && this._headerActive,
-    "ui5-card-header-ff": b$a()
+    "ui5-card-header-ff": b$b()
   }, part: "root", onClick: this._click, onKeyDown: this._keydown, onKeyUp: this._keyup, children: [jsxs("div", { class: "ui5-card-header-focusable-element", "aria-labelledby": this.ariaLabelledBy, "aria-roledescription": this.ariaRoleDescription, role: this.ariaRoleFocusableElement, "data-sap-focus-ref": true, tabindex: 0, children: [this.hasAvatar && jsx("div", { id: `${this._id}-avatar`, class: "ui5-card-header-avatar", "aria-label": this.ariaCardAvatarLabel, children: jsx("slot", { name: "avatar" }) }), jsxs("div", { class: "ui5-card-header-text", children: [jsxs("div", { class: "ui5-card-header-first-line", children: [this.titleText && jsx("div", { id: `${this._id}-title`, class: "ui5-card-header-title", part: "title", role: "heading", "aria-level": 3, children: this.titleText }), this.additionalText && jsx("div", { class: "ui5-card-header-additionalText", children: jsx("span", { id: `${this._id}-additionalText`, part: "additional-text", dir: "auto", children: this.additionalText }) })] }), this.subtitleText && jsx("div", { id: `${this._id}-subtitle`, class: "ui5-card-header-subtitle", part: "subtitle", children: this.subtitleText })] })] }), this.hasAction && jsx("div", { class: "ui5-card-header-action", onFocusIn: this._actionsFocusin, onFocusOut: this._actionsFocusout, children: jsx("slot", { name: "action" }) })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const cardHeaderCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}.ui5-card-header{position:relative;display:flex;align-items:center;padding:var(--_ui5-v2-17-0_card_header_padding);outline:none}:host([subtitleText]) .ui5-card-header{align-items:flex-start}:host([desktop]) .ui5-card-header.ui5-card-header-ff:not(.ui5-card-header-hide-focus):focus-within:before,.ui5-card-header.ui5-card-header-ff:not(.ui5-card-header-hide-focus):focus-visible:before{outline:none;content:"";position:absolute;border:var(--_ui5-v2-17-0_card_header_focus_border);pointer-events:none;top:var(--_ui5-v2-17-0_card_header_focus_offset);left:var(--_ui5-v2-17-0_card_header_focus_offset);right:var(--_ui5-v2-17-0_card_header_focus_offset);bottom:var(--_ui5-v2-17-0_card_header_focus_offset);border-top-left-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-top-right-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-bottom-left-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius)}:host([desktop]) .ui5-card-header:not(.ui5-card-header-ff):not(.ui5-card-header-hide-focus):has(.ui5-card-header-focusable-element:focus):before,.ui5-card-header:not(.ui5-card-header-ff):not(.ui5-card-header-hide-focus):has(.ui5-card-header-focusable-element:focus-visible):before{outline:none;content:"";position:absolute;border:var(--_ui5-v2-17-0_card_header_focus_border);pointer-events:none;top:var(--_ui5-v2-17-0_card_header_focus_offset);left:var(--_ui5-v2-17-0_card_header_focus_offset);right:var(--_ui5-v2-17-0_card_header_focus_offset);bottom:var(--_ui5-v2-17-0_card_header_focus_offset);border-top-left-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-top-right-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-bottom-left-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius)}.ui5-card-header-focusable-element{outline:none}.ui5-card-header-focusable-element{display:inherit;align-items:inherit;flex:1;min-width:0}.ui5-card-header.ui5-card-header--interactive:hover{cursor:pointer;background:var(--_ui5-v2-17-0_card_header_hover_bg)}.ui5-card-header.ui5-card-header--active,.ui5-card-header.ui5-card-header--interactive:active{background:var(--_ui5-v2-17-0_card_header_active_bg)}.ui5-card-header .ui5-card-header-text{flex:1;min-width:0;pointer-events:none}.ui5-card-header-first-line{display:flex;flex-flow:row;justify-content:space-between}.ui5-card-header-additionalText{flex:none}.ui5-card-header .ui5-card-header-avatar{height:3rem;width:3rem;display:flex;align-items:center;justify-content:center;margin-inline-end:.75rem;pointer-events:none;align-self:flex-start}::slotted([ui5-icon]){width:1.5rem;height:1.5rem;color:var(--sapTile_IconColor)}::slotted(img[slot="avatar"]){width:100%;height:100%;border-radius:50%}.ui5-card-header .ui5-card-header-additionalText{display:inline-block;font-family:var(--sapFontFamily);font-size:var(--sapFontSmallSize);color:var(--sapTile_TextColor);text-align:left;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;vertical-align:middle;margin-inline-start:1rem;margin-block-start:.125rem}.ui5-card-header .ui5-card-header-text .ui5-card-header-title{font-family:var(--_ui5-v2-17-0_card_header_title_font_family);font-size:var(--_ui5-v2-17-0_card_header_title_font_size);font-weight:var(--_ui5-v2-17-0_card_header_title_font_weight);color:var(--sapTile_TitleTextColor);max-height:3.5rem;align-self:flex-end}.ui5-card-header .ui5-card-header-text .ui5-card-header-subtitle{font-family:var(--sapFontFamily);font-size:var(--sapFontSize);font-weight:400;color:var(--sapTile_TextColor);margin-top:var(--_ui5-v2-17-0_card_header_subtitle_margin_top);max-height:2.1rem}.ui5-card-header .ui5-card-header-text .ui5-card-header-title,.ui5-card-header .ui5-card-header-text .ui5-card-header-subtitle{text-align:start;text-overflow:ellipsis;white-space:normal;word-wrap:break-word;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;display:-webkit-box;max-width:100%}.ui5-card-header .ui5-card-header-text .ui5-card-header-title{-webkit-line-clamp:3}.ui5-card-header-action{display:flex;padding-inline-start:1rem;align-self:flex-start}
 `;
-var __decorate$D = function(decorators, target, key, desc) {
+var __decorate$O = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 var CardHeader_1;
-let CardHeader = CardHeader_1 = class CardHeader2 extends b$6 {
+let CardHeader = CardHeader_1 = class CardHeader2 extends b$7 {
   constructor() {
     super(...arguments);
     this.interactive = false;
@@ -10907,7 +10943,7 @@ let CardHeader = CardHeader_1 = class CardHeader2 extends b$6 {
     this._headerActive = false;
   }
   onEnterDOM() {
-    if (f$g()) {
+    if (f$h()) {
       this.setAttribute("desktop", "");
     }
   }
@@ -10961,7 +10997,7 @@ let CardHeader = CardHeader_1 = class CardHeader2 extends b$6 {
     if (!this.interactive || !this._root.contains(e2.target)) {
       return;
     }
-    const enter = b$5(e2);
+    const enter = b$6(e2);
     const space = A$4(e2);
     this._headerActive = enter || space;
     if (enter) {
@@ -10983,34 +11019,34 @@ let CardHeader = CardHeader_1 = class CardHeader2 extends b$6 {
     }
   }
 };
-__decorate$D([
-  s$7()
+__decorate$O([
+  s$8()
 ], CardHeader.prototype, "titleText", void 0);
-__decorate$D([
-  s$7()
+__decorate$O([
+  s$8()
 ], CardHeader.prototype, "subtitleText", void 0);
-__decorate$D([
-  s$7()
+__decorate$O([
+  s$8()
 ], CardHeader.prototype, "additionalText", void 0);
-__decorate$D([
-  s$7({ type: Boolean })
+__decorate$O([
+  s$8({ type: Boolean })
 ], CardHeader.prototype, "interactive", void 0);
-__decorate$D([
-  s$7({ type: Number })
+__decorate$O([
+  s$8({ type: Number })
 ], CardHeader.prototype, "_ariaLevel", void 0);
-__decorate$D([
-  s$7({ type: Boolean, noAttribute: true })
+__decorate$O([
+  s$8({ type: Boolean, noAttribute: true })
 ], CardHeader.prototype, "_headerActive", void 0);
-__decorate$D([
+__decorate$O([
   d$8()
 ], CardHeader.prototype, "avatar", void 0);
-__decorate$D([
+__decorate$O([
   d$8()
 ], CardHeader.prototype, "action", void 0);
-__decorate$D([
+__decorate$O([
   i$9("@ui5/webcomponents")
 ], CardHeader, "i18nBundle", void 0);
-CardHeader = CardHeader_1 = __decorate$D([
+CardHeader = CardHeader_1 = __decorate$O([
   m$8({
     tag: "ui5-card-header",
     languageAware: true,
@@ -11018,23 +11054,23 @@ CardHeader = CardHeader_1 = __decorate$D([
     template: CardHeaderTemplate,
     styles: cardHeaderCss
   }),
-  l$d("click", {
+  l$e("click", {
     bubbles: true
   })
 ], CardHeader);
 CardHeader.define();
-const name$w = "sys-help-2";
-const pathData$v = "M256 0q53 0 99.5 20T437 74.5t55 81.5 20 100-20 99.5-55 81.5-81.5 55-99.5 20-100-20-81.5-55T20 355.5 0 256t20-100 54.5-81.5T156 20 256 0zm-5 425q15 0 26-11t11-26-11-25.5-26-10.5-25.5 10.5T215 388t10.5 26 25.5 11zm101-239q0-32-27-57t-77-25q-46 0-72.5 24T146 187h52q5-24 17.5-32.5T251 146t35 12.5 12 27.5q0 10-2.5 14T282 215l-20 17q-15 12-23 21t-11.5 18.5-4.5 21-1 27.5h50q0-12 .5-19t3-12.5T283 278t15-13l27-25 16-18 9-16z";
-const ltr$v = true;
-const collection$v = "SAP-icons-v4";
-const packageName$v = "@ui5/webcomponents-icons";
-y$2(name$w, { pathData: pathData$v, ltr: ltr$v, collection: collection$v, packageName: packageName$v });
-const name$v = "sys-help-2";
-const pathData$u = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm32 289q31-10 50.5-36.5T358 192q0-43-29.5-72.5T256 90q-21 0-39.5 8T184 118.5 162 148t-8 35q0 20 9 30.5t23 10.5q13 0 22.5-9t9.5-23q0-16 11-27t27-11 27 11 11 27-11 27-27 11q-14 0-23 9.5t-9 22.5v26q0 14 9 23t23 9q13 0 22-9t10-22zm-32 127q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
-const ltr$u = true;
-const collection$u = "SAP-icons-v5";
-const packageName$u = "@ui5/webcomponents-icons";
-y$2(name$v, { pathData: pathData$u, ltr: ltr$u, collection: collection$u, packageName: packageName$u });
+const name$E = "sys-help-2";
+const pathData$D = "M256 0q53 0 99.5 20T437 74.5t55 81.5 20 100-20 99.5-55 81.5-81.5 55-99.5 20-100-20-81.5-55T20 355.5 0 256t20-100 54.5-81.5T156 20 256 0zm-5 425q15 0 26-11t11-26-11-25.5-26-10.5-25.5 10.5T215 388t10.5 26 25.5 11zm101-239q0-32-27-57t-77-25q-46 0-72.5 24T146 187h52q5-24 17.5-32.5T251 146t35 12.5 12 27.5q0 10-2.5 14T282 215l-20 17q-15 12-23 21t-11.5 18.5-4.5 21-1 27.5h50q0-12 .5-19t3-12.5T283 278t15-13l27-25 16-18 9-16z";
+const ltr$D = true;
+const collection$D = "SAP-icons-v4";
+const packageName$D = "@ui5/webcomponents-icons";
+y$2(name$E, { pathData: pathData$D, ltr: ltr$D, collection: collection$D, packageName: packageName$D });
+const name$D = "sys-help-2";
+const pathData$C = "M256 0q53 0 99.5 20T437 75t55 81.5 20 99.5-20 99.5-55 81.5-81.5 55-99.5 20-99.5-20T75 437t-55-81.5T0 256t20-99.5T75 75t81.5-55T256 0zm32 289q31-10 50.5-36.5T358 192q0-43-29.5-72.5T256 90q-21 0-39.5 8T184 118.5 162 148t-8 35q0 20 9 30.5t23 10.5q13 0 22.5-9t9.5-23q0-16 11-27t27-11 27 11 11 27-11 27-27 11q-14 0-23 9.5t-9 22.5v26q0 14 9 23t23 9q13 0 22-9t10-22zm-32 127q14 0 23-9t9-23-9-23-23-9-23 9-9 23 9 23 23 9z";
+const ltr$C = true;
+const collection$C = "SAP-icons-v5";
+const packageName$C = "@ui5/webcomponents-icons";
+y$2(name$D, { pathData: pathData$C, ltr: ltr$C, collection: collection$C, packageName: packageName$C });
 var TagDesign;
 (function(TagDesign2) {
   TagDesign2["Set1"] = "Set1";
@@ -11056,14 +11092,14 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const tagCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block}:host{font-size:var(--sapFontSmallSize);font-family:var(--sapFontBoldFamily);font-weight:var(--_ui5-v2-17-0-tag-font-weight);letter-spacing:var(--_ui5-v2-17-0-tag-letter-spacing);line-height:var(--_ui5-v2-17-0-tag-height)}.ui5-tag-root{display:flex;align-items:baseline;justify-content:center;width:100%;min-width:1.125em;max-width:100%;box-sizing:border-box;padding:var(--_ui5-v2-17-0-tag-text-padding);border:.0625rem solid;border-radius:var(--sapButton_BorderCornerRadius);white-space:normal;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit;letter-spacing:inherit}:host([interactive]) .ui5-tag-root:active{text-shadow:var(--ui5-v2-17-0-tag-text-shadow)}:host([interactive]) .ui5-tag-root{cursor:pointer}:host([desktop][interactive]) .ui5-tag-root:focus,:host([interactive]) .ui5-tag-root:focus-visible{outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);outline-offset:1px}:host([wrapping-type="None"]) .ui5-tag-root{white-space:nowrap}:host([_icon-only]) .ui5-tag-root{padding-inline:var(--_ui5-v2-17-0-tag-padding-inline-icon-only)}.ui5-tag-text{text-transform:var(--_ui5-v2-17-0-tag-text-transform);text-align:start;pointer-events:none;overflow:hidden;text-overflow:ellipsis}:host([_has-icon]) .ui5-tag-text{padding-inline-start:var(--_ui5-v2-17-0-tag-icon-gap)}[ui5-icon],::slotted([ui5-icon]){width:var(--_ui5-v2-17-0-tag-icon-width);min-width:var(--_ui5-v2-17-0-tag-icon-width);color:inherit;pointer-events:none;align-self:flex-start}.ui5-tag-root{background-color:var(--sapNeutralBackground);border-color:var(--sapNeutralBorderColor);color:var(--sapTextColor);text-shadow:var(--ui5-v2-17-0-tag-text-shadow)}:host([interactive]) .ui5-tag-root:hover{background-color:var(--sapButton_Neutral_Hover_Background);border-color:var(--sapButton_Neutral_Hover_BorderColor);color:var(--sapButton_Neutral_Hover_TextColor)}:host([interactive]) .ui5-tag-root:active{background-color:var(--sapButton_Neutral_Active_Background);border-color:var(--sapButton_Neutral_Active_BorderColor);color:var(--sapButton_Active_TextColor)}:host([design="Positive"]) .ui5-tag-root{background-color:var(--sapButton_Success_Background);border-color:var(--sapButton_Success_BorderColor);color:var(--sapButton_Success_TextColor);text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([interactive][design="Positive"]) .ui5-tag-root:hover{background-color:var(--sapButton_Success_Hover_Background);border-color:var(--sapButton_Success_Hover_BorderColor);color:var(--sapButton_Success_Hover_TextColor)}:host([interactive][design="Positive"]) .ui5-tag-root:active{background-color:var(--sapButton_Success_Active_Background);border-color:var(--sapButton_Success_Active_BorderColor);color:var(--sapButton_Accept_Selected_TextColor)}:host([design="Negative"]) .ui5-tag-root{background-color:var(--sapButton_Negative_Background);border-color:var(--sapButton_Negative_BorderColor);color:var(--sapButton_Negative_TextColor);text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([interactive][design="Negative"]) .ui5-tag-root:hover{background-color:var(--sapButton_Negative_Hover_Background);border-color:var(--sapButton_Negative_Hover_BorderColor);color:var(--sapButton_Negative_Hover_TextColor)}:host([interactive][design="Negative"]) .ui5-tag-root:active{background-color:var(--sapButton_Negative_Active_Background);border-color:var(--sapButton_Negative_Active_BorderColor);color:var(--sapButton_Reject_Selected_TextColor)}:host([design="Critical"]) .ui5-tag-root{background-color:var(--sapButton_Critical_Background);border-color:var(--sapButton_Critical_BorderColor);color:var(--sapButton_Critical_TextColor);text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([interactive][design="Critical"]) .ui5-tag-root:hover{background-color:var(--sapButton_Critical_Hover_Background);border-color:var(--sapButton_Critical_Hover_BorderColor);color:var(--sapButton_Critical_Hover_TextColor)}:host([interactive][design="Critical"]) .ui5-tag-root:active{background-color:var(--sapButton_Critical_Active_Background);border-color:var(--sapButton_Critical_Active_BorderColor);color:var(--sapButton_Attention_Selected_TextColor)}:host([design="Information"]) .ui5-tag-root{background-color:var(--sapButton_Information_Background);border-color:var(--sapButton_Information_BorderColor);color:var(--sapButton_Information_TextColor);text-shadow:var(--ui5-v2-17-0-tag-information-text-shadow)}:host([interactive][design="Information"]) .ui5-tag-root:hover{background-color:var(--sapButton_Information_Hover_Background);border-color:var(--sapButton_Information_Hover_BorderColor);color:var(--sapButton_Information_Hover_TextColor)}:host([interactive][design="Information"]) .ui5-tag-root:active{background-color:var(--sapButton_Information_Active_Background);border-color:var(--sapButton_Information_Active_BorderColor);color:var(--sapButton_Selected_TextColor)}:host([design="Set1"]) .ui5-tag-root{text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([design="Set1"]) .ui5-tag-root,:host([interactive][design="Set1"]) .ui5-tag-root{background-color:var(--sapIndicationColor_1_Background);border-color:var(--sapIndicationColor_1_BorderColor);color:var(--sapIndicationColor_1_TextColor)}:host([interactive][design="Set1"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_1_Hover_Background)}:host([interactive][design="Set1"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_1_Active_Background);border-color:var(--sapIndicationColor_1_Active_BorderColor);color:var(--sapIndicationColor_1_Active_TextColor)}:host([design="Set1"][color-scheme="2"]) .ui5-tag-root{background-color:var(--sapIndicationColor_2_Background);border-color:var(--sapIndicationColor_2_BorderColor);color:var(--sapIndicationColor_2_TextColor)}:host([interactive][design="Set1"][color-scheme="2"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_2_Hover_Background)}:host([interactive][design="Set1"][color-scheme="2"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_2_Active_Background);border-color:var(--sapIndicationColor_2_Active_BorderColor);color:var(--sapIndicationColor_2_Active_TextColor)}:host([design="Set1"][color-scheme="3"]) .ui5-tag-root{background-color:var(--sapIndicationColor_3_Background);border-color:var(--sapIndicationColor_3_BorderColor);color:var(--sapIndicationColor_3_TextColor)}:host([interactive][design="Set1"][color-scheme="3"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_3_Hover_Background)}:host([interactive][design="Set1"][color-scheme="3"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_3_Active_Background);border-color:var(--sapIndicationColor_3_Active_BorderColor);color:var(--sapIndicationColor_3_Active_TextColor)}:host([design="Set1"][color-scheme="4"]) .ui5-tag-root{background-color:var(--sapIndicationColor_4_Background);border-color:var(--sapIndicationColor_4_BorderColor);color:var(--sapIndicationColor_4_TextColor)}:host([interactive][design="Set1"][color-scheme="4"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_4_Hover_Background)}:host([interactive][design="Set1"][color-scheme="4"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_4_Active_Background);border-color:var(--sapIndicationColor_4_Active_BorderColor);color:var(--sapIndicationColor_4_Active_TextColor)}:host([design="Set1"][color-scheme="5"]) .ui5-tag-root{background-color:var(--sapIndicationColor_5_Background);border-color:var(--sapIndicationColor_5_BorderColor);color:var(--sapIndicationColor_5_TextColor)}:host([interactive][design="Set1"][color-scheme="5"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_5_Hover_Background)}:host([interactive][design="Set1"][color-scheme="5"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_5_Active_Background);border-color:var(--sapIndicationColor_5_Active_BorderColor);color:var(--sapIndicationColor_5_Active_TextColor)}:host([design="Set1"][color-scheme="6"]) .ui5-tag-root{background-color:var(--sapIndicationColor_6_Background);border-color:var(--sapIndicationColor_6_BorderColor);color:var(--sapIndicationColor_6_TextColor)}:host([interactive][design="Set1"][color-scheme="6"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_6_Hover_Background)}:host([interactive][design="Set1"][color-scheme="6"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_6_Active_Background);border-color:var(--sapIndicationColor_6_Active_BorderColor);color:var(--sapIndicationColor_6_Active_TextColor)}:host([design="Set1"][color-scheme="7"]) .ui5-tag-root{background-color:var(--sapIndicationColor_7_Background);border-color:var(--sapIndicationColor_7_BorderColor);color:var(--sapIndicationColor_7_TextColor)}:host([interactive][design="Set1"][color-scheme="7"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_7_Hover_Background)}:host([interactive][design="Set1"][color-scheme="7"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_7_Active_Background);border-color:var(--sapIndicationColor_7_Active_BorderColor);color:var(--sapIndicationColor_7_Active_TextColor)}:host([design="Set1"][color-scheme="8"]) .ui5-tag-root{background-color:var(--sapIndicationColor_8_Background);border-color:var(--sapIndicationColor_8_BorderColor);color:var(--sapIndicationColor_8_TextColor)}:host([interactive][design="Set1"][color-scheme="8"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_8_Hover_Background)}:host([interactive][design="Set1"][color-scheme="8"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_8_Active_Background);border-color:var(--sapIndicationColor_8_Active_BorderColor);color:var(--sapIndicationColor_8_Active_TextColor)}:host([design="Set1"][color-scheme="9"]) .ui5-tag-root{background-color:var(--sapIndicationColor_9_Background);border-color:var(--sapIndicationColor_9_BorderColor);color:var(--sapIndicationColor_9_TextColor)}:host([interactive][design="Set1"][color-scheme="9"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_9_Hover_Background)}:host([interactive][design="Set1"][color-scheme="9"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_9_Active_Background);border-color:var(--sapIndicationColor_9_Active_BorderColor);color:var(--sapIndicationColor_9_Active_TextColor)}:host([design="Set1"][color-scheme="10"]) .ui5-tag-root{background-color:var(--sapIndicationColor_10_Background);border-color:var(--sapIndicationColor_10_BorderColor);color:var(--sapIndicationColor_10_TextColor)}:host([interactive][design="Set1"][color-scheme="10"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_10_Hover_Background)}:host([interactive][design="Set1"][color-scheme="10"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_10_Active_Background);border-color:var(--sapIndicationColor_10_Active_BorderColor);color:var(--sapIndicationColor_10_Active_TextColor)}:host([design="Set2"]) .ui5-tag-root{text-shadow:var(--ui5-v2-17-0-tag-text-shadow)}:host([design="Set2"]) .ui5-tag-root,:host([interactive][design="Set2"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-color)}:host([interactive][design="Set2"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-hover-background)}:host([interactive][design="Set2"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-active-color)}:host([design="Set2"][color-scheme="2"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-color)}:host([design="Set2"][color-scheme="3"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-color)}:host([interactive][design="Set2"][color-scheme="3"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-hover-background)}:host([interactive][design="Set2"][color-scheme="3"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-active-color)}:host([design="Set2"][color-scheme="4"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-color)}:host([interactive][design="Set2"][color-scheme="4"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-hover-background)}:host([interactive][design="Set2"][color-scheme="4"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-active-color)}:host([design="Set2"][color-scheme="5"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-color)}:host([interactive][design="Set2"][color-scheme="5"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-hover-background)}:host([interactive][design="Set2"][color-scheme="5"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-active-color)}:host([design="Set2"][color-scheme="6"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-color)}:host([interactive][design="Set2"][color-scheme="6"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-hover-background)}:host([interactive][design="Set2"][color-scheme="6"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-active-color)}:host([design="Set2"][color-scheme="7"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-color)}:host([interactive][design="Set2"][color-scheme="7"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-hover-background)}:host([interactive][design="Set2"][color-scheme="7"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-active-color)}:host([design="Set2"][color-scheme="8"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-color)}:host([interactive][design="Set2"][color-scheme="8"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-hover-background)}:host([interactive][design="Set2"][color-scheme="8"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-active-color)}:host([design="Set2"][color-scheme="9"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-color)}:host([interactive][design="Set2"][color-scheme="9"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-hover-background)}:host([interactive][design="Set2"][color-scheme="9"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-active-color)}:host([interactive][design="Set2"][color-scheme="10"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-hover-background)}:host([interactive][design="Set2"][color-scheme="10"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-active-color)}:host([design="Set2"][color-scheme="10"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-color)}:host([interactive][design="Set2"][color-scheme="2"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-hover-background)}:host([interactive][design="Set2"][color-scheme="2"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-active-color)}:host([size="L"]){font-family:var(--sapFontSemiboldDuplexFamily);line-height:var(--_ui5-v2-17-0-tag-height_size_l)}:host([size="L"]) .ui5-tag-root{font-size:var(--_ui5-v2-17-0-tag-font-size_size_l);min-width:var(--_ui5-v2-17-0-tag-min-width_size_l);padding:var(--_ui5-v2-17-0-tag-text_padding_size_l)}:host([size="L"]) [ui5-icon],:host([size="L"]) ::slotted([ui5-icon]){min-width:var(--_ui5-v2-17-0-tag-icon_min_width_size_l);min-height:var(--_ui5-v2-17-0-tag-icon_min_height_size_l);height:var(--_ui5-v2-17-0-tag-icon_height_size_l)}
 `;
-var __decorate$C = function(decorators, target, key, desc) {
+var __decorate$N = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 var Tag_1;
-let Tag = Tag_1 = class Tag2 extends b$6 {
+let Tag = Tag_1 = class Tag2 extends b$7 {
   constructor() {
     super(...arguments);
     this.design = "Neutral";
@@ -11076,7 +11112,7 @@ let Tag = Tag_1 = class Tag2 extends b$6 {
     this._iconOnly = false;
   }
   onEnterDOM() {
-    if (f$g()) {
+    if (f$h()) {
       this.setAttribute("desktop", "");
     }
   }
@@ -11101,7 +11137,7 @@ let Tag = Tag_1 = class Tag2 extends b$6 {
     return void 0;
   }
   get hasText() {
-    return t$7(this.text);
+    return t$8(this.text);
   }
   get hasIcon() {
     return !!this.icon.length;
@@ -11147,40 +11183,40 @@ let Tag = Tag_1 = class Tag2 extends b$6 {
     this.fireDecoratorEvent("click");
   }
 };
-__decorate$C([
-  s$7()
+__decorate$N([
+  s$8()
 ], Tag.prototype, "design", void 0);
-__decorate$C([
-  s$7()
+__decorate$N([
+  s$8()
 ], Tag.prototype, "colorScheme", void 0);
-__decorate$C([
-  s$7({ type: Boolean })
+__decorate$N([
+  s$8({ type: Boolean })
 ], Tag.prototype, "hideStateIcon", void 0);
-__decorate$C([
-  s$7({ type: Boolean })
+__decorate$N([
+  s$8({ type: Boolean })
 ], Tag.prototype, "interactive", void 0);
-__decorate$C([
-  s$7()
+__decorate$N([
+  s$8()
 ], Tag.prototype, "wrappingType", void 0);
-__decorate$C([
-  s$7()
+__decorate$N([
+  s$8()
 ], Tag.prototype, "size", void 0);
-__decorate$C([
-  s$7({ type: Boolean })
+__decorate$N([
+  s$8({ type: Boolean })
 ], Tag.prototype, "_hasIcon", void 0);
-__decorate$C([
-  s$7({ type: Boolean })
+__decorate$N([
+  s$8({ type: Boolean })
 ], Tag.prototype, "_iconOnly", void 0);
-__decorate$C([
+__decorate$N([
   d$8({ type: Node, "default": true })
 ], Tag.prototype, "text", void 0);
-__decorate$C([
+__decorate$N([
   d$8()
 ], Tag.prototype, "icon", void 0);
-__decorate$C([
+__decorate$N([
   i$9("@ui5/webcomponents")
 ], Tag, "i18nBundle", void 0);
-Tag = Tag_1 = __decorate$C([
+Tag = Tag_1 = __decorate$N([
   m$8({
     tag: "ui5-tag",
     languageAware: true,
@@ -11188,7 +11224,7 @@ Tag = Tag_1 = __decorate$C([
     template: TagTemplate,
     styles: tagCss
   }),
-  l$d("click", {
+  l$e("click", {
     bubbles: true
   })
 ], Tag);
@@ -11230,7 +11266,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const messageStripCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block;width:100%}.ui5-message-strip-root{width:100%;height:100%;display:flex;border-radius:var(--sapPopover_BorderCornerRadius);padding:var(--_ui5-v2-17-0_message_strip_padding);border-width:var(--_ui5-v2-17-0_message_strip_border_width);border-style:solid;box-sizing:border-box;position:relative}.ui5-message-strip-root-hide-icon{padding-inline:var(--_ui5-v2-17-0_message_strip_padding_inline_no_icon);padding-block:var(--_ui5-v2-17-0_message_strip_padding_block_no_icon)}.ui5-message-strip-root-hide-close-button{padding-inline-end:1rem}.ui5-message-strip-root--info{background-color:var(--sapInformationBackground);border-color:var(--sapMessage_InformationBorderColor);color:var(--sapTextColor)}.ui5-message-strip-root--info .ui5-message-strip-icon{color:var(--sapInformativeElementColor)}.ui5-message-strip-root--positive{background-color:var(--sapSuccessBackground);border-color:var(--sapMessage_SuccessBorderColor)}.ui5-message-strip-root--positive .ui5-message-strip-icon{color:var(--sapPositiveElementColor)}.ui5-message-strip-root--negative{background-color:var(--sapErrorBackground);border-color:var(--sapMessage_ErrorBorderColor)}.ui5-message-strip-root--negative .ui5-message-strip-icon{color:var(--sapNegativeElementColor)}.ui5-message-strip-root--critical{background-color:var(--sapWarningBackground);border-color:var(--sapMessage_WarningBorderColor)}.ui5-message-strip-root--critical .ui5-message-strip-icon{color:var(--sapCriticalElementColor)}.ui5-message-strip-icon-wrapper{position:absolute;top:var(--_ui5-v2-17-0_message_strip_icon_top);inset-inline-start:.75rem;box-sizing:border-box}.ui5-message-strip-text{width:100%;color:var(--sapTextColor);line-height:1.2;font-family:var(--sapFontFamily);font-size:var(--sapFontSize)}.ui5-message-strip-close-button{height:1.625rem;min-height:1.625rem;position:absolute;top:var(--_ui5-v2-17-0_message_strip_close_button_top);inset-inline-end:var(--_ui5-v2-17-0_message_strip_close_button_right)}:host([color-scheme="1"]) .ui5-message-strip-root--color-set-1,:host(:not([color-scheme])[design="ColorSet1"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_1_Background);border-color:var(--sapIndicationColor_1_BorderColor)}:host([color-scheme="2"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_2_Background);border-color:var(--sapIndicationColor_2_BorderColor)}:host([color-scheme="3"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_3_Background);border-color:var(--sapIndicationColor_3_BorderColor)}:host([color-scheme="4"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_4_Background);border-color:var(--sapIndicationColor_4_BorderColor)}:host([color-scheme="5"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_5_Background);border-color:var(--sapIndicationColor_5_BorderColor)}:host([color-scheme="6"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_6_Background);border-color:var(--sapIndicationColor_6_BorderColor)}:host([color-scheme="7"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_7_Background);border-color:var(--sapIndicationColor_7_BorderColor)}:host([color-scheme="8"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_8_Background);border-color:var(--sapIndicationColor_8_BorderColor)}:host([color-scheme="9"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_9_Background);border-color:var(--sapIndicationColor_9_BorderColor)}:host([color-scheme="10"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_10_Background);border-color:var(--sapIndicationColor_10_BorderColor)}:host([color-scheme="1"]) .ui5-message-strip-root--color-set-2,:host(:not([color-scheme])[design="ColorSet2"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_1_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_1_set_2_border_color)}:host([color-scheme="2"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_2_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_2_set_2_border_color)}:host([color-scheme="3"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_3_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_3_set_2_border_color)}:host([color-scheme="4"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_4_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_4_set_2_border_color)}:host([color-scheme="5"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_5_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_5_set_2_border_color)}:host([color-scheme="6"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_6_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_6_set_2_border_color)}:host([color-scheme="7"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_7_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_7_set_2_border_color)}:host([color-scheme="8"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_8_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_8_set_2_border_color)}:host([color-scheme="9"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_9_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_9_set_2_border_color)}:host([color-scheme="10"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_10_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_10_set_2_border_color)}:host([design="ColorSet1"]) .ui5-message-strip-root .ui5-message-strip-text{color:var(--sapContent_ContrastTextColor);text-shadow:var(--sapContent_ContrastTextShadow)}:host([design="ColorSet1"]) .ui5-message-strip-root ::slotted([slot="icon"]){color:var(--sapContent_ContrastIconColor);text-shadow:var(--sapContent_ContrastTextShadow)}:host([design="ColorSet2"]) .ui5-message-strip-root .ui5-message-strip-text{color:var(--sapTextColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button{color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_1_color)}:host([design="ColorSet2"]) .ui5-message-strip-close-button,:host([design="ColorSet2"]) .ui5-message-strip-root ::slotted([slot="icon"]){color:var(--sapContent_IconColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button:hover{border-color:var(--sapContent_ContrastIconColor);background-color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_1_background);color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_1_color);text-shadow:var(--sapContent_ContrastTextShadow)}:host([design="ColorSet2"]) .ui5-message-strip-close-button:hover{background-color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_2_background);border-color:var(--sapContent_IconColor);color:var(--sapContent_IconColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button:active{background:none;border-color:var(--sapContent_ContrastIconColor)}:host([design="ColorSet2"]) .ui5-message-strip-close-button:active{background:none;border-color:var(--sapContent_IconColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button::part(button):after,:host([design="ColorSet1"]) .ui5-message-strip-close-button::part(button):before{border-color:var(--sapContent_ContrastFocusColor)}
 `;
-var __decorate$B = function(decorators, target, key, desc) {
+var __decorate$M = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -11246,7 +11282,7 @@ var DesignClassesMapping;
   DesignClassesMapping2["ColorSet1"] = "ui5-message-strip-root--color-set-1";
   DesignClassesMapping2["ColorSet2"] = "ui5-message-strip-root--color-set-2";
 })(DesignClassesMapping || (DesignClassesMapping = {}));
-let MessageStrip = MessageStrip_1 = class MessageStrip2 extends b$6 {
+let MessageStrip = MessageStrip_1 = class MessageStrip2 extends b$7 {
   constructor() {
     super(...arguments);
     this.design = "Information";
@@ -11305,25 +11341,25 @@ let MessageStrip = MessageStrip_1 = class MessageStrip2 extends b$6 {
     return DesignClassesMapping[this.design];
   }
 };
-__decorate$B([
-  s$7()
+__decorate$M([
+  s$8()
 ], MessageStrip.prototype, "design", void 0);
-__decorate$B([
-  s$7()
+__decorate$M([
+  s$8()
 ], MessageStrip.prototype, "colorScheme", void 0);
-__decorate$B([
-  s$7({ type: Boolean })
+__decorate$M([
+  s$8({ type: Boolean })
 ], MessageStrip.prototype, "hideIcon", void 0);
-__decorate$B([
-  s$7({ type: Boolean })
+__decorate$M([
+  s$8({ type: Boolean })
 ], MessageStrip.prototype, "hideCloseButton", void 0);
-__decorate$B([
+__decorate$M([
   d$8()
 ], MessageStrip.prototype, "icon", void 0);
-__decorate$B([
+__decorate$M([
   i$9("@ui5/webcomponents")
 ], MessageStrip, "i18nBundle", void 0);
-MessageStrip = MessageStrip_1 = __decorate$B([
+MessageStrip = MessageStrip_1 = __decorate$M([
   m$8({
     tag: "ui5-message-strip",
     languageAware: true,
@@ -11331,21 +11367,21 @@ MessageStrip = MessageStrip_1 = __decorate$B([
     template: MessageStripTemplate,
     styles: messageStripCss
   }),
-  l$d("close")
+  l$e("close")
 ], MessageStrip);
 MessageStrip.define();
-const name$u = "edit";
-const pathData$t = "M475 104q5 7 5 12 0 6-5 11L150 453q-4 4-8 4L32 480l22-110q0-5 4-9L384 36q4-4 11-4t11 4zm-121 99l-46-45L84 381l46 46zm87-88l-46-44-64 64 45 45z";
-const ltr$t = false;
-const collection$t = "SAP-icons-v4";
-const packageName$t = "@ui5/webcomponents-icons";
-y$2(name$u, { pathData: pathData$t, ltr: ltr$t, collection: collection$t, packageName: packageName$t });
-const name$t = "edit";
-const pathData$s = "M505 94q7 7 7 18t-6 17L130 505q-7 7-18 7H26q-11 0-18.5-7.5T0 486v-86q1-10 6-16L382 7q7-7 18-7t18 7zm-55 18l-50-50-50 50 50 50zm-86 86l-50-50L62 400l50 50z";
-const ltr$s = false;
-const collection$s = "SAP-icons-v5";
-const packageName$s = "@ui5/webcomponents-icons";
-y$2(name$t, { pathData: pathData$s, ltr: ltr$s, collection: collection$s, packageName: packageName$s });
+const name$C = "edit";
+const pathData$B = "M475 104q5 7 5 12 0 6-5 11L150 453q-4 4-8 4L32 480l22-110q0-5 4-9L384 36q4-4 11-4t11 4zm-121 99l-46-45L84 381l46 46zm87-88l-46-44-64 64 45 45z";
+const ltr$B = false;
+const collection$B = "SAP-icons-v4";
+const packageName$B = "@ui5/webcomponents-icons";
+y$2(name$C, { pathData: pathData$B, ltr: ltr$B, collection: collection$B, packageName: packageName$B });
+const name$B = "edit";
+const pathData$A = "M505 94q7 7 7 18t-6 17L130 505q-7 7-18 7H26q-11 0-18.5-7.5T0 486v-86q1-10 6-16L382 7q7-7 18-7t18 7zm-55 18l-50-50-50 50 50 50zm-86 86l-50-50L62 400l50 50z";
+const ltr$A = false;
+const collection$A = "SAP-icons-v5";
+const packageName$A = "@ui5/webcomponents-icons";
+y$2(name$B, { pathData: pathData$A, ltr: ltr$A, collection: collection$A, packageName: packageName$A });
 const editIcon = "edit";
 var Highlight;
 (function(Highlight2) {
@@ -11368,20 +11404,20 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const styles$2 = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host([navigated]) .ui5-li-root .ui5-li-navigated{width:.1875rem;position:absolute;right:0;top:0;bottom:0;background-color:var(--sapList_SelectionBorderColor)}:host([active][actionable]) .ui5-li-root .ui5-li-icon{color:var(--sapList_Active_TextColor)}:host([active][actionable]) .ui5-li-title,:host([active][actionable]) .ui5-li-desc,:host([active][actionable]) .ui5-li-additional-text{color:var(--sapList_Active_TextColor)}:host([active][actionable]) .ui5-li-additional-text{text-shadow:none}:host([additional-text-state="Critical"]) .ui5-li-additional-text{color:var(--sapCriticalTextColor)}:host([additional-text-state="Positive"]) .ui5-li-additional-text{color:var(--sapPositiveTextColor)}:host([additional-text-state="Negative"]) .ui5-li-additional-text{color:var(--sapNegativeTextColor)}:host([additional-text-state="Information"]) .ui5-li-additional-text{color:var(--sapInformativeTextColor)}:host([has-title][description]){height:5rem}:host([has-title][image]){height:5rem}:host([_has-image]){height:5rem}:host([image]) .ui5-li-content{height:3rem}::slotted(img[slot="image"]){width:var(--_ui5-v2-17-0_list_item_img_size);height:var(--_ui5-v2-17-0_list_item_img_size);border-radius:var(--ui5-v2-17-0-avatar-border-radius);object-fit:contain}::slotted([ui5-icon][slot="image"]){color:var(--sapContent_NonInteractiveIconColor);min-width:var(--_ui5-v2-17-0_list_item_icon_size);min-height:var(--_ui5-v2-17-0_list_item_icon_size);padding-inline-end:var(--_ui5-v2-17-0_list_item_icon_padding-inline-end)}::slotted([ui5-avatar][slot="image"]){min-width:var(--_ui5-v2-17-0_list_item_img_size);min-height:var(--_ui5-v2-17-0_list_item_img_size);margin-top:var(--_ui5-v2-17-0_list_item_img_top_margin);margin-bottom:var(--_ui5-v2-17-0_list_item_img_bottom_margin);margin-inline-end:var(--_ui5-v2-17-0_list_item_img_hn_margin)}:host([wrapping-type="None"][description]) .ui5-li-root{padding:1rem}:host([description]) .ui5-li-content{height:3rem}:host([has-title][description]) .ui5-li-title{padding-bottom:.5rem}.ui5-li-text-wrapper{flex-direction:column}:host([description]) .ui5-li-text-wrapper{justify-content:space-between;padding:.125rem 0}.ui5-li-description-info-wrapper{display:flex;justify-content:space-between}.ui5-li-additional-text,:host(:not([wrapping-type="Normal"])) .ui5-li-title,.ui5-li-desc{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}:host([wrapping-type="Normal"]){height:auto}:host([wrapping-type="Normal"]) .ui5-li-content{margin:var(--_ui5-v2-17-0_list_item_content_vertical_offset) 0}.ui5-li-desc{color:var(--sapContent_LabelColor);font-size:var(--sapFontSize)}:host([description]) .ui5-li-additional-text{align-self:flex-end}.ui5-li-icon{min-width:var(--_ui5-v2-17-0_list_item_icon_size);min-height:var(--_ui5-v2-17-0_list_item_icon_size);color:var(--sapContent_NonInteractiveIconColor);padding-inline-end:var(--_ui5-v2-17-0_list_item_icon_padding-inline-end)}:host([icon-end]) .ui5-li-icon{padding-inline-start:var(--_ui5-v2-17-0_list_item_icon_padding-inline-end)}.ui5-li-detailbtn,.ui5-li-deletebtn{display:flex;align-items:center;margin-left:var(--_ui5-v2-17-0_list_buttons_left_space)}.ui5-li-multisel-cb,.ui5-li-singlesel-radiobtn{flex-shrink:0}:host([description]) .ui5-li-singlesel-radiobtn{align-self:flex-start;margin-top:var(--_ui5-v2-17-0_list_item_selection_btn_margin_top)}:host([description]) .ui5-li-multisel-cb{align-self:flex-start;margin-top:var(--_ui5-v2-17-0_list_item_selection_btn_margin_top)}:host([_selection-mode="SingleStart"][wrapping-type]) .ui5-li-root{padding-inline:0 1rem}:host([_selection-mode="Multiple"][wrapping-type]) .ui5-li-root{padding-inline:0 1rem}:host([_selection-mode="SingleEnd"][wrapping-type]) .ui5-li-root{padding-inline:1rem 0}:host [ui5-checkbox].ui5-li-singlesel-radiobtn{margin-right:var(--_ui5-v2-17-0_list_item_cb_margin_right)}.ui5-li-highlight{position:absolute;width:.375rem;bottom:0;left:0;top:0;border-inline-end:.0625rem solid var(--ui5-v2-17-0-listitem-background-color);box-sizing:border-box}:host([highlight="Negative"]) .ui5-li-highlight{background:var(--sapErrorBorderColor)}:host([highlight="Critical"]) .ui5-li-highlight{background:var(--sapWarningBorderColor)}:host([highlight="Positive"]) .ui5-li-highlight{background:var(--sapSuccessBorderColor)}:host([highlight="Information"]) .ui5-li-highlight{background:var(--sapInformationBorderColor)}:host([wrapping-type="Normal"][description]),:host([wrapping-type="Normal"][has-title][description]),:host([wrapping-type="Normal"][has-title][image]){height:auto;min-height:5rem}:host([wrapping-type="Normal"][description]) .ui5-li-content,:host([wrapping-type="Normal"][image]) .ui5-li-content{height:auto;min-height:3rem}:host([wrapping-type="Normal"][has-title][description]) .ui5-li-title{padding-bottom:.75rem}:host([wrapping-type="Normal"][additional-text]) .ui5-li-additional-text{padding-inline-start:.75rem}:host([wrapping-type="Normal"]) .ui5-li-description-info-wrapper{flex-direction:column}:host([wrapping-type="Normal"]) .ui5-li-description-info-wrapper .ui5-li-additional-text{white-space:normal}:host([wrapping-type="Normal"]) .ui5-li-multisel-cb,:host([wrapping-type="Normal"]) .ui5-li-singlesel-radiobtn{display:flex;align-self:flex-start}:host([wrapping-type="Normal"][description]) .ui5-li-multisel-cb,:host([wrapping-type="Normal"][description]) .ui5-li-singlesel-radiobtn{margin-top:0}:host([wrapping-type="Normal"]) .ui5-li-icon,:host([wrapping-type="Normal"]) .ui5-li-image{display:flex;align-self:flex-start}:host([wrapping-type="Normal"][icon-end]) .ui5-li-icon{margin-top:var(--_ui5-v2-17-0_list_item_content_vertical_offset)}:host([wrapping-type="Normal"]) ::slotted([ui5-avatar][slot="image"]){margin-top:0;margin-bottom:0}:host([wrapping-type="Normal"]) .ui5-li-detailbtn,:host([wrapping-type="Normal"]) .ui5-li-deletebtn{margin-inline-start:.875rem}
 `;
-const name$s = "slim-arrow-right";
-const pathData$r = "M357.5 233q10 10 10 23t-10 23l-165 165q-12 11-23 0t0-23l160-159q6-6 0-12l-159-159q-5-5-5-11t5-11 11-5 11 5z";
-const ltr$r = false;
-const collection$r = "SAP-icons-v4";
-const packageName$r = "@ui5/webcomponents-icons";
-y$2(name$s, { pathData: pathData$r, ltr: ltr$r, collection: collection$r, packageName: packageName$r });
-const name$r = "slim-arrow-right";
-const pathData$q = "M186 416q-11 0-18.5-7.5T160 390q0-10 8-18l121-116-121-116q-8-8-8-18 0-11 7.5-18.5T186 96q10 0 17 7l141 134q8 8 8 19 0 12-8 18L203 409q-7 7-17 7z";
-const ltr$q = false;
-const collection$q = "SAP-icons-v5";
-const packageName$q = "@ui5/webcomponents-icons";
-y$2(name$r, { pathData: pathData$q, ltr: ltr$q, collection: collection$q, packageName: packageName$q });
+const name$A = "slim-arrow-right";
+const pathData$z = "M357.5 233q10 10 10 23t-10 23l-165 165q-12 11-23 0t0-23l160-159q6-6 0-12l-159-159q-5-5-5-11t5-11 11-5 11 5z";
+const ltr$z = false;
+const collection$z = "SAP-icons-v4";
+const packageName$z = "@ui5/webcomponents-icons";
+y$2(name$A, { pathData: pathData$z, ltr: ltr$z, collection: collection$z, packageName: packageName$z });
+const name$z = "slim-arrow-right";
+const pathData$y = "M186 416q-11 0-18.5-7.5T160 390q0-10 8-18l121-116-121-116q-8-8-8-18 0-11 7.5-18.5T186 96q10 0 17 7l141 134q8 8 8 19 0 12-8 18L203 409q-7 7-17 7z";
+const ltr$y = false;
+const collection$y = "SAP-icons-v5";
+const packageName$y = "@ui5/webcomponents-icons";
+y$2(name$z, { pathData: pathData$y, ltr: ltr$y, collection: collection$y, packageName: packageName$y });
 const slimArrowRightIcon = "slim-arrow-right";
-var __decorate$A = function(decorators, target, key, desc) {
+var __decorate$L = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -11400,7 +11436,7 @@ let ListItem = ListItem_1 = class ListItem2 extends ListItemBase$1 {
     this._selectionMode = "None";
     this.mediaRange = "S";
     this.deactivateByKey = (e2) => {
-      if (b$5(e2)) {
+      if (b$6(e2)) {
         this.deactivate();
       }
     };
@@ -11426,19 +11462,19 @@ let ListItem = ListItem_1 = class ListItem2 extends ListItemBase$1 {
     document.removeEventListener("touchend", this.deactivate);
   }
   async _onkeydown(e2) {
-    if ((A$4(e2) || b$5(e2)) && this._isTargetSelfFocusDomRef(e2)) {
+    if ((A$4(e2) || b$6(e2)) && this._isTargetSelfFocusDomRef(e2)) {
       return;
     }
     super._onkeydown(e2);
     const itemActive = this.type === ListItemType$1.Active, itemNavigated = this.typeNavigation;
-    if ((A$4(e2) || b$5(e2)) && (itemActive || itemNavigated)) {
+    if ((A$4(e2) || b$6(e2)) && (itemActive || itemNavigated)) {
       this.activate();
     }
     if (ro(e2)) {
-      const activeElement = t$4();
+      const activeElement = t$5();
       const focusDomRef = this.getFocusDomRef();
       if (activeElement === focusDomRef) {
-        const firstFocusable = await b$1(focusDomRef);
+        const firstFocusable = await b$2(focusDomRef);
         firstFocusable == null ? void 0 : firstFocusable.focus();
       } else {
         focusDomRef.focus();
@@ -11447,7 +11483,7 @@ let ListItem = ListItem_1 = class ListItem2 extends ListItemBase$1 {
   }
   _onkeyup(e2) {
     super._onkeyup(e2);
-    if (A$4(e2) || b$5(e2)) {
+    if (A$4(e2) || b$6(e2)) {
       this.deactivate();
     }
     if (this.modeDelete && X(e2)) {
@@ -11483,7 +11519,7 @@ let ListItem = ListItem_1 = class ListItem2 extends ListItemBase$1 {
       return;
     }
     if (e2.target === this._listItem) {
-      D.setDraggedElement(this);
+      D$1.setDraggedElement(this);
       this.setAttribute("data-moving", "");
       e2.dataTransfer.dropEffect = "move";
       e2.dataTransfer.effectAllowed = "move";
@@ -11491,7 +11527,7 @@ let ListItem = ListItem_1 = class ListItem2 extends ListItemBase$1 {
   }
   _ondragend(e2) {
     if (e2.target === this._listItem) {
-      D.clearDraggedElement();
+      D$1.clearDraggedElement();
       this.removeAttribute("data-moving");
     }
   }
@@ -11626,46 +11662,46 @@ let ListItem = ListItem_1 = class ListItem2 extends ListItemBase$1 {
     return this.shadowRoot.querySelector("li");
   }
 };
-__decorate$A([
-  s$7()
+__decorate$L([
+  s$8()
 ], ListItem.prototype, "type", void 0);
-__decorate$A([
-  s$7({ type: Object })
+__decorate$L([
+  s$8({ type: Object })
 ], ListItem.prototype, "accessibilityAttributes", void 0);
-__decorate$A([
-  s$7({ type: Boolean })
+__decorate$L([
+  s$8({ type: Boolean })
 ], ListItem.prototype, "navigated", void 0);
-__decorate$A([
-  s$7()
+__decorate$L([
+  s$8()
 ], ListItem.prototype, "tooltip", void 0);
-__decorate$A([
-  s$7({ type: Boolean })
+__decorate$L([
+  s$8({ type: Boolean })
 ], ListItem.prototype, "active", void 0);
-__decorate$A([
-  s$7()
+__decorate$L([
+  s$8()
 ], ListItem.prototype, "highlight", void 0);
-__decorate$A([
-  s$7({ type: Boolean })
+__decorate$L([
+  s$8({ type: Boolean })
 ], ListItem.prototype, "selected", void 0);
-__decorate$A([
-  s$7()
+__decorate$L([
+  s$8()
 ], ListItem.prototype, "accessibleRole", void 0);
-__decorate$A([
-  s$7()
+__decorate$L([
+  s$8()
 ], ListItem.prototype, "_forcedAccessibleRole", void 0);
-__decorate$A([
-  s$7()
+__decorate$L([
+  s$8()
 ], ListItem.prototype, "_selectionMode", void 0);
-__decorate$A([
-  s$7()
+__decorate$L([
+  s$8()
 ], ListItem.prototype, "mediaRange", void 0);
-__decorate$A([
+__decorate$L([
   d$8()
 ], ListItem.prototype, "deleteButton", void 0);
-__decorate$A([
+__decorate$L([
   i$9("@ui5/webcomponents")
 ], ListItem, "i18nBundle", void 0);
-ListItem = ListItem_1 = __decorate$A([
+ListItem = ListItem_1 = __decorate$L([
   m$8({
     languageAware: true,
     renderer: y$5,
@@ -11675,10 +11711,10 @@ ListItem = ListItem_1 = __decorate$A([
       styles$2
     ]
   }),
-  l$d("detail-click", {
+  l$e("detail-click", {
     bubbles: true
   }),
-  l$d("selection-requested", {
+  l$e("selection-requested", {
     bubbles: true
   })
 ], ListItem);
@@ -11767,7 +11803,7 @@ class RadioButtonGroup {
     }
     const hasCheckedRadio = group.some((radioBtn) => radioBtn.checked);
     group.filter((radioBtn) => !radioBtn.disabled).forEach((radioBtn, idx) => {
-      let activeElement = t$4();
+      let activeElement = t$5();
       if (activeElement == null ? void 0 : activeElement.classList.contains("ui5-radio-root")) {
         activeElement = activeElement.getRootNode();
         if (activeElement instanceof ShadowRoot) {
@@ -11896,14 +11932,14 @@ class RadioButtonGroup {
 function RadioButtonTemplate() {
   return jsxs("div", { role: "radio", class: "ui5-radio-root", "aria-checked": this.checked, "aria-disabled": this.effectiveAriaDisabled, "aria-describedby": this.effectiveAriaDescribedBy, "aria-label": this.ariaLabelText, tabindex: this.effectiveTabIndex, onClick: this._onclick, onKeyDown: this._onkeydown, onKeyUp: this._onkeyup, onMouseDown: this._onmousedown, onMouseUp: this._onmouseup, onFocusOut: this._onfocusout, children: [jsxs("div", { class: {
     "ui5-radio-inner": true,
-    "ui5-radio-inner--hoverable": !this.disabled && !this.readonly && f$g()
+    "ui5-radio-inner--hoverable": !this.disabled && !this.readonly && f$h()
   }, children: [jsxs("svg", { class: "ui5-radio-svg", focusable: "false", "aria-hidden": "true", children: [jsx("circle", { part: "outer-ring", class: "ui5-radio-svg-outer", cx: "50%", cy: "50%", r: "50%" }), jsx("circle", { part: "inner-ring", class: "ui5-radio-svg-inner", cx: "50%", cy: "50%" })] }), jsx("input", { type: "radio", required: this.required, checked: this.checked, readonly: this.readonly, disabled: this.disabled, name: this.name, "data-sap-no-tab-ref": true })] }), this.text && jsx(Label$1, { id: `${this._id}-label`, class: "ui5-radio-label", for: this._id, wrappingType: this.wrappingType, children: this.text }), this.hasValueState && jsx("span", { id: `${this._id}-descr`, class: "ui5-hidden-text", children: this.valueStateText })] });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const radioButtonCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block}:host{min-width:var(--_ui5-v2-17-0_radio_button_min_width);max-width:100%;text-overflow:ellipsis;overflow:hidden;color:var(--_ui5-v2-17-0_radio_button_color);border-radius:var(--_ui5-v2-17-0_radio_button_border_radius)}:host(:not([disabled])) .ui5-radio-root{cursor:pointer}:host([checked]){color:var(--_ui5-v2-17-0_radio_button_checked_fill)}:host([checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_inner_ring_color)}:host([checked]) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_color)}:host([disabled]) .ui5-radio-root{color:var(--_ui5-v2-17-0_radio_button_color);opacity:var(--sapContent_DisabledOpacity)}:host([disabled][checked]) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_color)}:host(:not([disabled])[desktop]) .ui5-radio-root:focus:before,:host(:not([disabled])) .ui5-radio-root:focus-visible:before{content:"";display:var(--_ui5-v2-17-0_radio_button_focus_outline);position:absolute;inset:var(--_ui5-v2-17-0_radio_button_focus_dist);pointer-events:none;border:var(--_ui5-v2-17-0_radio_button_border_width) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);border-radius:var(--_ui5-v2-17-0_radio_button_border_radius)}:host(:not([value-state="Negative"]):not([value-state="Critical"]):not([value-state="Positive"]):not([value-state="Information"])) .ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_hover_color)}:host(:not([value-state="Negative"]):not([value-state="Critical"]):not([value-state="Positive"]):not([value-state="Information"])[checked]) .ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_checked_hover_color)}.ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer,:host([checked]) .ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill)}:host([active][checked]:not([value-state]):not([disabled]):not([readonly])) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_checked_hover_color)}:host([active]:not([checked]):not([value-state]):not([disabled]):not([readonly])) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_active_color)}:host([text]) .ui5-radio-root{padding-inline-end:var(--_ui5-v2-17-0_radio_button_border_width)}:host([text][desktop]) .ui5-radio-root:focus:before,:host([text]) .ui5-radio-root:focus-visible:before{inset-inline-end:0px}:host([text]) .ui5-radio-inner{padding:var(--_ui5-v2-17-0_radio_button_outer_ring_padding_with_label)}:host([checked][readonly]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_read_only_inner_ring_color)}:host([readonly]) .ui5-radio-root .ui5-radio-svg-outer{fill:var(--sapField_ReadOnly_Background);stroke:var(--sapField_ReadOnly_BorderColor);stroke-dasharray:var(--_ui5-v2-17-0_radio_button_read_only_border_type);stroke-width:var(--_ui5-v2-17-0_radio_button_read_only_border_width)}:host([value-state="Negative"]) .ui5-radio-svg-outer,:host([value-state="Critical"]) .ui5-radio-svg-outer{stroke-width:var(--sapField_InvalidBorderWidth)}:host([value-state="Information"]) .ui5-radio-svg-outer{stroke-width:var(--_ui5-v2-17-0_radio_button_information_border_width)}:host([value-state="Negative"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_error_fill)}:host([value-state="Negative"]) .ui5-radio-svg-outer,:host([value-state="Negative"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_InvalidColor);fill:var(--sapField_InvalidBackground)}:host([value-state="Negative"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_error)}:host([value-state="Critical"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_warning_fill)}:host([value-state="Critical"]) .ui5-radio-svg-outer,:host([value-state="Critical"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_WarningColor);fill:var(--sapField_WarningBackground)}:host([value-state="Critical"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_warning)}:host([value-state="Positive"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_success_fill)}:host([value-state="Positive"]) .ui5-radio-svg-outer,:host([value-state="Positive"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_SuccessColor);fill:var(--sapField_SuccessBackground)}:host([value-state="Positive"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_success)}:host([value-state="Information"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_information_fill)}:host([value-state="Information"]) .ui5-radio-svg-outer,:host([value-state="Information"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_InformationColor);fill:var(--sapField_InformationBackground)}:host([value-state="Information"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_information)}:host([value-state="Negative"]) .ui5-radio-root,:host([value-state="Critical"]) .ui5-radio-root,:host([value-state="Information"]) .ui5-radio-root{stroke-dasharray:var(--_ui5-v2-17-0_radio_button_warning_error_border_dash)}.ui5-radio-root{height:auto;position:relative;display:inline-flex;flex-wrap:nowrap;outline:none;max-width:100%;box-sizing:border-box;border:var(--_ui5-v2-17-0_radio_button_border);border-radius:var(--_ui5-v2-17-0_radio_button_border_radius)}.ui5-radio-inner{display:flex;align-items:center;padding:var(--_ui5-v2-17-0_radio_button_outer_ring_padding);flex-shrink:0;height:var(--_ui5-v2-17-0_radio_button_inner_size);font-size:1rem;pointer-events:none;vertical-align:top}.ui5-radio-inner{outline:none}.ui5-radio-inner input{-webkit-appearance:none;visibility:hidden;width:0;left:0;position:absolute;font-size:inherit;margin:0}[ui5-label].ui5-radio-label{display:flex;align-items:center;padding-inline-end:var(--_ui5-v2-17-0_radio_button_label_offset);padding-block:var(--_ui5-v2-17-0_radio_button_label_side_padding);vertical-align:top;max-width:100%;pointer-events:none;color:var(--_ui5-v2-17-0_radio_button_label_color);overflow-wrap:break-word}:host([wrapping-type="None"][text]) .ui5-radio-root{height:var(--_ui5-v2-17-0_radio_button_height)}:host([wrapping-type="None"][text]) [ui5-label].ui5-radio-label{text-overflow:ellipsis;overflow:hidden}.ui5-radio-svg{height:var(--_ui5-v2-17-0_radio_button_svg_size);width:var(--_ui5-v2-17-0_radio_button_svg_size);overflow:visible;pointer-events:none}.ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_outer_ring_bg);stroke:currentColor;stroke-width:var(--_ui5-v2-17-0_radio_button_outer_ring_width)}.ui5-radio-svg-inner{fill:none;r:var(--_ui5-v2-17-0_radio_button_inner_ring_radius)}.ui5-radio-svg-outer,.ui5-radio-svg-inner{flex-shrink:0}:host(.ui5-li-singlesel-radiobtn) .ui5-radio-root .ui5-radio-inner .ui5-radio-svg-outer{fill:var(--sapList_Background)}
 `;
-var __decorate$z = function(decorators, target, key, desc) {
+var __decorate$K = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -11912,7 +11948,7 @@ var __decorate$z = function(decorators, target, key, desc) {
 var RadioButton_1;
 let isGlobalHandlerAttached$1 = false;
 let activeRadio;
-let RadioButton = RadioButton_1 = class RadioButton2 extends b$6 {
+let RadioButton = RadioButton_1 = class RadioButton2 extends b$7 {
   get formValidityMessage() {
     return RadioButton_1.i18nBundle.getText(FORM_SELECTABLE_REQUIRED2);
   }
@@ -11953,7 +11989,7 @@ let RadioButton = RadioButton_1 = class RadioButton2 extends b$6 {
     this.syncGroup();
   }
   onEnterDOM() {
-    if (f$g()) {
+    if (f$h()) {
       this.setAttribute("desktop", "");
     }
   }
@@ -12008,15 +12044,15 @@ let RadioButton = RadioButton_1 = class RadioButton2 extends b$6 {
       this.active = true;
       return e2.preventDefault();
     }
-    if (b$5(e2)) {
+    if (b$6(e2)) {
       this.active = true;
       return this.toggle();
     }
     const isRTL = this.effectiveDir === "rtl";
-    if (_$1(e2) || !isRTL && R$1(e2) || isRTL && D$2(e2)) {
+    if (_$1(e2) || !isRTL && R$1(e2) || isRTL && D$3(e2)) {
       this._handleDown(e2);
     }
-    if (P$2(e2) || !isRTL && D$2(e2) || isRTL && R$1(e2)) {
+    if (P$2(e2) || !isRTL && D$3(e2) || isRTL && R$1(e2)) {
       this._handleUp(e2);
     }
   }
@@ -12088,55 +12124,55 @@ let RadioButton = RadioButton_1 = class RadioButton2 extends b$6 {
     return tabindex ? parseInt(tabindex) : 0;
   }
 };
-__decorate$z([
-  s$7({ type: Boolean })
+__decorate$K([
+  s$8({ type: Boolean })
 ], RadioButton.prototype, "disabled", void 0);
-__decorate$z([
-  s$7({ type: Boolean })
+__decorate$K([
+  s$8({ type: Boolean })
 ], RadioButton.prototype, "readonly", void 0);
-__decorate$z([
-  s$7({ type: Boolean })
+__decorate$K([
+  s$8({ type: Boolean })
 ], RadioButton.prototype, "required", void 0);
-__decorate$z([
-  s$7({ type: Boolean })
+__decorate$K([
+  s$8({ type: Boolean })
 ], RadioButton.prototype, "checked", void 0);
-__decorate$z([
-  s$7()
+__decorate$K([
+  s$8()
 ], RadioButton.prototype, "text", void 0);
-__decorate$z([
-  s$7()
+__decorate$K([
+  s$8()
 ], RadioButton.prototype, "valueState", void 0);
-__decorate$z([
-  s$7()
+__decorate$K([
+  s$8()
 ], RadioButton.prototype, "name", void 0);
-__decorate$z([
-  s$7()
+__decorate$K([
+  s$8()
 ], RadioButton.prototype, "value", void 0);
-__decorate$z([
-  s$7()
+__decorate$K([
+  s$8()
 ], RadioButton.prototype, "wrappingType", void 0);
-__decorate$z([
-  s$7()
+__decorate$K([
+  s$8()
 ], RadioButton.prototype, "accessibleName", void 0);
-__decorate$z([
-  s$7()
+__decorate$K([
+  s$8()
 ], RadioButton.prototype, "accessibleNameRef", void 0);
-__decorate$z([
-  s$7({ type: Number })
+__decorate$K([
+  s$8({ type: Number })
 ], RadioButton.prototype, "_tabIndex", void 0);
-__decorate$z([
-  s$7({ type: Boolean })
+__decorate$K([
+  s$8({ type: Boolean })
 ], RadioButton.prototype, "active", void 0);
-__decorate$z([
-  s$7({ type: Boolean, noAttribute: true })
+__decorate$K([
+  s$8({ type: Boolean, noAttribute: true })
 ], RadioButton.prototype, "_groupChecked", void 0);
-__decorate$z([
-  s$7({ type: Boolean, noAttribute: true })
+__decorate$K([
+  s$8({ type: Boolean, noAttribute: true })
 ], RadioButton.prototype, "_groupRequired", void 0);
-__decorate$z([
+__decorate$K([
   i$9("@ui5/webcomponents")
 ], RadioButton, "i18nBundle", void 0);
-RadioButton = RadioButton_1 = __decorate$z([
+RadioButton = RadioButton_1 = __decorate$K([
   m$8({
     tag: "ui5-radio-button",
     languageAware: true,
@@ -12145,7 +12181,7 @@ RadioButton = RadioButton_1 = __decorate$z([
     template: RadioButtonTemplate,
     styles: radioButtonCss
   }),
-  l$d("change", {
+  l$e("change", {
     bubbles: true
   })
 ], RadioButton);
@@ -12155,49 +12191,49 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const checkboxCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{-webkit-tap-highlight-color:rgba(0,0,0,0)}:host(:not([hidden])){display:inline-block}:host([required]){vertical-align:middle}:host{overflow:hidden;max-width:100%;outline:none;border-radius:var(--_ui5-v2-17-0_checkbox_border_radius);transition:var(--_ui5-v2-17-0_checkbox_transition);cursor:pointer;user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none}:host([disabled]){cursor:default}:host([disabled]) .ui5-checkbox-root{opacity:var(--_ui5-v2-17-0_checkbox_disabled_opacity)}:host([disabled]) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_disabled_border_color)}:host([disabled]) .ui5-checkbox-label{color:var(--_ui5-v2-17-0_checkbox_disabled_label_color)}:host([readonly]:not([value-state="Critical"]):not([value-state="Negative"])) .ui5-checkbox-inner{background:var(--sapField_ReadOnly_Background);border:var(--_ui5-v2-17-0_checkbox_inner_readonly_border);color:var(--sapField_TextColor)}:host(:not([wrapping-type="None"])[text]) .ui5-checkbox-root{min-height:auto;box-sizing:border-box;align-items:flex-start;padding-top:var(--_ui5-v2-17-0_checkbox_root_side_padding);padding-bottom:var(--_ui5-v2-17-0_checkbox_root_side_padding)}:host(:not([wrapping-type="None"])[text]) .ui5-checkbox-root .ui5-checkbox-label{overflow-wrap:break-word;align-self:center}:host([desktop][text]:not([wrapping-type="None"])) .ui5-checkbox-root:focus:before,.ui5-checkbox-root[text]:focus-visible:before{inset-block:var(--_ui5-v2-17-0_checkbox_wrapped_focus_inset_block)}:host([value-state="Negative"]) .ui5-checkbox-inner,:host([value-state="Negative"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_InvalidBackground);border:var(--_ui5-v2-17-0_checkbox_inner_error_border);color:var(--sapField_InvalidColor)}:host([value-state="Negative"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_error_background_hover)}:host([value-state="Critical"]) .ui5-checkbox-inner,:host([value-state="Critical"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_WarningBackground);border:var(--_ui5-v2-17-0_checkbox_inner_warning_border);color:var(--_ui5-v2-17-0_checkbox_inner_warning_color)}:host([value-state="Critical"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_warning_background_hover)}:host([value-state="Information"]) .ui5-checkbox-inner,:host([value-state="Information"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_InformationBackground);border:var(--_ui5-v2-17-0_checkbox_inner_information_border);color:var(--_ui5-v2-17-0_checkbox_inner_information_color)}:host([value-state="Information"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_information_background_hover)}:host([value-state="Positive"]) .ui5-checkbox-inner,:host([value-state="Positive"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_SuccessBackground);border:var(--_ui5-v2-17-0_checkbox_inner_success_border);color:var(--sapField_SuccessColor)}:host([value-state="Positive"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_success_background_hover)}:host([value-state="Critical"]) .ui5-checkbox-icon,:host([value-state="Critical"][indeterminate]) .ui5-checkbox-inner:after{color:var(--_ui5-v2-17-0_checkbox_checkmark_warning_color)}.ui5-checkbox-root{position:relative;display:inline-flex;align-items:center;max-width:100%;min-height:var(--_ui5-v2-17-0_checkbox_width_height);min-width:var(--_ui5-v2-17-0_checkbox_width_height);padding:0 var(--_ui5-v2-17-0_checkbox_wrapper_padding);outline:none;transition:var(--_ui5-v2-17-0_checkbox_transition);border:var(--_ui5-v2-17-0_checkbox_default_focus_border);border-radius:var(--_ui5-v2-17-0_checkbox_border_radius);box-sizing:border-box}:host([desktop]) .ui5-checkbox-root:focus:before,.ui5-checkbox-root:focus-visible:before{display:var(--_ui5-v2-17-0_checkbox_focus_outline_display);content:"";position:absolute;inset-inline:var(--_ui5-v2-17-0_checkbox_focus_position);inset-block:var(--_ui5-v2-17-0_checkbox_focus_position);border:var(--_ui5-v2-17-0_checkbox_focus_outline);border-radius:var(--_ui5-v2-17-0_checkbox_focus_border_radius)}:host([text]) .ui5-checkbox-root{padding-inline-end:var(--_ui5-v2-17-0_checkbox_right_focus_distance)}:host([text]) .ui5-checkbox-root:focus:before,:host([text]) .ui5-checkbox-root:focus-visible:before{inset-inline-end:0}:host(:hover:not([disabled])){background:var(--_ui5-v2-17-0_checkbox_outer_hover_background)}.ui5-checkbox--hoverable .ui5-checkbox-label:hover{color:var(--_ui5-v2-17-0_checkbox_label_color)}:host(:not([active]):not([checked]):not([value-state])) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner,:host(:not([active]):not([checked])[value-state="None"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_hover_background);border-color:var(--_ui5-v2-17-0_checkbox_inner_hover_border_color)}:host(:not([active])[checked]:not([value-state])) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner,:host(:not([active])[checked][value-state="None"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_hover_background);border-color:var(--_ui5-v2-17-0_checkbox_inner_hover_checked_border_color)}:host([checked]:not([value-state])) .ui5-checkbox-inner,:host([checked][value-state="None"]) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_selected_border_color)}:host([active]:not([checked]):not([value-state]):not([disabled])) .ui5-checkbox-inner,:host([active]:not([checked])[value-state="None"]:not([disabled])) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_active_border_color);background-color:var(--_ui5-v2-17-0_checkbox_active_background)}:host([active][checked]:not([value-state]):not([disabled])) .ui5-checkbox-inner,:host([active][checked][value-state="None"]:not([disabled])) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_selected_border_color);background-color:var(--_ui5-v2-17-0_checkbox_active_background)}.ui5-checkbox-inner{min-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);height:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-height:var(--_ui5-v2-17-0_checkbox_inner_width_height);border:var(--_ui5-v2-17-0_checkbox_inner_border);border-radius:var(--_ui5-v2-17-0_checkbox_inner_border_radius);background:var(--_ui5-v2-17-0_checkbox_inner_background);color:var(--_ui5-v2-17-0_checkbox_checkmark_color);box-sizing:border-box;position:relative;cursor:inherit}:host([indeterminate][checked]) .ui5-checkbox-inner:after{content:"";background-color:currentColor;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:var(--_ui5-v2-17-0_checkbox_partially_icon_size);height:var(--_ui5-v2-17-0_checkbox_partially_icon_size)}:host input{-webkit-appearance:none;visibility:hidden;width:0;left:0;position:absolute;font-size:inherit}.ui5-checkbox-root .ui5-checkbox-label{margin-inline-start:var(--_ui5-v2-17-0_checkbox_label_offset);cursor:inherit;text-overflow:ellipsis;overflow:hidden;pointer-events:none;color:var(--_ui5-v2-17-0_checkbox_label_color)}.ui5-checkbox-icon{width:var(--_ui5-v2-17-0_checkbox_icon_size);height:var(--_ui5-v2-17-0_checkbox_icon_size);color:currentColor;cursor:inherit;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}:host([display-only]){cursor:default}:host([display-only]) .ui5-checkbox-display-only-icon-inner [ui5-icon]{color:var(--sapTextColor)}:host([display-only]) .ui5-checkbox-display-only-icon-inner{min-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);height:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-height:var(--_ui5-v2-17-0_checkbox_inner_width_height);display:flex;align-items:center;justify-content:center}
 `;
-const name$q = "complete";
-const pathData$p = "M431.958 320h32v128q0 14-9.5 23t-22.5 9h-384q-14 0-23-9t-9-23V64q0-13 9-22.5t23-9.5h128v32h-128v384h384V320zm60-295q7 7 2 16l-185 272q-3 6-10 7t-12-4l-125-139q-9-9 0-18l21-21q10-10 19 0l80 80q5 5 11.5 4t9.5-8l146-207q3-6 9.5-7t11.5 4z";
-const ltr$p = true;
-const collection$p = "SAP-icons-v4";
-const packageName$p = "@ui5/webcomponents-icons";
-y$2(name$q, { pathData: pathData$p, ltr: ltr$p, collection: collection$p, packageName: packageName$p });
-const name$p = "complete";
-const pathData$o = "M438 224q11 0 18.5 7.5T464 250v140q0 38-26 64t-64 26H106q-38 0-64-26t-26-64V122q0-38 26-64t64-26h237q11 0 18 7.5t7 18.5-7 18-18 7H106q-16 0-27.5 11.5T67 122v268q0 16 11.5 27.5T106 429h268q16 0 27.5-11.5T413 390V250q0-11 7-18.5t18-7.5zm32-192q11 0 18.5 7.5T496 58q0 10-7 17L257 312q-6 8-18 8-10 0-18-8l-70-71q-7-7-7-18t7.5-18 18.5-7 18 7l51 53L452 40q8-8 18-8z";
-const ltr$o = true;
-const collection$o = "SAP-icons-v5";
-const packageName$o = "@ui5/webcomponents-icons";
-y$2(name$p, { pathData: pathData$o, ltr: ltr$o, collection: collection$o, packageName: packageName$o });
+const name$y = "complete";
+const pathData$x = "M431.958 320h32v128q0 14-9.5 23t-22.5 9h-384q-14 0-23-9t-9-23V64q0-13 9-22.5t23-9.5h128v32h-128v384h384V320zm60-295q7 7 2 16l-185 272q-3 6-10 7t-12-4l-125-139q-9-9 0-18l21-21q10-10 19 0l80 80q5 5 11.5 4t9.5-8l146-207q3-6 9.5-7t11.5 4z";
+const ltr$x = true;
+const collection$x = "SAP-icons-v4";
+const packageName$x = "@ui5/webcomponents-icons";
+y$2(name$y, { pathData: pathData$x, ltr: ltr$x, collection: collection$x, packageName: packageName$x });
+const name$x = "complete";
+const pathData$w = "M438 224q11 0 18.5 7.5T464 250v140q0 38-26 64t-64 26H106q-38 0-64-26t-26-64V122q0-38 26-64t64-26h237q11 0 18 7.5t7 18.5-7 18-18 7H106q-16 0-27.5 11.5T67 122v268q0 16 11.5 27.5T106 429h268q16 0 27.5-11.5T413 390V250q0-11 7-18.5t18-7.5zm32-192q11 0 18.5 7.5T496 58q0 10-7 17L257 312q-6 8-18 8-10 0-18-8l-70-71q-7-7-7-18t7.5-18 18.5-7 18 7l51 53L452 40q8-8 18-8z";
+const ltr$w = true;
+const collection$w = "SAP-icons-v5";
+const packageName$w = "@ui5/webcomponents-icons";
+y$2(name$x, { pathData: pathData$w, ltr: ltr$w, collection: collection$w, packageName: packageName$w });
 const complete = "complete";
-const name$o = "border";
-const pathData$n = "M448 32q13 0 22.5 9t9.5 23v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-14 9-23t23-9h384zm0 32H64v384h384V64z";
-const ltr$n = false;
-const collection$n = "SAP-icons-v4";
-const packageName$n = "@ui5/webcomponents-icons";
-y$2(name$o, { pathData: pathData$n, ltr: ltr$n, collection: collection$n, packageName: packageName$n });
-const name$n = "border";
-const pathData$m = "M390 480H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268q38 0 64 26t26 64v268q0 38-26 64t-64 26zM122 83q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122q0-17-11-28t-28-11H122z";
-const ltr$m = false;
-const collection$m = "SAP-icons-v5";
-const packageName$m = "@ui5/webcomponents-icons";
-y$2(name$n, { pathData: pathData$m, ltr: ltr$m, collection: collection$m, packageName: packageName$m });
+const name$w = "border";
+const pathData$v = "M448 32q13 0 22.5 9t9.5 23v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-14 9-23t23-9h384zm0 32H64v384h384V64z";
+const ltr$v = false;
+const collection$v = "SAP-icons-v4";
+const packageName$v = "@ui5/webcomponents-icons";
+y$2(name$w, { pathData: pathData$v, ltr: ltr$v, collection: collection$v, packageName: packageName$v });
+const name$v = "border";
+const pathData$u = "M390 480H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268q38 0 64 26t26 64v268q0 38-26 64t-64 26zM122 83q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122q0-17-11-28t-28-11H122z";
+const ltr$u = false;
+const collection$u = "SAP-icons-v5";
+const packageName$u = "@ui5/webcomponents-icons";
+y$2(name$v, { pathData: pathData$u, ltr: ltr$u, collection: collection$u, packageName: packageName$u });
 const border = "border";
-const name$m = "tri-state";
-const pathData$l = "M448 32q13 0 22.5 9.5T480 64v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-13 9-22.5T64 32h384zm0 32H64v384h384V64zM160 345V169q0-8 8-8h176q8 0 8 8v176q0 8-8 8H168q-8 0-8-8z";
-const ltr$l = false;
-const collection$l = "SAP-icons-v4";
-const packageName$l = "@ui5/webcomponents-icons";
-y$2(name$m, { pathData: pathData$l, ltr: ltr$l, collection: collection$l, packageName: packageName$l });
-const name$l = "tri-state";
-const pathData$k = "M390 32q38 0 64 26t26 64v268q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268zm39 90q0-17-11-28t-28-11H122q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122zm-77 38v192H160V160h192z";
-const ltr$k = false;
-const collection$k = "SAP-icons-v5";
-const packageName$k = "@ui5/webcomponents-icons";
-y$2(name$l, { pathData: pathData$k, ltr: ltr$k, collection: collection$k, packageName: packageName$k });
+const name$u = "tri-state";
+const pathData$t = "M448 32q13 0 22.5 9.5T480 64v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-13 9-22.5T64 32h384zm0 32H64v384h384V64zM160 345V169q0-8 8-8h176q8 0 8 8v176q0 8-8 8H168q-8 0-8-8z";
+const ltr$t = false;
+const collection$t = "SAP-icons-v4";
+const packageName$t = "@ui5/webcomponents-icons";
+y$2(name$u, { pathData: pathData$t, ltr: ltr$t, collection: collection$t, packageName: packageName$t });
+const name$t = "tri-state";
+const pathData$s = "M390 32q38 0 64 26t26 64v268q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268zm39 90q0-17-11-28t-28-11H122q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122zm-77 38v192H160V160h192z";
+const ltr$s = false;
+const collection$s = "SAP-icons-v5";
+const packageName$s = "@ui5/webcomponents-icons";
+y$2(name$t, { pathData: pathData$s, ltr: ltr$s, collection: collection$s, packageName: packageName$s });
 const triState = "tri-state";
 function CheckBoxTemplate() {
   return jsxs("div", { class: {
     "ui5-checkbox-root": true,
-    "ui5-checkbox--hoverable": !this.disabled && !this.readonly && f$g()
+    "ui5-checkbox--hoverable": !this.disabled && !this.readonly && f$h()
   }, role: this.accInfo.role, part: "root", "aria-checked": this.accInfo.ariaChecked, "aria-readonly": this.accInfo.ariaReadonly, "aria-disabled": this.accInfo.ariaDisabled, "aria-label": this.ariaLabelText, "aria-labelledby": this.ariaLabelledBy, "aria-describedby": this.ariaDescribedBy, "aria-required": this.accInfo.ariaRequired, tabindex: this.accInfo.tabindex, onMouseDown: this._onmousedown, onMouseUp: this._onmouseup, onKeyDown: this._onkeydown, onKeyUp: this._onkeyup, onClick: this._onclick, onFocusOut: this._onfocusout, children: [this.isDisplayOnly ? jsx("div", { class: "ui5-checkbox-display-only-icon-inner", children: jsx(Icon$1, { "aria-hidden": "true", name: displayOnlyIcon.call(this), class: "ui5-checkbox-display-only-icon", part: "icon" }) }) : jsx("div", { id: `${this._id}-CbBg`, class: "ui5-checkbox-inner", children: this.isCompletelyChecked && jsx(Icon$1, { "aria-hidden": "true", name: checkIcon, class: "ui5-checkbox-icon", part: "icon" }) }), this.accInfo.role === "checkbox" && jsx("input", { id: `${this._id}-CB`, type: "checkbox", checked: this.checked, value: this.value, readonly: this.readonly, disabled: this.disabled, tabindex: -1, "aria-hidden": "true", "data-sap-no-tab-ref": true }), this.text && jsx(Label$1, { id: `${this._id}-label`, part: "label", class: "ui5-checkbox-label", wrappingType: this.wrappingType, required: this.required, children: this.text }), this.hasValueState && jsx("span", { id: `${this._id}-descr`, class: "ui5-hidden-text", children: this.valueStateText })] });
 }
 function displayOnlyIcon() {
@@ -12209,7 +12245,7 @@ function displayOnlyIcon() {
   }
   return border;
 }
-var __decorate$y = function(decorators, target, key, desc) {
+var __decorate$J = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -12218,7 +12254,7 @@ var __decorate$y = function(decorators, target, key, desc) {
 var CheckBox_1;
 let isGlobalHandlerAttached = false;
 let activeCb;
-let CheckBox = CheckBox_1 = class CheckBox2 extends b$6 {
+let CheckBox = CheckBox_1 = class CheckBox2 extends b$7 {
   get formValidityMessage() {
     return CheckBox_1.i18nBundle.getText(FORM_CHECKABLE_REQUIRED);
   }
@@ -12254,7 +12290,7 @@ let CheckBox = CheckBox_1 = class CheckBox2 extends b$6 {
     }
   }
   onEnterDOM() {
-    if (f$g()) {
+    if (f$h()) {
       this.setAttribute("desktop", "");
     }
   }
@@ -12281,7 +12317,7 @@ let CheckBox = CheckBox_1 = class CheckBox2 extends b$6 {
     if (this.readonly || this.disabled) {
       return;
     }
-    if (b$5(e2)) {
+    if (b$6(e2)) {
       this.toggle();
     }
     this.active = true;
@@ -12329,7 +12365,7 @@ let CheckBox = CheckBox_1 = class CheckBox2 extends b$6 {
   get classes() {
     return {
       main: {
-        "ui5-checkbox--hoverable": !this.disabled && !this.readonly && f$g()
+        "ui5-checkbox--hoverable": !this.disabled && !this.readonly && f$h()
       }
     };
   }
@@ -12398,55 +12434,55 @@ let CheckBox = CheckBox_1 = class CheckBox2 extends b$6 {
     };
   }
 };
-__decorate$y([
-  s$7()
+__decorate$J([
+  s$8()
 ], CheckBox.prototype, "accessibleNameRef", void 0);
-__decorate$y([
-  s$7()
+__decorate$J([
+  s$8()
 ], CheckBox.prototype, "accessibleName", void 0);
-__decorate$y([
-  s$7({ type: Boolean })
+__decorate$J([
+  s$8({ type: Boolean })
 ], CheckBox.prototype, "disabled", void 0);
-__decorate$y([
-  s$7({ type: Boolean })
+__decorate$J([
+  s$8({ type: Boolean })
 ], CheckBox.prototype, "readonly", void 0);
-__decorate$y([
-  s$7({ type: Boolean })
+__decorate$J([
+  s$8({ type: Boolean })
 ], CheckBox.prototype, "displayOnly", void 0);
-__decorate$y([
-  s$7({ type: Boolean })
+__decorate$J([
+  s$8({ type: Boolean })
 ], CheckBox.prototype, "required", void 0);
-__decorate$y([
-  s$7({ type: Boolean })
+__decorate$J([
+  s$8({ type: Boolean })
 ], CheckBox.prototype, "indeterminate", void 0);
-__decorate$y([
-  s$7({ type: Boolean })
+__decorate$J([
+  s$8({ type: Boolean })
 ], CheckBox.prototype, "checked", void 0);
-__decorate$y([
-  s$7()
+__decorate$J([
+  s$8()
 ], CheckBox.prototype, "text", void 0);
-__decorate$y([
-  s$7()
+__decorate$J([
+  s$8()
 ], CheckBox.prototype, "valueState", void 0);
-__decorate$y([
-  s$7()
+__decorate$J([
+  s$8()
 ], CheckBox.prototype, "wrappingType", void 0);
-__decorate$y([
-  s$7()
+__decorate$J([
+  s$8()
 ], CheckBox.prototype, "name", void 0);
-__decorate$y([
-  s$7()
+__decorate$J([
+  s$8()
 ], CheckBox.prototype, "value", void 0);
-__decorate$y([
-  s$7({ type: Boolean })
+__decorate$J([
+  s$8({ type: Boolean })
 ], CheckBox.prototype, "active", void 0);
-__decorate$y([
-  s$7({ type: Object })
+__decorate$J([
+  s$8({ type: Object })
 ], CheckBox.prototype, "_accInfo", void 0);
-__decorate$y([
+__decorate$J([
   i$9("@ui5/webcomponents")
 ], CheckBox, "i18nBundle", void 0);
-CheckBox = CheckBox_1 = __decorate$y([
+CheckBox = CheckBox_1 = __decorate$J([
   m$8({
     tag: "ui5-checkbox",
     languageAware: true,
@@ -12455,11 +12491,11 @@ CheckBox = CheckBox_1 = __decorate$y([
     template: CheckBoxTemplate,
     styles: checkboxCss
   }),
-  l$d("change", {
+  l$e("change", {
     bubbles: true,
     cancelable: true
   }),
-  l$d("value-changed", {
+  l$e("value-changed", {
     bubbles: true,
     cancelable: true
   })
@@ -12559,7 +12595,7 @@ function iconEnd$1() {
     return jsx(Icon$1, { part: "icon", name: this.icon, class: "ui5-li-icon", mode: "Decorative" });
   }
 }
-var __decorate$x = function(decorators, target, key, desc) {
+var __decorate$I = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -12618,49 +12654,49 @@ let ListItemStandard = ListItemStandard_1 = class ListItemStandard2 extends List
     return !!this.image.length;
   }
 };
-__decorate$x([
-  s$7()
+__decorate$I([
+  s$8()
 ], ListItemStandard.prototype, "text", void 0);
-__decorate$x([
-  s$7()
+__decorate$I([
+  s$8()
 ], ListItemStandard.prototype, "description", void 0);
-__decorate$x([
-  s$7()
+__decorate$I([
+  s$8()
 ], ListItemStandard.prototype, "icon", void 0);
-__decorate$x([
-  s$7({ type: Boolean })
+__decorate$I([
+  s$8({ type: Boolean })
 ], ListItemStandard.prototype, "iconEnd", void 0);
-__decorate$x([
-  s$7()
+__decorate$I([
+  s$8()
 ], ListItemStandard.prototype, "additionalText", void 0);
-__decorate$x([
-  s$7()
+__decorate$I([
+  s$8()
 ], ListItemStandard.prototype, "additionalTextState", void 0);
-__decorate$x([
-  s$7({ type: Boolean })
+__decorate$I([
+  s$8({ type: Boolean })
 ], ListItemStandard.prototype, "movable", void 0);
-__decorate$x([
-  s$7()
+__decorate$I([
+  s$8()
 ], ListItemStandard.prototype, "accessibleName", void 0);
-__decorate$x([
-  s$7()
+__decorate$I([
+  s$8()
 ], ListItemStandard.prototype, "wrappingType", void 0);
-__decorate$x([
-  s$7({ type: Boolean })
+__decorate$I([
+  s$8({ type: Boolean })
 ], ListItemStandard.prototype, "hasTitle", void 0);
-__decorate$x([
-  s$7({ type: Boolean })
+__decorate$I([
+  s$8({ type: Boolean })
 ], ListItemStandard.prototype, "_hasImage", void 0);
-__decorate$x([
-  s$7({ noAttribute: true })
+__decorate$I([
+  s$8({ noAttribute: true })
 ], ListItemStandard.prototype, "expandableTextTemplate", void 0);
-__decorate$x([
+__decorate$I([
   d$8({ type: Node, "default": true })
 ], ListItemStandard.prototype, "content", void 0);
-__decorate$x([
+__decorate$I([
   d$8()
 ], ListItemStandard.prototype, "image", void 0);
-ListItemStandard = ListItemStandard_1 = __decorate$x([
+ListItemStandard = ListItemStandard_1 = __decorate$I([
   m$8({
     tag: "ui5-li",
     renderer: y$5,
@@ -12683,7 +12719,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const ListItemCustomCss = `:host(:not([hidden])){display:block}:host{min-height:var(--_ui5-v2-17-0_list_item_base_height);height:auto;box-sizing:border-box}.ui5-li-root.ui5-custom-li-root{pointer-events:inherit;min-height:inherit}.ui5-li-root.ui5-custom-li-root .ui5-li-content{pointer-events:inherit}[ui5-checkbox].ui5-li-singlesel-radiobtn,[ui5-radio-button].ui5-li-singlesel-radiobtn{display:flex;align-items:center}.ui5-li-root.ui5-custom-li-root,[ui5-checkbox].ui5-li-singlesel-radiobtn,[ui5-radio-button].ui5-li-singlesel-radiobtn{min-width:var(--_ui5-v2-17-0_custom_list_item_rb_min_width)}:host([_selection-mode="SingleStart"]) .ui5-li-root.ui5-custom-li-root{padding-inline:0 1rem}:host([_selection-mode="Multiple"]) .ui5-li-root.ui5-custom-li-root{padding-inline:0 1rem}:host([_selection-mode="SingleEnd"]) .ui5-li-root.ui5-custom-li-root{padding-inline:1rem 0}
 `;
-var __decorate$w = function(decorators, target, key, desc) {
+var __decorate$H = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -12716,13 +12752,13 @@ let ListItemCustom = class ListItemCustom2 extends ListItem$1 {
     return result;
   }
 };
-__decorate$w([
-  s$7({ type: Boolean })
+__decorate$H([
+  s$8({ type: Boolean })
 ], ListItemCustom.prototype, "movable", void 0);
-__decorate$w([
-  s$7()
+__decorate$H([
+  s$8()
 ], ListItemCustom.prototype, "accessibleName", void 0);
-ListItemCustom = __decorate$w([
+ListItemCustom = __decorate$H([
   m$8({
     tag: "ui5-li-custom",
     template: ListItemCustomTemplate,
@@ -12732,10 +12768,3526 @@ ListItemCustom = __decorate$w([
 ], ListItemCustom);
 ListItemCustom.define();
 const ListItemCustom$1 = ListItemCustom;
+const o = (e2) => (t2, r3) => {
+  Object.defineProperty(t2, r3, { get() {
+    var _a2;
+    return (_a2 = this.shadowRoot) == null ? void 0 : _a2.querySelector(e2);
+  } });
+};
+const isInstanceOfTable = (obj) => {
+  return !!obj && "isTable" in obj && !!obj.isTable;
+};
+const findVerticalScrollContainer = (element) => {
+  while (element) {
+    const { overflowY } = window.getComputedStyle(element);
+    if (overflowY === "auto" || overflowY === "scroll") {
+      return element;
+    }
+    if (element.parentNode instanceof ShadowRoot) {
+      element = element.parentNode.host;
+    } else {
+      element = element.parentElement;
+    }
+  }
+  return document.scrollingElement || document.documentElement;
+};
+const scrollElementIntoView = (scrollContainer, element, stickyElements, isRtl) => {
+  if (stickyElements.length === 0) {
+    return;
+  }
+  const elementRect = element.getBoundingClientRect();
+  const inline = isRtl ? "right" : "left";
+  const { x: stickyX, y: stickyY } = stickyElements.reduce(({ x: x2, y: y2 }, stickyElement) => {
+    const { top, [inline]: inlineStart } = getComputedStyle(stickyElement);
+    const stickyElementRect = stickyElement.getBoundingClientRect();
+    if (top !== "auto" && stickyElementRect.bottom > elementRect.top) {
+      y2 = Math.max(y2, stickyElementRect.bottom);
+    }
+    if (inlineStart !== "auto") {
+      if (!isRtl && stickyElementRect.right > elementRect.left) {
+        x2 = Math.max(x2, stickyElementRect.right);
+      } else if (isRtl && stickyElementRect.left < elementRect.right) {
+        x2 = Math.min(x2, stickyElementRect.left);
+      }
+    }
+    return { x: x2, y: y2 };
+  }, { x: elementRect[inline], y: elementRect.top });
+  const scrollX = elementRect[inline] - stickyX;
+  const scrollY = elementRect.top - stickyY;
+  if (scrollX === 0 && scrollY === 0) {
+    return;
+  }
+  scrollContainer.scrollBy({
+    top: scrollY,
+    left: scrollX
+  });
+};
+const isFeature = (element, identifier) => {
+  return element.identifier === identifier;
+};
+const toggleAttribute = (element, attribute, condition, value) => {
+  if (condition) {
+    if (value === void 0) {
+      element.toggleAttribute(attribute, true);
+    } else {
+      element.setAttribute(attribute, value);
+    }
+  } else if (element.hasAttribute(attribute)) {
+    element.removeAttribute(attribute);
+  }
+};
+const isValidColumnWidth = (width) => {
+  const element = document.createElement("div");
+  element.style.width = `max(3rem, ${width})`;
+  return element.style.width !== "";
+};
+function TableCellTemplate() {
+  return jsx(Fragment, { children: this._popin ? jsxs(Fragment, { children: [jsx("div", { id: "popin-header", ref: this._injectHeaderNodes.bind(this) }), jsx("span", { id: "popin-colon", "aria-hidden": "true", children: this._i18nPopinColon }), jsx("slot", { id: "popin-content" })] }) : jsx("slot", {}) });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const TableCellStyles = `:host([_popin]){padding-inline-start:0;padding-inline-end:0;align-items:center}:host([_popin]) #popin-header{color:var(--sapContent_LabelColor)}#popin-colon{padding-inline-end:.5rem;white-space:pre}#popin-header{display:contents}
+`;
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const TableCellBaseStyles = `:host{display:flex;flex-wrap:wrap;align-content:var(--_ui5-v2-17-0_table_cell_valign);min-width:var(--_ui5-v2-17-0_table_cell_min_width);max-width:100%;overflow:clip;overflow-clip-margin:content-box;padding:var(--_ui5-v2-17-0_table_cell_vertical_padding) var(--_ui5-v2-17-0_table_cell_horizontal_padding);box-sizing:border-box}:host([tabindex]:focus){outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);outline-offset:calc(-1 * var(--sapContent_FocusWidth))}:host(#selection-cell){width:auto;min-width:auto;background-color:inherit}:host([data-ui5-table-cell-fixed]){position:sticky;z-index:1}
+`;
+var __decorate$G = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+let TableCellBase = class TableCellBase2 extends b$7 {
+  constructor() {
+    super(...arguments);
+    this._popin = false;
+    this._popinHidden = false;
+    this.ariaRole = "gridcell";
+  }
+  onEnterDOM() {
+    !this.role && this.setAttribute("role", this.ariaRole);
+    this.toggleAttribute("ui5-table-cell-base", true);
+  }
+  getFocusDomRef() {
+    return this;
+  }
+  isTableCellBase() {
+    return true;
+  }
+};
+__decorate$G([
+  d$8({ type: Node, "default": true })
+], TableCellBase.prototype, "content", void 0);
+__decorate$G([
+  s$8()
+], TableCellBase.prototype, "horizontalAlign", void 0);
+__decorate$G([
+  s$8({ type: Boolean })
+], TableCellBase.prototype, "_popin", void 0);
+__decorate$G([
+  s$8({ type: Boolean, noAttribute: true })
+], TableCellBase.prototype, "_popinHidden", void 0);
+__decorate$G([
+  i$9("@ui5/webcomponents")
+], TableCellBase, "i18nBundle", void 0);
+TableCellBase = __decorate$G([
+  m$8({
+    renderer: y$5,
+    styles: TableCellBaseStyles
+  })
+], TableCellBase);
+const TableCellBase$1 = TableCellBase;
+var __decorate$F = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+let TableCell = class TableCell2 extends TableCellBase$1 {
+  onBeforeRendering() {
+    super.onBeforeRendering();
+    if (this.horizontalAlign) {
+      this.style.justifyContent = this.horizontalAlign;
+    } else if (this._individualSlot) {
+      this.style.justifyContent = `var(--horizontal-align-${this._individualSlot})`;
+    }
+  }
+  _injectHeaderNodes(ref) {
+    if (ref && !ref.hasChildNodes()) {
+      ref.replaceChildren(...this._popinHeaderNodes);
+    }
+  }
+  get _headerCell() {
+    const row = this.parentElement;
+    const table = row.parentElement;
+    const index = row.cells.indexOf(this);
+    return table.headerRow[0].cells[index];
+  }
+  get _popinHeaderNodes() {
+    const nodes = [];
+    const headerCell = this._headerCell;
+    if (headerCell.popinText) {
+      nodes.push(document.createTextNode(headerCell.popinText));
+    } else {
+      nodes.push(...this._headerCell.content.map((node) => node.cloneNode(true)));
+    }
+    if (headerCell.action[0]) {
+      nodes.push(headerCell.action[0].cloneNode(true));
+    }
+    return nodes;
+  }
+  get _i18nPopinColon() {
+    return TableCellBase$1.i18nBundle.getText(LABEL_COLON);
+  }
+};
+__decorate$F([
+  o("#popin-header")
+], TableCell.prototype, "_popinHeader", void 0);
+__decorate$F([
+  o("#popin-content")
+], TableCell.prototype, "_popinContent", void 0);
+TableCell = __decorate$F([
+  m$8({
+    tag: "ui5-table-cell",
+    styles: [TableCellBase$1.styles, TableCellStyles],
+    template: TableCellTemplate
+  })
+], TableCell);
+TableCell.define();
+const TableCell$1 = TableCell;
+function TableRowTemplate(ariaColIndex = 1) {
+  return jsxs(Fragment, { children: [this._hasSelector && jsx(TableCell$1, { id: "selection-cell", "aria-selected": this._isSelected, "aria-colindex": ariaColIndex++, "data-ui5-table-selection-cell": true, "data-ui5-table-cell-fixed": true, "data-ui5-table-acc-text": "", children: this._isMultiSelect ? jsx(CheckBox$1, { id: "selection-component", tabindex: -1, checked: this._isSelected, onChange: this._onSelectionChange, accessibleName: this._i18nRowSelector }) : jsx(RadioButton$1, { id: "selection-component", tabindex: -1, name: this._tableId, checked: this._isSelected, onChange: this._onSelectionChange, accessibleName: this._i18nRowSelector }) }), this.cells.flatMap((cell) => {
+    if (cell._popin) {
+      cell.role = null;
+      cell.ariaColIndex = null;
+      return [];
+    }
+    cell.role ?? (cell.role = cell.ariaRole);
+    cell.ariaColIndex = cell.role === cell.ariaRole ? `${ariaColIndex++}` : null;
+    return [jsx("slot", { name: cell._individualSlot })];
+  }), this._rowActionCount > 0 && jsxs(TableCell$1, { id: "actions-cell", "aria-colindex": ariaColIndex++, "data-ui5-table-acc-text": this._actionCellAccText, children: [this._flexibleActions.map((action) => jsx("slot", { name: action._individualSlot })), this._hasOverflowActions && jsx(Button$1, { id: "overflow", icon: iconOverflow, design: ButtonDesign$1.Transparent, onClick: this._onOverflowButtonClick }), this._fixedActions.map((action) => jsx("slot", { name: action._individualSlot }))] }), this._renderNavigated && jsx(TableCell$1, { id: "navigated-cell", "data-excluded-from-navigation": true, "aria-hidden": true, role: "none", children: jsx("div", { id: "navigated" }) }), this._popinCells.length > 0 && jsx(TableCell$1, { id: "popin-cell", "data-ui5-table-popin-cell": true, "aria-colindex": ariaColIndex++, children: this._popinCells.map((cell) => jsx("slot", { name: cell._individualSlot })) })] });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const TableRowBaseCss = `:host{display:grid;grid-template-columns:subgrid;grid-column:1 / -1;min-height:var(--_ui5-v2-17-0_list_item_base_height);box-sizing:content-box;border-bottom:var(--sapList_BorderWidth) solid var(--sapList_BorderColor);overflow:clip}:host([tabindex]:focus){outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);outline-offset:calc(-1 * var(--sapContent_FocusWidth))}:host([tabindex]:focus) #selection-cell,:host([tabindex]:focus) #actions-cell{clip-path:inset(var(--sapContent_FocusWidth))}::slotted([ui5-table-cell]:first-of-type),::slotted([ui5-table-header-cell]:first-of-type),#popin-cell{padding-inline-start:var(--_ui5-v2-17-0_first_table_cell_horizontal_padding)}#selection-cell+::slotted([ui5-table-cell-base]:first-of-type),#selection-cell~#popin-cell{padding-inline-start:var(--_ui5-v2-17-0_table_cell_horizontal_padding)}#selection-cell{display:flex;align-items:center;justify-content:center;padding:0;left:0}:dir(rtl)#selection-cell{right:0}#selection-component{vertical-align:middle}#actions-cell{position:sticky;right:0;background-color:inherit;flex-wrap:nowrap}:dir(rtl)#actions-cell{left:0}
+`;
+var __decorate$E = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var TableRowBase_1;
+let TableRowBase = TableRowBase_1 = class TableRowBase2 extends b$7 {
+  constructor() {
+    super(...arguments);
+    this._invalidate = 0;
+    this._rowActionCount = 0;
+    this._renderNavigated = false;
+    this._alternate = false;
+  }
+  onEnterDOM() {
+    !this.role && this.setAttribute("role", "row");
+    this.toggleAttribute("ui5-table-row-base", true);
+  }
+  onBeforeRendering() {
+    toggleAttribute(this, "aria-selected", this._isSelectable, `${this._isSelected}`);
+  }
+  getFocusDomRef() {
+    return this;
+  }
+  isHeaderRow() {
+    return false;
+  }
+  _onSelectionChange() {
+    const tableSelection = this._tableSelection;
+    const selected = tableSelection.isMultiSelectable() ? !this._isSelected : true;
+    tableSelection.setSelected(this, selected, true);
+  }
+  _onkeydown(e2, eventOrigin) {
+    if (eventOrigin === this && this._isSelectable && A$4(e2) || eventOrigin === this._selectionCell && (A$4(e2) || b$6(e2))) {
+      this._onSelectionChange();
+      e2.preventDefault();
+    }
+  }
+  get _table() {
+    const element = this.parentElement;
+    return isInstanceOfTable(element) ? element : void 0;
+  }
+  get _tableId() {
+    var _a2;
+    return (_a2 = this._table) == null ? void 0 : _a2._id;
+  }
+  get _tableSelection() {
+    var _a2;
+    return (_a2 = this._table) == null ? void 0 : _a2._getSelection();
+  }
+  get _isSelected() {
+    var _a2;
+    return (_a2 = this._tableSelection) == null ? void 0 : _a2.isSelected(this);
+  }
+  get _isSelectable() {
+    var _a2;
+    return (_a2 = this._tableSelection) == null ? void 0 : _a2.isSelectable();
+  }
+  get _isMultiSelect() {
+    var _a2;
+    return !!((_a2 = this._tableSelection) == null ? void 0 : _a2.isMultiSelectable());
+  }
+  get _hasSelector() {
+    var _a2;
+    return (_a2 = this._table) == null ? void 0 : _a2._isRowSelectorRequired;
+  }
+  get _visibleCells() {
+    return this.cells.filter((c2) => !c2._popin);
+  }
+  get _popinCells() {
+    return this.cells.filter((c2) => c2._popin && !c2._popinHidden);
+  }
+  get _stickyCells() {
+    return [this._selectionCell, ...this.cells, this._navigatedCell].filter((cell) => cell == null ? void 0 : cell.hasAttribute("fixed"));
+  }
+  get _i18nRowSelector() {
+    return TableRowBase_1.i18nBundle.getText(TABLE_ROW_SELECTOR);
+  }
+};
+__decorate$E([
+  s$8({ type: Number, noAttribute: true })
+], TableRowBase.prototype, "_invalidate", void 0);
+__decorate$E([
+  s$8({ type: Number, noAttribute: true })
+], TableRowBase.prototype, "_rowActionCount", void 0);
+__decorate$E([
+  s$8({ type: Boolean, noAttribute: true })
+], TableRowBase.prototype, "_renderNavigated", void 0);
+__decorate$E([
+  s$8({ type: Boolean, noAttribute: true })
+], TableRowBase.prototype, "_alternate", void 0);
+__decorate$E([
+  o("#selection-cell")
+], TableRowBase.prototype, "_selectionCell", void 0);
+__decorate$E([
+  o("#navigated-cell")
+], TableRowBase.prototype, "_navigatedCell", void 0);
+__decorate$E([
+  i$9("@ui5/webcomponents")
+], TableRowBase, "i18nBundle", void 0);
+TableRowBase = TableRowBase_1 = __decorate$E([
+  m$8({
+    renderer: y$5,
+    styles: TableRowBaseCss
+  })
+], TableRowBase);
+const TableRowBase$1 = TableRowBase;
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const TableRowCss = `:host{background:var(--sapList_Background)}:host([_alternate]){background:var(--_ui5-v2-17-0_table_row_alternating_background)}:host([aria-selected=true]){background:var(--sapList_SelectionBackgroundColor);border-bottom:var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)}@media (hover: hover){:host([_interactive]:hover){background:var(--sapList_Hover_Background)}:host([_interactive][aria-selected=true]:hover){background:var(--sapList_Hover_SelectionBackground)}}:host([_interactive]:active),:host([_interactive][_active]),:host([_interactive][aria-selected=true]:active),:host([_interactive][aria-selected=true][_active]){background:var(--sapList_Active_Background)}:host([position]){height:var(--row-height)}:host([_interactive]){cursor:pointer}#popin-cell{align-content:initial;flex-direction:column;grid-column:1 / -1}#navigated-cell{position:sticky;right:0;overflow:visible;grid-row:span 2;min-width:0;padding:0;background:inherit}:dir(rtl)#navigated-cell{left:0}:host([navigated]) #navigated{position:absolute;inset:0;background:var(--sapList_SelectionBorderColor)}:host([tabindex]:focus) #navigated{transform:translate(calc(var(--_ui5-v2-17-0_table_navigated_cell_width) * -1));bottom:2px;top:3px}:host([tabindex]:focus) #navigated:dir(rtl){transform:translate(var(--_ui5-v2-17-0_table_navigated_cell_width))}:host([tabindex]:focus) #navigated-cell{clip-path:inset(var(--sapContent_FocusWidth) var(--sapContent_FocusWidth) var(--sapContent_FocusWidth) calc(var(--_ui5-v2-17-0_table_navigated_cell_width) * -1))}:host([tabindex]:focus) #navigated-cell:dir(rtl){clip-path:inset(var(--sapContent_FocusWidth) calc(var(--_ui5-v2-17-0_table_navigated_cell_width) * -1) var(--sapContent_FocusWidth) var(--sapContent_FocusWidth))}:host([navigated]) #popin-cell{grid-column:1 / -2}#selection-cell~#popin-cell{grid-column-start:2}#actions-cell{display:flex;align-items:center;gap:var(--_ui5-v2-17-0_table_row_actions_gap)}#actions-cell:has(+#navigated-cell){right:var(--_ui5-v2-17-0_table_navigated_cell_width);overflow:auto}:dir(rtl)#actions-cell:has(+#navigated-cell){left:var(--_ui5-v2-17-0_table_navigated_cell_width)}
+`;
+var __decorate$D = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+let TableRow = class TableRow2 extends TableRowBase$1 {
+  constructor() {
+    super(...arguments);
+    this.interactive = false;
+    this.navigated = false;
+    this.movable = false;
+  }
+  onBeforeRendering() {
+    super.onBeforeRendering();
+    this.ariaRowIndex = this.role === "row" ? `${this._rowIndex + 2}` : null;
+    toggleAttribute(this, "draggable", this.movable, "true");
+    toggleAttribute(this, "_interactive", this._isInteractive);
+    toggleAttribute(this, "_alternate", this._alternate);
+  }
+  async focus(focusOptions) {
+    this.setAttribute("tabindex", "-1");
+    HTMLElement.prototype.focus.call(this, focusOptions);
+    return Promise.resolve();
+  }
+  _onkeydown(e2, eventOrigin) {
+    super._onkeydown(e2, eventOrigin);
+    if (e2.defaultPrevented) {
+      return;
+    }
+    if (eventOrigin === this && this._isInteractive && b$6(e2)) {
+      this.toggleAttribute("_active", true);
+      this._onclick();
+    }
+  }
+  _onclick() {
+    var _a2;
+    if (this === t$5()) {
+      if (this._isSelectable && !this._hasSelector) {
+        this._onSelectionChange();
+      } else if (this.interactive || this._isNavigable) {
+        (_a2 = this._table) == null ? void 0 : _a2._onRowClick(this);
+      }
+    }
+  }
+  _onkeyup() {
+    this.removeAttribute("_active");
+  }
+  _onfocusout() {
+    this.removeAttribute("_active");
+  }
+  _onOverflowButtonClick(e2) {
+    const ctor = this.actions[0].constructor;
+    ctor.showMenu(this._overflowActions, e2.target);
+    e2.stopPropagation();
+  }
+  get _isInteractive() {
+    return this.interactive || this._isSelectable && !this._hasSelector || this._isNavigable;
+  }
+  get _isNavigable() {
+    return this._fixedActions.find((action) => {
+      return action.hasAttribute("ui5-table-row-action-navigation") && !action._isInteractive;
+    }) !== void 0;
+  }
+  get _rowIndex() {
+    if (this.position !== void 0) {
+      return this.position;
+    }
+    if (this._table) {
+      return this._table.rows.indexOf(this);
+    }
+    return -1;
+  }
+  get _hasOverflowActions() {
+    let renderableActionsCount = 0;
+    return this.actions.some((action) => {
+      if (action.isFixedAction() || !action.invisible) {
+        renderableActionsCount++;
+      }
+      return renderableActionsCount > this._rowActionCount;
+    });
+  }
+  get _flexibleActions() {
+    const flexibleActions = this.actions.filter((action) => !action.isFixedAction());
+    const fixedActionsCount = this.actions.length - flexibleActions.length;
+    let maxFlexibleActionsCount = this._rowActionCount - fixedActionsCount;
+    if (maxFlexibleActionsCount < 1) {
+      return [];
+    }
+    if (flexibleActions.length <= maxFlexibleActionsCount) {
+      return flexibleActions;
+    }
+    const visibleFlexibleActions = flexibleActions.filter((action) => !action.invisible);
+    if (visibleFlexibleActions.length > maxFlexibleActionsCount) {
+      maxFlexibleActionsCount--;
+    }
+    return visibleFlexibleActions.slice(0, maxFlexibleActionsCount);
+  }
+  get _fixedActions() {
+    let maxFixedActionsCount = this._rowActionCount;
+    if (this._hasOverflowActions) {
+      maxFixedActionsCount--;
+    }
+    const fixedActions = this.actions.filter((action) => action.isFixedAction());
+    return fixedActions.slice(0, maxFixedActionsCount);
+  }
+  get _overflowActions() {
+    const fixedActions = this._fixedActions;
+    const flexibleActions = this._flexibleActions;
+    const overflowActions = [];
+    this.actions.forEach((action) => {
+      if (!action.invisible && !fixedActions.includes(action) && !flexibleActions.includes(action)) {
+        overflowActions.push(action);
+      }
+    });
+    return overflowActions;
+  }
+  get _availableActionsCount() {
+    if (this._rowActionCount < 1) {
+      return 0;
+    }
+    return [...this._flexibleActions, ...this._fixedActions].filter((action) => {
+      return !action.invisible && action._isInteractive;
+    }).length + (this._hasOverflowActions ? 1 : 0);
+  }
+  get _actionCellAccText() {
+    const availableActionsCount = this._availableActionsCount;
+    if (availableActionsCount > 0) {
+      const bundleKey = availableActionsCount === 1 ? TABLE_ROW_SINGLE_ACTION : TABLE_ROW_MULTIPLE_ACTIONS;
+      return TableRowBase$1.i18nBundle.getText(bundleKey, availableActionsCount);
+    }
+  }
+};
+__decorate$D([
+  d$8({
+    type: HTMLElement,
+    "default": true,
+    individualSlots: true,
+    invalidateOnChildChange: {
+      properties: ["_popin", "_popinHidden"],
+      slots: false
+    }
+  })
+], TableRow.prototype, "cells", void 0);
+__decorate$D([
+  d$8({
+    type: HTMLElement,
+    individualSlots: true
+  })
+], TableRow.prototype, "actions", void 0);
+__decorate$D([
+  s$8()
+], TableRow.prototype, "rowKey", void 0);
+__decorate$D([
+  s$8({ type: Number })
+], TableRow.prototype, "position", void 0);
+__decorate$D([
+  s$8({ type: Boolean })
+], TableRow.prototype, "interactive", void 0);
+__decorate$D([
+  s$8({ type: Boolean })
+], TableRow.prototype, "navigated", void 0);
+__decorate$D([
+  s$8({ type: Boolean })
+], TableRow.prototype, "movable", void 0);
+__decorate$D([
+  o("#popin-cell")
+], TableRow.prototype, "_popinCell", void 0);
+__decorate$D([
+  o("#actions-cell")
+], TableRow.prototype, "_actionsCell", void 0);
+TableRow = __decorate$D([
+  m$8({
+    tag: "ui5-table-row",
+    styles: [TableRowBase$1.styles, TableRowCss],
+    template: TableRowTemplate
+  })
+], TableRow);
+TableRow.define();
+const TableRow$1 = TableRow;
+function TableTemplate() {
+  var _a2, _b2;
+  return jsxs(Fragment, { children: [jsx("div", { id: "before", role: "none", tabindex: 0, "ui5-table-dummy-focus-area": true }), jsxs("div", { id: "table", role: "grid", style: this.styles.table, "aria-label": this._ariaLabel, "aria-description": this._ariaDescription, "aria-rowcount": this._ariaRowCount, "aria-colcount": this._ariaColCount, "aria-multiselectable": this._ariaMultiSelectable, children: [jsx("slot", { name: "headerRow" }), jsx("div", { id: "rows", children: jsx("div", { id: "spacer", style: this.styles.spacer, children: jsx("slot", {}) }) }), this.rows.length === 0 && jsx(TableRow$1, { id: "no-data-row", children: jsx(TableCell$1, { id: "no-data-cell", "data-excluded-from-navigation": true, "horizontal-align": "Center", children: this.noData.length > 0 ? jsx("slot", { name: "noData" }) : this._effectiveNoDataText }) }), jsx(DropIndicator$1, { orientation: "Horizontal", ownerReference: this }), jsx("div", { "aria-hidden": "true", id: "table-end-row" }), this.loading && jsx(BusyIndicator$1, { id: "loading", delay: this.loadingDelay, active: true, "data-sap-focus-ref": true })] }), jsx("div", { id: "after", role: "none", tabindex: 0, "ui5-table-dummy-focus-area": true }), this.rows.length > 0 && ((_a2 = this._getGrowing()) == null ? void 0 : _a2.hasGrowingComponent()) && jsx("slot", { name: (_b2 = this._getGrowing()) == null ? void 0 : _b2._individualSlot })] });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const TableStyles = `:host{display:block;position:relative;color:var(--sapList_TextColor);font:var(--sapFontSize) var(--sapFontFamily)}:host([hidden]){display:none}#table{display:grid;grid-auto-rows:minmax(min-content,max-content)}:host([overflow-mode="Scroll"]) #table{overflow-x:auto;height:100%}#rows,#spacer{display:grid;grid-template-rows:min-content;grid-template-columns:subgrid;grid-column:1 / -1}#no-data-cell{grid-column:1 / -1;justify-content:center}#loading{position:absolute;inset:0;height:100%;z-index:2}:host([loading]) #table:has(#loading[_is-busy]) ::slotted(*){opacity:var(--sapContent_DisabledOpacity)}
+`;
+class TableExtension {
+}
+class GridWalker {
+  constructor(grid2 = [[]]) {
+    this.rowPos = 0;
+    this.colPos = 0;
+    this.pageSize = 20;
+    this.firstRowPos = 0;
+    this.lastRowPos = 0;
+    this.grid = grid2;
+  }
+  left() {
+    this.colPos = Math.max(this.getColPos() - 1, 0);
+  }
+  right() {
+    this.colPos = Math.min(this.getColPos() + 1, this.grid[this.getRowPos()].length - 1);
+  }
+  up() {
+    this.rowPos = Math.max(this.getRowPos() - 1, 0);
+  }
+  down() {
+    this.rowPos = Math.min(this.getRowPos() + 1, this.grid.length - 1);
+  }
+  pageup() {
+    this.colPos = this.getColPos();
+    const rowPos = this.getRowPos();
+    this.rowPos = Math.max(rowPos > this.firstRowPos ? this.firstRowPos : 0, rowPos - this.pageSize);
+  }
+  pagedown() {
+    this.colPos = this.getColPos();
+    const rowPos = this.getRowPos();
+    const endRowPos = this.grid.length - 1;
+    const lastRowPos = endRowPos + this.lastRowPos;
+    this.rowPos = Math.min(rowPos < lastRowPos ? lastRowPos : endRowPos, rowPos + this.pageSize);
+  }
+  home() {
+    this.colPos = this.getColPos();
+    if (this.colPos === 0) {
+      this.rowPos = this.rowPos > this.firstRowPos ? this.firstRowPos : 0;
+    } else {
+      this.colPos = this.colPos > 1 ? 1 : 0;
+    }
+  }
+  end() {
+    this.colPos = this.getColPos();
+    if (this.colPos === 0) {
+      const endRowPos = this.grid.length - 1;
+      const lastRowPos = endRowPos + this.lastRowPos;
+      this.rowPos = this.rowPos < lastRowPos ? lastRowPos : endRowPos;
+    } else {
+      const lastColPos = this.grid[this.rowPos].length - 1;
+      this.colPos = this.colPos < lastColPos ? lastColPos : 0;
+    }
+  }
+  setGrid(grid2) {
+    this.grid = grid2;
+  }
+  getCurrent() {
+    return this.grid[this.getRowPos()][this.getColPos()];
+  }
+  setCurrent(current) {
+    this.grid.forEach((row, rowIndex) => {
+      row.forEach((cell, colIndex) => {
+        if (cell === current) {
+          this.rowPos = rowIndex;
+          this.colPos = colIndex;
+        }
+      });
+    });
+  }
+  setRowPos(rowPos) {
+    this.rowPos = rowPos;
+  }
+  getRowPos() {
+    return Math.min(this.rowPos, this.grid.length - 1);
+  }
+  setColPos(colPos) {
+    this.colPos = colPos;
+  }
+  getColPos() {
+    return Math.min(this.colPos, this.grid[this.getRowPos()].length - 1);
+  }
+  setFirstRowPos(firstRowPos) {
+    this.firstRowPos = firstRowPos;
+  }
+  getFirstRowPos() {
+    return this.firstRowPos;
+  }
+  setLastRowPos(lastRowPos) {
+    this.lastRowPos = lastRowPos;
+  }
+  getLastRowPos() {
+    return this.lastRowPos;
+  }
+}
+class TableNavigation extends TableExtension {
+  constructor(table) {
+    super();
+    this._colPosition = 0;
+    this._tabPosition = 0;
+    this._table = table;
+    this._gridWalker = new GridWalker();
+    this._onKeyDownCaptureBound = this._onKeyDownCapture.bind(this);
+    this._table.addEventListener("keydown", this._onKeyDownCaptureBound, { capture: true });
+  }
+  _getNavigationItemsOfRow(row) {
+    return [row, ...row.shadowRoot.children].map((element) => {
+      return element.localName === "slot" ? element.assignedElements() : element;
+    }).flat().filter((element) => {
+      return element.localName.includes("ui5-table-") && !element.hasAttribute("data-excluded-from-navigation");
+    });
+  }
+  _getNavigationItemsOfGrid() {
+    var _a2, _b2;
+    const items = [];
+    if (this._table.headerRow[0] && !i$2(this._table.headerRow[0])) {
+      items.push(this._getNavigationItemsOfRow(this._table.headerRow[0]));
+      this._gridWalker.setFirstRowPos(1);
+    } else {
+      this._gridWalker.setFirstRowPos(0);
+    }
+    if (this._table.rows.length) {
+      this._table.rows.forEach((row) => items.push(this._getNavigationItemsOfRow(row)));
+    } else if (this._table._noDataRow) {
+      items.push(this._getNavigationItemsOfRow(this._table._noDataRow));
+    }
+    if (this._table.rows.length > 0 && ((_a2 = this._table._getGrowing()) == null ? void 0 : _a2.hasGrowingComponent())) {
+      items.push([(_b2 = this._table._getGrowing()) == null ? void 0 : _b2.getFocusDomRef()]);
+      this._gridWalker.setLastRowPos(-1);
+    } else {
+      this._gridWalker.setLastRowPos(0);
+    }
+    if (!this._gridWalker.getCurrent()) {
+      this._gridWalker.setRowPos(this._gridWalker.getFirstRowPos());
+    }
+    this._gridWalker.setGrid(items);
+    return items;
+  }
+  _setCurrentItem(e2, callback) {
+    const navigationItems = this._getNavigationItemsOfGrid().flat();
+    const navigationItem = e2.composedPath().find((target) => navigationItems.includes(target));
+    if (navigationItem) {
+      this._gridWalker.setCurrent(navigationItem);
+      callback && callback(navigationItem);
+    }
+  }
+  _isEventFromCurrentItem(e2) {
+    return e2.composedPath()[0] === this._gridWalker.getCurrent();
+  }
+  _focusElement(element, ignoreFocusIn = true) {
+    var _a2;
+    if (!element || element === t$5()) {
+      return;
+    }
+    const navigationItems = this._getNavigationItemsOfGrid().flat();
+    if (navigationItems.includes(this._lastFocusedItem)) {
+      (_a2 = this._lastFocusedItem) == null ? void 0 : _a2.removeAttribute("tabindex");
+    }
+    if (navigationItems.includes(element)) {
+      element.setAttribute("tabindex", "-1");
+      this._lastFocusedItem = element;
+    }
+    this._ignoreFocusIn = ignoreFocusIn;
+    element.focus({ preventScroll: element === this._table._beforeElement || element === this._table._afterElement });
+    if (element instanceof HTMLInputElement) {
+      element.select();
+    }
+    this._ignoreFocusIn = false;
+  }
+  _focusCurrentItem() {
+    this._focusElement(this._gridWalker.getCurrent());
+  }
+  _handleEnter(e2, eventOrigin) {
+    if (eventOrigin.hasAttribute("ui5-table-cell-base")) {
+      this._handleF2(e2, eventOrigin);
+    }
+  }
+  _handleF2(e2, eventOrigin) {
+    if (this._isEventFromCurrentItem(e2)) {
+      const firstTabbable = b$1(eventOrigin)[0];
+      this._focusElement(firstTabbable);
+    } else {
+      this._setCurrentItem(e2, () => this._focusCurrentItem());
+    }
+    e2.preventDefault();
+  }
+  _handleF7(e2, eventOrigin) {
+    if (eventOrigin.hasAttribute("ui5-table-row-base")) {
+      this._gridWalker.setColPos(this._colPosition);
+      let elementToFocus = this._gridWalker.getCurrent();
+      if (this._tabPosition > -1) {
+        const tabbables = b$1(elementToFocus);
+        elementToFocus = tabbables[this._tabPosition] || tabbables.pop() || elementToFocus;
+      }
+      this._focusElement(elementToFocus);
+    } else {
+      this._setCurrentItem(e2, (currentItem) => {
+        this._tabPosition = b$1(currentItem).indexOf(eventOrigin);
+        this._colPosition = this._gridWalker.getColPos();
+        this._gridWalker.setColPos(0);
+        this._focusCurrentItem();
+      });
+    }
+    e2.preventDefault();
+  }
+  _handleTab(e2, eventOrigin) {
+    if (this._isEventFromCurrentItem(e2)) {
+      this._focusElement(e2.shiftKey ? this._table._beforeElement : this._table._afterElement);
+    } else {
+      const tabbables = b$1(this._table._tableElement);
+      if (e2.shiftKey && tabbables[0] === eventOrigin) {
+        this._focusElement(this._table._beforeElement);
+      }
+      if (!e2.shiftKey && tabbables[tabbables.length - 1] === eventOrigin) {
+        this._focusElement(this._table._afterElement);
+      }
+    }
+  }
+  _handleArrowUpDown(e2, eventOrigin, direction) {
+    if (e2.shiftKey || e2.altKey || e2.ctrlKey || e2.metaKey || e2.defaultPrevented || this._isEventFromCurrentItem(e2) || /^(input|textarea)$/i.test(eventOrigin.nodeName)) {
+      return false;
+    }
+    this._setCurrentItem(e2, (currentItem) => {
+      this._tabPosition = b$1(currentItem).indexOf(eventOrigin);
+      this._gridWalker.setRowPos(this._gridWalker.getRowPos() + direction);
+      let elementToFocus = this._gridWalker.getCurrent();
+      const tabbables = b$1(elementToFocus);
+      elementToFocus = tabbables[this._tabPosition] || tabbables.pop() || elementToFocus;
+      this._focusElement(elementToFocus);
+      e2.preventDefault();
+    });
+    return false;
+  }
+  _handleArrowUp(e2, eventOrigin) {
+    return this._handleArrowUpDown(e2, eventOrigin, -1);
+  }
+  _handleArrowDown(e2, eventOrigin) {
+    return this._handleArrowUpDown(e2, eventOrigin, 1);
+  }
+  _onkeydown(e2, eventOrigin) {
+    var _a2;
+    if (e2.defaultPrevented) {
+      return;
+    }
+    if (!this._isEventFromCurrentItem(e2) && this._getNavigationItemsOfGrid().flat().includes(eventOrigin)) {
+      this._gridWalker.setCurrent(eventOrigin);
+    }
+    (_a2 = this._table._getVirtualizer()) == null ? void 0 : _a2._onKeyDown(e2);
+    if (e2.defaultPrevented) {
+      return;
+    }
+    const keydownHandlerName = `_handle${e2.code}`;
+    const keydownHandler = this[keydownHandlerName];
+    if (typeof keydownHandler === "function" && keydownHandler.call(this, e2, eventOrigin) === void 0) {
+      return;
+    }
+    if (!this._isEventFromCurrentItem(e2)) {
+      return;
+    }
+    if (D$3(e2)) {
+      this._gridWalker[this._table.effectiveDir === "rtl" ? "right" : "left"]();
+    } else if (R$1(e2)) {
+      this._gridWalker[this._table.effectiveDir === "rtl" ? "left" : "right"]();
+    } else if (P$2(e2) || O(e2)) {
+      this._gridWalker.up();
+    } else if (_$1(e2) || N$2(e2)) {
+      this._gridWalker.down();
+    } else if (M$2(e2)) {
+      this._gridWalker.home();
+    } else if (n$c(e2)) {
+      this._gridWalker.end();
+    } else if (j(e2)) {
+      this._gridWalker.pageup();
+    } else if (q(e2)) {
+      this._gridWalker.pagedown();
+    } else {
+      return;
+    }
+    this._focusCurrentItem();
+    e2.preventDefault();
+  }
+  _onclick(e2) {
+    var _a2;
+    const navigationItems = this._getNavigationItemsOfGrid();
+    const flatNavigationItems = navigationItems.flat();
+    let navigationItem = null;
+    let focusableElement = null;
+    for (const target of e2.composedPath()) {
+      if (target.nodeType === Node.ELEMENT_NODE) {
+        const element = target;
+        if (element.matches(":focus-within")) {
+          focusableElement = element;
+          break;
+        }
+        if (flatNavigationItems.includes(element)) {
+          navigationItem = element;
+          break;
+        }
+      }
+    }
+    if (focusableElement && focusableElement !== this._lastFocusedItem) {
+      (_a2 = this._lastFocusedItem) == null ? void 0 : _a2.removeAttribute("tabindex");
+      this._lastFocusedItem = void 0;
+    } else if (navigationItem) {
+      this._gridWalker.setCurrent(navigationItem);
+      this._gridWalker.setColPos(0);
+      this._focusCurrentItem();
+    }
+  }
+  _onfocusin(e2, eventOrigin) {
+    if (this._ignoreFocusIn) {
+      return;
+    }
+    if (eventOrigin === this._table._beforeElement || eventOrigin === this._table._afterElement) {
+      if (this._table.loading) {
+        this._table._loadingElement.focus();
+      } else {
+        this._getNavigationItemsOfGrid();
+        this._gridWalker.setColPos(0);
+        this._focusCurrentItem();
+      }
+    } else if (eventOrigin !== this._lastFocusedItem && this._getNavigationItemsOfGrid().flat().includes(eventOrigin)) {
+      this._lastFocusedItem = eventOrigin;
+    }
+  }
+  _onKeyDownCapture(e2) {
+    if (!this._table.loading) {
+      return;
+    }
+    if (x$1(e2) || V$1(e2)) {
+      this._focusElement(e2.shiftKey ? this._table._beforeElement : this._table._afterElement);
+      e2.stopImmediatePropagation();
+    }
+  }
+}
+var TableOverflowMode;
+(function(TableOverflowMode2) {
+  TableOverflowMode2["Scroll"] = "Scroll";
+  TableOverflowMode2["Popin"] = "Popin";
+})(TableOverflowMode || (TableOverflowMode = {}));
+const TableOverflowMode$1 = TableOverflowMode;
+class TableDragAndDrop extends TableExtension {
+  constructor(table) {
+    super();
+    this._table = table;
+  }
+  _ondragstart(e2) {
+    D$1.setDraggedElement(e2.target);
+  }
+  _ondragend() {
+    D$1.clearDraggedElement();
+  }
+  _ondragenter(e2) {
+    e2.preventDefault();
+  }
+  _ondragleave(e2) {
+    if (e2.relatedTarget instanceof Node && this._table.shadowRoot.contains(e2.relatedTarget)) {
+      return;
+    }
+    this._table.dropIndicatorDOM.targetReference = null;
+  }
+  _ondragover(e2) {
+    if (!(e2.target instanceof HTMLElement)) {
+      return;
+    }
+    const closestPosition = L2(this._table.rows, e2.clientY, a$3.Vertical);
+    if (!closestPosition) {
+      this._table.dropIndicatorDOM.targetReference = null;
+      return;
+    }
+    const { targetReference, placement } = i2(e2, this._table, closestPosition, closestPosition.element, { crossDnD: true, originalEvent: true });
+    this._table.dropIndicatorDOM.targetReference = targetReference;
+    this._table.dropIndicatorDOM.placement = placement;
+  }
+  _ondrop(e2) {
+    var _a2, _b2;
+    if (!((_a2 = this._table.dropIndicatorDOM) == null ? void 0 : _a2.targetReference) || !((_b2 = this._table.dropIndicatorDOM) == null ? void 0 : _b2.placement)) {
+      return;
+    }
+    m(e2, this._table, this._table.dropIndicatorDOM.targetReference, this._table.dropIndicatorDOM.placement);
+    this._table.dropIndicatorDOM.targetReference = null;
+  }
+}
+let invisibleText;
+const i18nBundle = new u$c("@ui5/webcomponents");
+const checkVisibility = (element) => {
+  return element.checkVisibility() || getComputedStyle(element).display === "contents";
+};
+const updateInvisibleText = (element, text = []) => {
+  if (!invisibleText || !invisibleText.isConnected) {
+    invisibleText = document.createElement("span");
+    invisibleText.id = "ui5-table-invisible-text";
+    invisibleText.ariaHidden = "true";
+    invisibleText.style.display = "none";
+    document.body.appendChild(invisibleText);
+  }
+  const ariaLabelledByElements = [...element.ariaLabelledByElements || []];
+  const invisibleTextIndex = ariaLabelledByElements.indexOf(invisibleText);
+  text = Array.isArray(text) ? text.filter(Boolean).join(" . ").trim() : text.trim();
+  invisibleText.textContent = text;
+  if (text && invisibleTextIndex === -1) {
+    ariaLabelledByElements.unshift(invisibleText);
+    element.ariaLabelledByElements = ariaLabelledByElements;
+  } else if (!text && invisibleTextIndex > -1) {
+    ariaLabelledByElements.splice(invisibleTextIndex, 1);
+    element.ariaLabelledByElements = ariaLabelledByElements.length ? ariaLabelledByElements : null;
+  }
+};
+const getAccessibilityDescription = (element, lessDetails = false, _isRootElement = true) => {
+  if (!element) {
+    return "";
+  }
+  if (element.nodeType === Node.TEXT_NODE) {
+    return element.data.trim();
+  }
+  if (!(element instanceof HTMLElement)) {
+    return "";
+  }
+  if (element.hasAttribute("data-ui5-table-acc-text")) {
+    return element.getAttribute("data-ui5-table-acc-text") || "";
+  }
+  if (element.ariaHidden === "true" || !checkVisibility(element)) {
+    return _isRootElement ? i18nBundle.getText(TABLE_ACC_STATE_EMPTY) : "";
+  }
+  let childNodes = [];
+  const descriptions = [];
+  const accessibilityInfo = element.accessibilityInfo;
+  if (accessibilityInfo) {
+    const { type, description, required, disabled, readonly, children } = accessibilityInfo;
+    childNodes = children || [];
+    type && descriptions.push(type);
+    description && descriptions.push(description);
+    if (!lessDetails) {
+      required && descriptions.push(i18nBundle.getText(TABLE_ACC_STATE_REQUIRED));
+      disabled && descriptions.push(i18nBundle.getText(TABLE_ACC_STATE_DISABLED));
+      readonly && descriptions.push(i18nBundle.getText(TABLE_ACC_STATE_READONLY));
+    }
+  } else if (element.localName === "slot") {
+    childNodes = element.assignedNodes({ flatten: true });
+  } else {
+    childNodes = element.shadowRoot ? [...element.shadowRoot.childNodes] : [...element.childNodes];
+  }
+  childNodes.forEach((child) => {
+    const childDescription = getAccessibilityDescription(child, lessDetails, false);
+    childDescription && descriptions.push(childDescription);
+  });
+  if (_isRootElement) {
+    const hasDescription = descriptions.length > 0;
+    if (!hasDescription || !lessDetails) {
+      const tabbables = b$1(element);
+      const bundleKey = [
+        hasDescription ? "" : TABLE_ACC_STATE_EMPTY,
+        TABLE_CELL_SINGLE_CONTROL,
+        TABLE_CELL_MULTIPLE_CONTROLS
+      ][Math.min(tabbables.length, 2)];
+      if (bundleKey) {
+        hasDescription && descriptions.push(".");
+        descriptions.push(i18nBundle.getText(bundleKey));
+      }
+    }
+  }
+  return descriptions.join(" ").trim();
+};
+class TableCustomAnnouncement extends TableExtension {
+  constructor(table) {
+    super();
+    this._tableAttributes = ["ui5-table-header-row", "ui5-table-header-cell", "ui5-table-row", "ui5-table-cell"];
+    this._table = table;
+  }
+  _onfocusin(e2, eventOrigin) {
+    const tableAttribute = this._tableAttributes.find((attr) => eventOrigin.hasAttribute(attr));
+    if (!tableAttribute) {
+      return;
+    }
+    const tableElementName = tableAttribute.replace("ui5-table", "Table").replace(/-([a-z])/g, (g2) => g2[1].toUpperCase());
+    const eventHandlerName = `_handle${tableElementName}Focusin`;
+    const eventHandler = this[eventHandlerName];
+    if (typeof eventHandler === "function") {
+      eventHandler.call(this, eventOrigin, e2);
+    } else {
+      this._handleTableElementFocusin(eventOrigin);
+    }
+  }
+  _onfocusout(e2, eventOrigin) {
+    const isTableElement = this._tableAttributes.some((attr) => eventOrigin.hasAttribute(attr));
+    isTableElement && updateInvisibleText(eventOrigin);
+  }
+  _handleTableElementFocusin(element) {
+    const description = getAccessibilityDescription(element);
+    updateInvisibleText(element, description);
+  }
+  _handleTableHeaderRowFocusin(headerRow) {
+    const descriptions = [
+      i18nBundle.getText(TABLE_COLUMN_HEADER_ROW)
+    ];
+    if (headerRow._hasSelector) {
+      descriptions.push(headerRow._isMultiSelect ? headerRow._selectionCellAriaDescription : headerRow._i18nSelection);
+    }
+    headerRow._visibleCells.forEach((headerCell) => {
+      const cellDescription = getAccessibilityDescription(headerCell, true);
+      descriptions.push(cellDescription);
+    });
+    if (headerRow._rowActionCount > 0) {
+      descriptions.push(headerRow._i18nRowActions);
+    }
+    updateInvisibleText(headerRow, descriptions);
+  }
+  _handleTableRowFocusin(row) {
+    if (!row._table) {
+      return;
+    }
+    const descriptions = [
+      i18nBundle.getText(TABLE_ROW),
+      i18nBundle.getText(TABLE_ROW_INDEX, row.ariaRowIndex, this._table._ariaRowCount)
+    ];
+    if (row._isSelected) {
+      descriptions.push(i18nBundle.getText(TABLE_ROW_SELECTED));
+    }
+    if (row._isNavigable) {
+      descriptions.push(i18nBundle.getText(TABLE_ROW_NAVIGABLE));
+    } else if (row.interactive) {
+      descriptions.push(i18nBundle.getText(TABLE_ROW_ACTIVE));
+    }
+    const cells = [...row._visibleCells, ...row._popinCells];
+    cells.flatMap((cell) => {
+      return cell._popin ? [cell._popinHeader, cell._popinContent] : [cell._headerCell, cell];
+    }).forEach((node) => {
+      const nodeDescription = getAccessibilityDescription(node, true);
+      descriptions.push(nodeDescription);
+    });
+    if (row._availableActionsCount > 0) {
+      descriptions.push(row._actionCellAccText);
+    }
+    if (row._renderNavigated && row.navigated) {
+      descriptions.push(i18nBundle.getText(TABLE_ROW_NAVIGATED));
+    }
+    updateInvisibleText(row, descriptions);
+  }
+  _handleTableCellFocusin(cell) {
+    if (cell.hasAttribute("data-ui5-table-popin-cell")) {
+      const popinCells = cell.getDomRef().assignedNodes({ flatten: true });
+      const descriptions = popinCells.flatMap((popinCell) => {
+        const headerDescription = getAccessibilityDescription(popinCell._popinHeader);
+        const contentDescription = getAccessibilityDescription(popinCell._popinContent);
+        return [headerDescription, contentDescription];
+      });
+      updateInvisibleText(cell, descriptions);
+    } else {
+      this._handleTableElementFocusin(cell);
+    }
+  }
+}
+var __decorate$C = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var Table_1;
+let Table = Table_1 = class Table2 extends b$7 {
+  constructor() {
+    super();
+    this.overflowMode = "Scroll";
+    this.loading = false;
+    this.loadingDelay = 1e3;
+    this.rowActionCount = 0;
+    this.alternateRowColors = false;
+    this.stickyTop = "0";
+    this._invalidate = 0;
+    this._renderNavigated = false;
+    this._events = ["keydown", "keyup", "click", "focusin", "focusout", "dragstart", "dragenter", "dragleave", "dragover", "drop", "dragend"];
+    this._poppedIn = [];
+    this._containerWidth = 0;
+    this._onResizeBound = this._onResize.bind(this);
+    this._onEventBound = this._onEvent.bind(this);
+  }
+  onEnterDOM() {
+    this._events.forEach((eventType) => this.addEventListener(eventType, this._onEventBound));
+    this.features.forEach((feature) => {
+      var _a2;
+      return (_a2 = feature.onTableActivate) == null ? void 0 : _a2.call(feature, this);
+    });
+    this._tableNavigation = new TableNavigation(this);
+    this._tableDragAndDrop = new TableDragAndDrop(this);
+    this._tableCustomAnnouncement = new TableCustomAnnouncement(this);
+  }
+  onExitDOM() {
+    this._tableNavigation = void 0;
+    this._tableDragAndDrop = void 0;
+    this._events.forEach((eventType) => this.removeEventListener(eventType, this._onEventBound));
+  }
+  onBeforeRendering() {
+    this._renderNavigated = this.rows.some((row) => row.navigated);
+    [...this.headerRow, ...this.rows].forEach((row, index) => {
+      row._renderNavigated = this._renderNavigated;
+      row._rowActionCount = this.rowActionCount;
+      row._alternate = this.alternateRowColors && index % 2 === 0;
+    });
+    this.style.setProperty(d$g("--ui5_grid_sticky_top"), this.stickyTop);
+    this._refreshPopinState();
+    this.features.forEach((feature) => {
+      var _a2;
+      return (_a2 = feature.onTableBeforeRendering) == null ? void 0 : _a2.call(feature, this);
+    });
+    if (this.getDomRef()) {
+      f$6.deregister(this, this._onResizeBound);
+    }
+  }
+  onAfterRendering() {
+    this.features.forEach((feature) => {
+      var _a2;
+      return (_a2 = feature.onTableAfterRendering) == null ? void 0 : _a2.call(feature, this);
+    });
+    if (this.overflowMode === TableOverflowMode$1.Popin) {
+      f$6.register(this, this._onResizeBound);
+    }
+  }
+  _findFeature(featureName) {
+    return this.features.find((feature) => isFeature(feature, featureName));
+  }
+  _getSelection() {
+    return this._findFeature("TableSelectionBase") || this._findFeature("TableSelection");
+  }
+  _getVirtualizer() {
+    return this._findFeature("TableVirtualizer");
+  }
+  _getGrowing() {
+    return this._findFeature("TableGrowing");
+  }
+  _onEvent(e2) {
+    const composedPath = e2.composedPath();
+    const eventOrigin = composedPath[0];
+    const elements = [this._tableCustomAnnouncement, this._tableNavigation, this._tableDragAndDrop, ...composedPath, ...this.features].filter(Boolean);
+    elements.forEach((element) => {
+      if (element instanceof TableExtension || element instanceof HTMLElement && element.localName.includes("ui5-table")) {
+        const eventHandlerName = `_on${e2.type}`;
+        const eventHandler = element[eventHandlerName];
+        if (typeof eventHandler === "function") {
+          eventHandler.call(element, e2, eventOrigin);
+        }
+      }
+    });
+  }
+  _onResize() {
+    const { clientWidth, scrollWidth } = this._tableElement;
+    if (scrollWidth > clientWidth) {
+      const overflow = scrollWidth - clientWidth;
+      const headers = this._getPopinOrderedColumns(false);
+      const poppedInWidth = headers.reduce((totalPoppedInWidth, headerCell) => {
+        if (totalPoppedInWidth < overflow && !headerCell._popin) {
+          const headerWidth = Math.ceil(headerCell.getBoundingClientRect().width);
+          totalPoppedInWidth += headerWidth;
+          this._setHeaderPopinState(headerCell, true, headerWidth);
+        }
+        return totalPoppedInWidth;
+      }, 0);
+      const columnOverflow = poppedInWidth - overflow;
+      this._containerWidth = clientWidth - columnOverflow;
+    } else {
+      const headers = this._getPopinOrderedColumns(true).filter((it2) => it2._popin);
+      headers.every((headerCell) => {
+        const underflow = clientWidth - this._containerWidth;
+        if (underflow >= headerCell._popinWidth) {
+          this._containerWidth += headerCell._popinWidth;
+          this._setHeaderPopinState(headerCell, false, 0);
+          return true;
+        }
+        return false;
+      });
+    }
+  }
+  _onfocusin(e2) {
+    if (e2.target === this) {
+      return;
+    }
+    scrollElementIntoView(this._scrollContainer, e2.target, this._stickyElements, this.effectiveDir === "rtl");
+  }
+  _onGrow() {
+    var _a2;
+    (_a2 = this._getGrowing()) == null ? void 0 : _a2.loadMore();
+  }
+  _getPopinOrderedColumns(reverse) {
+    let headers = [...this.headerRow[0].cells];
+    headers = headers.reverse();
+    headers = headers.sort((a3, b2) => a3.importance - b2.importance);
+    headers.pop();
+    if (reverse) {
+      headers = headers.reverse();
+    }
+    return headers;
+  }
+  /**
+   * Refreshes the popin state of the columns.
+   * Syncs the popin state of the columns with the popin state of the header cells.
+   * This is needed when additional rows are manually added and no resize happens.
+   * @private
+   */
+  _refreshPopinState() {
+    var _a2;
+    (_a2 = this.headerRow[0]) == null ? void 0 : _a2.cells.forEach((header2) => {
+      this._setHeaderPopinState(header2, header2._popin, header2._popinWidth);
+    });
+  }
+  _setHeaderPopinState(headerCell, inPopin, popinWidth) {
+    const headerIndex = this.headerRow[0].cells.indexOf(headerCell);
+    headerCell._popin = inPopin && this.overflowMode === TableOverflowMode$1.Popin;
+    headerCell._popinWidth = popinWidth;
+    this.rows.forEach((row) => {
+      const cell = row.cells[headerIndex];
+      if (cell) {
+        row.cells[headerIndex]._popinHidden = headerCell.popinHidden;
+        row.cells[headerIndex]._popin = headerCell._popin;
+      }
+    });
+  }
+  _isGrowingFeature(feature) {
+    return Boolean(feature.loadMore && feature.hasGrowingComponent && isFeature(feature, "TableGrowing"));
+  }
+  _onRowClick(row) {
+    this.fireDecoratorEvent("row-click", { row });
+  }
+  _onRowActionClick(action) {
+    const row = action.parentElement;
+    this.fireDecoratorEvent("row-action-click", { action, row });
+  }
+  get styles() {
+    var _a2, _b2, _c;
+    const virtualizer = this._getVirtualizer();
+    const headerStyleMap = (_c = (_b2 = (_a2 = this.headerRow) == null ? void 0 : _a2[0]) == null ? void 0 : _b2.cells) == null ? void 0 : _c.reduce((headerStyles, headerCell) => {
+      if (headerCell.horizontalAlign !== void 0 && !headerCell._popin) {
+        headerStyles[`--horizontal-align-${headerCell._individualSlot}`] = headerCell.horizontalAlign;
+      }
+      return headerStyles;
+    }, {});
+    return {
+      table: {
+        "grid-template-columns": this._gridTemplateColumns,
+        "--row-height": virtualizer ? `${virtualizer.rowHeight}px` : "auto",
+        ...headerStyleMap
+      },
+      spacer: {
+        "transform": virtualizer == null ? void 0 : virtualizer._getTransform(),
+        "will-change": virtualizer && "transform"
+      }
+    };
+  }
+  get _gridTemplateColumns() {
+    if (!this.headerRow[0]) {
+      return;
+    }
+    const widths = [];
+    const visibleHeaderCells = this.headerRow[0]._visibleCells;
+    if (this._isRowSelectorRequired) {
+      widths.push("min-content");
+    }
+    widths.push(...visibleHeaderCells.map((cell) => {
+      const minWidth = cell.minWidth ?? "3rem";
+      let width = `minmax(${minWidth}, 1fr)`;
+      if (isValidColumnWidth(cell.width)) {
+        width = cell.width.includes("%") ? `max(${minWidth}, ${cell.width})` : cell.width;
+      }
+      return width;
+    }));
+    if (this.rowActionCount > 0) {
+      widths.push(`calc(var(${d$g("--_ui5_button_base_min_width")}) * ${this.rowActionCount} + var(${d$g("--_ui5_table_row_actions_gap")}) * ${this.rowActionCount - 1} + var(${d$g("--_ui5_table_cell_horizontal_padding")}) * 2)`);
+    }
+    if (this._renderNavigated) {
+      widths.push(`var(${d$g("--_ui5_table_navigated_cell_width")})`);
+    }
+    return widths.join(" ");
+  }
+  get _isRowSelectorRequired() {
+    var _a2;
+    return this.rows.length > 0 && ((_a2 = this._getSelection()) == null ? void 0 : _a2.isRowSelectorRequired());
+  }
+  get _scrollContainer() {
+    return this._getVirtualizer() ? this._tableElement : findVerticalScrollContainer(this);
+  }
+  get _stickyElements() {
+    const stickyRows = this.headerRow.filter((row) => row.sticky);
+    const stickyColumns = this.headerRow[0]._stickyCells;
+    return [...stickyRows, ...stickyColumns];
+  }
+  get _effectiveNoDataText() {
+    return this.noDataText || Table_1.i18nBundle.getText(TABLE_NO_DATA);
+  }
+  get _ariaLabel() {
+    return A$3(this) || void 0;
+  }
+  get _ariaDescription() {
+    var _a2;
+    return (_a2 = this._getSelection()) == null ? void 0 : _a2.getAriaDescriptionForTable();
+  }
+  get _ariaRowCount() {
+    var _a2;
+    return ((_a2 = this._getVirtualizer()) == null ? void 0 : _a2.rowCount) || this.rows.length + 1;
+  }
+  get _ariaColCount() {
+    if (!this.headerRow[0]) {
+      return 0;
+    }
+    let ariaColCount = this.headerRow[0]._visibleCells.length;
+    if (this._isRowSelectorRequired) {
+      ariaColCount++;
+    }
+    if (this.rowActionCount > 0) {
+      ariaColCount++;
+    }
+    if (this.headerRow[0]._popinCells.length > 0) {
+      ariaColCount++;
+    }
+    return ariaColCount;
+  }
+  get _ariaMultiSelectable() {
+    const selection = this._getSelection();
+    return (selection == null ? void 0 : selection.isSelectable()) && this.rows.length ? selection.isMultiSelectable() : void 0;
+  }
+  get isTable() {
+    return true;
+  }
+};
+__decorate$C([
+  d$8({
+    type: HTMLElement,
+    "default": true,
+    invalidateOnChildChange: {
+      properties: ["navigated", "position"],
+      slots: false
+    }
+  })
+], Table.prototype, "rows", void 0);
+__decorate$C([
+  d$8({ type: HTMLElement, invalidateOnChildChange: { properties: false, slots: true } })
+], Table.prototype, "headerRow", void 0);
+__decorate$C([
+  d$8()
+], Table.prototype, "noData", void 0);
+__decorate$C([
+  d$8({ type: HTMLElement, individualSlots: true })
+], Table.prototype, "features", void 0);
+__decorate$C([
+  s$8()
+], Table.prototype, "accessibleName", void 0);
+__decorate$C([
+  s$8()
+], Table.prototype, "accessibleNameRef", void 0);
+__decorate$C([
+  s$8()
+], Table.prototype, "noDataText", void 0);
+__decorate$C([
+  s$8()
+], Table.prototype, "overflowMode", void 0);
+__decorate$C([
+  s$8({ type: Boolean })
+], Table.prototype, "loading", void 0);
+__decorate$C([
+  s$8({ type: Number })
+], Table.prototype, "loadingDelay", void 0);
+__decorate$C([
+  s$8({ type: Number })
+], Table.prototype, "rowActionCount", void 0);
+__decorate$C([
+  s$8({ type: Boolean })
+], Table.prototype, "alternateRowColors", void 0);
+__decorate$C([
+  s$8()
+], Table.prototype, "stickyTop", void 0);
+__decorate$C([
+  s$8({ type: Number, noAttribute: true })
+], Table.prototype, "_invalidate", void 0);
+__decorate$C([
+  s$8({ type: Boolean, noAttribute: true })
+], Table.prototype, "_renderNavigated", void 0);
+__decorate$C([
+  o("[ui5-drop-indicator]")
+], Table.prototype, "dropIndicatorDOM", void 0);
+__decorate$C([
+  o("#no-data-row")
+], Table.prototype, "_noDataRow", void 0);
+__decorate$C([
+  o("#table-end-row")
+], Table.prototype, "_endRow", void 0);
+__decorate$C([
+  o("#table")
+], Table.prototype, "_tableElement", void 0);
+__decorate$C([
+  o("#before")
+], Table.prototype, "_beforeElement", void 0);
+__decorate$C([
+  o("#after")
+], Table.prototype, "_afterElement", void 0);
+__decorate$C([
+  o("#loading")
+], Table.prototype, "_loadingElement", void 0);
+__decorate$C([
+  i$9("@ui5/webcomponents")
+], Table, "i18nBundle", void 0);
+Table = Table_1 = __decorate$C([
+  m$8({
+    tag: "ui5-table",
+    renderer: y$5,
+    styles: TableStyles,
+    template: TableTemplate,
+    fastNavigation: true
+  }),
+  l$e("row-click", {
+    bubbles: false
+  }),
+  l$e("move-over", {
+    cancelable: true,
+    bubbles: true
+  }),
+  l$e("move", {
+    bubbles: true
+  }),
+  l$e("row-action-click", {
+    bubbles: false
+  })
+], Table);
+Table.define();
+var e = ((n2) => (n2.None = "None", n2.Ascending = "Ascending", n2.Descending = "Descending", n2))(e || {});
+const name$s = "sort-ascending";
+const pathData$r = "M82 288h351l15 32H65zm-48 96h446l15 32H17zm366-160H113l16-32h255zm-47-96H161l17-32h158z";
+const ltr$r = false;
+const accData$9 = ICON_SORT_ASCENDING;
+const collection$r = "SAP-icons-v4";
+const packageName$r = "@ui5/webcomponents-icons";
+y$2(name$s, { pathData: pathData$r, ltr: ltr$r, accData: accData$9, collection: collection$r, packageName: packageName$r });
+const name$r = "sort-ascending";
+const pathData$q = "M358 147H154q-11 0-18.5-7t-7.5-18 7.5-18.5T154 96h204q11 0 18.5 7.5T384 122t-7.5 18-18.5 7zm64 128H90q-11 0-18.5-7T64 250t7.5-18.5T90 224h332q11 0 18.5 7.5T448 250t-7.5 18-18.5 7zm64 128H26q-11 0-18.5-7T0 378t7.5-18.5T26 352h460q11 0 18.5 7.5T512 378t-7.5 18-18.5 7z";
+const ltr$q = false;
+const accData$8 = ICON_SORT_ASCENDING;
+const collection$q = "SAP-icons-v5";
+const packageName$q = "@ui5/webcomponents-icons";
+y$2(name$r, { pathData: pathData$q, ltr: ltr$q, accData: accData$8, collection: collection$q, packageName: packageName$q });
+const SortAscending = "sort-ascending";
+const name$q = "sort-descending";
+const pathData$p = "M17 96h478l-15 32H34zm431 96l-15 32H82l-17-32h383zm-335 96h287l-16 32H129zm48 96h192l-16 32H177z";
+const ltr$p = false;
+const accData$7 = ICON_SORT_DESCENDING;
+const collection$p = "SAP-icons-v4";
+const packageName$p = "@ui5/webcomponents-icons";
+y$2(name$q, { pathData: pathData$p, ltr: ltr$p, accData: accData$7, collection: collection$p, packageName: packageName$p });
+const name$p = "sort-descending";
+const pathData$o = "M486 96q11 0 18.5 7.5T512 122t-7.5 18-18.5 7H26q-11 0-18.5-7T0 122t7.5-18.5T26 96h460zm-64 128q11 0 18.5 7.5T448 250t-7.5 18-18.5 7H90q-11 0-18.5-7T64 250t7.5-18.5T90 224h332zm-64 128q11 0 18.5 7.5T384 378t-7.5 18-18.5 7H154q-11 0-18.5-7t-7.5-18 7.5-18.5T154 352h204z";
+const ltr$o = false;
+const accData$6 = ICON_SORT_DESCENDING;
+const collection$o = "SAP-icons-v5";
+const packageName$o = "@ui5/webcomponents-icons";
+y$2(name$p, { pathData: pathData$o, ltr: ltr$o, accData: accData$6, collection: collection$o, packageName: packageName$o });
+const SortDescending = "sort-descending";
+function TableHeaderCellTemplate() {
+  return jsxs(Fragment, { children: [jsx("slot", { name: "action" }), jsx("slot", {}), sortIcon.call(this)] });
+}
+function sortIcon() {
+  switch (this.sortIndicator) {
+    case e.Ascending:
+      return jsx(Icon$1, { name: SortAscending });
+    case e.Descending:
+      return jsx(Icon$1, { name: SortDescending });
+    default:
+      return jsx(Fragment, {});
+  }
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const TableHeaderCellStyles = `:host{font-family:var(--sapFontSemiboldDuplexFamily);color:var(--sapList_HeaderTextColor);align-items:center;flex-wrap:nowrap;max-width:100%;gap:.125rem}:host(:empty){padding:0}[ui5-icon]{margin-inline-start:.375rem;width:1rem;height:1rem;flex-shrink:0}::slotted([ui5-label]){color:inherit;font-family:inherit;overflow:hidden}
+`;
+var __decorate$B = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+let TableHeaderCell = class TableHeaderCell2 extends TableCellBase$1 {
+  constructor() {
+    super(...arguments);
+    this.importance = 0;
+    this.sortIndicator = "None";
+    this.popinHidden = false;
+    this._popin = false;
+    this.ariaRole = "columnheader";
+    this._popinWidth = 0;
+  }
+  onBeforeRendering() {
+    super.onBeforeRendering();
+    if (this._individualSlot) {
+      this.style.justifyContent = `var(--horizontal-align-${this._individualSlot})`;
+    }
+    toggleAttribute(this, "aria-sort", this.sortIndicator !== e.None, this.sortIndicator.toLowerCase());
+  }
+  get accessibilityInfo() {
+    return {
+      children: [this._defaultSlot, this._actionSlot]
+    };
+  }
+};
+__decorate$B([
+  s$8()
+], TableHeaderCell.prototype, "width", void 0);
+__decorate$B([
+  s$8()
+], TableHeaderCell.prototype, "minWidth", void 0);
+__decorate$B([
+  s$8({ type: Number })
+], TableHeaderCell.prototype, "importance", void 0);
+__decorate$B([
+  s$8()
+], TableHeaderCell.prototype, "popinText", void 0);
+__decorate$B([
+  s$8()
+], TableHeaderCell.prototype, "sortIndicator", void 0);
+__decorate$B([
+  s$8({ type: Boolean })
+], TableHeaderCell.prototype, "popinHidden", void 0);
+__decorate$B([
+  d$8()
+], TableHeaderCell.prototype, "action", void 0);
+__decorate$B([
+  s$8({ type: Boolean, noAttribute: true })
+], TableHeaderCell.prototype, "_popin", void 0);
+__decorate$B([
+  o("slot:not([name])")
+], TableHeaderCell.prototype, "_defaultSlot", void 0);
+__decorate$B([
+  o("slot[name=action]")
+], TableHeaderCell.prototype, "_actionSlot", void 0);
+TableHeaderCell = __decorate$B([
+  m$8({
+    tag: "ui5-table-header-cell",
+    styles: [TableCellBase$1.styles, TableHeaderCellStyles],
+    template: TableHeaderCellTemplate
+  })
+], TableHeaderCell);
+TableHeaderCell.define();
+const TableHeaderCell$1 = TableHeaderCell;
+const name$o = "clear-all";
+const pathData$n = "M432 449V288h32v161q0 13-8.5 22.5T433 481H48q-13 0-22.5-9.5T16 449V64q0-13 9-22t23-9h193v32H48v384h384zm64-385l-66 63 66 66-32 32-63-66-65 66-33-32 66-66-66-63 33-32 65 64 63-64z";
+const ltr$n = false;
+const collection$n = "SAP-icons-v4";
+const packageName$n = "@ui5/webcomponents-icons";
+y$2(name$o, { pathData: pathData$n, ltr: ltr$n, collection: collection$n, packageName: packageName$n });
+const name$n = "clear-all";
+const pathData$m = "M346 192q-11 0-18.5-7.5T320 166q0-10 8-18l36-36-36-36q-8-8-8-18 0-11 7.5-18.5T346 32t18 7l36 37 36-37q7-7 18-7t18.5 7.5T480 58t-7 18l-37 36 37 36q7 7 7 18t-7.5 18.5T454 192q-10 0-18-8l-36-36-36 36q-8 8-18 8zm108 64q11 0 18.5 7.5T480 282v108q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h108q11 0 18.5 7.5T256 58t-7.5 18-18.5 7H122q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q16 0 27.5-11t11.5-28V282q0-11 7-18.5t18-7.5z";
+const ltr$m = false;
+const collection$m = "SAP-icons-v5";
+const packageName$m = "@ui5/webcomponents-icons";
+y$2(name$n, { pathData: pathData$m, ltr: ltr$m, collection: collection$m, packageName: packageName$m });
+const ClearAll = "clear-all";
+var IconDesign;
+(function(IconDesign2) {
+  IconDesign2["Contrast"] = "Contrast";
+  IconDesign2["Critical"] = "Critical";
+  IconDesign2["Default"] = "Default";
+  IconDesign2["Information"] = "Information";
+  IconDesign2["Negative"] = "Negative";
+  IconDesign2["Neutral"] = "Neutral";
+  IconDesign2["NonInteractive"] = "NonInteractive";
+  IconDesign2["Positive"] = "Positive";
+})(IconDesign || (IconDesign = {}));
+const IconDesign$1 = IconDesign;
+function TableHeaderRowTemplate(ariaColIndex = 1) {
+  return jsxs(Fragment, { children: [this._hasSelector && jsx(TableHeaderCell$1, { id: "selection-cell", "aria-selected": this._isSelected, "aria-label": this._i18nSelection, "aria-description": this._selectionCellAriaDescription, "aria-colindex": ariaColIndex++, "data-ui5-table-selection-cell": true, "data-ui5-table-cell-fixed": true, "data-ui5-table-acc-text": "", children: !this._isMultiSelect ? jsx(Fragment, {}) : this._shouldRenderClearAll ? jsx(Icon$1, { name: ClearAll, mode: IconMode$1.Decorative, showTooltip: true, accessibleName: this._i18nDeselectAllRows, design: this._hasSelectedRows ? IconDesign$1.Default : IconDesign$1.NonInteractive, onClick: this._onSelectionChange }) : jsx(CheckBox$1, { id: "selection-component", tabindex: -1, checked: this._isSelected, onChange: this._onSelectionChange, accessibleName: this._i18nRowSelector, title: this._isSelected ? this._i18nDeselectAllRows : this._i18nSelectAllRows }) }), this.cells.flatMap((cell) => {
+    if (cell._popin) {
+      cell.role = null;
+      cell.ariaColIndex = null;
+      return [];
+    }
+    cell.role ?? (cell.role = cell.ariaRole);
+    cell.ariaColIndex = cell.role === cell.ariaRole ? `${ariaColIndex++}` : null;
+    return [jsx("slot", { name: cell._individualSlot })];
+  }), this._rowActionCount > 0 && jsx(TableHeaderCell$1, { id: "actions-cell", "aria-colindex": ariaColIndex++, children: jsx("div", { id: "actions-cell-content", children: this._i18nRowActions }) }), this._popinCells.length > 0 && jsx(TableHeaderCell$1, { id: "popin-cell", "aria-colindex": ariaColIndex++, "data-excluded-from-navigation": true, children: jsx("div", { id: "popin-cell-content", children: this._i18nRowPopin }) })] });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const TableHeaderRowStyles = `:host{background:var(--sapList_HeaderBackground);border-top:var(--sapList_BorderWidth) solid var(--sapList_BorderColor);border-bottom:var(--sapList_BorderWidth) solid var(--sapList_HeaderBorderColor);grid-template-rows:auto 0px}:host([hidden]){display:none}:host([sticky]){position:sticky;top:var(--ui5-v2-17-0_grid_sticky_top, 0);z-index:3}#popin-cell{padding:0;width:0;height:0}#selection-cell [ui5-icon]{width:var(--_ui5-v2-17-0_checkbox_inner_width_height);height:var(--_ui5-v2-17-0_checkbox_inner_width_height)}#popin-cell-content,#actions-cell-content{position:absolute;clip:rect(0,0,0,0)}
+`;
+var __decorate$A = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+let TableHeaderRow = (
+  /**
+   * Example custom event.
+   * Please keep in mind that all public events should be documented in the API Reference as shown below.
+   *
+   * @public
+   */
+  class TableHeaderRow2 extends TableRowBase$1 {
+    constructor() {
+      super(...arguments);
+      this.sticky = false;
+    }
+    onEnterDOM() {
+      super.onEnterDOM();
+      this.ariaRowIndex = "1";
+      this.ariaRoleDescription = TableRowBase$1.i18nBundle.getText(TABLE_COLUMN_HEADER_ROW);
+    }
+    onBeforeRendering() {
+      super.onBeforeRendering();
+      if (this._table) {
+        this.style.top = this._table.stickyTop;
+      }
+    }
+    isHeaderRow() {
+      return true;
+    }
+    get _isSelectable() {
+      return this._isMultiSelect;
+    }
+    get _hasSelectedRows() {
+      return this._tableSelection.getSelectedRows().length > 0;
+    }
+    get _shouldRenderClearAll() {
+      return this._tableSelection.headerSelector === "ClearAll";
+    }
+    get _selectionCellAriaDescription() {
+      var _a2;
+      return (_a2 = this._tableSelection) == null ? void 0 : _a2.getAriaDescriptionForColumnHeader();
+    }
+    get _i18nSelection() {
+      return TableRowBase$1.i18nBundle.getText(TABLE_SELECTION);
+    }
+    get _i18nRowPopin() {
+      return TableRowBase$1.i18nBundle.getText(TABLE_ROW_POPIN);
+    }
+    get _i18nRowActions() {
+      return TableRowBase$1.i18nBundle.getText(TABLE_ROW_ACTIONS);
+    }
+    get _i18nSelectAllRows() {
+      return TableRowBase$1.i18nBundle.getText(TABLE_SELECT_ALL_ROWS);
+    }
+    get _i18nDeselectAllRows() {
+      return TableRowBase$1.i18nBundle.getText(TABLE_DESELECT_ALL_ROWS);
+    }
+  }
+);
+__decorate$A([
+  d$8({
+    type: HTMLElement,
+    "default": true,
+    invalidateOnChildChange: {
+      properties: ["width", "_popin", "horizontalAlign", "popinHidden"],
+      slots: false
+    },
+    individualSlots: true
+  })
+], TableHeaderRow.prototype, "cells", void 0);
+__decorate$A([
+  s$8({ type: Boolean })
+], TableHeaderRow.prototype, "sticky", void 0);
+TableHeaderRow = __decorate$A([
+  m$8({
+    tag: "ui5-table-header-row",
+    languageAware: true,
+    styles: [TableRowBase$1.styles, TableHeaderRowStyles],
+    template: TableHeaderRowTemplate
+  })
+  /**
+   * Example custom event.
+   * Please keep in mind that all public events should be documented in the API Reference as shown below.
+   *
+   * @public
+   */
+], TableHeaderRow);
+TableHeaderRow.define();
+const t = /* @__PURE__ */ new WeakMap();
+let a$2 = class a {
+  static get tasks() {
+    return t;
+  }
+  static enqueue(s2, e2) {
+    t.has(s2) || t.set(s2, []), t.get(s2).push(e2);
+  }
+  static run(s2, e2) {
+    return t.has(s2) || t.set(s2, []), e2().then(() => {
+      const T2 = t.get(s2);
+      if (T2.length > 0) return a.run(s2, T2.shift());
+      t.delete(s2);
+    });
+  }
+  static push(s2, e2) {
+    t.get(s2) ? a.enqueue(s2, e2) : a.run(s2, e2);
+  }
+};
+const f$1 = (e2) => {
+  let n2 = null, a3 = false, i3, o2, r3;
+  const m2 = new Promise((t2, c2) => {
+    r3 = (u4) => {
+      n2 = n2 || u4;
+      const d2 = u4 - n2, l3 = e2.duration - d2;
+      if (d2 <= e2.duration) {
+        const s2 = 1 - l3 / e2.duration;
+        e2.advance(s2), a3 || (i3 = requestAnimationFrame(r3));
+      } else e2.advance(1), t2();
+    }, o2 = () => {
+      a3 = true, cancelAnimationFrame(i3), c2(new Error("animation stopped"));
+    };
+  }).catch((t2) => t2);
+  return a$2.push(e2.element, () => (typeof e2.beforeStart == "function" && e2.beforeStart(), requestAnimationFrame(r3), new Promise((t2) => {
+    m2.then(() => t2());
+  }))), { promise: () => m2, stop: () => o2 };
+}, v = 400;
+const b = (t2) => {
+  let o2, a3, d2, r3, s2, p2, g2, y2, n2, l3, h2, T2;
+  const B2 = f$1({ beforeStart: () => {
+    t2.style.display = "block", o2 = getComputedStyle(t2), a3 = parseFloat(o2.paddingTop), d2 = parseFloat(o2.paddingBottom), r3 = parseFloat(o2.marginTop), s2 = parseFloat(o2.marginBottom), p2 = parseFloat(o2.height), g2 = t2.style.overflow, y2 = t2.style.paddingTop, n2 = t2.style.paddingBottom, l3 = t2.style.marginTop, h2 = t2.style.marginBottom, T2 = t2.style.height, t2.style.overflow = "hidden", t2.style.paddingTop = "0", t2.style.paddingBottom = "0", t2.style.marginTop = "0", t2.style.marginBottom = "0", t2.style.height = "0";
+  }, duration: v, element: t2, advance: (i3) => {
+    t2.style.display = "block", t2.style.paddingTop = `${a3 * i3}px`, t2.style.paddingBottom = `${d2 * i3}px`, t2.style.marginTop = `${r3 * i3}px`, t2.style.marginBottom = `${s2 * i3}px`, t2.style.height = `${p2 * i3}px`;
+  } });
+  return B2.promise().then(() => {
+    t2.style.overflow = g2, t2.style.paddingTop = y2, t2.style.paddingBottom = n2, t2.style.marginTop = l3, t2.style.marginBottom = h2, t2.style.height = T2;
+  }), B2;
+};
+const u3 = (o2) => {
+  let i3, a3, r3, d2, n2, s2, p2, g2, e2, l3, y2, m2;
+  const h2 = f$1({ beforeStart: () => {
+    const t2 = o2;
+    i3 = getComputedStyle(t2), a3 = parseFloat(i3.paddingTop), r3 = parseFloat(i3.paddingBottom), d2 = parseFloat(i3.marginTop), n2 = parseFloat(i3.marginBottom), s2 = parseFloat(i3.height), p2 = t2.style.overflow, g2 = t2.style.paddingTop, e2 = t2.style.paddingBottom, l3 = t2.style.marginTop, y2 = t2.style.marginBottom, m2 = t2.style.height, t2.style.overflow = "hidden";
+  }, duration: v, element: o2, advance: (t2) => {
+    o2.style.paddingTop = `${a3 - a3 * t2}px`, o2.style.paddingBottom = `${r3 - r3 * t2}px`, o2.style.marginTop = `${d2 - d2 * t2}px`, o2.style.marginBottom = `${n2 - n2 * t2}px`, o2.style.height = `${s2 - s2 * t2}px`;
+  } });
+  return h2.promise().then((t2) => {
+    t2 instanceof Error || (o2.style.overflow = p2, o2.style.paddingTop = g2, o2.style.paddingBottom = e2, o2.style.marginTop = l3, o2.style.marginBottom = y2, o2.style.height = m2, o2.style.display = "none");
+  }), h2;
+};
+function PanelTemplate() {
+  return jsx(Fragment, { children: jsxs("div", { class: "ui5-panel-root", role: this.accRole, "aria-label": this.effectiveAccessibleName, "aria-labelledby": this.fixedPanelAriaLabelledbyReference, children: [this.hasHeaderOrHeaderText && // header: either header or h1 with header text
+  jsx("div", { class: {
+    "ui5-panel-heading-wrapper": true,
+    "ui5-panel-heading-wrapper-sticky": this.stickyHeader
+  }, role: this.headingWrapperRole, "aria-level": this.headingWrapperAriaLevel, children: jsxs("div", { onClick: this._headerClick, onKeyDown: this._headerKeyDown, onKeyUp: this._headerKeyUp, class: "ui5-panel-header", tabindex: this.headerTabIndex, role: this.accInfo.role, "aria-expanded": this.accInfo.ariaExpanded, "aria-controls": this.accInfo.ariaControls, "aria-labelledby": this.accInfo.ariaLabelledby, part: "header", children: [!this.fixed && jsx("div", { class: "ui5-panel-header-button-root", children: this._hasHeader ? jsx(Button$1, { design: "Transparent", class: "ui5-panel-header-button ui5-panel-header-button-with-icon", onClick: this._toggleButtonClick, accessibilityAttributes: this.accInfo.button.accessibilityAttributes, tooltip: this.accInfo.button.title, accessibleName: this.accInfo.button.ariaLabelButton, children: jsx("div", { class: "ui5-panel-header-icon-wrapper", children: jsx(Icon$1, { class: {
+    "ui5-panel-header-icon": true,
+    "ui5-panel-header-button-animated": !this.shouldNotAnimate
+  }, name: slimArrowRightIcon }) }) }) : (
+    // else
+    jsx(Icon$1, { class: {
+      "ui5-panel-header-button": true,
+      "ui5-panel-header-icon": true,
+      "ui5-panel-header-button-animated": !this.shouldNotAnimate
+    }, name: slimArrowRightIcon, showTooltip: true, accessibleName: this.toggleButtonTitle })
+  ) }), this._hasHeader ? jsx("slot", { name: "header" }) : (
+    // else
+    jsx("div", { id: `${this._id}-header-title`, class: "ui5-panel-header-title", children: this.headerText })
+  )] }) }), jsx("div", { class: "ui5-panel-content", id: `${this._id}-content`, tabindex: -1, style: {
+    display: this._contentExpanded ? "block" : "none"
+  }, part: "content", children: jsx("slot", {}) })] }) });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const panelCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:block}:host{font-family:var(--sapFontFamily);background-color:var(--sapGroup_TitleBackground);border-radius:var(--_ui5-v2-17-0_panel_border_radius)}:host(:not([collapsed])){border-bottom:var(--_ui5-v2-17-0_panel_border_bottom)}:host([fixed]) .ui5-panel-header{padding-left:1rem}.ui5-panel-header{min-height:var(--_ui5-v2-17-0_panel_header_height);width:100%;position:relative;display:flex;justify-content:flex-start;align-items:center;outline:none;box-sizing:border-box;padding-right:var(--_ui5-v2-17-0_panel_header_padding_right);font-family:var(--sapFontHeaderFamily);font-size:var(--sapGroup_Title_FontSize);font-weight:400;color:var(--sapGroup_TitleTextColor)}.ui5-panel-header-icon{color:var(--_ui5-v2-17-0_panel_icon_color)}.ui5-panel-header-button-animated{transition:transform .4s ease-out}:host(:not([_has-header]):not([fixed])) .ui5-panel-header{cursor:pointer}:host(:not([_has-header]):not([fixed])) .ui5-panel-header:focus:after{content:"";position:absolute;pointer-events:none;z-index:2;border:var(--_ui5-v2-17-0_panel_focus_border);border-radius:var(--_ui5-v2-17-0_panel_border_radius);top:var(--_ui5-v2-17-0_panel_focus_offset);bottom:var(--_ui5-v2-17-0_panel_focus_bottom_offset);left:var(--_ui5-v2-17-0_panel_focus_offset);right:var(--_ui5-v2-17-0_panel_focus_offset)}:host(:not([collapsed]):not([_has-header]):not([fixed])) .ui5-panel-header:focus:after{border-radius:var(--_ui5-v2-17-0_panel_border_radius_expanded)}:host(:not([collapsed])) .ui5-panel-header-button:not(.ui5-panel-header-button-with-icon),:host(:not([collapsed])) .ui5-panel-header-icon-wrapper [ui5-icon]{transform:var(--_ui5-v2-17-0_panel_toggle_btn_rotation)}:host([fixed]) .ui5-panel-header-title{width:100%}.ui5-panel-heading-wrapper.ui5-panel-heading-wrapper-sticky{position:sticky;top:0;background-color:var(--_ui5-v2-17-0_panel_header_background_color);z-index:100;border-radius:var(--_ui5-v2-17-0_panel_border_radius)}.ui5-panel-header-title{width:calc(100% - var(--_ui5-v2-17-0_panel_button_root_width));overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ui5-panel-content{padding:var(--_ui5-v2-17-0_panel_content_padding);background-color:var(--sapGroup_ContentBackground);outline:none;border-bottom-left-radius:var(--_ui5-v2-17-0_panel_border_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_panel_border_radius);overflow:auto}.ui5-panel-header-button-root{display:flex;justify-content:center;align-items:center;flex-shrink:0;width:var(--_ui5-v2-17-0_panel_button_root_width);height:var(--_ui5-v2-17-0_panel_button_root_height);padding:var(--_ui5-v2-17-0_panel_header_button_wrapper_padding);box-sizing:border-box}:host([fixed]:not([collapsed]):not([_has-header])) .ui5-panel-header,:host([collapsed]) .ui5-panel-header{border-bottom:.0625rem solid var(--sapGroup_TitleBorderColor)}:host([collapsed]) .ui5-panel-header{border-bottom-left-radius:var(--_ui5-v2-17-0_panel_border_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_panel_border_radius)}:host(:not([fixed]):not([collapsed])) .ui5-panel-header{border-bottom:var(--_ui5-v2-17-0_panel_default_header_border)}[ui5-button].ui5-panel-header-button{display:flex;justify-content:center;align-items:center;min-width:initial;height:100%;width:100%}.ui5-panel-header-icon-wrapper{display:flex;justify-content:center;align-items:center}.ui5-panel-header-icon-wrapper,.ui5-panel-header-icon-wrapper .ui5-panel-header-icon{color:inherit}.ui5-panel-header-icon-wrapper,[ui5-button].ui5-panel-header-button-with-icon [ui5-icon]{pointer-events:none}.ui5-panel-root{height:100%;display:flex;flex-direction:column}
+`;
+var __decorate$z = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var Panel_1;
+let Panel = Panel_1 = class Panel2 extends b$7 {
+  constructor() {
+    super(...arguments);
+    this.fixed = false;
+    this.collapsed = false;
+    this.noAnimation = false;
+    this.accessibleRole = "Form";
+    this.headerLevel = "H2";
+    this.stickyHeader = false;
+    this.useAccessibleNameForToggleButton = false;
+    this._hasHeader = false;
+    this._contentExpanded = false;
+    this._animationRunning = false;
+  }
+  onBeforeRendering() {
+    if (!this._animationRunning) {
+      this._contentExpanded = !this.collapsed;
+    }
+    this._hasHeader = !!this.header.length;
+  }
+  shouldToggle(element) {
+    const customContent = this.header.length;
+    if (customContent) {
+      return element.classList.contains("ui5-panel-header-button");
+    }
+    return true;
+  }
+  get shouldNotAnimate() {
+    return this.noAnimation || d$1() === u$j.None;
+  }
+  _headerClick(e2) {
+    if (!this.shouldToggle(e2.target)) {
+      return;
+    }
+    this._toggleOpen();
+  }
+  _toggleButtonClick(e2) {
+    if (e2.detail.originalEvent.x === 0 && e2.detail.originalEvent.y === 0) {
+      e2.stopImmediatePropagation();
+    }
+  }
+  _headerKeyDown(e2) {
+    if (!this.shouldToggle(e2.target)) {
+      return;
+    }
+    if (b$6(e2)) {
+      e2.preventDefault();
+    }
+    if (A$4(e2)) {
+      e2.preventDefault();
+    }
+  }
+  _headerKeyUp(e2) {
+    if (!this.shouldToggle(e2.target)) {
+      return;
+    }
+    if (b$6(e2)) {
+      this._toggleOpen();
+    }
+    if (A$4(e2)) {
+      this._toggleOpen();
+    }
+  }
+  _toggleOpen() {
+    if (this.fixed) {
+      return;
+    }
+    this.collapsed = !this.collapsed;
+    if (this.shouldNotAnimate) {
+      this.fireDecoratorEvent("toggle");
+      return;
+    }
+    this._animationRunning = true;
+    const elements = this.getDomRef().querySelectorAll(".ui5-panel-content");
+    const animations = [];
+    [].forEach.call(elements, (oElement) => {
+      if (this.collapsed) {
+        animations.push(u3(oElement).promise());
+      } else {
+        animations.push(b(oElement).promise());
+      }
+    });
+    Promise.all(animations).then(() => {
+      this._animationRunning = false;
+      this._contentExpanded = !this.collapsed;
+      this.fireDecoratorEvent("toggle");
+    });
+  }
+  _headerOnTarget(target) {
+    return target.classList.contains("sapMPanelWrappingDiv");
+  }
+  get toggleButtonTitle() {
+    return Panel_1.i18nBundle.getText(PANEL_ICON);
+  }
+  get expanded() {
+    return !this.collapsed;
+  }
+  get accRole() {
+    return this.accessibleRole.toLowerCase();
+  }
+  get effectiveAccessibleName() {
+    return typeof this.accessibleName === "string" && this.accessibleName.length ? this.accessibleName : void 0;
+  }
+  get accInfo() {
+    return {
+      "button": {
+        "accessibilityAttributes": {
+          "expanded": this.expanded
+        },
+        "title": this.toggleButtonTitle,
+        "ariaLabelButton": !this.nonFocusableButton && this.useAccessibleNameForToggleButton ? this.effectiveAccessibleName : void 0
+      },
+      "ariaExpanded": this.nonFixedInternalHeader ? this.expanded : void 0,
+      "ariaControls": this.nonFixedInternalHeader ? `${this._id}-content` : void 0,
+      "ariaLabelledby": this.nonFocusableButton ? this.ariaLabelledbyReference : void 0,
+      "role": this.nonFixedInternalHeader ? "button" : void 0
+    };
+  }
+  get ariaLabelledbyReference() {
+    return this.nonFocusableButton && this.headerText && !this.fixed ? `${this._id}-header-title` : void 0;
+  }
+  get fixedPanelAriaLabelledbyReference() {
+    return this.fixed && !this.effectiveAccessibleName ? `${this._id}-header-title` : void 0;
+  }
+  get headerAriaLevel() {
+    return Number.parseInt(this.headerLevel.slice(1));
+  }
+  get headerTabIndex() {
+    return this.header.length || this.fixed ? -1 : 0;
+  }
+  get headingWrapperAriaLevel() {
+    return !this._hasHeader ? this.headerAriaLevel : void 0;
+  }
+  get headingWrapperRole() {
+    return !this._hasHeader ? "heading" : void 0;
+  }
+  get nonFixedInternalHeader() {
+    return !this._hasHeader && !this.fixed;
+  }
+  get hasHeaderOrHeaderText() {
+    return this._hasHeader || this.headerText;
+  }
+  get nonFocusableButton() {
+    return !this.header.length;
+  }
+};
+__decorate$z([
+  s$8()
+], Panel.prototype, "headerText", void 0);
+__decorate$z([
+  s$8({ type: Boolean })
+], Panel.prototype, "fixed", void 0);
+__decorate$z([
+  s$8({ type: Boolean })
+], Panel.prototype, "collapsed", void 0);
+__decorate$z([
+  s$8({ type: Boolean })
+], Panel.prototype, "noAnimation", void 0);
+__decorate$z([
+  s$8()
+], Panel.prototype, "accessibleRole", void 0);
+__decorate$z([
+  s$8()
+], Panel.prototype, "headerLevel", void 0);
+__decorate$z([
+  s$8()
+], Panel.prototype, "accessibleName", void 0);
+__decorate$z([
+  s$8({ type: Boolean })
+], Panel.prototype, "stickyHeader", void 0);
+__decorate$z([
+  s$8({ type: Boolean })
+], Panel.prototype, "useAccessibleNameForToggleButton", void 0);
+__decorate$z([
+  s$8({ type: Boolean })
+], Panel.prototype, "_hasHeader", void 0);
+__decorate$z([
+  s$8({ type: Boolean, noAttribute: true })
+], Panel.prototype, "_contentExpanded", void 0);
+__decorate$z([
+  s$8({ type: Boolean, noAttribute: true })
+], Panel.prototype, "_animationRunning", void 0);
+__decorate$z([
+  d$8()
+], Panel.prototype, "header", void 0);
+__decorate$z([
+  i$9("@ui5/webcomponents")
+], Panel, "i18nBundle", void 0);
+Panel = Panel_1 = __decorate$z([
+  m$8({
+    tag: "ui5-panel",
+    fastNavigation: true,
+    languageAware: true,
+    renderer: y$5,
+    template: PanelTemplate,
+    styles: panelCss
+  }),
+  l$e("toggle", {
+    bubbles: true
+  })
+], Panel);
+Panel.define();
+const name$m = "slim-arrow-up";
+const pathData$l = "M261.5 197q-6-6-11 0l-160 160q-5 5-11.5 5t-11.5-5-5-11.5 5-11.5l166-165q9-9 22-9t23 9l165 165q5 5 5 11t-5 11q-12 12-23 0z";
+const ltr$l = false;
+const collection$l = "SAP-icons-v4";
+const packageName$l = "@ui5/webcomponents-icons";
+y$2(name$m, { pathData: pathData$l, ltr: ltr$l, collection: collection$l, packageName: packageName$l });
+const name$l = "slim-arrow-up";
+const pathData$k = "M96 326q0-10 7-17l135-141q6-8 18-8 11 0 19 8l134 141q7 7 7 17 0 11-7.5 18.5T390 352q-10 0-18-8L256 223 140 344q-8 8-18 8-11 0-18.5-7.5T96 326z";
+const ltr$k = false;
+const collection$k = "SAP-icons-v5";
+const packageName$k = "@ui5/webcomponents-icons";
+y$2(name$l, { pathData: pathData$k, ltr: ltr$k, collection: collection$k, packageName: packageName$k });
+let a$1 = null, l2 = Date.now();
+const s = 300, D = (g2) => (u4, i3, e2) => {
+  const o2 = e2.value;
+  return e2.value = function(t2) {
+    let n2 = false;
+    if (t2.target instanceof HTMLElement) {
+      const r3 = t2.target.closest(g2);
+      r3 === a$1 && Date.now() - l2 >= s ? n2 = true : r3 !== a$1 && (a$1 = r3, l2 = Date.now());
+    }
+    o2.apply(this, [t2, n2]);
+  }, e2;
+};
+var TabContainerTabsPlacement;
+(function(TabContainerTabsPlacement2) {
+  TabContainerTabsPlacement2["Top"] = "Top";
+  TabContainerTabsPlacement2["Bottom"] = "Bottom";
+})(TabContainerTabsPlacement || (TabContainerTabsPlacement = {}));
+const TabContainerTabsPlacement$1 = TabContainerTabsPlacement;
+var SemanticColor;
+(function(SemanticColor2) {
+  SemanticColor2["Default"] = "Default";
+  SemanticColor2["Positive"] = "Positive";
+  SemanticColor2["Negative"] = "Negative";
+  SemanticColor2["Critical"] = "Critical";
+  SemanticColor2["Neutral"] = "Neutral";
+})(SemanticColor || (SemanticColor = {}));
+const SemanticColor$1 = SemanticColor;
+var TabLayout;
+(function(TabLayout2) {
+  TabLayout2["Inline"] = "Inline";
+  TabLayout2["Standard"] = "Standard";
+})(TabLayout || (TabLayout = {}));
+const TabLayout$1 = TabLayout;
+var OverflowMode;
+(function(OverflowMode2) {
+  OverflowMode2["End"] = "End";
+  OverflowMode2["StartAndEnd"] = "StartAndEnd";
+})(OverflowMode || (OverflowMode = {}));
+const OverflowMode$1 = OverflowMode;
+function TabContainerPopoverTemplate() {
+  return jsxs(ResponsivePopover, { id: `${this._id}-overflowMenu`, horizontalAlign: "End", placement: "Bottom", contentOnlyOnDesktop: true, hideArrow: true, _hideHeader: true, class: "ui5-tab-container-responsive-popover", onDragStart: this._onDragStart, children: [jsx(List, { selectionMode: "Single", separators: "None", onItemClick: this._onOverflowListItemClick, onMoveOver: this._onPopoverListMoveOver, onMove: this._onPopoverListMove, onKeyDown: this._onPopoverListKeyDown, children: this._popoverItemsFlat.map((item) => item.overflowPresentation) }), jsx("div", { slot: "footer", class: "ui5-responsive-popover-footer", children: jsx(Button$1, { design: "Transparent", onClick: this._closePopover, children: this.popoverCancelButtonText }) })] });
+}
+function contentArea() {
+  var _a2, _b2;
+  return jsx("div", { class: {
+    "ui5-tc__content": true,
+    "ui5-tc__content--collapsed": this._contentCollapsed
+  }, part: "content", children: jsx("div", { class: "ui5-tc__contentItem", id: "ui5-tc-content", hidden: (_a2 = this._selectedTab) == null ? void 0 : _a2.effectiveHidden, role: "tabpanel", "aria-labelledby": (_b2 = this._selectedTab) == null ? void 0 : _b2._id, children: this.items.map((item) => jsx("slot", { name: item._effectiveSlotName })) }) });
+}
+const defaultPartials = {
+  contentArea
+};
+function TabContainerTemplate(injectedPartials) {
+  const partials = {
+    ...defaultPartials,
+    ...injectedPartials
+  };
+  return jsxs(Fragment, { children: [jsxs("div", { class: {
+    "ui5-tc-root": true,
+    "ui5-tc--textOnly": this.textOnly,
+    "ui5-tc--withAdditionalText": this.withAdditionalText,
+    "ui5-tc--standardTabLayout": this.standardTabLayout,
+    "ui5-tc--noTabSelected": !this._selectedTab
+  }, children: [this.tabsAtTheBottom && partials.contentArea.call(this), jsxs("div", { class: "ui5-tc__header", id: `${this._id}-header`, onFocusIn: this._onHeaderFocusin, onDragStart: this._onDragStart, onDragEnter: this._onHeaderDragEnter, onDragOver: this._onHeaderDragOver, onDrop: this._onHeaderDrop, onDragLeave: this._onHeaderDragLeave, part: "tabstrip", children: [jsx("div", { class: "ui5-tc__overflow ui5-tc__overflow--start", onClick: this._onOverflowClick, onKeyDown: this._onOverflowKeyDown, hidden: true, children: this.startOverflowButton.length ? jsx("slot", { name: "startOverflowButton" }) : (
+    // else
+    jsx(Button$1, { endIcon: this.overflowMenuIcon, "data-ui5-stable": "overflow-start", tooltip: this.overflowMenuTitle, accessibilityAttributes: this.overflowBtnAccessibilityAttributes, children: this._startOverflowText })
+  ) }), jsx("div", { id: `${this._id}-tabStrip`, class: "ui5-tc__tabStrip", role: "tablist", "aria-describedby": this.tablistAriaDescribedById, onClick: this._onTabStripClick, onKeyDown: this._onTabStripKeyDown, onKeyUp: this._onTabStripKeyUp, children: this.items.map((item) => item.stripPresentation) }), jsx("div", { class: "ui5-tc__overflow ui5-tc__overflow--end", onClick: this._onOverflowClick, onKeyDown: this._onOverflowKeyDown, hidden: true, children: this.overflowButton.length ? jsx("slot", { name: "overflowButton" }) : jsx(Button$1, { endIcon: this.overflowMenuIcon, "data-ui5-stable": "overflow-end", tooltip: this.overflowMenuTitle, accessibilityAttributes: this.overflowBtnAccessibilityAttributes, children: this._endOverflowText }) }), jsx(DropIndicator$1, { orientation: "Vertical", ownerReference: this })] }), !this.tabsAtTheBottom && partials.contentArea.call(this), this.hasItems && jsx("span", { id: `${this._id}-invisibleText`, class: "ui5-hidden-text", children: this.accInvisibleText })] }), TabContainerPopoverTemplate.call(this)] });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const tabContainerCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:block;width:100%}.ui5-tc-root{display:flex;flex-direction:column;width:100%;height:100%;font-family:var(--sapFontHeaderFamily);font-size:1rem}.ui5-tc__header{position:relative;display:flex;align-items:center;background-color:var(--_ui5-v2-17-0_tc_header_background);--ui5-v2-17-0_tc_header_active_background_color: var(--_ui5-v2-17-0_tc_header_background);height:var(--_ui5-v2-17-0_tc_header_height);box-shadow:var(--_ui5-v2-17-0_tc_header_box_shadow);box-sizing:border-box}:host([tabs-placement="Bottom"]) .ui5-tc__header{border-top:var(--_ui5-v2-17-0_tc_header_border_bottom)}:host([header-background-design="Transparent"]) .ui5-tc__header{background-color:transparent;--ui5-v2-17-0_tc_header_active_background_color: transparent;box-shadow:none;border-bottom:.0625rem solid var(--sapObjectHeader_BorderColor)}:host([header-background-design="Translucent"]) .ui5-tc__header{background-color:var(--_ui5-v2-17-0_tc_header_background_translucent);--ui5-v2-17-0_tc_header_active_background_color: var(--_ui5-v2-17-0_tc_header_background_translucent)}.ui5-tc-root.ui5-tc--textOnly .ui5-tc__header{height:var(--_ui5-v2-17-0_tc_header_height_text_only)}.ui5-tc-root.ui5-tc--textOnly.ui5-tc--withAdditionalText.ui5-tc--standardTabLayout .ui5-tc__header{height:var(--_ui5-v2-17-0_tc_header_height_text_with_additional_text)}.ui5-tc__tabStrip{flex:1;display:flex;overflow:hidden;box-sizing:border-box;position:relative;white-space:nowrap}.ui5-tc__separator:focus{outline:none}.ui5-tc__overflow{flex:0 0 0}.ui5-tc__overflow.ui5-tc__overflow--end{padding-inline-start:.188rem;margin-inline-end:1rem}.ui5-tc__overflow.ui5-tc__overflow--start{margin-inline-start:1rem}.ui5-tc__overflow[hidden]{display:none}.ui5-tc__overflow>[ui5-button]{border-radius:.75rem;height:1.5rem;--_ui5-v2-17-0_button_focused_border_radius: .75rem}.ui5-tc__overflow>[ui5-button]:not([active]){color:var(--_ui5-v2-17-0_tc_overflow_text_color)}.ui5-tc__overflow>[ui5-button]:not([active]):hover{color:var(--_ui5-v2-17-0_tc_overflow_text_color)}.ui5-tc__overflow>[ui5-button][focused]{outline-offset:.125rem;--_ui5-v2-17-0_button_focused_border: none;outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor)}.ui5-tc-root.ui5-tc--textOnly .ui5-tc__content{height:calc(100% - var(--_ui5-v2-17-0_tc_header_height_text_only))}.ui5-tc__content{position:relative;display:flex;height:calc(100% - var(--_ui5-v2-17-0_tc_header_height));background-color:var(--_ui5-v2-17-0_tc_content_background);border-bottom:var(--_ui5-v2-17-0_tc_content_border_bottom);box-sizing:border-box}:host([tabs-placement="Bottom"]) .ui5-tc__content{border-top:var(--_ui5-v2-17-0_tc_content_border_bottom)}:host([content-background-design="Transparent"]) .ui5-tc__content{background-color:transparent}:host([content-background-design="Translucent"]) .ui5-tc__content{background-color:var(--_ui5-v2-17-0_tc_content_background_translucent)}:host([header-background-design="Transparent"]) .ui5-tc__content{border-bottom:none}.ui5-tc__content--collapsed{display:none}.ui5-tc--transparent .ui5-tc__content{background-color:transparent}.ui5-tc__contentItem{max-height:100%;display:flex;flex-grow:1;overflow:auto}.ui5-tc__contentItem[hidden]{display:none}.ui5-tc__header{padding:0}.ui5-tc__content{padding:1rem}:host([media-range="M"]) .ui5-tc__header,:host([media-range="L"]) .ui5-tc__header{padding:0 1rem}:host([media-range="M"]) .ui5-tc__content,:host([media-range="L"]) .ui5-tc__content{padding:1rem 2rem}:host([media-range="XL"]) .ui5-tc__header{padding:0 2rem}:host([media-range="XL"]) .ui5-tc__content{padding:1rem 3rem}.ui5-tc-root.ui5-tc--noTabSelected .ui5-tc__content{padding:0}
+`;
+var __decorate$y = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var TabContainer_1;
+const tabStyles = [];
+const PAGE_UP_DOWN_SIZE$1 = 5;
+let TabContainer = TabContainer_1 = class TabContainer2 extends b$7 {
+  static registerTabStyles(styles2) {
+    tabStyles.push(styles2);
+  }
+  constructor() {
+    super();
+    this.collapsed = false;
+    this.tabLayout = "Standard";
+    this.overflowMode = "End";
+    this.headerBackgroundDesign = "Solid";
+    this.contentBackgroundDesign = "Solid";
+    this.tabsPlacement = "Top";
+    this.noAutoSelection = false;
+    this._animationRunning = false;
+    this._contentCollapsed = false;
+    this._startOverflowText = "0";
+    this._endOverflowText = "More";
+    this._popoverItemsFlat = [];
+    this._dragging = false;
+    this._itemsFlat = [];
+    this._hasScheduledPopoverOpen = false;
+    this._handleResizeBound = this._handleResize.bind(this);
+    this._itemNavigation = new f$2(this, {
+      getItemsCallback: () => this._getFocusableRefs(),
+      skipItemsSize: PAGE_UP_DOWN_SIZE$1
+    });
+  }
+  onBeforeRendering() {
+    this._itemsFlat = this._flatten(this.items);
+    if (!this._itemsFlat.length) {
+      return;
+    }
+    const selectedTab = this._itemsFlat.find((tab) => !tab.isSeparator && tab.selected);
+    if (selectedTab) {
+      this._selectedTab = selectedTab;
+    } else if (!this.noAutoSelection) {
+      this._selectedTab = this._itemsFlat[0];
+    } else {
+      this._selectedTab = void 0;
+    }
+    walk(this.items, (item) => {
+      if (!item.isSeparator) {
+        item._selectedTabReference = this._selectedTab;
+      }
+    });
+    this._sendStripPresentationInfos(this.items);
+    if (!this._animationRunning) {
+      this._contentCollapsed = this.collapsed;
+    }
+  }
+  onAfterRendering() {
+    var _a2;
+    if (!this.items.length) {
+      return;
+    }
+    this._setItemsForStrip();
+    if (!this.shadowRoot.contains(document.activeElement)) {
+      const focusStart = this._getRootTab(this._selectedTab);
+      if (focusStart) {
+        this._itemNavigation.setCurrentItem(focusStart);
+      }
+    }
+    if ((_a2 = this.responsivePopover) == null ? void 0 : _a2.open) {
+      const popoverItems = this._getPopoverItemsFor(this._getPopoverOwner(this.responsivePopover.opener));
+      if (popoverItems.length) {
+        this._setPopoverItems(popoverItems);
+      } else {
+        this._closePopover();
+      }
+    }
+  }
+  onEnterDOM() {
+    f$6.register(this._getHeader(), this._handleResizeBound);
+    if (f$h()) {
+      this.setAttribute("desktop", "");
+    }
+  }
+  onExitDOM() {
+    f$6.deregister(this._getHeader(), this._handleResizeBound);
+  }
+  _handleResize() {
+    if (this.responsivePopover && this.responsivePopover.open) {
+      this._closePopover();
+    }
+    this._width = this.offsetWidth;
+    this._updateMediaRange(this._width);
+  }
+  _updateMediaRange(width) {
+    this.mediaRange = i$1.getCurrentRange(i$1.RANGESETS.RANGE_4STEPS, width);
+  }
+  _sendStripPresentationInfos(items) {
+    const setsize = this._getTabs().length;
+    let posinset = 1;
+    items.forEach((item) => {
+      let info = {
+        getElementInStrip: () => this.getDomRef().querySelector(`[id="${item._id}"]`)
+      };
+      if (!item.isSeparator) {
+        info = {
+          ...info,
+          isInline: this.tabLayout === TabLayout$1.Inline,
+          mixedMode: this.mixedMode,
+          posinset,
+          setsize,
+          isTopLevelTab: items.some((i3) => i3 === item)
+        };
+        posinset++;
+      }
+      item.receiveStripInfo(info);
+    });
+  }
+  _onHeaderFocusin(e2) {
+    const tab = getTabInStrip(e2.target);
+    if (tab) {
+      this._itemNavigation.setCurrentItem(tab.realTabReference);
+    }
+  }
+  _onDragStart(e2) {
+    if (!e2.dataTransfer || !(e2.target instanceof HTMLElement)) {
+      return;
+    }
+    e2.dataTransfer.dropEffect = "move";
+    e2.dataTransfer.effectAllowed = "move";
+    D$1.setDraggedElement(e2.target.realTabReference);
+  }
+  _onHeaderDragEnter(e2) {
+    e2.preventDefault();
+  }
+  _onHeaderDragOver(e2, isLongDragOver) {
+    if (!(e2.target instanceof HTMLElement) || !e2.target.closest("[data-ui5-stable=overflow-start],[data-ui5-stable=overflow-end],[role=tab],[role=separator]")) {
+      this.dropIndicatorDOM.targetReference = null;
+      return;
+    }
+    const draggedElement = D$1.getDraggedElement();
+    const closestPosition = L2([...this._getTabStrip().querySelectorAll(`[role="tab"]:not([hidden])`)], e2.clientX, a$3.Horizontal);
+    const overflowButton = e2.target.closest("[data-ui5-stable=overflow-start],[data-ui5-stable=overflow-end]");
+    let popoverTarget = null;
+    if (overflowButton) {
+      popoverTarget = overflowButton;
+      e2.preventDefault();
+    } else if (closestPosition) {
+      const dropTarget = closestPosition.element.realTabReference;
+      if (dropTarget === draggedElement) {
+        closestPosition.placements = closestPosition.placements.filter((placement2) => placement2 !== r$2.On);
+      }
+      const { targetReference, placement } = i2(e2, this, closestPosition, dropTarget);
+      this.dropIndicatorDOM.targetReference = targetReference;
+      this.dropIndicatorDOM.placement = placement;
+      if (placement === r$2.On && closestPosition.element.realTabReference.items.length) {
+        popoverTarget = closestPosition.element;
+      } else if (!placement) {
+        this.dropIndicatorDOM.targetReference = null;
+      }
+    }
+    if (popoverTarget && isLongDragOver) {
+      this._showPopoverAt(popoverTarget, false, true);
+    } else {
+      this._closePopover();
+    }
+  }
+  _onHeaderDrop(e2) {
+    if (e2.target === this._getStartOverflowBtnDOM() || e2.target === this._getEndOverflowBtnDOM()) {
+      return;
+    }
+    m(e2, this, this.dropIndicatorDOM.targetReference.realTabReference, this.dropIndicatorDOM.placement);
+    this.dropIndicatorDOM.targetReference = null;
+  }
+  _moveHeaderItem(tab, e2) {
+    if (!tab.movable || this._dragging) {
+      return;
+    }
+    this._dragging = true;
+    const headerItems = this.items.map((item) => item.getDomRefInStrip()).filter((item) => !(item == null ? void 0 : item.hasAttribute("hidden")));
+    let positions = k2(headerItems, tab.getDomRefInStrip(), e2);
+    positions = positions.map(({ element, placement }) => {
+      while (element && element.realTabReference.hasAttribute("ui5-tab-separator") && placement === r$2.Before) {
+        element = headerItems.at(headerItems.indexOf(element) - 1);
+        placement = r$2.After;
+      }
+      while (element && element.realTabReference.hasAttribute("ui5-tab-separator") && placement === r$2.After) {
+        element = headerItems.at(headerItems.indexOf(element) + 1);
+        placement = r$2.Before;
+      }
+      return {
+        element,
+        placement
+      };
+    });
+    const acceptedPosition = positions.find(({ element, placement }) => {
+      return !this.fireDecoratorEvent("move-over", {
+        source: {
+          element: tab
+        },
+        destination: {
+          element: element.realTabReference,
+          placement
+        }
+      });
+    });
+    if (acceptedPosition) {
+      this.fireDecoratorEvent("move", {
+        source: {
+          element: tab
+        },
+        destination: {
+          element: acceptedPosition.element.realTabReference,
+          placement: acceptedPosition.placement
+        }
+      });
+      tab.focus().then(() => {
+        this._dragging = false;
+      });
+    } else {
+      this._dragging = false;
+    }
+  }
+  _onHeaderDragLeave(e2) {
+    if (e2.relatedTarget instanceof Node && this.shadowRoot.contains(e2.relatedTarget)) {
+      return;
+    }
+    this.dropIndicatorDOM.targetReference = null;
+  }
+  _onPopoverListMoveOver(e2) {
+    var _a2;
+    const { destination, source } = e2.detail;
+    const draggedElement = D$1.getDraggedElement();
+    let destinationElement = destination.element.realTabReference;
+    if (e2.detail.originalEvent instanceof KeyboardEvent) {
+      const realTabReference = source.element.realTabReference;
+      const siblings = this._findSiblings(realTabReference);
+      let items = siblings;
+      if (this.items.includes(realTabReference)) {
+        items = siblings.filter((sibling) => {
+          return e2.target.items.some((el) => el.realTabReference === sibling);
+        });
+      }
+      const nextPosition = k2(items, realTabReference, e2.detail.originalEvent);
+      destinationElement = (_a2 = nextPosition[0]) == null ? void 0 : _a2.element;
+    }
+    if (!destinationElement) {
+      return;
+    }
+    if (destination.placement === r$2.On && (destinationElement.hasAttribute("ui5-tab-separator") || draggedElement === destinationElement)) {
+      return;
+    }
+    if (draggedElement !== destinationElement && draggedElement.contains(destinationElement)) {
+      return;
+    }
+    const placementAccepted = !this.fireDecoratorEvent("move-over", {
+      source: {
+        element: draggedElement
+      },
+      destination: {
+        element: destinationElement,
+        placement: destination.placement
+      }
+    });
+    if (placementAccepted) {
+      e2.preventDefault();
+    } else {
+      this.dropIndicatorDOM.targetReference = null;
+    }
+  }
+  _onPopoverListMove(e2) {
+    var _a2;
+    const { destination, source } = e2.detail;
+    const draggedElement = D$1.getDraggedElement();
+    let destinationElement = destination.element.realTabReference;
+    if (e2.detail.originalEvent instanceof KeyboardEvent) {
+      const realTabReference = source.element.realTabReference;
+      const siblings = this._findSiblings(realTabReference);
+      let items = siblings;
+      if (this.items.includes(realTabReference)) {
+        items = siblings.filter((sibling) => {
+          return e2.target.items.some((el) => el.realTabReference === sibling);
+        });
+      }
+      const nextPosition = k2(items, realTabReference, e2.detail.originalEvent);
+      destinationElement = (_a2 = nextPosition[0]) == null ? void 0 : _a2.element;
+    }
+    if (!destinationElement) {
+      return;
+    }
+    e2.preventDefault();
+    this.fireDecoratorEvent("move", {
+      source: {
+        element: draggedElement
+      },
+      destination: {
+        element: destinationElement,
+        placement: destination.placement
+      }
+    });
+    this.dropIndicatorDOM.targetReference = null;
+    draggedElement.focus();
+  }
+  _onPopoverListKeyDown(e2) {
+    if (C$1(e2)) {
+      D$1.setDraggedElement(e2.target.realTabReference);
+    }
+  }
+  async _onTabStripClick(e2) {
+    const tab = getTabInStrip(e2.target);
+    if (!tab || tab.realTabReference.disabled) {
+      return;
+    }
+    e2.stopPropagation();
+    e2.preventDefault();
+    if (e2.target.hasAttribute("ui5-button")) {
+      this._onTabExpandButtonClick(e2);
+      return;
+    }
+    if (!tab.realTabReference.hasOwnContent && tab.realTabReference.tabs.length) {
+      await this._togglePopover(tab);
+      return;
+    }
+    this._onHeaderItemSelect(tab);
+  }
+  async _onTabExpandButtonClick(e2) {
+    e2.stopPropagation();
+    e2.preventDefault();
+    let tabInstance;
+    if (isTabInStrip(e2.target)) {
+      tabInstance = e2.target;
+    } else {
+      tabInstance = getTabInStrip(e2.target);
+    }
+    if (tabInstance) {
+      tabInstance.focus();
+    }
+    let opener = e2.target;
+    if (e2.type === "keydown" && !e2.target.realTabReference.isSingleClickArea) {
+      opener = e2.target.querySelector(".ui5-tab-expand-button [ui5-button]");
+    }
+    if (!tabInstance) {
+      this._onHeaderItemSelect(opener.parentElement);
+      return;
+    }
+    await this._togglePopover(opener, true);
+  }
+  _setPopoverInitialFocus() {
+    const selectedTabInOverflow = this._getSelectedTabInOverflow();
+    const tab = selectedTabInOverflow || this._getFirstFocusableItemInOverflow();
+    this.responsivePopover.initialFocus = `${tab.realTabReference._id}-li`;
+  }
+  _getSelectedTabInOverflow() {
+    return this.responsivePopover.content[0].items.find((item) => {
+      return item.realTabReference && item.realTabReference.selected;
+    });
+  }
+  _getFirstFocusableItemInOverflow() {
+    return this.responsivePopover.content[0].items.find((item) => item.classList.contains("ui5-tab-overflow-item"));
+  }
+  _findTabInOverflow(realTab) {
+    if (!this.responsivePopover.open) {
+      return void 0;
+    }
+    return this.responsivePopover.content[0].items.find((item) => item.realTabReference === realTab);
+  }
+  _onTabStripKeyDown(e2) {
+    const tab = getTabInStrip(e2.target);
+    if (!tab) {
+      return;
+    }
+    if (C$1(e2) && tab.realTabReference.movable && P(e2.key)) {
+      this._moveHeaderItem(tab.realTabReference, e2);
+      e2.preventDefault();
+      return;
+    }
+    if (tab.realTabReference.disabled) {
+      return;
+    }
+    if (b$6(e2)) {
+      if (tab.realTabReference.isSingleClickArea) {
+        this._onTabStripClick(e2);
+      } else {
+        this._onHeaderItemSelect(tab);
+      }
+    }
+    if (A$4(e2)) {
+      e2.preventDefault();
+    }
+    if (_$1(e2) || P$2(e2)) {
+      if (tab.realTabReference.requiresExpandButton) {
+        this._onTabExpandButtonClick(e2);
+      }
+      if (tab.realTabReference.isSingleClickArea) {
+        this._onTabStripClick(e2);
+      }
+    }
+  }
+  _onTabStripKeyUp(e2) {
+    const tab = getTabInStrip(e2.target);
+    if (!tab || tab.realTabReference.disabled) {
+      return;
+    }
+    if (A$4(e2)) {
+      e2.preventDefault();
+      if (tab.realTabReference.isSingleClickArea) {
+        this._onTabStripClick(e2);
+      } else {
+        this._onHeaderItemSelect(tab);
+      }
+    }
+  }
+  _onHeaderItemSelect(tab) {
+    if (!tab.hasAttribute("disabled")) {
+      this._onItemSelect(tab.id);
+    }
+  }
+  async _onOverflowListItemClick(e2) {
+    e2.preventDefault();
+    this._onItemSelect(e2.detail.item.id.slice(0, -3));
+    this._closePopover();
+    await f$i();
+    const selectedTopLevel = this._getRootTab(this._selectedTab);
+    selectedTopLevel == null ? void 0 : selectedTopLevel.getDomRefInStrip().focus();
+  }
+  /**
+   * Returns all slotted tabs and their subTabs in a flattened array.
+   * The order of tabs is depth-first.
+   *
+   * @public
+   * @default []
+   */
+  get allItems() {
+    return this._flatten(this.items);
+  }
+  _flatten(items) {
+    const result = [];
+    walk(items, (item) => {
+      if (item.hasAttribute("ui5-tab") || item.hasAttribute("ui5-tab-separator")) {
+        result.push(item);
+      }
+    });
+    return result;
+  }
+  _onItemSelect(selectedTabId) {
+    const selectedTabIndex = this._itemsFlat.findIndex((item) => item.__id === selectedTabId);
+    const selectedTab = this._itemsFlat[selectedTabIndex];
+    const selectionSuccessful = this.selectTab(selectedTab, selectedTabIndex);
+    if (!selectionSuccessful) {
+      return;
+    }
+    this._itemsFlat.forEach((item) => {
+      if (!item.isSeparator) {
+        item.selected = item === selectedTab;
+      }
+    });
+  }
+  /**
+   * Fires the `tab-select` event and changes the internal reference for the currently selected tab.
+   * If the event is prevented, the current tab is not changed.
+   * @private
+   * @param selectedTab selected tab instance
+   * @param selectedTabIndex selected tab index for an array containing all tabs and sub tabs. **Note:** Use the method `allTabs` to get this array.
+   * @returns true if the tab selection is successful, false if it was prevented
+   */
+  selectTab(selectedTab, selectedTabIndex) {
+    if (!this.fireDecoratorEvent("tab-select", { tab: selectedTab, tabIndex: selectedTabIndex })) {
+      return false;
+    }
+    this._selectedTab = selectedTab;
+    return true;
+  }
+  slideContentDown(element) {
+    return b(element).promise();
+  }
+  slideContentUp(element) {
+    return u3(element).promise();
+  }
+  async _onOverflowClick(e2) {
+    if (e2.target.classList.contains("ui5-tc__overflow")) {
+      return;
+    }
+    const overflow = e2.currentTarget;
+    const isEndOverflow = overflow.classList.contains("ui5-tc__overflow--end");
+    let opener;
+    if (isEndOverflow) {
+      opener = this.overflowButton[0] || this._getEndOverflowBtnDOM();
+    } else {
+      opener = this.startOverflowButton[0] || this._getStartOverflowBtnDOM();
+    }
+    await this._togglePopover(opener, true);
+  }
+  _sendOverflowPresentationInfos(items) {
+    const semanticIcons = items.filter((item) => !item.isSeparator).some((tab) => tab.design !== SemanticColor$1.Default && tab.design !== SemanticColor$1.Neutral);
+    walk(items, (item, level) => {
+      item.receiveOverflowInfo({
+        getElementInOverflow: () => {
+          return this._findTabInOverflow(item);
+        },
+        style: {
+          [d$g("--_ui5-tab-indentation-level")]: level,
+          [d$g("--_ui5-tab-level-has-icon")]: semanticIcons ? "1" : "0"
+        }
+      });
+    });
+  }
+  async _onOverflowKeyDown(e2) {
+    const overflow = e2.currentTarget;
+    const isEndOverflow = overflow.classList.contains("ui5-tc__overflow--end");
+    const isStartOverflow = overflow.classList.contains("ui5-tc__overflow--start");
+    if (_$1(e2) || isStartOverflow && D$3(e2) || isEndOverflow && R$1(e2)) {
+      e2.stopPropagation();
+      e2.preventDefault();
+      await this._onOverflowClick(e2);
+    }
+  }
+  _setItemsForStrip() {
+    const tabStrip = this._getTabStrip();
+    let allItemsWidth = 0;
+    const itemsDomRefs = this.items.map((item) => item.getDomRefInStrip());
+    let allVisibleItemsWidth = 0;
+    const selectedTab = this._getRootTab(this._selectedTab);
+    const containerWidth = this._getTabStrip().offsetWidth;
+    const selectedTabDomRef = selectedTab == null ? void 0 : selectedTab.getDomRefInStrip();
+    const visibleItemsDomRefs = itemsDomRefs.filter((item) => !item.hidden);
+    visibleItemsDomRefs.forEach((item) => {
+      allVisibleItemsWidth += this._getItemWidth(item);
+    });
+    const changeTabPosition = visibleItemsDomRefs.length !== itemsDomRefs.length && this.isModeStartAndEnd && selectedTabDomRef && visibleItemsDomRefs.indexOf(selectedTabDomRef) !== -1 && allVisibleItemsWidth < containerWidth && this._getItemWidth(selectedTabDomRef) < containerWidth;
+    this._getStartOverflow().setAttribute("hidden", "");
+    this._getEndOverflow().setAttribute("hidden", "");
+    let firstVisibleIndex;
+    if (changeTabPosition) {
+      firstVisibleIndex = itemsDomRefs.indexOf(visibleItemsDomRefs[0]);
+    }
+    for (let i3 = 0; i3 < itemsDomRefs.length; i3++) {
+      itemsDomRefs[i3].removeAttribute("hidden");
+      itemsDomRefs[i3].removeAttribute("start-overflow");
+      itemsDomRefs[i3].removeAttribute("end-overflow");
+    }
+    itemsDomRefs.forEach((item) => {
+      allItemsWidth += this._getItemWidth(item);
+    });
+    const hasOverflow = tabStrip.offsetWidth < allItemsWidth;
+    if (!hasOverflow) {
+      return;
+    }
+    if (this.isModeStartAndEnd) {
+      this._updateStartAndEndOverflow(itemsDomRefs, firstVisibleIndex);
+      this._updateOverflowCounters();
+    } else {
+      this._updateEndOverflow(itemsDomRefs);
+    }
+  }
+  _getRootTab(tab) {
+    var _a2;
+    while (tab == null ? void 0 : tab.hasAttribute("ui5-tab")) {
+      if ((_a2 = tab.parentElement) == null ? void 0 : _a2.hasAttribute("ui5-tabcontainer")) {
+        break;
+      }
+      tab = tab.parentElement ?? void 0;
+    }
+    return tab;
+  }
+  _updateEndOverflow(itemsDomRefs) {
+    this._getEndOverflow().removeAttribute("hidden");
+    const selectedTab = this._getRootTab(this._selectedTab);
+    const selectedTabDomRef = selectedTab == null ? void 0 : selectedTab.getDomRefInStrip();
+    const containerWidth = this._getTabStrip().offsetWidth;
+    const selectedItemIndexAndWidth = this._getSelectedItemIndexAndWidth(itemsDomRefs, selectedTabDomRef);
+    const lastVisibleTabIndex = this._findLastVisibleItem(itemsDomRefs, containerWidth, selectedItemIndexAndWidth.width);
+    for (let i3 = lastVisibleTabIndex + 1; i3 < itemsDomRefs.length; i3++) {
+      itemsDomRefs[i3].setAttribute("hidden", "");
+      itemsDomRefs[i3].setAttribute("end-overflow", "");
+    }
+    this._endOverflowText = this.overflowButtonText;
+  }
+  _updateStartAndEndOverflow(itemsDomRefs, firstVisibleIndex) {
+    let containerWidth = this._getTabStrip().offsetWidth;
+    const selectedTab = this._getRootTab(this._selectedTab);
+    const selectedTabDomRef = selectedTab == null ? void 0 : selectedTab.getDomRefInStrip();
+    const selectedItemIndexAndWidth = this._getSelectedItemIndexAndWidth(itemsDomRefs, selectedTabDomRef);
+    const hasStartOverflow = this._hasStartOverflow(containerWidth, itemsDomRefs, selectedItemIndexAndWidth);
+    const hasEndOverflow = this._hasEndOverflow(containerWidth, itemsDomRefs, selectedItemIndexAndWidth);
+    let lastVisible;
+    if (!hasStartOverflow) {
+      this._getEndOverflow().removeAttribute("hidden");
+      containerWidth = this._getTabStrip().offsetWidth;
+      lastVisible = this._findLastVisibleItem(itemsDomRefs, containerWidth, selectedItemIndexAndWidth.width);
+      for (let i3 = lastVisible + 1; i3 < itemsDomRefs.length; i3++) {
+        itemsDomRefs[i3].setAttribute("hidden", "");
+        itemsDomRefs[i3].setAttribute("end-overflow", "");
+      }
+      return;
+    }
+    if (!hasEndOverflow) {
+      this._getStartOverflow().removeAttribute("hidden");
+      containerWidth = this._getTabStrip().offsetWidth;
+      if (!firstVisibleIndex) {
+        firstVisibleIndex = this._findFirstVisibleItem(itemsDomRefs, containerWidth, selectedItemIndexAndWidth.width);
+      }
+      for (let i3 = firstVisibleIndex - 1; i3 >= 0; i3--) {
+        itemsDomRefs[i3].setAttribute("hidden", "");
+        itemsDomRefs[i3].setAttribute("start-overflow", "");
+      }
+      return;
+    }
+    this._getStartOverflow().removeAttribute("hidden");
+    this._getEndOverflow().removeAttribute("hidden");
+    containerWidth = this._getTabStrip().offsetWidth;
+    if (!firstVisibleIndex) {
+      firstVisibleIndex = this._findFirstVisibleItem(itemsDomRefs, containerWidth, selectedItemIndexAndWidth.width, selectedItemIndexAndWidth.index - 1);
+    }
+    lastVisible = this._findLastVisibleItem(itemsDomRefs, containerWidth, selectedItemIndexAndWidth.width, firstVisibleIndex);
+    for (let i3 = firstVisibleIndex - 1; i3 >= 0; i3--) {
+      itemsDomRefs[i3].setAttribute("hidden", "");
+      itemsDomRefs[i3].setAttribute("start-overflow", "");
+    }
+    for (let i3 = lastVisible + 1; i3 < itemsDomRefs.length; i3++) {
+      itemsDomRefs[i3].setAttribute("hidden", "");
+      itemsDomRefs[i3].setAttribute("end-overflow", "");
+    }
+  }
+  _hasStartOverflow(containerWidth, itemsDomRefs, selectedItemIndexAndWidth) {
+    if (this._getStartOverflow().textContent !== "+0") {
+      return true;
+    }
+    if (selectedItemIndexAndWidth.index === 0) {
+      return false;
+    }
+    let leftItemsWidth = 0;
+    for (let i3 = selectedItemIndexAndWidth.index - 1; i3 >= 0; i3--) {
+      leftItemsWidth += this._getItemWidth(itemsDomRefs[i3]);
+    }
+    let hasStartOverflow = containerWidth < leftItemsWidth + selectedItemIndexAndWidth.width;
+    if (!hasStartOverflow) {
+      this._getEndOverflow().removeAttribute("hidden");
+      containerWidth = this._getTabStrip().offsetWidth;
+      hasStartOverflow = containerWidth < leftItemsWidth + selectedItemIndexAndWidth.width;
+      this._getEndOverflow().setAttribute("hidden", "");
+    }
+    return hasStartOverflow;
+  }
+  _hasEndOverflow(containerWidth, itemsDomRefs, selectedItemIndexAndWidth) {
+    if (selectedItemIndexAndWidth.index >= itemsDomRefs.length) {
+      return false;
+    }
+    let rightItemsWidth = 0;
+    for (let i3 = selectedItemIndexAndWidth.index; i3 < itemsDomRefs.length; i3++) {
+      rightItemsWidth += this._getItemWidth(itemsDomRefs[i3]);
+    }
+    let hasEndOverflow = containerWidth < rightItemsWidth + selectedItemIndexAndWidth.width;
+    if (!hasEndOverflow) {
+      this._getStartOverflow().removeAttribute("hidden");
+      containerWidth = this._getTabStrip().offsetWidth;
+      hasEndOverflow = containerWidth < rightItemsWidth + selectedItemIndexAndWidth.width;
+      this._getStartOverflow().setAttribute("hidden", "");
+    }
+    return hasEndOverflow;
+  }
+  _getItemWidth(itemDomRef) {
+    const styles2 = window.getComputedStyle(itemDomRef);
+    const margins = Number.parseInt(styles2.marginLeft) + Number.parseInt(styles2.marginRight);
+    return itemDomRef.offsetWidth + margins;
+  }
+  _getSelectedItemIndexAndWidth(itemsDomRefs, selectedTabDomRef) {
+    if (!selectedTabDomRef) {
+      return {
+        index: 0,
+        width: 0
+      };
+    }
+    let index = itemsDomRefs.indexOf(selectedTabDomRef);
+    let width = selectedTabDomRef.offsetWidth;
+    let selectedSeparator;
+    if (itemsDomRefs[index - 1] && itemsDomRefs[index - 1].realTabReference.isSeparator) {
+      selectedSeparator = itemsDomRefs[index - 1];
+      width += this._getItemWidth(selectedSeparator);
+    }
+    itemsDomRefs.splice(index, 1);
+    if (selectedSeparator) {
+      itemsDomRefs.splice(index - 1, 1);
+      index--;
+    }
+    return {
+      index,
+      width
+    };
+  }
+  _findFirstVisibleItem(itemsDomRefs, containerWidth, selectedItemWidth, startIndex) {
+    if (startIndex === void 0) {
+      startIndex = itemsDomRefs.length - 1;
+    }
+    let lastVisible = startIndex + 1;
+    for (let index = startIndex; index >= 0; index--) {
+      const itemWidth = this._getItemWidth(itemsDomRefs[index]);
+      if (containerWidth < selectedItemWidth + itemWidth) {
+        break;
+      }
+      selectedItemWidth += itemWidth;
+      lastVisible = index;
+    }
+    return lastVisible;
+  }
+  _findLastVisibleItem(itemsDomRefs, containerWidth, selectedItemWidth, startIndex = 0) {
+    let lastVisibleIndex = startIndex - 1;
+    let index = startIndex;
+    for (; index < itemsDomRefs.length; index++) {
+      const itemWidth = this._getItemWidth(itemsDomRefs[index]);
+      if (containerWidth < selectedItemWidth + itemWidth) {
+        break;
+      }
+      selectedItemWidth += itemWidth;
+      lastVisibleIndex = index;
+    }
+    const prevItem = itemsDomRefs[index - 1];
+    if (prevItem && prevItem.realTabReference.isSeparator) {
+      lastVisibleIndex -= 1;
+    }
+    return lastVisibleIndex;
+  }
+  get isModeStartAndEnd() {
+    return this.overflowMode === OverflowMode$1.StartAndEnd;
+  }
+  _updateOverflowCounters() {
+    let startOverflowItemsCount = 0;
+    let endOverflowItemsCount = 0;
+    this._getTabs().map((tab) => tab.getDomRefInStrip()).forEach((tab) => {
+      if (tab.hasAttribute("start-overflow")) {
+        startOverflowItemsCount++;
+      }
+      if (tab.hasAttribute("end-overflow")) {
+        endOverflowItemsCount++;
+      }
+    });
+    this._startOverflowText = `+${startOverflowItemsCount}`;
+    this._endOverflowText = `+${endOverflowItemsCount}`;
+  }
+  _getFocusableRefs() {
+    if (!this.getDomRef()) {
+      return [];
+    }
+    const focusableRefs = [];
+    if (!this._getStartOverflow().hasAttribute("hidden")) {
+      focusableRefs.push(this.startOverflowButton[0] || this._getStartOverflowBtnDOM());
+    }
+    this._getTabs().forEach((tab) => {
+      const ref = tab.getDomRefInStrip();
+      const focusable = ref && !ref.hasAttribute("hidden");
+      if (focusable) {
+        focusableRefs.push(tab);
+      }
+    });
+    if (!this._getEndOverflow().hasAttribute("hidden")) {
+      focusableRefs.push(this.overflowButton[0] || this._getEndOverflowBtnDOM());
+    }
+    return focusableRefs;
+  }
+  _getHeader() {
+    return this.shadowRoot.querySelector(`#${this._id}-header`);
+  }
+  _getTabs() {
+    return this.items.filter((item) => !item.isSeparator);
+  }
+  _getPopoverOwner(opener) {
+    if (opener === this._getStartOverflowBtnDOM() || opener.slot === "startOverflowButton") {
+      return "start-overflow";
+    }
+    if (opener === this._getEndOverflowBtnDOM() || opener.slot === "overflowButton") {
+      return "end-overflow";
+    }
+    return getTabInStrip(opener);
+  }
+  _getPopoverItemsFor(targetOwner) {
+    if (targetOwner === "start-overflow") {
+      return this.items.filter((item) => {
+        const stripRef = item.getDomRefInStrip();
+        return stripRef && stripRef.hasAttribute("start-overflow");
+      });
+    }
+    if (targetOwner === "end-overflow") {
+      return this.items.filter((item) => {
+        const stripRef = item.getDomRefInStrip();
+        return stripRef && stripRef.hasAttribute("end-overflow");
+      });
+    }
+    return targetOwner.realTabReference.items;
+  }
+  _setPopoverItems(items) {
+    this._sendOverflowPresentationInfos(items);
+    const newItemsFlat = this._flatten(items);
+    if (!n$k(this._popoverItemsFlat, newItemsFlat)) {
+      this._popoverItemsFlat = newItemsFlat;
+    }
+  }
+  async _togglePopover(opener, setInitialFocus = false) {
+    this.responsivePopover = await this._respPopover();
+    if (this.responsivePopover.open) {
+      this._closePopover();
+    } else {
+      await this._showPopoverAt(opener, setInitialFocus);
+    }
+  }
+  async _showPopoverAt(opener, setInitialFocus = false, preventInitialFocus = false) {
+    this._hasScheduledPopoverOpen = true;
+    this._setPopoverItems(this._getPopoverItemsFor(this._getPopoverOwner(opener)));
+    this.responsivePopover = await this._respPopover();
+    if (setInitialFocus) {
+      this._setPopoverInitialFocus();
+    }
+    if (this._hasScheduledPopoverOpen) {
+      this.responsivePopover.preventInitialFocus = preventInitialFocus;
+      this.responsivePopover.opener = opener;
+      this.responsivePopover.open = true;
+    }
+  }
+  get hasItems() {
+    const tabs = this._getTabs();
+    for (let i3 = 0; i3 < tabs.length; i3++) {
+      if (tabs[i3].items.length > 0) {
+        return true;
+      }
+    }
+    return false;
+  }
+  _getTabStrip() {
+    return this.shadowRoot.querySelector(`#${this._id}-tabStrip`);
+  }
+  _getStartOverflow() {
+    return this.shadowRoot.querySelector(".ui5-tc__overflow--start");
+  }
+  _getEndOverflow() {
+    return this.shadowRoot.querySelector(".ui5-tc__overflow--end");
+  }
+  _getStartOverflowBtnDOM() {
+    return this._getStartOverflow().querySelector("[ui5-button]");
+  }
+  _getEndOverflowBtnDOM() {
+    return this._getEndOverflow().querySelector("[ui5-button]");
+  }
+  async _respPopover() {
+    await f$i();
+    return this.shadowRoot.querySelector(`#${this._id}-overflowMenu`);
+  }
+  _closePopover() {
+    this._hasScheduledPopoverOpen = false;
+    if (this.responsivePopover) {
+      this.responsivePopover.open = false;
+    }
+  }
+  get dropIndicatorDOM() {
+    return this.shadowRoot.querySelector("[ui5-drop-indicator]");
+  }
+  _findSiblings(tab) {
+    let parent;
+    walk(this.items, (item) => {
+      if (item.items && item.items.includes(tab)) {
+        parent = item;
+      }
+    });
+    return (parent ?? this).items;
+  }
+  get mixedMode() {
+    const tabs = this._getTabs();
+    return tabs.some((item) => item.icon) && tabs.some((item) => item.text);
+  }
+  get textOnly() {
+    return this._getTabs().every((item) => !item.icon);
+  }
+  get withAdditionalText() {
+    return this._getTabs().some((item) => !!item.additionalText);
+  }
+  get standardTabLayout() {
+    return this.tabLayout === TabLayout$1.Standard;
+  }
+  get previousIconACCName() {
+    return TabContainer_1.i18nBundle.getText(TABCONTAINER_PREVIOUS_ICON_ACC_NAME);
+  }
+  get nextIconACCName() {
+    return TabContainer_1.i18nBundle.getText(TABCONTAINER_NEXT_ICON_ACC_NAME);
+  }
+  get overflowMenuTitle() {
+    return TabContainer_1.i18nBundle.getText(TABCONTAINER_OVERFLOW_MENU_TITLE);
+  }
+  get tabsAtTheBottom() {
+    return this.tabsPlacement === TabContainerTabsPlacement$1.Bottom;
+  }
+  get overflowMenuIcon() {
+    return this.tabsAtTheBottom ? "slim-arrow-up" : "slim-arrow-down";
+  }
+  get overflowButtonText() {
+    return TabContainer_1.i18nBundle.getText(TABCONTAINER_END_OVERFLOW);
+  }
+  get popoverCancelButtonText() {
+    return TabContainer_1.i18nBundle.getText(TABCONTAINER_POPOVER_CANCEL_BUTTON);
+  }
+  get accInvisibleText() {
+    return TabContainer_1.i18nBundle.getText(TABCONTAINER_SUBTABS_DESCRIPTION);
+  }
+  get overflowBtnAccessibilityAttributes() {
+    return {
+      hasPopup: "menu"
+    };
+  }
+  get tablistAriaDescribedById() {
+    return this.hasItems ? `${this._id}-invisibleText` : void 0;
+  }
+};
+__decorate$y([
+  s$8({ type: Boolean })
+], TabContainer.prototype, "collapsed", void 0);
+__decorate$y([
+  s$8()
+], TabContainer.prototype, "tabLayout", void 0);
+__decorate$y([
+  s$8()
+], TabContainer.prototype, "overflowMode", void 0);
+__decorate$y([
+  s$8()
+], TabContainer.prototype, "headerBackgroundDesign", void 0);
+__decorate$y([
+  s$8()
+], TabContainer.prototype, "contentBackgroundDesign", void 0);
+__decorate$y([
+  s$8()
+], TabContainer.prototype, "tabsPlacement", void 0);
+__decorate$y([
+  s$8({ type: Boolean })
+], TabContainer.prototype, "noAutoSelection", void 0);
+__decorate$y([
+  s$8()
+], TabContainer.prototype, "mediaRange", void 0);
+__decorate$y([
+  s$8({ type: Object })
+], TabContainer.prototype, "_selectedTab", void 0);
+__decorate$y([
+  s$8({ type: Boolean, noAttribute: true })
+], TabContainer.prototype, "_animationRunning", void 0);
+__decorate$y([
+  s$8({ type: Boolean, noAttribute: true })
+], TabContainer.prototype, "_contentCollapsed", void 0);
+__decorate$y([
+  s$8({ noAttribute: true })
+], TabContainer.prototype, "_startOverflowText", void 0);
+__decorate$y([
+  s$8({ noAttribute: true })
+], TabContainer.prototype, "_endOverflowText", void 0);
+__decorate$y([
+  s$8({ type: Array })
+], TabContainer.prototype, "_popoverItemsFlat", void 0);
+__decorate$y([
+  s$8({ type: Number, noAttribute: true })
+], TabContainer.prototype, "_width", void 0);
+__decorate$y([
+  d$8({
+    "default": true,
+    type: HTMLElement,
+    individualSlots: true,
+    invalidateOnChildChange: {
+      properties: true,
+      slots: true
+    }
+  })
+], TabContainer.prototype, "items", void 0);
+__decorate$y([
+  d$8()
+], TabContainer.prototype, "overflowButton", void 0);
+__decorate$y([
+  d$8()
+], TabContainer.prototype, "startOverflowButton", void 0);
+__decorate$y([
+  D("[data-ui5-stable=overflow-start],[data-ui5-stable=overflow-end],[role=tab]")
+], TabContainer.prototype, "_onHeaderDragOver", null);
+__decorate$y([
+  i$9("@ui5/webcomponents")
+], TabContainer, "i18nBundle", void 0);
+TabContainer = TabContainer_1 = __decorate$y([
+  m$8({
+    tag: "ui5-tabcontainer",
+    languageAware: true,
+    fastNavigation: true,
+    styles: [
+      tabStyles,
+      tabContainerCss,
+      ResponsivePopoverCommonCss
+    ],
+    renderer: y$5,
+    template: TabContainerTemplate
+  }),
+  l$e("tab-select", {
+    bubbles: true,
+    cancelable: true
+  }),
+  l$e("move-over", {
+    bubbles: true,
+    cancelable: true
+  }),
+  l$e("move", {
+    bubbles: true
+  })
+], TabContainer);
+const isTabInStrip = (el) => el.localName === "div" && el.getAttribute("role") === "tab";
+const getTabInStrip = (el) => {
+  while (el) {
+    if (isTabInStrip(el)) {
+      return el;
+    }
+    el = el.parentElement;
+  }
+  return false;
+};
+const _walk = (items, callback, level) => {
+  [...items].forEach((item) => {
+    callback(item, level);
+    if (item.hasAttribute("ui5-tab") && item.items) {
+      _walk(item.items, callback, level + 1);
+    }
+  });
+};
+const walk = (items, callback) => {
+  _walk(items, callback, 0);
+};
+TabContainer.define();
+const TabContainer$1 = TabContainer;
+function TabTemplate() {
+  return jsxs("div", { id: this._id, class: "ui5-tab-root", "data-ui5-stable": this.stableDomRef, children: [jsx("slot", { name: this._defaultSlotName }), this.tabs.map((tab) => jsx("slot", { name: tab._effectiveSlotName }))] });
+}
+function additionalText() {
+  return jsx("span", { class: this.stripClasses.additionalTextClasses, id: `${this._id}-additionalText`, children: this.additionalText });
+}
+function TabInStripTemplate() {
+  return jsxs("div", { id: this._id, class: this.stripClasses.itemClasses, tabindex: -1, role: "tab", "aria-roledescription": this._roleDescription, "aria-haspopup": this._ariaHasPopup, "aria-posinset": this._forcedPosinset, "aria-setsize": this._forcedSetsize, "aria-controls": "ui5-tc-content", "aria-selected": this.effectiveSelected, "aria-disabled": this.effectiveDisabled, "aria-labelledby": this.ariaLabelledBy, draggable: this.movable, onDragStart: this._ondragstart, onDragEnd: this._ondragend, ref: this.captureRef.bind(this), children: [this.icon && jsx("div", { class: "ui5-tab-strip-item-icon-outer", children: jsx(Icon$1, { id: `${this._id}-icon`, name: this.icon, class: "ui5-tab-strip-item-icon" }) }), this._designDescription && jsx("div", { id: `${this._id}-designDescription`, class: "ui5-tab-strip-design-description", children: this._designDescription }), jsxs("div", { class: "ui5-tab-strip-itemContent", children: [!this._isInline && additionalText.call(this), this.text && jsxs("span", { class: "ui5-tab-strip-itemText", id: `${this._id}-text`, children: [this.semanticIconName && jsx(Icon$1, { class: this.semanticIconClasses, name: this.semanticIconName }), this.displayText, this.isSingleClickArea && jsx("span", { class: "ui5-tab-single-click-icon", children: jsx(Icon$1, { name: slimArrowDown }) })] })] }), this.requiresExpandButton && jsxs(Fragment, { children: [jsx("div", { class: "ui5-tab-expand-button-separator" }), jsx("div", { class: "ui5-tab-expand-button", children: jsx(Button$1, { ref: this.captureButtonRef.bind(this), icon: slimArrowDown, design: "Transparent", tabindex: -1, disabled: this.disabled, tooltip: this.expandButtonTitle, accessibilityAttributes: this.expandBtnAccessibilityAttributes }) })] })] });
+}
+function TabInOverflowTemplate() {
+  return jsx(ListItemCustom$1, { id: `${this._id}-li`, class: this.overflowClasses, style: this._forcedStyleInOverflow, type: this.overflowState, disabled: this.effectiveDisabled, selected: this.selected, movable: this.movable, ref: this.captureRef.bind(this), children: jsx("div", { class: "ui5-tab-overflow-itemContent-wrapper", children: jsxs("div", { class: "ui5-tab-overflow-itemContent", children: [this.semanticIconName && jsx(Icon$1, { class: this.semanticIconClasses, name: this.semanticIconName }), this.icon && jsx(Icon$1, { name: this.icon }), this.text, this.additionalText && jsxs(Fragment, { children: [" (", this.additionalText, ")"] }), this._designDescription && jsx("div", { id: `${this._id}-designDescription`, class: "ui5-hidden-text", children: this._designDescription })] }) }) });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const css = `:host{display:inline-block;width:100%}.ui5-tab-root{width:100%;height:100%}
+`;
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const stripCss$1 = `.ui5-tab-semantic-icon{display:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_display);height:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_size);width:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_size);margin-inline-end:.5rem}.ui5-tab-semantic-icon--positive{color:var(--sapPositiveTextColor)}.ui5-tab-semantic-icon--negative{color:var(--sapNegativeTextColor)}.ui5-tab-semantic-icon--critical{color:var(--sapCriticalTextColor)}.ui5-tab-strip-item{height:var(--_ui5-v2-17-0_tc_header_height);color:var(--_ui5-v2-17-0_tc_headerItem_color);cursor:pointer;padding:0 var(--_ui5-v2-17-0_tc_headeritem_padding);font-size:var(--sapFontSmallSize);font-weight:var(--_ui5-v2-17-0_tc_headeritem_text_font_weight);position:relative;display:flex;align-items:center;justify-content:center;flex-shrink:0;min-width:2rem;max-width:100%;box-sizing:border-box;outline:none}.ui5-tab-strip-item[data-moving]{background-color:var(--ui5-v2-17-0_tc_header_active_background_color)}.ui5-tab-strip-itemText{position:relative;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ui5-tc__separator[hidden],.ui5-tab-strip-item[hidden],.ui5-tab-strip-item--textOnly[hidden],.ui5-tab-strip-item.ui5-tab-strip-item--textOnly.ui5-tab-strip-item--inline[hidden],.ui5-tab-strip-design-description{display:none}.ui5-tab-strip-itemContent{display:flex;height:100%;min-width:0;justify-content:center;flex-direction:column;border:var(--_ui5-v2-17-0_tc_headerItemContent_default_focus_border);border-radius:var(--_ui5-v2-17-0_tc_headerItemContent_focus_border_radius);transition:var(--_ui5-v2-17-0_tc_headerItem_transition)}.ui5-tab-expand-button{display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1;background-color:var(--_ui5-v2-17-0_tc_header_background);padding-inline-end:.188rem}.ui5-tab-expand-button>[ui5-button]{height:1.5rem;min-width:1.5rem;margin-inline-start:var(--_ui5-v2-17-0_tc_headerItem_expand_button_margin_inline_start);--_ui5-v2-17-0_button_border_radius: var(--_ui5-v2-17-0_tc_headerItem_expand_button_border_radius);--_ui5-v2-17-0_button_focused_border_radius: var(--_ui5-v2-17-0_tc_headerItem_expand_button_border_radius)}.ui5-tab-expand-button>[ui5-button]:not([active]){color:var(--_ui5-v2-17-0_tc_headerItem_color)}.ui5-tab-strip-item--selected .ui5-tab-expand-button>[ui5-button]:not([active]){color:var(--_ui5-v2-17-0_tc_headerItem_text_selected_color)}.ui5-tab-expand-button>[ui5-button]:hover:not([active]){color:var(--_ui5-v2-17-0_tc_headerItem_text_selected_hover_color)}.ui5-tab-expand-button-separator{display:var(--_ui5-v2-17-0_tc_headerItem_expand_button_separator_display);position:relative;width:.0625rem;right:-.0625rem;height:.625rem;background:var(--sapTextColor);margin-inline-start:.0625rem;z-index:2;margin-left:.625rem}.ui5-tab-expand-button:hover{z-index:2}.ui5-tab-strip-item--selected .ui5-tab-expand-button-separator{background:var(--_ui5-v2-17-0_tc_headerItem_text_selected_color)}.ui5-tab-single-click-icon{margin-inline-start:var(--_ui5-v2-17-0_tc_headerItem_single_click_expand_button_margin_inline_start)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--textOnly{color:var(--_ui5-v2-17-0_tc_headerItem_text_selected_color)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--singleClickArea .ui5-tab-strip-itemText .ui5-tab-single-click-icon>[ui5-icon]{color:var(--_ui5-v2-17-0_tc_headerItem_text_selected_color)}.ui5-tab-strip-item--singleClickArea .ui5-tab-strip-itemText{display:flex;align-items:center}.ui5-tab-strip-item--singleClickArea .ui5-tab-strip-itemText .ui5-tab-single-click-icon{display:flex}.ui5-tab-strip-item--singleClickArea .ui5-tab-strip-itemText .ui5-tab-single-click-icon>[ui5-icon]{color:var(--_ui5-v2-17-0_tc_headerItem_color)}.ui5-tab-strip-item--textOnly:not(.ui5-tab-strip-item--twoClickArea):not(.ui5-tab-strip-item--selected):not(.ui5-tab-strip-item--negative):hover,.ui5-tab-strip-item--twoClickArea:not(.ui5-tab-strip-item--selected):not(.ui5-tab-strip-item--negative) .ui5-tab-strip-itemContent:hover,.ui5-tab-strip-item--singleClickArea:not(.ui5-tab-strip-item--selected):not(.ui5-tab-strip-item--disabled):hover .ui5-tab-single-click-icon>[ui5-icon]{color:var(--_ui5-v2-17-0_tc_headerItem_text_hover_color)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--selected.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon-outer:after{content:"";position:absolute;bottom:0;left:0;right:0;border-bottom:var(--sapTab_Selected_Indicator_Dimension) solid var(--sapTab_ForegroundColor);border-radius:var(--_ui5-v2-17-0_tc_headerItemContent_border_radius);background-color:var(--_ui5-v2-17-0_tc_headerItemContent_border_bg);height:var(--_ui5-v2-17-0_tc_headerItemContent_border_height)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--selected.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemContent:after{left:var(--_ui5-v2-17-0_tc_headeritem_padding);right:var(--_ui5-v2-17-0_tc_headeritem_padding)}.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon-outer:after{bottom:-1rem}.ui5-tab-strip-item--disabled{cursor:default;opacity:var(--sapContent_DisabledOpacity)}:host([desktop]) .ui5-tab-strip-item--textOnly:focus:not([data-moving]) .ui5-tab-strip-itemText:before,.ui5-tab-strip-item--textOnly:focus-visible:not([data-moving]) .ui5-tab-strip-itemText:before,:host([desktop]) .ui5-tab-strip-item--inline.ui5-tab-strip-item--textOnly:focus:not([data-moving]) .ui5-tab-strip-itemText:before,.ui5-tab-strip-item--inline.ui5-tab-strip-item--textOnly:focus-visible:not([data-moving]) .ui5-tab-strip-itemText:before{border-radius:var(--_ui5-v2-17-0_tc_headerItem_focus_border_radius);content:"";pointer-events:none;position:absolute;border:var(--_ui5-v2-17-0_tc_headerItem_focus_border);left:var(--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_left);right:var(--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_right);top:var(--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_top);bottom:var(--_ui5-v2-17-0_tc_headerItem_text_focus_border_offset_bottom)}:host([desktop]) .ui5-tab-strip-item--mixedMode:focus:not([data-moving]) .ui5-tab-strip-itemContent:before,.ui5-tab-strip-item--mixedMode:focus-visible:not([data-moving]) .ui5-tab-strip-itemContent:before{border-radius:var(--_ui5-v2-17-0_tc_headerItem_focus_border_radius);content:"";pointer-events:none;position:absolute;border:var(--_ui5-v2-17-0_tc_headerItem_focus_border);left:var(--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_left);right:var(--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_right);top:var(--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_top);bottom:var(--_ui5-v2-17-0_tc_headerItem_mixed_mode_focus_border_offset_bottom)}:host([desktop]) .ui5-tab-strip-item--withIcon:focus:not([data-moving]) .ui5-tab-strip-item-icon-outer:before,.ui5-tab-strip-item--withIcon:focus-visible:not([data-moving]) .ui5-tab-strip-item-icon-outer:before{content:"";pointer-events:none;position:absolute;border:var(--_ui5-v2-17-0_tc_headerItem_focus_border);left:var(--_ui5-v2-17-0_tc_headerItem_focus_border_offset);right:var(--_ui5-v2-17-0_tc_headerItem_focus_border_offset);top:var(--_ui5-v2-17-0_tc_headerItem_focus_border_offset);bottom:var(--_ui5-v2-17-0_tc_headerItem_focus_border_offset);border-radius:var(--_ui5-v2-17-0_tc_headerItemIcon_focus_border_radius)}.ui5-tab-strip-item-icon-outer{display:flex;justify-content:center;align-items:center;position:relative;border:var(--_ui5-v2-17-0_tc_headerItemIcon_border);border-radius:50%;margin-inline-end:.25rem;height:var(--_ui5-v2-17-0_tc_item_icon_circle_size);width:var(--_ui5-v2-17-0_tc_item_icon_circle_size);pointer-events:none;background-color:var(--sapTab_Background)}.ui5-tab-strip-item-icon{width:var(--_ui5-v2-17-0_tc_item_icon_size);height:var(--_ui5-v2-17-0_tc_item_icon_size);color:var(--sapTab_IconColor);text-shadow:var(--sapContent_TextShadow);pointer-events:none}.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon-outer{background-color:var(--sapTab_Selected_Background)}.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon{color:var(--sapTab_Selected_IconColor);text-shadow:none}.ui5-tab-strip-itemAdditionalText+.ui5-tab-strip-itemText{display:flex}.ui5-tab-strip-itemAdditionalText-hidden{visibility:hidden;margin-top:1.25rem}.ui5-tab-strip-item--inline .ui5-tab-strip-itemAdditionalText+.ui5-tab-strip-itemText{display:inline}.ui5-tab-strip-item--withIcon .ui5-tab-strip-itemAdditionalText+.ui5-tab-strip-itemText{margin-block-start:var(--_ui5-v2-17-0_tc_item_add_text_margin_top)}.ui5-tab-strip-item--textOnly,.ui5-tab-strip-item.ui5-tab-strip-item--textOnly.ui5-tab-strip-item--inline{font-size:var(--sapFontSize);height:var(--_ui5-v2-17-0_tc_item_text_only_height);display:flex;align-items:center;line-height:var(--_ui5-v2-17-0_tc_item_text_line_height)}.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText{padding:0 .188rem}.ui5-tab-strip-item--textOnly.ui5-tab-strip-item--withAdditionalText{justify-content:flex-start;height:var(--_ui5-v2-17-0_tc_item_text_only_with_additional_text_height)}.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemText,.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemAdditionalText{display:inline-block;vertical-align:middle}.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemContent{flex-direction:row;align-items:center}.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemAdditionalText{font-size:1.5rem;margin-inline-end:.5rem}.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemText{color:var(--_ui5-v2-17-0_tc_mixedMode_itemText_color);font-family:var(--_ui5-v2-17-0_tc_mixedMode_itemText_font_family);font-size:var(--_ui5-v2-17-0_tc_mixedMode_itemText_font_size);font-weight:var(--_ui5-v2-17-0_tc_mixedMode_itemText_font_weight)}.ui5-tab-strip-item--positive.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText,.ui5-tab-strip-item--positive .ui5-tab-strip-item-icon-outer{color:var(--sapTab_Positive_TextColor);border-color:var(--sapTab_Positive_ForegroundColor)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--positive.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText{color:var(--sapTab_Positive_Selected_TextColor)}.ui5-tab-strip-item--positive .ui5-tab-strip-item-icon{color:var(--sapTab_Positive_IconColor)}.ui5-tab-strip-item--positive.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon-outer{background-color:var(--sapTab_Positive_Selected_Background);color:var(--_ui5-v2-17-0_tc_headerItemIcon_semantic_selected_color)}.ui5-tab-strip-item--positive.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon{color:var(--sapTab_Positive_Selected_IconColor)}.ui5-tab-strip-item.ui5-tab-strip-item--neutral .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--neutral .ui5-tab-strip-item-icon-outer:after{border-color:var(--_ui5-v2-17-0_tc_headerItem_neutral_border_color);background-color:var(--_ui5-v2-17-0_tc_headerItem_neutral_border_bg)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--neutral.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText{color:var(--sapTab_Neutral_Selected_TextColor)}.ui5-tab-strip-item.ui5-tab-strip-item--positive .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--positive .ui5-tab-strip-item-icon-outer:after{border-color:var(--sapTab_Positive_ForegroundColor);background-color:var(--_ui5-v2-17-0_tc_headerItem_positive_border_bg)}.ui5-tab-strip-item--negative.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText,.ui5-tab-strip-item--negative .ui5-tab-strip-item-icon-outer{color:var(--sapTab_Negative_TextColor);border-color:var(--sapTab_Negative_ForegroundColor)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--negative.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText{color:var(--sapTab_Negative_Selected_TextColor)}.ui5-tab-strip-item--negative .ui5-tab-strip-item-icon{color:var(--sapTab_Negative_IconColor)}.ui5-tab-strip-item--negative.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon-outer{background-color:var(--sapTab_Negative_Selected_Background)}.ui5-tab-strip-item--negative.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon{color:var(--sapTab_Negative_Selected_IconColor)}.ui5-tab-strip-item.ui5-tab-strip-item--negative .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--negative .ui5-tab-strip-item-icon-outer:after{border-color:var(--sapTab_Negative_ForegroundColor);background-color:var(--_ui5-v2-17-0_tc_headerItem_negative_border_bg)}.ui5-tab-strip-item--critical.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText,.ui5-tab-strip-item--critical .ui5-tab-strip-item-icon-outer{color:var(--sapTab_Critical_TextColor);border-color:var(--sapTab_Critical_ForegroundColor)}.ui5-tab-strip-item--selected.ui5-tab-strip-item--critical.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText{color:var(--sapTab_Critical_Selected_TextColor)}.ui5-tab-strip-item--critical .ui5-tab-strip-item-icon{color:var(--sapTab_Critical_IconColor)}.ui5-tab-strip-item--critical.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon-outer{background-color:var(--sapTab_Critical_Selected_Background)}.ui5-tab-strip-item--critical.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon{color:var(--sapTab_Critical_Selected_IconColor)}.ui5-tab-strip-item.ui5-tab-strip-item--critical .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--critical .ui5-tab-strip-item-icon-outer:after{border-color:var(--sapTab_Critical_ForegroundColor);background-color:var(--_ui5-v2-17-0_tc_headerItem_critical_border_bg)}.ui5-tab-strip-item--neutral.ui5-tab-strip-item--textOnly .ui5-tab-strip-itemText,.ui5-tab-strip-item--neutral .ui5-tab-strip-item-icon-outer{color:var(--sapTab_Neutral_TextColor);border-color:var(--sapTab_Neutral_ForegroundColor)}.ui5-tab-strip-item--neutral .ui5-tab-strip-item-icon{color:var(--sapTab_Neutral_IconColor)}.ui5-tab-strip-item--neutral.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon-outer{background-color:var(--sapTab_Neutral_Selected_Background)}.ui5-tab-strip-item--neutral.ui5-tab-strip-item--selected .ui5-tab-strip-item-icon{color:var(--sapTab_Neutral_Selected_IconColor)}.ui5-tab-strip-item.ui5-tab-strip-item--neutral .ui5-tab-strip-itemContent:after,.ui5-tab-strip-item--neutral .ui5-tab-strip-item-icon:after{border-color:var(--_ui5-v2-17-0_tc_headerItem_neutral_border_color);background-color:var(--_ui5-v2-17-0_tc_headerItem_neutral_border_bg)}.ui5-tab-strip-item--withIcon .ui5-tab-strip-itemContent .ui5-tab-strip-itemAdditionalText{padding:0}.ui5-tab-strip-item .ui5-tab-strip-itemAdditionalText{padding:0 .188rem;color:var(--_ui5-v2-17-0_tc_headerItem_additional_text_color);font-weight:var(--_ui5-v2-17-0_tc_headerItem_additional_text_font_weight)}.ui5-tab-strip-item.ui5-tab-strip-item--mixedMode .ui5-tab-strip-itemAdditionalText{color:var(--_ui5-v2-17-0_tc_headerItem_color)}
+`;
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const overflowCss$1 = `.ui5-tab-semantic-icon{display:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_display);height:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_size);width:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_size);margin-inline-end:.5rem}.ui5-tab-semantic-icon--positive{color:var(--sapPositiveTextColor)}.ui5-tab-semantic-icon--negative{color:var(--sapNegativeTextColor)}.ui5-tab-semantic-icon--critical{color:var(--sapCriticalTextColor)}.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}.ui5-tab-overflow-item{color:var(--_ui5-v2-17-0_tc_overflowItem_default_color)}.ui5-tab-overflow-item--disabled{cursor:default;opacity:var(--sapContent_DisabledOpacity)}.ui5-tab-overflow-item[hidden]{display:none}.ui5-tab-overflow-item--positive:not(.ui5-tab-overflow-item--disabled) .ui5-tab-overflow-itemContent{color:var(--_ui5-v2-17-0_tc_overflowItem_positive_color)}.ui5-tab-overflow-item--negative:not(.ui5-tab-overflow-item--disabled) .ui5-tab-overflow-itemContent{color:var(--_ui5-v2-17-0_tc_overflowItem_negative_color)}.ui5-tab-overflow-item--critical:not(.ui5-tab-overflow-item--disabled) .ui5-tab-overflow-itemContent{color:var(--_ui5-v2-17-0_tc_overflowItem_critical_color)}.ui5-tab-overflow-item[active] .ui5-tab-overflow-itemContent{color:var(--sapList_Active_TextColor)}.ui5-tab-overflow-itemContent{display:flex;align-items:center;position:relative;height:var(--_ui5-v2-17-0_tc_item_text);pointer-events:none;font-size:.875rem}.ui5-tab-overflow-itemContent-wrapper{padding-inline-start:calc((calc(var(--_ui5-v2-17-0-tab-indentation-level) + var(--_ui5-v2-17-0-tab-level-has-icon) * var(--_ui5-v2-17-0_tc_overflowItem_additional, 0))) * (var(--_ui5-v2-17-0_tc_overflowItem_indent) + var(--_ui5-v2-17-0_tc_overflowItem_extra_indent)))}.ui5-tab-overflow-item .ui5-tab-semantic-icon{position:absolute;inset-inline-start:-1.25rem}.ui5-tab-overflow-item--selectedSubTab{background-color:var(--sapList_SelectionBackgroundColor)}.ui5-tab-overflow-item [ui5-icon]:not(.ui5-tab-semantic-icon){width:1.375rem;height:1.375rem;padding-inline-end:.75rem;color:var(--_ui5-v2-17-0_tc_overflowItem_current_color)}.ui5-tab-container-responsive-popover [ui5-li-custom][focused]::part(native-li):after{inset:var(--_ui5-v2-17-0_tc_overflowItem_focus_offset)}.ui5-tab-container-responsive-popover::part(content){padding:0}
+`;
+var __decorate$x = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var Tab_1;
+const DESIGN_DESCRIPTIONS = {
+  [SemanticColor$1.Positive]: TAB_ARIA_DESIGN_POSITIVE,
+  [SemanticColor$1.Negative]: TAB_ARIA_DESIGN_NEGATIVE,
+  [SemanticColor$1.Neutral]: TAB_ARIA_DESIGN_NEUTRAL,
+  [SemanticColor$1.Critical]: TAB_ARIA_DESIGN_CRITICAL
+};
+let Tab = Tab_1 = class Tab2 extends b$7 {
+  constructor() {
+    super(...arguments);
+    this.disabled = false;
+    this.design = "Default";
+    this.selected = false;
+    this.movable = false;
+    this._isTopLevelTab = false;
+  }
+  set forcedTabIndex(val) {
+    this.getDomRefInStrip().setAttribute("tabindex", val);
+  }
+  get forcedTabIndex() {
+    return this.getDomRefInStrip().getAttribute("tabindex");
+  }
+  get displayText() {
+    let text = this.text;
+    if (this._isInline && this.additionalText) {
+      text += ` (${this.additionalText})`;
+    }
+    return text;
+  }
+  get isSeparator() {
+    return false;
+  }
+  get stripPresentation() {
+    return n$j(Tab_1.stripTemplate, this);
+  }
+  get overflowPresentation() {
+    return n$j(Tab_1.overflowTemplate, this);
+  }
+  get stableDomRef() {
+    return this.getAttribute("stable-dom-ref") || `${this._id}-stable-dom-ref`;
+  }
+  get requiresExpandButton() {
+    return this.items.length > 0 && this._isTopLevelTab && this.hasOwnContent;
+  }
+  get isSingleClickArea() {
+    return this.items.length > 0 && this._isTopLevelTab && !this.hasOwnContent;
+  }
+  get isTwoClickArea() {
+    return this.items.length > 0 && this._isTopLevelTab && this.hasOwnContent;
+  }
+  get isOnSelectedTabPath() {
+    return this._selectedTabReference === this || this.tabs.some((subTab) => subTab.isOnSelectedTabPath);
+  }
+  get _effectiveSlotName() {
+    return this.isOnSelectedTabPath ? this._individualSlot : `disabled-${this._individualSlot}`;
+  }
+  get _defaultSlotName() {
+    return this._selectedTabReference === this ? "" : "disabled-slot";
+  }
+  get hasOwnContent() {
+    return t$8(this.content);
+  }
+  get expandBtnAccessibilityAttributes() {
+    return {
+      hasPopup: "menu"
+    };
+  }
+  receiveStripInfo({ getElementInStrip, posinset, setsize, isInline, isTopLevelTab, mixedMode }) {
+    this._getElementInStrip = getElementInStrip;
+    this._forcedPosinset = posinset;
+    this._forcedSetsize = setsize;
+    this._forcedMixedMode = mixedMode;
+    this._isInline = isInline;
+    this._isTopLevelTab = !!isTopLevelTab;
+  }
+  receiveOverflowInfo({ getElementInOverflow, style }) {
+    this._getElementInOverflow = getElementInOverflow;
+    this._forcedStyleInOverflow = style;
+  }
+  /**
+   * Returns the DOM reference of the tab that is placed in the header.
+   *
+   * **Note:** Tabs, placed in the `items` slot of other tabs are not shown in the header. Calling this method on such tabs will return `undefined`.
+   *
+   * **Note:** If you need a DOM ref to the tab content please use the `getDomRef` method.
+   * @public
+   * @since 1.0.0-rc.16
+   */
+  getDomRefInStrip() {
+    var _a2;
+    return (_a2 = this._getElementInStrip) == null ? void 0 : _a2.call(this);
+  }
+  getFocusDomRef() {
+    var _a2, _b2;
+    let focusedDomRef = (_a2 = this._getElementInOverflow) == null ? void 0 : _a2.call(this);
+    if (!focusedDomRef) {
+      focusedDomRef = (_b2 = this._getElementInStrip) == null ? void 0 : _b2.call(this);
+    }
+    return focusedDomRef;
+  }
+  async focus(focusOptions) {
+    await f$i();
+    return super.focus(focusOptions);
+  }
+  get isMixedModeTab() {
+    return !this.icon && this._forcedMixedMode;
+  }
+  get isTextOnlyTab() {
+    return !this.icon && !this._forcedMixedMode;
+  }
+  get isIconTab() {
+    return !!this.icon;
+  }
+  get effectiveDisabled() {
+    return this.disabled || void 0;
+  }
+  get effectiveSelected() {
+    const subItemSelected = this.tabs.some((elem) => elem.effectiveSelected);
+    return this.selected || this._selectedTabReference === this || subItemSelected;
+  }
+  get effectiveHidden() {
+    return !this.effectiveSelected;
+  }
+  get tabs() {
+    return this.items.filter((tab) => !tab.isSeparator);
+  }
+  get ariaLabelledBy() {
+    const labels = [];
+    if (this.text) {
+      labels.push(`${this._id}-text`);
+    }
+    if (this.additionalText) {
+      labels.push(`${this._id}-additionalText`);
+    }
+    if (this.icon) {
+      labels.push(`${this._id}-icon`);
+    }
+    if (this._designDescription) {
+      labels.push(`${this._id}-designDescription`);
+    }
+    return labels.join(" ");
+  }
+  get stripClasses() {
+    const classes = ["ui5-tab-strip-item"];
+    if (this.effectiveSelected) {
+      classes.push("ui5-tab-strip-item--selected");
+    }
+    if (this.disabled) {
+      classes.push("ui5-tab-strip-item--disabled");
+    }
+    if (this._isInline) {
+      classes.push("ui5-tab-strip-item--inline");
+    }
+    if (this.additionalText) {
+      classes.push("ui5-tab-strip-item--withAdditionalText");
+    }
+    if (!this.icon && !this._forcedMixedMode) {
+      classes.push("ui5-tab-strip-item--textOnly");
+    }
+    if (this.icon) {
+      classes.push("ui5-tab-strip-item--withIcon");
+    }
+    if (!this.icon && this._forcedMixedMode) {
+      classes.push("ui5-tab-strip-item--mixedMode");
+    }
+    if (this.design !== SemanticColor$1.Default) {
+      classes.push(`ui5-tab-strip-item--${this.design.toLowerCase()}`);
+    }
+    if (this.isSingleClickArea) {
+      classes.push(`ui5-tab-strip-item--singleClickArea`);
+    }
+    if (this.isTwoClickArea) {
+      classes.push(`ui5-tab-strip-item--twoClickArea`);
+    }
+    return {
+      itemClasses: classes.join(" "),
+      additionalTextClasses: this.additionalTextClasses
+    };
+  }
+  get additionalTextClasses() {
+    const classes = [];
+    if (this.additionalText) {
+      classes.push("ui5-tab-strip-itemAdditionalText");
+    }
+    if (this.icon && !this.additionalText) {
+      classes.push("ui5-tab-strip-itemAdditionalText-hidden");
+    }
+    return classes.join(" ");
+  }
+  get expandButtonTitle() {
+    return Tab_1.i18nBundle.getText(TABCONTAINER_END_OVERFLOW);
+  }
+  get _roleDescription() {
+    return this.items.length > 0 ? Tab_1.i18nBundle.getText(TAB_SPLIT_ROLE_DESCRIPTION) : void 0;
+  }
+  get _ariaHasPopup() {
+    return this.isSingleClickArea ? "menu" : void 0;
+  }
+  get semanticIconName() {
+    switch (this.design) {
+      case SemanticColor$1.Positive:
+        return "sys-enter-2";
+      case SemanticColor$1.Negative:
+        return "error";
+      case SemanticColor$1.Critical:
+        return "alert";
+      default:
+        return null;
+    }
+  }
+  get _designDescription() {
+    if (this.design === SemanticColor$1.Default) {
+      return null;
+    }
+    return Tab_1.i18nBundle.getText(DESIGN_DESCRIPTIONS[this.design]);
+  }
+  get semanticIconClasses() {
+    const classes = ["ui5-tab-semantic-icon"];
+    if (this.design !== SemanticColor$1.Default && this.design !== SemanticColor$1.Neutral) {
+      classes.push(`ui5-tab-semantic-icon--${this.design.toLowerCase()}`);
+    }
+    return classes.join(" ");
+  }
+  get overflowClasses() {
+    const classes = ["ui5-tab-overflow-item"];
+    if (this.design !== SemanticColor$1.Default && this.design !== SemanticColor$1.Neutral) {
+      classes.push(`ui5-tab-overflow-item--${this.design.toLowerCase()}`);
+    }
+    if (this.effectiveDisabled) {
+      classes.push("ui5-tab-overflow-item--disabled");
+    }
+    if (this.selected) {
+      classes.push("ui5-tab-overflow-item--selectedSubTab");
+    }
+    return classes.join(" ");
+  }
+  get overflowState() {
+    return this.disabled || this.isSingleClickArea ? ListItemType$1.Inactive : ListItemType$1.Active;
+  }
+  static get stripTemplate() {
+    return TabInStripTemplate;
+  }
+  static get overflowTemplate() {
+    return TabInOverflowTemplate;
+  }
+  _ondragstart(e2) {
+    if (e2.target instanceof HTMLElement) {
+      D$1.setDraggedElement(this);
+      e2.target.setAttribute("data-moving", "");
+    }
+  }
+  _ondragend(e2) {
+    if (e2.target instanceof HTMLElement) {
+      D$1.clearDraggedElement();
+      e2.target.removeAttribute("data-moving");
+    }
+  }
+  captureRef(ref) {
+    if (ref) {
+      ref.realTabReference = this;
+    }
+  }
+  captureButtonRef(ref) {
+    if (ref) {
+      ref.tab = this;
+    }
+  }
+};
+__decorate$x([
+  s$8()
+], Tab.prototype, "text", void 0);
+__decorate$x([
+  s$8({ type: Boolean })
+], Tab.prototype, "disabled", void 0);
+__decorate$x([
+  s$8()
+], Tab.prototype, "additionalText", void 0);
+__decorate$x([
+  s$8()
+], Tab.prototype, "icon", void 0);
+__decorate$x([
+  s$8()
+], Tab.prototype, "design", void 0);
+__decorate$x([
+  s$8({ type: Boolean })
+], Tab.prototype, "selected", void 0);
+__decorate$x([
+  s$8({ type: Boolean })
+], Tab.prototype, "movable", void 0);
+__decorate$x([
+  s$8({ type: Boolean })
+], Tab.prototype, "_isTopLevelTab", void 0);
+__decorate$x([
+  s$8({ type: Object })
+], Tab.prototype, "_selectedTabReference", void 0);
+__decorate$x([
+  d$8({
+    type: Node,
+    "default": true,
+    invalidateOnChildChange: {
+      properties: true,
+      slots: false
+    }
+  })
+], Tab.prototype, "content", void 0);
+__decorate$x([
+  d$8({
+    type: HTMLElement,
+    individualSlots: true,
+    invalidateOnChildChange: {
+      properties: true,
+      slots: false
+    }
+  })
+], Tab.prototype, "items", void 0);
+__decorate$x([
+  i$9("@ui5/webcomponents")
+], Tab, "i18nBundle", void 0);
+Tab = Tab_1 = __decorate$x([
+  m$8({
+    tag: "ui5-tab",
+    languageAware: true,
+    renderer: y$5,
+    template: TabTemplate,
+    styles: css
+  })
+], Tab);
+Tab.define();
+TabContainer$1.registerTabStyles(stripCss$1);
+TabContainer$1.registerTabStyles(draggableElementStyles);
+TabContainer$1.registerTabStyles(overflowCss$1);
+function TabSeparatorInStripTemplate() {
+  return jsx("div", { id: this._id, role: "separator", class: "ui5-tc__separator", ref: this.captureRef.bind(this) });
+}
+function TabSeparatorInOverflowTemplate() {
+  return jsx(ListItemCustom$1, {
+    id: this._id,
+    // role="separator"
+    class: "ui5-tc__separator",
+    disabled: true,
+    style: this._forcedStyleInOverflow,
+    ref: this.captureRef.bind(this)
+  });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const stripCss = `div.ui5-tc__separator{position:relative;width:.5625rem}div.ui5-tc__separator:before{content:" ";position:absolute;width:.0625rem;left:.25rem;top:.5rem;bottom:.5rem;background:var(--sapGroup_TitleBorderColor)}
+`;
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const overflowCss = `[ui5-li-custom].ui5-tc__separator{min-height:.25rem;border-bottom:.0625rem solid var(--sapGroup_TitleBorderColor);margin-inline-start:calc(var(--_ui5-v2-17-0-tab-indentation-level) * .5rem);margin-inline-end:.5rem}[ui5-list]>[ui5-li-custom].ui5-tc__separator:first-child{min-height:.5rem}
+`;
+var __decorate$w = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var TabSeparator_1;
+let TabSeparator = TabSeparator_1 = class TabSeparator2 extends b$7 {
+  static get stripTemplate() {
+    return TabSeparatorInStripTemplate;
+  }
+  static get overflowTemplate() {
+    return TabSeparatorInOverflowTemplate;
+  }
+  get isSeparator() {
+    return true;
+  }
+  receiveStripInfo({ getElementInStrip }) {
+    this._getElementInStrip = getElementInStrip;
+  }
+  receiveOverflowInfo({ style }) {
+    this._forcedStyleInOverflow = style;
+  }
+  /**
+   * Returns the DOM reference of the separator that is placed in the header.
+   *
+   * **Note:** Separators, placed in the `items` slot of other tabs are not shown in the header. Calling this method on such separators will return `undefined`.
+   * @public
+   */
+  getDomRefInStrip() {
+    var _a2;
+    return (_a2 = this._getElementInStrip) == null ? void 0 : _a2.call(this);
+  }
+  get stableDomRef() {
+    return this.getAttribute("stable-dom-ref") || `${this._id}-stable-dom-ref`;
+  }
+  get stripPresentation() {
+    return n$j(TabSeparator_1.stripTemplate, this);
+  }
+  get overflowPresentation() {
+    return n$j(TabSeparator_1.overflowTemplate, this);
+  }
+  captureRef(ref) {
+    if (ref) {
+      ref.realTabReference = this;
+    }
+  }
+};
+TabSeparator = TabSeparator_1 = __decorate$w([
+  m$8({
+    tag: "ui5-tab-separator",
+    renderer: y$5
+  })
+], TabSeparator);
+TabSeparator.define();
+TabContainer$1.registerTabStyles(stripCss);
+TabContainer$1.registerTabStyles(overflowCss);
 function initUI5Theme(isDark = false) {
   try {
     const theme = isDark ? "sap_horizon_dark" : "sap_horizon";
-    u$f(theme);
+    u$g(theme);
     console.log(`[ui5-loader] Theme set to: ${theme}`);
   } catch (error) {
     console.error("[ui5-loader] Failed to set theme:", error);
@@ -15222,6 +18774,719 @@ class UI5ListCard extends BaseUI5Card {
   }
 }
 customElements.define("ui5-list-card", UI5ListCard);
+class UI5TableCard extends BaseUI5Card {
+  setConfig(config) {
+    if (!config.type) {
+      throw new Error("Card type is required");
+    }
+    super.setConfig(config);
+  }
+  get config() {
+    return this._config;
+  }
+  hasEntityStateChanged(oldHass, newHass) {
+    if (!oldHass || !newHass || !this.config) return true;
+    if (this.config.entities) {
+      for (const entityId of this.config.entities) {
+        if (oldHass.states[entityId] !== newHass.states[entityId]) return true;
+      }
+    }
+    if (this.config.rows) {
+      for (const row of this.config.rows) {
+        if (row.entity && oldHass.states[row.entity] !== newHass.states[row.entity]) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+  escapeText(text) {
+    const div = document.createElement("div");
+    div.textContent = text;
+    return div.innerHTML;
+  }
+  getDefaultColumns() {
+    return [
+      { header: "Name", field: "name" },
+      { header: "State", field: "state" },
+      { header: "Domain", field: "domain" }
+    ];
+  }
+  renderHeaderRow() {
+    var _a2;
+    const columns = ((_a2 = this.config) == null ? void 0 : _a2.columns) || this.getDefaultColumns();
+    const cells = columns.map((col) => `<ui5-table-header-cell>${this.escapeText(col.header)}</ui5-table-header-cell>`).join("");
+    return `<ui5-table-header-row slot="headerRow">${cells}</ui5-table-header-row>`;
+  }
+  getEntityFieldValue(entityId, entity, field) {
+    switch (field) {
+      case "name":
+        return getEntityName(this._hass, entityId);
+      case "state":
+        return formatEntityState(this._hass, entityId);
+      case "domain":
+        return getDomain(entityId);
+      case "entity_id":
+        return entityId;
+      case "last_changed":
+        return new Date(entity.last_changed).toLocaleString();
+      case "last_updated":
+        return new Date(entity.last_updated).toLocaleString();
+      default:
+        if (entity.attributes[field] !== void 0) {
+          const value = entity.attributes[field];
+          return typeof value === "object" ? JSON.stringify(value) : String(value);
+        }
+        return "";
+    }
+  }
+  renderEntityRows() {
+    var _a2;
+    if (!this._hass || !((_a2 = this.config) == null ? void 0 : _a2.entities)) return "";
+    const columns = this.config.columns || this.getDefaultColumns();
+    let rows = "";
+    for (const entityId of this.config.entities) {
+      const entity = this._hass.states[entityId];
+      if (!entity) continue;
+      const cells = columns.map((col) => {
+        const value = this.getEntityFieldValue(entityId, entity, col.field || col.header.toLowerCase());
+        return `<ui5-table-cell>${this.escapeText(value)}</ui5-table-cell>`;
+      }).join("");
+      rows += `<ui5-table-row data-entity="${entityId}">${cells}</ui5-table-row>`;
+    }
+    return rows;
+  }
+  renderCustomRows() {
+    var _a2;
+    if (!((_a2 = this.config) == null ? void 0 : _a2.rows)) return "";
+    let rows = "";
+    for (const row of this.config.rows) {
+      const cells = row.cells.map((cell) => `<ui5-table-cell>${this.escapeText(this.processTemplate(cell))}</ui5-table-cell>`).join("");
+      const entityAttr = row.entity ? `data-entity="${row.entity}"` : "";
+      rows += `<ui5-table-row ${entityAttr}>${cells}</ui5-table-row>`;
+    }
+    return rows;
+  }
+  render() {
+    if (!this._hass || !this.config) return;
+    const title2 = this.config.title || "";
+    const showHeader = this.config.show_header !== false;
+    const stickyHeader = this.config.sticky_column_header ? "sticky-column-header" : "";
+    const noDataText = this.config.no_data_text || "No data";
+    const entityRows = this.renderEntityRows();
+    const customRows = this.renderCustomRows();
+    const hasRows = entityRows || customRows;
+    this.shadow.innerHTML = `
+      <style>
+        ${this.getBaseStyles()}
+
+        .table-container {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .table-header {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--primary-text-color);
+          padding-bottom: 8px;
+        }
+
+        ui5-table {
+          width: 100%;
+        }
+
+        ui5-table-row {
+          cursor: pointer;
+        }
+
+        ui5-table-row:hover {
+          background: var(--secondary-background-color, rgba(0, 0, 0, 0.05));
+        }
+
+        .no-data {
+          padding: 24px;
+          text-align: center;
+          color: var(--secondary-text-color);
+        }
+      </style>
+
+      <div class="card-container">
+        <div class="table-container">
+          ${title2 ? `<div class="table-header">${this.escapeText(title2)}</div>` : ""}
+          ${hasRows ? `
+            <ui5-table id="entity-table" ${stickyHeader}>
+              ${showHeader ? this.renderHeaderRow() : ""}
+              ${entityRows}
+              ${customRows}
+            </ui5-table>
+          ` : `<div class="no-data">${this.escapeText(noDataText)}</div>`}
+        </div>
+      </div>
+    `;
+    this.setupRowClickHandlers();
+  }
+  setupRowClickHandlers() {
+    const table = this.shadow.getElementById("entity-table");
+    if (!table) return;
+    table.addEventListener("row-click", (event) => {
+      var _a2;
+      const customEvent = event;
+      const row = (_a2 = customEvent.detail) == null ? void 0 : _a2.row;
+      if (!row) return;
+      const entityId = row.getAttribute("data-entity");
+      if (entityId && this._hass) {
+        const moreInfoEvent = new CustomEvent("hass-more-info", {
+          bubbles: true,
+          composed: true,
+          detail: { entityId }
+        });
+        this.dispatchEvent(moreInfoEvent);
+      }
+    });
+  }
+  getCardSize() {
+    var _a2, _b2, _c, _d;
+    const rowCount = (((_b2 = (_a2 = this.config) == null ? void 0 : _a2.entities) == null ? void 0 : _b2.length) || 0) + (((_d = (_c = this.config) == null ? void 0 : _c.rows) == null ? void 0 : _d.length) || 0);
+    return Math.max(2, Math.ceil(rowCount / 3) + 1);
+  }
+  static getStubConfig() {
+    return {
+      type: "custom:ui5-table-card",
+      title: "Entity Table",
+      entities: ["light.living_room", "sensor.temperature"],
+      columns: [
+        { header: "Name", field: "name" },
+        { header: "State", field: "state" }
+      ]
+    };
+  }
+}
+customElements.define("ui5-table-card", UI5TableCard);
+class UI5CardCard extends BaseUI5Card {
+  setConfig(config) {
+    if (!config.type) {
+      throw new Error("Card type is required");
+    }
+    super.setConfig(config);
+  }
+  get config() {
+    return this._config;
+  }
+  escapeText(text) {
+    const div = document.createElement("div");
+    div.textContent = text;
+    return div.innerHTML;
+  }
+  escapeAttrValue(text) {
+    return text.replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+  render() {
+    if (!this._hass || !this.config) return;
+    let title2 = this.config.title || "";
+    if (!title2 && this.config.entity) {
+      title2 = getEntityName(this._hass, this.config.entity);
+    }
+    const subtitle = this.config.subtitle ? this.processTemplate(this.config.subtitle) : "";
+    let status = this.config.status || "";
+    if (this.config.show_entity_state !== false && this.config.entity) {
+      status = status || formatEntityState(this._hass, this.config.entity);
+    }
+    const content2 = this.config.content ? this.processTemplate(this.config.content) : "";
+    const interactive = this.config.header_interactive !== false;
+    const entityState = this.config.entity ? this.getEntityState() : void 0;
+    const isUnavailable = entityState === "unavailable";
+    this.shadow.innerHTML = `
+      <style>
+        ${this.getBaseStyles()}
+
+        :host {
+          --_ui5_card_border_radius: var(--ha-card-border-radius, 12px);
+        }
+
+        .ui5-card-wrapper {
+          display: block;
+        }
+
+        ui5-card {
+          width: 100%;
+        }
+
+        ui5-card-header {
+          cursor: ${interactive ? "pointer" : "default"};
+        }
+
+        .card-content {
+          padding: 16px;
+          color: var(--primary-text-color);
+        }
+
+        .unavailable {
+          opacity: 0.5;
+        }
+
+        .entity-state {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 16px;
+        }
+
+        .state-value {
+          font-size: 24px;
+          font-weight: 600;
+          color: var(--primary-text-color);
+        }
+
+        .state-label {
+          font-size: 14px;
+          color: var(--secondary-text-color);
+        }
+      </style>
+
+      <div class="ui5-card-wrapper ${isUnavailable ? "unavailable" : ""}">
+        <ui5-card>
+          <ui5-card-header
+            id="card-header"
+            slot="header"
+            title-text="${this.escapeAttrValue(title2)}"
+            ${subtitle ? `subtitle-text="${this.escapeAttrValue(subtitle)}"` : ""}
+            ${status ? `status="${this.escapeAttrValue(status)}"` : ""}
+            ${interactive ? "interactive" : ""}
+          ></ui5-card-header>
+          ${content2 ? `<div class="card-content">${this.escapeText(content2)}</div>` : this.config.entity ? `
+              <div class="entity-state">
+                <div>
+                  <div class="state-value">${formatEntityState(this._hass, this.config.entity)}</div>
+                  <div class="state-label">${getEntityName(this._hass, this.config.entity)}</div>
+                </div>
+              </div>
+            ` : ""}
+        </ui5-card>
+      </div>
+    `;
+    if (interactive) {
+      this.setupHeaderClickHandler();
+    }
+  }
+  setupHeaderClickHandler() {
+    const header2 = this.shadow.getElementById("card-header");
+    if (!header2) return;
+    header2.addEventListener("click", () => {
+      var _a2;
+      if (((_a2 = this.config) == null ? void 0 : _a2.entity) && this._hass) {
+        const moreInfoEvent = new CustomEvent("hass-more-info", {
+          bubbles: true,
+          composed: true,
+          detail: { entityId: this.config.entity }
+        });
+        this.dispatchEvent(moreInfoEvent);
+      }
+    });
+  }
+  getCardSize() {
+    var _a2;
+    return ((_a2 = this.config) == null ? void 0 : _a2.content) ? 3 : 2;
+  }
+  static getStubConfig() {
+    return {
+      type: "custom:ui5-card-card",
+      title: "UI5 Card",
+      subtitle: "Card subtitle",
+      entity: "sensor.temperature"
+    };
+  }
+}
+customElements.define("ui5-card-card", UI5CardCard);
+class UI5PanelCard extends BaseUI5Card {
+  setConfig(config) {
+    if (!config.type) {
+      throw new Error("Card type is required");
+    }
+    super.setConfig(config);
+  }
+  get config() {
+    return this._config;
+  }
+  hasEntityStateChanged(oldHass, newHass) {
+    if (!oldHass || !newHass || !this.config) return true;
+    if (this.config.entity) {
+      if (oldHass.states[this.config.entity] !== newHass.states[this.config.entity]) {
+        return true;
+      }
+    }
+    if (this.config.entities) {
+      for (const entityId of this.config.entities) {
+        if (oldHass.states[entityId] !== newHass.states[entityId]) return true;
+      }
+    }
+    return false;
+  }
+  escapeText(text) {
+    const div = document.createElement("div");
+    div.textContent = text;
+    return div.innerHTML;
+  }
+  escapeAttrValue(text) {
+    return text.replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+  renderEntityList() {
+    var _a2;
+    if (!this._hass || !((_a2 = this.config) == null ? void 0 : _a2.entities)) return "";
+    let html = '<div class="entity-list">';
+    for (const entityId of this.config.entities) {
+      const entity = this._hass.states[entityId];
+      if (!entity) continue;
+      const name2 = getEntityName(this._hass, entityId);
+      const state = formatEntityState(this._hass, entityId);
+      html += `
+        <div class="entity-row" data-entity="${entityId}">
+          <span class="entity-name">${this.escapeText(name2)}</span>
+          <span class="entity-state">${this.escapeText(state)}</span>
+        </div>
+      `;
+    }
+    html += "</div>";
+    return html;
+  }
+  render() {
+    if (!this._hass || !this.config) return;
+    let headerText = this.config.header_text || "";
+    if (!headerText && this.config.entity) {
+      headerText = getEntityName(this._hass, this.config.entity);
+    }
+    const collapsed = this.config.collapsed || false;
+    const fixed = this.config.fixed || false;
+    const accessibleRole = this.config.accessible_role || "Region";
+    const customContent = this.config.content ? this.processTemplate(this.config.content) : "";
+    const entityList = this.renderEntityList();
+    this.shadow.innerHTML = `
+      <style>
+        ${this.getBaseStyles()}
+
+        .panel-wrapper {
+          display: block;
+        }
+
+        ui5-panel {
+          width: 100%;
+        }
+
+        .panel-content {
+          padding: 8px 0;
+        }
+
+        .entity-list {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .entity-row {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 8px 12px;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: background 0.2s;
+        }
+
+        .entity-row:hover {
+          background: var(--secondary-background-color, rgba(0, 0, 0, 0.05));
+        }
+
+        .entity-name {
+          font-size: 14px;
+          color: var(--primary-text-color);
+        }
+
+        .entity-state {
+          font-size: 14px;
+          font-weight: 500;
+          color: var(--secondary-text-color);
+        }
+
+        .custom-content {
+          padding: 8px 0;
+          color: var(--primary-text-color);
+        }
+      </style>
+
+      <div class="card-container">
+        <div class="panel-wrapper">
+          <ui5-panel
+            id="main-panel"
+            header-text="${this.escapeAttrValue(headerText)}"
+            ${collapsed ? "collapsed" : ""}
+            ${fixed ? "fixed" : ""}
+            accessible-role="${accessibleRole}"
+          >
+            <div class="panel-content">
+              ${customContent ? `<div class="custom-content">${this.escapeText(customContent)}</div>` : ""}
+              ${entityList}
+            </div>
+          </ui5-panel>
+        </div>
+      </div>
+    `;
+    this.setupEntityClickHandlers();
+  }
+  setupEntityClickHandlers() {
+    const entityRows = this.shadow.querySelectorAll(".entity-row");
+    entityRows.forEach((row) => {
+      row.addEventListener("click", () => {
+        const entityId = row.getAttribute("data-entity");
+        if (entityId && this._hass) {
+          const moreInfoEvent = new CustomEvent("hass-more-info", {
+            bubbles: true,
+            composed: true,
+            detail: { entityId }
+          });
+          this.dispatchEvent(moreInfoEvent);
+        }
+      });
+    });
+  }
+  getCardSize() {
+    var _a2, _b2;
+    const entityCount = ((_b2 = (_a2 = this.config) == null ? void 0 : _a2.entities) == null ? void 0 : _b2.length) || 0;
+    return Math.max(1, Math.ceil(entityCount / 4) + 1);
+  }
+  static getStubConfig() {
+    return {
+      type: "custom:ui5-panel-card",
+      header_text: "Panel Section",
+      entities: ["light.living_room", "switch.kitchen"],
+      collapsed: false
+    };
+  }
+}
+customElements.define("ui5-panel-card", UI5PanelCard);
+class UI5TabsCard extends BaseUI5Card {
+  constructor() {
+    super(...arguments);
+    this.selectedTabIndex = 0;
+  }
+  setConfig(config) {
+    if (!config.type) {
+      throw new Error("Card type is required");
+    }
+    super.setConfig(config);
+    if (config.tabs) {
+      const selectedIndex = config.tabs.findIndex((tab) => tab.selected);
+      if (selectedIndex >= 0) {
+        this.selectedTabIndex = selectedIndex;
+      }
+    }
+  }
+  get config() {
+    return this._config;
+  }
+  hasEntityStateChanged(oldHass, newHass) {
+    var _a2;
+    if (!oldHass || !newHass || !((_a2 = this.config) == null ? void 0 : _a2.tabs)) return true;
+    for (const tab of this.config.tabs) {
+      if (tab.entities) {
+        for (const entityId of tab.entities) {
+          if (oldHass.states[entityId] !== newHass.states[entityId]) return true;
+        }
+      }
+    }
+    return false;
+  }
+  escapeText(text) {
+    const div = document.createElement("div");
+    div.textContent = text;
+    return div.innerHTML;
+  }
+  escapeAttrValue(text) {
+    return text.replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+  renderEntityList(entities) {
+    if (!this._hass || !entities.length) return "";
+    let html = '<div class="entity-list">';
+    for (const entityId of entities) {
+      const entity = this._hass.states[entityId];
+      if (!entity) continue;
+      const name2 = getEntityName(this._hass, entityId);
+      const state = formatEntityState(this._hass, entityId);
+      html += `
+        <div class="entity-row" data-entity="${entityId}">
+          <span class="entity-name">${this.escapeText(name2)}</span>
+          <span class="entity-state">${this.escapeText(state)}</span>
+        </div>
+      `;
+    }
+    html += "</div>";
+    return html;
+  }
+  renderTabs() {
+    var _a2;
+    if (!((_a2 = this.config) == null ? void 0 : _a2.tabs)) return "";
+    return this.config.tabs.map((tab, index) => {
+      const text = this.processTemplate(tab.text);
+      const iconAttr = tab.icon ? `icon="${tab.icon}"` : "";
+      const disabledAttr = tab.disabled ? "disabled" : "";
+      const selectedAttr = index === this.selectedTabIndex ? "selected" : "";
+      const customContent = tab.content ? this.processTemplate(tab.content) : "";
+      const entityList = tab.entities ? this.renderEntityList(tab.entities) : "";
+      return `
+          <ui5-tab
+            text="${this.escapeAttrValue(text)}"
+            ${iconAttr}
+            ${disabledAttr}
+            ${selectedAttr}
+            data-tab-index="${index}"
+          >
+            <div class="tab-content">
+              ${customContent ? `<div class="custom-content">${this.escapeText(customContent)}</div>` : ""}
+              ${entityList}
+              ${!customContent && !entityList ? '<div class="empty-content">No content</div>' : ""}
+            </div>
+          </ui5-tab>
+        `;
+    }).join("");
+  }
+  render() {
+    if (!this._hass || !this.config) return;
+    const tabLayout = this.config.tab_layout || "Standard";
+    const overflowMode = this.config.tabs_overflow_mode || "End";
+    const collapsed = this.config.collapsed || false;
+    this.shadow.innerHTML = `
+      <style>
+        ${this.getBaseStyles()}
+
+        .tabs-wrapper {
+          display: block;
+        }
+
+        ui5-tabcontainer {
+          width: 100%;
+        }
+
+        .tab-content {
+          padding: 16px 0;
+        }
+
+        .entity-list {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .entity-row {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 8px 12px;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: background 0.2s;
+        }
+
+        .entity-row:hover {
+          background: var(--secondary-background-color, rgba(0, 0, 0, 0.05));
+        }
+
+        .entity-name {
+          font-size: 14px;
+          color: var(--primary-text-color);
+        }
+
+        .entity-state {
+          font-size: 14px;
+          font-weight: 500;
+          color: var(--secondary-text-color);
+        }
+
+        .custom-content {
+          padding: 8px 0;
+          color: var(--primary-text-color);
+        }
+
+        .empty-content {
+          padding: 24px;
+          text-align: center;
+          color: var(--secondary-text-color);
+        }
+      </style>
+
+      <div class="card-container">
+        <div class="tabs-wrapper">
+          <ui5-tabcontainer
+            id="tab-container"
+            tab-layout="${tabLayout}"
+            tabs-overflow-mode="${overflowMode}"
+            ${collapsed ? "collapsed" : ""}
+          >
+            ${this.renderTabs()}
+          </ui5-tabcontainer>
+        </div>
+      </div>
+    `;
+    this.setupEventHandlers();
+  }
+  setupEventHandlers() {
+    const tabContainer = this.shadow.getElementById("tab-container");
+    if (tabContainer) {
+      tabContainer.addEventListener("tab-select", (event) => {
+        var _a2;
+        const customEvent = event;
+        const tab = (_a2 = customEvent.detail) == null ? void 0 : _a2.tab;
+        if (tab) {
+          const index = tab.getAttribute("data-tab-index");
+          if (index !== null) {
+            this.selectedTabIndex = parseInt(index, 10);
+          }
+        }
+      });
+    }
+    const entityRows = this.shadow.querySelectorAll(".entity-row");
+    entityRows.forEach((row) => {
+      row.addEventListener("click", () => {
+        const entityId = row.getAttribute("data-entity");
+        if (entityId && this._hass) {
+          const moreInfoEvent = new CustomEvent("hass-more-info", {
+            bubbles: true,
+            composed: true,
+            detail: { entityId }
+          });
+          this.dispatchEvent(moreInfoEvent);
+        }
+      });
+    });
+  }
+  getCardSize() {
+    var _a2, _b2;
+    const maxEntities = Math.max(
+      ...((_b2 = (_a2 = this.config) == null ? void 0 : _a2.tabs) == null ? void 0 : _b2.map((t2) => {
+        var _a3;
+        return ((_a3 = t2.entities) == null ? void 0 : _a3.length) || 0;
+      })) || [0]
+    );
+    return Math.max(2, Math.ceil(maxEntities / 4) + 1);
+  }
+  static getStubConfig() {
+    return {
+      type: "custom:ui5-tabs-card",
+      tabs: [
+        {
+          text: "Lights",
+          icon: "lightbulb",
+          entities: ["light.living_room"]
+        },
+        {
+          text: "Switches",
+          icon: "switches",
+          entities: ["switch.kitchen"]
+        }
+      ]
+    };
+  }
+}
+customElements.define("ui5-tabs-card", UI5TabsCard);
 const CARD_DEFINITIONS = [
   {
     type: "custom:ui5-button-card",
@@ -15294,6 +19559,30 @@ const CARD_DEFINITIONS = [
     name: "UI5 List Card",
     description: "Display entities in a list with state indicators and grouping",
     preview: true
+  },
+  {
+    type: "custom:ui5-table-card",
+    name: "UI5 Table Card",
+    description: "Display entities in a table with configurable columns",
+    preview: true
+  },
+  {
+    type: "custom:ui5-card-card",
+    name: "UI5 Card Card",
+    description: "A styled card container with header and entity display",
+    preview: true
+  },
+  {
+    type: "custom:ui5-panel-card",
+    name: "UI5 Panel Card",
+    description: "A collapsible panel for grouping entities",
+    preview: true
+  },
+  {
+    type: "custom:ui5-tabs-card",
+    name: "UI5 Tabs Card",
+    description: "Tabbed container for organizing entities by category",
+    preview: true
   }
 ];
 function registerCards() {
@@ -15335,7 +19624,7 @@ async function init() {
 }
 init();
 const r2 = (e2) => e2.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-function a(r$12, e2, s2, i3) {
+function a2(r$12, e2, s2, i3) {
   return r$12.replaceAll(new RegExp(r2(e2), `${i3 ? "i" : ""}g`), s2);
 }
 function f3(r3, e2) {
@@ -15345,9 +19634,9 @@ function f3(r3, e2) {
     for (; r3.indexOf(n2) >= 0 || e2.indexOf(n2) >= 0; ) n2 = `${g2}${n2}${l3}`;
     return n2;
   }, i3 = s2("12"), t2 = s2("34");
-  let o2 = fnEncodeXML(a(r3, e2, (n2) => `${i3}${n2}${t2}`, true));
+  let o2 = fnEncodeXML(a2(r3, e2, (n2) => `${i3}${n2}${t2}`, true));
   return [[i3, "<b>"], [t2, "</b>"]].forEach(([n2, g2]) => {
-    o2 = a(o2, n2, g2, false);
+    o2 = a2(o2, n2, g2, false);
   }), o2;
 }
 function SuggestionItemTemplate() {
@@ -15372,7 +19661,7 @@ let SuggestionItem = class SuggestionItem2 extends ListItemBase$1 {
     this.markupText = "";
   }
   onEnterDOM() {
-    if (f$g()) {
+    if (f$h()) {
       this.setAttribute("desktop", "");
     }
   }
@@ -15381,13 +19670,13 @@ let SuggestionItem = class SuggestionItem2 extends ListItemBase$1 {
   }
 };
 __decorate$v([
-  s$7()
+  s$8()
 ], SuggestionItem.prototype, "text", void 0);
 __decorate$v([
-  s$7()
+  s$8()
 ], SuggestionItem.prototype, "additionalText", void 0);
 __decorate$v([
-  s$7()
+  s$8()
 ], SuggestionItem.prototype, "markupText", void 0);
 SuggestionItem = __decorate$v([
   m$8({
@@ -15842,7 +20131,7 @@ var __decorate$t = function(decorators, target, key, desc) {
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 var Text_1;
-let Text = Text_1 = class Text2 extends b$6 {
+let Text = Text_1 = class Text2 extends b$7 {
   constructor() {
     super(...arguments);
     this.maxLines = Infinity;
@@ -15852,7 +20141,7 @@ let Text = Text_1 = class Text2 extends b$6 {
     this.style.setProperty(d$g("--_ui5_text_max_lines"), `${this.maxLines}`);
   }
   get hasText() {
-    return t$7(this.text);
+    return t$8(this.text);
   }
   get _renderEmptyIndicator() {
     return !this.hasText && this.emptyIndicatorMode === TextEmptyIndicatorMode$1.On;
@@ -15865,10 +20154,10 @@ let Text = Text_1 = class Text2 extends b$6 {
   }
 };
 __decorate$t([
-  s$7({ type: Number })
+  s$8({ type: Number })
 ], Text.prototype, "maxLines", void 0);
 __decorate$t([
-  s$7()
+  s$8()
 ], Text.prototype, "emptyIndicatorMode", void 0);
 __decorate$t([
   d$8({ type: Node, "default": true })
@@ -15907,7 +20196,7 @@ var __decorate$s = function(decorators, target, key, desc) {
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 var Link_1;
-let Link = Link_1 = class Link2 extends b$6 {
+let Link = Link_1 = class Link2 extends b$7 {
   constructor() {
     super();
     this.disabled = false;
@@ -15919,7 +20208,7 @@ let Link = Link_1 = class Link2 extends b$6 {
     this._dummyAnchor = document.createElement("a");
   }
   onEnterDOM() {
-    if (f$g()) {
+    if (f$h()) {
       this.setAttribute("desktop", "");
     }
   }
@@ -15929,7 +20218,7 @@ let Link = Link_1 = class Link2 extends b$6 {
   }
   _isCrossOrigin(href) {
     this._dummyAnchor.href = href;
-    return !(this._dummyAnchor.hostname === i$l() && this._dummyAnchor.port === c$f() && this._dummyAnchor.protocol === a$m());
+    return !(this._dummyAnchor.hostname === i$l() && this._dummyAnchor.port === c$f() && this._dummyAnchor.protocol === a$o());
   }
   get effectiveTabIndex() {
     var _a2;
@@ -15979,7 +20268,7 @@ let Link = Link_1 = class Link2 extends b$6 {
     }
   }
   _onkeydown(e2) {
-    if (b$5(e2) && !this.href) {
+    if (b$6(e2) && !this.href) {
       this._onclick(e2);
       e2.preventDefault();
     } else if (A$4(e2)) {
@@ -15999,52 +20288,52 @@ let Link = Link_1 = class Link2 extends b$6 {
   }
 };
 __decorate$s([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], Link.prototype, "disabled", void 0);
 __decorate$s([
-  s$7()
+  s$8()
 ], Link.prototype, "tooltip", void 0);
 __decorate$s([
-  s$7()
+  s$8()
 ], Link.prototype, "href", void 0);
 __decorate$s([
-  s$7()
+  s$8()
 ], Link.prototype, "target", void 0);
 __decorate$s([
-  s$7()
+  s$8()
 ], Link.prototype, "design", void 0);
 __decorate$s([
-  s$7()
+  s$8()
 ], Link.prototype, "interactiveAreaSize", void 0);
 __decorate$s([
-  s$7()
+  s$8()
 ], Link.prototype, "wrappingType", void 0);
 __decorate$s([
-  s$7()
+  s$8()
 ], Link.prototype, "accessibleName", void 0);
 __decorate$s([
-  s$7()
+  s$8()
 ], Link.prototype, "accessibleNameRef", void 0);
 __decorate$s([
-  s$7()
+  s$8()
 ], Link.prototype, "accessibleRole", void 0);
 __decorate$s([
-  s$7({ type: Object })
+  s$8({ type: Object })
 ], Link.prototype, "accessibilityAttributes", void 0);
 __decorate$s([
-  s$7()
+  s$8()
 ], Link.prototype, "accessibleDescription", void 0);
 __decorate$s([
-  s$7()
+  s$8()
 ], Link.prototype, "icon", void 0);
 __decorate$s([
-  s$7()
+  s$8()
 ], Link.prototype, "endIcon", void 0);
 __decorate$s([
-  s$7({ noAttribute: true })
+  s$8({ noAttribute: true })
 ], Link.prototype, "_rel", void 0);
 __decorate$s([
-  s$7({ noAttribute: true })
+  s$8({ noAttribute: true })
 ], Link.prototype, "forcedTabIndex", void 0);
 __decorate$s([
   i$9("@ui5/webcomponents")
@@ -16057,7 +20346,7 @@ Link = Link_1 = __decorate$s([
     template: LinkTemplate,
     styles: linkCss
   }),
-  l$d("click", {
+  l$e("click", {
     bubbles: true,
     cancelable: true
   })
@@ -16078,7 +20367,7 @@ var __decorate$r = function(decorators, target, key, desc) {
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 var ExpandableText_1;
-let ExpandableText = ExpandableText_1 = class ExpandableText2 extends b$6 {
+let ExpandableText = ExpandableText_1 = class ExpandableText2 extends b$7 {
   constructor() {
     super(...arguments);
     this.maxCharacters = 100;
@@ -16150,19 +20439,19 @@ let ExpandableText = ExpandableText_1 = class ExpandableText2 extends b$6 {
   }
 };
 __decorate$r([
-  s$7()
+  s$8()
 ], ExpandableText.prototype, "text", void 0);
 __decorate$r([
-  s$7({ type: Number })
+  s$8({ type: Number })
 ], ExpandableText.prototype, "maxCharacters", void 0);
 __decorate$r([
-  s$7()
+  s$8()
 ], ExpandableText.prototype, "overflowMode", void 0);
 __decorate$r([
-  s$7()
+  s$8()
 ], ExpandableText.prototype, "emptyIndicatorMode", void 0);
 __decorate$r([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], ExpandableText.prototype, "_expanded", void 0);
 __decorate$r([
   i$9("@ui5/webcomponents")
@@ -16197,7 +20486,7 @@ var __decorate$q = function(decorators, target, key, desc) {
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
-let ButtonBadge = class ButtonBadge2 extends b$6 {
+let ButtonBadge = class ButtonBadge2 extends b$7 {
   constructor() {
     super(...arguments);
     this.design = "AttentionDot";
@@ -16208,10 +20497,10 @@ let ButtonBadge = class ButtonBadge2 extends b$6 {
   }
 };
 __decorate$q([
-  s$7()
+  s$8()
 ], ButtonBadge.prototype, "design", void 0);
 __decorate$q([
-  s$7()
+  s$8()
 ], ButtonBadge.prototype, "text", void 0);
 ButtonBadge = __decorate$q([
   m$8({
@@ -16304,7 +20593,7 @@ var __decorate$o = function(decorators, target, key, desc) {
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 var MenuItemGroup_1;
-let MenuItemGroup = MenuItemGroup_1 = class MenuItemGroup2 extends b$6 {
+let MenuItemGroup = MenuItemGroup_1 = class MenuItemGroup2 extends b$7 {
   constructor() {
     super(...arguments);
     this.checkMode = "None";
@@ -16377,7 +20666,7 @@ let MenuItemGroup = MenuItemGroup_1 = class MenuItemGroup2 extends b$6 {
   }
 };
 __decorate$o([
-  s$7()
+  s$8()
 ], MenuItemGroup.prototype, "checkMode", void 0);
 __decorate$o([
   d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
@@ -16452,9 +20741,9 @@ let MenuItem = MenuItem_1 = class MenuItem2 extends ListItem$1 {
     this._siblingsWithIcon = false;
     this._checkMode = "None";
     this._shiftPressed = false;
-    this._itemNavigation = new f$1(this, {
+    this._itemNavigation = new f$2(this, {
       navigationMode: r$3.Horizontal,
-      behavior: l$2.Static,
+      behavior: l$3.Static,
       getItemsCallback: () => this._navigableItems
     });
   }
@@ -16517,7 +20806,7 @@ let MenuItem = MenuItem_1 = class MenuItem2 extends ListItem$1 {
     });
   }
   async focus(focusOptions) {
-    await f$h();
+    await f$i();
     if (this.hasSubmenu && this.isSubMenuOpen) {
       const menuItems = this._allMenuItems;
       return menuItems[0] && menuItems[0].focus(focusOptions);
@@ -16606,7 +20895,7 @@ let MenuItem = MenuItem_1 = class MenuItem2 extends ListItem$1 {
     });
   }
   _itemMouseOver(e2) {
-    if (!f$g()) {
+    if (!f$h()) {
       return;
     }
     const item = e2.target;
@@ -16622,7 +20911,7 @@ let MenuItem = MenuItem_1 = class MenuItem2 extends ListItem$1 {
   }
   _isEnter(e2) {
     this._shiftPressed = this._isCheckable && i$7(e2);
-    return b$5(e2) || i$7(e2);
+    return b$6(e2) || i$7(e2);
   }
   _onclick(e2) {
     this._shiftPressed = this._isCheckable && e2.shiftKey;
@@ -16632,7 +20921,7 @@ let MenuItem = MenuItem_1 = class MenuItem2 extends ListItem$1 {
     const item = e2.target;
     const itemInMenuItems = this._allMenuItems.includes(item);
     const isTabNextPrevious = x$1(e2) || V$1(e2);
-    const shouldCloseMenu = this.isRtl ? R$1(e2) : D$2(e2);
+    const shouldCloseMenu = this.isRtl ? R$1(e2) : D$3(e2);
     if (itemInMenuItems && (isTabNextPrevious || shouldCloseMenu)) {
       this._close();
       this.focus();
@@ -16717,40 +21006,40 @@ let MenuItem = MenuItem_1 = class MenuItem2 extends ListItem$1 {
   }
 };
 __decorate$n([
-  s$7()
+  s$8()
 ], MenuItem.prototype, "text", void 0);
 __decorate$n([
-  s$7()
+  s$8()
 ], MenuItem.prototype, "additionalText", void 0);
 __decorate$n([
-  s$7()
+  s$8()
 ], MenuItem.prototype, "icon", void 0);
 __decorate$n([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], MenuItem.prototype, "disabled", void 0);
 __decorate$n([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], MenuItem.prototype, "loading", void 0);
 __decorate$n([
-  s$7({ type: Number })
+  s$8({ type: Number })
 ], MenuItem.prototype, "loadingDelay", void 0);
 __decorate$n([
-  s$7()
+  s$8()
 ], MenuItem.prototype, "accessibleName", void 0);
 __decorate$n([
-  s$7()
+  s$8()
 ], MenuItem.prototype, "tooltip", void 0);
 __decorate$n([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], MenuItem.prototype, "checked", void 0);
 __decorate$n([
-  s$7({ type: Object })
+  s$8({ type: Object })
 ], MenuItem.prototype, "accessibilityAttributes", void 0);
 __decorate$n([
-  s$7({ type: Boolean, noAttribute: true })
+  s$8({ type: Boolean, noAttribute: true })
 ], MenuItem.prototype, "_siblingsWithIcon", void 0);
 __decorate$n([
-  s$7()
+  s$8()
 ], MenuItem.prototype, "_checkMode", void 0);
 __decorate$n([
   d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
@@ -16768,21 +21057,21 @@ MenuItem = MenuItem_1 = __decorate$n([
     template: MenuItemTemplate,
     styles: [ListItem$1.styles, menuItemCss]
   }),
-  l$d("before-open", {
+  l$e("before-open", {
     cancelable: true
   }),
-  l$d("open"),
-  l$d("close-menu", {
+  l$e("open"),
+  l$e("close-menu", {
     bubbles: true
   }),
-  l$d("exit-end-content", {
+  l$e("exit-end-content", {
     bubbles: true
   }),
-  l$d("before-close", {
+  l$e("before-close", {
     cancelable: true
   }),
-  l$d("close"),
-  l$d("check", {
+  l$e("close"),
+  l$e("check", {
     bubbles: true
   })
 ], MenuItem);
@@ -16806,7 +21095,7 @@ var __decorate$m = function(decorators, target, key, desc) {
 };
 var Menu_1;
 const MENU_OPEN_DELAY = 300;
-let Menu = Menu_1 = class Menu2 extends b$6 {
+let Menu = Menu_1 = class Menu2 extends b$7 {
   constructor() {
     super(...arguments);
     this.open = false;
@@ -16900,7 +21189,7 @@ let Menu = Menu_1 = class Menu2 extends b$6 {
     item.selected = true;
   }
   _itemMouseOver(e2) {
-    if (!f$g()) {
+    if (!f$h()) {
       return;
     }
     const item = e2.target;
@@ -16911,7 +21200,7 @@ let Menu = Menu_1 = class Menu2 extends b$6 {
     this._startOpenTimeout(item);
   }
   async focus(focusOptions) {
-    await f$h();
+    await f$i();
     const firstMenuItem = this._allMenuItems[0];
     if (firstMenuItem) {
       return firstMenuItem.focus(focusOptions);
@@ -16957,13 +21246,13 @@ let Menu = Menu_1 = class Menu2 extends b$6 {
     if (!isInstanceOfMenuItem(item)) {
       return;
     }
-    const isEndContentNavigation = R$1(e2) || D$2(e2);
-    const shouldOpenMenu = this.isRtl ? D$2(e2) : R$1(e2);
-    if (b$5(e2) || isTabNextPrevious) {
+    const isEndContentNavigation = R$1(e2) || D$3(e2);
+    const shouldOpenMenu = this.isRtl ? D$3(e2) : R$1(e2);
+    if (b$6(e2) || isTabNextPrevious) {
       e2.preventDefault();
     }
     if (isEndContentNavigation) {
-      item._navigateToEndContent(D$2(e2));
+      item._navigateToEndContent(D$3(e2));
     }
     if (shouldOpenMenu) {
       this._openItemSubMenu(item);
@@ -17008,25 +21297,25 @@ let Menu = Menu_1 = class Menu2 extends b$6 {
   }
 };
 __decorate$m([
-  s$7()
+  s$8()
 ], Menu.prototype, "headerText", void 0);
 __decorate$m([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], Menu.prototype, "open", void 0);
 __decorate$m([
-  s$7()
+  s$8()
 ], Menu.prototype, "placement", void 0);
 __decorate$m([
-  s$7()
+  s$8()
 ], Menu.prototype, "horizontalAlign", void 0);
 __decorate$m([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], Menu.prototype, "loading", void 0);
 __decorate$m([
-  s$7({ type: Number })
+  s$8({ type: Number })
 ], Menu.prototype, "loadingDelay", void 0);
 __decorate$m([
-  s$7({ converter: e$3 })
+  s$8({ converter: e$4 })
 ], Menu.prototype, "opener", void 0);
 __decorate$m([
   d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
@@ -17041,24 +21330,24 @@ Menu = Menu_1 = __decorate$m([
     styles: menuCss,
     template: MenuTemplate
   }),
-  l$d("item-click", {
+  l$e("item-click", {
     cancelable: true
   }),
-  l$d("before-open", {
+  l$e("before-open", {
     bubbles: true,
     cancelable: true
   }),
-  l$d("open", {
+  l$e("open", {
     bubbles: true
   }),
-  l$d("close-menu", {
+  l$e("close-menu", {
     bubbles: true
   }),
-  l$d("before-close", {
+  l$e("before-close", {
     bubbles: true,
     cancelable: true
   }),
-  l$d("close")
+  l$e("close")
 ], Menu);
 Menu.define();
 const Menu$1 = Menu;
@@ -17266,7 +21555,7 @@ var __decorate$l = function(decorators, target, key, desc) {
 var ShellBar_1;
 const RESIZE_THROTTLE_RATE = 200;
 const PREDEFINED_PLACE_ACTIONS = ["feedback", "sys-help"];
-let ShellBar = ShellBar_1 = class ShellBar2 extends b$6 {
+let ShellBar = ShellBar_1 = class ShellBar2 extends b$7 {
   static get FIORI_3_BREAKPOINTS() {
     return [
       599,
@@ -17379,25 +21668,25 @@ let ShellBar = ShellBar_1 = class ShellBar2 extends b$6 {
   }
   _onKeyDown(e2) {
     var _a2, _b2;
-    if (!D$2(e2) && !R$1(e2) && !M$2(e2) && !n$c(e2)) {
+    if (!D$3(e2) && !R$1(e2) && !M$2(e2) && !n$c(e2)) {
       return;
     }
     const domRef = this.getDomRef();
     if (!domRef) {
       return;
     }
-    const activeElement = t$4();
+    const activeElement = t$5();
     if (!activeElement) {
       return;
     }
     if (this._allowChildNavigation(activeElement, e2)) {
       return;
     }
-    const items = b(domRef).filter((el) => this._isVisible(el));
+    const items = b$1(domRef).filter((el) => this._isVisible(el));
     const currentIndex = items.findIndex((el) => el === activeElement);
     if (currentIndex !== -1) {
       e2.preventDefault();
-      if (D$2(e2)) {
+      if (D$3(e2)) {
         this._focusPreviousItem(items, currentIndex);
       } else if (R$1(e2)) {
         this._focusNextItem(items, currentIndex);
@@ -17417,7 +21706,7 @@ let ShellBar = ShellBar_1 = class ShellBar2 extends b$6 {
   _allowInputNavigation(inputElement, e2) {
     const cursorPosition = inputElement.selectionStart || 0;
     const textLength = inputElement.value.length;
-    if (D$2(e2) && cursorPosition > 0 || R$1(e2) && cursorPosition < textLength) {
+    if (D$3(e2) && cursorPosition > 0 || R$1(e2) && cursorPosition < textLength) {
       return true;
     }
     return false;
@@ -17485,7 +21774,7 @@ let ShellBar = ShellBar_1 = class ShellBar2 extends b$6 {
       e2.preventDefault();
       return;
     }
-    if (b$5(e2)) {
+    if (b$6(e2)) {
       this._logoPress();
     }
   }
@@ -17530,7 +21819,7 @@ let ShellBar = ShellBar_1 = class ShellBar2 extends b$6 {
       return;
     }
     this.showSearchField = expanded;
-    await f$h();
+    await f$i();
     this.fireDecoratorEvent("search-field-toggle", { expanded });
   }
   onAfterRendering() {
@@ -17540,7 +21829,7 @@ let ShellBar = ShellBar_1 = class ShellBar2 extends b$6 {
   }
   async onInitialRendering() {
     if (this._isInitialRendering) {
-      await f$h();
+      await f$i();
       if (this.autoSearchField) {
         this._updateSearchFieldState();
       }
@@ -17605,7 +21894,7 @@ let ShellBar = ShellBar_1 = class ShellBar2 extends b$6 {
       }
     }
     const itemsInfo = this._getItemsInfo().filter((item) => item.show && item.classes.indexOf("ui5-shellbar-no-overflow-button") === -1);
-    const contentInfo = this._getContentInfo().sort((a2, b2) => a2.hideOrder - b2.hideOrder);
+    const contentInfo = this._getContentInfo().sort((a3, b2) => a3.hideOrder - b2.hideOrder);
     const itemsToHide = [...itemsInfo, ...contentInfo].filter((item) => hiddenItems.includes(item.id));
     this._hideItems(itemsToHide);
     return { itemsInfo, contentInfo };
@@ -17625,8 +21914,8 @@ let ShellBar = ShellBar_1 = class ShellBar2 extends b$6 {
     overflowPopover.open = true;
   }
   onEnterDOM() {
-    f$5.register(this, this._handleResize);
-    if (f$g()) {
+    f$6.register(this, this._handleResize);
+    if (f$h()) {
       this.setAttribute("desktop", "");
     }
     this._attachSearchFieldListeners(this.search);
@@ -17634,7 +21923,7 @@ let ShellBar = ShellBar_1 = class ShellBar2 extends b$6 {
   onExitDOM() {
     this.contentItemsObserver.disconnect();
     this._observableContent = [];
-    f$5.deregister(this, this._handleResize);
+    f$6.deregister(this, this._handleResize);
     this._detachSearchFieldListeners(this.search);
   }
   _attachSearchFieldListeners(searchField) {
@@ -17679,7 +21968,7 @@ let ShellBar = ShellBar_1 = class ShellBar2 extends b$6 {
   async _handleActionListClick() {
     if (!this._defaultItemPressPrevented) {
       this.closeOverflow();
-      await f$h();
+      await f$i();
     }
     this._defaultItemPressPrevented = false;
   }
@@ -17782,7 +22071,7 @@ let ShellBar = ShellBar_1 = class ShellBar2 extends b$6 {
    * @since 2.10.0
    */
   async getSearchButtonDomRef() {
-    await f$h();
+    await f$i();
     return this.shadowRoot.querySelector(`*[data-ui5-stable="toggle-search"]`);
   }
   _getContentInfo() {
@@ -17833,8 +22122,8 @@ let ShellBar = ShellBar_1 = class ShellBar2 extends b$6 {
         tooltip: this._notificationsText
       },
       // sort feedback and help to always be last
-      ...this.items.sort((a2, b2) => {
-        const aIndex = PREDEFINED_PLACE_ACTIONS.indexOf(a2.icon || "");
+      ...this.items.sort((a3, b2) => {
+        const aIndex = PREDEFINED_PLACE_ACTIONS.indexOf(a3.icon || "");
         const bIndex = PREDEFINED_PLACE_ACTIONS.indexOf(b2.icon || "");
         return aIndex - bIndex;
       }).map((item) => {
@@ -17958,8 +22247,8 @@ let ShellBar = ShellBar_1 = class ShellBar2 extends b$6 {
     return this.contentItems.every((item) => observableContentSet.has(item));
   }
   get contentItemsSorted() {
-    return this.contentItems.toReversed().sort((a2, b2) => {
-      return parseInt(a2.getAttribute("data-hide-order") || "0") - parseInt(b2.getAttribute("data-hide-order") || "0");
+    return this.contentItems.toReversed().sort((a3, b2) => {
+      return parseInt(a3.getAttribute("data-hide-order") || "0") - parseInt(b2.getAttribute("data-hide-order") || "0");
     });
   }
   get contentItemsWrappersSorted() {
@@ -17976,10 +22265,10 @@ let ShellBar = ShellBar_1 = class ShellBar2 extends b$6 {
     return this.showSearchField || this._autoRestoreSearchField;
   }
   get startContentInfoSorted() {
-    return this._contentInfo.filter((item) => this.startContent.find((contentItem) => contentItem.slot === item.id)).sort((a2, b2) => a2.hideOrder - b2.hideOrder);
+    return this._contentInfo.filter((item) => this.startContent.find((contentItem) => contentItem.slot === item.id)).sort((a3, b2) => a3.hideOrder - b2.hideOrder);
   }
   get endContentInfoSorted() {
-    return this._contentInfo.filter((item) => this.endContent.find((contentItem) => contentItem.slot === item.id)).sort((a2, b2) => a2.hideOrder - b2.hideOrder);
+    return this._contentInfo.filter((item) => this.endContent.find((contentItem) => contentItem.slot === item.id)).sort((a3, b2) => a3.hideOrder - b2.hideOrder);
   }
   get showStartSeparator() {
     return this.startContentInfoSorted.some((item) => !item.classes.includes("ui5-shellbar-hidden-button"));
@@ -18263,52 +22552,52 @@ let ShellBar = ShellBar_1 = class ShellBar2 extends b$6 {
   }
 };
 __decorate$l([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], ShellBar.prototype, "hideSearchButton", void 0);
 __decorate$l([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], ShellBar.prototype, "disableSearchCollapse", void 0);
 __decorate$l([
-  s$7()
+  s$8()
 ], ShellBar.prototype, "primaryTitle", void 0);
 __decorate$l([
-  s$7()
+  s$8()
 ], ShellBar.prototype, "secondaryTitle", void 0);
 __decorate$l([
-  s$7()
+  s$8()
 ], ShellBar.prototype, "notificationsCount", void 0);
 __decorate$l([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], ShellBar.prototype, "showNotifications", void 0);
 __decorate$l([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], ShellBar.prototype, "showProductSwitch", void 0);
 __decorate$l([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], ShellBar.prototype, "showSearchField", void 0);
 __decorate$l([
-  s$7({ type: Object })
+  s$8({ type: Object })
 ], ShellBar.prototype, "accessibilityAttributes", void 0);
 __decorate$l([
-  s$7()
+  s$8()
 ], ShellBar.prototype, "breakpointSize", void 0);
 __decorate$l([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], ShellBar.prototype, "withLogo", void 0);
 __decorate$l([
-  s$7({ type: Object })
+  s$8({ type: Object })
 ], ShellBar.prototype, "_itemsInfo", void 0);
 __decorate$l([
-  s$7({ type: Object })
+  s$8({ type: Object })
 ], ShellBar.prototype, "_contentInfo", void 0);
 __decorate$l([
-  s$7({ type: Boolean, noAttribute: true })
+  s$8({ type: Boolean, noAttribute: true })
 ], ShellBar.prototype, "_menuPopoverExpanded", void 0);
 __decorate$l([
-  s$7({ type: Boolean, noAttribute: true })
+  s$8({ type: Boolean, noAttribute: true })
 ], ShellBar.prototype, "_overflowPopoverExpanded", void 0);
 __decorate$l([
-  s$7({ type: Boolean, noAttribute: true })
+  s$8({ type: Boolean, noAttribute: true })
 ], ShellBar.prototype, "showFullWidthSearch", void 0);
 __decorate$l([
   d$8()
@@ -18364,36 +22653,36 @@ ShellBar = ShellBar_1 = __decorate$l([
       ButtonBadge$1
     ]
   }),
-  l$d("notifications-click", {
+  l$e("notifications-click", {
     cancelable: true,
     bubbles: true
   }),
-  l$d("profile-click", {
+  l$e("profile-click", {
     bubbles: true
   }),
-  l$d("product-switch-click", {
+  l$e("product-switch-click", {
     cancelable: true,
     bubbles: true
   }),
-  l$d("logo-click", {
+  l$e("logo-click", {
     bubbles: true
   }),
-  l$d("menu-item-click", {
+  l$e("menu-item-click", {
     bubbles: true,
     cancelable: true
   }),
-  l$d("search-button-click", {
+  l$e("search-button-click", {
     cancelable: true,
     bubbles: true
   }),
-  l$d("search-field-toggle", {
+  l$e("search-field-toggle", {
     bubbles: true
   }),
-  l$d("search-field-clear", {
+  l$e("search-field-clear", {
     cancelable: true,
     bubbles: true
   }),
-  l$d("content-item-visibility-change", {
+  l$e("content-item-visibility-change", {
     bubbles: true
   })
 ], ShellBar);
@@ -18413,7 +22702,7 @@ var __decorate$k = function(decorators, target, key, desc) {
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
-let ShellBarItem = class ShellBarItem2 extends b$6 {
+let ShellBarItem = class ShellBarItem2 extends b$7 {
   constructor() {
     super(...arguments);
     this.accessibilityAttributes = {};
@@ -18428,20 +22717,20 @@ let ShellBarItem = class ShellBarItem2 extends b$6 {
   }
 };
 __decorate$k([
-  s$7()
+  s$8()
 ], ShellBarItem.prototype, "icon", void 0);
 __decorate$k([
-  s$7()
+  s$8()
 ], ShellBarItem.prototype, "text", void 0);
 __decorate$k([
-  s$7()
+  s$8()
 ], ShellBarItem.prototype, "count", void 0);
 __decorate$k([
-  s$7({ type: Object })
+  s$8({ type: Object })
 ], ShellBarItem.prototype, "accessibilityAttributes", void 0);
 ShellBarItem = __decorate$k([
   m$8("ui5-shellbar-item"),
-  l$d("click", {
+  l$e("click", {
     bubbles: true,
     cancelable: true
   })
@@ -18456,7 +22745,7 @@ var __decorate$j = function(decorators, target, key, desc) {
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
-class SideNavigationItemBase extends b$6 {
+class SideNavigationItemBase extends b$7 {
   constructor() {
     super(...arguments);
     this.disabled = false;
@@ -18466,7 +22755,7 @@ class SideNavigationItemBase extends b$6 {
     this._groupDisabled = false;
   }
   onEnterDOM() {
-    if (f$g()) {
+    if (f$h()) {
       this.setAttribute("desktop", "");
     }
   }
@@ -18520,25 +22809,25 @@ class SideNavigationItemBase extends b$6 {
   }
 }
 __decorate$j([
-  s$7()
+  s$8()
 ], SideNavigationItemBase.prototype, "text", void 0);
 __decorate$j([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], SideNavigationItemBase.prototype, "disabled", void 0);
 __decorate$j([
-  s$7()
+  s$8()
 ], SideNavigationItemBase.prototype, "tooltip", void 0);
 __decorate$j([
-  s$7({ noAttribute: true })
+  s$8({ noAttribute: true })
 ], SideNavigationItemBase.prototype, "forcedTabIndex", void 0);
 __decorate$j([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], SideNavigationItemBase.prototype, "sideNavCollapsed", void 0);
 __decorate$j([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], SideNavigationItemBase.prototype, "inPopover", void 0);
 __decorate$j([
-  s$7({ type: Boolean, noAttribute: true })
+  s$8({ type: Boolean, noAttribute: true })
 ], SideNavigationItemBase.prototype, "_groupDisabled", void 0);
 const isInstanceOfSideNavigationItemBase = (object) => {
   return "isSideNavigationItemBase" in object;
@@ -18621,18 +22910,18 @@ let SideNavigationSelectableItemBase = class SideNavigationSelectableItemBase2 e
   _onkeydown(e2) {
     var _a2, _b2;
     const isRTL = this.effectiveDir === "rtl";
-    if (A$4(e2) || R$1(e2) || D$2(e2)) {
+    if (A$4(e2) || R$1(e2) || D$3(e2)) {
       e2.preventDefault();
     }
-    if (b$5(e2) || i$7(e2) || d$6(e2) || f$9(e2)) {
+    if (b$6(e2) || i$7(e2) || d$6(e2) || f$a(e2)) {
       if (!this.unselectable) {
         this._activate(e2);
       }
     }
-    if ((isRTL ? D$2(e2) : R$1(e2)) && this.sideNavCollapsed && this.hasSubItems) {
+    if ((isRTL ? D$3(e2) : R$1(e2)) && this.sideNavCollapsed && this.hasSubItems) {
       this._activate(e2);
     }
-    if ((isRTL ? R$1(e2) : D$2(e2)) && this.inPopover) {
+    if ((isRTL ? R$1(e2) : D$3(e2)) && this.inPopover) {
       (_b2 = (_a2 = this.associatedItem) == null ? void 0 : _a2.sideNavigation) == null ? void 0 : _b2.closePicker();
     }
   }
@@ -18681,34 +22970,34 @@ let SideNavigationSelectableItemBase = class SideNavigationSelectableItemBase2 e
   }
 };
 __decorate$i([
-  s$7({ type: Boolean, noAttribute: true })
+  s$8({ type: Boolean, noAttribute: true })
 ], SideNavigationSelectableItemBase.prototype, "_parentDisabled", void 0);
 __decorate$i([
-  s$7()
+  s$8()
 ], SideNavigationSelectableItemBase.prototype, "icon", void 0);
 __decorate$i([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], SideNavigationSelectableItemBase.prototype, "selected", void 0);
 __decorate$i([
-  s$7()
+  s$8()
 ], SideNavigationSelectableItemBase.prototype, "href", void 0);
 __decorate$i([
-  s$7()
+  s$8()
 ], SideNavigationSelectableItemBase.prototype, "target", void 0);
 __decorate$i([
-  s$7()
+  s$8()
 ], SideNavigationSelectableItemBase.prototype, "design", void 0);
 __decorate$i([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], SideNavigationSelectableItemBase.prototype, "unselectable", void 0);
 __decorate$i([
-  s$7({ type: Object })
+  s$8({ type: Object })
 ], SideNavigationSelectableItemBase.prototype, "accessibilityAttributes", void 0);
 __decorate$i([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], SideNavigationSelectableItemBase.prototype, "isOverflow", void 0);
 SideNavigationSelectableItemBase = __decorate$i([
-  l$d("click", {
+  l$e("click", {
     bubbles: true,
     cancelable: true
   }),
@@ -18897,7 +23186,7 @@ let SideNavigationItem = SideNavigationItem_1 = class SideNavigationItem2 extend
       super._onkeydown(e2);
       return;
     }
-    if (D$2(e2)) {
+    if (D$3(e2)) {
       e2.preventDefault();
       this.expanded = isRTL;
       return;
@@ -18917,7 +23206,7 @@ let SideNavigationItem = SideNavigationItem_1 = class SideNavigationItem2 extend
       this.expanded = true;
       return;
     }
-    if (b$5(e2)) {
+    if (b$6(e2)) {
       if (!this.inPopover && this.unselectable && !this.isExternalLink) {
         e2.preventDefault();
       }
@@ -18969,10 +23258,10 @@ let SideNavigationItem = SideNavigationItem_1 = class SideNavigationItem2 extend
   }
 };
 __decorate$h([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], SideNavigationItem.prototype, "expanded", void 0);
 __decorate$h([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], SideNavigationItem.prototype, "_fixed", void 0);
 __decorate$h([
   d$8({ type: HTMLElement, invalidateOnChildChange: true, "default": true })
@@ -19084,7 +23373,7 @@ let SideNavigationGroup = SideNavigationGroup_1 = class SideNavigationGroup2 ext
       e2.preventDefault();
     }
     const isRTL = this.effectiveDir === "rtl";
-    if (D$2(e2)) {
+    if (D$3(e2)) {
       e2.preventDefault();
       this.expanded = isRTL;
       return;
@@ -19121,7 +23410,7 @@ let SideNavigationGroup = SideNavigationGroup_1 = class SideNavigationGroup2 ext
   }
 };
 __decorate$g([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], SideNavigationGroup.prototype, "expanded", void 0);
 __decorate$g([
   d$8({ type: HTMLElement, invalidateOnChildChange: true, "default": true })
@@ -19157,7 +23446,7 @@ var __decorate$f = function(decorators, target, key, desc) {
 var NavigationMenu_1;
 let NavigationMenu = NavigationMenu_1 = class NavigationMenu2 extends Menu$1 {
   _itemMouseOver(e2) {
-    if (f$g()) {
+    if (f$h()) {
       const item = e2.target;
       this._startOpenTimeout(item);
     }
@@ -19288,7 +23577,7 @@ let NavigationMenuItem = NavigationMenuItem_1 = class NavigationMenuItem2 extend
     if (A$4(e2)) {
       e2.preventDefault();
     }
-    if (b$5(e2) || i$7(e2) || d$6(e2) || f$9(e2)) {
+    if (b$6(e2) || i$7(e2) || d$6(e2) || f$a(e2)) {
       this._activate(e2);
     }
     return Promise.resolve();
@@ -19312,13 +23601,13 @@ let NavigationMenuItem = NavigationMenuItem_1 = class NavigationMenuItem2 extend
   }
 };
 __decorate$e([
-  s$7()
+  s$8()
 ], NavigationMenuItem.prototype, "href", void 0);
 __decorate$e([
-  s$7()
+  s$8()
 ], NavigationMenuItem.prototype, "target", void 0);
 __decorate$e([
-  s$7()
+  s$8()
 ], NavigationMenuItem.prototype, "design", void 0);
 __decorate$e([
   i$9("@ui5/webcomponents-fiori")
@@ -19417,7 +23706,7 @@ var __decorate$c = function(decorators, target, key, desc) {
 };
 var SideNavigation_1;
 const PAGE_UP_DOWN_SIZE = 10;
-let SideNavigation = SideNavigation_1 = class SideNavigation2 extends b$6 {
+let SideNavigation = SideNavigation_1 = class SideNavigation2 extends b$7 {
   constructor() {
     super();
     this.collapsed = false;
@@ -19426,13 +23715,13 @@ let SideNavigation = SideNavigation_1 = class SideNavigation2 extends b$6 {
     this.isPhone = d$b();
     this._isOverflow = false;
     this.isTouchDevice = false;
-    this._flexibleItemNavigation = new f$1(this, {
+    this._flexibleItemNavigation = new f$2(this, {
       skipItemsSize: PAGE_UP_DOWN_SIZE,
       // PAGE_UP and PAGE_DOWN will skip trough 10 items
       navigationMode: r$3.Vertical,
       getItemsCallback: () => this.getEnabledFlexibleItems()
     });
-    this._fixedItemNavigation = new f$1(this, {
+    this._fixedItemNavigation = new f$2(this, {
       skipItemsSize: PAGE_UP_DOWN_SIZE,
       // PAGE_UP and PAGE_DOWN will skip trough 10 items
       navigationMode: r$3.Vertical,
@@ -19643,11 +23932,11 @@ let SideNavigation = SideNavigation_1 = class SideNavigation2 extends b$6 {
     }
   }
   onEnterDOM() {
-    f$5.register(this, this._handleResizeBound);
-    this.isTouchDevice = d$b() || a$f() && !m$c();
+    f$6.register(this, this._handleResizeBound);
+    this.isTouchDevice = d$b() || a$h() && !m$c();
   }
   onExitDOM() {
-    f$5.deregister(this, this._handleResizeBound);
+    f$6.deregister(this, this._handleResizeBound);
   }
   handleResize() {
     this._updateOverflowItems();
@@ -19819,10 +24108,10 @@ let SideNavigation = SideNavigation_1 = class SideNavigation2 extends b$6 {
   }
 };
 __decorate$c([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], SideNavigation.prototype, "collapsed", void 0);
 __decorate$c([
-  s$7()
+  s$8()
 ], SideNavigation.prototype, "accessibleName", void 0);
 __decorate$c([
   d$8({ type: HTMLElement, invalidateOnChildChange: true, "default": true })
@@ -19834,19 +24123,19 @@ __decorate$c([
   d$8()
 ], SideNavigation.prototype, "header", void 0);
 __decorate$c([
-  s$7({ type: Object })
+  s$8({ type: Object })
 ], SideNavigation.prototype, "_popoverContents", void 0);
 __decorate$c([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], SideNavigation.prototype, "inPopover", void 0);
 __decorate$c([
-  s$7({ type: Object })
+  s$8({ type: Object })
 ], SideNavigation.prototype, "_menuPopoverItems", void 0);
 __decorate$c([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], SideNavigation.prototype, "isPhone", void 0);
 __decorate$c([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], SideNavigation.prototype, "isTouchDevice", void 0);
 __decorate$c([
   i$9("@ui5/webcomponents-fiori")
@@ -19859,7 +24148,7 @@ SideNavigation = SideNavigation_1 = __decorate$c([
     template: SideNavigationTemplate,
     styles: [SideNavigationCss, SideNavigationPopoverCss]
   }),
-  l$d("selection-change", {
+  l$e("selection-change", {
     bubbles: true,
     cancelable: true
   })
@@ -19902,7 +24191,7 @@ var __decorate$b = function(decorators, target, key, desc) {
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 var TimelineItem_1;
-let TimelineItem = TimelineItem_1 = class TimelineItem2 extends b$6 {
+let TimelineItem = TimelineItem_1 = class TimelineItem2 extends b$7 {
   constructor() {
     super();
     this.nameClickable = false;
@@ -19958,55 +24247,55 @@ let TimelineItem = TimelineItem_1 = class TimelineItem2 extends b$6 {
   }
 };
 __decorate$b([
-  s$7()
+  s$8()
 ], TimelineItem.prototype, "icon", void 0);
 __decorate$b([
-  s$7()
+  s$8()
 ], TimelineItem.prototype, "name", void 0);
 __decorate$b([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], TimelineItem.prototype, "nameClickable", void 0);
 __decorate$b([
-  s$7()
+  s$8()
 ], TimelineItem.prototype, "titleText", void 0);
 __decorate$b([
-  s$7()
+  s$8()
 ], TimelineItem.prototype, "subtitleText", void 0);
 __decorate$b([
-  s$7()
+  s$8()
 ], TimelineItem.prototype, "state", void 0);
 __decorate$b([
   d$8({ type: HTMLElement, "default": true })
 ], TimelineItem.prototype, "content", void 0);
 __decorate$b([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], TimelineItem.prototype, "firstItemInTimeline", void 0);
 __decorate$b([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], TimelineItem.prototype, "isNextItemGroup", void 0);
 __decorate$b([
-  s$7({ noAttribute: true })
+  s$8({ noAttribute: true })
 ], TimelineItem.prototype, "forcedTabIndex", void 0);
 __decorate$b([
-  s$7()
+  s$8()
 ], TimelineItem.prototype, "layout", void 0);
 __decorate$b([
-  s$7({ noAttribute: true })
+  s$8({ noAttribute: true })
 ], TimelineItem.prototype, "forcedLineWidth", void 0);
 __decorate$b([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], TimelineItem.prototype, "hideBubble", void 0);
 __decorate$b([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], TimelineItem.prototype, "lastItem", void 0);
 __decorate$b([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], TimelineItem.prototype, "hidden", void 0);
 __decorate$b([
-  s$7({ noAttribute: true })
+  s$8({ noAttribute: true })
 ], TimelineItem.prototype, "effectiveRole", void 0);
 __decorate$b([
-  s$7({ type: Number })
+  s$8({ type: Number })
 ], TimelineItem.prototype, "positionInGroup", void 0);
 __decorate$b([
   i$9("@ui5/webcomponents-fiori")
@@ -20018,7 +24307,7 @@ TimelineItem = TimelineItem_1 = __decorate$b([
     styles: TimelineItemCss,
     template: TimelineItemTemplate
   }),
-  l$d("name-click", {
+  l$e("name-click", {
     bubbles: true
   })
 ], TimelineItem);
@@ -20039,12 +24328,6 @@ function moreRow() {
 function endRow() {
   return jsx("div", { tabindex: -1, "aria-hidden": "true", class: "ui5-timeline-end-marker", children: jsx("span", { tabindex: -1, "aria-hidden": "true", class: "ui5-timeline-end-marker" }) });
 }
-const o = (e2) => (t2, r3) => {
-  Object.defineProperty(t2, r3, { get() {
-    var _a2;
-    return (_a2 = this.shadowRoot) == null ? void 0 : _a2.querySelector(e2);
-  } });
-};
 const name$5 = "process";
 const pathData$5 = "M424 268q11-12 0-23l-98-126q-10-9-10-22.5T326 74q9-10 22.5-10T371 74l132 160q9 9 9 22.5t-9 22.5L373 439q-9 10-22 10t-23-10q-9-9-9-22.5t9-22.5zm-157 0q11-12 0-23l-98-126q-9-9-9-22.5t9-22.5q10-10 23-10t23 10l131 160q10 9 10 22.5T346 279L217 439q-10 10-23 10t-23-10q-9-9-9-22.5t9-22.5zm-160 0q5-5 5-11.5t-5-11.5L9 119q-9-9-9-22.5T9 74q10-10 23-10t23 10l131 160q10 9 10 22.5T186 279L57 439q-10 10-23 10t-23-10q-9-9-9-22.5t9-22.5z";
 const ltr$5 = false;
@@ -20094,7 +24377,7 @@ var Timeline_1;
 const SHORT_LINE_WIDTH = "ShortLineWidth";
 const LARGE_LINE_WIDTH = "LargeLineWidth";
 const GROWING_WITH_SCROLL_DEBOUNCE_RATE = 250;
-let Timeline = Timeline_1 = class Timeline2 extends b$6 {
+let Timeline = Timeline_1 = class Timeline2 extends b$7 {
   constructor() {
     super();
     this.layout = "Vertical";
@@ -20104,7 +24387,7 @@ let Timeline = Timeline_1 = class Timeline2 extends b$6 {
     this._loadMoreActive = false;
     this.timeLineEndObserved = false;
     this.initialIntersection = true;
-    this._itemNavigation = new f$1(this, {
+    this._itemNavigation = new f$2(this, {
       getItemsCallback: () => this._navigableItems
     });
   }
@@ -20136,7 +24419,7 @@ let Timeline = Timeline_1 = class Timeline2 extends b$6 {
   }
   async observeTimelineEnd() {
     if (!this.timeLineEndObserved) {
-      await f$h();
+      await f$i();
       this.getIntersectionObserver().observe(this.timelineEndMarker);
       this.timeLineEndObserved = true;
     }
@@ -20163,7 +24446,7 @@ let Timeline = Timeline_1 = class Timeline2 extends b$6 {
       return;
     }
     if (entries.some((entry) => entry.isIntersecting)) {
-      u3(this.loadMore.bind(this), GROWING_WITH_SCROLL_DEBOUNCE_RATE);
+      u$1(this.loadMore.bind(this), GROWING_WITH_SCROLL_DEBOUNCE_RATE);
     }
   }
   loadMore() {
@@ -20177,7 +24460,7 @@ let Timeline = Timeline_1 = class Timeline2 extends b$6 {
       e2.preventDefault();
       this._loadMoreActive = true;
     }
-    if (b$5(e2)) {
+    if (b$6(e2)) {
       this._onLoadMoreClick();
       this._loadMoreActive = true;
     }
@@ -20247,20 +24530,20 @@ let Timeline = Timeline_1 = class Timeline2 extends b$6 {
       e2.preventDefault();
       return;
     }
-    if (shouldHandleCustomArrowNavigation && (P$2(e2) || D$2(e2))) {
+    if (shouldHandleCustomArrowNavigation && (P$2(e2) || D$3(e2))) {
       this._handleUp(e2);
       e2.preventDefault();
       return;
     }
     if (ro(e2)) {
       e2.stopImmediatePropagation();
-      const activeElement = t$4();
+      const activeElement = t$5();
       const focusDomRef = this.getFocusDomRef();
       if (!focusDomRef) {
         return;
       }
       if (activeElement === focusDomRef) {
-        const firstFocusable = await b$1(focusDomRef);
+        const firstFocusable = await b$2(focusDomRef);
         firstFocusable == null ? void 0 : firstFocusable.focus();
       } else {
         const parentItem = (_a2 = e2.target) == null ? void 0 : _a2.closest("ui5-timeline-item");
@@ -20328,22 +24611,22 @@ let Timeline = Timeline_1 = class Timeline2 extends b$6 {
   }
 };
 __decorate$a([
-  s$7()
+  s$8()
 ], Timeline.prototype, "layout", void 0);
 __decorate$a([
-  s$7()
+  s$8()
 ], Timeline.prototype, "accessibleName", void 0);
 __decorate$a([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], Timeline.prototype, "loading", void 0);
 __decorate$a([
-  s$7({ type: Number })
+  s$8({ type: Number })
 ], Timeline.prototype, "loadingDelay", void 0);
 __decorate$a([
-  s$7()
+  s$8()
 ], Timeline.prototype, "growing", void 0);
 __decorate$a([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], Timeline.prototype, "_loadMoreActive", void 0);
 __decorate$a([
   d$8({ type: HTMLElement, individualSlots: true, "default": true })
@@ -20365,7 +24648,7 @@ Timeline = Timeline_1 = __decorate$a([
     styles: TimelineCss,
     template: TimelineTemplate
   }),
-  l$d("load-more", {
+  l$e("load-more", {
     bubbles: true
   })
 ], Timeline);
@@ -20379,7 +24662,7 @@ var __decorate$9 = function(decorators, target, key, desc) {
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
-let WizardStep = class WizardStep2 extends b$6 {
+let WizardStep = class WizardStep2 extends b$7 {
   constructor() {
     super(...arguments);
     this.disabled = false;
@@ -20388,22 +24671,22 @@ let WizardStep = class WizardStep2 extends b$6 {
   }
 };
 __decorate$9([
-  s$7()
+  s$8()
 ], WizardStep.prototype, "titleText", void 0);
 __decorate$9([
-  s$7()
+  s$8()
 ], WizardStep.prototype, "subtitleText", void 0);
 __decorate$9([
-  s$7()
+  s$8()
 ], WizardStep.prototype, "icon", void 0);
 __decorate$9([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], WizardStep.prototype, "disabled", void 0);
 __decorate$9([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], WizardStep.prototype, "selected", void 0);
 __decorate$9([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], WizardStep.prototype, "branching", void 0);
 WizardStep = __decorate$9([
   m$8("ui5-wizard-step")
@@ -20425,7 +24708,7 @@ var __decorate$8 = function(decorators, target, key, desc) {
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
-let WizardTab = class WizardTab2 extends b$6 {
+let WizardTab = class WizardTab2 extends b$7 {
   constructor() {
     super(...arguments);
     this.disabled = false;
@@ -20443,7 +24726,7 @@ let WizardTab = class WizardTab2 extends b$6 {
     if (this.disabled) {
       return;
     }
-    if ((A$4(e2) || b$5(e2)) && !K(e2)) {
+    if ((A$4(e2) || b$6(e2)) && !K(e2)) {
       e2.preventDefault();
       this.fireDecoratorEvent("selection-change-requested");
     }
@@ -20473,37 +24756,37 @@ let WizardTab = class WizardTab2 extends b$6 {
   }
 };
 __decorate$8([
-  s$7()
+  s$8()
 ], WizardTab.prototype, "icon", void 0);
 __decorate$8([
-  s$7()
+  s$8()
 ], WizardTab.prototype, "titleText", void 0);
 __decorate$8([
-  s$7()
+  s$8()
 ], WizardTab.prototype, "subtitleText", void 0);
 __decorate$8([
-  s$7()
+  s$8()
 ], WizardTab.prototype, "number", void 0);
 __decorate$8([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], WizardTab.prototype, "disabled", void 0);
 __decorate$8([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], WizardTab.prototype, "selected", void 0);
 __decorate$8([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], WizardTab.prototype, "hideSeparator", void 0);
 __decorate$8([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], WizardTab.prototype, "activeSeparator", void 0);
 __decorate$8([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], WizardTab.prototype, "branchingSeparator", void 0);
 __decorate$8([
-  s$7()
+  s$8()
 ], WizardTab.prototype, "forcedTabIndex", void 0);
 __decorate$8([
-  s$7({ type: Object })
+  s$8({ type: Object })
 ], WizardTab.prototype, "_wizardTabAccInfo", void 0);
 WizardTab = __decorate$8([
   m$8({
@@ -20512,10 +24795,10 @@ WizardTab = __decorate$8([
     styles: WizardTabCss,
     template: WizardTabTemplate
   }),
-  l$d("focused", {
+  l$e("focused", {
     bubbles: true
   }),
-  l$d("selection-change-requested", {
+  l$e("selection-change-requested", {
     bubbles: true
   })
 ], WizardTab);
@@ -20561,7 +24844,7 @@ const STEP_SWITCH_THRESHOLDS = {
   DEFAULT: 0.7,
   MAX: 1
 };
-let Wizard = Wizard_1 = class Wizard2 extends b$6 {
+let Wizard = Wizard_1 = class Wizard2 extends b$7 {
   constructor() {
     super();
     this.contentLayout = "MultipleSteps";
@@ -20574,7 +24857,7 @@ let Wizard = Wizard_1 = class Wizard2 extends b$6 {
     this._prevWidth = 0;
     this._prevContentHeight = 0;
     this.selectionRequestedByScroll = false;
-    this._itemNavigation = new f$1(this, {
+    this._itemNavigation = new f$2(this, {
       navigationMode: r$3.Auto,
       getItemsCallback: () => this.enabledStepsInHeaderDOM
     });
@@ -20691,7 +24974,7 @@ let Wizard = Wizard_1 = class Wizard2 extends b$6 {
       return;
     }
     if (this.contentLayout !== "SingleStep") {
-      u3(this.changeSelectionByScroll.bind(this, e2.target.scrollTop), Wizard_1.SCROLL_DEBOUNCE_RATE);
+      u$1(this.changeSelectionByScroll.bind(this, e2.target.scrollTop), Wizard_1.SCROLL_DEBOUNCE_RATE);
     }
   }
   /**
@@ -20719,13 +25002,13 @@ let Wizard = Wizard_1 = class Wizard2 extends b$6 {
   }
   attachStepsResizeObserver() {
     this.stepsDOM.forEach((stepDOM) => {
-      f$5.deregister(stepDOM, this._onStepResize);
-      f$5.register(stepDOM, this._onStepResize);
+      f$6.deregister(stepDOM, this._onStepResize);
+      f$6.register(stepDOM, this._onStepResize);
     });
   }
   detachStepsResizeObserver() {
     this.stepsDOM.forEach((stepDOM) => {
-      f$5.deregister(stepDOM, this._onStepResize);
+      f$6.deregister(stepDOM, this._onStepResize);
     });
   }
   /**
@@ -20865,7 +25148,7 @@ let Wizard = Wizard_1 = class Wizard2 extends b$6 {
     const bExpanded = stepInHeader.getAttribute(EXPANDED_STEP) === "true";
     const newlySelectedIndex = this.slottedSteps.indexOf(stepToSelect);
     const firstElementChild = stepToSelect.firstElementChild;
-    const firstFocusableElement = await b$1(firstElementChild);
+    const firstFocusableElement = await b$2(firstElementChild);
     if (firstFocusableElement) {
       firstFocusableElement.focus();
     }
@@ -21136,30 +25419,30 @@ let Wizard = Wizard_1 = class Wizard2 extends b$6 {
    * Sorter method for sorting an array in ascending order.
    * @private
    */
-  sortAscending(a2, b2) {
-    if (a2 < b2) {
+  sortAscending(a3, b2) {
+    if (a3 < b2) {
       return -1;
     }
-    if (a2 > b2) {
+    if (a3 > b2) {
       return 1;
     }
     return 0;
   }
 };
 __decorate$7([
-  s$7()
+  s$8()
 ], Wizard.prototype, "contentLayout", void 0);
 __decorate$7([
-  s$7({ type: Number })
+  s$8({ type: Number })
 ], Wizard.prototype, "width", void 0);
 __decorate$7([
-  s$7({ type: Number })
+  s$8({ type: Number })
 ], Wizard.prototype, "stepSwitchThreshold", void 0);
 __decorate$7([
-  s$7({ type: Number })
+  s$8({ type: Number })
 ], Wizard.prototype, "contentHeight", void 0);
 __decorate$7([
-  s$7({ type: Array })
+  s$8({ type: Array })
 ], Wizard.prototype, "_groupedTabs", void 0);
 __decorate$7([
   d$8({
@@ -21184,7 +25467,7 @@ Wizard = Wizard_1 = __decorate$7([
     ],
     template: WizardTemplate
   }),
-  l$d("step-change", {
+  l$e("step-change", {
     bubbles: true
   })
 ], Wizard);
@@ -21211,7 +25494,7 @@ var __decorate$6 = function(decorators, target, key, desc) {
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
-let Page = class Page2 extends b$6 {
+let Page = class Page2 extends b$7 {
   constructor() {
     super();
     this.backgroundDesign = "Solid";
@@ -21220,7 +25503,7 @@ let Page = class Page2 extends b$6 {
     this.hideFooter = false;
   }
   onEnterDOM() {
-    this.style.setProperty(d$g("--_ui5-page-animation-duration"), d$1() === u$i.None ? "0s" : "0.35s");
+    this.style.setProperty(d$g("--_ui5-page-animation-duration"), d$1() === u$j.None ? "0s" : "0.35s");
   }
   get _contentBottom() {
     return this.fixedFooter && !this.hideFooter ? "2.75rem" : "0";
@@ -21233,16 +25516,16 @@ let Page = class Page2 extends b$6 {
   }
 };
 __decorate$6([
-  s$7()
+  s$8()
 ], Page.prototype, "backgroundDesign", void 0);
 __decorate$6([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], Page.prototype, "noScrolling", void 0);
 __decorate$6([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], Page.prototype, "fixedFooter", void 0);
 __decorate$6([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], Page.prototype, "hideFooter", void 0);
 __decorate$6([
   d$8()
@@ -21299,10 +25582,10 @@ class NotificationListItemBase extends ListItemBase$1 {
     }
     if (ro(e2)) {
       e2.stopImmediatePropagation();
-      const activeElement = t$4();
+      const activeElement = t$5();
       const focusDomRef = this.getHeaderDomRef();
       if (activeElement === focusDomRef) {
-        const firstFocusable = await b$1(focusDomRef);
+        const firstFocusable = await b$2(focusDomRef);
         firstFocusable == null ? void 0 : firstFocusable.focus();
       } else {
         focusDomRef.focus();
@@ -21313,21 +25596,21 @@ class NotificationListItemBase extends ListItemBase$1 {
     return this.getFocusDomRef();
   }
   shouldForwardTabAfter() {
-    const aContent = b(this.getHeaderDomRef());
-    return aContent.length === 0 || aContent[aContent.length - 1] === t$4();
+    const aContent = b$1(this.getHeaderDomRef());
+    return aContent.length === 0 || aContent[aContent.length - 1] === t$5();
   }
 }
 __decorate$5([
-  s$7()
+  s$8()
 ], NotificationListItemBase.prototype, "titleText", void 0);
 __decorate$5([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], NotificationListItemBase.prototype, "read", void 0);
 __decorate$5([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], NotificationListItemBase.prototype, "loading", void 0);
 __decorate$5([
-  s$7({ type: Number })
+  s$8({ type: Number })
 ], NotificationListItemBase.prototype, "loadingDelay", void 0);
 __decorate$5([
   i$9("@ui5/webcomponents-fiori")
@@ -21481,7 +25764,7 @@ let NotificationListGroupItem = NotificationListGroupItem_1 = class Notification
     const space = A$4(e2);
     const plus = ao(e2);
     const minus = so(e2);
-    const left = D$2(e2);
+    const left = D$3(e2);
     const right = R$1(e2);
     if (space) {
       this.toggleCollapsed();
@@ -21505,10 +25788,10 @@ let NotificationListGroupItem = NotificationListGroupItem_1 = class Notification
   }
 };
 __decorate$3([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], NotificationListGroupItem.prototype, "collapsed", void 0);
 __decorate$3([
-  s$7()
+  s$8()
 ], NotificationListGroupItem.prototype, "growing", void 0);
 __decorate$3([
   d$8({ type: HTMLElement, "default": true })
@@ -21523,10 +25806,10 @@ NotificationListGroupItem = NotificationListGroupItem_1 = __decorate$3([
     ],
     template: NotificationListItemTemplate$1
   }),
-  l$d("toggle", {
+  l$e("toggle", {
     bubbles: true
   }),
-  l$d("load-more", {
+  l$e("load-more", {
     bubbles: true
   })
 ], NotificationListGroupItem);
@@ -21584,7 +25867,7 @@ let NotificationListInternal = class NotificationListInternal2 extends List {
   _handleHomeKey(e2) {
     e2.stopImmediatePropagation();
     const target = e2.target;
-    const activeElement = t$4();
+    const activeElement = t$5();
     if (!this._isGrowingButton(activeElement) && (target == null ? void 0 : target.hasAttribute("ui5-li-notification-group")) || (target == null ? void 0 : target.hasAttribute("ui5-menu-item"))) {
       return;
     }
@@ -21629,12 +25912,12 @@ let NotificationListInternal = class NotificationListInternal2 extends List {
     this._allNavigationItems[nextFocusedIndex].focus();
   }
   _focusSameItemOnNextRow(e2) {
-    if (!P$2(e2) && !_$1(e2) && !D$2(e2) && !R$1(e2)) {
+    if (!P$2(e2) && !_$1(e2) && !D$3(e2) && !R$1(e2)) {
       return;
     }
     const target = e2.target;
     const shadowTarget = target.shadowRoot.activeElement;
-    const activeElement = t$4();
+    const activeElement = t$5();
     const isGrowingBtn = this._isGrowingButton(activeElement);
     if (!target || target.hasAttribute("ui5-menu-item")) {
       return;
@@ -21646,7 +25929,7 @@ let NotificationListInternal = class NotificationListInternal2 extends List {
     e2.preventDefault();
     e2.stopImmediatePropagation();
     const currentItem = isGrowingBtn ? activeElement : this.getEnabledItems()[this._itemNavigation._currentIndex];
-    const index = this._allNavigationItems.indexOf(currentItem) + (P$2(e2) || D$2(e2) ? -1 : 1);
+    const index = this._allNavigationItems.indexOf(currentItem) + (P$2(e2) || D$3(e2) ? -1 : 1);
     const nextItem = this._allNavigationItems[index];
     if (!nextItem) {
       return;
@@ -21656,7 +25939,7 @@ let NotificationListInternal = class NotificationListInternal2 extends List {
       return;
     }
     const nextListItem = nextItem;
-    if (nextListItem.loading || (D$2(e2) || R$1(e2))) {
+    if (nextListItem.loading || (D$3(e2) || R$1(e2))) {
       nextItem.focus();
       return;
     }
@@ -21690,7 +25973,7 @@ var __decorate$1 = function(decorators, target, key, desc) {
   return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
 };
 var NotificationList_1;
-let NotificationList = NotificationList_1 = class NotificationList2 extends b$6 {
+let NotificationList = NotificationList_1 = class NotificationList2 extends b$7 {
   get _accessibleName() {
     return NotificationList_1.i18nFioriBundle.getText(NOTIFICATION_LIST_ACCESSIBLE_NAME);
   }
@@ -21728,7 +26011,7 @@ __decorate$1([
   d$8({ type: HTMLElement, "default": true })
 ], NotificationList.prototype, "items", void 0);
 __decorate$1([
-  s$7()
+  s$8()
 ], NotificationList.prototype, "noDataText", void 0);
 __decorate$1([
   i$9("@ui5/webcomponents-fiori")
@@ -21741,15 +26024,15 @@ NotificationList = NotificationList_1 = __decorate$1([
     styles: [NotificationListCss],
     template: NotificationListTemplate
   }),
-  l$d("item-click", {
+  l$e("item-click", {
     bubbles: true,
     cancelable: true
   }),
-  l$d("item-close", {
+  l$e("item-close", {
     bubbles: true,
     cancelable: true
   }),
-  l$d("item-toggle", {
+  l$e("item-toggle", {
     bubbles: true,
     cancelable: true
   })
@@ -21799,18 +26082,6 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents-fiori", "sap_horizon", async () => defaultTheme);
 const NotificationListItemCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:block;max-width:100%;min-height:var(--_ui5-v2-17-0_list_item_base_height);background:var(--ui5-v2-17-0-listitem-background-color);cursor:pointer}.ui5-nli-focusable:focus{outline:none}:host([desktop]) .ui5-nli-focusable:focus:not(.ui5-nli-group-root):after,.ui5-nli-focusable:focus-visible:not(.ui5-nli-group-root):after{content:"";border:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);position:absolute;inset:0;pointer-events:none}.ui5-state-icon{min-width:1rem;min-height:1rem;padding-inline-end:var(--_ui5-v2-17-0-notification_item-state-icon-padding)}:host(:not([wrapping-type="Normal"])) .ui5-nli-title-text{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}:host(:not([wrapping-type="Normal"])) .ui5-nli-description{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}:host([_show-more-pressed]) .ui5-nli-title-text{-webkit-line-clamp:unset}:host([_show-more-pressed]) .ui5-nli-description{-webkit-line-clamp:unset}:host([read]) .ui5-nli-title-text{font-weight:400}:host(:first-of-type){border-top-left-radius:var(--_ui5-v2-17-0-notification_item-border-radius);border-top-right-radius:var(--_ui5-v2-17-0-notification_item-border-radius)}:host(:last-of-type){border-bottom-left-radius:var(--_ui5-v2-17-0-notification_item-border-radius);border-bottom-right-radius:var(--_ui5-v2-17-0-notification_item-border-radius)}:host(:first-of-type) .ui5-nli-focusable:after{border-top-left-radius:var(--_ui5-v2-17-0-notification_item-border-radius);border-top-right-radius:var(--_ui5-v2-17-0-notification_item-border-radius)}:host(:last-of-type) .ui5-nli-focusable:after{border-bottom-left-radius:var(--_ui5-v2-17-0-notification_item-border-radius);border-bottom-right-radius:var(--_ui5-v2-17-0-notification_item-border-radius)}:host([has-border]){border-bottom:var(--_ui5-v2-17-0-notification_item-border-bottom)}:host([ui5-li-notification]){margin:var(--_ui5-v2-17-0-notification_item-margin);border-left:var(--_ui5-v2-17-0-notification_item-border-top-left-right);border-right:var(--_ui5-v2-17-0-notification_item-border-top-left-right);border-top:var(--_ui5-v2-17-0-notification_item-border-top-left-right);border-radius:var(--_ui5-v2-17-0-notification_item-border-radius);list-style:none}.ui5-nli-root{position:relative;width:100%;box-sizing:border-box;cursor:pointer;border-radius:var(--_ui5-v2-17-0-notification_item-border-radius);border:1px solid transparent}.ui5-nli-root:hover{background-color:var(--_ui5-v2-17-0-notification_item-background-color-hover);border-radius:var(--_ui5-v2-17-0-notification_item-border-radius)}:host([desktop]) .ui5-nli-root:focus:active,.ui5-nli-root:focus-visible:active{background-color:var(--_ui5-v2-17-0-notification_item-background-color-active);border-radius:var(--_ui5-v2-17-0-notification_item-border-radius);border:var(--_ui5-v2-17-0-notification_item-border-active)}.ui5-nli-content-wrapper{width:100%;display:flex;flex-direction:row-reverse;padding-inline:var(--_ui5-v2-17-0-notification_item-root-padding-inline);padding-block:1rem;position:relative;box-sizing:border-box}.ui5-nli-content{display:flex;flex-direction:column;flex:1;min-width:0;width:100%;padding-inline:var(--_ui5-v2-17-0-notification_item-content-padding);font-family:var(--sapFontFamily);box-sizing:border-box}.ui5-nli-content.ui5-nli-content-with-importance{margin-bottom:2rem}.ui5-nli-actions{position:absolute;top:.5rem;right:.5rem}:dir(rtl) .ui5-nli-actions{left:.5rem;right:auto}.ui5-nli-title-text-wrapper{display:flex;flex-direction:row}.ui5-nli-title-text{display:flex;margin-bottom:var(--_ui5-v2-17-0-notification_item-title-margin-bottom);box-sizing:border-box;color:var(--sapGroup_TitleTextColor);font-weight:700;font-size:var(--sapFontHeader6Size)}.ui5-nli-two-buttons .ui5-nli-title-text{padding-inline-end:var(--_ui5-v2-17-0-notification_item-title-padding-end-two-buttons)}.ui5-nli-one-button .ui5-nli-title-text{padding-inline-end:var(--_ui5-v2-17-0-notification_item-title-padding-end-one-button)}.ui5-nli-description{display:flex;margin-top:var(--_ui5-v2-17-0-notification_item-description-margin-top);color:var(--sapTextColor);font-size:var(--sapFontSize);box-sizing:border-box}.ui5-nli-footer{display:flex;color:var(--sapContent_LabelColor);font-size:var(--sapFontSize);margin-top:var(--_ui5-v2-17-0-notification_item-footer-margin-top);box-sizing:border-box;align-items:center}.ui5-nli-footer-divider{position:relative;align-items:center;margin-inline:.5rem}.ui5-nli-footnotes{display:flex;min-width:0}.ui5-nli-footer-showMore{margin-inline-start:1rem}.ui5-nli-importance{width:fit-content;position:absolute;bottom:1rem}::slotted([slot^="footnotes"]){color:var(--sapContent_LabelColor);font-size:var(--sapFontSize);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.ui5-nli-menu-btn{margin-inline-end:.125rem}:host([desktop]) .ui5-nli-focusable:not(.ui5-nli-group-root):focus:after,.ui5-nli-focusable:not(.ui5-nli-group-root):focus-visible:after{border-radius:var(--_ui5-v2-17-0-notification_item-border-radius);top:var(--_ui5-v2-17-0-notification_item-focus-offset);right:var(--_ui5-v2-17-0-notification_item-focus-offset);bottom:var(--_ui5-v2-17-0-notification_item-focus-offset);left:var(--_ui5-v2-17-0-notification_item-focus-offset)}[ui5-busy-indicator]{width:100%;border-radius:var(--_ui5-v2-17-0-notification_item-border-radius)}
 `;
-var IconDesign;
-(function(IconDesign2) {
-  IconDesign2["Contrast"] = "Contrast";
-  IconDesign2["Critical"] = "Critical";
-  IconDesign2["Default"] = "Default";
-  IconDesign2["Information"] = "Information";
-  IconDesign2["Negative"] = "Negative";
-  IconDesign2["Neutral"] = "Neutral";
-  IconDesign2["NonInteractive"] = "NonInteractive";
-  IconDesign2["Positive"] = "Positive";
-})(IconDesign || (IconDesign = {}));
-const IconDesign$1 = IconDesign;
 var __decorate = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
@@ -21847,16 +26118,16 @@ let NotificationListItem = NotificationListItem_1 = class NotificationListItem2 
   }
   onEnterDOM() {
     super.onEnterDOM();
-    f$5.register(this, this._onResizeBound);
+    f$6.register(this, this._onResizeBound);
   }
   onExitDOM() {
-    f$5.deregister(this, this._onResizeBound);
+    f$6.deregister(this, this._onResizeBound);
   }
   get hasState() {
     return this.state !== o$5.None;
   }
   get hasDesc() {
-    return t$7(this.description);
+    return t$8(this.description);
   }
   get hasImportance() {
     return this.importance !== NotificationListItemImportance$1.Standard;
@@ -22076,22 +26347,22 @@ let NotificationListItem = NotificationListItem_1 = class NotificationListItem2 
   }
 };
 __decorate([
-  s$7()
+  s$8()
 ], NotificationListItem.prototype, "wrappingType", void 0);
 __decorate([
-  s$7()
+  s$8()
 ], NotificationListItem.prototype, "state", void 0);
 __decorate([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], NotificationListItem.prototype, "showClose", void 0);
 __decorate([
-  s$7()
+  s$8()
 ], NotificationListItem.prototype, "importance", void 0);
 __decorate([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], NotificationListItem.prototype, "_showMorePressed", void 0);
 __decorate([
-  s$7({ type: Boolean })
+  s$8({ type: Boolean })
 ], NotificationListItem.prototype, "_showMore", void 0);
 __decorate([
   d$8()
@@ -22124,11 +26395,11 @@ NotificationListItem = NotificationListItem_1 = __decorate([
     renderer: y$5,
     template: NotificationListItemTemplate
   }),
-  l$d("_press", {
+  l$e("_press", {
     bubbles: true
   }),
-  l$d("close"),
-  l$d("_close", {
+  l$e("close"),
+  l$e("_close", {
     bubbles: true
   })
 ], NotificationListItem);

@@ -3,16 +3,16 @@
  * A Lovelace card that displays a UI5 ProgressIndicator component
  */
 
-import { BaseUI5Card } from "./base-card";
-import type { UI5ProgressCardConfig } from "../types";
+import { BaseUI5Card } from "../shared/base-card";
+import type { UI5ProgressCardConfig } from "../../types";
 import {
   stateToNumber,
   clamp,
   formatNumber,
   formatEntityValue,
   getEntity,
-} from "../utils/ha-helpers";
-import "../ui5-loader";
+} from "../../utils/ha-helpers";
+import "../../ui5-loader";
 
 export class UI5ProgressCard extends BaseUI5Card {
   setConfig(config: UI5ProgressCardConfig): void {

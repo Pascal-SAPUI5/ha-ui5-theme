@@ -64,6 +64,21 @@ import "@ui5/webcomponents/dist/ListItemStandard.js";
 import "@ui5/webcomponents/dist/ListItemCustom.js";
 import "@ui5/webcomponents/dist/ListItemGroup.js";
 
+// Table components
+import "@ui5/webcomponents/dist/Table.js";
+import "@ui5/webcomponents/dist/TableHeaderRow.js";
+import "@ui5/webcomponents/dist/TableHeaderCell.js";
+import "@ui5/webcomponents/dist/TableRow.js";
+import "@ui5/webcomponents/dist/TableCell.js";
+
+// Panel component
+import "@ui5/webcomponents/dist/Panel.js";
+
+// Tab components
+import "@ui5/webcomponents/dist/TabContainer.js";
+import "@ui5/webcomponents/dist/Tab.js";
+import "@ui5/webcomponents/dist/TabSeparator.js";
+
 // ==================== Theme Configuration ====================
 
 import { setTheme } from "@ui5/webcomponents-base/dist/config/Theme.js";

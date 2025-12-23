@@ -3,9 +3,9 @@
  * A Lovelace card that can render any UI5 element with properties and slots
  */
 
-import { BaseUI5Card } from "./base-card";
-import type { UI5ElementCardConfig } from "../types";
-import { ensureFiori } from "../ui5-loader";
+import { BaseUI5Card } from "../shared/base-card";
+import type { UI5ElementCardConfig } from "../../types";
+import { ensureFiori } from "../../ui5-loader";
 
 /**
  * Whitelist of allowed UI5 element names

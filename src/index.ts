@@ -9,19 +9,23 @@
 import "./ui5-loader";
 import { initUI5Theme, waitForUI5Ready } from "./ui5-loader";
 
-// Import all cards
-import "./cards/ui5-button-card";
-import "./cards/ui5-switch-card";
-import "./cards/ui5-slider-card";
-import "./cards/ui5-progress-card";
-import "./cards/ui5-shellbar-card";
-import "./cards/ui5-sidenav-card";
-import "./cards/ui5-timeline-card";
-import "./cards/ui5-wizard-card";
-import "./cards/ui5-notification-list-card";
-import "./cards/ui5-page-card";
-import "./cards/ui5-element-card";
-import "./cards/ui5-list-card";
+// Import all components
+import "./components/Button/Button";
+import "./components/Switch/Switch";
+import "./components/Slider/Slider";
+import "./components/Progress/Progress";
+import "./components/ShellBar/ShellBar";
+import "./components/SideNavigation/SideNavigation";
+import "./components/Timeline/Timeline";
+import "./components/Wizard/Wizard";
+import "./components/NotificationList/NotificationList";
+import "./components/Page/Page";
+import "./components/Element/Element";
+import "./components/List/List";
+import "./components/Table/Table";
+import "./components/Card/Card";
+import "./components/Panel/Panel";
+import "./components/Tabs/Tabs";
 
 // Card registration information
 const CARD_DEFINITIONS = [
@@ -99,6 +103,30 @@ const CARD_DEFINITIONS = [
     type: "custom:ui5-list-card",
     name: "UI5 List Card",
     description: "Display entities in a list with state indicators and grouping",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-table-card",
+    name: "UI5 Table Card",
+    description: "Display entities in a table with configurable columns",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-card-card",
+    name: "UI5 Card Card",
+    description: "A styled card container with header and entity display",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-panel-card",
+    name: "UI5 Panel Card",
+    description: "A collapsible panel for grouping entities",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-tabs-card",
+    name: "UI5 Tabs Card",
+    description: "Tabbed container for organizing entities by category",
     preview: true,
   },
 ];

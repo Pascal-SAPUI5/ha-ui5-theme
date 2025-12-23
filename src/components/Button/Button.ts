@@ -3,9 +3,9 @@
  * A Lovelace card that displays a UI5 Button component
  */
 
-import { BaseUI5Card } from "./base-card";
-import type { UI5ButtonCardConfig } from "../types";
-import "../ui5-loader";
+import { BaseUI5Card } from "../shared/base-card";
+import type { UI5ButtonCardConfig } from "../../types";
+import "../../ui5-loader";
 
 export class UI5ButtonCard extends BaseUI5Card {
   setConfig(config: UI5ButtonCardConfig): void {

@@ -3,8 +3,8 @@
  * A Lovelace card that displays a UI5 Slider component
  */
 
-import { BaseUI5Card } from "./base-card";
-import type { UI5SliderCardConfig } from "../types";
+import { BaseUI5Card } from "../shared/base-card";
+import type { UI5SliderCardConfig } from "../../types";
 import {
   stateToNumber,
   clamp,
@@ -13,8 +13,8 @@ import {
   formatEntityValue,
   getEntity,
   calculatePrecisionFromStep,
-} from "../utils/ha-helpers";
-import "../ui5-loader";
+} from "../../utils/ha-helpers";
+import "../../ui5-loader";
 
 export class UI5SliderCard extends BaseUI5Card {
   // AbortController for managing event listeners lifecycle

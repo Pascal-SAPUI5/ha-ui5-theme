@@ -271,6 +271,59 @@ export interface UI5ListCardConfig extends BaseCardConfig {
   group_by?: "domain" | "area" | "none";
 }
 
+export interface UI5TableCardConfig extends BaseCardConfig {
+  type: "custom:ui5-table-card";
+  title?: string;
+  columns?: Array<{
+    header: string;
+    field?: string;
+    width?: string;
+  }>;
+  entities?: string[];
+  rows?: Array<{
+    cells: string[];
+    entity?: string;
+  }>;
+  show_header?: boolean;
+  sticky_column_header?: boolean;
+  no_data_text?: string;
+}
+
+export interface UI5CardCardConfig extends BaseCardConfig {
+  type: "custom:ui5-card-card";
+  title?: string;
+  subtitle?: string;
+  status?: string;
+  header_interactive?: boolean;
+  content?: string;
+  show_entity_state?: boolean;
+}
+
+export interface UI5PanelCardConfig extends BaseCardConfig {
+  type: "custom:ui5-panel-card";
+  header_text?: string;
+  collapsed?: boolean;
+  fixed?: boolean;
+  accessible_role?: "Form" | "Region" | "Complementary";
+  content?: string;
+  entities?: string[];
+}
+
+export interface UI5TabsCardConfig extends BaseCardConfig {
+  type: "custom:ui5-tabs-card";
+  tabs?: Array<{
+    text: string;
+    icon?: string;
+    disabled?: boolean;
+    selected?: boolean;
+    content?: string;
+    entities?: string[];
+  }>;
+  tab_layout?: "Inline" | "Standard";
+  tabs_overflow_mode?: "End" | "StartAndEnd";
+  collapsed?: boolean;
+}
+
 export type UI5CardConfig =
   | UI5ButtonCardConfig
   | UI5SwitchCardConfig
@@ -283,7 +336,11 @@ export type UI5CardConfig =
   | UI5NotificationListCardConfig
   | UI5PageCardConfig
   | UI5ElementCardConfig
-  | UI5ListCardConfig;
+  | UI5ListCardConfig
+  | UI5TableCardConfig
+  | UI5CardCardConfig
+  | UI5PanelCardConfig
+  | UI5TabsCardConfig;
 
 // ==================== Card Registration ====================
 
@@ -327,5 +384,9 @@ declare global {
     "ui5-page-card": LovelaceCard;
     "ui5-element-card": LovelaceCard;
     "ui5-list-card": LovelaceCard;
+    "ui5-table-card": LovelaceCard;
+    "ui5-card-card": LovelaceCard;
+    "ui5-panel-card": LovelaceCard;
+    "ui5-tabs-card": LovelaceCard;
   }
 }

@@ -3,10 +3,10 @@
  * A Lovelace card that displays a UI5 Switch component
  */
 
-import { BaseUI5Card } from "./base-card";
-import type { UI5SwitchCardConfig } from "../types";
-import { isEntityOn } from "../utils/ha-helpers";
-import "../ui5-loader";
+import { BaseUI5Card } from "../shared/base-card";
+import type { UI5SwitchCardConfig } from "../../types";
+import { isEntityOn } from "../../utils/ha-helpers";
+import "../../ui5-loader";
 
 export class UI5SwitchCard extends BaseUI5Card {
   setConfig(config: UI5SwitchCardConfig): void {

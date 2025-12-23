@@ -8,9 +8,9 @@ import type {
   BaseCardConfig,
   ActionConfig,
   LovelaceCard,
-} from "../types";
-import { handleAction } from "../utils/action-handler";
-import { processTemplate, escapeHtml } from "../utils/template-processor";
+} from "../../types";
+import { handleAction } from "../../utils/action-handler";
+import { processTemplate, escapeHtml } from "../../utils/template-processor";
 
 export abstract class BaseUI5Card extends HTMLElement implements LovelaceCard {
   protected _hass?: HomeAssistant;

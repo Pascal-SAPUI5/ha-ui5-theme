@@ -4,9 +4,9 @@
  * Can show entity state changes or custom timeline items
  */
 
-import { BaseUI5Card } from "./base-card";
-import type { UI5TimelineCardConfig, HassEntity } from "../types";
-import { ensureFiori } from "../ui5-loader";
+import { BaseUI5Card } from "../shared/base-card";
+import type { UI5TimelineCardConfig, HassEntity } from "../../types";
+import { ensureFiori } from "../../ui5-loader";
 
 interface TimelineEntry {
   title: string;
@@ -46,8 +46,8 @@ export class UI5TimelineCard extends BaseUI5Card {
    * Check if any monitored entity state has changed
    */
   protected hasEntityStateChanged(
-    oldHass: import("../types").HomeAssistant,
-    newHass: import("../types").HomeAssistant,
+    oldHass: import("../../types").HomeAssistant,
+    newHass: import("../../types").HomeAssistant,
   ): boolean {
     // Check main entity
     if (super.hasEntityStateChanged(oldHass, newHass)) {

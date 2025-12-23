@@ -3,9 +3,9 @@
  * A Lovelace card that displays a UI5 ShellBar component
  */
 
-import { BaseUI5Card } from "./base-card";
-import type { UI5ShellBarCardConfig } from "../types";
-import { ensureFiori } from "../ui5-loader";
+import { BaseUI5Card } from "../shared/base-card";
+import type { UI5ShellBarCardConfig } from "../../types";
+import { ensureFiori } from "../../ui5-loader";
 
 export class UI5ShellBarCard extends BaseUI5Card {
   async connectedCallback(): Promise<void> {
