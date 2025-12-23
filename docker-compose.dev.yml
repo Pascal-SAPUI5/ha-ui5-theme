@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  homeassistant:
+    container_name: ha-dev
+    image: ghcr.io/home-assistant/home-assistant:stable
+    volumes:
+      - ./ha-config:/config
+      - ./dist:/config/www/ui5-components:ro
+    environment:
+      - TZ=Europe/Berlin
+    network_mode: host
+    restart: unless-stopped

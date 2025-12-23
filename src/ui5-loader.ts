@@ -51,12 +51,52 @@ import "@ui5/webcomponents-icons/dist/action.js";
 import "@ui5/webcomponents/dist/Input.js";
 import "@ui5/webcomponents/dist/Select.js";
 import "@ui5/webcomponents/dist/Option.js";
+import "@ui5/webcomponents/dist/DatePicker.js";
+import "@ui5/webcomponents/dist/TimePicker.js";
 
 // Display components
 import "@ui5/webcomponents/dist/Card.js";
 import "@ui5/webcomponents/dist/CardHeader.js";
 import "@ui5/webcomponents/dist/Tag.js";
 import "@ui5/webcomponents/dist/MessageStrip.js";
+import "@ui5/webcomponents/dist/Toast.js";
+
+// Dialog and Popover components
+import "@ui5/webcomponents/dist/Dialog.js";
+import "@ui5/webcomponents/dist/Popover.js";
+
+// Menu components
+import "@ui5/webcomponents/dist/Menu.js";
+import "@ui5/webcomponents/dist/MenuItem.js";
+
+// List components
+import "@ui5/webcomponents/dist/List.js";
+import "@ui5/webcomponents/dist/ListItemStandard.js";
+import "@ui5/webcomponents/dist/ListItemCustom.js";
+import "@ui5/webcomponents/dist/ListItemGroup.js";
+
+// Table components
+import "@ui5/webcomponents/dist/Table.js";
+import "@ui5/webcomponents/dist/TableHeaderRow.js";
+import "@ui5/webcomponents/dist/TableHeaderCell.js";
+import "@ui5/webcomponents/dist/TableRow.js";
+import "@ui5/webcomponents/dist/TableCell.js";
+
+// Panel component
+import "@ui5/webcomponents/dist/Panel.js";
+
+// Tab components
+import "@ui5/webcomponents/dist/TabContainer.js";
+import "@ui5/webcomponents/dist/Tab.js";
+import "@ui5/webcomponents/dist/TabSeparator.js";
+
+// Bar component (header/footer bar)
+import "@ui5/webcomponents/dist/Bar.js";
+
+// ==================== AI Components (Experimental) ====================
+
+import "@ui5/webcomponents-ai/dist/PromptInput.js";
+import "@ui5/webcomponents-ai/dist/TextArea.js";
 
 // ==================== Theme Configuration ====================
 

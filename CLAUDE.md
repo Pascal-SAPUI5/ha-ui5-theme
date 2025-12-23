@@ -15,15 +15,27 @@ Home Assistant Custom Cards mit SAP UI5 Web Components. Jede Card muss:
 
 ```
 src/
-├── ui5-loader.ts       # HIER alle UI5 Imports (kritisch!)
-├── cards/
-│   ├── base-card.ts    # Abstract base - NICHT modifizieren ohne Review
-│   └── *.ts            # Konkrete Cards
+├── ui5-loader.ts           # HIER alle UI5 Imports (kritisch!)
+├── components/
+│   ├── shared/
+│   │   └── base-card.ts    # Abstract base - NICHT modifizieren ohne Review
+│   ├── Button/Button.ts    # UI5 Button Card
+│   ├── List/List.ts        # UI5 List Card
+│   └── ...                 # Weitere Cards (PascalCase)
+├── test/
+│   ├── setup.ts            # Test-Setup mit HA Mocks
+│   └── *.test.ts           # ALLE Tests hier (NICHT in Components!)
 ├── utils/
 │   ├── action-handler.ts
 │   └── template-processor.ts
-└── index.ts            # Card-Registrierung (CARD_DEFINITIONS Array)
+└── index.ts                # Card-Registrierung (CARD_DEFINITIONS Array)
 ```
+
+## Projekt-Regeln
+
+1. **Tests gehören nach `src/test/`** - NIEMALS Tests in Component-Ordnern!
+2. **Component-Struktur folgt UI5** - `src/components/{ComponentName}/{ComponentName}.ts`
+3. **PascalCase für Ordner** - Button, Switch, List (wie UI5 Web Components)
 
 ## Workflow-Befehle
 

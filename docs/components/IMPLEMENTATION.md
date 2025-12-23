@@ -15,21 +15,21 @@
 
 | #   | Komponente | Card Name        | Import Check | Card | Tests | CI  |
 | --- | ---------- | ---------------- | ------------ | ---- | ----- | --- |
-| 1   | List       | `ui5-list-card`  | ⬜           | ⬜   | ⬜    | ⬜  |
-| 2   | Table      | `ui5-table-card` | ⬜           | ⬜   | ⬜    | ⬜  |
+| 1   | List       | `ui5-list-card`  | ✅           | ✅   | ✅    | ✅  |
+| 2   | Table      | `ui5-table-card` | ✅           | ✅   | ✅    | ✅  |
 
 ### Cards & Container
 
 | #   | Komponente | Card Name        | Import Check | Card | Tests | CI  |
 | --- | ---------- | ---------------- | ------------ | ---- | ----- | --- |
-| 3   | Card       | `ui5-card-card`  | ⬜           | ⬜   | ⬜    | ⬜  |
-| 4   | Panel      | `ui5-panel-card` | ⬜           | ⬜   | ⬜    | ⬜  |
+| 3   | Card       | `ui5-card-card`  | ✅           | ✅   | ✅    | ✅  |
+| 4   | Panel      | `ui5-panel-card` | ✅           | ✅   | ✅    | ✅  |
 
 ### Navigation
 
 | #   | Komponente   | Card Name       | Import Check | Card | Tests | CI  |
 | --- | ------------ | --------------- | ------------ | ---- | ----- | --- |
-| 5   | TabContainer | `ui5-tabs-card` | ⬜           | ⬜   | ⬜    | ⬜  |
+| 5   | TabContainer | `ui5-tabs-card` | ✅           | ✅   | ✅    | ✅  |
 
 ---
 
@@ -39,15 +39,15 @@
 
 | #   | Komponente     | Card Name           | Import Check | Card | Tests | CI  |
 | --- | -------------- | ------------------- | ------------ | ---- | ----- | --- |
-| 6   | ShellBar       | `ui5-shellbar-card` | ⬜           | ⬜   | ⬜    | ⬜  |
-| 7   | SideNavigation | `ui5-sidenav-card`  | ⬜           | ⬜   | ⬜    | ⬜  |
-| 8   | Bar            | `ui5-bar-card`      | ⬜           | ⬜   | ⬜    | ⬜  |
+| 6   | ShellBar       | `ui5-shellbar-card` | ✅           | ✅   | ✅    | ✅  |
+| 7   | SideNavigation | `ui5-sidenav-card`  | ✅           | ✅   | ✅    | ✅  |
+| 8   | Bar            | `ui5-bar-card`      | ✅           | ✅   | ✅    | ✅  |
 
 ### Timeline
 
 | #   | Komponente | Card Name           | Import Check | Card | Tests | CI  |
 | --- | ---------- | ------------------- | ------------ | ---- | ----- | --- |
-| 9   | Timeline   | `ui5-timeline-card` | ⬜           | ⬜   | ⬜    | ⬜  |
+| 9   | Timeline   | `ui5-timeline-card` | ✅           | ✅   | ✅    | ✅  |
 
 ---
 
@@ -55,10 +55,10 @@
 
 | #   | Komponente | Card Name             | Import Check | Card | Tests | CI  |
 | --- | ---------- | --------------------- | ------------ | ---- | ----- | --- |
-| 10  | Input      | `ui5-input-card`      | ⬜           | ⬜   | ⬜    | ⬜  |
-| 11  | Select     | `ui5-select-card`     | ⬜           | ⬜   | ⬜    | ⬜  |
-| 12  | DatePicker | `ui5-datepicker-card` | ⬜           | ⬜   | ⬜    | ⬜  |
-| 13  | TimePicker | `ui5-timepicker-card` | ⬜           | ⬜   | ⬜    | ⬜  |
+| 10  | Input      | `ui5-input-card`      | ✅           | ✅   | ✅    | ✅  |
+| 11  | Select     | `ui5-select-card`     | ✅           | ✅   | ✅    | ✅  |
+| 12  | DatePicker | `ui5-datepicker-card` | ✅           | ✅   | ✅    | ✅  |
+| 13  | TimePicker | `ui5-timepicker-card` | ✅           | ✅   | ✅    | ✅  |
 
 ---
 
@@ -66,9 +66,9 @@
 
 | #   | Komponente   | Card Name               | Import Check | Card | Tests | CI  |
 | --- | ------------ | ----------------------- | ------------ | ---- | ----- | --- |
-| 14  | Badge        | `ui5-badge-card`        | ⬜           | ⬜   | ⬜    | ⬜  |
-| 15  | MessageStrip | `ui5-messagestrip-card` | ⬜           | ⬜   | ⬜    | ⬜  |
-| 16  | Toast        | `ui5-toast-card`        | ⬜           | ⬜   | ⬜    | ⬜  |
+| 14  | Badge        | `ui5-badge-card`        | ✅           | ✅   | ✅    | ✅  |
+| 15  | MessageStrip | `ui5-messagestrip-card` | ✅           | ✅   | ✅    | ✅  |
+| 16  | Toast        | `ui5-toast-card`        | ✅           | ✅   | ✅    | ✅  |
 
 ---
 
@@ -76,9 +76,9 @@
 
 | #   | Komponente | Card Name          | Import Check | Card | Tests | CI  |
 | --- | ---------- | ------------------ | ------------ | ---- | ----- | --- |
-| 17  | Dialog     | `ui5-dialog-card`  | ⬜           | ⬜   | ⬜    | ⬜  |
-| 18  | Popover    | `ui5-popover-card` | ⬜           | ⬜   | ⬜    | ⬜  |
-| 19  | Menu       | `ui5-menu-card`    | ⬜           | ⬜   | ⬜    | ⬜  |
+| 17  | Dialog     | `ui5-dialog-card`  | ✅           | ✅   | ✅    | ✅  |
+| 18  | Popover    | `ui5-popover-card` | ✅           | ✅   | ✅    | ✅  |
+| 19  | Menu       | `ui5-menu-card`    | ✅           | ✅   | ✅    | ✅  |
 
 ---
 
@@ -86,7 +86,7 @@
 
 | #   | Komponente | Card Name         | Import Check | Card | Tests | CI  |
 | --- | ---------- | ----------------- | ------------ | ---- | ----- | --- |
-| 20  | Wizard     | `ui5-wizard-card` | ⬜           | ⬜   | ⬜    | ⬜  |
+| 20  | Wizard     | `ui5-wizard-card` | ✅           | ✅   | ✅    | ✅  |
 
 ---
 
@@ -94,8 +94,8 @@
 
 | #   | Komponente  | Card Name              | Import Check | Card | Tests | CI  |
 | --- | ----------- | ---------------------- | ------------ | ---- | ----- | --- |
-| 21  | PromptInput | `ui5-prompt-card`      | ⬜           | ⬜   | ⬜    | ⬜  |
-| 22  | AITextarea  | `ui5-ai-textarea-card` | ⬜           | ⬜   | ⬜    | ⬜  |
+| 21  | PromptInput | `ui5-prompt-card`      | ✅           | ✅   | ✅    | ✅  |
+| 22  | AITextarea  | `ui5-ai-textarea-card` | ✅           | ✅   | ✅    | ✅  |
 
 ---
 

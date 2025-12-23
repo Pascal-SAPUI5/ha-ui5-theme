@@ -249,6 +249,214 @@ export interface UI5ElementCardConfig extends BaseCardConfig {
   slot_content?: string;
 }
 
+export interface UI5ListCardConfig extends BaseCardConfig {
+  type: "custom:ui5-list-card";
+  title?: string;
+  mode?: "None" | "SingleSelect" | "SingleSelectBegin" | "SingleSelectEnd" | "MultiSelect" | "Delete";
+  header_text?: string;
+  footer_text?: string;
+  no_data_text?: string;
+  growing?: "None" | "Scroll" | "Button";
+  entities?: string[];
+  items?: Array<{
+    text: string;
+    description?: string;
+    icon?: string;
+    icon_end?: string;
+    additional_text?: string;
+    additional_text_state?: "None" | "Success" | "Warning" | "Error" | "Information";
+    type?: "Active" | "Inactive" | "Detail";
+    entity?: string;
+  }>;
+  group_by?: "domain" | "area" | "none";
+}
+
+export interface UI5TableCardConfig extends BaseCardConfig {
+  type: "custom:ui5-table-card";
+  title?: string;
+  columns?: Array<{
+    header: string;
+    field?: string;
+    width?: string;
+  }>;
+  entities?: string[];
+  rows?: Array<{
+    cells: string[];
+    entity?: string;
+  }>;
+  show_header?: boolean;
+  sticky_column_header?: boolean;
+  no_data_text?: string;
+}
+
+export interface UI5CardCardConfig extends BaseCardConfig {
+  type: "custom:ui5-card-card";
+  title?: string;
+  subtitle?: string;
+  status?: string;
+  header_interactive?: boolean;
+  content?: string;
+  show_entity_state?: boolean;
+}
+
+export interface UI5PanelCardConfig extends BaseCardConfig {
+  type: "custom:ui5-panel-card";
+  header_text?: string;
+  collapsed?: boolean;
+  fixed?: boolean;
+  accessible_role?: "Form" | "Region" | "Complementary";
+  content?: string;
+  entities?: string[];
+}
+
+export interface UI5TabsCardConfig extends BaseCardConfig {
+  type: "custom:ui5-tabs-card";
+  tabs?: Array<{
+    text: string;
+    icon?: string;
+    disabled?: boolean;
+    selected?: boolean;
+    content?: string;
+    entities?: string[];
+  }>;
+  tab_layout?: "Inline" | "Standard";
+  tabs_overflow_mode?: "End" | "StartAndEnd";
+  collapsed?: boolean;
+}
+
+export interface UI5BarCardConfig extends BaseCardConfig {
+  type: "custom:ui5-bar-card";
+  design?: "Header" | "Subheader" | "Footer" | "FloatingFooter";
+  start_content?: string;
+  middle_content?: string;
+  end_content?: string;
+  show_entity_state?: boolean;
+}
+
+export interface UI5InputCardConfig extends BaseCardConfig {
+  type: "custom:ui5-input-card";
+  placeholder?: string;
+  value_attribute?: string;
+  service?: string;
+  service_data?: Record<string, unknown>;
+  show_clear?: boolean;
+  input_type?: "Text" | "Email" | "Number" | "Password" | "Tel" | "URL";
+}
+
+export interface UI5SelectCardConfig extends BaseCardConfig {
+  type: "custom:ui5-select-card";
+  options?: Array<{
+    value: string;
+    label?: string;
+    icon?: string;
+  }>;
+  value_attribute?: string;
+  service?: string;
+  service_data?: Record<string, unknown>;
+}
+
+export interface UI5DatePickerCardConfig extends BaseCardConfig {
+  type: "custom:ui5-datepicker-card";
+  placeholder?: string;
+  format_pattern?: string;
+  min_date?: string;
+  max_date?: string;
+  value_attribute?: string;
+  service?: string;
+  service_data?: Record<string, unknown>;
+}
+
+export interface UI5TimePickerCardConfig extends BaseCardConfig {
+  type: "custom:ui5-timepicker-card";
+  placeholder?: string;
+  format_pattern?: string;
+  value_attribute?: string;
+  service?: string;
+  service_data?: Record<string, unknown>;
+}
+
+export interface UI5BadgeCardConfig extends BaseCardConfig {
+  type: "custom:ui5-badge-card";
+  text?: string;
+  design?: "Set1" | "Set2" | "Neutral" | "Information" | "Positive" | "Negative" | "Critical";
+  color_scheme?: string;
+  interactive?: boolean;
+}
+
+export interface UI5MessageStripCardConfig extends BaseCardConfig {
+  type: "custom:ui5-messagestrip-card";
+  text?: string;
+  design?: "Information" | "Positive" | "Negative" | "Critical";
+  hide_close_button?: boolean;
+  hide_icon?: boolean;
+}
+
+export interface UI5ToastCardConfig extends BaseCardConfig {
+  type: "custom:ui5-toast-card";
+  text?: string;
+  duration?: number;
+  placement?: "TopStart" | "TopCenter" | "TopEnd" | "MiddleStart" | "MiddleCenter" | "MiddleEnd" | "BottomStart" | "BottomCenter" | "BottomEnd";
+  trigger_entity?: string;
+  trigger_state?: string;
+}
+
+export interface UI5DialogCardConfig extends BaseCardConfig {
+  type: "custom:ui5-dialog-card";
+  header_text?: string;
+  state?: "None" | "Information" | "Success" | "Warning" | "Error";
+  content?: string;
+  draggable?: boolean;
+  resizable?: boolean;
+  stretch?: boolean;
+  button_text?: string;
+  show_close_button?: boolean;
+}
+
+export interface UI5PopoverCardConfig extends BaseCardConfig {
+  type: "custom:ui5-popover-card";
+  header_text?: string;
+  content?: string;
+  placement?: "Top" | "Bottom" | "Start" | "End";
+  horizontal_align?: "Center" | "Start" | "End" | "Stretch";
+  vertical_align?: "Center" | "Top" | "Bottom" | "Stretch";
+  button_text?: string;
+  show_arrow?: boolean;
+}
+
+export interface UI5MenuCardConfig extends BaseCardConfig {
+  type: "custom:ui5-menu-card";
+  button_text?: string;
+  items?: Array<{
+    text: string;
+    icon?: string;
+    disabled?: boolean;
+    starts_section?: boolean;
+    service?: string;
+    service_data?: Record<string, unknown>;
+  }>;
+}
+
+export interface UI5PromptCardConfig extends BaseCardConfig {
+  type: "custom:ui5-prompt-card";
+  placeholder?: string;
+  label?: string;
+  show_clear_icon?: boolean;
+  max_length?: number;
+  service?: string;
+  service_data?: Record<string, unknown>;
+}
+
+export interface UI5AITextareaCardConfig extends BaseCardConfig {
+  type: "custom:ui5-ai-textarea-card";
+  placeholder?: string;
+  rows?: number;
+  max_length?: number;
+  growing?: boolean;
+  growing_max_rows?: number;
+  service?: string;
+  service_data?: Record<string, unknown>;
+}
+
 export type UI5CardConfig =
   | UI5ButtonCardConfig
   | UI5SwitchCardConfig
@@ -260,7 +468,25 @@ export type UI5CardConfig =
   | UI5WizardCardConfig
   | UI5NotificationListCardConfig
   | UI5PageCardConfig
-  | UI5ElementCardConfig;
+  | UI5ElementCardConfig
+  | UI5ListCardConfig
+  | UI5TableCardConfig
+  | UI5CardCardConfig
+  | UI5PanelCardConfig
+  | UI5TabsCardConfig
+  | UI5BarCardConfig
+  | UI5InputCardConfig
+  | UI5SelectCardConfig
+  | UI5DatePickerCardConfig
+  | UI5TimePickerCardConfig
+  | UI5BadgeCardConfig
+  | UI5MessageStripCardConfig
+  | UI5ToastCardConfig
+  | UI5DialogCardConfig
+  | UI5PopoverCardConfig
+  | UI5MenuCardConfig
+  | UI5PromptCardConfig
+  | UI5AITextareaCardConfig;
 
 // ==================== Card Registration ====================
 
@@ -303,5 +529,23 @@ declare global {
     "ui5-notification-list-card": LovelaceCard;
     "ui5-page-card": LovelaceCard;
     "ui5-element-card": LovelaceCard;
+    "ui5-list-card": LovelaceCard;
+    "ui5-table-card": LovelaceCard;
+    "ui5-card-card": LovelaceCard;
+    "ui5-panel-card": LovelaceCard;
+    "ui5-tabs-card": LovelaceCard;
+    "ui5-bar-card": LovelaceCard;
+    "ui5-input-card": LovelaceCard;
+    "ui5-select-card": LovelaceCard;
+    "ui5-datepicker-card": LovelaceCard;
+    "ui5-timepicker-card": LovelaceCard;
+    "ui5-badge-card": LovelaceCard;
+    "ui5-messagestrip-card": LovelaceCard;
+    "ui5-toast-card": LovelaceCard;
+    "ui5-dialog-card": LovelaceCard;
+    "ui5-popover-card": LovelaceCard;
+    "ui5-menu-card": LovelaceCard;
+    "ui5-prompt-card": LovelaceCard;
+    "ui5-ai-textarea-card": LovelaceCard;
   }
 }
