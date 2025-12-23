@@ -1,7 +1,7 @@
 /**
  * UI5 Web Components Loader
  * Loads and initializes UI5 Web Components packages
- * 
+ *
  * OPTIMIZED: Only loads components that are actually used
  * Expected bundle size: ~300-500 KB (instead of 18 MB)
  */
@@ -174,7 +174,13 @@ export async function ensureFiori(): Promise<void> {
  * More granular than ensureFiori() for better code splitting
  */
 export async function loadFioriComponent(
-  component: "shellbar" | "sidenav" | "timeline" | "wizard" | "page" | "notifications"
+  component:
+    | "shellbar"
+    | "sidenav"
+    | "timeline"
+    | "wizard"
+    | "page"
+    | "notifications",
 ): Promise<void> {
   switch (component) {
     case "shellbar":

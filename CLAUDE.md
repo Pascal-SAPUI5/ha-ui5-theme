@@ -5,6 +5,7 @@
 ## Projektziel
 
 Home Assistant Custom Cards mit SAP UI5 Web Components. Jede Card muss:
+
 - Shadow DOM Isolation haben
 - Mit Home Assistant's `hass` Object arbeiten
 - Im Card Picker registriert sein
@@ -26,11 +27,11 @@ src/
 
 ## Workflow-Befehle
 
-| Befehl | Zweck | Wann nutzen |
-|--------|-------|-------------|
+| Befehl                          | Zweck                | Wann nutzen         |
+| ------------------------------- | -------------------- | ------------------- |
 | `/project:add-component <name>` | Neue Card hinzufügen | Neue UI5 Komponente |
-| `/project:validate` | Lint + Test + Build | Vor jedem Commit |
-| `/project:release <version>` | Tag + Release | Nach PR-Merge |
+| `/project:validate`             | Lint + Test + Build  | Vor jedem Commit    |
+| `/project:release <version>`    | Tag + Release        | Nach PR-Merge       |
 
 ## Qualitäts-Checkliste (Definition of Done)
 
@@ -70,9 +71,9 @@ import "@ui5/webcomponents-fiori/dist/Timeline.js";
 // Mock-Setup für jeden Test
 const mockHass: Partial<HomeAssistant> = {
   states: {
-    "light.test": { state: "on", attributes: { friendly_name: "Test" } }
+    "light.test": { state: "on", attributes: { friendly_name: "Test" } },
   },
-  callService: vi.fn()
+  callService: vi.fn(),
 };
 
 // Shadow DOM Zugriff
@@ -82,12 +83,12 @@ const ui5Element = shadowRoot.querySelector("ui5-button");
 
 ## Häufige Fehler
 
-| Problem | Ursache | Lösung |
-|---------|---------|--------|
-| `Cannot find module '@ui5/...'` | Falscher Import-Pfad | `ls node_modules/@ui5/...` prüfen |
-| Card erscheint nicht im Picker | Nicht in CARD_DEFINITIONS | `index.ts` prüfen |
-| Tests hängen | UI5 nicht initialisiert | `await waitForUI5Ready()` |
-| Style-Bleeding | Kein Shadow DOM | `this.attachShadow({ mode: "open" })` |
+| Problem                         | Ursache                   | Lösung                                |
+| ------------------------------- | ------------------------- | ------------------------------------- |
+| `Cannot find module '@ui5/...'` | Falscher Import-Pfad      | `ls node_modules/@ui5/...` prüfen     |
+| Card erscheint nicht im Picker  | Nicht in CARD_DEFINITIONS | `index.ts` prüfen                     |
+| Tests hängen                    | UI5 nicht initialisiert   | `await waitForUI5Ready()`             |
+| Style-Bleeding                  | Kein Shadow DOM           | `this.attachShadow({ mode: "open" })` |
 
 ## Agent-Zuständigkeiten
 

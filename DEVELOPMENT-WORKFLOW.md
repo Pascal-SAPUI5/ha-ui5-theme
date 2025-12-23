@@ -53,6 +53,7 @@ Nächste Komponente aus der Roadmap implementieren:
 ```
 
 **Was passiert:**
+
 1. Liest `docs/components/IMPLEMENTATION-CHECKLIST.md`
 2. Findet nächste `⬜` Komponente
 3. Führt `/project:add-component <name>` aus
@@ -70,6 +71,7 @@ Vollständiger Test-Zyklus:
 ```
 
 **Was passiert:**
+
 ```
 1. npm run lint          → ESLint
 2. npm run typecheck     → TypeScript
@@ -89,6 +91,7 @@ HACS-spezifische Validierung:
 ```
 
 **Was passiert:**
+
 ```
 1. Prüft hacs.json Konfiguration
 2. Prüft dist/ Output existiert
@@ -170,15 +173,15 @@ gh pr create --title "feat: ui5-list-card" --body "Closes #XX"
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    
+
     "test": "vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
-    
+
     "test:hacs": "node scripts/validate-hacs.js",
     "test:all": "npm run lint && npm run typecheck && npm test && npm run build && npm run test:hacs",
-    
+
     "validate": "npm run test:all",
     "release": "npm run validate && node scripts/release.js"
   }
@@ -194,27 +197,27 @@ Erstelle `scripts/validate-hacs.js`:
 ```javascript
 #!/usr/bin/env node
 
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-console.log('🔍 HACS Validation Starting...\n');
+console.log("🔍 HACS Validation Starting...\n");
 
 let errors = 0;
 let warnings = 0;
 
 // 1. Check hacs.json exists
-const hacsPath = path.join(__dirname, '..', 'hacs.json');
+const hacsPath = path.join(__dirname, "..", "hacs.json");
 if (!fs.existsSync(hacsPath)) {
-  console.error('❌ hacs.json not found');
+  console.error("❌ hacs.json not found");
   errors++;
 } else {
-  const hacs = JSON.parse(fs.readFileSync(hacsPath, 'utf8'));
-  console.log('✅ hacs.json found');
+  const hacs = JSON.parse(fs.readFileSync(hacsPath, "utf8"));
+  console.log("✅ hacs.json found");
   console.log(`   Name: ${hacs.name}`);
   console.log(`   Filename: ${hacs.filename}`);
-  
+
   // 2. Check dist file exists
-  const distPath = path.join(__dirname, '..', 'dist', hacs.filename);
+  const distPath = path.join(__dirname, "..", "dist", hacs.filename);
   if (!fs.existsSync(distPath)) {
     console.error(`❌ Dist file not found: dist/${hacs.filename}`);
     errors++;
@@ -222,43 +225,49 @@ if (!fs.existsSync(hacsPath)) {
     const stats = fs.statSync(distPath);
     const sizeKB = (stats.size / 1024).toFixed(2);
     console.log(`✅ Dist file exists: ${sizeKB} KB`);
-    
+
     // Warn if bundle is too large
     if (stats.size > 1024 * 1024) {
-      console.warn('⚠️  Bundle size > 1MB - consider code splitting');
+      console.warn("⚠️  Bundle size > 1MB - consider code splitting");
       warnings++;
     }
   }
 }
 
 // 3. Check README exists
-if (!fs.existsSync(path.join(__dirname, '..', 'README.md'))) {
-  console.error('❌ README.md not found (required for HACS)');
+if (!fs.existsSync(path.join(__dirname, "..", "README.md"))) {
+  console.error("❌ README.md not found (required for HACS)");
   errors++;
 } else {
-  console.log('✅ README.md found');
+  console.log("✅ README.md found");
 }
 
 // 4. Check version in package.json
-const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'package.json'), 'utf8'));
+const pkg = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "..", "package.json"), "utf8"),
+);
 console.log(`✅ Version: ${pkg.version}`);
 
 // 5. Check for required files
-const requiredFiles = ['LICENSE', 'hacs.json'];
-requiredFiles.forEach(file => {
-  if (!fs.existsSync(path.join(__dirname, '..', file))) {
+const requiredFiles = ["LICENSE", "hacs.json"];
+requiredFiles.forEach((file) => {
+  if (!fs.existsSync(path.join(__dirname, "..", file))) {
     console.error(`❌ ${file} not found`);
     errors++;
   }
 });
 
 // Summary
-console.log('\n' + '═'.repeat(50));
+console.log("\n" + "═".repeat(50));
 if (errors > 0) {
-  console.error(`\n❌ HACS Validation FAILED: ${errors} error(s), ${warnings} warning(s)`);
+  console.error(
+    `\n❌ HACS Validation FAILED: ${errors} error(s), ${warnings} warning(s)`,
+  );
   process.exit(1);
 } else {
-  console.log(`\n✅ HACS Validation PASSED${warnings > 0 ? ` (${warnings} warning(s))` : ''}`);
+  console.log(
+    `\n✅ HACS Validation PASSED${warnings > 0 ? ` (${warnings} warning(s))` : ""}`,
+  );
   process.exit(0);
 }
 ```
@@ -270,24 +279,19 @@ if (errors > 0) {
 Erstelle/Update `vitest.config.ts`:
 
 ```typescript
-import { defineConfig } from 'vitest/config';
+import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   test: {
-    environment: 'happy-dom',
+    environment: "happy-dom",
     globals: true,
-    include: ['src/**/*.test.ts'],
+    include: ["src/**/*.test.ts"],
     coverage: {
-      provider: 'v8',
-      reporter: ['text', 'json', 'html'],
-      exclude: [
-        'node_modules/',
-        'dist/',
-        '**/*.test.ts',
-        'scripts/',
-      ],
+      provider: "v8",
+      reporter: ["text", "json", "html"],
+      exclude: ["node_modules/", "dist/", "**/*.test.ts", "scripts/"],
     },
-    setupFiles: ['./src/test-setup.ts'],
+    setupFiles: ["./src/test-setup.ts"],
   },
 });
 ```
@@ -295,18 +299,18 @@ export default defineConfig({
 Erstelle `src/test-setup.ts`:
 
 ```typescript
-import { vi } from 'vitest';
+import { vi } from "vitest";
 
 // Mock Home Assistant globals
-Object.defineProperty(window, 'customCards', {
+Object.defineProperty(window, "customCards", {
   value: [],
   writable: true,
 });
 
 // Mock matchMedia for theme detection
-Object.defineProperty(window, 'matchMedia', {
+Object.defineProperty(window, "matchMedia", {
   writable: true,
-  value: vi.fn().mockImplementation(query => ({
+  value: vi.fn().mockImplementation((query) => ({
     matches: false,
     media: query,
     onchange: null,
@@ -327,27 +331,27 @@ export async function waitForElement(tagName: string): Promise<void> {
 export function createMockHass(overrides = {}): any {
   return {
     states: {
-      'light.test': {
-        entity_id: 'light.test',
-        state: 'on',
+      "light.test": {
+        entity_id: "light.test",
+        state: "on",
         attributes: {
-          friendly_name: 'Test Light',
+          friendly_name: "Test Light",
           brightness: 255,
         },
         last_changed: new Date().toISOString(),
         last_updated: new Date().toISOString(),
-        context: { id: 'test', parent_id: null, user_id: null },
+        context: { id: "test", parent_id: null, user_id: null },
       },
-      'sensor.temperature': {
-        entity_id: 'sensor.temperature',
-        state: '21.5',
+      "sensor.temperature": {
+        entity_id: "sensor.temperature",
+        state: "21.5",
         attributes: {
-          friendly_name: 'Temperature',
-          unit_of_measurement: '°C',
+          friendly_name: "Temperature",
+          unit_of_measurement: "°C",
         },
         last_changed: new Date().toISOString(),
         last_updated: new Date().toISOString(),
-        context: { id: 'test', parent_id: null, user_id: null },
+        context: { id: "test", parent_id: null, user_id: null },
       },
     },
     callService: vi.fn().mockResolvedValue(undefined),
@@ -357,7 +361,7 @@ export function createMockHass(overrides = {}): any {
 
 // Helper to wait for next tick
 export function tick(): Promise<void> {
-  return new Promise(resolve => setTimeout(resolve, 0));
+  return new Promise((resolve) => setTimeout(resolve, 0));
 }
 ```
 
@@ -379,34 +383,34 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
-      
+          node-version: "20"
+          cache: "npm"
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Lint
         run: npm run lint
-      
+
       - name: Type Check
         run: npm run typecheck
-      
+
       - name: Test
         run: npm test
-      
+
       - name: Build
         run: npm run build
-      
+
       - name: HACS Validation
         run: npm run test:hacs
-      
+
       - name: Upload coverage
         uses: codecov/codecov-action@v4
         if: github.event_name == 'push'
@@ -473,14 +477,14 @@ git branch --merged | grep -v main | xargs git branch -d
 
 ## Quick Reference
 
-| Befehl | Beschreibung |
-|--------|--------------|
-| `npm run validate` | Vollständiger CI-Check lokal |
-| `npm test -- --filter="card-name"` | Einzelne Card testen |
-| `npm run test:watch` | Tests im Watch-Modus |
-| `npm run test:hacs` | HACS Validation |
-| `gh pr create` | PR erstellen |
-| `gh pr merge --squash` | PR mergen |
+| Befehl                             | Beschreibung                 |
+| ---------------------------------- | ---------------------------- |
+| `npm run validate`                 | Vollständiger CI-Check lokal |
+| `npm test -- --filter="card-name"` | Einzelne Card testen         |
+| `npm run test:watch`               | Tests im Watch-Modus         |
+| `npm run test:hacs`                | HACS Validation              |
+| `gh pr create`                     | PR erstellen                 |
+| `gh pr merge --squash`             | PR mergen                    |
 
 ---
 

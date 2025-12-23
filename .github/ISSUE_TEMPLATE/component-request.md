@@ -9,24 +9,31 @@ assignees: []
 ## Component Information
 
 ### UI5 Component
+
 <!-- Name der UI5 Web Component -->
+
 **Name:** `ui5-[component]`
 
-**Package:** 
+**Package:**
+
 - [ ] `@ui5/webcomponents`
 - [ ] `@ui5/webcomponents-fiori`
 - [ ] `@ui5/webcomponents-ai`
 
-**Import Path:** 
+**Import Path:**
+
 ```typescript
 import "@ui5/webcomponents/dist/[Component].js";
 ```
 
 ### Verification
+
 <!-- Hast du geprüft ob die Komponente existiert? -->
+
 ```bash
 ls node_modules/@ui5/webcomponents/dist/ | grep -i [component]
 ```
+
 - [ ] Import-Pfad verifiziert
 
 ---
@@ -34,10 +41,11 @@ ls node_modules/@ui5/webcomponents/dist/ | grep -i [component]
 ## Home Assistant Use Case
 
 ### Beschreibung
+
 <!-- Wofür soll die Card in Home Assistant verwendet werden? -->
 
-
 ### Beispiel-Konfiguration
+
 ```yaml
 type: custom:ui5-[component]-card
 entity: sensor.example
@@ -46,15 +54,17 @@ name: "Example Card"
 ```
 
 ### Mockup / Screenshot
-<!-- Optional: Skizze oder Screenshot wie die Card aussehen soll -->
 
+<!-- Optional: Skizze oder Screenshot wie die Card aussehen soll -->
 
 ---
 
 ## Technical Requirements
 
 ### Entity Types
+
 <!-- Welche HA Entity-Typen soll die Card unterstützen? -->
+
 - [ ] `light.*`
 - [ ] `switch.*`
 - [ ] `sensor.*`
@@ -63,20 +73,24 @@ name: "Example Card"
 - [ ] `cover.*`
 - [ ] `media_player.*`
 - [ ] `vacuum.*`
-- [ ] Andere: ___
+- [ ] Andere: \_\_\_
 
 ### Actions
+
 <!-- Welche Actions soll die Card unterstützen? -->
+
 - [ ] `tap_action`
 - [ ] `hold_action`
 - [ ] `double_tap_action`
 
 ### Features
+
 <!-- Zusätzliche Features -->
+
 - [ ] Template Support (`{{ states('entity') }}`)
 - [ ] Theming (Dark/Light Mode)
 - [ ] Responsive Design
-- [ ] Andere: ___
+- [ ] Andere: \_\_\_
 
 ---
 
@@ -95,6 +109,7 @@ name: "Example Card"
 ---
 
 ## Additional Context
+
 <!-- Weitere Informationen, Links zur UI5 Dokumentation, etc. -->
 
 **UI5 Dokumentation:** https://sap.github.io/ui5-webcomponents/components/[Component]/

@@ -76,6 +76,7 @@ A generic card that can render any UI5 Web Component with custom properties and 
 ### HACS Installation
 
 1. **Add this repository to HACS:**
+
    - Open HACS in your Home Assistant
    - Click the three dots menu in the top right
    - Select "Custom repositories"
@@ -83,6 +84,7 @@ A generic card that can render any UI5 Web Component with custom properties and 
    - Select category: "Plugin"
 
 2. **Install the plugin:**
+
    - Find "UI5 Web Components Cards" in HACS
    - Click "Install"
    - Restart Home Assistant

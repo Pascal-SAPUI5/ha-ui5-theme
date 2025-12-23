@@ -98,6 +98,7 @@ ui5-webcomponents-ha/
 ### 1. Entry Point (`index.ts`)
 
 **Responsibilities:**
+
 - Initialize UI5 Web Components
 - Detect and apply HA theme (dark/light)
 - Register cards with `window.customCards`
@@ -106,14 +107,15 @@ ui5-webcomponents-ha/
 ```typescript
 // Simplified Flow
 async function init(): Promise<void> {
-  await waitForUI5Ready();           // 1. Wait for UI5
-  initUI5Theme(isDarkMode());        // 2. Apply theme
-  registerCards();                    // 3. Register with HA
-  window.dispatchEvent(new Event('ui5-ready'));  // 4. Signal ready
+  await waitForUI5Ready(); // 1. Wait for UI5
+  initUI5Theme(isDarkMode()); // 2. Apply theme
+  registerCards(); // 3. Register with HA
+  window.dispatchEvent(new Event("ui5-ready")); // 4. Signal ready
 }
 ```
 
 **Card Registration:**
+
 ```typescript
 const CARD_DEFINITIONS = [
   {
@@ -121,7 +123,7 @@ const CARD_DEFINITIONS = [
     name: "UI5 Button Card",
     description: "SAP UI5 styled button",
     preview: false,
-    documentationURL: "https://..."
+    documentationURL: "https://...",
   },
   // ... more cards
 ];
@@ -141,7 +143,7 @@ window.customCards.push(...CARD_DEFINITIONS);
 export abstract class BaseUI5Card extends HTMLElement {
   protected _hass?: HomeAssistant;
   protected _config?: CardConfig;
-  
+
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -159,7 +161,7 @@ export abstract class BaseUI5Card extends HTMLElement {
   set hass(hass: HomeAssistant) {
     const oldHass = this._hass;
     this._hass = hass;
-    
+
     if (this.hasEntityStateChanged(oldHass, hass)) {
       this.requestUpdate();
     }
@@ -172,6 +174,7 @@ export abstract class BaseUI5Card extends HTMLElement {
 ```
 
 **Lifecycle:**
+
 ```
 constructor()
     │
@@ -198,7 +201,13 @@ disconnectedCallback()  ← Element removed from DOM
 **Pattern:** Strategy Pattern
 
 ```typescript
-type ActionType = "toggle" | "more-info" | "call-service" | "navigate" | "url" | "none";
+type ActionType =
+  | "toggle"
+  | "more-info"
+  | "call-service"
+  | "navigate"
+  | "url"
+  | "none";
 
 interface ActionConfig {
   action: ActionType;
@@ -212,7 +221,7 @@ export function handleAction(
   element: HTMLElement,
   hass: HomeAssistant,
   config: ActionConfig,
-  entityId?: string
+  entityId?: string,
 ): void {
   switch (config.action) {
     case "toggle":
@@ -244,6 +253,7 @@ export function handleAction(
 **Pattern:** Interpreter Pattern
 
 **Supported Syntax:**
+
 ```
 {{ states('sensor.temperature') }}     → "21.5"
 {{ state_attr('light.x', 'brightness') }} → "255"
@@ -257,20 +267,20 @@ export function handleAction(
 export function processTemplate(
   template: string,
   hass: HomeAssistant,
-  entity?: HassEntity
+  entity?: HassEntity,
 ): string {
   let result = template;
 
   // Process states('entity_id')
   result = result.replace(
     /\{\{\s*states\(['"]([^'"]+)['"]\)\s*\}\}/g,
-    (_, entityId) => getEntityState(hass, entityId)
+    (_, entityId) => getEntityState(hass, entityId),
   );
 
   // Process state_attr('entity_id', 'attribute')
   result = result.replace(
     /\{\{\s*state_attr\(['"]([^'"]+)['"]\s*,\s*['"]([^'"]+)['"]\)\s*\}\}/g,
-    (_, entityId, attr) => getEntityAttribute(hass, entityId, attr)
+    (_, entityId, attr) => getEntityAttribute(hass, entityId, attr),
   );
 
   // ... more patterns
@@ -310,6 +320,7 @@ export async function waitForUI5Ready(): Promise<void> {
 ```
 
 **Import Rules:**
+
 1. ✅ Always verify path exists: `ls node_modules/@ui5/.../dist/`
 2. ✅ Use side-effect imports only: `import "..."`
 3. ❌ Never import classes directly in cards
@@ -409,14 +420,14 @@ export async function waitForUI5Ready(): Promise<void> {
 
 ## Design Patterns Summary
 
-| Pattern | Location | Purpose |
-|---------|----------|---------|
-| **Template Method** | `base-card.ts` | Shared card behavior with customizable render() |
-| **Strategy** | `action-handler.ts` | Pluggable action types |
-| **Interpreter** | `template-processor.ts` | Parse HA template syntax |
-| **Observer** | `hass` setter | React to state changes |
-| **Module** | `index.ts` | Async initialization |
-| **Composition** | All cards | Utilities over inheritance |
+| Pattern             | Location                | Purpose                                         |
+| ------------------- | ----------------------- | ----------------------------------------------- |
+| **Template Method** | `base-card.ts`          | Shared card behavior with customizable render() |
+| **Strategy**        | `action-handler.ts`     | Pluggable action types                          |
+| **Interpreter**     | `template-processor.ts` | Parse HA template syntax                        |
+| **Observer**        | `hass` setter           | React to state changes                          |
+| **Module**          | `index.ts`              | Async initialization                            |
+| **Composition**     | All cards               | Utilities over inheritance                      |
 
 ---
 
@@ -449,11 +460,13 @@ render() {
 ```
 
 **Benefits:**
+
 - ✅ Styles don't leak to HA dashboard
 - ✅ HA styles don't affect card internals
 - ✅ Predictable rendering
 
 **Accessing Shadow DOM in Tests:**
+
 ```typescript
 const shadowRoot = element.shadowRoot!;
 const button = shadowRoot.querySelector("ui5-button");
@@ -472,7 +485,7 @@ function isDarkMode(): boolean {
   if (haTheme) {
     return haTheme.includes("dark");
   }
-  
+
   // Fallback to system preference
   return window.matchMedia("(prefers-color-scheme: dark)").matches;
 }
@@ -515,15 +528,15 @@ export default defineConfig({
       entry: "src/index.ts",
       name: "UI5WebComponentsHA",
       fileName: "ui5-webcomponents-ha",
-      formats: ["es"]
+      formats: ["es"],
     },
     rollupOptions: {
       output: {
         // Single file output for HACS
-        inlineDynamicImports: true
-      }
-    }
-  }
+        inlineDynamicImports: true,
+      },
+    },
+  },
 });
 ```
 
@@ -594,14 +607,14 @@ describe("UI5ButtonCard", () => {
 
 ### Test Categories
 
-| Category | Tests | Priority |
-|----------|-------|----------|
-| Initialization | Custom element defined, shadow DOM | High |
-| Configuration | setConfig validation | High |
-| Rendering | UI5 component present | High |
-| State | Entity state display, updates | Medium |
-| Actions | tap_action, hold_action | Medium |
-| Edge Cases | Missing entity, null config | Low |
+| Category       | Tests                              | Priority |
+| -------------- | ---------------------------------- | -------- |
+| Initialization | Custom element defined, shadow DOM | High     |
+| Configuration  | setConfig validation               | High     |
+| Rendering      | UI5 component present              | High     |
+| State          | Entity state display, updates      | Medium   |
+| Actions        | tap_action, hold_action            | Medium   |
+| Edge Cases     | Missing entity, null config        | Low      |
 
 ---
 
@@ -625,10 +638,10 @@ async function loadButton() {
 // Only re-render when relevant state changes
 hasEntityStateChanged(oldHass: HomeAssistant, newHass: HomeAssistant): boolean {
   if (!this._config?.entity) return false;
-  
+
   const oldState = oldHass?.states[this._config.entity];
   const newState = newHass?.states[this._config.entity];
-  
+
   return oldState !== newState;
 }
 ```
@@ -639,7 +652,7 @@ hasEntityStateChanged(oldHass: HomeAssistant, newHass: HomeAssistant): boolean {
 disconnectedCallback() {
   // Clean up event listeners
   this._abortController?.abort();
-  
+
   // Clear references
   this._hass = undefined;
   this._config = undefined;
