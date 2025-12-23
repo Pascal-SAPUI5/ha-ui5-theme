@@ -14,6 +14,7 @@ import "./cards/ui5-button-card";
 import "./cards/ui5-switch-card";
 import "./cards/ui5-slider-card";
 import "./cards/ui5-progress-card";
+import "./cards/ui5-timeline-card";
 
 // Card registration information
 const CARD_DEFINITIONS = [
@@ -40,6 +41,13 @@ const CARD_DEFINITIONS = [
     name: "UI5 Progress Card",
     description:
       "A progress indicator card using UI5 ProgressIndicator component",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-timeline-card",
+    name: "UI5 Timeline Card",
+    description:
+      "A timeline card showing entity states or custom events using UI5 Timeline component",
     preview: true,
   },
 ];

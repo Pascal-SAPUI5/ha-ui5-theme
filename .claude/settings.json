@@ -2,14 +2,66 @@
   "hooks": {
     "PostToolUse": [
       {
-        "matcher": "Edit|Write",
+        "matcher": "str_replace|create_file",
         "hooks": [
           {
             "type": "command",
-            "command": "jq -r '.tool_input.file_path' | { read file_path; if [ -n \"$file_path\" ]; then if echo \"$file_path\" | grep -Eq '\\.(ts|tsx|js|jsx|mjs|cjs)$'; then npx -y eslint --fix \"$file_path\" || true; npx -y prettier -w \"$file_path\"; elif echo \"$file_path\" | grep -Eq '\\.(json|md|mdx|yaml|yml|css|scss)$'; then npx -y prettier -w \"$file_path\"; fi; fi; }"
+            "command": "FILE=$(jq -r '.input.path // empty'); if [ -n \"$FILE\" ] && [ -f \"$FILE\" ]; then case \"$FILE\" in *.ts|*.tsx|*.js|*.jsx|*.mjs|*.cjs) npx -y eslint --fix \"$FILE\" --quiet 2>/dev/null || true; npx -y prettier -w \"$FILE\" --log-level error 2>/dev/null || true ;; *.json|*.md|*.mdx|*.yaml|*.yml|*.css|*.scss|*.html) npx -y prettier -w \"$FILE\" --log-level error 2>/dev/null || true ;; esac; fi"
+          }
+        ]
+      },
+      {
+        "matcher": "bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.input.command // empty' | grep -qE '^(npm run build|npm run test)' && echo '✓ Build/Test completed' || true"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "str_replace|create_file",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "FILE=$(jq -r '.input.path // empty'); if [ -n \"$FILE\" ]; then DIR=$(dirname \"$FILE\"); [ ! -d \"$DIR\" ] && mkdir -p \"$DIR\"; fi; true"
           }
         ]
       }
     ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(npm test:*)",
+      "Bash(npm install:*)",
+      "Bash(npx:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(wc:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf /)*",
+      "Bash(sudo:*)",
+      "Bash(chmod 777:*)"
+    ]
+  },
+  "env": {
+    "ESLINT_NO_DEV_ERRORS": "true",
+    "FORCE_COLOR": "1"
   }
 }

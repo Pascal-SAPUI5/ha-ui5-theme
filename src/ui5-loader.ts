@@ -41,6 +41,10 @@ import "@ui5/webcomponents/dist/CardHeader.js";
 import "@ui5/webcomponents/dist/Tag.js";
 import "@ui5/webcomponents/dist/MessageStrip.js";
 
+// Timeline components (from Fiori)
+import "@ui5/webcomponents-fiori/dist/Timeline.js";
+import "@ui5/webcomponents-fiori/dist/TimelineItem.js";
+
 // ==================== Theme Configuration ====================
 
 import { setTheme } from "@ui5/webcomponents-base/dist/config/Theme.js";

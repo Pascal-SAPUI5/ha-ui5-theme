@@ -187,11 +187,27 @@ export interface UI5ProgressCardConfig extends BaseCardConfig {
   state?: "None" | "Error" | "Warning" | "Success" | "Information";
 }
 
+export interface TimelineItemConfig {
+  title: string;
+  subtitle?: string;
+  icon?: string;
+  state?: "None" | "Error" | "Warning" | "Success" | "Information";
+}
+
+export interface UI5TimelineCardConfig extends BaseCardConfig {
+  type: "custom:ui5-timeline-card";
+  entities?: string[];
+  items?: TimelineItemConfig[];
+  layout?: "Vertical" | "Horizontal";
+  max_items?: number;
+}
+
 export type UI5CardConfig =
   | UI5ButtonCardConfig
   | UI5SwitchCardConfig
   | UI5SliderCardConfig
-  | UI5ProgressCardConfig;
+  | UI5ProgressCardConfig
+  | UI5TimelineCardConfig;
 
 // ==================== Card Registration ====================
 
@@ -227,5 +243,6 @@ declare global {
     "ui5-switch-card": LovelaceCard;
     "ui5-slider-card": LovelaceCard;
     "ui5-progress-card": LovelaceCard;
+    "ui5-timeline-card": LovelaceCard;
   }
 }
