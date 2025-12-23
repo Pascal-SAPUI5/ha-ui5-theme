@@ -26,6 +26,7 @@ import "./components/Table/Table";
 import "./components/Card/Card";
 import "./components/Panel/Panel";
 import "./components/Tabs/Tabs";
+import "./components/Bar/Bar";
 
 // Card registration information
 const CARD_DEFINITIONS = [
@@ -127,6 +128,12 @@ const CARD_DEFINITIONS = [
     type: "custom:ui5-tabs-card",
     name: "UI5 Tabs Card",
     description: "Tabbed container for organizing entities by category",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-bar-card",
+    name: "UI5 Bar Card",
+    description: "A header/footer bar for layout and status display",
     preview: true,
   },
 ];

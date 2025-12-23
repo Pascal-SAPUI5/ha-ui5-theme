@@ -79,6 +79,9 @@ import "@ui5/webcomponents/dist/TabContainer.js";
 import "@ui5/webcomponents/dist/Tab.js";
 import "@ui5/webcomponents/dist/TabSeparator.js";
 
+// Bar component (header/footer bar)
+import "@ui5/webcomponents/dist/Bar.js";
+
 // ==================== Theme Configuration ====================
 
 import { setTheme } from "@ui5/webcomponents-base/dist/config/Theme.js";

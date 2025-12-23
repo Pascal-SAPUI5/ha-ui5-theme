@@ -1996,7 +1996,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const iconCss = `:host{-webkit-tap-highlight-color:rgba(0,0,0,0)}:host([hidden]){display:none}:host([invalid]){display:none}:host(:not([hidden]).ui5_hovered){opacity:.7}:host{display:inline-block;width:1rem;height:1rem;color:var(--sapContent_IconColor);fill:currentColor;outline:none}:host([design="Contrast"]){color:var(--sapContent_ContrastIconColor)}:host([design="Critical"]){color:var(--sapCriticalElementColor)}:host([design="Information"]){color:var(--sapInformativeElementColor)}:host([design="Negative"]){color:var(--sapNegativeElementColor)}:host([design="Neutral"]){color:var(--sapNeutralElementColor)}:host([design="NonInteractive"]){color:var(--sapContent_NonInteractiveIconColor)}:host([design="Positive"]){color:var(--sapPositiveElementColor)}:host([mode="Interactive"][desktop]) .ui5-icon-root:focus,:host([mode="Interactive"]) .ui5-icon-root:focus-visible{outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);border-radius:var(--ui5-v2-17-0-icon-focus-border-radius)}.ui5-icon-root{display:flex;height:100%;width:100%;outline:none;vertical-align:top}:host([mode="Interactive"]){cursor:pointer}.ui5-icon-root:not([dir=ltr])>g{transform:var(--_ui5-v2-17-0_icon_transform_scale);transform-origin:center}
 `;
-var __decorate$19 = function(decorators, target, key, desc) {
+var __decorate$1a = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -2104,34 +2104,34 @@ let Icon = class Icon2 extends b$7 {
     return this.showTooltip && this.effectiveAccessibleName;
   }
 };
-__decorate$19([
+__decorate$1a([
   s$8()
 ], Icon.prototype, "design", void 0);
-__decorate$19([
+__decorate$1a([
   s$8()
 ], Icon.prototype, "name", void 0);
-__decorate$19([
+__decorate$1a([
   s$8()
 ], Icon.prototype, "accessibleName", void 0);
-__decorate$19([
+__decorate$1a([
   s$8({ type: Boolean })
 ], Icon.prototype, "showTooltip", void 0);
-__decorate$19([
+__decorate$1a([
   s$8()
 ], Icon.prototype, "mode", void 0);
-__decorate$19([
+__decorate$1a([
   s$8({ type: Array })
 ], Icon.prototype, "pathData", void 0);
-__decorate$19([
+__decorate$1a([
   s$8({ type: Object, noAttribute: true })
 ], Icon.prototype, "accData", void 0);
-__decorate$19([
+__decorate$1a([
   s$8({ type: Boolean })
 ], Icon.prototype, "invalid", void 0);
-__decorate$19([
+__decorate$1a([
   s$8({ noAttribute: true })
 ], Icon.prototype, "effectiveAccessibleName", void 0);
-Icon = __decorate$19([
+Icon = __decorate$1a([
   m$8({
     tag: "ui5-icon",
     languageAware: true,
@@ -2292,7 +2292,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const labelCss = `:host(:not([hidden])){display:inline-flex}:host{max-width:100%;color:var(--sapContent_LabelColor);font-family:var(--sapFontFamily);font-size:var(--sapFontSize);font-weight:400;cursor:text}.ui5-label-root{width:100%;cursor:inherit}:host{white-space:normal}:host([wrapping-type="None"]){white-space:nowrap}:host([wrapping-type="None"]) .ui5-label-root{display:inline-flex}:host([wrapping-type="None"]) .ui5-label-text-wrapper{text-overflow:ellipsis;overflow:hidden;display:inline-block;vertical-align:top;flex:0 1 auto;min-width:0}:host([show-colon]) .ui5-label-required-colon:before{content:attr(data-ui5-colon)}:host([required]) .ui5-label-required-colon:after{content:"*";color:var(--sapField_RequiredColor);font-size:var(--sapFontLargeSize);font-weight:700;position:relative;font-style:normal;vertical-align:middle;line-height:0}.ui5-label-text-wrapper{padding-inline-end:.075rem}:host([required][show-colon]) .ui5-label-required-colon:after{margin-inline-start:.125rem}:host([show-colon]) .ui5-label-required-colon{margin-inline-start:-.05rem;white-space:pre}
 `;
-var __decorate$18 = function(decorators, target, key, desc) {
+var __decorate$19 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -2319,22 +2319,22 @@ let Label = Label_1 = class Label2 extends b$7 {
     return Label_1.i18nBundle.getText(LABEL_COLON);
   }
 };
-__decorate$18([
+__decorate$19([
   s$8()
 ], Label.prototype, "for", void 0);
-__decorate$18([
+__decorate$19([
   s$8({ type: Boolean })
 ], Label.prototype, "showColon", void 0);
-__decorate$18([
+__decorate$19([
   s$8({ type: Boolean })
 ], Label.prototype, "required", void 0);
-__decorate$18([
+__decorate$19([
   s$8()
 ], Label.prototype, "wrappingType", void 0);
-__decorate$18([
+__decorate$19([
   i$9("@ui5/webcomponents")
 ], Label, "i18nBundle", void 0);
-Label = Label_1 = __decorate$18([
+Label = Label_1 = __decorate$19([
   m$8({
     tag: "ui5-label",
     renderer: y$5,
@@ -2358,7 +2358,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const busyIndicatorCss = `:host(:not([hidden])){display:inline-block}:host([_is-busy]){color:var(--_ui5-v2-17-0_busy_indicator_color)}:host([size="S"]) .ui5-busy-indicator-root{min-width:1.625rem;min-height:.5rem}:host([size="S"][text]:not([text=""])) .ui5-busy-indicator-root{min-height:1.75rem}:host([size="S"]) .ui5-busy-indicator-circle{width:.5rem;height:.5rem}:host([size="S"]) .ui5-busy-indicator-circle:first-child,:host([size="S"]) .ui5-busy-indicator-circle:nth-child(2){margin-inline-end:.0625rem}:host(:not([size])) .ui5-busy-indicator-root,:host([size="M"]) .ui5-busy-indicator-root{min-width:3.375rem;min-height:1rem}:host([size="M"]) .ui5-busy-indicator-circle:first-child,:host([size="M"]) .ui5-busy-indicator-circle:nth-child(2){margin-inline-end:.1875rem}:host(:not([size])[text]:not([text=""])) .ui5-busy-indicator-root,:host([size="M"][text]:not([text=""])) .ui5-busy-indicator-root{min-height:2.25rem}:host(:not([size])) .ui5-busy-indicator-circle,:host([size="M"]) .ui5-busy-indicator-circle{width:1rem;height:1rem}:host([size="L"]) .ui5-busy-indicator-root{min-width:6.5rem;min-height:2rem}:host([size="L"]) .ui5-busy-indicator-circle:first-child,:host([size="L"]) .ui5-busy-indicator-circle:nth-child(2){margin-inline-end:.25rem}:host([size="L"][text]:not([text=""])) .ui5-busy-indicator-root{min-height:3.25rem}:host([size="L"]) .ui5-busy-indicator-circle{width:2rem;height:2rem}.ui5-busy-indicator-root{display:flex;justify-content:center;align-items:center;position:relative;background-color:inherit;height:inherit;border-radius:inherit}.ui5-busy-indicator-busy-area.ui5-busy-indicator-busy-area-over-content{position:absolute;inset:0;z-index:99}.ui5-busy-indicator-busy-area{display:flex;justify-content:center;align-items:center;background-color:inherit;flex-direction:column;border-radius:inherit}:host([active]) ::slotted(*){opacity:var(--sapContent_DisabledOpacity)}:host([desktop]) .ui5-busy-indicator-busy-area:focus,.ui5-busy-indicator-busy-area:focus-visible{outline:var(--_ui5-v2-17-0_busy_indicator_focus_outline);outline-offset:-2px}.ui5-busy-indicator-circles-wrapper{line-height:0}.ui5-busy-indicator-circle{display:inline-block;background-color:currentColor;border-radius:50%}.ui5-busy-indicator-circle:before{content:"";width:100%;height:100%;border-radius:100%}.circle-animation-0{animation:grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11)}.circle-animation-1{animation:grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);animation-delay:.2s}.circle-animation-2{animation:grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);animation-delay:.4s}.ui5-busy-indicator-text{width:100%;text-align:center}:host([text-placement="Top"]) .ui5-busy-indicator-text{margin-bottom:.5rem}:host(:not([text-placement])) .ui5-busy-indicator-text,:host([text-placement="Bottom"]) .ui5-busy-indicator-text{margin-top:.5rem}@keyframes grow{0%,50%,to{-webkit-transform:scale(.5);-moz-transform:scale(.5);transform:scale(.5)}25%{-webkit-transform:scale(1);-moz-transform:scale(1);transform:scale(1)}}
 `;
-var __decorate$17 = function(decorators, target, key, desc) {
+var __decorate$18 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -2453,28 +2453,28 @@ let BusyIndicator = BusyIndicator_1 = class BusyIndicator2 extends b$7 {
     this.shadowRoot.querySelector(".ui5-busy-indicator-busy-area").focus();
   }
 };
-__decorate$17([
+__decorate$18([
   s$8()
 ], BusyIndicator.prototype, "text", void 0);
-__decorate$17([
+__decorate$18([
   s$8()
 ], BusyIndicator.prototype, "size", void 0);
-__decorate$17([
+__decorate$18([
   s$8({ type: Boolean })
 ], BusyIndicator.prototype, "active", void 0);
-__decorate$17([
+__decorate$18([
   s$8({ type: Number })
 ], BusyIndicator.prototype, "delay", void 0);
-__decorate$17([
+__decorate$18([
   s$8()
 ], BusyIndicator.prototype, "textPlacement", void 0);
-__decorate$17([
+__decorate$18([
   s$8({ type: Boolean })
 ], BusyIndicator.prototype, "_isBusy", void 0);
-__decorate$17([
+__decorate$18([
   i$9("@ui5/webcomponents")
 ], BusyIndicator, "i18nBundle", void 0);
-BusyIndicator = BusyIndicator_1 = __decorate$17([
+BusyIndicator = BusyIndicator_1 = __decorate$18([
   m$8({
     tag: "ui5-busy-indicator",
     languageAware: true,
@@ -2505,7 +2505,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const buttonCss = `:host{vertical-align:middle}.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block}:host{min-width:var(--_ui5-v2-17-0_button_base_min_width);height:var(--_ui5-v2-17-0_button_base_height);line-height:normal;font-family:var(--_ui5-v2-17-0_button_fontFamily);font-size:var(--sapFontSize);text-shadow:var(--_ui5-v2-17-0_button_text_shadow);border-radius:var(--_ui5-v2-17-0_button_border_radius);cursor:pointer;background-color:var(--sapButton_Background);border:var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);color:var(--sapButton_TextColor);box-sizing:border-box;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-webkit-tap-highlight-color:transparent}.ui5-button-root{min-width:inherit;cursor:inherit;height:100%;width:100%;box-sizing:border-box;display:flex;justify-content:center;align-items:center;outline:none;padding:0 var(--_ui5-v2-17-0_button_base_padding);position:relative;background:transparent;border:none;color:inherit;text-shadow:inherit;font:inherit;white-space:inherit;overflow:inherit;text-overflow:inherit;letter-spacing:inherit;word-spacing:inherit;line-height:inherit;-webkit-user-select:none;-moz-user-select:none;user-select:none}:host(:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host(:not([hidden]):not([disabled]).ui5_hovered){background:var(--sapButton_Hover_Background);border:1px solid var(--sapButton_Hover_BorderColor);color:var(--sapButton_Hover_TextColor)}.ui5-button-icon,.ui5-button-end-icon{color:inherit;flex-shrink:0}.ui5-button-end-icon{margin-inline-start:var(--_ui5-v2-17-0_button_base_icon_margin)}:host([icon-only]:not([has-end-icon])) .ui5-button-root{min-width:auto;padding:0}:host([icon-only]) .ui5-button-text{display:none}.ui5-button-text{outline:none;position:relative;white-space:inherit;overflow:inherit;text-overflow:inherit}:host([has-icon]:not(:empty)) .ui5-button-text{margin-inline-start:var(--_ui5-v2-17-0_button_base_icon_margin)}:host([has-end-icon]:not([has-icon]):empty) .ui5-button-end-icon{margin-inline-start:0}:host([disabled]){opacity:var(--sapContent_DisabledOpacity);pointer-events:unset;cursor:default}:host([has-icon]:not([icon-only]):not([has-end-icon])) .ui5-button-text{min-width:calc(var(--_ui5-v2-17-0_button_base_min_width) - var(--_ui5-v2-17-0_button_base_icon_margin) - 1rem)}:host([disabled]:active){pointer-events:none}:host([desktop]:not([loading])) .ui5-button-root:focus-within:after,:host(:not([active])) .ui5-button-root:focus-visible:after,:host([desktop][active][design="Emphasized"]) .ui5-button-root:focus-within:after,:host([active][design="Emphasized"]) .ui5-button-root:focus-visible:after,:host([desktop][active]) .ui5-button-root:focus-within:before,:host([active]) .ui5-button-root:focus-visible:before{content:"";position:absolute;box-sizing:border-box;pointer-events:none;inset:.0625rem;border:var(--_ui5-v2-17-0_button_focused_border);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}:host([desktop][active]) .ui5-button-root:focus-within:before,:host([active]) .ui5-button-root:focus-visible:before{border-color:var(--_ui5-v2-17-0_button_pressed_focused_border_color)}:host([design="Emphasized"][desktop]) .ui5-button-root:focus-within:after,:host([design="Emphasized"]) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_emphasized_focused_border_color)}:host([design="Emphasized"][desktop]) .ui5-button-root:focus-within:before,:host([design="Emphasized"]) .ui5-button-root:focus-visible:before{content:"";position:absolute;box-sizing:border-box;inset:.0625rem;border:var(--_ui5-v2-17-0_button_emphasized_focused_border_before);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}.ui5-button-root::-moz-focus-inner{border:0}bdi{display:block;white-space:inherit;overflow:inherit;text-overflow:inherit}:host([ui5-button][active]:not([disabled]):not([non-interactive])){background-image:none;background-color:var(--sapButton_Active_Background);border-color:var(--sapButton_Active_BorderColor);color:var(--sapButton_Active_TextColor)}:host([design="Positive"]){background-color:var(--sapButton_Accept_Background);border-color:var(--sapButton_Accept_BorderColor);color:var(--sapButton_Accept_TextColor)}:host([design="Positive"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Positive"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Accept_Hover_Background);border-color:var(--sapButton_Accept_Hover_BorderColor);color:var(--sapButton_Accept_Hover_TextColor)}:host([ui5-button][design="Positive"][active]:not([non-interactive])){background-color:var(--sapButton_Accept_Active_Background);border-color:var(--sapButton_Accept_Active_BorderColor);color:var(--sapButton_Accept_Active_TextColor)}:host([design="Negative"]){background-color:var(--sapButton_Reject_Background);border-color:var(--sapButton_Reject_BorderColor);color:var(--sapButton_Reject_TextColor)}:host([design="Negative"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Negative"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Reject_Hover_Background);border-color:var(--sapButton_Reject_Hover_BorderColor);color:var(--sapButton_Reject_Hover_TextColor)}:host([ui5-button][design="Negative"][active]:not([non-interactive])){background-color:var(--sapButton_Reject_Active_Background);border-color:var(--sapButton_Reject_Active_BorderColor);color:var(--sapButton_Reject_Active_TextColor)}:host([design="Attention"]){background-color:var(--sapButton_Attention_Background);border-color:var(--sapButton_Attention_BorderColor);color:var(--sapButton_Attention_TextColor)}:host([design="Attention"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Attention"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Attention_Hover_Background);border-color:var(--sapButton_Attention_Hover_BorderColor);color:var(--sapButton_Attention_Hover_TextColor)}:host([ui5-button][design="Attention"][active]:not([non-interactive])){background-color:var(--sapButton_Attention_Active_Background);border-color:var(--sapButton_Attention_Active_BorderColor);color:var(--sapButton_Attention_Active_TextColor)}:host([design="Emphasized"]){background-color:var(--sapButton_Emphasized_Background);border-color:var(--sapButton_Emphasized_BorderColor);border-width:var(--_ui5-v2-17-0_button_emphasized_border_width);color:var(--sapButton_Emphasized_TextColor);font-family:var(--sapButton_Emphasized_FontFamily)}:host([design="Emphasized"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Emphasized"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Emphasized_Hover_Background);border-color:var(--sapButton_Emphasized_Hover_BorderColor);border-width:var(--_ui5-v2-17-0_button_emphasized_border_width);color:var(--sapButton_Emphasized_Hover_TextColor)}:host([ui5-button][design="Empasized"][active]:not([non-interactive])){background-color:var(--sapButton_Emphasized_Active_Background);border-color:var(--sapButton_Emphasized_Active_BorderColor);color:var(--sapButton_Emphasized_Active_TextColor)}:host([design="Emphasized"][desktop]) .ui5-button-root:focus-within:after,:host([design="Emphasized"]) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_emphasized_focused_border_color);outline:none}:host([design="Emphasized"][desktop][active]:not([non-interactive])) .ui5-button-root:focus-within:after,:host([design="Emphasized"][active]:not([non-interactive])) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_emphasized_focused_active_border_color)}:host([design="Transparent"]){background-color:var(--sapButton_Lite_Background);color:var(--sapButton_Lite_TextColor);border-color:var(--sapButton_Lite_BorderColor)}:host([design="Transparent"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Transparent"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Lite_Hover_Background);border-color:var(--sapButton_Lite_Hover_BorderColor);color:var(--sapButton_Lite_Hover_TextColor)}:host([ui5-button][design="Transparent"][active]:not([non-interactive])){background-color:var(--sapButton_Lite_Active_Background);border-color:var(--sapButton_Lite_Active_BorderColor);color:var(--sapButton_Active_TextColor)}:host([ui5-segmented-button-item][active][desktop]) .ui5-button-root:focus-within:after,:host([ui5-segmented-button-item][active]) .ui5-button-root:focus-visible:after,:host([pressed][desktop]) .ui5-button-root:focus-within:after,:host([pressed]) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_pressed_focused_border_color);outline:none}:host([ui5-segmented-button-item][desktop]:not(:last-child)) .ui5-button-root:focus-within:after,:host([ui5-segmented-button-item]:not(:last-child)) .ui5-button-root:focus-visible:after{border-top-right-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius)}:host([ui5-segmented-button-item][desktop]:not(:first-child)) .ui5-button-root:focus-within:after,:host([ui5-segmented-button-item]:not(:first-child)) .ui5-button-root:focus-visible:after{border-top-left-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius);border-bottom-left-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius)}::slotted([slot="badge"][design="InlineText"]){pointer-events:initial;font-family:var(--sapButton_FontFamily);font-size:var(--sapFontSmallSize);padding-inline-start:.25rem;--_ui5-v2-17-0-tag-height: .625rem}::slotted([slot="badge"][design="OverlayText"]){pointer-events:initial;position:absolute;top:0;inset-inline-end:0;margin:-.5rem;z-index:1;font-family:var(--sapButton_FontFamily);font-size:var(--sapFontSmallSize);--_ui5-v2-17-0-tag-height: .625rem}::slotted([slot="badge"][design="AttentionDot"]){pointer-events:initial;content:"";position:absolute;top:0;inset-inline-end:0;margin:-.25rem;z-index:1}:host(:state(has-overlay-badge)){overflow:visible;margin-inline-end:.3125rem}:host([loading]){position:relative;pointer-events:unset}:host([loading]) .ui5-button-root{opacity:var(--sapContent_DisabledOpacity)}:host([loading][design="Emphasized"]){background-color:inherit;border:inherit}:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:inherit;border:inherit}:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover) .ui5-button-root,:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered) .ui5-button-root{background-color:var(--sapButton_Emphasized_Hover_Background)}:host([loading][design="Emphasized"]) .ui5-button-root{background-color:var(--sapButton_Emphasized_Background);border-color:var(--sapButton_Emphasized_BorderColor)}.ui5-button-busy-indicator{position:absolute;height:100%;width:100%;top:0}:host([has-end-icon]) .ui5-button-root{justify-content:flex-start}:host([icon-only]) .ui5-button-root{justify-content:center}:host([has-end-icon]) .ui5-button-end-icon{margin-left:auto}
 `;
-var __decorate$16 = function(decorators, target, key, desc) {
+var __decorate$17 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -2780,88 +2780,88 @@ let Button = Button_1 = class Button2 extends b$7 {
     return !!this.badge.length && (!!this.badge[0].text.length || this.badge[0].design === ButtonBadgeDesign$1.AttentionDot);
   }
 };
-__decorate$16([
+__decorate$17([
   s$8()
 ], Button.prototype, "design", void 0);
-__decorate$16([
+__decorate$17([
   s$8({ type: Boolean })
 ], Button.prototype, "disabled", void 0);
-__decorate$16([
+__decorate$17([
   s$8()
 ], Button.prototype, "icon", void 0);
-__decorate$16([
+__decorate$17([
   s$8()
 ], Button.prototype, "endIcon", void 0);
-__decorate$16([
+__decorate$17([
   s$8({ type: Boolean })
 ], Button.prototype, "submits", void 0);
-__decorate$16([
+__decorate$17([
   s$8()
 ], Button.prototype, "tooltip", void 0);
-__decorate$16([
+__decorate$17([
   s$8()
 ], Button.prototype, "accessibleName", void 0);
-__decorate$16([
+__decorate$17([
   s$8()
 ], Button.prototype, "accessibleNameRef", void 0);
-__decorate$16([
+__decorate$17([
   s$8({ type: Object })
 ], Button.prototype, "accessibilityAttributes", void 0);
-__decorate$16([
+__decorate$17([
   s$8()
 ], Button.prototype, "accessibleDescription", void 0);
-__decorate$16([
+__decorate$17([
   s$8()
 ], Button.prototype, "type", void 0);
-__decorate$16([
+__decorate$17([
   s$8()
 ], Button.prototype, "accessibleRole", void 0);
-__decorate$16([
+__decorate$17([
   s$8({ type: Boolean })
 ], Button.prototype, "active", void 0);
-__decorate$16([
+__decorate$17([
   s$8({ type: Boolean })
 ], Button.prototype, "iconOnly", void 0);
-__decorate$16([
+__decorate$17([
   s$8({ type: Boolean })
 ], Button.prototype, "hasIcon", void 0);
-__decorate$16([
+__decorate$17([
   s$8({ type: Boolean })
 ], Button.prototype, "hasEndIcon", void 0);
-__decorate$16([
+__decorate$17([
   s$8({ type: Boolean })
 ], Button.prototype, "nonInteractive", void 0);
-__decorate$16([
+__decorate$17([
   s$8({ type: Boolean })
 ], Button.prototype, "loading", void 0);
-__decorate$16([
+__decorate$17([
   s$8({ type: Number })
 ], Button.prototype, "loadingDelay", void 0);
-__decorate$16([
+__decorate$17([
   s$8({ noAttribute: true })
 ], Button.prototype, "buttonTitle", void 0);
-__decorate$16([
+__decorate$17([
   s$8({ type: Object })
 ], Button.prototype, "_iconSettings", void 0);
-__decorate$16([
+__decorate$17([
   s$8({ noAttribute: true })
 ], Button.prototype, "forcedTabIndex", void 0);
-__decorate$16([
+__decorate$17([
   s$8({ type: Boolean })
 ], Button.prototype, "_isTouch", void 0);
-__decorate$16([
+__decorate$17([
   s$8({ type: Boolean, noAttribute: true })
 ], Button.prototype, "_cancelAction", void 0);
-__decorate$16([
+__decorate$17([
   d$8({ type: Node, "default": true })
 ], Button.prototype, "text", void 0);
-__decorate$16([
+__decorate$17([
   d$8({ type: HTMLElement, invalidateOnChildChange: true })
 ], Button.prototype, "badge", void 0);
-__decorate$16([
+__decorate$17([
   i$9("@ui5/webcomponents")
 ], Button, "i18nBundle", void 0);
-Button = Button_1 = __decorate$16([
+Button = Button_1 = __decorate$17([
   m$8({
     tag: "ui5-button",
     formAssociated: true,
@@ -2955,7 +2955,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const switchCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{-webkit-tap-highlight-color:rgba(0,0,0,0)}:host(:not([hidden])){display:inline-block}.ui5-switch-root{position:relative;display:flex;align-items:center;width:var(--_ui5-v2-17-0_switch_width);height:var(--_ui5-v2-17-0_switch_height);min-width:var(--_ui5-v2-17-0_switch_min_width);cursor:pointer;outline:none;border-radius:var(--_ui5-v2-17-0-switch-root-border-radius)}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic){width:var(--_ui5-v2-17-0_switch_with_label_width);height:var(--_ui5-v2-17-0_switch_height)}.ui5-switch-root.ui5-switch--no-label{min-width:var(--_ui5-v2-17-0_switch_width)}.ui5-switch-inner{display:flex;align-items:center;justify-content:center;height:100%;width:100%;min-width:inherit;overflow:hidden;pointer-events:none;will-change:transform}:host([checked]) .ui5-switch-inner{border-radius:6.25rem;box-shadow:var(--_ui5-v2-17-0-switch-root-box-shadow)}.ui5-switch-track{display:flex;align-items:center;height:var(--_ui5-v2-17-0_switch_track_height);width:var(--_ui5-v2-17-0_switch_track_width);border:var(--_ui5-v2-17-0-switch-track-border);border-radius:var(--_ui5-v2-17-0_switch_track_border_radius);box-sizing:border-box;transition:var(--_ui5-v2-17-0_switch_track_transition)}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-track{height:var(--_ui5-v2-17-0_switch_track_with_label_height);width:var(--_ui5-v2-17-0_switch_track_with_label_width)}.ui5-switch-slider{position:relative;height:var(--_ui5-v2-17-0_switch_height);width:100%;transition:transform .1s ease-in;transform-origin:top left}.ui5-switch-slider>*:not(.ui5-switch-handle){display:var(--_ui5-v2-17-0-switch-slider-texts-display)}.ui5-switch-handle{position:absolute;display:flex;justify-content:center;align-items:center;width:var(--_ui5-v2-17-0_switch_handle_width);height:var(--_ui5-v2-17-0_switch_handle_height);border:var(--_ui5-v2-17-0_switch_handle_border);border-radius:var(--_ui5-v2-17-0_switch_handle_border_radius);box-sizing:border-box}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-handle{height:var(--_ui5-v2-17-0_switch_handle_with_label_height);width:var(--_ui5-v2-17-0_switch_handle_with_label_width)}.ui5-switch-text{display:flex;justify-content:center;position:absolute;z-index:var(--_ui5-v2-17-0_switch_text_z_index);min-width:var(--_ui5-v2-17-0_switch_text_min_width);font-size:var(--_ui5-v2-17-0_switch_text_font_size);font-family:var(--_ui5-v2-17-0-switch-text_font_family);text-transform:uppercase;text-align:center;white-space:nowrap;user-select:none;-webkit-user-select:none}.ui5-switch-handle,.ui5-switch-text{inset-inline-start:var(--_ui5-v2-17-0_switch_handle_left);top:50%;transform:translateY(-50%)}.ui5-switch-root:focus-visible:after,.ui5-switch--desktop.ui5-switch-root:focus-within:after{content:"";position:absolute;inset-inline-start:var(--_ui5-v2-17-0_switch_root_outline_left);inset-inline-end:var(--_ui5-v2-17-0_switch_root_outline_right);top:var(--_ui5-v2-17-0_switch_root_outline_top);bottom:var(--_ui5-v2-17-0_switch_root_outline_bottom);border:var(--_ui5-v2-17-0_switch_focus_outline);border-radius:var(--_ui5-v2-17-0_switch_root_after_boreder_radius);pointer-events:none;transition:var(--_ui5-v2-17-0_switch_track_transition);outline:var(--_ui5-v2-17-0_switch_root_after_outline)}.ui5-switch-root .ui5-switch-input{position:absolute;inset-inline-start:0;width:0;height:0;margin:0;visibility:hidden;appearance:none;-webkit-appearance:none}.ui5-switch-root.ui5-switch--disabled{opacity:var(--_ui5-v2-17-0_switch_disabled_opacity);cursor:default}.ui5-switch-root.ui5-switch--checked .ui5-switch-text--off{visibility:var(--_ui5-v2-17-0_switch_text_hidden)}.ui5-switch-root:not(.ui5-switch--checked) .ui5-switch-text--on{visibility:var(--_ui5-v2-17-0_switch_text_hidden)}.ui5-switch-root.ui5-switch--checked.ui5-switch--semantic .ui5-switch-text--on,.ui5-switch-root.ui5-switch--checked.ui5-switch--desktop.ui5-switch--no-label .ui5-switch-text--on{inset-inline-start:var(--_ui5-v2-17-0_switch_text_active_left)}.ui5-switch-root:not(.ui5-switch--checked).ui5-switch--semantic .ui5-switch-text--off,.ui5-switch-root:not(.ui5-switch--checked).ui5-switch--desktop.ui5-switch--no-label .ui5-switch-text--off{inset-inline-start:var(--_ui5-v2-17-0_switch_text_inactive_left);inset-inline-end:var(--_ui5-v2-17-0_switch_text_inactive_right)}.ui5-switch-root.ui5-switch--checked .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_active_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_active_border_color)}.ui5-switch-root:not(.ui5-switch--checked) .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_inactive_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_hover_active_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_hover_active_border_color)}.ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--disabled):not(.ui5-switch--checked):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_hover_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_hover_inactive_border_color)}.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_accept_border_color)}.ui5-switch-root.ui5-switch--semantic:not(.ui5-switch--checked) .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_reject_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_hover_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_hover_accept_border_color)}.ui5-switch--desktop.ui5-switch--semantic.ui5-switch-root:not(.ui5-switch--checked):not(.ui5-switch--disabled):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_hover_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_hover_reject_border_color)}.ui5-switch-root.ui5-switch--checked .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_active_background_color);border-color:var(--_ui5-v2-17-0_switch_track_active_border_color)}.ui5-switch-root:not(.ui5-switch--checked) .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_track_inactive_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_hover_active_background_color);border-color:var(--_ui5-v2-17-0_switch_track_hover_active_border_color)}.ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--checked):not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_hover_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_track_hover_inactive_border_color)}.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_accept_border_color)}.ui5-switch-root.ui5-switch--semantic:not(.ui5-switch--checked) .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_reject_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_hover_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_hover_accept_border_color)}.ui5-switch--desktop.ui5-switch--semantic.ui5-switch-root:not(.ui5-switch--checked):not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_hover_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_hover_reject_border_color)}.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_transform_with_label)}.ui5-switch-root.ui5-switch--checked .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_transform)}.ui5-switch-text .ui5-switch-text--on .ui5-switch-no-label-icon,.ui5-switch-root.ui5-switch--semantic .ui5-switch-text,.ui5-switch-root.ui5-switch--no-label .ui5-switch-text{display:flex;justify-content:center}.ui5-switch--no-label .ui5-switch-no-label-icon-on,.ui5-switch--no-label .ui5-switch-no-label-icon-off{width:var(--_ui5-v2-17-0_switch_icon_width);height:var(--_ui5-v2-17-0_switch_icon_height);display:var(--_ui5-v2-17-0_switch_track_icon_display)}.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-on,.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-off{width:var(--_ui5-v2-17-0_switch_icon_width);height:var(--_ui5-v2-17-0_switch_icon_height)}.ui5-switch-root .ui5-switch-text{font-family:var(--_ui5-v2-17-0_switch_text_font_family);font-size:var(--_ui5-v2-17-0_switch_text_font_size);width:var(--_ui5-v2-17-0_switch_text_width)}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-text{font-family:var(--_ui5-v2-17-0_switch_text_with_label_font_family);font-size:var(--_ui5-v2-17-0_switch_text_with_label_font_size);width:var(--_ui5-v2-17-0_switch_text_with_label_width)}:host([active]) .ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--disabled) .ui5-switch-track{background:var(--_ui5-v2-17-0-switch_track-off-active-background)}:host([active]) .ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0-switch_track-on-active-background)}.ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_off_hover_box_shadow)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_on_hover_box_shadow)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_semantic_off_hover_box_shadow)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_semantic_on_hover_box_shadow)}.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-on,.ui5-switch-root.ui5-switch--semantic .ui5-switch-text--on{color:var(--_ui5-v2-17-0_switch_text_semantic_accept_color)}.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-off,.ui5-switch-root.ui5-switch--semantic .ui5-switch-text--off{color:var(--_ui5-v2-17-0_switch_text_semantic_reject_color)}.ui5-switch-root .ui5-switch-text--on{color:var(--_ui5-v2-17-0_switch_text_active_color);overflow:var(--_ui5-v2-17-0_switch_text_overflow);text-overflow:ellipsis;inset-inline-start:var(--_ui5-v2-17-0_switch_text_active_left_alternate)}.ui5-switch-root .ui5-switch-text--off{color:var(--_ui5-v2-17-0_switch_text_inactive_color);overflow:var(--_ui5-v2-17-0_switch_text_overflow);text-overflow:ellipsis;inset-inline-start:var(--_ui5-v2-17-0_switch_text_inactive_left_alternate);inset-inline-end:var(--_ui5-v2-17-0_switch_text_inactive_right_alternate)}.ui5-switch-root.ui5-switch--safari .ui5-switch-text--on.ui5-switch-no-label-icon,.ui5-switch-root.ui5-switch--safari .ui5-switch-text--off.ui5-switch-no-label-icon{inset-inline-start:.1875rem}.ui5-switch-root .ui5-switch-no-label-icon-on,.ui5-switch-root .ui5-switch-icon-on{color:var(--_ui5-v2-17-0_switch_text_active_color)}.ui5-switch-root .ui5-switch-no-label-icon-off,.ui5-switch-root .ui5-switch-icon-off{color:var(--_ui5-v2-17-0_switch_text_inactive_color)}:dir(rtl).ui5-switch-root.ui5-switch--checked:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_rtl_transform_with_label)}:dir(rtl).ui5-switch-root.ui5-switch--checked .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_rtl_transform)}
 `;
-var __decorate$15 = function(decorators, target, key, desc) {
+var __decorate$16 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -3048,46 +3048,46 @@ let Switch = Switch_1 = class Switch2 extends b$7 {
     return [A$3(this), this.hiddenText].join(" ").trim();
   }
 };
-__decorate$15([
+__decorate$16([
   s$8()
 ], Switch.prototype, "design", void 0);
-__decorate$15([
+__decorate$16([
   s$8({ type: Boolean })
 ], Switch.prototype, "checked", void 0);
-__decorate$15([
+__decorate$16([
   s$8({ type: Boolean })
 ], Switch.prototype, "disabled", void 0);
-__decorate$15([
+__decorate$16([
   s$8()
 ], Switch.prototype, "textOn", void 0);
-__decorate$15([
+__decorate$16([
   s$8()
 ], Switch.prototype, "textOff", void 0);
-__decorate$15([
+__decorate$16([
   s$8()
 ], Switch.prototype, "accessibleName", void 0);
-__decorate$15([
+__decorate$16([
   s$8()
 ], Switch.prototype, "accessibleNameRef", void 0);
-__decorate$15([
+__decorate$16([
   s$8()
 ], Switch.prototype, "tooltip", void 0);
-__decorate$15([
+__decorate$16([
   s$8({ type: Boolean })
 ], Switch.prototype, "required", void 0);
-__decorate$15([
+__decorate$16([
   s$8()
 ], Switch.prototype, "name", void 0);
-__decorate$15([
+__decorate$16([
   s$8()
 ], Switch.prototype, "value", void 0);
-__decorate$15([
+__decorate$16([
   s$8({ type: Boolean, noAttribute: true })
 ], Switch.prototype, "_cancelAction", void 0);
-__decorate$15([
+__decorate$16([
   i$9("@ui5/webcomponents")
 ], Switch, "i18nBundle", void 0);
-Switch = Switch_1 = __decorate$15([
+Switch = Switch_1 = __decorate$16([
   m$8({
     tag: "ui5-switch",
     formAssociated: true,
@@ -3137,7 +3137,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const sliderBaseStyles = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host([disabled]){opacity:var(--_ui5-v2-17-0_slider_disabled_opacity);cursor:default;pointer-events:none}:host{box-sizing:border-box;cursor:pointer;vertical-align:top;width:100%}:host(:not([hidden])){display:inline-block}.ui5-slider-root{box-sizing:border-box;height:3.3125rem;outline:none;padding:var(--_ui5-v2-17-0_slider_padding);touch-action:none}.ui5-slider-inner{background-repeat:no-repeat;position:relative;min-width:var(--_ui5-v2-17-0_slider_inner_min_width);height:100%}.ui5-slider-progress-container{width:100%;background:var(--_ui5-v2-17-0_slider_progress_container_background);border:var(--_ui5-v2-17-0_slider_progress_border);border-radius:var(--_ui5-v2-17-0_slider_progress_border_radius);height:var(--_ui5-v2-17-0_slider_inner_height);position:relative;box-sizing:var(--_ui5-v2-17-0_slider_progress_box_sizing);top:var(--_ui5-v2-17-0_slider_progress_container_top)}.ui5-slider-progress-container:before,.ui5-slider-progress-container:after{display:var(--_ui5-v2-17-0_slider_progress_container_dot_display);content:"";position:absolute;border-radius:50%;width:var(--_ui5-v2-17-0_slider_start_end_point_size);height:var(--_ui5-v2-17-0_slider_start_end_point_size);top:var(--_ui5-v2-17-0_slider_start_end_point_top)}.ui5-slider-progress-container:before{inset-inline-start:var(--_ui5-v2-17-0_slider_start_end_point_left);background-color:var(--_ui5-v2-17-0_slider_progress_before_background);border:var(--_ui5-v2-17-0_slider_progress_before_border)}.ui5-slider-progress-container:after{inset-inline-end:var(--_ui5-v2-17-0_slider_start_end_point_left);background-color:var(--_ui5-v2-17-0_slider_progress_after_background);border:var(--_ui5-v2-17-0_slider_progress_after_border)}.ui5-slider-progress{background:var(--_ui5-v2-17-0_slider_progress_background);border-radius:var(--_ui5-v2-17-0_slider_progress_border_radius);height:var(--_ui5-v2-17-0_slider_progress_height);position:relative;outline:none;box-sizing:var(--_ui5-v2-17-0_slider_active_progress_box_sizing);border:var(--_ui5-v2-17-0_slider_active_progress_border);left:var(--_ui5-v2-17-0_slider_active_progress_left);top:var(--_ui5-v2-17-0_slider_active_progress_top)}.ui5-slider-tickmarks{list-style:none;padding:0;margin:0;top:var(--_ui5-v2-17-0_slider_tickmark_top);display:flex;box-sizing:border-box;width:100%;justify-content:space-between;position:absolute;z-index:1}.ui5-slider-tickmarks li{height:var(--_ui5-v2-17-0_slider_tickmark_height);border-inline-start:.0625rem solid var(--_ui5-v2-17-0_slider_tickmark_bg)}.ui5-slider-handle{background:var(--_ui5-v2-17-0_slider_handle_background);border:var(--_ui5-v2-17-0_slider_handle_border);border-radius:var(--_ui5-v2-17-0_slider_handle_border_radius);position:relative;outline:none;height:var(--_ui5-v2-17-0_slider_handle_height);width:var(--_ui5-v2-17-0_slider_handle_width);box-sizing:var(--_ui5-v2-17-0_slider_handle_box_sizing);display:flex;justify-content:center;align-items:center;z-index:2}[slider-icon]{display:var(--_ui5-v2-17-0_slider_handle_icon_display);color:var(--sapContent_Selected_ForegroundColor);width:var(--_ui5-v2-17-0_slider_handle_icon_size);height:var(--_ui5-v2-17-0_slider_handle_icon_size)}.ui5-slider-root .ui5-slider-handle:focus [slider-icon]{display:var(--_ui5-v2-17-0_range_slider_active_handle_icon_display)}.ui5-slider-progress-container:hover~.ui5-slider-handle:not(:focus),.ui5-slider-handle:hover{background:var(--_ui5-v2-17-0_slider_handle_hover_background);border:var(--_ui5-v2-17-0_slider_handle_hover_border)}.ui5-slider-root:focus .ui5-slider-inner .ui5-slider-handle,.ui5-slider-handle:focus{outline:var(--_ui5-v2-17-0_slider_handle_outline);outline-offset:var(--_ui5-v2-17-0_slider_handle_outline_offset);border:var(--_ui5-v2-17-0_slider_handle_focus_border);background:var(--_ui5-v2-17-0_slider_handle_background_focus)}.ui5-slider-handle.ui5-slider-handle--start:focus,.ui5-slider-handle--end:focus{border:var(--_ui5-v2-17-0_slider_handle_focus_border)}.ui5-slider-root:focus:hover .ui5-slider-handle,.ui5-slider-handle:focus:hover{border:var(--_ui5-v2-17-0_slider_handle_focus_border)}.ui5-slider-handle-container{position:absolute;margin-inline-start:calc(-1 * var(--_ui5-v2-17-0_slider_handle_width) / 2);top:var(--_ui5-v2-17-0_slider_handle_top)}:host(:not([hidden])) .ui5-slider-handle-container .ui5-slider-tooltip{display:flex;font-family:var(--sapFontFamily);justify-content:center;align-items:center;visibility:hidden;position:absolute;left:50%;transform:translate(-50%);bottom:var(--_ui5-v2-17-0_slider_tooltip_bottom);background:var(--_ui5-v2-17-0_slider_tooltip_background);border:var(--_ui5-v2-17-0_slider_tooltip_border);border-radius:var(--_ui5-v2-17-0_slider_tooltip_border_radius);box-shadow:var(--_ui5-v2-17-0_slider_tooltip_box_shadow);font-size:var(--_ui5-v2-17-0_slider_tooltip_fontsize);color:var(--_ui5-v2-17-0_slider_tooltip_color);height:var(--_ui5-v2-17-0_slider_tooltip_height);min-width:var(--_ui5-v2-17-0_slider_tooltip_min_width);padding:var(--_ui5-v2-17-0_slider_tooltip_padding);box-sizing:var(--_ui5-v2-17-0_slider_tooltip_border_box)}:host(:not([hidden])):host([editable-tooltip]) .ui5-slider-handle-container .ui5-slider-tooltip{border:none;background:none;box-shadow:none}:host([editable-tooltip]) .ui5-slider-tooltip{padding:0;box-shadow:none}.ui5-slider-tooltip [ui5-input]{width:100%;text-align:center}.ui5-slider-tooltip-value{position:relative;display:flex;justify-content:center;align-items:center}.ui5-slider-labels{position:absolute;top:1.25rem;margin:0;padding:0;white-space:nowrap;height:1rem;width:100%;display:flex;justify-content:space-between}.ui5-slider-labels li{position:relative;list-style:none;margin:0;text-align:center;display:inline-block;font-family:var(--sapFontFamily);font-size:var(--_ui5-v2-17-0_slider_label_fontsize);padding-top:0;box-sizing:border-box;width:.0625rem;visibility:hidden}.ui5-slider-labels li:after{content:attr(data-counter);position:absolute;top:0;visibility:visible;display:inline-block;width:2rem;color:var(--_ui5-v2-17-0_slider_label_color);transform:translate(-50%)}.ui5-slider-hidden-labels li:not(:first-child):not(:last-child):after{visibility:hidden}.ui5-slider-handle:focus .ui5-slider-tooltip{bottom:var(--_ui5-v2-17-0_slider_handle_focused_tooltip_distance)}.ui5-slider-tickmarks li.ui5-slider-tickmark-in-range{border-inline-start:1px solid var(--_ui5-v2-17-0_slider_tickmark_in_range_bg)}:host([show-tickmarks]) .ui5-slider-progress{height:var(--_ui5-v2-17-0_slider_no_tickmarks_progress_height);border:var(--_ui5-v2-17-0_slider_no_tickmarks_active_progress_border);left:var(--_ui5-v2-17-0_slider_no_tickmarks_active_progress_left);top:var(--_ui5-v2-17-0_slider_no_tickmarks_active_progress_top)}:host([show-tickmarks]) .ui5-slider-progress-container{top:var(--_ui5-v2-17-0_slider_no_tickmarks_progress_container_top)}.ui5-slider-handle:focus:after{content:"";display:var(--_ui5-v2-17-0_slider_handle_focus_visibility);width:calc(100% + (var(--sapContent_FocusWidth) * 2) + 2px);height:calc(100% + (var(--sapContent_FocusWidth) * 2) + 2px);border:var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);position:absolute;border-radius:var(--_ui5-v2-17-0_slider_handle_border_radius);pointer-events:none}
 `;
-var __decorate$14 = function(decorators, target, key, desc) {
+var __decorate$15 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -3667,52 +3667,52 @@ class SliderBase2 extends b$7 {
     return "";
   }
 };
-__decorate$14([
+__decorate$15([
   s$8({ type: Number })
 ], SliderBase.prototype, "min", void 0);
-__decorate$14([
+__decorate$15([
   s$8({ type: Number })
 ], SliderBase.prototype, "max", void 0);
-__decorate$14([
+__decorate$15([
   s$8()
 ], SliderBase.prototype, "name", void 0);
-__decorate$14([
+__decorate$15([
   s$8({ type: Number })
 ], SliderBase.prototype, "step", void 0);
-__decorate$14([
+__decorate$15([
   s$8({ type: Number })
 ], SliderBase.prototype, "labelInterval", void 0);
-__decorate$14([
+__decorate$15([
   s$8({ type: Boolean })
 ], SliderBase.prototype, "showTickmarks", void 0);
-__decorate$14([
+__decorate$15([
   s$8({ type: Boolean })
 ], SliderBase.prototype, "showTooltip", void 0);
-__decorate$14([
+__decorate$15([
   s$8({ type: Boolean })
 ], SliderBase.prototype, "editableTooltip", void 0);
-__decorate$14([
+__decorate$15([
   s$8({ type: Boolean })
 ], SliderBase.prototype, "disabled", void 0);
-__decorate$14([
+__decorate$15([
   s$8()
 ], SliderBase.prototype, "accessibleName", void 0);
-__decorate$14([
+__decorate$15([
   s$8({ type: Number })
 ], SliderBase.prototype, "value", void 0);
-__decorate$14([
+__decorate$15([
   s$8({ type: Boolean })
 ], SliderBase.prototype, "_tooltipsOpen", void 0);
-__decorate$14([
+__decorate$15([
   s$8({ type: Boolean })
 ], SliderBase.prototype, "_labelsOverlapping", void 0);
-__decorate$14([
+__decorate$15([
   s$8({ type: Boolean })
 ], SliderBase.prototype, "_hiddenTickmarks", void 0);
-__decorate$14([
+__decorate$15([
   s$8({ type: Boolean })
 ], SliderBase.prototype, "_isInputValueValid", void 0);
-SliderBase = SliderBase_1 = __decorate$14([
+SliderBase = SliderBase_1 = __decorate$15([
   l$e("change", {
     bubbles: true
   }),
@@ -4327,7 +4327,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const globalStyles = `.ui5-popup-scroll-blocker{overflow:hidden}
 `;
-var __decorate$13 = function(decorators, target, key, desc) {
+var __decorate$14 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -4703,52 +4703,52 @@ let Popup = Popup_1 = class Popup2 extends b$7 {
     };
   }
 };
-__decorate$13([
+__decorate$14([
   s$8()
 ], Popup.prototype, "initialFocus", void 0);
-__decorate$13([
+__decorate$14([
   s$8({ type: Boolean })
 ], Popup.prototype, "preventFocusRestore", void 0);
-__decorate$13([
+__decorate$14([
   s$8()
 ], Popup.prototype, "accessibleName", void 0);
-__decorate$13([
+__decorate$14([
   s$8()
 ], Popup.prototype, "accessibleNameRef", void 0);
-__decorate$13([
+__decorate$14([
   s$8()
 ], Popup.prototype, "accessibleRole", void 0);
-__decorate$13([
+__decorate$14([
   s$8()
 ], Popup.prototype, "accessibleDescription", void 0);
-__decorate$13([
+__decorate$14([
   s$8()
 ], Popup.prototype, "accessibleDescriptionRef", void 0);
-__decorate$13([
+__decorate$14([
   s$8({ noAttribute: true })
 ], Popup.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$13([
+__decorate$14([
   s$8()
 ], Popup.prototype, "mediaRange", void 0);
-__decorate$13([
+__decorate$14([
   s$8({ type: Boolean })
 ], Popup.prototype, "preventInitialFocus", void 0);
-__decorate$13([
+__decorate$14([
   s$8({ type: Boolean, noAttribute: true })
 ], Popup.prototype, "isTopModalPopup", void 0);
-__decorate$13([
+__decorate$14([
   d$8({ type: HTMLElement, "default": true })
 ], Popup.prototype, "content", void 0);
-__decorate$13([
+__decorate$14([
   s$8({ type: Boolean })
 ], Popup.prototype, "onPhone", void 0);
-__decorate$13([
+__decorate$14([
   s$8({ type: Boolean })
 ], Popup.prototype, "onDesktop", void 0);
-__decorate$13([
+__decorate$14([
   s$8({ type: Boolean })
 ], Popup.prototype, "open", null);
-Popup = Popup_1 = __decorate$13([
+Popup = Popup_1 = __decorate$14([
   m$8({
     renderer: y$5,
     styles: [popupStlyes, popupBlockLayerStyles],
@@ -4951,7 +4951,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const titleCss = `:host(:not([hidden])){display:block;cursor:text}:host{max-width:100%;color:var(--sapGroup_TitleTextColor);font-size:var(--sapFontHeader5Size);font-family:var(--sapFontHeaderFamily);text-shadow:var(--sapContent_TextShadow)}.ui5-title-root{display:inline-block;position:relative;font-weight:400;font-size:inherit;box-sizing:border-box;overflow:hidden;text-overflow:ellipsis;max-width:100%;vertical-align:bottom;-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;margin:0;cursor:inherit}:host{white-space:pre-line}:host([wrapping-type="None"]){white-space:nowrap}.ui5-title-root,:host ::slotted(*){white-space:inherit}::slotted(*){font-size:inherit;font-family:inherit;text-shadow:inherit}:host([size="H1"]){font-size:var(--sapFontHeader1Size)}:host([size="H2"]){font-size:var(--sapFontHeader2Size)}:host([size="H3"]){font-size:var(--sapFontHeader3Size)}:host([size="H4"]){font-size:var(--sapFontHeader4Size)}:host([size="H5"]){font-size:var(--sapFontHeader5Size)}:host([size="H6"]){font-size:var(--sapFontHeader6Size)}
 `;
-var __decorate$12 = function(decorators, target, key, desc) {
+var __decorate$13 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -4983,16 +4983,16 @@ let Title = class Title2 extends b$7 {
     return this.level === TitleLevel$1.H6;
   }
 };
-__decorate$12([
+__decorate$13([
   s$8()
 ], Title.prototype, "wrappingType", void 0);
-__decorate$12([
+__decorate$13([
   s$8()
 ], Title.prototype, "level", void 0);
-__decorate$12([
+__decorate$13([
   s$8()
 ], Title.prototype, "size", void 0);
-Title = __decorate$12([
+Title = __decorate$13([
   m$8({
     tag: "ui5-title",
     renderer: y$5,
@@ -5022,7 +5022,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const PopoverCss = `:host{box-shadow:var(--_ui5-v2-17-0_popover_box_shadow);background-color:var(--_ui5-v2-17-0_popover_background);max-width:calc(100vw - (100vw - 100%) - 2 * var(--_ui5-v2-17-0_popup_viewport_margin))}:host([hide-arrow]){box-shadow:var(--_ui5-v2-17-0_popover_no_arrow_box_shadow)}:host([actual-placement="Bottom"]) .ui5-popover-arrow{left:calc(50% - .5625rem);top:-.5rem;height:.5rem}:host([actual-placement="Bottom"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_upward_arrow_margin)}:host([actual-placement="Left"]) .ui5-popover-arrow{top:calc(50% - .5625rem);right:-.5625rem;width:.5625rem}:host([actual-placement="Left"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_right_arrow_margin)}:host([actual-placement="Top"]) .ui5-popover-arrow{left:calc(50% - .5625rem);height:.5625rem;top:100%}:host([actual-placement="Top"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_downward_arrow_margin)}:host(:not([actual-placement])) .ui5-popover-arrow,:host([actual-placement="Right"]) .ui5-popover-arrow{left:-.5625rem;top:calc(50% - .5625rem);width:.5625rem;height:1rem}:host(:not([actual-placement])) .ui5-popover-arrow:after,:host([actual-placement="Right"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_left_arrow_margin)}:host([hide-arrow]) .ui5-popover-arrow{display:none}.ui5-popover-root{min-width:6.25rem}.ui5-popover-arrow{pointer-events:none;display:block;width:1rem;height:1rem;position:absolute;overflow:hidden}.ui5-popover-arrow:after{content:"";display:block;width:.7rem;height:.7rem;background-color:var(--_ui5-v2-17-0_popover_background);box-shadow:var(--_ui5-v2-17-0_popover_box_shadow);transform:rotate(-45deg)}:host([modal])::backdrop{background-color:var(--_ui5-v2-17-0_popup_block_layer_background);opacity:var(--_ui5-v2-17-0_popup_block_layer_opacity)}:host([modal]) .ui5-block-layer{display:block}
 `;
-var __decorate$11 = function(decorators, target, key, desc) {
+var __decorate$12 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -5572,52 +5572,52 @@ let Popover = Popover_1 = class Popover2 extends Popup$1 {
     }
   }
 };
-__decorate$11([
+__decorate$12([
   s$8()
 ], Popover.prototype, "headerText", void 0);
-__decorate$11([
+__decorate$12([
   s$8()
 ], Popover.prototype, "placement", void 0);
-__decorate$11([
+__decorate$12([
   s$8()
 ], Popover.prototype, "horizontalAlign", void 0);
-__decorate$11([
+__decorate$12([
   s$8()
 ], Popover.prototype, "verticalAlign", void 0);
-__decorate$11([
+__decorate$12([
   s$8({ type: Boolean })
 ], Popover.prototype, "modal", void 0);
-__decorate$11([
+__decorate$12([
   s$8({ type: Boolean })
 ], Popover.prototype, "hideArrow", void 0);
-__decorate$11([
+__decorate$12([
   s$8({ type: Boolean })
 ], Popover.prototype, "allowTargetOverlap", void 0);
-__decorate$11([
+__decorate$12([
   s$8({ type: Number, noAttribute: true })
 ], Popover.prototype, "arrowTranslateX", void 0);
-__decorate$11([
+__decorate$12([
   s$8({ type: Number, noAttribute: true })
 ], Popover.prototype, "arrowTranslateY", void 0);
-__decorate$11([
+__decorate$12([
   s$8()
 ], Popover.prototype, "actualPlacement", void 0);
-__decorate$11([
+__decorate$12([
   s$8({ type: Number, noAttribute: true })
 ], Popover.prototype, "_maxHeight", void 0);
-__decorate$11([
+__decorate$12([
   s$8({ type: Number, noAttribute: true })
 ], Popover.prototype, "_maxWidth", void 0);
-__decorate$11([
+__decorate$12([
   d$8({ type: HTMLElement })
 ], Popover.prototype, "header", void 0);
-__decorate$11([
+__decorate$12([
   d$8({ type: HTMLElement })
 ], Popover.prototype, "footer", void 0);
-__decorate$11([
+__decorate$12([
   s$8({ converter: e$4 })
 ], Popover.prototype, "opener", null);
-Popover = Popover_1 = __decorate$11([
+Popover = Popover_1 = __decorate$12([
   m$8({
     tag: "ui5-popover",
     styles: [
@@ -5684,7 +5684,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const SuggestionsCss = `.ui5-suggestions-popover{box-shadow:var(--sapContent_Shadow1)}.ui5-suggestions-popover::part(header),.ui5-suggestions-popover::part(content){padding:0}.ui5-suggestions-popover::part(footer){padding:0 1rem}.input-root-phone.native-input-wrapper{display:contents}.input-root-phone.native-input-wrapper:before{display:none}.native-input-wrapper .ui5-input-inner-phone{margin:0}.native-input-wrapper .ui5-multi-input-mobile-dialog-button{margin-inline-start:.5rem}
 `;
-var __decorate$10 = function(decorators, target, key, desc) {
+var __decorate$11 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -6795,124 +6795,124 @@ let Input = Input_1 = class Input2 extends b$7 {
     return value;
   }
 };
-__decorate$10([
+__decorate$11([
   s$8({ type: Boolean })
 ], Input.prototype, "disabled", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Boolean })
 ], Input.prototype, "highlight", void 0);
-__decorate$10([
+__decorate$11([
   s$8()
 ], Input.prototype, "placeholder", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Boolean })
 ], Input.prototype, "readonly", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Boolean })
 ], Input.prototype, "required", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Boolean })
 ], Input.prototype, "noTypeahead", void 0);
-__decorate$10([
+__decorate$11([
   s$8()
 ], Input.prototype, "type", void 0);
-__decorate$10([
+__decorate$11([
   s$8()
 ], Input.prototype, "value", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ noAttribute: true })
 ], Input.prototype, "_innerValue", void 0);
-__decorate$10([
+__decorate$11([
   s$8()
 ], Input.prototype, "valueState", void 0);
-__decorate$10([
+__decorate$11([
   s$8()
 ], Input.prototype, "name", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Boolean })
 ], Input.prototype, "showSuggestions", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Number })
 ], Input.prototype, "maxlength", void 0);
-__decorate$10([
+__decorate$11([
   s$8()
 ], Input.prototype, "accessibleName", void 0);
-__decorate$10([
+__decorate$11([
   s$8()
 ], Input.prototype, "accessibleNameRef", void 0);
-__decorate$10([
+__decorate$11([
   s$8()
 ], Input.prototype, "accessibleDescription", void 0);
-__decorate$10([
+__decorate$11([
   s$8()
 ], Input.prototype, "accessibleDescriptionRef", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Boolean })
 ], Input.prototype, "showClearIcon", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Boolean })
 ], Input.prototype, "open", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Boolean })
 ], Input.prototype, "_effectiveShowClearIcon", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Boolean })
 ], Input.prototype, "focused", void 0);
-__decorate$10([
+__decorate$11([
   s$8()
 ], Input.prototype, "hint", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Boolean })
 ], Input.prototype, "valueStateOpen", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Object })
 ], Input.prototype, "_inputAccInfo", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Object })
 ], Input.prototype, "_nativeInputAttributes", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Number })
 ], Input.prototype, "_inputWidth", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Number })
 ], Input.prototype, "_listWidth", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Boolean, noAttribute: true })
 ], Input.prototype, "_inputIconFocused", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ noAttribute: true })
 ], Input.prototype, "_associatedLabelsTexts", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ noAttribute: true })
 ], Input.prototype, "_accessibleLabelsRefTexts", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ noAttribute: true })
 ], Input.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Object })
 ], Input.prototype, "Suggestions", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Array })
 ], Input.prototype, "_linksListenersArray", void 0);
-__decorate$10([
+__decorate$11([
   s$8({ type: Boolean, noAttribute: true })
 ], Input.prototype, "_isComposing", void 0);
-__decorate$10([
+__decorate$11([
   d$8({ type: HTMLElement, "default": true })
 ], Input.prototype, "suggestionItems", void 0);
-__decorate$10([
+__decorate$11([
   d$8()
 ], Input.prototype, "icon", void 0);
-__decorate$10([
+__decorate$11([
   d$8({
     type: HTMLElement,
     invalidateOnChildChange: true
   })
 ], Input.prototype, "valueStateMessage", void 0);
-__decorate$10([
+__decorate$11([
   i$9("@ui5/webcomponents")
 ], Input, "i18nBundle", void 0);
-Input = Input_1 = __decorate$10([
+Input = Input_1 = __decorate$11([
   m$8({
     tag: "ui5-input",
     languageAware: true,
@@ -6959,7 +6959,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const SliderTooltipCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:popover-open){margin:-28px 0 0;display:inline-block;height:1rem;background:var(--sapBackgroundColor);border:none;box-shadow:var(--sapContent_Shadow1);border-radius:.0625rem;padding:0 .5rem;font-family:var(--sapFontFamily);font-size:var(--sapFontSmallSize);color:var(--sapTextColor);display:flex;justify-content:center;align-items:center;overflow:hidden}:host([editable]:popover-open){cursor:pointer;height:fit-content;border:none;padding:0;margin-top:-3rem;box-shadow:none}:host([editable]:popover-open) [ui5-input]{width:min-content;text-align:center}
 `;
-var __decorate$$ = function(decorators, target, key, desc) {
+var __decorate$10 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -7061,34 +7061,34 @@ let SliderTooltip = SliderTooltip_1 = class SliderTooltip2 extends b$7 {
     return SliderTooltip_1.i18nBundle.getText(SLIDER_TOOLTIP_INPUT_LABEL);
   }
 };
-__decorate$$([
+__decorate$10([
   s$8()
 ], SliderTooltip.prototype, "value", void 0);
-__decorate$$([
+__decorate$10([
   s$8()
 ], SliderTooltip.prototype, "inputValue", void 0);
-__decorate$$([
+__decorate$10([
   s$8({ type: Boolean })
 ], SliderTooltip.prototype, "open", void 0);
-__decorate$$([
+__decorate$10([
   s$8({ type: Number })
 ], SliderTooltip.prototype, "min", void 0);
-__decorate$$([
+__decorate$10([
   s$8({ type: Number })
 ], SliderTooltip.prototype, "max", void 0);
-__decorate$$([
+__decorate$10([
   s$8({ type: Boolean })
 ], SliderTooltip.prototype, "editable", void 0);
-__decorate$$([
+__decorate$10([
   s$8()
 ], SliderTooltip.prototype, "valueState", void 0);
-__decorate$$([
+__decorate$10([
   s$8({ type: Object })
 ], SliderTooltip.prototype, "followRef", void 0);
-__decorate$$([
+__decorate$10([
   i$9("@ui5/webcomponents")
 ], SliderTooltip, "i18nBundle", void 0);
-SliderTooltip = SliderTooltip_1 = __decorate$$([
+SliderTooltip = SliderTooltip_1 = __decorate$10([
   m$8({
     tag: "ui5-slider-tooltip",
     renderer: y$5,
@@ -7113,7 +7113,7 @@ function handles() {
   var _a2;
   return jsxs("div", { class: "ui5-slider-handle-container", style: this.styles.handle, part: "handle-container", children: [jsx("div", { class: "ui5-slider-handle", onFocusOut: this._onfocusout, onFocusIn: this._onfocusin, onKeyUp: this._onkeyup, role: "slider", tabIndex: this._tabIndex, "aria-orientation": "horizontal", "aria-valuemin": this.min, "aria-valuemax": this.max, "aria-valuenow": this.value, "aria-label": this._ariaLabel, "aria-disabled": this._ariaDisabled, "aria-keyshortcuts": this._ariaKeyshortcuts, "aria-describedby": this._ariaDescribedByHandleText, "data-sap-focus-ref": true, part: "handle", id: "handle1", children: jsx(Icon$1, { name: directionArrows, mode: "Decorative", part: "icon-slider", "slider-icon": true }) }), jsx(SliderTooltip$1, { open: this._tooltipsOpen, value: this.tooltipValue, min: this.min, max: this.max, editable: this.editableTooltip, followRef: (_a2 = this.shadowRoot) == null ? void 0 : _a2.querySelector("#handle1"), onChange: this._onTooltipChange, onForwardFocus: this._onTooltopForwardFocus })] });
 }
-var __decorate$_ = function(decorators, target, key, desc) {
+var __decorate$$ = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -7322,13 +7322,13 @@ let Slider = Slider_1 = class Slider2 extends SliderBase$1 {
     return arr;
   }
 };
-__decorate$_([
+__decorate$$([
   s$8({ type: Number })
 ], Slider.prototype, "value", void 0);
-__decorate$_([
+__decorate$$([
   i$9("@ui5/webcomponents")
 ], Slider, "i18nBundle", void 0);
-Slider = Slider_1 = __decorate$_([
+Slider = Slider_1 = __decorate$$([
   m$8({
     tag: "ui5-slider",
     languageAware: true,
@@ -7404,7 +7404,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const ProgressIndicatorCss = `:host(:not([hidden])){display:inline-block;min-height:var(_ui5_progress_indicator_host_min_height);min-width:4rem;width:100%;height:var(--_ui5-v2-17-0_progress_indicator_host_height);overflow:hidden;box-sizing:var(--_ui5-v2-17-0_progress_indicator_host_box_sizing);padding:var(--_ui5-v2-17-0_progress_indicator_padding);padding-inline-end:var(--_ui5-v2-17-0_progress_indicator_padding_end)}:host(:not([hidden])[hide-value]){padding-top:var(--_ui5-v2-17-0_progress_indicator_padding_novalue);padding-bottom:var(--_ui5-v2-17-0_progress_indicator_padding_novalue)}.ui5-progress-indicator-root{display:flex;align-items:center;background:var(--_ui5-v2-17-0_progress_indicator_background_none);border-radius:var(--_ui5-v2-17-0_progress_indicator_root_border_radius);overflow:var(--_ui5-v2-17-0_progress_indicator_root_overflow);min-height:var(--_ui5-v2-17-0_progress_indicator_root_min_height);height:var(--_ui5-v2-17-0_progress_indicator_root_height);width:100%;font-size:var(--sapProgress_FontSize);font-family:var(--sapFontFamily);position:var(--_ui5-v2-17-0_progress_indicator_root_position);box-sizing:border-box}.ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_none);justify-content:flex-end;height:var(--_ui5-v2-17-0_progress_indicator_bar_height);display:flex;align-items:center;flex-direction:row;color:var(--_ui5-v2-17-0_progress_indicator_bar_color);transition-property:width;transition-timing-function:linear;box-sizing:border-box;border:var(--_ui5-v2-17-0_progress_indicator_bar_border_max);border-radius:var(--_ui5-v2-17-0_progress_indicator_bar_border_radius)}.ui5-progress-indicator-min-value .ui5-progress-indicator-bar,.ui5-progress-indicator-max-value .ui5-progress-indicator-remaining-bar{border:none}.ui5-progress-indicator-max-value .ui5-progress-indicator-bar{border-radius:.5rem}.ui5-progress-indicator-min-value .ui5-progress-indicator-remaining-bar{border-inline-start:var(--_ui5-v2-17-0_progress_indicator_border);border-radius:.5rem}.ui5-progress-indicator-remaining-bar{justify-content:flex-start;width:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_width);height:100%;display:flex;align-items:center;flex-direction:row;flex-grow:1;flex-basis:0;border:var(--_ui5-v2-17-0_progress_indicator_border);border-inline-start:none;border-radius:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_border_radius);box-sizing:border-box;color:var(--_ui5-v2-17-0_progress_indicator_color);overflow:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_overflow);position:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_position)}.ui5-progress-indicator-value{margin:var(--_ui5-v2-17-0_progress_indicator_value_margin);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;position:var(--_ui5-v2-17-0_progress_indicator_value_position);top:var(--_ui5-v2-17-0_progress_indicator_value_top_position);inset-inline-start:var(--_ui5-v2-17-0_progress_indicator_value_left_position)}.ui5-progress-indicator-icon{margin-inline-start:.375rem;width:var(--_ui5-v2-17-0_progress_indicator_icon_size);height:var(--_ui5-v2-17-0_progress_indicator_icon_size);display:var(--_ui5-v2-17-0_progress_indicator_icon_visibility);position:var(--_ui5-v2-17-0_progress_indicator_icon_position);inset-inline-end:var(--_ui5-v2-17-0_progress_indicator_icon_right_position)}:host([value-state="Negative"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_error_icon_color)}:host([value-state="Critical"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_warning_icon_color)}:host([value-state="Positive"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_success_icon_color)}:host([value-state="Information"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_information_icon_color)}:host([value-state="Negative"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_error)}:host([value-state="Critical"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_warning)}:host([value-state="Positive"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_success)}:host([value-state="Information"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_information)}:host([value-state="Negative"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_error)}:host([value-state="Critical"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_warning)}:host([value-state="Positive"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_success)}:host([value-state="Information"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_information)}:host([value-state="Negative"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_error)}:host([value-state="Critical"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_warning)}:host([value-state="Positive"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_success)}:host([value-state="Information"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_information)}.ui5-progress-indicator-remaining-bar:before,.ui5-progress-indicator-remaining-bar:after{content:"";display:block;width:.25rem;height:.25rem;position:absolute;border-radius:50%;display:var(--_ui5-v2-17-0_progress_indicator_side_points_visibility);background:var(--_ui5-v2-17-0_progress_indicator_value_state_none)}.ui5-progress-indicator-remaining-bar:before{left:.0625rem}.ui5-progress-indicator-remaining-bar:after{right:.0625rem}:host([value-state="Negative"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Negative"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_NegativeBackground)}:host([value-state="Critical"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Critical"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_CriticalBackground)}:host([value-state="Positive"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Positive"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_PositiveBackground)}:host([value-state="Information"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Information"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_InformationBackground)}
 `;
-var __decorate$Z = function(decorators, target, key, desc) {
+var __decorate$_ = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -7456,25 +7456,25 @@ let ProgressIndicator = ProgressIndicator_1 = class ProgressIndicator2 extends b
     return this.valueState !== o$5.None;
   }
 };
-__decorate$Z([
+__decorate$_([
   s$8()
 ], ProgressIndicator.prototype, "accessibleName", void 0);
-__decorate$Z([
+__decorate$_([
   s$8({ type: Boolean })
 ], ProgressIndicator.prototype, "hideValue", void 0);
-__decorate$Z([
+__decorate$_([
   s$8({ type: Number })
 ], ProgressIndicator.prototype, "value", void 0);
-__decorate$Z([
+__decorate$_([
   s$8()
 ], ProgressIndicator.prototype, "displayValue", void 0);
-__decorate$Z([
+__decorate$_([
   s$8()
 ], ProgressIndicator.prototype, "valueState", void 0);
-__decorate$Z([
+__decorate$_([
   i$9("@ui5/webcomponents")
 ], ProgressIndicator, "i18nBundle", void 0);
-ProgressIndicator = ProgressIndicator_1 = __decorate$Z([
+ProgressIndicator = ProgressIndicator_1 = __decorate$_([
   m$8({
     tag: "ui5-progress-indicator",
     renderer: y$5,
@@ -8017,7 +8017,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const DropIndicatorCss = `:host{position:absolute;pointer-events:none;z-index:99}:host([orientation="Vertical"]) .ui5-di-needle{width:.125rem;height:100%;inset-block:0;background:var(--sapContent_DragAndDropActiveColor)}:host([orientation="Vertical"]){margin-left:-.0625rem}:host([orientation="Horizontal"]) .ui5-di-needle{height:.125rem;width:100%;inset-inline:0;background:var(--sapContent_DragAndDropActiveColor)}:host([orientation="Horizontal"]){margin-top:-.0625rem}:host([orientation="Horizontal"][placement="Before"][first]){margin-top:.3125rem}:host([orientation="Horizontal"][placement="After"][last]){margin-top:-.3125rem}:host([orientation="Vertical"]) .ui5-di-needle:before{left:-.1875rem;content:"";position:absolute;width:.25rem;height:.25rem;border-radius:.25rem;border:.125rem solid var(--sapContent_DragAndDropActiveColor);background-color:#fff;pointer-events:none}:host([orientation="Horizontal"]) .ui5-di-needle:before{top:-.1875rem;content:"";position:absolute;width:.25rem;height:.25rem;border-radius:.25rem;border:.125rem solid var(--sapContent_DragAndDropActiveColor);background-color:#fff;pointer-events:none}:host .ui5-di-rect{border:.125rem solid var(--sapContent_DragAndDropActiveColor);position:absolute;inset:0}:host .ui5-di-rect:before{content:" ";position:absolute;inset:0;background:var(--sapContent_DragAndDropActiveColor);opacity:.05}
 `;
-var __decorate$Y = function(decorators, target, key, desc) {
+var __decorate$Z = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -8098,19 +8098,19 @@ let DropIndicator = class DropIndicator2 extends b$7 {
     Object.assign(this.style, style);
   }
 };
-__decorate$Y([
+__decorate$Z([
   s$8({ type: Object })
 ], DropIndicator.prototype, "targetReference", void 0);
-__decorate$Y([
+__decorate$Z([
   s$8({ type: Object })
 ], DropIndicator.prototype, "ownerReference", void 0);
-__decorate$Y([
+__decorate$Z([
   s$8()
 ], DropIndicator.prototype, "placement", void 0);
-__decorate$Y([
+__decorate$Z([
   s$8()
 ], DropIndicator.prototype, "orientation", void 0);
-DropIndicator = __decorate$Y([
+DropIndicator = __decorate$Z([
   m$8({
     tag: "ui5-drop-indicator",
     renderer: y$5,
@@ -8161,7 +8161,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const draggableElementStyles = `[draggable=true]{cursor:grab!important}[draggable=true][data-moving]{cursor:grabbing!important;opacity:var(--sapContent_DisabledOpacity)}
 `;
-var __decorate$X = function(decorators, target, key, desc) {
+var __decorate$Y = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -8304,28 +8304,28 @@ let ListItemBase = class ListItemBase2 extends b$7 {
     return true;
   }
 };
-__decorate$X([
+__decorate$Y([
   s$8({ type: Boolean })
 ], ListItemBase.prototype, "selected", void 0);
-__decorate$X([
+__decorate$Y([
   s$8({ type: Boolean })
 ], ListItemBase.prototype, "movable", void 0);
-__decorate$X([
+__decorate$Y([
   s$8({ type: Boolean })
 ], ListItemBase.prototype, "hasBorder", void 0);
-__decorate$X([
+__decorate$Y([
   s$8()
 ], ListItemBase.prototype, "forcedTabIndex", void 0);
-__decorate$X([
+__decorate$Y([
   s$8({ type: Boolean })
 ], ListItemBase.prototype, "disabled", void 0);
-__decorate$X([
+__decorate$Y([
   s$8({ type: Boolean })
 ], ListItemBase.prototype, "focused", void 0);
-__decorate$X([
+__decorate$Y([
   s$8({ type: Boolean })
 ], ListItemBase.prototype, "actionable", void 0);
-ListItemBase = __decorate$X([
+ListItemBase = __decorate$Y([
   m$8({
     renderer: y$5,
     styles: [styles$3, draggableElementStyles]
@@ -8386,7 +8386,7 @@ var ListItemAccessibleRole;
   ListItemAccessibleRole2["None"] = "None";
 })(ListItemAccessibleRole || (ListItemAccessibleRole = {}));
 const ListItemAccessibleRole$1 = ListItemAccessibleRole;
-var __decorate$W = function(decorators, target, key, desc) {
+var __decorate$X = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -8452,28 +8452,28 @@ let ListItemGroupHeader = ListItemGroupHeader_1 = class ListItemGroupHeader2 ext
     return this.defaultSlotText || this.groupHeaderText || "";
   }
 };
-__decorate$W([
+__decorate$X([
   s$8()
 ], ListItemGroupHeader.prototype, "accessibleName", void 0);
-__decorate$W([
+__decorate$X([
   s$8()
 ], ListItemGroupHeader.prototype, "accessibleRole", void 0);
-__decorate$W([
+__decorate$X([
   s$8()
 ], ListItemGroupHeader.prototype, "wrappingType", void 0);
-__decorate$W([
+__decorate$X([
   s$8()
 ], ListItemGroupHeader.prototype, "mediaRange", void 0);
-__decorate$W([
+__decorate$X([
   s$8({ noAttribute: true })
 ], ListItemGroupHeader.prototype, "expandableTextTemplate", void 0);
-__decorate$W([
+__decorate$X([
   d$8()
 ], ListItemGroupHeader.prototype, "subItems", void 0);
-__decorate$W([
+__decorate$X([
   i$9("@ui5/webcomponents")
 ], ListItemGroupHeader, "i18nBundle", void 0);
-ListItemGroupHeader = ListItemGroupHeader_1 = __decorate$W([
+ListItemGroupHeader = ListItemGroupHeader_1 = __decorate$X([
   m$8({
     tag: "ui5-li-group-header",
     languageAware: true,
@@ -8490,7 +8490,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const ListItemGroupCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{height:var(--_ui5-v2-17-0_group_header_list_item_height);background:var(--ui5-v2-17-0-group-header-listitem-background-color);color:var(--sapList_TableGroupHeaderTextColor)}.ui5-group-li-root{width:100%;height:100%;position:relative;box-sizing:border-box;padding:0;margin:0;list-style-type:none}
 `;
-var __decorate$V = function(decorators, target, key, desc) {
+var __decorate$W = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -8544,29 +8544,29 @@ let ListItemGroup = class ListItemGroup2 extends b$7 {
     return this.groupHeaderItem || this.items.at(0);
   }
 };
-__decorate$V([
+__decorate$W([
   s$8()
 ], ListItemGroup.prototype, "headerText", void 0);
-__decorate$V([
+__decorate$W([
   s$8()
 ], ListItemGroup.prototype, "headerAccessibleName", void 0);
-__decorate$V([
+__decorate$W([
   d$8({
     "default": true,
     invalidateOnChildChange: true,
     type: HTMLElement
   })
 ], ListItemGroup.prototype, "items", void 0);
-__decorate$V([
+__decorate$W([
   s$8()
 ], ListItemGroup.prototype, "wrappingType", void 0);
-__decorate$V([
+__decorate$W([
   s$8({ type: Boolean })
 ], ListItemGroup.prototype, "focused", void 0);
-__decorate$V([
+__decorate$W([
   d$8({ type: HTMLElement })
 ], ListItemGroup.prototype, "header", void 0);
-ListItemGroup = __decorate$V([
+ListItemGroup = __decorate$W([
   m$8({
     tag: "ui5-li-group",
     renderer: y$5,
@@ -8587,7 +8587,7 @@ const isInstanceOfListItemGroup = (object) => {
   return "isListItemGroup" in object;
 };
 const ListItemGroup$1 = ListItemGroup;
-var __decorate$U = function(decorators, target, key, desc) {
+var __decorate$V = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -9342,83 +9342,83 @@ let List = List_1 = class List2 extends b$7 {
     return this._startIntersectionObserver;
   }
 };
-__decorate$U([
+__decorate$V([
   s$8()
 ], List.prototype, "headerText", void 0);
-__decorate$U([
+__decorate$V([
   s$8()
 ], List.prototype, "footerText", void 0);
-__decorate$U([
+__decorate$V([
   s$8({ type: Boolean })
 ], List.prototype, "indent", void 0);
-__decorate$U([
+__decorate$V([
   s$8()
 ], List.prototype, "selectionMode", void 0);
-__decorate$U([
+__decorate$V([
   s$8()
 ], List.prototype, "noDataText", void 0);
-__decorate$U([
+__decorate$V([
   s$8()
 ], List.prototype, "separators", void 0);
-__decorate$U([
+__decorate$V([
   s$8()
 ], List.prototype, "growing", void 0);
-__decorate$U([
+__decorate$V([
   s$8()
 ], List.prototype, "growingButtonText", void 0);
-__decorate$U([
+__decorate$V([
   s$8({ type: Boolean })
 ], List.prototype, "loading", void 0);
-__decorate$U([
+__decorate$V([
   s$8({ type: Number })
 ], List.prototype, "loadingDelay", void 0);
-__decorate$U([
+__decorate$V([
   s$8()
 ], List.prototype, "accessibleName", void 0);
-__decorate$U([
+__decorate$V([
   s$8({ type: Object })
 ], List.prototype, "accessibilityAttributes", void 0);
-__decorate$U([
+__decorate$V([
   s$8()
 ], List.prototype, "accessibleNameRef", void 0);
-__decorate$U([
+__decorate$V([
   s$8()
 ], List.prototype, "accessibleDescription", void 0);
-__decorate$U([
+__decorate$V([
   s$8()
 ], List.prototype, "accessibleDescriptionRef", void 0);
-__decorate$U([
+__decorate$V([
   s$8({ noAttribute: true })
 ], List.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$U([
+__decorate$V([
   s$8({ noAttribute: true })
 ], List.prototype, "_associatedLabelsRefTexts", void 0);
-__decorate$U([
+__decorate$V([
   s$8()
 ], List.prototype, "accessibleRole", void 0);
-__decorate$U([
+__decorate$V([
   s$8({ type: Boolean })
 ], List.prototype, "_inViewport", void 0);
-__decorate$U([
+__decorate$V([
   s$8({ type: Boolean })
 ], List.prototype, "_loadMoreActive", void 0);
-__decorate$U([
+__decorate$V([
   s$8()
 ], List.prototype, "mediaRange", void 0);
-__decorate$U([
+__decorate$V([
   d$8({
     type: HTMLElement,
     "default": true,
     invalidateOnChildChange: true
   })
 ], List.prototype, "items", void 0);
-__decorate$U([
+__decorate$V([
   d$8()
 ], List.prototype, "header", void 0);
-__decorate$U([
+__decorate$V([
   i$9("@ui5/webcomponents")
 ], List, "i18nBundle", void 0);
-List = List_1 = __decorate$U([
+List = List_1 = __decorate$V([
   m$8({
     tag: "ui5-list",
     fastNavigation: true,
@@ -9489,7 +9489,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const dialogCSS = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{min-width:20rem;min-height:6rem;max-height:94%;max-width:90%;flex-direction:column;box-shadow:var(--sapContent_Shadow3);border-radius:var(--sapElement_BorderCornerRadius)}:host([stretch]){width:90%;height:94%}:host([stretch][on-phone]){width:100%;height:100%;max-height:100%;max-width:100%;border-radius:0;min-width:0}:host([draggable]) .ui5-popup-header-root,:host([draggable]) ::slotted([slot="header"]){cursor:move}:host([draggable]) .ui5-popup-header-root *{cursor:auto}:host([draggable]) .ui5-popup-root{user-select:text}::slotted([slot="header"]){max-width:100%}.ui5-popup-root{display:flex;flex-direction:column;max-width:100vw}.ui5-popup-header-root{position:relative}.ui5-popup-header-root:before{content:"";position:absolute;inset-block-start:auto;inset-block-end:0;inset-inline-start:0;inset-inline-end:0;height:var(--_ui5-v2-17-0_dialog_header_state_line_height);background:var(--sapObjectHeader_BorderColor)}:host([state="Negative"]) .ui5-popup-header-root:before{background:var(--sapErrorBorderColor)}:host([state="Information"]) .ui5-popup-header-root:before{background:var(--sapInformationBorderColor)}:host([state="Positive"]) .ui5-popup-header-root:before{background:var(--sapSuccessBorderColor)}:host([state="Critical"]) .ui5-popup-header-root:before{background:var(--sapWarningBorderColor)}.ui5-dialog-value-state-icon{margin-inline-end:.5rem;flex-shrink:0}:host([state="Negative"]) .ui5-dialog-value-state-icon{color:var(--sapNegativeElementColor)}:host([state="Information"]) .ui5-dialog-value-state-icon{color:var(--sapInformativeElementColor)}:host([state="Positive"]) .ui5-dialog-value-state-icon{color:var(--sapPositiveElementColor)}:host([state="Critical"]) .ui5-dialog-value-state-icon{color:var(--sapCriticalElementColor)}.ui5-popup-header-root{outline:none}:host([desktop]) .ui5-popup-header-root:focus:after,.ui5-popup-header-root:focus-visible:after{content:"";position:absolute;left:var(--_ui5-v2-17-0_dialog_header_focus_left_offset);bottom:var(--_ui5-v2-17-0_dialog_header_focus_bottom_offset);right:var(--_ui5-v2-17-0_dialog_header_focus_right_offset);top:var(--_ui5-v2-17-0_dialog_header_focus_top_offset);border:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);border-radius:var(--_ui5-v2-17-0_dialog_header_border_radius) var(--_ui5-v2-17-0_dialog_header_border_radius) 0 0;pointer-events:none}:host([stretch]) .ui5-popup-content{width:100%;height:100%}.ui5-popup-content{min-height:var(--_ui5-v2-17-0_dialog_content_min_height);flex:1 1 auto}.ui5-popup-resize-handle{position:absolute;bottom:-.5rem;inset-inline-end:-.5rem;cursor:var(--_ui5-v2-17-0_dialog_resize_cursor);width:1.5rem;height:1.5rem;border-radius:50%}.ui5-popup-resize-handle [ui5-icon]{color:var(--sapButton_Lite_TextColor)}::slotted([slot="footer"]){height:var(--_ui5-v2-17-0_dialog_footer_height)}::slotted([slot="footer"][ui5-bar][design="Footer"]){border-top:none}::slotted([slot="header"][ui5-bar]){box-shadow:none}::slotted([slot="footer"][ui5-toolbar]){border:0}:host::backdrop{background-color:var(--_ui5-v2-17-0_popup_block_layer_background);opacity:var(--_ui5-v2-17-0_popup_block_layer_opacity)}.ui5-block-layer{display:block}
 `;
-var __decorate$T = function(decorators, target, key, desc) {
+var __decorate$U = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -9823,31 +9823,31 @@ let Dialog = Dialog_1 = class Dialog2 extends Popup$1 {
     window.removeEventListener("mouseup", this._resizeMouseUpHandler);
   }
 };
-__decorate$T([
+__decorate$U([
   s$8()
 ], Dialog.prototype, "headerText", void 0);
-__decorate$T([
+__decorate$U([
   s$8({ type: Boolean })
 ], Dialog.prototype, "stretch", void 0);
-__decorate$T([
+__decorate$U([
   s$8({ type: Boolean })
 ], Dialog.prototype, "draggable", void 0);
-__decorate$T([
+__decorate$U([
   s$8({ type: Boolean })
 ], Dialog.prototype, "resizable", void 0);
-__decorate$T([
+__decorate$U([
   s$8()
 ], Dialog.prototype, "state", void 0);
-__decorate$T([
+__decorate$U([
   d$8()
 ], Dialog.prototype, "header", void 0);
-__decorate$T([
+__decorate$U([
   d$8()
 ], Dialog.prototype, "footer", void 0);
-__decorate$T([
+__decorate$U([
   i$9("@ui5/webcomponents")
 ], Dialog, "i18nBundle", void 0);
-Dialog = Dialog_1 = __decorate$T([
+Dialog = Dialog_1 = __decorate$U([
   m$8({
     tag: "ui5-dialog",
     template: DialogTemplate,
@@ -9870,7 +9870,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const ResponsivePopoverCss = `:host{--_ui5-v2-17-0_input_width: 100%;min-width:6.25rem;min-height:2rem}:host([on-phone]){display:contents}.ui5-responsive-popover-header{height:var(--_ui5-v2-17-0-responsive_popover_header_height);display:flex;justify-content:var(--_ui5-v2-17-0_popup_header_prop_header_text_alignment);align-items:center;width:100%}.ui5-responsive-popover-header-text{width:calc(100% - var(--_ui5-v2-17-0_button_base_min_width))}.ui5-responsive-popover-header-no-title{justify-content:flex-end}
 `;
-var __decorate$S = function(decorators, target, key, desc) {
+var __decorate$T = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -9974,19 +9974,19 @@ let ResponsivePopover = ResponsivePopover_1 = class ResponsivePopover2 extends P
     return this._dialog.isModal;
   }
 };
-__decorate$S([
+__decorate$T([
   s$8({ type: Boolean })
 ], ResponsivePopover.prototype, "contentOnlyOnDesktop", void 0);
-__decorate$S([
+__decorate$T([
   s$8({ type: Boolean })
 ], ResponsivePopover.prototype, "_hideHeader", void 0);
-__decorate$S([
+__decorate$T([
   s$8({ type: Boolean })
 ], ResponsivePopover.prototype, "_hideCloseButton", void 0);
-__decorate$S([
+__decorate$T([
   i$9("@ui5/webcomponents")
 ], ResponsivePopover, "i18nBundle", void 0);
-ResponsivePopover = ResponsivePopover_1 = __decorate$S([
+ResponsivePopover = ResponsivePopover_1 = __decorate$T([
   m$8({
     tag: "ui5-responsive-popover",
     styles: [Popover$1.styles, ResponsivePopoverCss],
@@ -10048,7 +10048,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const SelectPopoverCss = `.ui5-select-popover::part(content),.ui5-select-popover::part(header){padding:0}.ui5-select-popover .ui5-responsive-popover-header .row{justify-content:flex-start}
 `;
-var __decorate$R = function(decorators, target, key, desc) {
+var __decorate$S = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -10675,73 +10675,73 @@ let Select = Select_1 = class Select2 extends b$7 {
     return this.shadowRoot.querySelector("[ui5-popover]");
   }
 };
-__decorate$R([
+__decorate$S([
   s$8({ type: Boolean })
 ], Select.prototype, "disabled", void 0);
-__decorate$R([
+__decorate$S([
   s$8()
 ], Select.prototype, "icon", void 0);
-__decorate$R([
+__decorate$S([
   s$8()
 ], Select.prototype, "name", void 0);
-__decorate$R([
+__decorate$S([
   s$8()
 ], Select.prototype, "valueState", void 0);
-__decorate$R([
+__decorate$S([
   s$8({ type: Boolean })
 ], Select.prototype, "required", void 0);
-__decorate$R([
+__decorate$S([
   s$8({ type: Boolean })
 ], Select.prototype, "readonly", void 0);
-__decorate$R([
+__decorate$S([
   s$8()
 ], Select.prototype, "accessibleName", void 0);
-__decorate$R([
+__decorate$S([
   s$8()
 ], Select.prototype, "accessibleNameRef", void 0);
-__decorate$R([
+__decorate$S([
   s$8()
 ], Select.prototype, "accessibleDescription", void 0);
-__decorate$R([
+__decorate$S([
   s$8()
 ], Select.prototype, "accessibleDescriptionRef", void 0);
-__decorate$R([
+__decorate$S([
   s$8()
 ], Select.prototype, "tooltip", void 0);
-__decorate$R([
+__decorate$S([
   s$8()
 ], Select.prototype, "textSeparator", void 0);
-__decorate$R([
+__decorate$S([
   s$8({ type: String, noAttribute: true })
 ], Select.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$R([
+__decorate$S([
   s$8({ type: Boolean, noAttribute: true })
 ], Select.prototype, "_iconPressed", void 0);
-__decorate$R([
+__decorate$S([
   s$8({ type: Boolean })
 ], Select.prototype, "opened", void 0);
-__decorate$R([
+__decorate$S([
   s$8({ type: Number, noAttribute: true })
 ], Select.prototype, "_listWidth", void 0);
-__decorate$R([
+__decorate$S([
   s$8({ type: Boolean })
 ], Select.prototype, "focused", void 0);
-__decorate$R([
+__decorate$S([
   d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
 ], Select.prototype, "options", void 0);
-__decorate$R([
+__decorate$S([
   d$8()
 ], Select.prototype, "valueStateMessage", void 0);
-__decorate$R([
+__decorate$S([
   d$8()
 ], Select.prototype, "label", void 0);
-__decorate$R([
+__decorate$S([
   s$8()
 ], Select.prototype, "value", null);
-__decorate$R([
+__decorate$S([
   i$9("@ui5/webcomponents")
 ], Select, "i18nBundle", void 0);
-Select = Select_1 = __decorate$R([
+Select = Select_1 = __decorate$S([
   m$8({
     tag: "ui5-select",
     languageAware: true,
@@ -10805,7 +10805,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const listItemAdditionalTextCss = `.ui5-li-additional-text{margin:0 .25rem;color:var(--sapNeutralTextColor);font-size:var(--sapFontSize);min-width:3.75rem;text-align:end;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 `;
-var __decorate$Q = function(decorators, target, key, desc) {
+var __decorate$R = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -10819,25 +10819,25 @@ let Option = class Option2 extends ListItemBase$1 {
     return this.textContent || "";
   }
 };
-__decorate$Q([
+__decorate$R([
   d$8({ type: Node, "default": true, invalidateOnChildChange: true })
 ], Option.prototype, "text", void 0);
-__decorate$Q([
+__decorate$R([
   s$8()
 ], Option.prototype, "value", void 0);
-__decorate$Q([
+__decorate$R([
   s$8()
 ], Option.prototype, "icon", void 0);
-__decorate$Q([
+__decorate$R([
   s$8()
 ], Option.prototype, "additionalText", void 0);
-__decorate$Q([
+__decorate$R([
   s$8()
 ], Option.prototype, "tooltip", void 0);
-__decorate$Q([
+__decorate$R([
   s$8({ type: Boolean })
 ], Option.prototype, "selected", void 0);
-Option = __decorate$Q([
+Option = __decorate$R([
   m$8({
     tag: "ui5-option",
     template: OptionTemplate,
@@ -10861,7 +10861,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const cardCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block;width:100%}.ui5-card-root{width:100%;height:100%;color:var(--sapGroup_TitleTextColor);background:var(--sapTile_Background);box-shadow:var(--_ui5-v2-17-0_card_box_shadow);border-radius:var(--_ui5-v2-17-0_card_border-radius);border:var(--_ui5-v2-17-0_card_border);overflow:hidden;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);box-sizing:border-box}.ui5-card-busy-indicator{width:100%;height:100%;border-radius:var(--_ui5-v2-17-0_card_border-radius)}.ui5-card-inner{width:100%;height:100%}.ui5-card-root.ui5-card--interactive:hover{box-shadow:var(--_ui5-v2-17-0_card_hover_box_shadow)}.ui5-card-root.ui5-card--interactive:active{box-shadow:var(--_ui5-v2-17-0_card_box_shadow)}.ui5-card-root.ui5-card--nocontent{height:auto}.ui5-card-root.ui5-card--nocontent .ui5-card-header-root{border-bottom:none}.ui5-card--nocontent ::slotted([ui5-card-header]){--_ui5-v2-17-0_card_header_focus_bottom_radius: var(--_ui5-v2-17-0_card_header_focus_radius)}.ui5-card-root .ui5-card-header-root{border-bottom:var(--_ui5-v2-17-0_card_header_border)}
 `;
-var __decorate$P = function(decorators, target, key, desc) {
+var __decorate$Q = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -10885,28 +10885,28 @@ let Card = Card_1 = class Card2 extends b$7 {
     return Card_1.i18nBundle.getText(ARIA_LABEL_CARD_CONTENT);
   }
 };
-__decorate$P([
+__decorate$Q([
   s$8()
 ], Card.prototype, "accessibleName", void 0);
-__decorate$P([
+__decorate$Q([
   s$8()
 ], Card.prototype, "accessibleNameRef", void 0);
-__decorate$P([
+__decorate$Q([
   d$8({ type: HTMLElement, "default": true })
 ], Card.prototype, "content", void 0);
-__decorate$P([
+__decorate$Q([
   d$8({ type: HTMLElement, invalidateOnChildChange: true })
 ], Card.prototype, "header", void 0);
-__decorate$P([
+__decorate$Q([
   s$8({ type: Boolean })
 ], Card.prototype, "loading", void 0);
-__decorate$P([
+__decorate$Q([
   s$8({ type: Number })
 ], Card.prototype, "loadingDelay", void 0);
-__decorate$P([
+__decorate$Q([
   i$9("@ui5/webcomponents")
 ], Card, "i18nBundle", void 0);
-Card = Card_1 = __decorate$P([
+Card = Card_1 = __decorate$Q([
   m$8({
     tag: "ui5-card",
     languageAware: true,
@@ -10928,7 +10928,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const cardHeaderCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}.ui5-card-header{position:relative;display:flex;align-items:center;padding:var(--_ui5-v2-17-0_card_header_padding);outline:none}:host([subtitleText]) .ui5-card-header{align-items:flex-start}:host([desktop]) .ui5-card-header.ui5-card-header-ff:not(.ui5-card-header-hide-focus):focus-within:before,.ui5-card-header.ui5-card-header-ff:not(.ui5-card-header-hide-focus):focus-visible:before{outline:none;content:"";position:absolute;border:var(--_ui5-v2-17-0_card_header_focus_border);pointer-events:none;top:var(--_ui5-v2-17-0_card_header_focus_offset);left:var(--_ui5-v2-17-0_card_header_focus_offset);right:var(--_ui5-v2-17-0_card_header_focus_offset);bottom:var(--_ui5-v2-17-0_card_header_focus_offset);border-top-left-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-top-right-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-bottom-left-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius)}:host([desktop]) .ui5-card-header:not(.ui5-card-header-ff):not(.ui5-card-header-hide-focus):has(.ui5-card-header-focusable-element:focus):before,.ui5-card-header:not(.ui5-card-header-ff):not(.ui5-card-header-hide-focus):has(.ui5-card-header-focusable-element:focus-visible):before{outline:none;content:"";position:absolute;border:var(--_ui5-v2-17-0_card_header_focus_border);pointer-events:none;top:var(--_ui5-v2-17-0_card_header_focus_offset);left:var(--_ui5-v2-17-0_card_header_focus_offset);right:var(--_ui5-v2-17-0_card_header_focus_offset);bottom:var(--_ui5-v2-17-0_card_header_focus_offset);border-top-left-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-top-right-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-bottom-left-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius)}.ui5-card-header-focusable-element{outline:none}.ui5-card-header-focusable-element{display:inherit;align-items:inherit;flex:1;min-width:0}.ui5-card-header.ui5-card-header--interactive:hover{cursor:pointer;background:var(--_ui5-v2-17-0_card_header_hover_bg)}.ui5-card-header.ui5-card-header--active,.ui5-card-header.ui5-card-header--interactive:active{background:var(--_ui5-v2-17-0_card_header_active_bg)}.ui5-card-header .ui5-card-header-text{flex:1;min-width:0;pointer-events:none}.ui5-card-header-first-line{display:flex;flex-flow:row;justify-content:space-between}.ui5-card-header-additionalText{flex:none}.ui5-card-header .ui5-card-header-avatar{height:3rem;width:3rem;display:flex;align-items:center;justify-content:center;margin-inline-end:.75rem;pointer-events:none;align-self:flex-start}::slotted([ui5-icon]){width:1.5rem;height:1.5rem;color:var(--sapTile_IconColor)}::slotted(img[slot="avatar"]){width:100%;height:100%;border-radius:50%}.ui5-card-header .ui5-card-header-additionalText{display:inline-block;font-family:var(--sapFontFamily);font-size:var(--sapFontSmallSize);color:var(--sapTile_TextColor);text-align:left;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;vertical-align:middle;margin-inline-start:1rem;margin-block-start:.125rem}.ui5-card-header .ui5-card-header-text .ui5-card-header-title{font-family:var(--_ui5-v2-17-0_card_header_title_font_family);font-size:var(--_ui5-v2-17-0_card_header_title_font_size);font-weight:var(--_ui5-v2-17-0_card_header_title_font_weight);color:var(--sapTile_TitleTextColor);max-height:3.5rem;align-self:flex-end}.ui5-card-header .ui5-card-header-text .ui5-card-header-subtitle{font-family:var(--sapFontFamily);font-size:var(--sapFontSize);font-weight:400;color:var(--sapTile_TextColor);margin-top:var(--_ui5-v2-17-0_card_header_subtitle_margin_top);max-height:2.1rem}.ui5-card-header .ui5-card-header-text .ui5-card-header-title,.ui5-card-header .ui5-card-header-text .ui5-card-header-subtitle{text-align:start;text-overflow:ellipsis;white-space:normal;word-wrap:break-word;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;display:-webkit-box;max-width:100%}.ui5-card-header .ui5-card-header-text .ui5-card-header-title{-webkit-line-clamp:3}.ui5-card-header-action{display:flex;padding-inline-start:1rem;align-self:flex-start}
 `;
-var __decorate$O = function(decorators, target, key, desc) {
+var __decorate$P = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -11019,34 +11019,34 @@ let CardHeader = CardHeader_1 = class CardHeader2 extends b$7 {
     }
   }
 };
-__decorate$O([
+__decorate$P([
   s$8()
 ], CardHeader.prototype, "titleText", void 0);
-__decorate$O([
+__decorate$P([
   s$8()
 ], CardHeader.prototype, "subtitleText", void 0);
-__decorate$O([
+__decorate$P([
   s$8()
 ], CardHeader.prototype, "additionalText", void 0);
-__decorate$O([
+__decorate$P([
   s$8({ type: Boolean })
 ], CardHeader.prototype, "interactive", void 0);
-__decorate$O([
+__decorate$P([
   s$8({ type: Number })
 ], CardHeader.prototype, "_ariaLevel", void 0);
-__decorate$O([
+__decorate$P([
   s$8({ type: Boolean, noAttribute: true })
 ], CardHeader.prototype, "_headerActive", void 0);
-__decorate$O([
+__decorate$P([
   d$8()
 ], CardHeader.prototype, "avatar", void 0);
-__decorate$O([
+__decorate$P([
   d$8()
 ], CardHeader.prototype, "action", void 0);
-__decorate$O([
+__decorate$P([
   i$9("@ui5/webcomponents")
 ], CardHeader, "i18nBundle", void 0);
-CardHeader = CardHeader_1 = __decorate$O([
+CardHeader = CardHeader_1 = __decorate$P([
   m$8({
     tag: "ui5-card-header",
     languageAware: true,
@@ -11092,7 +11092,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const tagCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block}:host{font-size:var(--sapFontSmallSize);font-family:var(--sapFontBoldFamily);font-weight:var(--_ui5-v2-17-0-tag-font-weight);letter-spacing:var(--_ui5-v2-17-0-tag-letter-spacing);line-height:var(--_ui5-v2-17-0-tag-height)}.ui5-tag-root{display:flex;align-items:baseline;justify-content:center;width:100%;min-width:1.125em;max-width:100%;box-sizing:border-box;padding:var(--_ui5-v2-17-0-tag-text-padding);border:.0625rem solid;border-radius:var(--sapButton_BorderCornerRadius);white-space:normal;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit;letter-spacing:inherit}:host([interactive]) .ui5-tag-root:active{text-shadow:var(--ui5-v2-17-0-tag-text-shadow)}:host([interactive]) .ui5-tag-root{cursor:pointer}:host([desktop][interactive]) .ui5-tag-root:focus,:host([interactive]) .ui5-tag-root:focus-visible{outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);outline-offset:1px}:host([wrapping-type="None"]) .ui5-tag-root{white-space:nowrap}:host([_icon-only]) .ui5-tag-root{padding-inline:var(--_ui5-v2-17-0-tag-padding-inline-icon-only)}.ui5-tag-text{text-transform:var(--_ui5-v2-17-0-tag-text-transform);text-align:start;pointer-events:none;overflow:hidden;text-overflow:ellipsis}:host([_has-icon]) .ui5-tag-text{padding-inline-start:var(--_ui5-v2-17-0-tag-icon-gap)}[ui5-icon],::slotted([ui5-icon]){width:var(--_ui5-v2-17-0-tag-icon-width);min-width:var(--_ui5-v2-17-0-tag-icon-width);color:inherit;pointer-events:none;align-self:flex-start}.ui5-tag-root{background-color:var(--sapNeutralBackground);border-color:var(--sapNeutralBorderColor);color:var(--sapTextColor);text-shadow:var(--ui5-v2-17-0-tag-text-shadow)}:host([interactive]) .ui5-tag-root:hover{background-color:var(--sapButton_Neutral_Hover_Background);border-color:var(--sapButton_Neutral_Hover_BorderColor);color:var(--sapButton_Neutral_Hover_TextColor)}:host([interactive]) .ui5-tag-root:active{background-color:var(--sapButton_Neutral_Active_Background);border-color:var(--sapButton_Neutral_Active_BorderColor);color:var(--sapButton_Active_TextColor)}:host([design="Positive"]) .ui5-tag-root{background-color:var(--sapButton_Success_Background);border-color:var(--sapButton_Success_BorderColor);color:var(--sapButton_Success_TextColor);text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([interactive][design="Positive"]) .ui5-tag-root:hover{background-color:var(--sapButton_Success_Hover_Background);border-color:var(--sapButton_Success_Hover_BorderColor);color:var(--sapButton_Success_Hover_TextColor)}:host([interactive][design="Positive"]) .ui5-tag-root:active{background-color:var(--sapButton_Success_Active_Background);border-color:var(--sapButton_Success_Active_BorderColor);color:var(--sapButton_Accept_Selected_TextColor)}:host([design="Negative"]) .ui5-tag-root{background-color:var(--sapButton_Negative_Background);border-color:var(--sapButton_Negative_BorderColor);color:var(--sapButton_Negative_TextColor);text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([interactive][design="Negative"]) .ui5-tag-root:hover{background-color:var(--sapButton_Negative_Hover_Background);border-color:var(--sapButton_Negative_Hover_BorderColor);color:var(--sapButton_Negative_Hover_TextColor)}:host([interactive][design="Negative"]) .ui5-tag-root:active{background-color:var(--sapButton_Negative_Active_Background);border-color:var(--sapButton_Negative_Active_BorderColor);color:var(--sapButton_Reject_Selected_TextColor)}:host([design="Critical"]) .ui5-tag-root{background-color:var(--sapButton_Critical_Background);border-color:var(--sapButton_Critical_BorderColor);color:var(--sapButton_Critical_TextColor);text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([interactive][design="Critical"]) .ui5-tag-root:hover{background-color:var(--sapButton_Critical_Hover_Background);border-color:var(--sapButton_Critical_Hover_BorderColor);color:var(--sapButton_Critical_Hover_TextColor)}:host([interactive][design="Critical"]) .ui5-tag-root:active{background-color:var(--sapButton_Critical_Active_Background);border-color:var(--sapButton_Critical_Active_BorderColor);color:var(--sapButton_Attention_Selected_TextColor)}:host([design="Information"]) .ui5-tag-root{background-color:var(--sapButton_Information_Background);border-color:var(--sapButton_Information_BorderColor);color:var(--sapButton_Information_TextColor);text-shadow:var(--ui5-v2-17-0-tag-information-text-shadow)}:host([interactive][design="Information"]) .ui5-tag-root:hover{background-color:var(--sapButton_Information_Hover_Background);border-color:var(--sapButton_Information_Hover_BorderColor);color:var(--sapButton_Information_Hover_TextColor)}:host([interactive][design="Information"]) .ui5-tag-root:active{background-color:var(--sapButton_Information_Active_Background);border-color:var(--sapButton_Information_Active_BorderColor);color:var(--sapButton_Selected_TextColor)}:host([design="Set1"]) .ui5-tag-root{text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([design="Set1"]) .ui5-tag-root,:host([interactive][design="Set1"]) .ui5-tag-root{background-color:var(--sapIndicationColor_1_Background);border-color:var(--sapIndicationColor_1_BorderColor);color:var(--sapIndicationColor_1_TextColor)}:host([interactive][design="Set1"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_1_Hover_Background)}:host([interactive][design="Set1"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_1_Active_Background);border-color:var(--sapIndicationColor_1_Active_BorderColor);color:var(--sapIndicationColor_1_Active_TextColor)}:host([design="Set1"][color-scheme="2"]) .ui5-tag-root{background-color:var(--sapIndicationColor_2_Background);border-color:var(--sapIndicationColor_2_BorderColor);color:var(--sapIndicationColor_2_TextColor)}:host([interactive][design="Set1"][color-scheme="2"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_2_Hover_Background)}:host([interactive][design="Set1"][color-scheme="2"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_2_Active_Background);border-color:var(--sapIndicationColor_2_Active_BorderColor);color:var(--sapIndicationColor_2_Active_TextColor)}:host([design="Set1"][color-scheme="3"]) .ui5-tag-root{background-color:var(--sapIndicationColor_3_Background);border-color:var(--sapIndicationColor_3_BorderColor);color:var(--sapIndicationColor_3_TextColor)}:host([interactive][design="Set1"][color-scheme="3"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_3_Hover_Background)}:host([interactive][design="Set1"][color-scheme="3"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_3_Active_Background);border-color:var(--sapIndicationColor_3_Active_BorderColor);color:var(--sapIndicationColor_3_Active_TextColor)}:host([design="Set1"][color-scheme="4"]) .ui5-tag-root{background-color:var(--sapIndicationColor_4_Background);border-color:var(--sapIndicationColor_4_BorderColor);color:var(--sapIndicationColor_4_TextColor)}:host([interactive][design="Set1"][color-scheme="4"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_4_Hover_Background)}:host([interactive][design="Set1"][color-scheme="4"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_4_Active_Background);border-color:var(--sapIndicationColor_4_Active_BorderColor);color:var(--sapIndicationColor_4_Active_TextColor)}:host([design="Set1"][color-scheme="5"]) .ui5-tag-root{background-color:var(--sapIndicationColor_5_Background);border-color:var(--sapIndicationColor_5_BorderColor);color:var(--sapIndicationColor_5_TextColor)}:host([interactive][design="Set1"][color-scheme="5"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_5_Hover_Background)}:host([interactive][design="Set1"][color-scheme="5"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_5_Active_Background);border-color:var(--sapIndicationColor_5_Active_BorderColor);color:var(--sapIndicationColor_5_Active_TextColor)}:host([design="Set1"][color-scheme="6"]) .ui5-tag-root{background-color:var(--sapIndicationColor_6_Background);border-color:var(--sapIndicationColor_6_BorderColor);color:var(--sapIndicationColor_6_TextColor)}:host([interactive][design="Set1"][color-scheme="6"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_6_Hover_Background)}:host([interactive][design="Set1"][color-scheme="6"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_6_Active_Background);border-color:var(--sapIndicationColor_6_Active_BorderColor);color:var(--sapIndicationColor_6_Active_TextColor)}:host([design="Set1"][color-scheme="7"]) .ui5-tag-root{background-color:var(--sapIndicationColor_7_Background);border-color:var(--sapIndicationColor_7_BorderColor);color:var(--sapIndicationColor_7_TextColor)}:host([interactive][design="Set1"][color-scheme="7"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_7_Hover_Background)}:host([interactive][design="Set1"][color-scheme="7"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_7_Active_Background);border-color:var(--sapIndicationColor_7_Active_BorderColor);color:var(--sapIndicationColor_7_Active_TextColor)}:host([design="Set1"][color-scheme="8"]) .ui5-tag-root{background-color:var(--sapIndicationColor_8_Background);border-color:var(--sapIndicationColor_8_BorderColor);color:var(--sapIndicationColor_8_TextColor)}:host([interactive][design="Set1"][color-scheme="8"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_8_Hover_Background)}:host([interactive][design="Set1"][color-scheme="8"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_8_Active_Background);border-color:var(--sapIndicationColor_8_Active_BorderColor);color:var(--sapIndicationColor_8_Active_TextColor)}:host([design="Set1"][color-scheme="9"]) .ui5-tag-root{background-color:var(--sapIndicationColor_9_Background);border-color:var(--sapIndicationColor_9_BorderColor);color:var(--sapIndicationColor_9_TextColor)}:host([interactive][design="Set1"][color-scheme="9"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_9_Hover_Background)}:host([interactive][design="Set1"][color-scheme="9"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_9_Active_Background);border-color:var(--sapIndicationColor_9_Active_BorderColor);color:var(--sapIndicationColor_9_Active_TextColor)}:host([design="Set1"][color-scheme="10"]) .ui5-tag-root{background-color:var(--sapIndicationColor_10_Background);border-color:var(--sapIndicationColor_10_BorderColor);color:var(--sapIndicationColor_10_TextColor)}:host([interactive][design="Set1"][color-scheme="10"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_10_Hover_Background)}:host([interactive][design="Set1"][color-scheme="10"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_10_Active_Background);border-color:var(--sapIndicationColor_10_Active_BorderColor);color:var(--sapIndicationColor_10_Active_TextColor)}:host([design="Set2"]) .ui5-tag-root{text-shadow:var(--ui5-v2-17-0-tag-text-shadow)}:host([design="Set2"]) .ui5-tag-root,:host([interactive][design="Set2"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-color)}:host([interactive][design="Set2"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-hover-background)}:host([interactive][design="Set2"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-active-color)}:host([design="Set2"][color-scheme="2"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-color)}:host([design="Set2"][color-scheme="3"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-color)}:host([interactive][design="Set2"][color-scheme="3"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-hover-background)}:host([interactive][design="Set2"][color-scheme="3"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-active-color)}:host([design="Set2"][color-scheme="4"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-color)}:host([interactive][design="Set2"][color-scheme="4"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-hover-background)}:host([interactive][design="Set2"][color-scheme="4"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-active-color)}:host([design="Set2"][color-scheme="5"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-color)}:host([interactive][design="Set2"][color-scheme="5"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-hover-background)}:host([interactive][design="Set2"][color-scheme="5"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-active-color)}:host([design="Set2"][color-scheme="6"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-color)}:host([interactive][design="Set2"][color-scheme="6"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-hover-background)}:host([interactive][design="Set2"][color-scheme="6"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-active-color)}:host([design="Set2"][color-scheme="7"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-color)}:host([interactive][design="Set2"][color-scheme="7"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-hover-background)}:host([interactive][design="Set2"][color-scheme="7"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-active-color)}:host([design="Set2"][color-scheme="8"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-color)}:host([interactive][design="Set2"][color-scheme="8"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-hover-background)}:host([interactive][design="Set2"][color-scheme="8"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-active-color)}:host([design="Set2"][color-scheme="9"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-color)}:host([interactive][design="Set2"][color-scheme="9"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-hover-background)}:host([interactive][design="Set2"][color-scheme="9"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-active-color)}:host([interactive][design="Set2"][color-scheme="10"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-hover-background)}:host([interactive][design="Set2"][color-scheme="10"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-active-color)}:host([design="Set2"][color-scheme="10"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-color)}:host([interactive][design="Set2"][color-scheme="2"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-hover-background)}:host([interactive][design="Set2"][color-scheme="2"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-active-color)}:host([size="L"]){font-family:var(--sapFontSemiboldDuplexFamily);line-height:var(--_ui5-v2-17-0-tag-height_size_l)}:host([size="L"]) .ui5-tag-root{font-size:var(--_ui5-v2-17-0-tag-font-size_size_l);min-width:var(--_ui5-v2-17-0-tag-min-width_size_l);padding:var(--_ui5-v2-17-0-tag-text_padding_size_l)}:host([size="L"]) [ui5-icon],:host([size="L"]) ::slotted([ui5-icon]){min-width:var(--_ui5-v2-17-0-tag-icon_min_width_size_l);min-height:var(--_ui5-v2-17-0-tag-icon_min_height_size_l);height:var(--_ui5-v2-17-0-tag-icon_height_size_l)}
 `;
-var __decorate$N = function(decorators, target, key, desc) {
+var __decorate$O = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -11183,40 +11183,40 @@ let Tag = Tag_1 = class Tag2 extends b$7 {
     this.fireDecoratorEvent("click");
   }
 };
-__decorate$N([
+__decorate$O([
   s$8()
 ], Tag.prototype, "design", void 0);
-__decorate$N([
+__decorate$O([
   s$8()
 ], Tag.prototype, "colorScheme", void 0);
-__decorate$N([
+__decorate$O([
   s$8({ type: Boolean })
 ], Tag.prototype, "hideStateIcon", void 0);
-__decorate$N([
+__decorate$O([
   s$8({ type: Boolean })
 ], Tag.prototype, "interactive", void 0);
-__decorate$N([
+__decorate$O([
   s$8()
 ], Tag.prototype, "wrappingType", void 0);
-__decorate$N([
+__decorate$O([
   s$8()
 ], Tag.prototype, "size", void 0);
-__decorate$N([
+__decorate$O([
   s$8({ type: Boolean })
 ], Tag.prototype, "_hasIcon", void 0);
-__decorate$N([
+__decorate$O([
   s$8({ type: Boolean })
 ], Tag.prototype, "_iconOnly", void 0);
-__decorate$N([
+__decorate$O([
   d$8({ type: Node, "default": true })
 ], Tag.prototype, "text", void 0);
-__decorate$N([
+__decorate$O([
   d$8()
 ], Tag.prototype, "icon", void 0);
-__decorate$N([
+__decorate$O([
   i$9("@ui5/webcomponents")
 ], Tag, "i18nBundle", void 0);
-Tag = Tag_1 = __decorate$N([
+Tag = Tag_1 = __decorate$O([
   m$8({
     tag: "ui5-tag",
     languageAware: true,
@@ -11266,7 +11266,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const messageStripCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block;width:100%}.ui5-message-strip-root{width:100%;height:100%;display:flex;border-radius:var(--sapPopover_BorderCornerRadius);padding:var(--_ui5-v2-17-0_message_strip_padding);border-width:var(--_ui5-v2-17-0_message_strip_border_width);border-style:solid;box-sizing:border-box;position:relative}.ui5-message-strip-root-hide-icon{padding-inline:var(--_ui5-v2-17-0_message_strip_padding_inline_no_icon);padding-block:var(--_ui5-v2-17-0_message_strip_padding_block_no_icon)}.ui5-message-strip-root-hide-close-button{padding-inline-end:1rem}.ui5-message-strip-root--info{background-color:var(--sapInformationBackground);border-color:var(--sapMessage_InformationBorderColor);color:var(--sapTextColor)}.ui5-message-strip-root--info .ui5-message-strip-icon{color:var(--sapInformativeElementColor)}.ui5-message-strip-root--positive{background-color:var(--sapSuccessBackground);border-color:var(--sapMessage_SuccessBorderColor)}.ui5-message-strip-root--positive .ui5-message-strip-icon{color:var(--sapPositiveElementColor)}.ui5-message-strip-root--negative{background-color:var(--sapErrorBackground);border-color:var(--sapMessage_ErrorBorderColor)}.ui5-message-strip-root--negative .ui5-message-strip-icon{color:var(--sapNegativeElementColor)}.ui5-message-strip-root--critical{background-color:var(--sapWarningBackground);border-color:var(--sapMessage_WarningBorderColor)}.ui5-message-strip-root--critical .ui5-message-strip-icon{color:var(--sapCriticalElementColor)}.ui5-message-strip-icon-wrapper{position:absolute;top:var(--_ui5-v2-17-0_message_strip_icon_top);inset-inline-start:.75rem;box-sizing:border-box}.ui5-message-strip-text{width:100%;color:var(--sapTextColor);line-height:1.2;font-family:var(--sapFontFamily);font-size:var(--sapFontSize)}.ui5-message-strip-close-button{height:1.625rem;min-height:1.625rem;position:absolute;top:var(--_ui5-v2-17-0_message_strip_close_button_top);inset-inline-end:var(--_ui5-v2-17-0_message_strip_close_button_right)}:host([color-scheme="1"]) .ui5-message-strip-root--color-set-1,:host(:not([color-scheme])[design="ColorSet1"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_1_Background);border-color:var(--sapIndicationColor_1_BorderColor)}:host([color-scheme="2"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_2_Background);border-color:var(--sapIndicationColor_2_BorderColor)}:host([color-scheme="3"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_3_Background);border-color:var(--sapIndicationColor_3_BorderColor)}:host([color-scheme="4"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_4_Background);border-color:var(--sapIndicationColor_4_BorderColor)}:host([color-scheme="5"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_5_Background);border-color:var(--sapIndicationColor_5_BorderColor)}:host([color-scheme="6"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_6_Background);border-color:var(--sapIndicationColor_6_BorderColor)}:host([color-scheme="7"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_7_Background);border-color:var(--sapIndicationColor_7_BorderColor)}:host([color-scheme="8"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_8_Background);border-color:var(--sapIndicationColor_8_BorderColor)}:host([color-scheme="9"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_9_Background);border-color:var(--sapIndicationColor_9_BorderColor)}:host([color-scheme="10"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_10_Background);border-color:var(--sapIndicationColor_10_BorderColor)}:host([color-scheme="1"]) .ui5-message-strip-root--color-set-2,:host(:not([color-scheme])[design="ColorSet2"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_1_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_1_set_2_border_color)}:host([color-scheme="2"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_2_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_2_set_2_border_color)}:host([color-scheme="3"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_3_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_3_set_2_border_color)}:host([color-scheme="4"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_4_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_4_set_2_border_color)}:host([color-scheme="5"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_5_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_5_set_2_border_color)}:host([color-scheme="6"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_6_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_6_set_2_border_color)}:host([color-scheme="7"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_7_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_7_set_2_border_color)}:host([color-scheme="8"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_8_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_8_set_2_border_color)}:host([color-scheme="9"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_9_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_9_set_2_border_color)}:host([color-scheme="10"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_10_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_10_set_2_border_color)}:host([design="ColorSet1"]) .ui5-message-strip-root .ui5-message-strip-text{color:var(--sapContent_ContrastTextColor);text-shadow:var(--sapContent_ContrastTextShadow)}:host([design="ColorSet1"]) .ui5-message-strip-root ::slotted([slot="icon"]){color:var(--sapContent_ContrastIconColor);text-shadow:var(--sapContent_ContrastTextShadow)}:host([design="ColorSet2"]) .ui5-message-strip-root .ui5-message-strip-text{color:var(--sapTextColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button{color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_1_color)}:host([design="ColorSet2"]) .ui5-message-strip-close-button,:host([design="ColorSet2"]) .ui5-message-strip-root ::slotted([slot="icon"]){color:var(--sapContent_IconColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button:hover{border-color:var(--sapContent_ContrastIconColor);background-color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_1_background);color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_1_color);text-shadow:var(--sapContent_ContrastTextShadow)}:host([design="ColorSet2"]) .ui5-message-strip-close-button:hover{background-color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_2_background);border-color:var(--sapContent_IconColor);color:var(--sapContent_IconColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button:active{background:none;border-color:var(--sapContent_ContrastIconColor)}:host([design="ColorSet2"]) .ui5-message-strip-close-button:active{background:none;border-color:var(--sapContent_IconColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button::part(button):after,:host([design="ColorSet1"]) .ui5-message-strip-close-button::part(button):before{border-color:var(--sapContent_ContrastFocusColor)}
 `;
-var __decorate$M = function(decorators, target, key, desc) {
+var __decorate$N = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -11341,25 +11341,25 @@ let MessageStrip = MessageStrip_1 = class MessageStrip2 extends b$7 {
     return DesignClassesMapping[this.design];
   }
 };
-__decorate$M([
+__decorate$N([
   s$8()
 ], MessageStrip.prototype, "design", void 0);
-__decorate$M([
+__decorate$N([
   s$8()
 ], MessageStrip.prototype, "colorScheme", void 0);
-__decorate$M([
+__decorate$N([
   s$8({ type: Boolean })
 ], MessageStrip.prototype, "hideIcon", void 0);
-__decorate$M([
+__decorate$N([
   s$8({ type: Boolean })
 ], MessageStrip.prototype, "hideCloseButton", void 0);
-__decorate$M([
+__decorate$N([
   d$8()
 ], MessageStrip.prototype, "icon", void 0);
-__decorate$M([
+__decorate$N([
   i$9("@ui5/webcomponents")
 ], MessageStrip, "i18nBundle", void 0);
-MessageStrip = MessageStrip_1 = __decorate$M([
+MessageStrip = MessageStrip_1 = __decorate$N([
   m$8({
     tag: "ui5-message-strip",
     languageAware: true,
@@ -11417,7 +11417,7 @@ const collection$y = "SAP-icons-v5";
 const packageName$y = "@ui5/webcomponents-icons";
 y$2(name$z, { pathData: pathData$y, ltr: ltr$y, collection: collection$y, packageName: packageName$y });
 const slimArrowRightIcon = "slim-arrow-right";
-var __decorate$L = function(decorators, target, key, desc) {
+var __decorate$M = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -11662,46 +11662,46 @@ let ListItem = ListItem_1 = class ListItem2 extends ListItemBase$1 {
     return this.shadowRoot.querySelector("li");
   }
 };
-__decorate$L([
+__decorate$M([
   s$8()
 ], ListItem.prototype, "type", void 0);
-__decorate$L([
+__decorate$M([
   s$8({ type: Object })
 ], ListItem.prototype, "accessibilityAttributes", void 0);
-__decorate$L([
+__decorate$M([
   s$8({ type: Boolean })
 ], ListItem.prototype, "navigated", void 0);
-__decorate$L([
+__decorate$M([
   s$8()
 ], ListItem.prototype, "tooltip", void 0);
-__decorate$L([
+__decorate$M([
   s$8({ type: Boolean })
 ], ListItem.prototype, "active", void 0);
-__decorate$L([
+__decorate$M([
   s$8()
 ], ListItem.prototype, "highlight", void 0);
-__decorate$L([
+__decorate$M([
   s$8({ type: Boolean })
 ], ListItem.prototype, "selected", void 0);
-__decorate$L([
+__decorate$M([
   s$8()
 ], ListItem.prototype, "accessibleRole", void 0);
-__decorate$L([
+__decorate$M([
   s$8()
 ], ListItem.prototype, "_forcedAccessibleRole", void 0);
-__decorate$L([
+__decorate$M([
   s$8()
 ], ListItem.prototype, "_selectionMode", void 0);
-__decorate$L([
+__decorate$M([
   s$8()
 ], ListItem.prototype, "mediaRange", void 0);
-__decorate$L([
+__decorate$M([
   d$8()
 ], ListItem.prototype, "deleteButton", void 0);
-__decorate$L([
+__decorate$M([
   i$9("@ui5/webcomponents")
 ], ListItem, "i18nBundle", void 0);
-ListItem = ListItem_1 = __decorate$L([
+ListItem = ListItem_1 = __decorate$M([
   m$8({
     languageAware: true,
     renderer: y$5,
@@ -11939,7 +11939,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const radioButtonCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block}:host{min-width:var(--_ui5-v2-17-0_radio_button_min_width);max-width:100%;text-overflow:ellipsis;overflow:hidden;color:var(--_ui5-v2-17-0_radio_button_color);border-radius:var(--_ui5-v2-17-0_radio_button_border_radius)}:host(:not([disabled])) .ui5-radio-root{cursor:pointer}:host([checked]){color:var(--_ui5-v2-17-0_radio_button_checked_fill)}:host([checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_inner_ring_color)}:host([checked]) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_color)}:host([disabled]) .ui5-radio-root{color:var(--_ui5-v2-17-0_radio_button_color);opacity:var(--sapContent_DisabledOpacity)}:host([disabled][checked]) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_color)}:host(:not([disabled])[desktop]) .ui5-radio-root:focus:before,:host(:not([disabled])) .ui5-radio-root:focus-visible:before{content:"";display:var(--_ui5-v2-17-0_radio_button_focus_outline);position:absolute;inset:var(--_ui5-v2-17-0_radio_button_focus_dist);pointer-events:none;border:var(--_ui5-v2-17-0_radio_button_border_width) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);border-radius:var(--_ui5-v2-17-0_radio_button_border_radius)}:host(:not([value-state="Negative"]):not([value-state="Critical"]):not([value-state="Positive"]):not([value-state="Information"])) .ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_hover_color)}:host(:not([value-state="Negative"]):not([value-state="Critical"]):not([value-state="Positive"]):not([value-state="Information"])[checked]) .ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_checked_hover_color)}.ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer,:host([checked]) .ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill)}:host([active][checked]:not([value-state]):not([disabled]):not([readonly])) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_checked_hover_color)}:host([active]:not([checked]):not([value-state]):not([disabled]):not([readonly])) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_active_color)}:host([text]) .ui5-radio-root{padding-inline-end:var(--_ui5-v2-17-0_radio_button_border_width)}:host([text][desktop]) .ui5-radio-root:focus:before,:host([text]) .ui5-radio-root:focus-visible:before{inset-inline-end:0px}:host([text]) .ui5-radio-inner{padding:var(--_ui5-v2-17-0_radio_button_outer_ring_padding_with_label)}:host([checked][readonly]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_read_only_inner_ring_color)}:host([readonly]) .ui5-radio-root .ui5-radio-svg-outer{fill:var(--sapField_ReadOnly_Background);stroke:var(--sapField_ReadOnly_BorderColor);stroke-dasharray:var(--_ui5-v2-17-0_radio_button_read_only_border_type);stroke-width:var(--_ui5-v2-17-0_radio_button_read_only_border_width)}:host([value-state="Negative"]) .ui5-radio-svg-outer,:host([value-state="Critical"]) .ui5-radio-svg-outer{stroke-width:var(--sapField_InvalidBorderWidth)}:host([value-state="Information"]) .ui5-radio-svg-outer{stroke-width:var(--_ui5-v2-17-0_radio_button_information_border_width)}:host([value-state="Negative"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_error_fill)}:host([value-state="Negative"]) .ui5-radio-svg-outer,:host([value-state="Negative"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_InvalidColor);fill:var(--sapField_InvalidBackground)}:host([value-state="Negative"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_error)}:host([value-state="Critical"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_warning_fill)}:host([value-state="Critical"]) .ui5-radio-svg-outer,:host([value-state="Critical"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_WarningColor);fill:var(--sapField_WarningBackground)}:host([value-state="Critical"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_warning)}:host([value-state="Positive"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_success_fill)}:host([value-state="Positive"]) .ui5-radio-svg-outer,:host([value-state="Positive"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_SuccessColor);fill:var(--sapField_SuccessBackground)}:host([value-state="Positive"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_success)}:host([value-state="Information"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_information_fill)}:host([value-state="Information"]) .ui5-radio-svg-outer,:host([value-state="Information"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_InformationColor);fill:var(--sapField_InformationBackground)}:host([value-state="Information"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_information)}:host([value-state="Negative"]) .ui5-radio-root,:host([value-state="Critical"]) .ui5-radio-root,:host([value-state="Information"]) .ui5-radio-root{stroke-dasharray:var(--_ui5-v2-17-0_radio_button_warning_error_border_dash)}.ui5-radio-root{height:auto;position:relative;display:inline-flex;flex-wrap:nowrap;outline:none;max-width:100%;box-sizing:border-box;border:var(--_ui5-v2-17-0_radio_button_border);border-radius:var(--_ui5-v2-17-0_radio_button_border_radius)}.ui5-radio-inner{display:flex;align-items:center;padding:var(--_ui5-v2-17-0_radio_button_outer_ring_padding);flex-shrink:0;height:var(--_ui5-v2-17-0_radio_button_inner_size);font-size:1rem;pointer-events:none;vertical-align:top}.ui5-radio-inner{outline:none}.ui5-radio-inner input{-webkit-appearance:none;visibility:hidden;width:0;left:0;position:absolute;font-size:inherit;margin:0}[ui5-label].ui5-radio-label{display:flex;align-items:center;padding-inline-end:var(--_ui5-v2-17-0_radio_button_label_offset);padding-block:var(--_ui5-v2-17-0_radio_button_label_side_padding);vertical-align:top;max-width:100%;pointer-events:none;color:var(--_ui5-v2-17-0_radio_button_label_color);overflow-wrap:break-word}:host([wrapping-type="None"][text]) .ui5-radio-root{height:var(--_ui5-v2-17-0_radio_button_height)}:host([wrapping-type="None"][text]) [ui5-label].ui5-radio-label{text-overflow:ellipsis;overflow:hidden}.ui5-radio-svg{height:var(--_ui5-v2-17-0_radio_button_svg_size);width:var(--_ui5-v2-17-0_radio_button_svg_size);overflow:visible;pointer-events:none}.ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_outer_ring_bg);stroke:currentColor;stroke-width:var(--_ui5-v2-17-0_radio_button_outer_ring_width)}.ui5-radio-svg-inner{fill:none;r:var(--_ui5-v2-17-0_radio_button_inner_ring_radius)}.ui5-radio-svg-outer,.ui5-radio-svg-inner{flex-shrink:0}:host(.ui5-li-singlesel-radiobtn) .ui5-radio-root .ui5-radio-inner .ui5-radio-svg-outer{fill:var(--sapList_Background)}
 `;
-var __decorate$K = function(decorators, target, key, desc) {
+var __decorate$L = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -12124,55 +12124,55 @@ let RadioButton = RadioButton_1 = class RadioButton2 extends b$7 {
     return tabindex ? parseInt(tabindex) : 0;
   }
 };
-__decorate$K([
+__decorate$L([
   s$8({ type: Boolean })
 ], RadioButton.prototype, "disabled", void 0);
-__decorate$K([
+__decorate$L([
   s$8({ type: Boolean })
 ], RadioButton.prototype, "readonly", void 0);
-__decorate$K([
+__decorate$L([
   s$8({ type: Boolean })
 ], RadioButton.prototype, "required", void 0);
-__decorate$K([
+__decorate$L([
   s$8({ type: Boolean })
 ], RadioButton.prototype, "checked", void 0);
-__decorate$K([
+__decorate$L([
   s$8()
 ], RadioButton.prototype, "text", void 0);
-__decorate$K([
+__decorate$L([
   s$8()
 ], RadioButton.prototype, "valueState", void 0);
-__decorate$K([
+__decorate$L([
   s$8()
 ], RadioButton.prototype, "name", void 0);
-__decorate$K([
+__decorate$L([
   s$8()
 ], RadioButton.prototype, "value", void 0);
-__decorate$K([
+__decorate$L([
   s$8()
 ], RadioButton.prototype, "wrappingType", void 0);
-__decorate$K([
+__decorate$L([
   s$8()
 ], RadioButton.prototype, "accessibleName", void 0);
-__decorate$K([
+__decorate$L([
   s$8()
 ], RadioButton.prototype, "accessibleNameRef", void 0);
-__decorate$K([
+__decorate$L([
   s$8({ type: Number })
 ], RadioButton.prototype, "_tabIndex", void 0);
-__decorate$K([
+__decorate$L([
   s$8({ type: Boolean })
 ], RadioButton.prototype, "active", void 0);
-__decorate$K([
+__decorate$L([
   s$8({ type: Boolean, noAttribute: true })
 ], RadioButton.prototype, "_groupChecked", void 0);
-__decorate$K([
+__decorate$L([
   s$8({ type: Boolean, noAttribute: true })
 ], RadioButton.prototype, "_groupRequired", void 0);
-__decorate$K([
+__decorate$L([
   i$9("@ui5/webcomponents")
 ], RadioButton, "i18nBundle", void 0);
-RadioButton = RadioButton_1 = __decorate$K([
+RadioButton = RadioButton_1 = __decorate$L([
   m$8({
     tag: "ui5-radio-button",
     languageAware: true,
@@ -12245,7 +12245,7 @@ function displayOnlyIcon() {
   }
   return border;
 }
-var __decorate$J = function(decorators, target, key, desc) {
+var __decorate$K = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -12434,55 +12434,55 @@ let CheckBox = CheckBox_1 = class CheckBox2 extends b$7 {
     };
   }
 };
-__decorate$J([
+__decorate$K([
   s$8()
 ], CheckBox.prototype, "accessibleNameRef", void 0);
-__decorate$J([
+__decorate$K([
   s$8()
 ], CheckBox.prototype, "accessibleName", void 0);
-__decorate$J([
+__decorate$K([
   s$8({ type: Boolean })
 ], CheckBox.prototype, "disabled", void 0);
-__decorate$J([
+__decorate$K([
   s$8({ type: Boolean })
 ], CheckBox.prototype, "readonly", void 0);
-__decorate$J([
+__decorate$K([
   s$8({ type: Boolean })
 ], CheckBox.prototype, "displayOnly", void 0);
-__decorate$J([
+__decorate$K([
   s$8({ type: Boolean })
 ], CheckBox.prototype, "required", void 0);
-__decorate$J([
+__decorate$K([
   s$8({ type: Boolean })
 ], CheckBox.prototype, "indeterminate", void 0);
-__decorate$J([
+__decorate$K([
   s$8({ type: Boolean })
 ], CheckBox.prototype, "checked", void 0);
-__decorate$J([
+__decorate$K([
   s$8()
 ], CheckBox.prototype, "text", void 0);
-__decorate$J([
+__decorate$K([
   s$8()
 ], CheckBox.prototype, "valueState", void 0);
-__decorate$J([
+__decorate$K([
   s$8()
 ], CheckBox.prototype, "wrappingType", void 0);
-__decorate$J([
+__decorate$K([
   s$8()
 ], CheckBox.prototype, "name", void 0);
-__decorate$J([
+__decorate$K([
   s$8()
 ], CheckBox.prototype, "value", void 0);
-__decorate$J([
+__decorate$K([
   s$8({ type: Boolean })
 ], CheckBox.prototype, "active", void 0);
-__decorate$J([
+__decorate$K([
   s$8({ type: Object })
 ], CheckBox.prototype, "_accInfo", void 0);
-__decorate$J([
+__decorate$K([
   i$9("@ui5/webcomponents")
 ], CheckBox, "i18nBundle", void 0);
-CheckBox = CheckBox_1 = __decorate$J([
+CheckBox = CheckBox_1 = __decorate$K([
   m$8({
     tag: "ui5-checkbox",
     languageAware: true,
@@ -12595,7 +12595,7 @@ function iconEnd$1() {
     return jsx(Icon$1, { part: "icon", name: this.icon, class: "ui5-li-icon", mode: "Decorative" });
   }
 }
-var __decorate$I = function(decorators, target, key, desc) {
+var __decorate$J = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -12654,49 +12654,49 @@ let ListItemStandard = ListItemStandard_1 = class ListItemStandard2 extends List
     return !!this.image.length;
   }
 };
-__decorate$I([
+__decorate$J([
   s$8()
 ], ListItemStandard.prototype, "text", void 0);
-__decorate$I([
+__decorate$J([
   s$8()
 ], ListItemStandard.prototype, "description", void 0);
-__decorate$I([
+__decorate$J([
   s$8()
 ], ListItemStandard.prototype, "icon", void 0);
-__decorate$I([
+__decorate$J([
   s$8({ type: Boolean })
 ], ListItemStandard.prototype, "iconEnd", void 0);
-__decorate$I([
+__decorate$J([
   s$8()
 ], ListItemStandard.prototype, "additionalText", void 0);
-__decorate$I([
+__decorate$J([
   s$8()
 ], ListItemStandard.prototype, "additionalTextState", void 0);
-__decorate$I([
+__decorate$J([
   s$8({ type: Boolean })
 ], ListItemStandard.prototype, "movable", void 0);
-__decorate$I([
+__decorate$J([
   s$8()
 ], ListItemStandard.prototype, "accessibleName", void 0);
-__decorate$I([
+__decorate$J([
   s$8()
 ], ListItemStandard.prototype, "wrappingType", void 0);
-__decorate$I([
+__decorate$J([
   s$8({ type: Boolean })
 ], ListItemStandard.prototype, "hasTitle", void 0);
-__decorate$I([
+__decorate$J([
   s$8({ type: Boolean })
 ], ListItemStandard.prototype, "_hasImage", void 0);
-__decorate$I([
+__decorate$J([
   s$8({ noAttribute: true })
 ], ListItemStandard.prototype, "expandableTextTemplate", void 0);
-__decorate$I([
+__decorate$J([
   d$8({ type: Node, "default": true })
 ], ListItemStandard.prototype, "content", void 0);
-__decorate$I([
+__decorate$J([
   d$8()
 ], ListItemStandard.prototype, "image", void 0);
-ListItemStandard = ListItemStandard_1 = __decorate$I([
+ListItemStandard = ListItemStandard_1 = __decorate$J([
   m$8({
     tag: "ui5-li",
     renderer: y$5,
@@ -12719,7 +12719,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const ListItemCustomCss = `:host(:not([hidden])){display:block}:host{min-height:var(--_ui5-v2-17-0_list_item_base_height);height:auto;box-sizing:border-box}.ui5-li-root.ui5-custom-li-root{pointer-events:inherit;min-height:inherit}.ui5-li-root.ui5-custom-li-root .ui5-li-content{pointer-events:inherit}[ui5-checkbox].ui5-li-singlesel-radiobtn,[ui5-radio-button].ui5-li-singlesel-radiobtn{display:flex;align-items:center}.ui5-li-root.ui5-custom-li-root,[ui5-checkbox].ui5-li-singlesel-radiobtn,[ui5-radio-button].ui5-li-singlesel-radiobtn{min-width:var(--_ui5-v2-17-0_custom_list_item_rb_min_width)}:host([_selection-mode="SingleStart"]) .ui5-li-root.ui5-custom-li-root{padding-inline:0 1rem}:host([_selection-mode="Multiple"]) .ui5-li-root.ui5-custom-li-root{padding-inline:0 1rem}:host([_selection-mode="SingleEnd"]) .ui5-li-root.ui5-custom-li-root{padding-inline:1rem 0}
 `;
-var __decorate$H = function(decorators, target, key, desc) {
+var __decorate$I = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -12752,13 +12752,13 @@ let ListItemCustom = class ListItemCustom2 extends ListItem$1 {
     return result;
   }
 };
-__decorate$H([
+__decorate$I([
   s$8({ type: Boolean })
 ], ListItemCustom.prototype, "movable", void 0);
-__decorate$H([
+__decorate$I([
   s$8()
 ], ListItemCustom.prototype, "accessibleName", void 0);
-ListItemCustom = __decorate$H([
+ListItemCustom = __decorate$I([
   m$8({
     tag: "ui5-li-custom",
     template: ListItemCustomTemplate,
@@ -12852,7 +12852,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const TableCellBaseStyles = `:host{display:flex;flex-wrap:wrap;align-content:var(--_ui5-v2-17-0_table_cell_valign);min-width:var(--_ui5-v2-17-0_table_cell_min_width);max-width:100%;overflow:clip;overflow-clip-margin:content-box;padding:var(--_ui5-v2-17-0_table_cell_vertical_padding) var(--_ui5-v2-17-0_table_cell_horizontal_padding);box-sizing:border-box}:host([tabindex]:focus){outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);outline-offset:calc(-1 * var(--sapContent_FocusWidth))}:host(#selection-cell){width:auto;min-width:auto;background-color:inherit}:host([data-ui5-table-cell-fixed]){position:sticky;z-index:1}
 `;
-var __decorate$G = function(decorators, target, key, desc) {
+var __decorate$H = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -12876,29 +12876,29 @@ let TableCellBase = class TableCellBase2 extends b$7 {
     return true;
   }
 };
-__decorate$G([
+__decorate$H([
   d$8({ type: Node, "default": true })
 ], TableCellBase.prototype, "content", void 0);
-__decorate$G([
+__decorate$H([
   s$8()
 ], TableCellBase.prototype, "horizontalAlign", void 0);
-__decorate$G([
+__decorate$H([
   s$8({ type: Boolean })
 ], TableCellBase.prototype, "_popin", void 0);
-__decorate$G([
+__decorate$H([
   s$8({ type: Boolean, noAttribute: true })
 ], TableCellBase.prototype, "_popinHidden", void 0);
-__decorate$G([
+__decorate$H([
   i$9("@ui5/webcomponents")
 ], TableCellBase, "i18nBundle", void 0);
-TableCellBase = __decorate$G([
+TableCellBase = __decorate$H([
   m$8({
     renderer: y$5,
     styles: TableCellBaseStyles
   })
 ], TableCellBase);
 const TableCellBase$1 = TableCellBase;
-var __decorate$F = function(decorators, target, key, desc) {
+var __decorate$G = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -12941,13 +12941,13 @@ let TableCell = class TableCell2 extends TableCellBase$1 {
     return TableCellBase$1.i18nBundle.getText(LABEL_COLON);
   }
 };
-__decorate$F([
+__decorate$G([
   o("#popin-header")
 ], TableCell.prototype, "_popinHeader", void 0);
-__decorate$F([
+__decorate$G([
   o("#popin-content")
 ], TableCell.prototype, "_popinContent", void 0);
-TableCell = __decorate$F([
+TableCell = __decorate$G([
   m$8({
     tag: "ui5-table-cell",
     styles: [TableCellBase$1.styles, TableCellStyles],
@@ -12972,7 +12972,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const TableRowBaseCss = `:host{display:grid;grid-template-columns:subgrid;grid-column:1 / -1;min-height:var(--_ui5-v2-17-0_list_item_base_height);box-sizing:content-box;border-bottom:var(--sapList_BorderWidth) solid var(--sapList_BorderColor);overflow:clip}:host([tabindex]:focus){outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);outline-offset:calc(-1 * var(--sapContent_FocusWidth))}:host([tabindex]:focus) #selection-cell,:host([tabindex]:focus) #actions-cell{clip-path:inset(var(--sapContent_FocusWidth))}::slotted([ui5-table-cell]:first-of-type),::slotted([ui5-table-header-cell]:first-of-type),#popin-cell{padding-inline-start:var(--_ui5-v2-17-0_first_table_cell_horizontal_padding)}#selection-cell+::slotted([ui5-table-cell-base]:first-of-type),#selection-cell~#popin-cell{padding-inline-start:var(--_ui5-v2-17-0_table_cell_horizontal_padding)}#selection-cell{display:flex;align-items:center;justify-content:center;padding:0;left:0}:dir(rtl)#selection-cell{right:0}#selection-component{vertical-align:middle}#actions-cell{position:sticky;right:0;background-color:inherit;flex-wrap:nowrap}:dir(rtl)#actions-cell{left:0}
 `;
-var __decorate$E = function(decorators, target, key, desc) {
+var __decorate$F = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -13052,28 +13052,28 @@ let TableRowBase = TableRowBase_1 = class TableRowBase2 extends b$7 {
     return TableRowBase_1.i18nBundle.getText(TABLE_ROW_SELECTOR);
   }
 };
-__decorate$E([
+__decorate$F([
   s$8({ type: Number, noAttribute: true })
 ], TableRowBase.prototype, "_invalidate", void 0);
-__decorate$E([
+__decorate$F([
   s$8({ type: Number, noAttribute: true })
 ], TableRowBase.prototype, "_rowActionCount", void 0);
-__decorate$E([
+__decorate$F([
   s$8({ type: Boolean, noAttribute: true })
 ], TableRowBase.prototype, "_renderNavigated", void 0);
-__decorate$E([
+__decorate$F([
   s$8({ type: Boolean, noAttribute: true })
 ], TableRowBase.prototype, "_alternate", void 0);
-__decorate$E([
+__decorate$F([
   o("#selection-cell")
 ], TableRowBase.prototype, "_selectionCell", void 0);
-__decorate$E([
+__decorate$F([
   o("#navigated-cell")
 ], TableRowBase.prototype, "_navigatedCell", void 0);
-__decorate$E([
+__decorate$F([
   i$9("@ui5/webcomponents")
 ], TableRowBase, "i18nBundle", void 0);
-TableRowBase = TableRowBase_1 = __decorate$E([
+TableRowBase = TableRowBase_1 = __decorate$F([
   m$8({
     renderer: y$5,
     styles: TableRowBaseCss
@@ -13084,7 +13084,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const TableRowCss = `:host{background:var(--sapList_Background)}:host([_alternate]){background:var(--_ui5-v2-17-0_table_row_alternating_background)}:host([aria-selected=true]){background:var(--sapList_SelectionBackgroundColor);border-bottom:var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)}@media (hover: hover){:host([_interactive]:hover){background:var(--sapList_Hover_Background)}:host([_interactive][aria-selected=true]:hover){background:var(--sapList_Hover_SelectionBackground)}}:host([_interactive]:active),:host([_interactive][_active]),:host([_interactive][aria-selected=true]:active),:host([_interactive][aria-selected=true][_active]){background:var(--sapList_Active_Background)}:host([position]){height:var(--row-height)}:host([_interactive]){cursor:pointer}#popin-cell{align-content:initial;flex-direction:column;grid-column:1 / -1}#navigated-cell{position:sticky;right:0;overflow:visible;grid-row:span 2;min-width:0;padding:0;background:inherit}:dir(rtl)#navigated-cell{left:0}:host([navigated]) #navigated{position:absolute;inset:0;background:var(--sapList_SelectionBorderColor)}:host([tabindex]:focus) #navigated{transform:translate(calc(var(--_ui5-v2-17-0_table_navigated_cell_width) * -1));bottom:2px;top:3px}:host([tabindex]:focus) #navigated:dir(rtl){transform:translate(var(--_ui5-v2-17-0_table_navigated_cell_width))}:host([tabindex]:focus) #navigated-cell{clip-path:inset(var(--sapContent_FocusWidth) var(--sapContent_FocusWidth) var(--sapContent_FocusWidth) calc(var(--_ui5-v2-17-0_table_navigated_cell_width) * -1))}:host([tabindex]:focus) #navigated-cell:dir(rtl){clip-path:inset(var(--sapContent_FocusWidth) calc(var(--_ui5-v2-17-0_table_navigated_cell_width) * -1) var(--sapContent_FocusWidth) var(--sapContent_FocusWidth))}:host([navigated]) #popin-cell{grid-column:1 / -2}#selection-cell~#popin-cell{grid-column-start:2}#actions-cell{display:flex;align-items:center;gap:var(--_ui5-v2-17-0_table_row_actions_gap)}#actions-cell:has(+#navigated-cell){right:var(--_ui5-v2-17-0_table_navigated_cell_width);overflow:auto}:dir(rtl)#actions-cell:has(+#navigated-cell){left:var(--_ui5-v2-17-0_table_navigated_cell_width)}
 `;
-var __decorate$D = function(decorators, target, key, desc) {
+var __decorate$E = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -13217,7 +13217,7 @@ let TableRow = class TableRow2 extends TableRowBase$1 {
     }
   }
 };
-__decorate$D([
+__decorate$E([
   d$8({
     type: HTMLElement,
     "default": true,
@@ -13228,34 +13228,34 @@ __decorate$D([
     }
   })
 ], TableRow.prototype, "cells", void 0);
-__decorate$D([
+__decorate$E([
   d$8({
     type: HTMLElement,
     individualSlots: true
   })
 ], TableRow.prototype, "actions", void 0);
-__decorate$D([
+__decorate$E([
   s$8()
 ], TableRow.prototype, "rowKey", void 0);
-__decorate$D([
+__decorate$E([
   s$8({ type: Number })
 ], TableRow.prototype, "position", void 0);
-__decorate$D([
+__decorate$E([
   s$8({ type: Boolean })
 ], TableRow.prototype, "interactive", void 0);
-__decorate$D([
+__decorate$E([
   s$8({ type: Boolean })
 ], TableRow.prototype, "navigated", void 0);
-__decorate$D([
+__decorate$E([
   s$8({ type: Boolean })
 ], TableRow.prototype, "movable", void 0);
-__decorate$D([
+__decorate$E([
   o("#popin-cell")
 ], TableRow.prototype, "_popinCell", void 0);
-__decorate$D([
+__decorate$E([
   o("#actions-cell")
 ], TableRow.prototype, "_actionsCell", void 0);
-TableRow = __decorate$D([
+TableRow = __decorate$E([
   m$8({
     tag: "ui5-table-row",
     styles: [TableRowBase$1.styles, TableRowCss],
@@ -13824,7 +13824,7 @@ class TableCustomAnnouncement extends TableExtension {
     }
   }
 }
-var __decorate$C = function(decorators, target, key, desc) {
+var __decorate$D = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -14093,7 +14093,7 @@ let Table = Table_1 = class Table2 extends b$7 {
     return true;
   }
 };
-__decorate$C([
+__decorate$D([
   d$8({
     type: HTMLElement,
     "default": true,
@@ -14103,73 +14103,73 @@ __decorate$C([
     }
   })
 ], Table.prototype, "rows", void 0);
-__decorate$C([
+__decorate$D([
   d$8({ type: HTMLElement, invalidateOnChildChange: { properties: false, slots: true } })
 ], Table.prototype, "headerRow", void 0);
-__decorate$C([
+__decorate$D([
   d$8()
 ], Table.prototype, "noData", void 0);
-__decorate$C([
+__decorate$D([
   d$8({ type: HTMLElement, individualSlots: true })
 ], Table.prototype, "features", void 0);
-__decorate$C([
+__decorate$D([
   s$8()
 ], Table.prototype, "accessibleName", void 0);
-__decorate$C([
+__decorate$D([
   s$8()
 ], Table.prototype, "accessibleNameRef", void 0);
-__decorate$C([
+__decorate$D([
   s$8()
 ], Table.prototype, "noDataText", void 0);
-__decorate$C([
+__decorate$D([
   s$8()
 ], Table.prototype, "overflowMode", void 0);
-__decorate$C([
+__decorate$D([
   s$8({ type: Boolean })
 ], Table.prototype, "loading", void 0);
-__decorate$C([
+__decorate$D([
   s$8({ type: Number })
 ], Table.prototype, "loadingDelay", void 0);
-__decorate$C([
+__decorate$D([
   s$8({ type: Number })
 ], Table.prototype, "rowActionCount", void 0);
-__decorate$C([
+__decorate$D([
   s$8({ type: Boolean })
 ], Table.prototype, "alternateRowColors", void 0);
-__decorate$C([
+__decorate$D([
   s$8()
 ], Table.prototype, "stickyTop", void 0);
-__decorate$C([
+__decorate$D([
   s$8({ type: Number, noAttribute: true })
 ], Table.prototype, "_invalidate", void 0);
-__decorate$C([
+__decorate$D([
   s$8({ type: Boolean, noAttribute: true })
 ], Table.prototype, "_renderNavigated", void 0);
-__decorate$C([
+__decorate$D([
   o("[ui5-drop-indicator]")
 ], Table.prototype, "dropIndicatorDOM", void 0);
-__decorate$C([
+__decorate$D([
   o("#no-data-row")
 ], Table.prototype, "_noDataRow", void 0);
-__decorate$C([
+__decorate$D([
   o("#table-end-row")
 ], Table.prototype, "_endRow", void 0);
-__decorate$C([
+__decorate$D([
   o("#table")
 ], Table.prototype, "_tableElement", void 0);
-__decorate$C([
+__decorate$D([
   o("#before")
 ], Table.prototype, "_beforeElement", void 0);
-__decorate$C([
+__decorate$D([
   o("#after")
 ], Table.prototype, "_afterElement", void 0);
-__decorate$C([
+__decorate$D([
   o("#loading")
 ], Table.prototype, "_loadingElement", void 0);
-__decorate$C([
+__decorate$D([
   i$9("@ui5/webcomponents")
 ], Table, "i18nBundle", void 0);
-Table = Table_1 = __decorate$C([
+Table = Table_1 = __decorate$D([
   m$8({
     tag: "ui5-table",
     renderer: y$5,
@@ -14240,7 +14240,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const TableHeaderCellStyles = `:host{font-family:var(--sapFontSemiboldDuplexFamily);color:var(--sapList_HeaderTextColor);align-items:center;flex-wrap:nowrap;max-width:100%;gap:.125rem}:host(:empty){padding:0}[ui5-icon]{margin-inline-start:.375rem;width:1rem;height:1rem;flex-shrink:0}::slotted([ui5-label]){color:inherit;font-family:inherit;overflow:hidden}
 `;
-var __decorate$B = function(decorators, target, key, desc) {
+var __decorate$C = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -14269,37 +14269,37 @@ let TableHeaderCell = class TableHeaderCell2 extends TableCellBase$1 {
     };
   }
 };
-__decorate$B([
+__decorate$C([
   s$8()
 ], TableHeaderCell.prototype, "width", void 0);
-__decorate$B([
+__decorate$C([
   s$8()
 ], TableHeaderCell.prototype, "minWidth", void 0);
-__decorate$B([
+__decorate$C([
   s$8({ type: Number })
 ], TableHeaderCell.prototype, "importance", void 0);
-__decorate$B([
+__decorate$C([
   s$8()
 ], TableHeaderCell.prototype, "popinText", void 0);
-__decorate$B([
+__decorate$C([
   s$8()
 ], TableHeaderCell.prototype, "sortIndicator", void 0);
-__decorate$B([
+__decorate$C([
   s$8({ type: Boolean })
 ], TableHeaderCell.prototype, "popinHidden", void 0);
-__decorate$B([
+__decorate$C([
   d$8()
 ], TableHeaderCell.prototype, "action", void 0);
-__decorate$B([
+__decorate$C([
   s$8({ type: Boolean, noAttribute: true })
 ], TableHeaderCell.prototype, "_popin", void 0);
-__decorate$B([
+__decorate$C([
   o("slot:not([name])")
 ], TableHeaderCell.prototype, "_defaultSlot", void 0);
-__decorate$B([
+__decorate$C([
   o("slot[name=action]")
 ], TableHeaderCell.prototype, "_actionSlot", void 0);
-TableHeaderCell = __decorate$B([
+TableHeaderCell = __decorate$C([
   m$8({
     tag: "ui5-table-header-cell",
     styles: [TableCellBase$1.styles, TableHeaderCellStyles],
@@ -14349,7 +14349,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const TableHeaderRowStyles = `:host{background:var(--sapList_HeaderBackground);border-top:var(--sapList_BorderWidth) solid var(--sapList_BorderColor);border-bottom:var(--sapList_BorderWidth) solid var(--sapList_HeaderBorderColor);grid-template-rows:auto 0px}:host([hidden]){display:none}:host([sticky]){position:sticky;top:var(--ui5-v2-17-0_grid_sticky_top, 0);z-index:3}#popin-cell{padding:0;width:0;height:0}#selection-cell [ui5-icon]{width:var(--_ui5-v2-17-0_checkbox_inner_width_height);height:var(--_ui5-v2-17-0_checkbox_inner_width_height)}#popin-cell-content,#actions-cell-content{position:absolute;clip:rect(0,0,0,0)}
 `;
-var __decorate$A = function(decorators, target, key, desc) {
+var __decorate$B = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -14411,7 +14411,7 @@ let TableHeaderRow = (
     }
   }
 );
-__decorate$A([
+__decorate$B([
   d$8({
     type: HTMLElement,
     "default": true,
@@ -14422,10 +14422,10 @@ __decorate$A([
     individualSlots: true
   })
 ], TableHeaderRow.prototype, "cells", void 0);
-__decorate$A([
+__decorate$B([
   s$8({ type: Boolean })
 ], TableHeaderRow.prototype, "sticky", void 0);
-TableHeaderRow = __decorate$A([
+TableHeaderRow = __decorate$B([
   m$8({
     tag: "ui5-table-header-row",
     languageAware: true,
@@ -14526,7 +14526,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const panelCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:block}:host{font-family:var(--sapFontFamily);background-color:var(--sapGroup_TitleBackground);border-radius:var(--_ui5-v2-17-0_panel_border_radius)}:host(:not([collapsed])){border-bottom:var(--_ui5-v2-17-0_panel_border_bottom)}:host([fixed]) .ui5-panel-header{padding-left:1rem}.ui5-panel-header{min-height:var(--_ui5-v2-17-0_panel_header_height);width:100%;position:relative;display:flex;justify-content:flex-start;align-items:center;outline:none;box-sizing:border-box;padding-right:var(--_ui5-v2-17-0_panel_header_padding_right);font-family:var(--sapFontHeaderFamily);font-size:var(--sapGroup_Title_FontSize);font-weight:400;color:var(--sapGroup_TitleTextColor)}.ui5-panel-header-icon{color:var(--_ui5-v2-17-0_panel_icon_color)}.ui5-panel-header-button-animated{transition:transform .4s ease-out}:host(:not([_has-header]):not([fixed])) .ui5-panel-header{cursor:pointer}:host(:not([_has-header]):not([fixed])) .ui5-panel-header:focus:after{content:"";position:absolute;pointer-events:none;z-index:2;border:var(--_ui5-v2-17-0_panel_focus_border);border-radius:var(--_ui5-v2-17-0_panel_border_radius);top:var(--_ui5-v2-17-0_panel_focus_offset);bottom:var(--_ui5-v2-17-0_panel_focus_bottom_offset);left:var(--_ui5-v2-17-0_panel_focus_offset);right:var(--_ui5-v2-17-0_panel_focus_offset)}:host(:not([collapsed]):not([_has-header]):not([fixed])) .ui5-panel-header:focus:after{border-radius:var(--_ui5-v2-17-0_panel_border_radius_expanded)}:host(:not([collapsed])) .ui5-panel-header-button:not(.ui5-panel-header-button-with-icon),:host(:not([collapsed])) .ui5-panel-header-icon-wrapper [ui5-icon]{transform:var(--_ui5-v2-17-0_panel_toggle_btn_rotation)}:host([fixed]) .ui5-panel-header-title{width:100%}.ui5-panel-heading-wrapper.ui5-panel-heading-wrapper-sticky{position:sticky;top:0;background-color:var(--_ui5-v2-17-0_panel_header_background_color);z-index:100;border-radius:var(--_ui5-v2-17-0_panel_border_radius)}.ui5-panel-header-title{width:calc(100% - var(--_ui5-v2-17-0_panel_button_root_width));overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ui5-panel-content{padding:var(--_ui5-v2-17-0_panel_content_padding);background-color:var(--sapGroup_ContentBackground);outline:none;border-bottom-left-radius:var(--_ui5-v2-17-0_panel_border_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_panel_border_radius);overflow:auto}.ui5-panel-header-button-root{display:flex;justify-content:center;align-items:center;flex-shrink:0;width:var(--_ui5-v2-17-0_panel_button_root_width);height:var(--_ui5-v2-17-0_panel_button_root_height);padding:var(--_ui5-v2-17-0_panel_header_button_wrapper_padding);box-sizing:border-box}:host([fixed]:not([collapsed]):not([_has-header])) .ui5-panel-header,:host([collapsed]) .ui5-panel-header{border-bottom:.0625rem solid var(--sapGroup_TitleBorderColor)}:host([collapsed]) .ui5-panel-header{border-bottom-left-radius:var(--_ui5-v2-17-0_panel_border_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_panel_border_radius)}:host(:not([fixed]):not([collapsed])) .ui5-panel-header{border-bottom:var(--_ui5-v2-17-0_panel_default_header_border)}[ui5-button].ui5-panel-header-button{display:flex;justify-content:center;align-items:center;min-width:initial;height:100%;width:100%}.ui5-panel-header-icon-wrapper{display:flex;justify-content:center;align-items:center}.ui5-panel-header-icon-wrapper,.ui5-panel-header-icon-wrapper .ui5-panel-header-icon{color:inherit}.ui5-panel-header-icon-wrapper,[ui5-button].ui5-panel-header-button-with-icon [ui5-icon]{pointer-events:none}.ui5-panel-root{height:100%;display:flex;flex-direction:column}
 `;
-var __decorate$z = function(decorators, target, key, desc) {
+var __decorate$A = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -14679,49 +14679,49 @@ let Panel = Panel_1 = class Panel2 extends b$7 {
     return !this.header.length;
   }
 };
-__decorate$z([
+__decorate$A([
   s$8()
 ], Panel.prototype, "headerText", void 0);
-__decorate$z([
+__decorate$A([
   s$8({ type: Boolean })
 ], Panel.prototype, "fixed", void 0);
-__decorate$z([
+__decorate$A([
   s$8({ type: Boolean })
 ], Panel.prototype, "collapsed", void 0);
-__decorate$z([
+__decorate$A([
   s$8({ type: Boolean })
 ], Panel.prototype, "noAnimation", void 0);
-__decorate$z([
+__decorate$A([
   s$8()
 ], Panel.prototype, "accessibleRole", void 0);
-__decorate$z([
+__decorate$A([
   s$8()
 ], Panel.prototype, "headerLevel", void 0);
-__decorate$z([
+__decorate$A([
   s$8()
 ], Panel.prototype, "accessibleName", void 0);
-__decorate$z([
+__decorate$A([
   s$8({ type: Boolean })
 ], Panel.prototype, "stickyHeader", void 0);
-__decorate$z([
+__decorate$A([
   s$8({ type: Boolean })
 ], Panel.prototype, "useAccessibleNameForToggleButton", void 0);
-__decorate$z([
+__decorate$A([
   s$8({ type: Boolean })
 ], Panel.prototype, "_hasHeader", void 0);
-__decorate$z([
+__decorate$A([
   s$8({ type: Boolean, noAttribute: true })
 ], Panel.prototype, "_contentExpanded", void 0);
-__decorate$z([
+__decorate$A([
   s$8({ type: Boolean, noAttribute: true })
 ], Panel.prototype, "_animationRunning", void 0);
-__decorate$z([
+__decorate$A([
   d$8()
 ], Panel.prototype, "header", void 0);
-__decorate$z([
+__decorate$A([
   i$9("@ui5/webcomponents")
 ], Panel, "i18nBundle", void 0);
-Panel = Panel_1 = __decorate$z([
+Panel = Panel_1 = __decorate$A([
   m$8({
     tag: "ui5-panel",
     fastNavigation: true,
@@ -14819,7 +14819,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const tabContainerCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:block;width:100%}.ui5-tc-root{display:flex;flex-direction:column;width:100%;height:100%;font-family:var(--sapFontHeaderFamily);font-size:1rem}.ui5-tc__header{position:relative;display:flex;align-items:center;background-color:var(--_ui5-v2-17-0_tc_header_background);--ui5-v2-17-0_tc_header_active_background_color: var(--_ui5-v2-17-0_tc_header_background);height:var(--_ui5-v2-17-0_tc_header_height);box-shadow:var(--_ui5-v2-17-0_tc_header_box_shadow);box-sizing:border-box}:host([tabs-placement="Bottom"]) .ui5-tc__header{border-top:var(--_ui5-v2-17-0_tc_header_border_bottom)}:host([header-background-design="Transparent"]) .ui5-tc__header{background-color:transparent;--ui5-v2-17-0_tc_header_active_background_color: transparent;box-shadow:none;border-bottom:.0625rem solid var(--sapObjectHeader_BorderColor)}:host([header-background-design="Translucent"]) .ui5-tc__header{background-color:var(--_ui5-v2-17-0_tc_header_background_translucent);--ui5-v2-17-0_tc_header_active_background_color: var(--_ui5-v2-17-0_tc_header_background_translucent)}.ui5-tc-root.ui5-tc--textOnly .ui5-tc__header{height:var(--_ui5-v2-17-0_tc_header_height_text_only)}.ui5-tc-root.ui5-tc--textOnly.ui5-tc--withAdditionalText.ui5-tc--standardTabLayout .ui5-tc__header{height:var(--_ui5-v2-17-0_tc_header_height_text_with_additional_text)}.ui5-tc__tabStrip{flex:1;display:flex;overflow:hidden;box-sizing:border-box;position:relative;white-space:nowrap}.ui5-tc__separator:focus{outline:none}.ui5-tc__overflow{flex:0 0 0}.ui5-tc__overflow.ui5-tc__overflow--end{padding-inline-start:.188rem;margin-inline-end:1rem}.ui5-tc__overflow.ui5-tc__overflow--start{margin-inline-start:1rem}.ui5-tc__overflow[hidden]{display:none}.ui5-tc__overflow>[ui5-button]{border-radius:.75rem;height:1.5rem;--_ui5-v2-17-0_button_focused_border_radius: .75rem}.ui5-tc__overflow>[ui5-button]:not([active]){color:var(--_ui5-v2-17-0_tc_overflow_text_color)}.ui5-tc__overflow>[ui5-button]:not([active]):hover{color:var(--_ui5-v2-17-0_tc_overflow_text_color)}.ui5-tc__overflow>[ui5-button][focused]{outline-offset:.125rem;--_ui5-v2-17-0_button_focused_border: none;outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor)}.ui5-tc-root.ui5-tc--textOnly .ui5-tc__content{height:calc(100% - var(--_ui5-v2-17-0_tc_header_height_text_only))}.ui5-tc__content{position:relative;display:flex;height:calc(100% - var(--_ui5-v2-17-0_tc_header_height));background-color:var(--_ui5-v2-17-0_tc_content_background);border-bottom:var(--_ui5-v2-17-0_tc_content_border_bottom);box-sizing:border-box}:host([tabs-placement="Bottom"]) .ui5-tc__content{border-top:var(--_ui5-v2-17-0_tc_content_border_bottom)}:host([content-background-design="Transparent"]) .ui5-tc__content{background-color:transparent}:host([content-background-design="Translucent"]) .ui5-tc__content{background-color:var(--_ui5-v2-17-0_tc_content_background_translucent)}:host([header-background-design="Transparent"]) .ui5-tc__content{border-bottom:none}.ui5-tc__content--collapsed{display:none}.ui5-tc--transparent .ui5-tc__content{background-color:transparent}.ui5-tc__contentItem{max-height:100%;display:flex;flex-grow:1;overflow:auto}.ui5-tc__contentItem[hidden]{display:none}.ui5-tc__header{padding:0}.ui5-tc__content{padding:1rem}:host([media-range="M"]) .ui5-tc__header,:host([media-range="L"]) .ui5-tc__header{padding:0 1rem}:host([media-range="M"]) .ui5-tc__content,:host([media-range="L"]) .ui5-tc__content{padding:1rem 2rem}:host([media-range="XL"]) .ui5-tc__header{padding:0 2rem}:host([media-range="XL"]) .ui5-tc__content{padding:1rem 3rem}.ui5-tc-root.ui5-tc--noTabSelected .ui5-tc__content{padding:0}
 `;
-var __decorate$y = function(decorators, target, key, desc) {
+var __decorate$z = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -15729,52 +15729,52 @@ let TabContainer = TabContainer_1 = class TabContainer2 extends b$7 {
     return this.hasItems ? `${this._id}-invisibleText` : void 0;
   }
 };
-__decorate$y([
+__decorate$z([
   s$8({ type: Boolean })
 ], TabContainer.prototype, "collapsed", void 0);
-__decorate$y([
+__decorate$z([
   s$8()
 ], TabContainer.prototype, "tabLayout", void 0);
-__decorate$y([
+__decorate$z([
   s$8()
 ], TabContainer.prototype, "overflowMode", void 0);
-__decorate$y([
+__decorate$z([
   s$8()
 ], TabContainer.prototype, "headerBackgroundDesign", void 0);
-__decorate$y([
+__decorate$z([
   s$8()
 ], TabContainer.prototype, "contentBackgroundDesign", void 0);
-__decorate$y([
+__decorate$z([
   s$8()
 ], TabContainer.prototype, "tabsPlacement", void 0);
-__decorate$y([
+__decorate$z([
   s$8({ type: Boolean })
 ], TabContainer.prototype, "noAutoSelection", void 0);
-__decorate$y([
+__decorate$z([
   s$8()
 ], TabContainer.prototype, "mediaRange", void 0);
-__decorate$y([
+__decorate$z([
   s$8({ type: Object })
 ], TabContainer.prototype, "_selectedTab", void 0);
-__decorate$y([
+__decorate$z([
   s$8({ type: Boolean, noAttribute: true })
 ], TabContainer.prototype, "_animationRunning", void 0);
-__decorate$y([
+__decorate$z([
   s$8({ type: Boolean, noAttribute: true })
 ], TabContainer.prototype, "_contentCollapsed", void 0);
-__decorate$y([
+__decorate$z([
   s$8({ noAttribute: true })
 ], TabContainer.prototype, "_startOverflowText", void 0);
-__decorate$y([
+__decorate$z([
   s$8({ noAttribute: true })
 ], TabContainer.prototype, "_endOverflowText", void 0);
-__decorate$y([
+__decorate$z([
   s$8({ type: Array })
 ], TabContainer.prototype, "_popoverItemsFlat", void 0);
-__decorate$y([
+__decorate$z([
   s$8({ type: Number, noAttribute: true })
 ], TabContainer.prototype, "_width", void 0);
-__decorate$y([
+__decorate$z([
   d$8({
     "default": true,
     type: HTMLElement,
@@ -15785,19 +15785,19 @@ __decorate$y([
     }
   })
 ], TabContainer.prototype, "items", void 0);
-__decorate$y([
+__decorate$z([
   d$8()
 ], TabContainer.prototype, "overflowButton", void 0);
-__decorate$y([
+__decorate$z([
   d$8()
 ], TabContainer.prototype, "startOverflowButton", void 0);
-__decorate$y([
+__decorate$z([
   D("[data-ui5-stable=overflow-start],[data-ui5-stable=overflow-end],[role=tab]")
 ], TabContainer.prototype, "_onHeaderDragOver", null);
-__decorate$y([
+__decorate$z([
   i$9("@ui5/webcomponents")
 ], TabContainer, "i18nBundle", void 0);
-TabContainer = TabContainer_1 = __decorate$y([
+TabContainer = TabContainer_1 = __decorate$z([
   m$8({
     tag: "ui5-tabcontainer",
     languageAware: true,
@@ -15869,7 +15869,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const overflowCss$1 = `.ui5-tab-semantic-icon{display:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_display);height:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_size);width:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_size);margin-inline-end:.5rem}.ui5-tab-semantic-icon--positive{color:var(--sapPositiveTextColor)}.ui5-tab-semantic-icon--negative{color:var(--sapNegativeTextColor)}.ui5-tab-semantic-icon--critical{color:var(--sapCriticalTextColor)}.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}.ui5-tab-overflow-item{color:var(--_ui5-v2-17-0_tc_overflowItem_default_color)}.ui5-tab-overflow-item--disabled{cursor:default;opacity:var(--sapContent_DisabledOpacity)}.ui5-tab-overflow-item[hidden]{display:none}.ui5-tab-overflow-item--positive:not(.ui5-tab-overflow-item--disabled) .ui5-tab-overflow-itemContent{color:var(--_ui5-v2-17-0_tc_overflowItem_positive_color)}.ui5-tab-overflow-item--negative:not(.ui5-tab-overflow-item--disabled) .ui5-tab-overflow-itemContent{color:var(--_ui5-v2-17-0_tc_overflowItem_negative_color)}.ui5-tab-overflow-item--critical:not(.ui5-tab-overflow-item--disabled) .ui5-tab-overflow-itemContent{color:var(--_ui5-v2-17-0_tc_overflowItem_critical_color)}.ui5-tab-overflow-item[active] .ui5-tab-overflow-itemContent{color:var(--sapList_Active_TextColor)}.ui5-tab-overflow-itemContent{display:flex;align-items:center;position:relative;height:var(--_ui5-v2-17-0_tc_item_text);pointer-events:none;font-size:.875rem}.ui5-tab-overflow-itemContent-wrapper{padding-inline-start:calc((calc(var(--_ui5-v2-17-0-tab-indentation-level) + var(--_ui5-v2-17-0-tab-level-has-icon) * var(--_ui5-v2-17-0_tc_overflowItem_additional, 0))) * (var(--_ui5-v2-17-0_tc_overflowItem_indent) + var(--_ui5-v2-17-0_tc_overflowItem_extra_indent)))}.ui5-tab-overflow-item .ui5-tab-semantic-icon{position:absolute;inset-inline-start:-1.25rem}.ui5-tab-overflow-item--selectedSubTab{background-color:var(--sapList_SelectionBackgroundColor)}.ui5-tab-overflow-item [ui5-icon]:not(.ui5-tab-semantic-icon){width:1.375rem;height:1.375rem;padding-inline-end:.75rem;color:var(--_ui5-v2-17-0_tc_overflowItem_current_color)}.ui5-tab-container-responsive-popover [ui5-li-custom][focused]::part(native-li):after{inset:var(--_ui5-v2-17-0_tc_overflowItem_focus_offset)}.ui5-tab-container-responsive-popover::part(content){padding:0}
 `;
-var __decorate$x = function(decorators, target, key, desc) {
+var __decorate$y = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -16143,34 +16143,34 @@ let Tab = Tab_1 = class Tab2 extends b$7 {
     }
   }
 };
-__decorate$x([
+__decorate$y([
   s$8()
 ], Tab.prototype, "text", void 0);
-__decorate$x([
+__decorate$y([
   s$8({ type: Boolean })
 ], Tab.prototype, "disabled", void 0);
-__decorate$x([
+__decorate$y([
   s$8()
 ], Tab.prototype, "additionalText", void 0);
-__decorate$x([
+__decorate$y([
   s$8()
 ], Tab.prototype, "icon", void 0);
-__decorate$x([
+__decorate$y([
   s$8()
 ], Tab.prototype, "design", void 0);
-__decorate$x([
+__decorate$y([
   s$8({ type: Boolean })
 ], Tab.prototype, "selected", void 0);
-__decorate$x([
+__decorate$y([
   s$8({ type: Boolean })
 ], Tab.prototype, "movable", void 0);
-__decorate$x([
+__decorate$y([
   s$8({ type: Boolean })
 ], Tab.prototype, "_isTopLevelTab", void 0);
-__decorate$x([
+__decorate$y([
   s$8({ type: Object })
 ], Tab.prototype, "_selectedTabReference", void 0);
-__decorate$x([
+__decorate$y([
   d$8({
     type: Node,
     "default": true,
@@ -16180,7 +16180,7 @@ __decorate$x([
     }
   })
 ], Tab.prototype, "content", void 0);
-__decorate$x([
+__decorate$y([
   d$8({
     type: HTMLElement,
     individualSlots: true,
@@ -16190,10 +16190,10 @@ __decorate$x([
     }
   })
 ], Tab.prototype, "items", void 0);
-__decorate$x([
+__decorate$y([
   i$9("@ui5/webcomponents")
 ], Tab, "i18nBundle", void 0);
-Tab = Tab_1 = __decorate$x([
+Tab = Tab_1 = __decorate$y([
   m$8({
     tag: "ui5-tab",
     languageAware: true,
@@ -16227,7 +16227,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const overflowCss = `[ui5-li-custom].ui5-tc__separator{min-height:.25rem;border-bottom:.0625rem solid var(--sapGroup_TitleBorderColor);margin-inline-start:calc(var(--_ui5-v2-17-0-tab-indentation-level) * .5rem);margin-inline-end:.5rem}[ui5-list]>[ui5-li-custom].ui5-tc__separator:first-child{min-height:.5rem}
 `;
-var __decorate$w = function(decorators, target, key, desc) {
+var __decorate$x = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -16275,7 +16275,7 @@ let TabSeparator = TabSeparator_1 = class TabSeparator2 extends b$7 {
     }
   }
 };
-TabSeparator = TabSeparator_1 = __decorate$w([
+TabSeparator = TabSeparator_1 = __decorate$x([
   m$8({
     tag: "ui5-tab-separator",
     renderer: y$5
@@ -16284,6 +16284,93 @@ TabSeparator = TabSeparator_1 = __decorate$w([
 TabSeparator.define();
 TabContainer$1.registerTabStyles(stripCss);
 TabContainer$1.registerTabStyles(overflowCss);
+function BarTemplate() {
+  return jsxs("div", { class: "ui5-bar-root", "aria-label": this.accInfo.label, role: this.accInfo.role, part: "bar", children: [jsx("div", { class: "ui5-bar-content-container ui5-bar-startcontent-container", part: "startContent", children: jsx("slot", { name: "startContent" }) }), jsx("div", { class: "ui5-bar-content-container ui5-bar-midcontent-container", part: "midContent", children: jsx("slot", {}) }), jsx("div", { class: "ui5-bar-content-container ui5-bar-endcontent-container", part: "endContent", children: jsx("slot", { name: "endContent" }) })] });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const BarCss = `:host{background-color:var(--sapPageHeader_Background);height:var(--_ui5-v2-17-0_bar_base_height);width:100%;box-shadow:var(--sapContent_HeaderShadow);display:block}.ui5-bar-root{display:flex;align-items:center;justify-content:space-between;height:100%;width:100%;background-color:inherit;box-shadow:inherit;border-radius:inherit;min-width:0;overflow:hidden}.ui5-bar-root .ui5-bar-startcontent-container,.ui5-bar-root .ui5-bar-endcontent-container,.ui5-bar-root .ui5-bar-midcontent-container{display:flex;align-items:center}.ui5-bar-root .ui5-bar-startcontent-container{flex:0 1 auto}.ui5-bar-root .ui5-bar-endcontent-container{flex:0 0 auto}.ui5-bar-root .ui5-bar-midcontent-container{justify-content:center;flex:1 1 auto;padding:0 var(--_ui5-v2-17-0_bar-mid-container-padding-start-end);min-width:0;overflow:hidden}.ui5-bar-root .ui5-bar-startcontent-container{padding-inline-start:var(--_ui5-v2-17-0_bar-start-container-padding-start)}.ui5-bar-root .ui5-bar-content-container{min-width:calc(30% - calc(var(--_ui5-v2-17-0_bar-start-container-padding-start) + var(--_ui5-v2-17-0_bar-end-container-padding-end) + (2*var(--_ui5-v2-17-0_bar-mid-container-padding-start-end))))}.ui5-bar-root.ui5-bar-root-shrinked .ui5-bar-content-container{min-width:0px;overflow:hidden;height:100%}.ui5-bar-root .ui5-bar-endcontent-container{padding-inline-end:var(--_ui5-v2-17-0_bar-end-container-padding-end)}:host([design="Footer"]){background-color:var(--sapPageFooter_Background);border-top:.0625rem solid var(--sapPageFooter_BorderColor);box-shadow:none}:host([design="Subheader"]){height:var(--_ui5-v2-17-0_bar_subheader_height);margin-top:var(--_ui5-v2-17-0_bar_subheader_margin-top)}:host([design="FloatingFooter"]){border-radius:var(--sapElement_BorderCornerRadius);background-color:var(--sapPageFooter_Background);box-shadow:var(--sapContent_Shadow1);border:none}::slotted(*){margin:0 .25rem;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-sizing:border-box}
+`;
+var __decorate$w = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+let Bar = class Bar2 extends b$7 {
+  get accInfo() {
+    return {
+      "label": this.ariaLabelText,
+      "role": this.effectiveRole
+    };
+  }
+  get ariaLabelText() {
+    if (this.accessibleName || this.accessibleNameRef) {
+      return A$3(this);
+    }
+    return this.design;
+  }
+  constructor() {
+    super();
+    this.design = "Header";
+    this.accessibleRole = "Toolbar";
+    this._handleResizeBound = this.handleResize.bind(this);
+  }
+  handleResize() {
+    const bar = this.getDomRef();
+    const barWidth = bar.offsetWidth;
+    const needShrinked = Array.from(bar.children).some((child) => {
+      return child.offsetWidth > barWidth / 3;
+    });
+    bar.classList.toggle("ui5-bar-root-shrinked", needShrinked);
+  }
+  onEnterDOM() {
+    f$6.register(this, this._handleResizeBound);
+    this.getDomRef().querySelectorAll(".ui5-bar-content-container").forEach((child) => {
+      f$6.register(child, this._handleResizeBound);
+    }, this);
+  }
+  onExitDOM() {
+    f$6.deregister(this, this._handleResizeBound);
+    this.getDomRef().querySelectorAll(".ui5-bar-content-container").forEach((child) => {
+      f$6.deregister(child, this._handleResizeBound);
+    }, this);
+  }
+  get effectiveRole() {
+    return this.accessibleRole.toLowerCase() === "toolbar" ? "toolbar" : void 0;
+  }
+};
+__decorate$w([
+  s$8()
+], Bar.prototype, "design", void 0);
+__decorate$w([
+  s$8()
+], Bar.prototype, "accessibleRole", void 0);
+__decorate$w([
+  s$8()
+], Bar.prototype, "accessibleName", void 0);
+__decorate$w([
+  s$8()
+], Bar.prototype, "accessibleNameRef", void 0);
+__decorate$w([
+  d$8({ type: HTMLElement })
+], Bar.prototype, "startContent", void 0);
+__decorate$w([
+  d$8({ type: HTMLElement, "default": true })
+], Bar.prototype, "middleContent", void 0);
+__decorate$w([
+  d$8({ type: HTMLElement })
+], Bar.prototype, "endContent", void 0);
+Bar = __decorate$w([
+  m$8({
+    tag: "ui5-bar",
+    fastNavigation: true,
+    renderer: y$5,
+    styles: BarCss,
+    template: BarTemplate
+  })
+], Bar);
+Bar.define();
 function initUI5Theme(isDark = false) {
   try {
     const theme = isDark ? "sap_horizon_dark" : "sap_horizon";
@@ -19487,6 +19574,88 @@ class UI5TabsCard extends BaseUI5Card {
   }
 }
 customElements.define("ui5-tabs-card", UI5TabsCard);
+class UI5BarCard extends BaseUI5Card {
+  setConfig(config) {
+    if (!config.type) {
+      throw new Error("Card type is required");
+    }
+    super.setConfig(config);
+  }
+  get config() {
+    return this._config;
+  }
+  render() {
+    if (!this._hass || !this.config) {
+      return;
+    }
+    const entityState = this.config.entity ? this.getEntityState() : void 0;
+    const isUnavailable = entityState === "unavailable";
+    const startContent = this.processTemplateEscaped(
+      this.config.start_content || ""
+    );
+    const middleContent = this.processTemplateEscaped(
+      this.config.middle_content || ""
+    );
+    const endContent = this.processTemplateEscaped(
+      this.config.end_content || ""
+    );
+    let stateDisplay = "";
+    if (this.config.entity && this.config.show_entity_state !== false) {
+      const entity = this._hass.states[this.config.entity];
+      if (entity) {
+        const friendlyName = entity.attributes.friendly_name || this.config.entity;
+        const state = entity.state;
+        const unit = entity.attributes.unit_of_measurement || "";
+        stateDisplay = `${friendlyName}: ${state}${unit ? " " + unit : ""}`;
+      }
+    }
+    const design = this.config.design || "Header";
+    this.shadowRoot.innerHTML = `
+      <style>
+        :host {
+          display: block;
+        }
+        ui5-bar {
+          width: 100%;
+        }
+        .bar-content {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .state-display {
+          font-weight: 500;
+        }
+        .unavailable {
+          opacity: 0.5;
+        }
+      </style>
+      <ui5-bar design="${design}" class="${isUnavailable ? "unavailable" : ""}">
+        ${startContent || stateDisplay ? `<div slot="startContent" class="bar-content">
+                ${stateDisplay ? `<span class="state-display">${stateDisplay}</span>` : ""}
+                ${startContent ? `<span>${startContent}</span>` : ""}
+              </div>` : ""}
+        ${middleContent ? `<div slot="middleContent" class="bar-content">
+                <span>${middleContent}</span>
+              </div>` : ""}
+        ${endContent ? `<div slot="endContent" class="bar-content">
+                <span>${endContent}</span>
+              </div>` : ""}
+      </ui5-bar>
+    `;
+  }
+  static getStubConfig() {
+    return {
+      type: "custom:ui5-bar-card",
+      design: "Header",
+      start_content: "Home Assistant",
+      end_content: "Status: Online"
+    };
+  }
+}
+if (!customElements.get("ui5-bar-card")) {
+  customElements.define("ui5-bar-card", UI5BarCard);
+}
 const CARD_DEFINITIONS = [
   {
     type: "custom:ui5-button-card",
@@ -19582,6 +19751,12 @@ const CARD_DEFINITIONS = [
     type: "custom:ui5-tabs-card",
     name: "UI5 Tabs Card",
     description: "Tabbed container for organizing entities by category",
+    preview: true
+  },
+  {
+    type: "custom:ui5-bar-card",
+    name: "UI5 Bar Card",
+    description: "A header/footer bar for layout and status display",
     preview: true
   }
 ];

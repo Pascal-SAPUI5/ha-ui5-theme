@@ -324,6 +324,15 @@ export interface UI5TabsCardConfig extends BaseCardConfig {
   collapsed?: boolean;
 }
 
+export interface UI5BarCardConfig extends BaseCardConfig {
+  type: "custom:ui5-bar-card";
+  design?: "Header" | "Subheader" | "Footer" | "FloatingFooter";
+  start_content?: string;
+  middle_content?: string;
+  end_content?: string;
+  show_entity_state?: boolean;
+}
+
 export type UI5CardConfig =
   | UI5ButtonCardConfig
   | UI5SwitchCardConfig
@@ -340,7 +349,8 @@ export type UI5CardConfig =
   | UI5TableCardConfig
   | UI5CardCardConfig
   | UI5PanelCardConfig
-  | UI5TabsCardConfig;
+  | UI5TabsCardConfig
+  | UI5BarCardConfig;
 
 // ==================== Card Registration ====================
 
