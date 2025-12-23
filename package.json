@@ -8,7 +8,7 @@
     "dist",
     "themes"
   ],
-  "scripts": {
+   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
@@ -16,10 +16,13 @@
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
+    "test:hacs": "node scripts/validate-hacs.js",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "validate": "npm run lint && npm run typecheck && npm test && npm run build && npm run test:hacs"
   },
   "keywords": [
     "home-assistant",
