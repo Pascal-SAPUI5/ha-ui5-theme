@@ -27,6 +27,10 @@ import "./components/Card/Card";
 import "./components/Panel/Panel";
 import "./components/Tabs/Tabs";
 import "./components/Bar/Bar";
+import "./components/Input/Input";
+import "./components/Select/Select";
+import "./components/DatePicker/DatePicker";
+import "./components/TimePicker/TimePicker";
 
 // Card registration information
 const CARD_DEFINITIONS = [
@@ -134,6 +138,30 @@ const CARD_DEFINITIONS = [
     type: "custom:ui5-bar-card",
     name: "UI5 Bar Card",
     description: "A header/footer bar for layout and status display",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-input-card",
+    name: "UI5 Input Card",
+    description: "A text input card for entering values",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-select-card",
+    name: "UI5 Select Card",
+    description: "A dropdown select card for choosing options",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-datepicker-card",
+    name: "UI5 DatePicker Card",
+    description: "A date picker card for selecting dates",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-timepicker-card",
+    name: "UI5 TimePicker Card",
+    description: "A time picker card for selecting times",
     preview: true,
   },
 ];

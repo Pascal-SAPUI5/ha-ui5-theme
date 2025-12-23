@@ -333,6 +333,48 @@ export interface UI5BarCardConfig extends BaseCardConfig {
   show_entity_state?: boolean;
 }
 
+export interface UI5InputCardConfig extends BaseCardConfig {
+  type: "custom:ui5-input-card";
+  placeholder?: string;
+  value_attribute?: string;
+  service?: string;
+  service_data?: Record<string, unknown>;
+  show_clear?: boolean;
+  input_type?: "Text" | "Email" | "Number" | "Password" | "Tel" | "URL";
+}
+
+export interface UI5SelectCardConfig extends BaseCardConfig {
+  type: "custom:ui5-select-card";
+  options?: Array<{
+    value: string;
+    label?: string;
+    icon?: string;
+  }>;
+  value_attribute?: string;
+  service?: string;
+  service_data?: Record<string, unknown>;
+}
+
+export interface UI5DatePickerCardConfig extends BaseCardConfig {
+  type: "custom:ui5-datepicker-card";
+  placeholder?: string;
+  format_pattern?: string;
+  min_date?: string;
+  max_date?: string;
+  value_attribute?: string;
+  service?: string;
+  service_data?: Record<string, unknown>;
+}
+
+export interface UI5TimePickerCardConfig extends BaseCardConfig {
+  type: "custom:ui5-timepicker-card";
+  placeholder?: string;
+  format_pattern?: string;
+  value_attribute?: string;
+  service?: string;
+  service_data?: Record<string, unknown>;
+}
+
 export type UI5CardConfig =
   | UI5ButtonCardConfig
   | UI5SwitchCardConfig
@@ -350,7 +392,11 @@ export type UI5CardConfig =
   | UI5CardCardConfig
   | UI5PanelCardConfig
   | UI5TabsCardConfig
-  | UI5BarCardConfig;
+  | UI5BarCardConfig
+  | UI5InputCardConfig
+  | UI5SelectCardConfig
+  | UI5DatePickerCardConfig
+  | UI5TimePickerCardConfig;
 
 // ==================== Card Registration ====================
 

@@ -55,10 +55,10 @@
 
 | #   | Komponente | Card Name             | Import Check | Card | Tests | CI  |
 | --- | ---------- | --------------------- | ------------ | ---- | ----- | --- |
-| 10  | Input      | `ui5-input-card`      | ⬜           | ⬜   | ⬜    | ⬜  |
-| 11  | Select     | `ui5-select-card`     | ⬜           | ⬜   | ⬜    | ⬜  |
-| 12  | DatePicker | `ui5-datepicker-card` | ⬜           | ⬜   | ⬜    | ⬜  |
-| 13  | TimePicker | `ui5-timepicker-card` | ⬜           | ⬜   | ⬜    | ⬜  |
+| 10  | Input      | `ui5-input-card`      | ✅           | ✅   | ✅    | ✅  |
+| 11  | Select     | `ui5-select-card`     | ✅           | ✅   | ✅    | ✅  |
+| 12  | DatePicker | `ui5-datepicker-card` | ✅           | ✅   | ✅    | ✅  |
+| 13  | TimePicker | `ui5-timepicker-card` | ✅           | ✅   | ✅    | ✅  |
 
 ---
 

@@ -51,6 +51,8 @@ import "@ui5/webcomponents-icons/dist/action.js";
 import "@ui5/webcomponents/dist/Input.js";
 import "@ui5/webcomponents/dist/Select.js";
 import "@ui5/webcomponents/dist/Option.js";
+import "@ui5/webcomponents/dist/DatePicker.js";
+import "@ui5/webcomponents/dist/TimePicker.js";
 
 // Display components
 import "@ui5/webcomponents/dist/Card.js";
