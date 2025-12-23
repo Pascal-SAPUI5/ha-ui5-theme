@@ -61,6 +61,14 @@ import "@ui5/webcomponents/dist/Tag.js";
 import "@ui5/webcomponents/dist/MessageStrip.js";
 import "@ui5/webcomponents/dist/Toast.js";
 
+// Dialog and Popover components
+import "@ui5/webcomponents/dist/Dialog.js";
+import "@ui5/webcomponents/dist/Popover.js";
+
+// Menu components
+import "@ui5/webcomponents/dist/Menu.js";
+import "@ui5/webcomponents/dist/MenuItem.js";
+
 // List components
 import "@ui5/webcomponents/dist/List.js";
 import "@ui5/webcomponents/dist/ListItemStandard.js";

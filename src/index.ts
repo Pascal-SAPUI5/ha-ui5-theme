@@ -34,6 +34,9 @@ import "./components/TimePicker/TimePicker";
 import "./components/Badge/Badge";
 import "./components/MessageStrip/MessageStrip";
 import "./components/Toast/Toast";
+import "./components/Dialog/Dialog";
+import "./components/Popover/Popover";
+import "./components/Menu/Menu";
 
 // Card registration information
 const CARD_DEFINITIONS = [
@@ -183,6 +186,24 @@ const CARD_DEFINITIONS = [
     type: "custom:ui5-toast-card",
     name: "UI5 Toast Card",
     description: "A toast notification triggered by entity changes",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-dialog-card",
+    name: "UI5 Dialog Card",
+    description: "A modal dialog for displaying content and confirmations",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-popover-card",
+    name: "UI5 Popover Card",
+    description: "A popover for showing additional information on demand",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-menu-card",
+    name: "UI5 Menu Card",
+    description: "A dropdown menu for actions and options",
     preview: true,
   },
 ];

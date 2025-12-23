@@ -24553,18 +24553,40 @@ Toast = __decorate$N([
   l$e("close")
 ], Toast);
 Toast.define();
-const name$A = "edit";
-const pathData$z = "M475 104q5 7 5 12 0 6-5 11L150 453q-4 4-8 4L32 480l22-110q0-5 4-9L384 36q4-4 11-4t11 4zm-121 99l-46-45L84 381l46 46zm87-88l-46-44-64 64 45 45z";
+const name$A = "nav-back";
+const pathData$z = "M375.5 426q9 9 9 22.5t-9 22.5q-10 10-23 10t-23-10l-192-192q-9-9-9-22.5t9-22.5l191-193q10-10 23-10t22 10q10 9 10 22t-10 23l-157 159q-5 5-5 11.5t5 11.5z";
 const ltr$z = false;
+const accData$9 = ICON_NAV_BACK;
 const collection$z = "SAP-icons-v4";
 const packageName$z = "@ui5/webcomponents-icons";
-y$2(name$A, { pathData: pathData$z, ltr: ltr$z, collection: collection$z, packageName: packageName$z });
-const name$z = "edit";
-const pathData$y = "M505 94q7 7 7 18t-6 17L130 505q-7 7-18 7H26q-11 0-18.5-7.5T0 486v-86q1-10 6-16L382 7q7-7 18-7t18 7zm-55 18l-50-50-50 50 50 50zm-86 86l-50-50L62 400l50 50z";
+y$2(name$A, { pathData: pathData$z, ltr: ltr$z, accData: accData$9, collection: collection$z, packageName: packageName$z });
+const name$z = "nav-back";
+const pathData$y = "M326 96q11 0 18.5 7.5T352 122q0 10-8 18L223 256l121 116q8 8 8 18 0 11-7.5 18.5T326 416q-10 0-17-7L168 274q-8-6-8-18 0-11 8-19l141-134q7-7 17-7z";
 const ltr$y = false;
+const accData$8 = ICON_NAV_BACK;
 const collection$y = "SAP-icons-v5";
 const packageName$y = "@ui5/webcomponents-icons";
-y$2(name$z, { pathData: pathData$y, ltr: ltr$y, collection: collection$y, packageName: packageName$y });
+y$2(name$z, { pathData: pathData$y, ltr: ltr$y, accData: accData$8, collection: collection$y, packageName: packageName$y });
+const navBackIcon = "nav-back";
+var MenuItemGroupCheckMode;
+(function(MenuItemGroupCheckMode2) {
+  MenuItemGroupCheckMode2["None"] = "None";
+  MenuItemGroupCheckMode2["Single"] = "Single";
+  MenuItemGroupCheckMode2["Multiple"] = "Multiple";
+})(MenuItemGroupCheckMode || (MenuItemGroupCheckMode = {}));
+const MenuItemGroupCheckMode$1 = MenuItemGroupCheckMode;
+const name$y = "edit";
+const pathData$x = "M475 104q5 7 5 12 0 6-5 11L150 453q-4 4-8 4L32 480l22-110q0-5 4-9L384 36q4-4 11-4t11 4zm-121 99l-46-45L84 381l46 46zm87-88l-46-44-64 64 45 45z";
+const ltr$x = false;
+const collection$x = "SAP-icons-v4";
+const packageName$x = "@ui5/webcomponents-icons";
+y$2(name$y, { pathData: pathData$x, ltr: ltr$x, collection: collection$x, packageName: packageName$x });
+const name$x = "edit";
+const pathData$w = "M505 94q7 7 7 18t-6 17L130 505q-7 7-18 7H26q-11 0-18.5-7.5T0 486v-86q1-10 6-16L382 7q7-7 18-7t18 7zm-55 18l-50-50-50 50 50 50zm-86 86l-50-50L62 400l50 50z";
+const ltr$w = false;
+const collection$w = "SAP-icons-v5";
+const packageName$w = "@ui5/webcomponents-icons";
+y$2(name$x, { pathData: pathData$w, ltr: ltr$w, collection: collection$w, packageName: packageName$w });
 const editIcon = "edit";
 var Highlight;
 (function(Highlight2) {
@@ -25361,44 +25383,44 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const checkboxCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{-webkit-tap-highlight-color:rgba(0,0,0,0)}:host(:not([hidden])){display:inline-block}:host([required]){vertical-align:middle}:host{overflow:hidden;max-width:100%;outline:none;border-radius:var(--_ui5-v2-17-0_checkbox_border_radius);transition:var(--_ui5-v2-17-0_checkbox_transition);cursor:pointer;user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none}:host([disabled]){cursor:default}:host([disabled]) .ui5-checkbox-root{opacity:var(--_ui5-v2-17-0_checkbox_disabled_opacity)}:host([disabled]) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_disabled_border_color)}:host([disabled]) .ui5-checkbox-label{color:var(--_ui5-v2-17-0_checkbox_disabled_label_color)}:host([readonly]:not([value-state="Critical"]):not([value-state="Negative"])) .ui5-checkbox-inner{background:var(--sapField_ReadOnly_Background);border:var(--_ui5-v2-17-0_checkbox_inner_readonly_border);color:var(--sapField_TextColor)}:host(:not([wrapping-type="None"])[text]) .ui5-checkbox-root{min-height:auto;box-sizing:border-box;align-items:flex-start;padding-top:var(--_ui5-v2-17-0_checkbox_root_side_padding);padding-bottom:var(--_ui5-v2-17-0_checkbox_root_side_padding)}:host(:not([wrapping-type="None"])[text]) .ui5-checkbox-root .ui5-checkbox-label{overflow-wrap:break-word;align-self:center}:host([desktop][text]:not([wrapping-type="None"])) .ui5-checkbox-root:focus:before,.ui5-checkbox-root[text]:focus-visible:before{inset-block:var(--_ui5-v2-17-0_checkbox_wrapped_focus_inset_block)}:host([value-state="Negative"]) .ui5-checkbox-inner,:host([value-state="Negative"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_InvalidBackground);border:var(--_ui5-v2-17-0_checkbox_inner_error_border);color:var(--sapField_InvalidColor)}:host([value-state="Negative"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_error_background_hover)}:host([value-state="Critical"]) .ui5-checkbox-inner,:host([value-state="Critical"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_WarningBackground);border:var(--_ui5-v2-17-0_checkbox_inner_warning_border);color:var(--_ui5-v2-17-0_checkbox_inner_warning_color)}:host([value-state="Critical"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_warning_background_hover)}:host([value-state="Information"]) .ui5-checkbox-inner,:host([value-state="Information"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_InformationBackground);border:var(--_ui5-v2-17-0_checkbox_inner_information_border);color:var(--_ui5-v2-17-0_checkbox_inner_information_color)}:host([value-state="Information"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_information_background_hover)}:host([value-state="Positive"]) .ui5-checkbox-inner,:host([value-state="Positive"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_SuccessBackground);border:var(--_ui5-v2-17-0_checkbox_inner_success_border);color:var(--sapField_SuccessColor)}:host([value-state="Positive"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_success_background_hover)}:host([value-state="Critical"]) .ui5-checkbox-icon,:host([value-state="Critical"][indeterminate]) .ui5-checkbox-inner:after{color:var(--_ui5-v2-17-0_checkbox_checkmark_warning_color)}.ui5-checkbox-root{position:relative;display:inline-flex;align-items:center;max-width:100%;min-height:var(--_ui5-v2-17-0_checkbox_width_height);min-width:var(--_ui5-v2-17-0_checkbox_width_height);padding:0 var(--_ui5-v2-17-0_checkbox_wrapper_padding);outline:none;transition:var(--_ui5-v2-17-0_checkbox_transition);border:var(--_ui5-v2-17-0_checkbox_default_focus_border);border-radius:var(--_ui5-v2-17-0_checkbox_border_radius);box-sizing:border-box}:host([desktop]) .ui5-checkbox-root:focus:before,.ui5-checkbox-root:focus-visible:before{display:var(--_ui5-v2-17-0_checkbox_focus_outline_display);content:"";position:absolute;inset-inline:var(--_ui5-v2-17-0_checkbox_focus_position);inset-block:var(--_ui5-v2-17-0_checkbox_focus_position);border:var(--_ui5-v2-17-0_checkbox_focus_outline);border-radius:var(--_ui5-v2-17-0_checkbox_focus_border_radius)}:host([text]) .ui5-checkbox-root{padding-inline-end:var(--_ui5-v2-17-0_checkbox_right_focus_distance)}:host([text]) .ui5-checkbox-root:focus:before,:host([text]) .ui5-checkbox-root:focus-visible:before{inset-inline-end:0}:host(:hover:not([disabled])){background:var(--_ui5-v2-17-0_checkbox_outer_hover_background)}.ui5-checkbox--hoverable .ui5-checkbox-label:hover{color:var(--_ui5-v2-17-0_checkbox_label_color)}:host(:not([active]):not([checked]):not([value-state])) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner,:host(:not([active]):not([checked])[value-state="None"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_hover_background);border-color:var(--_ui5-v2-17-0_checkbox_inner_hover_border_color)}:host(:not([active])[checked]:not([value-state])) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner,:host(:not([active])[checked][value-state="None"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_hover_background);border-color:var(--_ui5-v2-17-0_checkbox_inner_hover_checked_border_color)}:host([checked]:not([value-state])) .ui5-checkbox-inner,:host([checked][value-state="None"]) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_selected_border_color)}:host([active]:not([checked]):not([value-state]):not([disabled])) .ui5-checkbox-inner,:host([active]:not([checked])[value-state="None"]:not([disabled])) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_active_border_color);background-color:var(--_ui5-v2-17-0_checkbox_active_background)}:host([active][checked]:not([value-state]):not([disabled])) .ui5-checkbox-inner,:host([active][checked][value-state="None"]:not([disabled])) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_selected_border_color);background-color:var(--_ui5-v2-17-0_checkbox_active_background)}.ui5-checkbox-inner{min-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);height:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-height:var(--_ui5-v2-17-0_checkbox_inner_width_height);border:var(--_ui5-v2-17-0_checkbox_inner_border);border-radius:var(--_ui5-v2-17-0_checkbox_inner_border_radius);background:var(--_ui5-v2-17-0_checkbox_inner_background);color:var(--_ui5-v2-17-0_checkbox_checkmark_color);box-sizing:border-box;position:relative;cursor:inherit}:host([indeterminate][checked]) .ui5-checkbox-inner:after{content:"";background-color:currentColor;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:var(--_ui5-v2-17-0_checkbox_partially_icon_size);height:var(--_ui5-v2-17-0_checkbox_partially_icon_size)}:host input{-webkit-appearance:none;visibility:hidden;width:0;left:0;position:absolute;font-size:inherit}.ui5-checkbox-root .ui5-checkbox-label{margin-inline-start:var(--_ui5-v2-17-0_checkbox_label_offset);cursor:inherit;text-overflow:ellipsis;overflow:hidden;pointer-events:none;color:var(--_ui5-v2-17-0_checkbox_label_color)}.ui5-checkbox-icon{width:var(--_ui5-v2-17-0_checkbox_icon_size);height:var(--_ui5-v2-17-0_checkbox_icon_size);color:currentColor;cursor:inherit;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}:host([display-only]){cursor:default}:host([display-only]) .ui5-checkbox-display-only-icon-inner [ui5-icon]{color:var(--sapTextColor)}:host([display-only]) .ui5-checkbox-display-only-icon-inner{min-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);height:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-height:var(--_ui5-v2-17-0_checkbox_inner_width_height);display:flex;align-items:center;justify-content:center}
 `;
-const name$y = "complete";
-const pathData$x = "M431.958 320h32v128q0 14-9.5 23t-22.5 9h-384q-14 0-23-9t-9-23V64q0-13 9-22.5t23-9.5h128v32h-128v384h384V320zm60-295q7 7 2 16l-185 272q-3 6-10 7t-12-4l-125-139q-9-9 0-18l21-21q10-10 19 0l80 80q5 5 11.5 4t9.5-8l146-207q3-6 9.5-7t11.5 4z";
-const ltr$x = true;
-const collection$x = "SAP-icons-v4";
-const packageName$x = "@ui5/webcomponents-icons";
-y$2(name$y, { pathData: pathData$x, ltr: ltr$x, collection: collection$x, packageName: packageName$x });
-const name$x = "complete";
-const pathData$w = "M438 224q11 0 18.5 7.5T464 250v140q0 38-26 64t-64 26H106q-38 0-64-26t-26-64V122q0-38 26-64t64-26h237q11 0 18 7.5t7 18.5-7 18-18 7H106q-16 0-27.5 11.5T67 122v268q0 16 11.5 27.5T106 429h268q16 0 27.5-11.5T413 390V250q0-11 7-18.5t18-7.5zm32-192q11 0 18.5 7.5T496 58q0 10-7 17L257 312q-6 8-18 8-10 0-18-8l-70-71q-7-7-7-18t7.5-18 18.5-7 18 7l51 53L452 40q8-8 18-8z";
-const ltr$w = true;
-const collection$w = "SAP-icons-v5";
-const packageName$w = "@ui5/webcomponents-icons";
-y$2(name$x, { pathData: pathData$w, ltr: ltr$w, collection: collection$w, packageName: packageName$w });
-const complete = "complete";
-const name$w = "border";
-const pathData$v = "M448 32q13 0 22.5 9t9.5 23v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-14 9-23t23-9h384zm0 32H64v384h384V64z";
-const ltr$v = false;
+const name$w = "complete";
+const pathData$v = "M431.958 320h32v128q0 14-9.5 23t-22.5 9h-384q-14 0-23-9t-9-23V64q0-13 9-22.5t23-9.5h128v32h-128v384h384V320zm60-295q7 7 2 16l-185 272q-3 6-10 7t-12-4l-125-139q-9-9 0-18l21-21q10-10 19 0l80 80q5 5 11.5 4t9.5-8l146-207q3-6 9.5-7t11.5 4z";
+const ltr$v = true;
 const collection$v = "SAP-icons-v4";
 const packageName$v = "@ui5/webcomponents-icons";
 y$2(name$w, { pathData: pathData$v, ltr: ltr$v, collection: collection$v, packageName: packageName$v });
-const name$v = "border";
-const pathData$u = "M390 480H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268q38 0 64 26t26 64v268q0 38-26 64t-64 26zM122 83q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122q0-17-11-28t-28-11H122z";
-const ltr$u = false;
+const name$v = "complete";
+const pathData$u = "M438 224q11 0 18.5 7.5T464 250v140q0 38-26 64t-64 26H106q-38 0-64-26t-26-64V122q0-38 26-64t64-26h237q11 0 18 7.5t7 18.5-7 18-18 7H106q-16 0-27.5 11.5T67 122v268q0 16 11.5 27.5T106 429h268q16 0 27.5-11.5T413 390V250q0-11 7-18.5t18-7.5zm32-192q11 0 18.5 7.5T496 58q0 10-7 17L257 312q-6 8-18 8-10 0-18-8l-70-71q-7-7-7-18t7.5-18 18.5-7 18 7l51 53L452 40q8-8 18-8z";
+const ltr$u = true;
 const collection$u = "SAP-icons-v5";
 const packageName$u = "@ui5/webcomponents-icons";
 y$2(name$v, { pathData: pathData$u, ltr: ltr$u, collection: collection$u, packageName: packageName$u });
-const border = "border";
-const name$u = "tri-state";
-const pathData$t = "M448 32q13 0 22.5 9.5T480 64v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-13 9-22.5T64 32h384zm0 32H64v384h384V64zM160 345V169q0-8 8-8h176q8 0 8 8v176q0 8-8 8H168q-8 0-8-8z";
+const complete = "complete";
+const name$u = "border";
+const pathData$t = "M448 32q13 0 22.5 9t9.5 23v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-14 9-23t23-9h384zm0 32H64v384h384V64z";
 const ltr$t = false;
 const collection$t = "SAP-icons-v4";
 const packageName$t = "@ui5/webcomponents-icons";
 y$2(name$u, { pathData: pathData$t, ltr: ltr$t, collection: collection$t, packageName: packageName$t });
-const name$t = "tri-state";
-const pathData$s = "M390 32q38 0 64 26t26 64v268q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268zm39 90q0-17-11-28t-28-11H122q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122zm-77 38v192H160V160h192z";
+const name$t = "border";
+const pathData$s = "M390 480H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268q38 0 64 26t26 64v268q0 38-26 64t-64 26zM122 83q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122q0-17-11-28t-28-11H122z";
 const ltr$s = false;
 const collection$s = "SAP-icons-v5";
 const packageName$s = "@ui5/webcomponents-icons";
 y$2(name$t, { pathData: pathData$s, ltr: ltr$s, collection: collection$s, packageName: packageName$s });
+const border = "border";
+const name$s = "tri-state";
+const pathData$r = "M448 32q13 0 22.5 9.5T480 64v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-13 9-22.5T64 32h384zm0 32H64v384h384V64zM160 345V169q0-8 8-8h176q8 0 8 8v176q0 8-8 8H168q-8 0-8-8z";
+const ltr$r = false;
+const collection$r = "SAP-icons-v4";
+const packageName$r = "@ui5/webcomponents-icons";
+y$2(name$s, { pathData: pathData$r, ltr: ltr$r, collection: collection$r, packageName: packageName$r });
+const name$r = "tri-state";
+const pathData$q = "M390 32q38 0 64 26t26 64v268q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268zm39 90q0-17-11-28t-28-11H122q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122zm-77 38v192H160V160h192z";
+const ltr$q = false;
+const collection$q = "SAP-icons-v5";
+const packageName$q = "@ui5/webcomponents-icons";
+y$2(name$r, { pathData: pathData$q, ltr: ltr$q, collection: collection$q, packageName: packageName$q });
 const triState = "tri-state";
 function CheckBoxTemplate() {
   return jsxs("div", { class: {
@@ -25705,16 +25727,896 @@ function selectionElement() {
   }
 }
 const predefinedHooks$3 = {
-  imageBegin,
-  iconBegin: iconBegin$2,
-  iconEnd: iconEnd$1,
   listItemContent: listItemContent$4
 };
-function ListItemStandardTemplate(hooks) {
+function ListItemCustomTemplate(hooks) {
   const currentHooks = { ...predefinedHooks$3, ...hooks };
   return ListItemTemplate.call(this, currentHooks);
 }
 function listItemContent$4() {
+  return jsx("slot", {});
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const ListItemCustomCss = `:host(:not([hidden])){display:block}:host{min-height:var(--_ui5-v2-17-0_list_item_base_height);height:auto;box-sizing:border-box}.ui5-li-root.ui5-custom-li-root{pointer-events:inherit;min-height:inherit}.ui5-li-root.ui5-custom-li-root .ui5-li-content{pointer-events:inherit}[ui5-checkbox].ui5-li-singlesel-radiobtn,[ui5-radio-button].ui5-li-singlesel-radiobtn{display:flex;align-items:center}.ui5-li-root.ui5-custom-li-root,[ui5-checkbox].ui5-li-singlesel-radiobtn,[ui5-radio-button].ui5-li-singlesel-radiobtn{min-width:var(--_ui5-v2-17-0_custom_list_item_rb_min_width)}:host([_selection-mode="SingleStart"]) .ui5-li-root.ui5-custom-li-root{padding-inline:0 1rem}:host([_selection-mode="Multiple"]) .ui5-li-root.ui5-custom-li-root{padding-inline:0 1rem}:host([_selection-mode="SingleEnd"]) .ui5-li-root.ui5-custom-li-root{padding-inline:1rem 0}
+`;
+var __decorate$J = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+let ListItemCustom = class ListItemCustom2 extends ListItem$1 {
+  constructor() {
+    super(...arguments);
+    this.movable = false;
+  }
+  async _onkeydown(e2) {
+    const isTab = x$1(e2) || V$1(e2);
+    const isFocused = this.matches(":focus");
+    if (!isTab && !isFocused && !ro(e2)) {
+      return;
+    }
+    await super._onkeydown(e2);
+  }
+  _onkeyup(e2) {
+    const isTab = x$1(e2) || V$1(e2);
+    const isFocused = this.matches(":focus");
+    if (!isTab && !isFocused && !ro(e2)) {
+      return;
+    }
+    super._onkeyup(e2);
+  }
+  get classes() {
+    const result = super.classes;
+    result.main["ui5-custom-li-root"] = true;
+    return result;
+  }
+};
+__decorate$J([
+  s$9({ type: Boolean })
+], ListItemCustom.prototype, "movable", void 0);
+__decorate$J([
+  s$9()
+], ListItemCustom.prototype, "accessibleName", void 0);
+ListItemCustom = __decorate$J([
+  m$8({
+    tag: "ui5-li-custom",
+    template: ListItemCustomTemplate,
+    renderer: y$5,
+    styles: [ListItem$1.styles, ListItemCustomCss]
+  })
+], ListItemCustom);
+ListItemCustom.define();
+const ListItemCustom$1 = ListItemCustom;
+function MenuSeparatorTemplate() {
+  return jsx(ListItemCustom$1, { class: "ui5-menu-separator", _forcedAccessibleRole: "separator", disabled: true });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const menuSeparatorCss = `:host{border-top:.0625rem solid var(--sapGroup_ContentBorderColor);min-height:.125rem}.ui5-menu-separator{border:inherit;min-height:inherit;background:inherit;opacity:1}
+`;
+var __decorate$I = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+let MenuSeparator = class MenuSeparator2 extends ListItemBase$1 {
+  get isSeparator() {
+    return true;
+  }
+  get classes() {
+    return {
+      main: {
+        "ui5-menu-separator": true
+      }
+    };
+  }
+  /**
+   * @override
+   */
+  get _focusable() {
+    return false;
+  }
+  /**
+   * @override
+   */
+  get _pressable() {
+    return false;
+  }
+};
+MenuSeparator = __decorate$I([
+  m$8({
+    tag: "ui5-menu-separator",
+    renderer: y$5,
+    styles: [menuSeparatorCss],
+    template: MenuSeparatorTemplate
+  })
+], MenuSeparator);
+const isInstanceOfMenuSeparator = (object) => {
+  return "isSeparator" in object;
+};
+MenuSeparator.define();
+function MenuItemGroupTemplate() {
+  return jsx("div", { role: "group", "aria-label": this.ariaLabelText, "onui5-check": this._handleItemCheck, children: jsx("slot", {}) });
+}
+var __decorate$H = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var MenuItemGroup_1;
+let MenuItemGroup = MenuItemGroup_1 = class MenuItemGroup2 extends b$7 {
+  constructor() {
+    super(...arguments);
+    this.checkMode = "None";
+  }
+  get ariaLabelText() {
+    switch (this.checkMode) {
+      case MenuItemGroupCheckMode$1.None:
+        return MenuItemGroup_1.i18nBundle.getText(MENU_ITEM_GROUP_NONE_ACCESSIBLE_NAME);
+      case MenuItemGroupCheckMode$1.Single:
+        return MenuItemGroup_1.i18nBundle.getText(MENU_ITEM_GROUP_SINGLE_ACCESSIBLE_NAME);
+      case MenuItemGroupCheckMode$1.Multiple:
+        return MenuItemGroup_1.i18nBundle.getText(MENU_ITEM_GROUP_MULTI_ACCESSIBLE_NAME);
+      default:
+        return void 0;
+    }
+  }
+  get isGroup() {
+    return true;
+  }
+  get _menuItems() {
+    return this.items.filter(isInstanceOfMenuItem);
+  }
+  onBeforeRendering() {
+    this._updateItemsCheckMode();
+    if (this.checkMode === MenuItemGroupCheckMode$1.Single) {
+      this._ensureSingleItemIsChecked();
+    }
+  }
+  /**
+   * Sets <code>_checkMode</code> property of all menu items in the group.
+   * @private
+   */
+  _updateItemsCheckMode() {
+    this._menuItems.forEach((item) => {
+      item._checkMode = this.checkMode;
+    });
+  }
+  /**
+   * Sets <code>checked</code> property of all items in the group to <code>false</code>.
+   * @private
+   */
+  _clearCheckedItems() {
+    this._menuItems.forEach((item) => {
+      item.checked = false;
+    });
+  }
+  /**
+   * Ensures that only one item can remain checked at any given time. If multiple items are marked as checked,
+   * the last checked item will take precedence.
+   * @private
+   */
+  _ensureSingleItemIsChecked() {
+    const lastCheckedItem = this._menuItems.findLast((item) => item.checked);
+    this._clearCheckedItems();
+    if (lastCheckedItem) {
+      lastCheckedItem.checked = true;
+    }
+  }
+  /**
+   * Handles the checking of an item in the group and unchecks other items if the item check mode is Single.
+   * @private
+   */
+  _handleItemCheck(e2) {
+    const clickedItem = e2.target;
+    const isChecked = clickedItem.checked;
+    if (this.checkMode === MenuItemGroupCheckMode$1.Single) {
+      this._clearCheckedItems();
+      clickedItem.checked = isChecked;
+    }
+  }
+};
+__decorate$H([
+  s$9()
+], MenuItemGroup.prototype, "checkMode", void 0);
+__decorate$H([
+  d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
+], MenuItemGroup.prototype, "items", void 0);
+__decorate$H([
+  i$b("@ui5/webcomponents")
+], MenuItemGroup, "i18nBundle", void 0);
+MenuItemGroup = MenuItemGroup_1 = __decorate$H([
+  m$8({
+    tag: "ui5-menu-item-group",
+    renderer: y$5,
+    template: MenuItemGroupTemplate
+  })
+], MenuItemGroup);
+const isInstanceOfMenuItemGroup = (object) => {
+  return "isGroup" in object;
+};
+MenuItemGroup.define();
+const predefinedHooks$2 = {
+  listItemContent: listItemContent$3,
+  iconBegin: iconBegin$2
+};
+function MenuItemTemplate(hooks) {
+  const currentHooks = { ...predefinedHooks$2, ...hooks };
+  return jsxs(Fragment, { children: [ListItemTemplate.call(this, currentHooks), listItemPostContent.call(this)] });
+}
+function listItemContent$3() {
+  return jsxs(Fragment, { children: [this.text && jsx("div", { class: "ui5-menu-item-text", children: this.text }), rightContent.call(this), checkmarkContent.call(this)] });
+}
+function checkmarkContent() {
+  return !this._markChecked ? "" : jsx("div", { class: "ui5-menu-item-checked", children: jsx(Icon$1, { name: checkIcon, class: "ui5-menu-item-icon-checked" }) });
+}
+function rightContent() {
+  switch (true) {
+    case this.hasSubmenu:
+      return jsx("div", { class: "ui5-menu-item-submenu-icon", children: jsx(Icon$1, { part: "subicon", name: slimArrowRightIcon, class: "ui5-menu-item-icon-end" }) });
+    case this.hasEndContent:
+      return jsx("slot", { name: "endContent", onKeyDown: this._endContentKeyDown });
+    case !!this.additionalText:
+      return jsx("span", { part: "additional-text", class: "ui5-li-additional-text", "aria-hidden": this._accInfo.ariaHidden, children: this.additionalText });
+  }
+}
+function iconBegin$2() {
+  if (this.hasIcon) {
+    return jsx(Icon$1, { class: "ui5-li-icon", name: this.icon });
+  }
+  if (this._siblingsWithIcon) {
+    return jsx("div", { class: "ui5-menu-item-dummy-icon" });
+  }
+}
+function listItemPostContent() {
+  return this.hasSubmenu && jsxs(ResponsivePopover, { id: `${this._id}-menu-rp`, class: "ui5-menu-rp ui5-menu-rp-sub-menu", preventInitialFocus: true, preventFocusRestore: true, hideArrow: true, allowTargetOverlap: true, placement: PopoverPlacement$1.End, verticalAlign: "Top", accessibleName: this.accessibleNameText, onBeforeOpen: this._beforePopoverOpen, onOpen: this._afterPopoverOpen, onBeforeClose: this._beforePopoverClose, onClose: this._afterPopoverClose, children: [this.isPhone && jsx(Fragment, { children: jsxs("div", { slot: "header", class: "ui5-menu-dialog-header", children: [jsx(Button$1, { icon: navBackIcon, class: "ui5-menu-back-button", design: "Transparent", "aria-label": this.labelBack, onClick: this._close }), jsx("div", { class: "ui5-menu-dialog-title", children: jsx("div", { children: this.text }) }), jsx(Button$1, { icon: iconDecline, design: "Transparent", "aria-label": this.labelClose, onClick: this._closeAll })] }) }), jsx("div", { id: `${this._id}-menu-main`, children: this.items.length ? jsx(List, { id: `${this._id}-menu-list`, selectionMode: "None", separators: "None", accessibleRole: "Menu", loading: this.loading, loadingDelay: this.loadingDelay, onMouseOver: this._itemMouseOver, onKeyDown: this._itemKeyDown, onKeyUp: this._itemKeyUp, "onui5-close-menu": this._close, "onui5-exit-end-content": this._navigateOutOfEndContent, children: jsx("slot", {}) }) : this.loading && jsx(BusyIndicator$1, { id: `${this._id}-menu-busy-indicator`, delay: this.loadingDelay, class: "ui5-menu-busy-indicator", active: true }) })] });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const menuItemCss = `:host{line-height:initial}::slotted([ui5-menu-item]){line-height:inherit}.ui5-menu-rp[ui5-responsive-popover]::part(header),.ui5-menu-rp[ui5-responsive-popover]::part(content),.ui5-menu-rp[ui5-responsive-popover]::part(footer){padding:0}.ui5-menu-rp[ui5-responsive-popover]{box-shadow:var(--sapContent_Shadow1);border-radius:var(--_ui5-v2-17-0_menu_popover_border_radius)}.ui5-menu-busy-indicator{width:100%}.ui5-menu-dialog-header{display:flex;height:var(--_ui5-v2-17-0-responsive_popover_header_height);align-items:center;justify-content:space-between;padding:0px 1rem;width:100%;overflow:hidden}.ui5-menu-dialog-title{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;width:calc(100% - 6.5rem);padding-right:1rem;font-family:var(--sapFontHeaderFamily)}.ui5-menu-dialog-title>h1{display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:var(--sapFontHeader5Size)}.ui5-menu-back-button{margin-right:1rem}.ui5-menu-rp.ui5-menu-rp-sub-menu{margin-top:.25rem;margin-inline:var(--_ui5-v2-17-0_menu_submenu_margin_offset)}:host([disabled]){pointer-events:initial;opacity:initial}:host([disabled])::part(content){opacity:var(--_ui5-v2-17-0-listitembase_disabled_opacity)}:host([disabled][actionable]:not([active]):not([selected]):hover),:host([disabled][active][actionable]){background:var(--ui5-v2-17-0-listitem-background-color)}:host([active]:not([disabled])),:host([active]:not([disabled])):hover{background-color:var(--sapList_Active_Background)}:host(:not([active]):not([selected]):not([disabled]):hover){background-color:var(--sapList_Hover_Background)}:host([disabled][active][actionable]) .ui5-li-root .ui5-li-icon{color:var(--sapContent_NonInteractiveIconColor)}:host([active]:not([disabled]))::part(content),:host([active]:not([disabled]))::part(additional-text),:host([active]:not([disabled])) .ui5-li-root .ui5-li-icon{color:var(--sapList_Active_TextColor)}:host([focused]:not([active]):not([disabled])){background-color:var(--sapList_Hover_Background)}:host::part(additional-text){margin:unset;margin-inline-start:1rem;color:var(--sapContent_LabelColor);min-width:max-content}.ui5-menu-item-text{width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;pointer-events:none;display:inline-block}.ui5-menu-item-dummy-icon{visibility:hidden}:host::part(title){font-size:var(--sapFontSize);padding-top:.125rem}:host([icon]:not([is-phone]))::part(title),:host([is-phone]:not([icon=""]))::part(title){padding-top:0}:host(:not([is-phone]))::part(native-li){user-select:none;padding:var(--_ui5-v2-17-0_menu_item_padding)}:host::part(content){padding-inline-end:.25rem}.ui5-menu-item-submenu-icon{min-width:var(--_ui5-v2-17-0_list_item_icon_size);min-height:var(--_ui5-v2-17-0_list_item_icon_size);display:inline-block;vertical-align:middle;pointer-events:none}.ui5-menu-item-icon-end{display:inline-block;vertical-align:middle;padding-inline-start:.5rem;pointer-events:none;position:absolute;inset-inline-end:var(--_ui5-v2-17-0_menu_item_submenu_icon_right)}.ui5-menu-item-submenu-icon .ui5-menu-item-icon-end{color:var(--sapContent_NonInteractiveIconColor)}.ui5-menu-item-dummy-icon{min-width:var(--_ui5-v2-17-0_list_item_icon_size);min-height:var(--_ui5-v2-17-0_list_item_icon_size);display:inline-block;vertical-align:middle;padding-inline-end:.75rem;pointer-events:none}.ui5-menu-item-checked{padding-inline-start:.5rem;padding-inline-end:0;font-weight:400;text-align:center}.ui5-menu-item-icon-checked{color:var(--sapContent_BusyColor);padding-top:.25rem}
+`;
+var __decorate$G = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var MenuItem_1;
+let MenuItem = MenuItem_1 = class MenuItem2 extends ListItem$1 {
+  constructor() {
+    super();
+    this.disabled = false;
+    this.loading = false;
+    this.loadingDelay = 1e3;
+    this.checked = false;
+    this._siblingsWithIcon = false;
+    this._checkMode = "None";
+    this._shiftPressed = false;
+    this._itemNavigation = new f$2(this, {
+      navigationMode: r$4.Horizontal,
+      behavior: l$3.Static,
+      getItemsCallback: () => this._navigableItems
+    });
+  }
+  get _list() {
+    return this.shadowRoot && this.shadowRoot.querySelector("[ui5-list]");
+  }
+  get _navigableItems() {
+    return [...this.endContent].filter((item) => {
+      return item.hasAttribute("ui5-button") || item.hasAttribute("ui5-link") || item.hasAttribute("ui5-icon") && item.getAttribute("mode") === "Interactive";
+    });
+  }
+  get _isCheckable() {
+    return this._checkMode !== MenuItemGroupCheckMode$1.None;
+  }
+  _navigateToEndContent(shouldNavigateToPreviousItem) {
+    const navigatableItems = this._navigableItems;
+    const item = shouldNavigateToPreviousItem ? navigatableItems[navigatableItems.length - 1] : navigatableItems[0];
+    if (item) {
+      this._itemNavigation.setCurrentItem(item);
+      this._itemNavigation._focusCurrentItem();
+    }
+  }
+  get isRtl() {
+    return this.effectiveDir === "rtl";
+  }
+  get hasSubmenu() {
+    return !!(this.items.length || this.loading) && !this.disabled;
+  }
+  get hasEndContent() {
+    return !!this.endContent.length;
+  }
+  get hasIcon() {
+    return !!this.icon;
+  }
+  get isSubMenuOpen() {
+    var _a2;
+    return (_a2 = this._popover) == null ? void 0 : _a2.open;
+  }
+  get menuHeaderTextPhone() {
+    return this.text;
+  }
+  get isPhone() {
+    return d$b();
+  }
+  get labelBack() {
+    return MenuItem_1.i18nBundle.getText(MENU_BACK_BUTTON_ARIA_LABEL);
+  }
+  get labelClose() {
+    return MenuItem_1.i18nBundle.getText(MENU_CLOSE_BUTTON_ARIA_LABEL);
+  }
+  get accessibleNameText() {
+    return MenuItem_1.i18nBundle.getText(MENU_POPOVER_ACCESSIBLE_NAME);
+  }
+  onBeforeRendering() {
+    super.onBeforeRendering();
+    const siblingsWithIcon = this._allMenuItems.some((menuItem) => !!menuItem.icon);
+    this._setupItemNavigation();
+    this._allMenuItems.forEach((item) => {
+      item._siblingsWithIcon = siblingsWithIcon;
+    });
+  }
+  async focus(focusOptions) {
+    await f$i();
+    if (this.hasSubmenu && this.isSubMenuOpen) {
+      const menuItems = this._allMenuItems;
+      return menuItems[0] && menuItems[0].focus(focusOptions);
+    }
+    return super.focus(focusOptions);
+  }
+  get _focusable() {
+    return true;
+  }
+  get _role() {
+    switch (this._checkMode) {
+      case MenuItemGroupCheckMode$1.Single:
+        return "menuitemradio";
+      case MenuItemGroupCheckMode$1.Multiple:
+        return "menuitemcheckbox";
+      default:
+        return "menuitem";
+    }
+  }
+  get _accInfo() {
+    const accInfoSettings = {
+      role: this.accessibilityAttributes.role || this._role,
+      ariaHaspopup: this.hasSubmenu ? "menu" : void 0,
+      ariaKeyShortcuts: this.accessibilityAttributes.ariaKeyShortcuts,
+      ariaExpanded: this.hasSubmenu ? this.isSubMenuOpen : void 0,
+      ariaHidden: !!this.additionalText && !!this.accessibilityAttributes.ariaKeyShortcuts ? true : void 0,
+      ariaChecked: this._markChecked ? true : void 0
+    };
+    return { ...super._accInfo, ...accInfoSettings };
+  }
+  get _popover() {
+    return this.shadowRoot && this.shadowRoot.querySelector("[ui5-responsive-popover]");
+  }
+  get _markChecked() {
+    return !this.hasSubmenu && this.checked && this._checkMode !== MenuItemGroupCheckMode$1.None;
+  }
+  /** Returns menu item groups */
+  get _menuItemGroups() {
+    return this.items.filter(isInstanceOfMenuItemGroup);
+  }
+  /** Returns menu items */
+  get _menuItems() {
+    return this.items.filter(isInstanceOfMenuItem);
+  }
+  /** Returns all menu items (including those in groups */
+  get _allMenuItems() {
+    const items = [];
+    const slottedItems = this.getSlottedNodes("items");
+    slottedItems.forEach((item) => {
+      if (isInstanceOfMenuItemGroup(item)) {
+        items.push(...item._menuItems);
+      } else if (!isInstanceOfMenuSeparator(item)) {
+        items.push(item);
+      }
+    });
+    return items;
+  }
+  /** Returns menu items included in the ItemNavigation */
+  get _navigatableMenuItems() {
+    const items = [];
+    const slottedItems = this.getSlottedNodes("items");
+    slottedItems.forEach((item) => {
+      if (isInstanceOfMenuItemGroup(item)) {
+        const groupItems = item.getSlottedNodes("items");
+        items.push(...groupItems);
+      } else if (!isInstanceOfMenuSeparator(item)) {
+        items.push(item);
+      }
+    });
+    return items;
+  }
+  _setupItemNavigation() {
+    if (this._list) {
+      this._list._itemNavigation._getItems = () => this._navigatableMenuItems;
+    }
+  }
+  _closeOtherSubMenus(item) {
+    const menuItems = this._allMenuItems;
+    if (!menuItems.includes(item)) {
+      return;
+    }
+    menuItems.forEach((menuItem) => {
+      if (menuItem !== item) {
+        menuItem._close();
+      }
+    });
+  }
+  _itemMouseOver(e2) {
+    if (!f$h()) {
+      return;
+    }
+    const item = e2.target;
+    if (!isInstanceOfMenuItem(item)) {
+      return;
+    }
+    item.focus();
+    this._closeOtherSubMenus(item);
+  }
+  _isSpace(e2) {
+    this._shiftPressed = this._isCheckable && K(e2);
+    return A$4(e2) || K(e2);
+  }
+  _isEnter(e2) {
+    this._shiftPressed = this._isCheckable && i$9(e2);
+    return b$6(e2) || i$9(e2);
+  }
+  _onclick(e2) {
+    this._shiftPressed = this._isCheckable && e2.shiftKey;
+    super._onclick(e2);
+  }
+  _itemKeyDown(e2) {
+    const item = e2.target;
+    const itemInMenuItems = this._allMenuItems.includes(item);
+    const isTabNextPrevious = x$1(e2) || V$1(e2);
+    const shouldCloseMenu = this.isRtl ? R$1(e2) : D$3(e2);
+    if (itemInMenuItems && (isTabNextPrevious || shouldCloseMenu)) {
+      this._close();
+      this.focus();
+      e2.stopPropagation();
+    }
+  }
+  _itemKeyUp(e2) {
+    if (Ko(e2)) {
+      this._shiftPressed = false;
+    }
+  }
+  _endContentKeyDown(e2) {
+    const shouldNavigateOutOfEndContent = P$2(e2) || _$1(e2);
+    if (shouldNavigateOutOfEndContent) {
+      this.fireDecoratorEvent("exit-end-content", { shouldNavigateToNextItem: _$1(e2) });
+    }
+  }
+  _navigateOutOfEndContent(e2) {
+    const item = e2.target;
+    const shouldNavigateToNextItem = e2.detail.shouldNavigateToNextItem;
+    const menuItems = this._allMenuItems;
+    const itemIndex = menuItems.indexOf(item);
+    if (itemIndex > -1) {
+      const nextItem = shouldNavigateToNextItem ? menuItems[itemIndex + 1] : menuItems[itemIndex - 1];
+      const itemToFocus = nextItem || menuItems[itemIndex];
+      itemToFocus == null ? void 0 : itemToFocus.focus();
+      e2.stopPropagation();
+    }
+  }
+  _closeAll() {
+    if (this._popover) {
+      this._popover.open = false;
+    }
+    this.selected = false;
+    this.fireDecoratorEvent("close-menu");
+  }
+  _close() {
+    if (this._popover) {
+      this._popover.open = false;
+      this._allMenuItems.forEach((item) => item._close());
+    }
+    this.selected = false;
+  }
+  _beforePopoverOpen(e2) {
+    const prevented = !this.fireDecoratorEvent("before-open", {});
+    if (prevented) {
+      e2.preventDefault();
+    }
+  }
+  _afterPopoverOpen() {
+    var _a2;
+    (_a2 = this._allMenuItems[0]) == null ? void 0 : _a2.focus();
+    this.fireDecoratorEvent("open");
+  }
+  _beforePopoverClose(e2) {
+    const prevented = !this.fireDecoratorEvent("before-close", { escPressed: e2.detail.escPressed });
+    if (prevented) {
+      e2.preventDefault();
+      return;
+    }
+    this.selected = false;
+    if (e2.detail.escPressed) {
+      this.focus();
+      if (d$b()) {
+        this.fireDecoratorEvent("close-menu");
+      }
+    }
+  }
+  _afterPopoverClose() {
+    this.fireDecoratorEvent("close");
+  }
+  get isMenuItem() {
+    return true;
+  }
+  _updateCheckedState() {
+    if (this._checkMode === MenuItemGroupCheckMode$1.None) {
+      return;
+    }
+    const newState = !this.checked;
+    this.checked = newState;
+    this.fireDecoratorEvent("check");
+  }
+};
+__decorate$G([
+  s$9()
+], MenuItem.prototype, "text", void 0);
+__decorate$G([
+  s$9()
+], MenuItem.prototype, "additionalText", void 0);
+__decorate$G([
+  s$9()
+], MenuItem.prototype, "icon", void 0);
+__decorate$G([
+  s$9({ type: Boolean })
+], MenuItem.prototype, "disabled", void 0);
+__decorate$G([
+  s$9({ type: Boolean })
+], MenuItem.prototype, "loading", void 0);
+__decorate$G([
+  s$9({ type: Number })
+], MenuItem.prototype, "loadingDelay", void 0);
+__decorate$G([
+  s$9()
+], MenuItem.prototype, "accessibleName", void 0);
+__decorate$G([
+  s$9()
+], MenuItem.prototype, "tooltip", void 0);
+__decorate$G([
+  s$9({ type: Boolean })
+], MenuItem.prototype, "checked", void 0);
+__decorate$G([
+  s$9({ type: Object })
+], MenuItem.prototype, "accessibilityAttributes", void 0);
+__decorate$G([
+  s$9({ type: Boolean, noAttribute: true })
+], MenuItem.prototype, "_siblingsWithIcon", void 0);
+__decorate$G([
+  s$9()
+], MenuItem.prototype, "_checkMode", void 0);
+__decorate$G([
+  d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
+], MenuItem.prototype, "items", void 0);
+__decorate$G([
+  d$8({ type: HTMLElement })
+], MenuItem.prototype, "endContent", void 0);
+__decorate$G([
+  i$b("@ui5/webcomponents")
+], MenuItem, "i18nBundle", void 0);
+MenuItem = MenuItem_1 = __decorate$G([
+  m$8({
+    tag: "ui5-menu-item",
+    renderer: y$5,
+    template: MenuItemTemplate,
+    styles: [ListItem$1.styles, menuItemCss]
+  }),
+  l$e("before-open", {
+    cancelable: true
+  }),
+  l$e("open"),
+  l$e("close-menu", {
+    bubbles: true
+  }),
+  l$e("exit-end-content", {
+    bubbles: true
+  }),
+  l$e("before-close", {
+    cancelable: true
+  }),
+  l$e("close"),
+  l$e("check", {
+    bubbles: true
+  })
+], MenuItem);
+MenuItem.define();
+const isInstanceOfMenuItem = (object) => {
+  return "isMenuItem" in object;
+};
+const MenuItem$1 = MenuItem;
+function MenuTemplate() {
+  return jsxs(ResponsivePopover, { id: `${this._id}-menu-rp`, class: "ui5-menu-rp", placement: this.placement, verticalAlign: "Bottom", horizontalAlign: this.horizontalAlign, opener: this.opener, open: this.open, preventInitialFocus: true, hideArrow: true, allowTargetOverlap: true, accessibleName: this.accessibleNameText, onBeforeOpen: this._beforePopoverOpen, onOpen: this._afterPopoverOpen, onBeforeClose: this._beforePopoverClose, onClose: this._afterPopoverClose, children: [this.isPhone && jsxs("div", { slot: "header", class: "ui5-menu-dialog-header", children: [jsx("div", { class: "ui5-menu-dialog-title", children: jsx("h1", { children: this.headerText }) }), jsx(Button$1, { icon: iconDecline, design: "Transparent", "aria-label": this.labelClose, onClick: this._close })] }), jsx("div", { id: `${this._id}-menu-main`, children: this.items.length ? jsx(List, { id: `${this._id}- menu-list`, selectionMode: "None", loading: this.loading, loadingDelay: this.loadingDelay, separators: "None", accessibleRole: "Menu", onItemClick: this._itemClick, onMouseOver: this._itemMouseOver, onKeyDown: this._itemKeyDown, "onui5-close-menu": this._close, "onui5-exit-end-content": this._navigateOutOfEndContent, children: jsx("slot", {}) }) : this.loading && jsx(BusyIndicator$1, { id: `${this._id}-menu-busy-indicator`, delay: this.loadingDelay, class: "ui5-menu-busy-indicator", active: true }) })] });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const menuCss = `:host{line-height:initial}::slotted([ui5-menu-item]){line-height:inherit}.ui5-menu-rp[ui5-responsive-popover]::part(header),.ui5-menu-rp[ui5-responsive-popover]::part(content),.ui5-menu-rp[ui5-responsive-popover]::part(footer){padding:0}.ui5-menu-rp[ui5-responsive-popover]{box-shadow:var(--sapContent_Shadow1);border-radius:var(--_ui5-v2-17-0_menu_popover_border_radius)}.ui5-menu-busy-indicator{width:100%}.ui5-menu-dialog-header{display:flex;height:var(--_ui5-v2-17-0-responsive_popover_header_height);align-items:center;justify-content:space-between;padding:0px 1rem;width:100%;overflow:hidden}.ui5-menu-dialog-title{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;width:calc(100% - 6.5rem);padding-right:1rem;font-family:var(--sapFontHeaderFamily)}.ui5-menu-dialog-title>h1{display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:var(--sapFontHeader5Size)}.ui5-menu-back-button{margin-right:1rem}
+`;
+var __decorate$F = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var Menu_1;
+const MENU_OPEN_DELAY = 300;
+let Menu = Menu_1 = class Menu2 extends b$7 {
+  constructor() {
+    super(...arguments);
+    this.open = false;
+    this.placement = "Bottom";
+    this.horizontalAlign = "Start";
+    this.loading = false;
+    this.loadingDelay = 1e3;
+  }
+  get isRtl() {
+    return this.effectiveDir === "rtl";
+  }
+  get labelClose() {
+    return Menu_1.i18nBundle.getText(MENU_CLOSE_BUTTON_ARIA_LABEL);
+  }
+  get isPhone() {
+    return d$b();
+  }
+  get _popover() {
+    return this.shadowRoot.querySelector("[ui5-responsive-popover]");
+  }
+  get _list() {
+    return this.shadowRoot.querySelector("[ui5-list]");
+  }
+  /** Returns menu item groups */
+  get _menuItemGroups() {
+    return this.items.filter(isInstanceOfMenuItemGroup);
+  }
+  /** Returns menu items */
+  get _menuItems() {
+    return this.items.filter(isInstanceOfMenuItem);
+  }
+  /** Returns all menu items (including those in groups */
+  get _allMenuItems() {
+    const items = [];
+    const slottedItems = this.getSlottedNodes("items");
+    slottedItems.forEach((item) => {
+      if (isInstanceOfMenuItemGroup(item)) {
+        items.push(...item._menuItems);
+      } else if (!isInstanceOfMenuSeparator(item)) {
+        items.push(item);
+      }
+    });
+    return items;
+  }
+  /** Returns menu items included in the ItemNavigation */
+  get _navigatableMenuItems() {
+    const items = [];
+    const slottedItems = this.getSlottedNodes("items");
+    slottedItems.forEach((item) => {
+      if (isInstanceOfMenuItemGroup(item)) {
+        const groupItems = item.getSlottedNodes("items");
+        items.push(...groupItems);
+      } else if (!isInstanceOfMenuSeparator(item)) {
+        items.push(item);
+      }
+    });
+    return items;
+  }
+  get accessibleNameText() {
+    return Menu_1.i18nBundle.getText(MENU_POPOVER_ACCESSIBLE_NAME);
+  }
+  onBeforeRendering() {
+    const siblingsWithIcon = this._allMenuItems.some((menuItem) => !!menuItem.icon);
+    this._setupItemNavigation();
+    this._allMenuItems.forEach((item) => {
+      item._siblingsWithIcon = siblingsWithIcon;
+    });
+  }
+  getFocusDomRef() {
+    var _a2;
+    return (_a2 = this._list) == null ? void 0 : _a2.getFocusDomRef();
+  }
+  _setupItemNavigation() {
+    if (this._list) {
+      this._list._itemNavigation._getItems = () => this._navigatableMenuItems;
+    }
+  }
+  _close() {
+    this.open = false;
+  }
+  _openItemSubMenu(item) {
+    clearTimeout(this._timeout);
+    if (!item._popover || item._popover.open) {
+      return;
+    }
+    this.fireDecoratorEvent("before-open", {
+      item
+    });
+    item._popover.opener = item;
+    item._popover.open = true;
+    item.selected = true;
+  }
+  _itemMouseOver(e2) {
+    if (!f$h()) {
+      return;
+    }
+    const item = e2.target;
+    if (!isInstanceOfMenuItem(item)) {
+      return;
+    }
+    item.focus();
+    this._startOpenTimeout(item);
+  }
+  async focus(focusOptions) {
+    await f$i();
+    const firstMenuItem = this._allMenuItems[0];
+    if (firstMenuItem) {
+      return firstMenuItem.focus(focusOptions);
+    }
+    return super.focus(focusOptions);
+  }
+  _closeOtherSubMenus(item) {
+    const menuItems = this._allMenuItems;
+    if (!menuItems.includes(item)) {
+      return;
+    }
+    menuItems.forEach((menuItem) => {
+      if (menuItem !== item) {
+        menuItem._close();
+      }
+    });
+  }
+  _startOpenTimeout(item) {
+    clearTimeout(this._timeout);
+    this._timeout = setTimeout(() => {
+      this._closeOtherSubMenus(item);
+      this._openItemSubMenu(item);
+    }, MENU_OPEN_DELAY);
+  }
+  _itemClick(e2) {
+    const item = e2.detail.item;
+    if (!item._popover) {
+      const prevented = !this.fireDecoratorEvent("item-click", {
+        "item": item,
+        "text": item.text || ""
+      });
+      if (!prevented) {
+        item._updateCheckedState();
+        this._popover && !item._shiftPressed && item.fireDecoratorEvent("close-menu");
+      }
+    } else {
+      this._openItemSubMenu(item);
+    }
+  }
+  _itemKeyDown(e2) {
+    const isTabNextPrevious = x$1(e2) || V$1(e2);
+    const item = e2.target;
+    if (!isInstanceOfMenuItem(item)) {
+      return;
+    }
+    const isEndContentNavigation = R$1(e2) || D$3(e2);
+    const shouldOpenMenu = this.isRtl ? D$3(e2) : R$1(e2);
+    if (b$6(e2) || isTabNextPrevious) {
+      e2.preventDefault();
+    }
+    if (isEndContentNavigation) {
+      item._navigateToEndContent(D$3(e2));
+    }
+    if (shouldOpenMenu) {
+      this._openItemSubMenu(item);
+    } else if (isTabNextPrevious) {
+      this._close();
+    }
+  }
+  _navigateOutOfEndContent(e2) {
+    const item = e2.target;
+    const shouldNavigateToNextItem = e2.detail.shouldNavigateToNextItem;
+    const menuItems = this._allMenuItems;
+    const itemIndex = menuItems.indexOf(item);
+    if (itemIndex > -1) {
+      const nextItem = shouldNavigateToNextItem ? menuItems[itemIndex + 1] : menuItems[itemIndex - 1];
+      const itemToFocus = nextItem || menuItems[itemIndex];
+      itemToFocus == null ? void 0 : itemToFocus.focus();
+      e2.stopPropagation();
+    }
+  }
+  _beforePopoverOpen(e2) {
+    const prevented = !this.fireDecoratorEvent("before-open", {});
+    if (prevented) {
+      this.open = false;
+      e2.preventDefault();
+    }
+  }
+  _afterPopoverOpen() {
+    var _a2;
+    (_a2 = this._allMenuItems[0]) == null ? void 0 : _a2.focus();
+    this.fireDecoratorEvent("open");
+  }
+  _beforePopoverClose(e2) {
+    const prevented = !this.fireDecoratorEvent("before-close", { escPressed: e2.detail.escPressed });
+    if (prevented) {
+      this.open = true;
+      e2.preventDefault();
+    }
+  }
+  _afterPopoverClose() {
+    this.open = false;
+    this.fireDecoratorEvent("close");
+  }
+};
+__decorate$F([
+  s$9()
+], Menu.prototype, "headerText", void 0);
+__decorate$F([
+  s$9({ type: Boolean })
+], Menu.prototype, "open", void 0);
+__decorate$F([
+  s$9()
+], Menu.prototype, "placement", void 0);
+__decorate$F([
+  s$9()
+], Menu.prototype, "horizontalAlign", void 0);
+__decorate$F([
+  s$9({ type: Boolean })
+], Menu.prototype, "loading", void 0);
+__decorate$F([
+  s$9({ type: Number })
+], Menu.prototype, "loadingDelay", void 0);
+__decorate$F([
+  s$9({ converter: e$8 })
+], Menu.prototype, "opener", void 0);
+__decorate$F([
+  d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
+], Menu.prototype, "items", void 0);
+__decorate$F([
+  i$b("@ui5/webcomponents")
+], Menu, "i18nBundle", void 0);
+Menu = Menu_1 = __decorate$F([
+  m$8({
+    tag: "ui5-menu",
+    renderer: y$5,
+    styles: menuCss,
+    template: MenuTemplate
+  }),
+  l$e("item-click", {
+    cancelable: true
+  }),
+  l$e("before-open", {
+    bubbles: true,
+    cancelable: true
+  }),
+  l$e("open", {
+    bubbles: true
+  }),
+  l$e("close-menu", {
+    bubbles: true
+  }),
+  l$e("before-close", {
+    bubbles: true,
+    cancelable: true
+  }),
+  l$e("close")
+], Menu);
+Menu.define();
+const Menu$1 = Menu;
+const predefinedHooks$1 = {
+  imageBegin,
+  iconBegin: iconBegin$1,
+  iconEnd: iconEnd$1,
+  listItemContent: listItemContent$2
+};
+function ListItemStandardTemplate(hooks) {
+  const currentHooks = { ...predefinedHooks$1, ...hooks };
+  return ListItemTemplate.call(this, currentHooks);
+}
+function listItemContent$2() {
   return jsxs(Fragment, { children: [jsxs("div", { class: "ui5-li-text-wrapper", children: [renderTitle.call(this), renderDescription.call(this), !this.typeActive && jsx("span", { class: "ui5-hidden-text", children: this.type })] }), !this.description && renderAdditionalText.call(this)] });
 }
 function renderTitle() {
@@ -25755,7 +26657,7 @@ function imageBegin() {
     return jsx("div", { class: "ui5-li-image", children: jsx("slot", { name: "image" }) });
   }
 }
-function iconBegin$2() {
+function iconBegin$1() {
   if (this.displayIconBegin) {
     return jsx(Icon$1, { part: "icon", name: this.icon, class: "ui5-li-icon", mode: "Decorative" });
   }
@@ -25765,7 +26667,7 @@ function iconEnd$1() {
     return jsx(Icon$1, { part: "icon", name: this.icon, class: "ui5-li-icon", mode: "Decorative" });
   }
 }
-var __decorate$J = function(decorators, target, key, desc) {
+var __decorate$E = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -25824,49 +26726,49 @@ let ListItemStandard = ListItemStandard_1 = class ListItemStandard2 extends List
     return !!this.image.length;
   }
 };
-__decorate$J([
+__decorate$E([
   s$9()
 ], ListItemStandard.prototype, "text", void 0);
-__decorate$J([
+__decorate$E([
   s$9()
 ], ListItemStandard.prototype, "description", void 0);
-__decorate$J([
+__decorate$E([
   s$9()
 ], ListItemStandard.prototype, "icon", void 0);
-__decorate$J([
+__decorate$E([
   s$9({ type: Boolean })
 ], ListItemStandard.prototype, "iconEnd", void 0);
-__decorate$J([
+__decorate$E([
   s$9()
 ], ListItemStandard.prototype, "additionalText", void 0);
-__decorate$J([
+__decorate$E([
   s$9()
 ], ListItemStandard.prototype, "additionalTextState", void 0);
-__decorate$J([
+__decorate$E([
   s$9({ type: Boolean })
 ], ListItemStandard.prototype, "movable", void 0);
-__decorate$J([
+__decorate$E([
   s$9()
 ], ListItemStandard.prototype, "accessibleName", void 0);
-__decorate$J([
+__decorate$E([
   s$9()
 ], ListItemStandard.prototype, "wrappingType", void 0);
-__decorate$J([
+__decorate$E([
   s$9({ type: Boolean })
 ], ListItemStandard.prototype, "hasTitle", void 0);
-__decorate$J([
+__decorate$E([
   s$9({ type: Boolean })
 ], ListItemStandard.prototype, "_hasImage", void 0);
-__decorate$J([
+__decorate$E([
   s$9({ noAttribute: true })
 ], ListItemStandard.prototype, "expandableTextTemplate", void 0);
-__decorate$J([
+__decorate$E([
   d$8({ type: Node, "default": true })
 ], ListItemStandard.prototype, "content", void 0);
-__decorate$J([
+__decorate$E([
   d$8()
 ], ListItemStandard.prototype, "image", void 0);
-ListItemStandard = ListItemStandard_1 = __decorate$J([
+ListItemStandard = ListItemStandard_1 = __decorate$E([
   m$8({
     tag: "ui5-li",
     renderer: y$5,
@@ -25875,69 +26777,6 @@ ListItemStandard = ListItemStandard_1 = __decorate$J([
 ], ListItemStandard);
 ListItemStandard.define();
 const ListItemStandard$1 = ListItemStandard;
-const predefinedHooks$2 = {
-  listItemContent: listItemContent$3
-};
-function ListItemCustomTemplate(hooks) {
-  const currentHooks = { ...predefinedHooks$2, ...hooks };
-  return ListItemTemplate.call(this, currentHooks);
-}
-function listItemContent$3() {
-  return jsx("slot", {});
-}
-p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
-const ListItemCustomCss = `:host(:not([hidden])){display:block}:host{min-height:var(--_ui5-v2-17-0_list_item_base_height);height:auto;box-sizing:border-box}.ui5-li-root.ui5-custom-li-root{pointer-events:inherit;min-height:inherit}.ui5-li-root.ui5-custom-li-root .ui5-li-content{pointer-events:inherit}[ui5-checkbox].ui5-li-singlesel-radiobtn,[ui5-radio-button].ui5-li-singlesel-radiobtn{display:flex;align-items:center}.ui5-li-root.ui5-custom-li-root,[ui5-checkbox].ui5-li-singlesel-radiobtn,[ui5-radio-button].ui5-li-singlesel-radiobtn{min-width:var(--_ui5-v2-17-0_custom_list_item_rb_min_width)}:host([_selection-mode="SingleStart"]) .ui5-li-root.ui5-custom-li-root{padding-inline:0 1rem}:host([_selection-mode="Multiple"]) .ui5-li-root.ui5-custom-li-root{padding-inline:0 1rem}:host([_selection-mode="SingleEnd"]) .ui5-li-root.ui5-custom-li-root{padding-inline:1rem 0}
-`;
-var __decorate$I = function(decorators, target, key, desc) {
-  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
-  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
-  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
-};
-let ListItemCustom = class ListItemCustom2 extends ListItem$1 {
-  constructor() {
-    super(...arguments);
-    this.movable = false;
-  }
-  async _onkeydown(e2) {
-    const isTab = x$1(e2) || V$1(e2);
-    const isFocused = this.matches(":focus");
-    if (!isTab && !isFocused && !ro(e2)) {
-      return;
-    }
-    await super._onkeydown(e2);
-  }
-  _onkeyup(e2) {
-    const isTab = x$1(e2) || V$1(e2);
-    const isFocused = this.matches(":focus");
-    if (!isTab && !isFocused && !ro(e2)) {
-      return;
-    }
-    super._onkeyup(e2);
-  }
-  get classes() {
-    const result = super.classes;
-    result.main["ui5-custom-li-root"] = true;
-    return result;
-  }
-};
-__decorate$I([
-  s$9({ type: Boolean })
-], ListItemCustom.prototype, "movable", void 0);
-__decorate$I([
-  s$9()
-], ListItemCustom.prototype, "accessibleName", void 0);
-ListItemCustom = __decorate$I([
-  m$8({
-    tag: "ui5-li-custom",
-    template: ListItemCustomTemplate,
-    renderer: y$5,
-    styles: [ListItem$1.styles, ListItemCustomCss]
-  })
-], ListItemCustom);
-ListItemCustom.define();
-const ListItemCustom$1 = ListItemCustom;
 const isInstanceOfTable = (obj) => {
   return !!obj && "isTable" in obj && !!obj.isTable;
 };
@@ -26016,7 +26855,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const TableCellBaseStyles = `:host{display:flex;flex-wrap:wrap;align-content:var(--_ui5-v2-17-0_table_cell_valign);min-width:var(--_ui5-v2-17-0_table_cell_min_width);max-width:100%;overflow:clip;overflow-clip-margin:content-box;padding:var(--_ui5-v2-17-0_table_cell_vertical_padding) var(--_ui5-v2-17-0_table_cell_horizontal_padding);box-sizing:border-box}:host([tabindex]:focus){outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);outline-offset:calc(-1 * var(--sapContent_FocusWidth))}:host(#selection-cell){width:auto;min-width:auto;background-color:inherit}:host([data-ui5-table-cell-fixed]){position:sticky;z-index:1}
 `;
-var __decorate$H = function(decorators, target, key, desc) {
+var __decorate$D = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -26040,29 +26879,29 @@ let TableCellBase = class TableCellBase2 extends b$7 {
     return true;
   }
 };
-__decorate$H([
+__decorate$D([
   d$8({ type: Node, "default": true })
 ], TableCellBase.prototype, "content", void 0);
-__decorate$H([
+__decorate$D([
   s$9()
 ], TableCellBase.prototype, "horizontalAlign", void 0);
-__decorate$H([
+__decorate$D([
   s$9({ type: Boolean })
 ], TableCellBase.prototype, "_popin", void 0);
-__decorate$H([
+__decorate$D([
   s$9({ type: Boolean, noAttribute: true })
 ], TableCellBase.prototype, "_popinHidden", void 0);
-__decorate$H([
+__decorate$D([
   i$b("@ui5/webcomponents")
 ], TableCellBase, "i18nBundle", void 0);
-TableCellBase = __decorate$H([
+TableCellBase = __decorate$D([
   m$8({
     renderer: y$5,
     styles: TableCellBaseStyles
   })
 ], TableCellBase);
 const TableCellBase$1 = TableCellBase;
-var __decorate$G = function(decorators, target, key, desc) {
+var __decorate$C = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -26105,13 +26944,13 @@ let TableCell = class TableCell2 extends TableCellBase$1 {
     return TableCellBase$1.i18nBundle.getText(LABEL_COLON);
   }
 };
-__decorate$G([
+__decorate$C([
   o$1("#popin-header")
 ], TableCell.prototype, "_popinHeader", void 0);
-__decorate$G([
+__decorate$C([
   o$1("#popin-content")
 ], TableCell.prototype, "_popinContent", void 0);
-TableCell = __decorate$G([
+TableCell = __decorate$C([
   m$8({
     tag: "ui5-table-cell",
     styles: [TableCellBase$1.styles, TableCellStyles],
@@ -26136,7 +26975,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const TableRowBaseCss = `:host{display:grid;grid-template-columns:subgrid;grid-column:1 / -1;min-height:var(--_ui5-v2-17-0_list_item_base_height);box-sizing:content-box;border-bottom:var(--sapList_BorderWidth) solid var(--sapList_BorderColor);overflow:clip}:host([tabindex]:focus){outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);outline-offset:calc(-1 * var(--sapContent_FocusWidth))}:host([tabindex]:focus) #selection-cell,:host([tabindex]:focus) #actions-cell{clip-path:inset(var(--sapContent_FocusWidth))}::slotted([ui5-table-cell]:first-of-type),::slotted([ui5-table-header-cell]:first-of-type),#popin-cell{padding-inline-start:var(--_ui5-v2-17-0_first_table_cell_horizontal_padding)}#selection-cell+::slotted([ui5-table-cell-base]:first-of-type),#selection-cell~#popin-cell{padding-inline-start:var(--_ui5-v2-17-0_table_cell_horizontal_padding)}#selection-cell{display:flex;align-items:center;justify-content:center;padding:0;left:0}:dir(rtl)#selection-cell{right:0}#selection-component{vertical-align:middle}#actions-cell{position:sticky;right:0;background-color:inherit;flex-wrap:nowrap}:dir(rtl)#actions-cell{left:0}
 `;
-var __decorate$F = function(decorators, target, key, desc) {
+var __decorate$B = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -26216,28 +27055,28 @@ let TableRowBase = TableRowBase_1 = class TableRowBase2 extends b$7 {
     return TableRowBase_1.i18nBundle.getText(TABLE_ROW_SELECTOR);
   }
 };
-__decorate$F([
+__decorate$B([
   s$9({ type: Number, noAttribute: true })
 ], TableRowBase.prototype, "_invalidate", void 0);
-__decorate$F([
+__decorate$B([
   s$9({ type: Number, noAttribute: true })
 ], TableRowBase.prototype, "_rowActionCount", void 0);
-__decorate$F([
+__decorate$B([
   s$9({ type: Boolean, noAttribute: true })
 ], TableRowBase.prototype, "_renderNavigated", void 0);
-__decorate$F([
+__decorate$B([
   s$9({ type: Boolean, noAttribute: true })
 ], TableRowBase.prototype, "_alternate", void 0);
-__decorate$F([
+__decorate$B([
   o$1("#selection-cell")
 ], TableRowBase.prototype, "_selectionCell", void 0);
-__decorate$F([
+__decorate$B([
   o$1("#navigated-cell")
 ], TableRowBase.prototype, "_navigatedCell", void 0);
-__decorate$F([
+__decorate$B([
   i$b("@ui5/webcomponents")
 ], TableRowBase, "i18nBundle", void 0);
-TableRowBase = TableRowBase_1 = __decorate$F([
+TableRowBase = TableRowBase_1 = __decorate$B([
   m$8({
     renderer: y$5,
     styles: TableRowBaseCss
@@ -26248,7 +27087,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const TableRowCss = `:host{background:var(--sapList_Background)}:host([_alternate]){background:var(--_ui5-v2-17-0_table_row_alternating_background)}:host([aria-selected=true]){background:var(--sapList_SelectionBackgroundColor);border-bottom:var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)}@media (hover: hover){:host([_interactive]:hover){background:var(--sapList_Hover_Background)}:host([_interactive][aria-selected=true]:hover){background:var(--sapList_Hover_SelectionBackground)}}:host([_interactive]:active),:host([_interactive][_active]),:host([_interactive][aria-selected=true]:active),:host([_interactive][aria-selected=true][_active]){background:var(--sapList_Active_Background)}:host([position]){height:var(--row-height)}:host([_interactive]){cursor:pointer}#popin-cell{align-content:initial;flex-direction:column;grid-column:1 / -1}#navigated-cell{position:sticky;right:0;overflow:visible;grid-row:span 2;min-width:0;padding:0;background:inherit}:dir(rtl)#navigated-cell{left:0}:host([navigated]) #navigated{position:absolute;inset:0;background:var(--sapList_SelectionBorderColor)}:host([tabindex]:focus) #navigated{transform:translate(calc(var(--_ui5-v2-17-0_table_navigated_cell_width) * -1));bottom:2px;top:3px}:host([tabindex]:focus) #navigated:dir(rtl){transform:translate(var(--_ui5-v2-17-0_table_navigated_cell_width))}:host([tabindex]:focus) #navigated-cell{clip-path:inset(var(--sapContent_FocusWidth) var(--sapContent_FocusWidth) var(--sapContent_FocusWidth) calc(var(--_ui5-v2-17-0_table_navigated_cell_width) * -1))}:host([tabindex]:focus) #navigated-cell:dir(rtl){clip-path:inset(var(--sapContent_FocusWidth) calc(var(--_ui5-v2-17-0_table_navigated_cell_width) * -1) var(--sapContent_FocusWidth) var(--sapContent_FocusWidth))}:host([navigated]) #popin-cell{grid-column:1 / -2}#selection-cell~#popin-cell{grid-column-start:2}#actions-cell{display:flex;align-items:center;gap:var(--_ui5-v2-17-0_table_row_actions_gap)}#actions-cell:has(+#navigated-cell){right:var(--_ui5-v2-17-0_table_navigated_cell_width);overflow:auto}:dir(rtl)#actions-cell:has(+#navigated-cell){left:var(--_ui5-v2-17-0_table_navigated_cell_width)}
 `;
-var __decorate$E = function(decorators, target, key, desc) {
+var __decorate$A = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -26381,7 +27220,7 @@ let TableRow = class TableRow2 extends TableRowBase$1 {
     }
   }
 };
-__decorate$E([
+__decorate$A([
   d$8({
     type: HTMLElement,
     "default": true,
@@ -26392,34 +27231,34 @@ __decorate$E([
     }
   })
 ], TableRow.prototype, "cells", void 0);
-__decorate$E([
+__decorate$A([
   d$8({
     type: HTMLElement,
     individualSlots: true
   })
 ], TableRow.prototype, "actions", void 0);
-__decorate$E([
+__decorate$A([
   s$9()
 ], TableRow.prototype, "rowKey", void 0);
-__decorate$E([
+__decorate$A([
   s$9({ type: Number })
 ], TableRow.prototype, "position", void 0);
-__decorate$E([
+__decorate$A([
   s$9({ type: Boolean })
 ], TableRow.prototype, "interactive", void 0);
-__decorate$E([
+__decorate$A([
   s$9({ type: Boolean })
 ], TableRow.prototype, "navigated", void 0);
-__decorate$E([
+__decorate$A([
   s$9({ type: Boolean })
 ], TableRow.prototype, "movable", void 0);
-__decorate$E([
+__decorate$A([
   o$1("#popin-cell")
 ], TableRow.prototype, "_popinCell", void 0);
-__decorate$E([
+__decorate$A([
   o$1("#actions-cell")
 ], TableRow.prototype, "_actionsCell", void 0);
-TableRow = __decorate$E([
+TableRow = __decorate$A([
   m$8({
     tag: "ui5-table-row",
     styles: [TableRowBase$1.styles, TableRowCss],
@@ -26988,7 +27827,7 @@ class TableCustomAnnouncement extends TableExtension {
     }
   }
 }
-var __decorate$D = function(decorators, target, key, desc) {
+var __decorate$z = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -27257,7 +28096,7 @@ let Table = Table_1 = class Table2 extends b$7 {
     return true;
   }
 };
-__decorate$D([
+__decorate$z([
   d$8({
     type: HTMLElement,
     "default": true,
@@ -27267,73 +28106,73 @@ __decorate$D([
     }
   })
 ], Table.prototype, "rows", void 0);
-__decorate$D([
+__decorate$z([
   d$8({ type: HTMLElement, invalidateOnChildChange: { properties: false, slots: true } })
 ], Table.prototype, "headerRow", void 0);
-__decorate$D([
+__decorate$z([
   d$8()
 ], Table.prototype, "noData", void 0);
-__decorate$D([
+__decorate$z([
   d$8({ type: HTMLElement, individualSlots: true })
 ], Table.prototype, "features", void 0);
-__decorate$D([
+__decorate$z([
   s$9()
 ], Table.prototype, "accessibleName", void 0);
-__decorate$D([
+__decorate$z([
   s$9()
 ], Table.prototype, "accessibleNameRef", void 0);
-__decorate$D([
+__decorate$z([
   s$9()
 ], Table.prototype, "noDataText", void 0);
-__decorate$D([
+__decorate$z([
   s$9()
 ], Table.prototype, "overflowMode", void 0);
-__decorate$D([
+__decorate$z([
   s$9({ type: Boolean })
 ], Table.prototype, "loading", void 0);
-__decorate$D([
+__decorate$z([
   s$9({ type: Number })
 ], Table.prototype, "loadingDelay", void 0);
-__decorate$D([
+__decorate$z([
   s$9({ type: Number })
 ], Table.prototype, "rowActionCount", void 0);
-__decorate$D([
+__decorate$z([
   s$9({ type: Boolean })
 ], Table.prototype, "alternateRowColors", void 0);
-__decorate$D([
+__decorate$z([
   s$9()
 ], Table.prototype, "stickyTop", void 0);
-__decorate$D([
+__decorate$z([
   s$9({ type: Number, noAttribute: true })
 ], Table.prototype, "_invalidate", void 0);
-__decorate$D([
+__decorate$z([
   s$9({ type: Boolean, noAttribute: true })
 ], Table.prototype, "_renderNavigated", void 0);
-__decorate$D([
+__decorate$z([
   o$1("[ui5-drop-indicator]")
 ], Table.prototype, "dropIndicatorDOM", void 0);
-__decorate$D([
+__decorate$z([
   o$1("#no-data-row")
 ], Table.prototype, "_noDataRow", void 0);
-__decorate$D([
+__decorate$z([
   o$1("#table-end-row")
 ], Table.prototype, "_endRow", void 0);
-__decorate$D([
+__decorate$z([
   o$1("#table")
 ], Table.prototype, "_tableElement", void 0);
-__decorate$D([
+__decorate$z([
   o$1("#before")
 ], Table.prototype, "_beforeElement", void 0);
-__decorate$D([
+__decorate$z([
   o$1("#after")
 ], Table.prototype, "_afterElement", void 0);
-__decorate$D([
+__decorate$z([
   o$1("#loading")
 ], Table.prototype, "_loadingElement", void 0);
-__decorate$D([
+__decorate$z([
   i$b("@ui5/webcomponents")
 ], Table, "i18nBundle", void 0);
-Table = Table_1 = __decorate$D([
+Table = Table_1 = __decorate$z([
   m$8({
     tag: "ui5-table",
     renderer: y$5,
@@ -27357,35 +28196,35 @@ Table = Table_1 = __decorate$D([
 ], Table);
 Table.define();
 var e = ((n2) => (n2.None = "None", n2.Ascending = "Ascending", n2.Descending = "Descending", n2))(e || {});
-const name$s = "sort-ascending";
-const pathData$r = "M82 288h351l15 32H65zm-48 96h446l15 32H17zm366-160H113l16-32h255zm-47-96H161l17-32h158z";
-const ltr$r = false;
-const accData$9 = ICON_SORT_ASCENDING;
-const collection$r = "SAP-icons-v4";
-const packageName$r = "@ui5/webcomponents-icons";
-y$2(name$s, { pathData: pathData$r, ltr: ltr$r, accData: accData$9, collection: collection$r, packageName: packageName$r });
-const name$r = "sort-ascending";
-const pathData$q = "M358 147H154q-11 0-18.5-7t-7.5-18 7.5-18.5T154 96h204q11 0 18.5 7.5T384 122t-7.5 18-18.5 7zm64 128H90q-11 0-18.5-7T64 250t7.5-18.5T90 224h332q11 0 18.5 7.5T448 250t-7.5 18-18.5 7zm64 128H26q-11 0-18.5-7T0 378t7.5-18.5T26 352h460q11 0 18.5 7.5T512 378t-7.5 18-18.5 7z";
-const ltr$q = false;
-const accData$8 = ICON_SORT_ASCENDING;
-const collection$q = "SAP-icons-v5";
-const packageName$q = "@ui5/webcomponents-icons";
-y$2(name$r, { pathData: pathData$q, ltr: ltr$q, accData: accData$8, collection: collection$q, packageName: packageName$q });
-const SortAscending = "sort-ascending";
-const name$q = "sort-descending";
-const pathData$p = "M17 96h478l-15 32H34zm431 96l-15 32H82l-17-32h383zm-335 96h287l-16 32H129zm48 96h192l-16 32H177z";
+const name$q = "sort-ascending";
+const pathData$p = "M82 288h351l15 32H65zm-48 96h446l15 32H17zm366-160H113l16-32h255zm-47-96H161l17-32h158z";
 const ltr$p = false;
-const accData$7 = ICON_SORT_DESCENDING;
+const accData$7 = ICON_SORT_ASCENDING;
 const collection$p = "SAP-icons-v4";
 const packageName$p = "@ui5/webcomponents-icons";
 y$2(name$q, { pathData: pathData$p, ltr: ltr$p, accData: accData$7, collection: collection$p, packageName: packageName$p });
-const name$p = "sort-descending";
-const pathData$o = "M486 96q11 0 18.5 7.5T512 122t-7.5 18-18.5 7H26q-11 0-18.5-7T0 122t7.5-18.5T26 96h460zm-64 128q11 0 18.5 7.5T448 250t-7.5 18-18.5 7H90q-11 0-18.5-7T64 250t7.5-18.5T90 224h332zm-64 128q11 0 18.5 7.5T384 378t-7.5 18-18.5 7H154q-11 0-18.5-7t-7.5-18 7.5-18.5T154 352h204z";
+const name$p = "sort-ascending";
+const pathData$o = "M358 147H154q-11 0-18.5-7t-7.5-18 7.5-18.5T154 96h204q11 0 18.5 7.5T384 122t-7.5 18-18.5 7zm64 128H90q-11 0-18.5-7T64 250t7.5-18.5T90 224h332q11 0 18.5 7.5T448 250t-7.5 18-18.5 7zm64 128H26q-11 0-18.5-7T0 378t7.5-18.5T26 352h460q11 0 18.5 7.5T512 378t-7.5 18-18.5 7z";
 const ltr$o = false;
-const accData$6 = ICON_SORT_DESCENDING;
+const accData$6 = ICON_SORT_ASCENDING;
 const collection$o = "SAP-icons-v5";
 const packageName$o = "@ui5/webcomponents-icons";
 y$2(name$p, { pathData: pathData$o, ltr: ltr$o, accData: accData$6, collection: collection$o, packageName: packageName$o });
+const SortAscending = "sort-ascending";
+const name$o = "sort-descending";
+const pathData$n = "M17 96h478l-15 32H34zm431 96l-15 32H82l-17-32h383zm-335 96h287l-16 32H129zm48 96h192l-16 32H177z";
+const ltr$n = false;
+const accData$5 = ICON_SORT_DESCENDING;
+const collection$n = "SAP-icons-v4";
+const packageName$n = "@ui5/webcomponents-icons";
+y$2(name$o, { pathData: pathData$n, ltr: ltr$n, accData: accData$5, collection: collection$n, packageName: packageName$n });
+const name$n = "sort-descending";
+const pathData$m = "M486 96q11 0 18.5 7.5T512 122t-7.5 18-18.5 7H26q-11 0-18.5-7T0 122t7.5-18.5T26 96h460zm-64 128q11 0 18.5 7.5T448 250t-7.5 18-18.5 7H90q-11 0-18.5-7T64 250t7.5-18.5T90 224h332zm-64 128q11 0 18.5 7.5T384 378t-7.5 18-18.5 7H154q-11 0-18.5-7t-7.5-18 7.5-18.5T154 352h204z";
+const ltr$m = false;
+const accData$4 = ICON_SORT_DESCENDING;
+const collection$m = "SAP-icons-v5";
+const packageName$m = "@ui5/webcomponents-icons";
+y$2(name$n, { pathData: pathData$m, ltr: ltr$m, accData: accData$4, collection: collection$m, packageName: packageName$m });
 const SortDescending = "sort-descending";
 function TableHeaderCellTemplate() {
   return jsxs(Fragment, { children: [jsx("slot", { name: "action" }), jsx("slot", {}), sortIcon.call(this)] });
@@ -27404,7 +28243,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const TableHeaderCellStyles = `:host{font-family:var(--sapFontSemiboldDuplexFamily);color:var(--sapList_HeaderTextColor);align-items:center;flex-wrap:nowrap;max-width:100%;gap:.125rem}:host(:empty){padding:0}[ui5-icon]{margin-inline-start:.375rem;width:1rem;height:1rem;flex-shrink:0}::slotted([ui5-label]){color:inherit;font-family:inherit;overflow:hidden}
 `;
-var __decorate$C = function(decorators, target, key, desc) {
+var __decorate$y = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -27433,37 +28272,37 @@ let TableHeaderCell = class TableHeaderCell2 extends TableCellBase$1 {
     };
   }
 };
-__decorate$C([
+__decorate$y([
   s$9()
 ], TableHeaderCell.prototype, "width", void 0);
-__decorate$C([
+__decorate$y([
   s$9()
 ], TableHeaderCell.prototype, "minWidth", void 0);
-__decorate$C([
+__decorate$y([
   s$9({ type: Number })
 ], TableHeaderCell.prototype, "importance", void 0);
-__decorate$C([
+__decorate$y([
   s$9()
 ], TableHeaderCell.prototype, "popinText", void 0);
-__decorate$C([
+__decorate$y([
   s$9()
 ], TableHeaderCell.prototype, "sortIndicator", void 0);
-__decorate$C([
+__decorate$y([
   s$9({ type: Boolean })
 ], TableHeaderCell.prototype, "popinHidden", void 0);
-__decorate$C([
+__decorate$y([
   d$8()
 ], TableHeaderCell.prototype, "action", void 0);
-__decorate$C([
+__decorate$y([
   s$9({ type: Boolean, noAttribute: true })
 ], TableHeaderCell.prototype, "_popin", void 0);
-__decorate$C([
+__decorate$y([
   o$1("slot:not([name])")
 ], TableHeaderCell.prototype, "_defaultSlot", void 0);
-__decorate$C([
+__decorate$y([
   o$1("slot[name=action]")
 ], TableHeaderCell.prototype, "_actionSlot", void 0);
-TableHeaderCell = __decorate$C([
+TableHeaderCell = __decorate$y([
   m$8({
     tag: "ui5-table-header-cell",
     styles: [TableCellBase$1.styles, TableHeaderCellStyles],
@@ -27472,18 +28311,18 @@ TableHeaderCell = __decorate$C([
 ], TableHeaderCell);
 TableHeaderCell.define();
 const TableHeaderCell$1 = TableHeaderCell;
-const name$o = "clear-all";
-const pathData$n = "M432 449V288h32v161q0 13-8.5 22.5T433 481H48q-13 0-22.5-9.5T16 449V64q0-13 9-22t23-9h193v32H48v384h384zm64-385l-66 63 66 66-32 32-63-66-65 66-33-32 66-66-66-63 33-32 65 64 63-64z";
-const ltr$n = false;
-const collection$n = "SAP-icons-v4";
-const packageName$n = "@ui5/webcomponents-icons";
-y$2(name$o, { pathData: pathData$n, ltr: ltr$n, collection: collection$n, packageName: packageName$n });
-const name$n = "clear-all";
-const pathData$m = "M346 192q-11 0-18.5-7.5T320 166q0-10 8-18l36-36-36-36q-8-8-8-18 0-11 7.5-18.5T346 32t18 7l36 37 36-37q7-7 18-7t18.5 7.5T480 58t-7 18l-37 36 37 36q7 7 7 18t-7.5 18.5T454 192q-10 0-18-8l-36-36-36 36q-8 8-18 8zm108 64q11 0 18.5 7.5T480 282v108q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h108q11 0 18.5 7.5T256 58t-7.5 18-18.5 7H122q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q16 0 27.5-11t11.5-28V282q0-11 7-18.5t18-7.5z";
-const ltr$m = false;
-const collection$m = "SAP-icons-v5";
-const packageName$m = "@ui5/webcomponents-icons";
-y$2(name$n, { pathData: pathData$m, ltr: ltr$m, collection: collection$m, packageName: packageName$m });
+const name$m = "clear-all";
+const pathData$l = "M432 449V288h32v161q0 13-8.5 22.5T433 481H48q-13 0-22.5-9.5T16 449V64q0-13 9-22t23-9h193v32H48v384h384zm64-385l-66 63 66 66-32 32-63-66-65 66-33-32 66-66-66-63 33-32 65 64 63-64z";
+const ltr$l = false;
+const collection$l = "SAP-icons-v4";
+const packageName$l = "@ui5/webcomponents-icons";
+y$2(name$m, { pathData: pathData$l, ltr: ltr$l, collection: collection$l, packageName: packageName$l });
+const name$l = "clear-all";
+const pathData$k = "M346 192q-11 0-18.5-7.5T320 166q0-10 8-18l36-36-36-36q-8-8-8-18 0-11 7.5-18.5T346 32t18 7l36 37 36-37q7-7 18-7t18.5 7.5T480 58t-7 18l-37 36 37 36q7 7 7 18t-7.5 18.5T454 192q-10 0-18-8l-36-36-36 36q-8 8-18 8zm108 64q11 0 18.5 7.5T480 282v108q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h108q11 0 18.5 7.5T256 58t-7.5 18-18.5 7H122q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q16 0 27.5-11t11.5-28V282q0-11 7-18.5t18-7.5z";
+const ltr$k = false;
+const collection$k = "SAP-icons-v5";
+const packageName$k = "@ui5/webcomponents-icons";
+y$2(name$l, { pathData: pathData$k, ltr: ltr$k, collection: collection$k, packageName: packageName$k });
 const ClearAll = "clear-all";
 var IconDesign;
 (function(IconDesign2) {
@@ -27513,7 +28352,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const TableHeaderRowStyles = `:host{background:var(--sapList_HeaderBackground);border-top:var(--sapList_BorderWidth) solid var(--sapList_BorderColor);border-bottom:var(--sapList_BorderWidth) solid var(--sapList_HeaderBorderColor);grid-template-rows:auto 0px}:host([hidden]){display:none}:host([sticky]){position:sticky;top:var(--ui5-v2-17-0_grid_sticky_top, 0);z-index:3}#popin-cell{padding:0;width:0;height:0}#selection-cell [ui5-icon]{width:var(--_ui5-v2-17-0_checkbox_inner_width_height);height:var(--_ui5-v2-17-0_checkbox_inner_width_height)}#popin-cell-content,#actions-cell-content{position:absolute;clip:rect(0,0,0,0)}
 `;
-var __decorate$B = function(decorators, target, key, desc) {
+var __decorate$x = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -27575,7 +28414,7 @@ let TableHeaderRow = (
     }
   }
 );
-__decorate$B([
+__decorate$x([
   d$8({
     type: HTMLElement,
     "default": true,
@@ -27586,10 +28425,10 @@ __decorate$B([
     individualSlots: true
   })
 ], TableHeaderRow.prototype, "cells", void 0);
-__decorate$B([
+__decorate$x([
   s$9({ type: Boolean })
 ], TableHeaderRow.prototype, "sticky", void 0);
-TableHeaderRow = __decorate$B([
+TableHeaderRow = __decorate$x([
   m$8({
     tag: "ui5-table-header-row",
     languageAware: true,
@@ -27690,7 +28529,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const panelCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:block}:host{font-family:var(--sapFontFamily);background-color:var(--sapGroup_TitleBackground);border-radius:var(--_ui5-v2-17-0_panel_border_radius)}:host(:not([collapsed])){border-bottom:var(--_ui5-v2-17-0_panel_border_bottom)}:host([fixed]) .ui5-panel-header{padding-left:1rem}.ui5-panel-header{min-height:var(--_ui5-v2-17-0_panel_header_height);width:100%;position:relative;display:flex;justify-content:flex-start;align-items:center;outline:none;box-sizing:border-box;padding-right:var(--_ui5-v2-17-0_panel_header_padding_right);font-family:var(--sapFontHeaderFamily);font-size:var(--sapGroup_Title_FontSize);font-weight:400;color:var(--sapGroup_TitleTextColor)}.ui5-panel-header-icon{color:var(--_ui5-v2-17-0_panel_icon_color)}.ui5-panel-header-button-animated{transition:transform .4s ease-out}:host(:not([_has-header]):not([fixed])) .ui5-panel-header{cursor:pointer}:host(:not([_has-header]):not([fixed])) .ui5-panel-header:focus:after{content:"";position:absolute;pointer-events:none;z-index:2;border:var(--_ui5-v2-17-0_panel_focus_border);border-radius:var(--_ui5-v2-17-0_panel_border_radius);top:var(--_ui5-v2-17-0_panel_focus_offset);bottom:var(--_ui5-v2-17-0_panel_focus_bottom_offset);left:var(--_ui5-v2-17-0_panel_focus_offset);right:var(--_ui5-v2-17-0_panel_focus_offset)}:host(:not([collapsed]):not([_has-header]):not([fixed])) .ui5-panel-header:focus:after{border-radius:var(--_ui5-v2-17-0_panel_border_radius_expanded)}:host(:not([collapsed])) .ui5-panel-header-button:not(.ui5-panel-header-button-with-icon),:host(:not([collapsed])) .ui5-panel-header-icon-wrapper [ui5-icon]{transform:var(--_ui5-v2-17-0_panel_toggle_btn_rotation)}:host([fixed]) .ui5-panel-header-title{width:100%}.ui5-panel-heading-wrapper.ui5-panel-heading-wrapper-sticky{position:sticky;top:0;background-color:var(--_ui5-v2-17-0_panel_header_background_color);z-index:100;border-radius:var(--_ui5-v2-17-0_panel_border_radius)}.ui5-panel-header-title{width:calc(100% - var(--_ui5-v2-17-0_panel_button_root_width));overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ui5-panel-content{padding:var(--_ui5-v2-17-0_panel_content_padding);background-color:var(--sapGroup_ContentBackground);outline:none;border-bottom-left-radius:var(--_ui5-v2-17-0_panel_border_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_panel_border_radius);overflow:auto}.ui5-panel-header-button-root{display:flex;justify-content:center;align-items:center;flex-shrink:0;width:var(--_ui5-v2-17-0_panel_button_root_width);height:var(--_ui5-v2-17-0_panel_button_root_height);padding:var(--_ui5-v2-17-0_panel_header_button_wrapper_padding);box-sizing:border-box}:host([fixed]:not([collapsed]):not([_has-header])) .ui5-panel-header,:host([collapsed]) .ui5-panel-header{border-bottom:.0625rem solid var(--sapGroup_TitleBorderColor)}:host([collapsed]) .ui5-panel-header{border-bottom-left-radius:var(--_ui5-v2-17-0_panel_border_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_panel_border_radius)}:host(:not([fixed]):not([collapsed])) .ui5-panel-header{border-bottom:var(--_ui5-v2-17-0_panel_default_header_border)}[ui5-button].ui5-panel-header-button{display:flex;justify-content:center;align-items:center;min-width:initial;height:100%;width:100%}.ui5-panel-header-icon-wrapper{display:flex;justify-content:center;align-items:center}.ui5-panel-header-icon-wrapper,.ui5-panel-header-icon-wrapper .ui5-panel-header-icon{color:inherit}.ui5-panel-header-icon-wrapper,[ui5-button].ui5-panel-header-button-with-icon [ui5-icon]{pointer-events:none}.ui5-panel-root{height:100%;display:flex;flex-direction:column}
 `;
-var __decorate$A = function(decorators, target, key, desc) {
+var __decorate$w = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -27843,49 +28682,49 @@ let Panel = Panel_1 = class Panel2 extends b$7 {
     return !this.header.length;
   }
 };
-__decorate$A([
+__decorate$w([
   s$9()
 ], Panel.prototype, "headerText", void 0);
-__decorate$A([
+__decorate$w([
   s$9({ type: Boolean })
 ], Panel.prototype, "fixed", void 0);
-__decorate$A([
+__decorate$w([
   s$9({ type: Boolean })
 ], Panel.prototype, "collapsed", void 0);
-__decorate$A([
+__decorate$w([
   s$9({ type: Boolean })
 ], Panel.prototype, "noAnimation", void 0);
-__decorate$A([
+__decorate$w([
   s$9()
 ], Panel.prototype, "accessibleRole", void 0);
-__decorate$A([
+__decorate$w([
   s$9()
 ], Panel.prototype, "headerLevel", void 0);
-__decorate$A([
+__decorate$w([
   s$9()
 ], Panel.prototype, "accessibleName", void 0);
-__decorate$A([
+__decorate$w([
   s$9({ type: Boolean })
 ], Panel.prototype, "stickyHeader", void 0);
-__decorate$A([
+__decorate$w([
   s$9({ type: Boolean })
 ], Panel.prototype, "useAccessibleNameForToggleButton", void 0);
-__decorate$A([
+__decorate$w([
   s$9({ type: Boolean })
 ], Panel.prototype, "_hasHeader", void 0);
-__decorate$A([
+__decorate$w([
   s$9({ type: Boolean, noAttribute: true })
 ], Panel.prototype, "_contentExpanded", void 0);
-__decorate$A([
+__decorate$w([
   s$9({ type: Boolean, noAttribute: true })
 ], Panel.prototype, "_animationRunning", void 0);
-__decorate$A([
+__decorate$w([
   d$8()
 ], Panel.prototype, "header", void 0);
-__decorate$A([
+__decorate$w([
   i$b("@ui5/webcomponents")
 ], Panel, "i18nBundle", void 0);
-Panel = Panel_1 = __decorate$A([
+Panel = Panel_1 = __decorate$w([
   m$8({
     tag: "ui5-panel",
     fastNavigation: true,
@@ -27899,18 +28738,18 @@ Panel = Panel_1 = __decorate$A([
   })
 ], Panel);
 Panel.define();
-const name$m = "slim-arrow-up";
-const pathData$l = "M261.5 197q-6-6-11 0l-160 160q-5 5-11.5 5t-11.5-5-5-11.5 5-11.5l166-165q9-9 22-9t23 9l165 165q5 5 5 11t-5 11q-12 12-23 0z";
-const ltr$l = false;
-const collection$l = "SAP-icons-v4";
-const packageName$l = "@ui5/webcomponents-icons";
-y$2(name$m, { pathData: pathData$l, ltr: ltr$l, collection: collection$l, packageName: packageName$l });
-const name$l = "slim-arrow-up";
-const pathData$k = "M96 326q0-10 7-17l135-141q6-8 18-8 11 0 19 8l134 141q7 7 7 17 0 11-7.5 18.5T390 352q-10 0-18-8L256 223 140 344q-8 8-18 8-11 0-18.5-7.5T96 326z";
-const ltr$k = false;
-const collection$k = "SAP-icons-v5";
-const packageName$k = "@ui5/webcomponents-icons";
-y$2(name$l, { pathData: pathData$k, ltr: ltr$k, collection: collection$k, packageName: packageName$k });
+const name$k = "slim-arrow-up";
+const pathData$j = "M261.5 197q-6-6-11 0l-160 160q-5 5-11.5 5t-11.5-5-5-11.5 5-11.5l166-165q9-9 22-9t23 9l165 165q5 5 5 11t-5 11q-12 12-23 0z";
+const ltr$j = false;
+const collection$j = "SAP-icons-v4";
+const packageName$j = "@ui5/webcomponents-icons";
+y$2(name$k, { pathData: pathData$j, ltr: ltr$j, collection: collection$j, packageName: packageName$j });
+const name$j = "slim-arrow-up";
+const pathData$i = "M96 326q0-10 7-17l135-141q6-8 18-8 11 0 19 8l134 141q7 7 7 17 0 11-7.5 18.5T390 352q-10 0-18-8L256 223 140 344q-8 8-18 8-11 0-18.5-7.5T96 326z";
+const ltr$i = false;
+const collection$i = "SAP-icons-v5";
+const packageName$i = "@ui5/webcomponents-icons";
+y$2(name$j, { pathData: pathData$i, ltr: ltr$i, collection: collection$i, packageName: packageName$i });
 let a$1 = null, l2 = Date.now();
 const s = 300, D = (g2) => (u4, i3, e2) => {
   const o2 = e2.value;
@@ -27983,7 +28822,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const tabContainerCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:block;width:100%}.ui5-tc-root{display:flex;flex-direction:column;width:100%;height:100%;font-family:var(--sapFontHeaderFamily);font-size:1rem}.ui5-tc__header{position:relative;display:flex;align-items:center;background-color:var(--_ui5-v2-17-0_tc_header_background);--ui5-v2-17-0_tc_header_active_background_color: var(--_ui5-v2-17-0_tc_header_background);height:var(--_ui5-v2-17-0_tc_header_height);box-shadow:var(--_ui5-v2-17-0_tc_header_box_shadow);box-sizing:border-box}:host([tabs-placement="Bottom"]) .ui5-tc__header{border-top:var(--_ui5-v2-17-0_tc_header_border_bottom)}:host([header-background-design="Transparent"]) .ui5-tc__header{background-color:transparent;--ui5-v2-17-0_tc_header_active_background_color: transparent;box-shadow:none;border-bottom:.0625rem solid var(--sapObjectHeader_BorderColor)}:host([header-background-design="Translucent"]) .ui5-tc__header{background-color:var(--_ui5-v2-17-0_tc_header_background_translucent);--ui5-v2-17-0_tc_header_active_background_color: var(--_ui5-v2-17-0_tc_header_background_translucent)}.ui5-tc-root.ui5-tc--textOnly .ui5-tc__header{height:var(--_ui5-v2-17-0_tc_header_height_text_only)}.ui5-tc-root.ui5-tc--textOnly.ui5-tc--withAdditionalText.ui5-tc--standardTabLayout .ui5-tc__header{height:var(--_ui5-v2-17-0_tc_header_height_text_with_additional_text)}.ui5-tc__tabStrip{flex:1;display:flex;overflow:hidden;box-sizing:border-box;position:relative;white-space:nowrap}.ui5-tc__separator:focus{outline:none}.ui5-tc__overflow{flex:0 0 0}.ui5-tc__overflow.ui5-tc__overflow--end{padding-inline-start:.188rem;margin-inline-end:1rem}.ui5-tc__overflow.ui5-tc__overflow--start{margin-inline-start:1rem}.ui5-tc__overflow[hidden]{display:none}.ui5-tc__overflow>[ui5-button]{border-radius:.75rem;height:1.5rem;--_ui5-v2-17-0_button_focused_border_radius: .75rem}.ui5-tc__overflow>[ui5-button]:not([active]){color:var(--_ui5-v2-17-0_tc_overflow_text_color)}.ui5-tc__overflow>[ui5-button]:not([active]):hover{color:var(--_ui5-v2-17-0_tc_overflow_text_color)}.ui5-tc__overflow>[ui5-button][focused]{outline-offset:.125rem;--_ui5-v2-17-0_button_focused_border: none;outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor)}.ui5-tc-root.ui5-tc--textOnly .ui5-tc__content{height:calc(100% - var(--_ui5-v2-17-0_tc_header_height_text_only))}.ui5-tc__content{position:relative;display:flex;height:calc(100% - var(--_ui5-v2-17-0_tc_header_height));background-color:var(--_ui5-v2-17-0_tc_content_background);border-bottom:var(--_ui5-v2-17-0_tc_content_border_bottom);box-sizing:border-box}:host([tabs-placement="Bottom"]) .ui5-tc__content{border-top:var(--_ui5-v2-17-0_tc_content_border_bottom)}:host([content-background-design="Transparent"]) .ui5-tc__content{background-color:transparent}:host([content-background-design="Translucent"]) .ui5-tc__content{background-color:var(--_ui5-v2-17-0_tc_content_background_translucent)}:host([header-background-design="Transparent"]) .ui5-tc__content{border-bottom:none}.ui5-tc__content--collapsed{display:none}.ui5-tc--transparent .ui5-tc__content{background-color:transparent}.ui5-tc__contentItem{max-height:100%;display:flex;flex-grow:1;overflow:auto}.ui5-tc__contentItem[hidden]{display:none}.ui5-tc__header{padding:0}.ui5-tc__content{padding:1rem}:host([media-range="M"]) .ui5-tc__header,:host([media-range="L"]) .ui5-tc__header{padding:0 1rem}:host([media-range="M"]) .ui5-tc__content,:host([media-range="L"]) .ui5-tc__content{padding:1rem 2rem}:host([media-range="XL"]) .ui5-tc__header{padding:0 2rem}:host([media-range="XL"]) .ui5-tc__content{padding:1rem 3rem}.ui5-tc-root.ui5-tc--noTabSelected .ui5-tc__content{padding:0}
 `;
-var __decorate$z = function(decorators, target, key, desc) {
+var __decorate$v = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -28893,52 +29732,52 @@ let TabContainer = TabContainer_1 = class TabContainer2 extends b$7 {
     return this.hasItems ? `${this._id}-invisibleText` : void 0;
   }
 };
-__decorate$z([
+__decorate$v([
   s$9({ type: Boolean })
 ], TabContainer.prototype, "collapsed", void 0);
-__decorate$z([
+__decorate$v([
   s$9()
 ], TabContainer.prototype, "tabLayout", void 0);
-__decorate$z([
+__decorate$v([
   s$9()
 ], TabContainer.prototype, "overflowMode", void 0);
-__decorate$z([
+__decorate$v([
   s$9()
 ], TabContainer.prototype, "headerBackgroundDesign", void 0);
-__decorate$z([
+__decorate$v([
   s$9()
 ], TabContainer.prototype, "contentBackgroundDesign", void 0);
-__decorate$z([
+__decorate$v([
   s$9()
 ], TabContainer.prototype, "tabsPlacement", void 0);
-__decorate$z([
+__decorate$v([
   s$9({ type: Boolean })
 ], TabContainer.prototype, "noAutoSelection", void 0);
-__decorate$z([
+__decorate$v([
   s$9()
 ], TabContainer.prototype, "mediaRange", void 0);
-__decorate$z([
+__decorate$v([
   s$9({ type: Object })
 ], TabContainer.prototype, "_selectedTab", void 0);
-__decorate$z([
+__decorate$v([
   s$9({ type: Boolean, noAttribute: true })
 ], TabContainer.prototype, "_animationRunning", void 0);
-__decorate$z([
+__decorate$v([
   s$9({ type: Boolean, noAttribute: true })
 ], TabContainer.prototype, "_contentCollapsed", void 0);
-__decorate$z([
+__decorate$v([
   s$9({ noAttribute: true })
 ], TabContainer.prototype, "_startOverflowText", void 0);
-__decorate$z([
+__decorate$v([
   s$9({ noAttribute: true })
 ], TabContainer.prototype, "_endOverflowText", void 0);
-__decorate$z([
+__decorate$v([
   s$9({ type: Array })
 ], TabContainer.prototype, "_popoverItemsFlat", void 0);
-__decorate$z([
+__decorate$v([
   s$9({ type: Number, noAttribute: true })
 ], TabContainer.prototype, "_width", void 0);
-__decorate$z([
+__decorate$v([
   d$8({
     "default": true,
     type: HTMLElement,
@@ -28949,19 +29788,19 @@ __decorate$z([
     }
   })
 ], TabContainer.prototype, "items", void 0);
-__decorate$z([
+__decorate$v([
   d$8()
 ], TabContainer.prototype, "overflowButton", void 0);
-__decorate$z([
+__decorate$v([
   d$8()
 ], TabContainer.prototype, "startOverflowButton", void 0);
-__decorate$z([
+__decorate$v([
   D("[data-ui5-stable=overflow-start],[data-ui5-stable=overflow-end],[role=tab]")
 ], TabContainer.prototype, "_onHeaderDragOver", null);
-__decorate$z([
+__decorate$v([
   i$b("@ui5/webcomponents")
 ], TabContainer, "i18nBundle", void 0);
-TabContainer = TabContainer_1 = __decorate$z([
+TabContainer = TabContainer_1 = __decorate$v([
   m$8({
     tag: "ui5-tabcontainer",
     languageAware: true,
@@ -29033,7 +29872,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const overflowCss$1 = `.ui5-tab-semantic-icon{display:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_display);height:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_size);width:var(--_ui5-v2-17-0_tc_headerItemSemanticIcon_size);margin-inline-end:.5rem}.ui5-tab-semantic-icon--positive{color:var(--sapPositiveTextColor)}.ui5-tab-semantic-icon--negative{color:var(--sapNegativeTextColor)}.ui5-tab-semantic-icon--critical{color:var(--sapCriticalTextColor)}.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}.ui5-tab-overflow-item{color:var(--_ui5-v2-17-0_tc_overflowItem_default_color)}.ui5-tab-overflow-item--disabled{cursor:default;opacity:var(--sapContent_DisabledOpacity)}.ui5-tab-overflow-item[hidden]{display:none}.ui5-tab-overflow-item--positive:not(.ui5-tab-overflow-item--disabled) .ui5-tab-overflow-itemContent{color:var(--_ui5-v2-17-0_tc_overflowItem_positive_color)}.ui5-tab-overflow-item--negative:not(.ui5-tab-overflow-item--disabled) .ui5-tab-overflow-itemContent{color:var(--_ui5-v2-17-0_tc_overflowItem_negative_color)}.ui5-tab-overflow-item--critical:not(.ui5-tab-overflow-item--disabled) .ui5-tab-overflow-itemContent{color:var(--_ui5-v2-17-0_tc_overflowItem_critical_color)}.ui5-tab-overflow-item[active] .ui5-tab-overflow-itemContent{color:var(--sapList_Active_TextColor)}.ui5-tab-overflow-itemContent{display:flex;align-items:center;position:relative;height:var(--_ui5-v2-17-0_tc_item_text);pointer-events:none;font-size:.875rem}.ui5-tab-overflow-itemContent-wrapper{padding-inline-start:calc((calc(var(--_ui5-v2-17-0-tab-indentation-level) + var(--_ui5-v2-17-0-tab-level-has-icon) * var(--_ui5-v2-17-0_tc_overflowItem_additional, 0))) * (var(--_ui5-v2-17-0_tc_overflowItem_indent) + var(--_ui5-v2-17-0_tc_overflowItem_extra_indent)))}.ui5-tab-overflow-item .ui5-tab-semantic-icon{position:absolute;inset-inline-start:-1.25rem}.ui5-tab-overflow-item--selectedSubTab{background-color:var(--sapList_SelectionBackgroundColor)}.ui5-tab-overflow-item [ui5-icon]:not(.ui5-tab-semantic-icon){width:1.375rem;height:1.375rem;padding-inline-end:.75rem;color:var(--_ui5-v2-17-0_tc_overflowItem_current_color)}.ui5-tab-container-responsive-popover [ui5-li-custom][focused]::part(native-li):after{inset:var(--_ui5-v2-17-0_tc_overflowItem_focus_offset)}.ui5-tab-container-responsive-popover::part(content){padding:0}
 `;
-var __decorate$y = function(decorators, target, key, desc) {
+var __decorate$u = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -29307,34 +30146,34 @@ let Tab = Tab_1 = class Tab2 extends b$7 {
     }
   }
 };
-__decorate$y([
+__decorate$u([
   s$9()
 ], Tab.prototype, "text", void 0);
-__decorate$y([
+__decorate$u([
   s$9({ type: Boolean })
 ], Tab.prototype, "disabled", void 0);
-__decorate$y([
+__decorate$u([
   s$9()
 ], Tab.prototype, "additionalText", void 0);
-__decorate$y([
+__decorate$u([
   s$9()
 ], Tab.prototype, "icon", void 0);
-__decorate$y([
+__decorate$u([
   s$9()
 ], Tab.prototype, "design", void 0);
-__decorate$y([
+__decorate$u([
   s$9({ type: Boolean })
 ], Tab.prototype, "selected", void 0);
-__decorate$y([
+__decorate$u([
   s$9({ type: Boolean })
 ], Tab.prototype, "movable", void 0);
-__decorate$y([
+__decorate$u([
   s$9({ type: Boolean })
 ], Tab.prototype, "_isTopLevelTab", void 0);
-__decorate$y([
+__decorate$u([
   s$9({ type: Object })
 ], Tab.prototype, "_selectedTabReference", void 0);
-__decorate$y([
+__decorate$u([
   d$8({
     type: Node,
     "default": true,
@@ -29344,7 +30183,7 @@ __decorate$y([
     }
   })
 ], Tab.prototype, "content", void 0);
-__decorate$y([
+__decorate$u([
   d$8({
     type: HTMLElement,
     individualSlots: true,
@@ -29354,10 +30193,10 @@ __decorate$y([
     }
   })
 ], Tab.prototype, "items", void 0);
-__decorate$y([
+__decorate$u([
   i$b("@ui5/webcomponents")
 ], Tab, "i18nBundle", void 0);
-Tab = Tab_1 = __decorate$y([
+Tab = Tab_1 = __decorate$u([
   m$8({
     tag: "ui5-tab",
     languageAware: true,
@@ -29391,7 +30230,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const overflowCss = `[ui5-li-custom].ui5-tc__separator{min-height:.25rem;border-bottom:.0625rem solid var(--sapGroup_TitleBorderColor);margin-inline-start:calc(var(--_ui5-v2-17-0-tab-indentation-level) * .5rem);margin-inline-end:.5rem}[ui5-list]>[ui5-li-custom].ui5-tc__separator:first-child{min-height:.5rem}
 `;
-var __decorate$x = function(decorators, target, key, desc) {
+var __decorate$t = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -29439,7 +30278,7 @@ let TabSeparator = TabSeparator_1 = class TabSeparator2 extends b$7 {
     }
   }
 };
-TabSeparator = TabSeparator_1 = __decorate$x([
+TabSeparator = TabSeparator_1 = __decorate$t([
   m$8({
     tag: "ui5-tab-separator",
     renderer: y$5
@@ -29455,7 +30294,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const BarCss = `:host{background-color:var(--sapPageHeader_Background);height:var(--_ui5-v2-17-0_bar_base_height);width:100%;box-shadow:var(--sapContent_HeaderShadow);display:block}.ui5-bar-root{display:flex;align-items:center;justify-content:space-between;height:100%;width:100%;background-color:inherit;box-shadow:inherit;border-radius:inherit;min-width:0;overflow:hidden}.ui5-bar-root .ui5-bar-startcontent-container,.ui5-bar-root .ui5-bar-endcontent-container,.ui5-bar-root .ui5-bar-midcontent-container{display:flex;align-items:center}.ui5-bar-root .ui5-bar-startcontent-container{flex:0 1 auto}.ui5-bar-root .ui5-bar-endcontent-container{flex:0 0 auto}.ui5-bar-root .ui5-bar-midcontent-container{justify-content:center;flex:1 1 auto;padding:0 var(--_ui5-v2-17-0_bar-mid-container-padding-start-end);min-width:0;overflow:hidden}.ui5-bar-root .ui5-bar-startcontent-container{padding-inline-start:var(--_ui5-v2-17-0_bar-start-container-padding-start)}.ui5-bar-root .ui5-bar-content-container{min-width:calc(30% - calc(var(--_ui5-v2-17-0_bar-start-container-padding-start) + var(--_ui5-v2-17-0_bar-end-container-padding-end) + (2*var(--_ui5-v2-17-0_bar-mid-container-padding-start-end))))}.ui5-bar-root.ui5-bar-root-shrinked .ui5-bar-content-container{min-width:0px;overflow:hidden;height:100%}.ui5-bar-root .ui5-bar-endcontent-container{padding-inline-end:var(--_ui5-v2-17-0_bar-end-container-padding-end)}:host([design="Footer"]){background-color:var(--sapPageFooter_Background);border-top:.0625rem solid var(--sapPageFooter_BorderColor);box-shadow:none}:host([design="Subheader"]){height:var(--_ui5-v2-17-0_bar_subheader_height);margin-top:var(--_ui5-v2-17-0_bar_subheader_margin-top)}:host([design="FloatingFooter"]){border-radius:var(--sapElement_BorderCornerRadius);background-color:var(--sapPageFooter_Background);box-shadow:var(--sapContent_Shadow1);border:none}::slotted(*){margin:0 .25rem;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-sizing:border-box}
 `;
-var __decorate$w = function(decorators, target, key, desc) {
+var __decorate$s = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -29504,28 +30343,28 @@ let Bar = class Bar2 extends b$7 {
     return this.accessibleRole.toLowerCase() === "toolbar" ? "toolbar" : void 0;
   }
 };
-__decorate$w([
+__decorate$s([
   s$9()
 ], Bar.prototype, "design", void 0);
-__decorate$w([
+__decorate$s([
   s$9()
 ], Bar.prototype, "accessibleRole", void 0);
-__decorate$w([
+__decorate$s([
   s$9()
 ], Bar.prototype, "accessibleName", void 0);
-__decorate$w([
+__decorate$s([
   s$9()
 ], Bar.prototype, "accessibleNameRef", void 0);
-__decorate$w([
+__decorate$s([
   d$8({ type: HTMLElement })
 ], Bar.prototype, "startContent", void 0);
-__decorate$w([
+__decorate$s([
   d$8({ type: HTMLElement, "default": true })
 ], Bar.prototype, "middleContent", void 0);
-__decorate$w([
+__decorate$s([
   d$8({ type: HTMLElement })
 ], Bar.prototype, "endContent", void 0);
-Bar = __decorate$w([
+Bar = __decorate$s([
   m$8({
     tag: "ui5-bar",
     fastNavigation: true,
@@ -33588,6 +34427,311 @@ class UI5ToastCard extends BaseUI5Card {
 if (!customElements.get("ui5-toast-card")) {
   customElements.define("ui5-toast-card", UI5ToastCard);
 }
+class UI5DialogCard extends BaseUI5Card {
+  setConfig(config) {
+    if (!config.type) {
+      throw new Error("Card type is required");
+    }
+    super.setConfig(config);
+  }
+  get config() {
+    return this._config;
+  }
+  render() {
+    if (!this._hass || !this.config) {
+      return;
+    }
+    const entityState = this.config.entity ? this.getEntityState() : void 0;
+    const isUnavailable = entityState === "unavailable";
+    let displayContent = this.config.content || "";
+    if (!displayContent && this.config.entity) {
+      const entity = this._hass.states[this.config.entity];
+      if (entity) {
+        const name2 = entity.attributes.friendly_name || this.config.entity;
+        const state2 = entity.state;
+        const unit = entity.attributes.unit_of_measurement || "";
+        displayContent = `${name2}: ${state2}${unit ? " " + unit : ""}`;
+      }
+    }
+    displayContent = this.processTemplateEscaped(displayContent);
+    const headerText = this.processTemplateEscaped(this.config.header_text || "Dialog");
+    const state = this.config.state || "None";
+    const draggable = this.config.draggable !== false;
+    const resizable = this.config.resizable === true;
+    const stretch = this.config.stretch === true;
+    const buttonText = this.config.button_text || "Open Dialog";
+    const showCloseButton = this.config.show_close_button !== false;
+    this.shadowRoot.innerHTML = `
+      <style>
+        :host {
+          display: block;
+        }
+        .dialog-container {
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          align-items: center;
+        }
+        .unavailable {
+          opacity: 0.5;
+        }
+      </style>
+      <div class="dialog-container ${isUnavailable ? "unavailable" : ""}">
+        <ui5-button id="open-dialog" design="Emphasized">${buttonText}</ui5-button>
+        <ui5-dialog
+          id="dialog"
+          header-text="${headerText}"
+          state="${state}"
+          ${draggable ? "draggable" : ""}
+          ${resizable ? "resizable" : ""}
+          ${stretch ? "stretch" : ""}
+        >
+          <div slot="content" style="padding: 1rem;">
+            ${displayContent || "Dialog content goes here."}
+          </div>
+          ${showCloseButton ? `<ui5-button id="close-dialog" slot="footer" design="Emphasized">Close</ui5-button>` : ""}
+        </ui5-dialog>
+      </div>
+    `;
+    const openButton = this.shadowRoot.querySelector("#open-dialog");
+    if (openButton) {
+      openButton.addEventListener("click", () => this.openDialog());
+    }
+    const closeButton = this.shadowRoot.querySelector("#close-dialog");
+    if (closeButton) {
+      closeButton.addEventListener("click", () => this.closeDialog());
+    }
+  }
+  openDialog() {
+    const dialog = this.shadowRoot.querySelector("ui5-dialog");
+    if (dialog == null ? void 0 : dialog.show) {
+      dialog.show();
+    }
+  }
+  closeDialog() {
+    const dialog = this.shadowRoot.querySelector("ui5-dialog");
+    if (dialog == null ? void 0 : dialog.close) {
+      dialog.close();
+    }
+  }
+  static getStubConfig() {
+    return {
+      type: "custom:ui5-dialog-card",
+      header_text: "Dialog Title",
+      content: "This is the dialog content.",
+      button_text: "Open Dialog"
+    };
+  }
+}
+if (!customElements.get("ui5-dialog-card")) {
+  customElements.define("ui5-dialog-card", UI5DialogCard);
+}
+class UI5PopoverCard extends BaseUI5Card {
+  setConfig(config) {
+    if (!config.type) {
+      throw new Error("Card type is required");
+    }
+    super.setConfig(config);
+  }
+  get config() {
+    return this._config;
+  }
+  render() {
+    if (!this._hass || !this.config) {
+      return;
+    }
+    const entityState = this.config.entity ? this.getEntityState() : void 0;
+    const isUnavailable = entityState === "unavailable";
+    let displayContent = this.config.content || "";
+    if (!displayContent && this.config.entity) {
+      const entity = this._hass.states[this.config.entity];
+      if (entity) {
+        const name2 = entity.attributes.friendly_name || this.config.entity;
+        const state = entity.state;
+        const unit = entity.attributes.unit_of_measurement || "";
+        displayContent = `${name2}: ${state}${unit ? " " + unit : ""}`;
+      }
+    }
+    displayContent = this.processTemplateEscaped(displayContent);
+    const headerText = this.processTemplateEscaped(this.config.header_text || "");
+    const placement = this.config.placement || "Bottom";
+    const horizontalAlign = this.config.horizontal_align || "Center";
+    const verticalAlign = this.config.vertical_align || "Center";
+    const buttonText = this.config.button_text || "Show Popover";
+    const showArrow = this.config.show_arrow !== false;
+    this.shadowRoot.innerHTML = `
+      <style>
+        :host {
+          display: block;
+        }
+        .popover-container {
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          align-items: center;
+        }
+        .popover-content {
+          padding: 1rem;
+        }
+        .unavailable {
+          opacity: 0.5;
+        }
+      </style>
+      <div class="popover-container ${isUnavailable ? "unavailable" : ""}">
+        <ui5-button id="popover-opener" design="Default">${buttonText}</ui5-button>
+        <ui5-popover
+          id="popover"
+          ${headerText ? `header-text="${headerText}"` : ""}
+          placement="${placement}"
+          horizontal-align="${horizontalAlign}"
+          vertical-align="${verticalAlign}"
+          ${showArrow ? "" : "hide-arrow"}
+        >
+          <div class="popover-content">
+            ${displayContent || "Popover content"}
+          </div>
+        </ui5-popover>
+      </div>
+    `;
+    const opener2 = this.shadowRoot.querySelector("#popover-opener");
+    if (opener2) {
+      opener2.addEventListener("click", () => this.handleTogglePopover());
+    }
+  }
+  handleTogglePopover() {
+    const popover = this.shadowRoot.querySelector("ui5-popover");
+    const opener2 = this.shadowRoot.querySelector("#popover-opener");
+    if (popover && opener2) {
+      if (popover.isOpen && popover.isOpen()) {
+        popover.close();
+      } else if (popover.open) {
+        popover.open(opener2);
+      }
+    }
+  }
+  static getStubConfig() {
+    return {
+      type: "custom:ui5-popover-card",
+      header_text: "Information",
+      content: "This is the popover content.",
+      button_text: "Show Details",
+      placement: "Bottom"
+    };
+  }
+}
+if (!customElements.get("ui5-popover-card")) {
+  customElements.define("ui5-popover-card", UI5PopoverCard);
+}
+class UI5MenuCard extends BaseUI5Card {
+  setConfig(config) {
+    if (!config.type) {
+      throw new Error("Card type is required");
+    }
+    super.setConfig(config);
+  }
+  get config() {
+    return this._config;
+  }
+  render() {
+    if (!this._hass || !this.config) {
+      return;
+    }
+    const entityState = this.config.entity ? this.getEntityState() : void 0;
+    const isUnavailable = entityState === "unavailable";
+    const buttonText = this.config.button_text || "Menu";
+    const items = this.config.items || [];
+    const itemsHtml = items.map((item, index) => {
+      const text = this.processTemplateEscaped(item.text);
+      const icon = item.icon || "";
+      const disabled = item.disabled === true;
+      const startsSection = item.starts_section === true;
+      return `
+          <ui5-menu-item
+            id="menu-item-${index}"
+            text="${text}"
+            ${icon ? `icon="${icon}"` : ""}
+            ${disabled ? "disabled" : ""}
+            ${startsSection ? "starts-section" : ""}
+            data-index="${index}"
+          ></ui5-menu-item>
+        `;
+    }).join("");
+    this.shadowRoot.innerHTML = `
+      <style>
+        :host {
+          display: block;
+        }
+        .menu-container {
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          align-items: center;
+        }
+        .unavailable {
+          opacity: 0.5;
+        }
+      </style>
+      <div class="menu-container ${isUnavailable ? "unavailable" : ""}">
+        <ui5-button id="menu-opener" icon="overflow" design="Default">${buttonText}</ui5-button>
+        <ui5-menu id="menu">
+          ${itemsHtml || '<ui5-menu-item text="No items"></ui5-menu-item>'}
+        </ui5-menu>
+      </div>
+    `;
+    const opener2 = this.shadowRoot.querySelector("#menu-opener");
+    if (opener2) {
+      opener2.addEventListener("click", () => this.openMenu());
+    }
+    const menu = this.shadowRoot.querySelector("#menu");
+    if (menu) {
+      menu.addEventListener("item-click", (e2) => this.handleItemClick(e2));
+    }
+  }
+  openMenu() {
+    const menu = this.shadowRoot.querySelector("#menu");
+    const opener2 = this.shadowRoot.querySelector("#menu-opener");
+    if ((menu == null ? void 0 : menu.open) && opener2) {
+      menu.open(opener2);
+    }
+  }
+  handleItemClick(event) {
+    var _a2, _b2, _c;
+    const detail = event.detail;
+    const item = detail == null ? void 0 : detail.item;
+    if (!item) return;
+    const index = parseInt(item.getAttribute("data-index") || "0", 10);
+    const itemConfig = (_b2 = (_a2 = this.config) == null ? void 0 : _a2.items) == null ? void 0 : _b2[index];
+    if ((itemConfig == null ? void 0 : itemConfig.service) && this._hass) {
+      const [domain, service] = itemConfig.service.split(".");
+      if (domain && service) {
+        const serviceData = {
+          ...itemConfig.service_data
+        };
+        if ((_c = this.config) == null ? void 0 : _c.entity) {
+          serviceData.entity_id = this.config.entity;
+        }
+        this._hass.callService(domain, service, serviceData);
+      }
+    }
+  }
+  static getStubConfig() {
+    return {
+      type: "custom:ui5-menu-card",
+      button_text: "Actions",
+      items: [
+        { text: "Option 1", icon: "action" },
+        { text: "Option 2", icon: "settings" },
+        { text: "Option 3", starts_section: true }
+      ]
+    };
+  }
+}
+if (!customElements.get("ui5-menu-card")) {
+  customElements.define("ui5-menu-card", UI5MenuCard);
+}
 const CARD_DEFINITIONS = [
   {
     type: "custom:ui5-button-card",
@@ -33732,6 +34876,24 @@ const CARD_DEFINITIONS = [
     name: "UI5 Toast Card",
     description: "A toast notification triggered by entity changes",
     preview: true
+  },
+  {
+    type: "custom:ui5-dialog-card",
+    name: "UI5 Dialog Card",
+    description: "A modal dialog for displaying content and confirmations",
+    preview: true
+  },
+  {
+    type: "custom:ui5-popover-card",
+    name: "UI5 Popover Card",
+    description: "A popover for showing additional information on demand",
+    preview: true
+  },
+  {
+    type: "custom:ui5-menu-card",
+    name: "UI5 Menu Card",
+    description: "A dropdown menu for actions and options",
+    preview: true
   }
 ];
 function registerCards() {
@@ -33789,16 +34951,16 @@ function f3(r3, e2) {
   }), o2;
 }
 function SuggestionItemTemplate() {
-  return [ListItemBaseTemplate.call(this, { listItemContent: listItemContent$2 }, { role: "option" })];
+  return [ListItemBaseTemplate.call(this, { listItemContent: listItemContent$1 }, { role: "option" })];
 }
-function listItemContent$2() {
+function listItemContent$1() {
   return jsx("div", { part: "content", id: "content", class: "ui5-li-content", children: jsxs("div", { class: "ui5-li-text-wrapper", children: [jsx("span", { part: "title", className: "ui5-li-title", dangerouslySetInnerHTML: { __html: this.markupText } }), this.additionalText && jsx("span", { part: "additional-text", class: "ui5-li-additional-text", children: this.additionalText })] }) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const styles$1 = `:host([ui5-suggestion-item]){height:auto;min-height:var(--_ui5-v2-17-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-root{min-height:var(--_ui5-v2-17-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-content{padding-bottom:.5rem;padding-top:.5rem;box-sizing:border-box}
 `;
-var __decorate$v = function(decorators, target, key, desc) {
+var __decorate$r = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -33818,16 +34980,16 @@ let SuggestionItem = class SuggestionItem2 extends ListItemBase$1 {
     return -1;
   }
 };
-__decorate$v([
+__decorate$r([
   s$9()
 ], SuggestionItem.prototype, "text", void 0);
-__decorate$v([
+__decorate$r([
   s$9()
 ], SuggestionItem.prototype, "additionalText", void 0);
-__decorate$v([
+__decorate$r([
   s$9()
 ], SuggestionItem.prototype, "markupText", void 0);
-SuggestionItem = __decorate$v([
+SuggestionItem = __decorate$r([
   m$8({
     tag: "ui5-suggestion-item",
     template: SuggestionItemTemplate,
@@ -33842,7 +35004,7 @@ function ListItemGroupTemplate(hooks) {
 function defaultItems() {
   return jsx("slot", {});
 }
-var __decorate$u = function(decorators, target, key, desc) {
+var __decorate$q = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -33850,14 +35012,14 @@ var __decorate$u = function(decorators, target, key, desc) {
 };
 let SuggestionItemGroup = class SuggestionItemGroup2 extends ListItemGroup$1 {
 };
-__decorate$u([
+__decorate$q([
   d$8({
     "default": true,
     invalidateOnChildChange: true,
     type: HTMLElement
   })
 ], SuggestionItemGroup.prototype, "items", void 0);
-SuggestionItemGroup = __decorate$u([
+SuggestionItemGroup = __decorate$q([
   m$8({
     tag: "ui5-suggestion-item-group",
     template: ListItemGroupTemplate
@@ -34273,7 +35435,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const styles = `:host{max-width:100%;font-size:var(--sapFontSize);font-family:var(--sapFontFamily);color:var(--sapTextColor);line-height:normal;cursor:text;overflow:hidden}:host([max-lines="1"]){display:inline-block;text-overflow:ellipsis;white-space:nowrap}:host(:not([max-lines="1"])){display:-webkit-box;-webkit-line-clamp:var(--_ui5-v2-17-0_text_max_lines);line-clamp:var(--_ui5-v2-17-0_text_max_lines);-webkit-box-orient:vertical;white-space:normal;word-wrap:break-word}.empty-indicator-aria-label{position:absolute!important;clip:rect(1px,1px,1px,1px);user-select:none;left:0;top:0;font-size:0}
 `;
-var __decorate$t = function(decorators, target, key, desc) {
+var __decorate$p = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -34302,19 +35464,19 @@ let Text = Text_1 = class Text2 extends b$7 {
     return Text_1.i18nBundle.getText(EMPTY_INDICATOR_SYMBOL);
   }
 };
-__decorate$t([
+__decorate$p([
   s$9({ type: Number })
 ], Text.prototype, "maxLines", void 0);
-__decorate$t([
+__decorate$p([
   s$9()
 ], Text.prototype, "emptyIndicatorMode", void 0);
-__decorate$t([
+__decorate$p([
   d$8({ type: Node, "default": true })
 ], Text.prototype, "text", void 0);
-__decorate$t([
+__decorate$p([
   i$b("@ui5/webcomponents")
 ], Text, "i18nBundle", void 0);
-Text = Text_1 = __decorate$t([
+Text = Text_1 = __decorate$p([
   m$8({
     tag: "ui5-text",
     renderer: y$5,
@@ -34338,7 +35500,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const linkCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-flex}:host{max-width:100%;color:var(--sapLinkColor);font-family:var(--sapFontFamily);font-size:var(--sapFontSize);cursor:pointer;outline:none;text-decoration:var(--_ui5-v2-17-0_link_text_decoration);text-shadow:var(--sapContent_TextShadow);white-space:normal;overflow-wrap:break-word}:host(:hover){color:var(--sapLink_Hover_Color);text-decoration:var(--_ui5-v2-17-0_link_hover_text_decoration)}:host(:active){color:var(--sapLink_Active_Color);text-decoration:var(--_ui5-v2-17-0_link_active_text_decoration)}:host([disabled]){pointer-events:none}:host([disabled]) .ui5-link-root{text-shadow:none;outline:none;cursor:default;pointer-events:none;opacity:var(--sapContent_DisabledOpacity)}:host([design="Emphasized"]) .ui5-link-root{font-family:var(--sapFontBoldFamily)}:host([design="Subtle"]){color:var(--sapLink_SubtleColor);text-decoration:var(--_ui5-v2-17-0_link_subtle_text_decoration)}:host([design="Subtle"]:hover:not(:active)){color:var(--sapLink_SubtleColor);text-decoration:var(--_ui5-v2-17-0_link_subtle_text_decoration_hover)}:host([wrapping-type="None"]){white-space:nowrap;overflow-wrap:normal}.ui5-link-root{max-width:100%;display:inline-block;position:relative;overflow:hidden;text-overflow:ellipsis;outline:none;white-space:inherit;overflow-wrap:inherit;text-decoration:inherit;color:inherit}:host([wrapping-type="None"][end-icon]) .ui5-link-root{display:inline-flex;align-items:end}:host .ui5-link-root{outline-offset:-.0625rem;border-radius:var(--_ui5-v2-17-0_link_focus_border-radius)}.ui5-link-icon,.ui5-link-end-icon{color:inherit;flex-shrink:0}.ui5-link-icon{float:inline-start;margin-inline-end:.125rem}.ui5-link-end-icon{margin-inline-start:.125rem;vertical-align:bottom}.ui5-link-text{overflow:hidden;text-overflow:ellipsis}.ui5-link-root:focus-visible,:host([desktop]) .ui5-link-root:focus-within,:host([design="Subtle"]) .ui5-link-root:focus-visible,:host([design="Subtle"][desktop]) .ui5-link-root:focus-within{background-color:var(--_ui5-v2-17-0_link_focus_background_color);outline:var(--_ui5-v2-17-0_link_outline);border-radius:var(--_ui5-v2-17-0_link_focus_border-radius);text-shadow:none;color:var(--_ui5-v2-17-0_link_focus_color)}:host(:not([desktop])) .ui5-link-root:focus-visible,:host([desktop]:focus-within),:host([design="Subtle"][desktop]:focus-within){text-decoration:var(--_ui5-v2-17-0_link_focus_text_decoration)}:host([desktop]:hover:not(:active):focus-within),:host([design="Subtle"][desktop]:hover:not(:active):focus-within){color:var(--_ui5-v2-17-0_link_focused_hover_text_color);text-decoration:var(--_ui5-v2-17-0_link_focused_hover_text_decoration)}:host([interactive-area-size="Large"]) .ui5-link-root{line-height:var(--_ui5-v2-17-0_link_large_interactive_area_height)}:host([interactive-area-size="Large"])::part(icon),:host([interactive-area-size="Large"])::part(endIcon){height:var(--_ui5-v2-17-0_link_large_interactive_area_height)}
 `;
-var __decorate$s = function(decorators, target, key, desc) {
+var __decorate$o = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -34436,58 +35598,58 @@ let Link = Link_1 = class Link2 extends b$7 {
     }
   }
 };
-__decorate$s([
+__decorate$o([
   s$9({ type: Boolean })
 ], Link.prototype, "disabled", void 0);
-__decorate$s([
+__decorate$o([
   s$9()
 ], Link.prototype, "tooltip", void 0);
-__decorate$s([
+__decorate$o([
   s$9()
 ], Link.prototype, "href", void 0);
-__decorate$s([
+__decorate$o([
   s$9()
 ], Link.prototype, "target", void 0);
-__decorate$s([
+__decorate$o([
   s$9()
 ], Link.prototype, "design", void 0);
-__decorate$s([
+__decorate$o([
   s$9()
 ], Link.prototype, "interactiveAreaSize", void 0);
-__decorate$s([
+__decorate$o([
   s$9()
 ], Link.prototype, "wrappingType", void 0);
-__decorate$s([
+__decorate$o([
   s$9()
 ], Link.prototype, "accessibleName", void 0);
-__decorate$s([
+__decorate$o([
   s$9()
 ], Link.prototype, "accessibleNameRef", void 0);
-__decorate$s([
+__decorate$o([
   s$9()
 ], Link.prototype, "accessibleRole", void 0);
-__decorate$s([
+__decorate$o([
   s$9({ type: Object })
 ], Link.prototype, "accessibilityAttributes", void 0);
-__decorate$s([
+__decorate$o([
   s$9()
 ], Link.prototype, "accessibleDescription", void 0);
-__decorate$s([
+__decorate$o([
   s$9()
 ], Link.prototype, "icon", void 0);
-__decorate$s([
+__decorate$o([
   s$9()
 ], Link.prototype, "endIcon", void 0);
-__decorate$s([
+__decorate$o([
   s$9({ noAttribute: true })
 ], Link.prototype, "_rel", void 0);
-__decorate$s([
+__decorate$o([
   s$9({ noAttribute: true })
 ], Link.prototype, "forcedTabIndex", void 0);
-__decorate$s([
+__decorate$o([
   i$b("@ui5/webcomponents")
 ], Link, "i18nBundle", void 0);
-Link = Link_1 = __decorate$s([
+Link = Link_1 = __decorate$o([
   m$8({
     tag: "ui5-link",
     languageAware: true,
@@ -34509,7 +35671,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const ExpandableTextCss = `:host{display:inline-block;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);color:var(--sapTextColor)}:host([hidden]){display:none}.ui5-exp-text-text{display:inline}.ui5-exp-text-text,.ui5-exp-text-toggle{font-family:inherit;font-size:inherit}.ui5-exp-text-text,.ui5-exp-text-ellipsis{color:inherit}.ui5-exp-text-popover::part(content){padding-inline:1rem}.ui5-exp-text-footer{width:100%;display:flex;align-items:center;justify-content:flex-end}
 `;
-var __decorate$r = function(decorators, target, key, desc) {
+var __decorate$n = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -34587,25 +35749,25 @@ let ExpandableText = ExpandableText_1 = class ExpandableText2 extends b$7 {
     e2.stopPropagation();
   }
 };
-__decorate$r([
+__decorate$n([
   s$9()
 ], ExpandableText.prototype, "text", void 0);
-__decorate$r([
+__decorate$n([
   s$9({ type: Number })
 ], ExpandableText.prototype, "maxCharacters", void 0);
-__decorate$r([
+__decorate$n([
   s$9()
 ], ExpandableText.prototype, "overflowMode", void 0);
-__decorate$r([
+__decorate$n([
   s$9()
 ], ExpandableText.prototype, "emptyIndicatorMode", void 0);
-__decorate$r([
+__decorate$n([
   s$9({ type: Boolean })
 ], ExpandableText.prototype, "_expanded", void 0);
-__decorate$r([
+__decorate$n([
   i$b("@ui5/webcomponents")
 ], ExpandableText, "i18nBundle", void 0);
-ExpandableText = ExpandableText_1 = __decorate$r([
+ExpandableText = ExpandableText_1 = __decorate$n([
   m$8({
     tag: "ui5-expandable-text",
     renderer: y$5,
@@ -34629,7 +35791,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const buttonBadgeCss = `[ui5-tag]::part(root){border:.0625rem solid var(--sapContent_BadgeBorderColor);background-color:var(--sapContent_BadgeBackground);color:var(--sapContent_BadgeTextColor);height:1rem;border-radius:.5rem;display:flex;align-items:center}:host([design="AttentionDot"]) [ui5-tag]::part(root){min-width:var(--_ui5-v2-17-0-button-badge-diameter);min-height:var(--_ui5-v2-17-0-button-badge-diameter);height:var(--_ui5-v2-17-0-button-badge-diameter);width:var(--_ui5-v2-17-0-button-badge-diameter);border-radius:100%}
 `;
-var __decorate$q = function(decorators, target, key, desc) {
+var __decorate$m = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -34645,13 +35807,13 @@ let ButtonBadge = class ButtonBadge2 extends b$7 {
     return this.design === ButtonBadgeDesign$1.AttentionDot ? "" : this.text;
   }
 };
-__decorate$q([
+__decorate$m([
   s$9()
 ], ButtonBadge.prototype, "design", void 0);
-__decorate$q([
+__decorate$m([
   s$9()
 ], ButtonBadge.prototype, "text", void 0);
-ButtonBadge = __decorate$q([
+ButtonBadge = __decorate$m([
   m$8({
     tag: "ui5-button-badge",
     renderer: y$5,
@@ -34661,845 +35823,6 @@ ButtonBadge = __decorate$q([
 ], ButtonBadge);
 ButtonBadge.define();
 const ButtonBadge$1 = ButtonBadge;
-const name$k = "nav-back";
-const pathData$j = "M375.5 426q9 9 9 22.5t-9 22.5q-10 10-23 10t-23-10l-192-192q-9-9-9-22.5t9-22.5l191-193q10-10 23-10t22 10q10 9 10 22t-10 23l-157 159q-5 5-5 11.5t5 11.5z";
-const ltr$j = false;
-const accData$5 = ICON_NAV_BACK;
-const collection$j = "SAP-icons-v4";
-const packageName$j = "@ui5/webcomponents-icons";
-y$2(name$k, { pathData: pathData$j, ltr: ltr$j, accData: accData$5, collection: collection$j, packageName: packageName$j });
-const name$j = "nav-back";
-const pathData$i = "M326 96q11 0 18.5 7.5T352 122q0 10-8 18L223 256l121 116q8 8 8 18 0 11-7.5 18.5T326 416q-10 0-17-7L168 274q-8-6-8-18 0-11 8-19l141-134q7-7 17-7z";
-const ltr$i = false;
-const accData$4 = ICON_NAV_BACK;
-const collection$i = "SAP-icons-v5";
-const packageName$i = "@ui5/webcomponents-icons";
-y$2(name$j, { pathData: pathData$i, ltr: ltr$i, accData: accData$4, collection: collection$i, packageName: packageName$i });
-const navBackIcon = "nav-back";
-var MenuItemGroupCheckMode;
-(function(MenuItemGroupCheckMode2) {
-  MenuItemGroupCheckMode2["None"] = "None";
-  MenuItemGroupCheckMode2["Single"] = "Single";
-  MenuItemGroupCheckMode2["Multiple"] = "Multiple";
-})(MenuItemGroupCheckMode || (MenuItemGroupCheckMode = {}));
-const MenuItemGroupCheckMode$1 = MenuItemGroupCheckMode;
-function MenuSeparatorTemplate() {
-  return jsx(ListItemCustom$1, { class: "ui5-menu-separator", _forcedAccessibleRole: "separator", disabled: true });
-}
-p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
-const menuSeparatorCss = `:host{border-top:.0625rem solid var(--sapGroup_ContentBorderColor);min-height:.125rem}.ui5-menu-separator{border:inherit;min-height:inherit;background:inherit;opacity:1}
-`;
-var __decorate$p = function(decorators, target, key, desc) {
-  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
-  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
-  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
-};
-let MenuSeparator = class MenuSeparator2 extends ListItemBase$1 {
-  get isSeparator() {
-    return true;
-  }
-  get classes() {
-    return {
-      main: {
-        "ui5-menu-separator": true
-      }
-    };
-  }
-  /**
-   * @override
-   */
-  get _focusable() {
-    return false;
-  }
-  /**
-   * @override
-   */
-  get _pressable() {
-    return false;
-  }
-};
-MenuSeparator = __decorate$p([
-  m$8({
-    tag: "ui5-menu-separator",
-    renderer: y$5,
-    styles: [menuSeparatorCss],
-    template: MenuSeparatorTemplate
-  })
-], MenuSeparator);
-const isInstanceOfMenuSeparator = (object) => {
-  return "isSeparator" in object;
-};
-MenuSeparator.define();
-function MenuItemGroupTemplate() {
-  return jsx("div", { role: "group", "aria-label": this.ariaLabelText, "onui5-check": this._handleItemCheck, children: jsx("slot", {}) });
-}
-var __decorate$o = function(decorators, target, key, desc) {
-  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
-  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
-  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
-};
-var MenuItemGroup_1;
-let MenuItemGroup = MenuItemGroup_1 = class MenuItemGroup2 extends b$7 {
-  constructor() {
-    super(...arguments);
-    this.checkMode = "None";
-  }
-  get ariaLabelText() {
-    switch (this.checkMode) {
-      case MenuItemGroupCheckMode$1.None:
-        return MenuItemGroup_1.i18nBundle.getText(MENU_ITEM_GROUP_NONE_ACCESSIBLE_NAME);
-      case MenuItemGroupCheckMode$1.Single:
-        return MenuItemGroup_1.i18nBundle.getText(MENU_ITEM_GROUP_SINGLE_ACCESSIBLE_NAME);
-      case MenuItemGroupCheckMode$1.Multiple:
-        return MenuItemGroup_1.i18nBundle.getText(MENU_ITEM_GROUP_MULTI_ACCESSIBLE_NAME);
-      default:
-        return void 0;
-    }
-  }
-  get isGroup() {
-    return true;
-  }
-  get _menuItems() {
-    return this.items.filter(isInstanceOfMenuItem);
-  }
-  onBeforeRendering() {
-    this._updateItemsCheckMode();
-    if (this.checkMode === MenuItemGroupCheckMode$1.Single) {
-      this._ensureSingleItemIsChecked();
-    }
-  }
-  /**
-   * Sets <code>_checkMode</code> property of all menu items in the group.
-   * @private
-   */
-  _updateItemsCheckMode() {
-    this._menuItems.forEach((item) => {
-      item._checkMode = this.checkMode;
-    });
-  }
-  /**
-   * Sets <code>checked</code> property of all items in the group to <code>false</code>.
-   * @private
-   */
-  _clearCheckedItems() {
-    this._menuItems.forEach((item) => {
-      item.checked = false;
-    });
-  }
-  /**
-   * Ensures that only one item can remain checked at any given time. If multiple items are marked as checked,
-   * the last checked item will take precedence.
-   * @private
-   */
-  _ensureSingleItemIsChecked() {
-    const lastCheckedItem = this._menuItems.findLast((item) => item.checked);
-    this._clearCheckedItems();
-    if (lastCheckedItem) {
-      lastCheckedItem.checked = true;
-    }
-  }
-  /**
-   * Handles the checking of an item in the group and unchecks other items if the item check mode is Single.
-   * @private
-   */
-  _handleItemCheck(e2) {
-    const clickedItem = e2.target;
-    const isChecked = clickedItem.checked;
-    if (this.checkMode === MenuItemGroupCheckMode$1.Single) {
-      this._clearCheckedItems();
-      clickedItem.checked = isChecked;
-    }
-  }
-};
-__decorate$o([
-  s$9()
-], MenuItemGroup.prototype, "checkMode", void 0);
-__decorate$o([
-  d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
-], MenuItemGroup.prototype, "items", void 0);
-__decorate$o([
-  i$b("@ui5/webcomponents")
-], MenuItemGroup, "i18nBundle", void 0);
-MenuItemGroup = MenuItemGroup_1 = __decorate$o([
-  m$8({
-    tag: "ui5-menu-item-group",
-    renderer: y$5,
-    template: MenuItemGroupTemplate
-  })
-], MenuItemGroup);
-const isInstanceOfMenuItemGroup = (object) => {
-  return "isGroup" in object;
-};
-MenuItemGroup.define();
-const predefinedHooks$1 = {
-  listItemContent: listItemContent$1,
-  iconBegin: iconBegin$1
-};
-function MenuItemTemplate(hooks) {
-  const currentHooks = { ...predefinedHooks$1, ...hooks };
-  return jsxs(Fragment, { children: [ListItemTemplate.call(this, currentHooks), listItemPostContent.call(this)] });
-}
-function listItemContent$1() {
-  return jsxs(Fragment, { children: [this.text && jsx("div", { class: "ui5-menu-item-text", children: this.text }), rightContent.call(this), checkmarkContent.call(this)] });
-}
-function checkmarkContent() {
-  return !this._markChecked ? "" : jsx("div", { class: "ui5-menu-item-checked", children: jsx(Icon$1, { name: checkIcon, class: "ui5-menu-item-icon-checked" }) });
-}
-function rightContent() {
-  switch (true) {
-    case this.hasSubmenu:
-      return jsx("div", { class: "ui5-menu-item-submenu-icon", children: jsx(Icon$1, { part: "subicon", name: slimArrowRightIcon, class: "ui5-menu-item-icon-end" }) });
-    case this.hasEndContent:
-      return jsx("slot", { name: "endContent", onKeyDown: this._endContentKeyDown });
-    case !!this.additionalText:
-      return jsx("span", { part: "additional-text", class: "ui5-li-additional-text", "aria-hidden": this._accInfo.ariaHidden, children: this.additionalText });
-  }
-}
-function iconBegin$1() {
-  if (this.hasIcon) {
-    return jsx(Icon$1, { class: "ui5-li-icon", name: this.icon });
-  }
-  if (this._siblingsWithIcon) {
-    return jsx("div", { class: "ui5-menu-item-dummy-icon" });
-  }
-}
-function listItemPostContent() {
-  return this.hasSubmenu && jsxs(ResponsivePopover, { id: `${this._id}-menu-rp`, class: "ui5-menu-rp ui5-menu-rp-sub-menu", preventInitialFocus: true, preventFocusRestore: true, hideArrow: true, allowTargetOverlap: true, placement: PopoverPlacement$1.End, verticalAlign: "Top", accessibleName: this.accessibleNameText, onBeforeOpen: this._beforePopoverOpen, onOpen: this._afterPopoverOpen, onBeforeClose: this._beforePopoverClose, onClose: this._afterPopoverClose, children: [this.isPhone && jsx(Fragment, { children: jsxs("div", { slot: "header", class: "ui5-menu-dialog-header", children: [jsx(Button$1, { icon: navBackIcon, class: "ui5-menu-back-button", design: "Transparent", "aria-label": this.labelBack, onClick: this._close }), jsx("div", { class: "ui5-menu-dialog-title", children: jsx("div", { children: this.text }) }), jsx(Button$1, { icon: iconDecline, design: "Transparent", "aria-label": this.labelClose, onClick: this._closeAll })] }) }), jsx("div", { id: `${this._id}-menu-main`, children: this.items.length ? jsx(List, { id: `${this._id}-menu-list`, selectionMode: "None", separators: "None", accessibleRole: "Menu", loading: this.loading, loadingDelay: this.loadingDelay, onMouseOver: this._itemMouseOver, onKeyDown: this._itemKeyDown, onKeyUp: this._itemKeyUp, "onui5-close-menu": this._close, "onui5-exit-end-content": this._navigateOutOfEndContent, children: jsx("slot", {}) }) : this.loading && jsx(BusyIndicator$1, { id: `${this._id}-menu-busy-indicator`, delay: this.loadingDelay, class: "ui5-menu-busy-indicator", active: true }) })] });
-}
-p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
-const menuItemCss = `:host{line-height:initial}::slotted([ui5-menu-item]){line-height:inherit}.ui5-menu-rp[ui5-responsive-popover]::part(header),.ui5-menu-rp[ui5-responsive-popover]::part(content),.ui5-menu-rp[ui5-responsive-popover]::part(footer){padding:0}.ui5-menu-rp[ui5-responsive-popover]{box-shadow:var(--sapContent_Shadow1);border-radius:var(--_ui5-v2-17-0_menu_popover_border_radius)}.ui5-menu-busy-indicator{width:100%}.ui5-menu-dialog-header{display:flex;height:var(--_ui5-v2-17-0-responsive_popover_header_height);align-items:center;justify-content:space-between;padding:0px 1rem;width:100%;overflow:hidden}.ui5-menu-dialog-title{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;width:calc(100% - 6.5rem);padding-right:1rem;font-family:var(--sapFontHeaderFamily)}.ui5-menu-dialog-title>h1{display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:var(--sapFontHeader5Size)}.ui5-menu-back-button{margin-right:1rem}.ui5-menu-rp.ui5-menu-rp-sub-menu{margin-top:.25rem;margin-inline:var(--_ui5-v2-17-0_menu_submenu_margin_offset)}:host([disabled]){pointer-events:initial;opacity:initial}:host([disabled])::part(content){opacity:var(--_ui5-v2-17-0-listitembase_disabled_opacity)}:host([disabled][actionable]:not([active]):not([selected]):hover),:host([disabled][active][actionable]){background:var(--ui5-v2-17-0-listitem-background-color)}:host([active]:not([disabled])),:host([active]:not([disabled])):hover{background-color:var(--sapList_Active_Background)}:host(:not([active]):not([selected]):not([disabled]):hover){background-color:var(--sapList_Hover_Background)}:host([disabled][active][actionable]) .ui5-li-root .ui5-li-icon{color:var(--sapContent_NonInteractiveIconColor)}:host([active]:not([disabled]))::part(content),:host([active]:not([disabled]))::part(additional-text),:host([active]:not([disabled])) .ui5-li-root .ui5-li-icon{color:var(--sapList_Active_TextColor)}:host([focused]:not([active]):not([disabled])){background-color:var(--sapList_Hover_Background)}:host::part(additional-text){margin:unset;margin-inline-start:1rem;color:var(--sapContent_LabelColor);min-width:max-content}.ui5-menu-item-text{width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;pointer-events:none;display:inline-block}.ui5-menu-item-dummy-icon{visibility:hidden}:host::part(title){font-size:var(--sapFontSize);padding-top:.125rem}:host([icon]:not([is-phone]))::part(title),:host([is-phone]:not([icon=""]))::part(title){padding-top:0}:host(:not([is-phone]))::part(native-li){user-select:none;padding:var(--_ui5-v2-17-0_menu_item_padding)}:host::part(content){padding-inline-end:.25rem}.ui5-menu-item-submenu-icon{min-width:var(--_ui5-v2-17-0_list_item_icon_size);min-height:var(--_ui5-v2-17-0_list_item_icon_size);display:inline-block;vertical-align:middle;pointer-events:none}.ui5-menu-item-icon-end{display:inline-block;vertical-align:middle;padding-inline-start:.5rem;pointer-events:none;position:absolute;inset-inline-end:var(--_ui5-v2-17-0_menu_item_submenu_icon_right)}.ui5-menu-item-submenu-icon .ui5-menu-item-icon-end{color:var(--sapContent_NonInteractiveIconColor)}.ui5-menu-item-dummy-icon{min-width:var(--_ui5-v2-17-0_list_item_icon_size);min-height:var(--_ui5-v2-17-0_list_item_icon_size);display:inline-block;vertical-align:middle;padding-inline-end:.75rem;pointer-events:none}.ui5-menu-item-checked{padding-inline-start:.5rem;padding-inline-end:0;font-weight:400;text-align:center}.ui5-menu-item-icon-checked{color:var(--sapContent_BusyColor);padding-top:.25rem}
-`;
-var __decorate$n = function(decorators, target, key, desc) {
-  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
-  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
-  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
-};
-var MenuItem_1;
-let MenuItem = MenuItem_1 = class MenuItem2 extends ListItem$1 {
-  constructor() {
-    super();
-    this.disabled = false;
-    this.loading = false;
-    this.loadingDelay = 1e3;
-    this.checked = false;
-    this._siblingsWithIcon = false;
-    this._checkMode = "None";
-    this._shiftPressed = false;
-    this._itemNavigation = new f$2(this, {
-      navigationMode: r$4.Horizontal,
-      behavior: l$3.Static,
-      getItemsCallback: () => this._navigableItems
-    });
-  }
-  get _list() {
-    return this.shadowRoot && this.shadowRoot.querySelector("[ui5-list]");
-  }
-  get _navigableItems() {
-    return [...this.endContent].filter((item) => {
-      return item.hasAttribute("ui5-button") || item.hasAttribute("ui5-link") || item.hasAttribute("ui5-icon") && item.getAttribute("mode") === "Interactive";
-    });
-  }
-  get _isCheckable() {
-    return this._checkMode !== MenuItemGroupCheckMode$1.None;
-  }
-  _navigateToEndContent(shouldNavigateToPreviousItem) {
-    const navigatableItems = this._navigableItems;
-    const item = shouldNavigateToPreviousItem ? navigatableItems[navigatableItems.length - 1] : navigatableItems[0];
-    if (item) {
-      this._itemNavigation.setCurrentItem(item);
-      this._itemNavigation._focusCurrentItem();
-    }
-  }
-  get isRtl() {
-    return this.effectiveDir === "rtl";
-  }
-  get hasSubmenu() {
-    return !!(this.items.length || this.loading) && !this.disabled;
-  }
-  get hasEndContent() {
-    return !!this.endContent.length;
-  }
-  get hasIcon() {
-    return !!this.icon;
-  }
-  get isSubMenuOpen() {
-    var _a2;
-    return (_a2 = this._popover) == null ? void 0 : _a2.open;
-  }
-  get menuHeaderTextPhone() {
-    return this.text;
-  }
-  get isPhone() {
-    return d$b();
-  }
-  get labelBack() {
-    return MenuItem_1.i18nBundle.getText(MENU_BACK_BUTTON_ARIA_LABEL);
-  }
-  get labelClose() {
-    return MenuItem_1.i18nBundle.getText(MENU_CLOSE_BUTTON_ARIA_LABEL);
-  }
-  get accessibleNameText() {
-    return MenuItem_1.i18nBundle.getText(MENU_POPOVER_ACCESSIBLE_NAME);
-  }
-  onBeforeRendering() {
-    super.onBeforeRendering();
-    const siblingsWithIcon = this._allMenuItems.some((menuItem) => !!menuItem.icon);
-    this._setupItemNavigation();
-    this._allMenuItems.forEach((item) => {
-      item._siblingsWithIcon = siblingsWithIcon;
-    });
-  }
-  async focus(focusOptions) {
-    await f$i();
-    if (this.hasSubmenu && this.isSubMenuOpen) {
-      const menuItems = this._allMenuItems;
-      return menuItems[0] && menuItems[0].focus(focusOptions);
-    }
-    return super.focus(focusOptions);
-  }
-  get _focusable() {
-    return true;
-  }
-  get _role() {
-    switch (this._checkMode) {
-      case MenuItemGroupCheckMode$1.Single:
-        return "menuitemradio";
-      case MenuItemGroupCheckMode$1.Multiple:
-        return "menuitemcheckbox";
-      default:
-        return "menuitem";
-    }
-  }
-  get _accInfo() {
-    const accInfoSettings = {
-      role: this.accessibilityAttributes.role || this._role,
-      ariaHaspopup: this.hasSubmenu ? "menu" : void 0,
-      ariaKeyShortcuts: this.accessibilityAttributes.ariaKeyShortcuts,
-      ariaExpanded: this.hasSubmenu ? this.isSubMenuOpen : void 0,
-      ariaHidden: !!this.additionalText && !!this.accessibilityAttributes.ariaKeyShortcuts ? true : void 0,
-      ariaChecked: this._markChecked ? true : void 0
-    };
-    return { ...super._accInfo, ...accInfoSettings };
-  }
-  get _popover() {
-    return this.shadowRoot && this.shadowRoot.querySelector("[ui5-responsive-popover]");
-  }
-  get _markChecked() {
-    return !this.hasSubmenu && this.checked && this._checkMode !== MenuItemGroupCheckMode$1.None;
-  }
-  /** Returns menu item groups */
-  get _menuItemGroups() {
-    return this.items.filter(isInstanceOfMenuItemGroup);
-  }
-  /** Returns menu items */
-  get _menuItems() {
-    return this.items.filter(isInstanceOfMenuItem);
-  }
-  /** Returns all menu items (including those in groups */
-  get _allMenuItems() {
-    const items = [];
-    const slottedItems = this.getSlottedNodes("items");
-    slottedItems.forEach((item) => {
-      if (isInstanceOfMenuItemGroup(item)) {
-        items.push(...item._menuItems);
-      } else if (!isInstanceOfMenuSeparator(item)) {
-        items.push(item);
-      }
-    });
-    return items;
-  }
-  /** Returns menu items included in the ItemNavigation */
-  get _navigatableMenuItems() {
-    const items = [];
-    const slottedItems = this.getSlottedNodes("items");
-    slottedItems.forEach((item) => {
-      if (isInstanceOfMenuItemGroup(item)) {
-        const groupItems = item.getSlottedNodes("items");
-        items.push(...groupItems);
-      } else if (!isInstanceOfMenuSeparator(item)) {
-        items.push(item);
-      }
-    });
-    return items;
-  }
-  _setupItemNavigation() {
-    if (this._list) {
-      this._list._itemNavigation._getItems = () => this._navigatableMenuItems;
-    }
-  }
-  _closeOtherSubMenus(item) {
-    const menuItems = this._allMenuItems;
-    if (!menuItems.includes(item)) {
-      return;
-    }
-    menuItems.forEach((menuItem) => {
-      if (menuItem !== item) {
-        menuItem._close();
-      }
-    });
-  }
-  _itemMouseOver(e2) {
-    if (!f$h()) {
-      return;
-    }
-    const item = e2.target;
-    if (!isInstanceOfMenuItem(item)) {
-      return;
-    }
-    item.focus();
-    this._closeOtherSubMenus(item);
-  }
-  _isSpace(e2) {
-    this._shiftPressed = this._isCheckable && K(e2);
-    return A$4(e2) || K(e2);
-  }
-  _isEnter(e2) {
-    this._shiftPressed = this._isCheckable && i$9(e2);
-    return b$6(e2) || i$9(e2);
-  }
-  _onclick(e2) {
-    this._shiftPressed = this._isCheckable && e2.shiftKey;
-    super._onclick(e2);
-  }
-  _itemKeyDown(e2) {
-    const item = e2.target;
-    const itemInMenuItems = this._allMenuItems.includes(item);
-    const isTabNextPrevious = x$1(e2) || V$1(e2);
-    const shouldCloseMenu = this.isRtl ? R$1(e2) : D$3(e2);
-    if (itemInMenuItems && (isTabNextPrevious || shouldCloseMenu)) {
-      this._close();
-      this.focus();
-      e2.stopPropagation();
-    }
-  }
-  _itemKeyUp(e2) {
-    if (Ko(e2)) {
-      this._shiftPressed = false;
-    }
-  }
-  _endContentKeyDown(e2) {
-    const shouldNavigateOutOfEndContent = P$2(e2) || _$1(e2);
-    if (shouldNavigateOutOfEndContent) {
-      this.fireDecoratorEvent("exit-end-content", { shouldNavigateToNextItem: _$1(e2) });
-    }
-  }
-  _navigateOutOfEndContent(e2) {
-    const item = e2.target;
-    const shouldNavigateToNextItem = e2.detail.shouldNavigateToNextItem;
-    const menuItems = this._allMenuItems;
-    const itemIndex = menuItems.indexOf(item);
-    if (itemIndex > -1) {
-      const nextItem = shouldNavigateToNextItem ? menuItems[itemIndex + 1] : menuItems[itemIndex - 1];
-      const itemToFocus = nextItem || menuItems[itemIndex];
-      itemToFocus == null ? void 0 : itemToFocus.focus();
-      e2.stopPropagation();
-    }
-  }
-  _closeAll() {
-    if (this._popover) {
-      this._popover.open = false;
-    }
-    this.selected = false;
-    this.fireDecoratorEvent("close-menu");
-  }
-  _close() {
-    if (this._popover) {
-      this._popover.open = false;
-      this._allMenuItems.forEach((item) => item._close());
-    }
-    this.selected = false;
-  }
-  _beforePopoverOpen(e2) {
-    const prevented = !this.fireDecoratorEvent("before-open", {});
-    if (prevented) {
-      e2.preventDefault();
-    }
-  }
-  _afterPopoverOpen() {
-    var _a2;
-    (_a2 = this._allMenuItems[0]) == null ? void 0 : _a2.focus();
-    this.fireDecoratorEvent("open");
-  }
-  _beforePopoverClose(e2) {
-    const prevented = !this.fireDecoratorEvent("before-close", { escPressed: e2.detail.escPressed });
-    if (prevented) {
-      e2.preventDefault();
-      return;
-    }
-    this.selected = false;
-    if (e2.detail.escPressed) {
-      this.focus();
-      if (d$b()) {
-        this.fireDecoratorEvent("close-menu");
-      }
-    }
-  }
-  _afterPopoverClose() {
-    this.fireDecoratorEvent("close");
-  }
-  get isMenuItem() {
-    return true;
-  }
-  _updateCheckedState() {
-    if (this._checkMode === MenuItemGroupCheckMode$1.None) {
-      return;
-    }
-    const newState = !this.checked;
-    this.checked = newState;
-    this.fireDecoratorEvent("check");
-  }
-};
-__decorate$n([
-  s$9()
-], MenuItem.prototype, "text", void 0);
-__decorate$n([
-  s$9()
-], MenuItem.prototype, "additionalText", void 0);
-__decorate$n([
-  s$9()
-], MenuItem.prototype, "icon", void 0);
-__decorate$n([
-  s$9({ type: Boolean })
-], MenuItem.prototype, "disabled", void 0);
-__decorate$n([
-  s$9({ type: Boolean })
-], MenuItem.prototype, "loading", void 0);
-__decorate$n([
-  s$9({ type: Number })
-], MenuItem.prototype, "loadingDelay", void 0);
-__decorate$n([
-  s$9()
-], MenuItem.prototype, "accessibleName", void 0);
-__decorate$n([
-  s$9()
-], MenuItem.prototype, "tooltip", void 0);
-__decorate$n([
-  s$9({ type: Boolean })
-], MenuItem.prototype, "checked", void 0);
-__decorate$n([
-  s$9({ type: Object })
-], MenuItem.prototype, "accessibilityAttributes", void 0);
-__decorate$n([
-  s$9({ type: Boolean, noAttribute: true })
-], MenuItem.prototype, "_siblingsWithIcon", void 0);
-__decorate$n([
-  s$9()
-], MenuItem.prototype, "_checkMode", void 0);
-__decorate$n([
-  d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
-], MenuItem.prototype, "items", void 0);
-__decorate$n([
-  d$8({ type: HTMLElement })
-], MenuItem.prototype, "endContent", void 0);
-__decorate$n([
-  i$b("@ui5/webcomponents")
-], MenuItem, "i18nBundle", void 0);
-MenuItem = MenuItem_1 = __decorate$n([
-  m$8({
-    tag: "ui5-menu-item",
-    renderer: y$5,
-    template: MenuItemTemplate,
-    styles: [ListItem$1.styles, menuItemCss]
-  }),
-  l$e("before-open", {
-    cancelable: true
-  }),
-  l$e("open"),
-  l$e("close-menu", {
-    bubbles: true
-  }),
-  l$e("exit-end-content", {
-    bubbles: true
-  }),
-  l$e("before-close", {
-    cancelable: true
-  }),
-  l$e("close"),
-  l$e("check", {
-    bubbles: true
-  })
-], MenuItem);
-MenuItem.define();
-const isInstanceOfMenuItem = (object) => {
-  return "isMenuItem" in object;
-};
-const MenuItem$1 = MenuItem;
-function MenuTemplate() {
-  return jsxs(ResponsivePopover, { id: `${this._id}-menu-rp`, class: "ui5-menu-rp", placement: this.placement, verticalAlign: "Bottom", horizontalAlign: this.horizontalAlign, opener: this.opener, open: this.open, preventInitialFocus: true, hideArrow: true, allowTargetOverlap: true, accessibleName: this.accessibleNameText, onBeforeOpen: this._beforePopoverOpen, onOpen: this._afterPopoverOpen, onBeforeClose: this._beforePopoverClose, onClose: this._afterPopoverClose, children: [this.isPhone && jsxs("div", { slot: "header", class: "ui5-menu-dialog-header", children: [jsx("div", { class: "ui5-menu-dialog-title", children: jsx("h1", { children: this.headerText }) }), jsx(Button$1, { icon: iconDecline, design: "Transparent", "aria-label": this.labelClose, onClick: this._close })] }), jsx("div", { id: `${this._id}-menu-main`, children: this.items.length ? jsx(List, { id: `${this._id}- menu-list`, selectionMode: "None", loading: this.loading, loadingDelay: this.loadingDelay, separators: "None", accessibleRole: "Menu", onItemClick: this._itemClick, onMouseOver: this._itemMouseOver, onKeyDown: this._itemKeyDown, "onui5-close-menu": this._close, "onui5-exit-end-content": this._navigateOutOfEndContent, children: jsx("slot", {}) }) : this.loading && jsx(BusyIndicator$1, { id: `${this._id}-menu-busy-indicator`, delay: this.loadingDelay, class: "ui5-menu-busy-indicator", active: true }) })] });
-}
-p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
-const menuCss = `:host{line-height:initial}::slotted([ui5-menu-item]){line-height:inherit}.ui5-menu-rp[ui5-responsive-popover]::part(header),.ui5-menu-rp[ui5-responsive-popover]::part(content),.ui5-menu-rp[ui5-responsive-popover]::part(footer){padding:0}.ui5-menu-rp[ui5-responsive-popover]{box-shadow:var(--sapContent_Shadow1);border-radius:var(--_ui5-v2-17-0_menu_popover_border_radius)}.ui5-menu-busy-indicator{width:100%}.ui5-menu-dialog-header{display:flex;height:var(--_ui5-v2-17-0-responsive_popover_header_height);align-items:center;justify-content:space-between;padding:0px 1rem;width:100%;overflow:hidden}.ui5-menu-dialog-title{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;width:calc(100% - 6.5rem);padding-right:1rem;font-family:var(--sapFontHeaderFamily)}.ui5-menu-dialog-title>h1{display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:var(--sapFontHeader5Size)}.ui5-menu-back-button{margin-right:1rem}
-`;
-var __decorate$m = function(decorators, target, key, desc) {
-  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
-  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
-  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
-};
-var Menu_1;
-const MENU_OPEN_DELAY = 300;
-let Menu = Menu_1 = class Menu2 extends b$7 {
-  constructor() {
-    super(...arguments);
-    this.open = false;
-    this.placement = "Bottom";
-    this.horizontalAlign = "Start";
-    this.loading = false;
-    this.loadingDelay = 1e3;
-  }
-  get isRtl() {
-    return this.effectiveDir === "rtl";
-  }
-  get labelClose() {
-    return Menu_1.i18nBundle.getText(MENU_CLOSE_BUTTON_ARIA_LABEL);
-  }
-  get isPhone() {
-    return d$b();
-  }
-  get _popover() {
-    return this.shadowRoot.querySelector("[ui5-responsive-popover]");
-  }
-  get _list() {
-    return this.shadowRoot.querySelector("[ui5-list]");
-  }
-  /** Returns menu item groups */
-  get _menuItemGroups() {
-    return this.items.filter(isInstanceOfMenuItemGroup);
-  }
-  /** Returns menu items */
-  get _menuItems() {
-    return this.items.filter(isInstanceOfMenuItem);
-  }
-  /** Returns all menu items (including those in groups */
-  get _allMenuItems() {
-    const items = [];
-    const slottedItems = this.getSlottedNodes("items");
-    slottedItems.forEach((item) => {
-      if (isInstanceOfMenuItemGroup(item)) {
-        items.push(...item._menuItems);
-      } else if (!isInstanceOfMenuSeparator(item)) {
-        items.push(item);
-      }
-    });
-    return items;
-  }
-  /** Returns menu items included in the ItemNavigation */
-  get _navigatableMenuItems() {
-    const items = [];
-    const slottedItems = this.getSlottedNodes("items");
-    slottedItems.forEach((item) => {
-      if (isInstanceOfMenuItemGroup(item)) {
-        const groupItems = item.getSlottedNodes("items");
-        items.push(...groupItems);
-      } else if (!isInstanceOfMenuSeparator(item)) {
-        items.push(item);
-      }
-    });
-    return items;
-  }
-  get accessibleNameText() {
-    return Menu_1.i18nBundle.getText(MENU_POPOVER_ACCESSIBLE_NAME);
-  }
-  onBeforeRendering() {
-    const siblingsWithIcon = this._allMenuItems.some((menuItem) => !!menuItem.icon);
-    this._setupItemNavigation();
-    this._allMenuItems.forEach((item) => {
-      item._siblingsWithIcon = siblingsWithIcon;
-    });
-  }
-  getFocusDomRef() {
-    var _a2;
-    return (_a2 = this._list) == null ? void 0 : _a2.getFocusDomRef();
-  }
-  _setupItemNavigation() {
-    if (this._list) {
-      this._list._itemNavigation._getItems = () => this._navigatableMenuItems;
-    }
-  }
-  _close() {
-    this.open = false;
-  }
-  _openItemSubMenu(item) {
-    clearTimeout(this._timeout);
-    if (!item._popover || item._popover.open) {
-      return;
-    }
-    this.fireDecoratorEvent("before-open", {
-      item
-    });
-    item._popover.opener = item;
-    item._popover.open = true;
-    item.selected = true;
-  }
-  _itemMouseOver(e2) {
-    if (!f$h()) {
-      return;
-    }
-    const item = e2.target;
-    if (!isInstanceOfMenuItem(item)) {
-      return;
-    }
-    item.focus();
-    this._startOpenTimeout(item);
-  }
-  async focus(focusOptions) {
-    await f$i();
-    const firstMenuItem = this._allMenuItems[0];
-    if (firstMenuItem) {
-      return firstMenuItem.focus(focusOptions);
-    }
-    return super.focus(focusOptions);
-  }
-  _closeOtherSubMenus(item) {
-    const menuItems = this._allMenuItems;
-    if (!menuItems.includes(item)) {
-      return;
-    }
-    menuItems.forEach((menuItem) => {
-      if (menuItem !== item) {
-        menuItem._close();
-      }
-    });
-  }
-  _startOpenTimeout(item) {
-    clearTimeout(this._timeout);
-    this._timeout = setTimeout(() => {
-      this._closeOtherSubMenus(item);
-      this._openItemSubMenu(item);
-    }, MENU_OPEN_DELAY);
-  }
-  _itemClick(e2) {
-    const item = e2.detail.item;
-    if (!item._popover) {
-      const prevented = !this.fireDecoratorEvent("item-click", {
-        "item": item,
-        "text": item.text || ""
-      });
-      if (!prevented) {
-        item._updateCheckedState();
-        this._popover && !item._shiftPressed && item.fireDecoratorEvent("close-menu");
-      }
-    } else {
-      this._openItemSubMenu(item);
-    }
-  }
-  _itemKeyDown(e2) {
-    const isTabNextPrevious = x$1(e2) || V$1(e2);
-    const item = e2.target;
-    if (!isInstanceOfMenuItem(item)) {
-      return;
-    }
-    const isEndContentNavigation = R$1(e2) || D$3(e2);
-    const shouldOpenMenu = this.isRtl ? D$3(e2) : R$1(e2);
-    if (b$6(e2) || isTabNextPrevious) {
-      e2.preventDefault();
-    }
-    if (isEndContentNavigation) {
-      item._navigateToEndContent(D$3(e2));
-    }
-    if (shouldOpenMenu) {
-      this._openItemSubMenu(item);
-    } else if (isTabNextPrevious) {
-      this._close();
-    }
-  }
-  _navigateOutOfEndContent(e2) {
-    const item = e2.target;
-    const shouldNavigateToNextItem = e2.detail.shouldNavigateToNextItem;
-    const menuItems = this._allMenuItems;
-    const itemIndex = menuItems.indexOf(item);
-    if (itemIndex > -1) {
-      const nextItem = shouldNavigateToNextItem ? menuItems[itemIndex + 1] : menuItems[itemIndex - 1];
-      const itemToFocus = nextItem || menuItems[itemIndex];
-      itemToFocus == null ? void 0 : itemToFocus.focus();
-      e2.stopPropagation();
-    }
-  }
-  _beforePopoverOpen(e2) {
-    const prevented = !this.fireDecoratorEvent("before-open", {});
-    if (prevented) {
-      this.open = false;
-      e2.preventDefault();
-    }
-  }
-  _afterPopoverOpen() {
-    var _a2;
-    (_a2 = this._allMenuItems[0]) == null ? void 0 : _a2.focus();
-    this.fireDecoratorEvent("open");
-  }
-  _beforePopoverClose(e2) {
-    const prevented = !this.fireDecoratorEvent("before-close", { escPressed: e2.detail.escPressed });
-    if (prevented) {
-      this.open = true;
-      e2.preventDefault();
-    }
-  }
-  _afterPopoverClose() {
-    this.open = false;
-    this.fireDecoratorEvent("close");
-  }
-};
-__decorate$m([
-  s$9()
-], Menu.prototype, "headerText", void 0);
-__decorate$m([
-  s$9({ type: Boolean })
-], Menu.prototype, "open", void 0);
-__decorate$m([
-  s$9()
-], Menu.prototype, "placement", void 0);
-__decorate$m([
-  s$9()
-], Menu.prototype, "horizontalAlign", void 0);
-__decorate$m([
-  s$9({ type: Boolean })
-], Menu.prototype, "loading", void 0);
-__decorate$m([
-  s$9({ type: Number })
-], Menu.prototype, "loadingDelay", void 0);
-__decorate$m([
-  s$9({ converter: e$8 })
-], Menu.prototype, "opener", void 0);
-__decorate$m([
-  d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
-], Menu.prototype, "items", void 0);
-__decorate$m([
-  i$b("@ui5/webcomponents")
-], Menu, "i18nBundle", void 0);
-Menu = Menu_1 = __decorate$m([
-  m$8({
-    tag: "ui5-menu",
-    renderer: y$5,
-    styles: menuCss,
-    template: MenuTemplate
-  }),
-  l$e("item-click", {
-    cancelable: true
-  }),
-  l$e("before-open", {
-    bubbles: true,
-    cancelable: true
-  }),
-  l$e("open", {
-    bubbles: true
-  }),
-  l$e("close-menu", {
-    bubbles: true
-  }),
-  l$e("before-close", {
-    bubbles: true,
-    cancelable: true
-  }),
-  l$e("close")
-], Menu);
-Menu.define();
-const Menu$1 = Menu;
 const name$i = "search";
 const pathData$h = "M470 426q10 9 10 22.5T470 471q-9 9-22 9t-23-9L308 353q-45 31-100 31-36 0-68-13.5T84 333t-38-56-14-69q0-36 14-68t38-56 56-38 68-14 68 14 56 38 38 56 14 68q0 28-8.5 53T353 308zm-262-74q30 0 56-11t45.5-30.5 31-46T352 208t-11.5-56-31-45.5-45.5-31T208 64t-56.5 11.5-46 31T75 152t-11 56 11 56.5 30.5 46 46 30.5 56.5 11z";
 const ltr$h = true;

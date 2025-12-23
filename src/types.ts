@@ -400,6 +400,42 @@ export interface UI5ToastCardConfig extends BaseCardConfig {
   trigger_state?: string;
 }
 
+export interface UI5DialogCardConfig extends BaseCardConfig {
+  type: "custom:ui5-dialog-card";
+  header_text?: string;
+  state?: "None" | "Information" | "Success" | "Warning" | "Error";
+  content?: string;
+  draggable?: boolean;
+  resizable?: boolean;
+  stretch?: boolean;
+  button_text?: string;
+  show_close_button?: boolean;
+}
+
+export interface UI5PopoverCardConfig extends BaseCardConfig {
+  type: "custom:ui5-popover-card";
+  header_text?: string;
+  content?: string;
+  placement?: "Top" | "Bottom" | "Start" | "End";
+  horizontal_align?: "Center" | "Start" | "End" | "Stretch";
+  vertical_align?: "Center" | "Top" | "Bottom" | "Stretch";
+  button_text?: string;
+  show_arrow?: boolean;
+}
+
+export interface UI5MenuCardConfig extends BaseCardConfig {
+  type: "custom:ui5-menu-card";
+  button_text?: string;
+  items?: Array<{
+    text: string;
+    icon?: string;
+    disabled?: boolean;
+    starts_section?: boolean;
+    service?: string;
+    service_data?: Record<string, unknown>;
+  }>;
+}
+
 export type UI5CardConfig =
   | UI5ButtonCardConfig
   | UI5SwitchCardConfig
@@ -424,7 +460,10 @@ export type UI5CardConfig =
   | UI5TimePickerCardConfig
   | UI5BadgeCardConfig
   | UI5MessageStripCardConfig
-  | UI5ToastCardConfig;
+  | UI5ToastCardConfig
+  | UI5DialogCardConfig
+  | UI5PopoverCardConfig
+  | UI5MenuCardConfig;
 
 // ==================== Card Registration ====================
 
@@ -472,5 +511,16 @@ declare global {
     "ui5-card-card": LovelaceCard;
     "ui5-panel-card": LovelaceCard;
     "ui5-tabs-card": LovelaceCard;
+    "ui5-bar-card": LovelaceCard;
+    "ui5-input-card": LovelaceCard;
+    "ui5-select-card": LovelaceCard;
+    "ui5-datepicker-card": LovelaceCard;
+    "ui5-timepicker-card": LovelaceCard;
+    "ui5-badge-card": LovelaceCard;
+    "ui5-messagestrip-card": LovelaceCard;
+    "ui5-toast-card": LovelaceCard;
+    "ui5-dialog-card": LovelaceCard;
+    "ui5-popover-card": LovelaceCard;
+    "ui5-menu-card": LovelaceCard;
   }
 }

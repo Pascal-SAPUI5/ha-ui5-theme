@@ -76,9 +76,9 @@
 
 | #   | Komponente | Card Name          | Import Check | Card | Tests | CI  |
 | --- | ---------- | ------------------ | ------------ | ---- | ----- | --- |
-| 17  | Dialog     | `ui5-dialog-card`  | ⬜           | ⬜   | ⬜    | ⬜  |
-| 18  | Popover    | `ui5-popover-card` | ⬜           | ⬜   | ⬜    | ⬜  |
-| 19  | Menu       | `ui5-menu-card`    | ⬜           | ⬜   | ⬜    | ⬜  |
+| 17  | Dialog     | `ui5-dialog-card`  | ✅           | ✅   | ✅    | ✅  |
+| 18  | Popover    | `ui5-popover-card` | ✅           | ✅   | ✅    | ✅  |
+| 19  | Menu       | `ui5-menu-card`    | ✅           | ✅   | ✅    | ✅  |
 
 ---
 
