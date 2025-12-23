@@ -1,0 +1,102 @@
+# UI5 Web Components Test Dashboard
+# Edit this file to test your custom cards
+
+title: UI5 Components Dev
+views:
+  - title: Test Dashboard
+    path: test
+    icon: mdi:test-tube
+    cards:
+      # Standard HA Cards for reference
+      - type: entities
+        title: Input Booleans
+        entities:
+          - input_boolean.test_switch
+          - input_boolean.living_room_light
+          - input_boolean.bedroom_light
+          - input_boolean.garage_door
+
+      - type: entities
+        title: Input Numbers
+        entities:
+          - input_number.test_slider
+          - input_number.temperature_setpoint
+          - input_number.brightness
+
+      - type: entities
+        title: Input Text & Select
+        entities:
+          - input_text.test_input
+          - input_text.notification_message
+          - input_select.test_select
+          - input_select.hvac_mode
+          - input_select.scene_selector
+
+      - type: sensor
+        entity: sensor.indoor_temperature
+        name: Temperature
+        graph: line
+
+      - type: sensor
+        entity: sensor.indoor_humidity
+        name: Humidity
+        graph: line
+
+      # =========================================
+      # UI5 CUSTOM CARDS - ADD YOUR CARDS BELOW
+      # =========================================
+
+      # Example: UI5 Button Card
+      # - type: custom:ui5-button-card
+      #   entity: input_boolean.test_switch
+      #   name: UI5 Button Test
+
+      # Example: UI5 List Card
+      # - type: custom:ui5-list-card
+      #   entities:
+      #     - input_boolean.test_switch
+      #     - input_boolean.living_room_light
+      #   title: UI5 List Test
+
+      # Example: UI5 Switch Card
+      # - type: custom:ui5-switch-card
+      #   entity: input_boolean.test_switch
+      #   name: UI5 Switch Test
+
+  - title: UI5 Cards
+    path: ui5
+    icon: mdi:widgets
+    cards:
+      - type: markdown
+        content: |
+          ## UI5 Web Components Cards
+
+          Add your custom cards here for testing.
+
+          Available test entities:
+          - `input_boolean.*` - Toggle switches
+          - `input_number.*` - Sliders
+          - `input_text.*` - Text inputs
+          - `input_select.*` - Dropdowns
+          - `sensor.*` - Various sensors
+
+          Reload after editing: **Developer Tools > YAML > Lovelace Dashboards**
+
+      # =========================================
+      # ADD UI5 CARDS HERE
+      # =========================================
+
+  - title: Sensors
+    path: sensors
+    icon: mdi:gauge
+    cards:
+      - type: entities
+        title: All Sensors
+        entities:
+          - sensor.indoor_temperature
+          - sensor.indoor_humidity
+          - sensor.outdoor_temperature
+          - sensor.power_consumption
+          - sensor.battery_level
+          - binary_sensor.motion_sensor
+          - binary_sensor.door_sensor

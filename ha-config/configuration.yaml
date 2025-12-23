@@ -1,0 +1,153 @@
+# Home Assistant Development Configuration
+# For UI5 Web Components testing
+
+homeassistant:
+  name: UI5 Dev
+  unit_system: metric
+  time_zone: Europe/Berlin
+  country: DE
+
+# Lovelace YAML mode with custom resource
+lovelace:
+  mode: yaml
+  resources:
+    - url: /local/ui5-components/ui5-webcomponents-ha.js
+      type: module
+
+# Enable debug logging for custom components
+logger:
+  default: info
+  logs:
+    custom_components: debug
+    homeassistant.components.lovelace: debug
+
+# Frontend
+frontend:
+  themes: !include_dir_merge_named themes
+
+# HTTP settings (for development)
+http:
+  server_port: 8123
+  use_x_forwarded_for: false
+
+# Test Entities for Card Development
+input_boolean:
+  test_switch:
+    name: Test Switch
+    icon: mdi:lightbulb
+  living_room_light:
+    name: Living Room Light
+    icon: mdi:ceiling-light
+  bedroom_light:
+    name: Bedroom Light
+    icon: mdi:lamp
+  garage_door:
+    name: Garage Door
+    icon: mdi:garage
+
+input_number:
+  test_slider:
+    name: Test Slider
+    min: 0
+    max: 100
+    step: 1
+    unit_of_measurement: "%"
+    icon: mdi:percent
+  temperature_setpoint:
+    name: Temperature Setpoint
+    min: 16
+    max: 30
+    step: 0.5
+    unit_of_measurement: "°C"
+    icon: mdi:thermometer
+  brightness:
+    name: Brightness
+    min: 0
+    max: 255
+    step: 1
+    icon: mdi:brightness-6
+
+input_text:
+  test_input:
+    name: Test Input
+    max: 100
+    icon: mdi:form-textbox
+  notification_message:
+    name: Notification Message
+    max: 255
+    icon: mdi:message-text
+
+input_select:
+  test_select:
+    name: Test Select
+    options:
+      - Option 1
+      - Option 2
+      - Option 3
+    icon: mdi:format-list-bulleted
+  hvac_mode:
+    name: HVAC Mode
+    options:
+      - "off"
+      - heat
+      - cool
+      - auto
+    icon: mdi:hvac
+  scene_selector:
+    name: Scene Selector
+    options:
+      - Morning
+      - Day
+      - Evening
+      - Night
+    icon: mdi:palette
+
+# Template sensors for realistic testing
+template:
+  - sensor:
+      - name: "Indoor Temperature"
+        unit_of_measurement: "°C"
+        state: "{{ (range(180, 240) | random / 10) | round(1) }}"
+        device_class: temperature
+        icon: mdi:thermometer
+
+      - name: "Indoor Humidity"
+        unit_of_measurement: "%"
+        state: "{{ range(40, 70) | random }}"
+        device_class: humidity
+        icon: mdi:water-percent
+
+      - name: "Outdoor Temperature"
+        unit_of_measurement: "°C"
+        state: "{{ (range(50, 150) | random / 10) | round(1) }}"
+        device_class: temperature
+        icon: mdi:thermometer
+
+      - name: "Power Consumption"
+        unit_of_measurement: "W"
+        state: "{{ range(100, 2500) | random }}"
+        device_class: power
+        icon: mdi:flash
+
+      - name: "Battery Level"
+        unit_of_measurement: "%"
+        state: "{{ range(20, 100) | random }}"
+        device_class: battery
+        icon: mdi:battery
+
+  - binary_sensor:
+      - name: "Motion Sensor"
+        state: "{{ ['on', 'off'] | random }}"
+        device_class: motion
+        icon: mdi:motion-sensor
+
+      - name: "Door Sensor"
+        state: "{{ ['on', 'off'] | random }}"
+        device_class: door
+        icon: mdi:door
+
+# History and recorder for charts
+recorder:
+  purge_keep_days: 1
+
+history:
