@@ -59,6 +59,7 @@ import "@ui5/webcomponents/dist/Card.js";
 import "@ui5/webcomponents/dist/CardHeader.js";
 import "@ui5/webcomponents/dist/Tag.js";
 import "@ui5/webcomponents/dist/MessageStrip.js";
+import "@ui5/webcomponents/dist/Toast.js";
 
 // List components
 import "@ui5/webcomponents/dist/List.js";

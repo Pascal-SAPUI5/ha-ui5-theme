@@ -66,9 +66,9 @@
 
 | #   | Komponente   | Card Name               | Import Check | Card | Tests | CI  |
 | --- | ------------ | ----------------------- | ------------ | ---- | ----- | --- |
-| 14  | Badge        | `ui5-badge-card`        | ⬜           | ⬜   | ⬜    | ⬜  |
-| 15  | MessageStrip | `ui5-messagestrip-card` | ⬜           | ⬜   | ⬜    | ⬜  |
-| 16  | Toast        | `ui5-toast-card`        | ⬜           | ⬜   | ⬜    | ⬜  |
+| 14  | Badge        | `ui5-badge-card`        | ✅           | ✅   | ✅    | ✅  |
+| 15  | MessageStrip | `ui5-messagestrip-card` | ✅           | ✅   | ✅    | ✅  |
+| 16  | Toast        | `ui5-toast-card`        | ✅           | ✅   | ✅    | ✅  |
 
 ---
 

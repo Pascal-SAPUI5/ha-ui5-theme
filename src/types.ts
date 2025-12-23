@@ -375,6 +375,31 @@ export interface UI5TimePickerCardConfig extends BaseCardConfig {
   service_data?: Record<string, unknown>;
 }
 
+export interface UI5BadgeCardConfig extends BaseCardConfig {
+  type: "custom:ui5-badge-card";
+  text?: string;
+  design?: "Set1" | "Set2" | "Neutral" | "Information" | "Positive" | "Negative" | "Critical";
+  color_scheme?: string;
+  interactive?: boolean;
+}
+
+export interface UI5MessageStripCardConfig extends BaseCardConfig {
+  type: "custom:ui5-messagestrip-card";
+  text?: string;
+  design?: "Information" | "Positive" | "Negative" | "Critical";
+  hide_close_button?: boolean;
+  hide_icon?: boolean;
+}
+
+export interface UI5ToastCardConfig extends BaseCardConfig {
+  type: "custom:ui5-toast-card";
+  text?: string;
+  duration?: number;
+  placement?: "TopStart" | "TopCenter" | "TopEnd" | "MiddleStart" | "MiddleCenter" | "MiddleEnd" | "BottomStart" | "BottomCenter" | "BottomEnd";
+  trigger_entity?: string;
+  trigger_state?: string;
+}
+
 export type UI5CardConfig =
   | UI5ButtonCardConfig
   | UI5SwitchCardConfig
@@ -396,7 +421,10 @@ export type UI5CardConfig =
   | UI5InputCardConfig
   | UI5SelectCardConfig
   | UI5DatePickerCardConfig
-  | UI5TimePickerCardConfig;
+  | UI5TimePickerCardConfig
+  | UI5BadgeCardConfig
+  | UI5MessageStripCardConfig
+  | UI5ToastCardConfig;
 
 // ==================== Card Registration ====================
 

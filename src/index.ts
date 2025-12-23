@@ -31,6 +31,9 @@ import "./components/Input/Input";
 import "./components/Select/Select";
 import "./components/DatePicker/DatePicker";
 import "./components/TimePicker/TimePicker";
+import "./components/Badge/Badge";
+import "./components/MessageStrip/MessageStrip";
+import "./components/Toast/Toast";
 
 // Card registration information
 const CARD_DEFINITIONS = [
@@ -162,6 +165,24 @@ const CARD_DEFINITIONS = [
     type: "custom:ui5-timepicker-card",
     name: "UI5 TimePicker Card",
     description: "A time picker card for selecting times",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-badge-card",
+    name: "UI5 Badge Card",
+    description: "A badge/tag for displaying status indicators",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-messagestrip-card",
+    name: "UI5 MessageStrip Card",
+    description: "A message strip for alerts and notifications",
+    preview: true,
+  },
+  {
+    type: "custom:ui5-toast-card",
+    name: "UI5 Toast Card",
+    description: "A toast notification triggered by entity changes",
     preview: true,
   },
 ];

@@ -2011,7 +2011,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const iconCss = `:host{-webkit-tap-highlight-color:rgba(0,0,0,0)}:host([hidden]){display:none}:host([invalid]){display:none}:host(:not([hidden]).ui5_hovered){opacity:.7}:host{display:inline-block;width:1rem;height:1rem;color:var(--sapContent_IconColor);fill:currentColor;outline:none}:host([design="Contrast"]){color:var(--sapContent_ContrastIconColor)}:host([design="Critical"]){color:var(--sapCriticalElementColor)}:host([design="Information"]){color:var(--sapInformativeElementColor)}:host([design="Negative"]){color:var(--sapNegativeElementColor)}:host([design="Neutral"]){color:var(--sapNeutralElementColor)}:host([design="NonInteractive"]){color:var(--sapContent_NonInteractiveIconColor)}:host([design="Positive"]){color:var(--sapPositiveElementColor)}:host([mode="Interactive"][desktop]) .ui5-icon-root:focus,:host([mode="Interactive"]) .ui5-icon-root:focus-visible{outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);border-radius:var(--ui5-v2-17-0-icon-focus-border-radius)}.ui5-icon-root{display:flex;height:100%;width:100%;outline:none;vertical-align:top}:host([mode="Interactive"]){cursor:pointer}.ui5-icon-root:not([dir=ltr])>g{transform:var(--_ui5-v2-17-0_icon_transform_scale);transform-origin:center}
 `;
-var __decorate$1v = function(decorators, target, key, desc) {
+var __decorate$1w = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -2119,34 +2119,34 @@ let Icon = class Icon2 extends b$7 {
     return this.showTooltip && this.effectiveAccessibleName;
   }
 };
-__decorate$1v([
+__decorate$1w([
   s$9()
 ], Icon.prototype, "design", void 0);
-__decorate$1v([
+__decorate$1w([
   s$9()
 ], Icon.prototype, "name", void 0);
-__decorate$1v([
+__decorate$1w([
   s$9()
 ], Icon.prototype, "accessibleName", void 0);
-__decorate$1v([
+__decorate$1w([
   s$9({ type: Boolean })
 ], Icon.prototype, "showTooltip", void 0);
-__decorate$1v([
+__decorate$1w([
   s$9()
 ], Icon.prototype, "mode", void 0);
-__decorate$1v([
+__decorate$1w([
   s$9({ type: Array })
 ], Icon.prototype, "pathData", void 0);
-__decorate$1v([
+__decorate$1w([
   s$9({ type: Object, noAttribute: true })
 ], Icon.prototype, "accData", void 0);
-__decorate$1v([
+__decorate$1w([
   s$9({ type: Boolean })
 ], Icon.prototype, "invalid", void 0);
-__decorate$1v([
+__decorate$1w([
   s$9({ noAttribute: true })
 ], Icon.prototype, "effectiveAccessibleName", void 0);
-Icon = __decorate$1v([
+Icon = __decorate$1w([
   m$8({
     tag: "ui5-icon",
     languageAware: true,
@@ -2349,7 +2349,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const labelCss = `:host(:not([hidden])){display:inline-flex}:host{max-width:100%;color:var(--sapContent_LabelColor);font-family:var(--sapFontFamily);font-size:var(--sapFontSize);font-weight:400;cursor:text}.ui5-label-root{width:100%;cursor:inherit}:host{white-space:normal}:host([wrapping-type="None"]){white-space:nowrap}:host([wrapping-type="None"]) .ui5-label-root{display:inline-flex}:host([wrapping-type="None"]) .ui5-label-text-wrapper{text-overflow:ellipsis;overflow:hidden;display:inline-block;vertical-align:top;flex:0 1 auto;min-width:0}:host([show-colon]) .ui5-label-required-colon:before{content:attr(data-ui5-colon)}:host([required]) .ui5-label-required-colon:after{content:"*";color:var(--sapField_RequiredColor);font-size:var(--sapFontLargeSize);font-weight:700;position:relative;font-style:normal;vertical-align:middle;line-height:0}.ui5-label-text-wrapper{padding-inline-end:.075rem}:host([required][show-colon]) .ui5-label-required-colon:after{margin-inline-start:.125rem}:host([show-colon]) .ui5-label-required-colon{margin-inline-start:-.05rem;white-space:pre}
 `;
-var __decorate$1u = function(decorators, target, key, desc) {
+var __decorate$1v = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -2376,22 +2376,22 @@ let Label = Label_1 = class Label2 extends b$7 {
     return Label_1.i18nBundle.getText(LABEL_COLON);
   }
 };
-__decorate$1u([
+__decorate$1v([
   s$9()
 ], Label.prototype, "for", void 0);
-__decorate$1u([
+__decorate$1v([
   s$9({ type: Boolean })
 ], Label.prototype, "showColon", void 0);
-__decorate$1u([
+__decorate$1v([
   s$9({ type: Boolean })
 ], Label.prototype, "required", void 0);
-__decorate$1u([
+__decorate$1v([
   s$9()
 ], Label.prototype, "wrappingType", void 0);
-__decorate$1u([
+__decorate$1v([
   i$b("@ui5/webcomponents")
 ], Label, "i18nBundle", void 0);
-Label = Label_1 = __decorate$1u([
+Label = Label_1 = __decorate$1v([
   m$8({
     tag: "ui5-label",
     renderer: y$5,
@@ -2415,7 +2415,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const busyIndicatorCss = `:host(:not([hidden])){display:inline-block}:host([_is-busy]){color:var(--_ui5-v2-17-0_busy_indicator_color)}:host([size="S"]) .ui5-busy-indicator-root{min-width:1.625rem;min-height:.5rem}:host([size="S"][text]:not([text=""])) .ui5-busy-indicator-root{min-height:1.75rem}:host([size="S"]) .ui5-busy-indicator-circle{width:.5rem;height:.5rem}:host([size="S"]) .ui5-busy-indicator-circle:first-child,:host([size="S"]) .ui5-busy-indicator-circle:nth-child(2){margin-inline-end:.0625rem}:host(:not([size])) .ui5-busy-indicator-root,:host([size="M"]) .ui5-busy-indicator-root{min-width:3.375rem;min-height:1rem}:host([size="M"]) .ui5-busy-indicator-circle:first-child,:host([size="M"]) .ui5-busy-indicator-circle:nth-child(2){margin-inline-end:.1875rem}:host(:not([size])[text]:not([text=""])) .ui5-busy-indicator-root,:host([size="M"][text]:not([text=""])) .ui5-busy-indicator-root{min-height:2.25rem}:host(:not([size])) .ui5-busy-indicator-circle,:host([size="M"]) .ui5-busy-indicator-circle{width:1rem;height:1rem}:host([size="L"]) .ui5-busy-indicator-root{min-width:6.5rem;min-height:2rem}:host([size="L"]) .ui5-busy-indicator-circle:first-child,:host([size="L"]) .ui5-busy-indicator-circle:nth-child(2){margin-inline-end:.25rem}:host([size="L"][text]:not([text=""])) .ui5-busy-indicator-root{min-height:3.25rem}:host([size="L"]) .ui5-busy-indicator-circle{width:2rem;height:2rem}.ui5-busy-indicator-root{display:flex;justify-content:center;align-items:center;position:relative;background-color:inherit;height:inherit;border-radius:inherit}.ui5-busy-indicator-busy-area.ui5-busy-indicator-busy-area-over-content{position:absolute;inset:0;z-index:99}.ui5-busy-indicator-busy-area{display:flex;justify-content:center;align-items:center;background-color:inherit;flex-direction:column;border-radius:inherit}:host([active]) ::slotted(*){opacity:var(--sapContent_DisabledOpacity)}:host([desktop]) .ui5-busy-indicator-busy-area:focus,.ui5-busy-indicator-busy-area:focus-visible{outline:var(--_ui5-v2-17-0_busy_indicator_focus_outline);outline-offset:-2px}.ui5-busy-indicator-circles-wrapper{line-height:0}.ui5-busy-indicator-circle{display:inline-block;background-color:currentColor;border-radius:50%}.ui5-busy-indicator-circle:before{content:"";width:100%;height:100%;border-radius:100%}.circle-animation-0{animation:grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11)}.circle-animation-1{animation:grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);animation-delay:.2s}.circle-animation-2{animation:grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);animation-delay:.4s}.ui5-busy-indicator-text{width:100%;text-align:center}:host([text-placement="Top"]) .ui5-busy-indicator-text{margin-bottom:.5rem}:host(:not([text-placement])) .ui5-busy-indicator-text,:host([text-placement="Bottom"]) .ui5-busy-indicator-text{margin-top:.5rem}@keyframes grow{0%,50%,to{-webkit-transform:scale(.5);-moz-transform:scale(.5);transform:scale(.5)}25%{-webkit-transform:scale(1);-moz-transform:scale(1);transform:scale(1)}}
 `;
-var __decorate$1t = function(decorators, target, key, desc) {
+var __decorate$1u = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -2510,28 +2510,28 @@ let BusyIndicator = BusyIndicator_1 = class BusyIndicator2 extends b$7 {
     this.shadowRoot.querySelector(".ui5-busy-indicator-busy-area").focus();
   }
 };
-__decorate$1t([
+__decorate$1u([
   s$9()
 ], BusyIndicator.prototype, "text", void 0);
-__decorate$1t([
+__decorate$1u([
   s$9()
 ], BusyIndicator.prototype, "size", void 0);
-__decorate$1t([
+__decorate$1u([
   s$9({ type: Boolean })
 ], BusyIndicator.prototype, "active", void 0);
-__decorate$1t([
+__decorate$1u([
   s$9({ type: Number })
 ], BusyIndicator.prototype, "delay", void 0);
-__decorate$1t([
+__decorate$1u([
   s$9()
 ], BusyIndicator.prototype, "textPlacement", void 0);
-__decorate$1t([
+__decorate$1u([
   s$9({ type: Boolean })
 ], BusyIndicator.prototype, "_isBusy", void 0);
-__decorate$1t([
+__decorate$1u([
   i$b("@ui5/webcomponents")
 ], BusyIndicator, "i18nBundle", void 0);
-BusyIndicator = BusyIndicator_1 = __decorate$1t([
+BusyIndicator = BusyIndicator_1 = __decorate$1u([
   m$8({
     tag: "ui5-busy-indicator",
     languageAware: true,
@@ -2562,7 +2562,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const buttonCss = `:host{vertical-align:middle}.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block}:host{min-width:var(--_ui5-v2-17-0_button_base_min_width);height:var(--_ui5-v2-17-0_button_base_height);line-height:normal;font-family:var(--_ui5-v2-17-0_button_fontFamily);font-size:var(--sapFontSize);text-shadow:var(--_ui5-v2-17-0_button_text_shadow);border-radius:var(--_ui5-v2-17-0_button_border_radius);cursor:pointer;background-color:var(--sapButton_Background);border:var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);color:var(--sapButton_TextColor);box-sizing:border-box;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-webkit-tap-highlight-color:transparent}.ui5-button-root{min-width:inherit;cursor:inherit;height:100%;width:100%;box-sizing:border-box;display:flex;justify-content:center;align-items:center;outline:none;padding:0 var(--_ui5-v2-17-0_button_base_padding);position:relative;background:transparent;border:none;color:inherit;text-shadow:inherit;font:inherit;white-space:inherit;overflow:inherit;text-overflow:inherit;letter-spacing:inherit;word-spacing:inherit;line-height:inherit;-webkit-user-select:none;-moz-user-select:none;user-select:none}:host(:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host(:not([hidden]):not([disabled]).ui5_hovered){background:var(--sapButton_Hover_Background);border:1px solid var(--sapButton_Hover_BorderColor);color:var(--sapButton_Hover_TextColor)}.ui5-button-icon,.ui5-button-end-icon{color:inherit;flex-shrink:0}.ui5-button-end-icon{margin-inline-start:var(--_ui5-v2-17-0_button_base_icon_margin)}:host([icon-only]:not([has-end-icon])) .ui5-button-root{min-width:auto;padding:0}:host([icon-only]) .ui5-button-text{display:none}.ui5-button-text{outline:none;position:relative;white-space:inherit;overflow:inherit;text-overflow:inherit}:host([has-icon]:not(:empty)) .ui5-button-text{margin-inline-start:var(--_ui5-v2-17-0_button_base_icon_margin)}:host([has-end-icon]:not([has-icon]):empty) .ui5-button-end-icon{margin-inline-start:0}:host([disabled]){opacity:var(--sapContent_DisabledOpacity);pointer-events:unset;cursor:default}:host([has-icon]:not([icon-only]):not([has-end-icon])) .ui5-button-text{min-width:calc(var(--_ui5-v2-17-0_button_base_min_width) - var(--_ui5-v2-17-0_button_base_icon_margin) - 1rem)}:host([disabled]:active){pointer-events:none}:host([desktop]:not([loading])) .ui5-button-root:focus-within:after,:host(:not([active])) .ui5-button-root:focus-visible:after,:host([desktop][active][design="Emphasized"]) .ui5-button-root:focus-within:after,:host([active][design="Emphasized"]) .ui5-button-root:focus-visible:after,:host([desktop][active]) .ui5-button-root:focus-within:before,:host([active]) .ui5-button-root:focus-visible:before{content:"";position:absolute;box-sizing:border-box;pointer-events:none;inset:.0625rem;border:var(--_ui5-v2-17-0_button_focused_border);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}:host([desktop][active]) .ui5-button-root:focus-within:before,:host([active]) .ui5-button-root:focus-visible:before{border-color:var(--_ui5-v2-17-0_button_pressed_focused_border_color)}:host([design="Emphasized"][desktop]) .ui5-button-root:focus-within:after,:host([design="Emphasized"]) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_emphasized_focused_border_color)}:host([design="Emphasized"][desktop]) .ui5-button-root:focus-within:before,:host([design="Emphasized"]) .ui5-button-root:focus-visible:before{content:"";position:absolute;box-sizing:border-box;inset:.0625rem;border:var(--_ui5-v2-17-0_button_emphasized_focused_border_before);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}.ui5-button-root::-moz-focus-inner{border:0}bdi{display:block;white-space:inherit;overflow:inherit;text-overflow:inherit}:host([ui5-button][active]:not([disabled]):not([non-interactive])){background-image:none;background-color:var(--sapButton_Active_Background);border-color:var(--sapButton_Active_BorderColor);color:var(--sapButton_Active_TextColor)}:host([design="Positive"]){background-color:var(--sapButton_Accept_Background);border-color:var(--sapButton_Accept_BorderColor);color:var(--sapButton_Accept_TextColor)}:host([design="Positive"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Positive"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Accept_Hover_Background);border-color:var(--sapButton_Accept_Hover_BorderColor);color:var(--sapButton_Accept_Hover_TextColor)}:host([ui5-button][design="Positive"][active]:not([non-interactive])){background-color:var(--sapButton_Accept_Active_Background);border-color:var(--sapButton_Accept_Active_BorderColor);color:var(--sapButton_Accept_Active_TextColor)}:host([design="Negative"]){background-color:var(--sapButton_Reject_Background);border-color:var(--sapButton_Reject_BorderColor);color:var(--sapButton_Reject_TextColor)}:host([design="Negative"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Negative"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Reject_Hover_Background);border-color:var(--sapButton_Reject_Hover_BorderColor);color:var(--sapButton_Reject_Hover_TextColor)}:host([ui5-button][design="Negative"][active]:not([non-interactive])){background-color:var(--sapButton_Reject_Active_Background);border-color:var(--sapButton_Reject_Active_BorderColor);color:var(--sapButton_Reject_Active_TextColor)}:host([design="Attention"]){background-color:var(--sapButton_Attention_Background);border-color:var(--sapButton_Attention_BorderColor);color:var(--sapButton_Attention_TextColor)}:host([design="Attention"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Attention"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Attention_Hover_Background);border-color:var(--sapButton_Attention_Hover_BorderColor);color:var(--sapButton_Attention_Hover_TextColor)}:host([ui5-button][design="Attention"][active]:not([non-interactive])){background-color:var(--sapButton_Attention_Active_Background);border-color:var(--sapButton_Attention_Active_BorderColor);color:var(--sapButton_Attention_Active_TextColor)}:host([design="Emphasized"]){background-color:var(--sapButton_Emphasized_Background);border-color:var(--sapButton_Emphasized_BorderColor);border-width:var(--_ui5-v2-17-0_button_emphasized_border_width);color:var(--sapButton_Emphasized_TextColor);font-family:var(--sapButton_Emphasized_FontFamily)}:host([design="Emphasized"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Emphasized"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Emphasized_Hover_Background);border-color:var(--sapButton_Emphasized_Hover_BorderColor);border-width:var(--_ui5-v2-17-0_button_emphasized_border_width);color:var(--sapButton_Emphasized_Hover_TextColor)}:host([ui5-button][design="Empasized"][active]:not([non-interactive])){background-color:var(--sapButton_Emphasized_Active_Background);border-color:var(--sapButton_Emphasized_Active_BorderColor);color:var(--sapButton_Emphasized_Active_TextColor)}:host([design="Emphasized"][desktop]) .ui5-button-root:focus-within:after,:host([design="Emphasized"]) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_emphasized_focused_border_color);outline:none}:host([design="Emphasized"][desktop][active]:not([non-interactive])) .ui5-button-root:focus-within:after,:host([design="Emphasized"][active]:not([non-interactive])) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_emphasized_focused_active_border_color)}:host([design="Transparent"]){background-color:var(--sapButton_Lite_Background);color:var(--sapButton_Lite_TextColor);border-color:var(--sapButton_Lite_BorderColor)}:host([design="Transparent"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Transparent"]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:var(--sapButton_Lite_Hover_Background);border-color:var(--sapButton_Lite_Hover_BorderColor);color:var(--sapButton_Lite_Hover_TextColor)}:host([ui5-button][design="Transparent"][active]:not([non-interactive])){background-color:var(--sapButton_Lite_Active_Background);border-color:var(--sapButton_Lite_Active_BorderColor);color:var(--sapButton_Active_TextColor)}:host([ui5-segmented-button-item][active][desktop]) .ui5-button-root:focus-within:after,:host([ui5-segmented-button-item][active]) .ui5-button-root:focus-visible:after,:host([pressed][desktop]) .ui5-button-root:focus-within:after,:host([pressed]) .ui5-button-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_pressed_focused_border_color);outline:none}:host([ui5-segmented-button-item][desktop]:not(:last-child)) .ui5-button-root:focus-within:after,:host([ui5-segmented-button-item]:not(:last-child)) .ui5-button-root:focus-visible:after{border-top-right-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius)}:host([ui5-segmented-button-item][desktop]:not(:first-child)) .ui5-button-root:focus-within:after,:host([ui5-segmented-button-item]:not(:first-child)) .ui5-button-root:focus-visible:after{border-top-left-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius);border-bottom-left-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius)}::slotted([slot="badge"][design="InlineText"]){pointer-events:initial;font-family:var(--sapButton_FontFamily);font-size:var(--sapFontSmallSize);padding-inline-start:.25rem;--_ui5-v2-17-0-tag-height: .625rem}::slotted([slot="badge"][design="OverlayText"]){pointer-events:initial;position:absolute;top:0;inset-inline-end:0;margin:-.5rem;z-index:1;font-family:var(--sapButton_FontFamily);font-size:var(--sapFontSmallSize);--_ui5-v2-17-0-tag-height: .625rem}::slotted([slot="badge"][design="AttentionDot"]){pointer-events:initial;content:"";position:absolute;top:0;inset-inline-end:0;margin:-.25rem;z-index:1}:host(:state(has-overlay-badge)){overflow:visible;margin-inline-end:.3125rem}:host([loading]){position:relative;pointer-events:unset}:host([loading]) .ui5-button-root{opacity:var(--sapContent_DisabledOpacity)}:host([loading][design="Emphasized"]){background-color:inherit;border:inherit}:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered){background-color:inherit;border:inherit}:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover) .ui5-button-root,:host([design="Emphasized"][loading]:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]).ui5_hovered) .ui5-button-root{background-color:var(--sapButton_Emphasized_Hover_Background)}:host([loading][design="Emphasized"]) .ui5-button-root{background-color:var(--sapButton_Emphasized_Background);border-color:var(--sapButton_Emphasized_BorderColor)}.ui5-button-busy-indicator{position:absolute;height:100%;width:100%;top:0}:host([has-end-icon]) .ui5-button-root{justify-content:flex-start}:host([icon-only]) .ui5-button-root{justify-content:center}:host([has-end-icon]) .ui5-button-end-icon{margin-left:auto}
 `;
-var __decorate$1s = function(decorators, target, key, desc) {
+var __decorate$1t = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -2837,88 +2837,88 @@ let Button = Button_1 = class Button2 extends b$7 {
     return !!this.badge.length && (!!this.badge[0].text.length || this.badge[0].design === ButtonBadgeDesign$1.AttentionDot);
   }
 };
-__decorate$1s([
+__decorate$1t([
   s$9()
 ], Button.prototype, "design", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9({ type: Boolean })
 ], Button.prototype, "disabled", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9()
 ], Button.prototype, "icon", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9()
 ], Button.prototype, "endIcon", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9({ type: Boolean })
 ], Button.prototype, "submits", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9()
 ], Button.prototype, "tooltip", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9()
 ], Button.prototype, "accessibleName", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9()
 ], Button.prototype, "accessibleNameRef", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9({ type: Object })
 ], Button.prototype, "accessibilityAttributes", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9()
 ], Button.prototype, "accessibleDescription", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9()
 ], Button.prototype, "type", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9()
 ], Button.prototype, "accessibleRole", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9({ type: Boolean })
 ], Button.prototype, "active", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9({ type: Boolean })
 ], Button.prototype, "iconOnly", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9({ type: Boolean })
 ], Button.prototype, "hasIcon", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9({ type: Boolean })
 ], Button.prototype, "hasEndIcon", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9({ type: Boolean })
 ], Button.prototype, "nonInteractive", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9({ type: Boolean })
 ], Button.prototype, "loading", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9({ type: Number })
 ], Button.prototype, "loadingDelay", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9({ noAttribute: true })
 ], Button.prototype, "buttonTitle", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9({ type: Object })
 ], Button.prototype, "_iconSettings", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9({ noAttribute: true })
 ], Button.prototype, "forcedTabIndex", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9({ type: Boolean })
 ], Button.prototype, "_isTouch", void 0);
-__decorate$1s([
+__decorate$1t([
   s$9({ type: Boolean, noAttribute: true })
 ], Button.prototype, "_cancelAction", void 0);
-__decorate$1s([
+__decorate$1t([
   d$8({ type: Node, "default": true })
 ], Button.prototype, "text", void 0);
-__decorate$1s([
+__decorate$1t([
   d$8({ type: HTMLElement, invalidateOnChildChange: true })
 ], Button.prototype, "badge", void 0);
-__decorate$1s([
+__decorate$1t([
   i$b("@ui5/webcomponents")
 ], Button, "i18nBundle", void 0);
-Button = Button_1 = __decorate$1s([
+Button = Button_1 = __decorate$1t([
   m$8({
     tag: "ui5-button",
     formAssociated: true,
@@ -3012,7 +3012,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const switchCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{-webkit-tap-highlight-color:rgba(0,0,0,0)}:host(:not([hidden])){display:inline-block}.ui5-switch-root{position:relative;display:flex;align-items:center;width:var(--_ui5-v2-17-0_switch_width);height:var(--_ui5-v2-17-0_switch_height);min-width:var(--_ui5-v2-17-0_switch_min_width);cursor:pointer;outline:none;border-radius:var(--_ui5-v2-17-0-switch-root-border-radius)}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic){width:var(--_ui5-v2-17-0_switch_with_label_width);height:var(--_ui5-v2-17-0_switch_height)}.ui5-switch-root.ui5-switch--no-label{min-width:var(--_ui5-v2-17-0_switch_width)}.ui5-switch-inner{display:flex;align-items:center;justify-content:center;height:100%;width:100%;min-width:inherit;overflow:hidden;pointer-events:none;will-change:transform}:host([checked]) .ui5-switch-inner{border-radius:6.25rem;box-shadow:var(--_ui5-v2-17-0-switch-root-box-shadow)}.ui5-switch-track{display:flex;align-items:center;height:var(--_ui5-v2-17-0_switch_track_height);width:var(--_ui5-v2-17-0_switch_track_width);border:var(--_ui5-v2-17-0-switch-track-border);border-radius:var(--_ui5-v2-17-0_switch_track_border_radius);box-sizing:border-box;transition:var(--_ui5-v2-17-0_switch_track_transition)}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-track{height:var(--_ui5-v2-17-0_switch_track_with_label_height);width:var(--_ui5-v2-17-0_switch_track_with_label_width)}.ui5-switch-slider{position:relative;height:var(--_ui5-v2-17-0_switch_height);width:100%;transition:transform .1s ease-in;transform-origin:top left}.ui5-switch-slider>*:not(.ui5-switch-handle){display:var(--_ui5-v2-17-0-switch-slider-texts-display)}.ui5-switch-handle{position:absolute;display:flex;justify-content:center;align-items:center;width:var(--_ui5-v2-17-0_switch_handle_width);height:var(--_ui5-v2-17-0_switch_handle_height);border:var(--_ui5-v2-17-0_switch_handle_border);border-radius:var(--_ui5-v2-17-0_switch_handle_border_radius);box-sizing:border-box}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-handle{height:var(--_ui5-v2-17-0_switch_handle_with_label_height);width:var(--_ui5-v2-17-0_switch_handle_with_label_width)}.ui5-switch-text{display:flex;justify-content:center;position:absolute;z-index:var(--_ui5-v2-17-0_switch_text_z_index);min-width:var(--_ui5-v2-17-0_switch_text_min_width);font-size:var(--_ui5-v2-17-0_switch_text_font_size);font-family:var(--_ui5-v2-17-0-switch-text_font_family);text-transform:uppercase;text-align:center;white-space:nowrap;user-select:none;-webkit-user-select:none}.ui5-switch-handle,.ui5-switch-text{inset-inline-start:var(--_ui5-v2-17-0_switch_handle_left);top:50%;transform:translateY(-50%)}.ui5-switch-root:focus-visible:after,.ui5-switch--desktop.ui5-switch-root:focus-within:after{content:"";position:absolute;inset-inline-start:var(--_ui5-v2-17-0_switch_root_outline_left);inset-inline-end:var(--_ui5-v2-17-0_switch_root_outline_right);top:var(--_ui5-v2-17-0_switch_root_outline_top);bottom:var(--_ui5-v2-17-0_switch_root_outline_bottom);border:var(--_ui5-v2-17-0_switch_focus_outline);border-radius:var(--_ui5-v2-17-0_switch_root_after_boreder_radius);pointer-events:none;transition:var(--_ui5-v2-17-0_switch_track_transition);outline:var(--_ui5-v2-17-0_switch_root_after_outline)}.ui5-switch-root .ui5-switch-input{position:absolute;inset-inline-start:0;width:0;height:0;margin:0;visibility:hidden;appearance:none;-webkit-appearance:none}.ui5-switch-root.ui5-switch--disabled{opacity:var(--_ui5-v2-17-0_switch_disabled_opacity);cursor:default}.ui5-switch-root.ui5-switch--checked .ui5-switch-text--off{visibility:var(--_ui5-v2-17-0_switch_text_hidden)}.ui5-switch-root:not(.ui5-switch--checked) .ui5-switch-text--on{visibility:var(--_ui5-v2-17-0_switch_text_hidden)}.ui5-switch-root.ui5-switch--checked.ui5-switch--semantic .ui5-switch-text--on,.ui5-switch-root.ui5-switch--checked.ui5-switch--desktop.ui5-switch--no-label .ui5-switch-text--on{inset-inline-start:var(--_ui5-v2-17-0_switch_text_active_left)}.ui5-switch-root:not(.ui5-switch--checked).ui5-switch--semantic .ui5-switch-text--off,.ui5-switch-root:not(.ui5-switch--checked).ui5-switch--desktop.ui5-switch--no-label .ui5-switch-text--off{inset-inline-start:var(--_ui5-v2-17-0_switch_text_inactive_left);inset-inline-end:var(--_ui5-v2-17-0_switch_text_inactive_right)}.ui5-switch-root.ui5-switch--checked .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_active_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_active_border_color)}.ui5-switch-root:not(.ui5-switch--checked) .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_inactive_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_hover_active_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_hover_active_border_color)}.ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--disabled):not(.ui5-switch--checked):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_hover_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_hover_inactive_border_color)}.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_accept_border_color)}.ui5-switch-root.ui5-switch--semantic:not(.ui5-switch--checked) .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_reject_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_hover_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_hover_accept_border_color)}.ui5-switch--desktop.ui5-switch--semantic.ui5-switch-root:not(.ui5-switch--checked):not(.ui5-switch--disabled):hover .ui5-switch-handle{background:var(--_ui5-v2-17-0_switch_handle_semantic_hover_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_handle_semantic_hover_reject_border_color)}.ui5-switch-root.ui5-switch--checked .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_active_background_color);border-color:var(--_ui5-v2-17-0_switch_track_active_border_color)}.ui5-switch-root:not(.ui5-switch--checked) .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_track_inactive_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_hover_active_background_color);border-color:var(--_ui5-v2-17-0_switch_track_hover_active_border_color)}.ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--checked):not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_hover_inactive_background_color);border-color:var(--_ui5-v2-17-0_switch_track_hover_inactive_border_color)}.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_accept_border_color)}.ui5-switch-root.ui5-switch--semantic:not(.ui5-switch--checked) .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_reject_border_color)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_hover_accept_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_hover_accept_border_color)}.ui5-switch--desktop.ui5-switch--semantic.ui5-switch-root:not(.ui5-switch--checked):not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0_switch_track_semantic_hover_reject_background_color);border-color:var(--_ui5-v2-17-0_switch_track_semantic_hover_reject_border_color)}.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_transform_with_label)}.ui5-switch-root.ui5-switch--checked .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_transform)}.ui5-switch-text .ui5-switch-text--on .ui5-switch-no-label-icon,.ui5-switch-root.ui5-switch--semantic .ui5-switch-text,.ui5-switch-root.ui5-switch--no-label .ui5-switch-text{display:flex;justify-content:center}.ui5-switch--no-label .ui5-switch-no-label-icon-on,.ui5-switch--no-label .ui5-switch-no-label-icon-off{width:var(--_ui5-v2-17-0_switch_icon_width);height:var(--_ui5-v2-17-0_switch_icon_height);display:var(--_ui5-v2-17-0_switch_track_icon_display)}.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-on,.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-off{width:var(--_ui5-v2-17-0_switch_icon_width);height:var(--_ui5-v2-17-0_switch_icon_height)}.ui5-switch-root .ui5-switch-text{font-family:var(--_ui5-v2-17-0_switch_text_font_family);font-size:var(--_ui5-v2-17-0_switch_text_font_size);width:var(--_ui5-v2-17-0_switch_text_width)}.ui5-switch-root:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-text{font-family:var(--_ui5-v2-17-0_switch_text_with_label_font_family);font-size:var(--_ui5-v2-17-0_switch_text_with_label_font_size);width:var(--_ui5-v2-17-0_switch_text_with_label_width)}:host([active]) .ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--disabled) .ui5-switch-track{background:var(--_ui5-v2-17-0-switch_track-off-active-background)}:host([active]) .ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-track{background:var(--_ui5-v2-17-0-switch_track-on-active-background)}.ui5-switch--desktop.ui5-switch-root:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_off_hover_box_shadow)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_on_hover_box_shadow)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_semantic_off_hover_box_shadow)}.ui5-switch--desktop.ui5-switch-root.ui5-switch--semantic.ui5-switch--checked:not(.ui5-switch--disabled):hover .ui5-switch-handle{box-shadow:var(--_ui5-v2-17-0_switch_handle_semantic_on_hover_box_shadow)}.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-on,.ui5-switch-root.ui5-switch--semantic .ui5-switch-text--on{color:var(--_ui5-v2-17-0_switch_text_semantic_accept_color)}.ui5-switch-root.ui5-switch--semantic .ui5-switch-icon-off,.ui5-switch-root.ui5-switch--semantic .ui5-switch-text--off{color:var(--_ui5-v2-17-0_switch_text_semantic_reject_color)}.ui5-switch-root .ui5-switch-text--on{color:var(--_ui5-v2-17-0_switch_text_active_color);overflow:var(--_ui5-v2-17-0_switch_text_overflow);text-overflow:ellipsis;inset-inline-start:var(--_ui5-v2-17-0_switch_text_active_left_alternate)}.ui5-switch-root .ui5-switch-text--off{color:var(--_ui5-v2-17-0_switch_text_inactive_color);overflow:var(--_ui5-v2-17-0_switch_text_overflow);text-overflow:ellipsis;inset-inline-start:var(--_ui5-v2-17-0_switch_text_inactive_left_alternate);inset-inline-end:var(--_ui5-v2-17-0_switch_text_inactive_right_alternate)}.ui5-switch-root.ui5-switch--safari .ui5-switch-text--on.ui5-switch-no-label-icon,.ui5-switch-root.ui5-switch--safari .ui5-switch-text--off.ui5-switch-no-label-icon{inset-inline-start:.1875rem}.ui5-switch-root .ui5-switch-no-label-icon-on,.ui5-switch-root .ui5-switch-icon-on{color:var(--_ui5-v2-17-0_switch_text_active_color)}.ui5-switch-root .ui5-switch-no-label-icon-off,.ui5-switch-root .ui5-switch-icon-off{color:var(--_ui5-v2-17-0_switch_text_inactive_color)}:dir(rtl).ui5-switch-root.ui5-switch--checked:not(.ui5-switch--no-label):not(.ui5-switch--semantic) .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_rtl_transform_with_label)}:dir(rtl).ui5-switch-root.ui5-switch--checked .ui5-switch-slider{transform:var(--_ui5-v2-17-0_switch_rtl_transform)}
 `;
-var __decorate$1r = function(decorators, target, key, desc) {
+var __decorate$1s = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -3105,46 +3105,46 @@ let Switch = Switch_1 = class Switch2 extends b$7 {
     return [A$3(this), this.hiddenText].join(" ").trim();
   }
 };
-__decorate$1r([
+__decorate$1s([
   s$9()
 ], Switch.prototype, "design", void 0);
-__decorate$1r([
+__decorate$1s([
   s$9({ type: Boolean })
 ], Switch.prototype, "checked", void 0);
-__decorate$1r([
+__decorate$1s([
   s$9({ type: Boolean })
 ], Switch.prototype, "disabled", void 0);
-__decorate$1r([
+__decorate$1s([
   s$9()
 ], Switch.prototype, "textOn", void 0);
-__decorate$1r([
+__decorate$1s([
   s$9()
 ], Switch.prototype, "textOff", void 0);
-__decorate$1r([
+__decorate$1s([
   s$9()
 ], Switch.prototype, "accessibleName", void 0);
-__decorate$1r([
+__decorate$1s([
   s$9()
 ], Switch.prototype, "accessibleNameRef", void 0);
-__decorate$1r([
+__decorate$1s([
   s$9()
 ], Switch.prototype, "tooltip", void 0);
-__decorate$1r([
+__decorate$1s([
   s$9({ type: Boolean })
 ], Switch.prototype, "required", void 0);
-__decorate$1r([
+__decorate$1s([
   s$9()
 ], Switch.prototype, "name", void 0);
-__decorate$1r([
+__decorate$1s([
   s$9()
 ], Switch.prototype, "value", void 0);
-__decorate$1r([
+__decorate$1s([
   s$9({ type: Boolean, noAttribute: true })
 ], Switch.prototype, "_cancelAction", void 0);
-__decorate$1r([
+__decorate$1s([
   i$b("@ui5/webcomponents")
 ], Switch, "i18nBundle", void 0);
-Switch = Switch_1 = __decorate$1r([
+Switch = Switch_1 = __decorate$1s([
   m$8({
     tag: "ui5-switch",
     formAssociated: true,
@@ -3194,7 +3194,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const sliderBaseStyles = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host([disabled]){opacity:var(--_ui5-v2-17-0_slider_disabled_opacity);cursor:default;pointer-events:none}:host{box-sizing:border-box;cursor:pointer;vertical-align:top;width:100%}:host(:not([hidden])){display:inline-block}.ui5-slider-root{box-sizing:border-box;height:3.3125rem;outline:none;padding:var(--_ui5-v2-17-0_slider_padding);touch-action:none}.ui5-slider-inner{background-repeat:no-repeat;position:relative;min-width:var(--_ui5-v2-17-0_slider_inner_min_width);height:100%}.ui5-slider-progress-container{width:100%;background:var(--_ui5-v2-17-0_slider_progress_container_background);border:var(--_ui5-v2-17-0_slider_progress_border);border-radius:var(--_ui5-v2-17-0_slider_progress_border_radius);height:var(--_ui5-v2-17-0_slider_inner_height);position:relative;box-sizing:var(--_ui5-v2-17-0_slider_progress_box_sizing);top:var(--_ui5-v2-17-0_slider_progress_container_top)}.ui5-slider-progress-container:before,.ui5-slider-progress-container:after{display:var(--_ui5-v2-17-0_slider_progress_container_dot_display);content:"";position:absolute;border-radius:50%;width:var(--_ui5-v2-17-0_slider_start_end_point_size);height:var(--_ui5-v2-17-0_slider_start_end_point_size);top:var(--_ui5-v2-17-0_slider_start_end_point_top)}.ui5-slider-progress-container:before{inset-inline-start:var(--_ui5-v2-17-0_slider_start_end_point_left);background-color:var(--_ui5-v2-17-0_slider_progress_before_background);border:var(--_ui5-v2-17-0_slider_progress_before_border)}.ui5-slider-progress-container:after{inset-inline-end:var(--_ui5-v2-17-0_slider_start_end_point_left);background-color:var(--_ui5-v2-17-0_slider_progress_after_background);border:var(--_ui5-v2-17-0_slider_progress_after_border)}.ui5-slider-progress{background:var(--_ui5-v2-17-0_slider_progress_background);border-radius:var(--_ui5-v2-17-0_slider_progress_border_radius);height:var(--_ui5-v2-17-0_slider_progress_height);position:relative;outline:none;box-sizing:var(--_ui5-v2-17-0_slider_active_progress_box_sizing);border:var(--_ui5-v2-17-0_slider_active_progress_border);left:var(--_ui5-v2-17-0_slider_active_progress_left);top:var(--_ui5-v2-17-0_slider_active_progress_top)}.ui5-slider-tickmarks{list-style:none;padding:0;margin:0;top:var(--_ui5-v2-17-0_slider_tickmark_top);display:flex;box-sizing:border-box;width:100%;justify-content:space-between;position:absolute;z-index:1}.ui5-slider-tickmarks li{height:var(--_ui5-v2-17-0_slider_tickmark_height);border-inline-start:.0625rem solid var(--_ui5-v2-17-0_slider_tickmark_bg)}.ui5-slider-handle{background:var(--_ui5-v2-17-0_slider_handle_background);border:var(--_ui5-v2-17-0_slider_handle_border);border-radius:var(--_ui5-v2-17-0_slider_handle_border_radius);position:relative;outline:none;height:var(--_ui5-v2-17-0_slider_handle_height);width:var(--_ui5-v2-17-0_slider_handle_width);box-sizing:var(--_ui5-v2-17-0_slider_handle_box_sizing);display:flex;justify-content:center;align-items:center;z-index:2}[slider-icon]{display:var(--_ui5-v2-17-0_slider_handle_icon_display);color:var(--sapContent_Selected_ForegroundColor);width:var(--_ui5-v2-17-0_slider_handle_icon_size);height:var(--_ui5-v2-17-0_slider_handle_icon_size)}.ui5-slider-root .ui5-slider-handle:focus [slider-icon]{display:var(--_ui5-v2-17-0_range_slider_active_handle_icon_display)}.ui5-slider-progress-container:hover~.ui5-slider-handle:not(:focus),.ui5-slider-handle:hover{background:var(--_ui5-v2-17-0_slider_handle_hover_background);border:var(--_ui5-v2-17-0_slider_handle_hover_border)}.ui5-slider-root:focus .ui5-slider-inner .ui5-slider-handle,.ui5-slider-handle:focus{outline:var(--_ui5-v2-17-0_slider_handle_outline);outline-offset:var(--_ui5-v2-17-0_slider_handle_outline_offset);border:var(--_ui5-v2-17-0_slider_handle_focus_border);background:var(--_ui5-v2-17-0_slider_handle_background_focus)}.ui5-slider-handle.ui5-slider-handle--start:focus,.ui5-slider-handle--end:focus{border:var(--_ui5-v2-17-0_slider_handle_focus_border)}.ui5-slider-root:focus:hover .ui5-slider-handle,.ui5-slider-handle:focus:hover{border:var(--_ui5-v2-17-0_slider_handle_focus_border)}.ui5-slider-handle-container{position:absolute;margin-inline-start:calc(-1 * var(--_ui5-v2-17-0_slider_handle_width) / 2);top:var(--_ui5-v2-17-0_slider_handle_top)}:host(:not([hidden])) .ui5-slider-handle-container .ui5-slider-tooltip{display:flex;font-family:var(--sapFontFamily);justify-content:center;align-items:center;visibility:hidden;position:absolute;left:50%;transform:translate(-50%);bottom:var(--_ui5-v2-17-0_slider_tooltip_bottom);background:var(--_ui5-v2-17-0_slider_tooltip_background);border:var(--_ui5-v2-17-0_slider_tooltip_border);border-radius:var(--_ui5-v2-17-0_slider_tooltip_border_radius);box-shadow:var(--_ui5-v2-17-0_slider_tooltip_box_shadow);font-size:var(--_ui5-v2-17-0_slider_tooltip_fontsize);color:var(--_ui5-v2-17-0_slider_tooltip_color);height:var(--_ui5-v2-17-0_slider_tooltip_height);min-width:var(--_ui5-v2-17-0_slider_tooltip_min_width);padding:var(--_ui5-v2-17-0_slider_tooltip_padding);box-sizing:var(--_ui5-v2-17-0_slider_tooltip_border_box)}:host(:not([hidden])):host([editable-tooltip]) .ui5-slider-handle-container .ui5-slider-tooltip{border:none;background:none;box-shadow:none}:host([editable-tooltip]) .ui5-slider-tooltip{padding:0;box-shadow:none}.ui5-slider-tooltip [ui5-input]{width:100%;text-align:center}.ui5-slider-tooltip-value{position:relative;display:flex;justify-content:center;align-items:center}.ui5-slider-labels{position:absolute;top:1.25rem;margin:0;padding:0;white-space:nowrap;height:1rem;width:100%;display:flex;justify-content:space-between}.ui5-slider-labels li{position:relative;list-style:none;margin:0;text-align:center;display:inline-block;font-family:var(--sapFontFamily);font-size:var(--_ui5-v2-17-0_slider_label_fontsize);padding-top:0;box-sizing:border-box;width:.0625rem;visibility:hidden}.ui5-slider-labels li:after{content:attr(data-counter);position:absolute;top:0;visibility:visible;display:inline-block;width:2rem;color:var(--_ui5-v2-17-0_slider_label_color);transform:translate(-50%)}.ui5-slider-hidden-labels li:not(:first-child):not(:last-child):after{visibility:hidden}.ui5-slider-handle:focus .ui5-slider-tooltip{bottom:var(--_ui5-v2-17-0_slider_handle_focused_tooltip_distance)}.ui5-slider-tickmarks li.ui5-slider-tickmark-in-range{border-inline-start:1px solid var(--_ui5-v2-17-0_slider_tickmark_in_range_bg)}:host([show-tickmarks]) .ui5-slider-progress{height:var(--_ui5-v2-17-0_slider_no_tickmarks_progress_height);border:var(--_ui5-v2-17-0_slider_no_tickmarks_active_progress_border);left:var(--_ui5-v2-17-0_slider_no_tickmarks_active_progress_left);top:var(--_ui5-v2-17-0_slider_no_tickmarks_active_progress_top)}:host([show-tickmarks]) .ui5-slider-progress-container{top:var(--_ui5-v2-17-0_slider_no_tickmarks_progress_container_top)}.ui5-slider-handle:focus:after{content:"";display:var(--_ui5-v2-17-0_slider_handle_focus_visibility);width:calc(100% + (var(--sapContent_FocusWidth) * 2) + 2px);height:calc(100% + (var(--sapContent_FocusWidth) * 2) + 2px);border:var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);position:absolute;border-radius:var(--_ui5-v2-17-0_slider_handle_border_radius);pointer-events:none}
 `;
-var __decorate$1q = function(decorators, target, key, desc) {
+var __decorate$1r = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -3724,52 +3724,52 @@ class SliderBase2 extends b$7 {
     return "";
   }
 };
-__decorate$1q([
+__decorate$1r([
   s$9({ type: Number })
 ], SliderBase.prototype, "min", void 0);
-__decorate$1q([
+__decorate$1r([
   s$9({ type: Number })
 ], SliderBase.prototype, "max", void 0);
-__decorate$1q([
+__decorate$1r([
   s$9()
 ], SliderBase.prototype, "name", void 0);
-__decorate$1q([
+__decorate$1r([
   s$9({ type: Number })
 ], SliderBase.prototype, "step", void 0);
-__decorate$1q([
+__decorate$1r([
   s$9({ type: Number })
 ], SliderBase.prototype, "labelInterval", void 0);
-__decorate$1q([
+__decorate$1r([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "showTickmarks", void 0);
-__decorate$1q([
+__decorate$1r([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "showTooltip", void 0);
-__decorate$1q([
+__decorate$1r([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "editableTooltip", void 0);
-__decorate$1q([
+__decorate$1r([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "disabled", void 0);
-__decorate$1q([
+__decorate$1r([
   s$9()
 ], SliderBase.prototype, "accessibleName", void 0);
-__decorate$1q([
+__decorate$1r([
   s$9({ type: Number })
 ], SliderBase.prototype, "value", void 0);
-__decorate$1q([
+__decorate$1r([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "_tooltipsOpen", void 0);
-__decorate$1q([
+__decorate$1r([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "_labelsOverlapping", void 0);
-__decorate$1q([
+__decorate$1r([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "_hiddenTickmarks", void 0);
-__decorate$1q([
+__decorate$1r([
   s$9({ type: Boolean })
 ], SliderBase.prototype, "_isInputValueValid", void 0);
-SliderBase = SliderBase_1 = __decorate$1q([
+SliderBase = SliderBase_1 = __decorate$1r([
   l$e("change", {
     bubbles: true
   }),
@@ -4384,7 +4384,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const globalStyles = `.ui5-popup-scroll-blocker{overflow:hidden}
 `;
-var __decorate$1p = function(decorators, target, key, desc) {
+var __decorate$1q = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -4760,52 +4760,52 @@ let Popup = Popup_1 = class Popup2 extends b$7 {
     };
   }
 };
-__decorate$1p([
+__decorate$1q([
   s$9()
 ], Popup.prototype, "initialFocus", void 0);
-__decorate$1p([
+__decorate$1q([
   s$9({ type: Boolean })
 ], Popup.prototype, "preventFocusRestore", void 0);
-__decorate$1p([
+__decorate$1q([
   s$9()
 ], Popup.prototype, "accessibleName", void 0);
-__decorate$1p([
+__decorate$1q([
   s$9()
 ], Popup.prototype, "accessibleNameRef", void 0);
-__decorate$1p([
+__decorate$1q([
   s$9()
 ], Popup.prototype, "accessibleRole", void 0);
-__decorate$1p([
+__decorate$1q([
   s$9()
 ], Popup.prototype, "accessibleDescription", void 0);
-__decorate$1p([
+__decorate$1q([
   s$9()
 ], Popup.prototype, "accessibleDescriptionRef", void 0);
-__decorate$1p([
+__decorate$1q([
   s$9({ noAttribute: true })
 ], Popup.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$1p([
+__decorate$1q([
   s$9()
 ], Popup.prototype, "mediaRange", void 0);
-__decorate$1p([
+__decorate$1q([
   s$9({ type: Boolean })
 ], Popup.prototype, "preventInitialFocus", void 0);
-__decorate$1p([
+__decorate$1q([
   s$9({ type: Boolean, noAttribute: true })
 ], Popup.prototype, "isTopModalPopup", void 0);
-__decorate$1p([
+__decorate$1q([
   d$8({ type: HTMLElement, "default": true })
 ], Popup.prototype, "content", void 0);
-__decorate$1p([
+__decorate$1q([
   s$9({ type: Boolean })
 ], Popup.prototype, "onPhone", void 0);
-__decorate$1p([
+__decorate$1q([
   s$9({ type: Boolean })
 ], Popup.prototype, "onDesktop", void 0);
-__decorate$1p([
+__decorate$1q([
   s$9({ type: Boolean })
 ], Popup.prototype, "open", null);
-Popup = Popup_1 = __decorate$1p([
+Popup = Popup_1 = __decorate$1q([
   m$8({
     renderer: y$5,
     styles: [popupStlyes, popupBlockLayerStyles],
@@ -4854,9 +4854,9 @@ const closePopoversIfLostFocus = () => {
   if (activeElement.tagName === "IFRAME") {
     getRegistry().reverse().forEach((popup) => {
       const popover = popup.instance;
-      const opener = popover.getOpenerHTMLElement(popover.opener);
+      const opener2 = popover.getOpenerHTMLElement(popover.opener);
       while (activeElement) {
-        if (activeElement === opener) {
+        if (activeElement === opener2) {
           return;
         }
         activeElement = e$7(activeElement);
@@ -5008,7 +5008,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const titleCss = `:host(:not([hidden])){display:block;cursor:text}:host{max-width:100%;color:var(--sapGroup_TitleTextColor);font-size:var(--sapFontHeader5Size);font-family:var(--sapFontHeaderFamily);text-shadow:var(--sapContent_TextShadow)}.ui5-title-root{display:inline-block;position:relative;font-weight:400;font-size:inherit;box-sizing:border-box;overflow:hidden;text-overflow:ellipsis;max-width:100%;vertical-align:bottom;-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;margin:0;cursor:inherit}:host{white-space:pre-line}:host([wrapping-type="None"]){white-space:nowrap}.ui5-title-root,:host ::slotted(*){white-space:inherit}::slotted(*){font-size:inherit;font-family:inherit;text-shadow:inherit}:host([size="H1"]){font-size:var(--sapFontHeader1Size)}:host([size="H2"]){font-size:var(--sapFontHeader2Size)}:host([size="H3"]){font-size:var(--sapFontHeader3Size)}:host([size="H4"]){font-size:var(--sapFontHeader4Size)}:host([size="H5"]){font-size:var(--sapFontHeader5Size)}:host([size="H6"]){font-size:var(--sapFontHeader6Size)}
 `;
-var __decorate$1o = function(decorators, target, key, desc) {
+var __decorate$1p = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -5040,16 +5040,16 @@ let Title = class Title2 extends b$7 {
     return this.level === TitleLevel$1.H6;
   }
 };
-__decorate$1o([
+__decorate$1p([
   s$9()
 ], Title.prototype, "wrappingType", void 0);
-__decorate$1o([
+__decorate$1p([
   s$9()
 ], Title.prototype, "level", void 0);
-__decorate$1o([
+__decorate$1p([
   s$9()
 ], Title.prototype, "size", void 0);
-Title = __decorate$1o([
+Title = __decorate$1p([
   m$8({
     tag: "ui5-title",
     renderer: y$5,
@@ -5079,7 +5079,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const PopoverCss = `:host{box-shadow:var(--_ui5-v2-17-0_popover_box_shadow);background-color:var(--_ui5-v2-17-0_popover_background);max-width:calc(100vw - (100vw - 100%) - 2 * var(--_ui5-v2-17-0_popup_viewport_margin))}:host([hide-arrow]){box-shadow:var(--_ui5-v2-17-0_popover_no_arrow_box_shadow)}:host([actual-placement="Bottom"]) .ui5-popover-arrow{left:calc(50% - .5625rem);top:-.5rem;height:.5rem}:host([actual-placement="Bottom"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_upward_arrow_margin)}:host([actual-placement="Left"]) .ui5-popover-arrow{top:calc(50% - .5625rem);right:-.5625rem;width:.5625rem}:host([actual-placement="Left"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_right_arrow_margin)}:host([actual-placement="Top"]) .ui5-popover-arrow{left:calc(50% - .5625rem);height:.5625rem;top:100%}:host([actual-placement="Top"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_downward_arrow_margin)}:host(:not([actual-placement])) .ui5-popover-arrow,:host([actual-placement="Right"]) .ui5-popover-arrow{left:-.5625rem;top:calc(50% - .5625rem);width:.5625rem;height:1rem}:host(:not([actual-placement])) .ui5-popover-arrow:after,:host([actual-placement="Right"]) .ui5-popover-arrow:after{margin:var(--_ui5-v2-17-0_popover_left_arrow_margin)}:host([hide-arrow]) .ui5-popover-arrow{display:none}.ui5-popover-root{min-width:6.25rem}.ui5-popover-arrow{pointer-events:none;display:block;width:1rem;height:1rem;position:absolute;overflow:hidden}.ui5-popover-arrow:after{content:"";display:block;width:.7rem;height:.7rem;background-color:var(--_ui5-v2-17-0_popover_background);box-shadow:var(--_ui5-v2-17-0_popover_box_shadow);transform:rotate(-45deg)}:host([modal])::backdrop{background-color:var(--_ui5-v2-17-0_popup_block_layer_background);opacity:var(--_ui5-v2-17-0_popup_block_layer_opacity)}:host([modal]) .ui5-block-layer{display:block}
 `;
-var __decorate$1n = function(decorators, target, key, desc) {
+var __decorate$1o = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -5141,32 +5141,32 @@ let Popover = Popover_1 = class Popover2 extends Popup$1 {
     if (this._opened) {
       return;
     }
-    const opener = this.getOpenerHTMLElement(this.opener);
-    if (!opener) {
+    const opener2 = this.getOpenerHTMLElement(this.opener);
+    if (!opener2) {
       return;
     }
-    if (!opener || this.isOpenerOutsideViewport(opener.getBoundingClientRect())) {
+    if (!opener2 || this.isOpenerOutsideViewport(opener2.getBoundingClientRect())) {
       await f$i();
       this.open = false;
       this.fireDecoratorEvent("close");
       return;
     }
-    this._openerRect = opener.getBoundingClientRect();
+    this._openerRect = opener2.getBoundingClientRect();
     await super.openPopup();
   }
   isOpenerClicked(e2) {
     const target = e2.target;
-    const opener = this.getOpenerHTMLElement(this.opener);
-    if (!opener) {
+    const opener2 = this.getOpenerHTMLElement(this.opener);
+    if (!opener2) {
       return false;
     }
-    if (target === opener) {
+    if (target === opener2) {
       return true;
     }
-    if (this._isUI5AbstractElement(target) && target.getFocusDomRef() === opener) {
+    if (this._isUI5AbstractElement(target) && target.getFocusDomRef() === opener2) {
       return true;
     }
-    return e2.composedPath().indexOf(opener) > -1;
+    return e2.composedPath().indexOf(opener2) > -1;
   }
   /**
    * Override for the _addOpenedPopup hook, which would otherwise just call addOpenedPopup(this)
@@ -5182,20 +5182,20 @@ let Popover = Popover_1 = class Popover2 extends Popup$1 {
   _removeOpenedPopup() {
     removeOpenedPopover(this);
   }
-  getOpenerHTMLElement(opener) {
-    if (opener === void 0 || opener === null) {
-      return opener;
+  getOpenerHTMLElement(opener2) {
+    if (opener2 === void 0 || opener2 === null) {
+      return opener2;
     }
-    if (opener instanceof HTMLElement) {
-      return this._isUI5AbstractElement(opener) ? opener.getFocusDomRef() : opener;
+    if (opener2 instanceof HTMLElement) {
+      return this._isUI5AbstractElement(opener2) ? opener2.getFocusDomRef() : opener2;
     }
     let rootNode = this.getRootNode();
     if (rootNode === this) {
       rootNode = document;
     }
-    let openerHTMLElement = rootNode.getElementById(opener);
+    let openerHTMLElement = rootNode.getElementById(opener2);
     if (rootNode instanceof ShadowRoot && !openerHTMLElement) {
-      openerHTMLElement = document.getElementById(opener);
+      openerHTMLElement = document.getElementById(opener2);
     }
     if (openerHTMLElement) {
       return this._isUI5AbstractElement(openerHTMLElement) ? openerHTMLElement.getFocusDomRef() : openerHTMLElement;
@@ -5210,8 +5210,8 @@ let Popover = Popover_1 = class Popover2 extends Popup$1 {
       "Top": openerRect.top,
       "Bottom": openerRect.bottom
     };
-    const opener = this.getOpenerHTMLElement(this.opener);
-    const closedPopupParent = i$5(opener);
+    const opener2 = this.getOpenerHTMLElement(this.opener);
+    const closedPopupParent = i$5(opener2);
     let overflowsBottom = false;
     let overflowsTop = false;
     if (closedPopupParent instanceof Popover_1) {
@@ -5241,15 +5241,15 @@ let Popover = Popover_1 = class Popover2 extends Popup$1 {
   }
   async _show() {
     super._show();
-    const opener = this.getOpenerHTMLElement(this.opener);
-    if (!opener) {
+    const opener2 = this.getOpenerHTMLElement(this.opener);
+    if (!opener2) {
       Object.assign(this.style, {
         top: `0px`,
         left: `0px`
       });
       return;
     }
-    if (opener && v$5(opener) && !opener.getDomRef()) {
+    if (opener2 && v$5(opener2) && !opener2.getDomRef()) {
       return;
     }
     if (!this._opened) {
@@ -5261,7 +5261,7 @@ let Popover = Popover_1 = class Popover2 extends Popup$1 {
       return;
     }
     if (this.open) {
-      this._openerRect = opener.getBoundingClientRect();
+      this._openerRect = opener2.getBoundingClientRect();
     }
     if (this._oldPlacement && this.shouldCloseDueToNoOpener(this._openerRect) && this.isFocusWithin()) {
       placement = this._oldPlacement;
@@ -5629,52 +5629,52 @@ let Popover = Popover_1 = class Popover2 extends Popup$1 {
     }
   }
 };
-__decorate$1n([
+__decorate$1o([
   s$9()
 ], Popover.prototype, "headerText", void 0);
-__decorate$1n([
+__decorate$1o([
   s$9()
 ], Popover.prototype, "placement", void 0);
-__decorate$1n([
+__decorate$1o([
   s$9()
 ], Popover.prototype, "horizontalAlign", void 0);
-__decorate$1n([
+__decorate$1o([
   s$9()
 ], Popover.prototype, "verticalAlign", void 0);
-__decorate$1n([
+__decorate$1o([
   s$9({ type: Boolean })
 ], Popover.prototype, "modal", void 0);
-__decorate$1n([
+__decorate$1o([
   s$9({ type: Boolean })
 ], Popover.prototype, "hideArrow", void 0);
-__decorate$1n([
+__decorate$1o([
   s$9({ type: Boolean })
 ], Popover.prototype, "allowTargetOverlap", void 0);
-__decorate$1n([
+__decorate$1o([
   s$9({ type: Number, noAttribute: true })
 ], Popover.prototype, "arrowTranslateX", void 0);
-__decorate$1n([
+__decorate$1o([
   s$9({ type: Number, noAttribute: true })
 ], Popover.prototype, "arrowTranslateY", void 0);
-__decorate$1n([
+__decorate$1o([
   s$9()
 ], Popover.prototype, "actualPlacement", void 0);
-__decorate$1n([
+__decorate$1o([
   s$9({ type: Number, noAttribute: true })
 ], Popover.prototype, "_maxHeight", void 0);
-__decorate$1n([
+__decorate$1o([
   s$9({ type: Number, noAttribute: true })
 ], Popover.prototype, "_maxWidth", void 0);
-__decorate$1n([
+__decorate$1o([
   d$8({ type: HTMLElement })
 ], Popover.prototype, "header", void 0);
-__decorate$1n([
+__decorate$1o([
   d$8({ type: HTMLElement })
 ], Popover.prototype, "footer", void 0);
-__decorate$1n([
+__decorate$1o([
   s$9({ converter: e$8 })
 ], Popover.prototype, "opener", null);
-Popover = Popover_1 = __decorate$1n([
+Popover = Popover_1 = __decorate$1o([
   m$8({
     tag: "ui5-popover",
     styles: [
@@ -5741,7 +5741,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const SuggestionsCss = `.ui5-suggestions-popover{box-shadow:var(--sapContent_Shadow1)}.ui5-suggestions-popover::part(header),.ui5-suggestions-popover::part(content){padding:0}.ui5-suggestions-popover::part(footer){padding:0 1rem}.input-root-phone.native-input-wrapper{display:contents}.input-root-phone.native-input-wrapper:before{display:none}.native-input-wrapper .ui5-input-inner-phone{margin:0}.native-input-wrapper .ui5-multi-input-mobile-dialog-button{margin-inline-start:.5rem}
 `;
-var __decorate$1m = function(decorators, target, key, desc) {
+var __decorate$1n = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -6852,124 +6852,124 @@ let Input = Input_1 = class Input2 extends b$7 {
     return value;
   }
 };
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Boolean })
 ], Input.prototype, "disabled", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Boolean })
 ], Input.prototype, "highlight", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9()
 ], Input.prototype, "placeholder", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Boolean })
 ], Input.prototype, "readonly", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Boolean })
 ], Input.prototype, "required", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Boolean })
 ], Input.prototype, "noTypeahead", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9()
 ], Input.prototype, "type", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9()
 ], Input.prototype, "value", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ noAttribute: true })
 ], Input.prototype, "_innerValue", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9()
 ], Input.prototype, "valueState", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9()
 ], Input.prototype, "name", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Boolean })
 ], Input.prototype, "showSuggestions", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Number })
 ], Input.prototype, "maxlength", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9()
 ], Input.prototype, "accessibleName", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9()
 ], Input.prototype, "accessibleNameRef", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9()
 ], Input.prototype, "accessibleDescription", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9()
 ], Input.prototype, "accessibleDescriptionRef", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Boolean })
 ], Input.prototype, "showClearIcon", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Boolean })
 ], Input.prototype, "open", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Boolean })
 ], Input.prototype, "_effectiveShowClearIcon", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Boolean })
 ], Input.prototype, "focused", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9()
 ], Input.prototype, "hint", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Boolean })
 ], Input.prototype, "valueStateOpen", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Object })
 ], Input.prototype, "_inputAccInfo", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Object })
 ], Input.prototype, "_nativeInputAttributes", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Number })
 ], Input.prototype, "_inputWidth", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Number })
 ], Input.prototype, "_listWidth", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Boolean, noAttribute: true })
 ], Input.prototype, "_inputIconFocused", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ noAttribute: true })
 ], Input.prototype, "_associatedLabelsTexts", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ noAttribute: true })
 ], Input.prototype, "_accessibleLabelsRefTexts", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ noAttribute: true })
 ], Input.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Object })
 ], Input.prototype, "Suggestions", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Array })
 ], Input.prototype, "_linksListenersArray", void 0);
-__decorate$1m([
+__decorate$1n([
   s$9({ type: Boolean, noAttribute: true })
 ], Input.prototype, "_isComposing", void 0);
-__decorate$1m([
+__decorate$1n([
   d$8({ type: HTMLElement, "default": true })
 ], Input.prototype, "suggestionItems", void 0);
-__decorate$1m([
+__decorate$1n([
   d$8()
 ], Input.prototype, "icon", void 0);
-__decorate$1m([
+__decorate$1n([
   d$8({
     type: HTMLElement,
     invalidateOnChildChange: true
   })
 ], Input.prototype, "valueStateMessage", void 0);
-__decorate$1m([
+__decorate$1n([
   i$b("@ui5/webcomponents")
 ], Input, "i18nBundle", void 0);
-Input = Input_1 = __decorate$1m([
+Input = Input_1 = __decorate$1n([
   m$8({
     tag: "ui5-input",
     languageAware: true,
@@ -7016,7 +7016,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const SliderTooltipCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:popover-open){margin:-28px 0 0;display:inline-block;height:1rem;background:var(--sapBackgroundColor);border:none;box-shadow:var(--sapContent_Shadow1);border-radius:.0625rem;padding:0 .5rem;font-family:var(--sapFontFamily);font-size:var(--sapFontSmallSize);color:var(--sapTextColor);display:flex;justify-content:center;align-items:center;overflow:hidden}:host([editable]:popover-open){cursor:pointer;height:fit-content;border:none;padding:0;margin-top:-3rem;box-shadow:none}:host([editable]:popover-open) [ui5-input]{width:min-content;text-align:center}
 `;
-var __decorate$1l = function(decorators, target, key, desc) {
+var __decorate$1m = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -7118,34 +7118,34 @@ let SliderTooltip = SliderTooltip_1 = class SliderTooltip2 extends b$7 {
     return SliderTooltip_1.i18nBundle.getText(SLIDER_TOOLTIP_INPUT_LABEL);
   }
 };
-__decorate$1l([
+__decorate$1m([
   s$9()
 ], SliderTooltip.prototype, "value", void 0);
-__decorate$1l([
+__decorate$1m([
   s$9()
 ], SliderTooltip.prototype, "inputValue", void 0);
-__decorate$1l([
+__decorate$1m([
   s$9({ type: Boolean })
 ], SliderTooltip.prototype, "open", void 0);
-__decorate$1l([
+__decorate$1m([
   s$9({ type: Number })
 ], SliderTooltip.prototype, "min", void 0);
-__decorate$1l([
+__decorate$1m([
   s$9({ type: Number })
 ], SliderTooltip.prototype, "max", void 0);
-__decorate$1l([
+__decorate$1m([
   s$9({ type: Boolean })
 ], SliderTooltip.prototype, "editable", void 0);
-__decorate$1l([
+__decorate$1m([
   s$9()
 ], SliderTooltip.prototype, "valueState", void 0);
-__decorate$1l([
+__decorate$1m([
   s$9({ type: Object })
 ], SliderTooltip.prototype, "followRef", void 0);
-__decorate$1l([
+__decorate$1m([
   i$b("@ui5/webcomponents")
 ], SliderTooltip, "i18nBundle", void 0);
-SliderTooltip = SliderTooltip_1 = __decorate$1l([
+SliderTooltip = SliderTooltip_1 = __decorate$1m([
   m$8({
     tag: "ui5-slider-tooltip",
     renderer: y$5,
@@ -7170,7 +7170,7 @@ function handles() {
   var _a2;
   return jsxs("div", { class: "ui5-slider-handle-container", style: this.styles.handle, part: "handle-container", children: [jsx("div", { class: "ui5-slider-handle", onFocusOut: this._onfocusout, onFocusIn: this._onfocusin, onKeyUp: this._onkeyup, role: "slider", tabIndex: this._tabIndex, "aria-orientation": "horizontal", "aria-valuemin": this.min, "aria-valuemax": this.max, "aria-valuenow": this.value, "aria-label": this._ariaLabel, "aria-disabled": this._ariaDisabled, "aria-keyshortcuts": this._ariaKeyshortcuts, "aria-describedby": this._ariaDescribedByHandleText, "data-sap-focus-ref": true, part: "handle", id: "handle1", children: jsx(Icon$1, { name: directionArrows, mode: "Decorative", part: "icon-slider", "slider-icon": true }) }), jsx(SliderTooltip$1, { open: this._tooltipsOpen, value: this.tooltipValue, min: this.min, max: this.max, editable: this.editableTooltip, followRef: (_a2 = this.shadowRoot) == null ? void 0 : _a2.querySelector("#handle1"), onChange: this._onTooltipChange, onForwardFocus: this._onTooltopForwardFocus })] });
 }
-var __decorate$1k = function(decorators, target, key, desc) {
+var __decorate$1l = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -7379,13 +7379,13 @@ let Slider = Slider_1 = class Slider2 extends SliderBase$1 {
     return arr;
   }
 };
-__decorate$1k([
+__decorate$1l([
   s$9({ type: Number })
 ], Slider.prototype, "value", void 0);
-__decorate$1k([
+__decorate$1l([
   i$b("@ui5/webcomponents")
 ], Slider, "i18nBundle", void 0);
-Slider = Slider_1 = __decorate$1k([
+Slider = Slider_1 = __decorate$1l([
   m$8({
     tag: "ui5-slider",
     languageAware: true,
@@ -7461,7 +7461,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const ProgressIndicatorCss = `:host(:not([hidden])){display:inline-block;min-height:var(_ui5_progress_indicator_host_min_height);min-width:4rem;width:100%;height:var(--_ui5-v2-17-0_progress_indicator_host_height);overflow:hidden;box-sizing:var(--_ui5-v2-17-0_progress_indicator_host_box_sizing);padding:var(--_ui5-v2-17-0_progress_indicator_padding);padding-inline-end:var(--_ui5-v2-17-0_progress_indicator_padding_end)}:host(:not([hidden])[hide-value]){padding-top:var(--_ui5-v2-17-0_progress_indicator_padding_novalue);padding-bottom:var(--_ui5-v2-17-0_progress_indicator_padding_novalue)}.ui5-progress-indicator-root{display:flex;align-items:center;background:var(--_ui5-v2-17-0_progress_indicator_background_none);border-radius:var(--_ui5-v2-17-0_progress_indicator_root_border_radius);overflow:var(--_ui5-v2-17-0_progress_indicator_root_overflow);min-height:var(--_ui5-v2-17-0_progress_indicator_root_min_height);height:var(--_ui5-v2-17-0_progress_indicator_root_height);width:100%;font-size:var(--sapProgress_FontSize);font-family:var(--sapFontFamily);position:var(--_ui5-v2-17-0_progress_indicator_root_position);box-sizing:border-box}.ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_none);justify-content:flex-end;height:var(--_ui5-v2-17-0_progress_indicator_bar_height);display:flex;align-items:center;flex-direction:row;color:var(--_ui5-v2-17-0_progress_indicator_bar_color);transition-property:width;transition-timing-function:linear;box-sizing:border-box;border:var(--_ui5-v2-17-0_progress_indicator_bar_border_max);border-radius:var(--_ui5-v2-17-0_progress_indicator_bar_border_radius)}.ui5-progress-indicator-min-value .ui5-progress-indicator-bar,.ui5-progress-indicator-max-value .ui5-progress-indicator-remaining-bar{border:none}.ui5-progress-indicator-max-value .ui5-progress-indicator-bar{border-radius:.5rem}.ui5-progress-indicator-min-value .ui5-progress-indicator-remaining-bar{border-inline-start:var(--_ui5-v2-17-0_progress_indicator_border);border-radius:.5rem}.ui5-progress-indicator-remaining-bar{justify-content:flex-start;width:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_width);height:100%;display:flex;align-items:center;flex-direction:row;flex-grow:1;flex-basis:0;border:var(--_ui5-v2-17-0_progress_indicator_border);border-inline-start:none;border-radius:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_border_radius);box-sizing:border-box;color:var(--_ui5-v2-17-0_progress_indicator_color);overflow:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_overflow);position:var(--_ui5-v2-17-0_progress_indicator_remaining_bar_position)}.ui5-progress-indicator-value{margin:var(--_ui5-v2-17-0_progress_indicator_value_margin);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;position:var(--_ui5-v2-17-0_progress_indicator_value_position);top:var(--_ui5-v2-17-0_progress_indicator_value_top_position);inset-inline-start:var(--_ui5-v2-17-0_progress_indicator_value_left_position)}.ui5-progress-indicator-icon{margin-inline-start:.375rem;width:var(--_ui5-v2-17-0_progress_indicator_icon_size);height:var(--_ui5-v2-17-0_progress_indicator_icon_size);display:var(--_ui5-v2-17-0_progress_indicator_icon_visibility);position:var(--_ui5-v2-17-0_progress_indicator_icon_position);inset-inline-end:var(--_ui5-v2-17-0_progress_indicator_icon_right_position)}:host([value-state="Negative"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_error_icon_color)}:host([value-state="Critical"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_warning_icon_color)}:host([value-state="Positive"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_success_icon_color)}:host([value-state="Information"]) .ui5-progress-indicator-icon{color:var(--_ui5-v2-17-0_progress_indicator_value_state_information_icon_color)}:host([value-state="Negative"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_error)}:host([value-state="Critical"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_warning)}:host([value-state="Positive"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_success)}:host([value-state="Information"]) .ui5-progress-indicator-bar{background:var(--_ui5-v2-17-0_progress_indicator_value_state_information)}:host([value-state="Negative"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_error)}:host([value-state="Critical"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_warning)}:host([value-state="Positive"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_success)}:host([value-state="Information"]) .ui5-progress-indicator-root{background:var(--_ui5-v2-17-0_progress_indicator_background_information)}:host([value-state="Negative"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_error)}:host([value-state="Critical"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_warning)}:host([value-state="Positive"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_success)}:host([value-state="Information"]) .ui5-progress-indicator-remaining-bar{border-color:var(--_ui5-v2-17-0_progress_indicator_border_color_information)}.ui5-progress-indicator-remaining-bar:before,.ui5-progress-indicator-remaining-bar:after{content:"";display:block;width:.25rem;height:.25rem;position:absolute;border-radius:50%;display:var(--_ui5-v2-17-0_progress_indicator_side_points_visibility);background:var(--_ui5-v2-17-0_progress_indicator_value_state_none)}.ui5-progress-indicator-remaining-bar:before{left:.0625rem}.ui5-progress-indicator-remaining-bar:after{right:.0625rem}:host([value-state="Negative"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Negative"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_NegativeBackground)}:host([value-state="Critical"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Critical"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_CriticalBackground)}:host([value-state="Positive"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Positive"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_PositiveBackground)}:host([value-state="Information"]) .ui5-progress-indicator-remaining-bar:before,:host([value-state="Information"]) .ui5-progress-indicator-remaining-bar:after{background:var(--sapProgress_Value_InformationBackground)}
 `;
-var __decorate$1j = function(decorators, target, key, desc) {
+var __decorate$1k = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -7513,25 +7513,25 @@ let ProgressIndicator = ProgressIndicator_1 = class ProgressIndicator2 extends b
     return this.valueState !== o$6.None;
   }
 };
-__decorate$1j([
+__decorate$1k([
   s$9()
 ], ProgressIndicator.prototype, "accessibleName", void 0);
-__decorate$1j([
+__decorate$1k([
   s$9({ type: Boolean })
 ], ProgressIndicator.prototype, "hideValue", void 0);
-__decorate$1j([
+__decorate$1k([
   s$9({ type: Number })
 ], ProgressIndicator.prototype, "value", void 0);
-__decorate$1j([
+__decorate$1k([
   s$9()
 ], ProgressIndicator.prototype, "displayValue", void 0);
-__decorate$1j([
+__decorate$1k([
   s$9()
 ], ProgressIndicator.prototype, "valueState", void 0);
-__decorate$1j([
+__decorate$1k([
   i$b("@ui5/webcomponents")
 ], ProgressIndicator, "i18nBundle", void 0);
-ProgressIndicator = ProgressIndicator_1 = __decorate$1j([
+ProgressIndicator = ProgressIndicator_1 = __decorate$1k([
   m$8({
     tag: "ui5-progress-indicator",
     renderer: y$5,
@@ -8075,7 +8075,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const DropIndicatorCss = `:host{position:absolute;pointer-events:none;z-index:99}:host([orientation="Vertical"]) .ui5-di-needle{width:.125rem;height:100%;inset-block:0;background:var(--sapContent_DragAndDropActiveColor)}:host([orientation="Vertical"]){margin-left:-.0625rem}:host([orientation="Horizontal"]) .ui5-di-needle{height:.125rem;width:100%;inset-inline:0;background:var(--sapContent_DragAndDropActiveColor)}:host([orientation="Horizontal"]){margin-top:-.0625rem}:host([orientation="Horizontal"][placement="Before"][first]){margin-top:.3125rem}:host([orientation="Horizontal"][placement="After"][last]){margin-top:-.3125rem}:host([orientation="Vertical"]) .ui5-di-needle:before{left:-.1875rem;content:"";position:absolute;width:.25rem;height:.25rem;border-radius:.25rem;border:.125rem solid var(--sapContent_DragAndDropActiveColor);background-color:#fff;pointer-events:none}:host([orientation="Horizontal"]) .ui5-di-needle:before{top:-.1875rem;content:"";position:absolute;width:.25rem;height:.25rem;border-radius:.25rem;border:.125rem solid var(--sapContent_DragAndDropActiveColor);background-color:#fff;pointer-events:none}:host .ui5-di-rect{border:.125rem solid var(--sapContent_DragAndDropActiveColor);position:absolute;inset:0}:host .ui5-di-rect:before{content:" ";position:absolute;inset:0;background:var(--sapContent_DragAndDropActiveColor);opacity:.05}
 `;
-var __decorate$1i = function(decorators, target, key, desc) {
+var __decorate$1j = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -8156,19 +8156,19 @@ let DropIndicator = class DropIndicator2 extends b$7 {
     Object.assign(this.style, style);
   }
 };
-__decorate$1i([
+__decorate$1j([
   s$9({ type: Object })
 ], DropIndicator.prototype, "targetReference", void 0);
-__decorate$1i([
+__decorate$1j([
   s$9({ type: Object })
 ], DropIndicator.prototype, "ownerReference", void 0);
-__decorate$1i([
+__decorate$1j([
   s$9()
 ], DropIndicator.prototype, "placement", void 0);
-__decorate$1i([
+__decorate$1j([
   s$9()
 ], DropIndicator.prototype, "orientation", void 0);
-DropIndicator = __decorate$1i([
+DropIndicator = __decorate$1j([
   m$8({
     tag: "ui5-drop-indicator",
     renderer: y$5,
@@ -8219,7 +8219,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const draggableElementStyles = `[draggable=true]{cursor:grab!important}[draggable=true][data-moving]{cursor:grabbing!important;opacity:var(--sapContent_DisabledOpacity)}
 `;
-var __decorate$1h = function(decorators, target, key, desc) {
+var __decorate$1i = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -8362,28 +8362,28 @@ let ListItemBase = class ListItemBase2 extends b$7 {
     return true;
   }
 };
-__decorate$1h([
+__decorate$1i([
   s$9({ type: Boolean })
 ], ListItemBase.prototype, "selected", void 0);
-__decorate$1h([
+__decorate$1i([
   s$9({ type: Boolean })
 ], ListItemBase.prototype, "movable", void 0);
-__decorate$1h([
+__decorate$1i([
   s$9({ type: Boolean })
 ], ListItemBase.prototype, "hasBorder", void 0);
-__decorate$1h([
+__decorate$1i([
   s$9()
 ], ListItemBase.prototype, "forcedTabIndex", void 0);
-__decorate$1h([
+__decorate$1i([
   s$9({ type: Boolean })
 ], ListItemBase.prototype, "disabled", void 0);
-__decorate$1h([
+__decorate$1i([
   s$9({ type: Boolean })
 ], ListItemBase.prototype, "focused", void 0);
-__decorate$1h([
+__decorate$1i([
   s$9({ type: Boolean })
 ], ListItemBase.prototype, "actionable", void 0);
-ListItemBase = __decorate$1h([
+ListItemBase = __decorate$1i([
   m$8({
     renderer: y$5,
     styles: [styles$3, draggableElementStyles]
@@ -8444,7 +8444,7 @@ var ListItemAccessibleRole;
   ListItemAccessibleRole2["None"] = "None";
 })(ListItemAccessibleRole || (ListItemAccessibleRole = {}));
 const ListItemAccessibleRole$1 = ListItemAccessibleRole;
-var __decorate$1g = function(decorators, target, key, desc) {
+var __decorate$1h = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -8510,28 +8510,28 @@ let ListItemGroupHeader = ListItemGroupHeader_1 = class ListItemGroupHeader2 ext
     return this.defaultSlotText || this.groupHeaderText || "";
   }
 };
-__decorate$1g([
+__decorate$1h([
   s$9()
 ], ListItemGroupHeader.prototype, "accessibleName", void 0);
-__decorate$1g([
+__decorate$1h([
   s$9()
 ], ListItemGroupHeader.prototype, "accessibleRole", void 0);
-__decorate$1g([
+__decorate$1h([
   s$9()
 ], ListItemGroupHeader.prototype, "wrappingType", void 0);
-__decorate$1g([
+__decorate$1h([
   s$9()
 ], ListItemGroupHeader.prototype, "mediaRange", void 0);
-__decorate$1g([
+__decorate$1h([
   s$9({ noAttribute: true })
 ], ListItemGroupHeader.prototype, "expandableTextTemplate", void 0);
-__decorate$1g([
+__decorate$1h([
   d$8()
 ], ListItemGroupHeader.prototype, "subItems", void 0);
-__decorate$1g([
+__decorate$1h([
   i$b("@ui5/webcomponents")
 ], ListItemGroupHeader, "i18nBundle", void 0);
-ListItemGroupHeader = ListItemGroupHeader_1 = __decorate$1g([
+ListItemGroupHeader = ListItemGroupHeader_1 = __decorate$1h([
   m$8({
     tag: "ui5-li-group-header",
     languageAware: true,
@@ -8548,7 +8548,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const ListItemGroupCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{height:var(--_ui5-v2-17-0_group_header_list_item_height);background:var(--ui5-v2-17-0-group-header-listitem-background-color);color:var(--sapList_TableGroupHeaderTextColor)}.ui5-group-li-root{width:100%;height:100%;position:relative;box-sizing:border-box;padding:0;margin:0;list-style-type:none}
 `;
-var __decorate$1f = function(decorators, target, key, desc) {
+var __decorate$1g = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -8602,29 +8602,29 @@ let ListItemGroup = class ListItemGroup2 extends b$7 {
     return this.groupHeaderItem || this.items.at(0);
   }
 };
-__decorate$1f([
+__decorate$1g([
   s$9()
 ], ListItemGroup.prototype, "headerText", void 0);
-__decorate$1f([
+__decorate$1g([
   s$9()
 ], ListItemGroup.prototype, "headerAccessibleName", void 0);
-__decorate$1f([
+__decorate$1g([
   d$8({
     "default": true,
     invalidateOnChildChange: true,
     type: HTMLElement
   })
 ], ListItemGroup.prototype, "items", void 0);
-__decorate$1f([
+__decorate$1g([
   s$9()
 ], ListItemGroup.prototype, "wrappingType", void 0);
-__decorate$1f([
+__decorate$1g([
   s$9({ type: Boolean })
 ], ListItemGroup.prototype, "focused", void 0);
-__decorate$1f([
+__decorate$1g([
   d$8({ type: HTMLElement })
 ], ListItemGroup.prototype, "header", void 0);
-ListItemGroup = __decorate$1f([
+ListItemGroup = __decorate$1g([
   m$8({
     tag: "ui5-li-group",
     renderer: y$5,
@@ -8645,7 +8645,7 @@ const isInstanceOfListItemGroup = (object) => {
   return "isListItemGroup" in object;
 };
 const ListItemGroup$1 = ListItemGroup;
-var __decorate$1e = function(decorators, target, key, desc) {
+var __decorate$1f = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -9400,83 +9400,83 @@ let List = List_1 = class List2 extends b$7 {
     return this._startIntersectionObserver;
   }
 };
-__decorate$1e([
+__decorate$1f([
   s$9()
 ], List.prototype, "headerText", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9()
 ], List.prototype, "footerText", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9({ type: Boolean })
 ], List.prototype, "indent", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9()
 ], List.prototype, "selectionMode", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9()
 ], List.prototype, "noDataText", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9()
 ], List.prototype, "separators", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9()
 ], List.prototype, "growing", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9()
 ], List.prototype, "growingButtonText", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9({ type: Boolean })
 ], List.prototype, "loading", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9({ type: Number })
 ], List.prototype, "loadingDelay", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9()
 ], List.prototype, "accessibleName", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9({ type: Object })
 ], List.prototype, "accessibilityAttributes", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9()
 ], List.prototype, "accessibleNameRef", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9()
 ], List.prototype, "accessibleDescription", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9()
 ], List.prototype, "accessibleDescriptionRef", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9({ noAttribute: true })
 ], List.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9({ noAttribute: true })
 ], List.prototype, "_associatedLabelsRefTexts", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9()
 ], List.prototype, "accessibleRole", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9({ type: Boolean })
 ], List.prototype, "_inViewport", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9({ type: Boolean })
 ], List.prototype, "_loadMoreActive", void 0);
-__decorate$1e([
+__decorate$1f([
   s$9()
 ], List.prototype, "mediaRange", void 0);
-__decorate$1e([
+__decorate$1f([
   d$8({
     type: HTMLElement,
     "default": true,
     invalidateOnChildChange: true
   })
 ], List.prototype, "items", void 0);
-__decorate$1e([
+__decorate$1f([
   d$8()
 ], List.prototype, "header", void 0);
-__decorate$1e([
+__decorate$1f([
   i$b("@ui5/webcomponents")
 ], List, "i18nBundle", void 0);
-List = List_1 = __decorate$1e([
+List = List_1 = __decorate$1f([
   m$8({
     tag: "ui5-list",
     fastNavigation: true,
@@ -9547,7 +9547,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const dialogCSS = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{min-width:20rem;min-height:6rem;max-height:94%;max-width:90%;flex-direction:column;box-shadow:var(--sapContent_Shadow3);border-radius:var(--sapElement_BorderCornerRadius)}:host([stretch]){width:90%;height:94%}:host([stretch][on-phone]){width:100%;height:100%;max-height:100%;max-width:100%;border-radius:0;min-width:0}:host([draggable]) .ui5-popup-header-root,:host([draggable]) ::slotted([slot="header"]){cursor:move}:host([draggable]) .ui5-popup-header-root *{cursor:auto}:host([draggable]) .ui5-popup-root{user-select:text}::slotted([slot="header"]){max-width:100%}.ui5-popup-root{display:flex;flex-direction:column;max-width:100vw}.ui5-popup-header-root{position:relative}.ui5-popup-header-root:before{content:"";position:absolute;inset-block-start:auto;inset-block-end:0;inset-inline-start:0;inset-inline-end:0;height:var(--_ui5-v2-17-0_dialog_header_state_line_height);background:var(--sapObjectHeader_BorderColor)}:host([state="Negative"]) .ui5-popup-header-root:before{background:var(--sapErrorBorderColor)}:host([state="Information"]) .ui5-popup-header-root:before{background:var(--sapInformationBorderColor)}:host([state="Positive"]) .ui5-popup-header-root:before{background:var(--sapSuccessBorderColor)}:host([state="Critical"]) .ui5-popup-header-root:before{background:var(--sapWarningBorderColor)}.ui5-dialog-value-state-icon{margin-inline-end:.5rem;flex-shrink:0}:host([state="Negative"]) .ui5-dialog-value-state-icon{color:var(--sapNegativeElementColor)}:host([state="Information"]) .ui5-dialog-value-state-icon{color:var(--sapInformativeElementColor)}:host([state="Positive"]) .ui5-dialog-value-state-icon{color:var(--sapPositiveElementColor)}:host([state="Critical"]) .ui5-dialog-value-state-icon{color:var(--sapCriticalElementColor)}.ui5-popup-header-root{outline:none}:host([desktop]) .ui5-popup-header-root:focus:after,.ui5-popup-header-root:focus-visible:after{content:"";position:absolute;left:var(--_ui5-v2-17-0_dialog_header_focus_left_offset);bottom:var(--_ui5-v2-17-0_dialog_header_focus_bottom_offset);right:var(--_ui5-v2-17-0_dialog_header_focus_right_offset);top:var(--_ui5-v2-17-0_dialog_header_focus_top_offset);border:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);border-radius:var(--_ui5-v2-17-0_dialog_header_border_radius) var(--_ui5-v2-17-0_dialog_header_border_radius) 0 0;pointer-events:none}:host([stretch]) .ui5-popup-content{width:100%;height:100%}.ui5-popup-content{min-height:var(--_ui5-v2-17-0_dialog_content_min_height);flex:1 1 auto}.ui5-popup-resize-handle{position:absolute;bottom:-.5rem;inset-inline-end:-.5rem;cursor:var(--_ui5-v2-17-0_dialog_resize_cursor);width:1.5rem;height:1.5rem;border-radius:50%}.ui5-popup-resize-handle [ui5-icon]{color:var(--sapButton_Lite_TextColor)}::slotted([slot="footer"]){height:var(--_ui5-v2-17-0_dialog_footer_height)}::slotted([slot="footer"][ui5-bar][design="Footer"]){border-top:none}::slotted([slot="header"][ui5-bar]){box-shadow:none}::slotted([slot="footer"][ui5-toolbar]){border:0}:host::backdrop{background-color:var(--_ui5-v2-17-0_popup_block_layer_background);opacity:var(--_ui5-v2-17-0_popup_block_layer_opacity)}.ui5-block-layer{display:block}
 `;
-var __decorate$1d = function(decorators, target, key, desc) {
+var __decorate$1e = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -9881,31 +9881,31 @@ let Dialog = Dialog_1 = class Dialog2 extends Popup$1 {
     window.removeEventListener("mouseup", this._resizeMouseUpHandler);
   }
 };
-__decorate$1d([
+__decorate$1e([
   s$9()
 ], Dialog.prototype, "headerText", void 0);
-__decorate$1d([
+__decorate$1e([
   s$9({ type: Boolean })
 ], Dialog.prototype, "stretch", void 0);
-__decorate$1d([
+__decorate$1e([
   s$9({ type: Boolean })
 ], Dialog.prototype, "draggable", void 0);
-__decorate$1d([
+__decorate$1e([
   s$9({ type: Boolean })
 ], Dialog.prototype, "resizable", void 0);
-__decorate$1d([
+__decorate$1e([
   s$9()
 ], Dialog.prototype, "state", void 0);
-__decorate$1d([
+__decorate$1e([
   d$8()
 ], Dialog.prototype, "header", void 0);
-__decorate$1d([
+__decorate$1e([
   d$8()
 ], Dialog.prototype, "footer", void 0);
-__decorate$1d([
+__decorate$1e([
   i$b("@ui5/webcomponents")
 ], Dialog, "i18nBundle", void 0);
-Dialog = Dialog_1 = __decorate$1d([
+Dialog = Dialog_1 = __decorate$1e([
   m$8({
     tag: "ui5-dialog",
     template: DialogTemplate,
@@ -9928,7 +9928,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const ResponsivePopoverCss = `:host{--_ui5-v2-17-0_input_width: 100%;min-width:6.25rem;min-height:2rem}:host([on-phone]){display:contents}.ui5-responsive-popover-header{height:var(--_ui5-v2-17-0-responsive_popover_header_height);display:flex;justify-content:var(--_ui5-v2-17-0_popup_header_prop_header_text_alignment);align-items:center;width:100%}.ui5-responsive-popover-header-text{width:calc(100% - var(--_ui5-v2-17-0_button_base_min_width))}.ui5-responsive-popover-header-no-title{justify-content:flex-end}
 `;
-var __decorate$1c = function(decorators, target, key, desc) {
+var __decorate$1d = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -9975,12 +9975,12 @@ let ResponsivePopover = ResponsivePopover_1 = class ResponsivePopover2 extends P
       (_a2 = this._dialog) == null ? void 0 : _a2.closePopup(escPressed, preventRegistryUpdate, preventFocusRestore);
     }
   }
-  toggle(opener) {
+  toggle(opener2) {
     if (this.open) {
       this.closePopup();
       return;
     }
-    this.opener = opener;
+    this.opener = opener2;
     this.open = true;
   }
   get classes() {
@@ -10032,19 +10032,19 @@ let ResponsivePopover = ResponsivePopover_1 = class ResponsivePopover2 extends P
     return this._dialog.isModal;
   }
 };
-__decorate$1c([
+__decorate$1d([
   s$9({ type: Boolean })
 ], ResponsivePopover.prototype, "contentOnlyOnDesktop", void 0);
-__decorate$1c([
+__decorate$1d([
   s$9({ type: Boolean })
 ], ResponsivePopover.prototype, "_hideHeader", void 0);
-__decorate$1c([
+__decorate$1d([
   s$9({ type: Boolean })
 ], ResponsivePopover.prototype, "_hideCloseButton", void 0);
-__decorate$1c([
+__decorate$1d([
   i$b("@ui5/webcomponents")
 ], ResponsivePopover, "i18nBundle", void 0);
-ResponsivePopover = ResponsivePopover_1 = __decorate$1c([
+ResponsivePopover = ResponsivePopover_1 = __decorate$1d([
   m$8({
     tag: "ui5-responsive-popover",
     styles: [Popover$1.styles, ResponsivePopoverCss],
@@ -10106,7 +10106,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const SelectPopoverCss = `.ui5-select-popover::part(content),.ui5-select-popover::part(header){padding:0}.ui5-select-popover .ui5-responsive-popover-header .row{justify-content:flex-start}
 `;
-var __decorate$1b = function(decorators, target, key, desc) {
+var __decorate$1c = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -10733,73 +10733,73 @@ let Select = Select_1 = class Select2 extends b$7 {
     return this.shadowRoot.querySelector("[ui5-popover]");
   }
 };
-__decorate$1b([
+__decorate$1c([
   s$9({ type: Boolean })
 ], Select.prototype, "disabled", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9()
 ], Select.prototype, "icon", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9()
 ], Select.prototype, "name", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9()
 ], Select.prototype, "valueState", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9({ type: Boolean })
 ], Select.prototype, "required", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9({ type: Boolean })
 ], Select.prototype, "readonly", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9()
 ], Select.prototype, "accessibleName", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9()
 ], Select.prototype, "accessibleNameRef", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9()
 ], Select.prototype, "accessibleDescription", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9()
 ], Select.prototype, "accessibleDescriptionRef", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9()
 ], Select.prototype, "tooltip", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9()
 ], Select.prototype, "textSeparator", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9({ type: String, noAttribute: true })
 ], Select.prototype, "_associatedDescriptionRefTexts", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9({ type: Boolean, noAttribute: true })
 ], Select.prototype, "_iconPressed", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9({ type: Boolean })
 ], Select.prototype, "opened", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9({ type: Number, noAttribute: true })
 ], Select.prototype, "_listWidth", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9({ type: Boolean })
 ], Select.prototype, "focused", void 0);
-__decorate$1b([
+__decorate$1c([
   d$8({ "default": true, type: HTMLElement, invalidateOnChildChange: true })
 ], Select.prototype, "options", void 0);
-__decorate$1b([
+__decorate$1c([
   d$8()
 ], Select.prototype, "valueStateMessage", void 0);
-__decorate$1b([
+__decorate$1c([
   d$8()
 ], Select.prototype, "label", void 0);
-__decorate$1b([
+__decorate$1c([
   s$9()
 ], Select.prototype, "value", null);
-__decorate$1b([
+__decorate$1c([
   i$b("@ui5/webcomponents")
 ], Select, "i18nBundle", void 0);
-Select = Select_1 = __decorate$1b([
+Select = Select_1 = __decorate$1c([
   m$8({
     tag: "ui5-select",
     languageAware: true,
@@ -10863,7 +10863,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const listItemAdditionalTextCss = `.ui5-li-additional-text{margin:0 .25rem;color:var(--sapNeutralTextColor);font-size:var(--sapFontSize);min-width:3.75rem;text-align:end;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 `;
-var __decorate$1a = function(decorators, target, key, desc) {
+var __decorate$1b = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -10877,25 +10877,25 @@ let Option = class Option2 extends ListItemBase$1 {
     return this.textContent || "";
   }
 };
-__decorate$1a([
+__decorate$1b([
   d$8({ type: Node, "default": true, invalidateOnChildChange: true })
 ], Option.prototype, "text", void 0);
-__decorate$1a([
+__decorate$1b([
   s$9()
 ], Option.prototype, "value", void 0);
-__decorate$1a([
+__decorate$1b([
   s$9()
 ], Option.prototype, "icon", void 0);
-__decorate$1a([
+__decorate$1b([
   s$9()
 ], Option.prototype, "additionalText", void 0);
-__decorate$1a([
+__decorate$1b([
   s$9()
 ], Option.prototype, "tooltip", void 0);
-__decorate$1a([
+__decorate$1b([
   s$9({ type: Boolean })
 ], Option.prototype, "selected", void 0);
-Option = __decorate$1a([
+Option = __decorate$1b([
   m$8({
     tag: "ui5-option",
     template: OptionTemplate,
@@ -17873,7 +17873,7 @@ const getMaxCalendarDate = (primaryCalendarType) => {
   }
   return cache.get(key);
 };
-var __decorate$19 = function(decorators, target, key, desc) {
+var __decorate$1a = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -18032,34 +18032,34 @@ let DateComponentBase = class DateComponentBase2 extends b$7 {
     return this._isoFormatInstance;
   }
 };
-__decorate$19([
+__decorate$1a([
   s$9()
 ], DateComponentBase.prototype, "primaryCalendarType", void 0);
-__decorate$19([
+__decorate$1a([
   s$9()
 ], DateComponentBase.prototype, "secondaryCalendarType", void 0);
-__decorate$19([
+__decorate$1a([
   s$9()
 ], DateComponentBase.prototype, "formatPattern", void 0);
-__decorate$19([
+__decorate$1a([
   s$9()
 ], DateComponentBase.prototype, "displayFormat", void 0);
-__decorate$19([
+__decorate$1a([
   s$9()
 ], DateComponentBase.prototype, "valueFormat", void 0);
-__decorate$19([
+__decorate$1a([
   s$9()
 ], DateComponentBase.prototype, "minDate", void 0);
-__decorate$19([
+__decorate$1a([
   s$9()
 ], DateComponentBase.prototype, "maxDate", void 0);
-__decorate$19([
+__decorate$1a([
   s$9()
 ], DateComponentBase.prototype, "calendarWeekNumbering", void 0);
-__decorate$19([
+__decorate$1a([
   i$b("@ui5/webcomponents")
 ], DateComponentBase, "i18nBundle", void 0);
-DateComponentBase = __decorate$19([
+DateComponentBase = __decorate$1a([
   m$8({
     languageAware: true,
     cldr: true,
@@ -18067,7 +18067,7 @@ DateComponentBase = __decorate$19([
   })
 ], DateComponentBase);
 const DateComponentBase$1 = DateComponentBase;
-var __decorate$18 = function(decorators, target, key, desc) {
+var __decorate$19 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -18116,10 +18116,10 @@ let DateTimeInput = class DateTimeInput2 extends Input$1 {
     return valueState;
   }
 };
-__decorate$18([
+__decorate$19([
   s$9({ noAttribute: true })
 ], DateTimeInput.prototype, "_shouldOpenValueStatePopover", void 0);
-DateTimeInput = __decorate$18([
+DateTimeInput = __decorate$19([
   m$8({
     tag: "ui5-datetime-input"
   })
@@ -18196,7 +18196,7 @@ const collection$E = "SAP-icons-v5";
 const packageName$E = "@ui5/webcomponents-icons";
 y$2(name$F, { pathData: pathData$E, ltr: ltr$E, collection: collection$E, packageName: packageName$E });
 const slimArrowRightIcon = "slim-arrow-right";
-var __decorate$17 = function(decorators, target, key, desc) {
+var __decorate$18 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -18208,15 +18208,15 @@ let CalendarDate2 = class CalendarDate3 extends b$7 {
     this.value = "";
   }
 };
-__decorate$17([
+__decorate$18([
   s$9()
 ], CalendarDate2.prototype, "value", void 0);
-CalendarDate2 = __decorate$17([
+CalendarDate2 = __decorate$18([
   m$8("ui5-date")
 ], CalendarDate2);
 CalendarDate2.define();
 const CalendarDate$1 = CalendarDate2;
-var __decorate$16 = function(decorators, target, key, desc) {
+var __decorate$17 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -18229,18 +18229,18 @@ let CalendarDateRange = class CalendarDateRange2 extends b$7 {
     this.endValue = "";
   }
 };
-__decorate$16([
+__decorate$17([
   s$9()
 ], CalendarDateRange.prototype, "startValue", void 0);
-__decorate$16([
+__decorate$17([
   s$9()
 ], CalendarDateRange.prototype, "endValue", void 0);
-CalendarDateRange = __decorate$16([
+CalendarDateRange = __decorate$17([
   m$8("ui5-date-range")
 ], CalendarDateRange);
 CalendarDateRange.define();
 const CalendarDateRange$1 = CalendarDateRange;
-var __decorate$15 = function(decorators, target, key, desc) {
+var __decorate$16 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -18254,20 +18254,20 @@ let SpecialCalendarDate = class SpecialCalendarDate2 extends b$7 {
     this._tooltip = "";
   }
 };
-__decorate$15([
+__decorate$16([
   s$9()
 ], SpecialCalendarDate.prototype, "value", void 0);
-__decorate$15([
+__decorate$16([
   s$9()
 ], SpecialCalendarDate.prototype, "type", void 0);
-__decorate$15([
+__decorate$16([
   s$9()
 ], SpecialCalendarDate.prototype, "_tooltip", void 0);
-SpecialCalendarDate = __decorate$15([
+SpecialCalendarDate = __decorate$16([
   m$8("ui5-special-date")
 ], SpecialCalendarDate);
 SpecialCalendarDate.define();
-var __decorate$14 = function(decorators, target, key, desc) {
+var __decorate$15 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -18335,10 +18335,10 @@ let CalendarPart = class CalendarPart2 extends DateComponentBase$1 {
     return parseInt(oMonthDomRef);
   }
 };
-__decorate$14([
+__decorate$15([
   s$9({ type: Number })
 ], CalendarPart.prototype, "timestamp", void 0);
-CalendarPart = __decorate$14([
+CalendarPart = __decorate$15([
   m$8()
 ], CalendarPart);
 const CalendarPart$1 = CalendarPart;
@@ -18403,7 +18403,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const dayPickerCSS = `:host(:not([hidden])){display:block}:host{height:100%;width:100%}:host([hide-week-numbers]) .ui5-dp-content{flex-basis:100%}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item{flex-direction:column;justify-content:var(--_ui5-v2-17-0_day_picker_item_justify_content)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-daytext{height:1.5625rem;padding-inline-end:var(--_ui5-v2-17-0_dp_two_calendar_item_text_padding_top)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-daysectext{font-size:.75rem;height:var(--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_height);padding-block:var(--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_padding_block);padding-inline:50% .4375rem}.ui5-dp-weekname,.ui5-dp-dayname,.ui5-dp-item{width:var(--_ui5-v2-17-0_day_picker_item_width);height:var(--_ui5-v2-17-0_day_picker_item_height);margin-block-start:var(--_ui5-v2-17-0_daypicker_item_margin);margin-inline-end:var(--_ui5-v2-17-0_daypicker_item_margin);font-family:var(--sapFontFamily);border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius)}.ui5-dp-weekname,.ui5-dp-dayname{cursor:default}.ui5-dp-weekname{color:var(--_ui5-v2-17-0_daypicker_weekname_color)}.ui5-dp-weeks-row{display:flex}.ui5-dp-content{display:flex;flex-basis:87.5%;flex-direction:column;font-family:var(--sapFontFamily)}.ui5-dp-days-names-container{display:flex;height:var(--_ui5-v2-17-0_daypicker_daynames_container_height)}.ui5-dp-weeknumber-container{padding-block-start:var(--_ui5-v2-17-0_daypicker_weeknumbers_container_padding_top);flex-basis:12.5%}.ui5-dp-weekname,.ui5-dp-dayname,.ui5-dp-weekname-container,.ui5-dp-item{display:flex;flex-grow:1;justify-content:center;align-items:center;font-size:var(--sapFontSmallSize);outline:none;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;user-select:none}.ui5-dp-item{position:relative;color:var(--sapTextColor);background:var(--sapLegend_WorkingBackground);font-size:var(--sapFontSize);border:var(--_ui5-v2-17-0_daypicker_item_border);border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius);cursor:pointer}.ui5-dp-item:hover{background:var(--sapList_Hover_Background)}.ui5-dp-daytext{display:flex;width:100%;height:100%;justify-content:center;align-items:center;box-sizing:border-box}.ui5-dp-dayname{color:var(--_ui5-v2-17-0_daypicker_dayname_color);height:100%}.ui5-dp-item.ui5-dp-item--weekend{background:var(--sapLegend_NonWorkingBackground)}.ui5-dp-item.ui5-dp-item--disabled{pointer-events:none;opacity:.5}.ui5-dp-item.ui5-dp-item--weekend:hover{background:var(--sapList_Hover_Background);filter:var(--_ui5-v2-17-0_daypicker_item_weeekend_filter)}.ui5-dp-item.ui5-dp-item--othermonth{color:var(--_ui5-v2-17-0_daypicker_item_othermonth_color);background:var(--_ui5-v2-17-0_daypicker_item_othermonth_background_color);border-color:transparent}.ui5-dp-item.ui5-dp-item--othermonth:hover,.ui5-dp-item.ui5-dp-item--weekend.ui5-dp-item--othermonth:hover{color:var(--_ui5-v2-17-0_daypicker_item_othermonth_hover_color);background:var(--sapList_Hover_Background)}.ui5-dp-item:focus:after{content:"";border:var(--_ui5-v2-17-0_daypicker_item_not_selected_focus_border);position:absolute;inset:var(--_ui5-v2-17-0_daypicker_item_no_selected_inset);outline:none;border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius_focus_after)}.ui5-dp-item.ui5-dp-item--now:before{position:absolute;inset:var(--_ui5-v2-17-0_daypicker_item_now_not_selected_inset);border:.125rem solid var(--_ui5-v2-17-0_daypicker_item_now_border_color);content:"";border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius);z-index:1}.ui5-dp-item.ui5-dp-item--now.ui5-dp-item--selected{box-shadow:var(--_ui5-v2-17-0_daypicker_item_now_box_shadow)}.ui5-dp-item.ui5-dp-item--selected{background:var(--sapContent_Selected_Background)}.ui5-dp-item.ui5-dp-item--selected:not(.ui5-dp-item.ui5-dp-item--now) .ui5-dp-daytext:after{position:absolute;inset:0;border:var(--_ui5-v2-17-0_daypicker_item_selected_border);content:"";border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius_item);z-index:1}.ui5-dp-item.ui5-dp-item--selected.ui5-dp-item.ui5-dp-item--now .ui5-dp-daytext{border:var(--_ui5-v2-17-0_day_picker_item_selected_now_border);outline:var(--_ui5-v2-17-0_daypicker_item_selected_text_outline);outline-offset:var(--_ui5-v2-17-0_daypicker_item_now_selected_outline_offset);border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius_item);font-family:var(--_ui5-v2-17-0_daypicker_item_selected_text_font)}.ui5-dp-item.ui5-dp-item--selected .ui5-dp-daytext{background:var(--_ui5-v2-17-0_daypicker_item_selected_background);color:var(--sapContent_Selected_TextColor);border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius);border:var(--_ui5-v2-17-0_daypicker_item_selected_text_border);font-family:var(--_ui5-v2-17-0_daypicker_item_selected_text_font)}.ui5-dp-item.ui5-dp-item--selected .ui5-dp-daytext{background:var(--_ui5-v2-17-0_daypicker_item_selected_daytext_hover_background);color:var(--sapContent_Selected_TextColor)}.ui5-dp-item.ui5-dp-item--now:focus:after{inset:var(--_ui5-v2-17-0_daypicker_item_now_inset);border-radius:var(--_ui5-v2-17-0_daypicker_item_now_border_radius_focus_after);border:var(--_ui5-v2-17-0_daypicker_item_now_border_focus_after);position:absolute;content:"";width:auto;height:auto}.ui5-dp-item.ui5-dp-item--selected.ui5-dp-item--now:focus:after{inset:var(--_ui5-v2-17-0_daypicker_item_now_inset);border-radius:var(--_ui5-v2-17-0_day_picker_item_selected_now_border_radius_focus);border:var(--_ui5-v2-17-0_day_picker_item_selected_now_border_focus);position:absolute;content:"";width:auto;height:auto}.ui5-dp-item.ui5-dp-item--selected:hover{background:var(--_ui5-v2-17-0_daypicker_item_selected_hover);color:var(--sapContent_ContrastTextColor)}.ui5-dp-item.ui5-dp-item--selected:focus:after{border-color:var(--_ui5-v2-17-0_daypicker_item_selected_focus_color);border-width:var(--_ui5-v2-17-0_daypicker_item_selected_focus_width)}.ui5-dp-items-container{outline:none}.ui5-dp-item.ui5-dp-item--selected-between .ui5-dp-daytext{border-radius:var(--_ui5-v2-17-0_daypicker_item_border_radius);font-weight:var(--_ui5-v2-17-0_daypicker_item_selected_between_text_font)}.ui5-dp-item.ui5-dp-item--selected-between.ui5-dp-item--now:not(.ui5-dp-item--selected) .ui5-dp-daytext:after{content:"";position:absolute;inset:var(--_ui5-v2-17-0_daypicker_item_now_selected_between_inset);border:var(--_ui5-v2-17-0_daypicker_item_now_selected_between_border);border-radius:var(--_ui5-v2-17-0_daypicker_item_now_selected_between_border_radius)}.ui5-dp-item.ui5-dp-item--selected-between{border:var(--_ui5-v2-17-0_daypicker_item_select_between_border);border-radius:var(--_ui5-v2-17-0_daypicker_item_selected_between_border);background:var(--_ui5-v2-17-0_daypicker_item_selected_between_background)}.ui5-dp-item.ui5-dp-item--selected-between:hover{background:var(--_ui5-v2-17-0_daypicker_item_selected_between_hover_background)}.ui5-dp-item.ui5-dp-item--selected.ui5-dp-item--selected-between:focus:after{border-color:var(--sapContent_FocusColor)}.ui5-dp-items-container>:first-child{justify-content:flex-end}.ui5-dp-emptyweek{height:var(--_ui5-v2-17-0_day_picker_empty_height)}.ui5-dp-item.ui5-dp-item--now.ui5-dp-item--selected.ui5-dp-item--withsecondtype:focus:after{outline-offset:-.1875rem;border-radius:var(--_ui5-v2-17-0-dp-item_withsecondtype_border)}.ui5-dp-item.ui5-dp-item--selected.ui5-dp-item--now.ui5-dp-item--withsecondtype .ui5-dp-daysectext,.ui5-dp-item.ui5-dp-item--now.ui5-dp-item--selected.ui5-dp-item--withsecondtype .ui5-dp-daytext{border:none;outline:none}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--selected:not(.ui5-dp-item.ui5-dp-item--now) .ui5-dp-daytext:after{border-width:.0625rem}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--now .ui5-dp-daysectext{height:var(--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_height);padding-block-start:0;border-radius:var(--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_border_radios)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--selected.ui5-dp-item.ui5-dp-item--now .ui5-dp-daytext{border-radius:var(--_ui5-v2-17-0_daypicker_two_calendar_item_border_radius);margin-block-end:var(--_ui5-v2-17-0_daypicker_two_calendar_item_margin_bottom)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item:focus:after{inset:var(--_ui5-v2-17-0_daypicker_two_calendar_item_no_selected_inset);border-radius:var(--_ui5-v2-17-0_daypicker_two_calendar_item_border_focus_border_radius)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--now:after{inset:var(--_ui5-v2-17-0_daypicker_two_calendar_item_no_selected_focus_inset);border-radius:var(--_ui5-v2-17-0_daypicker_two_calendar_item_no_select_focus_border_radius)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--selected:focus:after{border-width:var(--_ui5-v2-17-0_daypicker_two_calendar_item_now_selected_border_width);inset:var(--_ui5-v2-17-0_daypicker_two_calendar_item_now_selected_border_inset);border-radius:var(--_ui5-v2-17-0_daypicker_two_calendar_item_border_focus_border_radius)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--selected.ui5-dp-item--now:after{inset:var(--_ui5-v2-17-0_daypicker_two_calendar_item_now_inset);border-radius:var(--_ui5-v2-17-0_daypicker_two_calendar_item_selected_now_border_radius_focus)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--now.ui5-dp-item--selected.ui5-dp-item--withsecondtype .ui5-dp-daytext:not(.ui5-dp-daysectext):before{content:var(--_ui5-v2-17-0_daypicker_two_calendar_item_now_day_text_content);position:absolute;inset:.25rem;border-radius:var(--_ui5-v2-17-0_daypicker_two_calendar_item_selected_now_border_radius_focus);outline:var(--_ui5-v2-17-0_daypicker_item_selected__secondary_type_text_outline);z-index:1}.ui5-dp-specialday{width:100%;height:.375rem;position:absolute;box-sizing:border-box;inset-block-start:var(--_ui5-v2-17-0_daypicker_special_day_top);border-end-end-radius:var(--_ui5-v2-17-0_daypicker_special_day_border_bottom_radius);border-end-start-radius:var(--_ui5-v2-17-0_daypicker_special_day_border_bottom_radius);border-block-start:var(--_ui5-v2-17-0_daypicker_special_day_border_top)}.ui5-dp-specialday.NonWorking,.ui5-dp-specialday.Working{border-block-start:none}.ui5-dp-item--selected .ui5-dp-specialday{width:var(--_ui5-v2-17-0_daypicker_selected_item_special_day_width)}.ui5-dp-item--selected.ui5-dp-item--now .ui5-dp-specialday{inset-block-start:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_top);width:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_width);border-end-end-radius:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_border_bottom_radius);border-end-start-radius:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_border_bottom_radius)}.ui5-dp-item--now .ui5-dp-specialday,.ui5-dp-item.ui5-dp-item--selected.ui5-dp-item--now .ui5-dp-specialday{height:.3125rem;border-end-end-radius:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_border_bottom_radius_alternate);border-end-start-radius:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_border_bottom_radius_alternate);inset-block-start:var(--_ui5-v2-17-0_daypicker_item_now_specialday_top);width:var(--_ui5-v2-17-0_daypicker_item_now_specialday_width)}.ui5-dp-item:not(:focus).ui5-dp-item--selected.ui5-dp-item--now .ui5-dp-specialday{border-end-end-radius:var(--_ui5-v2-17-0_daypicker_special_day_selected_border_radius_bottom);border-end-start-radius:var(--_ui5-v2-17-0_daypicker_special_day_selected_border_radius_bottom)}.ui5-dp-item--now .ui5-dp-specialday{width:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_width);inset-block-start:var(--_ui5-v2-17-0_daypicker_selected_item_now_special_day_top)}.ui5-dp-item[data-ui5-special-day].ui5-dp-item--selected.ui5-dp-item--now .ui5-dp-daytext{border-radius:var(--_ui5-v2-17-0-daypicker_item_selected_now_border_radius)}.ui5-dp-item[data-ui5-special-day].ui5-dp-item--selected.ui5-dp-item--now:focus:after,.ui5-dp-item[data-ui5-special-day].ui5-dp-item--now:focus:after{margin:var(--_ui5-v2-17-0_daypicker_item_now_focus_margin)}.ui5-dp-item.ui5-dp-item--now:focus .ui5-dp-specialday{inset-block-start:var(--_ui5-v2-17-0_daypicker_specialday_focused_top);width:var(--_ui5-v2-17-0_daypicker_specialday_focused_width);border-end-end-radius:var(--_ui5-v2-17-0_daypicker_specialday_focused_border_bottom);border-end-start-radius:var(--_ui5-v2-17-0_daypicker_specialday_focused_border_bottom);height:.3125rem}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item[data-ui5-special-day].ui5-dp-item--selected.ui5-dp-item--now:after,.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item[data-ui5-special-day].ui5-dp-item--now:after{inset:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_now_inset);border-radius:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_now_border_radius);border-width:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_after_border_width);border-color:var(--_ui5-v2-17-0_daypicker_item_selected_focus_color)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item[data-ui5-special-day].ui5-dp-item--now:not(.ui5-dp-item--selected):after{inset:.1875rem}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item .ui5-dp-specialday{inset-block-start:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_top);inset-inline-end:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_right)}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item:not(.ui5-dp-item--now) .ui5-dp-daysectext{padding-block:var(--_ui5-v2-17-0_dp_two_calendar_item_secondary_text_padding)}.ui5-dp-item.ui5-dp-item--selected.ui5-dp-item--now.ui5-dp-item--withsecondtype:focus .ui5-dp-specialday{inset-block-start:var(--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_special_day_top);inset-inline-end:var(--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_special_day_right)}.ui5-dp-item.ui5-dp-item--selected.ui5-dp-item--now.ui5-dp-item--withsecondtype:focus .ui5-dp-daysectext{padding-block:var(--_ui5-v2-17-0_daypicker_item_now_selected_two_calendar_focus_secondary_text_padding_block)}.ui5-dp-item--withsecondtype .ui5-dp-daytext{font-size:.75rem}.ui5-dp-item.ui5-dp-item--withsecondtype .ui5-dp-specialday,.ui5-dp-item.ui5-dp-item--withsecondtype.ui5-dp-item--now:focus .ui5-dp-specialday,.ui5-dp-item.ui5-dp-item--withsecondtype:not(:focus).ui5-dp-item--selected.ui5-dp-item--now .ui5-dp-specialday{border-radius:100%;width:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_dot);inset-block-start:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_top);inset-inline-end:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_right);height:var(--_ui5-v2-17-0_daypicker_twocalendar_item_special_day_dot);border-block-start:none}.ui5-dp-root.ui5-dp-twocalendartypes .ui5-dp-item.ui5-dp-item--selected.ui5-dp-item.ui5-dp-item--now:focus .ui5-dp-daytext{margin-block-end:var(--_ui5-v2-17-0_daypicker_two_calendar_item_selected_focus_margin_bottom);padding-inline-end:var(--_ui5-v2-17-0_daypicker_two_calendar_item_selected_focus_padding_right)}.Type01{background:var(--sapLegendColor1)}.Type02{background:var(--sapLegendColor2)}.Type03{background:var(--sapLegendColor3)}.Type04{background:var(--sapLegendColor4)}.Type05{background:var(--sapLegendColor5)}.Type06{background:var(--sapLegendColor6)}.Type07{background:var(--sapLegendColor7)}.Type08{background:var(--sapLegendColor8)}.Type09{background:var(--sapLegendColor9)}.Type10{background:var(--sapLegendColor10)}.Type11{background:var(--sapLegendColor11)}.Type12{background:var(--sapLegendColor12)}.Type13{background:var(--sapLegendColor13)}.Type14{background:var(--sapLegendColor14)}.Type15{background:var(--sapLegendColor15)}.Type16{background:var(--sapLegendColor16)}.Type17{background:var(--sapLegendColor17)}.Type18{background:var(--sapLegendColor18)}.Type19{background:var(--sapLegendColor19)}.Type20{background:var(--sapLegendColor20)}
 `;
-var __decorate$13 = function(decorators, target, key, desc) {
+var __decorate$14 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -19030,40 +19030,40 @@ let DayPicker = DayPicker_1 = class DayPicker2 extends CalendarPart$1 {
     return this.hasSecondaryCalendarType ? `${this._primaryCalendarType} calendar with secondary ${this.secondaryCalendarType} calendar` : `${this._primaryCalendarType} calendar`;
   }
 };
-__decorate$13([
+__decorate$14([
   s$9({ type: Array })
 ], DayPicker.prototype, "selectedDates", void 0);
-__decorate$13([
+__decorate$14([
   s$9()
 ], DayPicker.prototype, "selectionMode", void 0);
-__decorate$13([
+__decorate$14([
   s$9({ type: Boolean })
 ], DayPicker.prototype, "hideWeekNumbers", void 0);
-__decorate$13([
+__decorate$14([
   s$9({ type: Array })
 ], DayPicker.prototype, "_weeks", void 0);
-__decorate$13([
+__decorate$14([
   s$9({ type: Array })
 ], DayPicker.prototype, "_dayNames", void 0);
-__decorate$13([
+__decorate$14([
   s$9({ type: Boolean, noAttribute: true })
 ], DayPicker.prototype, "_hidden", void 0);
-__decorate$13([
+__decorate$14([
   s$9({ type: Number })
 ], DayPicker.prototype, "_secondTimestamp", void 0);
-__decorate$13([
+__decorate$14([
   s$9({ type: Array })
 ], DayPicker.prototype, "specialCalendarDates", void 0);
-__decorate$13([
+__decorate$14([
   s$9({ type: Array })
 ], DayPicker.prototype, "disabledDates", void 0);
-__decorate$13([
+__decorate$14([
   o$1("[data-sap-focus-ref]")
 ], DayPicker.prototype, "_focusableDay", void 0);
-__decorate$13([
+__decorate$14([
   i$b("@ui5/webcomponents")
 ], DayPicker, "i18nBundle", void 0);
-DayPicker = DayPicker_1 = __decorate$13([
+DayPicker = DayPicker_1 = __decorate$14([
   m$8({
     tag: "ui5-daypicker",
     styles: dayPickerCSS,
@@ -19085,7 +19085,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const monthPickerStyles = `:host(:not([hidden])){display:block}:host{width:100%;height:100%}.ui5-mp-root{box-sizing:border-box;padding:2rem 0 1rem;display:flex;flex-direction:column;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);justify-content:center;align-items:center}.ui5-mp-quarter{display:flex;justify-content:center;align-items:center;width:100%}.ui5-mp-item{display:flex;flex-direction:column;width:calc(33.333% - .125rem);height:var(--_ui5-v2-17-0_month_picker_item_height);color:var(--sapButton_Lite_TextColor);background-color:var(--sapButton_Lite_Background);align-items:center;justify-content:center;margin:var(--_ui5-v2-17-0_monthpicker_item_margin);box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;outline:none;position:relative;border:var(--_ui5-v2-17-0_monthpicker_item_border);border-radius:var(--_ui5-v2-17-0_monthpicker_item_border_radius)}.ui5-dp-monthsectext{font-size:.75rem;color:var(--sapNeutralElementColor)}.ui5-mp-item.ui5-mp-item--selected,.ui5-mp-item.ui5-mp-item--selected-between{background:var(--sapButton_Selected_Background);border:var(--_ui5-v2-17-0_monthpicker_item_selected_border);color:var(--sapButton_Selected_TextColor)}.ui5-mp-item.ui5-mp-item--selected .ui5-dp-monthsectext,.ui5-mp-item.ui5-mp-item--selected-between .ui5-dp-monthsectext{color:var(--sapButton_Selected_TextColor)}.ui5-mp-item:hover{background:var(--sapButton_Lite_Hover_Background);border:var(--_ui5-v2-17-0_monthpicker_item_hover_border);color:var(--sapButton_Lite_Hover_TextColor)}.ui5-mp-item.ui5-mp-item--selected:hover,.ui5-mp-item.ui5-mp-item--selected-between:hover{background:var(--sapButton_Selected_Hover_Background);border:var(--_ui5-v2-17-0_monthpicker_item_selected_hover_border);color:var(--sapButton_Selected_TextColor)}.ui5-mp-item.ui5-mp-item--selected:hover .ui5-dp-monthsectext,.ui5-mp-item.ui5-mp-item--selected-between:hover .ui5-dp-monthsectext{color:var(--sapButton_Selected_TextColor)}.ui5-mp-item:active,.ui5-mp-item.ui5-mp-item--selected:active,.ui5-mp-item.ui5-mp-item--selected-between:active{background:var(--sapButton_Active_Background);border:var(--_ui5-v2-17-0_monthpicker_item_active_border);color:var(--sapButton_Active_TextColor)}.ui5-mp-item:active .ui5-dp-monthsectext,.ui5-mp-item.ui5-mp-item--selected:active .ui5-dp-monthsectext,.ui5-mp-item.ui5-mp-item--selected-between:active .ui5-dp-monthsectext{color:var(--sapButton_Active_TextColor)}.ui5-mp-item.ui5-mp-item--disabled{pointer-events:none;opacity:.5}.ui5-mp-item:focus:after{content:"";position:absolute;inset:.0625rem;border:var(--_ui5-v2-17-0_button_focused_border);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}:host([secondary-calendar-type="Persian"]:not([primary-calendar-type="Persian"])) .ui5-mp-root,:host([secondary-calendar-type="Islamic"]:not([primary-calendar-type="Islamic"])) .ui5-mp-root{display:grid;padding:.5625rem 0;grid-template-columns:repeat(2,1fr);gap:var(--_ui5-v2-17-0_monthpicker_item_margin)}:host([secondary-calendar-type="Persian"]:not([primary-calendar-type="Persian"])) .ui5-mp-item,:host([secondary-calendar-type="Islamic"]:not([primary-calendar-type="Islamic"])) .ui5-mp-item{margin:0;width:auto}:host([secondary-calendar-type="Persian"]:not([primary-calendar-type="Persian"])) .ui5-mp-quarter,:host([secondary-calendar-type="Islamic"]:not([primary-calendar-type="Islamic"])) .ui5-mp-quarter{width:100%;display:contents}
 `;
-var __decorate$12 = function(decorators, target, key, desc) {
+var __decorate$13 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -19356,25 +19356,25 @@ let MonthPicker = MonthPicker_1 = class MonthPicker2 extends CalendarPart$1 {
     return year < minYear || year === minYear && month < minMonth || year > maxYear || year === maxYear && month > maxMonth;
   }
 };
-__decorate$12([
+__decorate$13([
   s$9({ type: Array })
 ], MonthPicker.prototype, "selectedDates", void 0);
-__decorate$12([
+__decorate$13([
   s$9()
 ], MonthPicker.prototype, "selectionMode", void 0);
-__decorate$12([
+__decorate$13([
   s$9({ type: Array })
 ], MonthPicker.prototype, "_monthsInterval", void 0);
-__decorate$12([
+__decorate$13([
   s$9({ type: Boolean, noAttribute: true })
 ], MonthPicker.prototype, "_hidden", void 0);
-__decorate$12([
+__decorate$13([
   s$9({ type: Number })
 ], MonthPicker.prototype, "_secondTimestamp", void 0);
-__decorate$12([
+__decorate$13([
   i$b("@ui5/webcomponents")
 ], MonthPicker, "i18nBundle", void 0);
-MonthPicker = MonthPicker_1 = __decorate$12([
+MonthPicker = MonthPicker_1 = __decorate$13([
   m$8({
     tag: "ui5-monthpicker",
     template: MonthPickerTemplate,
@@ -19396,7 +19396,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const yearPickerStyles = `:host(:not([hidden])){display:block}:host{width:100%;height:100%}.ui5-yp-root{padding:2rem 0 1rem;display:flex;flex-direction:column;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);justify-content:center;align-items:center}.ui5-yp-interval-container{display:flex;justify-content:center;align-items:center;width:100%}.ui5-yp-item{display:flex;margin:var(--_ui5-v2-17-0_yearpicker_item_margin);width:calc(25% - .125rem);height:var(--_ui5-v2-17-0_year_picker_item_height);color:var(--sapButton_Lite_TextColor);background-color:var(--sapButton_Lite_Background);align-items:center;justify-content:center;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;outline:none;position:relative;border:var(--_ui5-v2-17-0_yearpicker_item_border);border-radius:var(--_ui5-v2-17-0_yearpicker_item_border_radius)}.ui5-yp-item-secondary-type{flex-direction:column;width:calc(50% - .125rem)}.ui5-yp-item-sec-type{font-size:.75rem;color:var(--sapNeutralElementColor)}.ui5-yp-item.ui5-yp-item--selected,.ui5-yp-item.ui5-yp-item--selected-between{background:var(--sapButton_Selected_Background);border:var(--_ui5-v2-17-0_yearpicker_item_selected_border);color:var(--sapButton_Selected_TextColor)}.ui5-yp-item.ui5-yp-item--selected .ui5-yp-item-sec-type,.ui5-yp-item.ui5-yp-item--selected-between .ui5-yp-item-sec-type{color:var(--sapButton_Selected_TextColor)}.ui5-yp-item:hover{background:var(--sapButton_Lite_Hover_Background);border:var(--_ui5-v2-17-0_yearpicker_item_hover_border);color:var(--sapButton_Lite_Hover_TextColor)}.ui5-yp-item.ui5-yp-item--selected:hover,.ui5-yp-item.ui5-yp-item--selected-between:hover{background:var(--sapButton_Selected_Hover_Background);border:var(--_ui5-v2-17-0_yearpicker_item_selected_hover_border);color:var(--sapButton_Selected_TextColor)}.ui5-yp-item.ui5-yp-item--selected:hover .ui5-yp-item-sec-type,.ui5-yp-item.ui5-yp-item--selected-between:hover .ui5-yp-item-sec-type{color:var(--sapButton_Selected_TextColor)}.ui5-yp-item:active,.ui5-yp-item.ui5-yp-item--selected:active,.ui5-yp-item.ui5-yp-item--selected-between:active{background:var(--sapButton_Active_Background);border:var(--_ui5-v2-17-0_monthpicker_item_active_border);color:var(--sapButton_Active_TextColor)}.ui5-yp-item:active .ui5-yp-item-sec-type,.ui5-yp-item.ui5-yp-item--selected:active .ui5-yp-item-sec-type,.ui5-yp-item.ui5-yp-item--selected-between:active .ui5-yp-item-sec-type{color:var(--sapButton_Active_TextColor)}.ui5-yp-item.ui5-yp-item--disabled{pointer-events:none;opacity:.5}.ui5-yp-item:focus:after{content:"";position:absolute;inset:.0625rem;border:var(--_ui5-v2-17-0_button_focused_border);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}
 `;
-var __decorate$11 = function(decorators, target, key, desc) {
+var __decorate$12 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -19653,28 +19653,28 @@ let YearPicker = YearPicker_1 = class YearPicker2 extends CalendarPart$1 {
     this._modifyTimestampBy(this._getPageSize());
   }
 };
-__decorate$11([
+__decorate$12([
   s$9({ type: Array })
 ], YearPicker.prototype, "selectedDates", void 0);
-__decorate$11([
+__decorate$12([
   s$9()
 ], YearPicker.prototype, "selectionMode", void 0);
-__decorate$11([
+__decorate$12([
   s$9({ type: Array })
 ], YearPicker.prototype, "_yearsInterval", void 0);
-__decorate$11([
+__decorate$12([
   s$9({ type: Boolean, noAttribute: true })
 ], YearPicker.prototype, "_hidden", void 0);
-__decorate$11([
+__decorate$12([
   s$9({ type: Number })
 ], YearPicker.prototype, "_secondTimestamp", void 0);
-__decorate$11([
+__decorate$12([
   s$9({ noAttribute: true })
 ], YearPicker.prototype, "_currentYearRange", void 0);
-__decorate$11([
+__decorate$12([
   i$b("@ui5/webcomponents")
 ], YearPicker, "i18nBundle", void 0);
-YearPicker = YearPicker_1 = __decorate$11([
+YearPicker = YearPicker_1 = __decorate$12([
   m$8({
     tag: "ui5-yearpicker",
     styles: yearPickerStyles,
@@ -19696,7 +19696,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const yearRangePickerStyles = `:host(:not([hidden])){display:block}:host{width:100%;height:100%}.ui5-yrp-root{padding:2rem 0 1rem;display:flex;flex-direction:column;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);justify-content:center;align-items:center}.ui5-yrp-interval-container{display:flex;justify-content:space-evenly;align-items:center;width:100%}.ui5-yrp-item{display:flex;margin:var(--_ui5-v2-17-0_yearpicker_item_margin);width:calc(50% - .125rem);height:var(--_ui5-v2-17-0_year_picker_item_height);color:var(--sapButton_Lite_TextColor);background-color:var(--sapButton_Lite_Background);align-items:center;justify-content:center;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;outline:none;position:relative;border:var(--_ui5-v2-17-0_yearpicker_item_border);border-radius:var(--_ui5-v2-17-0_yearpicker_item_border_radius)}.ui5-yrp-item-secondary-type{flex-direction:column;width:calc(50% - .125rem)}.ui5-yrp-item-sec-type{font-size:.75rem;color:var(--sapNeutralElementColor)}.ui5-yrp-item-one-column-view{width:initial;padding-left:.5rem;padding-right:.5rem}.ui5-yrp-item.ui5-yrp-item--selected,.ui5-yrp-item.ui5-yrp-item--selected-between{background:var(--sapButton_Selected_Background);border:var(--_ui5-v2-17-0_yearpicker_item_selected_border);color:var(--sapButton_Selected_TextColor)}.ui5-yrp-item.ui5-yrp-item--selected .ui5-yrp-item-sec-type,.ui5-yrp-item.ui5-yrp-item--selected-between .ui5-yrp-item-sec-type{color:var(--sapButton_Selected_TextColor)}.ui5-yrp-item:hover{background:var(--sapButton_Lite_Hover_Background);border:var(--_ui5-v2-17-0_yearpicker_item_hover_border);color:var(--sapButton_Lite_Hover_TextColor)}.ui5-yrp-item.ui5-yrp-item--selected:hover,.ui5-yrp-item.ui5-yrp-item--selected-between:hover{background:var(--sapButton_Selected_Hover_Background);border:var(--_ui5-v2-17-0_yearpicker_item_selected_hover_border);color:var(--sapButton_Selected_TextColor)}.ui5-yrp-item.ui5-yrp-item--selected:hover .ui5-yrp-item-sec-type,.ui5-yrp-item.ui5-yrp-item--selected-between:hover .ui5-yrp-item-sec-type{color:var(--sapButton_Selected_TextColor)}.ui5-yrp-item:active,.ui5-yrp-item.ui5-yrp-item--selected:active,.ui5-yrp-item.ui5-yrp-item--selected-between:active{background:var(--sapButton_Active_Background);border:var(--_ui5-v2-17-0_monthpicker_item_active_border);color:var(--sapButton_Active_TextColor)}.ui5-yrp-item:active .ui5-yrp-item-sec-type,.ui5-yrp-item.ui5-yrp-item--selected:active .ui5-yrp-item-sec-type,.ui5-yrp-item.ui5-yrp-item--selected-between:active .ui5-yrp-item-sec-type{color:var(--sapButton_Active_TextColor)}.ui5-yrp-item.ui5-yrp-item--disabled{pointer-events:none;opacity:.5}.ui5-yrp-item:focus:after{content:"";position:absolute;inset:.0625rem;border:var(--_ui5-v2-17-0_button_focused_border);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}
 `;
-var __decorate$10 = function(decorators, target, key, desc) {
+var __decorate$11 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -20011,28 +20011,28 @@ let YearRangePicker = YearRangePicker_1 = class YearRangePicker2 extends Calenda
     this._gridStartYear += years;
   }
 };
-__decorate$10([
+__decorate$11([
   s$9({ type: Array })
 ], YearRangePicker.prototype, "selectedDates", void 0);
-__decorate$10([
+__decorate$11([
   s$9({ type: Boolean, noAttribute: true })
 ], YearRangePicker.prototype, "_showRangeSelection", void 0);
-__decorate$10([
+__decorate$11([
   s$9({ type: Number })
 ], YearRangePicker.prototype, "_secondTimestamp", void 0);
-__decorate$10([
+__decorate$11([
   s$9({ type: Array })
 ], YearRangePicker.prototype, "_yearRanges", void 0);
-__decorate$10([
+__decorate$11([
   s$9({ type: Boolean, noAttribute: true })
 ], YearRangePicker.prototype, "_hidden", void 0);
-__decorate$10([
+__decorate$11([
   s$9({ noAttribute: true })
 ], YearRangePicker.prototype, "_currentYearRange", void 0);
-__decorate$10([
+__decorate$11([
   i$b("@ui5/webcomponents")
 ], YearRangePicker, "i18nBundle", void 0);
-YearRangePicker = YearRangePicker_1 = __decorate$10([
+YearRangePicker = YearRangePicker_1 = __decorate$11([
   m$8({
     tag: "ui5-yearrangepicker",
     styles: [
@@ -20069,7 +20069,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const CalendarHeaderCss = `:host{display:block;width:100%;height:100%}.ui5-calheader-root{display:flex;height:100%;padding:var(--_ui5-v2-17-0_calendar_header_padding);box-sizing:border-box}.ui5-calheader-arrowbtn{display:flex;justify-content:center;align-items:center;width:var(--_ui5-v2-17-0_calendar_header_arrow_button_width);background-color:var(--sapButton_Lite_Background);color:var(--sapButton_Lite_TextColor);cursor:pointer;overflow:hidden;white-space:nowrap;padding:0;font-size:var(--sapFontSize);user-select:none}.ui5-calheader-arrowbtn.ui5-calheader-arrowbtn-disabled:hover,.ui5-calheader-arrowbtn.ui5-calheader-arrowbtn-disabled:active,.ui5-calheader-arrowbtn.ui5-calheader-arrowbtn-disabled:focus,.ui5-calheader-arrowbtn.ui5-calheader-arrowbtn-disabled{opacity:.4;cursor:default;outline:none;background-color:var(--sapButton_Lite_Background);color:var(--sapButton_Lite_TextColor)}[hidden].ui5-calheader-arrowbtn.ui5-calheader-middlebtn{display:none}.ui5-calheader-arrowbtn:focus{outline:none}.ui5-calheader-arrowbtn:hover{background-color:var(--sapButton_Hover_Background);color:var(--sapButton_Lite_TextColor);box-shadow:var(--_ui5-v2-17-0_calendar_header_arrow_button_box_shadow)}.ui5-calheader-arrowbtn:active{background-color:var(--sapButton_Active_Background);color:var(--sapButton_Active_TextColor)}.ui5-calheader-arrowbtn,.ui5-calheader-middlebtn{border:var(--_ui5-v2-17-0_calendar_header_arrow_button_border);border-radius:var(--_ui5-v2-17-0_calendar_header_arrow_button_border_radius);display:flex;background-color:var(--sapButton_Lite_Background);border-color:var(--sapButton_Lite_BorderColor)}.ui5-calheader-middlebtn{flex-direction:column;align-items:center;justify-content:center}.ui5-calheader-arrowbtn:not(:active) .ui5-calheader-btn-sectext{color:var(--sapNeutralElementColor);font-size:var(--sapFontSmallSize)}.ui5-calheader-arrowicon{color:currentColor;pointer-events:none}.ui5-calheader-midcontainer{display:flex;justify-content:space-around;flex:1 1 auto;padding:0 .5rem}.ui5-calheader-midcontainer .ui5-calheader-middlebtn:first-child{margin-inline-end:.5rem}.ui5-calheader-middlebtn{font-family:var(--_ui5-v2-17-0_button_fontFamily);width:var(--_ui5-v2-17-0_calendar_header_middle_button_width);flex:var(--_ui5-v2-17-0_calendar_header_middle_button_flex);position:relative;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;user-select:none}.ui5-calheader-middlebtn:focus{border:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_border);border-radius:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_border_radius);outline:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_outline);outline-offset:-.125rem;background:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_background)}.ui5-calheader-middlebtn:focus:active{outline:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_active_outline);outline-offset:-.0625rem;background:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_active_background)}.ui5-calheader-middlebtn:focus:after{content:"";display:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_after_display);width:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_after_width);height:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_after_height);border:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_after_border);position:absolute;top:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_after_top_offset);left:var(--_ui5-v2-17-0_calendar_header_middle_button_focus_after_left_offset)}.ui5-calheader-middlebtn:focus:active:after{border-color:var(--sapContent_ContrastFocusColor)}
 `;
-var __decorate$$ = function(decorators, target, key, desc) {
+var __decorate$10 = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -20582,58 +20582,58 @@ let Calendar = Calendar_1 = class Calendar2 extends CalendarPart$1 {
     this._setSelectedDates(selectedDates);
   }
 };
-__decorate$$([
+__decorate$10([
   s$9()
 ], Calendar.prototype, "selectionMode", void 0);
-__decorate$$([
+__decorate$10([
   s$9({ type: Boolean })
 ], Calendar.prototype, "hideWeekNumbers", void 0);
-__decorate$$([
+__decorate$10([
   s$9()
 ], Calendar.prototype, "_currentPicker", void 0);
-__decorate$$([
+__decorate$10([
   s$9({ type: Boolean })
 ], Calendar.prototype, "_previousButtonDisabled", void 0);
-__decorate$$([
+__decorate$10([
   s$9({ type: Boolean })
 ], Calendar.prototype, "_nextButtonDisabled", void 0);
-__decorate$$([
+__decorate$10([
   s$9()
 ], Calendar.prototype, "_headerMonthButtonText", void 0);
-__decorate$$([
+__decorate$10([
   s$9()
 ], Calendar.prototype, "_headerYearButtonText", void 0);
-__decorate$$([
+__decorate$10([
   s$9()
 ], Calendar.prototype, "_headerYearButtonTextSecType", void 0);
-__decorate$$([
+__decorate$10([
   s$9()
 ], Calendar.prototype, "_headerYearRangeButtonText", void 0);
-__decorate$$([
+__decorate$10([
   s$9()
 ], Calendar.prototype, "_headerYearRangeButtonTextSecType", void 0);
-__decorate$$([
+__decorate$10([
   s$9({ noAttribute: true })
 ], Calendar.prototype, "_pickersMode", void 0);
-__decorate$$([
+__decorate$10([
   d$8({ type: HTMLElement, invalidateOnChildChange: true })
 ], Calendar.prototype, "calendarLegend", void 0);
-__decorate$$([
+__decorate$10([
   d$8({ type: HTMLElement, invalidateOnChildChange: true, "default": true })
 ], Calendar.prototype, "dates", void 0);
-__decorate$$([
+__decorate$10([
   d$8({ type: HTMLElement, invalidateOnChildChange: true })
 ], Calendar.prototype, "specialDates", void 0);
-__decorate$$([
+__decorate$10([
   d$8({ type: HTMLElement, invalidateOnChildChange: true })
 ], Calendar.prototype, "disabledDates", void 0);
-__decorate$$([
+__decorate$10([
   s$9()
 ], Calendar.prototype, "_selectedItemType", void 0);
-__decorate$$([
+__decorate$10([
   i$b("@ui5/webcomponents")
 ], Calendar, "i18nBundle", void 0);
-Calendar = Calendar_1 = __decorate$$([
+Calendar = Calendar_1 = __decorate$10([
   m$8({
     tag: "ui5-calendar",
     fastNavigation: true,
@@ -20710,7 +20710,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const datePickerPopoverCss = `.ui5-date-picker-popover{width:var(--_ui5-v2-17-0_calendar_width);.ui5-popover-header{width:100%}}[ui5-calendar]{width:100%;display:flex;justify-content:center}[ui5-responsive-popover]::part(content){padding:0}
 `;
-var __decorate$_ = function(decorators, target, key, desc) {
+var __decorate$$ = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -21279,64 +21279,64 @@ let DatePicker = DatePicker_1 = class DatePicker2 extends DateComponentBase$1 {
     return InputType$1.Text;
   }
 };
-__decorate$_([
+__decorate$$([
   s$9()
 ], DatePicker.prototype, "value", void 0);
-__decorate$_([
+__decorate$$([
   s$9()
 ], DatePicker.prototype, "valueState", void 0);
-__decorate$_([
+__decorate$$([
   s$9({ type: Boolean })
 ], DatePicker.prototype, "required", void 0);
-__decorate$_([
+__decorate$$([
   s$9({ type: Boolean })
 ], DatePicker.prototype, "disabled", void 0);
-__decorate$_([
+__decorate$$([
   s$9({ type: Boolean })
 ], DatePicker.prototype, "readonly", void 0);
-__decorate$_([
+__decorate$$([
   s$9()
 ], DatePicker.prototype, "placeholder", void 0);
-__decorate$_([
+__decorate$$([
   s$9()
 ], DatePicker.prototype, "name", void 0);
-__decorate$_([
+__decorate$$([
   s$9({ type: Boolean })
 ], DatePicker.prototype, "hideWeekNumbers", void 0);
-__decorate$_([
+__decorate$$([
   s$9({ type: Boolean })
 ], DatePicker.prototype, "open", void 0);
-__decorate$_([
+__decorate$$([
   s$9()
 ], DatePicker.prototype, "accessibleName", void 0);
-__decorate$_([
+__decorate$$([
   s$9()
 ], DatePicker.prototype, "accessibleNameRef", void 0);
-__decorate$_([
+__decorate$$([
   s$9()
 ], DatePicker.prototype, "accessibleDescription", void 0);
-__decorate$_([
+__decorate$$([
   s$9()
 ], DatePicker.prototype, "accessibleDescriptionRef", void 0);
-__decorate$_([
+__decorate$$([
   s$9({ type: Object })
 ], DatePicker.prototype, "_respPopoverConfig", void 0);
-__decorate$_([
+__decorate$$([
   s$9()
 ], DatePicker.prototype, "_calendarCurrentPicker", void 0);
-__decorate$_([
+__decorate$$([
   d$8({ type: HTMLElement })
 ], DatePicker.prototype, "valueStateMessage", void 0);
-__decorate$_([
+__decorate$$([
   o$1("[ui5-datetime-input]")
 ], DatePicker.prototype, "_dateTimeInput", void 0);
-__decorate$_([
+__decorate$$([
   o$1("[ui5-calendar]")
 ], DatePicker.prototype, "_calendar", void 0);
-__decorate$_([
+__decorate$$([
   i$b("@ui5/webcomponents")
 ], DatePicker, "i18nBundle", void 0);
-DatePicker = DatePicker_1 = __decorate$_([
+DatePicker = DatePicker_1 = __decorate$$([
   m$8({
     tag: "ui5-date-picker",
     languageAware: true,
@@ -21411,7 +21411,7 @@ const getTimeControlsByFormat = (formatArray, hoursConfig) => {
   }
   return timeControls;
 };
-var __decorate$Z = function(decorators, target, key, desc) {
+var __decorate$_ = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -21682,40 +21682,40 @@ let TimePickerInternals = TimePickerInternals_1 = class TimePickerInternals2 ext
   _setExactMatch() {
   }
 };
-__decorate$Z([
+__decorate$_([
   s$9()
 ], TimePickerInternals.prototype, "value", void 0);
-__decorate$Z([
+__decorate$_([
   s$9()
 ], TimePickerInternals.prototype, "formatPattern", void 0);
-__decorate$Z([
+__decorate$_([
   s$9({ type: Number, noAttribute: true })
 ], TimePickerInternals.prototype, "_activeIndex", void 0);
-__decorate$Z([
+__decorate$_([
   s$9()
 ], TimePickerInternals.prototype, "_calendarType", void 0);
-__decorate$Z([
+__decorate$_([
   s$9({ type: Array })
 ], TimePickerInternals.prototype, "_entities", void 0);
-__decorate$Z([
+__decorate$_([
   s$9({ type: Object })
 ], TimePickerInternals.prototype, "_componentMap", void 0);
-__decorate$Z([
+__decorate$_([
   s$9({ type: Array })
 ], TimePickerInternals.prototype, "_periods", void 0);
-__decorate$Z([
+__decorate$_([
   s$9({ type: Number, noAttribute: true })
 ], TimePickerInternals.prototype, "_typeCooldownId", void 0);
-__decorate$Z([
+__decorate$_([
   s$9({ type: Number, noAttribute: true })
 ], TimePickerInternals.prototype, "_exactMatch", void 0);
-__decorate$Z([
+__decorate$_([
   s$9({ noAttribute: true })
 ], TimePickerInternals.prototype, "_keyboardBuffer", void 0);
-__decorate$Z([
+__decorate$_([
   i$b("@ui5/webcomponents")
 ], TimePickerInternals, "i18nBundle", void 0);
-TimePickerInternals = TimePickerInternals_1 = __decorate$Z([
+TimePickerInternals = TimePickerInternals_1 = __decorate$_([
   m$8({
     cldr: true,
     renderer: y$5
@@ -21732,7 +21732,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const toggleBtnCss = `:host(:not([hidden])){display:inline-block}:host([design="Emphasized"]:not([pressed])){text-shadow:var(--_ui5-v2-17-0_toggle_button_emphasized_text_shadow)}:host([pressed]),:host([design="Default"][pressed]),:host([design="Transparent"][pressed]),:host([design="Emphasized"][pressed]){background:var(--sapButton_Selected_Background);border-color:var(--sapButton_Selected_BorderColor);color:var(--sapButton_Selected_TextColor);text-shadow:none}:host([pressed]:hover),:host([pressed]:not([active]):not([non-interactive]):not([_is-touch]):hover),:host([design="Default"][pressed]:hover),:host([design="Default"][pressed]:not([active]):not([non-interactive]):not([_is-touch]):hover),:host([design="Transparent"][pressed]:hover),:host([design="Transparent"][pressed]:not([active]):not([non-interactive]):not([_is-touch]):hover),:host([design="Emphasized"][pressed]:hover),:host([design="Emphasized"][pressed]:not([active]):not([non-interactive]):not([_is-touch]):hover){background:var(--sapButton_Selected_Hover_Background);border-color:var(--sapButton_Selected_Hover_BorderColor);color:var(--sapButton_Selected_TextColor)}:host([active]:not([disabled])),:host([design="Default"][active]:not([disabled])),:host([design="Transparent"][active]:not([disabled])),:host([design="Emphasized"][active]:not([disabled])){background:var(--sapButton_Active_Background);border-color:var(--sapButton_Active_BorderColor);color:var(--sapButton_Selected_TextColor)}:host([pressed][active]:not([disabled])),:host([design="Default"][pressed][active]:not([disabled])),:host([design="Transparent"][pressed][active]:not([disabled])),:host([design="Emphasized"][pressed][active]:not([disabled])){background:var(--sapButton_Selected_Hover_Background);border-color:var(--sapButton_Selected_Hover_BorderColor);color:var(--sapButton_Selected_TextColor)}:host([pressed]:not([active]):not([non-interactive]):not([_is-touch])),:host([design="Default"][pressed]:not([active]):not([non-interactive]):not([_is-touch])),:host([design="Transparent"][pressed]:not([active]):not([non-interactive]):not([_is-touch])),:host([design="Emphasized"][pressed]:not([active]):not([non-interactive]):not([_is-touch])){background:var(--sapButton_Selected_Background);border-color:var(--sapButton_Selected_BorderColor);color:var(--sapButton_Selected_TextColor)}:host([design="Negative"][pressed]){background:var(--sapButton_Reject_Selected_Background);border-color:var(--sapButton_Reject_Selected_BorderColor);color:var(--sapButton_Reject_Selected_TextColor)}:host([design="Negative"][active]:not([disabled])){background:var(--sapButton_Reject_Active_Background);border-color:var(--sapButton_Reject_Active_BorderColor);color:var(--sapButton_Reject_Active_TextColor)}:host([design="Negative"][pressed][active]:not([disabled])){background:var(--sapButton_Reject_Selected_Hover_Background);border-color:var(--sapButton_Reject_Selected_Hover_BorderColor);color:var(--sapButton_Reject_Selected_TextColor)}:host([design="Negative"][pressed][active]:hover),:host([design="Negative"][pressed]:not([active]):not([non-interactive]):not([_is-touch]):hover){background:var(--sapButton_Reject_Selected_Hover_Background);border-color:var(--sapButton_Reject_Selected_Hover_BorderColor);color:var(--sapButton_Reject_Selected_TextColor)}:host([design="Negative"][pressed]:not([active]):not([non-interactive]):not([_is-touch])){background:var(--sapButton_Reject_Selected_Background);border-color:var(--sapButton_Reject_Selected_BorderColor);color:var(--sapButton_Reject_Selected_TextColor)}:host([design="Positive"][pressed]){background:var(--sapButton_Accept_Selected_Background);border-color:var(--sapButton_Accept_Selected_BorderColor);color:var(--sapButton_Accept_Selected_TextColor)}:host([design="Positive"][active]:not([disabled])){background:var(--sapButton_Accept_Active_Background);border-color:var(--sapButton_Accept_Active_BorderColor);color:var(--sapButton_Accept_Selected_TextColor)}:host([design="Positive"][pressed][active]:not([disabled])){background:var(--sapButton_Accept_Selected_Hover_Background);border-color:var(--sapButton_Accept_Selected_Hover_BorderColor);color:var(--sapButton_Accept_Selected_TextColor)}:host([design="Positive"][pressed][active]:hover),:host([design="Positive"][pressed]:not([active]):not([non-interactive]):not([_is-touch]):hover){background:var(--sapButton_Accept_Selected_Hover_Background);border-color:var(--sapButton_Accept_Selected_Hover_BorderColor);color:var(--sapButton_Accept_Selected_TextColor)}:host([design="Positive"][pressed]:not([active]):not([non-interactive]):not([_is-touch])){background:var(--sapButton_Accept_Selected_Background);border-color:var(--sapButton_Accept_Selected_BorderColor);color:var(--sapButton_Accept_Selected_TextColor)}:host([design="Attention"][pressed]){background:var(--sapButton_Attention_Selected_Background);border-color:var(--sapButton_Attention_Selected_BorderColor);color:var(--sapButton_Attention_Selected_TextColor)}:host([design="Attention"][active]:not([disabled])){background:var(--sapButton_Attention_Active_Background);border-color:var(--sapButton_Attention_Active_BorderColor);color:var(--sapButton_Attention_Active_TextColor)}:host([design="Attention"][pressed][active]:not([disabled])){background:var(--sapButton_Attention_Selected_Hover_Background);border-color:var(--sapButton_Attention_Selected_Hover_BorderColor);color:var(--sapButton_Attention_Selected_TextColor)}:host([design="Attention"][pressed][active]:hover),:host([design="Attention"][pressed]:not([active]):not([non-interactive]):not([_is-touch]):hover){background:var(--sapButton_Attention_Selected_Hover_Background);border-color:var(--sapButton_Attention_Selected_Hover_BorderColor);color:var(--sapButton_Attention_Selected_TextColor)}:host([design="Attention"][pressed]:not([active]):not([non-interactive]):not([_is-touch])){background:var(--sapButton_Attention_Selected_Background);border-color:var(--sapButton_Attention_Selected_BorderColor);color:var(--sapButton_Attention_Selected_TextColor)}
 `;
-var __decorate$Y = function(decorators, target, key, desc) {
+var __decorate$Z = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -21775,10 +21775,10 @@ let ToggleButton = class ToggleButton2 extends Button$1 {
     super._onkeyup(e2);
   }
 };
-__decorate$Y([
+__decorate$Z([
   s$9({ type: Boolean })
 ], ToggleButton.prototype, "pressed", void 0);
-ToggleButton = __decorate$Y([
+ToggleButton = __decorate$Z([
   m$8({
     tag: "ui5-toggle-button",
     template: ToggleButtonTemplate,
@@ -21796,7 +21796,7 @@ function ToggleSpinButtonTemplate() {
     ariaValueText: this.valueText
   }) });
 }
-var __decorate$X = function(decorators, target, key, desc) {
+var __decorate$Y = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -21821,19 +21821,19 @@ let ToggleSpinButton = class ToggleSpinButton2 extends ToggleButton$1 {
     return "spinbutton";
   }
 };
-__decorate$X([
+__decorate$Y([
   s$9({ type: Number })
 ], ToggleSpinButton.prototype, "valueMin", void 0);
-__decorate$X([
+__decorate$Y([
   s$9({ type: Number })
 ], ToggleSpinButton.prototype, "valueMax", void 0);
-__decorate$X([
+__decorate$Y([
   s$9({ type: Number })
 ], ToggleSpinButton.prototype, "valueNow", void 0);
-__decorate$X([
+__decorate$Y([
   s$9()
 ], ToggleSpinButton.prototype, "valueText", void 0);
-ToggleSpinButton = __decorate$X([
+ToggleSpinButton = __decorate$Y([
   m$8({
     tag: "ui5-toggle-spin-button",
     renderer: y$5,
@@ -21850,7 +21850,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const segmentedButtonItemCss = `:host{vertical-align:middle}:host(:not([hidden])){display:inline-block}:host{min-width:var(--_ui5-v2-17-0_button_base_min_width);height:var(--_ui5-v2-17-0_button_base_height);line-height:normal;font-family:var(--_ui5-v2-17-0_button_fontFamily);font-size:var(--sapFontSize);text-shadow:var(--_ui5-v2-17-0_button_text_shadow);border-radius:var(--_ui5-v2-17-0_button_border_radius);cursor:pointer;background-color:var(--sapButton_Background);border:var(--sapButton_BorderWidth) solid var(--sapButton_BorderColor);color:var(--sapButton_TextColor);box-sizing:border-box;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ui5-segmented-button-item-root{min-width:inherit;cursor:inherit;height:100%;width:100%;box-sizing:border-box;display:flex;justify-content:center;align-items:center;outline:none;padding:0 var(--_ui5-v2-17-0_button_base_padding);position:relative;background:transparent;border:none;color:inherit;text-shadow:inherit;font:inherit;white-space:inherit;overflow:inherit;text-overflow:inherit;letter-spacing:inherit;word-spacing:inherit;line-height:inherit;-webkit-user-select:none;-moz-user-select:none;user-select:none}:host(:not([active]):not([non-interactive]):not([_is-touch]):not([disabled]):hover),:host(:not([hidden]):not([disabled]).ui5_hovered){background:var(--sapButton_Hover_Background);border:.0625rem solid var(--sapButton_Hover_BorderColor);color:var(--sapButton_Hover_TextColor)}.ui5-segmented-button-item-icon{color:inherit;flex-shrink:0;padding-inline-end:.375rem}:host([icon-only]) .ui5-segmented-button-item-icon{padding-inline-end:0}:host([icon-only]) .ui5-segmented-button-item-root{min-width:auto;padding:0}:host([icon-only]) .ui5-segmented-button-item-text{display:none}.ui5-segmented-button-item-text{outline:none;position:relative;white-space:inherit;overflow:inherit;text-overflow:inherit}:host([has-icon]:not([icon-end])) .ui5-segmented-button-item-text{margin-inline-start:var(--_ui5-v2-17-0_button_base_icon_margin)}:host([has-icon][icon-end]) .ui5-segmented-button-item-text{margin-inline-start:0}:host([disabled]){opacity:var(--sapContent_DisabledOpacity);pointer-events:unset;cursor:default}:host([has-icon]:not([icon-only])) .ui5-segmented-button-item-text{min-width:calc(var(--_ui5-v2-17-0_button_base_min_width) - var(--_ui5-v2-17-0_button_base_icon_margin) - 1rem)}:host([disabled]){pointer-events:none}:host([desktop]:not([active])) .ui5-segmented-button-item-root:focus-within:after,:host(:not([active])) .ui5-segmented-button-item-root:focus-visible:after,:host([desktop][active]) .ui5-segmented-button-item-root:focus-within:before,:host([active]) .ui5-segmented-button-item-root:focus-visible:before{content:"";position:absolute;box-sizing:border-box;inset:.0625rem;border:var(--_ui5-v2-17-0_button_focused_border);border-radius:var(--_ui5-v2-17-0_button_focused_border_radius)}:host([desktop][active]) .ui5-segmented-button-item-root:focus-within:before,:host([active]) .ui5-segmented-button-item-root:focus-visible:before{border-color:var(--_ui5-v2-17-0_button_pressed_focused_border_color)}.ui5-segmented-button-item-root::-moz-focus-inner{border:0}bdi{display:block;white-space:inherit;overflow:inherit;text-overflow:inherit}:host([active][desktop]) .ui5-segmented-button-item-root:focus-within:after,:host([active]) .ui5-segmented-button-item-root:focus-visible:after,:host([selected][desktop]) .ui5-segmented-button-item-root:focus-within:after,:host([selected]) .ui5-segmented-button-item-root:focus-visible:after{border-color:var(--_ui5-v2-17-0_button_pressed_focused_border_color);outline:none}:host([desktop]:not(:last-child)) .ui5-segmented-button-item-root:focus-within:after,:host(:not(:last-child)) .ui5-segmented-button-item-root:focus-visible:after{border-start-end-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius);border-end-end-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius)}:host([desktop]:not(:first-child)) .ui5-segmented-button-item-root:focus-within:after,:host(:not(:first-child)) .ui5-segmented-button-item-root:focus-visible:after{border-start-start-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius);border-end-start-radius:var(--_ui5-v2-17-0_button_focused_inner_border_radius)}
 `;
-var __decorate$W = function(decorators, target, key, desc) {
+var __decorate$X = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -21917,55 +21917,55 @@ let SegmentedButtonItem = SegmentedButtonItem_1 = class SegmentedButtonItem2 ext
     }).filter(Boolean).join(" ");
   }
 };
-__decorate$W([
+__decorate$X([
   s$9({ type: Boolean })
 ], SegmentedButtonItem.prototype, "disabled", void 0);
-__decorate$W([
+__decorate$X([
   s$9({ type: Boolean })
 ], SegmentedButtonItem.prototype, "selected", void 0);
-__decorate$W([
+__decorate$X([
   s$9()
 ], SegmentedButtonItem.prototype, "tooltip", void 0);
-__decorate$W([
+__decorate$X([
   s$9()
 ], SegmentedButtonItem.prototype, "accessibleName", void 0);
-__decorate$W([
+__decorate$X([
   s$9()
 ], SegmentedButtonItem.prototype, "accessibleNameRef", void 0);
-__decorate$W([
+__decorate$X([
   s$9()
 ], SegmentedButtonItem.prototype, "accessibleDescription", void 0);
-__decorate$W([
+__decorate$X([
   s$9()
 ], SegmentedButtonItem.prototype, "accessibleDescriptionRef", void 0);
-__decorate$W([
+__decorate$X([
   s$9()
 ], SegmentedButtonItem.prototype, "icon", void 0);
-__decorate$W([
+__decorate$X([
   s$9({ type: Boolean })
 ], SegmentedButtonItem.prototype, "iconOnly", void 0);
-__decorate$W([
+__decorate$X([
   s$9({ type: Boolean })
 ], SegmentedButtonItem.prototype, "nonInteractive", void 0);
-__decorate$W([
+__decorate$X([
   s$9({ noAttribute: true })
 ], SegmentedButtonItem.prototype, "forcedTabIndex", void 0);
-__decorate$W([
+__decorate$X([
   s$9({ type: Number })
 ], SegmentedButtonItem.prototype, "posInSet", void 0);
-__decorate$W([
+__decorate$X([
   s$9({ type: Number })
 ], SegmentedButtonItem.prototype, "sizeOfSet", void 0);
-__decorate$W([
+__decorate$X([
   s$9({ type: Boolean })
 ], SegmentedButtonItem.prototype, "hidden", void 0);
-__decorate$W([
+__decorate$X([
   d$8({ type: Node, "default": true })
 ], SegmentedButtonItem.prototype, "text", void 0);
-__decorate$W([
+__decorate$X([
   i$b("@ui5/webcomponents")
 ], SegmentedButtonItem, "i18nBundle", void 0);
-SegmentedButtonItem = SegmentedButtonItem_1 = __decorate$W([
+SegmentedButtonItem = SegmentedButtonItem_1 = __decorate$X([
   m$8({
     tag: "ui5-segmented-button-item",
     renderer: y$5,
@@ -21992,7 +21992,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const SegmentedButtonCss = `:host{vertical-align:middle}.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block;min-width:calc(var(--_ui5-v2-17-0_segmented_btn_items_count) * var(--_ui5-v2-17-0_button_base_min_width))}.ui5-segmented-button-root{width:inherit;margin:0;padding:0;background-color:var(--sapButton_Background);border-radius:var(--sapButton_BorderCornerRadius);box-shadow:inset 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_BorderColor)}.ui5-segmented-button-root-equal-sized-items{display:grid;grid-template-columns:repeat(var(--_ui5-v2-17-0_segmented_btn_items_count),minmax(var(--_ui5-v2-17-0_button_base_min_width),1fr))}.ui5-segmented-button-root-content-fit-items{display:inline-flex;gap:0}::slotted([ui5-segmented-button-item]){border-radius:var(--sapButton_Segment_BorderCornerRadius);border-color:var(--_ui5-v2-17-0_segmented_btn_border_color);background-color:var(--_ui5-v2-17-0_segmented_btn_background_color);height:var(--_ui5-v2-17-0_button_base_height);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;z-index:initial}::slotted([ui5-segmented-button-item]:hover){z-index:2;box-shadow:var(--_ui5-v2-17-0_segmented_btn_hover_box_shadow);border-color:var(--sapButton_Hover_BorderColor);background-color:var(--sapButton_Hover_Background)}::slotted([ui5-segmented-button-item][selected]),::slotted([ui5-segmented-button-item][active]){border-color:var(--sapButton_Selected_BorderColor);background-color:var(--sapButton_Selected_Background);color:var(--sapButton_Selected_TextColor)}::slotted([ui5-segmented-button-item][selected]:hover){border-color:var(--sapButton_Selected_Hover_BorderColor);background-color:var(--sapButton_Selected_Hover_Background);color:var(--sapButton_Selected_TextColor)}::slotted([ui5-segmented-button-item]:last-child){border-start-end-radius:var(--sapButton_BorderCornerRadius);border-end-end-radius:var(--sapButton_BorderCornerRadius)}::slotted([ui5-segmented-button-item]:first-child){border-start-start-radius:var(--sapButton_BorderCornerRadius);border-end-start-radius:var(--sapButton_BorderCornerRadius)}::slotted([ui5-segmented-button-item]:not(:first-child)){border-left-width:var(--_ui5-v2-17-0_segmented_btn_item_border_left);border-right-width:var(--_ui5-v2-17-0_segmented_btn_item_border_right)}::slotted([ui5-segmented-button-item][active]:not([active]):hover){border-color:var(--sapButton_BorderColor)}::slotted([ui5-segmented-button-item][active]:hover){border-color:var(--sapButton_Selected_BorderColor)}::slotted([ui5-segmented-button-item]:active){background-color:var(--sapButton_Active_Background)}
 `;
-var __decorate$V = function(decorators, target, key, desc) {
+var __decorate$W = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -22135,31 +22135,31 @@ let SegmentedButton = SegmentedButton_1 = class SegmentedButton2 extends b$7 {
     return SegmentedButton_1.i18nBundle.getText(SEGMENTEDBUTTON_ARIA_DESCRIPTION);
   }
 };
-__decorate$V([
+__decorate$W([
   s$9()
 ], SegmentedButton.prototype, "accessibleName", void 0);
-__decorate$V([
+__decorate$W([
   s$9()
 ], SegmentedButton.prototype, "accessibleNameRef", void 0);
-__decorate$V([
+__decorate$W([
   s$9()
 ], SegmentedButton.prototype, "accessibleDescription", void 0);
-__decorate$V([
+__decorate$W([
   s$9()
 ], SegmentedButton.prototype, "accessibleDescriptionRef", void 0);
-__decorate$V([
+__decorate$W([
   s$9()
 ], SegmentedButton.prototype, "selectionMode", void 0);
-__decorate$V([
+__decorate$W([
   s$9({ type: Boolean })
 ], SegmentedButton.prototype, "itemsFitContent", void 0);
-__decorate$V([
+__decorate$W([
   d$8({ type: HTMLElement, invalidateOnChildChange: true, "default": true })
 ], SegmentedButton.prototype, "items", void 0);
-__decorate$V([
+__decorate$W([
   i$b("@ui5/webcomponents")
 ], SegmentedButton, "i18nBundle", void 0);
-SegmentedButton = SegmentedButton_1 = __decorate$V([
+SegmentedButton = SegmentedButton_1 = __decorate$W([
   m$8({
     tag: "ui5-segmented-button",
     languageAware: true,
@@ -22186,7 +22186,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const TimePickerClockCss = `.ui5-tp-clock{position:relative;width:auto;padding:.5625rem;outline:none;display:none}.ui5-tp-clock-active{display:block}.ui5-tp-clock-dial{position:relative;width:auto;display:block;border-radius:100%;background-color:var(--sapLegend_WorkingBackground);text-align:center;z-index:1}.ui5-tp-clock-dial:before{content:attr(data-label);display:flex;align-items:center;justify-content:center;position:absolute;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);color:var(--sapContent_LabelColor);inset:2.75rem;border-radius:100%;z-index:2}.ui5-tp-clock-dial:after{content:"";display:block;padding-bottom:100%}.ui5-tp-clock-inner .ui5-tp-clock-dial:before{background-color:var(--sapLegend_WorkingBackground)}.ui5-tp-clock-cover{position:absolute;inset:-.25rem;border-radius:100%;z-index:10;touch-action:none}.ui5-tp-clock-item{position:absolute;top:0;left:50%;display:inline-block;width:2.75rem;height:100%;z-index:3;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.ui5-tp-clock-item.ui5-tp-clock-marker{z-index:4}.ui5-tp-clock-dot{display:block;box-sizing:border-box;width:.25rem;height:.3125rem;margin:0 auto .25rem;border-radius:100%;background-color:var(--sapField_BorderColor)}.ui5-tp-clock-mid-dot{display:block;box-sizing:border-box;width:.125rem;height:.1875rem;margin:0 auto .375rem;border-radius:100%;background-color:var(--sapField_BorderColor)}.ui5-tp-clock-select-marker{box-sizing:border-box;width:.25rem;height:.5625rem;margin:0 auto;border-radius:100%;background-color:var(--sapButton_Selected_Background);border:.0625rem solid var(--sapButton_Selected_BorderColor)}.ui5-tp-clock-hover-marker{box-sizing:border-box;width:.25rem;height:.5625rem;margin:0 auto;border-radius:100%;background-color:var(--sapList_Hover_Background);border:.0625rem solid var(--sapGroup_TitleBorderColor)}.ui5-tp-clock-number{box-sizing:border-box;display:inline-block;width:2.75rem;height:2.75rem;border-radius:100%;line-height:2.75rem;text-align:center;vertical-align:top;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);color:var(--sapTextColor);border:.0625rem solid transparent}.ui5-tp-clock-number.ui5-tp-clock-number-hover:not(.ui5-tp-clock-selected){background-color:var(--sapList_Hover_Background);z-index:5}.ui5-tp-clock-selected{color:var(--sapButton_Selected_TextColor);background-color:var(--sapButton_Selected_Background);border:.0625rem solid var(--sapButton_Selected_BorderColor)}.ui5-tp-clock-hovered{background-color:var(--sapList_Hover_Background);z-index:5}.ui5-tp-clock-pointer{cursor:pointer}.ui5-tp-clock-items,.ui5-tp-clock-markers{position:absolute;inset:0}:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-items .ui5-tp-clock-number,:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-items .ui5-tp-clock-mid-dot,:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-number.ui5-tp-clock-selected,:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-select-marker,:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-dial:before{opacity:0}.ui5-tp-clock-transition .ui5-tp-clock-items .ui5-tp-clock-number{animation-name:fadeOutClockItems;animation-delay:.15s;animation-duration:.2s;animation-timing-function:ease-out;animation-fill-mode:forwards}.ui5-tp-clock-transition .ui5-tp-clock-dial:before{animation-name:fadeOutClockLabel;animation-duration:.35s;animation-timing-function:ease-out;animation-fill-mode:forwards}.ui5-tp-clock-transition .ui5-tp-clock-number.ui5-tp-clock-selected,.ui5-tp-clock-transition .ui5-tp-clock-select-marker{animation-name:fadeOutSelectedItem;animation-delay:.1s;animation-duration:.15s;animation-timing-function:ease-out;animation-fill-mode:forwards}.ui5-tp-clock-transition .ui5-tp-clock-items .ui5-tp-clock-mid-dot{animation-name:fadeOutSelectedItem;animation-delay:.15s;animation-duration:.2s;animation-timing-function:ease-out;animation-fill-mode:forwards}:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-items .ui5-tp-clock-number{animation-name:fadeInClockItems;animation-delay:.15s;animation-duration:.2s;animation-timing-function:ease-in;animation-fill-mode:forwards}:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-dial:before{animation-name:fadeInClockLabel;animation-duration:.35s;animation-timing-function:ease-in;animation-fill-mode:forwards}:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-number.ui5-tp-clock-selected,:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-select-marker{animation-name:fadeInSelectedItem;animation-delay:.1s;animation-duration:.15s;animation-timing-function:ease-in;animation-fill-mode:forwards}:host(:not([_skip-animation])) .ui5-tp-clock-active:not(.ui5-tp-clock-transition) .ui5-tp-clock-items .ui5-tp-clock-mid-dot{animation-name:fadeInSelectedItem;animation-delay:.15s;animation-duration:.2s;animation-timing-function:ease-in;animation-fill-mode:forwards}@keyframes fadeOutClockItems{0%{opacity:1;display:block}to{opacity:0;display:block}}@keyframes fadeOutClockLabel{0%{opacity:1;display:flex;transform:translateY(0)}to{opacity:0;display:flex;transform:translateY(-16px)}}@keyframes fadeOutSelectedItem{0%{opacity:1;display:block}to{opacity:0;display:block}}@keyframes fadeInClockItems{0%{opacity:0;display:block}to{opacity:1;display:block}}@keyframes fadeInClockLabel{0%{opacity:0;display:flex;transform:translateY(16px)}to{opacity:1;display:flex;transform:translateY(0)}}@keyframes fadeInSelectedItem{0%{opacity:0;display:block}50%{opacity:.5;display:block}to{opacity:1;display:block}}
 `;
-var __decorate$U = function(decorators, target, key, desc) {
+var __decorate$V = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -22527,79 +22527,79 @@ let TimePickerClock = class TimePickerClock2 extends b$7 {
     return false;
   }
 };
-__decorate$U([
+__decorate$V([
   s$9({ type: Boolean })
 ], TimePickerClock.prototype, "disabled", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Boolean })
 ], TimePickerClock.prototype, "active", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Number })
 ], TimePickerClock.prototype, "itemMin", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Number })
 ], TimePickerClock.prototype, "itemMax", void 0);
-__decorate$U([
+__decorate$V([
   s$9()
 ], TimePickerClock.prototype, "label", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Boolean })
 ], TimePickerClock.prototype, "hideFractions", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Number })
 ], TimePickerClock.prototype, "lastItemReplacement", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Boolean })
 ], TimePickerClock.prototype, "prependZero", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Number })
 ], TimePickerClock.prototype, "selectedValue", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Number })
 ], TimePickerClock.prototype, "displayStep", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Number })
 ], TimePickerClock.prototype, "valueStep", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Array })
 ], TimePickerClock.prototype, "_items", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Object })
 ], TimePickerClock.prototype, "_selectedItem", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Object })
 ], TimePickerClock.prototype, "_hoveredItem", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Object })
 ], TimePickerClock.prototype, "_dimensionParameters", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Boolean, noAttribute: true })
 ], TimePickerClock.prototype, "_mouseOrTouchDown", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Boolean, noAttribute: true })
 ], TimePickerClock.prototype, "_cancelTouchOut", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Number, noAttribute: true })
 ], TimePickerClock.prototype, "_selectedValue", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Number, noAttribute: true })
 ], TimePickerClock.prototype, "_movSelectedValue", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Number, noAttribute: true })
 ], TimePickerClock.prototype, "_hoveredValue", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Number, noAttribute: true })
 ], TimePickerClock.prototype, "_prevHoveredValue", void 0);
-__decorate$U([
+__decorate$V([
   s$9({ type: Boolean })
 ], TimePickerClock.prototype, "_skipAnimation", void 0);
-__decorate$U([
+__decorate$V([
   o$1(".ui5-tp-clock-number")
 ], TimePickerClock.prototype, "_firstNumberElement", void 0);
-__decorate$U([
+__decorate$V([
   o$1(".ui5-tp-clock")
 ], TimePickerClock.prototype, "_clockWrapper", void 0);
-TimePickerClock = __decorate$U([
+TimePickerClock = __decorate$V([
   m$8({
     tag: "ui5-time-picker-clock",
     renderer: y$5,
@@ -22619,7 +22619,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const TimeSelectionClocksCss = `.ui5-time-picker-tsc-container{margin:0 auto;box-sizing:border-box;width:100%;padding:1rem;text-align:center}.ui5-time-picker-tsc-container:focus{outline:none}.ui5-time-picker-tsc-buttons{display:flex;justify-content:center;align-items:center;padding-bottom:1rem;width:100%}.ui5-time-picker-tsc-buttons .ui5-time-selection-separator{min-width:.5rem;padding:0 .125rem;text-align:center;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);color:var(--sapContent_LabelColor)}.ui5-time-picker-tsc-clocks{display:block;text-align:center;width:100%;touch-action:none}
 `;
-var __decorate$T = function(decorators, target, key, desc) {
+var __decorate$U = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -22998,19 +22998,19 @@ let TimeSelectionClocks = class TimeSelectionClocks2 extends TimePickerInternals
     }
   }
 };
-__decorate$T([
+__decorate$U([
   s$9({ type: Boolean, noAttribute: true })
 ], TimeSelectionClocks.prototype, "_spacePressed", void 0);
-__decorate$T([
+__decorate$U([
   s$9({ type: Boolean, noAttribute: true })
 ], TimeSelectionClocks.prototype, "_focused", void 0);
-__decorate$T([
+__decorate$U([
   s$9({ type: Boolean, noAttribute: true })
 ], TimeSelectionClocks.prototype, "_amPmFocused", void 0);
-__decorate$T([
+__decorate$U([
   s$9({ type: Boolean })
 ], TimeSelectionClocks.prototype, "_skipAnimation", void 0);
-TimeSelectionClocks = __decorate$T([
+TimeSelectionClocks = __decorate$U([
   l$e("close-picker", {
     bubbles: true
   }),
@@ -23029,7 +23029,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const TimeSelectionInputsCss = `.ui5-time-selection-numeric-input{width:2.875rem;text-align:center}.ui5-time-selection-inputs{min-width:12.5rem;display:flex;justify-content:center;align-items:center}.ui5-time-selection-separator{display:inline-block;min-width:.5rem;padding:0 .125rem;text-align:center;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);color:var(--sapTextColor)}.ui5-hidden-text{display:none}
 `;
-var __decorate$S = function(decorators, target, key, desc) {
+var __decorate$T = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -23280,13 +23280,13 @@ let TimeSelectionInputs = class TimeSelectionInputs2 extends TimePickerInternals
     }
   }
 };
-__decorate$S([
+__decorate$T([
   s$9({ type: Number })
 ], TimeSelectionInputs.prototype, "_editedInput", void 0);
-__decorate$S([
+__decorate$T([
   s$9()
 ], TimeSelectionInputs.prototype, "_editedInputValue", void 0);
-TimeSelectionInputs = __decorate$S([
+TimeSelectionInputs = __decorate$T([
   m$8({
     tag: "ui5-time-selection-inputs",
     styles: TimeSelectionInputsCss,
@@ -23355,7 +23355,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const TimePickerPopoverCss = `.ui5-time-picker-popover{width:20rem}.ui5-time-picker-footer{height:fit-content;display:flex;justify-content:flex-end;width:100%}.ui5-time-picker-footer>[ui5-button]{margin:1%;min-width:20%}.ui5-time-picker-popover::part(content){padding:0}.ui5-time-picker-inputs-popover::part(header){padding:0;width:100%}
 `;
-var __decorate$R = function(decorators, target, key, desc) {
+var __decorate$S = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -23782,64 +23782,64 @@ let TimePicker = TimePicker_1 = class TimePicker2 extends b$7 {
     return "time-entry-request";
   }
 };
-__decorate$R([
+__decorate$S([
   s$9()
 ], TimePicker.prototype, "value", void 0);
-__decorate$R([
+__decorate$S([
   s$9()
 ], TimePicker.prototype, "name", void 0);
-__decorate$R([
+__decorate$S([
   s$9()
 ], TimePicker.prototype, "valueState", void 0);
-__decorate$R([
+__decorate$S([
   s$9({ type: Boolean })
 ], TimePicker.prototype, "disabled", void 0);
-__decorate$R([
+__decorate$S([
   s$9({ type: Boolean })
 ], TimePicker.prototype, "readonly", void 0);
-__decorate$R([
+__decorate$S([
   s$9()
 ], TimePicker.prototype, "placeholder", void 0);
-__decorate$R([
+__decorate$S([
   s$9()
 ], TimePicker.prototype, "formatPattern", void 0);
-__decorate$R([
+__decorate$S([
   s$9({ type: Boolean })
 ], TimePicker.prototype, "open", void 0);
-__decorate$R([
+__decorate$S([
   s$9({ type: Boolean })
 ], TimePicker.prototype, "required", void 0);
-__decorate$R([
+__decorate$S([
   s$9()
 ], TimePicker.prototype, "accessibleName", void 0);
-__decorate$R([
+__decorate$S([
   s$9()
 ], TimePicker.prototype, "accessibleNameRef", void 0);
-__decorate$R([
+__decorate$S([
   s$9()
 ], TimePicker.prototype, "accessibleDescription", void 0);
-__decorate$R([
+__decorate$S([
   s$9()
 ], TimePicker.prototype, "accessibleDescriptionRef", void 0);
-__decorate$R([
+__decorate$S([
   s$9({ type: Boolean, noAttribute: true })
 ], TimePicker.prototype, "_isInputsPopoverOpen", void 0);
-__decorate$R([
+__decorate$S([
   d$8()
 ], TimePicker.prototype, "valueStateMessage", void 0);
-__decorate$R([
+__decorate$S([
   o$1("[ui5-time-selection-clocks]")
 ], TimePicker.prototype, "_timeSelectionClocks", void 0);
-__decorate$R([
+__decorate$S([
   o$1("[ui5-popover]")
 ], TimePicker.prototype, "_inputsPopover", void 0);
-__decorate$R([
+__decorate$S([
   o$1("[ui5-datetime-input]")
 ], TimePicker.prototype, "_dateTimeInput", void 0);
-__decorate$R([
+__decorate$S([
   i$b("@ui5/webcomponents")
 ], TimePicker, "i18nBundle", void 0);
-TimePicker = TimePicker_1 = __decorate$R([
+TimePicker = TimePicker_1 = __decorate$S([
   m$8({
     tag: "ui5-time-picker",
     languageAware: true,
@@ -23879,7 +23879,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const cardCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block;width:100%}.ui5-card-root{width:100%;height:100%;color:var(--sapGroup_TitleTextColor);background:var(--sapTile_Background);box-shadow:var(--_ui5-v2-17-0_card_box_shadow);border-radius:var(--_ui5-v2-17-0_card_border-radius);border:var(--_ui5-v2-17-0_card_border);overflow:hidden;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);box-sizing:border-box}.ui5-card-busy-indicator{width:100%;height:100%;border-radius:var(--_ui5-v2-17-0_card_border-radius)}.ui5-card-inner{width:100%;height:100%}.ui5-card-root.ui5-card--interactive:hover{box-shadow:var(--_ui5-v2-17-0_card_hover_box_shadow)}.ui5-card-root.ui5-card--interactive:active{box-shadow:var(--_ui5-v2-17-0_card_box_shadow)}.ui5-card-root.ui5-card--nocontent{height:auto}.ui5-card-root.ui5-card--nocontent .ui5-card-header-root{border-bottom:none}.ui5-card--nocontent ::slotted([ui5-card-header]){--_ui5-v2-17-0_card_header_focus_bottom_radius: var(--_ui5-v2-17-0_card_header_focus_radius)}.ui5-card-root .ui5-card-header-root{border-bottom:var(--_ui5-v2-17-0_card_header_border)}
 `;
-var __decorate$Q = function(decorators, target, key, desc) {
+var __decorate$R = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -23903,28 +23903,28 @@ let Card = Card_1 = class Card2 extends b$7 {
     return Card_1.i18nBundle.getText(ARIA_LABEL_CARD_CONTENT);
   }
 };
-__decorate$Q([
+__decorate$R([
   s$9()
 ], Card.prototype, "accessibleName", void 0);
-__decorate$Q([
+__decorate$R([
   s$9()
 ], Card.prototype, "accessibleNameRef", void 0);
-__decorate$Q([
+__decorate$R([
   d$8({ type: HTMLElement, "default": true })
 ], Card.prototype, "content", void 0);
-__decorate$Q([
+__decorate$R([
   d$8({ type: HTMLElement, invalidateOnChildChange: true })
 ], Card.prototype, "header", void 0);
-__decorate$Q([
+__decorate$R([
   s$9({ type: Boolean })
 ], Card.prototype, "loading", void 0);
-__decorate$Q([
+__decorate$R([
   s$9({ type: Number })
 ], Card.prototype, "loadingDelay", void 0);
-__decorate$Q([
+__decorate$R([
   i$b("@ui5/webcomponents")
 ], Card, "i18nBundle", void 0);
-Card = Card_1 = __decorate$Q([
+Card = Card_1 = __decorate$R([
   m$8({
     tag: "ui5-card",
     languageAware: true,
@@ -23946,7 +23946,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const cardHeaderCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}.ui5-card-header{position:relative;display:flex;align-items:center;padding:var(--_ui5-v2-17-0_card_header_padding);outline:none}:host([subtitleText]) .ui5-card-header{align-items:flex-start}:host([desktop]) .ui5-card-header.ui5-card-header-ff:not(.ui5-card-header-hide-focus):focus-within:before,.ui5-card-header.ui5-card-header-ff:not(.ui5-card-header-hide-focus):focus-visible:before{outline:none;content:"";position:absolute;border:var(--_ui5-v2-17-0_card_header_focus_border);pointer-events:none;top:var(--_ui5-v2-17-0_card_header_focus_offset);left:var(--_ui5-v2-17-0_card_header_focus_offset);right:var(--_ui5-v2-17-0_card_header_focus_offset);bottom:var(--_ui5-v2-17-0_card_header_focus_offset);border-top-left-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-top-right-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-bottom-left-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius)}:host([desktop]) .ui5-card-header:not(.ui5-card-header-ff):not(.ui5-card-header-hide-focus):has(.ui5-card-header-focusable-element:focus):before,.ui5-card-header:not(.ui5-card-header-ff):not(.ui5-card-header-hide-focus):has(.ui5-card-header-focusable-element:focus-visible):before{outline:none;content:"";position:absolute;border:var(--_ui5-v2-17-0_card_header_focus_border);pointer-events:none;top:var(--_ui5-v2-17-0_card_header_focus_offset);left:var(--_ui5-v2-17-0_card_header_focus_offset);right:var(--_ui5-v2-17-0_card_header_focus_offset);bottom:var(--_ui5-v2-17-0_card_header_focus_offset);border-top-left-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-top-right-radius:var(--_ui5-v2-17-0_card_header_focus_radius);border-bottom-left-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius);border-bottom-right-radius:var(--_ui5-v2-17-0_card_header_focus_bottom_radius)}.ui5-card-header-focusable-element{outline:none}.ui5-card-header-focusable-element{display:inherit;align-items:inherit;flex:1;min-width:0}.ui5-card-header.ui5-card-header--interactive:hover{cursor:pointer;background:var(--_ui5-v2-17-0_card_header_hover_bg)}.ui5-card-header.ui5-card-header--active,.ui5-card-header.ui5-card-header--interactive:active{background:var(--_ui5-v2-17-0_card_header_active_bg)}.ui5-card-header .ui5-card-header-text{flex:1;min-width:0;pointer-events:none}.ui5-card-header-first-line{display:flex;flex-flow:row;justify-content:space-between}.ui5-card-header-additionalText{flex:none}.ui5-card-header .ui5-card-header-avatar{height:3rem;width:3rem;display:flex;align-items:center;justify-content:center;margin-inline-end:.75rem;pointer-events:none;align-self:flex-start}::slotted([ui5-icon]){width:1.5rem;height:1.5rem;color:var(--sapTile_IconColor)}::slotted(img[slot="avatar"]){width:100%;height:100%;border-radius:50%}.ui5-card-header .ui5-card-header-additionalText{display:inline-block;font-family:var(--sapFontFamily);font-size:var(--sapFontSmallSize);color:var(--sapTile_TextColor);text-align:left;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;vertical-align:middle;margin-inline-start:1rem;margin-block-start:.125rem}.ui5-card-header .ui5-card-header-text .ui5-card-header-title{font-family:var(--_ui5-v2-17-0_card_header_title_font_family);font-size:var(--_ui5-v2-17-0_card_header_title_font_size);font-weight:var(--_ui5-v2-17-0_card_header_title_font_weight);color:var(--sapTile_TitleTextColor);max-height:3.5rem;align-self:flex-end}.ui5-card-header .ui5-card-header-text .ui5-card-header-subtitle{font-family:var(--sapFontFamily);font-size:var(--sapFontSize);font-weight:400;color:var(--sapTile_TextColor);margin-top:var(--_ui5-v2-17-0_card_header_subtitle_margin_top);max-height:2.1rem}.ui5-card-header .ui5-card-header-text .ui5-card-header-title,.ui5-card-header .ui5-card-header-text .ui5-card-header-subtitle{text-align:start;text-overflow:ellipsis;white-space:normal;word-wrap:break-word;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;display:-webkit-box;max-width:100%}.ui5-card-header .ui5-card-header-text .ui5-card-header-title{-webkit-line-clamp:3}.ui5-card-header-action{display:flex;padding-inline-start:1rem;align-self:flex-start}
 `;
-var __decorate$P = function(decorators, target, key, desc) {
+var __decorate$Q = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -24037,34 +24037,34 @@ let CardHeader = CardHeader_1 = class CardHeader2 extends b$7 {
     }
   }
 };
-__decorate$P([
+__decorate$Q([
   s$9()
 ], CardHeader.prototype, "titleText", void 0);
-__decorate$P([
+__decorate$Q([
   s$9()
 ], CardHeader.prototype, "subtitleText", void 0);
-__decorate$P([
+__decorate$Q([
   s$9()
 ], CardHeader.prototype, "additionalText", void 0);
-__decorate$P([
+__decorate$Q([
   s$9({ type: Boolean })
 ], CardHeader.prototype, "interactive", void 0);
-__decorate$P([
+__decorate$Q([
   s$9({ type: Number })
 ], CardHeader.prototype, "_ariaLevel", void 0);
-__decorate$P([
+__decorate$Q([
   s$9({ type: Boolean, noAttribute: true })
 ], CardHeader.prototype, "_headerActive", void 0);
-__decorate$P([
+__decorate$Q([
   d$8()
 ], CardHeader.prototype, "avatar", void 0);
-__decorate$P([
+__decorate$Q([
   d$8()
 ], CardHeader.prototype, "action", void 0);
-__decorate$P([
+__decorate$Q([
   i$b("@ui5/webcomponents")
 ], CardHeader, "i18nBundle", void 0);
-CardHeader = CardHeader_1 = __decorate$P([
+CardHeader = CardHeader_1 = __decorate$Q([
   m$8({
     tag: "ui5-card-header",
     languageAware: true,
@@ -24110,7 +24110,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const tagCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block}:host{font-size:var(--sapFontSmallSize);font-family:var(--sapFontBoldFamily);font-weight:var(--_ui5-v2-17-0-tag-font-weight);letter-spacing:var(--_ui5-v2-17-0-tag-letter-spacing);line-height:var(--_ui5-v2-17-0-tag-height)}.ui5-tag-root{display:flex;align-items:baseline;justify-content:center;width:100%;min-width:1.125em;max-width:100%;box-sizing:border-box;padding:var(--_ui5-v2-17-0-tag-text-padding);border:.0625rem solid;border-radius:var(--sapButton_BorderCornerRadius);white-space:normal;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit;letter-spacing:inherit}:host([interactive]) .ui5-tag-root:active{text-shadow:var(--ui5-v2-17-0-tag-text-shadow)}:host([interactive]) .ui5-tag-root{cursor:pointer}:host([desktop][interactive]) .ui5-tag-root:focus,:host([interactive]) .ui5-tag-root:focus-visible{outline:var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);outline-offset:1px}:host([wrapping-type="None"]) .ui5-tag-root{white-space:nowrap}:host([_icon-only]) .ui5-tag-root{padding-inline:var(--_ui5-v2-17-0-tag-padding-inline-icon-only)}.ui5-tag-text{text-transform:var(--_ui5-v2-17-0-tag-text-transform);text-align:start;pointer-events:none;overflow:hidden;text-overflow:ellipsis}:host([_has-icon]) .ui5-tag-text{padding-inline-start:var(--_ui5-v2-17-0-tag-icon-gap)}[ui5-icon],::slotted([ui5-icon]){width:var(--_ui5-v2-17-0-tag-icon-width);min-width:var(--_ui5-v2-17-0-tag-icon-width);color:inherit;pointer-events:none;align-self:flex-start}.ui5-tag-root{background-color:var(--sapNeutralBackground);border-color:var(--sapNeutralBorderColor);color:var(--sapTextColor);text-shadow:var(--ui5-v2-17-0-tag-text-shadow)}:host([interactive]) .ui5-tag-root:hover{background-color:var(--sapButton_Neutral_Hover_Background);border-color:var(--sapButton_Neutral_Hover_BorderColor);color:var(--sapButton_Neutral_Hover_TextColor)}:host([interactive]) .ui5-tag-root:active{background-color:var(--sapButton_Neutral_Active_Background);border-color:var(--sapButton_Neutral_Active_BorderColor);color:var(--sapButton_Active_TextColor)}:host([design="Positive"]) .ui5-tag-root{background-color:var(--sapButton_Success_Background);border-color:var(--sapButton_Success_BorderColor);color:var(--sapButton_Success_TextColor);text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([interactive][design="Positive"]) .ui5-tag-root:hover{background-color:var(--sapButton_Success_Hover_Background);border-color:var(--sapButton_Success_Hover_BorderColor);color:var(--sapButton_Success_Hover_TextColor)}:host([interactive][design="Positive"]) .ui5-tag-root:active{background-color:var(--sapButton_Success_Active_Background);border-color:var(--sapButton_Success_Active_BorderColor);color:var(--sapButton_Accept_Selected_TextColor)}:host([design="Negative"]) .ui5-tag-root{background-color:var(--sapButton_Negative_Background);border-color:var(--sapButton_Negative_BorderColor);color:var(--sapButton_Negative_TextColor);text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([interactive][design="Negative"]) .ui5-tag-root:hover{background-color:var(--sapButton_Negative_Hover_Background);border-color:var(--sapButton_Negative_Hover_BorderColor);color:var(--sapButton_Negative_Hover_TextColor)}:host([interactive][design="Negative"]) .ui5-tag-root:active{background-color:var(--sapButton_Negative_Active_Background);border-color:var(--sapButton_Negative_Active_BorderColor);color:var(--sapButton_Reject_Selected_TextColor)}:host([design="Critical"]) .ui5-tag-root{background-color:var(--sapButton_Critical_Background);border-color:var(--sapButton_Critical_BorderColor);color:var(--sapButton_Critical_TextColor);text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([interactive][design="Critical"]) .ui5-tag-root:hover{background-color:var(--sapButton_Critical_Hover_Background);border-color:var(--sapButton_Critical_Hover_BorderColor);color:var(--sapButton_Critical_Hover_TextColor)}:host([interactive][design="Critical"]) .ui5-tag-root:active{background-color:var(--sapButton_Critical_Active_Background);border-color:var(--sapButton_Critical_Active_BorderColor);color:var(--sapButton_Attention_Selected_TextColor)}:host([design="Information"]) .ui5-tag-root{background-color:var(--sapButton_Information_Background);border-color:var(--sapButton_Information_BorderColor);color:var(--sapButton_Information_TextColor);text-shadow:var(--ui5-v2-17-0-tag-information-text-shadow)}:host([interactive][design="Information"]) .ui5-tag-root:hover{background-color:var(--sapButton_Information_Hover_Background);border-color:var(--sapButton_Information_Hover_BorderColor);color:var(--sapButton_Information_Hover_TextColor)}:host([interactive][design="Information"]) .ui5-tag-root:active{background-color:var(--sapButton_Information_Active_Background);border-color:var(--sapButton_Information_Active_BorderColor);color:var(--sapButton_Selected_TextColor)}:host([design="Set1"]) .ui5-tag-root{text-shadow:var(--ui5-v2-17-0-tag-contrast-text-shadow)}:host([design="Set1"]) .ui5-tag-root,:host([interactive][design="Set1"]) .ui5-tag-root{background-color:var(--sapIndicationColor_1_Background);border-color:var(--sapIndicationColor_1_BorderColor);color:var(--sapIndicationColor_1_TextColor)}:host([interactive][design="Set1"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_1_Hover_Background)}:host([interactive][design="Set1"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_1_Active_Background);border-color:var(--sapIndicationColor_1_Active_BorderColor);color:var(--sapIndicationColor_1_Active_TextColor)}:host([design="Set1"][color-scheme="2"]) .ui5-tag-root{background-color:var(--sapIndicationColor_2_Background);border-color:var(--sapIndicationColor_2_BorderColor);color:var(--sapIndicationColor_2_TextColor)}:host([interactive][design="Set1"][color-scheme="2"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_2_Hover_Background)}:host([interactive][design="Set1"][color-scheme="2"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_2_Active_Background);border-color:var(--sapIndicationColor_2_Active_BorderColor);color:var(--sapIndicationColor_2_Active_TextColor)}:host([design="Set1"][color-scheme="3"]) .ui5-tag-root{background-color:var(--sapIndicationColor_3_Background);border-color:var(--sapIndicationColor_3_BorderColor);color:var(--sapIndicationColor_3_TextColor)}:host([interactive][design="Set1"][color-scheme="3"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_3_Hover_Background)}:host([interactive][design="Set1"][color-scheme="3"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_3_Active_Background);border-color:var(--sapIndicationColor_3_Active_BorderColor);color:var(--sapIndicationColor_3_Active_TextColor)}:host([design="Set1"][color-scheme="4"]) .ui5-tag-root{background-color:var(--sapIndicationColor_4_Background);border-color:var(--sapIndicationColor_4_BorderColor);color:var(--sapIndicationColor_4_TextColor)}:host([interactive][design="Set1"][color-scheme="4"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_4_Hover_Background)}:host([interactive][design="Set1"][color-scheme="4"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_4_Active_Background);border-color:var(--sapIndicationColor_4_Active_BorderColor);color:var(--sapIndicationColor_4_Active_TextColor)}:host([design="Set1"][color-scheme="5"]) .ui5-tag-root{background-color:var(--sapIndicationColor_5_Background);border-color:var(--sapIndicationColor_5_BorderColor);color:var(--sapIndicationColor_5_TextColor)}:host([interactive][design="Set1"][color-scheme="5"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_5_Hover_Background)}:host([interactive][design="Set1"][color-scheme="5"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_5_Active_Background);border-color:var(--sapIndicationColor_5_Active_BorderColor);color:var(--sapIndicationColor_5_Active_TextColor)}:host([design="Set1"][color-scheme="6"]) .ui5-tag-root{background-color:var(--sapIndicationColor_6_Background);border-color:var(--sapIndicationColor_6_BorderColor);color:var(--sapIndicationColor_6_TextColor)}:host([interactive][design="Set1"][color-scheme="6"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_6_Hover_Background)}:host([interactive][design="Set1"][color-scheme="6"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_6_Active_Background);border-color:var(--sapIndicationColor_6_Active_BorderColor);color:var(--sapIndicationColor_6_Active_TextColor)}:host([design="Set1"][color-scheme="7"]) .ui5-tag-root{background-color:var(--sapIndicationColor_7_Background);border-color:var(--sapIndicationColor_7_BorderColor);color:var(--sapIndicationColor_7_TextColor)}:host([interactive][design="Set1"][color-scheme="7"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_7_Hover_Background)}:host([interactive][design="Set1"][color-scheme="7"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_7_Active_Background);border-color:var(--sapIndicationColor_7_Active_BorderColor);color:var(--sapIndicationColor_7_Active_TextColor)}:host([design="Set1"][color-scheme="8"]) .ui5-tag-root{background-color:var(--sapIndicationColor_8_Background);border-color:var(--sapIndicationColor_8_BorderColor);color:var(--sapIndicationColor_8_TextColor)}:host([interactive][design="Set1"][color-scheme="8"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_8_Hover_Background)}:host([interactive][design="Set1"][color-scheme="8"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_8_Active_Background);border-color:var(--sapIndicationColor_8_Active_BorderColor);color:var(--sapIndicationColor_8_Active_TextColor)}:host([design="Set1"][color-scheme="9"]) .ui5-tag-root{background-color:var(--sapIndicationColor_9_Background);border-color:var(--sapIndicationColor_9_BorderColor);color:var(--sapIndicationColor_9_TextColor)}:host([interactive][design="Set1"][color-scheme="9"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_9_Hover_Background)}:host([interactive][design="Set1"][color-scheme="9"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_9_Active_Background);border-color:var(--sapIndicationColor_9_Active_BorderColor);color:var(--sapIndicationColor_9_Active_TextColor)}:host([design="Set1"][color-scheme="10"]) .ui5-tag-root{background-color:var(--sapIndicationColor_10_Background);border-color:var(--sapIndicationColor_10_BorderColor);color:var(--sapIndicationColor_10_TextColor)}:host([interactive][design="Set1"][color-scheme="10"]) .ui5-tag-root:hover{background-color:var(--sapIndicationColor_10_Hover_Background)}:host([interactive][design="Set1"][color-scheme="10"]) .ui5-tag-root:active{background-color:var(--sapIndicationColor_10_Active_Background);border-color:var(--sapIndicationColor_10_Active_BorderColor);color:var(--sapIndicationColor_10_Active_TextColor)}:host([design="Set2"]) .ui5-tag-root{text-shadow:var(--ui5-v2-17-0-tag-text-shadow)}:host([design="Set2"]) .ui5-tag-root,:host([interactive][design="Set2"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-color)}:host([interactive][design="Set2"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-hover-background)}:host([interactive][design="Set2"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-1-active-color)}:host([design="Set2"][color-scheme="2"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-color)}:host([design="Set2"][color-scheme="3"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-color)}:host([interactive][design="Set2"][color-scheme="3"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-hover-background)}:host([interactive][design="Set2"][color-scheme="3"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-3-active-color)}:host([design="Set2"][color-scheme="4"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-color)}:host([interactive][design="Set2"][color-scheme="4"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-hover-background)}:host([interactive][design="Set2"][color-scheme="4"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-4-active-color)}:host([design="Set2"][color-scheme="5"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-color)}:host([interactive][design="Set2"][color-scheme="5"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-hover-background)}:host([interactive][design="Set2"][color-scheme="5"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-5-active-color)}:host([design="Set2"][color-scheme="6"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-color)}:host([interactive][design="Set2"][color-scheme="6"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-hover-background)}:host([interactive][design="Set2"][color-scheme="6"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-6-active-color)}:host([design="Set2"][color-scheme="7"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-color)}:host([interactive][design="Set2"][color-scheme="7"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-hover-background)}:host([interactive][design="Set2"][color-scheme="7"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-7-active-color)}:host([design="Set2"][color-scheme="8"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-color)}:host([interactive][design="Set2"][color-scheme="8"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-hover-background)}:host([interactive][design="Set2"][color-scheme="8"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-8-active-color)}:host([design="Set2"][color-scheme="9"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-color)}:host([interactive][design="Set2"][color-scheme="9"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-hover-background)}:host([interactive][design="Set2"][color-scheme="9"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-9-active-color)}:host([interactive][design="Set2"][color-scheme="10"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-hover-background)}:host([interactive][design="Set2"][color-scheme="10"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-active-color)}:host([design="Set2"][color-scheme="10"]) .ui5-tag-root{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-10-color)}:host([interactive][design="Set2"][color-scheme="2"]) .ui5-tag-root:hover{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-hover-background)}:host([interactive][design="Set2"][color-scheme="2"]) .ui5-tag-root:active{background-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-active-background);border-color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-active-border);color:var(--ui5-v2-17-0-tag-set2-color-scheme-2-active-color)}:host([size="L"]){font-family:var(--sapFontSemiboldDuplexFamily);line-height:var(--_ui5-v2-17-0-tag-height_size_l)}:host([size="L"]) .ui5-tag-root{font-size:var(--_ui5-v2-17-0-tag-font-size_size_l);min-width:var(--_ui5-v2-17-0-tag-min-width_size_l);padding:var(--_ui5-v2-17-0-tag-text_padding_size_l)}:host([size="L"]) [ui5-icon],:host([size="L"]) ::slotted([ui5-icon]){min-width:var(--_ui5-v2-17-0-tag-icon_min_width_size_l);min-height:var(--_ui5-v2-17-0-tag-icon_min_height_size_l);height:var(--_ui5-v2-17-0-tag-icon_height_size_l)}
 `;
-var __decorate$O = function(decorators, target, key, desc) {
+var __decorate$P = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -24201,40 +24201,40 @@ let Tag = Tag_1 = class Tag2 extends b$7 {
     this.fireDecoratorEvent("click");
   }
 };
-__decorate$O([
+__decorate$P([
   s$9()
 ], Tag.prototype, "design", void 0);
-__decorate$O([
+__decorate$P([
   s$9()
 ], Tag.prototype, "colorScheme", void 0);
-__decorate$O([
+__decorate$P([
   s$9({ type: Boolean })
 ], Tag.prototype, "hideStateIcon", void 0);
-__decorate$O([
+__decorate$P([
   s$9({ type: Boolean })
 ], Tag.prototype, "interactive", void 0);
-__decorate$O([
+__decorate$P([
   s$9()
 ], Tag.prototype, "wrappingType", void 0);
-__decorate$O([
+__decorate$P([
   s$9()
 ], Tag.prototype, "size", void 0);
-__decorate$O([
+__decorate$P([
   s$9({ type: Boolean })
 ], Tag.prototype, "_hasIcon", void 0);
-__decorate$O([
+__decorate$P([
   s$9({ type: Boolean })
 ], Tag.prototype, "_iconOnly", void 0);
-__decorate$O([
+__decorate$P([
   d$8({ type: Node, "default": true })
 ], Tag.prototype, "text", void 0);
-__decorate$O([
+__decorate$P([
   d$8()
 ], Tag.prototype, "icon", void 0);
-__decorate$O([
+__decorate$P([
   i$b("@ui5/webcomponents")
 ], Tag, "i18nBundle", void 0);
-Tag = Tag_1 = __decorate$O([
+Tag = Tag_1 = __decorate$P([
   m$8({
     tag: "ui5-tag",
     languageAware: true,
@@ -24284,7 +24284,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const messageStripCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block;width:100%}.ui5-message-strip-root{width:100%;height:100%;display:flex;border-radius:var(--sapPopover_BorderCornerRadius);padding:var(--_ui5-v2-17-0_message_strip_padding);border-width:var(--_ui5-v2-17-0_message_strip_border_width);border-style:solid;box-sizing:border-box;position:relative}.ui5-message-strip-root-hide-icon{padding-inline:var(--_ui5-v2-17-0_message_strip_padding_inline_no_icon);padding-block:var(--_ui5-v2-17-0_message_strip_padding_block_no_icon)}.ui5-message-strip-root-hide-close-button{padding-inline-end:1rem}.ui5-message-strip-root--info{background-color:var(--sapInformationBackground);border-color:var(--sapMessage_InformationBorderColor);color:var(--sapTextColor)}.ui5-message-strip-root--info .ui5-message-strip-icon{color:var(--sapInformativeElementColor)}.ui5-message-strip-root--positive{background-color:var(--sapSuccessBackground);border-color:var(--sapMessage_SuccessBorderColor)}.ui5-message-strip-root--positive .ui5-message-strip-icon{color:var(--sapPositiveElementColor)}.ui5-message-strip-root--negative{background-color:var(--sapErrorBackground);border-color:var(--sapMessage_ErrorBorderColor)}.ui5-message-strip-root--negative .ui5-message-strip-icon{color:var(--sapNegativeElementColor)}.ui5-message-strip-root--critical{background-color:var(--sapWarningBackground);border-color:var(--sapMessage_WarningBorderColor)}.ui5-message-strip-root--critical .ui5-message-strip-icon{color:var(--sapCriticalElementColor)}.ui5-message-strip-icon-wrapper{position:absolute;top:var(--_ui5-v2-17-0_message_strip_icon_top);inset-inline-start:.75rem;box-sizing:border-box}.ui5-message-strip-text{width:100%;color:var(--sapTextColor);line-height:1.2;font-family:var(--sapFontFamily);font-size:var(--sapFontSize)}.ui5-message-strip-close-button{height:1.625rem;min-height:1.625rem;position:absolute;top:var(--_ui5-v2-17-0_message_strip_close_button_top);inset-inline-end:var(--_ui5-v2-17-0_message_strip_close_button_right)}:host([color-scheme="1"]) .ui5-message-strip-root--color-set-1,:host(:not([color-scheme])[design="ColorSet1"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_1_Background);border-color:var(--sapIndicationColor_1_BorderColor)}:host([color-scheme="2"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_2_Background);border-color:var(--sapIndicationColor_2_BorderColor)}:host([color-scheme="3"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_3_Background);border-color:var(--sapIndicationColor_3_BorderColor)}:host([color-scheme="4"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_4_Background);border-color:var(--sapIndicationColor_4_BorderColor)}:host([color-scheme="5"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_5_Background);border-color:var(--sapIndicationColor_5_BorderColor)}:host([color-scheme="6"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_6_Background);border-color:var(--sapIndicationColor_6_BorderColor)}:host([color-scheme="7"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_7_Background);border-color:var(--sapIndicationColor_7_BorderColor)}:host([color-scheme="8"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_8_Background);border-color:var(--sapIndicationColor_8_BorderColor)}:host([color-scheme="9"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_9_Background);border-color:var(--sapIndicationColor_9_BorderColor)}:host([color-scheme="10"]) .ui5-message-strip-root--color-set-1{background-color:var(--sapIndicationColor_10_Background);border-color:var(--sapIndicationColor_10_BorderColor)}:host([color-scheme="1"]) .ui5-message-strip-root--color-set-2,:host(:not([color-scheme])[design="ColorSet2"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_1_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_1_set_2_border_color)}:host([color-scheme="2"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_2_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_2_set_2_border_color)}:host([color-scheme="3"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_3_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_3_set_2_border_color)}:host([color-scheme="4"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_4_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_4_set_2_border_color)}:host([color-scheme="5"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_5_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_5_set_2_border_color)}:host([color-scheme="6"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_6_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_6_set_2_border_color)}:host([color-scheme="7"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_7_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_7_set_2_border_color)}:host([color-scheme="8"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_8_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_8_set_2_border_color)}:host([color-scheme="9"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_9_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_9_set_2_border_color)}:host([color-scheme="10"]) .ui5-message-strip-root--color-set-2{background-color:var(--_ui5-v2-17-0_message_strip_scheme_10_set_2_background);border-color:var(--_ui5-v2-17-0_message_strip_scheme_10_set_2_border_color)}:host([design="ColorSet1"]) .ui5-message-strip-root .ui5-message-strip-text{color:var(--sapContent_ContrastTextColor);text-shadow:var(--sapContent_ContrastTextShadow)}:host([design="ColorSet1"]) .ui5-message-strip-root ::slotted([slot="icon"]){color:var(--sapContent_ContrastIconColor);text-shadow:var(--sapContent_ContrastTextShadow)}:host([design="ColorSet2"]) .ui5-message-strip-root .ui5-message-strip-text{color:var(--sapTextColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button{color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_1_color)}:host([design="ColorSet2"]) .ui5-message-strip-close-button,:host([design="ColorSet2"]) .ui5-message-strip-root ::slotted([slot="icon"]){color:var(--sapContent_IconColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button:hover{border-color:var(--sapContent_ContrastIconColor);background-color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_1_background);color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_1_color);text-shadow:var(--sapContent_ContrastTextShadow)}:host([design="ColorSet2"]) .ui5-message-strip-close-button:hover{background-color:var(--_ui5-v2-17-0_message_strip_close_button_color_set_2_background);border-color:var(--sapContent_IconColor);color:var(--sapContent_IconColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button:active{background:none;border-color:var(--sapContent_ContrastIconColor)}:host([design="ColorSet2"]) .ui5-message-strip-close-button:active{background:none;border-color:var(--sapContent_IconColor)}:host([design="ColorSet1"]) .ui5-message-strip-close-button::part(button):after,:host([design="ColorSet1"]) .ui5-message-strip-close-button::part(button):before{border-color:var(--sapContent_ContrastFocusColor)}
 `;
-var __decorate$N = function(decorators, target, key, desc) {
+var __decorate$O = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -24359,25 +24359,25 @@ let MessageStrip = MessageStrip_1 = class MessageStrip2 extends b$7 {
     return DesignClassesMapping[this.design];
   }
 };
-__decorate$N([
+__decorate$O([
   s$9()
 ], MessageStrip.prototype, "design", void 0);
-__decorate$N([
+__decorate$O([
   s$9()
 ], MessageStrip.prototype, "colorScheme", void 0);
-__decorate$N([
+__decorate$O([
   s$9({ type: Boolean })
 ], MessageStrip.prototype, "hideIcon", void 0);
-__decorate$N([
+__decorate$O([
   s$9({ type: Boolean })
 ], MessageStrip.prototype, "hideCloseButton", void 0);
-__decorate$N([
+__decorate$O([
   d$8()
 ], MessageStrip.prototype, "icon", void 0);
-__decorate$N([
+__decorate$O([
   i$b("@ui5/webcomponents")
 ], MessageStrip, "i18nBundle", void 0);
-MessageStrip = MessageStrip_1 = __decorate$N([
+MessageStrip = MessageStrip_1 = __decorate$O([
   m$8({
     tag: "ui5-message-strip",
     languageAware: true,
@@ -24388,6 +24388,171 @@ MessageStrip = MessageStrip_1 = __decorate$N([
   l$e("close")
 ], MessageStrip);
 MessageStrip.define();
+function ToastTemplate() {
+  return jsx(Fragment, { children: jsx("div", { class: "ui5-toast-root", role: "alert", tabindex: this._tabindex, children: jsx("bdi", { children: jsx("slot", {}) }) }) });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const ToastCss = `:host{font-family:var(--sapFontFamily);color:var(--sapContent_ContrastTextColor);font-size:var(--sapFontSize);position:fixed;display:none;box-sizing:border-box;max-width:15rem;overflow:hidden;background:var(--_ui5-v2-17-0_toast_background);box-shadow:var(--_ui5-v2-17-0_toast_shadow);border-radius:var(--sapElement_BorderCornerRadius);transition-property:opacity;opacity:1;word-wrap:break-word;text-align:center;text-overflow:ellipsis;white-space:pre-line;padding:1rem;inset:unset;margin:0;border:none}.ui5-toast-root{height:100%;width:100%;padding:0;outline:none;box-sizing:border-box;display:flex;align-items:center;justify-content:center;min-height:fit-content}:host([open]){display:block}:host(:not([placement])){bottom:var(--_ui5-v2-17-0_toast_vertical_offset);left:50%;transform:translate(-50%)}:host([placement="TopStart"]){top:var(--_ui5-v2-17-0_toast_vertical_offset);left:var(--_ui5-v2-17-0_toast_horizontal_offset)}:host([placement="MiddleStart"]){left:var(--_ui5-v2-17-0_toast_horizontal_offset);top:50%;transform:translateY(-50%)}:host([placement="BottomStart"]){left:var(--_ui5-v2-17-0_toast_horizontal_offset);bottom:var(--_ui5-v2-17-0_toast_vertical_offset)}:host([placement="TopCenter"]){top:var(--_ui5-v2-17-0_toast_vertical_offset);left:50%;transform:translate(-50%)}:host([placement="MiddleCenter"]){left:50%;top:50%;transform:translate(-50%,-50%)}:host([placement="BottomCenter"]){bottom:var(--_ui5-v2-17-0_toast_vertical_offset);left:50%;transform:translate(-50%)}:host([placement="TopEnd"]){right:var(--_ui5-v2-17-0_toast_horizontal_offset);top:var(--_ui5-v2-17-0_toast_vertical_offset)}:host([placement="MiddleEnd"]){right:var(--_ui5-v2-17-0_toast_horizontal_offset);top:50%;transform:translateY(-50%)}:host([placement="BottomEnd"]){right:var(--_ui5-v2-17-0_toast_horizontal_offset);bottom:var(--_ui5-v2-17-0_toast_vertical_offset)}:host([focused]){outline-width:var(--sapContent_FocusWidth);outline-style:var(--sapContent_FocusStyle);outline-color:var(--sapContent_FocusColor);outline-offset:var(--_ui5-v2-17-0_toast_offset_width)}
+`;
+var __decorate$N = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+const MIN_DURATION = 500;
+const MAX_DURATION = 1e3;
+const openedToasts = [];
+let opener;
+let globalListenerAdded = false;
+const handleGlobalKeydown = (e2) => {
+  const isCtrl = e2.metaKey || !A$7() && e2.ctrlKey;
+  const isMKey = e2.key && e2.key.toLowerCase() === "m";
+  const isCombinationPressed = isCtrl && e2.shiftKey && isMKey;
+  const hasOpenToast = openedToasts.length;
+  if (isCombinationPressed) {
+    e2.preventDefault();
+    if (hasOpenToast) {
+      openedToasts[0].focusable = true;
+      if (openedToasts[0].focused) {
+        openedToasts[0].focused = false;
+        opener == null ? void 0 : opener.focus();
+      } else {
+        opener = document.activeElement;
+        openedToasts[0].focus();
+      }
+    }
+  }
+};
+let Toast = class Toast2 extends b$7 {
+  constructor() {
+    super();
+    this.duration = 3e3;
+    this.placement = "BottomCenter";
+    this.open = false;
+    this.hover = false;
+    this.focusable = false;
+    this.focused = false;
+    this._onfocusinFn = this._onfocusin.bind(this);
+    this._onfocusoutFn = this._onfocusout.bind(this);
+    this._onkeydownFn = this._onkeydown.bind(this);
+    this._onmouseoverFn = this._onmouseover.bind(this);
+    this._onmouseleaveFn = this._onmouseleave.bind(this);
+    this._ontransitionendFn = this._ontransitionend.bind(this);
+  }
+  onBeforeRendering() {
+    if (this.open) {
+      openedToasts.pop();
+      openedToasts.push(this);
+    }
+    requestAnimationFrame(() => {
+      const transitionDuration = Math.min(this.effectiveDuration / 3, MAX_DURATION);
+      this.style.transitionDuration = this.open ? `${transitionDuration}ms` : "";
+      this.style.transitionDelay = this.open ? `${this.effectiveDuration - transitionDuration}ms` : "";
+      this.style.opacity = this.open && !this.hover && !this.focused ? "0" : "";
+    });
+    if (!globalListenerAdded) {
+      document.addEventListener("keydown", handleGlobalKeydown);
+      globalListenerAdded = true;
+    }
+  }
+  onAfterRendering() {
+    if (!this.hasAttribute("popover")) {
+      this.setAttribute("popover", "manual");
+    }
+    if (this.open) {
+      this.showPopover();
+    }
+  }
+  _onfocusin() {
+    if (this.focusable) {
+      this.focused = true;
+    }
+  }
+  _onfocusout() {
+    this.focused = false;
+  }
+  /**
+   * If the minimum duration is lower than 500ms, we force
+   * it to be 500ms, as described in the documentation.
+   * @private
+   */
+  get effectiveDuration() {
+    return this.duration < MIN_DURATION ? MIN_DURATION : this.duration;
+  }
+  _ontransitionend() {
+    if (this.hover || this.focused) {
+      return;
+    }
+    this.open = false;
+    this.focusable = false;
+    this.focused = false;
+    this.fireDecoratorEvent("close");
+    this.hidePopover();
+  }
+  _onmouseover() {
+    this.hover = true;
+  }
+  _onmouseleave() {
+    this.hover = false;
+  }
+  _onkeydown(e2) {
+    if (m$6(e2)) {
+      this.focused = false;
+      opener == null ? void 0 : opener.focus();
+    }
+  }
+  get _tabindex() {
+    return this.focused ? 0 : -1;
+  }
+  onEnterDOM() {
+    this.addEventListener("focusin", this._onfocusinFn);
+    this.addEventListener("focusout", this._onfocusoutFn);
+    this.addEventListener("keydown", this._onkeydownFn);
+    this.addEventListener("mouseover", this._onmouseoverFn);
+    this.addEventListener("mouseleave", this._onmouseleaveFn);
+    this.addEventListener("transitionend", this._ontransitionendFn);
+    this.addEventListener("transitioncancel", this._ontransitionendFn);
+  }
+  onExitDOM() {
+    this.removeEventListener("focusin", this._onfocusinFn);
+    this.removeEventListener("focusout", this._onfocusoutFn);
+    this.removeEventListener("keydown", this._onkeydownFn);
+    this.removeEventListener("mouseover", this._onmouseoverFn);
+    this.removeEventListener("mouseleave", this._onmouseleaveFn);
+    this.removeEventListener("transitionend", this._ontransitionendFn);
+    this.removeEventListener("transitioncancel", this._ontransitionendFn);
+  }
+};
+__decorate$N([
+  s$9({ type: Number })
+], Toast.prototype, "duration", void 0);
+__decorate$N([
+  s$9()
+], Toast.prototype, "placement", void 0);
+__decorate$N([
+  s$9({ type: Boolean })
+], Toast.prototype, "open", void 0);
+__decorate$N([
+  s$9({ type: Boolean })
+], Toast.prototype, "hover", void 0);
+__decorate$N([
+  s$9({ type: Boolean })
+], Toast.prototype, "focusable", void 0);
+__decorate$N([
+  s$9({ type: Boolean })
+], Toast.prototype, "focused", void 0);
+Toast = __decorate$N([
+  m$8({
+    tag: "ui5-toast",
+    renderer: y$5,
+    styles: ToastCss,
+    template: ToastTemplate
+  }),
+  l$e("close")
+], Toast);
+Toast.define();
 const name$A = "edit";
 const pathData$z = "M475 104q5 7 5 12 0 6-5 11L150 453q-4 4-8 4L32 480l22-110q0-5 4-9L384 36q4-4 11-4t11 4zm-121 99l-46-45L84 381l46 46zm87-88l-46-44-64 64 45 45z";
 const ltr$z = false;
@@ -28157,15 +28322,15 @@ let TabContainer = TabContainer_1 = class TabContainer2 extends b$7 {
     if (tabInstance) {
       tabInstance.focus();
     }
-    let opener = e2.target;
+    let opener2 = e2.target;
     if (e2.type === "keydown" && !e2.target.realTabReference.isSingleClickArea) {
-      opener = e2.target.querySelector(".ui5-tab-expand-button [ui5-button]");
+      opener2 = e2.target.querySelector(".ui5-tab-expand-button [ui5-button]");
     }
     if (!tabInstance) {
-      this._onHeaderItemSelect(opener.parentElement);
+      this._onHeaderItemSelect(opener2.parentElement);
       return;
     }
-    await this._togglePopover(opener, true);
+    await this._togglePopover(opener2, true);
   }
   _setPopoverInitialFocus() {
     const selectedTabInOverflow = this._getSelectedTabInOverflow();
@@ -28304,13 +28469,13 @@ let TabContainer = TabContainer_1 = class TabContainer2 extends b$7 {
     }
     const overflow = e2.currentTarget;
     const isEndOverflow = overflow.classList.contains("ui5-tc__overflow--end");
-    let opener;
+    let opener2;
     if (isEndOverflow) {
-      opener = this.overflowButton[0] || this._getEndOverflowBtnDOM();
+      opener2 = this.overflowButton[0] || this._getEndOverflowBtnDOM();
     } else {
-      opener = this.startOverflowButton[0] || this._getStartOverflowBtnDOM();
+      opener2 = this.startOverflowButton[0] || this._getStartOverflowBtnDOM();
     }
-    await this._togglePopover(opener, true);
+    await this._togglePopover(opener2, true);
   }
   _sendOverflowPresentationInfos(items) {
     const semanticIcons = items.filter((item) => !item.isSeparator).some((tab) => tab.design !== SemanticColor$1.Default && tab.design !== SemanticColor$1.Neutral);
@@ -28584,14 +28749,14 @@ let TabContainer = TabContainer_1 = class TabContainer2 extends b$7 {
   _getTabs() {
     return this.items.filter((item) => !item.isSeparator);
   }
-  _getPopoverOwner(opener) {
-    if (opener === this._getStartOverflowBtnDOM() || opener.slot === "startOverflowButton") {
+  _getPopoverOwner(opener2) {
+    if (opener2 === this._getStartOverflowBtnDOM() || opener2.slot === "startOverflowButton") {
       return "start-overflow";
     }
-    if (opener === this._getEndOverflowBtnDOM() || opener.slot === "overflowButton") {
+    if (opener2 === this._getEndOverflowBtnDOM() || opener2.slot === "overflowButton") {
       return "end-overflow";
     }
-    return getTabInStrip(opener);
+    return getTabInStrip(opener2);
   }
   _getPopoverItemsFor(targetOwner) {
     if (targetOwner === "start-overflow") {
@@ -28615,24 +28780,24 @@ let TabContainer = TabContainer_1 = class TabContainer2 extends b$7 {
       this._popoverItemsFlat = newItemsFlat;
     }
   }
-  async _togglePopover(opener, setInitialFocus = false) {
+  async _togglePopover(opener2, setInitialFocus = false) {
     this.responsivePopover = await this._respPopover();
     if (this.responsivePopover.open) {
       this._closePopover();
     } else {
-      await this._showPopoverAt(opener, setInitialFocus);
+      await this._showPopoverAt(opener2, setInitialFocus);
     }
   }
-  async _showPopoverAt(opener, setInitialFocus = false, preventInitialFocus = false) {
+  async _showPopoverAt(opener2, setInitialFocus = false, preventInitialFocus = false) {
     this._hasScheduledPopoverOpen = true;
-    this._setPopoverItems(this._getPopoverItemsFor(this._getPopoverOwner(opener)));
+    this._setPopoverItems(this._getPopoverItemsFor(this._getPopoverOwner(opener2)));
     this.responsivePopover = await this._respPopover();
     if (setInitialFocus) {
       this._setPopoverInitialFocus();
     }
     if (this._hasScheduledPopoverOpen) {
       this.responsivePopover.preventInitialFocus = preventInitialFocus;
-      this.responsivePopover.opener = opener;
+      this.responsivePopover.opener = opener2;
       this.responsivePopover.open = true;
     }
   }
@@ -33123,6 +33288,306 @@ class UI5TimePickerCard extends BaseUI5Card {
 if (!customElements.get("ui5-timepicker-card")) {
   customElements.define("ui5-timepicker-card", UI5TimePickerCard);
 }
+class UI5BadgeCard extends BaseUI5Card {
+  setConfig(config) {
+    if (!config.type) {
+      throw new Error("Card type is required");
+    }
+    super.setConfig(config);
+  }
+  get config() {
+    return this._config;
+  }
+  render() {
+    if (!this._hass || !this.config) {
+      return;
+    }
+    const entityState = this.config.entity ? this.getEntityState() : void 0;
+    const isUnavailable = entityState === "unavailable";
+    let displayText = this.config.text || "";
+    if (!displayText && this.config.entity) {
+      const entity = this._hass.states[this.config.entity];
+      if (entity) {
+        const name2 = entity.attributes.friendly_name || this.config.entity;
+        const state = entity.state;
+        const unit = entity.attributes.unit_of_measurement || "";
+        displayText = `${name2}: ${state}${unit ? " " + unit : ""}`;
+      }
+    }
+    displayText = this.processTemplateEscaped(displayText);
+    let design = this.config.design || "Neutral";
+    if (!this.config.design && this.config.entity) {
+      design = this.getDesignFromState(entityState || "");
+    }
+    const colorScheme = this.config.color_scheme || "";
+    const interactive = this.config.interactive !== false;
+    this.shadowRoot.innerHTML = `
+      <style>
+        :host {
+          display: block;
+        }
+        .badge-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 16px;
+        }
+        ui5-tag {
+          cursor: ${interactive ? "pointer" : "default"};
+        }
+        .unavailable {
+          opacity: 0.5;
+        }
+      </style>
+      <div class="badge-container ${isUnavailable ? "unavailable" : ""}">
+        <ui5-tag
+          id="badge"
+          design="${design}"
+          ${colorScheme ? `color-scheme="${colorScheme}"` : ""}
+          ${interactive ? "interactive" : ""}
+        >${displayText}</ui5-tag>
+      </div>
+    `;
+  }
+  getDesignFromState(state) {
+    const stateDesigns = {
+      on: "Positive",
+      off: "Neutral",
+      home: "Positive",
+      away: "Critical",
+      unavailable: "Negative",
+      unknown: "Information"
+    };
+    const numState = parseFloat(state);
+    if (!isNaN(numState)) {
+      if (numState > 80) return "Negative";
+      if (numState > 50) return "Critical";
+      if (numState > 20) return "Information";
+      return "Positive";
+    }
+    return stateDesigns[state.toLowerCase()] || "Neutral";
+  }
+  static getStubConfig() {
+    return {
+      type: "custom:ui5-badge-card",
+      text: "Status Badge",
+      design: "Information"
+    };
+  }
+}
+if (!customElements.get("ui5-badge-card")) {
+  customElements.define("ui5-badge-card", UI5BadgeCard);
+}
+class UI5MessageStripCard extends BaseUI5Card {
+  setConfig(config) {
+    if (!config.type) {
+      throw new Error("Card type is required");
+    }
+    super.setConfig(config);
+  }
+  get config() {
+    return this._config;
+  }
+  render() {
+    if (!this._hass || !this.config) {
+      return;
+    }
+    const entityState = this.config.entity ? this.getEntityState() : void 0;
+    const isUnavailable = entityState === "unavailable";
+    let displayText = this.config.text || "";
+    if (!displayText && this.config.entity) {
+      const entity = this._hass.states[this.config.entity];
+      if (entity) {
+        const name2 = entity.attributes.friendly_name || this.config.entity;
+        const state = entity.state;
+        const unit = entity.attributes.unit_of_measurement || "";
+        displayText = `${name2}: ${state}${unit ? " " + unit : ""}`;
+      }
+    }
+    displayText = this.processTemplateEscaped(displayText);
+    let design = this.config.design || "Information";
+    if (!this.config.design && this.config.entity) {
+      design = this.getDesignFromState(entityState || "");
+    }
+    const hideCloseButton = this.config.hide_close_button !== false;
+    const hideIcon = this.config.hide_icon === true;
+    this.shadowRoot.innerHTML = `
+      <style>
+        :host {
+          display: block;
+        }
+        .messagestrip-container {
+          padding: 8px;
+        }
+        ui5-message-strip {
+          width: 100%;
+        }
+        .unavailable {
+          opacity: 0.5;
+        }
+      </style>
+      <div class="messagestrip-container ${isUnavailable ? "unavailable" : ""}">
+        <ui5-message-strip
+          id="messagestrip"
+          design="${design}"
+          ${hideCloseButton ? "hide-close-button" : ""}
+          ${hideIcon ? "hide-icon" : ""}
+        >${displayText}</ui5-message-strip>
+      </div>
+    `;
+    const messageStrip = this.shadowRoot.querySelector("ui5-message-strip");
+    if (messageStrip && !hideCloseButton) {
+      messageStrip.addEventListener("close", () => {
+        var _a2;
+        (_a2 = this.shadowRoot.querySelector(".messagestrip-container")) == null ? void 0 : _a2.remove();
+      });
+    }
+  }
+  getDesignFromState(state) {
+    const stateDesigns = {
+      on: "Positive",
+      off: "Information",
+      home: "Positive",
+      away: "Critical",
+      unavailable: "Negative",
+      unknown: "Information",
+      problem: "Negative",
+      ok: "Positive"
+    };
+    const numState = parseFloat(state);
+    if (!isNaN(numState)) {
+      if (numState < 20) return "Negative";
+      if (numState < 50) return "Critical";
+      return "Positive";
+    }
+    return stateDesigns[state.toLowerCase()] || "Information";
+  }
+  static getStubConfig() {
+    return {
+      type: "custom:ui5-messagestrip-card",
+      text: "This is an information message",
+      design: "Information"
+    };
+  }
+}
+if (!customElements.get("ui5-messagestrip-card")) {
+  customElements.define("ui5-messagestrip-card", UI5MessageStripCard);
+}
+class UI5ToastCard extends BaseUI5Card {
+  constructor() {
+    super(...arguments);
+    this._lastTriggerState = null;
+  }
+  setConfig(config) {
+    if (!config.type) {
+      throw new Error("Card type is required");
+    }
+    super.setConfig(config);
+  }
+  get config() {
+    return this._config;
+  }
+  set hass(hass) {
+    var _a2, _b2, _c;
+    const oldHass = this._hass;
+    super.hass = hass;
+    if (((_a2 = this.config) == null ? void 0 : _a2.trigger_entity) && oldHass) {
+      const oldState = (_b2 = oldHass.states[this.config.trigger_entity]) == null ? void 0 : _b2.state;
+      const newState = (_c = hass.states[this.config.trigger_entity]) == null ? void 0 : _c.state;
+      if (oldState !== newState) {
+        if (this.config.trigger_state) {
+          if (newState === this.config.trigger_state) {
+            this.showToast();
+          }
+        } else if (this._lastTriggerState !== null && this._lastTriggerState !== newState) {
+          this.showToast();
+        }
+        this._lastTriggerState = newState;
+      }
+    }
+  }
+  render() {
+    if (!this._hass || !this.config) {
+      return;
+    }
+    const entityState = this.config.entity ? this.getEntityState() : void 0;
+    const isUnavailable = entityState === "unavailable";
+    let displayText = this.config.text || "";
+    if (!displayText && this.config.entity) {
+      const entity = this._hass.states[this.config.entity];
+      if (entity) {
+        const name2 = entity.attributes.friendly_name || this.config.entity;
+        const state = entity.state;
+        displayText = `${name2} is now ${state}`;
+      }
+    }
+    displayText = this.processTemplateEscaped(displayText);
+    const duration = this.config.duration || 3e3;
+    const placement = this.config.placement || "BottomCenter";
+    this.shadowRoot.innerHTML = `
+      <style>
+        :host {
+          display: block;
+        }
+        .toast-container {
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          align-items: center;
+        }
+        .toast-preview {
+          padding: 12px 24px;
+          background: var(--primary-color);
+          color: var(--text-primary-color, white);
+          border-radius: 8px;
+          font-size: 14px;
+        }
+        .toast-trigger {
+          font-size: 12px;
+          color: var(--secondary-text-color);
+        }
+        ui5-button {
+          margin-top: 8px;
+        }
+        .unavailable {
+          opacity: 0.5;
+        }
+      </style>
+      <div class="toast-container ${isUnavailable ? "unavailable" : ""}">
+        <div class="toast-preview">${displayText || "Toast notification"}</div>
+        ${this.config.trigger_entity ? `<div class="toast-trigger">Triggers on: ${this.config.trigger_entity}${this.config.trigger_state ? ` = ${this.config.trigger_state}` : " (any change)"}</div>` : ""}
+        <ui5-button id="show-toast" design="Emphasized">Show Toast</ui5-button>
+        <ui5-toast
+          id="toast"
+          duration="${duration}"
+          placement="${placement}"
+        >${displayText}</ui5-toast>
+      </div>
+    `;
+    const button = this.shadowRoot.querySelector("#show-toast");
+    if (button) {
+      button.addEventListener("click", () => this.showToast());
+    }
+  }
+  showToast() {
+    const toast = this.shadowRoot.querySelector("ui5-toast");
+    if (toast == null ? void 0 : toast.show) {
+      toast.show();
+    }
+  }
+  static getStubConfig() {
+    return {
+      type: "custom:ui5-toast-card",
+      text: "Notification message",
+      duration: 3e3,
+      placement: "BottomCenter"
+    };
+  }
+}
+if (!customElements.get("ui5-toast-card")) {
+  customElements.define("ui5-toast-card", UI5ToastCard);
+}
 const CARD_DEFINITIONS = [
   {
     type: "custom:ui5-button-card",
@@ -33248,6 +33713,24 @@ const CARD_DEFINITIONS = [
     type: "custom:ui5-timepicker-card",
     name: "UI5 TimePicker Card",
     description: "A time picker card for selecting times",
+    preview: true
+  },
+  {
+    type: "custom:ui5-badge-card",
+    name: "UI5 Badge Card",
+    description: "A badge/tag for displaying status indicators",
+    preview: true
+  },
+  {
+    type: "custom:ui5-messagestrip-card",
+    name: "UI5 MessageStrip Card",
+    description: "A message strip for alerts and notifications",
+    preview: true
+  },
+  {
+    type: "custom:ui5-toast-card",
+    name: "UI5 Toast Card",
+    description: "A toast notification triggered by entity changes",
     preview: true
   }
 ];
@@ -37517,16 +38000,16 @@ let SideNavigation = SideNavigation_1 = class SideNavigation2 extends b$7 {
   getPicker() {
     return this.shadowRoot.querySelector("[ui5-responsive-popover]");
   }
-  openPicker(opener) {
-    opener.classList.add("ui5-sn-item-active");
+  openPicker(opener2) {
+    opener2.classList.add("ui5-sn-item-active");
     const responsivePopover = this.getPicker();
-    responsivePopover.opener = opener;
+    responsivePopover.opener = opener2;
     responsivePopover.open = true;
   }
-  openOverflowMenu(opener) {
-    opener.classList.add("ui5-sn-item-active");
+  openOverflowMenu(opener2) {
+    opener2.classList.add("ui5-sn-item-active");
     const menu = this.getOverflowPopover();
-    menu.opener = opener;
+    menu.opener = opener2;
     menu.open = true;
   }
   closePicker() {
