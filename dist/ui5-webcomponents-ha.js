@@ -11334,6 +11334,1404 @@ MessageStrip = MessageStrip_1 = __decorate$B([
   l$d("close")
 ], MessageStrip);
 MessageStrip.define();
+const name$u = "edit";
+const pathData$t = "M475 104q5 7 5 12 0 6-5 11L150 453q-4 4-8 4L32 480l22-110q0-5 4-9L384 36q4-4 11-4t11 4zm-121 99l-46-45L84 381l46 46zm87-88l-46-44-64 64 45 45z";
+const ltr$t = false;
+const collection$t = "SAP-icons-v4";
+const packageName$t = "@ui5/webcomponents-icons";
+y$2(name$u, { pathData: pathData$t, ltr: ltr$t, collection: collection$t, packageName: packageName$t });
+const name$t = "edit";
+const pathData$s = "M505 94q7 7 7 18t-6 17L130 505q-7 7-18 7H26q-11 0-18.5-7.5T0 486v-86q1-10 6-16L382 7q7-7 18-7t18 7zm-55 18l-50-50-50 50 50 50zm-86 86l-50-50L62 400l50 50z";
+const ltr$s = false;
+const collection$s = "SAP-icons-v5";
+const packageName$s = "@ui5/webcomponents-icons";
+y$2(name$t, { pathData: pathData$s, ltr: ltr$s, collection: collection$s, packageName: packageName$s });
+const editIcon = "edit";
+var Highlight;
+(function(Highlight2) {
+  Highlight2["None"] = "None";
+  Highlight2["Positive"] = "Positive";
+  Highlight2["Critical"] = "Critical";
+  Highlight2["Negative"] = "Negative";
+  Highlight2["Information"] = "Information";
+})(Highlight || (Highlight = {}));
+const Highlight$1 = Highlight;
+var ListItemType;
+(function(ListItemType2) {
+  ListItemType2["Inactive"] = "Inactive";
+  ListItemType2["Active"] = "Active";
+  ListItemType2["Detail"] = "Detail";
+  ListItemType2["Navigation"] = "Navigation";
+})(ListItemType || (ListItemType = {}));
+const ListItemType$1 = ListItemType;
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const styles$2 = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host([navigated]) .ui5-li-root .ui5-li-navigated{width:.1875rem;position:absolute;right:0;top:0;bottom:0;background-color:var(--sapList_SelectionBorderColor)}:host([active][actionable]) .ui5-li-root .ui5-li-icon{color:var(--sapList_Active_TextColor)}:host([active][actionable]) .ui5-li-title,:host([active][actionable]) .ui5-li-desc,:host([active][actionable]) .ui5-li-additional-text{color:var(--sapList_Active_TextColor)}:host([active][actionable]) .ui5-li-additional-text{text-shadow:none}:host([additional-text-state="Critical"]) .ui5-li-additional-text{color:var(--sapCriticalTextColor)}:host([additional-text-state="Positive"]) .ui5-li-additional-text{color:var(--sapPositiveTextColor)}:host([additional-text-state="Negative"]) .ui5-li-additional-text{color:var(--sapNegativeTextColor)}:host([additional-text-state="Information"]) .ui5-li-additional-text{color:var(--sapInformativeTextColor)}:host([has-title][description]){height:5rem}:host([has-title][image]){height:5rem}:host([_has-image]){height:5rem}:host([image]) .ui5-li-content{height:3rem}::slotted(img[slot="image"]){width:var(--_ui5-v2-17-0_list_item_img_size);height:var(--_ui5-v2-17-0_list_item_img_size);border-radius:var(--ui5-v2-17-0-avatar-border-radius);object-fit:contain}::slotted([ui5-icon][slot="image"]){color:var(--sapContent_NonInteractiveIconColor);min-width:var(--_ui5-v2-17-0_list_item_icon_size);min-height:var(--_ui5-v2-17-0_list_item_icon_size);padding-inline-end:var(--_ui5-v2-17-0_list_item_icon_padding-inline-end)}::slotted([ui5-avatar][slot="image"]){min-width:var(--_ui5-v2-17-0_list_item_img_size);min-height:var(--_ui5-v2-17-0_list_item_img_size);margin-top:var(--_ui5-v2-17-0_list_item_img_top_margin);margin-bottom:var(--_ui5-v2-17-0_list_item_img_bottom_margin);margin-inline-end:var(--_ui5-v2-17-0_list_item_img_hn_margin)}:host([wrapping-type="None"][description]) .ui5-li-root{padding:1rem}:host([description]) .ui5-li-content{height:3rem}:host([has-title][description]) .ui5-li-title{padding-bottom:.5rem}.ui5-li-text-wrapper{flex-direction:column}:host([description]) .ui5-li-text-wrapper{justify-content:space-between;padding:.125rem 0}.ui5-li-description-info-wrapper{display:flex;justify-content:space-between}.ui5-li-additional-text,:host(:not([wrapping-type="Normal"])) .ui5-li-title,.ui5-li-desc{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}:host([wrapping-type="Normal"]){height:auto}:host([wrapping-type="Normal"]) .ui5-li-content{margin:var(--_ui5-v2-17-0_list_item_content_vertical_offset) 0}.ui5-li-desc{color:var(--sapContent_LabelColor);font-size:var(--sapFontSize)}:host([description]) .ui5-li-additional-text{align-self:flex-end}.ui5-li-icon{min-width:var(--_ui5-v2-17-0_list_item_icon_size);min-height:var(--_ui5-v2-17-0_list_item_icon_size);color:var(--sapContent_NonInteractiveIconColor);padding-inline-end:var(--_ui5-v2-17-0_list_item_icon_padding-inline-end)}:host([icon-end]) .ui5-li-icon{padding-inline-start:var(--_ui5-v2-17-0_list_item_icon_padding-inline-end)}.ui5-li-detailbtn,.ui5-li-deletebtn{display:flex;align-items:center;margin-left:var(--_ui5-v2-17-0_list_buttons_left_space)}.ui5-li-multisel-cb,.ui5-li-singlesel-radiobtn{flex-shrink:0}:host([description]) .ui5-li-singlesel-radiobtn{align-self:flex-start;margin-top:var(--_ui5-v2-17-0_list_item_selection_btn_margin_top)}:host([description]) .ui5-li-multisel-cb{align-self:flex-start;margin-top:var(--_ui5-v2-17-0_list_item_selection_btn_margin_top)}:host([_selection-mode="SingleStart"][wrapping-type]) .ui5-li-root{padding-inline:0 1rem}:host([_selection-mode="Multiple"][wrapping-type]) .ui5-li-root{padding-inline:0 1rem}:host([_selection-mode="SingleEnd"][wrapping-type]) .ui5-li-root{padding-inline:1rem 0}:host [ui5-checkbox].ui5-li-singlesel-radiobtn{margin-right:var(--_ui5-v2-17-0_list_item_cb_margin_right)}.ui5-li-highlight{position:absolute;width:.375rem;bottom:0;left:0;top:0;border-inline-end:.0625rem solid var(--ui5-v2-17-0-listitem-background-color);box-sizing:border-box}:host([highlight="Negative"]) .ui5-li-highlight{background:var(--sapErrorBorderColor)}:host([highlight="Critical"]) .ui5-li-highlight{background:var(--sapWarningBorderColor)}:host([highlight="Positive"]) .ui5-li-highlight{background:var(--sapSuccessBorderColor)}:host([highlight="Information"]) .ui5-li-highlight{background:var(--sapInformationBorderColor)}:host([wrapping-type="Normal"][description]),:host([wrapping-type="Normal"][has-title][description]),:host([wrapping-type="Normal"][has-title][image]){height:auto;min-height:5rem}:host([wrapping-type="Normal"][description]) .ui5-li-content,:host([wrapping-type="Normal"][image]) .ui5-li-content{height:auto;min-height:3rem}:host([wrapping-type="Normal"][has-title][description]) .ui5-li-title{padding-bottom:.75rem}:host([wrapping-type="Normal"][additional-text]) .ui5-li-additional-text{padding-inline-start:.75rem}:host([wrapping-type="Normal"]) .ui5-li-description-info-wrapper{flex-direction:column}:host([wrapping-type="Normal"]) .ui5-li-description-info-wrapper .ui5-li-additional-text{white-space:normal}:host([wrapping-type="Normal"]) .ui5-li-multisel-cb,:host([wrapping-type="Normal"]) .ui5-li-singlesel-radiobtn{display:flex;align-self:flex-start}:host([wrapping-type="Normal"][description]) .ui5-li-multisel-cb,:host([wrapping-type="Normal"][description]) .ui5-li-singlesel-radiobtn{margin-top:0}:host([wrapping-type="Normal"]) .ui5-li-icon,:host([wrapping-type="Normal"]) .ui5-li-image{display:flex;align-self:flex-start}:host([wrapping-type="Normal"][icon-end]) .ui5-li-icon{margin-top:var(--_ui5-v2-17-0_list_item_content_vertical_offset)}:host([wrapping-type="Normal"]) ::slotted([ui5-avatar][slot="image"]){margin-top:0;margin-bottom:0}:host([wrapping-type="Normal"]) .ui5-li-detailbtn,:host([wrapping-type="Normal"]) .ui5-li-deletebtn{margin-inline-start:.875rem}
+`;
+const name$s = "slim-arrow-right";
+const pathData$r = "M357.5 233q10 10 10 23t-10 23l-165 165q-12 11-23 0t0-23l160-159q6-6 0-12l-159-159q-5-5-5-11t5-11 11-5 11 5z";
+const ltr$r = false;
+const collection$r = "SAP-icons-v4";
+const packageName$r = "@ui5/webcomponents-icons";
+y$2(name$s, { pathData: pathData$r, ltr: ltr$r, collection: collection$r, packageName: packageName$r });
+const name$r = "slim-arrow-right";
+const pathData$q = "M186 416q-11 0-18.5-7.5T160 390q0-10 8-18l121-116-121-116q-8-8-8-18 0-11 7.5-18.5T186 96q10 0 17 7l141 134q8 8 8 19 0 12-8 18L203 409q-7 7-17 7z";
+const ltr$q = false;
+const collection$q = "SAP-icons-v5";
+const packageName$q = "@ui5/webcomponents-icons";
+y$2(name$r, { pathData: pathData$q, ltr: ltr$q, collection: collection$q, packageName: packageName$q });
+const slimArrowRightIcon = "slim-arrow-right";
+var __decorate$A = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var ListItem_1;
+let ListItem = ListItem_1 = class ListItem2 extends ListItemBase$1 {
+  constructor() {
+    super();
+    this.type = "Active";
+    this.accessibilityAttributes = {};
+    this.navigated = false;
+    this.active = false;
+    this.highlight = "None";
+    this.accessibleRole = "ListItem";
+    this._selectionMode = "None";
+    this.mediaRange = "S";
+    this.deactivateByKey = (e2) => {
+      if (b$5(e2)) {
+        this.deactivate();
+      }
+    };
+    this.deactivate = () => {
+      if (this.active) {
+        this.active = false;
+      }
+    };
+  }
+  onBeforeRendering() {
+    super.onBeforeRendering();
+    this.actionable = (this.type === ListItemType$1.Active || this.type === ListItemType$1.Navigation) && this._selectionMode !== ListSelectionMode.Delete;
+  }
+  onEnterDOM() {
+    super.onEnterDOM();
+    document.addEventListener("mouseup", this.deactivate);
+    document.addEventListener("touchend", this.deactivate);
+    document.addEventListener("keyup", this.deactivateByKey);
+  }
+  onExitDOM() {
+    document.removeEventListener("mouseup", this.deactivate);
+    document.removeEventListener("keyup", this.deactivateByKey);
+    document.removeEventListener("touchend", this.deactivate);
+  }
+  async _onkeydown(e2) {
+    if ((A$4(e2) || b$5(e2)) && this._isTargetSelfFocusDomRef(e2)) {
+      return;
+    }
+    super._onkeydown(e2);
+    const itemActive = this.type === ListItemType$1.Active, itemNavigated = this.typeNavigation;
+    if ((A$4(e2) || b$5(e2)) && (itemActive || itemNavigated)) {
+      this.activate();
+    }
+    if (ro(e2)) {
+      const activeElement = t$4();
+      const focusDomRef = this.getFocusDomRef();
+      if (activeElement === focusDomRef) {
+        const firstFocusable = await b$1(focusDomRef);
+        firstFocusable == null ? void 0 : firstFocusable.focus();
+      } else {
+        focusDomRef.focus();
+      }
+    }
+  }
+  _onkeyup(e2) {
+    super._onkeyup(e2);
+    if (A$4(e2) || b$5(e2)) {
+      this.deactivate();
+    }
+    if (this.modeDelete && X(e2)) {
+      this.onDelete();
+    }
+  }
+  _onmousedown() {
+    this.activate();
+  }
+  _onmouseup() {
+    if (this.getFocusDomRef().matches(":has(:focus-within)")) {
+      return;
+    }
+    this.deactivate();
+  }
+  _ontouchend() {
+    this._onmouseup();
+  }
+  _onfocusin(e2) {
+    super._onfocusin(e2);
+    if (e2.target !== this.getFocusDomRef()) {
+      this.deactivate();
+    }
+  }
+  _onfocusout(e2) {
+    if (e2.target !== this.getFocusDomRef()) {
+      return;
+    }
+    this.deactivate();
+  }
+  _ondragstart(e2) {
+    if (!e2.dataTransfer) {
+      return;
+    }
+    if (e2.target === this._listItem) {
+      D.setDraggedElement(this);
+      this.setAttribute("data-moving", "");
+      e2.dataTransfer.dropEffect = "move";
+      e2.dataTransfer.effectAllowed = "move";
+    }
+  }
+  _ondragend(e2) {
+    if (e2.target === this._listItem) {
+      D.clearDraggedElement();
+      this.removeAttribute("data-moving");
+    }
+  }
+  _isTargetSelfFocusDomRef(e2) {
+    const target = e2.target, focusDomRef = this.getFocusDomRef();
+    return target !== focusDomRef;
+  }
+  /**
+   * Called when selection components in Single (ui5-radio-button)
+   * and Multi (ui5-checkbox) selection modes are used.
+   */
+  onMultiSelectionComponentPress(e2) {
+    if (this.isInactive) {
+      return;
+    }
+    this.fireDecoratorEvent("selection-requested", { item: this, selected: e2.target.checked, selectionComponentPressed: true });
+  }
+  onSingleSelectionComponentPress(e2) {
+    if (this.isInactive) {
+      return;
+    }
+    this.fireDecoratorEvent("selection-requested", { item: this, selected: !e2.target.checked, selectionComponentPressed: true });
+  }
+  activate() {
+    if (this.type === ListItemType$1.Active || this.type === ListItemType$1.Navigation) {
+      this.active = true;
+    }
+  }
+  onDelete() {
+    this.fireDecoratorEvent("selection-requested", { item: this, selectionComponentPressed: false });
+  }
+  onDetailClick() {
+    this.fireDecoratorEvent("detail-click", { item: this, selected: this.selected });
+  }
+  fireItemPress(e2) {
+    if (this.isInactive) {
+      return;
+    }
+    super.fireItemPress(e2);
+    if (document.activeElement !== this) {
+      this.focus();
+    }
+  }
+  get isInactive() {
+    return this.type === ListItemType$1.Inactive || this.type === ListItemType$1.Detail;
+  }
+  get placeSelectionElementBefore() {
+    return this._selectionMode === ListSelectionMode.Multiple || this._selectionMode === ListSelectionMode.SingleStart;
+  }
+  get placeSelectionElementAfter() {
+    return !this.placeSelectionElementBefore && (this._selectionMode === ListSelectionMode.SingleEnd || this._selectionMode === ListSelectionMode.Delete);
+  }
+  get modeSingleSelect() {
+    return [
+      ListSelectionMode.SingleStart,
+      ListSelectionMode.SingleEnd,
+      ListSelectionMode.Single
+    ].includes(this._selectionMode);
+  }
+  get modeMultiple() {
+    return this._selectionMode === ListSelectionMode.Multiple;
+  }
+  get modeDelete() {
+    return this._selectionMode === ListSelectionMode.Delete;
+  }
+  get typeDetail() {
+    return this.type === ListItemType$1.Detail;
+  }
+  get typeNavigation() {
+    return this.type === ListItemType$1.Navigation;
+  }
+  get typeActive() {
+    return this.type === ListItemType$1.Active;
+  }
+  get _ariaSelected() {
+    if (this.modeMultiple || this.modeSingleSelect) {
+      return this.selected;
+    }
+    return void 0;
+  }
+  get listItemAccessibleRole() {
+    return this._forcedAccessibleRole || this.accessibleRole.toLowerCase();
+  }
+  get ariaSelectedText() {
+    let ariaSelectedText;
+    if (this._ariaSelected !== void 0) {
+      ariaSelectedText = this._ariaSelected ? ListItem_1.i18nBundle.getText(LIST_ITEM_SELECTED) : ListItem_1.i18nBundle.getText(LIST_ITEM_NOT_SELECTED);
+    }
+    return ariaSelectedText;
+  }
+  get deleteText() {
+    return ListItem_1.i18nBundle.getText(DELETE);
+  }
+  get hasDeleteButtonSlot() {
+    return !!this.deleteButton.length;
+  }
+  get _accessibleNameRef() {
+    if (this.accessibleName) {
+      return `${this._id}-invisibleText`;
+    }
+    return `${this._id}-content ${this._id}-invisibleText`;
+  }
+  get ariaLabelledByText() {
+    const texts = [
+      this._accInfo.listItemAriaLabel,
+      this.accessibleName,
+      this.typeActive ? ListItem_1.i18nBundle.getText(LIST_ITEM_ACTIVE) : void 0
+    ].filter(Boolean);
+    return texts.join(" ");
+  }
+  get _accInfo() {
+    return {
+      role: this.listItemAccessibleRole,
+      ariaExpanded: void 0,
+      ariaLevel: void 0,
+      ariaLabel: ListItem_1.i18nBundle.getText(ARIA_LABEL_LIST_ITEM_CHECKBOX),
+      ariaLabelRadioButton: ListItem_1.i18nBundle.getText(ARIA_LABEL_LIST_ITEM_RADIO_BUTTON),
+      ariaSelectedText: this.ariaSelectedText,
+      ariaHaspopup: this.accessibilityAttributes.hasPopup,
+      setsize: this.accessibilityAttributes.ariaSetsize,
+      posinset: this.accessibilityAttributes.ariaPosinset,
+      tooltip: this.tooltip
+    };
+  }
+  get _hasHighlightColor() {
+    return this.highlight !== Highlight$1.None;
+  }
+  get hasConfigurableMode() {
+    return true;
+  }
+  get _listItem() {
+    return this.shadowRoot.querySelector("li");
+  }
+};
+__decorate$A([
+  s$7()
+], ListItem.prototype, "type", void 0);
+__decorate$A([
+  s$7({ type: Object })
+], ListItem.prototype, "accessibilityAttributes", void 0);
+__decorate$A([
+  s$7({ type: Boolean })
+], ListItem.prototype, "navigated", void 0);
+__decorate$A([
+  s$7()
+], ListItem.prototype, "tooltip", void 0);
+__decorate$A([
+  s$7({ type: Boolean })
+], ListItem.prototype, "active", void 0);
+__decorate$A([
+  s$7()
+], ListItem.prototype, "highlight", void 0);
+__decorate$A([
+  s$7({ type: Boolean })
+], ListItem.prototype, "selected", void 0);
+__decorate$A([
+  s$7()
+], ListItem.prototype, "accessibleRole", void 0);
+__decorate$A([
+  s$7()
+], ListItem.prototype, "_forcedAccessibleRole", void 0);
+__decorate$A([
+  s$7()
+], ListItem.prototype, "_selectionMode", void 0);
+__decorate$A([
+  s$7()
+], ListItem.prototype, "mediaRange", void 0);
+__decorate$A([
+  d$8()
+], ListItem.prototype, "deleteButton", void 0);
+__decorate$A([
+  i$9("@ui5/webcomponents")
+], ListItem, "i18nBundle", void 0);
+ListItem = ListItem_1 = __decorate$A([
+  m$8({
+    languageAware: true,
+    renderer: y$5,
+    styles: [
+      ListItemBase$1.styles,
+      listItemAdditionalTextCss,
+      styles$2
+    ]
+  }),
+  l$d("detail-click", {
+    bubbles: true
+  }),
+  l$d("selection-requested", {
+    bubbles: true
+  })
+], ListItem);
+const ListItem$1 = ListItem;
+class RadioButtonGroup {
+  static hasGroup(groupName) {
+    return this.groups.has(groupName);
+  }
+  static getGroup(groupName) {
+    return this.groups.get(groupName);
+  }
+  static getCheckedRadioFromGroup(groupName) {
+    return this.checkedRadios.get(groupName);
+  }
+  static removeGroup(groupName) {
+    this.checkedRadios.delete(groupName);
+    return this.groups.delete(groupName);
+  }
+  static addToGroup(radioBtn, groupName) {
+    if (this.hasGroup(groupName)) {
+      this.enforceSingleSelection(radioBtn, groupName);
+      if (this.getGroup(groupName)) {
+        this.getGroup(groupName).push(radioBtn);
+      }
+    } else {
+      this.createGroup(radioBtn, groupName);
+    }
+    this.updateTabOrder(groupName);
+  }
+  static removeFromGroup(radioBtn, groupName) {
+    const group = this.getGroup(groupName);
+    if (!group) {
+      return;
+    }
+    const checkedRadio = this.getCheckedRadioFromGroup(groupName);
+    group.forEach((_radioBtn, idx, arr) => {
+      if (radioBtn._id === _radioBtn._id) {
+        return arr.splice(idx, 1);
+      }
+    });
+    if (checkedRadio === radioBtn) {
+      this.checkedRadios.set(groupName, null);
+    }
+    if (!group.length) {
+      this.removeGroup(groupName);
+    }
+    this.updateTabOrder(groupName);
+  }
+  static createGroup(radioBtn, groupName) {
+    if (radioBtn.checked) {
+      this.checkedRadios.set(groupName, radioBtn);
+    }
+    this.groups.set(groupName, [radioBtn]);
+  }
+  static selectNextItem(item, groupName) {
+    const group = this.getGroup(groupName);
+    if (!group) {
+      return;
+    }
+    const groupLength = group.length, currentItemPosition = group.indexOf(item);
+    if (groupLength <= 1) {
+      return;
+    }
+    const nextItemToFocus = this._nextFocusable(currentItemPosition, group);
+    if (!nextItemToFocus) {
+      return;
+    }
+    this.updateSelectionInGroup(nextItemToFocus, groupName);
+  }
+  static updateFormValidity(groupName) {
+    const group = this.getGroup(groupName);
+    if (!group) {
+      return;
+    }
+    const hasRequired = group.some((r3) => r3.required);
+    const hasChecked = group.some((r3) => r3.checked);
+    group.forEach((r3) => {
+      r3._groupChecked = hasChecked;
+      r3._groupRequired = hasRequired;
+    });
+  }
+  static updateTabOrder(groupName) {
+    const group = this.getGroup(groupName);
+    if (!group) {
+      return;
+    }
+    const hasCheckedRadio = group.some((radioBtn) => radioBtn.checked);
+    group.filter((radioBtn) => !radioBtn.disabled).forEach((radioBtn, idx) => {
+      let activeElement = t$4();
+      if (activeElement == null ? void 0 : activeElement.classList.contains("ui5-radio-root")) {
+        activeElement = activeElement.getRootNode();
+        if (activeElement instanceof ShadowRoot) {
+          activeElement = activeElement.host;
+        }
+      }
+      if (hasCheckedRadio) {
+        if ((activeElement == null ? void 0 : activeElement.hasAttribute("ui5-radio-button")) && activeElement.readonly) {
+          radioBtn._tabIndex = activeElement === radioBtn && radioBtn.readonly ? 0 : -1;
+        } else {
+          radioBtn._tabIndex = radioBtn.checked ? 0 : -1;
+        }
+      } else {
+        radioBtn._tabIndex = idx === 0 ? 0 : -1;
+      }
+    });
+  }
+  static selectPreviousItem(item, groupName) {
+    const group = this.getGroup(groupName);
+    if (!group) {
+      return;
+    }
+    const groupLength = group.length, currentItemPosition = group.indexOf(item);
+    if (groupLength <= 1) {
+      return;
+    }
+    const previousItemToFocus = this._previousFocusable(currentItemPosition, group);
+    if (!previousItemToFocus) {
+      return;
+    }
+    this.updateSelectionInGroup(previousItemToFocus, groupName);
+  }
+  static selectItem(item, groupName) {
+    this.updateSelectionInGroup(item, groupName);
+    this.updateTabOrder(groupName);
+    this.updateFormValidity(groupName);
+  }
+  static updateSelectionInGroup(radioBtnToSelect, groupName) {
+    const checkedRadio = this.getCheckedRadioFromGroup(groupName);
+    if (checkedRadio && !radioBtnToSelect.readonly) {
+      this._deselectRadio(checkedRadio);
+      this.checkedRadios.set(groupName, radioBtnToSelect);
+    }
+    if (radioBtnToSelect) {
+      radioBtnToSelect.focus();
+      if (!radioBtnToSelect.readonly) {
+        this._selectRadio(radioBtnToSelect);
+      } else {
+        setTimeout(() => {
+          this.updateTabOrder(groupName);
+        }, 0);
+      }
+    }
+  }
+  static _deselectRadio(radioBtn) {
+    if (radioBtn) {
+      radioBtn.checked = false;
+    }
+  }
+  static _selectRadio(radioBtn) {
+    radioBtn.checked = true;
+    radioBtn._checked = true;
+    radioBtn.fireDecoratorEvent("change");
+  }
+  static _nextFocusable(pos, group) {
+    if (!group) {
+      return null;
+    }
+    const groupLength = group.length;
+    let nextRadioToFocus = null;
+    if (pos === groupLength - 1) {
+      if (group[0].disabled) {
+        return this._nextFocusable(1, group);
+      }
+      nextRadioToFocus = group[0];
+    } else if (group[pos + 1].disabled) {
+      return this._nextFocusable(pos + 1, group);
+    } else {
+      nextRadioToFocus = group[pos + 1];
+    }
+    return nextRadioToFocus;
+  }
+  static _previousFocusable(pos, group) {
+    const groupLength = group.length;
+    let previousRadioToFocus = null;
+    if (pos === 0) {
+      if (group[groupLength - 1].disabled) {
+        return this._previousFocusable(groupLength - 1, group);
+      }
+      previousRadioToFocus = group[groupLength - 1];
+    } else if (group[pos - 1].disabled) {
+      return this._previousFocusable(pos - 1, group);
+    } else {
+      previousRadioToFocus = group[pos - 1];
+    }
+    return previousRadioToFocus;
+  }
+  static enforceSingleSelection(radioBtn, groupName) {
+    const checkedRadio = this.getCheckedRadioFromGroup(groupName);
+    if (radioBtn.checked) {
+      if (!checkedRadio) {
+        this.checkedRadios.set(groupName, radioBtn);
+      } else if (radioBtn !== checkedRadio) {
+        this._deselectRadio(checkedRadio);
+        this.checkedRadios.set(groupName, radioBtn);
+      }
+    } else if (radioBtn === checkedRadio) {
+      this.checkedRadios.set(groupName, null);
+    }
+    this.updateTabOrder(groupName);
+    this.updateFormValidity(groupName);
+  }
+  static get groups() {
+    if (!this._groups) {
+      this._groups = /* @__PURE__ */ new Map();
+    }
+    return this._groups;
+  }
+  static get checkedRadios() {
+    if (!this._checkedRadios) {
+      this._checkedRadios = /* @__PURE__ */ new Map();
+    }
+    return this._checkedRadios;
+  }
+}
+function RadioButtonTemplate() {
+  return jsxs("div", { role: "radio", class: "ui5-radio-root", "aria-checked": this.checked, "aria-disabled": this.effectiveAriaDisabled, "aria-describedby": this.effectiveAriaDescribedBy, "aria-label": this.ariaLabelText, tabindex: this.effectiveTabIndex, onClick: this._onclick, onKeyDown: this._onkeydown, onKeyUp: this._onkeyup, onMouseDown: this._onmousedown, onMouseUp: this._onmouseup, onFocusOut: this._onfocusout, children: [jsxs("div", { class: {
+    "ui5-radio-inner": true,
+    "ui5-radio-inner--hoverable": !this.disabled && !this.readonly && f$g()
+  }, children: [jsxs("svg", { class: "ui5-radio-svg", focusable: "false", "aria-hidden": "true", children: [jsx("circle", { part: "outer-ring", class: "ui5-radio-svg-outer", cx: "50%", cy: "50%", r: "50%" }), jsx("circle", { part: "inner-ring", class: "ui5-radio-svg-inner", cx: "50%", cy: "50%" })] }), jsx("input", { type: "radio", required: this.required, checked: this.checked, readonly: this.readonly, disabled: this.disabled, name: this.name, "data-sap-no-tab-ref": true })] }), this.text && jsx(Label$1, { id: `${this._id}-label`, class: "ui5-radio-label", for: this._id, wrappingType: this.wrappingType, children: this.text }), this.hasValueState && jsx("span", { id: `${this._id}-descr`, class: "ui5-hidden-text", children: this.valueStateText })] });
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const radioButtonCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block}:host{min-width:var(--_ui5-v2-17-0_radio_button_min_width);max-width:100%;text-overflow:ellipsis;overflow:hidden;color:var(--_ui5-v2-17-0_radio_button_color);border-radius:var(--_ui5-v2-17-0_radio_button_border_radius)}:host(:not([disabled])) .ui5-radio-root{cursor:pointer}:host([checked]){color:var(--_ui5-v2-17-0_radio_button_checked_fill)}:host([checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_inner_ring_color)}:host([checked]) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_color)}:host([disabled]) .ui5-radio-root{color:var(--_ui5-v2-17-0_radio_button_color);opacity:var(--sapContent_DisabledOpacity)}:host([disabled][checked]) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_color)}:host(:not([disabled])[desktop]) .ui5-radio-root:focus:before,:host(:not([disabled])) .ui5-radio-root:focus-visible:before{content:"";display:var(--_ui5-v2-17-0_radio_button_focus_outline);position:absolute;inset:var(--_ui5-v2-17-0_radio_button_focus_dist);pointer-events:none;border:var(--_ui5-v2-17-0_radio_button_border_width) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);border-radius:var(--_ui5-v2-17-0_radio_button_border_radius)}:host(:not([value-state="Negative"]):not([value-state="Critical"]):not([value-state="Positive"]):not([value-state="Information"])) .ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_hover_color)}:host(:not([value-state="Negative"]):not([value-state="Critical"]):not([value-state="Positive"]):not([value-state="Information"])[checked]) .ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_checked_hover_color)}.ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer,:host([checked]) .ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill)}:host([active][checked]:not([value-state]):not([disabled]):not([readonly])) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_checked_hover_color)}:host([active]:not([checked]):not([value-state]):not([disabled]):not([readonly])) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_active_color)}:host([text]) .ui5-radio-root{padding-inline-end:var(--_ui5-v2-17-0_radio_button_border_width)}:host([text][desktop]) .ui5-radio-root:focus:before,:host([text]) .ui5-radio-root:focus-visible:before{inset-inline-end:0px}:host([text]) .ui5-radio-inner{padding:var(--_ui5-v2-17-0_radio_button_outer_ring_padding_with_label)}:host([checked][readonly]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_read_only_inner_ring_color)}:host([readonly]) .ui5-radio-root .ui5-radio-svg-outer{fill:var(--sapField_ReadOnly_Background);stroke:var(--sapField_ReadOnly_BorderColor);stroke-dasharray:var(--_ui5-v2-17-0_radio_button_read_only_border_type);stroke-width:var(--_ui5-v2-17-0_radio_button_read_only_border_width)}:host([value-state="Negative"]) .ui5-radio-svg-outer,:host([value-state="Critical"]) .ui5-radio-svg-outer{stroke-width:var(--sapField_InvalidBorderWidth)}:host([value-state="Information"]) .ui5-radio-svg-outer{stroke-width:var(--_ui5-v2-17-0_radio_button_information_border_width)}:host([value-state="Negative"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_error_fill)}:host([value-state="Negative"]) .ui5-radio-svg-outer,:host([value-state="Negative"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_InvalidColor);fill:var(--sapField_InvalidBackground)}:host([value-state="Negative"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_error)}:host([value-state="Critical"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_warning_fill)}:host([value-state="Critical"]) .ui5-radio-svg-outer,:host([value-state="Critical"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_WarningColor);fill:var(--sapField_WarningBackground)}:host([value-state="Critical"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_warning)}:host([value-state="Positive"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_success_fill)}:host([value-state="Positive"]) .ui5-radio-svg-outer,:host([value-state="Positive"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_SuccessColor);fill:var(--sapField_SuccessBackground)}:host([value-state="Positive"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_success)}:host([value-state="Information"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_information_fill)}:host([value-state="Information"]) .ui5-radio-svg-outer,:host([value-state="Information"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_InformationColor);fill:var(--sapField_InformationBackground)}:host([value-state="Information"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_information)}:host([value-state="Negative"]) .ui5-radio-root,:host([value-state="Critical"]) .ui5-radio-root,:host([value-state="Information"]) .ui5-radio-root{stroke-dasharray:var(--_ui5-v2-17-0_radio_button_warning_error_border_dash)}.ui5-radio-root{height:auto;position:relative;display:inline-flex;flex-wrap:nowrap;outline:none;max-width:100%;box-sizing:border-box;border:var(--_ui5-v2-17-0_radio_button_border);border-radius:var(--_ui5-v2-17-0_radio_button_border_radius)}.ui5-radio-inner{display:flex;align-items:center;padding:var(--_ui5-v2-17-0_radio_button_outer_ring_padding);flex-shrink:0;height:var(--_ui5-v2-17-0_radio_button_inner_size);font-size:1rem;pointer-events:none;vertical-align:top}.ui5-radio-inner{outline:none}.ui5-radio-inner input{-webkit-appearance:none;visibility:hidden;width:0;left:0;position:absolute;font-size:inherit;margin:0}[ui5-label].ui5-radio-label{display:flex;align-items:center;padding-inline-end:var(--_ui5-v2-17-0_radio_button_label_offset);padding-block:var(--_ui5-v2-17-0_radio_button_label_side_padding);vertical-align:top;max-width:100%;pointer-events:none;color:var(--_ui5-v2-17-0_radio_button_label_color);overflow-wrap:break-word}:host([wrapping-type="None"][text]) .ui5-radio-root{height:var(--_ui5-v2-17-0_radio_button_height)}:host([wrapping-type="None"][text]) [ui5-label].ui5-radio-label{text-overflow:ellipsis;overflow:hidden}.ui5-radio-svg{height:var(--_ui5-v2-17-0_radio_button_svg_size);width:var(--_ui5-v2-17-0_radio_button_svg_size);overflow:visible;pointer-events:none}.ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_outer_ring_bg);stroke:currentColor;stroke-width:var(--_ui5-v2-17-0_radio_button_outer_ring_width)}.ui5-radio-svg-inner{fill:none;r:var(--_ui5-v2-17-0_radio_button_inner_ring_radius)}.ui5-radio-svg-outer,.ui5-radio-svg-inner{flex-shrink:0}:host(.ui5-li-singlesel-radiobtn) .ui5-radio-root .ui5-radio-inner .ui5-radio-svg-outer{fill:var(--sapList_Background)}
+`;
+var __decorate$z = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var RadioButton_1;
+let isGlobalHandlerAttached$1 = false;
+let activeRadio;
+let RadioButton = RadioButton_1 = class RadioButton2 extends b$6 {
+  get formValidityMessage() {
+    return RadioButton_1.i18nBundle.getText(FORM_SELECTABLE_REQUIRED2);
+  }
+  get formValidity() {
+    return { valueMissing: this._groupRequired && !this._groupChecked };
+  }
+  async formElementAnchor() {
+    return this.getFocusDomRefAsync();
+  }
+  get formFormattedValue() {
+    return this.checked ? this.value || "on" : null;
+  }
+  constructor() {
+    super();
+    this.disabled = false;
+    this.readonly = false;
+    this.required = false;
+    this.checked = false;
+    this.valueState = "None";
+    this.value = "";
+    this.wrappingType = "Normal";
+    this.active = false;
+    this._groupChecked = false;
+    this._groupRequired = false;
+    this._name = "";
+    this._checked = false;
+    this._deactivate = () => {
+      if (activeRadio) {
+        activeRadio.active = false;
+      }
+    };
+    if (!isGlobalHandlerAttached$1) {
+      document.addEventListener("mouseup", this._deactivate);
+      isGlobalHandlerAttached$1 = true;
+    }
+  }
+  onAfterRendering() {
+    this.syncGroup();
+  }
+  onEnterDOM() {
+    if (f$g()) {
+      this.setAttribute("desktop", "");
+    }
+  }
+  onExitDOM() {
+    this.syncGroup(true);
+  }
+  syncGroup(forceRemove) {
+    const oldGroup = this._name;
+    const currentGroup = this.name;
+    const oldChecked = this._checked;
+    const currentChecked = this.checked;
+    if (forceRemove) {
+      RadioButtonGroup.removeFromGroup(this, oldGroup);
+    }
+    if (currentGroup !== oldGroup) {
+      if (oldGroup) {
+        RadioButtonGroup.removeFromGroup(this, oldGroup);
+      }
+      if (currentGroup) {
+        RadioButtonGroup.addToGroup(this, currentGroup);
+      }
+    } else if (currentGroup && this.isConnected) {
+      RadioButtonGroup.enforceSingleSelection(this, currentGroup);
+    }
+    if (this.name && currentChecked !== oldChecked) {
+      RadioButtonGroup.updateTabOrder(this.name);
+    }
+    this._name = this.name || "";
+    this._checked = this.checked;
+  }
+  _onclick() {
+    return this.toggle();
+  }
+  _handleDown(e2) {
+    const currentGroup = this.name;
+    if (!currentGroup) {
+      return;
+    }
+    e2.preventDefault();
+    RadioButtonGroup.selectNextItem(this, currentGroup);
+  }
+  _handleUp(e2) {
+    const currentGroup = this.name;
+    if (!currentGroup) {
+      return;
+    }
+    e2.preventDefault();
+    RadioButtonGroup.selectPreviousItem(this, currentGroup);
+  }
+  _onkeydown(e2) {
+    if (A$4(e2)) {
+      this.active = true;
+      return e2.preventDefault();
+    }
+    if (b$5(e2)) {
+      this.active = true;
+      return this.toggle();
+    }
+    const isRTL = this.effectiveDir === "rtl";
+    if (_$1(e2) || !isRTL && R$1(e2) || isRTL && D$2(e2)) {
+      this._handleDown(e2);
+    }
+    if (P$2(e2) || !isRTL && D$2(e2) || isRTL && R$1(e2)) {
+      this._handleUp(e2);
+    }
+  }
+  _onkeyup(e2) {
+    if (A$4(e2)) {
+      this.toggle();
+    }
+    this.active = false;
+  }
+  _onmousedown() {
+    this.active = true;
+    activeRadio = this;
+  }
+  _onmouseup() {
+    this.active = false;
+  }
+  _onfocusout() {
+    this.active = false;
+  }
+  toggle() {
+    if (!this.canToggle()) {
+      return this;
+    }
+    if (!this.name) {
+      this.checked = !this.checked;
+      this.fireDecoratorEvent("change");
+      return this;
+    }
+    RadioButtonGroup.selectItem(this, this.name);
+    return this;
+  }
+  canToggle() {
+    return !(this.disabled || this.readonly || this.checked);
+  }
+  get effectiveAriaDisabled() {
+    return this.disabled || this.readonly ? true : void 0;
+  }
+  get ariaLabelText() {
+    return [A$3(this), this.text].filter(Boolean).join(" ");
+  }
+  get effectiveAriaDescribedBy() {
+    return this.hasValueState ? `${this._id}-descr` : void 0;
+  }
+  get hasValueState() {
+    return this.valueState !== o$5.None;
+  }
+  get valueStateText() {
+    switch (this.valueState) {
+      case o$5.Negative:
+        return RadioButton_1.i18nBundle.getText(VALUE_STATE_ERROR);
+      case o$5.Critical:
+        return RadioButton_1.i18nBundle.getText(VALUE_STATE_WARNING);
+      case o$5.Positive:
+        return RadioButton_1.i18nBundle.getText(VALUE_STATE_SUCCESS);
+      case o$5.Information:
+        return RadioButton_1.i18nBundle.getText(VALUE_STATE_INFORMATION);
+      default:
+        return "";
+    }
+  }
+  get effectiveTabIndex() {
+    const tabindex = this.getAttribute("tabindex");
+    if (this.disabled) {
+      return -1;
+    }
+    if (this.name) {
+      return this._tabIndex;
+    }
+    return tabindex ? parseInt(tabindex) : 0;
+  }
+};
+__decorate$z([
+  s$7({ type: Boolean })
+], RadioButton.prototype, "disabled", void 0);
+__decorate$z([
+  s$7({ type: Boolean })
+], RadioButton.prototype, "readonly", void 0);
+__decorate$z([
+  s$7({ type: Boolean })
+], RadioButton.prototype, "required", void 0);
+__decorate$z([
+  s$7({ type: Boolean })
+], RadioButton.prototype, "checked", void 0);
+__decorate$z([
+  s$7()
+], RadioButton.prototype, "text", void 0);
+__decorate$z([
+  s$7()
+], RadioButton.prototype, "valueState", void 0);
+__decorate$z([
+  s$7()
+], RadioButton.prototype, "name", void 0);
+__decorate$z([
+  s$7()
+], RadioButton.prototype, "value", void 0);
+__decorate$z([
+  s$7()
+], RadioButton.prototype, "wrappingType", void 0);
+__decorate$z([
+  s$7()
+], RadioButton.prototype, "accessibleName", void 0);
+__decorate$z([
+  s$7()
+], RadioButton.prototype, "accessibleNameRef", void 0);
+__decorate$z([
+  s$7({ type: Number })
+], RadioButton.prototype, "_tabIndex", void 0);
+__decorate$z([
+  s$7({ type: Boolean })
+], RadioButton.prototype, "active", void 0);
+__decorate$z([
+  s$7({ type: Boolean, noAttribute: true })
+], RadioButton.prototype, "_groupChecked", void 0);
+__decorate$z([
+  s$7({ type: Boolean, noAttribute: true })
+], RadioButton.prototype, "_groupRequired", void 0);
+__decorate$z([
+  i$9("@ui5/webcomponents")
+], RadioButton, "i18nBundle", void 0);
+RadioButton = RadioButton_1 = __decorate$z([
+  m$8({
+    tag: "ui5-radio-button",
+    languageAware: true,
+    formAssociated: true,
+    renderer: y$5,
+    template: RadioButtonTemplate,
+    styles: radioButtonCss
+  }),
+  l$d("change", {
+    bubbles: true
+  })
+], RadioButton);
+RadioButton.define();
+const RadioButton$1 = RadioButton;
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const checkboxCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{-webkit-tap-highlight-color:rgba(0,0,0,0)}:host(:not([hidden])){display:inline-block}:host([required]){vertical-align:middle}:host{overflow:hidden;max-width:100%;outline:none;border-radius:var(--_ui5-v2-17-0_checkbox_border_radius);transition:var(--_ui5-v2-17-0_checkbox_transition);cursor:pointer;user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none}:host([disabled]){cursor:default}:host([disabled]) .ui5-checkbox-root{opacity:var(--_ui5-v2-17-0_checkbox_disabled_opacity)}:host([disabled]) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_disabled_border_color)}:host([disabled]) .ui5-checkbox-label{color:var(--_ui5-v2-17-0_checkbox_disabled_label_color)}:host([readonly]:not([value-state="Critical"]):not([value-state="Negative"])) .ui5-checkbox-inner{background:var(--sapField_ReadOnly_Background);border:var(--_ui5-v2-17-0_checkbox_inner_readonly_border);color:var(--sapField_TextColor)}:host(:not([wrapping-type="None"])[text]) .ui5-checkbox-root{min-height:auto;box-sizing:border-box;align-items:flex-start;padding-top:var(--_ui5-v2-17-0_checkbox_root_side_padding);padding-bottom:var(--_ui5-v2-17-0_checkbox_root_side_padding)}:host(:not([wrapping-type="None"])[text]) .ui5-checkbox-root .ui5-checkbox-label{overflow-wrap:break-word;align-self:center}:host([desktop][text]:not([wrapping-type="None"])) .ui5-checkbox-root:focus:before,.ui5-checkbox-root[text]:focus-visible:before{inset-block:var(--_ui5-v2-17-0_checkbox_wrapped_focus_inset_block)}:host([value-state="Negative"]) .ui5-checkbox-inner,:host([value-state="Negative"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_InvalidBackground);border:var(--_ui5-v2-17-0_checkbox_inner_error_border);color:var(--sapField_InvalidColor)}:host([value-state="Negative"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_error_background_hover)}:host([value-state="Critical"]) .ui5-checkbox-inner,:host([value-state="Critical"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_WarningBackground);border:var(--_ui5-v2-17-0_checkbox_inner_warning_border);color:var(--_ui5-v2-17-0_checkbox_inner_warning_color)}:host([value-state="Critical"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_warning_background_hover)}:host([value-state="Information"]) .ui5-checkbox-inner,:host([value-state="Information"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_InformationBackground);border:var(--_ui5-v2-17-0_checkbox_inner_information_border);color:var(--_ui5-v2-17-0_checkbox_inner_information_color)}:host([value-state="Information"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_information_background_hover)}:host([value-state="Positive"]) .ui5-checkbox-inner,:host([value-state="Positive"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_SuccessBackground);border:var(--_ui5-v2-17-0_checkbox_inner_success_border);color:var(--sapField_SuccessColor)}:host([value-state="Positive"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_success_background_hover)}:host([value-state="Critical"]) .ui5-checkbox-icon,:host([value-state="Critical"][indeterminate]) .ui5-checkbox-inner:after{color:var(--_ui5-v2-17-0_checkbox_checkmark_warning_color)}.ui5-checkbox-root{position:relative;display:inline-flex;align-items:center;max-width:100%;min-height:var(--_ui5-v2-17-0_checkbox_width_height);min-width:var(--_ui5-v2-17-0_checkbox_width_height);padding:0 var(--_ui5-v2-17-0_checkbox_wrapper_padding);outline:none;transition:var(--_ui5-v2-17-0_checkbox_transition);border:var(--_ui5-v2-17-0_checkbox_default_focus_border);border-radius:var(--_ui5-v2-17-0_checkbox_border_radius);box-sizing:border-box}:host([desktop]) .ui5-checkbox-root:focus:before,.ui5-checkbox-root:focus-visible:before{display:var(--_ui5-v2-17-0_checkbox_focus_outline_display);content:"";position:absolute;inset-inline:var(--_ui5-v2-17-0_checkbox_focus_position);inset-block:var(--_ui5-v2-17-0_checkbox_focus_position);border:var(--_ui5-v2-17-0_checkbox_focus_outline);border-radius:var(--_ui5-v2-17-0_checkbox_focus_border_radius)}:host([text]) .ui5-checkbox-root{padding-inline-end:var(--_ui5-v2-17-0_checkbox_right_focus_distance)}:host([text]) .ui5-checkbox-root:focus:before,:host([text]) .ui5-checkbox-root:focus-visible:before{inset-inline-end:0}:host(:hover:not([disabled])){background:var(--_ui5-v2-17-0_checkbox_outer_hover_background)}.ui5-checkbox--hoverable .ui5-checkbox-label:hover{color:var(--_ui5-v2-17-0_checkbox_label_color)}:host(:not([active]):not([checked]):not([value-state])) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner,:host(:not([active]):not([checked])[value-state="None"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_hover_background);border-color:var(--_ui5-v2-17-0_checkbox_inner_hover_border_color)}:host(:not([active])[checked]:not([value-state])) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner,:host(:not([active])[checked][value-state="None"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_hover_background);border-color:var(--_ui5-v2-17-0_checkbox_inner_hover_checked_border_color)}:host([checked]:not([value-state])) .ui5-checkbox-inner,:host([checked][value-state="None"]) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_selected_border_color)}:host([active]:not([checked]):not([value-state]):not([disabled])) .ui5-checkbox-inner,:host([active]:not([checked])[value-state="None"]:not([disabled])) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_active_border_color);background-color:var(--_ui5-v2-17-0_checkbox_active_background)}:host([active][checked]:not([value-state]):not([disabled])) .ui5-checkbox-inner,:host([active][checked][value-state="None"]:not([disabled])) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_selected_border_color);background-color:var(--_ui5-v2-17-0_checkbox_active_background)}.ui5-checkbox-inner{min-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);height:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-height:var(--_ui5-v2-17-0_checkbox_inner_width_height);border:var(--_ui5-v2-17-0_checkbox_inner_border);border-radius:var(--_ui5-v2-17-0_checkbox_inner_border_radius);background:var(--_ui5-v2-17-0_checkbox_inner_background);color:var(--_ui5-v2-17-0_checkbox_checkmark_color);box-sizing:border-box;position:relative;cursor:inherit}:host([indeterminate][checked]) .ui5-checkbox-inner:after{content:"";background-color:currentColor;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:var(--_ui5-v2-17-0_checkbox_partially_icon_size);height:var(--_ui5-v2-17-0_checkbox_partially_icon_size)}:host input{-webkit-appearance:none;visibility:hidden;width:0;left:0;position:absolute;font-size:inherit}.ui5-checkbox-root .ui5-checkbox-label{margin-inline-start:var(--_ui5-v2-17-0_checkbox_label_offset);cursor:inherit;text-overflow:ellipsis;overflow:hidden;pointer-events:none;color:var(--_ui5-v2-17-0_checkbox_label_color)}.ui5-checkbox-icon{width:var(--_ui5-v2-17-0_checkbox_icon_size);height:var(--_ui5-v2-17-0_checkbox_icon_size);color:currentColor;cursor:inherit;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}:host([display-only]){cursor:default}:host([display-only]) .ui5-checkbox-display-only-icon-inner [ui5-icon]{color:var(--sapTextColor)}:host([display-only]) .ui5-checkbox-display-only-icon-inner{min-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);height:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-height:var(--_ui5-v2-17-0_checkbox_inner_width_height);display:flex;align-items:center;justify-content:center}
+`;
+const name$q = "complete";
+const pathData$p = "M431.958 320h32v128q0 14-9.5 23t-22.5 9h-384q-14 0-23-9t-9-23V64q0-13 9-22.5t23-9.5h128v32h-128v384h384V320zm60-295q7 7 2 16l-185 272q-3 6-10 7t-12-4l-125-139q-9-9 0-18l21-21q10-10 19 0l80 80q5 5 11.5 4t9.5-8l146-207q3-6 9.5-7t11.5 4z";
+const ltr$p = true;
+const collection$p = "SAP-icons-v4";
+const packageName$p = "@ui5/webcomponents-icons";
+y$2(name$q, { pathData: pathData$p, ltr: ltr$p, collection: collection$p, packageName: packageName$p });
+const name$p = "complete";
+const pathData$o = "M438 224q11 0 18.5 7.5T464 250v140q0 38-26 64t-64 26H106q-38 0-64-26t-26-64V122q0-38 26-64t64-26h237q11 0 18 7.5t7 18.5-7 18-18 7H106q-16 0-27.5 11.5T67 122v268q0 16 11.5 27.5T106 429h268q16 0 27.5-11.5T413 390V250q0-11 7-18.5t18-7.5zm32-192q11 0 18.5 7.5T496 58q0 10-7 17L257 312q-6 8-18 8-10 0-18-8l-70-71q-7-7-7-18t7.5-18 18.5-7 18 7l51 53L452 40q8-8 18-8z";
+const ltr$o = true;
+const collection$o = "SAP-icons-v5";
+const packageName$o = "@ui5/webcomponents-icons";
+y$2(name$p, { pathData: pathData$o, ltr: ltr$o, collection: collection$o, packageName: packageName$o });
+const complete = "complete";
+const name$o = "border";
+const pathData$n = "M448 32q13 0 22.5 9t9.5 23v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-14 9-23t23-9h384zm0 32H64v384h384V64z";
+const ltr$n = false;
+const collection$n = "SAP-icons-v4";
+const packageName$n = "@ui5/webcomponents-icons";
+y$2(name$o, { pathData: pathData$n, ltr: ltr$n, collection: collection$n, packageName: packageName$n });
+const name$n = "border";
+const pathData$m = "M390 480H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268q38 0 64 26t26 64v268q0 38-26 64t-64 26zM122 83q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122q0-17-11-28t-28-11H122z";
+const ltr$m = false;
+const collection$m = "SAP-icons-v5";
+const packageName$m = "@ui5/webcomponents-icons";
+y$2(name$n, { pathData: pathData$m, ltr: ltr$m, collection: collection$m, packageName: packageName$m });
+const border = "border";
+const name$m = "tri-state";
+const pathData$l = "M448 32q13 0 22.5 9.5T480 64v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-13 9-22.5T64 32h384zm0 32H64v384h384V64zM160 345V169q0-8 8-8h176q8 0 8 8v176q0 8-8 8H168q-8 0-8-8z";
+const ltr$l = false;
+const collection$l = "SAP-icons-v4";
+const packageName$l = "@ui5/webcomponents-icons";
+y$2(name$m, { pathData: pathData$l, ltr: ltr$l, collection: collection$l, packageName: packageName$l });
+const name$l = "tri-state";
+const pathData$k = "M390 32q38 0 64 26t26 64v268q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268zm39 90q0-17-11-28t-28-11H122q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122zm-77 38v192H160V160h192z";
+const ltr$k = false;
+const collection$k = "SAP-icons-v5";
+const packageName$k = "@ui5/webcomponents-icons";
+y$2(name$l, { pathData: pathData$k, ltr: ltr$k, collection: collection$k, packageName: packageName$k });
+const triState = "tri-state";
+function CheckBoxTemplate() {
+  return jsxs("div", { class: {
+    "ui5-checkbox-root": true,
+    "ui5-checkbox--hoverable": !this.disabled && !this.readonly && f$g()
+  }, role: this.accInfo.role, part: "root", "aria-checked": this.accInfo.ariaChecked, "aria-readonly": this.accInfo.ariaReadonly, "aria-disabled": this.accInfo.ariaDisabled, "aria-label": this.ariaLabelText, "aria-labelledby": this.ariaLabelledBy, "aria-describedby": this.ariaDescribedBy, "aria-required": this.accInfo.ariaRequired, tabindex: this.accInfo.tabindex, onMouseDown: this._onmousedown, onMouseUp: this._onmouseup, onKeyDown: this._onkeydown, onKeyUp: this._onkeyup, onClick: this._onclick, onFocusOut: this._onfocusout, children: [this.isDisplayOnly ? jsx("div", { class: "ui5-checkbox-display-only-icon-inner", children: jsx(Icon$1, { "aria-hidden": "true", name: displayOnlyIcon.call(this), class: "ui5-checkbox-display-only-icon", part: "icon" }) }) : jsx("div", { id: `${this._id}-CbBg`, class: "ui5-checkbox-inner", children: this.isCompletelyChecked && jsx(Icon$1, { "aria-hidden": "true", name: checkIcon, class: "ui5-checkbox-icon", part: "icon" }) }), this.accInfo.role === "checkbox" && jsx("input", { id: `${this._id}-CB`, type: "checkbox", checked: this.checked, value: this.value, readonly: this.readonly, disabled: this.disabled, tabindex: -1, "aria-hidden": "true", "data-sap-no-tab-ref": true }), this.text && jsx(Label$1, { id: `${this._id}-label`, part: "label", class: "ui5-checkbox-label", wrappingType: this.wrappingType, required: this.required, children: this.text }), this.hasValueState && jsx("span", { id: `${this._id}-descr`, class: "ui5-hidden-text", children: this.valueStateText })] });
+}
+function displayOnlyIcon() {
+  if (this.isCompletelyChecked) {
+    return complete;
+  }
+  if (this.checked && this.indeterminate) {
+    return triState;
+  }
+  return border;
+}
+var __decorate$y = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var CheckBox_1;
+let isGlobalHandlerAttached = false;
+let activeCb;
+let CheckBox = CheckBox_1 = class CheckBox2 extends b$6 {
+  get formValidityMessage() {
+    return CheckBox_1.i18nBundle.getText(FORM_CHECKABLE_REQUIRED);
+  }
+  get formValidity() {
+    return { valueMissing: this.required && !this.checked };
+  }
+  async formElementAnchor() {
+    return this.getFocusDomRefAsync();
+  }
+  get formFormattedValue() {
+    return this.checked ? this.value : null;
+  }
+  constructor() {
+    super();
+    this.disabled = false;
+    this.readonly = false;
+    this.displayOnly = false;
+    this.required = false;
+    this.indeterminate = false;
+    this.checked = false;
+    this.valueState = "None";
+    this.wrappingType = "Normal";
+    this.value = "on";
+    this.active = false;
+    this._deactivate = () => {
+      if (activeCb) {
+        activeCb.active = false;
+      }
+    };
+    if (!isGlobalHandlerAttached) {
+      document.addEventListener("mouseup", this._deactivate);
+      isGlobalHandlerAttached = true;
+    }
+  }
+  onEnterDOM() {
+    if (f$g()) {
+      this.setAttribute("desktop", "");
+    }
+  }
+  _onclick() {
+    this.toggle();
+  }
+  _onmousedown() {
+    if (this.readonly || this.disabled) {
+      return;
+    }
+    this.active = true;
+    activeCb = this;
+  }
+  _onmouseup() {
+    this.active = false;
+  }
+  _onfocusout() {
+    this.active = false;
+  }
+  _onkeydown(e2) {
+    if (A$4(e2)) {
+      e2.preventDefault();
+    }
+    if (this.readonly || this.disabled) {
+      return;
+    }
+    if (b$5(e2)) {
+      this.toggle();
+    }
+    this.active = true;
+  }
+  _onkeyup(e2) {
+    if (A$4(e2)) {
+      this.toggle();
+    }
+    this.active = false;
+  }
+  toggle() {
+    if (this.canToggle()) {
+      const lastState = {
+        checked: this.checked,
+        indeterminate: this.indeterminate
+      };
+      if (this.indeterminate) {
+        this.indeterminate = false;
+        this.checked = true;
+      } else {
+        this.checked = !this.checked;
+      }
+      const changePrevented = !this.fireDecoratorEvent("change");
+      const valueChangePrevented = !this.fireDecoratorEvent("value-changed");
+      if (changePrevented || valueChangePrevented) {
+        this.checked = lastState.checked;
+        this.indeterminate = lastState.indeterminate;
+      }
+    }
+    return this;
+  }
+  canToggle() {
+    return !(this.disabled || this.readonly || this.displayOnly);
+  }
+  valueStateTextMappings() {
+    return {
+      "Negative": CheckBox_1.i18nBundle.getText(VALUE_STATE_ERROR),
+      "Critical": CheckBox_1.i18nBundle.getText(VALUE_STATE_WARNING),
+      "Positive": CheckBox_1.i18nBundle.getText(VALUE_STATE_SUCCESS)
+    };
+  }
+  get ariaLabelText() {
+    return A$3(this) || M$1(this);
+  }
+  get classes() {
+    return {
+      main: {
+        "ui5-checkbox--hoverable": !this.disabled && !this.readonly && f$g()
+      }
+    };
+  }
+  get ariaReadonly() {
+    return this.readonly || this.displayOnly ? "true" : void 0;
+  }
+  get effectiveAriaDisabled() {
+    return this.disabled ? "true" : void 0;
+  }
+  get effectiveAriaChecked() {
+    return this.indeterminate && this.checked ? "mixed" : this.checked;
+  }
+  get ariaLabelledBy() {
+    if (!this.ariaLabelText) {
+      return this.text ? `${this._id}-label` : void 0;
+    }
+    return void 0;
+  }
+  get ariaDescribedBy() {
+    return this.hasValueState ? `${this._id}-descr` : void 0;
+  }
+  get hasValueState() {
+    return this.valueState !== o$5.None;
+  }
+  get valueStateText() {
+    if (this.valueState !== o$5.None && this.valueState !== o$5.Information) {
+      return this.valueStateTextMappings()[this.valueState];
+    }
+  }
+  get effectiveTabIndex() {
+    const tabindex = this.getAttribute("tabindex");
+    if (this.tabbable) {
+      return tabindex ? parseInt(tabindex) : 0;
+    }
+  }
+  get tabbable() {
+    return !this.disabled && !this.displayOnly;
+  }
+  get isCompletelyChecked() {
+    return this.checked && !this.indeterminate;
+  }
+  get isDisplayOnly() {
+    return this.displayOnly && !this.disabled;
+  }
+  get accessibilityInfo() {
+    const checkboxState = this.checked ? CheckBox_1.i18nBundle.getText(CHECKBOX_CHECKED) : CheckBox_1.i18nBundle.getText(CHECKBOX_NOT_CHECKED);
+    const description = [this.text || "", checkboxState].filter(Boolean).join(" ");
+    return {
+      role: this.accInfo.role,
+      type: CheckBox_1.i18nBundle.getText(CHECKBOX_ARIA_TYPE),
+      description,
+      label: this.ariaLabelText,
+      disabled: !!this.accInfo.ariaDisabled,
+      readonly: !!this.accInfo.ariaReadonly,
+      required: this.accInfo.ariaRequired
+    };
+  }
+  get accInfo() {
+    return {
+      "role": this._accInfo ? this._accInfo.role : "checkbox",
+      "ariaChecked": this._accInfo ? this._accInfo.ariaChecked : this.effectiveAriaChecked,
+      "ariaReadonly": this._accInfo ? this._accInfo.ariaReadonly : this.ariaReadonly,
+      "ariaDisabled": this._accInfo ? this._accInfo.ariaDisabled : this.effectiveAriaDisabled,
+      "ariaRequired": this._accInfo ? this._accInfo.ariaRequired : this.required,
+      "tabindex": this._accInfo ? this._accInfo.tabindex : this.effectiveTabIndex
+    };
+  }
+};
+__decorate$y([
+  s$7()
+], CheckBox.prototype, "accessibleNameRef", void 0);
+__decorate$y([
+  s$7()
+], CheckBox.prototype, "accessibleName", void 0);
+__decorate$y([
+  s$7({ type: Boolean })
+], CheckBox.prototype, "disabled", void 0);
+__decorate$y([
+  s$7({ type: Boolean })
+], CheckBox.prototype, "readonly", void 0);
+__decorate$y([
+  s$7({ type: Boolean })
+], CheckBox.prototype, "displayOnly", void 0);
+__decorate$y([
+  s$7({ type: Boolean })
+], CheckBox.prototype, "required", void 0);
+__decorate$y([
+  s$7({ type: Boolean })
+], CheckBox.prototype, "indeterminate", void 0);
+__decorate$y([
+  s$7({ type: Boolean })
+], CheckBox.prototype, "checked", void 0);
+__decorate$y([
+  s$7()
+], CheckBox.prototype, "text", void 0);
+__decorate$y([
+  s$7()
+], CheckBox.prototype, "valueState", void 0);
+__decorate$y([
+  s$7()
+], CheckBox.prototype, "wrappingType", void 0);
+__decorate$y([
+  s$7()
+], CheckBox.prototype, "name", void 0);
+__decorate$y([
+  s$7()
+], CheckBox.prototype, "value", void 0);
+__decorate$y([
+  s$7({ type: Boolean })
+], CheckBox.prototype, "active", void 0);
+__decorate$y([
+  s$7({ type: Object })
+], CheckBox.prototype, "_accInfo", void 0);
+__decorate$y([
+  i$9("@ui5/webcomponents")
+], CheckBox, "i18nBundle", void 0);
+CheckBox = CheckBox_1 = __decorate$y([
+  m$8({
+    tag: "ui5-checkbox",
+    languageAware: true,
+    formAssociated: true,
+    renderer: y$5,
+    template: CheckBoxTemplate,
+    styles: checkboxCss
+  }),
+  l$d("change", {
+    bubbles: true,
+    cancelable: true
+  }),
+  l$d("value-changed", {
+    bubbles: true,
+    cancelable: true
+  })
+], CheckBox);
+CheckBox.define();
+const CheckBox$1 = CheckBox;
+const predefinedHooks$4 = {
+  listItemPreContent,
+  listItemContent: listItemContent$5,
+  imageBegin: imageBegin$1,
+  iconBegin: iconBegin$3,
+  iconEnd: iconEnd$2,
+  selectionElement
+};
+function ListItemTemplate(hooks) {
+  const currentHooks = { ...predefinedHooks$4, ...hooks };
+  return jsxs("li", { part: "native-li", "data-sap-focus-ref": true, tabindex: this._effectiveTabIndex, class: this.classes.main, onFocusIn: this._onfocusin, onFocusOut: this._onfocusout, onKeyUp: this._onkeyup, onKeyDown: this._onkeydown, onMouseUp: this._onmouseup, onMouseDown: this._onmousedown, onTouchStart: this._onmousedown, onTouchEnd: this._ontouchend, onClick: this._onclick, draggable: this.movable, onDragStart: this._ondragstart, onDragEnd: this._ondragend, role: this._accInfo.role, title: this._accInfo.tooltip, "aria-expanded": this._accInfo.ariaExpanded, "aria-level": this._accInfo.ariaLevel, "aria-haspopup": this._accInfo.ariaHaspopup, "aria-posinset": this._accInfo.posinset, "aria-setsize": this._accInfo.setsize, "aria-describedby": `${this._id}-invisibleText-describedby`, "aria-labelledby": this._accessibleNameRef, "aria-disabled": this._ariaDisabled, "aria-selected": this._accInfo.ariaSelected, "aria-checked": this._accInfo.ariaChecked, "aria-owns": this._accInfo.ariaOwns, "aria-keyshortcuts": this._accInfo.ariaKeyShortcuts, children: [currentHooks.listItemPreContent.call(this), this.placeSelectionElementBefore && selectionElement.call(this), this._hasHighlightColor && jsx("div", { class: "ui5-li-highlight" }), jsxs("div", { part: "content", id: `${this._id}-content`, class: "ui5-li-content", children: [currentHooks.imageBegin.call(this), currentHooks.iconBegin.call(this), currentHooks.listItemContent.call(this)] }), currentHooks.iconEnd.call(this), this.typeDetail && jsx("div", { class: "ui5-li-detailbtn", children: jsx(Button$1, { part: "detail-button", design: "Transparent", onClick: this.onDetailClick, icon: editIcon }) }), this.typeNavigation && jsx(Icon$1, { name: slimArrowRightIcon }), this.navigated && jsx("div", { class: "ui5-li-navigated" }), this.placeSelectionElementAfter && currentHooks.selectionElement.call(this), jsx("span", { id: `${this._id}-invisibleText`, class: "ui5-hidden-text", children: this.ariaLabelledByText }), jsx("span", { id: `${this._id}-invisibleText-describedby`, class: "ui5-hidden-text", children: this._accInfo.ariaSelectedText })] });
+}
+function listItemPreContent() {
+}
+function listItemContent$5() {
+}
+function imageBegin$1() {
+}
+function iconBegin$3() {
+}
+function iconEnd$2() {
+}
+function selectionElement() {
+  switch (true) {
+    case this.modeSingleSelect:
+      return jsx(RadioButton$1, { part: "radio", disabled: this.isInactive, accessibleName: this._accInfo.ariaLabelRadioButton, tabindex: -1, id: `${this._id}-singleSelectionElement`, class: "ui5-li-singlesel-radiobtn", checked: this.selected, onChange: this.onSingleSelectionComponentPress });
+    case this.modeMultiple:
+      return jsx(CheckBox$1, { part: "checkbox", disabled: this.isInactive, indeterminate: this.indeterminate, tabindex: -1, id: `${this._id}-multiSelectionElement`, class: "ui5-li-multisel-cb", checked: this.selected, accessibleName: this._accInfo.ariaLabel, onChange: this.onMultiSelectionComponentPress });
+    case this.modeDelete:
+      return jsx("div", { class: "ui5-li-deletebtn", children: this.hasDeleteButtonSlot ? jsx("slot", { name: "deleteButton" }) : jsx(Button$1, { part: "delete-button", tabindex: -1, "data-sap-no-tab-ref": true, id: `${this._id}-deleteSelectionElement`, design: "Transparent", icon: iconDecline, onClick: this.onDelete, tooltip: this.deleteText }) });
+  }
+}
+const predefinedHooks$3 = {
+  imageBegin,
+  iconBegin: iconBegin$2,
+  iconEnd: iconEnd$1,
+  listItemContent: listItemContent$4
+};
+function ListItemStandardTemplate(hooks) {
+  const currentHooks = { ...predefinedHooks$3, ...hooks };
+  return ListItemTemplate.call(this, currentHooks);
+}
+function listItemContent$4() {
+  return jsxs(Fragment, { children: [jsxs("div", { class: "ui5-li-text-wrapper", children: [renderTitle.call(this), renderDescription.call(this), !this.typeActive && jsx("span", { class: "ui5-hidden-text", children: this.type })] }), !this.description && renderAdditionalText.call(this)] });
+}
+function renderTitle() {
+  var _a2;
+  if (this.wrappingType === WrappingType$1.Normal) {
+    return (_a2 = this.expandableTextTemplate) == null ? void 0 : _a2.call(this, {
+      className: "ui5-li-title",
+      text: this._textContent,
+      maxCharacters: this._maxCharacters,
+      part: "title"
+    });
+  }
+  return jsx("span", { part: "title", class: "ui5-li-title", children: this.text ? this.text : jsx("slot", {}) });
+}
+function renderDescription() {
+  var _a2;
+  if (!this.description) {
+    return null;
+  }
+  if (this.wrappingType === WrappingType$1.Normal) {
+    return jsxs("div", { class: "ui5-li-description-info-wrapper", children: [(_a2 = this.expandableTextTemplate) == null ? void 0 : _a2.call(this, {
+      className: "ui5-li-desc",
+      text: this.description,
+      maxCharacters: this._maxCharacters,
+      part: "description"
+    }), renderAdditionalText.call(this)] });
+  }
+  return jsxs("div", { class: "ui5-li-description-info-wrapper", children: [jsx("span", { part: "description", class: "ui5-li-desc", children: this.description }), renderAdditionalText.call(this)] });
+}
+function renderAdditionalText() {
+  if (!this.additionalText) {
+    return null;
+  }
+  return jsx("span", { part: "additional-text", class: "ui5-li-additional-text", children: this.additionalText });
+}
+function imageBegin() {
+  if (this.hasImage) {
+    return jsx("div", { class: "ui5-li-image", children: jsx("slot", { name: "image" }) });
+  }
+}
+function iconBegin$2() {
+  if (this.displayIconBegin) {
+    return jsx(Icon$1, { part: "icon", name: this.icon, class: "ui5-li-icon", mode: "Decorative" });
+  }
+}
+function iconEnd$1() {
+  if (this.displayIconEnd) {
+    return jsx(Icon$1, { part: "icon", name: this.icon, class: "ui5-li-icon", mode: "Decorative" });
+  }
+}
+var __decorate$x = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+var ListItemStandard_1;
+const MAX_CHARACTERS_SIZE_S = 100;
+const MAX_CHARACTERS_SIZE_M = 300;
+let ListItemStandard = ListItemStandard_1 = class ListItemStandard2 extends ListItem$1 {
+  constructor() {
+    super(...arguments);
+    this.iconEnd = false;
+    this.additionalTextState = "None";
+    this.movable = false;
+    this.wrappingType = "None";
+    this.hasTitle = false;
+    this._hasImage = false;
+  }
+  onBeforeRendering() {
+    super.onBeforeRendering();
+    this.hasTitle = !!(this.text || this.textContent);
+    this._hasImage = this.hasImage;
+    if (this.wrappingType === "Normal") {
+      if (ListItemStandard_1.ExpandableTextTemplate) {
+        this.expandableTextTemplate = ListItemStandard_1.ExpandableTextTemplate;
+      } else {
+        Promise.resolve().then(() => ListItemStandardExpandableTextTemplate$1).then((module) => {
+          this.expandableTextTemplate = module.default;
+        });
+      }
+    }
+  }
+  /**
+   * Returns the content text, either from text property or from the default slot
+   * @private
+   */
+  get _textContent() {
+    return this.text || this.textContent || "";
+  }
+  /**
+   * Determines the maximum characters to display based on the current media range.
+   * - Size S: 100 characters
+   * - Size M and larger: 300 characters
+   * @private
+   */
+  get _maxCharacters() {
+    return this.mediaRange === "S" ? MAX_CHARACTERS_SIZE_S : MAX_CHARACTERS_SIZE_M;
+  }
+  get displayIconBegin() {
+    return !!(this.icon && !this.iconEnd);
+  }
+  get displayIconEnd() {
+    return !!(this.icon && this.iconEnd);
+  }
+  get hasImage() {
+    return !!this.image.length;
+  }
+};
+__decorate$x([
+  s$7()
+], ListItemStandard.prototype, "text", void 0);
+__decorate$x([
+  s$7()
+], ListItemStandard.prototype, "description", void 0);
+__decorate$x([
+  s$7()
+], ListItemStandard.prototype, "icon", void 0);
+__decorate$x([
+  s$7({ type: Boolean })
+], ListItemStandard.prototype, "iconEnd", void 0);
+__decorate$x([
+  s$7()
+], ListItemStandard.prototype, "additionalText", void 0);
+__decorate$x([
+  s$7()
+], ListItemStandard.prototype, "additionalTextState", void 0);
+__decorate$x([
+  s$7({ type: Boolean })
+], ListItemStandard.prototype, "movable", void 0);
+__decorate$x([
+  s$7()
+], ListItemStandard.prototype, "accessibleName", void 0);
+__decorate$x([
+  s$7()
+], ListItemStandard.prototype, "wrappingType", void 0);
+__decorate$x([
+  s$7({ type: Boolean })
+], ListItemStandard.prototype, "hasTitle", void 0);
+__decorate$x([
+  s$7({ type: Boolean })
+], ListItemStandard.prototype, "_hasImage", void 0);
+__decorate$x([
+  s$7({ noAttribute: true })
+], ListItemStandard.prototype, "expandableTextTemplate", void 0);
+__decorate$x([
+  d$8({ type: Node, "default": true })
+], ListItemStandard.prototype, "content", void 0);
+__decorate$x([
+  d$8()
+], ListItemStandard.prototype, "image", void 0);
+ListItemStandard = ListItemStandard_1 = __decorate$x([
+  m$8({
+    tag: "ui5-li",
+    renderer: y$5,
+    template: ListItemStandardTemplate
+  })
+], ListItemStandard);
+ListItemStandard.define();
+const ListItemStandard$1 = ListItemStandard;
+const predefinedHooks$2 = {
+  listItemContent: listItemContent$3
+};
+function ListItemCustomTemplate(hooks) {
+  const currentHooks = { ...predefinedHooks$2, ...hooks };
+  return ListItemTemplate.call(this, currentHooks);
+}
+function listItemContent$3() {
+  return jsx("slot", {});
+}
+p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
+p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
+const ListItemCustomCss = `:host(:not([hidden])){display:block}:host{min-height:var(--_ui5-v2-17-0_list_item_base_height);height:auto;box-sizing:border-box}.ui5-li-root.ui5-custom-li-root{pointer-events:inherit;min-height:inherit}.ui5-li-root.ui5-custom-li-root .ui5-li-content{pointer-events:inherit}[ui5-checkbox].ui5-li-singlesel-radiobtn,[ui5-radio-button].ui5-li-singlesel-radiobtn{display:flex;align-items:center}.ui5-li-root.ui5-custom-li-root,[ui5-checkbox].ui5-li-singlesel-radiobtn,[ui5-radio-button].ui5-li-singlesel-radiobtn{min-width:var(--_ui5-v2-17-0_custom_list_item_rb_min_width)}:host([_selection-mode="SingleStart"]) .ui5-li-root.ui5-custom-li-root{padding-inline:0 1rem}:host([_selection-mode="Multiple"]) .ui5-li-root.ui5-custom-li-root{padding-inline:0 1rem}:host([_selection-mode="SingleEnd"]) .ui5-li-root.ui5-custom-li-root{padding-inline:1rem 0}
+`;
+var __decorate$w = function(decorators, target, key, desc) {
+  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
+  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
+  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
+};
+let ListItemCustom = class ListItemCustom2 extends ListItem$1 {
+  constructor() {
+    super(...arguments);
+    this.movable = false;
+  }
+  async _onkeydown(e2) {
+    const isTab = x$1(e2) || V$1(e2);
+    const isFocused = this.matches(":focus");
+    if (!isTab && !isFocused && !ro(e2)) {
+      return;
+    }
+    await super._onkeydown(e2);
+  }
+  _onkeyup(e2) {
+    const isTab = x$1(e2) || V$1(e2);
+    const isFocused = this.matches(":focus");
+    if (!isTab && !isFocused && !ro(e2)) {
+      return;
+    }
+    super._onkeyup(e2);
+  }
+  get classes() {
+    const result = super.classes;
+    result.main["ui5-custom-li-root"] = true;
+    return result;
+  }
+};
+__decorate$w([
+  s$7({ type: Boolean })
+], ListItemCustom.prototype, "movable", void 0);
+__decorate$w([
+  s$7()
+], ListItemCustom.prototype, "accessibleName", void 0);
+ListItemCustom = __decorate$w([
+  m$8({
+    tag: "ui5-li-custom",
+    template: ListItemCustomTemplate,
+    renderer: y$5,
+    styles: [ListItem$1.styles, ListItemCustomCss]
+  })
+], ListItemCustom);
+ListItemCustom.define();
+const ListItemCustom$1 = ListItemCustom;
 function initUI5Theme(isDark = false) {
   try {
     const theme = isDark ? "sap_horizon_dark" : "sap_horizon";
@@ -12070,9 +13468,31 @@ function getEntityAttribute(hass, entityId, attribute) {
   const entity = getEntity(hass, entityId);
   return entity == null ? void 0 : entity.attributes[attribute];
 }
+function getEntityName(hass, entityId) {
+  const entity = getEntity(hass, entityId);
+  return (entity == null ? void 0 : entity.attributes.friendly_name) || entityId;
+}
 function isEntityOn(hass, entityId) {
   const state = getEntityState(hass, entityId);
   return state === "on";
+}
+function formatEntityState(hass, entityId) {
+  const entity = getEntity(hass, entityId);
+  if (!entity) {
+    return "unavailable";
+  }
+  const state = entity.state;
+  const unit = entity.attributes.unit_of_measurement;
+  if (unit) {
+    return `${state} ${unit}`;
+  }
+  if (state === "on") {
+    return "On";
+  }
+  if (state === "off") {
+    return "Off";
+  }
+  return state.charAt(0).toUpperCase() + state.slice(1);
 }
 function stateToNumber(hass, entityId, attribute) {
   let value;
@@ -12125,6 +13545,9 @@ function formatEntityValue(hass, entityId, value, precision) {
     return `${formatted} ${unit}`;
   }
   return formatted;
+}
+function getDomain(entityId) {
+  return entityId.split(".")[0];
 }
 function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
@@ -13429,6 +14852,376 @@ class UI5ElementCard extends BaseUI5Card {
   }
 }
 customElements.define("ui5-element-card", UI5ElementCard);
+class UI5ListCard extends BaseUI5Card {
+  setConfig(config) {
+    if (!config.type) {
+      throw new Error("Card type is required");
+    }
+    super.setConfig(config);
+  }
+  get config() {
+    return this._config;
+  }
+  /**
+   * Check if any watched entity changed
+   */
+  hasEntityStateChanged(oldHass, newHass) {
+    if (!oldHass || !newHass || !this.config) {
+      return true;
+    }
+    if (this.config.entity) {
+      const oldState = oldHass.states[this.config.entity];
+      const newState = newHass.states[this.config.entity];
+      if (oldState !== newState) return true;
+    }
+    if (this.config.entities) {
+      for (const entityId of this.config.entities) {
+        const oldState = oldHass.states[entityId];
+        const newState = newHass.states[entityId];
+        if (oldState !== newState) return true;
+      }
+    }
+    if (this.config.items) {
+      for (const item of this.config.items) {
+        if (item.entity) {
+          const oldState = oldHass.states[item.entity];
+          const newState = newHass.states[item.entity];
+          if (oldState !== newState) return true;
+        }
+      }
+    }
+    return false;
+  }
+  /**
+   * Get list items from config
+   */
+  getListItems() {
+    if (!this._hass || !this.config) return [];
+    const items = [];
+    if (this.config.entities) {
+      for (const entityId of this.config.entities) {
+        const entity = this._hass.states[entityId];
+        if (entity) {
+          items.push(this.entityToListItem(entityId, entity));
+        }
+      }
+    }
+    if (this.config.items) {
+      for (const item of this.config.items) {
+        const listItem = {
+          text: this.processTemplate(item.text),
+          description: item.description ? this.processTemplate(item.description) : void 0,
+          icon: item.icon,
+          iconEnd: item.icon_end,
+          additionalText: item.additional_text,
+          additionalTextState: item.additional_text_state || "None",
+          type: item.type || "Active",
+          entityId: item.entity
+        };
+        if (item.entity && this._hass.states[item.entity]) {
+          const entity = this._hass.states[item.entity];
+          listItem.additionalText = listItem.additionalText || formatEntityState(this._hass, item.entity);
+          listItem.additionalTextState = this.getStateValueState(entity.state);
+        }
+        items.push(listItem);
+      }
+    }
+    return items;
+  }
+  /**
+   * Convert entity to list item
+   */
+  entityToListItem(entityId, entity) {
+    const state = formatEntityState(this._hass, entityId);
+    const icon = this.getEntityIcon(entityId, entity);
+    return {
+      text: getEntityName(this._hass, entityId),
+      description: entity.attributes.device_class || getDomain(entityId),
+      icon,
+      additionalText: state,
+      additionalTextState: this.getStateValueState(entity.state),
+      type: "Active",
+      entityId
+    };
+  }
+  /**
+   * Get icon for entity
+   */
+  getEntityIcon(entityId, entity) {
+    if (entity.attributes.icon) {
+      const mdiIcon = entity.attributes.icon;
+      if (mdiIcon.startsWith("mdi:")) {
+        return this.mapMdiToSap(mdiIcon);
+      }
+      return mdiIcon;
+    }
+    const domain = getDomain(entityId);
+    const domainIcons = {
+      light: "lightbulb",
+      switch: "switches",
+      sensor: "measure",
+      binary_sensor: "status-positive",
+      climate: "heating-cooling",
+      fan: "fan",
+      cover: "expand",
+      lock: "locked",
+      camera: "camera",
+      media_player: "media-play",
+      vacuum: "dishwasher",
+      automation: "process",
+      script: "developer-settings",
+      scene: "palette",
+      person: "employee",
+      device_tracker: "locate-me",
+      weather: "weather-proofing",
+      sun: "weather-proofing"
+    };
+    return domainIcons[domain] || "home";
+  }
+  /**
+   * Map MDI icon to SAP icon
+   */
+  mapMdiToSap(mdiIcon) {
+    const icon = mdiIcon.replace("mdi:", "");
+    const mdiToSap = {
+      "lightbulb": "lightbulb",
+      "lightbulb-on": "lightbulb",
+      "lightbulb-off": "lightbulb",
+      "power": "switches",
+      "thermometer": "temperature",
+      "water-percent": "washing-machine",
+      "motion-sensor": "person-placeholder",
+      "door": "door",
+      "window": "expand",
+      "lock": "locked",
+      "unlock": "unlocked",
+      "fan": "fan",
+      "home": "home"
+    };
+    return mdiToSap[icon] || "action";
+  }
+  /**
+   * Get value state for entity state
+   */
+  getStateValueState(state) {
+    switch (state.toLowerCase()) {
+      case "on":
+      case "open":
+      case "unlocked":
+      case "home":
+      case "playing":
+        return "Success";
+      case "off":
+      case "closed":
+      case "locked":
+      case "away":
+      case "paused":
+      case "idle":
+        return "None";
+      case "unavailable":
+      case "unknown":
+        return "Warning";
+      default:
+        return "Information";
+    }
+  }
+  /**
+   * Group items by domain
+   */
+  groupItemsByDomain(items) {
+    const groups = {};
+    for (const item of items) {
+      const domain = item.entityId ? getDomain(item.entityId) : "other";
+      const groupName = this.formatDomainName(domain);
+      if (!groups[groupName]) {
+        groups[groupName] = [];
+      }
+      groups[groupName].push(item);
+    }
+    return groups;
+  }
+  /**
+   * Format domain name for display
+   */
+  formatDomainName(domain) {
+    const names = {
+      light: "Lights",
+      switch: "Switches",
+      sensor: "Sensors",
+      binary_sensor: "Binary Sensors",
+      climate: "Climate",
+      fan: "Fans",
+      cover: "Covers",
+      lock: "Locks",
+      camera: "Cameras",
+      media_player: "Media Players",
+      vacuum: "Vacuums",
+      automation: "Automations",
+      script: "Scripts",
+      scene: "Scenes",
+      person: "People",
+      device_tracker: "Device Trackers",
+      other: "Other"
+    };
+    return names[domain] || domain.charAt(0).toUpperCase() + domain.slice(1).replace(/_/g, " ");
+  }
+  /**
+   * Render a single list item
+   */
+  renderListItem(item) {
+    const iconAttr = item.icon ? `icon="${item.icon}"` : "";
+    const iconEndAttr = item.iconEnd ? `icon-end="${item.iconEnd}"` : "";
+    const descriptionAttr = item.description ? `description="${this.escapeAttrValue(item.description)}"` : "";
+    const additionalTextAttr = item.additionalText ? `additional-text="${this.escapeAttrValue(item.additionalText)}"` : "";
+    const stateAttr = item.additionalTextState ? `additional-text-state="${item.additionalTextState}"` : "";
+    const typeAttr = item.type ? `type="${item.type}"` : "";
+    const entityAttr = item.entityId ? `data-entity="${item.entityId}"` : "";
+    return `
+      <ui5-li
+        ${iconAttr}
+        ${iconEndAttr}
+        ${descriptionAttr}
+        ${additionalTextAttr}
+        ${stateAttr}
+        ${typeAttr}
+        ${entityAttr}
+      >${this.escapeText(item.text)}</ui5-li>
+    `;
+  }
+  /**
+   * Escape HTML for safe text content
+   */
+  escapeText(text) {
+    const div = document.createElement("div");
+    div.textContent = text;
+    return div.innerHTML;
+  }
+  /**
+   * Escape attribute value
+   */
+  escapeAttrValue(text) {
+    return text.replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+  render() {
+    if (!this._hass || !this.config) {
+      return;
+    }
+    const items = this.getListItems();
+    const headerText = this.config.header_text || this.config.title || "";
+    const footerText = this.config.footer_text || "";
+    const noDataText = this.config.no_data_text || "No items";
+    const mode = this.config.mode || "None";
+    const growing = this.config.growing || "None";
+    const groupBy = this.config.group_by || "none";
+    let listContent = "";
+    if (items.length === 0) {
+      listContent = `<ui5-li type="Inactive">${noDataText}</ui5-li>`;
+    } else if (groupBy === "domain") {
+      const groups = this.groupItemsByDomain(items);
+      for (const [groupName, groupItems] of Object.entries(groups)) {
+        listContent += `<ui5-li-group header-text="${this.escapeAttrValue(groupName)}">`;
+        for (const item of groupItems) {
+          listContent += this.renderListItem(item);
+        }
+        listContent += `</ui5-li-group>`;
+      }
+    } else {
+      for (const item of items) {
+        listContent += this.renderListItem(item);
+      }
+    }
+    this.shadow.innerHTML = `
+      <style>
+        ${this.getBaseStyles()}
+
+        .list-container {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .list-header {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--primary-text-color);
+          padding-bottom: 8px;
+        }
+
+        .list-footer {
+          font-size: 12px;
+          color: var(--secondary-text-color);
+          padding-top: 8px;
+          text-align: center;
+        }
+
+        ui5-list {
+          width: 100%;
+          border-radius: 8px;
+          overflow: hidden;
+        }
+
+        ui5-li {
+          cursor: pointer;
+        }
+
+        ui5-li[type="Inactive"] {
+          cursor: default;
+          opacity: 0.7;
+        }
+      </style>
+
+      <div class="card-container">
+        <div class="list-container">
+          ${headerText ? `<div class="list-header">${this.escapeText(headerText)}</div>` : ""}
+          <ui5-list
+            id="entity-list"
+            mode="${mode}"
+            ${growing !== "None" ? `growing="${growing}"` : ""}
+          >
+            ${listContent}
+          </ui5-list>
+          ${footerText ? `<div class="list-footer">${this.escapeText(footerText)}</div>` : ""}
+        </div>
+      </div>
+    `;
+    this.setupListItemHandlers();
+  }
+  /**
+   * Set up click handlers for list items
+   */
+  setupListItemHandlers() {
+    const list = this.shadow.getElementById("entity-list");
+    if (!list) return;
+    list.addEventListener("item-click", (event) => {
+      var _a2;
+      const customEvent = event;
+      const item = (_a2 = customEvent.detail) == null ? void 0 : _a2.item;
+      if (!item) return;
+      const entityId = item.getAttribute("data-entity");
+      if (entityId && this._hass) {
+        const moreInfoEvent = new CustomEvent("hass-more-info", {
+          bubbles: true,
+          composed: true,
+          detail: { entityId }
+        });
+        this.dispatchEvent(moreInfoEvent);
+      }
+    });
+  }
+  getCardSize() {
+    var _a2, _b2, _c, _d;
+    const itemCount = ((_b2 = (_a2 = this.config) == null ? void 0 : _a2.entities) == null ? void 0 : _b2.length) || ((_d = (_c = this.config) == null ? void 0 : _c.items) == null ? void 0 : _d.length) || 0;
+    return Math.max(1, Math.ceil(itemCount / 3));
+  }
+  static getStubConfig() {
+    return {
+      type: "custom:ui5-list-card",
+      title: "Entity List",
+      entities: ["light.living_room", "switch.kitchen"]
+    };
+  }
+}
+customElements.define("ui5-list-card", UI5ListCard);
 const CARD_DEFINITIONS = [
   {
     type: "custom:ui5-button-card",
@@ -13495,6 +15288,12 @@ const CARD_DEFINITIONS = [
     name: "UI5 Element Card",
     description: "A generic card that can render any UI5 element",
     preview: true
+  },
+  {
+    type: "custom:ui5-list-card",
+    name: "UI5 List Card",
+    description: "Display entities in a list with state indicators and grouping",
+    preview: true
   }
 ];
 function registerCards() {
@@ -13552,16 +15351,16 @@ function f3(r3, e2) {
   }), o2;
 }
 function SuggestionItemTemplate() {
-  return [ListItemBaseTemplate.call(this, { listItemContent: listItemContent$5 }, { role: "option" })];
+  return [ListItemBaseTemplate.call(this, { listItemContent: listItemContent$2 }, { role: "option" })];
 }
-function listItemContent$5() {
+function listItemContent$2() {
   return jsx("div", { part: "content", id: "content", class: "ui5-li-content", children: jsxs("div", { class: "ui5-li-text-wrapper", children: [jsx("span", { part: "title", className: "ui5-li-title", dangerouslySetInnerHTML: { __html: this.markupText } }), this.additionalText && jsx("span", { part: "additional-text", class: "ui5-li-additional-text", children: this.additionalText })] }) });
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
-const styles$2 = `:host([ui5-suggestion-item]){height:auto;min-height:var(--_ui5-v2-17-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-root{min-height:var(--_ui5-v2-17-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-content{padding-bottom:.5rem;padding-top:.5rem;box-sizing:border-box}
+const styles$1 = `:host([ui5-suggestion-item]){height:auto;min-height:var(--_ui5-v2-17-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-root{min-height:var(--_ui5-v2-17-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-content{padding-bottom:.5rem;padding-top:.5rem;box-sizing:border-box}
 `;
-var __decorate$A = function(decorators, target, key, desc) {
+var __decorate$v = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -13581,20 +15380,20 @@ let SuggestionItem = class SuggestionItem2 extends ListItemBase$1 {
     return -1;
   }
 };
-__decorate$A([
+__decorate$v([
   s$7()
 ], SuggestionItem.prototype, "text", void 0);
-__decorate$A([
+__decorate$v([
   s$7()
 ], SuggestionItem.prototype, "additionalText", void 0);
-__decorate$A([
+__decorate$v([
   s$7()
 ], SuggestionItem.prototype, "markupText", void 0);
-SuggestionItem = __decorate$A([
+SuggestionItem = __decorate$v([
   m$8({
     tag: "ui5-suggestion-item",
     template: SuggestionItemTemplate,
-    styles: [ListItemBase$1.styles, styles$2]
+    styles: [ListItemBase$1.styles, styles$1]
   })
 ], SuggestionItem);
 SuggestionItem.define();
@@ -13605,7 +15404,7 @@ function ListItemGroupTemplate(hooks) {
 function defaultItems() {
   return jsx("slot", {});
 }
-var __decorate$z = function(decorators, target, key, desc) {
+var __decorate$u = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -13613,14 +15412,14 @@ var __decorate$z = function(decorators, target, key, desc) {
 };
 let SuggestionItemGroup = class SuggestionItemGroup2 extends ListItemGroup$1 {
 };
-__decorate$z([
+__decorate$u([
   d$8({
     "default": true,
     invalidateOnChildChange: true,
     type: HTMLElement
   })
 ], SuggestionItemGroup.prototype, "items", void 0);
-SuggestionItemGroup = __decorate$z([
+SuggestionItemGroup = __decorate$u([
   m$8({
     tag: "ui5-suggestion-item-group",
     template: ListItemGroupTemplate
@@ -14034,9 +15833,9 @@ function TextTemplate() {
 }
 p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
-const styles$1 = `:host{max-width:100%;font-size:var(--sapFontSize);font-family:var(--sapFontFamily);color:var(--sapTextColor);line-height:normal;cursor:text;overflow:hidden}:host([max-lines="1"]){display:inline-block;text-overflow:ellipsis;white-space:nowrap}:host(:not([max-lines="1"])){display:-webkit-box;-webkit-line-clamp:var(--_ui5-v2-17-0_text_max_lines);line-clamp:var(--_ui5-v2-17-0_text_max_lines);-webkit-box-orient:vertical;white-space:normal;word-wrap:break-word}.empty-indicator-aria-label{position:absolute!important;clip:rect(1px,1px,1px,1px);user-select:none;left:0;top:0;font-size:0}
+const styles = `:host{max-width:100%;font-size:var(--sapFontSize);font-family:var(--sapFontFamily);color:var(--sapTextColor);line-height:normal;cursor:text;overflow:hidden}:host([max-lines="1"]){display:inline-block;text-overflow:ellipsis;white-space:nowrap}:host(:not([max-lines="1"])){display:-webkit-box;-webkit-line-clamp:var(--_ui5-v2-17-0_text_max_lines);line-clamp:var(--_ui5-v2-17-0_text_max_lines);-webkit-box-orient:vertical;white-space:normal;word-wrap:break-word}.empty-indicator-aria-label{position:absolute!important;clip:rect(1px,1px,1px,1px);user-select:none;left:0;top:0;font-size:0}
 `;
-var __decorate$y = function(decorators, target, key, desc) {
+var __decorate$t = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -14065,24 +15864,24 @@ let Text = Text_1 = class Text2 extends b$6 {
     return Text_1.i18nBundle.getText(EMPTY_INDICATOR_SYMBOL);
   }
 };
-__decorate$y([
+__decorate$t([
   s$7({ type: Number })
 ], Text.prototype, "maxLines", void 0);
-__decorate$y([
+__decorate$t([
   s$7()
 ], Text.prototype, "emptyIndicatorMode", void 0);
-__decorate$y([
+__decorate$t([
   d$8({ type: Node, "default": true })
 ], Text.prototype, "text", void 0);
-__decorate$y([
+__decorate$t([
   i$9("@ui5/webcomponents")
 ], Text, "i18nBundle", void 0);
-Text = Text_1 = __decorate$y([
+Text = Text_1 = __decorate$t([
   m$8({
     tag: "ui5-text",
     renderer: y$5,
     template: TextTemplate,
-    styles: styles$1
+    styles
   })
 ], Text);
 Text.define();
@@ -14101,7 +15900,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const linkCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-flex}:host{max-width:100%;color:var(--sapLinkColor);font-family:var(--sapFontFamily);font-size:var(--sapFontSize);cursor:pointer;outline:none;text-decoration:var(--_ui5-v2-17-0_link_text_decoration);text-shadow:var(--sapContent_TextShadow);white-space:normal;overflow-wrap:break-word}:host(:hover){color:var(--sapLink_Hover_Color);text-decoration:var(--_ui5-v2-17-0_link_hover_text_decoration)}:host(:active){color:var(--sapLink_Active_Color);text-decoration:var(--_ui5-v2-17-0_link_active_text_decoration)}:host([disabled]){pointer-events:none}:host([disabled]) .ui5-link-root{text-shadow:none;outline:none;cursor:default;pointer-events:none;opacity:var(--sapContent_DisabledOpacity)}:host([design="Emphasized"]) .ui5-link-root{font-family:var(--sapFontBoldFamily)}:host([design="Subtle"]){color:var(--sapLink_SubtleColor);text-decoration:var(--_ui5-v2-17-0_link_subtle_text_decoration)}:host([design="Subtle"]:hover:not(:active)){color:var(--sapLink_SubtleColor);text-decoration:var(--_ui5-v2-17-0_link_subtle_text_decoration_hover)}:host([wrapping-type="None"]){white-space:nowrap;overflow-wrap:normal}.ui5-link-root{max-width:100%;display:inline-block;position:relative;overflow:hidden;text-overflow:ellipsis;outline:none;white-space:inherit;overflow-wrap:inherit;text-decoration:inherit;color:inherit}:host([wrapping-type="None"][end-icon]) .ui5-link-root{display:inline-flex;align-items:end}:host .ui5-link-root{outline-offset:-.0625rem;border-radius:var(--_ui5-v2-17-0_link_focus_border-radius)}.ui5-link-icon,.ui5-link-end-icon{color:inherit;flex-shrink:0}.ui5-link-icon{float:inline-start;margin-inline-end:.125rem}.ui5-link-end-icon{margin-inline-start:.125rem;vertical-align:bottom}.ui5-link-text{overflow:hidden;text-overflow:ellipsis}.ui5-link-root:focus-visible,:host([desktop]) .ui5-link-root:focus-within,:host([design="Subtle"]) .ui5-link-root:focus-visible,:host([design="Subtle"][desktop]) .ui5-link-root:focus-within{background-color:var(--_ui5-v2-17-0_link_focus_background_color);outline:var(--_ui5-v2-17-0_link_outline);border-radius:var(--_ui5-v2-17-0_link_focus_border-radius);text-shadow:none;color:var(--_ui5-v2-17-0_link_focus_color)}:host(:not([desktop])) .ui5-link-root:focus-visible,:host([desktop]:focus-within),:host([design="Subtle"][desktop]:focus-within){text-decoration:var(--_ui5-v2-17-0_link_focus_text_decoration)}:host([desktop]:hover:not(:active):focus-within),:host([design="Subtle"][desktop]:hover:not(:active):focus-within){color:var(--_ui5-v2-17-0_link_focused_hover_text_color);text-decoration:var(--_ui5-v2-17-0_link_focused_hover_text_decoration)}:host([interactive-area-size="Large"]) .ui5-link-root{line-height:var(--_ui5-v2-17-0_link_large_interactive_area_height)}:host([interactive-area-size="Large"])::part(icon),:host([interactive-area-size="Large"])::part(endIcon){height:var(--_ui5-v2-17-0_link_large_interactive_area_height)}
 `;
-var __decorate$x = function(decorators, target, key, desc) {
+var __decorate$s = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -14199,58 +15998,58 @@ let Link = Link_1 = class Link2 extends b$6 {
     }
   }
 };
-__decorate$x([
+__decorate$s([
   s$7({ type: Boolean })
 ], Link.prototype, "disabled", void 0);
-__decorate$x([
+__decorate$s([
   s$7()
 ], Link.prototype, "tooltip", void 0);
-__decorate$x([
+__decorate$s([
   s$7()
 ], Link.prototype, "href", void 0);
-__decorate$x([
+__decorate$s([
   s$7()
 ], Link.prototype, "target", void 0);
-__decorate$x([
+__decorate$s([
   s$7()
 ], Link.prototype, "design", void 0);
-__decorate$x([
+__decorate$s([
   s$7()
 ], Link.prototype, "interactiveAreaSize", void 0);
-__decorate$x([
+__decorate$s([
   s$7()
 ], Link.prototype, "wrappingType", void 0);
-__decorate$x([
+__decorate$s([
   s$7()
 ], Link.prototype, "accessibleName", void 0);
-__decorate$x([
+__decorate$s([
   s$7()
 ], Link.prototype, "accessibleNameRef", void 0);
-__decorate$x([
+__decorate$s([
   s$7()
 ], Link.prototype, "accessibleRole", void 0);
-__decorate$x([
+__decorate$s([
   s$7({ type: Object })
 ], Link.prototype, "accessibilityAttributes", void 0);
-__decorate$x([
+__decorate$s([
   s$7()
 ], Link.prototype, "accessibleDescription", void 0);
-__decorate$x([
+__decorate$s([
   s$7()
 ], Link.prototype, "icon", void 0);
-__decorate$x([
+__decorate$s([
   s$7()
 ], Link.prototype, "endIcon", void 0);
-__decorate$x([
+__decorate$s([
   s$7({ noAttribute: true })
 ], Link.prototype, "_rel", void 0);
-__decorate$x([
+__decorate$s([
   s$7({ noAttribute: true })
 ], Link.prototype, "forcedTabIndex", void 0);
-__decorate$x([
+__decorate$s([
   i$9("@ui5/webcomponents")
 ], Link, "i18nBundle", void 0);
-Link = Link_1 = __decorate$x([
+Link = Link_1 = __decorate$s([
   m$8({
     tag: "ui5-link",
     languageAware: true,
@@ -14272,7 +16071,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const ExpandableTextCss = `:host{display:inline-block;font-family:var(--sapFontFamily);font-size:var(--sapFontSize);color:var(--sapTextColor)}:host([hidden]){display:none}.ui5-exp-text-text{display:inline}.ui5-exp-text-text,.ui5-exp-text-toggle{font-family:inherit;font-size:inherit}.ui5-exp-text-text,.ui5-exp-text-ellipsis{color:inherit}.ui5-exp-text-popover::part(content){padding-inline:1rem}.ui5-exp-text-footer{width:100%;display:flex;align-items:center;justify-content:flex-end}
 `;
-var __decorate$w = function(decorators, target, key, desc) {
+var __decorate$r = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -14350,25 +16149,25 @@ let ExpandableText = ExpandableText_1 = class ExpandableText2 extends b$6 {
     e2.stopPropagation();
   }
 };
-__decorate$w([
+__decorate$r([
   s$7()
 ], ExpandableText.prototype, "text", void 0);
-__decorate$w([
+__decorate$r([
   s$7({ type: Number })
 ], ExpandableText.prototype, "maxCharacters", void 0);
-__decorate$w([
+__decorate$r([
   s$7()
 ], ExpandableText.prototype, "overflowMode", void 0);
-__decorate$w([
+__decorate$r([
   s$7()
 ], ExpandableText.prototype, "emptyIndicatorMode", void 0);
-__decorate$w([
+__decorate$r([
   s$7({ type: Boolean })
 ], ExpandableText.prototype, "_expanded", void 0);
-__decorate$w([
+__decorate$r([
   i$9("@ui5/webcomponents")
 ], ExpandableText, "i18nBundle", void 0);
-ExpandableText = ExpandableText_1 = __decorate$w([
+ExpandableText = ExpandableText_1 = __decorate$r([
   m$8({
     tag: "ui5-expandable-text",
     renderer: y$5,
@@ -14385,1341 +16184,6 @@ const ListItemStandardExpandableTextTemplate$1 = /* @__PURE__ */ Object.freeze(/
   __proto__: null,
   default: ListItemStandardExpandableTextTemplate
 }, Symbol.toStringTag, { value: "Module" }));
-const name$u = "edit";
-const pathData$t = "M475 104q5 7 5 12 0 6-5 11L150 453q-4 4-8 4L32 480l22-110q0-5 4-9L384 36q4-4 11-4t11 4zm-121 99l-46-45L84 381l46 46zm87-88l-46-44-64 64 45 45z";
-const ltr$t = false;
-const collection$t = "SAP-icons-v4";
-const packageName$t = "@ui5/webcomponents-icons";
-y$2(name$u, { pathData: pathData$t, ltr: ltr$t, collection: collection$t, packageName: packageName$t });
-const name$t = "edit";
-const pathData$s = "M505 94q7 7 7 18t-6 17L130 505q-7 7-18 7H26q-11 0-18.5-7.5T0 486v-86q1-10 6-16L382 7q7-7 18-7t18 7zm-55 18l-50-50-50 50 50 50zm-86 86l-50-50L62 400l50 50z";
-const ltr$s = false;
-const collection$s = "SAP-icons-v5";
-const packageName$s = "@ui5/webcomponents-icons";
-y$2(name$t, { pathData: pathData$s, ltr: ltr$s, collection: collection$s, packageName: packageName$s });
-const editIcon = "edit";
-var Highlight;
-(function(Highlight2) {
-  Highlight2["None"] = "None";
-  Highlight2["Positive"] = "Positive";
-  Highlight2["Critical"] = "Critical";
-  Highlight2["Negative"] = "Negative";
-  Highlight2["Information"] = "Information";
-})(Highlight || (Highlight = {}));
-const Highlight$1 = Highlight;
-var ListItemType;
-(function(ListItemType2) {
-  ListItemType2["Inactive"] = "Inactive";
-  ListItemType2["Active"] = "Active";
-  ListItemType2["Detail"] = "Detail";
-  ListItemType2["Navigation"] = "Navigation";
-})(ListItemType || (ListItemType = {}));
-const ListItemType$1 = ListItemType;
-p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
-const styles = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host([navigated]) .ui5-li-root .ui5-li-navigated{width:.1875rem;position:absolute;right:0;top:0;bottom:0;background-color:var(--sapList_SelectionBorderColor)}:host([active][actionable]) .ui5-li-root .ui5-li-icon{color:var(--sapList_Active_TextColor)}:host([active][actionable]) .ui5-li-title,:host([active][actionable]) .ui5-li-desc,:host([active][actionable]) .ui5-li-additional-text{color:var(--sapList_Active_TextColor)}:host([active][actionable]) .ui5-li-additional-text{text-shadow:none}:host([additional-text-state="Critical"]) .ui5-li-additional-text{color:var(--sapCriticalTextColor)}:host([additional-text-state="Positive"]) .ui5-li-additional-text{color:var(--sapPositiveTextColor)}:host([additional-text-state="Negative"]) .ui5-li-additional-text{color:var(--sapNegativeTextColor)}:host([additional-text-state="Information"]) .ui5-li-additional-text{color:var(--sapInformativeTextColor)}:host([has-title][description]){height:5rem}:host([has-title][image]){height:5rem}:host([_has-image]){height:5rem}:host([image]) .ui5-li-content{height:3rem}::slotted(img[slot="image"]){width:var(--_ui5-v2-17-0_list_item_img_size);height:var(--_ui5-v2-17-0_list_item_img_size);border-radius:var(--ui5-v2-17-0-avatar-border-radius);object-fit:contain}::slotted([ui5-icon][slot="image"]){color:var(--sapContent_NonInteractiveIconColor);min-width:var(--_ui5-v2-17-0_list_item_icon_size);min-height:var(--_ui5-v2-17-0_list_item_icon_size);padding-inline-end:var(--_ui5-v2-17-0_list_item_icon_padding-inline-end)}::slotted([ui5-avatar][slot="image"]){min-width:var(--_ui5-v2-17-0_list_item_img_size);min-height:var(--_ui5-v2-17-0_list_item_img_size);margin-top:var(--_ui5-v2-17-0_list_item_img_top_margin);margin-bottom:var(--_ui5-v2-17-0_list_item_img_bottom_margin);margin-inline-end:var(--_ui5-v2-17-0_list_item_img_hn_margin)}:host([wrapping-type="None"][description]) .ui5-li-root{padding:1rem}:host([description]) .ui5-li-content{height:3rem}:host([has-title][description]) .ui5-li-title{padding-bottom:.5rem}.ui5-li-text-wrapper{flex-direction:column}:host([description]) .ui5-li-text-wrapper{justify-content:space-between;padding:.125rem 0}.ui5-li-description-info-wrapper{display:flex;justify-content:space-between}.ui5-li-additional-text,:host(:not([wrapping-type="Normal"])) .ui5-li-title,.ui5-li-desc{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}:host([wrapping-type="Normal"]){height:auto}:host([wrapping-type="Normal"]) .ui5-li-content{margin:var(--_ui5-v2-17-0_list_item_content_vertical_offset) 0}.ui5-li-desc{color:var(--sapContent_LabelColor);font-size:var(--sapFontSize)}:host([description]) .ui5-li-additional-text{align-self:flex-end}.ui5-li-icon{min-width:var(--_ui5-v2-17-0_list_item_icon_size);min-height:var(--_ui5-v2-17-0_list_item_icon_size);color:var(--sapContent_NonInteractiveIconColor);padding-inline-end:var(--_ui5-v2-17-0_list_item_icon_padding-inline-end)}:host([icon-end]) .ui5-li-icon{padding-inline-start:var(--_ui5-v2-17-0_list_item_icon_padding-inline-end)}.ui5-li-detailbtn,.ui5-li-deletebtn{display:flex;align-items:center;margin-left:var(--_ui5-v2-17-0_list_buttons_left_space)}.ui5-li-multisel-cb,.ui5-li-singlesel-radiobtn{flex-shrink:0}:host([description]) .ui5-li-singlesel-radiobtn{align-self:flex-start;margin-top:var(--_ui5-v2-17-0_list_item_selection_btn_margin_top)}:host([description]) .ui5-li-multisel-cb{align-self:flex-start;margin-top:var(--_ui5-v2-17-0_list_item_selection_btn_margin_top)}:host([_selection-mode="SingleStart"][wrapping-type]) .ui5-li-root{padding-inline:0 1rem}:host([_selection-mode="Multiple"][wrapping-type]) .ui5-li-root{padding-inline:0 1rem}:host([_selection-mode="SingleEnd"][wrapping-type]) .ui5-li-root{padding-inline:1rem 0}:host [ui5-checkbox].ui5-li-singlesel-radiobtn{margin-right:var(--_ui5-v2-17-0_list_item_cb_margin_right)}.ui5-li-highlight{position:absolute;width:.375rem;bottom:0;left:0;top:0;border-inline-end:.0625rem solid var(--ui5-v2-17-0-listitem-background-color);box-sizing:border-box}:host([highlight="Negative"]) .ui5-li-highlight{background:var(--sapErrorBorderColor)}:host([highlight="Critical"]) .ui5-li-highlight{background:var(--sapWarningBorderColor)}:host([highlight="Positive"]) .ui5-li-highlight{background:var(--sapSuccessBorderColor)}:host([highlight="Information"]) .ui5-li-highlight{background:var(--sapInformationBorderColor)}:host([wrapping-type="Normal"][description]),:host([wrapping-type="Normal"][has-title][description]),:host([wrapping-type="Normal"][has-title][image]){height:auto;min-height:5rem}:host([wrapping-type="Normal"][description]) .ui5-li-content,:host([wrapping-type="Normal"][image]) .ui5-li-content{height:auto;min-height:3rem}:host([wrapping-type="Normal"][has-title][description]) .ui5-li-title{padding-bottom:.75rem}:host([wrapping-type="Normal"][additional-text]) .ui5-li-additional-text{padding-inline-start:.75rem}:host([wrapping-type="Normal"]) .ui5-li-description-info-wrapper{flex-direction:column}:host([wrapping-type="Normal"]) .ui5-li-description-info-wrapper .ui5-li-additional-text{white-space:normal}:host([wrapping-type="Normal"]) .ui5-li-multisel-cb,:host([wrapping-type="Normal"]) .ui5-li-singlesel-radiobtn{display:flex;align-self:flex-start}:host([wrapping-type="Normal"][description]) .ui5-li-multisel-cb,:host([wrapping-type="Normal"][description]) .ui5-li-singlesel-radiobtn{margin-top:0}:host([wrapping-type="Normal"]) .ui5-li-icon,:host([wrapping-type="Normal"]) .ui5-li-image{display:flex;align-self:flex-start}:host([wrapping-type="Normal"][icon-end]) .ui5-li-icon{margin-top:var(--_ui5-v2-17-0_list_item_content_vertical_offset)}:host([wrapping-type="Normal"]) ::slotted([ui5-avatar][slot="image"]){margin-top:0;margin-bottom:0}:host([wrapping-type="Normal"]) .ui5-li-detailbtn,:host([wrapping-type="Normal"]) .ui5-li-deletebtn{margin-inline-start:.875rem}
-`;
-const name$s = "slim-arrow-right";
-const pathData$r = "M357.5 233q10 10 10 23t-10 23l-165 165q-12 11-23 0t0-23l160-159q6-6 0-12l-159-159q-5-5-5-11t5-11 11-5 11 5z";
-const ltr$r = false;
-const collection$r = "SAP-icons-v4";
-const packageName$r = "@ui5/webcomponents-icons";
-y$2(name$s, { pathData: pathData$r, ltr: ltr$r, collection: collection$r, packageName: packageName$r });
-const name$r = "slim-arrow-right";
-const pathData$q = "M186 416q-11 0-18.5-7.5T160 390q0-10 8-18l121-116-121-116q-8-8-8-18 0-11 7.5-18.5T186 96q10 0 17 7l141 134q8 8 8 19 0 12-8 18L203 409q-7 7-17 7z";
-const ltr$q = false;
-const collection$q = "SAP-icons-v5";
-const packageName$q = "@ui5/webcomponents-icons";
-y$2(name$r, { pathData: pathData$q, ltr: ltr$q, collection: collection$q, packageName: packageName$q });
-const slimArrowRightIcon = "slim-arrow-right";
-var __decorate$v = function(decorators, target, key, desc) {
-  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
-  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
-  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
-};
-var ListItem_1;
-let ListItem = ListItem_1 = class ListItem2 extends ListItemBase$1 {
-  constructor() {
-    super();
-    this.type = "Active";
-    this.accessibilityAttributes = {};
-    this.navigated = false;
-    this.active = false;
-    this.highlight = "None";
-    this.accessibleRole = "ListItem";
-    this._selectionMode = "None";
-    this.mediaRange = "S";
-    this.deactivateByKey = (e2) => {
-      if (b$5(e2)) {
-        this.deactivate();
-      }
-    };
-    this.deactivate = () => {
-      if (this.active) {
-        this.active = false;
-      }
-    };
-  }
-  onBeforeRendering() {
-    super.onBeforeRendering();
-    this.actionable = (this.type === ListItemType$1.Active || this.type === ListItemType$1.Navigation) && this._selectionMode !== ListSelectionMode.Delete;
-  }
-  onEnterDOM() {
-    super.onEnterDOM();
-    document.addEventListener("mouseup", this.deactivate);
-    document.addEventListener("touchend", this.deactivate);
-    document.addEventListener("keyup", this.deactivateByKey);
-  }
-  onExitDOM() {
-    document.removeEventListener("mouseup", this.deactivate);
-    document.removeEventListener("keyup", this.deactivateByKey);
-    document.removeEventListener("touchend", this.deactivate);
-  }
-  async _onkeydown(e2) {
-    if ((A$4(e2) || b$5(e2)) && this._isTargetSelfFocusDomRef(e2)) {
-      return;
-    }
-    super._onkeydown(e2);
-    const itemActive = this.type === ListItemType$1.Active, itemNavigated = this.typeNavigation;
-    if ((A$4(e2) || b$5(e2)) && (itemActive || itemNavigated)) {
-      this.activate();
-    }
-    if (ro(e2)) {
-      const activeElement = t$4();
-      const focusDomRef = this.getFocusDomRef();
-      if (activeElement === focusDomRef) {
-        const firstFocusable = await b$1(focusDomRef);
-        firstFocusable == null ? void 0 : firstFocusable.focus();
-      } else {
-        focusDomRef.focus();
-      }
-    }
-  }
-  _onkeyup(e2) {
-    super._onkeyup(e2);
-    if (A$4(e2) || b$5(e2)) {
-      this.deactivate();
-    }
-    if (this.modeDelete && X(e2)) {
-      this.onDelete();
-    }
-  }
-  _onmousedown() {
-    this.activate();
-  }
-  _onmouseup() {
-    if (this.getFocusDomRef().matches(":has(:focus-within)")) {
-      return;
-    }
-    this.deactivate();
-  }
-  _ontouchend() {
-    this._onmouseup();
-  }
-  _onfocusin(e2) {
-    super._onfocusin(e2);
-    if (e2.target !== this.getFocusDomRef()) {
-      this.deactivate();
-    }
-  }
-  _onfocusout(e2) {
-    if (e2.target !== this.getFocusDomRef()) {
-      return;
-    }
-    this.deactivate();
-  }
-  _ondragstart(e2) {
-    if (!e2.dataTransfer) {
-      return;
-    }
-    if (e2.target === this._listItem) {
-      D.setDraggedElement(this);
-      this.setAttribute("data-moving", "");
-      e2.dataTransfer.dropEffect = "move";
-      e2.dataTransfer.effectAllowed = "move";
-    }
-  }
-  _ondragend(e2) {
-    if (e2.target === this._listItem) {
-      D.clearDraggedElement();
-      this.removeAttribute("data-moving");
-    }
-  }
-  _isTargetSelfFocusDomRef(e2) {
-    const target = e2.target, focusDomRef = this.getFocusDomRef();
-    return target !== focusDomRef;
-  }
-  /**
-   * Called when selection components in Single (ui5-radio-button)
-   * and Multi (ui5-checkbox) selection modes are used.
-   */
-  onMultiSelectionComponentPress(e2) {
-    if (this.isInactive) {
-      return;
-    }
-    this.fireDecoratorEvent("selection-requested", { item: this, selected: e2.target.checked, selectionComponentPressed: true });
-  }
-  onSingleSelectionComponentPress(e2) {
-    if (this.isInactive) {
-      return;
-    }
-    this.fireDecoratorEvent("selection-requested", { item: this, selected: !e2.target.checked, selectionComponentPressed: true });
-  }
-  activate() {
-    if (this.type === ListItemType$1.Active || this.type === ListItemType$1.Navigation) {
-      this.active = true;
-    }
-  }
-  onDelete() {
-    this.fireDecoratorEvent("selection-requested", { item: this, selectionComponentPressed: false });
-  }
-  onDetailClick() {
-    this.fireDecoratorEvent("detail-click", { item: this, selected: this.selected });
-  }
-  fireItemPress(e2) {
-    if (this.isInactive) {
-      return;
-    }
-    super.fireItemPress(e2);
-    if (document.activeElement !== this) {
-      this.focus();
-    }
-  }
-  get isInactive() {
-    return this.type === ListItemType$1.Inactive || this.type === ListItemType$1.Detail;
-  }
-  get placeSelectionElementBefore() {
-    return this._selectionMode === ListSelectionMode.Multiple || this._selectionMode === ListSelectionMode.SingleStart;
-  }
-  get placeSelectionElementAfter() {
-    return !this.placeSelectionElementBefore && (this._selectionMode === ListSelectionMode.SingleEnd || this._selectionMode === ListSelectionMode.Delete);
-  }
-  get modeSingleSelect() {
-    return [
-      ListSelectionMode.SingleStart,
-      ListSelectionMode.SingleEnd,
-      ListSelectionMode.Single
-    ].includes(this._selectionMode);
-  }
-  get modeMultiple() {
-    return this._selectionMode === ListSelectionMode.Multiple;
-  }
-  get modeDelete() {
-    return this._selectionMode === ListSelectionMode.Delete;
-  }
-  get typeDetail() {
-    return this.type === ListItemType$1.Detail;
-  }
-  get typeNavigation() {
-    return this.type === ListItemType$1.Navigation;
-  }
-  get typeActive() {
-    return this.type === ListItemType$1.Active;
-  }
-  get _ariaSelected() {
-    if (this.modeMultiple || this.modeSingleSelect) {
-      return this.selected;
-    }
-    return void 0;
-  }
-  get listItemAccessibleRole() {
-    return this._forcedAccessibleRole || this.accessibleRole.toLowerCase();
-  }
-  get ariaSelectedText() {
-    let ariaSelectedText;
-    if (this._ariaSelected !== void 0) {
-      ariaSelectedText = this._ariaSelected ? ListItem_1.i18nBundle.getText(LIST_ITEM_SELECTED) : ListItem_1.i18nBundle.getText(LIST_ITEM_NOT_SELECTED);
-    }
-    return ariaSelectedText;
-  }
-  get deleteText() {
-    return ListItem_1.i18nBundle.getText(DELETE);
-  }
-  get hasDeleteButtonSlot() {
-    return !!this.deleteButton.length;
-  }
-  get _accessibleNameRef() {
-    if (this.accessibleName) {
-      return `${this._id}-invisibleText`;
-    }
-    return `${this._id}-content ${this._id}-invisibleText`;
-  }
-  get ariaLabelledByText() {
-    const texts = [
-      this._accInfo.listItemAriaLabel,
-      this.accessibleName,
-      this.typeActive ? ListItem_1.i18nBundle.getText(LIST_ITEM_ACTIVE) : void 0
-    ].filter(Boolean);
-    return texts.join(" ");
-  }
-  get _accInfo() {
-    return {
-      role: this.listItemAccessibleRole,
-      ariaExpanded: void 0,
-      ariaLevel: void 0,
-      ariaLabel: ListItem_1.i18nBundle.getText(ARIA_LABEL_LIST_ITEM_CHECKBOX),
-      ariaLabelRadioButton: ListItem_1.i18nBundle.getText(ARIA_LABEL_LIST_ITEM_RADIO_BUTTON),
-      ariaSelectedText: this.ariaSelectedText,
-      ariaHaspopup: this.accessibilityAttributes.hasPopup,
-      setsize: this.accessibilityAttributes.ariaSetsize,
-      posinset: this.accessibilityAttributes.ariaPosinset,
-      tooltip: this.tooltip
-    };
-  }
-  get _hasHighlightColor() {
-    return this.highlight !== Highlight$1.None;
-  }
-  get hasConfigurableMode() {
-    return true;
-  }
-  get _listItem() {
-    return this.shadowRoot.querySelector("li");
-  }
-};
-__decorate$v([
-  s$7()
-], ListItem.prototype, "type", void 0);
-__decorate$v([
-  s$7({ type: Object })
-], ListItem.prototype, "accessibilityAttributes", void 0);
-__decorate$v([
-  s$7({ type: Boolean })
-], ListItem.prototype, "navigated", void 0);
-__decorate$v([
-  s$7()
-], ListItem.prototype, "tooltip", void 0);
-__decorate$v([
-  s$7({ type: Boolean })
-], ListItem.prototype, "active", void 0);
-__decorate$v([
-  s$7()
-], ListItem.prototype, "highlight", void 0);
-__decorate$v([
-  s$7({ type: Boolean })
-], ListItem.prototype, "selected", void 0);
-__decorate$v([
-  s$7()
-], ListItem.prototype, "accessibleRole", void 0);
-__decorate$v([
-  s$7()
-], ListItem.prototype, "_forcedAccessibleRole", void 0);
-__decorate$v([
-  s$7()
-], ListItem.prototype, "_selectionMode", void 0);
-__decorate$v([
-  s$7()
-], ListItem.prototype, "mediaRange", void 0);
-__decorate$v([
-  d$8()
-], ListItem.prototype, "deleteButton", void 0);
-__decorate$v([
-  i$9("@ui5/webcomponents")
-], ListItem, "i18nBundle", void 0);
-ListItem = ListItem_1 = __decorate$v([
-  m$8({
-    languageAware: true,
-    renderer: y$5,
-    styles: [
-      ListItemBase$1.styles,
-      listItemAdditionalTextCss,
-      styles
-    ]
-  }),
-  l$d("detail-click", {
-    bubbles: true
-  }),
-  l$d("selection-requested", {
-    bubbles: true
-  })
-], ListItem);
-const ListItem$1 = ListItem;
-class RadioButtonGroup {
-  static hasGroup(groupName) {
-    return this.groups.has(groupName);
-  }
-  static getGroup(groupName) {
-    return this.groups.get(groupName);
-  }
-  static getCheckedRadioFromGroup(groupName) {
-    return this.checkedRadios.get(groupName);
-  }
-  static removeGroup(groupName) {
-    this.checkedRadios.delete(groupName);
-    return this.groups.delete(groupName);
-  }
-  static addToGroup(radioBtn, groupName) {
-    if (this.hasGroup(groupName)) {
-      this.enforceSingleSelection(radioBtn, groupName);
-      if (this.getGroup(groupName)) {
-        this.getGroup(groupName).push(radioBtn);
-      }
-    } else {
-      this.createGroup(radioBtn, groupName);
-    }
-    this.updateTabOrder(groupName);
-  }
-  static removeFromGroup(radioBtn, groupName) {
-    const group = this.getGroup(groupName);
-    if (!group) {
-      return;
-    }
-    const checkedRadio = this.getCheckedRadioFromGroup(groupName);
-    group.forEach((_radioBtn, idx, arr) => {
-      if (radioBtn._id === _radioBtn._id) {
-        return arr.splice(idx, 1);
-      }
-    });
-    if (checkedRadio === radioBtn) {
-      this.checkedRadios.set(groupName, null);
-    }
-    if (!group.length) {
-      this.removeGroup(groupName);
-    }
-    this.updateTabOrder(groupName);
-  }
-  static createGroup(radioBtn, groupName) {
-    if (radioBtn.checked) {
-      this.checkedRadios.set(groupName, radioBtn);
-    }
-    this.groups.set(groupName, [radioBtn]);
-  }
-  static selectNextItem(item, groupName) {
-    const group = this.getGroup(groupName);
-    if (!group) {
-      return;
-    }
-    const groupLength = group.length, currentItemPosition = group.indexOf(item);
-    if (groupLength <= 1) {
-      return;
-    }
-    const nextItemToFocus = this._nextFocusable(currentItemPosition, group);
-    if (!nextItemToFocus) {
-      return;
-    }
-    this.updateSelectionInGroup(nextItemToFocus, groupName);
-  }
-  static updateFormValidity(groupName) {
-    const group = this.getGroup(groupName);
-    if (!group) {
-      return;
-    }
-    const hasRequired = group.some((r3) => r3.required);
-    const hasChecked = group.some((r3) => r3.checked);
-    group.forEach((r3) => {
-      r3._groupChecked = hasChecked;
-      r3._groupRequired = hasRequired;
-    });
-  }
-  static updateTabOrder(groupName) {
-    const group = this.getGroup(groupName);
-    if (!group) {
-      return;
-    }
-    const hasCheckedRadio = group.some((radioBtn) => radioBtn.checked);
-    group.filter((radioBtn) => !radioBtn.disabled).forEach((radioBtn, idx) => {
-      let activeElement = t$4();
-      if (activeElement == null ? void 0 : activeElement.classList.contains("ui5-radio-root")) {
-        activeElement = activeElement.getRootNode();
-        if (activeElement instanceof ShadowRoot) {
-          activeElement = activeElement.host;
-        }
-      }
-      if (hasCheckedRadio) {
-        if ((activeElement == null ? void 0 : activeElement.hasAttribute("ui5-radio-button")) && activeElement.readonly) {
-          radioBtn._tabIndex = activeElement === radioBtn && radioBtn.readonly ? 0 : -1;
-        } else {
-          radioBtn._tabIndex = radioBtn.checked ? 0 : -1;
-        }
-      } else {
-        radioBtn._tabIndex = idx === 0 ? 0 : -1;
-      }
-    });
-  }
-  static selectPreviousItem(item, groupName) {
-    const group = this.getGroup(groupName);
-    if (!group) {
-      return;
-    }
-    const groupLength = group.length, currentItemPosition = group.indexOf(item);
-    if (groupLength <= 1) {
-      return;
-    }
-    const previousItemToFocus = this._previousFocusable(currentItemPosition, group);
-    if (!previousItemToFocus) {
-      return;
-    }
-    this.updateSelectionInGroup(previousItemToFocus, groupName);
-  }
-  static selectItem(item, groupName) {
-    this.updateSelectionInGroup(item, groupName);
-    this.updateTabOrder(groupName);
-    this.updateFormValidity(groupName);
-  }
-  static updateSelectionInGroup(radioBtnToSelect, groupName) {
-    const checkedRadio = this.getCheckedRadioFromGroup(groupName);
-    if (checkedRadio && !radioBtnToSelect.readonly) {
-      this._deselectRadio(checkedRadio);
-      this.checkedRadios.set(groupName, radioBtnToSelect);
-    }
-    if (radioBtnToSelect) {
-      radioBtnToSelect.focus();
-      if (!radioBtnToSelect.readonly) {
-        this._selectRadio(radioBtnToSelect);
-      } else {
-        setTimeout(() => {
-          this.updateTabOrder(groupName);
-        }, 0);
-      }
-    }
-  }
-  static _deselectRadio(radioBtn) {
-    if (radioBtn) {
-      radioBtn.checked = false;
-    }
-  }
-  static _selectRadio(radioBtn) {
-    radioBtn.checked = true;
-    radioBtn._checked = true;
-    radioBtn.fireDecoratorEvent("change");
-  }
-  static _nextFocusable(pos, group) {
-    if (!group) {
-      return null;
-    }
-    const groupLength = group.length;
-    let nextRadioToFocus = null;
-    if (pos === groupLength - 1) {
-      if (group[0].disabled) {
-        return this._nextFocusable(1, group);
-      }
-      nextRadioToFocus = group[0];
-    } else if (group[pos + 1].disabled) {
-      return this._nextFocusable(pos + 1, group);
-    } else {
-      nextRadioToFocus = group[pos + 1];
-    }
-    return nextRadioToFocus;
-  }
-  static _previousFocusable(pos, group) {
-    const groupLength = group.length;
-    let previousRadioToFocus = null;
-    if (pos === 0) {
-      if (group[groupLength - 1].disabled) {
-        return this._previousFocusable(groupLength - 1, group);
-      }
-      previousRadioToFocus = group[groupLength - 1];
-    } else if (group[pos - 1].disabled) {
-      return this._previousFocusable(pos - 1, group);
-    } else {
-      previousRadioToFocus = group[pos - 1];
-    }
-    return previousRadioToFocus;
-  }
-  static enforceSingleSelection(radioBtn, groupName) {
-    const checkedRadio = this.getCheckedRadioFromGroup(groupName);
-    if (radioBtn.checked) {
-      if (!checkedRadio) {
-        this.checkedRadios.set(groupName, radioBtn);
-      } else if (radioBtn !== checkedRadio) {
-        this._deselectRadio(checkedRadio);
-        this.checkedRadios.set(groupName, radioBtn);
-      }
-    } else if (radioBtn === checkedRadio) {
-      this.checkedRadios.set(groupName, null);
-    }
-    this.updateTabOrder(groupName);
-    this.updateFormValidity(groupName);
-  }
-  static get groups() {
-    if (!this._groups) {
-      this._groups = /* @__PURE__ */ new Map();
-    }
-    return this._groups;
-  }
-  static get checkedRadios() {
-    if (!this._checkedRadios) {
-      this._checkedRadios = /* @__PURE__ */ new Map();
-    }
-    return this._checkedRadios;
-  }
-}
-function RadioButtonTemplate() {
-  return jsxs("div", { role: "radio", class: "ui5-radio-root", "aria-checked": this.checked, "aria-disabled": this.effectiveAriaDisabled, "aria-describedby": this.effectiveAriaDescribedBy, "aria-label": this.ariaLabelText, tabindex: this.effectiveTabIndex, onClick: this._onclick, onKeyDown: this._onkeydown, onKeyUp: this._onkeyup, onMouseDown: this._onmousedown, onMouseUp: this._onmouseup, onFocusOut: this._onfocusout, children: [jsxs("div", { class: {
-    "ui5-radio-inner": true,
-    "ui5-radio-inner--hoverable": !this.disabled && !this.readonly && f$g()
-  }, children: [jsxs("svg", { class: "ui5-radio-svg", focusable: "false", "aria-hidden": "true", children: [jsx("circle", { part: "outer-ring", class: "ui5-radio-svg-outer", cx: "50%", cy: "50%", r: "50%" }), jsx("circle", { part: "inner-ring", class: "ui5-radio-svg-inner", cx: "50%", cy: "50%" })] }), jsx("input", { type: "radio", required: this.required, checked: this.checked, readonly: this.readonly, disabled: this.disabled, name: this.name, "data-sap-no-tab-ref": true })] }), this.text && jsx(Label$1, { id: `${this._id}-label`, class: "ui5-radio-label", for: this._id, wrappingType: this.wrappingType, children: this.text }), this.hasValueState && jsx("span", { id: `${this._id}-descr`, class: "ui5-hidden-text", children: this.valueStateText })] });
-}
-p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
-const radioButtonCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:inline-block}:host{min-width:var(--_ui5-v2-17-0_radio_button_min_width);max-width:100%;text-overflow:ellipsis;overflow:hidden;color:var(--_ui5-v2-17-0_radio_button_color);border-radius:var(--_ui5-v2-17-0_radio_button_border_radius)}:host(:not([disabled])) .ui5-radio-root{cursor:pointer}:host([checked]){color:var(--_ui5-v2-17-0_radio_button_checked_fill)}:host([checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_inner_ring_color)}:host([checked]) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_color)}:host([disabled]) .ui5-radio-root{color:var(--_ui5-v2-17-0_radio_button_color);opacity:var(--sapContent_DisabledOpacity)}:host([disabled][checked]) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_color)}:host(:not([disabled])[desktop]) .ui5-radio-root:focus:before,:host(:not([disabled])) .ui5-radio-root:focus-visible:before{content:"";display:var(--_ui5-v2-17-0_radio_button_focus_outline);position:absolute;inset:var(--_ui5-v2-17-0_radio_button_focus_dist);pointer-events:none;border:var(--_ui5-v2-17-0_radio_button_border_width) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);border-radius:var(--_ui5-v2-17-0_radio_button_border_radius)}:host(:not([value-state="Negative"]):not([value-state="Critical"]):not([value-state="Positive"]):not([value-state="Information"])) .ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_hover_color)}:host(:not([value-state="Negative"]):not([value-state="Critical"]):not([value-state="Positive"]):not([value-state="Information"])[checked]) .ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_checked_hover_color)}.ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer,:host([checked]) .ui5-radio-root:hover .ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill)}:host([active][checked]:not([value-state]):not([disabled]):not([readonly])) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_checked_hover_color)}:host([active]:not([checked]):not([value-state]):not([disabled]):not([readonly])) .ui5-radio-svg-outer{stroke:var(--_ui5-v2-17-0_radio_button_outer_ring_active_color)}:host([text]) .ui5-radio-root{padding-inline-end:var(--_ui5-v2-17-0_radio_button_border_width)}:host([text][desktop]) .ui5-radio-root:focus:before,:host([text]) .ui5-radio-root:focus-visible:before{inset-inline-end:0px}:host([text]) .ui5-radio-inner{padding:var(--_ui5-v2-17-0_radio_button_outer_ring_padding_with_label)}:host([checked][readonly]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_read_only_inner_ring_color)}:host([readonly]) .ui5-radio-root .ui5-radio-svg-outer{fill:var(--sapField_ReadOnly_Background);stroke:var(--sapField_ReadOnly_BorderColor);stroke-dasharray:var(--_ui5-v2-17-0_radio_button_read_only_border_type);stroke-width:var(--_ui5-v2-17-0_radio_button_read_only_border_width)}:host([value-state="Negative"]) .ui5-radio-svg-outer,:host([value-state="Critical"]) .ui5-radio-svg-outer{stroke-width:var(--sapField_InvalidBorderWidth)}:host([value-state="Information"]) .ui5-radio-svg-outer{stroke-width:var(--_ui5-v2-17-0_radio_button_information_border_width)}:host([value-state="Negative"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_error_fill)}:host([value-state="Negative"]) .ui5-radio-svg-outer,:host([value-state="Negative"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_InvalidColor);fill:var(--sapField_InvalidBackground)}:host([value-state="Negative"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_error)}:host([value-state="Critical"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_warning_fill)}:host([value-state="Critical"]) .ui5-radio-svg-outer,:host([value-state="Critical"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_WarningColor);fill:var(--sapField_WarningBackground)}:host([value-state="Critical"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_warning)}:host([value-state="Positive"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_success_fill)}:host([value-state="Positive"]) .ui5-radio-svg-outer,:host([value-state="Positive"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_SuccessColor);fill:var(--sapField_SuccessBackground)}:host([value-state="Positive"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_success)}:host([value-state="Information"][checked]) .ui5-radio-svg-inner{fill:var(--_ui5-v2-17-0_radio_button_checked_information_fill)}:host([value-state="Information"]) .ui5-radio-svg-outer,:host([value-state="Information"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable:hover .ui5-radio-svg-outer{stroke:var(--sapField_InformationColor);fill:var(--sapField_InformationBackground)}:host([value-state="Information"]) .ui5-radio-root:hover .ui5-radio-inner.ui5-radio-inner--hoverable .ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_hover_fill_information)}:host([value-state="Negative"]) .ui5-radio-root,:host([value-state="Critical"]) .ui5-radio-root,:host([value-state="Information"]) .ui5-radio-root{stroke-dasharray:var(--_ui5-v2-17-0_radio_button_warning_error_border_dash)}.ui5-radio-root{height:auto;position:relative;display:inline-flex;flex-wrap:nowrap;outline:none;max-width:100%;box-sizing:border-box;border:var(--_ui5-v2-17-0_radio_button_border);border-radius:var(--_ui5-v2-17-0_radio_button_border_radius)}.ui5-radio-inner{display:flex;align-items:center;padding:var(--_ui5-v2-17-0_radio_button_outer_ring_padding);flex-shrink:0;height:var(--_ui5-v2-17-0_radio_button_inner_size);font-size:1rem;pointer-events:none;vertical-align:top}.ui5-radio-inner{outline:none}.ui5-radio-inner input{-webkit-appearance:none;visibility:hidden;width:0;left:0;position:absolute;font-size:inherit;margin:0}[ui5-label].ui5-radio-label{display:flex;align-items:center;padding-inline-end:var(--_ui5-v2-17-0_radio_button_label_offset);padding-block:var(--_ui5-v2-17-0_radio_button_label_side_padding);vertical-align:top;max-width:100%;pointer-events:none;color:var(--_ui5-v2-17-0_radio_button_label_color);overflow-wrap:break-word}:host([wrapping-type="None"][text]) .ui5-radio-root{height:var(--_ui5-v2-17-0_radio_button_height)}:host([wrapping-type="None"][text]) [ui5-label].ui5-radio-label{text-overflow:ellipsis;overflow:hidden}.ui5-radio-svg{height:var(--_ui5-v2-17-0_radio_button_svg_size);width:var(--_ui5-v2-17-0_radio_button_svg_size);overflow:visible;pointer-events:none}.ui5-radio-svg-outer{fill:var(--_ui5-v2-17-0_radio_button_outer_ring_bg);stroke:currentColor;stroke-width:var(--_ui5-v2-17-0_radio_button_outer_ring_width)}.ui5-radio-svg-inner{fill:none;r:var(--_ui5-v2-17-0_radio_button_inner_ring_radius)}.ui5-radio-svg-outer,.ui5-radio-svg-inner{flex-shrink:0}:host(.ui5-li-singlesel-radiobtn) .ui5-radio-root .ui5-radio-inner .ui5-radio-svg-outer{fill:var(--sapList_Background)}
-`;
-var __decorate$u = function(decorators, target, key, desc) {
-  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
-  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
-  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
-};
-var RadioButton_1;
-let isGlobalHandlerAttached$1 = false;
-let activeRadio;
-let RadioButton = RadioButton_1 = class RadioButton2 extends b$6 {
-  get formValidityMessage() {
-    return RadioButton_1.i18nBundle.getText(FORM_SELECTABLE_REQUIRED2);
-  }
-  get formValidity() {
-    return { valueMissing: this._groupRequired && !this._groupChecked };
-  }
-  async formElementAnchor() {
-    return this.getFocusDomRefAsync();
-  }
-  get formFormattedValue() {
-    return this.checked ? this.value || "on" : null;
-  }
-  constructor() {
-    super();
-    this.disabled = false;
-    this.readonly = false;
-    this.required = false;
-    this.checked = false;
-    this.valueState = "None";
-    this.value = "";
-    this.wrappingType = "Normal";
-    this.active = false;
-    this._groupChecked = false;
-    this._groupRequired = false;
-    this._name = "";
-    this._checked = false;
-    this._deactivate = () => {
-      if (activeRadio) {
-        activeRadio.active = false;
-      }
-    };
-    if (!isGlobalHandlerAttached$1) {
-      document.addEventListener("mouseup", this._deactivate);
-      isGlobalHandlerAttached$1 = true;
-    }
-  }
-  onAfterRendering() {
-    this.syncGroup();
-  }
-  onEnterDOM() {
-    if (f$g()) {
-      this.setAttribute("desktop", "");
-    }
-  }
-  onExitDOM() {
-    this.syncGroup(true);
-  }
-  syncGroup(forceRemove) {
-    const oldGroup = this._name;
-    const currentGroup = this.name;
-    const oldChecked = this._checked;
-    const currentChecked = this.checked;
-    if (forceRemove) {
-      RadioButtonGroup.removeFromGroup(this, oldGroup);
-    }
-    if (currentGroup !== oldGroup) {
-      if (oldGroup) {
-        RadioButtonGroup.removeFromGroup(this, oldGroup);
-      }
-      if (currentGroup) {
-        RadioButtonGroup.addToGroup(this, currentGroup);
-      }
-    } else if (currentGroup && this.isConnected) {
-      RadioButtonGroup.enforceSingleSelection(this, currentGroup);
-    }
-    if (this.name && currentChecked !== oldChecked) {
-      RadioButtonGroup.updateTabOrder(this.name);
-    }
-    this._name = this.name || "";
-    this._checked = this.checked;
-  }
-  _onclick() {
-    return this.toggle();
-  }
-  _handleDown(e2) {
-    const currentGroup = this.name;
-    if (!currentGroup) {
-      return;
-    }
-    e2.preventDefault();
-    RadioButtonGroup.selectNextItem(this, currentGroup);
-  }
-  _handleUp(e2) {
-    const currentGroup = this.name;
-    if (!currentGroup) {
-      return;
-    }
-    e2.preventDefault();
-    RadioButtonGroup.selectPreviousItem(this, currentGroup);
-  }
-  _onkeydown(e2) {
-    if (A$4(e2)) {
-      this.active = true;
-      return e2.preventDefault();
-    }
-    if (b$5(e2)) {
-      this.active = true;
-      return this.toggle();
-    }
-    const isRTL = this.effectiveDir === "rtl";
-    if (_$1(e2) || !isRTL && R$1(e2) || isRTL && D$2(e2)) {
-      this._handleDown(e2);
-    }
-    if (P$2(e2) || !isRTL && D$2(e2) || isRTL && R$1(e2)) {
-      this._handleUp(e2);
-    }
-  }
-  _onkeyup(e2) {
-    if (A$4(e2)) {
-      this.toggle();
-    }
-    this.active = false;
-  }
-  _onmousedown() {
-    this.active = true;
-    activeRadio = this;
-  }
-  _onmouseup() {
-    this.active = false;
-  }
-  _onfocusout() {
-    this.active = false;
-  }
-  toggle() {
-    if (!this.canToggle()) {
-      return this;
-    }
-    if (!this.name) {
-      this.checked = !this.checked;
-      this.fireDecoratorEvent("change");
-      return this;
-    }
-    RadioButtonGroup.selectItem(this, this.name);
-    return this;
-  }
-  canToggle() {
-    return !(this.disabled || this.readonly || this.checked);
-  }
-  get effectiveAriaDisabled() {
-    return this.disabled || this.readonly ? true : void 0;
-  }
-  get ariaLabelText() {
-    return [A$3(this), this.text].filter(Boolean).join(" ");
-  }
-  get effectiveAriaDescribedBy() {
-    return this.hasValueState ? `${this._id}-descr` : void 0;
-  }
-  get hasValueState() {
-    return this.valueState !== o$5.None;
-  }
-  get valueStateText() {
-    switch (this.valueState) {
-      case o$5.Negative:
-        return RadioButton_1.i18nBundle.getText(VALUE_STATE_ERROR);
-      case o$5.Critical:
-        return RadioButton_1.i18nBundle.getText(VALUE_STATE_WARNING);
-      case o$5.Positive:
-        return RadioButton_1.i18nBundle.getText(VALUE_STATE_SUCCESS);
-      case o$5.Information:
-        return RadioButton_1.i18nBundle.getText(VALUE_STATE_INFORMATION);
-      default:
-        return "";
-    }
-  }
-  get effectiveTabIndex() {
-    const tabindex = this.getAttribute("tabindex");
-    if (this.disabled) {
-      return -1;
-    }
-    if (this.name) {
-      return this._tabIndex;
-    }
-    return tabindex ? parseInt(tabindex) : 0;
-  }
-};
-__decorate$u([
-  s$7({ type: Boolean })
-], RadioButton.prototype, "disabled", void 0);
-__decorate$u([
-  s$7({ type: Boolean })
-], RadioButton.prototype, "readonly", void 0);
-__decorate$u([
-  s$7({ type: Boolean })
-], RadioButton.prototype, "required", void 0);
-__decorate$u([
-  s$7({ type: Boolean })
-], RadioButton.prototype, "checked", void 0);
-__decorate$u([
-  s$7()
-], RadioButton.prototype, "text", void 0);
-__decorate$u([
-  s$7()
-], RadioButton.prototype, "valueState", void 0);
-__decorate$u([
-  s$7()
-], RadioButton.prototype, "name", void 0);
-__decorate$u([
-  s$7()
-], RadioButton.prototype, "value", void 0);
-__decorate$u([
-  s$7()
-], RadioButton.prototype, "wrappingType", void 0);
-__decorate$u([
-  s$7()
-], RadioButton.prototype, "accessibleName", void 0);
-__decorate$u([
-  s$7()
-], RadioButton.prototype, "accessibleNameRef", void 0);
-__decorate$u([
-  s$7({ type: Number })
-], RadioButton.prototype, "_tabIndex", void 0);
-__decorate$u([
-  s$7({ type: Boolean })
-], RadioButton.prototype, "active", void 0);
-__decorate$u([
-  s$7({ type: Boolean, noAttribute: true })
-], RadioButton.prototype, "_groupChecked", void 0);
-__decorate$u([
-  s$7({ type: Boolean, noAttribute: true })
-], RadioButton.prototype, "_groupRequired", void 0);
-__decorate$u([
-  i$9("@ui5/webcomponents")
-], RadioButton, "i18nBundle", void 0);
-RadioButton = RadioButton_1 = __decorate$u([
-  m$8({
-    tag: "ui5-radio-button",
-    languageAware: true,
-    formAssociated: true,
-    renderer: y$5,
-    template: RadioButtonTemplate,
-    styles: radioButtonCss
-  }),
-  l$d("change", {
-    bubbles: true
-  })
-], RadioButton);
-RadioButton.define();
-const RadioButton$1 = RadioButton;
-p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
-const checkboxCss = `.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host{-webkit-tap-highlight-color:rgba(0,0,0,0)}:host(:not([hidden])){display:inline-block}:host([required]){vertical-align:middle}:host{overflow:hidden;max-width:100%;outline:none;border-radius:var(--_ui5-v2-17-0_checkbox_border_radius);transition:var(--_ui5-v2-17-0_checkbox_transition);cursor:pointer;user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none}:host([disabled]){cursor:default}:host([disabled]) .ui5-checkbox-root{opacity:var(--_ui5-v2-17-0_checkbox_disabled_opacity)}:host([disabled]) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_disabled_border_color)}:host([disabled]) .ui5-checkbox-label{color:var(--_ui5-v2-17-0_checkbox_disabled_label_color)}:host([readonly]:not([value-state="Critical"]):not([value-state="Negative"])) .ui5-checkbox-inner{background:var(--sapField_ReadOnly_Background);border:var(--_ui5-v2-17-0_checkbox_inner_readonly_border);color:var(--sapField_TextColor)}:host(:not([wrapping-type="None"])[text]) .ui5-checkbox-root{min-height:auto;box-sizing:border-box;align-items:flex-start;padding-top:var(--_ui5-v2-17-0_checkbox_root_side_padding);padding-bottom:var(--_ui5-v2-17-0_checkbox_root_side_padding)}:host(:not([wrapping-type="None"])[text]) .ui5-checkbox-root .ui5-checkbox-label{overflow-wrap:break-word;align-self:center}:host([desktop][text]:not([wrapping-type="None"])) .ui5-checkbox-root:focus:before,.ui5-checkbox-root[text]:focus-visible:before{inset-block:var(--_ui5-v2-17-0_checkbox_wrapped_focus_inset_block)}:host([value-state="Negative"]) .ui5-checkbox-inner,:host([value-state="Negative"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_InvalidBackground);border:var(--_ui5-v2-17-0_checkbox_inner_error_border);color:var(--sapField_InvalidColor)}:host([value-state="Negative"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_error_background_hover)}:host([value-state="Critical"]) .ui5-checkbox-inner,:host([value-state="Critical"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_WarningBackground);border:var(--_ui5-v2-17-0_checkbox_inner_warning_border);color:var(--_ui5-v2-17-0_checkbox_inner_warning_color)}:host([value-state="Critical"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_warning_background_hover)}:host([value-state="Information"]) .ui5-checkbox-inner,:host([value-state="Information"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_InformationBackground);border:var(--_ui5-v2-17-0_checkbox_inner_information_border);color:var(--_ui5-v2-17-0_checkbox_inner_information_color)}:host([value-state="Information"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_information_background_hover)}:host([value-state="Positive"]) .ui5-checkbox-inner,:host([value-state="Positive"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--sapField_SuccessBackground);border:var(--_ui5-v2-17-0_checkbox_inner_success_border);color:var(--sapField_SuccessColor)}:host([value-state="Positive"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_inner_success_background_hover)}:host([value-state="Critical"]) .ui5-checkbox-icon,:host([value-state="Critical"][indeterminate]) .ui5-checkbox-inner:after{color:var(--_ui5-v2-17-0_checkbox_checkmark_warning_color)}.ui5-checkbox-root{position:relative;display:inline-flex;align-items:center;max-width:100%;min-height:var(--_ui5-v2-17-0_checkbox_width_height);min-width:var(--_ui5-v2-17-0_checkbox_width_height);padding:0 var(--_ui5-v2-17-0_checkbox_wrapper_padding);outline:none;transition:var(--_ui5-v2-17-0_checkbox_transition);border:var(--_ui5-v2-17-0_checkbox_default_focus_border);border-radius:var(--_ui5-v2-17-0_checkbox_border_radius);box-sizing:border-box}:host([desktop]) .ui5-checkbox-root:focus:before,.ui5-checkbox-root:focus-visible:before{display:var(--_ui5-v2-17-0_checkbox_focus_outline_display);content:"";position:absolute;inset-inline:var(--_ui5-v2-17-0_checkbox_focus_position);inset-block:var(--_ui5-v2-17-0_checkbox_focus_position);border:var(--_ui5-v2-17-0_checkbox_focus_outline);border-radius:var(--_ui5-v2-17-0_checkbox_focus_border_radius)}:host([text]) .ui5-checkbox-root{padding-inline-end:var(--_ui5-v2-17-0_checkbox_right_focus_distance)}:host([text]) .ui5-checkbox-root:focus:before,:host([text]) .ui5-checkbox-root:focus-visible:before{inset-inline-end:0}:host(:hover:not([disabled])){background:var(--_ui5-v2-17-0_checkbox_outer_hover_background)}.ui5-checkbox--hoverable .ui5-checkbox-label:hover{color:var(--_ui5-v2-17-0_checkbox_label_color)}:host(:not([active]):not([checked]):not([value-state])) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner,:host(:not([active]):not([checked])[value-state="None"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_hover_background);border-color:var(--_ui5-v2-17-0_checkbox_inner_hover_border_color)}:host(:not([active])[checked]:not([value-state])) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner,:host(:not([active])[checked][value-state="None"]) .ui5-checkbox--hoverable:hover .ui5-checkbox-inner{background:var(--_ui5-v2-17-0_checkbox_hover_background);border-color:var(--_ui5-v2-17-0_checkbox_inner_hover_checked_border_color)}:host([checked]:not([value-state])) .ui5-checkbox-inner,:host([checked][value-state="None"]) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_selected_border_color)}:host([active]:not([checked]):not([value-state]):not([disabled])) .ui5-checkbox-inner,:host([active]:not([checked])[value-state="None"]:not([disabled])) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_active_border_color);background-color:var(--_ui5-v2-17-0_checkbox_active_background)}:host([active][checked]:not([value-state]):not([disabled])) .ui5-checkbox-inner,:host([active][checked][value-state="None"]:not([disabled])) .ui5-checkbox-inner{border-color:var(--_ui5-v2-17-0_checkbox_inner_selected_border_color);background-color:var(--_ui5-v2-17-0_checkbox_active_background)}.ui5-checkbox-inner{min-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);height:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-height:var(--_ui5-v2-17-0_checkbox_inner_width_height);border:var(--_ui5-v2-17-0_checkbox_inner_border);border-radius:var(--_ui5-v2-17-0_checkbox_inner_border_radius);background:var(--_ui5-v2-17-0_checkbox_inner_background);color:var(--_ui5-v2-17-0_checkbox_checkmark_color);box-sizing:border-box;position:relative;cursor:inherit}:host([indeterminate][checked]) .ui5-checkbox-inner:after{content:"";background-color:currentColor;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:var(--_ui5-v2-17-0_checkbox_partially_icon_size);height:var(--_ui5-v2-17-0_checkbox_partially_icon_size)}:host input{-webkit-appearance:none;visibility:hidden;width:0;left:0;position:absolute;font-size:inherit}.ui5-checkbox-root .ui5-checkbox-label{margin-inline-start:var(--_ui5-v2-17-0_checkbox_label_offset);cursor:inherit;text-overflow:ellipsis;overflow:hidden;pointer-events:none;color:var(--_ui5-v2-17-0_checkbox_label_color)}.ui5-checkbox-icon{width:var(--_ui5-v2-17-0_checkbox_icon_size);height:var(--_ui5-v2-17-0_checkbox_icon_size);color:currentColor;cursor:inherit;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}:host([display-only]){cursor:default}:host([display-only]) .ui5-checkbox-display-only-icon-inner [ui5-icon]{color:var(--sapTextColor)}:host([display-only]) .ui5-checkbox-display-only-icon-inner{min-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-width:var(--_ui5-v2-17-0_checkbox_inner_width_height);height:var(--_ui5-v2-17-0_checkbox_inner_width_height);max-height:var(--_ui5-v2-17-0_checkbox_inner_width_height);display:flex;align-items:center;justify-content:center}
-`;
-const name$q = "complete";
-const pathData$p = "M431.958 320h32v128q0 14-9.5 23t-22.5 9h-384q-14 0-23-9t-9-23V64q0-13 9-22.5t23-9.5h128v32h-128v384h384V320zm60-295q7 7 2 16l-185 272q-3 6-10 7t-12-4l-125-139q-9-9 0-18l21-21q10-10 19 0l80 80q5 5 11.5 4t9.5-8l146-207q3-6 9.5-7t11.5 4z";
-const ltr$p = true;
-const collection$p = "SAP-icons-v4";
-const packageName$p = "@ui5/webcomponents-icons";
-y$2(name$q, { pathData: pathData$p, ltr: ltr$p, collection: collection$p, packageName: packageName$p });
-const name$p = "complete";
-const pathData$o = "M438 224q11 0 18.5 7.5T464 250v140q0 38-26 64t-64 26H106q-38 0-64-26t-26-64V122q0-38 26-64t64-26h237q11 0 18 7.5t7 18.5-7 18-18 7H106q-16 0-27.5 11.5T67 122v268q0 16 11.5 27.5T106 429h268q16 0 27.5-11.5T413 390V250q0-11 7-18.5t18-7.5zm32-192q11 0 18.5 7.5T496 58q0 10-7 17L257 312q-6 8-18 8-10 0-18-8l-70-71q-7-7-7-18t7.5-18 18.5-7 18 7l51 53L452 40q8-8 18-8z";
-const ltr$o = true;
-const collection$o = "SAP-icons-v5";
-const packageName$o = "@ui5/webcomponents-icons";
-y$2(name$p, { pathData: pathData$o, ltr: ltr$o, collection: collection$o, packageName: packageName$o });
-const complete = "complete";
-const name$o = "border";
-const pathData$n = "M448 32q13 0 22.5 9t9.5 23v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-14 9-23t23-9h384zm0 32H64v384h384V64z";
-const ltr$n = false;
-const collection$n = "SAP-icons-v4";
-const packageName$n = "@ui5/webcomponents-icons";
-y$2(name$o, { pathData: pathData$n, ltr: ltr$n, collection: collection$n, packageName: packageName$n });
-const name$n = "border";
-const pathData$m = "M390 480H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268q38 0 64 26t26 64v268q0 38-26 64t-64 26zM122 83q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122q0-17-11-28t-28-11H122z";
-const ltr$m = false;
-const collection$m = "SAP-icons-v5";
-const packageName$m = "@ui5/webcomponents-icons";
-y$2(name$n, { pathData: pathData$m, ltr: ltr$m, collection: collection$m, packageName: packageName$m });
-const border = "border";
-const name$m = "tri-state";
-const pathData$l = "M448 32q13 0 22.5 9.5T480 64v384q0 14-9.5 23t-22.5 9H64q-14 0-23-9t-9-23V64q0-13 9-22.5T64 32h384zm0 32H64v384h384V64zM160 345V169q0-8 8-8h176q8 0 8 8v176q0 8-8 8H168q-8 0-8-8z";
-const ltr$l = false;
-const collection$l = "SAP-icons-v4";
-const packageName$l = "@ui5/webcomponents-icons";
-y$2(name$m, { pathData: pathData$l, ltr: ltr$l, collection: collection$l, packageName: packageName$l });
-const name$l = "tri-state";
-const pathData$k = "M390 32q38 0 64 26t26 64v268q0 38-26 64t-64 26H122q-38 0-64-26t-26-64V122q0-38 26-64t64-26h268zm39 90q0-17-11-28t-28-11H122q-17 0-28 11t-11 28v268q0 17 11 28t28 11h268q17 0 28-11t11-28V122zm-77 38v192H160V160h192z";
-const ltr$k = false;
-const collection$k = "SAP-icons-v5";
-const packageName$k = "@ui5/webcomponents-icons";
-y$2(name$l, { pathData: pathData$k, ltr: ltr$k, collection: collection$k, packageName: packageName$k });
-const triState = "tri-state";
-function CheckBoxTemplate() {
-  return jsxs("div", { class: {
-    "ui5-checkbox-root": true,
-    "ui5-checkbox--hoverable": !this.disabled && !this.readonly && f$g()
-  }, role: this.accInfo.role, part: "root", "aria-checked": this.accInfo.ariaChecked, "aria-readonly": this.accInfo.ariaReadonly, "aria-disabled": this.accInfo.ariaDisabled, "aria-label": this.ariaLabelText, "aria-labelledby": this.ariaLabelledBy, "aria-describedby": this.ariaDescribedBy, "aria-required": this.accInfo.ariaRequired, tabindex: this.accInfo.tabindex, onMouseDown: this._onmousedown, onMouseUp: this._onmouseup, onKeyDown: this._onkeydown, onKeyUp: this._onkeyup, onClick: this._onclick, onFocusOut: this._onfocusout, children: [this.isDisplayOnly ? jsx("div", { class: "ui5-checkbox-display-only-icon-inner", children: jsx(Icon$1, { "aria-hidden": "true", name: displayOnlyIcon.call(this), class: "ui5-checkbox-display-only-icon", part: "icon" }) }) : jsx("div", { id: `${this._id}-CbBg`, class: "ui5-checkbox-inner", children: this.isCompletelyChecked && jsx(Icon$1, { "aria-hidden": "true", name: checkIcon, class: "ui5-checkbox-icon", part: "icon" }) }), this.accInfo.role === "checkbox" && jsx("input", { id: `${this._id}-CB`, type: "checkbox", checked: this.checked, value: this.value, readonly: this.readonly, disabled: this.disabled, tabindex: -1, "aria-hidden": "true", "data-sap-no-tab-ref": true }), this.text && jsx(Label$1, { id: `${this._id}-label`, part: "label", class: "ui5-checkbox-label", wrappingType: this.wrappingType, required: this.required, children: this.text }), this.hasValueState && jsx("span", { id: `${this._id}-descr`, class: "ui5-hidden-text", children: this.valueStateText })] });
-}
-function displayOnlyIcon() {
-  if (this.isCompletelyChecked) {
-    return complete;
-  }
-  if (this.checked && this.indeterminate) {
-    return triState;
-  }
-  return border;
-}
-var __decorate$t = function(decorators, target, key, desc) {
-  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
-  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
-  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
-};
-var CheckBox_1;
-let isGlobalHandlerAttached = false;
-let activeCb;
-let CheckBox = CheckBox_1 = class CheckBox2 extends b$6 {
-  get formValidityMessage() {
-    return CheckBox_1.i18nBundle.getText(FORM_CHECKABLE_REQUIRED);
-  }
-  get formValidity() {
-    return { valueMissing: this.required && !this.checked };
-  }
-  async formElementAnchor() {
-    return this.getFocusDomRefAsync();
-  }
-  get formFormattedValue() {
-    return this.checked ? this.value : null;
-  }
-  constructor() {
-    super();
-    this.disabled = false;
-    this.readonly = false;
-    this.displayOnly = false;
-    this.required = false;
-    this.indeterminate = false;
-    this.checked = false;
-    this.valueState = "None";
-    this.wrappingType = "Normal";
-    this.value = "on";
-    this.active = false;
-    this._deactivate = () => {
-      if (activeCb) {
-        activeCb.active = false;
-      }
-    };
-    if (!isGlobalHandlerAttached) {
-      document.addEventListener("mouseup", this._deactivate);
-      isGlobalHandlerAttached = true;
-    }
-  }
-  onEnterDOM() {
-    if (f$g()) {
-      this.setAttribute("desktop", "");
-    }
-  }
-  _onclick() {
-    this.toggle();
-  }
-  _onmousedown() {
-    if (this.readonly || this.disabled) {
-      return;
-    }
-    this.active = true;
-    activeCb = this;
-  }
-  _onmouseup() {
-    this.active = false;
-  }
-  _onfocusout() {
-    this.active = false;
-  }
-  _onkeydown(e2) {
-    if (A$4(e2)) {
-      e2.preventDefault();
-    }
-    if (this.readonly || this.disabled) {
-      return;
-    }
-    if (b$5(e2)) {
-      this.toggle();
-    }
-    this.active = true;
-  }
-  _onkeyup(e2) {
-    if (A$4(e2)) {
-      this.toggle();
-    }
-    this.active = false;
-  }
-  toggle() {
-    if (this.canToggle()) {
-      const lastState = {
-        checked: this.checked,
-        indeterminate: this.indeterminate
-      };
-      if (this.indeterminate) {
-        this.indeterminate = false;
-        this.checked = true;
-      } else {
-        this.checked = !this.checked;
-      }
-      const changePrevented = !this.fireDecoratorEvent("change");
-      const valueChangePrevented = !this.fireDecoratorEvent("value-changed");
-      if (changePrevented || valueChangePrevented) {
-        this.checked = lastState.checked;
-        this.indeterminate = lastState.indeterminate;
-      }
-    }
-    return this;
-  }
-  canToggle() {
-    return !(this.disabled || this.readonly || this.displayOnly);
-  }
-  valueStateTextMappings() {
-    return {
-      "Negative": CheckBox_1.i18nBundle.getText(VALUE_STATE_ERROR),
-      "Critical": CheckBox_1.i18nBundle.getText(VALUE_STATE_WARNING),
-      "Positive": CheckBox_1.i18nBundle.getText(VALUE_STATE_SUCCESS)
-    };
-  }
-  get ariaLabelText() {
-    return A$3(this) || M$1(this);
-  }
-  get classes() {
-    return {
-      main: {
-        "ui5-checkbox--hoverable": !this.disabled && !this.readonly && f$g()
-      }
-    };
-  }
-  get ariaReadonly() {
-    return this.readonly || this.displayOnly ? "true" : void 0;
-  }
-  get effectiveAriaDisabled() {
-    return this.disabled ? "true" : void 0;
-  }
-  get effectiveAriaChecked() {
-    return this.indeterminate && this.checked ? "mixed" : this.checked;
-  }
-  get ariaLabelledBy() {
-    if (!this.ariaLabelText) {
-      return this.text ? `${this._id}-label` : void 0;
-    }
-    return void 0;
-  }
-  get ariaDescribedBy() {
-    return this.hasValueState ? `${this._id}-descr` : void 0;
-  }
-  get hasValueState() {
-    return this.valueState !== o$5.None;
-  }
-  get valueStateText() {
-    if (this.valueState !== o$5.None && this.valueState !== o$5.Information) {
-      return this.valueStateTextMappings()[this.valueState];
-    }
-  }
-  get effectiveTabIndex() {
-    const tabindex = this.getAttribute("tabindex");
-    if (this.tabbable) {
-      return tabindex ? parseInt(tabindex) : 0;
-    }
-  }
-  get tabbable() {
-    return !this.disabled && !this.displayOnly;
-  }
-  get isCompletelyChecked() {
-    return this.checked && !this.indeterminate;
-  }
-  get isDisplayOnly() {
-    return this.displayOnly && !this.disabled;
-  }
-  get accessibilityInfo() {
-    const checkboxState = this.checked ? CheckBox_1.i18nBundle.getText(CHECKBOX_CHECKED) : CheckBox_1.i18nBundle.getText(CHECKBOX_NOT_CHECKED);
-    const description = [this.text || "", checkboxState].filter(Boolean).join(" ");
-    return {
-      role: this.accInfo.role,
-      type: CheckBox_1.i18nBundle.getText(CHECKBOX_ARIA_TYPE),
-      description,
-      label: this.ariaLabelText,
-      disabled: !!this.accInfo.ariaDisabled,
-      readonly: !!this.accInfo.ariaReadonly,
-      required: this.accInfo.ariaRequired
-    };
-  }
-  get accInfo() {
-    return {
-      "role": this._accInfo ? this._accInfo.role : "checkbox",
-      "ariaChecked": this._accInfo ? this._accInfo.ariaChecked : this.effectiveAriaChecked,
-      "ariaReadonly": this._accInfo ? this._accInfo.ariaReadonly : this.ariaReadonly,
-      "ariaDisabled": this._accInfo ? this._accInfo.ariaDisabled : this.effectiveAriaDisabled,
-      "ariaRequired": this._accInfo ? this._accInfo.ariaRequired : this.required,
-      "tabindex": this._accInfo ? this._accInfo.tabindex : this.effectiveTabIndex
-    };
-  }
-};
-__decorate$t([
-  s$7()
-], CheckBox.prototype, "accessibleNameRef", void 0);
-__decorate$t([
-  s$7()
-], CheckBox.prototype, "accessibleName", void 0);
-__decorate$t([
-  s$7({ type: Boolean })
-], CheckBox.prototype, "disabled", void 0);
-__decorate$t([
-  s$7({ type: Boolean })
-], CheckBox.prototype, "readonly", void 0);
-__decorate$t([
-  s$7({ type: Boolean })
-], CheckBox.prototype, "displayOnly", void 0);
-__decorate$t([
-  s$7({ type: Boolean })
-], CheckBox.prototype, "required", void 0);
-__decorate$t([
-  s$7({ type: Boolean })
-], CheckBox.prototype, "indeterminate", void 0);
-__decorate$t([
-  s$7({ type: Boolean })
-], CheckBox.prototype, "checked", void 0);
-__decorate$t([
-  s$7()
-], CheckBox.prototype, "text", void 0);
-__decorate$t([
-  s$7()
-], CheckBox.prototype, "valueState", void 0);
-__decorate$t([
-  s$7()
-], CheckBox.prototype, "wrappingType", void 0);
-__decorate$t([
-  s$7()
-], CheckBox.prototype, "name", void 0);
-__decorate$t([
-  s$7()
-], CheckBox.prototype, "value", void 0);
-__decorate$t([
-  s$7({ type: Boolean })
-], CheckBox.prototype, "active", void 0);
-__decorate$t([
-  s$7({ type: Object })
-], CheckBox.prototype, "_accInfo", void 0);
-__decorate$t([
-  i$9("@ui5/webcomponents")
-], CheckBox, "i18nBundle", void 0);
-CheckBox = CheckBox_1 = __decorate$t([
-  m$8({
-    tag: "ui5-checkbox",
-    languageAware: true,
-    formAssociated: true,
-    renderer: y$5,
-    template: CheckBoxTemplate,
-    styles: checkboxCss
-  }),
-  l$d("change", {
-    bubbles: true,
-    cancelable: true
-  }),
-  l$d("value-changed", {
-    bubbles: true,
-    cancelable: true
-  })
-], CheckBox);
-CheckBox.define();
-const CheckBox$1 = CheckBox;
-const predefinedHooks$4 = {
-  listItemPreContent,
-  listItemContent: listItemContent$4,
-  imageBegin: imageBegin$1,
-  iconBegin: iconBegin$3,
-  iconEnd: iconEnd$2,
-  selectionElement
-};
-function ListItemTemplate(hooks) {
-  const currentHooks = { ...predefinedHooks$4, ...hooks };
-  return jsxs("li", { part: "native-li", "data-sap-focus-ref": true, tabindex: this._effectiveTabIndex, class: this.classes.main, onFocusIn: this._onfocusin, onFocusOut: this._onfocusout, onKeyUp: this._onkeyup, onKeyDown: this._onkeydown, onMouseUp: this._onmouseup, onMouseDown: this._onmousedown, onTouchStart: this._onmousedown, onTouchEnd: this._ontouchend, onClick: this._onclick, draggable: this.movable, onDragStart: this._ondragstart, onDragEnd: this._ondragend, role: this._accInfo.role, title: this._accInfo.tooltip, "aria-expanded": this._accInfo.ariaExpanded, "aria-level": this._accInfo.ariaLevel, "aria-haspopup": this._accInfo.ariaHaspopup, "aria-posinset": this._accInfo.posinset, "aria-setsize": this._accInfo.setsize, "aria-describedby": `${this._id}-invisibleText-describedby`, "aria-labelledby": this._accessibleNameRef, "aria-disabled": this._ariaDisabled, "aria-selected": this._accInfo.ariaSelected, "aria-checked": this._accInfo.ariaChecked, "aria-owns": this._accInfo.ariaOwns, "aria-keyshortcuts": this._accInfo.ariaKeyShortcuts, children: [currentHooks.listItemPreContent.call(this), this.placeSelectionElementBefore && selectionElement.call(this), this._hasHighlightColor && jsx("div", { class: "ui5-li-highlight" }), jsxs("div", { part: "content", id: `${this._id}-content`, class: "ui5-li-content", children: [currentHooks.imageBegin.call(this), currentHooks.iconBegin.call(this), currentHooks.listItemContent.call(this)] }), currentHooks.iconEnd.call(this), this.typeDetail && jsx("div", { class: "ui5-li-detailbtn", children: jsx(Button$1, { part: "detail-button", design: "Transparent", onClick: this.onDetailClick, icon: editIcon }) }), this.typeNavigation && jsx(Icon$1, { name: slimArrowRightIcon }), this.navigated && jsx("div", { class: "ui5-li-navigated" }), this.placeSelectionElementAfter && currentHooks.selectionElement.call(this), jsx("span", { id: `${this._id}-invisibleText`, class: "ui5-hidden-text", children: this.ariaLabelledByText }), jsx("span", { id: `${this._id}-invisibleText-describedby`, class: "ui5-hidden-text", children: this._accInfo.ariaSelectedText })] });
-}
-function listItemPreContent() {
-}
-function listItemContent$4() {
-}
-function imageBegin$1() {
-}
-function iconBegin$3() {
-}
-function iconEnd$2() {
-}
-function selectionElement() {
-  switch (true) {
-    case this.modeSingleSelect:
-      return jsx(RadioButton$1, { part: "radio", disabled: this.isInactive, accessibleName: this._accInfo.ariaLabelRadioButton, tabindex: -1, id: `${this._id}-singleSelectionElement`, class: "ui5-li-singlesel-radiobtn", checked: this.selected, onChange: this.onSingleSelectionComponentPress });
-    case this.modeMultiple:
-      return jsx(CheckBox$1, { part: "checkbox", disabled: this.isInactive, indeterminate: this.indeterminate, tabindex: -1, id: `${this._id}-multiSelectionElement`, class: "ui5-li-multisel-cb", checked: this.selected, accessibleName: this._accInfo.ariaLabel, onChange: this.onMultiSelectionComponentPress });
-    case this.modeDelete:
-      return jsx("div", { class: "ui5-li-deletebtn", children: this.hasDeleteButtonSlot ? jsx("slot", { name: "deleteButton" }) : jsx(Button$1, { part: "delete-button", tabindex: -1, "data-sap-no-tab-ref": true, id: `${this._id}-deleteSelectionElement`, design: "Transparent", icon: iconDecline, onClick: this.onDelete, tooltip: this.deleteText }) });
-  }
-}
-const predefinedHooks$3 = {
-  imageBegin,
-  iconBegin: iconBegin$2,
-  iconEnd: iconEnd$1,
-  listItemContent: listItemContent$3
-};
-function ListItemStandardTemplate(hooks) {
-  const currentHooks = { ...predefinedHooks$3, ...hooks };
-  return ListItemTemplate.call(this, currentHooks);
-}
-function listItemContent$3() {
-  return jsxs(Fragment, { children: [jsxs("div", { class: "ui5-li-text-wrapper", children: [renderTitle.call(this), renderDescription.call(this), !this.typeActive && jsx("span", { class: "ui5-hidden-text", children: this.type })] }), !this.description && renderAdditionalText.call(this)] });
-}
-function renderTitle() {
-  var _a2;
-  if (this.wrappingType === WrappingType$1.Normal) {
-    return (_a2 = this.expandableTextTemplate) == null ? void 0 : _a2.call(this, {
-      className: "ui5-li-title",
-      text: this._textContent,
-      maxCharacters: this._maxCharacters,
-      part: "title"
-    });
-  }
-  return jsx("span", { part: "title", class: "ui5-li-title", children: this.text ? this.text : jsx("slot", {}) });
-}
-function renderDescription() {
-  var _a2;
-  if (!this.description) {
-    return null;
-  }
-  if (this.wrappingType === WrappingType$1.Normal) {
-    return jsxs("div", { class: "ui5-li-description-info-wrapper", children: [(_a2 = this.expandableTextTemplate) == null ? void 0 : _a2.call(this, {
-      className: "ui5-li-desc",
-      text: this.description,
-      maxCharacters: this._maxCharacters,
-      part: "description"
-    }), renderAdditionalText.call(this)] });
-  }
-  return jsxs("div", { class: "ui5-li-description-info-wrapper", children: [jsx("span", { part: "description", class: "ui5-li-desc", children: this.description }), renderAdditionalText.call(this)] });
-}
-function renderAdditionalText() {
-  if (!this.additionalText) {
-    return null;
-  }
-  return jsx("span", { part: "additional-text", class: "ui5-li-additional-text", children: this.additionalText });
-}
-function imageBegin() {
-  if (this.hasImage) {
-    return jsx("div", { class: "ui5-li-image", children: jsx("slot", { name: "image" }) });
-  }
-}
-function iconBegin$2() {
-  if (this.displayIconBegin) {
-    return jsx(Icon$1, { part: "icon", name: this.icon, class: "ui5-li-icon", mode: "Decorative" });
-  }
-}
-function iconEnd$1() {
-  if (this.displayIconEnd) {
-    return jsx(Icon$1, { part: "icon", name: this.icon, class: "ui5-li-icon", mode: "Decorative" });
-  }
-}
-var __decorate$s = function(decorators, target, key, desc) {
-  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
-  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
-  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
-};
-var ListItemStandard_1;
-const MAX_CHARACTERS_SIZE_S = 100;
-const MAX_CHARACTERS_SIZE_M = 300;
-let ListItemStandard = ListItemStandard_1 = class ListItemStandard2 extends ListItem$1 {
-  constructor() {
-    super(...arguments);
-    this.iconEnd = false;
-    this.additionalTextState = "None";
-    this.movable = false;
-    this.wrappingType = "None";
-    this.hasTitle = false;
-    this._hasImage = false;
-  }
-  onBeforeRendering() {
-    super.onBeforeRendering();
-    this.hasTitle = !!(this.text || this.textContent);
-    this._hasImage = this.hasImage;
-    if (this.wrappingType === "Normal") {
-      if (ListItemStandard_1.ExpandableTextTemplate) {
-        this.expandableTextTemplate = ListItemStandard_1.ExpandableTextTemplate;
-      } else {
-        Promise.resolve().then(() => ListItemStandardExpandableTextTemplate$1).then((module) => {
-          this.expandableTextTemplate = module.default;
-        });
-      }
-    }
-  }
-  /**
-   * Returns the content text, either from text property or from the default slot
-   * @private
-   */
-  get _textContent() {
-    return this.text || this.textContent || "";
-  }
-  /**
-   * Determines the maximum characters to display based on the current media range.
-   * - Size S: 100 characters
-   * - Size M and larger: 300 characters
-   * @private
-   */
-  get _maxCharacters() {
-    return this.mediaRange === "S" ? MAX_CHARACTERS_SIZE_S : MAX_CHARACTERS_SIZE_M;
-  }
-  get displayIconBegin() {
-    return !!(this.icon && !this.iconEnd);
-  }
-  get displayIconEnd() {
-    return !!(this.icon && this.iconEnd);
-  }
-  get hasImage() {
-    return !!this.image.length;
-  }
-};
-__decorate$s([
-  s$7()
-], ListItemStandard.prototype, "text", void 0);
-__decorate$s([
-  s$7()
-], ListItemStandard.prototype, "description", void 0);
-__decorate$s([
-  s$7()
-], ListItemStandard.prototype, "icon", void 0);
-__decorate$s([
-  s$7({ type: Boolean })
-], ListItemStandard.prototype, "iconEnd", void 0);
-__decorate$s([
-  s$7()
-], ListItemStandard.prototype, "additionalText", void 0);
-__decorate$s([
-  s$7()
-], ListItemStandard.prototype, "additionalTextState", void 0);
-__decorate$s([
-  s$7({ type: Boolean })
-], ListItemStandard.prototype, "movable", void 0);
-__decorate$s([
-  s$7()
-], ListItemStandard.prototype, "accessibleName", void 0);
-__decorate$s([
-  s$7()
-], ListItemStandard.prototype, "wrappingType", void 0);
-__decorate$s([
-  s$7({ type: Boolean })
-], ListItemStandard.prototype, "hasTitle", void 0);
-__decorate$s([
-  s$7({ type: Boolean })
-], ListItemStandard.prototype, "_hasImage", void 0);
-__decorate$s([
-  s$7({ noAttribute: true })
-], ListItemStandard.prototype, "expandableTextTemplate", void 0);
-__decorate$s([
-  d$8({ type: Node, "default": true })
-], ListItemStandard.prototype, "content", void 0);
-__decorate$s([
-  d$8()
-], ListItemStandard.prototype, "image", void 0);
-ListItemStandard = ListItemStandard_1 = __decorate$s([
-  m$8({
-    tag: "ui5-li",
-    renderer: y$5,
-    template: ListItemStandardTemplate
-  })
-], ListItemStandard);
-ListItemStandard.define();
-const ListItemStandard$1 = ListItemStandard;
 function ButtonTemplate() {
   return jsx(Tag$1, { design: "Critical", "hide-state-icon": true, children: this.effectiveText });
 }
@@ -15727,7 +16191,7 @@ p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
 p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
 const buttonBadgeCss = `[ui5-tag]::part(root){border:.0625rem solid var(--sapContent_BadgeBorderColor);background-color:var(--sapContent_BadgeBackground);color:var(--sapContent_BadgeTextColor);height:1rem;border-radius:.5rem;display:flex;align-items:center}:host([design="AttentionDot"]) [ui5-tag]::part(root){min-width:var(--_ui5-v2-17-0-button-badge-diameter);min-height:var(--_ui5-v2-17-0-button-badge-diameter);height:var(--_ui5-v2-17-0-button-badge-diameter);width:var(--_ui5-v2-17-0-button-badge-diameter);border-radius:100%}
 `;
-var __decorate$r = function(decorators, target, key, desc) {
+var __decorate$q = function(decorators, target, key, desc) {
   var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
   else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
@@ -15743,13 +16207,13 @@ let ButtonBadge = class ButtonBadge2 extends b$6 {
     return this.design === ButtonBadgeDesign$1.AttentionDot ? "" : this.text;
   }
 };
-__decorate$r([
+__decorate$q([
   s$7()
 ], ButtonBadge.prototype, "design", void 0);
-__decorate$r([
+__decorate$q([
   s$7()
 ], ButtonBadge.prototype, "text", void 0);
-ButtonBadge = __decorate$r([
+ButtonBadge = __decorate$q([
   m$8({
     tag: "ui5-button-badge",
     renderer: y$5,
@@ -15781,69 +16245,6 @@ var MenuItemGroupCheckMode;
   MenuItemGroupCheckMode2["Multiple"] = "Multiple";
 })(MenuItemGroupCheckMode || (MenuItemGroupCheckMode = {}));
 const MenuItemGroupCheckMode$1 = MenuItemGroupCheckMode;
-const predefinedHooks$2 = {
-  listItemContent: listItemContent$2
-};
-function ListItemCustomTemplate(hooks) {
-  const currentHooks = { ...predefinedHooks$2, ...hooks };
-  return ListItemTemplate.call(this, currentHooks);
-}
-function listItemContent$2() {
-  return jsx("slot", {});
-}
-p$7("@ui5/webcomponents-theming", "sap_horizon", async () => defaultThemeBase);
-p$7("@ui5/webcomponents", "sap_horizon", async () => defaultTheme$1);
-const ListItemCustomCss = `:host(:not([hidden])){display:block}:host{min-height:var(--_ui5-v2-17-0_list_item_base_height);height:auto;box-sizing:border-box}.ui5-li-root.ui5-custom-li-root{pointer-events:inherit;min-height:inherit}.ui5-li-root.ui5-custom-li-root .ui5-li-content{pointer-events:inherit}[ui5-checkbox].ui5-li-singlesel-radiobtn,[ui5-radio-button].ui5-li-singlesel-radiobtn{display:flex;align-items:center}.ui5-li-root.ui5-custom-li-root,[ui5-checkbox].ui5-li-singlesel-radiobtn,[ui5-radio-button].ui5-li-singlesel-radiobtn{min-width:var(--_ui5-v2-17-0_custom_list_item_rb_min_width)}:host([_selection-mode="SingleStart"]) .ui5-li-root.ui5-custom-li-root{padding-inline:0 1rem}:host([_selection-mode="Multiple"]) .ui5-li-root.ui5-custom-li-root{padding-inline:0 1rem}:host([_selection-mode="SingleEnd"]) .ui5-li-root.ui5-custom-li-root{padding-inline:1rem 0}
-`;
-var __decorate$q = function(decorators, target, key, desc) {
-  var c2 = arguments.length, r3 = c2 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d2;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r3 = Reflect.decorate(decorators, target, key, desc);
-  else for (var i3 = decorators.length - 1; i3 >= 0; i3--) if (d2 = decorators[i3]) r3 = (c2 < 3 ? d2(r3) : c2 > 3 ? d2(target, key, r3) : d2(target, key)) || r3;
-  return c2 > 3 && r3 && Object.defineProperty(target, key, r3), r3;
-};
-let ListItemCustom = class ListItemCustom2 extends ListItem$1 {
-  constructor() {
-    super(...arguments);
-    this.movable = false;
-  }
-  async _onkeydown(e2) {
-    const isTab = x$1(e2) || V$1(e2);
-    const isFocused = this.matches(":focus");
-    if (!isTab && !isFocused && !ro(e2)) {
-      return;
-    }
-    await super._onkeydown(e2);
-  }
-  _onkeyup(e2) {
-    const isTab = x$1(e2) || V$1(e2);
-    const isFocused = this.matches(":focus");
-    if (!isTab && !isFocused && !ro(e2)) {
-      return;
-    }
-    super._onkeyup(e2);
-  }
-  get classes() {
-    const result = super.classes;
-    result.main["ui5-custom-li-root"] = true;
-    return result;
-  }
-};
-__decorate$q([
-  s$7({ type: Boolean })
-], ListItemCustom.prototype, "movable", void 0);
-__decorate$q([
-  s$7()
-], ListItemCustom.prototype, "accessibleName", void 0);
-ListItemCustom = __decorate$q([
-  m$8({
-    tag: "ui5-li-custom",
-    template: ListItemCustomTemplate,
-    renderer: y$5,
-    styles: [ListItem$1.styles, ListItemCustomCss]
-  })
-], ListItemCustom);
-ListItemCustom.define();
-const ListItemCustom$1 = ListItemCustom;
 function MenuSeparatorTemplate() {
   return jsx(ListItemCustom$1, { class: "ui5-menu-separator", _forcedAccessibleRole: "separator", disabled: true });
 }
